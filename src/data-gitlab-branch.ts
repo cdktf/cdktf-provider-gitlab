@@ -1,0 +1,262 @@
+// https://www.terraform.io/docs/providers/gitlab/d/branch
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface DataGitlabBranchConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * The name of the branch.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/branch#name DataGitlabBranch#name}
+  */
+  readonly name: string;
+  /**
+  * The full path or id of the project.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/branch#project DataGitlabBranch#project}
+  */
+  readonly project: string;
+}
+export interface DataGitlabBranchCommit {
+}
+
+export function dataGitlabBranchCommitToTerraform(struct?: DataGitlabBranchCommit): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataGitlabBranchCommitOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGitlabBranchCommit | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGitlabBranchCommit | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // author_email - computed: true, optional: false, required: false
+  public get authorEmail() {
+    return this.getStringAttribute('author_email');
+  }
+
+  // author_name - computed: true, optional: false, required: false
+  public get authorName() {
+    return this.getStringAttribute('author_name');
+  }
+
+  // authored_date - computed: true, optional: false, required: false
+  public get authoredDate() {
+    return this.getStringAttribute('authored_date');
+  }
+
+  // committed_date - computed: true, optional: false, required: false
+  public get committedDate() {
+    return this.getStringAttribute('committed_date');
+  }
+
+  // committer_email - computed: true, optional: false, required: false
+  public get committerEmail() {
+    return this.getStringAttribute('committer_email');
+  }
+
+  // committer_name - computed: true, optional: false, required: false
+  public get committerName() {
+    return this.getStringAttribute('committer_name');
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // message - computed: true, optional: false, required: false
+  public get message() {
+    return this.getStringAttribute('message');
+  }
+
+  // parent_ids - computed: true, optional: false, required: false
+  public get parentIds() {
+    return cdktf.Fn.tolist(this.getListAttribute('parent_ids'));
+  }
+
+  // short_id - computed: true, optional: false, required: false
+  public get shortId() {
+    return this.getStringAttribute('short_id');
+  }
+
+  // title - computed: true, optional: false, required: false
+  public get title() {
+    return this.getStringAttribute('title');
+  }
+}
+
+export class DataGitlabBranchCommitList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGitlabBranchCommitOutputReference {
+    return new DataGitlabBranchCommitOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/branch gitlab_branch}
+*/
+export class DataGitlabBranch extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType = "gitlab_branch";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/branch gitlab_branch} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataGitlabBranchConfig
+  */
+  public constructor(scope: Construct, id: string, config: DataGitlabBranchConfig) {
+    super(scope, id, {
+      terraformResourceType: 'gitlab_branch',
+      terraformGeneratorMetadata: {
+        providerName: 'gitlab',
+        providerVersion: '3.14.0',
+        providerVersionConstraint: '~> 3.14.0'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+    this._name = config.name;
+    this._project = config.project;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // can_push - computed: true, optional: false, required: false
+  public get canPush() {
+    return this.getBooleanAttribute('can_push');
+  }
+
+  // commit - computed: true, optional: false, required: false
+  private _commit = new DataGitlabBranchCommitList(this, "commit", true);
+  public get commit() {
+    return this._commit;
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getBooleanAttribute('default');
+  }
+
+  // developer_can_merge - computed: true, optional: false, required: false
+  public get developerCanMerge() {
+    return this.getBooleanAttribute('developer_can_merge');
+  }
+
+  // developer_can_push - computed: true, optional: false, required: false
+  public get developerCanPush() {
+    return this.getBooleanAttribute('developer_can_push');
+  }
+
+  // id - computed: true, optional: true, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // merged - computed: true, optional: false, required: false
+  public get merged() {
+    return this.getBooleanAttribute('merged');
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // project - computed: false, optional: false, required: true
+  private _project?: string; 
+  public get project() {
+    return this.getStringAttribute('project');
+  }
+  public set project(value: string) {
+    this._project = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectInput() {
+    return this._project;
+  }
+
+  // protected - computed: true, optional: false, required: false
+  public get protected() {
+    return this.getBooleanAttribute('protected');
+  }
+
+  // web_url - computed: true, optional: false, required: false
+  public get webUrl() {
+    return this.getStringAttribute('web_url');
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      name: cdktf.stringToTerraform(this._name),
+      project: cdktf.stringToTerraform(this._project),
+    };
+  }
+}
