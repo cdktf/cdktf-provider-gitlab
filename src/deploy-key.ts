@@ -1,0 +1,152 @@
+// https://www.terraform.io/docs/providers/gitlab/r/deploy_key
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface DeployKeyConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Allow this deploy key to be used to push changes to the project. Defaults to `false`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key#can_push DeployKey#can_push}
+  */
+  readonly canPush?: boolean | cdktf.IResolvable;
+  /**
+  * The public ssh key body.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key#key DeployKey#key}
+  */
+  readonly key: string;
+  /**
+  * The name or id of the project to add the deploy key to.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key#project DeployKey#project}
+  */
+  readonly project: string;
+  /**
+  * A title to describe the deploy key with.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key#title DeployKey#title}
+  */
+  readonly title: string;
+}
+
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key gitlab_deploy_key}
+*/
+export class DeployKey extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType = "gitlab_deploy_key";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key gitlab_deploy_key} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DeployKeyConfig
+  */
+  public constructor(scope: Construct, id: string, config: DeployKeyConfig) {
+    super(scope, id, {
+      terraformResourceType: 'gitlab_deploy_key',
+      terraformGeneratorMetadata: {
+        providerName: 'gitlab',
+        providerVersion: '3.14.0',
+        providerVersionConstraint: '~> 3.14.0'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+    this._canPush = config.canPush;
+    this._key = config.key;
+    this._project = config.project;
+    this._title = config.title;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // can_push - computed: false, optional: true, required: false
+  private _canPush?: boolean | cdktf.IResolvable; 
+  public get canPush() {
+    return this.getBooleanAttribute('can_push');
+  }
+  public set canPush(value: boolean | cdktf.IResolvable) {
+    this._canPush = value;
+  }
+  public resetCanPush() {
+    this._canPush = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get canPushInput() {
+    return this._canPush;
+  }
+
+  // id - computed: true, optional: true, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // project - computed: false, optional: false, required: true
+  private _project?: string; 
+  public get project() {
+    return this.getStringAttribute('project');
+  }
+  public set project(value: string) {
+    this._project = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectInput() {
+    return this._project;
+  }
+
+  // title - computed: false, optional: false, required: true
+  private _title?: string; 
+  public get title() {
+    return this.getStringAttribute('title');
+  }
+  public set title(value: string) {
+    this._title = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get titleInput() {
+    return this._title;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      can_push: cdktf.booleanToTerraform(this._canPush),
+      key: cdktf.stringToTerraform(this._key),
+      project: cdktf.stringToTerraform(this._project),
+      title: cdktf.stringToTerraform(this._title),
+    };
+  }
+}

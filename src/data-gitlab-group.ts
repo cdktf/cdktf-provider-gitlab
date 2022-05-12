@@ -1,0 +1,173 @@
+// https://www.terraform.io/docs/providers/gitlab/d/group
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface DataGitlabGroupConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * The full path of the group.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/group#full_path DataGitlabGroup#full_path}
+  */
+  readonly fullPath?: string;
+  /**
+  * The ID of the group.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/group#group_id DataGitlabGroup#group_id}
+  */
+  readonly groupId?: number;
+}
+
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/group gitlab_group}
+*/
+export class DataGitlabGroup extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType = "gitlab_group";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/group gitlab_group} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataGitlabGroupConfig = {}
+  */
+  public constructor(scope: Construct, id: string, config: DataGitlabGroupConfig = {}) {
+    super(scope, id, {
+      terraformResourceType: 'gitlab_group',
+      terraformGeneratorMetadata: {
+        providerName: 'gitlab',
+        providerVersion: '3.14.0',
+        providerVersionConstraint: '~> 3.14.0'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+    this._fullPath = config.fullPath;
+    this._groupId = config.groupId;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // default_branch_protection - computed: true, optional: false, required: false
+  public get defaultBranchProtection() {
+    return this.getNumberAttribute('default_branch_protection');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // full_name - computed: true, optional: false, required: false
+  public get fullName() {
+    return this.getStringAttribute('full_name');
+  }
+
+  // full_path - computed: true, optional: true, required: false
+  private _fullPath?: string; 
+  public get fullPath() {
+    return this.getStringAttribute('full_path');
+  }
+  public set fullPath(value: string) {
+    this._fullPath = value;
+  }
+  public resetFullPath() {
+    this._fullPath = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fullPathInput() {
+    return this._fullPath;
+  }
+
+  // group_id - computed: true, optional: true, required: false
+  private _groupId?: number; 
+  public get groupId() {
+    return this.getNumberAttribute('group_id');
+  }
+  public set groupId(value: number) {
+    this._groupId = value;
+  }
+  public resetGroupId() {
+    this._groupId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupIdInput() {
+    return this._groupId;
+  }
+
+  // id - computed: true, optional: true, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // lfs_enabled - computed: true, optional: false, required: false
+  public get lfsEnabled() {
+    return this.getBooleanAttribute('lfs_enabled');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // parent_id - computed: true, optional: false, required: false
+  public get parentId() {
+    return this.getNumberAttribute('parent_id');
+  }
+
+  // path - computed: true, optional: false, required: false
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+
+  // prevent_forking_outside_group - computed: true, optional: false, required: false
+  public get preventForkingOutsideGroup() {
+    return this.getBooleanAttribute('prevent_forking_outside_group');
+  }
+
+  // request_access_enabled - computed: true, optional: false, required: false
+  public get requestAccessEnabled() {
+    return this.getBooleanAttribute('request_access_enabled');
+  }
+
+  // runners_token - computed: true, optional: false, required: false
+  public get runnersToken() {
+    return this.getStringAttribute('runners_token');
+  }
+
+  // visibility_level - computed: true, optional: false, required: false
+  public get visibilityLevel() {
+    return this.getStringAttribute('visibility_level');
+  }
+
+  // web_url - computed: true, optional: false, required: false
+  public get webUrl() {
+    return this.getStringAttribute('web_url');
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      full_path: cdktf.stringToTerraform(this._fullPath),
+      group_id: cdktf.numberToTerraform(this._groupId),
+    };
+  }
+}
