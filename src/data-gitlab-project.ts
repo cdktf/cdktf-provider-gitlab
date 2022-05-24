@@ -8,6 +8,15 @@ import * as cdktf from 'cdktf';
 
 export interface DataGitlabProjectConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The integer or path with namespace that uniquely identifies the project within the gitlab install.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project#id DataGitlabProject#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The path of the repository with namespace.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project#path_with_namespace DataGitlabProject#path_with_namespace}
@@ -263,6 +272,7 @@ export class DataGitlabProject extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._pathWithNamespace = config.pathWithNamespace;
     this._publicBuilds = config.publicBuilds;
   }
@@ -358,8 +368,19 @@ export class DataGitlabProject extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // issues_access_level - computed: true, optional: false, required: false
@@ -561,6 +582,7 @@ export class DataGitlabProject extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       path_with_namespace: cdktf.stringToTerraform(this._pathWithNamespace),
       public_builds: cdktf.booleanToTerraform(this._publicBuilds),
     };

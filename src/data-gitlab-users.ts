@@ -44,6 +44,13 @@ export interface DataGitlabUsersConfig extends cdktf.TerraformMetaArguments {
   */
   readonly externUid?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/users#id DataGitlabUsers#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Order the users' list by `id`, `name`, `username`, `created_at` or `updated_at`. (Requires administrator privileges)
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/users#order_by DataGitlabUsers#order_by}
@@ -297,6 +304,7 @@ export class DataGitlabUsers extends cdktf.TerraformDataSource {
     this._createdBefore = config.createdBefore;
     this._externProvider = config.externProvider;
     this._externUid = config.externUid;
+    this._id = config.id;
     this._orderBy = config.orderBy;
     this._search = config.search;
     this._sort = config.sort;
@@ -403,8 +411,19 @@ export class DataGitlabUsers extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // order_by - computed: false, optional: true, required: false
@@ -473,6 +492,7 @@ export class DataGitlabUsers extends cdktf.TerraformDataSource {
       created_before: cdktf.stringToTerraform(this._createdBefore),
       extern_provider: cdktf.stringToTerraform(this._externProvider),
       extern_uid: cdktf.stringToTerraform(this._externUid),
+      id: cdktf.stringToTerraform(this._id),
       order_by: cdktf.stringToTerraform(this._orderBy),
       search: cdktf.stringToTerraform(this._search),
       sort: cdktf.stringToTerraform(this._sort),

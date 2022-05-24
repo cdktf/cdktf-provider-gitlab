@@ -20,6 +20,13 @@ export interface ProjectAccessTokenConfig extends cdktf.TerraformMetaArguments {
   */
   readonly expiresAt?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_access_token#id ProjectAccessToken#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * A name to describe the project access token.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_access_token#name ProjectAccessToken#name}
@@ -75,6 +82,7 @@ export class ProjectAccessToken extends cdktf.TerraformResource {
     });
     this._accessLevel = config.accessLevel;
     this._expiresAt = config.expiresAt;
+    this._id = config.id;
     this._name = config.name;
     this._project = config.project;
     this._scopes = config.scopes;
@@ -127,8 +135,19 @@ export class ProjectAccessToken extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -193,6 +212,7 @@ export class ProjectAccessToken extends cdktf.TerraformResource {
     return {
       access_level: cdktf.stringToTerraform(this._accessLevel),
       expires_at: cdktf.stringToTerraform(this._expiresAt),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
       scopes: cdktf.listMapper(cdktf.stringToTerraform)(this._scopes),

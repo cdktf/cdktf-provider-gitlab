@@ -50,6 +50,13 @@ export interface DataGitlabProjectIssuesConfig extends cdktf.TerraformMetaArgume
   */
   readonly dueDate?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_issues#id DataGitlabProjectIssues#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Return only the issues having the given iid
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_issues#iids DataGitlabProjectIssues#iids}
@@ -379,8 +386,9 @@ export class DataGitlabProjectIssuesIssuesOutputReference extends cdktf.ComplexO
   }
 
   // links - computed: true, optional: false, required: false
-  public links(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'links').lookup(key);
+  private _links = new cdktf.StringMap(this, "links");
+  public get links() {
+    return this._links;
   }
 
   // merge_request_to_resolve_discussions_of - computed: true, optional: false, required: false
@@ -409,8 +417,9 @@ export class DataGitlabProjectIssuesIssuesOutputReference extends cdktf.ComplexO
   }
 
   // references - computed: true, optional: false, required: false
-  public references(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'references').lookup(key);
+  private _references = new cdktf.StringMap(this, "references");
+  public get references() {
+    return this._references;
   }
 
   // state - computed: true, optional: false, required: false
@@ -530,6 +539,7 @@ export class DataGitlabProjectIssues extends cdktf.TerraformDataSource {
     this._createdAfter = config.createdAfter;
     this._createdBefore = config.createdBefore;
     this._dueDate = config.dueDate;
+    this._id = config.id;
     this._iids = config.iids;
     this._issueType = config.issueType;
     this._labels = config.labels;
@@ -668,8 +678,19 @@ export class DataGitlabProjectIssues extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // iids - computed: false, optional: true, required: false
@@ -992,6 +1013,7 @@ export class DataGitlabProjectIssues extends cdktf.TerraformDataSource {
       created_after: cdktf.stringToTerraform(this._createdAfter),
       created_before: cdktf.stringToTerraform(this._createdBefore),
       due_date: cdktf.stringToTerraform(this._dueDate),
+      id: cdktf.stringToTerraform(this._id),
       iids: cdktf.listMapper(cdktf.numberToTerraform)(this._iids),
       issue_type: cdktf.stringToTerraform(this._issueType),
       labels: cdktf.listMapper(cdktf.stringToTerraform)(this._labels),

@@ -32,6 +32,13 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly emailsDisabled?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group#id Group#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Defaults to true. Enable/disable Large File Storage (LFS) for the projects in this group.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group#lfs_enabled Group#lfs_enabled}
@@ -149,6 +156,7 @@ export class Group extends cdktf.TerraformResource {
     this._defaultBranchProtection = config.defaultBranchProtection;
     this._description = config.description;
     this._emailsDisabled = config.emailsDisabled;
+    this._id = config.id;
     this._lfsEnabled = config.lfsEnabled;
     this._mentionsDisabled = config.mentionsDisabled;
     this._name = config.name;
@@ -243,8 +251,19 @@ export class Group extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // lfs_enabled - computed: false, optional: true, required: false
@@ -469,6 +488,7 @@ export class Group extends cdktf.TerraformResource {
       default_branch_protection: cdktf.numberToTerraform(this._defaultBranchProtection),
       description: cdktf.stringToTerraform(this._description),
       emails_disabled: cdktf.booleanToTerraform(this._emailsDisabled),
+      id: cdktf.stringToTerraform(this._id),
       lfs_enabled: cdktf.booleanToTerraform(this._lfsEnabled),
       mentions_disabled: cdktf.booleanToTerraform(this._mentionsDisabled),
       name: cdktf.stringToTerraform(this._name),

@@ -146,6 +146,13 @@ export interface ProjectConfig extends cdktf.TerraformMetaArguments {
   */
   readonly groupWithProjectTemplatesId?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#id Project#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Git URL to a repository to be imported.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#import_url Project#import_url}
@@ -1078,6 +1085,7 @@ export class Project extends cdktf.TerraformResource {
     this._externalAuthorizationClassificationLabel = config.externalAuthorizationClassificationLabel;
     this._forkingAccessLevel = config.forkingAccessLevel;
     this._groupWithProjectTemplatesId = config.groupWithProjectTemplatesId;
+    this._id = config.id;
     this._importUrl = config.importUrl;
     this._initializeWithReadme = config.initializeWithReadme;
     this._issuesAccessLevel = config.issuesAccessLevel;
@@ -1508,8 +1516,19 @@ export class Project extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // import_url - computed: false, optional: true, required: false
@@ -2358,6 +2377,7 @@ export class Project extends cdktf.TerraformResource {
       external_authorization_classification_label: cdktf.stringToTerraform(this._externalAuthorizationClassificationLabel),
       forking_access_level: cdktf.stringToTerraform(this._forkingAccessLevel),
       group_with_project_templates_id: cdktf.numberToTerraform(this._groupWithProjectTemplatesId),
+      id: cdktf.stringToTerraform(this._id),
       import_url: cdktf.stringToTerraform(this._importUrl),
       initialize_with_readme: cdktf.booleanToTerraform(this._initializeWithReadme),
       issues_access_level: cdktf.stringToTerraform(this._issuesAccessLevel),

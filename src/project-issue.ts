@@ -88,6 +88,13 @@ export interface ProjectIssueConfig extends cdktf.TerraformMetaArguments {
   */
   readonly humanTotalTimeSpent?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#id ProjectIssue#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The internal ID of the project's issue.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#iid ProjectIssue#iid}
@@ -322,6 +329,7 @@ export class ProjectIssue extends cdktf.TerraformResource {
     this._epicIssueId = config.epicIssueId;
     this._humanTimeEstimate = config.humanTimeEstimate;
     this._humanTotalTimeSpent = config.humanTotalTimeSpent;
+    this._id = config.id;
     this._iid = config.iid;
     this._issueType = config.issueType;
     this._labels = config.labels;
@@ -572,8 +580,19 @@ export class ProjectIssue extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // iid - computed: true, optional: true, required: false
@@ -869,6 +888,7 @@ export class ProjectIssue extends cdktf.TerraformResource {
       epic_issue_id: cdktf.numberToTerraform(this._epicIssueId),
       human_time_estimate: cdktf.stringToTerraform(this._humanTimeEstimate),
       human_total_time_spent: cdktf.stringToTerraform(this._humanTotalTimeSpent),
+      id: cdktf.stringToTerraform(this._id),
       iid: cdktf.numberToTerraform(this._iid),
       issue_type: cdktf.stringToTerraform(this._issueType),
       labels: cdktf.listMapper(cdktf.stringToTerraform)(this._labels),

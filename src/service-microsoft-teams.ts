@@ -26,6 +26,13 @@ export interface ServiceMicrosoftTeamsConfig extends cdktf.TerraformMetaArgument
   */
   readonly confidentialNoteEvents?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#id ServiceMicrosoftTeams#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Enable notifications for issue events
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#issues_events ServiceMicrosoftTeams#issues_events}
@@ -124,6 +131,7 @@ export class ServiceMicrosoftTeams extends cdktf.TerraformResource {
     this._branchesToBeNotified = config.branchesToBeNotified;
     this._confidentialIssuesEvents = config.confidentialIssuesEvents;
     this._confidentialNoteEvents = config.confidentialNoteEvents;
+    this._id = config.id;
     this._issuesEvents = config.issuesEvents;
     this._mergeRequestsEvents = config.mergeRequestsEvents;
     this._noteEvents = config.noteEvents;
@@ -199,8 +207,19 @@ export class ServiceMicrosoftTeams extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // issues_events - computed: false, optional: true, required: false
@@ -371,6 +390,7 @@ export class ServiceMicrosoftTeams extends cdktf.TerraformResource {
       branches_to_be_notified: cdktf.stringToTerraform(this._branchesToBeNotified),
       confidential_issues_events: cdktf.booleanToTerraform(this._confidentialIssuesEvents),
       confidential_note_events: cdktf.booleanToTerraform(this._confidentialNoteEvents),
+      id: cdktf.stringToTerraform(this._id),
       issues_events: cdktf.booleanToTerraform(this._issuesEvents),
       merge_requests_events: cdktf.booleanToTerraform(this._mergeRequestsEvents),
       note_events: cdktf.booleanToTerraform(this._noteEvents),

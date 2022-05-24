@@ -14,6 +14,13 @@ export interface ProjectMembershipConfig extends cdktf.TerraformMetaArguments {
   */
   readonly accessLevel: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_membership#id ProjectMembership#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The id of the project.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_membership#project_id ProjectMembership#project_id}
@@ -62,6 +69,7 @@ export class ProjectMembership extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._accessLevel = config.accessLevel;
+    this._id = config.id;
     this._projectId = config.projectId;
     this._userId = config.userId;
   }
@@ -84,8 +92,19 @@ export class ProjectMembership extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // project_id - computed: false, optional: false, required: true
@@ -121,6 +140,7 @@ export class ProjectMembership extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       access_level: cdktf.stringToTerraform(this._accessLevel),
+      id: cdktf.stringToTerraform(this._id),
       project_id: cdktf.stringToTerraform(this._projectId),
       user_id: cdktf.numberToTerraform(this._userId),
     };

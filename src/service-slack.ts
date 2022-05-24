@@ -32,6 +32,13 @@ export interface ServiceSlackConfig extends cdktf.TerraformMetaArguments {
   */
   readonly confidentialNoteEvents?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_slack#id ServiceSlack#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The name of the channel to receive issue events notifications.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_slack#issue_channel ServiceSlack#issue_channel}
@@ -185,6 +192,7 @@ export class ServiceSlack extends cdktf.TerraformResource {
     this._confidentialIssueChannel = config.confidentialIssueChannel;
     this._confidentialIssuesEvents = config.confidentialIssuesEvents;
     this._confidentialNoteEvents = config.confidentialNoteEvents;
+    this._id = config.id;
     this._issueChannel = config.issueChannel;
     this._issuesEvents = config.issuesEvents;
     this._mergeRequestChannel = config.mergeRequestChannel;
@@ -275,8 +283,19 @@ export class ServiceSlack extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // issue_channel - computed: false, optional: true, required: false
@@ -592,6 +611,7 @@ export class ServiceSlack extends cdktf.TerraformResource {
       confidential_issue_channel: cdktf.stringToTerraform(this._confidentialIssueChannel),
       confidential_issues_events: cdktf.booleanToTerraform(this._confidentialIssuesEvents),
       confidential_note_events: cdktf.booleanToTerraform(this._confidentialNoteEvents),
+      id: cdktf.stringToTerraform(this._id),
       issue_channel: cdktf.stringToTerraform(this._issueChannel),
       issues_events: cdktf.booleanToTerraform(this._issuesEvents),
       merge_request_channel: cdktf.stringToTerraform(this._mergeRequestChannel),
