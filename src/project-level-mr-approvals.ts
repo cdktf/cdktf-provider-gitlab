@@ -14,6 +14,13 @@ export interface ProjectLevelMrApprovalsConfig extends cdktf.TerraformMetaArgume
   */
   readonly disableOverridingApproversPerMergeRequest?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_level_mr_approvals#id ProjectLevelMrApprovals#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Set to `true` if you want to allow merge request authors to self-approve merge requests. Authors
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_level_mr_approvals#merge_requests_author_approval ProjectLevelMrApprovals#merge_requests_author_approval}
@@ -80,6 +87,7 @@ export class ProjectLevelMrApprovals extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._disableOverridingApproversPerMergeRequest = config.disableOverridingApproversPerMergeRequest;
+    this._id = config.id;
     this._mergeRequestsAuthorApproval = config.mergeRequestsAuthorApproval;
     this._mergeRequestsDisableCommittersApproval = config.mergeRequestsDisableCommittersApproval;
     this._projectId = config.projectId;
@@ -108,8 +116,19 @@ export class ProjectLevelMrApprovals extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // merge_requests_author_approval - computed: false, optional: true, required: false
@@ -196,6 +215,7 @@ export class ProjectLevelMrApprovals extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       disable_overriding_approvers_per_merge_request: cdktf.booleanToTerraform(this._disableOverridingApproversPerMergeRequest),
+      id: cdktf.stringToTerraform(this._id),
       merge_requests_author_approval: cdktf.booleanToTerraform(this._mergeRequestsAuthorApproval),
       merge_requests_disable_committers_approval: cdktf.booleanToTerraform(this._mergeRequestsDisableCommittersApproval),
       project_id: cdktf.numberToTerraform(this._projectId),

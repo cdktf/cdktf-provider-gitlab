@@ -14,6 +14,13 @@ export interface ProjectMirrorConfig extends cdktf.TerraformMetaArguments {
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_mirror#id ProjectMirror#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Determines if divergent refs are skipped.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_mirror#keep_divergent_refs ProjectMirror#keep_divergent_refs}
@@ -74,6 +81,7 @@ export class ProjectMirror extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._enabled = config.enabled;
+    this._id = config.id;
     this._keepDivergentRefs = config.keepDivergentRefs;
     this._onlyProtectedBranches = config.onlyProtectedBranches;
     this._project = config.project;
@@ -101,8 +109,19 @@ export class ProjectMirror extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // keep_divergent_refs - computed: false, optional: true, required: false
@@ -175,6 +194,7 @@ export class ProjectMirror extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       enabled: cdktf.booleanToTerraform(this._enabled),
+      id: cdktf.stringToTerraform(this._id),
       keep_divergent_refs: cdktf.booleanToTerraform(this._keepDivergentRefs),
       only_protected_branches: cdktf.booleanToTerraform(this._onlyProtectedBranches),
       project: cdktf.stringToTerraform(this._project),

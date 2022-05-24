@@ -26,6 +26,13 @@ export interface InstanceClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly environmentScope?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/instance_cluster#id InstanceCluster#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The URL to access the Kubernetes API.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/instance_cluster#kubernetes_api_url InstanceCluster#kubernetes_api_url}
@@ -112,6 +119,7 @@ export class InstanceCluster extends cdktf.TerraformResource {
     this._domain = config.domain;
     this._enabled = config.enabled;
     this._environmentScope = config.environmentScope;
+    this._id = config.id;
     this._kubernetesApiUrl = config.kubernetesApiUrl;
     this._kubernetesAuthorizationType = config.kubernetesAuthorizationType;
     this._kubernetesCaCert = config.kubernetesCaCert;
@@ -185,8 +193,19 @@ export class InstanceCluster extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // kubernetes_api_url - computed: false, optional: false, required: true
@@ -327,6 +346,7 @@ export class InstanceCluster extends cdktf.TerraformResource {
       domain: cdktf.stringToTerraform(this._domain),
       enabled: cdktf.booleanToTerraform(this._enabled),
       environment_scope: cdktf.stringToTerraform(this._environmentScope),
+      id: cdktf.stringToTerraform(this._id),
       kubernetes_api_url: cdktf.stringToTerraform(this._kubernetesApiUrl),
       kubernetes_authorization_type: cdktf.stringToTerraform(this._kubernetesAuthorizationType),
       kubernetes_ca_cert: cdktf.stringToTerraform(this._kubernetesCaCert),

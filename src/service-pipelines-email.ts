@@ -14,6 +14,13 @@ export interface ServicePipelinesEmailConfig extends cdktf.TerraformMetaArgument
   */
   readonly branchesToBeNotified?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_pipelines_email#id ServicePipelinesEmail#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Notify only broken pipelines. Default is true.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_pipelines_email#notify_only_broken_pipelines ServicePipelinesEmail#notify_only_broken_pipelines}
@@ -68,6 +75,7 @@ export class ServicePipelinesEmail extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._branchesToBeNotified = config.branchesToBeNotified;
+    this._id = config.id;
     this._notifyOnlyBrokenPipelines = config.notifyOnlyBrokenPipelines;
     this._project = config.project;
     this._recipients = config.recipients;
@@ -94,8 +102,19 @@ export class ServicePipelinesEmail extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // notify_only_broken_pipelines - computed: false, optional: true, required: false
@@ -147,6 +166,7 @@ export class ServicePipelinesEmail extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       branches_to_be_notified: cdktf.stringToTerraform(this._branchesToBeNotified),
+      id: cdktf.stringToTerraform(this._id),
       notify_only_broken_pipelines: cdktf.booleanToTerraform(this._notifyOnlyBrokenPipelines),
       project: cdktf.stringToTerraform(this._project),
       recipients: cdktf.listMapper(cdktf.stringToTerraform)(this._recipients),

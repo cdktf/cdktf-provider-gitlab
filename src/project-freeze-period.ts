@@ -26,6 +26,13 @@ export interface ProjectFreezePeriodConfig extends cdktf.TerraformMetaArguments 
   */
   readonly freezeStart: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_freeze_period#id ProjectFreezePeriod#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The id of the project to add the schedule to.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_freeze_period#project_id ProjectFreezePeriod#project_id}
@@ -70,6 +77,7 @@ export class ProjectFreezePeriod extends cdktf.TerraformResource {
     this._cronTimezone = config.cronTimezone;
     this._freezeEnd = config.freezeEnd;
     this._freezeStart = config.freezeStart;
+    this._id = config.id;
     this._projectId = config.projectId;
   }
 
@@ -120,8 +128,19 @@ export class ProjectFreezePeriod extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // project_id - computed: false, optional: false, required: true
@@ -146,6 +165,7 @@ export class ProjectFreezePeriod extends cdktf.TerraformResource {
       cron_timezone: cdktf.stringToTerraform(this._cronTimezone),
       freeze_end: cdktf.stringToTerraform(this._freezeEnd),
       freeze_start: cdktf.stringToTerraform(this._freezeStart),
+      id: cdktf.stringToTerraform(this._id),
       project_id: cdktf.stringToTerraform(this._projectId),
     };
   }

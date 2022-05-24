@@ -20,6 +20,13 @@ export interface DataGitlabProjectsConfig extends cdktf.TerraformMetaArguments {
   */
   readonly groupId?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/projects#id DataGitlabProjects#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Include projects in subgroups of this group. Default is `false`. Needs `group_id`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/projects#include_subgroups DataGitlabProjects#include_subgroups}
@@ -536,13 +543,15 @@ export class DataGitlabProjectsProjectsPermissionsOutputReference extends cdktf.
   }
 
   // group_access - computed: true, optional: false, required: false
-  public groupAccess(key: string): number | cdktf.IResolvable {
-    return new cdktf.NumberMap(this, 'group_access').lookup(key);
+  private _groupAccess = new cdktf.NumberMap(this, "group_access");
+  public get groupAccess() {
+    return this._groupAccess;
   }
 
   // project_access - computed: true, optional: false, required: false
-  public projectAccess(key: string): number | cdktf.IResolvable {
-    return new cdktf.NumberMap(this, 'project_access').lookup(key);
+  private _projectAccess = new cdktf.NumberMap(this, "project_access");
+  public get projectAccess() {
+    return this._projectAccess;
   }
 }
 
@@ -679,8 +688,9 @@ export class DataGitlabProjectsProjectsOutputReference extends cdktf.ComplexObje
   }
 
   // _links - computed: true, optional: false, required: false
-  public links(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, '_links').lookup(key);
+  private _links = new cdktf.StringMap(this, "_links");
+  public get links() {
+    return this._links;
   }
 
   // allow_merge_on_skipped_pipeline - computed: true, optional: false, required: false
@@ -785,8 +795,9 @@ export class DataGitlabProjectsProjectsOutputReference extends cdktf.ComplexObje
   }
 
   // custom_attributes - computed: true, optional: false, required: false
-  public customAttributes(index: string, key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, `custom_attributes.${index}`).lookup(key);
+  private _customAttributes = new cdktf.StringMapList(this, "custom_attributes", false);
+  public get customAttributes() {
+    return this._customAttributes;
   }
 
   // default_branch - computed: true, optional: false, required: false
@@ -1075,8 +1086,9 @@ export class DataGitlabProjectsProjectsOutputReference extends cdktf.ComplexObje
   }
 
   // statistics - computed: true, optional: false, required: false
-  public statistics(key: string): number | cdktf.IResolvable {
-    return new cdktf.NumberMap(this, 'statistics').lookup(key);
+  private _statistics = new cdktf.NumberMap(this, "statistics");
+  public get statistics() {
+    return this._statistics;
   }
 
   // tag_list - computed: true, optional: false, required: false
@@ -1165,6 +1177,7 @@ export class DataGitlabProjects extends cdktf.TerraformDataSource {
     });
     this._archived = config.archived;
     this._groupId = config.groupId;
+    this._id = config.id;
     this._includeSubgroups = config.includeSubgroups;
     this._maxQueryablePages = config.maxQueryablePages;
     this._membership = config.membership;
@@ -1223,8 +1236,19 @@ export class DataGitlabProjects extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // include_subgroups - computed: false, optional: true, required: false
@@ -1545,6 +1569,7 @@ export class DataGitlabProjects extends cdktf.TerraformDataSource {
     return {
       archived: cdktf.booleanToTerraform(this._archived),
       group_id: cdktf.numberToTerraform(this._groupId),
+      id: cdktf.stringToTerraform(this._id),
       include_subgroups: cdktf.booleanToTerraform(this._includeSubgroups),
       max_queryable_pages: cdktf.numberToTerraform(this._maxQueryablePages),
       membership: cdktf.booleanToTerraform(this._membership),
