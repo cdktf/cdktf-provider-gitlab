@@ -1,6 +1,7 @@
 {
   "language": "typescript",
   "app": "echo noop",
+  "sendCrashReports": false,
   "terraformProviders": [
     "gitlabhq/gitlab@~> 3.14.0"
   ],
