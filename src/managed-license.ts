@@ -8,8 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface ManagedLicenseConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The approval status of the license. Valid values are: `approved`, `blacklisted`, `allowed`, `denied`. "approved" and "blacklisted" 
-				have been deprecated in favor of "allowed" and "denied"; use "allowed" and "denied" for GitLab versions 15.0 and higher. 
+  * The approval status of the license. Valid values are: `approved`, `blacklisted`, `allowed`, `denied`. "approved" and "blacklisted"
+				have been deprecated in favor of "allowed" and "denied"; use "allowed" and "denied" for GitLab versions 15.0 and higher.
 				Prior to version 15.0 and after 14.6, the values are equivalent.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/managed_license#approval_status ManagedLicense#approval_status}
@@ -62,8 +62,8 @@ export class ManagedLicense extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_managed_license',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.16.1',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

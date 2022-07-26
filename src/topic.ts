@@ -44,6 +44,12 @@ export interface TopicConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/topic#soft_destroy Topic#soft_destroy}
   */
   readonly softDestroy?: boolean | cdktf.IResolvable;
+  /**
+  * The topic's description. Requires at least GitLab 15.0 for which it's a required argument.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/topic#title Topic#title}
+  */
+  readonly title?: string;
 }
 
 /**
@@ -72,8 +78,8 @@ export class Topic extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_topic',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.16.1',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -86,6 +92,7 @@ export class Topic extends cdktf.TerraformResource {
     this._id = config.id;
     this._name = config.name;
     this._softDestroy = config.softDestroy;
+    this._title = config.title;
   }
 
   // ==========
@@ -190,6 +197,22 @@ export class Topic extends cdktf.TerraformResource {
     return this._softDestroy;
   }
 
+  // title - computed: false, optional: true, required: false
+  private _title?: string; 
+  public get title() {
+    return this.getStringAttribute('title');
+  }
+  public set title(value: string) {
+    this._title = value;
+  }
+  public resetTitle() {
+    this._title = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get titleInput() {
+    return this._title;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -202,6 +225,7 @@ export class Topic extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       soft_destroy: cdktf.booleanToTerraform(this._softDestroy),
+      title: cdktf.stringToTerraform(this._title),
     };
   }
 }

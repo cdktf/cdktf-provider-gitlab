@@ -1418,6 +1418,1180 @@ public readonly tfResourceType: string;
 
 ---
 
+### ClusterAgent <a name="ClusterAgent" id="@cdktf/provider-gitlab.ClusterAgent"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent gitlab_cluster_agent}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.ClusterAgent.Initializer"></a>
+
+```typescript
+import { ClusterAgent } from '@cdktf/provider-gitlab'
+
+new ClusterAgent(scope: Construct, id: string, config: ClusterAgentConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-gitlab.ClusterAgentConfig">ClusterAgentConfig</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-gitlab.ClusterAgent.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.ClusterAgent.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-gitlab.ClusterAgent.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktf/provider-gitlab.ClusterAgentConfig">ClusterAgentConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.resetId">resetId</a></code> | *No description.* |
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-gitlab.ClusterAgent.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `addOverride` <a name="addOverride" id="@cdktf/provider-gitlab.ClusterAgent.addOverride"></a>
+
+```typescript
+public addOverride(path: string, value: any): void
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-gitlab.ClusterAgent.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-gitlab.ClusterAgent.addOverride.parameter.value"></a>
+
+- *Type:* any
+
+---
+
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-gitlab.ClusterAgent.overrideLogicalId"></a>
+
+```typescript
+public overrideLogicalId(newLogicalId: string): void
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-gitlab.ClusterAgent.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-gitlab.ClusterAgent.resetOverrideLogicalId"></a>
+
+```typescript
+public resetOverrideLogicalId(): void
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-gitlab.ClusterAgent.toMetadata"></a>
+
+```typescript
+public toMetadata(): any
+```
+
+##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-gitlab.ClusterAgent.toTerraform"></a>
+
+```typescript
+public toTerraform(): any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-gitlab.ClusterAgent.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ClusterAgent.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-gitlab.ClusterAgent.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ClusterAgent.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-gitlab.ClusterAgent.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ClusterAgent.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-gitlab.ClusterAgent.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ClusterAgent.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-gitlab.ClusterAgent.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ClusterAgent.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-gitlab.ClusterAgent.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ClusterAgent.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-gitlab.ClusterAgent.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ClusterAgent.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-gitlab.ClusterAgent.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ClusterAgent.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-gitlab.ClusterAgent.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ClusterAgent.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-gitlab.ClusterAgent.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ClusterAgent.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `resetId` <a name="resetId" id="@cdktf/provider-gitlab.ClusterAgent.resetId"></a>
+
+```typescript
+public resetId(): void
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-gitlab.ClusterAgent.isConstruct"></a>
+
+```typescript
+import { ClusterAgent } from '@cdktf/provider-gitlab'
+
+ClusterAgent.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-gitlab.ClusterAgent.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.agentId">agentId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.createdByUserId">createdByUserId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.project">project</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-gitlab.ClusterAgent.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-gitlab.ClusterAgent.property.cdktfStack"></a>
+
+```typescript
+public readonly cdktfStack: TerraformStack;
+```
+
+- *Type:* cdktf.TerraformStack
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-gitlab.ClusterAgent.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-gitlab.ClusterAgent.property.friendlyUniqueId"></a>
+
+```typescript
+public readonly friendlyUniqueId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-gitlab.ClusterAgent.property.terraformMetaArguments"></a>
+
+```typescript
+public readonly terraformMetaArguments: {[ key: string ]: any};
+```
+
+- *Type:* {[ key: string ]: any}
+
+---
+
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-gitlab.ClusterAgent.property.terraformResourceType"></a>
+
+```typescript
+public readonly terraformResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-gitlab.ClusterAgent.property.terraformGeneratorMetadata"></a>
+
+```typescript
+public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
+```
+
+- *Type:* cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ClusterAgent.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-gitlab.ClusterAgent.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ClusterAgent.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.ClusterAgent.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `agentId`<sup>Required</sup> <a name="agentId" id="@cdktf/provider-gitlab.ClusterAgent.property.agentId"></a>
+
+```typescript
+public readonly agentId: number;
+```
+
+- *Type:* number
+
+---
+
+##### `createdAt`<sup>Required</sup> <a name="createdAt" id="@cdktf/provider-gitlab.ClusterAgent.property.createdAt"></a>
+
+```typescript
+public readonly createdAt: string;
+```
+
+- *Type:* string
+
+---
+
+##### `createdByUserId`<sup>Required</sup> <a name="createdByUserId" id="@cdktf/provider-gitlab.ClusterAgent.property.createdByUserId"></a>
+
+```typescript
+public readonly createdByUserId: number;
+```
+
+- *Type:* number
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-gitlab.ClusterAgent.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-gitlab.ClusterAgent.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktf/provider-gitlab.ClusterAgent.property.projectInput"></a>
+
+```typescript
+public readonly projectInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.ClusterAgent.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-gitlab.ClusterAgent.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.ClusterAgent.property.project"></a>
+
+```typescript
+public readonly project: string;
+```
+
+- *Type:* string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-gitlab.ClusterAgent.property.tfResourceType"></a>
+
+```typescript
+public readonly tfResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+### ClusterAgentToken <a name="ClusterAgentToken" id="@cdktf/provider-gitlab.ClusterAgentToken"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent_token gitlab_cluster_agent_token}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.ClusterAgentToken.Initializer"></a>
+
+```typescript
+import { ClusterAgentToken } from '@cdktf/provider-gitlab'
+
+new ClusterAgentToken(scope: Construct, id: string, config: ClusterAgentTokenConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-gitlab.ClusterAgentTokenConfig">ClusterAgentTokenConfig</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-gitlab.ClusterAgentToken.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.ClusterAgentToken.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-gitlab.ClusterAgentToken.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktf/provider-gitlab.ClusterAgentTokenConfig">ClusterAgentTokenConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.resetId">resetId</a></code> | *No description.* |
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-gitlab.ClusterAgentToken.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `addOverride` <a name="addOverride" id="@cdktf/provider-gitlab.ClusterAgentToken.addOverride"></a>
+
+```typescript
+public addOverride(path: string, value: any): void
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-gitlab.ClusterAgentToken.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-gitlab.ClusterAgentToken.addOverride.parameter.value"></a>
+
+- *Type:* any
+
+---
+
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-gitlab.ClusterAgentToken.overrideLogicalId"></a>
+
+```typescript
+public overrideLogicalId(newLogicalId: string): void
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-gitlab.ClusterAgentToken.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-gitlab.ClusterAgentToken.resetOverrideLogicalId"></a>
+
+```typescript
+public resetOverrideLogicalId(): void
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-gitlab.ClusterAgentToken.toMetadata"></a>
+
+```typescript
+public toMetadata(): any
+```
+
+##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-gitlab.ClusterAgentToken.toTerraform"></a>
+
+```typescript
+public toTerraform(): any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-gitlab.ClusterAgentToken.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ClusterAgentToken.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-gitlab.ClusterAgentToken.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ClusterAgentToken.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-gitlab.ClusterAgentToken.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ClusterAgentToken.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-gitlab.ClusterAgentToken.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ClusterAgentToken.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-gitlab.ClusterAgentToken.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ClusterAgentToken.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-gitlab.ClusterAgentToken.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ClusterAgentToken.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-gitlab.ClusterAgentToken.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ClusterAgentToken.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-gitlab.ClusterAgentToken.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ClusterAgentToken.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-gitlab.ClusterAgentToken.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ClusterAgentToken.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-gitlab.ClusterAgentToken.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ClusterAgentToken.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `resetDescription` <a name="resetDescription" id="@cdktf/provider-gitlab.ClusterAgentToken.resetDescription"></a>
+
+```typescript
+public resetDescription(): void
+```
+
+##### `resetId` <a name="resetId" id="@cdktf/provider-gitlab.ClusterAgentToken.resetId"></a>
+
+```typescript
+public resetId(): void
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-gitlab.ClusterAgentToken.isConstruct"></a>
+
+```typescript
+import { ClusterAgentToken } from '@cdktf/provider-gitlab'
+
+ClusterAgentToken.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-gitlab.ClusterAgentToken.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.createdByUserId">createdByUserId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.lastUsedAt">lastUsedAt</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.status">status</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.token">token</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.tokenId">tokenId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.agentIdInput">agentIdInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.agentId">agentId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.project">project</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-gitlab.ClusterAgentToken.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-gitlab.ClusterAgentToken.property.cdktfStack"></a>
+
+```typescript
+public readonly cdktfStack: TerraformStack;
+```
+
+- *Type:* cdktf.TerraformStack
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-gitlab.ClusterAgentToken.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-gitlab.ClusterAgentToken.property.friendlyUniqueId"></a>
+
+```typescript
+public readonly friendlyUniqueId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-gitlab.ClusterAgentToken.property.terraformMetaArguments"></a>
+
+```typescript
+public readonly terraformMetaArguments: {[ key: string ]: any};
+```
+
+- *Type:* {[ key: string ]: any}
+
+---
+
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-gitlab.ClusterAgentToken.property.terraformResourceType"></a>
+
+```typescript
+public readonly terraformResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-gitlab.ClusterAgentToken.property.terraformGeneratorMetadata"></a>
+
+```typescript
+public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
+```
+
+- *Type:* cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ClusterAgentToken.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-gitlab.ClusterAgentToken.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ClusterAgentToken.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.ClusterAgentToken.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `createdAt`<sup>Required</sup> <a name="createdAt" id="@cdktf/provider-gitlab.ClusterAgentToken.property.createdAt"></a>
+
+```typescript
+public readonly createdAt: string;
+```
+
+- *Type:* string
+
+---
+
+##### `createdByUserId`<sup>Required</sup> <a name="createdByUserId" id="@cdktf/provider-gitlab.ClusterAgentToken.property.createdByUserId"></a>
+
+```typescript
+public readonly createdByUserId: number;
+```
+
+- *Type:* number
+
+---
+
+##### `lastUsedAt`<sup>Required</sup> <a name="lastUsedAt" id="@cdktf/provider-gitlab.ClusterAgentToken.property.lastUsedAt"></a>
+
+```typescript
+public readonly lastUsedAt: string;
+```
+
+- *Type:* string
+
+---
+
+##### `status`<sup>Required</sup> <a name="status" id="@cdktf/provider-gitlab.ClusterAgentToken.property.status"></a>
+
+```typescript
+public readonly status: string;
+```
+
+- *Type:* string
+
+---
+
+##### `token`<sup>Required</sup> <a name="token" id="@cdktf/provider-gitlab.ClusterAgentToken.property.token"></a>
+
+```typescript
+public readonly token: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tokenId`<sup>Required</sup> <a name="tokenId" id="@cdktf/provider-gitlab.ClusterAgentToken.property.tokenId"></a>
+
+```typescript
+public readonly tokenId: number;
+```
+
+- *Type:* number
+
+---
+
+##### `agentIdInput`<sup>Optional</sup> <a name="agentIdInput" id="@cdktf/provider-gitlab.ClusterAgentToken.property.agentIdInput"></a>
+
+```typescript
+public readonly agentIdInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-gitlab.ClusterAgentToken.property.descriptionInput"></a>
+
+```typescript
+public readonly descriptionInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-gitlab.ClusterAgentToken.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-gitlab.ClusterAgentToken.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktf/provider-gitlab.ClusterAgentToken.property.projectInput"></a>
+
+```typescript
+public readonly projectInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `agentId`<sup>Required</sup> <a name="agentId" id="@cdktf/provider-gitlab.ClusterAgentToken.property.agentId"></a>
+
+```typescript
+public readonly agentId: number;
+```
+
+- *Type:* number
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-gitlab.ClusterAgentToken.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* string
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.ClusterAgentToken.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-gitlab.ClusterAgentToken.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.ClusterAgentToken.property.project"></a>
+
+```typescript
+public readonly project: string;
+```
+
+- *Type:* string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-gitlab.ClusterAgentToken.property.tfResourceType"></a>
+
+```typescript
+public readonly tfResourceType: string;
+```
+
+- *Type:* string
+
+---
+
 ### DataGitlabBranch <a name="DataGitlabBranch" id="@cdktf/provider-gitlab.DataGitlabBranch"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/branch gitlab_branch}.
@@ -2009,6 +3183,1590 @@ public readonly project: string;
 ---
 
 ##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-gitlab.DataGitlabBranch.property.tfResourceType"></a>
+
+```typescript
+public readonly tfResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+### DataGitlabClusterAgent <a name="DataGitlabClusterAgent" id="@cdktf/provider-gitlab.DataGitlabClusterAgent"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/cluster_agent gitlab_cluster_agent}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.Initializer"></a>
+
+```typescript
+import { DataGitlabClusterAgent } from '@cdktf/provider-gitlab'
+
+new DataGitlabClusterAgent(scope: Construct, id: string, config: DataGitlabClusterAgentConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentConfig">DataGitlabClusterAgentConfig</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentConfig">DataGitlabClusterAgentConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.resetId">resetId</a></code> | *No description.* |
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `addOverride` <a name="addOverride" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.addOverride"></a>
+
+```typescript
+public addOverride(path: string, value: any): void
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.addOverride.parameter.value"></a>
+
+- *Type:* any
+
+---
+
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.overrideLogicalId"></a>
+
+```typescript
+public overrideLogicalId(newLogicalId: string): void
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.resetOverrideLogicalId"></a>
+
+```typescript
+public resetOverrideLogicalId(): void
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.toMetadata"></a>
+
+```typescript
+public toMetadata(): any
+```
+
+##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.toTerraform"></a>
+
+```typescript
+public toTerraform(): any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `resetId` <a name="resetId" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.resetId"></a>
+
+```typescript
+public resetId(): void
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.isConstruct"></a>
+
+```typescript
+import { DataGitlabClusterAgent } from '@cdktf/provider-gitlab'
+
+DataGitlabClusterAgent.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.property.createdByUserId">createdByUserId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.property.agentIdInput">agentIdInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.property.agentId">agentId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.property.project">project</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.property.cdktfStack"></a>
+
+```typescript
+public readonly cdktfStack: TerraformStack;
+```
+
+- *Type:* cdktf.TerraformStack
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.property.friendlyUniqueId"></a>
+
+```typescript
+public readonly friendlyUniqueId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.property.terraformMetaArguments"></a>
+
+```typescript
+public readonly terraformMetaArguments: {[ key: string ]: any};
+```
+
+- *Type:* {[ key: string ]: any}
+
+---
+
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.property.terraformResourceType"></a>
+
+```typescript
+public readonly terraformResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.property.terraformGeneratorMetadata"></a>
+
+```typescript
+public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
+```
+
+- *Type:* cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `createdAt`<sup>Required</sup> <a name="createdAt" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.property.createdAt"></a>
+
+```typescript
+public readonly createdAt: string;
+```
+
+- *Type:* string
+
+---
+
+##### `createdByUserId`<sup>Required</sup> <a name="createdByUserId" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.property.createdByUserId"></a>
+
+```typescript
+public readonly createdByUserId: number;
+```
+
+- *Type:* number
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `agentIdInput`<sup>Optional</sup> <a name="agentIdInput" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.property.agentIdInput"></a>
+
+```typescript
+public readonly agentIdInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.property.projectInput"></a>
+
+```typescript
+public readonly projectInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `agentId`<sup>Required</sup> <a name="agentId" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.property.agentId"></a>
+
+```typescript
+public readonly agentId: number;
+```
+
+- *Type:* number
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.property.project"></a>
+
+```typescript
+public readonly project: string;
+```
+
+- *Type:* string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.property.tfResourceType"></a>
+
+```typescript
+public readonly tfResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+### DataGitlabClusterAgents <a name="DataGitlabClusterAgents" id="@cdktf/provider-gitlab.DataGitlabClusterAgents"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/cluster_agents gitlab_cluster_agents}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.Initializer"></a>
+
+```typescript
+import { DataGitlabClusterAgents } from '@cdktf/provider-gitlab'
+
+new DataGitlabClusterAgents(scope: Construct, id: string, config: DataGitlabClusterAgentsConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsConfig">DataGitlabClusterAgentsConfig</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsConfig">DataGitlabClusterAgentsConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.resetId">resetId</a></code> | *No description.* |
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `addOverride` <a name="addOverride" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.addOverride"></a>
+
+```typescript
+public addOverride(path: string, value: any): void
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.addOverride.parameter.value"></a>
+
+- *Type:* any
+
+---
+
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.overrideLogicalId"></a>
+
+```typescript
+public overrideLogicalId(newLogicalId: string): void
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.resetOverrideLogicalId"></a>
+
+```typescript
+public resetOverrideLogicalId(): void
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.toMetadata"></a>
+
+```typescript
+public toMetadata(): any
+```
+
+##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.toTerraform"></a>
+
+```typescript
+public toTerraform(): any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `resetId` <a name="resetId" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.resetId"></a>
+
+```typescript
+public resetId(): void
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.isConstruct"></a>
+
+```typescript
+import { DataGitlabClusterAgents } from '@cdktf/provider-gitlab'
+
+DataGitlabClusterAgents.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.property.clusterAgents">clusterAgents</a></code> | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsList">DataGitlabClusterAgentsClusterAgentsList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.property.project">project</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.property.cdktfStack"></a>
+
+```typescript
+public readonly cdktfStack: TerraformStack;
+```
+
+- *Type:* cdktf.TerraformStack
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.property.friendlyUniqueId"></a>
+
+```typescript
+public readonly friendlyUniqueId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.property.terraformMetaArguments"></a>
+
+```typescript
+public readonly terraformMetaArguments: {[ key: string ]: any};
+```
+
+- *Type:* {[ key: string ]: any}
+
+---
+
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.property.terraformResourceType"></a>
+
+```typescript
+public readonly terraformResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.property.terraformGeneratorMetadata"></a>
+
+```typescript
+public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
+```
+
+- *Type:* cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `clusterAgents`<sup>Required</sup> <a name="clusterAgents" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.property.clusterAgents"></a>
+
+```typescript
+public readonly clusterAgents: DataGitlabClusterAgentsClusterAgentsList;
+```
+
+- *Type:* <a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsList">DataGitlabClusterAgentsClusterAgentsList</a>
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.property.projectInput"></a>
+
+```typescript
+public readonly projectInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.property.project"></a>
+
+```typescript
+public readonly project: string;
+```
+
+- *Type:* string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.property.tfResourceType"></a>
+
+```typescript
+public readonly tfResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+### DataGitlabCurrentUser <a name="DataGitlabCurrentUser" id="@cdktf/provider-gitlab.DataGitlabCurrentUser"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/current_user gitlab_current_user}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.Initializer"></a>
+
+```typescript
+import { DataGitlabCurrentUser } from '@cdktf/provider-gitlab'
+
+new DataGitlabCurrentUser(scope: Construct, id: string, config?: DataGitlabCurrentUserConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUserConfig">DataGitlabCurrentUserConfig</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktf/provider-gitlab.DataGitlabCurrentUserConfig">DataGitlabCurrentUserConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `addOverride` <a name="addOverride" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.addOverride"></a>
+
+```typescript
+public addOverride(path: string, value: any): void
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.addOverride.parameter.value"></a>
+
+- *Type:* any
+
+---
+
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.overrideLogicalId"></a>
+
+```typescript
+public overrideLogicalId(newLogicalId: string): void
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.resetOverrideLogicalId"></a>
+
+```typescript
+public resetOverrideLogicalId(): void
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.toMetadata"></a>
+
+```typescript
+public toMetadata(): any
+```
+
+##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.toTerraform"></a>
+
+```typescript
+public toTerraform(): any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.isConstruct"></a>
+
+```typescript
+import { DataGitlabCurrentUser } from '@cdktf/provider-gitlab'
+
+DataGitlabCurrentUser.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.property.bot">bot</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.property.globalId">globalId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.property.globalNamespaceId">globalNamespaceId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.property.groupCount">groupCount</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.property.namespaceId">namespaceId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.property.publicEmail">publicEmail</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.property.username">username</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.property.cdktfStack"></a>
+
+```typescript
+public readonly cdktfStack: TerraformStack;
+```
+
+- *Type:* cdktf.TerraformStack
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.property.friendlyUniqueId"></a>
+
+```typescript
+public readonly friendlyUniqueId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.property.terraformMetaArguments"></a>
+
+```typescript
+public readonly terraformMetaArguments: {[ key: string ]: any};
+```
+
+- *Type:* {[ key: string ]: any}
+
+---
+
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.property.terraformResourceType"></a>
+
+```typescript
+public readonly terraformResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.property.terraformGeneratorMetadata"></a>
+
+```typescript
+public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
+```
+
+- *Type:* cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `bot`<sup>Required</sup> <a name="bot" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.property.bot"></a>
+
+```typescript
+public readonly bot: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `globalId`<sup>Required</sup> <a name="globalId" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.property.globalId"></a>
+
+```typescript
+public readonly globalId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `globalNamespaceId`<sup>Required</sup> <a name="globalNamespaceId" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.property.globalNamespaceId"></a>
+
+```typescript
+public readonly globalNamespaceId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `groupCount`<sup>Required</sup> <a name="groupCount" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.property.groupCount"></a>
+
+```typescript
+public readonly groupCount: number;
+```
+
+- *Type:* number
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `namespaceId`<sup>Required</sup> <a name="namespaceId" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.property.namespaceId"></a>
+
+```typescript
+public readonly namespaceId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `publicEmail`<sup>Required</sup> <a name="publicEmail" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.property.publicEmail"></a>
+
+```typescript
+public readonly publicEmail: string;
+```
+
+- *Type:* string
+
+---
+
+##### `username`<sup>Required</sup> <a name="username" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.property.username"></a>
+
+```typescript
+public readonly username: string;
+```
+
+- *Type:* string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -5942,6 +8700,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProject.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProject.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProject.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProject.resetCiDefaultGitDepth">resetCiDefaultGitDepth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProject.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProject.resetPathWithNamespace">resetPathWithNamespace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProject.resetPublicBuilds">resetPublicBuilds</a></code> | *No description.* |
@@ -6132,6 +8891,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetCiDefaultGitDepth` <a name="resetCiDefaultGitDepth" id="@cdktf/provider-gitlab.DataGitlabProject.resetCiDefaultGitDepth"></a>
+
+```typescript
+public resetCiDefaultGitDepth(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-gitlab.DataGitlabProject.resetId"></a>
 
 ```typescript
@@ -6254,9 +9019,11 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProject.property.webUrl">webUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProject.property.wikiAccessLevel">wikiAccessLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProject.property.wikiEnabled">wikiEnabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProject.property.ciDefaultGitDepthInput">ciDefaultGitDepthInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProject.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProject.property.pathWithNamespaceInput">pathWithNamespaceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProject.property.publicBuildsInput">publicBuildsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProject.property.ciDefaultGitDepth">ciDefaultGitDepth</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProject.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProject.property.pathWithNamespace">pathWithNamespace</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProject.property.publicBuilds">publicBuilds</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -6865,6 +9632,16 @@ public readonly wikiEnabled: IResolvable;
 
 ---
 
+##### `ciDefaultGitDepthInput`<sup>Optional</sup> <a name="ciDefaultGitDepthInput" id="@cdktf/provider-gitlab.DataGitlabProject.property.ciDefaultGitDepthInput"></a>
+
+```typescript
+public readonly ciDefaultGitDepthInput: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-gitlab.DataGitlabProject.property.idInput"></a>
 
 ```typescript
@@ -6892,6 +9669,16 @@ public readonly publicBuildsInput: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `ciDefaultGitDepth`<sup>Required</sup> <a name="ciDefaultGitDepth" id="@cdktf/provider-gitlab.DataGitlabProject.property.ciDefaultGitDepth"></a>
+
+```typescript
+public readonly ciDefaultGitDepth: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -8367,7 +11154,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssues.property.notAssigneeIdInput">notAssigneeIdInput</a></code> | <code>number[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssues.property.notAuthorIdInput">notAuthorIdInput</a></code> | <code>number[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssues.property.notLabelsInput">notLabelsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssues.property.notMilestoneInput">notMilestoneInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssues.property.notMilestoneInput">notMilestoneInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssues.property.notMyReactionEmojiInput">notMyReactionEmojiInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssues.property.orderByInput">orderByInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssues.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
@@ -8394,7 +11181,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssues.property.notAssigneeId">notAssigneeId</a></code> | <code>number[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssues.property.notAuthorId">notAuthorId</a></code> | <code>number[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssues.property.notLabels">notLabels</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssues.property.notMilestone">notMilestone</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssues.property.notMilestone">notMilestone</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssues.property.notMyReactionEmoji">notMyReactionEmoji</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssues.property.orderBy">orderBy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssues.property.project">project</a></code> | <code>string</code> | *No description.* |
@@ -8693,10 +11480,10 @@ public readonly notLabelsInput: string[];
 ##### `notMilestoneInput`<sup>Optional</sup> <a name="notMilestoneInput" id="@cdktf/provider-gitlab.DataGitlabProjectIssues.property.notMilestoneInput"></a>
 
 ```typescript
-public readonly notMilestoneInput: string[];
+public readonly notMilestoneInput: string;
 ```
 
-- *Type:* string[]
+- *Type:* string
 
 ---
 
@@ -8963,10 +11750,10 @@ public readonly notLabels: string[];
 ##### `notMilestone`<sup>Required</sup> <a name="notMilestone" id="@cdktf/provider-gitlab.DataGitlabProjectIssues.property.notMilestone"></a>
 
 ```typescript
-public readonly notMilestone: string[];
+public readonly notMilestone: string;
 ```
 
-- *Type:* string[]
+- *Type:* string
 
 ---
 
@@ -9079,6 +11866,1285 @@ public readonly withLabelsDetails: boolean | IResolvable;
 ---
 
 ##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-gitlab.DataGitlabProjectIssues.property.tfResourceType"></a>
+
+```typescript
+public readonly tfResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+### DataGitlabProjectMilestone <a name="DataGitlabProjectMilestone" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestone gitlab_project_milestone}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.Initializer"></a>
+
+```typescript
+import { DataGitlabProjectMilestone } from '@cdktf/provider-gitlab'
+
+new DataGitlabProjectMilestone(scope: Construct, id: string, config: DataGitlabProjectMilestoneConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig">DataGitlabProjectMilestoneConfig</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig">DataGitlabProjectMilestoneConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.resetId">resetId</a></code> | *No description.* |
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `addOverride` <a name="addOverride" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.addOverride"></a>
+
+```typescript
+public addOverride(path: string, value: any): void
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.addOverride.parameter.value"></a>
+
+- *Type:* any
+
+---
+
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.overrideLogicalId"></a>
+
+```typescript
+public overrideLogicalId(newLogicalId: string): void
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.resetOverrideLogicalId"></a>
+
+```typescript
+public resetOverrideLogicalId(): void
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.toMetadata"></a>
+
+```typescript
+public toMetadata(): any
+```
+
+##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.toTerraform"></a>
+
+```typescript
+public toTerraform(): any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `resetId` <a name="resetId" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.resetId"></a>
+
+```typescript
+public resetId(): void
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.isConstruct"></a>
+
+```typescript
+import { DataGitlabProjectMilestone } from '@cdktf/provider-gitlab'
+
+DataGitlabProjectMilestone.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.dueDate">dueDate</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.expired">expired</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.iid">iid</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.projectId">projectId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.startDate">startDate</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.state">state</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.title">title</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.updatedAt">updatedAt</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.webUrl">webUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.milestoneIdInput">milestoneIdInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.milestoneId">milestoneId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.project">project</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.cdktfStack"></a>
+
+```typescript
+public readonly cdktfStack: TerraformStack;
+```
+
+- *Type:* cdktf.TerraformStack
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.friendlyUniqueId"></a>
+
+```typescript
+public readonly friendlyUniqueId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.terraformMetaArguments"></a>
+
+```typescript
+public readonly terraformMetaArguments: {[ key: string ]: any};
+```
+
+- *Type:* {[ key: string ]: any}
+
+---
+
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.terraformResourceType"></a>
+
+```typescript
+public readonly terraformResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.terraformGeneratorMetadata"></a>
+
+```typescript
+public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
+```
+
+- *Type:* cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `createdAt`<sup>Required</sup> <a name="createdAt" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.createdAt"></a>
+
+```typescript
+public readonly createdAt: string;
+```
+
+- *Type:* string
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* string
+
+---
+
+##### `dueDate`<sup>Required</sup> <a name="dueDate" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.dueDate"></a>
+
+```typescript
+public readonly dueDate: string;
+```
+
+- *Type:* string
+
+---
+
+##### `expired`<sup>Required</sup> <a name="expired" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.expired"></a>
+
+```typescript
+public readonly expired: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `iid`<sup>Required</sup> <a name="iid" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.iid"></a>
+
+```typescript
+public readonly iid: number;
+```
+
+- *Type:* number
+
+---
+
+##### `projectId`<sup>Required</sup> <a name="projectId" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.projectId"></a>
+
+```typescript
+public readonly projectId: number;
+```
+
+- *Type:* number
+
+---
+
+##### `startDate`<sup>Required</sup> <a name="startDate" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.startDate"></a>
+
+```typescript
+public readonly startDate: string;
+```
+
+- *Type:* string
+
+---
+
+##### `state`<sup>Required</sup> <a name="state" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.state"></a>
+
+```typescript
+public readonly state: string;
+```
+
+- *Type:* string
+
+---
+
+##### `title`<sup>Required</sup> <a name="title" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.title"></a>
+
+```typescript
+public readonly title: string;
+```
+
+- *Type:* string
+
+---
+
+##### `updatedAt`<sup>Required</sup> <a name="updatedAt" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.updatedAt"></a>
+
+```typescript
+public readonly updatedAt: string;
+```
+
+- *Type:* string
+
+---
+
+##### `webUrl`<sup>Required</sup> <a name="webUrl" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.webUrl"></a>
+
+```typescript
+public readonly webUrl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `milestoneIdInput`<sup>Optional</sup> <a name="milestoneIdInput" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.milestoneIdInput"></a>
+
+```typescript
+public readonly milestoneIdInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.projectInput"></a>
+
+```typescript
+public readonly projectInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `milestoneId`<sup>Required</sup> <a name="milestoneId" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.milestoneId"></a>
+
+```typescript
+public readonly milestoneId: number;
+```
+
+- *Type:* number
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.project"></a>
+
+```typescript
+public readonly project: string;
+```
+
+- *Type:* string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.tfResourceType"></a>
+
+```typescript
+public readonly tfResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+### DataGitlabProjectMilestones <a name="DataGitlabProjectMilestones" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestones gitlab_project_milestones}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.Initializer"></a>
+
+```typescript
+import { DataGitlabProjectMilestones } from '@cdktf/provider-gitlab'
+
+new DataGitlabProjectMilestones(scope: Construct, id: string, config: DataGitlabProjectMilestonesConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig">DataGitlabProjectMilestonesConfig</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig">DataGitlabProjectMilestonesConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.resetIids">resetIids</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.resetIncludeParentMilestones">resetIncludeParentMilestones</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.resetSearch">resetSearch</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.resetState">resetState</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.resetTitle">resetTitle</a></code> | *No description.* |
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `addOverride` <a name="addOverride" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.addOverride"></a>
+
+```typescript
+public addOverride(path: string, value: any): void
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.addOverride.parameter.value"></a>
+
+- *Type:* any
+
+---
+
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.overrideLogicalId"></a>
+
+```typescript
+public overrideLogicalId(newLogicalId: string): void
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.resetOverrideLogicalId"></a>
+
+```typescript
+public resetOverrideLogicalId(): void
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.toMetadata"></a>
+
+```typescript
+public toMetadata(): any
+```
+
+##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.toTerraform"></a>
+
+```typescript
+public toTerraform(): any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `resetId` <a name="resetId" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.resetId"></a>
+
+```typescript
+public resetId(): void
+```
+
+##### `resetIids` <a name="resetIids" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.resetIids"></a>
+
+```typescript
+public resetIids(): void
+```
+
+##### `resetIncludeParentMilestones` <a name="resetIncludeParentMilestones" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.resetIncludeParentMilestones"></a>
+
+```typescript
+public resetIncludeParentMilestones(): void
+```
+
+##### `resetSearch` <a name="resetSearch" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.resetSearch"></a>
+
+```typescript
+public resetSearch(): void
+```
+
+##### `resetState` <a name="resetState" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.resetState"></a>
+
+```typescript
+public resetState(): void
+```
+
+##### `resetTitle` <a name="resetTitle" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.resetTitle"></a>
+
+```typescript
+public resetTitle(): void
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.isConstruct"></a>
+
+```typescript
+import { DataGitlabProjectMilestones } from '@cdktf/provider-gitlab'
+
+DataGitlabProjectMilestones.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.milestones">milestones</a></code> | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesList">DataGitlabProjectMilestonesMilestonesList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.iidsInput">iidsInput</a></code> | <code>number[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.includeParentMilestonesInput">includeParentMilestonesInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.searchInput">searchInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.stateInput">stateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.titleInput">titleInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.iids">iids</a></code> | <code>number[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.includeParentMilestones">includeParentMilestones</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.project">project</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.search">search</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.state">state</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.title">title</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.cdktfStack"></a>
+
+```typescript
+public readonly cdktfStack: TerraformStack;
+```
+
+- *Type:* cdktf.TerraformStack
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.friendlyUniqueId"></a>
+
+```typescript
+public readonly friendlyUniqueId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.terraformMetaArguments"></a>
+
+```typescript
+public readonly terraformMetaArguments: {[ key: string ]: any};
+```
+
+- *Type:* {[ key: string ]: any}
+
+---
+
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.terraformResourceType"></a>
+
+```typescript
+public readonly terraformResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.terraformGeneratorMetadata"></a>
+
+```typescript
+public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
+```
+
+- *Type:* cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `milestones`<sup>Required</sup> <a name="milestones" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.milestones"></a>
+
+```typescript
+public readonly milestones: DataGitlabProjectMilestonesMilestonesList;
+```
+
+- *Type:* <a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesList">DataGitlabProjectMilestonesMilestonesList</a>
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `iidsInput`<sup>Optional</sup> <a name="iidsInput" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.iidsInput"></a>
+
+```typescript
+public readonly iidsInput: number[];
+```
+
+- *Type:* number[]
+
+---
+
+##### `includeParentMilestonesInput`<sup>Optional</sup> <a name="includeParentMilestonesInput" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.includeParentMilestonesInput"></a>
+
+```typescript
+public readonly includeParentMilestonesInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.projectInput"></a>
+
+```typescript
+public readonly projectInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `searchInput`<sup>Optional</sup> <a name="searchInput" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.searchInput"></a>
+
+```typescript
+public readonly searchInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `stateInput`<sup>Optional</sup> <a name="stateInput" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.stateInput"></a>
+
+```typescript
+public readonly stateInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `titleInput`<sup>Optional</sup> <a name="titleInput" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.titleInput"></a>
+
+```typescript
+public readonly titleInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `iids`<sup>Required</sup> <a name="iids" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.iids"></a>
+
+```typescript
+public readonly iids: number[];
+```
+
+- *Type:* number[]
+
+---
+
+##### `includeParentMilestones`<sup>Required</sup> <a name="includeParentMilestones" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.includeParentMilestones"></a>
+
+```typescript
+public readonly includeParentMilestones: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.project"></a>
+
+```typescript
+public readonly project: string;
+```
+
+- *Type:* string
+
+---
+
+##### `search`<sup>Required</sup> <a name="search" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.search"></a>
+
+```typescript
+public readonly search: string;
+```
+
+- *Type:* string
+
+---
+
+##### `state`<sup>Required</sup> <a name="state" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.state"></a>
+
+```typescript
+public readonly state: string;
+```
+
+- *Type:* string
+
+---
+
+##### `title`<sup>Required</sup> <a name="title" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.title"></a>
+
+```typescript
+public readonly title: string;
+```
+
+- *Type:* string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -13476,6 +17542,1129 @@ public readonly project: string;
 ---
 
 ##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-gitlab.DataGitlabProjectVariables.property.tfResourceType"></a>
+
+```typescript
+public readonly tfResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+### DataGitlabReleaseLink <a name="DataGitlabReleaseLink" id="@cdktf/provider-gitlab.DataGitlabReleaseLink"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/release_link gitlab_release_link}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.Initializer"></a>
+
+```typescript
+import { DataGitlabReleaseLink } from '@cdktf/provider-gitlab'
+
+new DataGitlabReleaseLink(scope: Construct, id: string, config: DataGitlabReleaseLinkConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig">DataGitlabReleaseLinkConfig</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig">DataGitlabReleaseLinkConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.resetId">resetId</a></code> | *No description.* |
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `addOverride` <a name="addOverride" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.addOverride"></a>
+
+```typescript
+public addOverride(path: string, value: any): void
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.addOverride.parameter.value"></a>
+
+- *Type:* any
+
+---
+
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.overrideLogicalId"></a>
+
+```typescript
+public overrideLogicalId(newLogicalId: string): void
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.resetOverrideLogicalId"></a>
+
+```typescript
+public resetOverrideLogicalId(): void
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.toMetadata"></a>
+
+```typescript
+public toMetadata(): any
+```
+
+##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.toTerraform"></a>
+
+```typescript
+public toTerraform(): any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `resetId` <a name="resetId" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.resetId"></a>
+
+```typescript
+public resetId(): void
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.isConstruct"></a>
+
+```typescript
+import { DataGitlabReleaseLink } from '@cdktf/provider-gitlab'
+
+DataGitlabReleaseLink.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.directAssetUrl">directAssetUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.external">external</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.filepath">filepath</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.linkType">linkType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.url">url</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.linkIdInput">linkIdInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.tagNameInput">tagNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.linkId">linkId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.project">project</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.tagName">tagName</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.property.cdktfStack"></a>
+
+```typescript
+public readonly cdktfStack: TerraformStack;
+```
+
+- *Type:* cdktf.TerraformStack
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.property.friendlyUniqueId"></a>
+
+```typescript
+public readonly friendlyUniqueId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.property.terraformMetaArguments"></a>
+
+```typescript
+public readonly terraformMetaArguments: {[ key: string ]: any};
+```
+
+- *Type:* {[ key: string ]: any}
+
+---
+
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.property.terraformResourceType"></a>
+
+```typescript
+public readonly terraformResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.property.terraformGeneratorMetadata"></a>
+
+```typescript
+public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
+```
+
+- *Type:* cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `directAssetUrl`<sup>Required</sup> <a name="directAssetUrl" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.property.directAssetUrl"></a>
+
+```typescript
+public readonly directAssetUrl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `external`<sup>Required</sup> <a name="external" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.property.external"></a>
+
+```typescript
+public readonly external: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `filepath`<sup>Required</sup> <a name="filepath" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.property.filepath"></a>
+
+```typescript
+public readonly filepath: string;
+```
+
+- *Type:* string
+
+---
+
+##### `linkType`<sup>Required</sup> <a name="linkType" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.property.linkType"></a>
+
+```typescript
+public readonly linkType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `url`<sup>Required</sup> <a name="url" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.property.url"></a>
+
+```typescript
+public readonly url: string;
+```
+
+- *Type:* string
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `linkIdInput`<sup>Optional</sup> <a name="linkIdInput" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.property.linkIdInput"></a>
+
+```typescript
+public readonly linkIdInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.property.projectInput"></a>
+
+```typescript
+public readonly projectInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tagNameInput`<sup>Optional</sup> <a name="tagNameInput" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.property.tagNameInput"></a>
+
+```typescript
+public readonly tagNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `linkId`<sup>Required</sup> <a name="linkId" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.property.linkId"></a>
+
+```typescript
+public readonly linkId: number;
+```
+
+- *Type:* number
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.property.project"></a>
+
+```typescript
+public readonly project: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tagName`<sup>Required</sup> <a name="tagName" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.property.tagName"></a>
+
+```typescript
+public readonly tagName: string;
+```
+
+- *Type:* string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.property.tfResourceType"></a>
+
+```typescript
+public readonly tfResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+### DataGitlabReleaseLinks <a name="DataGitlabReleaseLinks" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/release_links gitlab_release_links}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.Initializer"></a>
+
+```typescript
+import { DataGitlabReleaseLinks } from '@cdktf/provider-gitlab'
+
+new DataGitlabReleaseLinks(scope: Construct, id: string, config: DataGitlabReleaseLinksConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig">DataGitlabReleaseLinksConfig</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig">DataGitlabReleaseLinksConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.resetId">resetId</a></code> | *No description.* |
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `addOverride` <a name="addOverride" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.addOverride"></a>
+
+```typescript
+public addOverride(path: string, value: any): void
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.addOverride.parameter.value"></a>
+
+- *Type:* any
+
+---
+
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.overrideLogicalId"></a>
+
+```typescript
+public overrideLogicalId(newLogicalId: string): void
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.resetOverrideLogicalId"></a>
+
+```typescript
+public resetOverrideLogicalId(): void
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.toMetadata"></a>
+
+```typescript
+public toMetadata(): any
+```
+
+##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.toTerraform"></a>
+
+```typescript
+public toTerraform(): any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `resetId` <a name="resetId" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.resetId"></a>
+
+```typescript
+public resetId(): void
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.isConstruct"></a>
+
+```typescript
+import { DataGitlabReleaseLinks } from '@cdktf/provider-gitlab'
+
+DataGitlabReleaseLinks.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.releaseLinks">releaseLinks</a></code> | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksList">DataGitlabReleaseLinksReleaseLinksList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.tagNameInput">tagNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.project">project</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.tagName">tagName</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.cdktfStack"></a>
+
+```typescript
+public readonly cdktfStack: TerraformStack;
+```
+
+- *Type:* cdktf.TerraformStack
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.friendlyUniqueId"></a>
+
+```typescript
+public readonly friendlyUniqueId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.terraformMetaArguments"></a>
+
+```typescript
+public readonly terraformMetaArguments: {[ key: string ]: any};
+```
+
+- *Type:* {[ key: string ]: any}
+
+---
+
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.terraformResourceType"></a>
+
+```typescript
+public readonly terraformResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.terraformGeneratorMetadata"></a>
+
+```typescript
+public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
+```
+
+- *Type:* cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `releaseLinks`<sup>Required</sup> <a name="releaseLinks" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.releaseLinks"></a>
+
+```typescript
+public readonly releaseLinks: DataGitlabReleaseLinksReleaseLinksList;
+```
+
+- *Type:* <a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksList">DataGitlabReleaseLinksReleaseLinksList</a>
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.projectInput"></a>
+
+```typescript
+public readonly projectInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tagNameInput`<sup>Optional</sup> <a name="tagNameInput" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.tagNameInput"></a>
+
+```typescript
+public readonly tagNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.project"></a>
+
+```typescript
+public readonly project: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tagName`<sup>Required</sup> <a name="tagName" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.tagName"></a>
+
+```typescript
+public readonly tagName: string;
+```
+
+- *Type:* string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -29897,6 +35086,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.Project.resetBuildsAccessLevel">resetBuildsAccessLevel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.resetBuildTimeout">resetBuildTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.resetCiConfigPath">resetCiConfigPath</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Project.resetCiDefaultGitDepth">resetCiDefaultGitDepth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.resetCiForwardDeploymentEnabled">resetCiForwardDeploymentEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.resetContainerExpirationPolicy">resetContainerExpirationPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.resetContainerRegistryAccessLevel">resetContainerRegistryAccessLevel</a></code> | *No description.* |
@@ -29944,6 +35134,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.Project.resetResolveOutdatedDiffDiscussions">resetResolveOutdatedDiffDiscussions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.resetSecurityAndComplianceAccessLevel">resetSecurityAndComplianceAccessLevel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.resetSharedRunnersEnabled">resetSharedRunnersEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Project.resetSkipWaitForDefaultBranchProtection">resetSkipWaitForDefaultBranchProtection</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.resetSnippetsAccessLevel">resetSnippetsAccessLevel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.resetSnippetsEnabled">resetSnippetsEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.resetSquashCommitTemplate">resetSquashCommitTemplate</a></code> | *No description.* |
@@ -30251,6 +35442,12 @@ public resetBuildTimeout(): void
 public resetCiConfigPath(): void
 ```
 
+##### `resetCiDefaultGitDepth` <a name="resetCiDefaultGitDepth" id="@cdktf/provider-gitlab.Project.resetCiDefaultGitDepth"></a>
+
+```typescript
+public resetCiDefaultGitDepth(): void
+```
+
 ##### `resetCiForwardDeploymentEnabled` <a name="resetCiForwardDeploymentEnabled" id="@cdktf/provider-gitlab.Project.resetCiForwardDeploymentEnabled"></a>
 
 ```typescript
@@ -30533,6 +35730,12 @@ public resetSecurityAndComplianceAccessLevel(): void
 public resetSharedRunnersEnabled(): void
 ```
 
+##### `resetSkipWaitForDefaultBranchProtection` <a name="resetSkipWaitForDefaultBranchProtection" id="@cdktf/provider-gitlab.Project.resetSkipWaitForDefaultBranchProtection"></a>
+
+```typescript
+public resetSkipWaitForDefaultBranchProtection(): void
+```
+
 ##### `resetSnippetsAccessLevel` <a name="resetSnippetsAccessLevel" id="@cdktf/provider-gitlab.Project.resetSnippetsAccessLevel"></a>
 
 ```typescript
@@ -30681,6 +35884,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.Project.property.buildsAccessLevelInput">buildsAccessLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.property.buildTimeoutInput">buildTimeoutInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.property.ciConfigPathInput">ciConfigPathInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Project.property.ciDefaultGitDepthInput">ciDefaultGitDepthInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.property.ciForwardDeploymentEnabledInput">ciForwardDeploymentEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.property.containerExpirationPolicyInput">containerExpirationPolicyInput</a></code> | <code><a href="#@cdktf/provider-gitlab.ProjectContainerExpirationPolicy">ProjectContainerExpirationPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.property.containerRegistryAccessLevelInput">containerRegistryAccessLevelInput</a></code> | <code>string</code> | *No description.* |
@@ -30729,6 +35933,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.Project.property.resolveOutdatedDiffDiscussionsInput">resolveOutdatedDiffDiscussionsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.property.securityAndComplianceAccessLevelInput">securityAndComplianceAccessLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.property.sharedRunnersEnabledInput">sharedRunnersEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Project.property.skipWaitForDefaultBranchProtectionInput">skipWaitForDefaultBranchProtectionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.property.snippetsAccessLevelInput">snippetsAccessLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.property.snippetsEnabledInput">snippetsEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.property.squashCommitTemplateInput">squashCommitTemplateInput</a></code> | <code>string</code> | *No description.* |
@@ -30755,6 +35960,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.Project.property.buildsAccessLevel">buildsAccessLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.property.buildTimeout">buildTimeout</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.property.ciConfigPath">ciConfigPath</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Project.property.ciDefaultGitDepth">ciDefaultGitDepth</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.property.ciForwardDeploymentEnabled">ciForwardDeploymentEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.property.containerRegistryAccessLevel">containerRegistryAccessLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.property.containerRegistryEnabled">containerRegistryEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -30801,6 +36007,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.Project.property.resolveOutdatedDiffDiscussions">resolveOutdatedDiffDiscussions</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.property.securityAndComplianceAccessLevel">securityAndComplianceAccessLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.property.sharedRunnersEnabled">sharedRunnersEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Project.property.skipWaitForDefaultBranchProtection">skipWaitForDefaultBranchProtection</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.property.snippetsAccessLevel">snippetsAccessLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.property.snippetsEnabled">snippetsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.property.squashCommitTemplate">squashCommitTemplate</a></code> | <code>string</code> | *No description.* |
@@ -31135,6 +36342,16 @@ public readonly ciConfigPathInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `ciDefaultGitDepthInput`<sup>Optional</sup> <a name="ciDefaultGitDepthInput" id="@cdktf/provider-gitlab.Project.property.ciDefaultGitDepthInput"></a>
+
+```typescript
+public readonly ciDefaultGitDepthInput: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -31618,6 +36835,16 @@ public readonly sharedRunnersEnabledInput: boolean | IResolvable;
 
 ---
 
+##### `skipWaitForDefaultBranchProtectionInput`<sup>Optional</sup> <a name="skipWaitForDefaultBranchProtectionInput" id="@cdktf/provider-gitlab.Project.property.skipWaitForDefaultBranchProtectionInput"></a>
+
+```typescript
+public readonly skipWaitForDefaultBranchProtectionInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `snippetsAccessLevelInput`<sup>Optional</sup> <a name="snippetsAccessLevelInput" id="@cdktf/provider-gitlab.Project.property.snippetsAccessLevelInput"></a>
 
 ```typescript
@@ -31875,6 +37102,16 @@ public readonly ciConfigPath: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `ciDefaultGitDepth`<sup>Required</sup> <a name="ciDefaultGitDepth" id="@cdktf/provider-gitlab.Project.property.ciDefaultGitDepth"></a>
+
+```typescript
+public readonly ciDefaultGitDepth: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -32332,6 +37569,16 @@ public readonly securityAndComplianceAccessLevel: string;
 
 ```typescript
 public readonly sharedRunnersEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `skipWaitForDefaultBranchProtection`<sup>Required</sup> <a name="skipWaitForDefaultBranchProtection" id="@cdktf/provider-gitlab.Project.property.skipWaitForDefaultBranchProtection"></a>
+
+```typescript
+public readonly skipWaitForDefaultBranchProtection: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
@@ -33838,6 +39085,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadge.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadge.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadge.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectBadge.resetName">resetName</a></code> | *No description.* |
 
 ---
 
@@ -34031,6 +39279,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 public resetId(): void
 ```
 
+##### `resetName` <a name="resetName" id="@cdktf/provider-gitlab.ProjectBadge.resetName"></a>
+
+```typescript
+public resetName(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -34091,10 +39345,12 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadge.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadge.property.imageUrlInput">imageUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadge.property.linkUrlInput">linkUrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectBadge.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadge.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadge.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadge.property.imageUrl">imageUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadge.property.linkUrl">linkUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectBadge.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadge.property.project">project</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -34261,6 +39517,16 @@ public readonly linkUrlInput: string;
 
 ---
 
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-gitlab.ProjectBadge.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktf/provider-gitlab.ProjectBadge.property.projectInput"></a>
 
 ```typescript
@@ -34295,6 +39561,16 @@ public readonly imageUrl: string;
 
 ```typescript
 public readonly linkUrl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-gitlab.ProjectBadge.property.name"></a>
+
+```typescript
+public readonly name: string;
 ```
 
 - *Type:* string
@@ -37883,10 +43159,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.putTaskCompletionStatus">putTaskCompletionStatus</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.resetAssigneeIds">resetAssigneeIds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.resetClosedAt">resetClosedAt</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.resetClosedByUserId">resetClosedByUserId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.resetConfidential">resetConfidential</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.resetCreatedAt">resetCreatedAt</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.resetDeleteOnDestroy">resetDeleteOnDestroy</a></code> | *No description.* |
@@ -37895,20 +43168,13 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.resetDiscussionToResolve">resetDiscussionToResolve</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.resetDueDate">resetDueDate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.resetEpicIssueId">resetEpicIssueId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.resetHumanTimeEstimate">resetHumanTimeEstimate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.resetHumanTotalTimeSpent">resetHumanTotalTimeSpent</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.resetIid">resetIid</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.resetIssueType">resetIssueType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.resetLabels">resetLabels</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.resetLinks">resetLinks</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.resetMergeRequestToResolveDiscussionsOf">resetMergeRequestToResolveDiscussionsOf</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.resetMilestoneId">resetMilestoneId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.resetReferences">resetReferences</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.resetState">resetState</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.resetTaskCompletionStatus">resetTaskCompletionStatus</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.resetTimeEstimate">resetTimeEstimate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.resetTotalTimeSpent">resetTotalTimeSpent</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.resetUpdatedAt">resetUpdatedAt</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.resetWeight">resetWeight</a></code> | *No description.* |
 
@@ -38098,34 +43364,10 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `putTaskCompletionStatus` <a name="putTaskCompletionStatus" id="@cdktf/provider-gitlab.ProjectIssue.putTaskCompletionStatus"></a>
-
-```typescript
-public putTaskCompletionStatus(value: ProjectIssueTaskCompletionStatus): void
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-gitlab.ProjectIssue.putTaskCompletionStatus.parameter.value"></a>
-
-- *Type:* <a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatus">ProjectIssueTaskCompletionStatus</a>
-
----
-
 ##### `resetAssigneeIds` <a name="resetAssigneeIds" id="@cdktf/provider-gitlab.ProjectIssue.resetAssigneeIds"></a>
 
 ```typescript
 public resetAssigneeIds(): void
-```
-
-##### `resetClosedAt` <a name="resetClosedAt" id="@cdktf/provider-gitlab.ProjectIssue.resetClosedAt"></a>
-
-```typescript
-public resetClosedAt(): void
-```
-
-##### `resetClosedByUserId` <a name="resetClosedByUserId" id="@cdktf/provider-gitlab.ProjectIssue.resetClosedByUserId"></a>
-
-```typescript
-public resetClosedByUserId(): void
 ```
 
 ##### `resetConfidential` <a name="resetConfidential" id="@cdktf/provider-gitlab.ProjectIssue.resetConfidential"></a>
@@ -38176,18 +43418,6 @@ public resetDueDate(): void
 public resetEpicIssueId(): void
 ```
 
-##### `resetHumanTimeEstimate` <a name="resetHumanTimeEstimate" id="@cdktf/provider-gitlab.ProjectIssue.resetHumanTimeEstimate"></a>
-
-```typescript
-public resetHumanTimeEstimate(): void
-```
-
-##### `resetHumanTotalTimeSpent` <a name="resetHumanTotalTimeSpent" id="@cdktf/provider-gitlab.ProjectIssue.resetHumanTotalTimeSpent"></a>
-
-```typescript
-public resetHumanTotalTimeSpent(): void
-```
-
 ##### `resetId` <a name="resetId" id="@cdktf/provider-gitlab.ProjectIssue.resetId"></a>
 
 ```typescript
@@ -38212,12 +43442,6 @@ public resetIssueType(): void
 public resetLabels(): void
 ```
 
-##### `resetLinks` <a name="resetLinks" id="@cdktf/provider-gitlab.ProjectIssue.resetLinks"></a>
-
-```typescript
-public resetLinks(): void
-```
-
 ##### `resetMergeRequestToResolveDiscussionsOf` <a name="resetMergeRequestToResolveDiscussionsOf" id="@cdktf/provider-gitlab.ProjectIssue.resetMergeRequestToResolveDiscussionsOf"></a>
 
 ```typescript
@@ -38230,34 +43454,10 @@ public resetMergeRequestToResolveDiscussionsOf(): void
 public resetMilestoneId(): void
 ```
 
-##### `resetReferences` <a name="resetReferences" id="@cdktf/provider-gitlab.ProjectIssue.resetReferences"></a>
-
-```typescript
-public resetReferences(): void
-```
-
 ##### `resetState` <a name="resetState" id="@cdktf/provider-gitlab.ProjectIssue.resetState"></a>
 
 ```typescript
 public resetState(): void
-```
-
-##### `resetTaskCompletionStatus` <a name="resetTaskCompletionStatus" id="@cdktf/provider-gitlab.ProjectIssue.resetTaskCompletionStatus"></a>
-
-```typescript
-public resetTaskCompletionStatus(): void
-```
-
-##### `resetTimeEstimate` <a name="resetTimeEstimate" id="@cdktf/provider-gitlab.ProjectIssue.resetTimeEstimate"></a>
-
-```typescript
-public resetTimeEstimate(): void
-```
-
-##### `resetTotalTimeSpent` <a name="resetTotalTimeSpent" id="@cdktf/provider-gitlab.ProjectIssue.resetTotalTimeSpent"></a>
-
-```typescript
-public resetTotalTimeSpent(): void
 ```
 
 ##### `resetUpdatedAt` <a name="resetUpdatedAt" id="@cdktf/provider-gitlab.ProjectIssue.resetUpdatedAt"></a>
@@ -38328,21 +43528,27 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.authorId">authorId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.closedAt">closedAt</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.closedByUserId">closedByUserId</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.downvotes">downvotes</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.epicId">epicId</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.externalId">externalId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.humanTimeEstimate">humanTimeEstimate</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.humanTotalTimeSpent">humanTotalTimeSpent</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.issueId">issueId</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.issueLinkId">issueLinkId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.links">links</a></code> | <code>cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.mergeRequestsCount">mergeRequestsCount</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.movedToId">movedToId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.references">references</a></code> | <code>cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.subscribed">subscribed</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.taskCompletionStatus">taskCompletionStatus</a></code> | <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusOutputReference">ProjectIssueTaskCompletionStatusOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.taskCompletionStatus">taskCompletionStatus</a></code> | <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusList">ProjectIssueTaskCompletionStatusList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.timeEstimate">timeEstimate</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.totalTimeSpent">totalTimeSpent</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.upvotes">upvotes</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.userNotesCount">userNotesCount</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.webUrl">webUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.assigneeIdsInput">assigneeIdsInput</a></code> | <code>number[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.closedAtInput">closedAtInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.closedByUserIdInput">closedByUserIdInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.confidentialInput">confidentialInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.createdAtInput">createdAtInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.deleteOnDestroyInput">deleteOnDestroyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -38351,27 +43557,18 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.discussionToResolveInput">discussionToResolveInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.dueDateInput">dueDateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.epicIssueIdInput">epicIssueIdInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.humanTimeEstimateInput">humanTimeEstimateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.humanTotalTimeSpentInput">humanTotalTimeSpentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.iidInput">iidInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.issueTypeInput">issueTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.labelsInput">labelsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.linksInput">linksInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.mergeRequestToResolveDiscussionsOfInput">mergeRequestToResolveDiscussionsOfInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.milestoneIdInput">milestoneIdInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.referencesInput">referencesInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.stateInput">stateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.taskCompletionStatusInput">taskCompletionStatusInput</a></code> | <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatus">ProjectIssueTaskCompletionStatus</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.timeEstimateInput">timeEstimateInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.titleInput">titleInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.totalTimeSpentInput">totalTimeSpentInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.updatedAtInput">updatedAtInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.weightInput">weightInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.assigneeIds">assigneeIds</a></code> | <code>number[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.closedAt">closedAt</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.closedByUserId">closedByUserId</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.confidential">confidential</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.deleteOnDestroy">deleteOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -38380,21 +43577,15 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.discussionToResolve">discussionToResolve</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.dueDate">dueDate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.epicIssueId">epicIssueId</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.humanTimeEstimate">humanTimeEstimate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.humanTotalTimeSpent">humanTotalTimeSpent</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.iid">iid</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.issueType">issueType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.labels">labels</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.links">links</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.mergeRequestToResolveDiscussionsOf">mergeRequestToResolveDiscussionsOf</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.milestoneId">milestoneId</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.project">project</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.references">references</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.state">state</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.timeEstimate">timeEstimate</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.title">title</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.totalTimeSpent">totalTimeSpent</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.updatedAt">updatedAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.weight">weight</a></code> | <code>number</code> | *No description.* |
 
@@ -38522,6 +43713,26 @@ public readonly authorId: number;
 
 ---
 
+##### `closedAt`<sup>Required</sup> <a name="closedAt" id="@cdktf/provider-gitlab.ProjectIssue.property.closedAt"></a>
+
+```typescript
+public readonly closedAt: string;
+```
+
+- *Type:* string
+
+---
+
+##### `closedByUserId`<sup>Required</sup> <a name="closedByUserId" id="@cdktf/provider-gitlab.ProjectIssue.property.closedByUserId"></a>
+
+```typescript
+public readonly closedByUserId: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `downvotes`<sup>Required</sup> <a name="downvotes" id="@cdktf/provider-gitlab.ProjectIssue.property.downvotes"></a>
 
 ```typescript
@@ -38552,6 +43763,26 @@ public readonly externalId: string;
 
 ---
 
+##### `humanTimeEstimate`<sup>Required</sup> <a name="humanTimeEstimate" id="@cdktf/provider-gitlab.ProjectIssue.property.humanTimeEstimate"></a>
+
+```typescript
+public readonly humanTimeEstimate: string;
+```
+
+- *Type:* string
+
+---
+
+##### `humanTotalTimeSpent`<sup>Required</sup> <a name="humanTotalTimeSpent" id="@cdktf/provider-gitlab.ProjectIssue.property.humanTotalTimeSpent"></a>
+
+```typescript
+public readonly humanTotalTimeSpent: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `issueId`<sup>Required</sup> <a name="issueId" id="@cdktf/provider-gitlab.ProjectIssue.property.issueId"></a>
 
 ```typescript
@@ -38569,6 +43800,16 @@ public readonly issueLinkId: number;
 ```
 
 - *Type:* number
+
+---
+
+##### `links`<sup>Required</sup> <a name="links" id="@cdktf/provider-gitlab.ProjectIssue.property.links"></a>
+
+```typescript
+public readonly links: StringMap;
+```
+
+- *Type:* cdktf.StringMap
 
 ---
 
@@ -38592,6 +43833,16 @@ public readonly movedToId: number;
 
 ---
 
+##### `references`<sup>Required</sup> <a name="references" id="@cdktf/provider-gitlab.ProjectIssue.property.references"></a>
+
+```typescript
+public readonly references: StringMap;
+```
+
+- *Type:* cdktf.StringMap
+
+---
+
 ##### `subscribed`<sup>Required</sup> <a name="subscribed" id="@cdktf/provider-gitlab.ProjectIssue.property.subscribed"></a>
 
 ```typescript
@@ -38605,10 +43856,30 @@ public readonly subscribed: IResolvable;
 ##### `taskCompletionStatus`<sup>Required</sup> <a name="taskCompletionStatus" id="@cdktf/provider-gitlab.ProjectIssue.property.taskCompletionStatus"></a>
 
 ```typescript
-public readonly taskCompletionStatus: ProjectIssueTaskCompletionStatusOutputReference;
+public readonly taskCompletionStatus: ProjectIssueTaskCompletionStatusList;
 ```
 
-- *Type:* <a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusOutputReference">ProjectIssueTaskCompletionStatusOutputReference</a>
+- *Type:* <a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusList">ProjectIssueTaskCompletionStatusList</a>
+
+---
+
+##### `timeEstimate`<sup>Required</sup> <a name="timeEstimate" id="@cdktf/provider-gitlab.ProjectIssue.property.timeEstimate"></a>
+
+```typescript
+public readonly timeEstimate: number;
+```
+
+- *Type:* number
+
+---
+
+##### `totalTimeSpent`<sup>Required</sup> <a name="totalTimeSpent" id="@cdktf/provider-gitlab.ProjectIssue.property.totalTimeSpent"></a>
+
+```typescript
+public readonly totalTimeSpent: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -38649,26 +43920,6 @@ public readonly assigneeIdsInput: number[];
 ```
 
 - *Type:* number[]
-
----
-
-##### `closedAtInput`<sup>Optional</sup> <a name="closedAtInput" id="@cdktf/provider-gitlab.ProjectIssue.property.closedAtInput"></a>
-
-```typescript
-public readonly closedAtInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `closedByUserIdInput`<sup>Optional</sup> <a name="closedByUserIdInput" id="@cdktf/provider-gitlab.ProjectIssue.property.closedByUserIdInput"></a>
-
-```typescript
-public readonly closedByUserIdInput: number;
-```
-
-- *Type:* number
 
 ---
 
@@ -38752,26 +44003,6 @@ public readonly epicIssueIdInput: number;
 
 ---
 
-##### `humanTimeEstimateInput`<sup>Optional</sup> <a name="humanTimeEstimateInput" id="@cdktf/provider-gitlab.ProjectIssue.property.humanTimeEstimateInput"></a>
-
-```typescript
-public readonly humanTimeEstimateInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `humanTotalTimeSpentInput`<sup>Optional</sup> <a name="humanTotalTimeSpentInput" id="@cdktf/provider-gitlab.ProjectIssue.property.humanTotalTimeSpentInput"></a>
-
-```typescript
-public readonly humanTotalTimeSpentInput: string;
-```
-
-- *Type:* string
-
----
-
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-gitlab.ProjectIssue.property.idInput"></a>
 
 ```typescript
@@ -38812,16 +44043,6 @@ public readonly labelsInput: string[];
 
 ---
 
-##### `linksInput`<sup>Optional</sup> <a name="linksInput" id="@cdktf/provider-gitlab.ProjectIssue.property.linksInput"></a>
-
-```typescript
-public readonly linksInput: {[ key: string ]: string};
-```
-
-- *Type:* {[ key: string ]: string}
-
----
-
 ##### `mergeRequestToResolveDiscussionsOfInput`<sup>Optional</sup> <a name="mergeRequestToResolveDiscussionsOfInput" id="@cdktf/provider-gitlab.ProjectIssue.property.mergeRequestToResolveDiscussionsOfInput"></a>
 
 ```typescript
@@ -38852,16 +44073,6 @@ public readonly projectInput: string;
 
 ---
 
-##### `referencesInput`<sup>Optional</sup> <a name="referencesInput" id="@cdktf/provider-gitlab.ProjectIssue.property.referencesInput"></a>
-
-```typescript
-public readonly referencesInput: {[ key: string ]: string};
-```
-
-- *Type:* {[ key: string ]: string}
-
----
-
 ##### `stateInput`<sup>Optional</sup> <a name="stateInput" id="@cdktf/provider-gitlab.ProjectIssue.property.stateInput"></a>
 
 ```typescript
@@ -38872,26 +44083,6 @@ public readonly stateInput: string;
 
 ---
 
-##### `taskCompletionStatusInput`<sup>Optional</sup> <a name="taskCompletionStatusInput" id="@cdktf/provider-gitlab.ProjectIssue.property.taskCompletionStatusInput"></a>
-
-```typescript
-public readonly taskCompletionStatusInput: ProjectIssueTaskCompletionStatus;
-```
-
-- *Type:* <a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatus">ProjectIssueTaskCompletionStatus</a>
-
----
-
-##### `timeEstimateInput`<sup>Optional</sup> <a name="timeEstimateInput" id="@cdktf/provider-gitlab.ProjectIssue.property.timeEstimateInput"></a>
-
-```typescript
-public readonly timeEstimateInput: number;
-```
-
-- *Type:* number
-
----
-
 ##### `titleInput`<sup>Optional</sup> <a name="titleInput" id="@cdktf/provider-gitlab.ProjectIssue.property.titleInput"></a>
 
 ```typescript
@@ -38899,16 +44090,6 @@ public readonly titleInput: string;
 ```
 
 - *Type:* string
-
----
-
-##### `totalTimeSpentInput`<sup>Optional</sup> <a name="totalTimeSpentInput" id="@cdktf/provider-gitlab.ProjectIssue.property.totalTimeSpentInput"></a>
-
-```typescript
-public readonly totalTimeSpentInput: number;
-```
-
-- *Type:* number
 
 ---
 
@@ -38939,26 +44120,6 @@ public readonly assigneeIds: number[];
 ```
 
 - *Type:* number[]
-
----
-
-##### `closedAt`<sup>Required</sup> <a name="closedAt" id="@cdktf/provider-gitlab.ProjectIssue.property.closedAt"></a>
-
-```typescript
-public readonly closedAt: string;
-```
-
-- *Type:* string
-
----
-
-##### `closedByUserId`<sup>Required</sup> <a name="closedByUserId" id="@cdktf/provider-gitlab.ProjectIssue.property.closedByUserId"></a>
-
-```typescript
-public readonly closedByUserId: number;
-```
-
-- *Type:* number
 
 ---
 
@@ -39042,26 +44203,6 @@ public readonly epicIssueId: number;
 
 ---
 
-##### `humanTimeEstimate`<sup>Required</sup> <a name="humanTimeEstimate" id="@cdktf/provider-gitlab.ProjectIssue.property.humanTimeEstimate"></a>
-
-```typescript
-public readonly humanTimeEstimate: string;
-```
-
-- *Type:* string
-
----
-
-##### `humanTotalTimeSpent`<sup>Required</sup> <a name="humanTotalTimeSpent" id="@cdktf/provider-gitlab.ProjectIssue.property.humanTotalTimeSpent"></a>
-
-```typescript
-public readonly humanTotalTimeSpent: string;
-```
-
-- *Type:* string
-
----
-
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.ProjectIssue.property.id"></a>
 
 ```typescript
@@ -39102,16 +44243,6 @@ public readonly labels: string[];
 
 ---
 
-##### `links`<sup>Required</sup> <a name="links" id="@cdktf/provider-gitlab.ProjectIssue.property.links"></a>
-
-```typescript
-public readonly links: {[ key: string ]: string};
-```
-
-- *Type:* {[ key: string ]: string}
-
----
-
 ##### `mergeRequestToResolveDiscussionsOf`<sup>Required</sup> <a name="mergeRequestToResolveDiscussionsOf" id="@cdktf/provider-gitlab.ProjectIssue.property.mergeRequestToResolveDiscussionsOf"></a>
 
 ```typescript
@@ -39142,16 +44273,6 @@ public readonly project: string;
 
 ---
 
-##### `references`<sup>Required</sup> <a name="references" id="@cdktf/provider-gitlab.ProjectIssue.property.references"></a>
-
-```typescript
-public readonly references: {[ key: string ]: string};
-```
-
-- *Type:* {[ key: string ]: string}
-
----
-
 ##### `state`<sup>Required</sup> <a name="state" id="@cdktf/provider-gitlab.ProjectIssue.property.state"></a>
 
 ```typescript
@@ -39162,16 +44283,6 @@ public readonly state: string;
 
 ---
 
-##### `timeEstimate`<sup>Required</sup> <a name="timeEstimate" id="@cdktf/provider-gitlab.ProjectIssue.property.timeEstimate"></a>
-
-```typescript
-public readonly timeEstimate: number;
-```
-
-- *Type:* number
-
----
-
 ##### `title`<sup>Required</sup> <a name="title" id="@cdktf/provider-gitlab.ProjectIssue.property.title"></a>
 
 ```typescript
@@ -39179,16 +44290,6 @@ public readonly title: string;
 ```
 
 - *Type:* string
-
----
-
-##### `totalTimeSpent`<sup>Required</sup> <a name="totalTimeSpent" id="@cdktf/provider-gitlab.ProjectIssue.property.totalTimeSpent"></a>
-
-```typescript
-public readonly totalTimeSpent: number;
-```
-
-- *Type:* number
 
 ---
 
@@ -39929,6 +45030,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembership.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembership.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembership.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMembership.resetExpiresAt">resetExpiresAt</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembership.resetId">resetId</a></code> | *No description.* |
 
 ---
@@ -40117,6 +45219,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetExpiresAt` <a name="resetExpiresAt" id="@cdktf/provider-gitlab.ProjectMembership.resetExpiresAt"></a>
+
+```typescript
+public resetExpiresAt(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-gitlab.ProjectMembership.resetId"></a>
 
 ```typescript
@@ -40179,10 +45287,12 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembership.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembership.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembership.property.accessLevelInput">accessLevelInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMembership.property.expiresAtInput">expiresAtInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembership.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembership.property.projectIdInput">projectIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembership.property.userIdInput">userIdInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembership.property.accessLevel">accessLevel</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMembership.property.expiresAt">expiresAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembership.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembership.property.projectId">projectId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembership.property.userId">userId</a></code> | <code>number</code> | *No description.* |
@@ -40311,6 +45421,16 @@ public readonly accessLevelInput: string;
 
 ---
 
+##### `expiresAtInput`<sup>Optional</sup> <a name="expiresAtInput" id="@cdktf/provider-gitlab.ProjectMembership.property.expiresAtInput"></a>
+
+```typescript
+public readonly expiresAtInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-gitlab.ProjectMembership.property.idInput"></a>
 
 ```typescript
@@ -40345,6 +45465,16 @@ public readonly userIdInput: number;
 
 ```typescript
 public readonly accessLevel: string;
+```
+
+- *Type:* string
+
+---
+
+##### `expiresAt`<sup>Required</sup> <a name="expiresAt" id="@cdktf/provider-gitlab.ProjectMembership.property.expiresAt"></a>
+
+```typescript
+public readonly expiresAt: string;
 ```
 
 - *Type:* string
@@ -40390,6 +45520,711 @@ public readonly userId: number;
 ---
 
 ##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-gitlab.ProjectMembership.property.tfResourceType"></a>
+
+```typescript
+public readonly tfResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+### ProjectMilestone <a name="ProjectMilestone" id="@cdktf/provider-gitlab.ProjectMilestone"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/project_milestone gitlab_project_milestone}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.ProjectMilestone.Initializer"></a>
+
+```typescript
+import { ProjectMilestone } from '@cdktf/provider-gitlab'
+
+new ProjectMilestone(scope: Construct, id: string, config: ProjectMilestoneConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-gitlab.ProjectMilestoneConfig">ProjectMilestoneConfig</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-gitlab.ProjectMilestone.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.ProjectMilestone.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-gitlab.ProjectMilestone.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktf/provider-gitlab.ProjectMilestoneConfig">ProjectMilestoneConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.resetDueDate">resetDueDate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.resetStartDate">resetStartDate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.resetState">resetState</a></code> | *No description.* |
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-gitlab.ProjectMilestone.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `addOverride` <a name="addOverride" id="@cdktf/provider-gitlab.ProjectMilestone.addOverride"></a>
+
+```typescript
+public addOverride(path: string, value: any): void
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-gitlab.ProjectMilestone.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-gitlab.ProjectMilestone.addOverride.parameter.value"></a>
+
+- *Type:* any
+
+---
+
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-gitlab.ProjectMilestone.overrideLogicalId"></a>
+
+```typescript
+public overrideLogicalId(newLogicalId: string): void
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-gitlab.ProjectMilestone.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-gitlab.ProjectMilestone.resetOverrideLogicalId"></a>
+
+```typescript
+public resetOverrideLogicalId(): void
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-gitlab.ProjectMilestone.toMetadata"></a>
+
+```typescript
+public toMetadata(): any
+```
+
+##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-gitlab.ProjectMilestone.toTerraform"></a>
+
+```typescript
+public toTerraform(): any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-gitlab.ProjectMilestone.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ProjectMilestone.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-gitlab.ProjectMilestone.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ProjectMilestone.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-gitlab.ProjectMilestone.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ProjectMilestone.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-gitlab.ProjectMilestone.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ProjectMilestone.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-gitlab.ProjectMilestone.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ProjectMilestone.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-gitlab.ProjectMilestone.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ProjectMilestone.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-gitlab.ProjectMilestone.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ProjectMilestone.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-gitlab.ProjectMilestone.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ProjectMilestone.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-gitlab.ProjectMilestone.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ProjectMilestone.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-gitlab.ProjectMilestone.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ProjectMilestone.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `resetDescription` <a name="resetDescription" id="@cdktf/provider-gitlab.ProjectMilestone.resetDescription"></a>
+
+```typescript
+public resetDescription(): void
+```
+
+##### `resetDueDate` <a name="resetDueDate" id="@cdktf/provider-gitlab.ProjectMilestone.resetDueDate"></a>
+
+```typescript
+public resetDueDate(): void
+```
+
+##### `resetId` <a name="resetId" id="@cdktf/provider-gitlab.ProjectMilestone.resetId"></a>
+
+```typescript
+public resetId(): void
+```
+
+##### `resetStartDate` <a name="resetStartDate" id="@cdktf/provider-gitlab.ProjectMilestone.resetStartDate"></a>
+
+```typescript
+public resetStartDate(): void
+```
+
+##### `resetState` <a name="resetState" id="@cdktf/provider-gitlab.ProjectMilestone.resetState"></a>
+
+```typescript
+public resetState(): void
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-gitlab.ProjectMilestone.isConstruct"></a>
+
+```typescript
+import { ProjectMilestone } from '@cdktf/provider-gitlab'
+
+ProjectMilestone.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-gitlab.ProjectMilestone.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.expired">expired</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.iid">iid</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.milestoneId">milestoneId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.projectId">projectId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.updatedAt">updatedAt</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.webUrl">webUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.dueDateInput">dueDateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.startDateInput">startDateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.stateInput">stateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.titleInput">titleInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.dueDate">dueDate</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.project">project</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.startDate">startDate</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.state">state</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.title">title</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-gitlab.ProjectMilestone.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-gitlab.ProjectMilestone.property.cdktfStack"></a>
+
+```typescript
+public readonly cdktfStack: TerraformStack;
+```
+
+- *Type:* cdktf.TerraformStack
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-gitlab.ProjectMilestone.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-gitlab.ProjectMilestone.property.friendlyUniqueId"></a>
+
+```typescript
+public readonly friendlyUniqueId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-gitlab.ProjectMilestone.property.terraformMetaArguments"></a>
+
+```typescript
+public readonly terraformMetaArguments: {[ key: string ]: any};
+```
+
+- *Type:* {[ key: string ]: any}
+
+---
+
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-gitlab.ProjectMilestone.property.terraformResourceType"></a>
+
+```typescript
+public readonly terraformResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-gitlab.ProjectMilestone.property.terraformGeneratorMetadata"></a>
+
+```typescript
+public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
+```
+
+- *Type:* cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ProjectMilestone.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-gitlab.ProjectMilestone.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectMilestone.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.ProjectMilestone.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `createdAt`<sup>Required</sup> <a name="createdAt" id="@cdktf/provider-gitlab.ProjectMilestone.property.createdAt"></a>
+
+```typescript
+public readonly createdAt: string;
+```
+
+- *Type:* string
+
+---
+
+##### `expired`<sup>Required</sup> <a name="expired" id="@cdktf/provider-gitlab.ProjectMilestone.property.expired"></a>
+
+```typescript
+public readonly expired: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `iid`<sup>Required</sup> <a name="iid" id="@cdktf/provider-gitlab.ProjectMilestone.property.iid"></a>
+
+```typescript
+public readonly iid: number;
+```
+
+- *Type:* number
+
+---
+
+##### `milestoneId`<sup>Required</sup> <a name="milestoneId" id="@cdktf/provider-gitlab.ProjectMilestone.property.milestoneId"></a>
+
+```typescript
+public readonly milestoneId: number;
+```
+
+- *Type:* number
+
+---
+
+##### `projectId`<sup>Required</sup> <a name="projectId" id="@cdktf/provider-gitlab.ProjectMilestone.property.projectId"></a>
+
+```typescript
+public readonly projectId: number;
+```
+
+- *Type:* number
+
+---
+
+##### `updatedAt`<sup>Required</sup> <a name="updatedAt" id="@cdktf/provider-gitlab.ProjectMilestone.property.updatedAt"></a>
+
+```typescript
+public readonly updatedAt: string;
+```
+
+- *Type:* string
+
+---
+
+##### `webUrl`<sup>Required</sup> <a name="webUrl" id="@cdktf/provider-gitlab.ProjectMilestone.property.webUrl"></a>
+
+```typescript
+public readonly webUrl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-gitlab.ProjectMilestone.property.descriptionInput"></a>
+
+```typescript
+public readonly descriptionInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `dueDateInput`<sup>Optional</sup> <a name="dueDateInput" id="@cdktf/provider-gitlab.ProjectMilestone.property.dueDateInput"></a>
+
+```typescript
+public readonly dueDateInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-gitlab.ProjectMilestone.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktf/provider-gitlab.ProjectMilestone.property.projectInput"></a>
+
+```typescript
+public readonly projectInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `startDateInput`<sup>Optional</sup> <a name="startDateInput" id="@cdktf/provider-gitlab.ProjectMilestone.property.startDateInput"></a>
+
+```typescript
+public readonly startDateInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `stateInput`<sup>Optional</sup> <a name="stateInput" id="@cdktf/provider-gitlab.ProjectMilestone.property.stateInput"></a>
+
+```typescript
+public readonly stateInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `titleInput`<sup>Optional</sup> <a name="titleInput" id="@cdktf/provider-gitlab.ProjectMilestone.property.titleInput"></a>
+
+```typescript
+public readonly titleInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-gitlab.ProjectMilestone.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* string
+
+---
+
+##### `dueDate`<sup>Required</sup> <a name="dueDate" id="@cdktf/provider-gitlab.ProjectMilestone.property.dueDate"></a>
+
+```typescript
+public readonly dueDate: string;
+```
+
+- *Type:* string
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.ProjectMilestone.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.ProjectMilestone.property.project"></a>
+
+```typescript
+public readonly project: string;
+```
+
+- *Type:* string
+
+---
+
+##### `startDate`<sup>Required</sup> <a name="startDate" id="@cdktf/provider-gitlab.ProjectMilestone.property.startDate"></a>
+
+```typescript
+public readonly startDate: string;
+```
+
+- *Type:* string
+
+---
+
+##### `state`<sup>Required</sup> <a name="state" id="@cdktf/provider-gitlab.ProjectMilestone.property.state"></a>
+
+```typescript
+public readonly state: string;
+```
+
+- *Type:* string
+
+---
+
+##### `title`<sup>Required</sup> <a name="title" id="@cdktf/provider-gitlab.ProjectMilestone.property.title"></a>
+
+```typescript
+public readonly title: string;
+```
+
+- *Type:* string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-gitlab.ProjectMilestone.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -41075,6 +46910,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironment.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironment.putDeployAccessLevels">putDeployAccessLevels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironment.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironment.resetRequiredApprovalCount">resetRequiredApprovalCount</a></code> | *No description.* |
 
 ---
 
@@ -41280,6 +47116,12 @@ public putDeployAccessLevels(value: IResolvable | ProjectProtectedEnvironmentDep
 public resetId(): void
 ```
 
+##### `resetRequiredApprovalCount` <a name="resetRequiredApprovalCount" id="@cdktf/provider-gitlab.ProjectProtectedEnvironment.resetRequiredApprovalCount"></a>
+
+```typescript
+public resetRequiredApprovalCount(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -41340,9 +47182,11 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironment.property.environmentInput">environmentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironment.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironment.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironment.property.requiredApprovalCountInput">requiredApprovalCountInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironment.property.environment">environment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironment.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironment.property.project">project</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironment.property.requiredApprovalCount">requiredApprovalCount</a></code> | <code>number</code> | *No description.* |
 
 ---
 
@@ -41508,6 +47352,16 @@ public readonly projectInput: string;
 
 ---
 
+##### `requiredApprovalCountInput`<sup>Optional</sup> <a name="requiredApprovalCountInput" id="@cdktf/provider-gitlab.ProjectProtectedEnvironment.property.requiredApprovalCountInput"></a>
+
+```typescript
+public readonly requiredApprovalCountInput: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `environment`<sup>Required</sup> <a name="environment" id="@cdktf/provider-gitlab.ProjectProtectedEnvironment.property.environment"></a>
 
 ```typescript
@@ -41535,6 +47389,16 @@ public readonly project: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `requiredApprovalCount`<sup>Required</sup> <a name="requiredApprovalCount" id="@cdktf/provider-gitlab.ProjectProtectedEnvironment.property.requiredApprovalCount"></a>
+
+```typescript
+public readonly requiredApprovalCount: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -43895,6 +49759,653 @@ public readonly tfResourceType: string;
 
 ---
 
+### ReleaseLink <a name="ReleaseLink" id="@cdktf/provider-gitlab.ReleaseLink"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/release_link gitlab_release_link}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.ReleaseLink.Initializer"></a>
+
+```typescript
+import { ReleaseLink } from '@cdktf/provider-gitlab'
+
+new ReleaseLink(scope: Construct, id: string, config: ReleaseLinkConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-gitlab.ReleaseLinkConfig">ReleaseLinkConfig</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-gitlab.ReleaseLink.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.ReleaseLink.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-gitlab.ReleaseLink.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktf/provider-gitlab.ReleaseLinkConfig">ReleaseLinkConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.resetFilepath">resetFilepath</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.resetLinkType">resetLinkType</a></code> | *No description.* |
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-gitlab.ReleaseLink.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `addOverride` <a name="addOverride" id="@cdktf/provider-gitlab.ReleaseLink.addOverride"></a>
+
+```typescript
+public addOverride(path: string, value: any): void
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-gitlab.ReleaseLink.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-gitlab.ReleaseLink.addOverride.parameter.value"></a>
+
+- *Type:* any
+
+---
+
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-gitlab.ReleaseLink.overrideLogicalId"></a>
+
+```typescript
+public overrideLogicalId(newLogicalId: string): void
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-gitlab.ReleaseLink.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-gitlab.ReleaseLink.resetOverrideLogicalId"></a>
+
+```typescript
+public resetOverrideLogicalId(): void
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-gitlab.ReleaseLink.toMetadata"></a>
+
+```typescript
+public toMetadata(): any
+```
+
+##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-gitlab.ReleaseLink.toTerraform"></a>
+
+```typescript
+public toTerraform(): any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-gitlab.ReleaseLink.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ReleaseLink.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-gitlab.ReleaseLink.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ReleaseLink.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-gitlab.ReleaseLink.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ReleaseLink.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-gitlab.ReleaseLink.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ReleaseLink.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-gitlab.ReleaseLink.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ReleaseLink.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-gitlab.ReleaseLink.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ReleaseLink.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-gitlab.ReleaseLink.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ReleaseLink.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-gitlab.ReleaseLink.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ReleaseLink.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-gitlab.ReleaseLink.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ReleaseLink.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-gitlab.ReleaseLink.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ReleaseLink.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `resetFilepath` <a name="resetFilepath" id="@cdktf/provider-gitlab.ReleaseLink.resetFilepath"></a>
+
+```typescript
+public resetFilepath(): void
+```
+
+##### `resetId` <a name="resetId" id="@cdktf/provider-gitlab.ReleaseLink.resetId"></a>
+
+```typescript
+public resetId(): void
+```
+
+##### `resetLinkType` <a name="resetLinkType" id="@cdktf/provider-gitlab.ReleaseLink.resetLinkType"></a>
+
+```typescript
+public resetLinkType(): void
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-gitlab.ReleaseLink.isConstruct"></a>
+
+```typescript
+import { ReleaseLink } from '@cdktf/provider-gitlab'
+
+ReleaseLink.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-gitlab.ReleaseLink.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.directAssetUrl">directAssetUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.external">external</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.linkId">linkId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.filepathInput">filepathInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.linkTypeInput">linkTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.tagNameInput">tagNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.urlInput">urlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.filepath">filepath</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.linkType">linkType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.project">project</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.tagName">tagName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.url">url</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-gitlab.ReleaseLink.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-gitlab.ReleaseLink.property.cdktfStack"></a>
+
+```typescript
+public readonly cdktfStack: TerraformStack;
+```
+
+- *Type:* cdktf.TerraformStack
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-gitlab.ReleaseLink.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-gitlab.ReleaseLink.property.friendlyUniqueId"></a>
+
+```typescript
+public readonly friendlyUniqueId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-gitlab.ReleaseLink.property.terraformMetaArguments"></a>
+
+```typescript
+public readonly terraformMetaArguments: {[ key: string ]: any};
+```
+
+- *Type:* {[ key: string ]: any}
+
+---
+
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-gitlab.ReleaseLink.property.terraformResourceType"></a>
+
+```typescript
+public readonly terraformResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-gitlab.ReleaseLink.property.terraformGeneratorMetadata"></a>
+
+```typescript
+public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
+```
+
+- *Type:* cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ReleaseLink.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-gitlab.ReleaseLink.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ReleaseLink.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.ReleaseLink.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `directAssetUrl`<sup>Required</sup> <a name="directAssetUrl" id="@cdktf/provider-gitlab.ReleaseLink.property.directAssetUrl"></a>
+
+```typescript
+public readonly directAssetUrl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `external`<sup>Required</sup> <a name="external" id="@cdktf/provider-gitlab.ReleaseLink.property.external"></a>
+
+```typescript
+public readonly external: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `linkId`<sup>Required</sup> <a name="linkId" id="@cdktf/provider-gitlab.ReleaseLink.property.linkId"></a>
+
+```typescript
+public readonly linkId: number;
+```
+
+- *Type:* number
+
+---
+
+##### `filepathInput`<sup>Optional</sup> <a name="filepathInput" id="@cdktf/provider-gitlab.ReleaseLink.property.filepathInput"></a>
+
+```typescript
+public readonly filepathInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-gitlab.ReleaseLink.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `linkTypeInput`<sup>Optional</sup> <a name="linkTypeInput" id="@cdktf/provider-gitlab.ReleaseLink.property.linkTypeInput"></a>
+
+```typescript
+public readonly linkTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-gitlab.ReleaseLink.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktf/provider-gitlab.ReleaseLink.property.projectInput"></a>
+
+```typescript
+public readonly projectInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tagNameInput`<sup>Optional</sup> <a name="tagNameInput" id="@cdktf/provider-gitlab.ReleaseLink.property.tagNameInput"></a>
+
+```typescript
+public readonly tagNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `urlInput`<sup>Optional</sup> <a name="urlInput" id="@cdktf/provider-gitlab.ReleaseLink.property.urlInput"></a>
+
+```typescript
+public readonly urlInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `filepath`<sup>Required</sup> <a name="filepath" id="@cdktf/provider-gitlab.ReleaseLink.property.filepath"></a>
+
+```typescript
+public readonly filepath: string;
+```
+
+- *Type:* string
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.ReleaseLink.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `linkType`<sup>Required</sup> <a name="linkType" id="@cdktf/provider-gitlab.ReleaseLink.property.linkType"></a>
+
+```typescript
+public readonly linkType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-gitlab.ReleaseLink.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.ReleaseLink.property.project"></a>
+
+```typescript
+public readonly project: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tagName`<sup>Required</sup> <a name="tagName" id="@cdktf/provider-gitlab.ReleaseLink.property.tagName"></a>
+
+```typescript
+public readonly tagName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `url`<sup>Required</sup> <a name="url" id="@cdktf/provider-gitlab.ReleaseLink.property.url"></a>
+
+```typescript
+public readonly url: string;
+```
+
+- *Type:* string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-gitlab.ReleaseLink.property.tfResourceType"></a>
+
+```typescript
+public readonly tfResourceType: string;
+```
+
+- *Type:* string
+
+---
+
 ### RepositoryFile <a name="RepositoryFile" id="@cdktf/provider-gitlab.RepositoryFile"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/repository_file gitlab_repository_file}.
@@ -44710,6 +51221,721 @@ public readonly startBranch: string;
 ---
 
 ##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-gitlab.RepositoryFile.property.tfResourceType"></a>
+
+```typescript
+public readonly tfResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+### Runner <a name="Runner" id="@cdktf/provider-gitlab.Runner"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/runner gitlab_runner}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.Runner.Initializer"></a>
+
+```typescript
+import { Runner } from '@cdktf/provider-gitlab'
+
+new Runner(scope: Construct, id: string, config: RunnerConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.Runner.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-gitlab.Runner.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-gitlab.Runner.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-gitlab.RunnerConfig">RunnerConfig</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-gitlab.Runner.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.Runner.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-gitlab.Runner.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktf/provider-gitlab.RunnerConfig">RunnerConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.Runner.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-gitlab.Runner.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-gitlab.Runner.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-gitlab.Runner.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-gitlab.Runner.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.resetAccessLevel">resetAccessLevel</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.resetLocked">resetLocked</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.resetMaximumTimeout">resetMaximumTimeout</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.resetPaused">resetPaused</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.resetRunUntagged">resetRunUntagged</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.resetTagList">resetTagList</a></code> | *No description.* |
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-gitlab.Runner.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `addOverride` <a name="addOverride" id="@cdktf/provider-gitlab.Runner.addOverride"></a>
+
+```typescript
+public addOverride(path: string, value: any): void
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-gitlab.Runner.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-gitlab.Runner.addOverride.parameter.value"></a>
+
+- *Type:* any
+
+---
+
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-gitlab.Runner.overrideLogicalId"></a>
+
+```typescript
+public overrideLogicalId(newLogicalId: string): void
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-gitlab.Runner.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-gitlab.Runner.resetOverrideLogicalId"></a>
+
+```typescript
+public resetOverrideLogicalId(): void
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-gitlab.Runner.toMetadata"></a>
+
+```typescript
+public toMetadata(): any
+```
+
+##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-gitlab.Runner.toTerraform"></a>
+
+```typescript
+public toTerraform(): any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-gitlab.Runner.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.Runner.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-gitlab.Runner.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.Runner.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-gitlab.Runner.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.Runner.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-gitlab.Runner.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.Runner.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-gitlab.Runner.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.Runner.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-gitlab.Runner.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.Runner.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-gitlab.Runner.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.Runner.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-gitlab.Runner.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.Runner.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-gitlab.Runner.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.Runner.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-gitlab.Runner.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.Runner.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `resetAccessLevel` <a name="resetAccessLevel" id="@cdktf/provider-gitlab.Runner.resetAccessLevel"></a>
+
+```typescript
+public resetAccessLevel(): void
+```
+
+##### `resetDescription` <a name="resetDescription" id="@cdktf/provider-gitlab.Runner.resetDescription"></a>
+
+```typescript
+public resetDescription(): void
+```
+
+##### `resetId` <a name="resetId" id="@cdktf/provider-gitlab.Runner.resetId"></a>
+
+```typescript
+public resetId(): void
+```
+
+##### `resetLocked` <a name="resetLocked" id="@cdktf/provider-gitlab.Runner.resetLocked"></a>
+
+```typescript
+public resetLocked(): void
+```
+
+##### `resetMaximumTimeout` <a name="resetMaximumTimeout" id="@cdktf/provider-gitlab.Runner.resetMaximumTimeout"></a>
+
+```typescript
+public resetMaximumTimeout(): void
+```
+
+##### `resetPaused` <a name="resetPaused" id="@cdktf/provider-gitlab.Runner.resetPaused"></a>
+
+```typescript
+public resetPaused(): void
+```
+
+##### `resetRunUntagged` <a name="resetRunUntagged" id="@cdktf/provider-gitlab.Runner.resetRunUntagged"></a>
+
+```typescript
+public resetRunUntagged(): void
+```
+
+##### `resetTagList` <a name="resetTagList" id="@cdktf/provider-gitlab.Runner.resetTagList"></a>
+
+```typescript
+public resetTagList(): void
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.Runner.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-gitlab.Runner.isConstruct"></a>
+
+```typescript
+import { Runner } from '@cdktf/provider-gitlab'
+
+Runner.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-gitlab.Runner.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.authenticationToken">authenticationToken</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.status">status</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.accessLevelInput">accessLevelInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.lockedInput">lockedInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.maximumTimeoutInput">maximumTimeoutInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.pausedInput">pausedInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.registrationTokenInput">registrationTokenInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.runUntaggedInput">runUntaggedInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.tagListInput">tagListInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.accessLevel">accessLevel</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.locked">locked</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.maximumTimeout">maximumTimeout</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.paused">paused</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.registrationToken">registrationToken</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.runUntagged">runUntagged</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.tagList">tagList</a></code> | <code>string[]</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-gitlab.Runner.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-gitlab.Runner.property.cdktfStack"></a>
+
+```typescript
+public readonly cdktfStack: TerraformStack;
+```
+
+- *Type:* cdktf.TerraformStack
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-gitlab.Runner.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-gitlab.Runner.property.friendlyUniqueId"></a>
+
+```typescript
+public readonly friendlyUniqueId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-gitlab.Runner.property.terraformMetaArguments"></a>
+
+```typescript
+public readonly terraformMetaArguments: {[ key: string ]: any};
+```
+
+- *Type:* {[ key: string ]: any}
+
+---
+
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-gitlab.Runner.property.terraformResourceType"></a>
+
+```typescript
+public readonly terraformResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-gitlab.Runner.property.terraformGeneratorMetadata"></a>
+
+```typescript
+public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
+```
+
+- *Type:* cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.Runner.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-gitlab.Runner.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.Runner.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.Runner.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `authenticationToken`<sup>Required</sup> <a name="authenticationToken" id="@cdktf/provider-gitlab.Runner.property.authenticationToken"></a>
+
+```typescript
+public readonly authenticationToken: string;
+```
+
+- *Type:* string
+
+---
+
+##### `status`<sup>Required</sup> <a name="status" id="@cdktf/provider-gitlab.Runner.property.status"></a>
+
+```typescript
+public readonly status: string;
+```
+
+- *Type:* string
+
+---
+
+##### `accessLevelInput`<sup>Optional</sup> <a name="accessLevelInput" id="@cdktf/provider-gitlab.Runner.property.accessLevelInput"></a>
+
+```typescript
+public readonly accessLevelInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-gitlab.Runner.property.descriptionInput"></a>
+
+```typescript
+public readonly descriptionInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-gitlab.Runner.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `lockedInput`<sup>Optional</sup> <a name="lockedInput" id="@cdktf/provider-gitlab.Runner.property.lockedInput"></a>
+
+```typescript
+public readonly lockedInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `maximumTimeoutInput`<sup>Optional</sup> <a name="maximumTimeoutInput" id="@cdktf/provider-gitlab.Runner.property.maximumTimeoutInput"></a>
+
+```typescript
+public readonly maximumTimeoutInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `pausedInput`<sup>Optional</sup> <a name="pausedInput" id="@cdktf/provider-gitlab.Runner.property.pausedInput"></a>
+
+```typescript
+public readonly pausedInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `registrationTokenInput`<sup>Optional</sup> <a name="registrationTokenInput" id="@cdktf/provider-gitlab.Runner.property.registrationTokenInput"></a>
+
+```typescript
+public readonly registrationTokenInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `runUntaggedInput`<sup>Optional</sup> <a name="runUntaggedInput" id="@cdktf/provider-gitlab.Runner.property.runUntaggedInput"></a>
+
+```typescript
+public readonly runUntaggedInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `tagListInput`<sup>Optional</sup> <a name="tagListInput" id="@cdktf/provider-gitlab.Runner.property.tagListInput"></a>
+
+```typescript
+public readonly tagListInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `accessLevel`<sup>Required</sup> <a name="accessLevel" id="@cdktf/provider-gitlab.Runner.property.accessLevel"></a>
+
+```typescript
+public readonly accessLevel: string;
+```
+
+- *Type:* string
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-gitlab.Runner.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* string
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.Runner.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `locked`<sup>Required</sup> <a name="locked" id="@cdktf/provider-gitlab.Runner.property.locked"></a>
+
+```typescript
+public readonly locked: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `maximumTimeout`<sup>Required</sup> <a name="maximumTimeout" id="@cdktf/provider-gitlab.Runner.property.maximumTimeout"></a>
+
+```typescript
+public readonly maximumTimeout: number;
+```
+
+- *Type:* number
+
+---
+
+##### `paused`<sup>Required</sup> <a name="paused" id="@cdktf/provider-gitlab.Runner.property.paused"></a>
+
+```typescript
+public readonly paused: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `registrationToken`<sup>Required</sup> <a name="registrationToken" id="@cdktf/provider-gitlab.Runner.property.registrationToken"></a>
+
+```typescript
+public readonly registrationToken: string;
+```
+
+- *Type:* string
+
+---
+
+##### `runUntagged`<sup>Required</sup> <a name="runUntagged" id="@cdktf/provider-gitlab.Runner.property.runUntagged"></a>
+
+```typescript
+public readonly runUntagged: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `tagList`<sup>Required</sup> <a name="tagList" id="@cdktf/provider-gitlab.Runner.property.tagList"></a>
+
+```typescript
+public readonly tagList: string[];
+```
+
+- *Type:* string[]
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-gitlab.Runner.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -50685,6 +57911,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.Topic.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Topic.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Topic.resetSoftDestroy">resetSoftDestroy</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Topic.resetTitle">resetTitle</a></code> | *No description.* |
 
 ---
 
@@ -50902,6 +58129,12 @@ public resetId(): void
 public resetSoftDestroy(): void
 ```
 
+##### `resetTitle` <a name="resetTitle" id="@cdktf/provider-gitlab.Topic.resetTitle"></a>
+
+```typescript
+public resetTitle(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -50964,12 +58197,14 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.Topic.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Topic.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Topic.property.softDestroyInput">softDestroyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Topic.property.titleInput">titleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Topic.property.avatar">avatar</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Topic.property.avatarHash">avatarHash</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Topic.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Topic.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Topic.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Topic.property.softDestroy">softDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Topic.property.title">title</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -51155,6 +58390,16 @@ public readonly softDestroyInput: boolean | IResolvable;
 
 ---
 
+##### `titleInput`<sup>Optional</sup> <a name="titleInput" id="@cdktf/provider-gitlab.Topic.property.titleInput"></a>
+
+```typescript
+public readonly titleInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `avatar`<sup>Required</sup> <a name="avatar" id="@cdktf/provider-gitlab.Topic.property.avatar"></a>
 
 ```typescript
@@ -51212,6 +58457,16 @@ public readonly softDestroy: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `title`<sup>Required</sup> <a name="title" id="@cdktf/provider-gitlab.Topic.property.title"></a>
+
+```typescript
+public readonly title: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -53679,6 +60934,250 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 ---
 
+### ClusterAgentConfig <a name="ClusterAgentConfig" id="@cdktf/provider-gitlab.ClusterAgentConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.ClusterAgentConfig.Initializer"></a>
+
+```typescript
+import { ClusterAgentConfig } from '@cdktf/provider-gitlab'
+
+const clusterAgentConfig: ClusterAgentConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentConfig.property.name">name</a></code> | <code>string</code> | The Name of the agent. |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentConfig.property.project">project</a></code> | <code>string</code> | ID or full path of the project maintained by the authenticated user. |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent#id ClusterAgent#id}. |
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ClusterAgentConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-gitlab.ClusterAgentConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* cdktf.ITerraformDependable[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ClusterAgentConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.ClusterAgentConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-gitlab.ClusterAgentConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+The Name of the agent.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent#name ClusterAgent#name}
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.ClusterAgentConfig.property.project"></a>
+
+```typescript
+public readonly project: string;
+```
+
+- *Type:* string
+
+ID or full path of the project maintained by the authenticated user.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent#project ClusterAgent#project}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.ClusterAgentConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent#id ClusterAgent#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+### ClusterAgentTokenConfig <a name="ClusterAgentTokenConfig" id="@cdktf/provider-gitlab.ClusterAgentTokenConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.ClusterAgentTokenConfig.Initializer"></a>
+
+```typescript
+import { ClusterAgentTokenConfig } from '@cdktf/provider-gitlab'
+
+const clusterAgentTokenConfig: ClusterAgentTokenConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.agentId">agentId</a></code> | <code>number</code> | The ID of the agent. |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.name">name</a></code> | <code>string</code> | The Name of the agent. |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.project">project</a></code> | <code>string</code> | ID or full path of the project maintained by the authenticated user. |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.description">description</a></code> | <code>string</code> | The Description for the agent. |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent_token#id ClusterAgentToken#id}. |
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* cdktf.ITerraformDependable[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `agentId`<sup>Required</sup> <a name="agentId" id="@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.agentId"></a>
+
+```typescript
+public readonly agentId: number;
+```
+
+- *Type:* number
+
+The ID of the agent.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent_token#agent_id ClusterAgentToken#agent_id}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+The Name of the agent.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent_token#name ClusterAgentToken#name}
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.project"></a>
+
+```typescript
+public readonly project: string;
+```
+
+- *Type:* string
+
+ID or full path of the project maintained by the authenticated user.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent_token#project ClusterAgentToken#project}
+
+---
+
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* string
+
+The Description for the agent.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent_token#description ClusterAgentToken#description}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent_token#id ClusterAgentToken#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
 ### DataGitlabBranchCommit <a name="DataGitlabBranchCommit" id="@cdktf/provider-gitlab.DataGitlabBranchCommit"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.DataGitlabBranchCommit.Initializer"></a>
@@ -53794,6 +61293,277 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+### DataGitlabClusterAgentConfig <a name="DataGitlabClusterAgentConfig" id="@cdktf/provider-gitlab.DataGitlabClusterAgentConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.DataGitlabClusterAgentConfig.Initializer"></a>
+
+```typescript
+import { DataGitlabClusterAgentConfig } from '@cdktf/provider-gitlab'
+
+const dataGitlabClusterAgentConfig: DataGitlabClusterAgentConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentConfig.property.agentId">agentId</a></code> | <code>number</code> | The ID of the agent. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentConfig.property.project">project</a></code> | <code>string</code> | ID or full path of the project maintained by the authenticated user. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/cluster_agent#id DataGitlabClusterAgent#id}. |
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.DataGitlabClusterAgentConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-gitlab.DataGitlabClusterAgentConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* cdktf.ITerraformDependable[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabClusterAgentConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.DataGitlabClusterAgentConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `agentId`<sup>Required</sup> <a name="agentId" id="@cdktf/provider-gitlab.DataGitlabClusterAgentConfig.property.agentId"></a>
+
+```typescript
+public readonly agentId: number;
+```
+
+- *Type:* number
+
+The ID of the agent.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/cluster_agent#agent_id DataGitlabClusterAgent#agent_id}
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.DataGitlabClusterAgentConfig.property.project"></a>
+
+```typescript
+public readonly project: string;
+```
+
+- *Type:* string
+
+ID or full path of the project maintained by the authenticated user.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/cluster_agent#project DataGitlabClusterAgent#project}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.DataGitlabClusterAgentConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/cluster_agent#id DataGitlabClusterAgent#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+### DataGitlabClusterAgentsClusterAgents <a name="DataGitlabClusterAgentsClusterAgents" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgents"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgents.Initializer"></a>
+
+```typescript
+import { DataGitlabClusterAgentsClusterAgents } from '@cdktf/provider-gitlab'
+
+const dataGitlabClusterAgentsClusterAgents: DataGitlabClusterAgentsClusterAgents = { ... }
+```
+
+
+### DataGitlabClusterAgentsConfig <a name="DataGitlabClusterAgentsConfig" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsConfig.Initializer"></a>
+
+```typescript
+import { DataGitlabClusterAgentsConfig } from '@cdktf/provider-gitlab'
+
+const dataGitlabClusterAgentsConfig: DataGitlabClusterAgentsConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsConfig.property.project">project</a></code> | <code>string</code> | The ID or full path of the project owned by the authenticated user. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/cluster_agents#id DataGitlabClusterAgents#id}. |
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* cdktf.ITerraformDependable[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsConfig.property.project"></a>
+
+```typescript
+public readonly project: string;
+```
+
+- *Type:* string
+
+The ID or full path of the project owned by the authenticated user.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/cluster_agents#project DataGitlabClusterAgents#project}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/cluster_agents#id DataGitlabClusterAgents#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+### DataGitlabCurrentUserConfig <a name="DataGitlabCurrentUserConfig" id="@cdktf/provider-gitlab.DataGitlabCurrentUserConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.DataGitlabCurrentUserConfig.Initializer"></a>
+
+```typescript
+import { DataGitlabCurrentUserConfig } from '@cdktf/provider-gitlab'
+
+const dataGitlabCurrentUserConfig: DataGitlabCurrentUserConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUserConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUserConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUserConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.DataGitlabCurrentUserConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-gitlab.DataGitlabCurrentUserConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* cdktf.ITerraformDependable[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabCurrentUserConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.DataGitlabCurrentUserConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
 
 ---
 
@@ -54591,6 +62361,7 @@ const dataGitlabProjectConfig: DataGitlabProjectConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectConfig.property.ciDefaultGitDepth">ciDefaultGitDepth</a></code> | <code>number</code> | Default number of revisions for shallow cloning. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectConfig.property.id">id</a></code> | <code>string</code> | The integer or path with namespace that uniquely identifies the project within the gitlab install. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectConfig.property.pathWithNamespace">pathWithNamespace</a></code> | <code>string</code> | The path of the repository with namespace. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectConfig.property.publicBuilds">publicBuilds</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, jobs can be viewed by non-project members. |
@@ -54634,6 +62405,20 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `ciDefaultGitDepth`<sup>Optional</sup> <a name="ciDefaultGitDepth" id="@cdktf/provider-gitlab.DataGitlabProjectConfig.property.ciDefaultGitDepth"></a>
+
+```typescript
+public readonly ciDefaultGitDepth: number;
+```
+
+- *Type:* number
+
+Default number of revisions for shallow cloning.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project#ci_default_git_depth DataGitlabProject#ci_default_git_depth}
 
 ---
 
@@ -54835,7 +62620,7 @@ const dataGitlabProjectIssuesConfig: DataGitlabProjectIssuesConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssuesConfig.property.notAssigneeId">notAssigneeId</a></code> | <code>number[]</code> | Return issues that do not match the assignee id. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssuesConfig.property.notAuthorId">notAuthorId</a></code> | <code>number[]</code> | Return issues that do not match the author id. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssuesConfig.property.notLabels">notLabels</a></code> | <code>string[]</code> | Return issues that do not match the labels. |
-| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssuesConfig.property.notMilestone">notMilestone</a></code> | <code>string[]</code> | Return issues that do not match the milestone. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssuesConfig.property.notMilestone">notMilestone</a></code> | <code>string</code> | Return issues that do not match the milestone. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssuesConfig.property.notMyReactionEmoji">notMyReactionEmoji</a></code> | <code>string[]</code> | Return issues not reacted by the authenticated user by the given emoji. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssuesConfig.property.orderBy">orderBy</a></code> | <code>string</code> | Return issues ordered by. Valid values are `created_at`, `updated_at`, `priority`, `due_date`, `relative_position`, `label_priority`, `milestone_due`, `popularity`, `weight`. Default is created_at. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssuesConfig.property.scope">scope</a></code> | <code>string</code> | Return issues for the given scope. Valid values are `created_by_me`, `assigned_to_me`, `all`. Defaults to all. |
@@ -55140,10 +62925,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 ##### `notMilestone`<sup>Optional</sup> <a name="notMilestone" id="@cdktf/provider-gitlab.DataGitlabProjectIssuesConfig.property.notMilestone"></a>
 
 ```typescript
-public readonly notMilestone: string[];
+public readonly notMilestone: string;
 ```
 
-- *Type:* string[]
+- *Type:* string
 
 Return issues that do not match the milestone.
 
@@ -55311,6 +63096,291 @@ const dataGitlabProjectIssuesIssuesTaskCompletionStatus: DataGitlabProjectIssues
 import { DataGitlabProjectIssueTaskCompletionStatus } from '@cdktf/provider-gitlab'
 
 const dataGitlabProjectIssueTaskCompletionStatus: DataGitlabProjectIssueTaskCompletionStatus = { ... }
+```
+
+
+### DataGitlabProjectMilestoneConfig <a name="DataGitlabProjectMilestoneConfig" id="@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig.Initializer"></a>
+
+```typescript
+import { DataGitlabProjectMilestoneConfig } from '@cdktf/provider-gitlab'
+
+const dataGitlabProjectMilestoneConfig: DataGitlabProjectMilestoneConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig.property.milestoneId">milestoneId</a></code> | <code>number</code> | The instance-wide ID of the project’s milestone. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig.property.project">project</a></code> | <code>string</code> | The ID or URL-encoded path of the project owned by the authenticated user. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestone#id DataGitlabProjectMilestone#id}. |
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* cdktf.ITerraformDependable[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `milestoneId`<sup>Required</sup> <a name="milestoneId" id="@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig.property.milestoneId"></a>
+
+```typescript
+public readonly milestoneId: number;
+```
+
+- *Type:* number
+
+The instance-wide ID of the project’s milestone.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestone#milestone_id DataGitlabProjectMilestone#milestone_id}
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig.property.project"></a>
+
+```typescript
+public readonly project: string;
+```
+
+- *Type:* string
+
+The ID or URL-encoded path of the project owned by the authenticated user.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestone#project DataGitlabProjectMilestone#project}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestone#id DataGitlabProjectMilestone#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+### DataGitlabProjectMilestonesConfig <a name="DataGitlabProjectMilestonesConfig" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.Initializer"></a>
+
+```typescript
+import { DataGitlabProjectMilestonesConfig } from '@cdktf/provider-gitlab'
+
+const dataGitlabProjectMilestonesConfig: DataGitlabProjectMilestonesConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.project">project</a></code> | <code>string</code> | The ID or URL-encoded path of the project owned by the authenticated user. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestones#id DataGitlabProjectMilestones#id}. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.iids">iids</a></code> | <code>number[]</code> | Return only the milestones having the given `iid` (Note: ignored if `include_parent_milestones` is set as `true`). |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.includeParentMilestones">includeParentMilestones</a></code> | <code>boolean \| cdktf.IResolvable</code> | Include group milestones from parent group and its ancestors. Introduced in GitLab 13.4. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.search">search</a></code> | <code>string</code> | Return only milestones with a title or description matching the provided string. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.state">state</a></code> | <code>string</code> | Return only `active` or `closed` milestones. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.title">title</a></code> | <code>string</code> | Return only the milestones having the given `title`. |
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* cdktf.ITerraformDependable[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.project"></a>
+
+```typescript
+public readonly project: string;
+```
+
+- *Type:* string
+
+The ID or URL-encoded path of the project owned by the authenticated user.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestones#project DataGitlabProjectMilestones#project}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestones#id DataGitlabProjectMilestones#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `iids`<sup>Optional</sup> <a name="iids" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.iids"></a>
+
+```typescript
+public readonly iids: number[];
+```
+
+- *Type:* number[]
+
+Return only the milestones having the given `iid` (Note: ignored if `include_parent_milestones` is set as `true`).
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestones#iids DataGitlabProjectMilestones#iids}
+
+---
+
+##### `includeParentMilestones`<sup>Optional</sup> <a name="includeParentMilestones" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.includeParentMilestones"></a>
+
+```typescript
+public readonly includeParentMilestones: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Include group milestones from parent group and its ancestors. Introduced in GitLab 13.4.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestones#include_parent_milestones DataGitlabProjectMilestones#include_parent_milestones}
+
+---
+
+##### `search`<sup>Optional</sup> <a name="search" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.search"></a>
+
+```typescript
+public readonly search: string;
+```
+
+- *Type:* string
+
+Return only milestones with a title or description matching the provided string.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestones#search DataGitlabProjectMilestones#search}
+
+---
+
+##### `state`<sup>Optional</sup> <a name="state" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.state"></a>
+
+```typescript
+public readonly state: string;
+```
+
+- *Type:* string
+
+Return only `active` or `closed` milestones.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestones#state DataGitlabProjectMilestones#state}
+
+---
+
+##### `title`<sup>Optional</sup> <a name="title" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.title"></a>
+
+```typescript
+public readonly title: string;
+```
+
+- *Type:* string
+
+Return only the milestones having the given `title`.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestones#title DataGitlabProjectMilestones#title}
+
+---
+
+### DataGitlabProjectMilestonesMilestones <a name="DataGitlabProjectMilestonesMilestones" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestones"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestones.Initializer"></a>
+
+```typescript
+import { DataGitlabProjectMilestonesMilestones } from '@cdktf/provider-gitlab'
+
+const dataGitlabProjectMilestonesMilestones: DataGitlabProjectMilestonesMilestones = { ... }
 ```
 
 
@@ -56576,6 +64646,246 @@ If you experience problems setting this value it might not be settable. Please t
 import { DataGitlabProjectVariablesVariables } from '@cdktf/provider-gitlab'
 
 const dataGitlabProjectVariablesVariables: DataGitlabProjectVariablesVariables = { ... }
+```
+
+
+### DataGitlabReleaseLinkConfig <a name="DataGitlabReleaseLinkConfig" id="@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.Initializer"></a>
+
+```typescript
+import { DataGitlabReleaseLinkConfig } from '@cdktf/provider-gitlab'
+
+const dataGitlabReleaseLinkConfig: DataGitlabReleaseLinkConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.linkId">linkId</a></code> | <code>number</code> | The ID of the link. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.project">project</a></code> | <code>string</code> | The ID or [URL-encoded path of the project](https://docs.gitlab.com/ee/api/index.html#namespaced-path-encoding). |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.tagName">tagName</a></code> | <code>string</code> | The tag associated with the Release. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/release_link#id DataGitlabReleaseLink#id}. |
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* cdktf.ITerraformDependable[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `linkId`<sup>Required</sup> <a name="linkId" id="@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.linkId"></a>
+
+```typescript
+public readonly linkId: number;
+```
+
+- *Type:* number
+
+The ID of the link.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/release_link#link_id DataGitlabReleaseLink#link_id}
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.project"></a>
+
+```typescript
+public readonly project: string;
+```
+
+- *Type:* string
+
+The ID or [URL-encoded path of the project](https://docs.gitlab.com/ee/api/index.html#namespaced-path-encoding).
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/release_link#project DataGitlabReleaseLink#project}
+
+---
+
+##### `tagName`<sup>Required</sup> <a name="tagName" id="@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.tagName"></a>
+
+```typescript
+public readonly tagName: string;
+```
+
+- *Type:* string
+
+The tag associated with the Release.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/release_link#tag_name DataGitlabReleaseLink#tag_name}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/release_link#id DataGitlabReleaseLink#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+### DataGitlabReleaseLinksConfig <a name="DataGitlabReleaseLinksConfig" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig.Initializer"></a>
+
+```typescript
+import { DataGitlabReleaseLinksConfig } from '@cdktf/provider-gitlab'
+
+const dataGitlabReleaseLinksConfig: DataGitlabReleaseLinksConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig.property.project">project</a></code> | <code>string</code> | The ID or full path to the project. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig.property.tagName">tagName</a></code> | <code>string</code> | The tag associated with the Release. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/release_links#id DataGitlabReleaseLinks#id}. |
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* cdktf.ITerraformDependable[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig.property.project"></a>
+
+```typescript
+public readonly project: string;
+```
+
+- *Type:* string
+
+The ID or full path to the project.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/release_links#project DataGitlabReleaseLinks#project}
+
+---
+
+##### `tagName`<sup>Required</sup> <a name="tagName" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig.property.tagName"></a>
+
+```typescript
+public readonly tagName: string;
+```
+
+- *Type:* string
+
+The tag associated with the Release.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/release_links#tag_name DataGitlabReleaseLinks#tag_name}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/release_links#id DataGitlabReleaseLinks#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+### DataGitlabReleaseLinksReleaseLinks <a name="DataGitlabReleaseLinksReleaseLinks" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinks"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinks.Initializer"></a>
+
+```typescript
+import { DataGitlabReleaseLinksReleaseLinks } from '@cdktf/provider-gitlab'
+
+const dataGitlabReleaseLinksReleaseLinks: DataGitlabReleaseLinksReleaseLinks = { ... }
 ```
 
 
@@ -59219,8 +67529,8 @@ const groupShareGroupConfig: GroupShareGroupConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.GroupShareGroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupShareGroupConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupShareGroupConfig.property.groupAccess">groupAccess</a></code> | <code>string</code> | The access level to grant the group. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`. |
-| <code><a href="#@cdktf/provider-gitlab.GroupShareGroupConfig.property.groupId">groupId</a></code> | <code>string</code> | The id of the main group. |
-| <code><a href="#@cdktf/provider-gitlab.GroupShareGroupConfig.property.shareGroupId">shareGroupId</a></code> | <code>number</code> | The id of an additional group which will be shared with the main group. |
+| <code><a href="#@cdktf/provider-gitlab.GroupShareGroupConfig.property.groupId">groupId</a></code> | <code>string</code> | The id of the main group to be shared. |
+| <code><a href="#@cdktf/provider-gitlab.GroupShareGroupConfig.property.shareGroupId">shareGroupId</a></code> | <code>number</code> | The id of the additional group with which the main group will be shared. |
 | <code><a href="#@cdktf/provider-gitlab.GroupShareGroupConfig.property.expiresAt">expiresAt</a></code> | <code>string</code> | Share expiration date. Format: `YYYY-MM-DD`. |
 | <code><a href="#@cdktf/provider-gitlab.GroupShareGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_share_group#id GroupShareGroup#id}. |
 
@@ -59288,7 +67598,7 @@ public readonly groupId: string;
 
 - *Type:* string
 
-The id of the main group.
+The id of the main group to be shared.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_share_group#group_id GroupShareGroup#group_id}
 
@@ -59302,7 +67612,7 @@ public readonly shareGroupId: number;
 
 - *Type:* number
 
-The id of an additional group which will be shared with the main group.
+The id of the additional group with which the main group will be shared.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_share_group#share_group_id GroupShareGroup#share_group_id}
 
@@ -60135,8 +68445,8 @@ public readonly approvalStatus: string;
 
 The approval status of the license.
 
-Valid values are: `approved`, `blacklisted`, `allowed`, `denied`. "approved" and "blacklisted" 
-have been deprecated in favor of "allowed" and "denied"; use "allowed" and "denied" for GitLab versions 15.0 and higher. 
+Valid values are: `approved`, `blacklisted`, `allowed`, `denied`. "approved" and "blacklisted"
+have been deprecated in favor of "allowed" and "denied"; use "allowed" and "denied" for GitLab versions 15.0 and higher.
 Prior to version 15.0 and after 14.6, the values are equivalent.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/managed_license#approval_status ManagedLicense#approval_status}
@@ -60857,7 +69167,7 @@ public readonly accessLevel: string;
 
 The access level for the project access token.
 
-Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `master`. Default is `maintainer`.
+Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`. Default is `maintainer`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_access_token#access_level ProjectAccessToken#access_level}
 
@@ -61098,6 +69408,7 @@ const projectBadgeConfig: ProjectBadgeConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadgeConfig.property.linkUrl">linkUrl</a></code> | <code>string</code> | The url linked with the badge. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadgeConfig.property.project">project</a></code> | <code>string</code> | The id of the project to add the badge to. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadgeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge#id ProjectBadge#id}. |
+| <code><a href="#@cdktf/provider-gitlab.ProjectBadgeConfig.property.name">name</a></code> | <code>string</code> | The name of the badge. |
 
 ---
 
@@ -61195,6 +69506,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-gitlab.ProjectBadgeConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+The name of the badge.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge#name ProjectBadge#name}
 
 ---
 
@@ -61476,7 +69801,7 @@ const projectConfig: ProjectConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.name">name</a></code> | <code>string</code> | The name of the project. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.allowMergeOnSkippedPipeline">allowMergeOnSkippedPipeline</a></code> | <code>boolean \| cdktf.IResolvable</code> | Set to true if you want to treat skipped pipelines as if they finished with success. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.analyticsAccessLevel">analyticsAccessLevel</a></code> | <code>string</code> | Set the analytics access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.approvalsBeforeMerge">approvalsBeforeMerge</a></code> | <code>number</code> | Number of merge request approvals required for merging. Default is 0. |
+| <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.approvalsBeforeMerge">approvalsBeforeMerge</a></code> | <code>number</code> | Number of merge request approvals required for merging. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.archived">archived</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the project is in read-only mode (archived). Repositories can be archived/unarchived by toggling this parameter. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.archiveOnDestroy">archiveOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Set to `true` to archive the project instead of deleting on destroy. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.autoCancelPendingPipelines">autoCancelPendingPipelines</a></code> | <code>string</code> | Auto-cancel pending pipelines. This isn’t a boolean, but enabled/disabled. |
@@ -61488,6 +69813,7 @@ const projectConfig: ProjectConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.buildsAccessLevel">buildsAccessLevel</a></code> | <code>string</code> | Set the builds access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.buildTimeout">buildTimeout</a></code> | <code>number</code> | The maximum amount of time, in seconds, that a job can run. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.ciConfigPath">ciConfigPath</a></code> | <code>string</code> | Custom Path to CI config file. |
+| <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.ciDefaultGitDepth">ciDefaultGitDepth</a></code> | <code>number</code> | Default number of revisions for shallow cloning. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.ciForwardDeploymentEnabled">ciForwardDeploymentEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | When a new deployment job starts, skip older deployment jobs that are still pending. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.containerExpirationPolicy">containerExpirationPolicy</a></code> | <code><a href="#@cdktf/provider-gitlab.ProjectContainerExpirationPolicy">ProjectContainerExpirationPolicy</a></code> | container_expiration_policy block. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.containerRegistryAccessLevel">containerRegistryAccessLevel</a></code> | <code>string</code> | Set visibility of container registry, for this project. Valid values are `disabled`, `private`, `enabled`. |
@@ -61535,6 +69861,7 @@ const projectConfig: ProjectConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.resolveOutdatedDiffDiscussions">resolveOutdatedDiffDiscussions</a></code> | <code>boolean \| cdktf.IResolvable</code> | Automatically resolve merge request diffs discussions on lines changed with a push. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.securityAndComplianceAccessLevel">securityAndComplianceAccessLevel</a></code> | <code>string</code> | Set the security and compliance access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.sharedRunnersEnabled">sharedRunnersEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable shared runners for this project. |
+| <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.skipWaitForDefaultBranchProtection">skipWaitForDefaultBranchProtection</a></code> | <code>boolean \| cdktf.IResolvable</code> | If `true`, the default behavior to wait for the default branch protection to be created is skipped. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.snippetsAccessLevel">snippetsAccessLevel</a></code> | <code>string</code> | Set the snippets access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.snippetsEnabled">snippetsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable snippets for the project. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.squashCommitTemplate">squashCommitTemplate</a></code> | <code>string</code> | Template used to create squash commit message in merge requests. (Introduced in GitLab 14.6.). |
@@ -61640,7 +69967,13 @@ public readonly approvalsBeforeMerge: number;
 
 - *Type:* number
 
-Number of merge request approvals required for merging. Default is 0.
+Number of merge request approvals required for merging.
+
+Default is 0.
+This field **does not** work well in combination with the `gitlab_project_approval_rule` resource
+and is most likely gonna be deprecated in a future GitLab version (see [this upstream epic](https://gitlab.com/groups/gitlab-org/-/epics/7572)).
+In the meantime we recommend against using this attribute and use `gitlab_project_approval_rule` instead.
+
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#approvals_before_merge Project#approvals_before_merge}
 
@@ -61799,6 +70132,20 @@ public readonly ciConfigPath: string;
 Custom Path to CI config file.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#ci_config_path Project#ci_config_path}
+
+---
+
+##### `ciDefaultGitDepth`<sup>Optional</sup> <a name="ciDefaultGitDepth" id="@cdktf/provider-gitlab.ProjectConfig.property.ciDefaultGitDepth"></a>
+
+```typescript
+public readonly ciDefaultGitDepth: number;
+```
+
+- *Type:* number
+
+Default number of revisions for shallow cloning.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#ci_default_git_depth Project#ci_default_git_depth}
 
 ---
 
@@ -62460,6 +70807,25 @@ public readonly sharedRunnersEnabled: boolean | IResolvable;
 Enable shared runners for this project.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#shared_runners_enabled Project#shared_runners_enabled}
+
+---
+
+##### `skipWaitForDefaultBranchProtection`<sup>Optional</sup> <a name="skipWaitForDefaultBranchProtection" id="@cdktf/provider-gitlab.ProjectConfig.property.skipWaitForDefaultBranchProtection"></a>
+
+```typescript
+public readonly skipWaitForDefaultBranchProtection: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+If `true`, the default behavior to wait for the default branch protection to be created is skipped.
+
+This is necessary if the current user is not an admin and the default branch protection is disabled on an instance-level.
+There is currently no known way to determine if the default branch protection is disabled on an instance-level for non-admin users.
+This attribute is only used during resource creation, thus changes are suppressed and the attribute cannot be imported.
+
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#skip_wait_for_default_branch_protection Project#skip_wait_for_default_branch_protection}
 
 ---
 
@@ -63497,8 +71863,6 @@ const projectIssueConfig: ProjectIssueConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.project">project</a></code> | <code>string</code> | The name or ID of the project. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.title">title</a></code> | <code>string</code> | The title of the issue. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.assigneeIds">assigneeIds</a></code> | <code>number[]</code> | The IDs of the users to assign the issue to. |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.closedAt">closedAt</a></code> | <code>string</code> | When the issue was closed. Date time string, ISO 8601 formatted, for example 2016-03-11T03:45:40Z. |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.closedByUserId">closedByUserId</a></code> | <code>number</code> | The ID of the user that closed the issue. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.confidential">confidential</a></code> | <code>boolean \| cdktf.IResolvable</code> | Set an issue to be confidential. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.createdAt">createdAt</a></code> | <code>string</code> | When the issue was created. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.deleteOnDestroy">deleteOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the issue is deleted instead of closed during destroy. |
@@ -63507,20 +71871,13 @@ const projectIssueConfig: ProjectIssueConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.discussionToResolve">discussionToResolve</a></code> | <code>string</code> | The ID of a discussion to resolve. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.dueDate">dueDate</a></code> | <code>string</code> | The due date. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.epicIssueId">epicIssueId</a></code> | <code>number</code> | The ID of the epic issue. |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.humanTimeEstimate">humanTimeEstimate</a></code> | <code>string</code> | The human-readable time estimate of the issue. |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.humanTotalTimeSpent">humanTotalTimeSpent</a></code> | <code>string</code> | The human-readable total time spent of the issue. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#id ProjectIssue#id}. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.iid">iid</a></code> | <code>number</code> | The internal ID of the project's issue. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.issueType">issueType</a></code> | <code>string</code> | The type of issue. Valid values are: `issue`, `incident`, `test_case`. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.labels">labels</a></code> | <code>string[]</code> | The labels of an issue. |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.links">links</a></code> | <code>{[ key: string ]: string}</code> | The links of the issue. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.mergeRequestToResolveDiscussionsOf">mergeRequestToResolveDiscussionsOf</a></code> | <code>number</code> | The IID of a merge request in which to resolve all issues. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.milestoneId">milestoneId</a></code> | <code>number</code> | The global ID of a milestone to assign issue. |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.references">references</a></code> | <code>{[ key: string ]: string}</code> | The references of the issue. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.state">state</a></code> | <code>string</code> | The state of the issue. Valid values are: `opened`, `closed`. |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.taskCompletionStatus">taskCompletionStatus</a></code> | <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatus">ProjectIssueTaskCompletionStatus</a></code> | task_completion_status block. |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.timeEstimate">timeEstimate</a></code> | <code>number</code> | The time estimate of the issue. |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.totalTimeSpent">totalTimeSpent</a></code> | <code>number</code> | The total time spent of the issue. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.updatedAt">updatedAt</a></code> | <code>string</code> | When the issue was updated. Date time string, ISO 8601 formatted, for example 2016-03-11T03:45:40Z. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.weight">weight</a></code> | <code>number</code> | The weight of the issue. Valid values are greater than or equal to 0. |
 
@@ -63605,36 +71962,6 @@ public readonly assigneeIds: number[];
 The IDs of the users to assign the issue to.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#assignee_ids ProjectIssue#assignee_ids}
-
----
-
-##### `closedAt`<sup>Optional</sup> <a name="closedAt" id="@cdktf/provider-gitlab.ProjectIssueConfig.property.closedAt"></a>
-
-```typescript
-public readonly closedAt: string;
-```
-
-- *Type:* string
-
-When the issue was closed. Date time string, ISO 8601 formatted, for example 2016-03-11T03:45:40Z.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#closed_at ProjectIssue#closed_at}
-
----
-
-##### `closedByUserId`<sup>Optional</sup> <a name="closedByUserId" id="@cdktf/provider-gitlab.ProjectIssueConfig.property.closedByUserId"></a>
-
-```typescript
-public readonly closedByUserId: number;
-```
-
-- *Type:* number
-
-The ID of the user that closed the issue.
-
-Use `gitlab_user` data source to get more information about the user.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#closed_by_user_id ProjectIssue#closed_by_user_id}
 
 ---
 
@@ -63758,34 +72085,6 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 ---
 
-##### `humanTimeEstimate`<sup>Optional</sup> <a name="humanTimeEstimate" id="@cdktf/provider-gitlab.ProjectIssueConfig.property.humanTimeEstimate"></a>
-
-```typescript
-public readonly humanTimeEstimate: string;
-```
-
-- *Type:* string
-
-The human-readable time estimate of the issue.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#human_time_estimate ProjectIssue#human_time_estimate}
-
----
-
-##### `humanTotalTimeSpent`<sup>Optional</sup> <a name="humanTotalTimeSpent" id="@cdktf/provider-gitlab.ProjectIssueConfig.property.humanTotalTimeSpent"></a>
-
-```typescript
-public readonly humanTotalTimeSpent: string;
-```
-
-- *Type:* string
-
-The human-readable total time spent of the issue.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#human_total_time_spent ProjectIssue#human_total_time_spent}
-
----
-
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.ProjectIssueConfig.property.id"></a>
 
 ```typescript
@@ -63843,20 +72142,6 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 ---
 
-##### `links`<sup>Optional</sup> <a name="links" id="@cdktf/provider-gitlab.ProjectIssueConfig.property.links"></a>
-
-```typescript
-public readonly links: {[ key: string ]: string};
-```
-
-- *Type:* {[ key: string ]: string}
-
-The links of the issue.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#links ProjectIssue#links}
-
----
-
 ##### `mergeRequestToResolveDiscussionsOf`<sup>Optional</sup> <a name="mergeRequestToResolveDiscussionsOf" id="@cdktf/provider-gitlab.ProjectIssueConfig.property.mergeRequestToResolveDiscussionsOf"></a>
 
 ```typescript
@@ -63889,20 +72174,6 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 ---
 
-##### `references`<sup>Optional</sup> <a name="references" id="@cdktf/provider-gitlab.ProjectIssueConfig.property.references"></a>
-
-```typescript
-public readonly references: {[ key: string ]: string};
-```
-
-- *Type:* {[ key: string ]: string}
-
-The references of the issue.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#references ProjectIssue#references}
-
----
-
 ##### `state`<sup>Optional</sup> <a name="state" id="@cdktf/provider-gitlab.ProjectIssueConfig.property.state"></a>
 
 ```typescript
@@ -63914,48 +72185,6 @@ public readonly state: string;
 The state of the issue. Valid values are: `opened`, `closed`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#state ProjectIssue#state}
-
----
-
-##### `taskCompletionStatus`<sup>Optional</sup> <a name="taskCompletionStatus" id="@cdktf/provider-gitlab.ProjectIssueConfig.property.taskCompletionStatus"></a>
-
-```typescript
-public readonly taskCompletionStatus: ProjectIssueTaskCompletionStatus;
-```
-
-- *Type:* <a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatus">ProjectIssueTaskCompletionStatus</a>
-
-task_completion_status block.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#task_completion_status ProjectIssue#task_completion_status}
-
----
-
-##### `timeEstimate`<sup>Optional</sup> <a name="timeEstimate" id="@cdktf/provider-gitlab.ProjectIssueConfig.property.timeEstimate"></a>
-
-```typescript
-public readonly timeEstimate: number;
-```
-
-- *Type:* number
-
-The time estimate of the issue.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#time_estimate ProjectIssue#time_estimate}
-
----
-
-##### `totalTimeSpent`<sup>Optional</sup> <a name="totalTimeSpent" id="@cdktf/provider-gitlab.ProjectIssueConfig.property.totalTimeSpent"></a>
-
-```typescript
-public readonly totalTimeSpent: number;
-```
-
-- *Type:* number
-
-The total time spent of the issue.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#total_time_spent ProjectIssue#total_time_spent}
 
 ---
 
@@ -63997,42 +72226,6 @@ import { ProjectIssueTaskCompletionStatus } from '@cdktf/provider-gitlab'
 const projectIssueTaskCompletionStatus: ProjectIssueTaskCompletionStatus = { ... }
 ```
 
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatus.property.completedCount">completedCount</a></code> | <code>number</code> | The number of tasks that are completed. |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatus.property.count">count</a></code> | <code>number</code> | The number of tasks. |
-
----
-
-##### `completedCount`<sup>Optional</sup> <a name="completedCount" id="@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatus.property.completedCount"></a>
-
-```typescript
-public readonly completedCount: number;
-```
-
-- *Type:* number
-
-The number of tasks that are completed.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#completed_count ProjectIssue#completed_count}
-
----
-
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatus.property.count"></a>
-
-```typescript
-public readonly count: number;
-```
-
-- *Type:* number
-
-The number of tasks.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#count ProjectIssue#count}
-
----
 
 ### ProjectLevelMrApprovalsConfig <a name="ProjectLevelMrApprovalsConfig" id="@cdktf/provider-gitlab.ProjectLevelMrApprovalsConfig"></a>
 
@@ -64221,9 +72414,10 @@ const projectMembershipConfig: ProjectMembershipConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembershipConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembershipConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembershipConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectMembershipConfig.property.accessLevel">accessLevel</a></code> | <code>string</code> | The access level for the member. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `master`. |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMembershipConfig.property.accessLevel">accessLevel</a></code> | <code>string</code> | The access level for the member. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembershipConfig.property.projectId">projectId</a></code> | <code>string</code> | The id of the project. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembershipConfig.property.userId">userId</a></code> | <code>number</code> | The id of the user. |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMembershipConfig.property.expiresAt">expiresAt</a></code> | <code>string</code> | Expiration date for the project membership. Format: `YYYY-MM-DD`. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembershipConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_membership#id ProjectMembership#id}. |
 
 ---
@@ -64276,7 +72470,7 @@ public readonly accessLevel: string;
 
 - *Type:* string
 
-The access level for the member. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `master`.
+The access level for the member. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_membership#access_level ProjectMembership#access_level}
 
@@ -64310,6 +72504,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 ---
 
+##### `expiresAt`<sup>Optional</sup> <a name="expiresAt" id="@cdktf/provider-gitlab.ProjectMembershipConfig.property.expiresAt"></a>
+
+```typescript
+public readonly expiresAt: string;
+```
+
+- *Type:* string
+
+Expiration date for the project membership. Format: `YYYY-MM-DD`.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_membership#expires_at ProjectMembership#expires_at}
+
+---
+
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.ProjectMembershipConfig.property.id"></a>
 
 ```typescript
@@ -64322,6 +72530,173 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+### ProjectMilestoneConfig <a name="ProjectMilestoneConfig" id="@cdktf/provider-gitlab.ProjectMilestoneConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.ProjectMilestoneConfig.Initializer"></a>
+
+```typescript
+import { ProjectMilestoneConfig } from '@cdktf/provider-gitlab'
+
+const projectMilestoneConfig: ProjectMilestoneConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestoneConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestoneConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestoneConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestoneConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestoneConfig.property.project">project</a></code> | <code>string</code> | The ID or URL-encoded path of the project owned by the authenticated user. |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestoneConfig.property.title">title</a></code> | <code>string</code> | The title of a milestone. |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestoneConfig.property.description">description</a></code> | <code>string</code> | The description of the milestone. |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestoneConfig.property.dueDate">dueDate</a></code> | <code>string</code> | The due date of the milestone. Date time string in the format YYYY-MM-DD, for example 2016-03-11. |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestoneConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_milestone#id ProjectMilestone#id}. |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestoneConfig.property.startDate">startDate</a></code> | <code>string</code> | The start date of the milestone. Date time string in the format YYYY-MM-DD, for example 2016-03-11. |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestoneConfig.property.state">state</a></code> | <code>string</code> | The state of the milestone. Valid values are: `active`, `closed`. |
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ProjectMilestoneConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-gitlab.ProjectMilestoneConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* cdktf.ITerraformDependable[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectMilestoneConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.ProjectMilestoneConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.ProjectMilestoneConfig.property.project"></a>
+
+```typescript
+public readonly project: string;
+```
+
+- *Type:* string
+
+The ID or URL-encoded path of the project owned by the authenticated user.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_milestone#project ProjectMilestone#project}
+
+---
+
+##### `title`<sup>Required</sup> <a name="title" id="@cdktf/provider-gitlab.ProjectMilestoneConfig.property.title"></a>
+
+```typescript
+public readonly title: string;
+```
+
+- *Type:* string
+
+The title of a milestone.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_milestone#title ProjectMilestone#title}
+
+---
+
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-gitlab.ProjectMilestoneConfig.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* string
+
+The description of the milestone.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_milestone#description ProjectMilestone#description}
+
+---
+
+##### `dueDate`<sup>Optional</sup> <a name="dueDate" id="@cdktf/provider-gitlab.ProjectMilestoneConfig.property.dueDate"></a>
+
+```typescript
+public readonly dueDate: string;
+```
+
+- *Type:* string
+
+The due date of the milestone. Date time string in the format YYYY-MM-DD, for example 2016-03-11.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_milestone#due_date ProjectMilestone#due_date}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.ProjectMilestoneConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_milestone#id ProjectMilestone#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `startDate`<sup>Optional</sup> <a name="startDate" id="@cdktf/provider-gitlab.ProjectMilestoneConfig.property.startDate"></a>
+
+```typescript
+public readonly startDate: string;
+```
+
+- *Type:* string
+
+The start date of the milestone. Date time string in the format YYYY-MM-DD, for example 2016-03-11.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_milestone#start_date ProjectMilestone#start_date}
+
+---
+
+##### `state`<sup>Optional</sup> <a name="state" id="@cdktf/provider-gitlab.ProjectMilestoneConfig.property.state"></a>
+
+```typescript
+public readonly state: string;
+```
+
+- *Type:* string
+
+The state of the milestone. Valid values are: `active`, `closed`.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_milestone#state ProjectMilestone#state}
 
 ---
 
@@ -64499,6 +72874,7 @@ const projectProtectedEnvironmentConfig: ProjectProtectedEnvironmentConfig = { .
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironmentConfig.property.environment">environment</a></code> | <code>string</code> | The name of the environment. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironmentConfig.property.project">project</a></code> | <code>string</code> | The ID or full path of the project which the protected environment is created against. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_protected_environment#id ProjectProtectedEnvironment#id}. |
+| <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironmentConfig.property.requiredApprovalCount">requiredApprovalCount</a></code> | <code>number</code> | The number of approvals required to deploy to this environment. |
 
 ---
 
@@ -64596,6 +72972,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `requiredApprovalCount`<sup>Optional</sup> <a name="requiredApprovalCount" id="@cdktf/provider-gitlab.ProjectProtectedEnvironmentConfig.property.requiredApprovalCount"></a>
+
+```typescript
+public readonly requiredApprovalCount: number;
+```
+
+- *Type:* number
+
+The number of approvals required to deploy to this environment.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_protected_environment#required_approval_count ProjectProtectedEnvironment#required_approval_count}
 
 ---
 
@@ -65058,7 +73448,7 @@ public readonly accessLevel: string;
 
 The access level to grant the group for the project.
 
-Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `master`
+Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_share_group#access_level ProjectShareGroup#access_level}
 
@@ -65074,7 +73464,7 @@ public readonly groupAccess: string;
 
 The access level to grant the group for the project.
 
-Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `master`
+Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_share_group#group_access ProjectShareGroup#group_access}
 
@@ -65442,6 +73832,173 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 ---
 
+### ReleaseLinkConfig <a name="ReleaseLinkConfig" id="@cdktf/provider-gitlab.ReleaseLinkConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.ReleaseLinkConfig.Initializer"></a>
+
+```typescript
+import { ReleaseLinkConfig } from '@cdktf/provider-gitlab'
+
+const releaseLinkConfig: ReleaseLinkConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLinkConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLinkConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLinkConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLinkConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLinkConfig.property.name">name</a></code> | <code>string</code> | The name of the link. Link names must be unique within the release. |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLinkConfig.property.project">project</a></code> | <code>string</code> | The ID or [URL-encoded path of the project](https://docs.gitlab.com/ee/api/index.html#namespaced-path-encoding). |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLinkConfig.property.tagName">tagName</a></code> | <code>string</code> | The tag associated with the Release. |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLinkConfig.property.url">url</a></code> | <code>string</code> | The URL of the link. Link URLs must be unique within the release. |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLinkConfig.property.filepath">filepath</a></code> | <code>string</code> | Relative path for a [Direct Asset link](https://docs.gitlab.com/ee/user/project/releases/index.html#permanent-links-to-release-assets). |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLinkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#id ReleaseLink#id}. |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLinkConfig.property.linkType">linkType</a></code> | <code>string</code> | The type of the link. Valid values are `other`, `runbook`, `image`, `package`. Defaults to other. |
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ReleaseLinkConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-gitlab.ReleaseLinkConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* cdktf.ITerraformDependable[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ReleaseLinkConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.ReleaseLinkConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-gitlab.ReleaseLinkConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+The name of the link. Link names must be unique within the release.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#name ReleaseLink#name}
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.ReleaseLinkConfig.property.project"></a>
+
+```typescript
+public readonly project: string;
+```
+
+- *Type:* string
+
+The ID or [URL-encoded path of the project](https://docs.gitlab.com/ee/api/index.html#namespaced-path-encoding).
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#project ReleaseLink#project}
+
+---
+
+##### `tagName`<sup>Required</sup> <a name="tagName" id="@cdktf/provider-gitlab.ReleaseLinkConfig.property.tagName"></a>
+
+```typescript
+public readonly tagName: string;
+```
+
+- *Type:* string
+
+The tag associated with the Release.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#tag_name ReleaseLink#tag_name}
+
+---
+
+##### `url`<sup>Required</sup> <a name="url" id="@cdktf/provider-gitlab.ReleaseLinkConfig.property.url"></a>
+
+```typescript
+public readonly url: string;
+```
+
+- *Type:* string
+
+The URL of the link. Link URLs must be unique within the release.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#url ReleaseLink#url}
+
+---
+
+##### `filepath`<sup>Optional</sup> <a name="filepath" id="@cdktf/provider-gitlab.ReleaseLinkConfig.property.filepath"></a>
+
+```typescript
+public readonly filepath: string;
+```
+
+- *Type:* string
+
+Relative path for a [Direct Asset link](https://docs.gitlab.com/ee/user/project/releases/index.html#permanent-links-to-release-assets).
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#filepath ReleaseLink#filepath}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.ReleaseLinkConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#id ReleaseLink#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `linkType`<sup>Optional</sup> <a name="linkType" id="@cdktf/provider-gitlab.ReleaseLinkConfig.property.linkType"></a>
+
+```typescript
+public readonly linkType: string;
+```
+
+- *Type:* string
+
+The type of the link. Valid values are `other`, `runbook`, `image`, `package`. Defaults to other.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#link_type ReleaseLink#link_type}
+
+---
+
 ### RepositoryFileConfig <a name="RepositoryFileConfig" id="@cdktf/provider-gitlab.RepositoryFileConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.RepositoryFileConfig.Initializer"></a>
@@ -65726,6 +74283,203 @@ public readonly update: string;
 - *Type:* string
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/repository_file#update RepositoryFile#update}.
+
+---
+
+### RunnerConfig <a name="RunnerConfig" id="@cdktf/provider-gitlab.RunnerConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.RunnerConfig.Initializer"></a>
+
+```typescript
+import { RunnerConfig } from '@cdktf/provider-gitlab'
+
+const runnerConfig: RunnerConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.RunnerConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.RunnerConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.RunnerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.RunnerConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.RunnerConfig.property.registrationToken">registrationToken</a></code> | <code>string</code> | The registration token used to register the runner. |
+| <code><a href="#@cdktf/provider-gitlab.RunnerConfig.property.accessLevel">accessLevel</a></code> | <code>string</code> | The access_level of the runner. Valid values are: `not_protected`, `ref_protected`. |
+| <code><a href="#@cdktf/provider-gitlab.RunnerConfig.property.description">description</a></code> | <code>string</code> | The runner's description. |
+| <code><a href="#@cdktf/provider-gitlab.RunnerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#id Runner#id}. |
+| <code><a href="#@cdktf/provider-gitlab.RunnerConfig.property.locked">locked</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the runner should be locked for current project. |
+| <code><a href="#@cdktf/provider-gitlab.RunnerConfig.property.maximumTimeout">maximumTimeout</a></code> | <code>number</code> | Maximum timeout set when this runner handles the job. |
+| <code><a href="#@cdktf/provider-gitlab.RunnerConfig.property.paused">paused</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the runner should ignore new jobs. |
+| <code><a href="#@cdktf/provider-gitlab.RunnerConfig.property.runUntagged">runUntagged</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the runner should handle untagged jobs. |
+| <code><a href="#@cdktf/provider-gitlab.RunnerConfig.property.tagList">tagList</a></code> | <code>string[]</code> | List of runner’s tags. |
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.RunnerConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-gitlab.RunnerConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* cdktf.ITerraformDependable[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.RunnerConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.RunnerConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `registrationToken`<sup>Required</sup> <a name="registrationToken" id="@cdktf/provider-gitlab.RunnerConfig.property.registrationToken"></a>
+
+```typescript
+public readonly registrationToken: string;
+```
+
+- *Type:* string
+
+The registration token used to register the runner.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#registration_token Runner#registration_token}
+
+---
+
+##### `accessLevel`<sup>Optional</sup> <a name="accessLevel" id="@cdktf/provider-gitlab.RunnerConfig.property.accessLevel"></a>
+
+```typescript
+public readonly accessLevel: string;
+```
+
+- *Type:* string
+
+The access_level of the runner. Valid values are: `not_protected`, `ref_protected`.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#access_level Runner#access_level}
+
+---
+
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-gitlab.RunnerConfig.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* string
+
+The runner's description.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#description Runner#description}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.RunnerConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#id Runner#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `locked`<sup>Optional</sup> <a name="locked" id="@cdktf/provider-gitlab.RunnerConfig.property.locked"></a>
+
+```typescript
+public readonly locked: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Whether the runner should be locked for current project.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#locked Runner#locked}
+
+---
+
+##### `maximumTimeout`<sup>Optional</sup> <a name="maximumTimeout" id="@cdktf/provider-gitlab.RunnerConfig.property.maximumTimeout"></a>
+
+```typescript
+public readonly maximumTimeout: number;
+```
+
+- *Type:* number
+
+Maximum timeout set when this runner handles the job.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#maximum_timeout Runner#maximum_timeout}
+
+---
+
+##### `paused`<sup>Optional</sup> <a name="paused" id="@cdktf/provider-gitlab.RunnerConfig.property.paused"></a>
+
+```typescript
+public readonly paused: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Whether the runner should ignore new jobs.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#paused Runner#paused}
+
+---
+
+##### `runUntagged`<sup>Optional</sup> <a name="runUntagged" id="@cdktf/provider-gitlab.RunnerConfig.property.runUntagged"></a>
+
+```typescript
+public readonly runUntagged: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Whether the runner should handle untagged jobs.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#run_untagged Runner#run_untagged}
+
+---
+
+##### `tagList`<sup>Optional</sup> <a name="tagList" id="@cdktf/provider-gitlab.RunnerConfig.property.tagList"></a>
+
+```typescript
+public readonly tagList: string[];
+```
+
+- *Type:* string[]
+
+List of runner’s tags.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#tag_list Runner#tag_list}
 
 ---
 
@@ -66190,7 +74944,7 @@ public readonly jiraIssueTransitionId: string;
 
 The ID of a transition that moves issues to a closed state.
 
-You can find this number under the JIRA workflow administration (Administration > Issues > Workflows) by selecting View under Operations of the desired workflow of your project. By default, this ID is set to 2.
+You can find this number under the JIRA workflow administration (Administration > Issues > Workflows) by selecting View under Operations of the desired workflow of your project. By default, this ID is set to 2. **Note**: importing this field is currently not supported.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_jira#jira_issue_transition_id ServiceJira#jira_issue_transition_id}
 
@@ -67455,6 +76209,7 @@ const topicConfig: TopicConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.TopicConfig.property.description">description</a></code> | <code>string</code> | A text describing the topic. |
 | <code><a href="#@cdktf/provider-gitlab.TopicConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/topic#id Topic#id}. |
 | <code><a href="#@cdktf/provider-gitlab.TopicConfig.property.softDestroy">softDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Empty the topics fields instead of deleting it. |
+| <code><a href="#@cdktf/provider-gitlab.TopicConfig.property.title">title</a></code> | <code>string</code> | The topic's description. Requires at least GitLab 15.0 for which it's a required argument. |
 
 ---
 
@@ -67582,6 +76337,20 @@ public readonly softDestroy: boolean | IResolvable;
 Empty the topics fields instead of deleting it.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/topic#soft_destroy Topic#soft_destroy}
+
+---
+
+##### `title`<sup>Optional</sup> <a name="title" id="@cdktf/provider-gitlab.TopicConfig.property.title"></a>
+
+```typescript
+public readonly title: string;
+```
+
+- *Type:* string
+
+The topic's description. Requires at least GitLab 15.0 for which it's a required argument.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/topic#title Topic#title}
 
 ---
 
@@ -70628,6 +79397,460 @@ public readonly internalValue: DataGitlabBranchCommit;
 ```
 
 - *Type:* <a href="#@cdktf/provider-gitlab.DataGitlabBranchCommit">DataGitlabBranchCommit</a>
+
+---
+
+
+### DataGitlabClusterAgentsClusterAgentsList <a name="DataGitlabClusterAgentsClusterAgentsList" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsList.Initializer"></a>
+
+```typescript
+import { DataGitlabClusterAgentsClusterAgentsList } from '@cdktf/provider-gitlab'
+
+new DataGitlabClusterAgentsClusterAgentsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsList.get"></a>
+
+```typescript
+public get(index: number): DataGitlabClusterAgentsClusterAgentsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataGitlabClusterAgentsClusterAgentsOutputReference <a name="DataGitlabClusterAgentsClusterAgentsOutputReference" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.Initializer"></a>
+
+```typescript
+import { DataGitlabClusterAgentsClusterAgentsOutputReference } from '@cdktf/provider-gitlab'
+
+new DataGitlabClusterAgentsClusterAgentsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.property.agentId">agentId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.property.createdByUserId">createdByUserId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.property.project">project</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgents">DataGitlabClusterAgentsClusterAgents</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `agentId`<sup>Required</sup> <a name="agentId" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.property.agentId"></a>
+
+```typescript
+public readonly agentId: number;
+```
+
+- *Type:* number
+
+---
+
+##### `createdAt`<sup>Required</sup> <a name="createdAt" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.property.createdAt"></a>
+
+```typescript
+public readonly createdAt: string;
+```
+
+- *Type:* string
+
+---
+
+##### `createdByUserId`<sup>Required</sup> <a name="createdByUserId" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.property.createdByUserId"></a>
+
+```typescript
+public readonly createdByUserId: number;
+```
+
+- *Type:* number
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.property.project"></a>
+
+```typescript
+public readonly project: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataGitlabClusterAgentsClusterAgents;
+```
+
+- *Type:* <a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgents">DataGitlabClusterAgentsClusterAgents</a>
 
 ---
 
@@ -75132,6 +84355,548 @@ public readonly internalValue: DataGitlabProjectIssueTaskCompletionStatus;
 ```
 
 - *Type:* <a href="#@cdktf/provider-gitlab.DataGitlabProjectIssueTaskCompletionStatus">DataGitlabProjectIssueTaskCompletionStatus</a>
+
+---
+
+
+### DataGitlabProjectMilestonesMilestonesList <a name="DataGitlabProjectMilestonesMilestonesList" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesList.Initializer"></a>
+
+```typescript
+import { DataGitlabProjectMilestonesMilestonesList } from '@cdktf/provider-gitlab'
+
+new DataGitlabProjectMilestonesMilestonesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesList.get"></a>
+
+```typescript
+public get(index: number): DataGitlabProjectMilestonesMilestonesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataGitlabProjectMilestonesMilestonesOutputReference <a name="DataGitlabProjectMilestonesMilestonesOutputReference" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.Initializer"></a>
+
+```typescript
+import { DataGitlabProjectMilestonesMilestonesOutputReference } from '@cdktf/provider-gitlab'
+
+new DataGitlabProjectMilestonesMilestonesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.dueDate">dueDate</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.expired">expired</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.iid">iid</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.milestoneId">milestoneId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.project">project</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.projectId">projectId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.startDate">startDate</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.state">state</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.title">title</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.updatedAt">updatedAt</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.webUrl">webUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestones">DataGitlabProjectMilestonesMilestones</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `createdAt`<sup>Required</sup> <a name="createdAt" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.createdAt"></a>
+
+```typescript
+public readonly createdAt: string;
+```
+
+- *Type:* string
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* string
+
+---
+
+##### `dueDate`<sup>Required</sup> <a name="dueDate" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.dueDate"></a>
+
+```typescript
+public readonly dueDate: string;
+```
+
+- *Type:* string
+
+---
+
+##### `expired`<sup>Required</sup> <a name="expired" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.expired"></a>
+
+```typescript
+public readonly expired: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `iid`<sup>Required</sup> <a name="iid" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.iid"></a>
+
+```typescript
+public readonly iid: number;
+```
+
+- *Type:* number
+
+---
+
+##### `milestoneId`<sup>Required</sup> <a name="milestoneId" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.milestoneId"></a>
+
+```typescript
+public readonly milestoneId: number;
+```
+
+- *Type:* number
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.project"></a>
+
+```typescript
+public readonly project: string;
+```
+
+- *Type:* string
+
+---
+
+##### `projectId`<sup>Required</sup> <a name="projectId" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.projectId"></a>
+
+```typescript
+public readonly projectId: number;
+```
+
+- *Type:* number
+
+---
+
+##### `startDate`<sup>Required</sup> <a name="startDate" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.startDate"></a>
+
+```typescript
+public readonly startDate: string;
+```
+
+- *Type:* string
+
+---
+
+##### `state`<sup>Required</sup> <a name="state" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.state"></a>
+
+```typescript
+public readonly state: string;
+```
+
+- *Type:* string
+
+---
+
+##### `title`<sup>Required</sup> <a name="title" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.title"></a>
+
+```typescript
+public readonly title: string;
+```
+
+- *Type:* string
+
+---
+
+##### `updatedAt`<sup>Required</sup> <a name="updatedAt" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.updatedAt"></a>
+
+```typescript
+public readonly updatedAt: string;
+```
+
+- *Type:* string
+
+---
+
+##### `webUrl`<sup>Required</sup> <a name="webUrl" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.webUrl"></a>
+
+```typescript
+public readonly webUrl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataGitlabProjectMilestonesMilestones;
+```
+
+- *Type:* <a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestones">DataGitlabProjectMilestonesMilestones</a>
 
 ---
 
@@ -79673,6 +89438,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectsProjectsOutputReference.property.buildsAccessLevel">buildsAccessLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectsProjectsOutputReference.property.buildTimeout">buildTimeout</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectsProjectsOutputReference.property.ciConfigPath">ciConfigPath</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectsProjectsOutputReference.property.ciDefaultGitDepth">ciDefaultGitDepth</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectsProjectsOutputReference.property.ciForwardDeploymentEnabled">ciForwardDeploymentEnabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectsProjectsOutputReference.property.containerExpirationPolicy">containerExpirationPolicy</a></code> | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectsProjectsContainerExpirationPolicyList">DataGitlabProjectsProjectsContainerExpirationPolicyList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectsProjectsOutputReference.property.containerRegistryAccessLevel">containerRegistryAccessLevel</a></code> | <code>string</code> | *No description.* |
@@ -79909,6 +89675,16 @@ public readonly ciConfigPath: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `ciDefaultGitDepth`<sup>Required</sup> <a name="ciDefaultGitDepth" id="@cdktf/provider-gitlab.DataGitlabProjectsProjectsOutputReference.property.ciDefaultGitDepth"></a>
+
+```typescript
+public readonly ciDefaultGitDepth: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -84774,6 +94550,504 @@ public readonly internalValue: DataGitlabProjectVariablesVariables;
 ---
 
 
+### DataGitlabReleaseLinksReleaseLinksList <a name="DataGitlabReleaseLinksReleaseLinksList" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksList.Initializer"></a>
+
+```typescript
+import { DataGitlabReleaseLinksReleaseLinksList } from '@cdktf/provider-gitlab'
+
+new DataGitlabReleaseLinksReleaseLinksList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksList.get">get</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksList.get"></a>
+
+```typescript
+public get(index: number): DataGitlabReleaseLinksReleaseLinksOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataGitlabReleaseLinksReleaseLinksOutputReference <a name="DataGitlabReleaseLinksReleaseLinksOutputReference" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.Initializer"></a>
+
+```typescript
+import { DataGitlabReleaseLinksReleaseLinksOutputReference } from '@cdktf/provider-gitlab'
+
+new DataGitlabReleaseLinksReleaseLinksOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.property.directAssetUrl">directAssetUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.property.external">external</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.property.filepath">filepath</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.property.linkId">linkId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.property.linkType">linkType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.property.project">project</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.property.tagName">tagName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.property.url">url</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinks">DataGitlabReleaseLinksReleaseLinks</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `directAssetUrl`<sup>Required</sup> <a name="directAssetUrl" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.property.directAssetUrl"></a>
+
+```typescript
+public readonly directAssetUrl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `external`<sup>Required</sup> <a name="external" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.property.external"></a>
+
+```typescript
+public readonly external: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `filepath`<sup>Required</sup> <a name="filepath" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.property.filepath"></a>
+
+```typescript
+public readonly filepath: string;
+```
+
+- *Type:* string
+
+---
+
+##### `linkId`<sup>Required</sup> <a name="linkId" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.property.linkId"></a>
+
+```typescript
+public readonly linkId: number;
+```
+
+- *Type:* number
+
+---
+
+##### `linkType`<sup>Required</sup> <a name="linkType" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.property.linkType"></a>
+
+```typescript
+public readonly linkType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.property.project"></a>
+
+```typescript
+public readonly project: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tagName`<sup>Required</sup> <a name="tagName" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.property.tagName"></a>
+
+```typescript
+public readonly tagName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `url`<sup>Required</sup> <a name="url" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.property.url"></a>
+
+```typescript
+public readonly url: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataGitlabReleaseLinksReleaseLinks;
+```
+
+- *Type:* <a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinks">DataGitlabReleaseLinksReleaseLinks</a>
+
+---
+
+
 ### DataGitlabUsersUsersList <a name="DataGitlabUsersUsersList" id="@cdktf/provider-gitlab.DataGitlabUsersUsersList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.DataGitlabUsersUsersList.Initializer"></a>
@@ -85904,6 +96178,138 @@ public readonly internalValue: ProjectContainerExpirationPolicy;
 ---
 
 
+### ProjectIssueTaskCompletionStatusList <a name="ProjectIssueTaskCompletionStatusList" id="@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusList.Initializer"></a>
+
+```typescript
+import { ProjectIssueTaskCompletionStatusList } from '@cdktf/provider-gitlab'
+
+new ProjectIssueTaskCompletionStatusList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusList.get">get</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusList.get"></a>
+
+```typescript
+public get(index: number): ProjectIssueTaskCompletionStatusOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
 ### ProjectIssueTaskCompletionStatusOutputReference <a name="ProjectIssueTaskCompletionStatusOutputReference" id="@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusOutputReference.Initializer"></a>
@@ -85911,13 +96317,15 @@ public readonly internalValue: ProjectContainerExpirationPolicy;
 ```typescript
 import { ProjectIssueTaskCompletionStatusOutputReference } from '@cdktf/provider-gitlab'
 
-new ProjectIssueTaskCompletionStatusOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+new ProjectIssueTaskCompletionStatusOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -85934,6 +96342,22 @@ The parent resource.
 - *Type:* string
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -85954,8 +96378,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusOutputReference.resetCompletedCount">resetCompletedCount</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusOutputReference.resetCount">resetCount</a></code> | *No description.* |
 
 ---
 
@@ -86109,18 +96531,6 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetCompletedCount` <a name="resetCompletedCount" id="@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusOutputReference.resetCompletedCount"></a>
-
-```typescript
-public resetCompletedCount(): void
-```
-
-##### `resetCount` <a name="resetCount" id="@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusOutputReference.resetCount"></a>
-
-```typescript
-public resetCount(): void
-```
-
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -86128,8 +96538,6 @@ public resetCount(): void
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusOutputReference.property.completedCountInput">completedCountInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusOutputReference.property.countInput">countInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusOutputReference.property.completedCount">completedCount</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusOutputReference.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatus">ProjectIssueTaskCompletionStatus</a></code> | *No description.* |
@@ -86157,26 +96565,6 @@ public readonly fqn: string;
 ```
 
 - *Type:* string
-
----
-
-##### `completedCountInput`<sup>Optional</sup> <a name="completedCountInput" id="@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusOutputReference.property.completedCountInput"></a>
-
-```typescript
-public readonly completedCountInput: number;
-```
-
-- *Type:* number
-
----
-
-##### `countInput`<sup>Optional</sup> <a name="countInput" id="@cdktf/provider-gitlab.ProjectIssueTaskCompletionStatusOutputReference.property.countInput"></a>
-
-```typescript
-public readonly countInput: number;
-```
-
-- *Type:* number
 
 ---
 

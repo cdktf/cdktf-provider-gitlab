@@ -20,7 +20,7 @@ export interface GroupShareGroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly groupAccess: string;
   /**
-  * The id of the main group.
+  * The id of the main group to be shared.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_share_group#group_id GroupShareGroup#group_id}
   */
@@ -33,7 +33,7 @@ export interface GroupShareGroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
-  * The id of an additional group which will be shared with the main group.
+  * The id of the additional group with which the main group will be shared.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_share_group#share_group_id GroupShareGroup#share_group_id}
   */
@@ -66,8 +66,8 @@ export class GroupShareGroup extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_share_group',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.16.1',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

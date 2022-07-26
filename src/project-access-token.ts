@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface ProjectAccessTokenConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The access level for the project access token. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `master`. Default is `maintainer`.
+  * The access level for the project access token. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`. Default is `maintainer`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_access_token#access_level ProjectAccessToken#access_level}
   */
@@ -72,8 +72,8 @@ export class ProjectAccessToken extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_access_token',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.16.1',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

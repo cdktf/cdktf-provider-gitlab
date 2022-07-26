@@ -27,6 +27,12 @@ export interface ProjectBadgeConfig extends cdktf.TerraformMetaArguments {
   */
   readonly linkUrl: string;
   /**
+  * The name of the badge.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge#name ProjectBadge#name}
+  */
+  readonly name?: string;
+  /**
   * The id of the project to add the badge to.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge#project ProjectBadge#project}
@@ -60,8 +66,8 @@ export class ProjectBadge extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_badge',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.16.1',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -71,6 +77,7 @@ export class ProjectBadge extends cdktf.TerraformResource {
     this._id = config.id;
     this._imageUrl = config.imageUrl;
     this._linkUrl = config.linkUrl;
+    this._name = config.name;
     this._project = config.project;
   }
 
@@ -120,6 +127,22 @@ export class ProjectBadge extends cdktf.TerraformResource {
     return this._linkUrl;
   }
 
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
   // project - computed: false, optional: false, required: true
   private _project?: string; 
   public get project() {
@@ -152,6 +175,7 @@ export class ProjectBadge extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       image_url: cdktf.stringToTerraform(this._imageUrl),
       link_url: cdktf.stringToTerraform(this._linkUrl),
+      name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
     };
   }
