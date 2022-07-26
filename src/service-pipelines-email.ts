@@ -72,7 +72,10 @@ export class ServicePipelinesEmail extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._branchesToBeNotified = config.branchesToBeNotified;
     this._id = config.id;
@@ -169,7 +172,7 @@ export class ServicePipelinesEmail extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       notify_only_broken_pipelines: cdktf.booleanToTerraform(this._notifyOnlyBrokenPipelines),
       project: cdktf.stringToTerraform(this._project),
-      recipients: cdktf.listMapper(cdktf.stringToTerraform)(this._recipients),
+      recipients: cdktf.listMapper(cdktf.stringToTerraform, false)(this._recipients),
     };
   }
 }

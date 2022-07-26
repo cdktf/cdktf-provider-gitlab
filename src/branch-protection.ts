@@ -522,7 +522,10 @@ export class BranchProtection extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allowForcePush = config.allowForcePush;
     this._branch = config.branch;
@@ -730,9 +733,9 @@ export class BranchProtection extends cdktf.TerraformResource {
       project: cdktf.stringToTerraform(this._project),
       push_access_level: cdktf.stringToTerraform(this._pushAccessLevel),
       unprotect_access_level: cdktf.stringToTerraform(this._unprotectAccessLevel),
-      allowed_to_merge: cdktf.listMapper(branchProtectionAllowedToMergeToTerraform)(this._allowedToMerge.internalValue),
-      allowed_to_push: cdktf.listMapper(branchProtectionAllowedToPushToTerraform)(this._allowedToPush.internalValue),
-      allowed_to_unprotect: cdktf.listMapper(branchProtectionAllowedToUnprotectToTerraform)(this._allowedToUnprotect.internalValue),
+      allowed_to_merge: cdktf.listMapper(branchProtectionAllowedToMergeToTerraform, true)(this._allowedToMerge.internalValue),
+      allowed_to_push: cdktf.listMapper(branchProtectionAllowedToPushToTerraform, true)(this._allowedToPush.internalValue),
+      allowed_to_unprotect: cdktf.listMapper(branchProtectionAllowedToUnprotectToTerraform, true)(this._allowedToUnprotect.internalValue),
     };
   }
 }

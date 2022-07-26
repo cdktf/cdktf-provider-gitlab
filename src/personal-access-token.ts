@@ -72,7 +72,10 @@ export class PersonalAccessToken extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._expiresAt = config.expiresAt;
     this._id = config.id;
@@ -185,7 +188,7 @@ export class PersonalAccessToken extends cdktf.TerraformResource {
       expires_at: cdktf.stringToTerraform(this._expiresAt),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      scopes: cdktf.listMapper(cdktf.stringToTerraform)(this._scopes),
+      scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._scopes),
       user_id: cdktf.numberToTerraform(this._userId),
     };
   }

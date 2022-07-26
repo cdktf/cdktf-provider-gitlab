@@ -90,7 +90,10 @@ export class ProjectApprovalRule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._approvalsRequired = config.approvalsRequired;
     this._groupIds = config.groupIds;
@@ -232,13 +235,13 @@ export class ProjectApprovalRule extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       approvals_required: cdktf.numberToTerraform(this._approvalsRequired),
-      group_ids: cdktf.listMapper(cdktf.numberToTerraform)(this._groupIds),
+      group_ids: cdktf.listMapper(cdktf.numberToTerraform, false)(this._groupIds),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
-      protected_branch_ids: cdktf.listMapper(cdktf.numberToTerraform)(this._protectedBranchIds),
+      protected_branch_ids: cdktf.listMapper(cdktf.numberToTerraform, false)(this._protectedBranchIds),
       rule_type: cdktf.stringToTerraform(this._ruleType),
-      user_ids: cdktf.listMapper(cdktf.numberToTerraform)(this._userIds),
+      user_ids: cdktf.listMapper(cdktf.numberToTerraform, false)(this._userIds),
     };
   }
 }

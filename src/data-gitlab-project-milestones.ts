@@ -208,7 +208,10 @@ export class DataGitlabProjectMilestones extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._iids = config.iids;
@@ -345,7 +348,7 @@ export class DataGitlabProjectMilestones extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      iids: cdktf.listMapper(cdktf.numberToTerraform)(this._iids),
+      iids: cdktf.listMapper(cdktf.numberToTerraform, false)(this._iids),
       include_parent_milestones: cdktf.booleanToTerraform(this._includeParentMilestones),
       project: cdktf.stringToTerraform(this._project),
       search: cdktf.stringToTerraform(this._search),

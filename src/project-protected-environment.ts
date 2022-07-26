@@ -234,7 +234,10 @@ export class ProjectProtectedEnvironment extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._environment = config.environment;
     this._id = config.id;
@@ -328,7 +331,7 @@ export class ProjectProtectedEnvironment extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       project: cdktf.stringToTerraform(this._project),
       required_approval_count: cdktf.numberToTerraform(this._requiredApprovalCount),
-      deploy_access_levels: cdktf.listMapper(projectProtectedEnvironmentDeployAccessLevelsToTerraform)(this._deployAccessLevels.internalValue),
+      deploy_access_levels: cdktf.listMapper(projectProtectedEnvironmentDeployAccessLevelsToTerraform, true)(this._deployAccessLevels.internalValue),
     };
   }
 }

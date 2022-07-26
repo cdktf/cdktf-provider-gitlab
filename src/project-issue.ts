@@ -233,7 +233,10 @@ export class ProjectIssue extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._assigneeIds = config.assigneeIds;
     this._confidential = config.confidential;
@@ -689,7 +692,7 @@ export class ProjectIssue extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      assignee_ids: cdktf.listMapper(cdktf.numberToTerraform)(this._assigneeIds),
+      assignee_ids: cdktf.listMapper(cdktf.numberToTerraform, false)(this._assigneeIds),
       confidential: cdktf.booleanToTerraform(this._confidential),
       created_at: cdktf.stringToTerraform(this._createdAt),
       delete_on_destroy: cdktf.booleanToTerraform(this._deleteOnDestroy),
@@ -701,7 +704,7 @@ export class ProjectIssue extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       iid: cdktf.numberToTerraform(this._iid),
       issue_type: cdktf.stringToTerraform(this._issueType),
-      labels: cdktf.listMapper(cdktf.stringToTerraform)(this._labels),
+      labels: cdktf.listMapper(cdktf.stringToTerraform, false)(this._labels),
       merge_request_to_resolve_discussions_of: cdktf.numberToTerraform(this._mergeRequestToResolveDiscussionsOf),
       milestone_id: cdktf.numberToTerraform(this._milestoneId),
       project: cdktf.stringToTerraform(this._project),
