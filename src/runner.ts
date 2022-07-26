@@ -96,7 +96,10 @@ export class Runner extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accessLevel = config.accessLevel;
     this._description = config.description;
@@ -278,7 +281,7 @@ export class Runner extends cdktf.TerraformResource {
       paused: cdktf.booleanToTerraform(this._paused),
       registration_token: cdktf.stringToTerraform(this._registrationToken),
       run_untagged: cdktf.booleanToTerraform(this._runUntagged),
-      tag_list: cdktf.listMapper(cdktf.stringToTerraform)(this._tagList),
+      tag_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tagList),
     };
   }
 }

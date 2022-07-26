@@ -311,10 +311,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.Branch.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Branch.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Branch.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Branch.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Branch.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Branch.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Branch.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Branch.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Branch.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Branch.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Branch.property.canPush">canPush</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Branch.property.commit">commit</a></code> | <code><a href="#@cdktf/provider-gitlab.BranchCommitList">BranchCommitList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Branch.property.default">default</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
@@ -406,6 +409,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.Branch.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.Branch.property.count"></a>
 
 ```typescript
@@ -426,6 +439,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.Branch.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.Branch.property.lifecycle"></a>
 
 ```typescript
@@ -443,6 +466,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.Branch.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -1028,10 +1061,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.BranchProtection.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.BranchProtection.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.BranchProtection.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.BranchProtection.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.BranchProtection.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.BranchProtection.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.BranchProtection.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.BranchProtection.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.BranchProtection.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.BranchProtection.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.BranchProtection.property.allowedToMerge">allowedToMerge</a></code> | <code><a href="#@cdktf/provider-gitlab.BranchProtectionAllowedToMergeList">BranchProtectionAllowedToMergeList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.BranchProtection.property.allowedToPush">allowedToPush</a></code> | <code><a href="#@cdktf/provider-gitlab.BranchProtectionAllowedToPushList">BranchProtectionAllowedToPushList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.BranchProtection.property.allowedToUnprotect">allowedToUnprotect</a></code> | <code><a href="#@cdktf/provider-gitlab.BranchProtectionAllowedToUnprotectList">BranchProtectionAllowedToUnprotectList</a></code> | *No description.* |
@@ -1130,6 +1166,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.BranchProtection.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.BranchProtection.property.count"></a>
 
 ```typescript
@@ -1150,6 +1196,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.BranchProtection.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.BranchProtection.property.lifecycle"></a>
 
 ```typescript
@@ -1167,6 +1223,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.BranchProtection.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -1727,10 +1793,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.agentId">agentId</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgent.property.createdByUserId">createdByUserId</a></code> | <code>number</code> | *No description.* |
@@ -1815,6 +1884,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ClusterAgent.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ClusterAgent.property.count"></a>
 
 ```typescript
@@ -1835,6 +1914,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ClusterAgent.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ClusterAgent.property.lifecycle"></a>
 
 ```typescript
@@ -1852,6 +1941,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ClusterAgent.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -2279,10 +2378,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.createdByUserId">createdByUserId</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgentToken.property.lastUsedAt">lastUsedAt</a></code> | <code>string</code> | *No description.* |
@@ -2374,6 +2476,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ClusterAgentToken.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ClusterAgentToken.property.count"></a>
 
 ```typescript
@@ -2394,6 +2506,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ClusterAgentToken.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ClusterAgentToken.property.lifecycle"></a>
 
 ```typescript
@@ -2411,6 +2533,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ClusterAgentToken.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -2903,6 +3035,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabBranch.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabBranch.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabBranch.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabBranch.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabBranch.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabBranch.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabBranch.property.canPush">canPush</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
@@ -3011,6 +3144,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabBranch.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -3503,6 +3646,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgent.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
@@ -3606,6 +3750,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabClusterAgent.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -4048,6 +4202,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgents.property.clusterAgents">clusterAgents</a></code> | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsClusterAgentsList">DataGitlabClusterAgentsClusterAgentsList</a></code> | *No description.* |
@@ -4147,6 +4302,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabClusterAgents.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -4542,6 +4707,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUser.property.bot">bot</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
@@ -4645,6 +4811,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabCurrentUser.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -5101,6 +5277,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroup.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroup.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroup.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabGroup.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroup.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroup.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroup.property.defaultBranchProtection">defaultBranchProtection</a></code> | <code>number</code> | *No description.* |
@@ -5213,6 +5390,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabGroup.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -5766,6 +5953,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupMembership.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupMembership.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupMembership.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupMembership.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupMembership.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupMembership.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupMembership.property.members">members</a></code> | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupMembershipMembersList">DataGitlabGroupMembershipMembersList</a></code> | *No description.* |
@@ -5869,6 +6057,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabGroupMembership.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -6318,6 +6516,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariable.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariable.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariable.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariable.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariable.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariable.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariable.property.masked">masked</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
@@ -6424,6 +6623,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabGroupVariable.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -6903,6 +7112,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariables.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariables.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariables.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariables.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariables.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariables.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariables.property.variables">variables</a></code> | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariablesVariablesList">DataGitlabGroupVariablesVariablesList</a></code> | *No description.* |
@@ -7004,6 +7214,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabGroupVariables.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -7433,6 +7653,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceDeployKeys.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceDeployKeys.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceDeployKeys.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceDeployKeys.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceDeployKeys.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceDeployKeys.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceDeployKeys.property.deployKeys">deployKeys</a></code> | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceDeployKeysDeployKeysList">DataGitlabInstanceDeployKeysDeployKeysList</a></code> | *No description.* |
@@ -7532,6 +7753,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabInstanceDeployKeys.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -7934,6 +8165,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariable.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariable.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariable.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariable.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariable.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariable.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariable.property.masked">masked</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
@@ -8036,6 +8268,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabInstanceVariable.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -8468,6 +8710,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariables.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariables.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariables.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariables.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariables.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariables.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariables.property.variables">variables</a></code> | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariablesVariablesList">DataGitlabInstanceVariablesVariablesList</a></code> | *No description.* |
@@ -8565,6 +8808,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabInstanceVariables.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -8968,6 +9221,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProject.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProject.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProject.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProject.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProject.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProject.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProject.property.analyticsAccessLevel">analyticsAccessLevel</a></code> | <code>string</code> | *No description.* |
@@ -9119,6 +9373,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabProject.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -10041,6 +10305,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssue.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssue.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssue.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssue.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssue.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssue.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssue.property.assigneeIds">assigneeIds</a></code> | <code>number[]</code> | *No description.* |
@@ -10178,6 +10443,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabProjectIssue.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -11135,6 +11410,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssues.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssues.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssues.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssues.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssues.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssues.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssues.property.issues">issues</a></code> | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssuesIssuesList">DataGitlabProjectIssuesIssuesList</a></code> | *No description.* |
@@ -11284,6 +11560,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabProjectIssues.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -12186,6 +12472,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
@@ -12297,6 +12584,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabProjectMilestone.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -12854,6 +13151,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.milestones">milestones</a></code> | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesMilestonesList">DataGitlabProjectMilestonesMilestonesList</a></code> | *No description.* |
@@ -12963,6 +13261,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabProjectMilestones.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -13458,6 +13766,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranch.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranch.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranch.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranch.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranch.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranch.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranch.property.allowForcePush">allowForcePush</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
@@ -13561,6 +13870,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabProjectProtectedBranch.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -14003,6 +14322,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranches.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranches.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranches.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranches.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranches.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranches.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranches.property.protectedBranches">protectedBranches</a></code> | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranchesProtectedBranchesList">DataGitlabProjectProtectedBranchesProtectedBranchesList</a></code> | *No description.* |
@@ -14102,6 +14422,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabProjectProtectedBranches.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -14651,6 +14981,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjects.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjects.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjects.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjects.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjects.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjects.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjects.property.projects">projects</a></code> | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectsProjectsList">DataGitlabProjectsProjectsList</a></code> | *No description.* |
@@ -14790,6 +15121,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabProjects.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -15592,6 +15933,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTag.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTag.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTag.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTag.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTag.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTag.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTag.property.commit">commit</a></code> | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTagCommitList">DataGitlabProjectTagCommitList</a></code> | *No description.* |
@@ -15697,6 +16039,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabProjectTag.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -16180,6 +16532,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTags.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTags.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTags.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTags.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTags.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTags.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTags.property.tags">tags</a></code> | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTagsTagsList">DataGitlabProjectTagsTagsList</a></code> | *No description.* |
@@ -16285,6 +16638,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabProjectTags.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -16754,6 +17117,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariable.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariable.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariable.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariable.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariable.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariable.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariable.property.masked">masked</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
@@ -16860,6 +17224,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabProjectVariable.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -17339,6 +17713,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariables.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariables.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariables.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariables.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariables.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariables.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariables.property.variables">variables</a></code> | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariablesVariablesList">DataGitlabProjectVariablesVariablesList</a></code> | *No description.* |
@@ -17440,6 +17815,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabProjectVariables.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -17862,6 +18247,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLink.property.directAssetUrl">directAssetUrl</a></code> | <code>string</code> | *No description.* |
@@ -17970,6 +18356,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabReleaseLink.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -18462,6 +18858,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.releaseLinks">releaseLinks</a></code> | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksReleaseLinksList">DataGitlabReleaseLinksReleaseLinksList</a></code> | *No description.* |
@@ -18563,6 +18960,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabReleaseLinks.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -18985,6 +19392,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabRepositoryFile.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabRepositoryFile.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabRepositoryFile.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabRepositoryFile.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabRepositoryFile.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabRepositoryFile.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabRepositoryFile.property.blobId">blobId</a></code> | <code>string</code> | *No description.* |
@@ -19096,6 +19504,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabRepositoryFile.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -19646,6 +20064,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUser.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUser.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUser.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabUser.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUser.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUser.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUser.property.avatarUrl">avatarUrl</a></code> | <code>string</code> | *No description.* |
@@ -19774,6 +20193,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabUser.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -20529,6 +20958,7 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUsers.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUsers.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUsers.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabUsers.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUsers.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUsers.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUsers.property.users">users</a></code> | <code><a href="#@cdktf/provider-gitlab.DataGitlabUsersUsersList">DataGitlabUsersUsersList</a></code> | *No description.* |
@@ -20644,6 +21074,16 @@ public readonly dependsOn: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabUsers.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
 
 ---
 
@@ -21211,10 +21651,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DeployKey.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployKey.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployKey.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DeployKey.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployKey.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployKey.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DeployKey.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployKey.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployKey.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DeployKey.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployKey.property.canPushInput">canPushInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployKey.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployKey.property.keyInput">keyInput</a></code> | <code>string</code> | *No description.* |
@@ -21300,6 +21743,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DeployKey.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.DeployKey.property.count"></a>
 
 ```typescript
@@ -21320,6 +21773,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DeployKey.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DeployKey.property.lifecycle"></a>
 
 ```typescript
@@ -21337,6 +21800,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DeployKey.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -21788,10 +22261,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DeployKeyEnable.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployKeyEnable.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployKeyEnable.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DeployKeyEnable.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployKeyEnable.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployKeyEnable.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DeployKeyEnable.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployKeyEnable.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployKeyEnable.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DeployKeyEnable.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployKeyEnable.property.canPushInput">canPushInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployKeyEnable.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployKeyEnable.property.keyIdInput">keyIdInput</a></code> | <code>string</code> | *No description.* |
@@ -21879,6 +22355,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DeployKeyEnable.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.DeployKeyEnable.property.count"></a>
 
 ```typescript
@@ -21899,6 +22385,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DeployKeyEnable.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DeployKeyEnable.property.lifecycle"></a>
 
 ```typescript
@@ -21916,6 +22412,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DeployKeyEnable.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -22394,10 +22900,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.DeployToken.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployToken.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployToken.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DeployToken.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployToken.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployToken.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DeployToken.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployToken.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployToken.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DeployToken.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployToken.property.token">token</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployToken.property.expiresAtInput">expiresAtInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployToken.property.groupInput">groupInput</a></code> | <code>string</code> | *No description.* |
@@ -22488,6 +22997,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DeployToken.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.DeployToken.property.count"></a>
 
 ```typescript
@@ -22508,6 +23027,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DeployToken.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DeployToken.property.lifecycle"></a>
 
 ```typescript
@@ -22525,6 +23054,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DeployToken.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -23611,10 +24150,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.Group.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Group.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Group.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Group.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Group.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Group.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Group.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Group.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Group.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Group.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Group.property.fullName">fullName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Group.property.fullPath">fullPath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Group.property.runnersToken">runnersToken</a></code> | <code>string</code> | *No description.* |
@@ -23730,6 +24272,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.Group.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.Group.property.count"></a>
 
 ```typescript
@@ -23750,6 +24302,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.Group.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.Group.property.lifecycle"></a>
 
 ```typescript
@@ -23767,6 +24329,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.Group.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -24511,10 +25083,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.GroupAccessToken.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupAccessToken.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupAccessToken.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupAccessToken.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupAccessToken.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupAccessToken.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupAccessToken.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupAccessToken.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupAccessToken.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupAccessToken.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupAccessToken.property.active">active</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupAccessToken.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupAccessToken.property.revoked">revoked</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
@@ -24607,6 +25182,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.GroupAccessToken.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.GroupAccessToken.property.count"></a>
 
 ```typescript
@@ -24627,6 +25212,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.GroupAccessToken.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.GroupAccessToken.property.lifecycle"></a>
 
 ```typescript
@@ -24644,6 +25239,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.GroupAccessToken.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -25144,10 +25749,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.GroupBadge.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupBadge.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupBadge.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupBadge.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupBadge.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupBadge.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupBadge.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupBadge.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupBadge.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupBadge.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupBadge.property.renderedImageUrl">renderedImageUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupBadge.property.renderedLinkUrl">renderedLinkUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupBadge.property.groupInput">groupInput</a></code> | <code>string</code> | *No description.* |
@@ -25233,6 +25841,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.GroupBadge.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.GroupBadge.property.count"></a>
 
 ```typescript
@@ -25253,6 +25871,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.GroupBadge.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.GroupBadge.property.lifecycle"></a>
 
 ```typescript
@@ -25270,6 +25898,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.GroupBadge.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -25749,10 +26387,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.GroupCluster.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupCluster.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupCluster.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupCluster.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupCluster.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupCluster.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupCluster.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupCluster.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupCluster.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupCluster.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupCluster.property.clusterType">clusterType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupCluster.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupCluster.property.platformType">platformType</a></code> | <code>string</code> | *No description.* |
@@ -25856,6 +26497,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.GroupCluster.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.GroupCluster.property.count"></a>
 
 ```typescript
@@ -25876,6 +26527,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.GroupCluster.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.GroupCluster.property.lifecycle"></a>
 
 ```typescript
@@ -25893,6 +26554,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.GroupCluster.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -26503,10 +27174,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.GroupCustomAttribute.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupCustomAttribute.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupCustomAttribute.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupCustomAttribute.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupCustomAttribute.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupCustomAttribute.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupCustomAttribute.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupCustomAttribute.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupCustomAttribute.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupCustomAttribute.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupCustomAttribute.property.groupInput">groupInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupCustomAttribute.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupCustomAttribute.property.keyInput">keyInput</a></code> | <code>string</code> | *No description.* |
@@ -26590,6 +27264,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.GroupCustomAttribute.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.GroupCustomAttribute.property.count"></a>
 
 ```typescript
@@ -26610,6 +27294,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.GroupCustomAttribute.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.GroupCustomAttribute.property.lifecycle"></a>
 
 ```typescript
@@ -26627,6 +27321,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.GroupCustomAttribute.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -27044,10 +27748,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.GroupLabel.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupLabel.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupLabel.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupLabel.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupLabel.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupLabel.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupLabel.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupLabel.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupLabel.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupLabel.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupLabel.property.colorInput">colorInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupLabel.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupLabel.property.groupInput">groupInput</a></code> | <code>string</code> | *No description.* |
@@ -27133,6 +27840,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.GroupLabel.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.GroupLabel.property.count"></a>
 
 ```typescript
@@ -27153,6 +27870,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.GroupLabel.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.GroupLabel.property.lifecycle"></a>
 
 ```typescript
@@ -27170,6 +27897,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.GroupLabel.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -27621,10 +28358,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.GroupLdapLink.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupLdapLink.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupLdapLink.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupLdapLink.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupLdapLink.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupLdapLink.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupLdapLink.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupLdapLink.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupLdapLink.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupLdapLink.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupLdapLink.property.accessLevelInput">accessLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupLdapLink.property.cnInput">cnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupLdapLink.property.forceInput">forceInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -27714,6 +28454,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.GroupLdapLink.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.GroupLdapLink.property.count"></a>
 
 ```typescript
@@ -27734,6 +28484,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.GroupLdapLink.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.GroupLdapLink.property.lifecycle"></a>
 
 ```typescript
@@ -27751,6 +28511,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.GroupLdapLink.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -28228,10 +28998,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.GroupMembership.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupMembership.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupMembership.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupMembership.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupMembership.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupMembership.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupMembership.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupMembership.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupMembership.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupMembership.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupMembership.property.accessLevelInput">accessLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupMembership.property.expiresAtInput">expiresAtInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupMembership.property.groupIdInput">groupIdInput</a></code> | <code>string</code> | *No description.* |
@@ -28317,6 +29090,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.GroupMembership.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.GroupMembership.property.count"></a>
 
 ```typescript
@@ -28337,6 +29120,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.GroupMembership.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.GroupMembership.property.lifecycle"></a>
 
 ```typescript
@@ -28354,6 +29147,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.GroupMembership.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -28784,10 +29587,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.GroupProjectFileTemplate.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupProjectFileTemplate.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupProjectFileTemplate.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupProjectFileTemplate.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupProjectFileTemplate.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupProjectFileTemplate.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupProjectFileTemplate.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupProjectFileTemplate.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupProjectFileTemplate.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupProjectFileTemplate.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupProjectFileTemplate.property.fileTemplateProjectIdInput">fileTemplateProjectIdInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupProjectFileTemplate.property.groupIdInput">groupIdInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupProjectFileTemplate.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -28869,6 +29675,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.GroupProjectFileTemplate.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.GroupProjectFileTemplate.property.count"></a>
 
 ```typescript
@@ -28889,6 +29705,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.GroupProjectFileTemplate.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.GroupProjectFileTemplate.property.lifecycle"></a>
 
 ```typescript
@@ -28906,6 +29732,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.GroupProjectFileTemplate.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -29303,10 +30139,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.GroupShareGroup.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupShareGroup.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupShareGroup.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupShareGroup.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupShareGroup.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupShareGroup.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupShareGroup.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupShareGroup.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupShareGroup.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupShareGroup.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupShareGroup.property.expiresAtInput">expiresAtInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupShareGroup.property.groupAccessInput">groupAccessInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupShareGroup.property.groupIdInput">groupIdInput</a></code> | <code>string</code> | *No description.* |
@@ -29392,6 +30231,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.GroupShareGroup.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.GroupShareGroup.property.count"></a>
 
 ```typescript
@@ -29412,6 +30261,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.GroupShareGroup.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.GroupShareGroup.property.lifecycle"></a>
 
 ```typescript
@@ -29429,6 +30288,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.GroupShareGroup.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -29887,10 +30756,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.GroupVariable.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupVariable.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupVariable.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupVariable.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupVariable.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupVariable.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupVariable.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupVariable.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupVariable.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupVariable.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupVariable.property.environmentScopeInput">environmentScopeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupVariable.property.groupInput">groupInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupVariable.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -29982,6 +30854,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.GroupVariable.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.GroupVariable.property.count"></a>
 
 ```typescript
@@ -30002,6 +30884,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.GroupVariable.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.GroupVariable.property.lifecycle"></a>
 
 ```typescript
@@ -30019,6 +30911,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.GroupVariable.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -30565,10 +31467,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.InstanceCluster.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.InstanceCluster.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.InstanceCluster.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.InstanceCluster.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.InstanceCluster.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.InstanceCluster.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.InstanceCluster.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.InstanceCluster.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.InstanceCluster.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.InstanceCluster.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.InstanceCluster.property.clusterType">clusterType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.InstanceCluster.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.InstanceCluster.property.platformType">platformType</a></code> | <code>string</code> | *No description.* |
@@ -30672,6 +31577,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.InstanceCluster.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.InstanceCluster.property.count"></a>
 
 ```typescript
@@ -30692,6 +31607,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.InstanceCluster.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.InstanceCluster.property.lifecycle"></a>
 
 ```typescript
@@ -30709,6 +31634,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.InstanceCluster.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -31340,10 +32275,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.InstanceVariable.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.InstanceVariable.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.InstanceVariable.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.InstanceVariable.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.InstanceVariable.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.InstanceVariable.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.InstanceVariable.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.InstanceVariable.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.InstanceVariable.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.InstanceVariable.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.InstanceVariable.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.InstanceVariable.property.keyInput">keyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.InstanceVariable.property.maskedInput">maskedInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -31431,6 +32369,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.InstanceVariable.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.InstanceVariable.property.count"></a>
 
 ```typescript
@@ -31451,6 +32399,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.InstanceVariable.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.InstanceVariable.property.lifecycle"></a>
 
 ```typescript
@@ -31468,6 +32426,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.InstanceVariable.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -31925,10 +32893,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.Label.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Label.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Label.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Label.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Label.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Label.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Label.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Label.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Label.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Label.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Label.property.colorInput">colorInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Label.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Label.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -32014,6 +32985,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.Label.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.Label.property.count"></a>
 
 ```typescript
@@ -32034,6 +33015,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.Label.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.Label.property.lifecycle"></a>
 
 ```typescript
@@ -32051,6 +33042,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.Label.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -32481,10 +33482,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ManagedLicense.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ManagedLicense.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ManagedLicense.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ManagedLicense.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ManagedLicense.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ManagedLicense.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ManagedLicense.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ManagedLicense.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ManagedLicense.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ManagedLicense.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ManagedLicense.property.approvalStatusInput">approvalStatusInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ManagedLicense.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ManagedLicense.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
@@ -32568,6 +33572,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ManagedLicense.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ManagedLicense.property.count"></a>
 
 ```typescript
@@ -32588,6 +33602,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ManagedLicense.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ManagedLicense.property.lifecycle"></a>
 
 ```typescript
@@ -32605,6 +33629,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ManagedLicense.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -33022,10 +34056,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.PersonalAccessToken.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PersonalAccessToken.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PersonalAccessToken.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.PersonalAccessToken.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PersonalAccessToken.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PersonalAccessToken.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.PersonalAccessToken.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PersonalAccessToken.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PersonalAccessToken.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.PersonalAccessToken.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PersonalAccessToken.property.active">active</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PersonalAccessToken.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PersonalAccessToken.property.revoked">revoked</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
@@ -33115,6 +34152,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.PersonalAccessToken.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.PersonalAccessToken.property.count"></a>
 
 ```typescript
@@ -33135,6 +34182,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.PersonalAccessToken.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.PersonalAccessToken.property.lifecycle"></a>
 
 ```typescript
@@ -33152,6 +34209,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.PersonalAccessToken.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -33636,10 +34703,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.PipelineSchedule.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineSchedule.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineSchedule.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.PipelineSchedule.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineSchedule.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineSchedule.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.PipelineSchedule.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineSchedule.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineSchedule.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.PipelineSchedule.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineSchedule.property.activeInput">activeInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineSchedule.property.cronInput">cronInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineSchedule.property.cronTimezoneInput">cronTimezoneInput</a></code> | <code>string</code> | *No description.* |
@@ -33729,6 +34799,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.PipelineSchedule.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.PipelineSchedule.property.count"></a>
 
 ```typescript
@@ -33749,6 +34829,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.PipelineSchedule.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.PipelineSchedule.property.lifecycle"></a>
 
 ```typescript
@@ -33766,6 +34856,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.PipelineSchedule.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -34236,10 +35336,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.PipelineScheduleVariable.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineScheduleVariable.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineScheduleVariable.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.PipelineScheduleVariable.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineScheduleVariable.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineScheduleVariable.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.PipelineScheduleVariable.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineScheduleVariable.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineScheduleVariable.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.PipelineScheduleVariable.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineScheduleVariable.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineScheduleVariable.property.keyInput">keyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineScheduleVariable.property.pipelineScheduleIdInput">pipelineScheduleIdInput</a></code> | <code>number</code> | *No description.* |
@@ -34325,6 +35428,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.PipelineScheduleVariable.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.PipelineScheduleVariable.property.count"></a>
 
 ```typescript
@@ -34345,6 +35458,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.PipelineScheduleVariable.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.PipelineScheduleVariable.property.lifecycle"></a>
 
 ```typescript
@@ -34362,6 +35485,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.PipelineScheduleVariable.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -34792,10 +35925,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.PipelineTrigger.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineTrigger.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineTrigger.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.PipelineTrigger.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineTrigger.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineTrigger.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.PipelineTrigger.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineTrigger.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineTrigger.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.PipelineTrigger.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineTrigger.property.token">token</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineTrigger.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineTrigger.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -34878,6 +36014,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.PipelineTrigger.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.PipelineTrigger.property.count"></a>
 
 ```typescript
@@ -34898,6 +36044,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.PipelineTrigger.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.PipelineTrigger.property.lifecycle"></a>
 
 ```typescript
@@ -34915,6 +36071,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.PipelineTrigger.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -35859,10 +37025,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.Project.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Project.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Project.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Project.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.property.containerExpirationPolicy">containerExpirationPolicy</a></code> | <code><a href="#@cdktf/provider-gitlab.ProjectContainerExpirationPolicyOutputReference">ProjectContainerExpirationPolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.property.httpUrlToRepo">httpUrlToRepo</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Project.property.pathWithNamespace">pathWithNamespace</a></code> | <code>string</code> | *No description.* |
@@ -36095,6 +37264,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.Project.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.Project.property.count"></a>
 
 ```typescript
@@ -36115,6 +37294,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.Project.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.Project.property.lifecycle"></a>
 
 ```typescript
@@ -36132,6 +37321,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.Project.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -38046,10 +39245,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ProjectAccessToken.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectAccessToken.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectAccessToken.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectAccessToken.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectAccessToken.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectAccessToken.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectAccessToken.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectAccessToken.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectAccessToken.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectAccessToken.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectAccessToken.property.active">active</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectAccessToken.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectAccessToken.property.revoked">revoked</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
@@ -38142,6 +39344,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectAccessToken.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ProjectAccessToken.property.count"></a>
 
 ```typescript
@@ -38162,6 +39374,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectAccessToken.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectAccessToken.property.lifecycle"></a>
 
 ```typescript
@@ -38179,6 +39401,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectAccessToken.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -38707,10 +39939,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ProjectApprovalRule.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectApprovalRule.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectApprovalRule.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectApprovalRule.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectApprovalRule.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectApprovalRule.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectApprovalRule.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectApprovalRule.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectApprovalRule.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectApprovalRule.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectApprovalRule.property.approvalsRequiredInput">approvalsRequiredInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectApprovalRule.property.groupIdsInput">groupIdsInput</a></code> | <code>number[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectApprovalRule.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -38802,6 +40037,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectApprovalRule.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ProjectApprovalRule.property.count"></a>
 
 ```typescript
@@ -38822,6 +40067,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectApprovalRule.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectApprovalRule.property.lifecycle"></a>
 
 ```typescript
@@ -38839,6 +40094,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectApprovalRule.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -39336,10 +40601,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadge.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadge.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadge.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectBadge.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadge.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadge.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectBadge.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadge.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadge.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectBadge.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadge.property.renderedImageUrl">renderedImageUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadge.property.renderedLinkUrl">renderedLinkUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadge.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -39427,6 +40695,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectBadge.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ProjectBadge.property.count"></a>
 
 ```typescript
@@ -39447,6 +40725,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectBadge.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectBadge.property.lifecycle"></a>
 
 ```typescript
@@ -39464,6 +40752,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectBadge.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -39970,10 +41268,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ProjectCluster.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectCluster.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectCluster.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectCluster.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectCluster.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectCluster.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectCluster.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectCluster.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectCluster.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectCluster.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectCluster.property.clusterType">clusterType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectCluster.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectCluster.property.platformType">platformType</a></code> | <code>string</code> | *No description.* |
@@ -40079,6 +41380,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectCluster.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ProjectCluster.property.count"></a>
 
 ```typescript
@@ -40099,6 +41410,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectCluster.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectCluster.property.lifecycle"></a>
 
 ```typescript
@@ -40116,6 +41437,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectCluster.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -40746,10 +42077,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ProjectCustomAttribute.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectCustomAttribute.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectCustomAttribute.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectCustomAttribute.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectCustomAttribute.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectCustomAttribute.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectCustomAttribute.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectCustomAttribute.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectCustomAttribute.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectCustomAttribute.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectCustomAttribute.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectCustomAttribute.property.keyInput">keyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectCustomAttribute.property.projectInput">projectInput</a></code> | <code>number</code> | *No description.* |
@@ -40833,6 +42167,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectCustomAttribute.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ProjectCustomAttribute.property.count"></a>
 
 ```typescript
@@ -40853,6 +42197,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectCustomAttribute.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectCustomAttribute.property.lifecycle"></a>
 
 ```typescript
@@ -40870,6 +42224,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectCustomAttribute.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -41294,10 +42658,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ProjectEnvironment.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectEnvironment.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectEnvironment.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectEnvironment.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectEnvironment.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectEnvironment.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectEnvironment.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectEnvironment.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectEnvironment.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectEnvironment.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectEnvironment.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectEnvironment.property.slug">slug</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectEnvironment.property.state">state</a></code> | <code>string</code> | *No description.* |
@@ -41387,6 +42754,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectEnvironment.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ProjectEnvironment.property.count"></a>
 
 ```typescript
@@ -41407,6 +42784,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectEnvironment.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectEnvironment.property.lifecycle"></a>
 
 ```typescript
@@ -41424,6 +42811,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectEnvironment.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -41901,10 +43298,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ProjectFreezePeriod.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectFreezePeriod.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectFreezePeriod.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectFreezePeriod.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectFreezePeriod.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectFreezePeriod.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectFreezePeriod.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectFreezePeriod.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectFreezePeriod.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectFreezePeriod.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectFreezePeriod.property.cronTimezoneInput">cronTimezoneInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectFreezePeriod.property.freezeEndInput">freezeEndInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectFreezePeriod.property.freezeStartInput">freezeStartInput</a></code> | <code>string</code> | *No description.* |
@@ -41990,6 +43390,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectFreezePeriod.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ProjectFreezePeriod.property.count"></a>
 
 ```typescript
@@ -42010,6 +43420,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectFreezePeriod.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectFreezePeriod.property.lifecycle"></a>
 
 ```typescript
@@ -42027,6 +43447,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectFreezePeriod.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -42562,10 +43992,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ProjectHook.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectHook.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectHook.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectHook.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectHook.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectHook.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectHook.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectHook.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectHook.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectHook.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectHook.property.confidentialIssuesEventsInput">confidentialIssuesEventsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectHook.property.confidentialNoteEventsInput">confidentialNoteEventsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectHook.property.deploymentEventsInput">deploymentEventsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -42677,6 +44110,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectHook.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ProjectHook.property.count"></a>
 
 ```typescript
@@ -42697,6 +44140,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectHook.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectHook.property.lifecycle"></a>
 
 ```typescript
@@ -42714,6 +44167,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectHook.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -43523,10 +44986,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.authorId">authorId</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.closedAt">closedAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssue.property.closedByUserId">closedByUserId</a></code> | <code>number</code> | *No description.* |
@@ -43663,6 +45129,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectIssue.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ProjectIssue.property.count"></a>
 
 ```typescript
@@ -43683,6 +45159,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectIssue.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectIssue.property.lifecycle"></a>
 
 ```typescript
@@ -43700,6 +45186,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectIssue.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -44675,10 +46171,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ProjectLevelMrApprovals.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectLevelMrApprovals.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectLevelMrApprovals.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectLevelMrApprovals.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectLevelMrApprovals.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectLevelMrApprovals.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectLevelMrApprovals.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectLevelMrApprovals.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectLevelMrApprovals.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectLevelMrApprovals.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectLevelMrApprovals.property.disableOverridingApproversPerMergeRequestInput">disableOverridingApproversPerMergeRequestInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectLevelMrApprovals.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectLevelMrApprovals.property.mergeRequestsAuthorApprovalInput">mergeRequestsAuthorApprovalInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -44768,6 +46267,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectLevelMrApprovals.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ProjectLevelMrApprovals.property.count"></a>
 
 ```typescript
@@ -44788,6 +46297,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectLevelMrApprovals.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectLevelMrApprovals.property.lifecycle"></a>
 
 ```typescript
@@ -44805,6 +46324,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectLevelMrApprovals.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -45282,10 +46811,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembership.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembership.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembership.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMembership.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembership.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembership.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMembership.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembership.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembership.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMembership.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembership.property.accessLevelInput">accessLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembership.property.expiresAtInput">expiresAtInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembership.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -45371,6 +46903,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectMembership.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ProjectMembership.property.count"></a>
 
 ```typescript
@@ -45391,6 +46933,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectMembership.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectMembership.property.lifecycle"></a>
 
 ```typescript
@@ -45408,6 +46960,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectMembership.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -45866,10 +47428,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.expired">expired</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMilestone.property.iid">iid</a></code> | <code>number</code> | *No description.* |
@@ -45966,6 +47531,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectMilestone.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ProjectMilestone.property.count"></a>
 
 ```typescript
@@ -45986,6 +47561,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectMilestone.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectMilestone.property.lifecycle"></a>
 
 ```typescript
@@ -46003,6 +47588,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectMilestone.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -46564,10 +48159,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ProjectMirror.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMirror.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMirror.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMirror.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMirror.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMirror.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMirror.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMirror.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMirror.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMirror.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMirror.property.mirrorId">mirrorId</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMirror.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMirror.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -46656,6 +48254,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectMirror.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ProjectMirror.property.count"></a>
 
 ```typescript
@@ -46676,6 +48284,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectMirror.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectMirror.property.lifecycle"></a>
 
 ```typescript
@@ -46693,6 +48311,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectMirror.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -47173,10 +48801,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironment.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironment.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironment.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironment.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironment.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironment.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironment.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironment.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironment.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironment.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironment.property.deployAccessLevels">deployAccessLevels</a></code> | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironmentDeployAccessLevelsList">ProjectProtectedEnvironmentDeployAccessLevelsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironment.property.deployAccessLevelsInput">deployAccessLevelsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironmentDeployAccessLevels">ProjectProtectedEnvironmentDeployAccessLevels</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironment.property.environmentInput">environmentInput</a></code> | <code>string</code> | *No description.* |
@@ -47262,6 +48893,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectProtectedEnvironment.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ProjectProtectedEnvironment.property.count"></a>
 
 ```typescript
@@ -47282,6 +48923,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectProtectedEnvironment.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectProtectedEnvironment.property.lifecycle"></a>
 
 ```typescript
@@ -47299,6 +48950,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectProtectedEnvironment.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -47729,10 +49390,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ProjectRunnerEnablement.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectRunnerEnablement.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectRunnerEnablement.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectRunnerEnablement.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectRunnerEnablement.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectRunnerEnablement.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectRunnerEnablement.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectRunnerEnablement.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectRunnerEnablement.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectRunnerEnablement.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectRunnerEnablement.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectRunnerEnablement.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectRunnerEnablement.property.runnerIdInput">runnerIdInput</a></code> | <code>number</code> | *No description.* |
@@ -47814,6 +49478,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectRunnerEnablement.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ProjectRunnerEnablement.property.count"></a>
 
 ```typescript
@@ -47834,6 +49508,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectRunnerEnablement.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectRunnerEnablement.property.lifecycle"></a>
 
 ```typescript
@@ -47851,6 +49535,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectRunnerEnablement.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -48255,10 +49949,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ProjectShareGroup.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectShareGroup.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectShareGroup.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectShareGroup.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectShareGroup.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectShareGroup.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectShareGroup.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectShareGroup.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectShareGroup.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectShareGroup.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectShareGroup.property.accessLevelInput">accessLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectShareGroup.property.groupAccessInput">groupAccessInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectShareGroup.property.groupIdInput">groupIdInput</a></code> | <code>number</code> | *No description.* |
@@ -48344,6 +50041,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectShareGroup.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ProjectShareGroup.property.count"></a>
 
 ```typescript
@@ -48364,6 +50071,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectShareGroup.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectShareGroup.property.lifecycle"></a>
 
 ```typescript
@@ -48381,6 +50098,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectShareGroup.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -48818,10 +50545,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ProjectTag.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectTag.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectTag.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectTag.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectTag.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectTag.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectTag.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectTag.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectTag.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectTag.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectTag.property.commit">commit</a></code> | <code><a href="#@cdktf/provider-gitlab.ProjectTagCommitList">ProjectTagCommitList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectTag.property.protected">protected</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectTag.property.release">release</a></code> | <code><a href="#@cdktf/provider-gitlab.ProjectTagReleaseList">ProjectTagReleaseList</a></code> | *No description.* |
@@ -48911,6 +50641,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectTag.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ProjectTag.property.count"></a>
 
 ```typescript
@@ -48931,6 +50671,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectTag.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectTag.property.lifecycle"></a>
 
 ```typescript
@@ -48948,6 +50698,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectTag.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -49446,10 +51206,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ProjectVariable.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectVariable.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectVariable.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectVariable.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectVariable.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectVariable.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectVariable.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectVariable.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectVariable.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectVariable.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectVariable.property.environmentScopeInput">environmentScopeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectVariable.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectVariable.property.keyInput">keyInput</a></code> | <code>string</code> | *No description.* |
@@ -49541,6 +51304,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectVariable.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ProjectVariable.property.count"></a>
 
 ```typescript
@@ -49561,6 +51334,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectVariable.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectVariable.property.lifecycle"></a>
 
 ```typescript
@@ -49578,6 +51361,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectVariable.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -50082,10 +51875,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.directAssetUrl">directAssetUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.external">external</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ReleaseLink.property.linkId">linkId</a></code> | <code>number</code> | *No description.* |
@@ -50178,6 +51974,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ReleaseLink.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ReleaseLink.property.count"></a>
 
 ```typescript
@@ -50198,6 +52004,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ReleaseLink.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ReleaseLink.property.lifecycle"></a>
 
 ```typescript
@@ -50215,6 +52031,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ReleaseLink.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -50763,10 +52589,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.RepositoryFile.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.RepositoryFile.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.RepositoryFile.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.RepositoryFile.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.RepositoryFile.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.RepositoryFile.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.RepositoryFile.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.RepositoryFile.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.RepositoryFile.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.RepositoryFile.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.RepositoryFile.property.blobId">blobId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.RepositoryFile.property.commitId">commitId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.RepositoryFile.property.contentSha256">contentSha256</a></code> | <code>string</code> | *No description.* |
@@ -50872,6 +52701,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.RepositoryFile.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.RepositoryFile.property.count"></a>
 
 ```typescript
@@ -50892,6 +52731,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.RepositoryFile.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.RepositoryFile.property.lifecycle"></a>
 
 ```typescript
@@ -50909,6 +52758,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.RepositoryFile.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -51588,10 +53447,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.Runner.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Runner.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Runner.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Runner.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Runner.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Runner.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Runner.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Runner.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Runner.property.authenticationToken">authenticationToken</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Runner.property.status">status</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Runner.property.accessLevelInput">accessLevelInput</a></code> | <code>string</code> | *No description.* |
@@ -51687,6 +53549,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.Runner.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.Runner.property.count"></a>
 
 ```typescript
@@ -51707,6 +53579,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.Runner.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.Runner.property.lifecycle"></a>
 
 ```typescript
@@ -51724,6 +53606,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.Runner.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -52254,10 +54146,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ServiceExternalWiki.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceExternalWiki.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceExternalWiki.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServiceExternalWiki.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceExternalWiki.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceExternalWiki.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServiceExternalWiki.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceExternalWiki.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceExternalWiki.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServiceExternalWiki.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceExternalWiki.property.active">active</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceExternalWiki.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceExternalWiki.property.slug">slug</a></code> | <code>string</code> | *No description.* |
@@ -52344,6 +54239,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ServiceExternalWiki.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ServiceExternalWiki.property.count"></a>
 
 ```typescript
@@ -52364,6 +54269,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ServiceExternalWiki.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ServiceExternalWiki.property.lifecycle"></a>
 
 ```typescript
@@ -52381,6 +54296,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ServiceExternalWiki.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -52828,10 +54753,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ServiceGithub.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceGithub.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceGithub.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServiceGithub.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceGithub.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceGithub.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServiceGithub.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceGithub.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceGithub.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServiceGithub.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceGithub.property.active">active</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceGithub.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceGithub.property.title">title</a></code> | <code>string</code> | *No description.* |
@@ -52921,6 +54849,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ServiceGithub.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ServiceGithub.property.count"></a>
 
 ```typescript
@@ -52941,6 +54879,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ServiceGithub.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ServiceGithub.property.lifecycle"></a>
 
 ```typescript
@@ -52958,6 +54906,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ServiceGithub.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -53512,10 +55470,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ServiceJira.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceJira.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceJira.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServiceJira.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceJira.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceJira.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServiceJira.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceJira.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceJira.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServiceJira.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceJira.property.active">active</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceJira.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceJira.property.title">title</a></code> | <code>string</code> | *No description.* |
@@ -53629,6 +55590,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ServiceJira.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ServiceJira.property.count"></a>
 
 ```typescript
@@ -53649,6 +55620,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ServiceJira.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ServiceJira.property.lifecycle"></a>
 
 ```typescript
@@ -53666,6 +55647,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ServiceJira.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -54453,10 +56444,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ServiceMicrosoftTeams.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceMicrosoftTeams.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceMicrosoftTeams.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServiceMicrosoftTeams.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceMicrosoftTeams.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceMicrosoftTeams.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServiceMicrosoftTeams.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceMicrosoftTeams.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceMicrosoftTeams.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServiceMicrosoftTeams.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceMicrosoftTeams.property.active">active</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceMicrosoftTeams.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceMicrosoftTeams.property.updatedAt">updatedAt</a></code> | <code>string</code> | *No description.* |
@@ -54563,6 +56557,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ServiceMicrosoftTeams.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ServiceMicrosoftTeams.property.count"></a>
 
 ```typescript
@@ -54583,6 +56587,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ServiceMicrosoftTeams.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ServiceMicrosoftTeams.property.lifecycle"></a>
 
 ```typescript
@@ -54600,6 +56614,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ServiceMicrosoftTeams.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -55254,10 +57278,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ServicePipelinesEmail.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServicePipelinesEmail.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServicePipelinesEmail.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServicePipelinesEmail.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServicePipelinesEmail.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServicePipelinesEmail.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServicePipelinesEmail.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServicePipelinesEmail.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServicePipelinesEmail.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServicePipelinesEmail.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServicePipelinesEmail.property.branchesToBeNotifiedInput">branchesToBeNotifiedInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServicePipelinesEmail.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServicePipelinesEmail.property.notifyOnlyBrokenPipelinesInput">notifyOnlyBrokenPipelinesInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -55343,6 +57370,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ServicePipelinesEmail.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ServicePipelinesEmail.property.count"></a>
 
 ```typescript
@@ -55363,6 +57400,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ServicePipelinesEmail.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ServicePipelinesEmail.property.lifecycle"></a>
 
 ```typescript
@@ -55380,6 +57427,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ServicePipelinesEmail.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -55957,10 +58014,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.ServiceSlack.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceSlack.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceSlack.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServiceSlack.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceSlack.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceSlack.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServiceSlack.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceSlack.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceSlack.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServiceSlack.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceSlack.property.jobEvents">jobEvents</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceSlack.property.branchesToBeNotifiedInput">branchesToBeNotifiedInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceSlack.property.confidentialIssueChannelInput">confidentialIssueChannelInput</a></code> | <code>string</code> | *No description.* |
@@ -56085,6 +58145,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ServiceSlack.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ServiceSlack.property.count"></a>
 
 ```typescript
@@ -56105,6 +58175,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ServiceSlack.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ServiceSlack.property.lifecycle"></a>
 
 ```typescript
@@ -56122,6 +58202,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ServiceSlack.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -56984,10 +59074,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.SystemHook.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.SystemHook.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.SystemHook.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.SystemHook.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.SystemHook.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.SystemHook.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.SystemHook.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.SystemHook.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.SystemHook.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.SystemHook.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.SystemHook.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.SystemHook.property.enableSslVerificationInput">enableSslVerificationInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.SystemHook.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -57080,6 +59173,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.SystemHook.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.SystemHook.property.count"></a>
 
 ```typescript
@@ -57100,6 +59203,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.SystemHook.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.SystemHook.property.lifecycle"></a>
 
 ```typescript
@@ -57117,6 +59230,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.SystemHook.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -57617,10 +59740,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.TagProtection.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.TagProtection.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.TagProtection.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.TagProtection.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.TagProtection.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.TagProtection.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.TagProtection.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.TagProtection.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.TagProtection.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.TagProtection.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.TagProtection.property.createAccessLevelInput">createAccessLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.TagProtection.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.TagProtection.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
@@ -57704,6 +59830,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.TagProtection.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.TagProtection.property.count"></a>
 
 ```typescript
@@ -57724,6 +59860,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.TagProtection.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.TagProtection.property.lifecycle"></a>
 
 ```typescript
@@ -57741,6 +59887,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.TagProtection.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -58186,10 +60342,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.Topic.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Topic.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Topic.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Topic.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Topic.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Topic.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Topic.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Topic.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Topic.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.Topic.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Topic.property.avatarUrl">avatarUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Topic.property.avatarHashInput">avatarHashInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.Topic.property.avatarInput">avatarInput</a></code> | <code>string</code> | *No description.* |
@@ -58280,6 +60439,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.Topic.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.Topic.property.count"></a>
 
 ```typescript
@@ -58300,6 +60469,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.Topic.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.Topic.property.lifecycle"></a>
 
 ```typescript
@@ -58317,6 +60496,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.Topic.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -58867,10 +61056,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.User.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.User.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.User.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.User.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.User.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.User.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.User.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.User.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.User.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.User.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.User.property.canCreateGroupInput">canCreateGroupInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.User.property.emailInput">emailInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.User.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -58974,6 +61166,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.User.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.User.property.count"></a>
 
 ```typescript
@@ -58994,6 +61196,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.User.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.User.property.lifecycle"></a>
 
 ```typescript
@@ -59011,6 +61223,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.User.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -59621,10 +61843,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.UserCustomAttribute.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserCustomAttribute.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserCustomAttribute.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.UserCustomAttribute.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserCustomAttribute.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserCustomAttribute.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.UserCustomAttribute.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserCustomAttribute.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserCustomAttribute.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.UserCustomAttribute.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserCustomAttribute.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserCustomAttribute.property.keyInput">keyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserCustomAttribute.property.userInput">userInput</a></code> | <code>number</code> | *No description.* |
@@ -59708,6 +61933,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.UserCustomAttribute.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.UserCustomAttribute.property.count"></a>
 
 ```typescript
@@ -59728,6 +61963,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.UserCustomAttribute.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.UserCustomAttribute.property.lifecycle"></a>
 
 ```typescript
@@ -59745,6 +61990,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.UserCustomAttribute.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -60162,10 +62417,13 @@ Any object.
 | <code><a href="#@cdktf/provider-gitlab.UserSshkey.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserSshkey.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserSshkey.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.UserSshkey.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserSshkey.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserSshkey.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.UserSshkey.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserSshkey.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserSshkey.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.UserSshkey.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserSshkey.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserSshkey.property.keyId">keyId</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserSshkey.property.expiresAtInput">expiresAtInput</a></code> | <code>string</code> | *No description.* |
@@ -60253,6 +62511,16 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.UserSshkey.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.UserSshkey.property.count"></a>
 
 ```typescript
@@ -60273,6 +62541,16 @@ public readonly dependsOn: string[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.UserSshkey.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.UserSshkey.property.lifecycle"></a>
 
 ```typescript
@@ -60290,6 +62568,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.UserSshkey.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -60458,14 +62746,27 @@ const branchConfig: BranchConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.BranchConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.BranchConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.BranchConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.BranchConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.BranchConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.BranchConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.BranchConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.BranchConfig.property.name">name</a></code> | <code>string</code> | The name for this branch. |
 | <code><a href="#@cdktf/provider-gitlab.BranchConfig.property.project">project</a></code> | <code>string</code> | The ID or full path of the project which the branch is created against. |
 | <code><a href="#@cdktf/provider-gitlab.BranchConfig.property.ref">ref</a></code> | <code>string</code> | The ref which the branch is created from. |
 | <code><a href="#@cdktf/provider-gitlab.BranchConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch#id Branch#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.BranchConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -60489,6 +62790,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.BranchConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.BranchConfig.property.lifecycle"></a>
 
 ```typescript
@@ -60506,6 +62817,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.BranchConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -60721,10 +63042,13 @@ const branchProtectionConfig: BranchProtectionConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.BranchProtectionConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.BranchProtectionConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.BranchProtectionConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.BranchProtectionConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.BranchProtectionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.BranchProtectionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.BranchProtectionConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.BranchProtectionConfig.property.branch">branch</a></code> | <code>string</code> | Name of the branch. |
 | <code><a href="#@cdktf/provider-gitlab.BranchProtectionConfig.property.project">project</a></code> | <code>string</code> | The id of the project. |
 | <code><a href="#@cdktf/provider-gitlab.BranchProtectionConfig.property.allowedToMerge">allowedToMerge</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-gitlab.BranchProtectionAllowedToMerge">BranchProtectionAllowedToMerge</a>[]</code> | allowed_to_merge block. |
@@ -60736,6 +63060,16 @@ const branchProtectionConfig: BranchProtectionConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.BranchProtectionConfig.property.mergeAccessLevel">mergeAccessLevel</a></code> | <code>string</code> | Access levels allowed to merge. Valid values are: `no one`, `developer`, `maintainer`. |
 | <code><a href="#@cdktf/provider-gitlab.BranchProtectionConfig.property.pushAccessLevel">pushAccessLevel</a></code> | <code>string</code> | Access levels allowed to push. Valid values are: `no one`, `developer`, `maintainer`. |
 | <code><a href="#@cdktf/provider-gitlab.BranchProtectionConfig.property.unprotectAccessLevel">unprotectAccessLevel</a></code> | <code>string</code> | Access levels allowed to unprotect. Valid values are: `developer`, `maintainer`. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.BranchProtectionConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -60759,6 +63093,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.BranchProtectionConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.BranchProtectionConfig.property.lifecycle"></a>
 
 ```typescript
@@ -60776,6 +63120,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.BranchProtectionConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -60948,13 +63302,26 @@ const clusterAgentConfig: ClusterAgentConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgentConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgentConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgentConfig.property.name">name</a></code> | <code>string</code> | The Name of the agent. |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgentConfig.property.project">project</a></code> | <code>string</code> | ID or full path of the project maintained by the authenticated user. |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent#id ClusterAgent#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ClusterAgentConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -60978,6 +63345,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ClusterAgentConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ClusterAgentConfig.property.lifecycle"></a>
 
 ```typescript
@@ -60995,6 +63372,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ClusterAgentConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -61055,15 +63442,28 @@ const clusterAgentTokenConfig: ClusterAgentTokenConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.agentId">agentId</a></code> | <code>number</code> | The ID of the agent. |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.name">name</a></code> | <code>string</code> | The Name of the agent. |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.project">project</a></code> | <code>string</code> | ID or full path of the project maintained by the authenticated user. |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.description">description</a></code> | <code>string</code> | The Description for the agent. |
 | <code><a href="#@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent_token#id ClusterAgentToken#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -61087,6 +63487,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.lifecycle"></a>
 
 ```typescript
@@ -61104,6 +63514,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ClusterAgentTokenConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -61203,13 +63623,26 @@ const dataGitlabBranchConfig: DataGitlabBranchConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabBranchConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabBranchConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabBranchConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabBranchConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabBranchConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabBranchConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabBranchConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabBranchConfig.property.name">name</a></code> | <code>string</code> | The name of the branch. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabBranchConfig.property.project">project</a></code> | <code>string</code> | The full path or id of the project. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabBranchConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/branch#id DataGitlabBranch#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DataGitlabBranchConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -61233,6 +63666,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabBranchConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabBranchConfig.property.lifecycle"></a>
 
 ```typescript
@@ -61250,6 +63693,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DataGitlabBranchConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -61310,13 +63763,26 @@ const dataGitlabClusterAgentConfig: DataGitlabClusterAgentConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentConfig.property.agentId">agentId</a></code> | <code>number</code> | The ID of the agent. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentConfig.property.project">project</a></code> | <code>string</code> | ID or full path of the project maintained by the authenticated user. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/cluster_agent#id DataGitlabClusterAgent#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DataGitlabClusterAgentConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -61340,6 +63806,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabClusterAgentConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabClusterAgentConfig.property.lifecycle"></a>
 
 ```typescript
@@ -61357,6 +63833,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DataGitlabClusterAgentConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -61428,12 +63914,25 @@ const dataGitlabClusterAgentsConfig: DataGitlabClusterAgentsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsConfig.property.project">project</a></code> | <code>string</code> | The ID or full path of the project owned by the authenticated user. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabClusterAgentsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/cluster_agents#id DataGitlabClusterAgents#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -61457,6 +63956,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsConfig.property.lifecycle"></a>
 
 ```typescript
@@ -61474,6 +63983,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DataGitlabClusterAgentsConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -61520,10 +64039,23 @@ const dataGitlabCurrentUserConfig: DataGitlabCurrentUserConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUserConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUserConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUserConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUserConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUserConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabCurrentUserConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DataGitlabCurrentUserConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -61547,6 +64079,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabCurrentUserConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabCurrentUserConfig.property.lifecycle"></a>
 
 ```typescript
@@ -61567,6 +64109,16 @@ public readonly provider: TerraformProvider;
 
 ---
 
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DataGitlabCurrentUserConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+
+---
+
 ### DataGitlabGroupConfig <a name="DataGitlabGroupConfig" id="@cdktf/provider-gitlab.DataGitlabGroupConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.DataGitlabGroupConfig.Initializer"></a>
@@ -61581,13 +64133,26 @@ const dataGitlabGroupConfig: DataGitlabGroupConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupConfig.property.fullPath">fullPath</a></code> | <code>string</code> | The full path of the group. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupConfig.property.groupId">groupId</a></code> | <code>number</code> | The ID of the group. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/group#id DataGitlabGroup#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DataGitlabGroupConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -61611,6 +64176,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabGroupConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabGroupConfig.property.lifecycle"></a>
 
 ```typescript
@@ -61628,6 +64203,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DataGitlabGroupConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -61688,14 +64273,27 @@ const dataGitlabGroupMembershipConfig: DataGitlabGroupMembershipConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupMembershipConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupMembershipConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupMembershipConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupMembershipConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupMembershipConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupMembershipConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupMembershipConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupMembershipConfig.property.accessLevel">accessLevel</a></code> | <code>string</code> | Only return members with the desired access level. Acceptable values are: `guest`, `reporter`, `developer`, `maintainer`, `owner`. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupMembershipConfig.property.fullPath">fullPath</a></code> | <code>string</code> | The full path of the group. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupMembershipConfig.property.groupId">groupId</a></code> | <code>number</code> | The ID of the group. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupMembershipConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/group_membership#id DataGitlabGroupMembership#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DataGitlabGroupMembershipConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -61719,6 +64317,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabGroupMembershipConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabGroupMembershipConfig.property.lifecycle"></a>
 
 ```typescript
@@ -61736,6 +64344,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DataGitlabGroupMembershipConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -61821,14 +64439,27 @@ const dataGitlabGroupVariableConfig: DataGitlabGroupVariableConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariableConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariableConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariableConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariableConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariableConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariableConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariableConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariableConfig.property.group">group</a></code> | <code>string</code> | The name or id of the group. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariableConfig.property.key">key</a></code> | <code>string</code> | The name of the variable. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariableConfig.property.environmentScope">environmentScope</a></code> | <code>string</code> | The environment scope of the variable. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariableConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/group_variable#id DataGitlabGroupVariable#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DataGitlabGroupVariableConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -61852,6 +64483,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabGroupVariableConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabGroupVariableConfig.property.lifecycle"></a>
 
 ```typescript
@@ -61869,6 +64510,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DataGitlabGroupVariableConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -61945,13 +64596,26 @@ const dataGitlabGroupVariablesConfig: DataGitlabGroupVariablesConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariablesConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariablesConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariablesConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariablesConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariablesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariablesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariablesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariablesConfig.property.group">group</a></code> | <code>string</code> | The name or id of the group. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariablesConfig.property.environmentScope">environmentScope</a></code> | <code>string</code> | The environment scope of the variable. Defaults to all environment (`*`). |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabGroupVariablesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/group_variables#id DataGitlabGroupVariables#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DataGitlabGroupVariablesConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -61975,6 +64639,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabGroupVariablesConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabGroupVariablesConfig.property.lifecycle"></a>
 
 ```typescript
@@ -61992,6 +64666,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DataGitlabGroupVariablesConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -62063,12 +64747,25 @@ const dataGitlabInstanceDeployKeysConfig: DataGitlabInstanceDeployKeysConfig = {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceDeployKeysConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceDeployKeysConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceDeployKeysConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceDeployKeysConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceDeployKeysConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceDeployKeysConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceDeployKeysConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceDeployKeysConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/instance_deploy_keys#id DataGitlabInstanceDeployKeys#id}. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceDeployKeysConfig.property.public">public</a></code> | <code>boolean \| cdktf.IResolvable</code> | Only return deploy keys that are public. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DataGitlabInstanceDeployKeysConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -62092,6 +64789,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabInstanceDeployKeysConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabInstanceDeployKeysConfig.property.lifecycle"></a>
 
 ```typescript
@@ -62109,6 +64816,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DataGitlabInstanceDeployKeysConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -62177,12 +64894,25 @@ const dataGitlabInstanceVariableConfig: DataGitlabInstanceVariableConfig = { ...
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariableConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariableConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariableConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariableConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariableConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariableConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariableConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariableConfig.property.key">key</a></code> | <code>string</code> | The name of the variable. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariableConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/instance_variable#id DataGitlabInstanceVariable#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DataGitlabInstanceVariableConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -62206,6 +64936,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabInstanceVariableConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabInstanceVariableConfig.property.lifecycle"></a>
 
 ```typescript
@@ -62223,6 +64963,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DataGitlabInstanceVariableConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -62269,11 +65019,24 @@ const dataGitlabInstanceVariablesConfig: DataGitlabInstanceVariablesConfig = { .
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariablesConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariablesConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariablesConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariablesConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariablesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariablesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariablesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabInstanceVariablesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/instance_variables#id DataGitlabInstanceVariables#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DataGitlabInstanceVariablesConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -62297,6 +65060,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabInstanceVariablesConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabInstanceVariablesConfig.property.lifecycle"></a>
 
 ```typescript
@@ -62314,6 +65087,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DataGitlabInstanceVariablesConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -62357,14 +65140,27 @@ const dataGitlabProjectConfig: DataGitlabProjectConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectConfig.property.ciDefaultGitDepth">ciDefaultGitDepth</a></code> | <code>number</code> | Default number of revisions for shallow cloning. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectConfig.property.id">id</a></code> | <code>string</code> | The integer or path with namespace that uniquely identifies the project within the gitlab install. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectConfig.property.pathWithNamespace">pathWithNamespace</a></code> | <code>string</code> | The path of the repository with namespace. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectConfig.property.publicBuilds">publicBuilds</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, jobs can be viewed by non-project members. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DataGitlabProjectConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -62388,6 +65184,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabProjectConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabProjectConfig.property.lifecycle"></a>
 
 ```typescript
@@ -62405,6 +65211,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DataGitlabProjectConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -62492,13 +65308,26 @@ const dataGitlabProjectIssueConfig: DataGitlabProjectIssueConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssueConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssueConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssueConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssueConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssueConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssueConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssueConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssueConfig.property.iid">iid</a></code> | <code>number</code> | The internal ID of the project's issue. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssueConfig.property.project">project</a></code> | <code>string</code> | The name or ID of the project. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssueConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_issue#id DataGitlabProjectIssue#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DataGitlabProjectIssueConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -62522,6 +65351,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabProjectIssueConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabProjectIssueConfig.property.lifecycle"></a>
 
 ```typescript
@@ -62539,6 +65378,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DataGitlabProjectIssueConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -62599,10 +65448,13 @@ const dataGitlabProjectIssuesConfig: DataGitlabProjectIssuesConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssuesConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssuesConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssuesConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssuesConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssuesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssuesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssuesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssuesConfig.property.project">project</a></code> | <code>string</code> | The name or id of the project. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssuesConfig.property.assigneeId">assigneeId</a></code> | <code>number</code> | Return issues assigned to the given user id. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectIssuesConfig.property.assigneeUsername">assigneeUsername</a></code> | <code>string</code> | Return issues assigned to the given username. |
@@ -62633,6 +65485,16 @@ const dataGitlabProjectIssuesConfig: DataGitlabProjectIssuesConfig = { ... }
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DataGitlabProjectIssuesConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.DataGitlabProjectIssuesConfig.property.count"></a>
 
 ```typescript
@@ -62653,6 +65515,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabProjectIssuesConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabProjectIssuesConfig.property.lifecycle"></a>
 
 ```typescript
@@ -62670,6 +65542,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DataGitlabProjectIssuesConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -63113,13 +65995,26 @@ const dataGitlabProjectMilestoneConfig: DataGitlabProjectMilestoneConfig = { ...
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig.property.milestoneId">milestoneId</a></code> | <code>number</code> | The instance-wide ID of the project’s milestone. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig.property.project">project</a></code> | <code>string</code> | The ID or URL-encoded path of the project owned by the authenticated user. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestone#id DataGitlabProjectMilestone#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -63143,6 +66038,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig.property.lifecycle"></a>
 
 ```typescript
@@ -63160,6 +66065,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DataGitlabProjectMilestoneConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -63220,10 +66135,13 @@ const dataGitlabProjectMilestonesConfig: DataGitlabProjectMilestonesConfig = { .
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.project">project</a></code> | <code>string</code> | The ID or URL-encoded path of the project owned by the authenticated user. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_milestones#id DataGitlabProjectMilestones#id}. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.iids">iids</a></code> | <code>number[]</code> | Return only the milestones having the given `iid` (Note: ignored if `include_parent_milestones` is set as `true`). |
@@ -63231,6 +66149,16 @@ const dataGitlabProjectMilestonesConfig: DataGitlabProjectMilestonesConfig = { .
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.search">search</a></code> | <code>string</code> | Return only milestones with a title or description matching the provided string. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.state">state</a></code> | <code>string</code> | Return only `active` or `closed` milestones. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.title">title</a></code> | <code>string</code> | Return only the milestones having the given `title`. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -63254,6 +66182,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.lifecycle"></a>
 
 ```typescript
@@ -63271,6 +66209,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DataGitlabProjectMilestonesConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -63398,12 +66346,25 @@ const dataGitlabProjectProtectedBranchConfig: DataGitlabProjectProtectedBranchCo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranchConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranchConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranchConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranchConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranchConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranchConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranchConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranchConfig.property.name">name</a></code> | <code>string</code> | The name of the protected branch. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranchConfig.property.projectId">projectId</a></code> | <code>string</code> | The integer or path with namespace that uniquely identifies the project. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DataGitlabProjectProtectedBranchConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -63427,6 +66388,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabProjectProtectedBranchConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabProjectProtectedBranchConfig.property.lifecycle"></a>
 
 ```typescript
@@ -63444,6 +66415,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DataGitlabProjectProtectedBranchConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -63489,12 +66470,25 @@ const dataGitlabProjectProtectedBranchesConfig: DataGitlabProjectProtectedBranch
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranchesConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranchesConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranchesConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranchesConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranchesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranchesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranchesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranchesConfig.property.projectId">projectId</a></code> | <code>string</code> | The integer or path with namespace that uniquely identifies the project. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectProtectedBranchesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_protected_branches#id DataGitlabProjectProtectedBranches#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DataGitlabProjectProtectedBranchesConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -63518,6 +66512,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabProjectProtectedBranchesConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabProjectProtectedBranchesConfig.property.lifecycle"></a>
 
 ```typescript
@@ -63535,6 +66539,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DataGitlabProjectProtectedBranchesConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -63647,10 +66661,13 @@ const dataGitlabProjectsConfig: DataGitlabProjectsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectsConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectsConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectsConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectsConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectsConfig.property.archived">archived</a></code> | <code>boolean \| cdktf.IResolvable</code> | Limit by archived status. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectsConfig.property.groupId">groupId</a></code> | <code>number</code> | The ID of the group owned by the authenticated user to look projects for within. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/projects#id DataGitlabProjects#id}. |
@@ -63676,6 +66693,16 @@ const dataGitlabProjectsConfig: DataGitlabProjectsConfig = { ... }
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DataGitlabProjectsConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.DataGitlabProjectsConfig.property.count"></a>
 
 ```typescript
@@ -63696,6 +66723,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabProjectsConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabProjectsConfig.property.lifecycle"></a>
 
 ```typescript
@@ -63713,6 +66750,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DataGitlabProjectsConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -64131,13 +67178,26 @@ const dataGitlabProjectTagConfig: DataGitlabProjectTagConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTagConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTagConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTagConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTagConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTagConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTagConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTagConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTagConfig.property.name">name</a></code> | <code>string</code> | The name of a tag. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTagConfig.property.project">project</a></code> | <code>string</code> | The ID or URL-encoded path of the project owned by the authenticated user. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTagConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_tag#id DataGitlabProjectTag#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DataGitlabProjectTagConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -64161,6 +67221,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabProjectTagConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabProjectTagConfig.property.lifecycle"></a>
 
 ```typescript
@@ -64178,6 +67248,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DataGitlabProjectTagConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -64249,15 +67329,28 @@ const dataGitlabProjectTagsConfig: DataGitlabProjectTagsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTagsConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTagsConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTagsConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTagsConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTagsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTagsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTagsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTagsConfig.property.project">project</a></code> | <code>string</code> | The ID or URL-encoded path of the project owned by the authenticated user. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTagsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_tags#id DataGitlabProjectTags#id}. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTagsConfig.property.orderBy">orderBy</a></code> | <code>string</code> | Return tags ordered by `name` or `updated` fields. Default is `updated`. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTagsConfig.property.search">search</a></code> | <code>string</code> | Return list of tags matching the search criteria. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectTagsConfig.property.sort">sort</a></code> | <code>string</code> | Return tags sorted in `asc` or `desc` order. Default is `desc`. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DataGitlabProjectTagsConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -64281,6 +67374,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabProjectTagsConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabProjectTagsConfig.property.lifecycle"></a>
 
 ```typescript
@@ -64298,6 +67401,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DataGitlabProjectTagsConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -64421,14 +67534,27 @@ const dataGitlabProjectVariableConfig: DataGitlabProjectVariableConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariableConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariableConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariableConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariableConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariableConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariableConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariableConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariableConfig.property.key">key</a></code> | <code>string</code> | The name of the variable. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariableConfig.property.project">project</a></code> | <code>string</code> | The name or id of the project. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariableConfig.property.environmentScope">environmentScope</a></code> | <code>string</code> | The environment scope of the variable. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariableConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_variable#id DataGitlabProjectVariable#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DataGitlabProjectVariableConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -64452,6 +67578,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabProjectVariableConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabProjectVariableConfig.property.lifecycle"></a>
 
 ```typescript
@@ -64469,6 +67605,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DataGitlabProjectVariableConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -64545,13 +67691,26 @@ const dataGitlabProjectVariablesConfig: DataGitlabProjectVariablesConfig = { ...
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariablesConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariablesConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariablesConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariablesConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariablesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariablesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariablesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariablesConfig.property.project">project</a></code> | <code>string</code> | The name or id of the project. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariablesConfig.property.environmentScope">environmentScope</a></code> | <code>string</code> | The environment scope of the variable. Defaults to all environment (`*`). |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabProjectVariablesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_variables#id DataGitlabProjectVariables#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DataGitlabProjectVariablesConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -64575,6 +67734,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabProjectVariablesConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabProjectVariablesConfig.property.lifecycle"></a>
 
 ```typescript
@@ -64592,6 +67761,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DataGitlabProjectVariablesConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -64663,14 +67842,27 @@ const dataGitlabReleaseLinkConfig: DataGitlabReleaseLinkConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.linkId">linkId</a></code> | <code>number</code> | The ID of the link. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.project">project</a></code> | <code>string</code> | The ID or [URL-encoded path of the project](https://docs.gitlab.com/ee/api/index.html#namespaced-path-encoding). |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.tagName">tagName</a></code> | <code>string</code> | The tag associated with the Release. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/release_link#id DataGitlabReleaseLink#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -64694,6 +67886,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.lifecycle"></a>
 
 ```typescript
@@ -64711,6 +67913,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DataGitlabReleaseLinkConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -64785,13 +67997,26 @@ const dataGitlabReleaseLinksConfig: DataGitlabReleaseLinksConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig.property.project">project</a></code> | <code>string</code> | The ID or full path to the project. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig.property.tagName">tagName</a></code> | <code>string</code> | The tag associated with the Release. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/release_links#id DataGitlabReleaseLinks#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -64815,6 +68040,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig.property.lifecycle"></a>
 
 ```typescript
@@ -64832,6 +68067,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DataGitlabReleaseLinksConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -64903,14 +68148,27 @@ const dataGitlabRepositoryFileConfig: DataGitlabRepositoryFileConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabRepositoryFileConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabRepositoryFileConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabRepositoryFileConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabRepositoryFileConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabRepositoryFileConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabRepositoryFileConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabRepositoryFileConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabRepositoryFileConfig.property.filePath">filePath</a></code> | <code>string</code> | The full path of the file. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabRepositoryFileConfig.property.project">project</a></code> | <code>string</code> | The name or ID of the project. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabRepositoryFileConfig.property.ref">ref</a></code> | <code>string</code> | The name of branch, tag or commit. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabRepositoryFileConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/repository_file#id DataGitlabRepositoryFile#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DataGitlabRepositoryFileConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -64934,6 +68192,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabRepositoryFileConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabRepositoryFileConfig.property.lifecycle"></a>
 
 ```typescript
@@ -64951,6 +68219,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DataGitlabRepositoryFileConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -65027,15 +68305,28 @@ const dataGitlabUserConfig: DataGitlabUserConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabUserConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUserConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUserConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabUserConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUserConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabUserConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUserConfig.property.email">email</a></code> | <code>string</code> | The public email address of the user. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/user#id DataGitlabUser#id}. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUserConfig.property.namespaceId">namespaceId</a></code> | <code>number</code> | The ID of the user's namespace. Requires admin token to access this field. Available since GitLab 14.10. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUserConfig.property.userId">userId</a></code> | <code>number</code> | The ID of the user. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUserConfig.property.username">username</a></code> | <code>string</code> | The username of the user. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DataGitlabUserConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -65059,6 +68350,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabUserConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabUserConfig.property.lifecycle"></a>
 
 ```typescript
@@ -65076,6 +68377,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DataGitlabUserConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -65166,10 +68477,13 @@ const dataGitlabUsersConfig: DataGitlabUsersConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabUsersConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUsersConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUsersConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabUsersConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUsersConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUsersConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DataGitlabUsersConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUsersConfig.property.active">active</a></code> | <code>boolean \| cdktf.IResolvable</code> | Filter users that are active. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUsersConfig.property.blocked">blocked</a></code> | <code>boolean \| cdktf.IResolvable</code> | Filter users that are blocked. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUsersConfig.property.createdAfter">createdAfter</a></code> | <code>string</code> | Search for users created after a specific date. (Requires administrator privileges). |
@@ -65180,6 +68494,16 @@ const dataGitlabUsersConfig: DataGitlabUsersConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUsersConfig.property.orderBy">orderBy</a></code> | <code>string</code> | Order the users' list by `id`, `name`, `username`, `created_at` or `updated_at`. (Requires administrator privileges). |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUsersConfig.property.search">search</a></code> | <code>string</code> | Search users by username, name or email. |
 | <code><a href="#@cdktf/provider-gitlab.DataGitlabUsersConfig.property.sort">sort</a></code> | <code>string</code> | Sort users' list in asc or desc order. (Requires administrator privileges). |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DataGitlabUsersConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -65203,6 +68527,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DataGitlabUsersConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DataGitlabUsersConfig.property.lifecycle"></a>
 
 ```typescript
@@ -65220,6 +68554,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DataGitlabUsersConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -65389,15 +68733,28 @@ const deployKeyConfig: DeployKeyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DeployKeyConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployKeyConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployKeyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DeployKeyConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployKeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployKeyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DeployKeyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployKeyConfig.property.key">key</a></code> | <code>string</code> | The public ssh key body. |
 | <code><a href="#@cdktf/provider-gitlab.DeployKeyConfig.property.project">project</a></code> | <code>string</code> | The name or id of the project to add the deploy key to. |
 | <code><a href="#@cdktf/provider-gitlab.DeployKeyConfig.property.title">title</a></code> | <code>string</code> | A title to describe the deploy key with. |
 | <code><a href="#@cdktf/provider-gitlab.DeployKeyConfig.property.canPush">canPush</a></code> | <code>boolean \| cdktf.IResolvable</code> | Allow this deploy key to be used to push changes to the project. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-gitlab.DeployKeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key#id DeployKey#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DeployKeyConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -65421,6 +68778,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DeployKeyConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DeployKeyConfig.property.lifecycle"></a>
 
 ```typescript
@@ -65438,6 +68805,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DeployKeyConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -65526,16 +68903,29 @@ const deployKeyEnableConfig: DeployKeyEnableConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DeployKeyEnableConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployKeyEnableConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployKeyEnableConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DeployKeyEnableConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployKeyEnableConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployKeyEnableConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DeployKeyEnableConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployKeyEnableConfig.property.keyId">keyId</a></code> | <code>string</code> | The Gitlab key id for the pre-existing deploy key. |
 | <code><a href="#@cdktf/provider-gitlab.DeployKeyEnableConfig.property.project">project</a></code> | <code>string</code> | The name or id of the project to add the deploy key to. |
 | <code><a href="#@cdktf/provider-gitlab.DeployKeyEnableConfig.property.canPush">canPush</a></code> | <code>boolean \| cdktf.IResolvable</code> | Can deploy key push to the project's repository. |
 | <code><a href="#@cdktf/provider-gitlab.DeployKeyEnableConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key_enable#id DeployKeyEnable#id}. |
 | <code><a href="#@cdktf/provider-gitlab.DeployKeyEnableConfig.property.key">key</a></code> | <code>string</code> | Deploy key. |
 | <code><a href="#@cdktf/provider-gitlab.DeployKeyEnableConfig.property.title">title</a></code> | <code>string</code> | Deploy key's title. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DeployKeyEnableConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -65559,6 +68949,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DeployKeyEnableConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DeployKeyEnableConfig.property.lifecycle"></a>
 
 ```typescript
@@ -65576,6 +68976,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DeployKeyEnableConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -65678,10 +69088,13 @@ const deployTokenConfig: DeployTokenConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.DeployTokenConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployTokenConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployTokenConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DeployTokenConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployTokenConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployTokenConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.DeployTokenConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.DeployTokenConfig.property.name">name</a></code> | <code>string</code> | A name to describe the deploy token with. |
 | <code><a href="#@cdktf/provider-gitlab.DeployTokenConfig.property.scopes">scopes</a></code> | <code>string[]</code> | Valid values: `read_repository`, `read_registry`, `read_package_registry`, `write_registry`, `write_package_registry`. |
 | <code><a href="#@cdktf/provider-gitlab.DeployTokenConfig.property.expiresAt">expiresAt</a></code> | <code>string</code> | Time the token will expire it, RFC3339 format. Will not expire per default. |
@@ -65689,6 +69102,16 @@ const deployTokenConfig: DeployTokenConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.DeployTokenConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_token#id DeployToken#id}. |
 | <code><a href="#@cdktf/provider-gitlab.DeployTokenConfig.property.project">project</a></code> | <code>string</code> | The name or id of the project to add the deploy token to. |
 | <code><a href="#@cdktf/provider-gitlab.DeployTokenConfig.property.username">username</a></code> | <code>string</code> | A username for the deploy token. Default is `gitlab+deploy-token-{n}`. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.DeployTokenConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -65712,6 +69135,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.DeployTokenConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.DeployTokenConfig.property.lifecycle"></a>
 
 ```typescript
@@ -65729,6 +69162,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.DeployTokenConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -65992,16 +69435,29 @@ const groupAccessTokenConfig: GroupAccessTokenConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.GroupAccessTokenConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupAccessTokenConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupAccessTokenConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupAccessTokenConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupAccessTokenConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupAccessTokenConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupAccessTokenConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupAccessTokenConfig.property.group">group</a></code> | <code>string</code> | The ID or path of the group to add the group access token to. |
 | <code><a href="#@cdktf/provider-gitlab.GroupAccessTokenConfig.property.name">name</a></code> | <code>string</code> | The name of the group access token. |
 | <code><a href="#@cdktf/provider-gitlab.GroupAccessTokenConfig.property.scopes">scopes</a></code> | <code>string[]</code> | The scope for the group access token. |
 | <code><a href="#@cdktf/provider-gitlab.GroupAccessTokenConfig.property.accessLevel">accessLevel</a></code> | <code>string</code> | The access level for the group access token. Valid values are: `guest`, `reporter`, `developer`, `maintainer`, `owner`. |
 | <code><a href="#@cdktf/provider-gitlab.GroupAccessTokenConfig.property.expiresAt">expiresAt</a></code> | <code>string</code> | The token expires at midnight UTC on that date. |
 | <code><a href="#@cdktf/provider-gitlab.GroupAccessTokenConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_access_token#id GroupAccessToken#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.GroupAccessTokenConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -66025,6 +69481,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.GroupAccessTokenConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.GroupAccessTokenConfig.property.lifecycle"></a>
 
 ```typescript
@@ -66042,6 +69508,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.GroupAccessTokenConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -66148,14 +69624,27 @@ const groupBadgeConfig: GroupBadgeConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.GroupBadgeConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupBadgeConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupBadgeConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupBadgeConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupBadgeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupBadgeConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupBadgeConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupBadgeConfig.property.group">group</a></code> | <code>string</code> | The id of the group to add the badge to. |
 | <code><a href="#@cdktf/provider-gitlab.GroupBadgeConfig.property.imageUrl">imageUrl</a></code> | <code>string</code> | The image url which will be presented on group overview. |
 | <code><a href="#@cdktf/provider-gitlab.GroupBadgeConfig.property.linkUrl">linkUrl</a></code> | <code>string</code> | The url linked with the badge. |
 | <code><a href="#@cdktf/provider-gitlab.GroupBadgeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_badge#id GroupBadge#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.GroupBadgeConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -66179,6 +69668,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.GroupBadgeConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.GroupBadgeConfig.property.lifecycle"></a>
 
 ```typescript
@@ -66196,6 +69695,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.GroupBadgeConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -66270,10 +69779,13 @@ const groupClusterConfig: GroupClusterConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.GroupClusterConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupClusterConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupClusterConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupClusterConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupClusterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupClusterConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupClusterConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupClusterConfig.property.group">group</a></code> | <code>string</code> | The id of the group to add the cluster to. |
 | <code><a href="#@cdktf/provider-gitlab.GroupClusterConfig.property.kubernetesApiUrl">kubernetesApiUrl</a></code> | <code>string</code> | The URL to access the Kubernetes API. |
 | <code><a href="#@cdktf/provider-gitlab.GroupClusterConfig.property.kubernetesToken">kubernetesToken</a></code> | <code>string</code> | The token to authenticate against Kubernetes. |
@@ -66286,6 +69798,16 @@ const groupClusterConfig: GroupClusterConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.GroupClusterConfig.property.kubernetesCaCert">kubernetesCaCert</a></code> | <code>string</code> | TLS certificate (needed if API is using a self-signed TLS certificate). |
 | <code><a href="#@cdktf/provider-gitlab.GroupClusterConfig.property.managed">managed</a></code> | <code>boolean \| cdktf.IResolvable</code> | Determines if cluster is managed by gitlab or not. Defaults to `true`. This attribute cannot be read. |
 | <code><a href="#@cdktf/provider-gitlab.GroupClusterConfig.property.managementProjectId">managementProjectId</a></code> | <code>string</code> | The ID of the management project for the cluster. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.GroupClusterConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -66309,6 +69831,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.GroupClusterConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.GroupClusterConfig.property.lifecycle"></a>
 
 ```typescript
@@ -66326,6 +69858,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.GroupClusterConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -66512,10 +70054,13 @@ const groupConfig: GroupConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.GroupConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupConfig.property.name">name</a></code> | <code>string</code> | The name of this group. |
 | <code><a href="#@cdktf/provider-gitlab.GroupConfig.property.path">path</a></code> | <code>string</code> | The path of the group. |
 | <code><a href="#@cdktf/provider-gitlab.GroupConfig.property.autoDevopsEnabled">autoDevopsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Defaults to false. Default to Auto DevOps pipeline for all projects within this group. |
@@ -66534,6 +70079,16 @@ const groupConfig: GroupConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.GroupConfig.property.subgroupCreationLevel">subgroupCreationLevel</a></code> | <code>string</code> | Defaults to owner. Allowed to create subgroups. |
 | <code><a href="#@cdktf/provider-gitlab.GroupConfig.property.twoFactorGracePeriod">twoFactorGracePeriod</a></code> | <code>number</code> | Defaults to 48. Time before Two-factor authentication is enforced (in hours). |
 | <code><a href="#@cdktf/provider-gitlab.GroupConfig.property.visibilityLevel">visibilityLevel</a></code> | <code>string</code> | The group's visibility. Can be `private`, `internal`, or `public`. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.GroupConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -66557,6 +70112,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.GroupConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.GroupConfig.property.lifecycle"></a>
 
 ```typescript
@@ -66574,6 +70139,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.GroupConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -66844,14 +70419,27 @@ const groupCustomAttributeConfig: GroupCustomAttributeConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.GroupCustomAttributeConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupCustomAttributeConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupCustomAttributeConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupCustomAttributeConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupCustomAttributeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupCustomAttributeConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupCustomAttributeConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupCustomAttributeConfig.property.group">group</a></code> | <code>number</code> | The id of the group. |
 | <code><a href="#@cdktf/provider-gitlab.GroupCustomAttributeConfig.property.key">key</a></code> | <code>string</code> | Key for the Custom Attribute. |
 | <code><a href="#@cdktf/provider-gitlab.GroupCustomAttributeConfig.property.value">value</a></code> | <code>string</code> | Value for the Custom Attribute. |
 | <code><a href="#@cdktf/provider-gitlab.GroupCustomAttributeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_custom_attribute#id GroupCustomAttribute#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.GroupCustomAttributeConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -66875,6 +70463,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.GroupCustomAttributeConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.GroupCustomAttributeConfig.property.lifecycle"></a>
 
 ```typescript
@@ -66892,6 +70490,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.GroupCustomAttributeConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -66966,15 +70574,28 @@ const groupLabelConfig: GroupLabelConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.GroupLabelConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupLabelConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupLabelConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupLabelConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupLabelConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupLabelConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupLabelConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupLabelConfig.property.color">color</a></code> | <code>string</code> | The color of the label given in 6-digit hex notation with leading '#' sign (e.g. #FFAABB) or one of the [CSS color names](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Color_keywords). |
 | <code><a href="#@cdktf/provider-gitlab.GroupLabelConfig.property.group">group</a></code> | <code>string</code> | The name or id of the group to add the label to. |
 | <code><a href="#@cdktf/provider-gitlab.GroupLabelConfig.property.name">name</a></code> | <code>string</code> | The name of the label. |
 | <code><a href="#@cdktf/provider-gitlab.GroupLabelConfig.property.description">description</a></code> | <code>string</code> | The description of the label. |
 | <code><a href="#@cdktf/provider-gitlab.GroupLabelConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_label#id GroupLabel#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.GroupLabelConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -66998,6 +70619,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.GroupLabelConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.GroupLabelConfig.property.lifecycle"></a>
 
 ```typescript
@@ -67015,6 +70646,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.GroupLabelConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -67103,10 +70744,13 @@ const groupLdapLinkConfig: GroupLdapLinkConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.GroupLdapLinkConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupLdapLinkConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupLdapLinkConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupLdapLinkConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupLdapLinkConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupLdapLinkConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupLdapLinkConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupLdapLinkConfig.property.cn">cn</a></code> | <code>string</code> | The CN of the LDAP group to link with. |
 | <code><a href="#@cdktf/provider-gitlab.GroupLdapLinkConfig.property.groupId">groupId</a></code> | <code>string</code> | The id of the GitLab group. |
 | <code><a href="#@cdktf/provider-gitlab.GroupLdapLinkConfig.property.ldapProvider">ldapProvider</a></code> | <code>string</code> | The name of the LDAP provider as stored in the GitLab database. |
@@ -67114,6 +70758,16 @@ const groupLdapLinkConfig: GroupLdapLinkConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.GroupLdapLinkConfig.property.force">force</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, then delete and replace an existing LDAP link if one exists. |
 | <code><a href="#@cdktf/provider-gitlab.GroupLdapLinkConfig.property.groupAccess">groupAccess</a></code> | <code>string</code> | Minimum access level for members of the LDAP group. |
 | <code><a href="#@cdktf/provider-gitlab.GroupLdapLinkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_ldap_link#id GroupLdapLink#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.GroupLdapLinkConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -67137,6 +70791,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.GroupLdapLinkConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.GroupLdapLinkConfig.property.lifecycle"></a>
 
 ```typescript
@@ -67154,6 +70818,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.GroupLdapLinkConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -67274,15 +70948,28 @@ const groupMembershipConfig: GroupMembershipConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.GroupMembershipConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupMembershipConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupMembershipConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupMembershipConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupMembershipConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupMembershipConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupMembershipConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupMembershipConfig.property.accessLevel">accessLevel</a></code> | <code>string</code> | Access level for the member. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`. |
 | <code><a href="#@cdktf/provider-gitlab.GroupMembershipConfig.property.groupId">groupId</a></code> | <code>string</code> | The id of the group. |
 | <code><a href="#@cdktf/provider-gitlab.GroupMembershipConfig.property.userId">userId</a></code> | <code>number</code> | The id of the user. |
 | <code><a href="#@cdktf/provider-gitlab.GroupMembershipConfig.property.expiresAt">expiresAt</a></code> | <code>string</code> | Expiration date for the group membership. Format: `YYYY-MM-DD`. |
 | <code><a href="#@cdktf/provider-gitlab.GroupMembershipConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_membership#id GroupMembership#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.GroupMembershipConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -67306,6 +70993,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.GroupMembershipConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.GroupMembershipConfig.property.lifecycle"></a>
 
 ```typescript
@@ -67323,6 +71020,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.GroupMembershipConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -67411,13 +71118,26 @@ const groupProjectFileTemplateConfig: GroupProjectFileTemplateConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.GroupProjectFileTemplateConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupProjectFileTemplateConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupProjectFileTemplateConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupProjectFileTemplateConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupProjectFileTemplateConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupProjectFileTemplateConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupProjectFileTemplateConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupProjectFileTemplateConfig.property.fileTemplateProjectId">fileTemplateProjectId</a></code> | <code>number</code> | The ID of the project that will be used for file templates. |
 | <code><a href="#@cdktf/provider-gitlab.GroupProjectFileTemplateConfig.property.groupId">groupId</a></code> | <code>number</code> | The ID of the group that will use the file template project. |
 | <code><a href="#@cdktf/provider-gitlab.GroupProjectFileTemplateConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_project_file_template#id GroupProjectFileTemplate#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.GroupProjectFileTemplateConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -67441,6 +71161,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.GroupProjectFileTemplateConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.GroupProjectFileTemplateConfig.property.lifecycle"></a>
 
 ```typescript
@@ -67458,6 +71188,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.GroupProjectFileTemplateConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -67524,15 +71264,28 @@ const groupShareGroupConfig: GroupShareGroupConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.GroupShareGroupConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupShareGroupConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupShareGroupConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupShareGroupConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupShareGroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupShareGroupConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupShareGroupConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupShareGroupConfig.property.groupAccess">groupAccess</a></code> | <code>string</code> | The access level to grant the group. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`. |
 | <code><a href="#@cdktf/provider-gitlab.GroupShareGroupConfig.property.groupId">groupId</a></code> | <code>string</code> | The id of the main group to be shared. |
 | <code><a href="#@cdktf/provider-gitlab.GroupShareGroupConfig.property.shareGroupId">shareGroupId</a></code> | <code>number</code> | The id of the additional group with which the main group will be shared. |
 | <code><a href="#@cdktf/provider-gitlab.GroupShareGroupConfig.property.expiresAt">expiresAt</a></code> | <code>string</code> | Share expiration date. Format: `YYYY-MM-DD`. |
 | <code><a href="#@cdktf/provider-gitlab.GroupShareGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_share_group#id GroupShareGroup#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.GroupShareGroupConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -67556,6 +71309,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.GroupShareGroupConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.GroupShareGroupConfig.property.lifecycle"></a>
 
 ```typescript
@@ -67573,6 +71336,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.GroupShareGroupConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -67661,10 +71434,13 @@ const groupVariableConfig: GroupVariableConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.GroupVariableConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupVariableConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupVariableConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupVariableConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupVariableConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupVariableConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.GroupVariableConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.GroupVariableConfig.property.group">group</a></code> | <code>string</code> | The name or id of the group. |
 | <code><a href="#@cdktf/provider-gitlab.GroupVariableConfig.property.key">key</a></code> | <code>string</code> | The name of the variable. |
 | <code><a href="#@cdktf/provider-gitlab.GroupVariableConfig.property.value">value</a></code> | <code>string</code> | The value of the variable. |
@@ -67673,6 +71449,16 @@ const groupVariableConfig: GroupVariableConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.GroupVariableConfig.property.masked">masked</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to `true`, the value of the variable will be hidden in job logs. |
 | <code><a href="#@cdktf/provider-gitlab.GroupVariableConfig.property.protected">protected</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to `true`, the variable will be passed only to pipelines running on protected branches and tags. |
 | <code><a href="#@cdktf/provider-gitlab.GroupVariableConfig.property.variableType">variableType</a></code> | <code>string</code> | The type of a variable. Valid values are: `env_var`, `file`. Default is `env_var`. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.GroupVariableConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -67696,6 +71482,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.GroupVariableConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.GroupVariableConfig.property.lifecycle"></a>
 
 ```typescript
@@ -67713,6 +71509,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.GroupVariableConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -67849,10 +71655,13 @@ const instanceClusterConfig: InstanceClusterConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.InstanceClusterConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.InstanceClusterConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.InstanceClusterConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.InstanceClusterConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.InstanceClusterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.InstanceClusterConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.InstanceClusterConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.InstanceClusterConfig.property.kubernetesApiUrl">kubernetesApiUrl</a></code> | <code>string</code> | The URL to access the Kubernetes API. |
 | <code><a href="#@cdktf/provider-gitlab.InstanceClusterConfig.property.kubernetesToken">kubernetesToken</a></code> | <code>string</code> | The token to authenticate against Kubernetes. This attribute cannot be read. |
 | <code><a href="#@cdktf/provider-gitlab.InstanceClusterConfig.property.name">name</a></code> | <code>string</code> | The name of cluster. |
@@ -67865,6 +71674,16 @@ const instanceClusterConfig: InstanceClusterConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.InstanceClusterConfig.property.kubernetesNamespace">kubernetesNamespace</a></code> | <code>string</code> | The unique namespace related to the instance. |
 | <code><a href="#@cdktf/provider-gitlab.InstanceClusterConfig.property.managed">managed</a></code> | <code>boolean \| cdktf.IResolvable</code> | Determines if cluster is managed by gitlab or not. Defaults to `true`. This attribute cannot be read. |
 | <code><a href="#@cdktf/provider-gitlab.InstanceClusterConfig.property.managementProjectId">managementProjectId</a></code> | <code>string</code> | The ID of the management project for the cluster. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.InstanceClusterConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -67888,6 +71707,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.InstanceClusterConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.InstanceClusterConfig.property.lifecycle"></a>
 
 ```typescript
@@ -67905,6 +71734,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.InstanceClusterConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -68091,16 +71930,29 @@ const instanceVariableConfig: InstanceVariableConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.InstanceVariableConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.InstanceVariableConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.InstanceVariableConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.InstanceVariableConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.InstanceVariableConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.InstanceVariableConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.InstanceVariableConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.InstanceVariableConfig.property.key">key</a></code> | <code>string</code> | The name of the variable. |
 | <code><a href="#@cdktf/provider-gitlab.InstanceVariableConfig.property.value">value</a></code> | <code>string</code> | The value of the variable. |
 | <code><a href="#@cdktf/provider-gitlab.InstanceVariableConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/instance_variable#id InstanceVariable#id}. |
 | <code><a href="#@cdktf/provider-gitlab.InstanceVariableConfig.property.masked">masked</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to `true`, the value of the variable will be hidden in job logs. |
 | <code><a href="#@cdktf/provider-gitlab.InstanceVariableConfig.property.protected">protected</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to `true`, the variable will be passed only to pipelines running on protected branches and tags. |
 | <code><a href="#@cdktf/provider-gitlab.InstanceVariableConfig.property.variableType">variableType</a></code> | <code>string</code> | The type of a variable. Valid values are: `env_var`, `file`. Default is `env_var`. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.InstanceVariableConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -68124,6 +71976,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.InstanceVariableConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.InstanceVariableConfig.property.lifecycle"></a>
 
 ```typescript
@@ -68141,6 +72003,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.InstanceVariableConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -68247,15 +72119,28 @@ const labelConfig: LabelConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.LabelConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.LabelConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.LabelConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.LabelConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.LabelConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.LabelConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.LabelConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.LabelConfig.property.color">color</a></code> | <code>string</code> | The color of the label given in 6-digit hex notation with leading '#' sign (e.g. #FFAABB) or one of the [CSS color names](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Color_keywords). |
 | <code><a href="#@cdktf/provider-gitlab.LabelConfig.property.name">name</a></code> | <code>string</code> | The name of the label. |
 | <code><a href="#@cdktf/provider-gitlab.LabelConfig.property.project">project</a></code> | <code>string</code> | The name or id of the project to add the label to. |
 | <code><a href="#@cdktf/provider-gitlab.LabelConfig.property.description">description</a></code> | <code>string</code> | The description of the label. |
 | <code><a href="#@cdktf/provider-gitlab.LabelConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/label#id Label#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.LabelConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -68279,6 +72164,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.LabelConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.LabelConfig.property.lifecycle"></a>
 
 ```typescript
@@ -68296,6 +72191,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.LabelConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -68384,14 +72289,27 @@ const managedLicenseConfig: ManagedLicenseConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ManagedLicenseConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ManagedLicenseConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ManagedLicenseConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ManagedLicenseConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ManagedLicenseConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ManagedLicenseConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ManagedLicenseConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ManagedLicenseConfig.property.approvalStatus">approvalStatus</a></code> | <code>string</code> | The approval status of the license. |
 | <code><a href="#@cdktf/provider-gitlab.ManagedLicenseConfig.property.name">name</a></code> | <code>string</code> | The name of the managed license (I.e., 'Apache License 2.0' or 'MIT license'). |
 | <code><a href="#@cdktf/provider-gitlab.ManagedLicenseConfig.property.project">project</a></code> | <code>string</code> | The ID of the project under which the managed license will be created. |
 | <code><a href="#@cdktf/provider-gitlab.ManagedLicenseConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/managed_license#id ManagedLicense#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ManagedLicenseConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -68415,6 +72333,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ManagedLicenseConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ManagedLicenseConfig.property.lifecycle"></a>
 
 ```typescript
@@ -68432,6 +72360,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ManagedLicenseConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -68510,15 +72448,28 @@ const personalAccessTokenConfig: PersonalAccessTokenConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.PersonalAccessTokenConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PersonalAccessTokenConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PersonalAccessTokenConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.PersonalAccessTokenConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PersonalAccessTokenConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PersonalAccessTokenConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.PersonalAccessTokenConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PersonalAccessTokenConfig.property.name">name</a></code> | <code>string</code> | The name of the personal access token. |
 | <code><a href="#@cdktf/provider-gitlab.PersonalAccessTokenConfig.property.scopes">scopes</a></code> | <code>string[]</code> | The scope for the personal access token. |
 | <code><a href="#@cdktf/provider-gitlab.PersonalAccessTokenConfig.property.userId">userId</a></code> | <code>number</code> | The id of the user. |
 | <code><a href="#@cdktf/provider-gitlab.PersonalAccessTokenConfig.property.expiresAt">expiresAt</a></code> | <code>string</code> | The token expires at midnight UTC on that date. |
 | <code><a href="#@cdktf/provider-gitlab.PersonalAccessTokenConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/personal_access_token#id PersonalAccessToken#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.PersonalAccessTokenConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -68542,6 +72493,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.PersonalAccessTokenConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.PersonalAccessTokenConfig.property.lifecycle"></a>
 
 ```typescript
@@ -68559,6 +72520,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.PersonalAccessTokenConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -68651,10 +72622,13 @@ const pipelineScheduleConfig: PipelineScheduleConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.PipelineScheduleConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineScheduleConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineScheduleConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.PipelineScheduleConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineScheduleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineScheduleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.PipelineScheduleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineScheduleConfig.property.cron">cron</a></code> | <code>string</code> | The cron (e.g. `0 1 * * *`). |
 | <code><a href="#@cdktf/provider-gitlab.PipelineScheduleConfig.property.description">description</a></code> | <code>string</code> | The description of the pipeline schedule. |
 | <code><a href="#@cdktf/provider-gitlab.PipelineScheduleConfig.property.project">project</a></code> | <code>string</code> | The name or id of the project to add the schedule to. |
@@ -68662,6 +72636,16 @@ const pipelineScheduleConfig: PipelineScheduleConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.PipelineScheduleConfig.property.active">active</a></code> | <code>boolean \| cdktf.IResolvable</code> | The activation of pipeline schedule. If false is set, the pipeline schedule will deactivated initially. |
 | <code><a href="#@cdktf/provider-gitlab.PipelineScheduleConfig.property.cronTimezone">cronTimezone</a></code> | <code>string</code> | The timezone. |
 | <code><a href="#@cdktf/provider-gitlab.PipelineScheduleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/pipeline_schedule#id PipelineSchedule#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.PipelineScheduleConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -68685,6 +72669,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.PipelineScheduleConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.PipelineScheduleConfig.property.lifecycle"></a>
 
 ```typescript
@@ -68702,6 +72696,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.PipelineScheduleConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -68818,15 +72822,28 @@ const pipelineScheduleVariableConfig: PipelineScheduleVariableConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.PipelineScheduleVariableConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineScheduleVariableConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineScheduleVariableConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.PipelineScheduleVariableConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineScheduleVariableConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineScheduleVariableConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.PipelineScheduleVariableConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineScheduleVariableConfig.property.key">key</a></code> | <code>string</code> | Name of the variable. |
 | <code><a href="#@cdktf/provider-gitlab.PipelineScheduleVariableConfig.property.pipelineScheduleId">pipelineScheduleId</a></code> | <code>number</code> | The id of the pipeline schedule. |
 | <code><a href="#@cdktf/provider-gitlab.PipelineScheduleVariableConfig.property.project">project</a></code> | <code>string</code> | The id of the project to add the schedule to. |
 | <code><a href="#@cdktf/provider-gitlab.PipelineScheduleVariableConfig.property.value">value</a></code> | <code>string</code> | Value of the variable. |
 | <code><a href="#@cdktf/provider-gitlab.PipelineScheduleVariableConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/pipeline_schedule_variable#id PipelineScheduleVariable#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.PipelineScheduleVariableConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -68850,6 +72867,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.PipelineScheduleVariableConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.PipelineScheduleVariableConfig.property.lifecycle"></a>
 
 ```typescript
@@ -68867,6 +72894,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.PipelineScheduleVariableConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -68955,13 +72992,26 @@ const pipelineTriggerConfig: PipelineTriggerConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.PipelineTriggerConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineTriggerConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineTriggerConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.PipelineTriggerConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineTriggerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineTriggerConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.PipelineTriggerConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.PipelineTriggerConfig.property.description">description</a></code> | <code>string</code> | The description of the pipeline trigger. |
 | <code><a href="#@cdktf/provider-gitlab.PipelineTriggerConfig.property.project">project</a></code> | <code>string</code> | The name or id of the project to add the trigger to. |
 | <code><a href="#@cdktf/provider-gitlab.PipelineTriggerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/pipeline_trigger#id PipelineTrigger#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.PipelineTriggerConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -68985,6 +73035,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.PipelineTriggerConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.PipelineTriggerConfig.property.lifecycle"></a>
 
 ```typescript
@@ -69002,6 +73062,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.PipelineTriggerConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -69062,16 +73132,29 @@ const projectAccessTokenConfig: ProjectAccessTokenConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ProjectAccessTokenConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectAccessTokenConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectAccessTokenConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectAccessTokenConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectAccessTokenConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectAccessTokenConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectAccessTokenConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectAccessTokenConfig.property.name">name</a></code> | <code>string</code> | A name to describe the project access token. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectAccessTokenConfig.property.project">project</a></code> | <code>string</code> | The id of the project to add the project access token to. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectAccessTokenConfig.property.scopes">scopes</a></code> | <code>string[]</code> | Valid values: `api`, `read_api`, `read_repository`, `write_repository`. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectAccessTokenConfig.property.accessLevel">accessLevel</a></code> | <code>string</code> | The access level for the project access token. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectAccessTokenConfig.property.expiresAt">expiresAt</a></code> | <code>string</code> | Time the token will expire it, YYYY-MM-DD format. Will not expire per default. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectAccessTokenConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_access_token#id ProjectAccessToken#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectAccessTokenConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -69095,6 +73178,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectAccessTokenConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectAccessTokenConfig.property.lifecycle"></a>
 
 ```typescript
@@ -69112,6 +73205,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectAccessTokenConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -69216,10 +73319,13 @@ const projectApprovalRuleConfig: ProjectApprovalRuleConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ProjectApprovalRuleConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectApprovalRuleConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectApprovalRuleConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectApprovalRuleConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectApprovalRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectApprovalRuleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectApprovalRuleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectApprovalRuleConfig.property.approvalsRequired">approvalsRequired</a></code> | <code>number</code> | The number of approvals required for this rule. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectApprovalRuleConfig.property.name">name</a></code> | <code>string</code> | The name of the approval rule. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectApprovalRuleConfig.property.project">project</a></code> | <code>string</code> | The name or id of the project to add the approval rules. |
@@ -69228,6 +73334,16 @@ const projectApprovalRuleConfig: ProjectApprovalRuleConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.ProjectApprovalRuleConfig.property.protectedBranchIds">protectedBranchIds</a></code> | <code>number[]</code> | A list of protected branch IDs (not branch names) for which the rule applies. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectApprovalRuleConfig.property.ruleType">ruleType</a></code> | <code>string</code> | String, defaults to 'regular'. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectApprovalRuleConfig.property.userIds">userIds</a></code> | <code>number[]</code> | A list of specific User IDs to add to the list of approvers. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectApprovalRuleConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -69251,6 +73367,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectApprovalRuleConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectApprovalRuleConfig.property.lifecycle"></a>
 
 ```typescript
@@ -69268,6 +73394,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectApprovalRuleConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -69400,15 +73536,28 @@ const projectBadgeConfig: ProjectBadgeConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ProjectBadgeConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadgeConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadgeConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectBadgeConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadgeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadgeConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectBadgeConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadgeConfig.property.imageUrl">imageUrl</a></code> | <code>string</code> | The image url which will be presented on project overview. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadgeConfig.property.linkUrl">linkUrl</a></code> | <code>string</code> | The url linked with the badge. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadgeConfig.property.project">project</a></code> | <code>string</code> | The id of the project to add the badge to. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadgeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge#id ProjectBadge#id}. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectBadgeConfig.property.name">name</a></code> | <code>string</code> | The name of the badge. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectBadgeConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -69432,6 +73581,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectBadgeConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectBadgeConfig.property.lifecycle"></a>
 
 ```typescript
@@ -69449,6 +73608,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectBadgeConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -69537,10 +73706,13 @@ const projectClusterConfig: ProjectClusterConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ProjectClusterConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectClusterConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectClusterConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectClusterConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectClusterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectClusterConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectClusterConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectClusterConfig.property.kubernetesApiUrl">kubernetesApiUrl</a></code> | <code>string</code> | The URL to access the Kubernetes API. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectClusterConfig.property.kubernetesToken">kubernetesToken</a></code> | <code>string</code> | The token to authenticate against Kubernetes. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectClusterConfig.property.name">name</a></code> | <code>string</code> | The name of cluster. |
@@ -69554,6 +73726,16 @@ const projectClusterConfig: ProjectClusterConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.ProjectClusterConfig.property.kubernetesNamespace">kubernetesNamespace</a></code> | <code>string</code> | The unique namespace related to the project. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectClusterConfig.property.managed">managed</a></code> | <code>boolean \| cdktf.IResolvable</code> | Determines if cluster is managed by gitlab or not. Defaults to `true`. This attribute cannot be read. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectClusterConfig.property.managementProjectId">managementProjectId</a></code> | <code>string</code> | The ID of the management project for the cluster. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectClusterConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -69577,6 +73759,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectClusterConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectClusterConfig.property.lifecycle"></a>
 
 ```typescript
@@ -69594,6 +73786,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectClusterConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -69794,10 +73996,13 @@ const projectConfig: ProjectConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.name">name</a></code> | <code>string</code> | The name of the project. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.allowMergeOnSkippedPipeline">allowMergeOnSkippedPipeline</a></code> | <code>boolean \| cdktf.IResolvable</code> | Set to true if you want to treat skipped pipelines as if they finished with success. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectConfig.property.analyticsAccessLevel">analyticsAccessLevel</a></code> | <code>string</code> | Set the analytics access level. Valid values are `disabled`, `private`, `enabled`. |
@@ -69877,6 +74082,16 @@ const projectConfig: ProjectConfig = { ... }
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ProjectConfig.property.count"></a>
 
 ```typescript
@@ -69897,6 +74112,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectConfig.property.lifecycle"></a>
 
 ```typescript
@@ -69914,6 +74139,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -71128,14 +75363,27 @@ const projectCustomAttributeConfig: ProjectCustomAttributeConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ProjectCustomAttributeConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectCustomAttributeConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectCustomAttributeConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectCustomAttributeConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectCustomAttributeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectCustomAttributeConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectCustomAttributeConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectCustomAttributeConfig.property.key">key</a></code> | <code>string</code> | Key for the Custom Attribute. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectCustomAttributeConfig.property.project">project</a></code> | <code>number</code> | The id of the project. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectCustomAttributeConfig.property.value">value</a></code> | <code>string</code> | Value for the Custom Attribute. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectCustomAttributeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_custom_attribute#id ProjectCustomAttribute#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectCustomAttributeConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -71159,6 +75407,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectCustomAttributeConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectCustomAttributeConfig.property.lifecycle"></a>
 
 ```typescript
@@ -71176,6 +75434,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectCustomAttributeConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -71250,15 +75518,28 @@ const projectEnvironmentConfig: ProjectEnvironmentConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ProjectEnvironmentConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectEnvironmentConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectEnvironmentConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectEnvironmentConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectEnvironmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectEnvironmentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectEnvironmentConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectEnvironmentConfig.property.name">name</a></code> | <code>string</code> | The name of the environment. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectEnvironmentConfig.property.project">project</a></code> | <code>string</code> | The ID or full path of the project to environment is created for. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectEnvironmentConfig.property.externalUrl">externalUrl</a></code> | <code>string</code> | Place to link to for this environment. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectEnvironmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_environment#id ProjectEnvironment#id}. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectEnvironmentConfig.property.stopBeforeDestroy">stopBeforeDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Determines whether the environment is attempted to be stopped before the environment is deleted. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectEnvironmentConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -71282,6 +75563,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectEnvironmentConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectEnvironmentConfig.property.lifecycle"></a>
 
 ```typescript
@@ -71299,6 +75590,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectEnvironmentConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -71387,15 +75688,28 @@ const projectFreezePeriodConfig: ProjectFreezePeriodConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ProjectFreezePeriodConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectFreezePeriodConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectFreezePeriodConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectFreezePeriodConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectFreezePeriodConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectFreezePeriodConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectFreezePeriodConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectFreezePeriodConfig.property.freezeEnd">freezeEnd</a></code> | <code>string</code> | End of the Freeze Period in cron format (e.g. `0 2 * * *`). |
 | <code><a href="#@cdktf/provider-gitlab.ProjectFreezePeriodConfig.property.freezeStart">freezeStart</a></code> | <code>string</code> | Start of the Freeze Period in cron format (e.g. `0 1 * * *`). |
 | <code><a href="#@cdktf/provider-gitlab.ProjectFreezePeriodConfig.property.projectId">projectId</a></code> | <code>string</code> | The id of the project to add the schedule to. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectFreezePeriodConfig.property.cronTimezone">cronTimezone</a></code> | <code>string</code> | The timezone. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectFreezePeriodConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_freeze_period#id ProjectFreezePeriod#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectFreezePeriodConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -71419,6 +75733,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectFreezePeriodConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectFreezePeriodConfig.property.lifecycle"></a>
 
 ```typescript
@@ -71436,6 +75760,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectFreezePeriodConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -71524,10 +75858,13 @@ const projectHookConfig: ProjectHookConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ProjectHookConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectHookConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectHookConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectHookConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectHookConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectHookConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectHookConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectHookConfig.property.project">project</a></code> | <code>string</code> | The name or id of the project to add the hook to. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectHookConfig.property.url">url</a></code> | <code>string</code> | The url of the hook to invoke. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectHookConfig.property.confidentialIssuesEvents">confidentialIssuesEvents</a></code> | <code>boolean \| cdktf.IResolvable</code> | Invoke the hook for confidential issues events. |
@@ -71546,6 +75883,16 @@ const projectHookConfig: ProjectHookConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.ProjectHookConfig.property.tagPushEvents">tagPushEvents</a></code> | <code>boolean \| cdktf.IResolvable</code> | Invoke the hook for tag push events. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectHookConfig.property.token">token</a></code> | <code>string</code> | A token to present when invoking the hook. The token is not available for imported resources. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectHookConfig.property.wikiPageEvents">wikiPageEvents</a></code> | <code>boolean \| cdktf.IResolvable</code> | Invoke the hook for wiki page events. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectHookConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -71569,6 +75916,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectHookConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectHookConfig.property.lifecycle"></a>
 
 ```typescript
@@ -71586,6 +75943,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectHookConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -71856,10 +76223,13 @@ const projectIssueConfig: ProjectIssueConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.project">project</a></code> | <code>string</code> | The name or ID of the project. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.title">title</a></code> | <code>string</code> | The title of the issue. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectIssueConfig.property.assigneeIds">assigneeIds</a></code> | <code>number[]</code> | The IDs of the users to assign the issue to. |
@@ -71883,6 +76253,16 @@ const projectIssueConfig: ProjectIssueConfig = { ... }
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectIssueConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ProjectIssueConfig.property.count"></a>
 
 ```typescript
@@ -71903,6 +76283,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectIssueConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectIssueConfig.property.lifecycle"></a>
 
 ```typescript
@@ -71920,6 +76310,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectIssueConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -72241,10 +76641,13 @@ const projectLevelMrApprovalsConfig: ProjectLevelMrApprovalsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ProjectLevelMrApprovalsConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectLevelMrApprovalsConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectLevelMrApprovalsConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectLevelMrApprovalsConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectLevelMrApprovalsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectLevelMrApprovalsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectLevelMrApprovalsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectLevelMrApprovalsConfig.property.projectId">projectId</a></code> | <code>number</code> | The ID of the project to change MR approval configuration. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectLevelMrApprovalsConfig.property.disableOverridingApproversPerMergeRequest">disableOverridingApproversPerMergeRequest</a></code> | <code>boolean \| cdktf.IResolvable</code> | By default, users are able to edit the approval rules in merge requests. If set to true,. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectLevelMrApprovalsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_level_mr_approvals#id ProjectLevelMrApprovals#id}. |
@@ -72252,6 +76655,16 @@ const projectLevelMrApprovalsConfig: ProjectLevelMrApprovalsConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.ProjectLevelMrApprovalsConfig.property.mergeRequestsDisableCommittersApproval">mergeRequestsDisableCommittersApproval</a></code> | <code>boolean \| cdktf.IResolvable</code> | Set to `true` if you want to prevent approval of merge requests by merge request committers. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectLevelMrApprovalsConfig.property.requirePasswordToApprove">requirePasswordToApprove</a></code> | <code>boolean \| cdktf.IResolvable</code> | Set to `true` if you want to require authentication when approving a merge request. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectLevelMrApprovalsConfig.property.resetApprovalsOnPush">resetApprovalsOnPush</a></code> | <code>boolean \| cdktf.IResolvable</code> | Set to `true` if you want to remove all approvals in a merge request when new commits are pushed to its source branch. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectLevelMrApprovalsConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -72275,6 +76688,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectLevelMrApprovalsConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectLevelMrApprovalsConfig.property.lifecycle"></a>
 
 ```typescript
@@ -72292,6 +76715,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectLevelMrApprovalsConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -72410,15 +76843,28 @@ const projectMembershipConfig: ProjectMembershipConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMembershipConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembershipConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembershipConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMembershipConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembershipConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembershipConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMembershipConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembershipConfig.property.accessLevel">accessLevel</a></code> | <code>string</code> | The access level for the member. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembershipConfig.property.projectId">projectId</a></code> | <code>string</code> | The id of the project. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembershipConfig.property.userId">userId</a></code> | <code>number</code> | The id of the user. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembershipConfig.property.expiresAt">expiresAt</a></code> | <code>string</code> | Expiration date for the project membership. Format: `YYYY-MM-DD`. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMembershipConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_membership#id ProjectMembership#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectMembershipConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -72442,6 +76888,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectMembershipConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectMembershipConfig.property.lifecycle"></a>
 
 ```typescript
@@ -72459,6 +76915,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectMembershipConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -72547,10 +77013,13 @@ const projectMilestoneConfig: ProjectMilestoneConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestoneConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMilestoneConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMilestoneConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestoneConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMilestoneConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMilestoneConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMilestoneConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMilestoneConfig.property.project">project</a></code> | <code>string</code> | The ID or URL-encoded path of the project owned by the authenticated user. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMilestoneConfig.property.title">title</a></code> | <code>string</code> | The title of a milestone. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMilestoneConfig.property.description">description</a></code> | <code>string</code> | The description of the milestone. |
@@ -72558,6 +77027,16 @@ const projectMilestoneConfig: ProjectMilestoneConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.ProjectMilestoneConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_milestone#id ProjectMilestone#id}. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMilestoneConfig.property.startDate">startDate</a></code> | <code>string</code> | The start date of the milestone. Date time string in the format YYYY-MM-DD, for example 2016-03-11. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMilestoneConfig.property.state">state</a></code> | <code>string</code> | The state of the milestone. Valid values are: `active`, `closed`. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectMilestoneConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -72581,6 +77060,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectMilestoneConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectMilestoneConfig.property.lifecycle"></a>
 
 ```typescript
@@ -72598,6 +77087,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectMilestoneConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -72714,16 +77213,29 @@ const projectMirrorConfig: ProjectMirrorConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMirrorConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMirrorConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMirrorConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMirrorConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMirrorConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMirrorConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectMirrorConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMirrorConfig.property.project">project</a></code> | <code>string</code> | The id of the project. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMirrorConfig.property.url">url</a></code> | <code>string</code> | The URL of the remote repository to be mirrored. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMirrorConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Determines if the mirror is enabled. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMirrorConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_mirror#id ProjectMirror#id}. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMirrorConfig.property.keepDivergentRefs">keepDivergentRefs</a></code> | <code>boolean \| cdktf.IResolvable</code> | Determines if divergent refs are skipped. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectMirrorConfig.property.onlyProtectedBranches">onlyProtectedBranches</a></code> | <code>boolean \| cdktf.IResolvable</code> | Determines if only protected branches are mirrored. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectMirrorConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -72747,6 +77259,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectMirrorConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectMirrorConfig.property.lifecycle"></a>
 
 ```typescript
@@ -72764,6 +77286,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectMirrorConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -72866,15 +77398,28 @@ const projectProtectedEnvironmentConfig: ProjectProtectedEnvironmentConfig = { .
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironmentConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironmentConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironmentConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironmentConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironmentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironmentConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironmentConfig.property.deployAccessLevels">deployAccessLevels</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironmentDeployAccessLevels">ProjectProtectedEnvironmentDeployAccessLevels</a>[]</code> | deploy_access_levels block. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironmentConfig.property.environment">environment</a></code> | <code>string</code> | The name of the environment. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironmentConfig.property.project">project</a></code> | <code>string</code> | The ID or full path of the project which the protected environment is created against. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_protected_environment#id ProjectProtectedEnvironment#id}. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectProtectedEnvironmentConfig.property.requiredApprovalCount">requiredApprovalCount</a></code> | <code>number</code> | The number of approvals required to deploy to this environment. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectProtectedEnvironmentConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -72898,6 +77443,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectProtectedEnvironmentConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectProtectedEnvironmentConfig.property.lifecycle"></a>
 
 ```typescript
@@ -72915,6 +77470,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectProtectedEnvironmentConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -73251,13 +77816,26 @@ const projectRunnerEnablementConfig: ProjectRunnerEnablementConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ProjectRunnerEnablementConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectRunnerEnablementConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectRunnerEnablementConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectRunnerEnablementConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectRunnerEnablementConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectRunnerEnablementConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectRunnerEnablementConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectRunnerEnablementConfig.property.project">project</a></code> | <code>string</code> | The ID or URL-encoded path of the project owned by the authenticated user. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectRunnerEnablementConfig.property.runnerId">runnerId</a></code> | <code>number</code> | The ID of a runner to enable for the project. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectRunnerEnablementConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_runner_enablement#id ProjectRunnerEnablement#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectRunnerEnablementConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -73281,6 +77859,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectRunnerEnablementConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectRunnerEnablementConfig.property.lifecycle"></a>
 
 ```typescript
@@ -73298,6 +77886,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectRunnerEnablementConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -73358,15 +77956,28 @@ const projectShareGroupConfig: ProjectShareGroupConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ProjectShareGroupConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectShareGroupConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectShareGroupConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectShareGroupConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectShareGroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectShareGroupConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectShareGroupConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectShareGroupConfig.property.groupId">groupId</a></code> | <code>number</code> | The id of the group. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectShareGroupConfig.property.projectId">projectId</a></code> | <code>string</code> | The id of the project. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectShareGroupConfig.property.accessLevel">accessLevel</a></code> | <code>string</code> | The access level to grant the group for the project. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectShareGroupConfig.property.groupAccess">groupAccess</a></code> | <code>string</code> | The access level to grant the group for the project. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectShareGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_share_group#id ProjectShareGroup#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectShareGroupConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -73390,6 +78001,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectShareGroupConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectShareGroupConfig.property.lifecycle"></a>
 
 ```typescript
@@ -73407,6 +78028,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectShareGroupConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -73510,15 +78141,28 @@ const projectTagConfig: ProjectTagConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ProjectTagConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectTagConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectTagConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectTagConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectTagConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectTagConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectTagConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectTagConfig.property.name">name</a></code> | <code>string</code> | The name of a tag. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectTagConfig.property.project">project</a></code> | <code>string</code> | The ID or URL-encoded path of the project owned by the authenticated user. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectTagConfig.property.ref">ref</a></code> | <code>string</code> | Create tag using commit SHA, another tag name, or branch name. This attribute is not available for imported resources. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectTagConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_tag#id ProjectTag#id}. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectTagConfig.property.message">message</a></code> | <code>string</code> | The message of the annotated tag. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectTagConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -73542,6 +78186,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectTagConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectTagConfig.property.lifecycle"></a>
 
 ```typescript
@@ -73559,6 +78213,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectTagConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -73658,10 +78322,13 @@ const projectVariableConfig: ProjectVariableConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ProjectVariableConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectVariableConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectVariableConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectVariableConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectVariableConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectVariableConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ProjectVariableConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ProjectVariableConfig.property.key">key</a></code> | <code>string</code> | The name of the variable. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectVariableConfig.property.project">project</a></code> | <code>string</code> | The name or id of the project. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectVariableConfig.property.value">value</a></code> | <code>string</code> | The value of the variable. |
@@ -73670,6 +78337,16 @@ const projectVariableConfig: ProjectVariableConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.ProjectVariableConfig.property.masked">masked</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to `true`, the value of the variable will be hidden in job logs. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectVariableConfig.property.protected">protected</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to `true`, the variable will be passed only to pipelines running on protected branches and tags. |
 | <code><a href="#@cdktf/provider-gitlab.ProjectVariableConfig.property.variableType">variableType</a></code> | <code>string</code> | The type of a variable. Valid values are: `env_var`, `file`. Default is `env_var`. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ProjectVariableConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -73693,6 +78370,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ProjectVariableConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ProjectVariableConfig.property.lifecycle"></a>
 
 ```typescript
@@ -73710,6 +78397,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ProjectVariableConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -73846,10 +78543,13 @@ const releaseLinkConfig: ReleaseLinkConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLinkConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ReleaseLinkConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ReleaseLinkConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLinkConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ReleaseLinkConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ReleaseLinkConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ReleaseLinkConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ReleaseLinkConfig.property.name">name</a></code> | <code>string</code> | The name of the link. Link names must be unique within the release. |
 | <code><a href="#@cdktf/provider-gitlab.ReleaseLinkConfig.property.project">project</a></code> | <code>string</code> | The ID or [URL-encoded path of the project](https://docs.gitlab.com/ee/api/index.html#namespaced-path-encoding). |
 | <code><a href="#@cdktf/provider-gitlab.ReleaseLinkConfig.property.tagName">tagName</a></code> | <code>string</code> | The tag associated with the Release. |
@@ -73857,6 +78557,16 @@ const releaseLinkConfig: ReleaseLinkConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.ReleaseLinkConfig.property.filepath">filepath</a></code> | <code>string</code> | Relative path for a [Direct Asset link](https://docs.gitlab.com/ee/user/project/releases/index.html#permanent-links-to-release-assets). |
 | <code><a href="#@cdktf/provider-gitlab.ReleaseLinkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#id ReleaseLink#id}. |
 | <code><a href="#@cdktf/provider-gitlab.ReleaseLinkConfig.property.linkType">linkType</a></code> | <code>string</code> | The type of the link. Valid values are `other`, `runbook`, `image`, `package`. Defaults to other. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ReleaseLinkConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -73880,6 +78590,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ReleaseLinkConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ReleaseLinkConfig.property.lifecycle"></a>
 
 ```typescript
@@ -73897,6 +78617,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ReleaseLinkConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -74013,10 +78743,13 @@ const repositoryFileConfig: RepositoryFileConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.RepositoryFileConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.RepositoryFileConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.RepositoryFileConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.RepositoryFileConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.RepositoryFileConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.RepositoryFileConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.RepositoryFileConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.RepositoryFileConfig.property.branch">branch</a></code> | <code>string</code> | Name of the branch to which to commit to. |
 | <code><a href="#@cdktf/provider-gitlab.RepositoryFileConfig.property.commitMessage">commitMessage</a></code> | <code>string</code> | Commit message. |
 | <code><a href="#@cdktf/provider-gitlab.RepositoryFileConfig.property.content">content</a></code> | <code>string</code> | File content. |
@@ -74028,6 +78761,16 @@ const repositoryFileConfig: RepositoryFileConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.RepositoryFileConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/repository_file#id RepositoryFile#id}. |
 | <code><a href="#@cdktf/provider-gitlab.RepositoryFileConfig.property.startBranch">startBranch</a></code> | <code>string</code> | Name of the branch to start the new commit from. |
 | <code><a href="#@cdktf/provider-gitlab.RepositoryFileConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-gitlab.RepositoryFileTimeouts">RepositoryFileTimeouts</a></code> | timeouts block. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.RepositoryFileConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -74051,6 +78794,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.RepositoryFileConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.RepositoryFileConfig.property.lifecycle"></a>
 
 ```typescript
@@ -74068,6 +78821,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.RepositoryFileConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -74300,10 +79063,13 @@ const runnerConfig: RunnerConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.RunnerConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.RunnerConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.RunnerConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.RunnerConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.RunnerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.RunnerConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.RunnerConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.RunnerConfig.property.registrationToken">registrationToken</a></code> | <code>string</code> | The registration token used to register the runner. |
 | <code><a href="#@cdktf/provider-gitlab.RunnerConfig.property.accessLevel">accessLevel</a></code> | <code>string</code> | The access_level of the runner. Valid values are: `not_protected`, `ref_protected`. |
 | <code><a href="#@cdktf/provider-gitlab.RunnerConfig.property.description">description</a></code> | <code>string</code> | The runner's description. |
@@ -74313,6 +79079,16 @@ const runnerConfig: RunnerConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.RunnerConfig.property.paused">paused</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the runner should ignore new jobs. |
 | <code><a href="#@cdktf/provider-gitlab.RunnerConfig.property.runUntagged">runUntagged</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the runner should handle untagged jobs. |
 | <code><a href="#@cdktf/provider-gitlab.RunnerConfig.property.tagList">tagList</a></code> | <code>string[]</code> | List of runner’s tags. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.RunnerConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -74336,6 +79112,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.RunnerConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.RunnerConfig.property.lifecycle"></a>
 
 ```typescript
@@ -74353,6 +79139,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.RunnerConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -74497,13 +79293,26 @@ const serviceExternalWikiConfig: ServiceExternalWikiConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ServiceExternalWikiConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceExternalWikiConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceExternalWikiConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServiceExternalWikiConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceExternalWikiConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceExternalWikiConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServiceExternalWikiConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceExternalWikiConfig.property.externalWikiUrl">externalWikiUrl</a></code> | <code>string</code> | The URL of the external wiki. |
 | <code><a href="#@cdktf/provider-gitlab.ServiceExternalWikiConfig.property.project">project</a></code> | <code>string</code> | ID of the project you want to activate integration on. |
 | <code><a href="#@cdktf/provider-gitlab.ServiceExternalWikiConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_external_wiki#id ServiceExternalWiki#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ServiceExternalWikiConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -74527,6 +79336,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ServiceExternalWikiConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ServiceExternalWikiConfig.property.lifecycle"></a>
 
 ```typescript
@@ -74544,6 +79363,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ServiceExternalWikiConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -74604,15 +79433,28 @@ const serviceGithubConfig: ServiceGithubConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ServiceGithubConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceGithubConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceGithubConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServiceGithubConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceGithubConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceGithubConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServiceGithubConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceGithubConfig.property.project">project</a></code> | <code>string</code> | ID of the project you want to activate integration on. |
 | <code><a href="#@cdktf/provider-gitlab.ServiceGithubConfig.property.repositoryUrl">repositoryUrl</a></code> | <code>string</code> | The URL of the GitHub repo to integrate with, e,g, https://github.com/gitlabhq/terraform-provider-gitlab. |
 | <code><a href="#@cdktf/provider-gitlab.ServiceGithubConfig.property.token">token</a></code> | <code>string</code> | A GitHub personal access token with at least `repo:status` scope. |
 | <code><a href="#@cdktf/provider-gitlab.ServiceGithubConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_github#id ServiceGithub#id}. |
 | <code><a href="#@cdktf/provider-gitlab.ServiceGithubConfig.property.staticContext">staticContext</a></code> | <code>boolean \| cdktf.IResolvable</code> | Append instance name instead of branch to the status. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ServiceGithubConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -74636,6 +79478,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ServiceGithubConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ServiceGithubConfig.property.lifecycle"></a>
 
 ```typescript
@@ -74653,6 +79505,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ServiceGithubConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -74743,10 +79605,13 @@ const serviceJiraConfig: ServiceJiraConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ServiceJiraConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceJiraConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceJiraConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServiceJiraConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceJiraConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceJiraConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServiceJiraConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceJiraConfig.property.password">password</a></code> | <code>string</code> | The password of the user created to be used with GitLab/JIRA. |
 | <code><a href="#@cdktf/provider-gitlab.ServiceJiraConfig.property.project">project</a></code> | <code>string</code> | ID of the project you want to activate integration on. |
 | <code><a href="#@cdktf/provider-gitlab.ServiceJiraConfig.property.url">url</a></code> | <code>string</code> | The URL to the JIRA project which is being linked to this GitLab project. For example, https://jira.example.com. |
@@ -74764,6 +79629,16 @@ const serviceJiraConfig: ServiceJiraConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.ServiceJiraConfig.property.projectKey">projectKey</a></code> | <code>string</code> | The short identifier for your JIRA project, all uppercase, e.g., PROJ. |
 | <code><a href="#@cdktf/provider-gitlab.ServiceJiraConfig.property.pushEvents">pushEvents</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable notifications for push events. |
 | <code><a href="#@cdktf/provider-gitlab.ServiceJiraConfig.property.tagPushEvents">tagPushEvents</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable notifications for tag_push events. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ServiceJiraConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -74787,6 +79662,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ServiceJiraConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ServiceJiraConfig.property.lifecycle"></a>
 
 ```typescript
@@ -74804,6 +79689,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ServiceJiraConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -75062,10 +79957,13 @@ const serviceMicrosoftTeamsConfig: ServiceMicrosoftTeamsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ServiceMicrosoftTeamsConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceMicrosoftTeamsConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceMicrosoftTeamsConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServiceMicrosoftTeamsConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceMicrosoftTeamsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceMicrosoftTeamsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServiceMicrosoftTeamsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceMicrosoftTeamsConfig.property.project">project</a></code> | <code>string</code> | ID of the project you want to activate integration on. |
 | <code><a href="#@cdktf/provider-gitlab.ServiceMicrosoftTeamsConfig.property.webhook">webhook</a></code> | <code>string</code> | The Microsoft Teams webhook. For example, https://outlook.office.com/webhook/... |
 | <code><a href="#@cdktf/provider-gitlab.ServiceMicrosoftTeamsConfig.property.branchesToBeNotified">branchesToBeNotified</a></code> | <code>string</code> | Branches to send notifications for. Valid options are “all”, “default”, “protected”, and “default_and_protected”. The default value is “default”. |
@@ -75080,6 +79978,16 @@ const serviceMicrosoftTeamsConfig: ServiceMicrosoftTeamsConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.ServiceMicrosoftTeamsConfig.property.pushEvents">pushEvents</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable notifications for push events. |
 | <code><a href="#@cdktf/provider-gitlab.ServiceMicrosoftTeamsConfig.property.tagPushEvents">tagPushEvents</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable notifications for tag push events. |
 | <code><a href="#@cdktf/provider-gitlab.ServiceMicrosoftTeamsConfig.property.wikiPageEvents">wikiPageEvents</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable notifications for wiki page events. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ServiceMicrosoftTeamsConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -75103,6 +80011,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ServiceMicrosoftTeamsConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ServiceMicrosoftTeamsConfig.property.lifecycle"></a>
 
 ```typescript
@@ -75120,6 +80038,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ServiceMicrosoftTeamsConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -75334,15 +80262,28 @@ const servicePipelinesEmailConfig: ServicePipelinesEmailConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ServicePipelinesEmailConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServicePipelinesEmailConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServicePipelinesEmailConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServicePipelinesEmailConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServicePipelinesEmailConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServicePipelinesEmailConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServicePipelinesEmailConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServicePipelinesEmailConfig.property.project">project</a></code> | <code>string</code> | ID of the project you want to activate integration on. |
 | <code><a href="#@cdktf/provider-gitlab.ServicePipelinesEmailConfig.property.recipients">recipients</a></code> | <code>string[]</code> | ) email addresses where notifications are sent. |
 | <code><a href="#@cdktf/provider-gitlab.ServicePipelinesEmailConfig.property.branchesToBeNotified">branchesToBeNotified</a></code> | <code>string</code> | Branches to send notifications for. Valid options are `all`, `default`, `protected`, and `default_and_protected`. Default is `default`. |
 | <code><a href="#@cdktf/provider-gitlab.ServicePipelinesEmailConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_pipelines_email#id ServicePipelinesEmail#id}. |
 | <code><a href="#@cdktf/provider-gitlab.ServicePipelinesEmailConfig.property.notifyOnlyBrokenPipelines">notifyOnlyBrokenPipelines</a></code> | <code>boolean \| cdktf.IResolvable</code> | Notify only broken pipelines. Default is true. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ServicePipelinesEmailConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -75366,6 +80307,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ServicePipelinesEmailConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ServicePipelinesEmailConfig.property.lifecycle"></a>
 
 ```typescript
@@ -75383,6 +80334,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ServicePipelinesEmailConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -75471,10 +80432,13 @@ const serviceSlackConfig: ServiceSlackConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.ServiceSlackConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceSlackConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceSlackConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServiceSlackConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceSlackConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceSlackConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.ServiceSlackConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.ServiceSlackConfig.property.project">project</a></code> | <code>string</code> | ID of the project you want to activate integration on. |
 | <code><a href="#@cdktf/provider-gitlab.ServiceSlackConfig.property.webhook">webhook</a></code> | <code>string</code> | Webhook URL (ex.: https://hooks.slack.com/services/...). |
 | <code><a href="#@cdktf/provider-gitlab.ServiceSlackConfig.property.branchesToBeNotified">branchesToBeNotified</a></code> | <code>string</code> | Branches to send notifications for. Valid options are "all", "default", "protected", and "default_and_protected". |
@@ -75502,6 +80466,16 @@ const serviceSlackConfig: ServiceSlackConfig = { ... }
 
 ---
 
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.ServiceSlackConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.ServiceSlackConfig.property.count"></a>
 
 ```typescript
@@ -75522,6 +80496,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.ServiceSlackConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.ServiceSlackConfig.property.lifecycle"></a>
 
 ```typescript
@@ -75539,6 +80523,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.ServiceSlackConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -75893,10 +80887,13 @@ const systemHookConfig: SystemHookConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.SystemHookConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.SystemHookConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.SystemHookConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.SystemHookConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.SystemHookConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.SystemHookConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.SystemHookConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.SystemHookConfig.property.url">url</a></code> | <code>string</code> | The hook URL. |
 | <code><a href="#@cdktf/provider-gitlab.SystemHookConfig.property.enableSslVerification">enableSslVerification</a></code> | <code>boolean \| cdktf.IResolvable</code> | Do SSL verification when triggering the hook. |
 | <code><a href="#@cdktf/provider-gitlab.SystemHookConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook#id SystemHook#id}. |
@@ -75905,6 +80902,16 @@ const systemHookConfig: SystemHookConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.SystemHookConfig.property.repositoryUpdateEvents">repositoryUpdateEvents</a></code> | <code>boolean \| cdktf.IResolvable</code> | Trigger hook on repository update events. |
 | <code><a href="#@cdktf/provider-gitlab.SystemHookConfig.property.tagPushEvents">tagPushEvents</a></code> | <code>boolean \| cdktf.IResolvable</code> | When true, the hook fires on new tags being pushed. |
 | <code><a href="#@cdktf/provider-gitlab.SystemHookConfig.property.token">token</a></code> | <code>string</code> | Secret token to validate received payloads; |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.SystemHookConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -75928,6 +80935,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.SystemHookConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.SystemHookConfig.property.lifecycle"></a>
 
 ```typescript
@@ -75945,6 +80962,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.SystemHookConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -76077,14 +81104,27 @@ const tagProtectionConfig: TagProtectionConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.TagProtectionConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.TagProtectionConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.TagProtectionConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.TagProtectionConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.TagProtectionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.TagProtectionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.TagProtectionConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.TagProtectionConfig.property.createAccessLevel">createAccessLevel</a></code> | <code>string</code> | Access levels which are allowed to create. Valid values are: `no one`, `developer`, `maintainer`. |
 | <code><a href="#@cdktf/provider-gitlab.TagProtectionConfig.property.project">project</a></code> | <code>string</code> | The id of the project. |
 | <code><a href="#@cdktf/provider-gitlab.TagProtectionConfig.property.tag">tag</a></code> | <code>string</code> | Name of the tag or wildcard. |
 | <code><a href="#@cdktf/provider-gitlab.TagProtectionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/tag_protection#id TagProtection#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.TagProtectionConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -76108,6 +81148,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.TagProtectionConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.TagProtectionConfig.property.lifecycle"></a>
 
 ```typescript
@@ -76125,6 +81175,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.TagProtectionConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -76199,10 +81259,13 @@ const topicConfig: TopicConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.TopicConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.TopicConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.TopicConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.TopicConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.TopicConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.TopicConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.TopicConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.TopicConfig.property.name">name</a></code> | <code>string</code> | The topic's name. |
 | <code><a href="#@cdktf/provider-gitlab.TopicConfig.property.avatar">avatar</a></code> | <code>string</code> | A local path to the avatar image to upload. **Note**: not available for imported resources. |
 | <code><a href="#@cdktf/provider-gitlab.TopicConfig.property.avatarHash">avatarHash</a></code> | <code>string</code> | The hash of the avatar image. |
@@ -76210,6 +81273,16 @@ const topicConfig: TopicConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.TopicConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/topic#id Topic#id}. |
 | <code><a href="#@cdktf/provider-gitlab.TopicConfig.property.softDestroy">softDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Empty the topics fields instead of deleting it. |
 | <code><a href="#@cdktf/provider-gitlab.TopicConfig.property.title">title</a></code> | <code>string</code> | The topic's description. Requires at least GitLab 15.0 for which it's a required argument. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.TopicConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -76233,6 +81306,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.TopicConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.TopicConfig.property.lifecycle"></a>
 
 ```typescript
@@ -76250,6 +81333,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.TopicConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -76368,10 +81461,13 @@ const userConfig: UserConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.UserConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.UserConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.UserConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserConfig.property.email">email</a></code> | <code>string</code> | The e-mail address of the user. |
 | <code><a href="#@cdktf/provider-gitlab.UserConfig.property.name">name</a></code> | <code>string</code> | The name of the user. |
 | <code><a href="#@cdktf/provider-gitlab.UserConfig.property.username">username</a></code> | <code>string</code> | The username of the user. |
@@ -76386,6 +81482,16 @@ const userConfig: UserConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.UserConfig.property.resetPassword">resetPassword</a></code> | <code>boolean \| cdktf.IResolvable</code> | Boolean, defaults to false. Send user password reset link. |
 | <code><a href="#@cdktf/provider-gitlab.UserConfig.property.skipConfirmation">skipConfirmation</a></code> | <code>boolean \| cdktf.IResolvable</code> | Boolean, defaults to true. Whether to skip confirmation. |
 | <code><a href="#@cdktf/provider-gitlab.UserConfig.property.state">state</a></code> | <code>string</code> | String, defaults to 'active'. The state of the user account. Valid values are `active`, `deactivated`, `blocked`. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.UserConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -76409,6 +81515,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.UserConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.UserConfig.property.lifecycle"></a>
 
 ```typescript
@@ -76426,6 +81542,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.UserConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -76642,14 +81768,27 @@ const userCustomAttributeConfig: UserCustomAttributeConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.UserCustomAttributeConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserCustomAttributeConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserCustomAttributeConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.UserCustomAttributeConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserCustomAttributeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserCustomAttributeConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.UserCustomAttributeConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserCustomAttributeConfig.property.key">key</a></code> | <code>string</code> | Key for the Custom Attribute. |
 | <code><a href="#@cdktf/provider-gitlab.UserCustomAttributeConfig.property.user">user</a></code> | <code>number</code> | The id of the user. |
 | <code><a href="#@cdktf/provider-gitlab.UserCustomAttributeConfig.property.value">value</a></code> | <code>string</code> | Value for the Custom Attribute. |
 | <code><a href="#@cdktf/provider-gitlab.UserCustomAttributeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute#id UserCustomAttribute#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.UserCustomAttributeConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -76673,6 +81812,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.UserCustomAttributeConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.UserCustomAttributeConfig.property.lifecycle"></a>
 
 ```typescript
@@ -76690,6 +81839,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.UserCustomAttributeConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 
@@ -76764,15 +81923,28 @@ const userSshkeyConfig: UserSshkeyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.UserSshkeyConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserSshkeyConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserSshkeyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.UserSshkeyConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserSshkeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserSshkeyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.UserSshkeyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.UserSshkeyConfig.property.key">key</a></code> | <code>string</code> | The ssh key. |
 | <code><a href="#@cdktf/provider-gitlab.UserSshkeyConfig.property.title">title</a></code> | <code>string</code> | The title of the ssh key. |
 | <code><a href="#@cdktf/provider-gitlab.UserSshkeyConfig.property.userId">userId</a></code> | <code>number</code> | The ID of the user to add the ssh key to. |
 | <code><a href="#@cdktf/provider-gitlab.UserSshkeyConfig.property.expiresAt">expiresAt</a></code> | <code>string</code> | The expiration date of the SSH key in ISO 8601 format (YYYY-MM-DDTHH:MM:SSZ). |
 | <code><a href="#@cdktf/provider-gitlab.UserSshkeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_sshkey#id UserSshkey#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.UserSshkeyConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
 
 ---
 
@@ -76796,6 +81968,16 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-gitlab.UserSshkeyConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-gitlab.UserSshkeyConfig.property.lifecycle"></a>
 
 ```typescript
@@ -76813,6 +81995,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.UserSshkeyConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
 
 ---
 

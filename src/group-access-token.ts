@@ -78,7 +78,10 @@ export class GroupAccessToken extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accessLevel = config.accessLevel;
     this._expiresAt = config.expiresAt;
@@ -215,7 +218,7 @@ export class GroupAccessToken extends cdktf.TerraformResource {
       group: cdktf.stringToTerraform(this._group),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      scopes: cdktf.listMapper(cdktf.stringToTerraform)(this._scopes),
+      scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._scopes),
     };
   }
 }

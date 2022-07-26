@@ -1080,7 +1080,10 @@ export class Project extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allowMergeOnSkippedPipeline = config.allowMergeOnSkippedPipeline;
     this._analyticsAccessLevel = config.analyticsAccessLevel;
@@ -2474,10 +2477,10 @@ export class Project extends cdktf.TerraformResource {
       snippets_enabled: cdktf.booleanToTerraform(this._snippetsEnabled),
       squash_commit_template: cdktf.stringToTerraform(this._squashCommitTemplate),
       squash_option: cdktf.stringToTerraform(this._squashOption),
-      tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
+      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       template_name: cdktf.stringToTerraform(this._templateName),
       template_project_id: cdktf.numberToTerraform(this._templateProjectId),
-      topics: cdktf.listMapper(cdktf.stringToTerraform)(this._topics),
+      topics: cdktf.listMapper(cdktf.stringToTerraform, false)(this._topics),
       use_custom_template: cdktf.booleanToTerraform(this._useCustomTemplate),
       visibility_level: cdktf.stringToTerraform(this._visibilityLevel),
       wiki_access_level: cdktf.stringToTerraform(this._wikiAccessLevel),

@@ -530,7 +530,10 @@ export class DataGitlabProjectIssues extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._assigneeId = config.assigneeId;
     this._assigneeUsername = config.assigneeUsername;
@@ -1014,16 +1017,16 @@ export class DataGitlabProjectIssues extends cdktf.TerraformDataSource {
       created_before: cdktf.stringToTerraform(this._createdBefore),
       due_date: cdktf.stringToTerraform(this._dueDate),
       id: cdktf.stringToTerraform(this._id),
-      iids: cdktf.listMapper(cdktf.numberToTerraform)(this._iids),
+      iids: cdktf.listMapper(cdktf.numberToTerraform, false)(this._iids),
       issue_type: cdktf.stringToTerraform(this._issueType),
-      labels: cdktf.listMapper(cdktf.stringToTerraform)(this._labels),
+      labels: cdktf.listMapper(cdktf.stringToTerraform, false)(this._labels),
       milestone: cdktf.stringToTerraform(this._milestone),
       my_reaction_emoji: cdktf.stringToTerraform(this._myReactionEmoji),
-      not_assignee_id: cdktf.listMapper(cdktf.numberToTerraform)(this._notAssigneeId),
-      not_author_id: cdktf.listMapper(cdktf.numberToTerraform)(this._notAuthorId),
-      not_labels: cdktf.listMapper(cdktf.stringToTerraform)(this._notLabels),
+      not_assignee_id: cdktf.listMapper(cdktf.numberToTerraform, false)(this._notAssigneeId),
+      not_author_id: cdktf.listMapper(cdktf.numberToTerraform, false)(this._notAuthorId),
+      not_labels: cdktf.listMapper(cdktf.stringToTerraform, false)(this._notLabels),
       not_milestone: cdktf.stringToTerraform(this._notMilestone),
-      not_my_reaction_emoji: cdktf.listMapper(cdktf.stringToTerraform)(this._notMyReactionEmoji),
+      not_my_reaction_emoji: cdktf.listMapper(cdktf.stringToTerraform, false)(this._notMyReactionEmoji),
       order_by: cdktf.stringToTerraform(this._orderBy),
       project: cdktf.stringToTerraform(this._project),
       scope: cdktf.stringToTerraform(this._scope),
