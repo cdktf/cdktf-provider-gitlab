@@ -8,11 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface ProjectMembershipConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The access level for the member. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `master`
+  * The access level for the member. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_membership#access_level ProjectMembership#access_level}
   */
   readonly accessLevel: string;
+  /**
+  * Expiration date for the project membership. Format: `YYYY-MM-DD`
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_membership#expires_at ProjectMembership#expires_at}
+  */
+  readonly expiresAt?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_membership#id ProjectMembership#id}
   *
@@ -60,8 +66,8 @@ export class ProjectMembership extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_membership',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.16.1',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -69,6 +75,7 @@ export class ProjectMembership extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._accessLevel = config.accessLevel;
+    this._expiresAt = config.expiresAt;
     this._id = config.id;
     this._projectId = config.projectId;
     this._userId = config.userId;
@@ -89,6 +96,22 @@ export class ProjectMembership extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get accessLevelInput() {
     return this._accessLevel;
+  }
+
+  // expires_at - computed: false, optional: true, required: false
+  private _expiresAt?: string; 
+  public get expiresAt() {
+    return this.getStringAttribute('expires_at');
+  }
+  public set expiresAt(value: string) {
+    this._expiresAt = value;
+  }
+  public resetExpiresAt() {
+    this._expiresAt = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expiresAtInput() {
+    return this._expiresAt;
   }
 
   // id - computed: true, optional: true, required: false
@@ -140,6 +163,7 @@ export class ProjectMembership extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       access_level: cdktf.stringToTerraform(this._accessLevel),
+      expires_at: cdktf.stringToTerraform(this._expiresAt),
       id: cdktf.stringToTerraform(this._id),
       project_id: cdktf.stringToTerraform(this._projectId),
       user_id: cdktf.numberToTerraform(this._userId),

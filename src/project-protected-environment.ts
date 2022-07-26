@@ -27,6 +27,12 @@ export interface ProjectProtectedEnvironmentConfig extends cdktf.TerraformMetaAr
   */
   readonly project: string;
   /**
+  * The number of approvals required to deploy to this environment.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_protected_environment#required_approval_count ProjectProtectedEnvironment#required_approval_count}
+  */
+  readonly requiredApprovalCount?: number;
+  /**
   * deploy_access_levels block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_protected_environment#deploy_access_levels ProjectProtectedEnvironment#deploy_access_levels}
@@ -222,8 +228,8 @@ export class ProjectProtectedEnvironment extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_protected_environment',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.16.1',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -233,6 +239,7 @@ export class ProjectProtectedEnvironment extends cdktf.TerraformResource {
     this._environment = config.environment;
     this._id = config.id;
     this._project = config.project;
+    this._requiredApprovalCount = config.requiredApprovalCount;
     this._deployAccessLevels.internalValue = config.deployAccessLevels;
   }
 
@@ -282,6 +289,22 @@ export class ProjectProtectedEnvironment extends cdktf.TerraformResource {
     return this._project;
   }
 
+  // required_approval_count - computed: false, optional: true, required: false
+  private _requiredApprovalCount?: number; 
+  public get requiredApprovalCount() {
+    return this.getNumberAttribute('required_approval_count');
+  }
+  public set requiredApprovalCount(value: number) {
+    this._requiredApprovalCount = value;
+  }
+  public resetRequiredApprovalCount() {
+    this._requiredApprovalCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requiredApprovalCountInput() {
+    return this._requiredApprovalCount;
+  }
+
   // deploy_access_levels - computed: false, optional: false, required: true
   private _deployAccessLevels = new ProjectProtectedEnvironmentDeployAccessLevelsList(this, "deploy_access_levels", false);
   public get deployAccessLevels() {
@@ -304,6 +327,7 @@ export class ProjectProtectedEnvironment extends cdktf.TerraformResource {
       environment: cdktf.stringToTerraform(this._environment),
       id: cdktf.stringToTerraform(this._id),
       project: cdktf.stringToTerraform(this._project),
+      required_approval_count: cdktf.numberToTerraform(this._requiredApprovalCount),
       deploy_access_levels: cdktf.listMapper(projectProtectedEnvironmentDeployAccessLevelsToTerraform)(this._deployAccessLevels.internalValue),
     };
   }

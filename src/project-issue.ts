@@ -14,18 +14,6 @@ export interface ProjectIssueConfig extends cdktf.TerraformMetaArguments {
   */
   readonly assigneeIds?: number[];
   /**
-  * When the issue was closed. Date time string, ISO 8601 formatted, for example 2016-03-11T03:45:40Z.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#closed_at ProjectIssue#closed_at}
-  */
-  readonly closedAt?: string;
-  /**
-  * The ID of the user that closed the issue. Use `gitlab_user` data source to get more information about the user.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#closed_by_user_id ProjectIssue#closed_by_user_id}
-  */
-  readonly closedByUserId?: number;
-  /**
   * Set an issue to be confidential.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#confidential ProjectIssue#confidential}
@@ -76,18 +64,6 @@ export interface ProjectIssueConfig extends cdktf.TerraformMetaArguments {
   */
   readonly epicIssueId?: number;
   /**
-  * The human-readable time estimate of the issue.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#human_time_estimate ProjectIssue#human_time_estimate}
-  */
-  readonly humanTimeEstimate?: string;
-  /**
-  * The human-readable total time spent of the issue.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#human_total_time_spent ProjectIssue#human_total_time_spent}
-  */
-  readonly humanTotalTimeSpent?: string;
-  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#id ProjectIssue#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -113,12 +89,6 @@ export interface ProjectIssueConfig extends cdktf.TerraformMetaArguments {
   */
   readonly labels?: string[];
   /**
-  * The links of the issue.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#links ProjectIssue#links}
-  */
-  readonly links?: { [key: string]: string };
-  /**
   * The IID of a merge request in which to resolve all issues. This fills out the issue with a default description and mark all discussions as resolved. When passing a description or title, these values take precedence over the default values.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#merge_request_to_resolve_discussions_of ProjectIssue#merge_request_to_resolve_discussions_of}
@@ -137,35 +107,17 @@ export interface ProjectIssueConfig extends cdktf.TerraformMetaArguments {
   */
   readonly project: string;
   /**
-  * The references of the issue.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#references ProjectIssue#references}
-  */
-  readonly references?: { [key: string]: string };
-  /**
   * The state of the issue. Valid values are: `opened`, `closed`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#state ProjectIssue#state}
   */
   readonly state?: string;
   /**
-  * The time estimate of the issue.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#time_estimate ProjectIssue#time_estimate}
-  */
-  readonly timeEstimate?: number;
-  /**
   * The title of the issue.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#title ProjectIssue#title}
   */
   readonly title: string;
-  /**
-  * The total time spent of the issue.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#total_time_spent ProjectIssue#total_time_spent}
-  */
-  readonly totalTimeSpent?: number;
   /**
   * When the issue was updated. Date time string, ISO 8601 formatted, for example 2016-03-11T03:45:40Z.
   * 
@@ -178,36 +130,16 @@ export interface ProjectIssueConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#weight ProjectIssue#weight}
   */
   readonly weight?: number;
-  /**
-  * task_completion_status block
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#task_completion_status ProjectIssue#task_completion_status}
-  */
-  readonly taskCompletionStatus?: ProjectIssueTaskCompletionStatus;
 }
 export interface ProjectIssueTaskCompletionStatus {
-  /**
-  * The number of tasks that are completed.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#completed_count ProjectIssue#completed_count}
-  */
-  readonly completedCount?: number;
-  /**
-  * The number of tasks.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#count ProjectIssue#count}
-  */
-  readonly count?: number;
 }
 
-export function projectIssueTaskCompletionStatusToTerraform(struct?: ProjectIssueTaskCompletionStatusOutputReference | ProjectIssueTaskCompletionStatus): any {
+export function projectIssueTaskCompletionStatusToTerraform(struct?: ProjectIssueTaskCompletionStatus): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    completed_count: cdktf.numberToTerraform(struct!.completedCount),
-    count: cdktf.numberToTerraform(struct!.count),
   }
 }
 
@@ -217,68 +149,55 @@ export class ProjectIssueTaskCompletionStatusOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
   public get internalValue(): ProjectIssueTaskCompletionStatus | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._completedCount !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.completedCount = this._completedCount;
-    }
-    if (this._count !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.count = this._count;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: ProjectIssueTaskCompletionStatus | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._completedCount = undefined;
-      this._count = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._completedCount = value.completedCount;
-      this._count = value.count;
     }
   }
 
-  // completed_count - computed: true, optional: true, required: false
-  private _completedCount?: number; 
+  // completed_count - computed: true, optional: false, required: false
   public get completedCount() {
     return this.getNumberAttribute('completed_count');
   }
-  public set completedCount(value: number) {
-    this._completedCount = value;
-  }
-  public resetCompletedCount() {
-    this._completedCount = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get completedCountInput() {
-    return this._completedCount;
-  }
 
-  // count - computed: true, optional: true, required: false
-  private _count?: number; 
+  // count - computed: true, optional: false, required: false
   public get count() {
     return this.getNumberAttribute('count');
   }
-  public set count(value: number) {
-    this._count = value;
+}
+
+export class ProjectIssueTaskCompletionStatusList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
   }
-  public resetCount() {
-    this._count = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get countInput() {
-    return this._count;
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ProjectIssueTaskCompletionStatusOutputReference {
+    return new ProjectIssueTaskCompletionStatusOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
@@ -308,8 +227,8 @@ export class ProjectIssue extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_issue',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.16.1',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -317,8 +236,6 @@ export class ProjectIssue extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._assigneeIds = config.assigneeIds;
-    this._closedAt = config.closedAt;
-    this._closedByUserId = config.closedByUserId;
     this._confidential = config.confidential;
     this._createdAt = config.createdAt;
     this._deleteOnDestroy = config.deleteOnDestroy;
@@ -327,24 +244,17 @@ export class ProjectIssue extends cdktf.TerraformResource {
     this._discussionToResolve = config.discussionToResolve;
     this._dueDate = config.dueDate;
     this._epicIssueId = config.epicIssueId;
-    this._humanTimeEstimate = config.humanTimeEstimate;
-    this._humanTotalTimeSpent = config.humanTotalTimeSpent;
     this._id = config.id;
     this._iid = config.iid;
     this._issueType = config.issueType;
     this._labels = config.labels;
-    this._links = config.links;
     this._mergeRequestToResolveDiscussionsOf = config.mergeRequestToResolveDiscussionsOf;
     this._milestoneId = config.milestoneId;
     this._project = config.project;
-    this._references = config.references;
     this._state = config.state;
-    this._timeEstimate = config.timeEstimate;
     this._title = config.title;
-    this._totalTimeSpent = config.totalTimeSpent;
     this._updatedAt = config.updatedAt;
     this._weight = config.weight;
-    this._taskCompletionStatus.internalValue = config.taskCompletionStatus;
   }
 
   // ==========
@@ -372,36 +282,14 @@ export class ProjectIssue extends cdktf.TerraformResource {
     return this.getNumberAttribute('author_id');
   }
 
-  // closed_at - computed: true, optional: true, required: false
-  private _closedAt?: string; 
+  // closed_at - computed: true, optional: false, required: false
   public get closedAt() {
     return this.getStringAttribute('closed_at');
   }
-  public set closedAt(value: string) {
-    this._closedAt = value;
-  }
-  public resetClosedAt() {
-    this._closedAt = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get closedAtInput() {
-    return this._closedAt;
-  }
 
-  // closed_by_user_id - computed: true, optional: true, required: false
-  private _closedByUserId?: number; 
+  // closed_by_user_id - computed: true, optional: false, required: false
   public get closedByUserId() {
     return this.getNumberAttribute('closed_by_user_id');
-  }
-  public set closedByUserId(value: number) {
-    this._closedByUserId = value;
-  }
-  public resetClosedByUserId() {
-    this._closedByUserId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get closedByUserIdInput() {
-    return this._closedByUserId;
   }
 
   // confidential - computed: false, optional: true, required: false
@@ -547,36 +435,14 @@ export class ProjectIssue extends cdktf.TerraformResource {
     return this.getStringAttribute('external_id');
   }
 
-  // human_time_estimate - computed: true, optional: true, required: false
-  private _humanTimeEstimate?: string; 
+  // human_time_estimate - computed: true, optional: false, required: false
   public get humanTimeEstimate() {
     return this.getStringAttribute('human_time_estimate');
   }
-  public set humanTimeEstimate(value: string) {
-    this._humanTimeEstimate = value;
-  }
-  public resetHumanTimeEstimate() {
-    this._humanTimeEstimate = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get humanTimeEstimateInput() {
-    return this._humanTimeEstimate;
-  }
 
-  // human_total_time_spent - computed: true, optional: true, required: false
-  private _humanTotalTimeSpent?: string; 
+  // human_total_time_spent - computed: true, optional: false, required: false
   public get humanTotalTimeSpent() {
     return this.getStringAttribute('human_total_time_spent');
-  }
-  public set humanTotalTimeSpent(value: string) {
-    this._humanTotalTimeSpent = value;
-  }
-  public resetHumanTotalTimeSpent() {
-    this._humanTotalTimeSpent = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get humanTotalTimeSpentInput() {
-    return this._humanTotalTimeSpent;
   }
 
   // id - computed: true, optional: true, required: false
@@ -653,19 +519,9 @@ export class ProjectIssue extends cdktf.TerraformResource {
     return this._labels;
   }
 
-  // links - computed: true, optional: true, required: false
-  private _links?: { [key: string]: string }; 
+  // links - computed: true, optional: false, required: false
+  private _links = new cdktf.StringMap(this, "links");
   public get links() {
-    return this.getStringMapAttribute('links');
-  }
-  public set links(value: { [key: string]: string }) {
-    this._links = value;
-  }
-  public resetLinks() {
-    this._links = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get linksInput() {
     return this._links;
   }
 
@@ -724,19 +580,9 @@ export class ProjectIssue extends cdktf.TerraformResource {
     return this._project;
   }
 
-  // references - computed: true, optional: true, required: false
-  private _references?: { [key: string]: string }; 
+  // references - computed: true, optional: false, required: false
+  private _references = new cdktf.StringMap(this, "references");
   public get references() {
-    return this.getStringMapAttribute('references');
-  }
-  public set references(value: { [key: string]: string }) {
-    this._references = value;
-  }
-  public resetReferences() {
-    this._references = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get referencesInput() {
     return this._references;
   }
 
@@ -761,20 +607,15 @@ export class ProjectIssue extends cdktf.TerraformResource {
     return this.getBooleanAttribute('subscribed');
   }
 
-  // time_estimate - computed: true, optional: true, required: false
-  private _timeEstimate?: number; 
+  // task_completion_status - computed: true, optional: false, required: false
+  private _taskCompletionStatus = new ProjectIssueTaskCompletionStatusList(this, "task_completion_status", false);
+  public get taskCompletionStatus() {
+    return this._taskCompletionStatus;
+  }
+
+  // time_estimate - computed: true, optional: false, required: false
   public get timeEstimate() {
     return this.getNumberAttribute('time_estimate');
-  }
-  public set timeEstimate(value: number) {
-    this._timeEstimate = value;
-  }
-  public resetTimeEstimate() {
-    this._timeEstimate = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeEstimateInput() {
-    return this._timeEstimate;
   }
 
   // title - computed: false, optional: false, required: true
@@ -790,20 +631,9 @@ export class ProjectIssue extends cdktf.TerraformResource {
     return this._title;
   }
 
-  // total_time_spent - computed: true, optional: true, required: false
-  private _totalTimeSpent?: number; 
+  // total_time_spent - computed: true, optional: false, required: false
   public get totalTimeSpent() {
     return this.getNumberAttribute('total_time_spent');
-  }
-  public set totalTimeSpent(value: number) {
-    this._totalTimeSpent = value;
-  }
-  public resetTotalTimeSpent() {
-    this._totalTimeSpent = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get totalTimeSpentInput() {
-    return this._totalTimeSpent;
   }
 
   // updated_at - computed: true, optional: true, required: false
@@ -853,22 +683,6 @@ export class ProjectIssue extends cdktf.TerraformResource {
     return this._weight;
   }
 
-  // task_completion_status - computed: false, optional: true, required: false
-  private _taskCompletionStatus = new ProjectIssueTaskCompletionStatusOutputReference(this, "task_completion_status");
-  public get taskCompletionStatus() {
-    return this._taskCompletionStatus;
-  }
-  public putTaskCompletionStatus(value: ProjectIssueTaskCompletionStatus) {
-    this._taskCompletionStatus.internalValue = value;
-  }
-  public resetTaskCompletionStatus() {
-    this._taskCompletionStatus.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get taskCompletionStatusInput() {
-    return this._taskCompletionStatus.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -876,8 +690,6 @@ export class ProjectIssue extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       assignee_ids: cdktf.listMapper(cdktf.numberToTerraform)(this._assigneeIds),
-      closed_at: cdktf.stringToTerraform(this._closedAt),
-      closed_by_user_id: cdktf.numberToTerraform(this._closedByUserId),
       confidential: cdktf.booleanToTerraform(this._confidential),
       created_at: cdktf.stringToTerraform(this._createdAt),
       delete_on_destroy: cdktf.booleanToTerraform(this._deleteOnDestroy),
@@ -886,24 +698,17 @@ export class ProjectIssue extends cdktf.TerraformResource {
       discussion_to_resolve: cdktf.stringToTerraform(this._discussionToResolve),
       due_date: cdktf.stringToTerraform(this._dueDate),
       epic_issue_id: cdktf.numberToTerraform(this._epicIssueId),
-      human_time_estimate: cdktf.stringToTerraform(this._humanTimeEstimate),
-      human_total_time_spent: cdktf.stringToTerraform(this._humanTotalTimeSpent),
       id: cdktf.stringToTerraform(this._id),
       iid: cdktf.numberToTerraform(this._iid),
       issue_type: cdktf.stringToTerraform(this._issueType),
       labels: cdktf.listMapper(cdktf.stringToTerraform)(this._labels),
-      links: cdktf.hashMapper(cdktf.stringToTerraform)(this._links),
       merge_request_to_resolve_discussions_of: cdktf.numberToTerraform(this._mergeRequestToResolveDiscussionsOf),
       milestone_id: cdktf.numberToTerraform(this._milestoneId),
       project: cdktf.stringToTerraform(this._project),
-      references: cdktf.hashMapper(cdktf.stringToTerraform)(this._references),
       state: cdktf.stringToTerraform(this._state),
-      time_estimate: cdktf.numberToTerraform(this._timeEstimate),
       title: cdktf.stringToTerraform(this._title),
-      total_time_spent: cdktf.numberToTerraform(this._totalTimeSpent),
       updated_at: cdktf.stringToTerraform(this._updatedAt),
       weight: cdktf.numberToTerraform(this._weight),
-      task_completion_status: projectIssueTaskCompletionStatusToTerraform(this._taskCompletionStatus.internalValue),
     };
   }
 }

@@ -109,7 +109,7 @@ export interface DataGitlabProjectIssuesConfig extends cdktf.TerraformMetaArgume
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_issues#not_milestone DataGitlabProjectIssues#not_milestone}
   */
-  readonly notMilestone?: string[];
+  readonly notMilestone?: string;
   /**
   * Return issues not reacted by the authenticated user by the given emoji.
   * 
@@ -524,8 +524,8 @@ export class DataGitlabProjectIssues extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_project_issues',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.16.1',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -828,11 +828,11 @@ export class DataGitlabProjectIssues extends cdktf.TerraformDataSource {
   }
 
   // not_milestone - computed: false, optional: true, required: false
-  private _notMilestone?: string[]; 
+  private _notMilestone?: string; 
   public get notMilestone() {
-    return this.getListAttribute('not_milestone');
+    return this.getStringAttribute('not_milestone');
   }
-  public set notMilestone(value: string[]) {
+  public set notMilestone(value: string) {
     this._notMilestone = value;
   }
   public resetNotMilestone() {
@@ -1022,7 +1022,7 @@ export class DataGitlabProjectIssues extends cdktf.TerraformDataSource {
       not_assignee_id: cdktf.listMapper(cdktf.numberToTerraform)(this._notAssigneeId),
       not_author_id: cdktf.listMapper(cdktf.numberToTerraform)(this._notAuthorId),
       not_labels: cdktf.listMapper(cdktf.stringToTerraform)(this._notLabels),
-      not_milestone: cdktf.listMapper(cdktf.stringToTerraform)(this._notMilestone),
+      not_milestone: cdktf.stringToTerraform(this._notMilestone),
       not_my_reaction_emoji: cdktf.listMapper(cdktf.stringToTerraform)(this._notMyReactionEmoji),
       order_by: cdktf.stringToTerraform(this._orderBy),
       project: cdktf.stringToTerraform(this._project),

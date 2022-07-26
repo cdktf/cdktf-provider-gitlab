@@ -763,6 +763,11 @@ export class DataGitlabProjectsProjectsOutputReference extends cdktf.ComplexObje
     return this.getStringAttribute('ci_config_path');
   }
 
+  // ci_default_git_depth - computed: true, optional: false, required: false
+  public get ciDefaultGitDepth() {
+    return this.getNumberAttribute('ci_default_git_depth');
+  }
+
   // ci_forward_deployment_enabled - computed: true, optional: false, required: false
   public get ciForwardDeploymentEnabled() {
     return this.getBooleanAttribute('ci_forward_deployment_enabled');
@@ -1167,8 +1172,8 @@ export class DataGitlabProjects extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_projects',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.16.1',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

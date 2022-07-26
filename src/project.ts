@@ -21,6 +21,10 @@ export interface ProjectConfig extends cdktf.TerraformMetaArguments {
   readonly analyticsAccessLevel?: string;
   /**
   * Number of merge request approvals required for merging. Default is 0.
+  This field **does not** work well in combination with the `gitlab_project_approval_rule` resource
+  and is most likely gonna be deprecated in a future GitLab version (see [this upstream epic](https://gitlab.com/groups/gitlab-org/-/epics/7572)).
+  In the meantime we recommend against using this attribute and use `gitlab_project_approval_rule` instead.
+
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#approvals_before_merge Project#approvals_before_merge}
   */
@@ -91,6 +95,12 @@ export interface ProjectConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#ci_config_path Project#ci_config_path}
   */
   readonly ciConfigPath?: string;
+  /**
+  * Default number of revisions for shallow cloning.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#ci_default_git_depth Project#ci_default_git_depth}
+  */
+  readonly ciDefaultGitDepth?: number;
   /**
   * When a new deployment job starts, skip older deployment jobs that are still pending.
   * 
@@ -368,6 +378,16 @@ export interface ProjectConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#shared_runners_enabled Project#shared_runners_enabled}
   */
   readonly sharedRunnersEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * If `true`, the default behavior to wait for the default branch protection to be created is skipped.
+This is necessary if the current user is not an admin and the default branch protection is disabled on an instance-level.
+There is currently no known way to determine if the default branch protection is disabled on an instance-level for non-admin users.
+This attribute is only used during resource creation, thus changes are suppressed and the attribute cannot be imported.
+
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#skip_wait_for_default_branch_protection Project#skip_wait_for_default_branch_protection}
+  */
+  readonly skipWaitForDefaultBranchProtection?: boolean | cdktf.IResolvable;
   /**
   * Set the snippets access level. Valid values are `disabled`, `private`, `enabled`.
   * 
@@ -1054,8 +1074,8 @@ export class Project extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.16.1',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1076,6 +1096,7 @@ export class Project extends cdktf.TerraformResource {
     this._buildTimeout = config.buildTimeout;
     this._buildsAccessLevel = config.buildsAccessLevel;
     this._ciConfigPath = config.ciConfigPath;
+    this._ciDefaultGitDepth = config.ciDefaultGitDepth;
     this._ciForwardDeploymentEnabled = config.ciForwardDeploymentEnabled;
     this._containerRegistryAccessLevel = config.containerRegistryAccessLevel;
     this._containerRegistryEnabled = config.containerRegistryEnabled;
@@ -1122,6 +1143,7 @@ export class Project extends cdktf.TerraformResource {
     this._resolveOutdatedDiffDiscussions = config.resolveOutdatedDiffDiscussions;
     this._securityAndComplianceAccessLevel = config.securityAndComplianceAccessLevel;
     this._sharedRunnersEnabled = config.sharedRunnersEnabled;
+    this._skipWaitForDefaultBranchProtection = config.skipWaitForDefaultBranchProtection;
     this._snippetsAccessLevel = config.snippetsAccessLevel;
     this._snippetsEnabled = config.snippetsEnabled;
     this._squashCommitTemplate = config.squashCommitTemplate;
@@ -1364,6 +1386,22 @@ export class Project extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get ciConfigPathInput() {
     return this._ciConfigPath;
+  }
+
+  // ci_default_git_depth - computed: true, optional: true, required: false
+  private _ciDefaultGitDepth?: number; 
+  public get ciDefaultGitDepth() {
+    return this.getNumberAttribute('ci_default_git_depth');
+  }
+  public set ciDefaultGitDepth(value: number) {
+    this._ciDefaultGitDepth = value;
+  }
+  public resetCiDefaultGitDepth() {
+    this._ciDefaultGitDepth = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ciDefaultGitDepthInput() {
+    return this._ciDefaultGitDepth;
   }
 
   // ci_forward_deployment_enabled - computed: false, optional: true, required: false
@@ -2114,6 +2152,22 @@ export class Project extends cdktf.TerraformResource {
     return this._sharedRunnersEnabled;
   }
 
+  // skip_wait_for_default_branch_protection - computed: false, optional: true, required: false
+  private _skipWaitForDefaultBranchProtection?: boolean | cdktf.IResolvable; 
+  public get skipWaitForDefaultBranchProtection() {
+    return this.getBooleanAttribute('skip_wait_for_default_branch_protection');
+  }
+  public set skipWaitForDefaultBranchProtection(value: boolean | cdktf.IResolvable) {
+    this._skipWaitForDefaultBranchProtection = value;
+  }
+  public resetSkipWaitForDefaultBranchProtection() {
+    this._skipWaitForDefaultBranchProtection = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipWaitForDefaultBranchProtectionInput() {
+    return this._skipWaitForDefaultBranchProtection;
+  }
+
   // snippets_access_level - computed: true, optional: true, required: false
   private _snippetsAccessLevel?: string; 
   public get snippetsAccessLevel() {
@@ -2368,6 +2422,7 @@ export class Project extends cdktf.TerraformResource {
       build_timeout: cdktf.numberToTerraform(this._buildTimeout),
       builds_access_level: cdktf.stringToTerraform(this._buildsAccessLevel),
       ci_config_path: cdktf.stringToTerraform(this._ciConfigPath),
+      ci_default_git_depth: cdktf.numberToTerraform(this._ciDefaultGitDepth),
       ci_forward_deployment_enabled: cdktf.booleanToTerraform(this._ciForwardDeploymentEnabled),
       container_registry_access_level: cdktf.stringToTerraform(this._containerRegistryAccessLevel),
       container_registry_enabled: cdktf.booleanToTerraform(this._containerRegistryEnabled),
@@ -2414,6 +2469,7 @@ export class Project extends cdktf.TerraformResource {
       resolve_outdated_diff_discussions: cdktf.booleanToTerraform(this._resolveOutdatedDiffDiscussions),
       security_and_compliance_access_level: cdktf.stringToTerraform(this._securityAndComplianceAccessLevel),
       shared_runners_enabled: cdktf.booleanToTerraform(this._sharedRunnersEnabled),
+      skip_wait_for_default_branch_protection: cdktf.booleanToTerraform(this._skipWaitForDefaultBranchProtection),
       snippets_access_level: cdktf.stringToTerraform(this._snippetsAccessLevel),
       snippets_enabled: cdktf.booleanToTerraform(this._snippetsEnabled),
       squash_commit_template: cdktf.stringToTerraform(this._squashCommitTemplate),

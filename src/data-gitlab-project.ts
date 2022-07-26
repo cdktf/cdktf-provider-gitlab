@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface DataGitlabProjectConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Default number of revisions for shallow cloning.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project#ci_default_git_depth DataGitlabProject#ci_default_git_depth}
+  */
+  readonly ciDefaultGitDepth?: number;
+  /**
   * The integer or path with namespace that uniquely identifies the project within the gitlab install.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project#id DataGitlabProject#id}
@@ -264,14 +270,15 @@ export class DataGitlabProject extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_project',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.14.0',
-        providerVersionConstraint: '~> 3.14.0'
+        providerVersion: '3.16.1',
+        providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._ciDefaultGitDepth = config.ciDefaultGitDepth;
     this._id = config.id;
     this._pathWithNamespace = config.pathWithNamespace;
     this._publicBuilds = config.publicBuilds;
@@ -324,6 +331,22 @@ export class DataGitlabProject extends cdktf.TerraformDataSource {
   // builds_access_level - computed: true, optional: false, required: false
   public get buildsAccessLevel() {
     return this.getStringAttribute('builds_access_level');
+  }
+
+  // ci_default_git_depth - computed: true, optional: true, required: false
+  private _ciDefaultGitDepth?: number; 
+  public get ciDefaultGitDepth() {
+    return this.getNumberAttribute('ci_default_git_depth');
+  }
+  public set ciDefaultGitDepth(value: number) {
+    this._ciDefaultGitDepth = value;
+  }
+  public resetCiDefaultGitDepth() {
+    this._ciDefaultGitDepth = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ciDefaultGitDepthInput() {
+    return this._ciDefaultGitDepth;
   }
 
   // container_expiration_policy - computed: true, optional: false, required: false
@@ -582,6 +605,7 @@ export class DataGitlabProject extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      ci_default_git_depth: cdktf.numberToTerraform(this._ciDefaultGitDepth),
       id: cdktf.stringToTerraform(this._id),
       path_with_namespace: cdktf.stringToTerraform(this._pathWithNamespace),
       public_builds: cdktf.booleanToTerraform(this._publicBuilds),
