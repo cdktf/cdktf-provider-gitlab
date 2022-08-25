@@ -144,7 +144,7 @@ export class ProjectHook extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_hook',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.16.1',
+        providerVersion: '3.17.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -241,6 +241,11 @@ export class ProjectHook extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get enableSslVerificationInput() {
     return this._enableSslVerification;
+  }
+
+  // hook_id - computed: true, optional: false, required: false
+  public get hookId() {
+    return this.getNumberAttribute('hook_id');
   }
 
   // id - computed: true, optional: true, required: false
@@ -350,6 +355,11 @@ export class ProjectHook extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get projectInput() {
     return this._project;
+  }
+
+  // project_id - computed: true, optional: false, required: false
+  public get projectId() {
+    return this.getNumberAttribute('project_id');
   }
 
   // push_events - computed: false, optional: true, required: false

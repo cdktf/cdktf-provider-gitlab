@@ -60,7 +60,7 @@ export class GroupBadge extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_badge',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.16.1',
+        providerVersion: '3.17.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
