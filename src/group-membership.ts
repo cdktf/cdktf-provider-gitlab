@@ -33,6 +33,18 @@ export interface GroupMembershipConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Whether the deletion of direct memberships of the removed member in subgroups and projects should be skipped. Only used during a destroy.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_membership#skip_subresources_on_destroy GroupMembership#skip_subresources_on_destroy}
+  */
+  readonly skipSubresourcesOnDestroy?: boolean | cdktf.IResolvable;
+  /**
+  * Whether the removed member should be unassigned from any issues or merge requests inside a given group or project. Only used during a destroy.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_membership#unassign_issuables_on_destroy GroupMembership#unassign_issuables_on_destroy}
+  */
+  readonly unassignIssuablesOnDestroy?: boolean | cdktf.IResolvable;
+  /**
   * The id of the user.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_membership#user_id GroupMembership#user_id}
@@ -66,7 +78,7 @@ export class GroupMembership extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_membership',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.16.1',
+        providerVersion: '3.17.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -81,6 +93,8 @@ export class GroupMembership extends cdktf.TerraformResource {
     this._expiresAt = config.expiresAt;
     this._groupId = config.groupId;
     this._id = config.id;
+    this._skipSubresourcesOnDestroy = config.skipSubresourcesOnDestroy;
+    this._unassignIssuablesOnDestroy = config.unassignIssuablesOnDestroy;
     this._userId = config.userId;
   }
 
@@ -146,6 +160,38 @@ export class GroupMembership extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // skip_subresources_on_destroy - computed: false, optional: true, required: false
+  private _skipSubresourcesOnDestroy?: boolean | cdktf.IResolvable; 
+  public get skipSubresourcesOnDestroy() {
+    return this.getBooleanAttribute('skip_subresources_on_destroy');
+  }
+  public set skipSubresourcesOnDestroy(value: boolean | cdktf.IResolvable) {
+    this._skipSubresourcesOnDestroy = value;
+  }
+  public resetSkipSubresourcesOnDestroy() {
+    this._skipSubresourcesOnDestroy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipSubresourcesOnDestroyInput() {
+    return this._skipSubresourcesOnDestroy;
+  }
+
+  // unassign_issuables_on_destroy - computed: false, optional: true, required: false
+  private _unassignIssuablesOnDestroy?: boolean | cdktf.IResolvable; 
+  public get unassignIssuablesOnDestroy() {
+    return this.getBooleanAttribute('unassign_issuables_on_destroy');
+  }
+  public set unassignIssuablesOnDestroy(value: boolean | cdktf.IResolvable) {
+    this._unassignIssuablesOnDestroy = value;
+  }
+  public resetUnassignIssuablesOnDestroy() {
+    this._unassignIssuablesOnDestroy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get unassignIssuablesOnDestroyInput() {
+    return this._unassignIssuablesOnDestroy;
+  }
+
   // user_id - computed: false, optional: false, required: true
   private _userId?: number; 
   public get userId() {
@@ -169,6 +215,8 @@ export class GroupMembership extends cdktf.TerraformResource {
       expires_at: cdktf.stringToTerraform(this._expiresAt),
       group_id: cdktf.stringToTerraform(this._groupId),
       id: cdktf.stringToTerraform(this._id),
+      skip_subresources_on_destroy: cdktf.booleanToTerraform(this._skipSubresourcesOnDestroy),
+      unassign_issuables_on_destroy: cdktf.booleanToTerraform(this._unassignIssuablesOnDestroy),
       user_id: cdktf.numberToTerraform(this._userId),
     };
   }

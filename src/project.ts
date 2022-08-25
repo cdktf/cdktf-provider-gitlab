@@ -425,7 +425,7 @@ This attribute is only used during resource creation, thus changes are suppresse
   */
   readonly templateName?: string;
   /**
-  * When used with use_custom_template, project ID of a custom project template. This is preferable to using template_name since template_name may be ambiguous (enterprise edition). This option is mutually exclusive with `template_name`.
+  * When used with use_custom_template, project ID of a custom project template. This is preferable to using template_name since template_name may be ambiguous (enterprise edition). This option is mutually exclusive with `template_name`. See `gitlab_group_project_file_template` to set a project as a template project. If a project has not been set as a template, using it here will result in an error.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#template_project_id Project#template_project_id}
   */
@@ -1074,7 +1074,7 @@ export class Project extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.16.1',
+        providerVersion: '3.17.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

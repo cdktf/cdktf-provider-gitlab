@@ -45,7 +45,7 @@ export interface GroupLdapLinkConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
-  * The name of the LDAP provider as stored in the GitLab database.
+  * The name of the LDAP provider as stored in the GitLab database. Note that this is NOT the value of the `label` attribute as shown in the web UI. In most cases this will be `ldapmain` but you may use the [LDAP check rake task](https://docs.gitlab.com/ee/administration/raketasks/ldap.html#check) for receiving the LDAP server name: `LDAP: ... Server: ldapmain`
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_ldap_link#ldap_provider GroupLdapLink#ldap_provider}
   */
@@ -78,7 +78,7 @@ export class GroupLdapLink extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_ldap_link',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.16.1',
+        providerVersion: '3.17.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
