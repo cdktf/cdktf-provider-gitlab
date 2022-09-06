@@ -249,7 +249,7 @@ export class ProjectTag extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_tag',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.17.0',
+        providerVersion: '3.18.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
