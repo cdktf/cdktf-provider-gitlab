@@ -270,7 +270,7 @@ export class DataGitlabProject extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_project',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.17.0',
+        providerVersion: '3.18.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -334,6 +334,11 @@ export class DataGitlabProject extends cdktf.TerraformDataSource {
   // builds_access_level - computed: true, optional: false, required: false
   public get buildsAccessLevel() {
     return this.getStringAttribute('builds_access_level');
+  }
+
+  // ci_config_path - computed: true, optional: false, required: false
+  public get ciConfigPath() {
+    return this.getStringAttribute('ci_config_path');
   }
 
   // ci_default_git_depth - computed: true, optional: true, required: false

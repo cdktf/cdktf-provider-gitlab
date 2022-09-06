@@ -17,6 +17,7 @@ export * from './group-label';
 export * from './group-ldap-link';
 export * from './group-membership';
 export * from './group-project-file-template';
+export * from './group-saml-link';
 export * from './group-share-group';
 export * from './group-variable';
 export * from './instance-cluster';

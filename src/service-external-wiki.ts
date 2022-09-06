@@ -54,7 +54,7 @@ export class ServiceExternalWiki extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_service_external_wiki',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.17.0',
+        providerVersion: '3.18.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
