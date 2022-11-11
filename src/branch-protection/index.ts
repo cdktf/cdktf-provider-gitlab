@@ -51,7 +51,7 @@ export interface BranchProtectionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly pushAccessLevel?: string;
   /**
-  * Access levels allowed to unprotect. Valid values are: `developer`, `maintainer`.
+  * Access levels allowed to unprotect. Valid values are: `no one`, `developer`, `maintainer`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#unprotect_access_level BranchProtection#unprotect_access_level}
   */
@@ -516,7 +516,7 @@ export class BranchProtection extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_branch_protection',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.18.0',
+        providerVersion: '3.19.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
