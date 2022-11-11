@@ -270,7 +270,7 @@ export class DataGitlabProject extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_project',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.18.0',
+        providerVersion: '3.19.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -580,6 +580,11 @@ export class DataGitlabProject extends cdktf.TerraformDataSource {
   // ssh_url_to_repo - computed: true, optional: false, required: false
   public get sshUrlToRepo() {
     return this.getStringAttribute('ssh_url_to_repo');
+  }
+
+  // suggestion_commit_message - computed: true, optional: false, required: false
+  public get suggestionCommitMessage() {
+    return this.getStringAttribute('suggestion_commit_message');
   }
 
   // topics - computed: true, optional: false, required: false

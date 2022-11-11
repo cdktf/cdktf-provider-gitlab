@@ -413,6 +413,12 @@ This attribute is only used during resource creation, thus changes are suppresse
   */
   readonly squashOption?: string;
   /**
+  * The commit message used to apply merge request suggestions.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#suggestion_commit_message Project#suggestion_commit_message}
+  */
+  readonly suggestionCommitMessage?: string;
+  /**
   * The list of tags for a project; put array of tags, that should be finally assigned to a project. Use topics instead.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#tags Project#tags}
@@ -1074,7 +1080,7 @@ export class Project extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.18.0',
+        providerVersion: '3.19.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -1151,6 +1157,7 @@ export class Project extends cdktf.TerraformResource {
     this._snippetsEnabled = config.snippetsEnabled;
     this._squashCommitTemplate = config.squashCommitTemplate;
     this._squashOption = config.squashOption;
+    this._suggestionCommitMessage = config.suggestionCommitMessage;
     this._tags = config.tags;
     this._templateName = config.templateName;
     this._templateProjectId = config.templateProjectId;
@@ -2240,6 +2247,22 @@ export class Project extends cdktf.TerraformResource {
     return this.getStringAttribute('ssh_url_to_repo');
   }
 
+  // suggestion_commit_message - computed: false, optional: true, required: false
+  private _suggestionCommitMessage?: string; 
+  public get suggestionCommitMessage() {
+    return this.getStringAttribute('suggestion_commit_message');
+  }
+  public set suggestionCommitMessage(value: string) {
+    this._suggestionCommitMessage = value;
+  }
+  public resetSuggestionCommitMessage() {
+    this._suggestionCommitMessage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get suggestionCommitMessageInput() {
+    return this._suggestionCommitMessage;
+  }
+
   // tags - computed: true, optional: true, required: false
   private _tags?: string[]; 
   public get tags() {
@@ -2477,6 +2500,7 @@ export class Project extends cdktf.TerraformResource {
       snippets_enabled: cdktf.booleanToTerraform(this._snippetsEnabled),
       squash_commit_template: cdktf.stringToTerraform(this._squashCommitTemplate),
       squash_option: cdktf.stringToTerraform(this._squashOption),
+      suggestion_commit_message: cdktf.stringToTerraform(this._suggestionCommitMessage),
       tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       template_name: cdktf.stringToTerraform(this._templateName),
       template_project_id: cdktf.numberToTerraform(this._templateProjectId),

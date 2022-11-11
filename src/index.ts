@@ -51,6 +51,7 @@ export * as projectVariable from './project-variable';
 export * as releaseLink from './release-link';
 export * as repositoryFile from './repository-file';
 export * as runner from './runner';
+export * as serviceEmailsOnPush from './service-emails-on-push';
 export * as serviceExternalWiki from './service-external-wiki';
 export * as serviceGithub from './service-github';
 export * as serviceJira from './service-jira';

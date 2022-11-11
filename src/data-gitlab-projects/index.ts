@@ -1096,6 +1096,11 @@ export class DataGitlabProjectsProjectsOutputReference extends cdktf.ComplexObje
     return this._statistics;
   }
 
+  // suggestion_commit_message - computed: true, optional: false, required: false
+  public get suggestionCommitMessage() {
+    return this.getStringAttribute('suggestion_commit_message');
+  }
+
   // tag_list - computed: true, optional: false, required: false
   public get tagList() {
     return cdktf.Fn.tolist(this.getListAttribute('tag_list'));
@@ -1172,7 +1177,7 @@ export class DataGitlabProjects extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_projects',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.18.0',
+        providerVersion: '3.19.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

@@ -66,7 +66,7 @@ export class ProjectFreezePeriod extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_freeze_period',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.18.0',
+        providerVersion: '3.19.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
