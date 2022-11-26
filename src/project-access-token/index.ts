@@ -39,7 +39,7 @@ export interface ProjectAccessTokenConfig extends cdktf.TerraformMetaArguments {
   */
   readonly project: string;
   /**
-  * Valid values: `api`, `read_api`, `read_repository`, `write_repository`.
+  * Valid values: `api`, `read_api`, `read_repository`, `write_repository`, `read_registry`, `write_registry`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_access_token#scopes ProjectAccessToken#scopes}
   */
@@ -72,7 +72,7 @@ export class ProjectAccessToken extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_access_token',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.19.0',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
