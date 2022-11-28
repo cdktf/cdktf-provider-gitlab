@@ -205,7 +205,7 @@ export interface ProjectConfig extends cdktf.TerraformMetaArguments {
   */
   readonly mergeCommitTemplate?: string;
   /**
-  * Set to `ff` to create fast-forward merges
+  * Set the merge method. Valid values are `merge`, `rebase_merge`, `ff`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#merge_method Project#merge_method}
   */
@@ -313,7 +313,7 @@ export interface ProjectConfig extends cdktf.TerraformMetaArguments {
   */
   readonly path?: string;
   /**
-  * Enable pipelines for the project.
+  * Enable pipelines for the project. The `pipelines_enabled` field is being sent as `jobs_enabled` in the GitLab API calls.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#pipelines_enabled Project#pipelines_enabled}
   */
@@ -1080,7 +1080,7 @@ export class Project extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.19.0',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -1944,7 +1944,7 @@ export class Project extends cdktf.TerraformResource {
     return this._packagesEnabled;
   }
 
-  // pages_access_level - computed: false, optional: true, required: false
+  // pages_access_level - computed: true, optional: true, required: false
   private _pagesAccessLevel?: string; 
   public get pagesAccessLevel() {
     return this.getStringAttribute('pages_access_level');
@@ -1981,7 +1981,7 @@ export class Project extends cdktf.TerraformResource {
     return this.getStringAttribute('path_with_namespace');
   }
 
-  // pipelines_enabled - computed: false, optional: true, required: false
+  // pipelines_enabled - computed: true, optional: true, required: false
   private _pipelinesEnabled?: boolean | cdktf.IResolvable; 
   public get pipelinesEnabled() {
     return this.getBooleanAttribute('pipelines_enabled');
@@ -2013,7 +2013,7 @@ export class Project extends cdktf.TerraformResource {
     return this._printingMergeRequestLinkEnabled;
   }
 
-  // public_builds - computed: false, optional: true, required: false
+  // public_builds - computed: true, optional: true, required: false
   private _publicBuilds?: boolean | cdktf.IResolvable; 
   public get publicBuilds() {
     return this.getBooleanAttribute('public_builds');

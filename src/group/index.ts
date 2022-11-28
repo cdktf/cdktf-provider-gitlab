@@ -32,6 +32,12 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly emailsDisabled?: boolean | cdktf.IResolvable;
   /**
+  * Can be set by administrators only. Additional CI/CD minutes for this group.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group#extra_shared_runners_minutes_limit Group#extra_shared_runners_minutes_limit}
+  */
+  readonly extraSharedRunnersMinutesLimit?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group#id Group#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -44,6 +50,12 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group#lfs_enabled Group#lfs_enabled}
   */
   readonly lfsEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Users cannot be added to projects in this group.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group#membership_lock Group#membership_lock}
+  */
+  readonly membershipLock?: boolean | cdktf.IResolvable;
   /**
   * Defaults to false. Disable the capability of a group from getting mentioned.
   * 
@@ -99,6 +111,12 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly shareWithGroupLock?: boolean | cdktf.IResolvable;
   /**
+  * Can be set by administrators only. Maximum number of monthly CI/CD minutes for this group. Can be nil (default; inherit system default), 0 (unlimited), or > 0.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group#shared_runners_minutes_limit Group#shared_runners_minutes_limit}
+  */
+  readonly sharedRunnersMinutesLimit?: number;
+  /**
   * Defaults to owner. Allowed to create subgroups.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group#subgroup_creation_level Group#subgroup_creation_level}
@@ -144,7 +162,7 @@ export class Group extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.19.0',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -159,8 +177,10 @@ export class Group extends cdktf.TerraformResource {
     this._defaultBranchProtection = config.defaultBranchProtection;
     this._description = config.description;
     this._emailsDisabled = config.emailsDisabled;
+    this._extraSharedRunnersMinutesLimit = config.extraSharedRunnersMinutesLimit;
     this._id = config.id;
     this._lfsEnabled = config.lfsEnabled;
+    this._membershipLock = config.membershipLock;
     this._mentionsDisabled = config.mentionsDisabled;
     this._name = config.name;
     this._parentId = config.parentId;
@@ -170,6 +190,7 @@ export class Group extends cdktf.TerraformResource {
     this._requestAccessEnabled = config.requestAccessEnabled;
     this._requireTwoFactorAuthentication = config.requireTwoFactorAuthentication;
     this._shareWithGroupLock = config.shareWithGroupLock;
+    this._sharedRunnersMinutesLimit = config.sharedRunnersMinutesLimit;
     this._subgroupCreationLevel = config.subgroupCreationLevel;
     this._twoFactorGracePeriod = config.twoFactorGracePeriod;
     this._visibilityLevel = config.visibilityLevel;
@@ -243,6 +264,22 @@ export class Group extends cdktf.TerraformResource {
     return this._emailsDisabled;
   }
 
+  // extra_shared_runners_minutes_limit - computed: false, optional: true, required: false
+  private _extraSharedRunnersMinutesLimit?: number; 
+  public get extraSharedRunnersMinutesLimit() {
+    return this.getNumberAttribute('extra_shared_runners_minutes_limit');
+  }
+  public set extraSharedRunnersMinutesLimit(value: number) {
+    this._extraSharedRunnersMinutesLimit = value;
+  }
+  public resetExtraSharedRunnersMinutesLimit() {
+    this._extraSharedRunnersMinutesLimit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get extraSharedRunnersMinutesLimitInput() {
+    return this._extraSharedRunnersMinutesLimit;
+  }
+
   // full_name - computed: true, optional: false, required: false
   public get fullName() {
     return this.getStringAttribute('full_name');
@@ -283,6 +320,22 @@ export class Group extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get lfsEnabledInput() {
     return this._lfsEnabled;
+  }
+
+  // membership_lock - computed: false, optional: true, required: false
+  private _membershipLock?: boolean | cdktf.IResolvable; 
+  public get membershipLock() {
+    return this.getBooleanAttribute('membership_lock');
+  }
+  public set membershipLock(value: boolean | cdktf.IResolvable) {
+    this._membershipLock = value;
+  }
+  public resetMembershipLock() {
+    this._membershipLock = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get membershipLockInput() {
+    return this._membershipLock;
   }
 
   // mentions_disabled - computed: false, optional: true, required: false
@@ -428,6 +481,22 @@ export class Group extends cdktf.TerraformResource {
     return this._shareWithGroupLock;
   }
 
+  // shared_runners_minutes_limit - computed: false, optional: true, required: false
+  private _sharedRunnersMinutesLimit?: number; 
+  public get sharedRunnersMinutesLimit() {
+    return this.getNumberAttribute('shared_runners_minutes_limit');
+  }
+  public set sharedRunnersMinutesLimit(value: number) {
+    this._sharedRunnersMinutesLimit = value;
+  }
+  public resetSharedRunnersMinutesLimit() {
+    this._sharedRunnersMinutesLimit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sharedRunnersMinutesLimitInput() {
+    return this._sharedRunnersMinutesLimit;
+  }
+
   // subgroup_creation_level - computed: false, optional: true, required: false
   private _subgroupCreationLevel?: string; 
   public get subgroupCreationLevel() {
@@ -491,8 +560,10 @@ export class Group extends cdktf.TerraformResource {
       default_branch_protection: cdktf.numberToTerraform(this._defaultBranchProtection),
       description: cdktf.stringToTerraform(this._description),
       emails_disabled: cdktf.booleanToTerraform(this._emailsDisabled),
+      extra_shared_runners_minutes_limit: cdktf.numberToTerraform(this._extraSharedRunnersMinutesLimit),
       id: cdktf.stringToTerraform(this._id),
       lfs_enabled: cdktf.booleanToTerraform(this._lfsEnabled),
+      membership_lock: cdktf.booleanToTerraform(this._membershipLock),
       mentions_disabled: cdktf.booleanToTerraform(this._mentionsDisabled),
       name: cdktf.stringToTerraform(this._name),
       parent_id: cdktf.numberToTerraform(this._parentId),
@@ -502,6 +573,7 @@ export class Group extends cdktf.TerraformResource {
       request_access_enabled: cdktf.booleanToTerraform(this._requestAccessEnabled),
       require_two_factor_authentication: cdktf.booleanToTerraform(this._requireTwoFactorAuthentication),
       share_with_group_lock: cdktf.booleanToTerraform(this._shareWithGroupLock),
+      shared_runners_minutes_limit: cdktf.numberToTerraform(this._sharedRunnersMinutesLimit),
       subgroup_creation_level: cdktf.stringToTerraform(this._subgroupCreationLevel),
       two_factor_grace_period: cdktf.numberToTerraform(this._twoFactorGracePeriod),
       visibility_level: cdktf.stringToTerraform(this._visibilityLevel),

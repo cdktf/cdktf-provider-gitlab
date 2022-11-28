@@ -84,7 +84,7 @@ export class GroupVariable extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_variable',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.19.0',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
