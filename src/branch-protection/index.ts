@@ -20,7 +20,7 @@ export interface BranchProtectionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly branch: string;
   /**
-  * Can be set to true to require code owner approval before merging.
+  * Can be set to true to require code owner approval before merging. Only available own Premium and Ultimate instances.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#code_owner_approval_required BranchProtection#code_owner_approval_required}
   */
@@ -516,7 +516,7 @@ export class BranchProtection extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_branch_protection',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.19.0',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

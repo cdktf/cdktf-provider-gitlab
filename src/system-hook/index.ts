@@ -84,7 +84,7 @@ export class SystemHook extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_system_hook',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.19.0',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
