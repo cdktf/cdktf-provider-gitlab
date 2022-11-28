@@ -54,7 +54,7 @@ export class DataGitlabGroup extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_group',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.19.0',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -82,6 +82,11 @@ export class DataGitlabGroup extends cdktf.TerraformDataSource {
   // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
+  }
+
+  // extra_shared_runners_minutes_limit - computed: true, optional: false, required: false
+  public get extraSharedRunnersMinutesLimit() {
+    return this.getNumberAttribute('extra_shared_runners_minutes_limit');
   }
 
   // full_name - computed: true, optional: false, required: false
@@ -142,6 +147,11 @@ export class DataGitlabGroup extends cdktf.TerraformDataSource {
     return this.getBooleanAttribute('lfs_enabled');
   }
 
+  // membership_lock - computed: true, optional: false, required: false
+  public get membershipLock() {
+    return this.getBooleanAttribute('membership_lock');
+  }
+
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
@@ -170,6 +180,11 @@ export class DataGitlabGroup extends cdktf.TerraformDataSource {
   // runners_token - computed: true, optional: false, required: false
   public get runnersToken() {
     return this.getStringAttribute('runners_token');
+  }
+
+  // shared_runners_minutes_limit - computed: true, optional: false, required: false
+  public get sharedRunnersMinutesLimit() {
+    return this.getNumberAttribute('shared_runners_minutes_limit');
   }
 
   // visibility_level - computed: true, optional: false, required: false

@@ -614,6 +614,12 @@ export interface ApplicationSettingsConfig extends cdktf.TerraformMetaArguments 
   */
   readonly gravatarEnabled?: boolean | cdktf.IResolvable;
   /**
+  * Prevent overrides of default branch protection.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/application_settings#group_owners_can_manage_default_branch_protection ApplicationSettings#group_owners_can_manage_default_branch_protection}
+  */
+  readonly groupOwnersCanManageDefaultBranchProtection?: boolean | cdktf.IResolvable;
+  /**
   * Create new projects using hashed storage paths: Enable immutable, hash-based paths and repository names to store repositories on disk. This prevents repositories from having to be moved or renamed when the Project URL changes and may improve disk I/O performance. (Always enabled in GitLab versions 13.0 and later, configuration is scheduled for removal in 14.0).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/application_settings#hashed_storage_enabled ApplicationSettings#hashed_storage_enabled}
@@ -1482,7 +1488,7 @@ export class ApplicationSettings extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_application_settings',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.19.0',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
@@ -1594,6 +1600,7 @@ export class ApplicationSettings extends cdktf.TerraformResource {
     this._grafanaEnabled = config.grafanaEnabled;
     this._grafanaUrl = config.grafanaUrl;
     this._gravatarEnabled = config.gravatarEnabled;
+    this._groupOwnersCanManageDefaultBranchProtection = config.groupOwnersCanManageDefaultBranchProtection;
     this._hashedStorageEnabled = config.hashedStorageEnabled;
     this._helpPageHideCommercialContent = config.helpPageHideCommercialContent;
     this._helpPageSupportUrl = config.helpPageSupportUrl;
@@ -3354,6 +3361,22 @@ export class ApplicationSettings extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get gravatarEnabledInput() {
     return this._gravatarEnabled;
+  }
+
+  // group_owners_can_manage_default_branch_protection - computed: true, optional: true, required: false
+  private _groupOwnersCanManageDefaultBranchProtection?: boolean | cdktf.IResolvable; 
+  public get groupOwnersCanManageDefaultBranchProtection() {
+    return this.getBooleanAttribute('group_owners_can_manage_default_branch_protection');
+  }
+  public set groupOwnersCanManageDefaultBranchProtection(value: boolean | cdktf.IResolvable) {
+    this._groupOwnersCanManageDefaultBranchProtection = value;
+  }
+  public resetGroupOwnersCanManageDefaultBranchProtection() {
+    this._groupOwnersCanManageDefaultBranchProtection = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupOwnersCanManageDefaultBranchProtectionInput() {
+    return this._groupOwnersCanManageDefaultBranchProtection;
   }
 
   // hashed_storage_enabled - computed: true, optional: true, required: false
@@ -5703,6 +5726,7 @@ export class ApplicationSettings extends cdktf.TerraformResource {
       grafana_enabled: cdktf.booleanToTerraform(this._grafanaEnabled),
       grafana_url: cdktf.stringToTerraform(this._grafanaUrl),
       gravatar_enabled: cdktf.booleanToTerraform(this._gravatarEnabled),
+      group_owners_can_manage_default_branch_protection: cdktf.booleanToTerraform(this._groupOwnersCanManageDefaultBranchProtection),
       hashed_storage_enabled: cdktf.booleanToTerraform(this._hashedStorageEnabled),
       help_page_hide_commercial_content: cdktf.booleanToTerraform(this._helpPageHideCommercialContent),
       help_page_support_url: cdktf.stringToTerraform(this._helpPageSupportUrl),

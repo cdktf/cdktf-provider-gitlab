@@ -60,7 +60,7 @@ export class DataGitlabProjectVariable extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_project_variable',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.19.0',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,

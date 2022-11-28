@@ -33,7 +33,7 @@ export interface UserSshkeyConfig extends cdktf.TerraformMetaArguments {
   */
   readonly title: string;
   /**
-  * The ID of the user to add the ssh key to.
+  * The ID or username of the user.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_sshkey#user_id UserSshkey#user_id}
   */
@@ -66,7 +66,7 @@ export class UserSshkey extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_user_sshkey',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.19.0',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.14'
       },
       provider: config.provider,
