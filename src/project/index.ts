@@ -66,6 +66,18 @@ export interface ProjectConfig extends cdktf.TerraformMetaArguments {
   */
   readonly autocloseReferencedIssues?: boolean | cdktf.IResolvable;
   /**
+  * A local path to the avatar image to upload. **Note**: not available for imported resources.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#avatar Project#avatar}
+  */
+  readonly avatar?: string;
+  /**
+  * The hash of the avatar image. Use `filesha256("path/to/avatar.png")` whenever possible. **Note**: this is used to trigger an update of the avatar. If it's not given, but an avatar is given, the avatar will be updated each time.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#avatar_hash Project#avatar_hash}
+  */
+  readonly avatarHash?: string;
+  /**
   * Test coverage parsing for the project. This is deprecated feature in GitLab 15.0.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#build_coverage_regex Project#build_coverage_regex}
@@ -108,6 +120,12 @@ export interface ProjectConfig extends cdktf.TerraformMetaArguments {
   */
   readonly ciForwardDeploymentEnabled?: boolean | cdktf.IResolvable;
   /**
+  * Use separate caches for protected branches.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#ci_separated_caches Project#ci_separated_caches}
+  */
+  readonly ciSeparatedCaches?: boolean | cdktf.IResolvable;
+  /**
   * Set visibility of container registry, for this project. Valid values are `disabled`, `private`, `enabled`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#container_registry_access_level Project#container_registry_access_level}
@@ -143,6 +161,12 @@ export interface ProjectConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#external_authorization_classification_label Project#external_authorization_classification_label}
   */
   readonly externalAuthorizationClassificationLabel?: string;
+  /**
+  * The id of the project to fork. During create the project is forked and during an update the fork relation is changed.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#forked_from_project_id Project#forked_from_project_id}
+  */
+  readonly forkedFromProjectId?: number;
   /**
   * Set the forking access level. Valid values are `disabled`, `private`, `enabled`.
   * 
@@ -366,6 +390,12 @@ export interface ProjectConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#resolve_outdated_diff_discussions Project#resolve_outdated_diff_discussions}
   */
   readonly resolveOutdatedDiffDiscussions?: boolean | cdktf.IResolvable;
+  /**
+  * Allow only users with the Maintainer role to pass user-defined variables when triggering a pipeline.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#restrict_user_defined_variables Project#restrict_user_defined_variables}
+  */
+  readonly restrictUserDefinedVariables?: boolean | cdktf.IResolvable;
   /**
   * Set the security and compliance access level. Valid values are `disabled`, `private`, `enabled`.
   * 
@@ -1080,8 +1110,8 @@ export class Project extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.20.0',
-        providerVersionConstraint: '~> 3.14'
+        providerVersion: '15.7.1',
+        providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1100,6 +1130,8 @@ export class Project extends cdktf.TerraformResource {
     this._autoDevopsDeployStrategy = config.autoDevopsDeployStrategy;
     this._autoDevopsEnabled = config.autoDevopsEnabled;
     this._autocloseReferencedIssues = config.autocloseReferencedIssues;
+    this._avatar = config.avatar;
+    this._avatarHash = config.avatarHash;
     this._buildCoverageRegex = config.buildCoverageRegex;
     this._buildGitStrategy = config.buildGitStrategy;
     this._buildTimeout = config.buildTimeout;
@@ -1107,12 +1139,14 @@ export class Project extends cdktf.TerraformResource {
     this._ciConfigPath = config.ciConfigPath;
     this._ciDefaultGitDepth = config.ciDefaultGitDepth;
     this._ciForwardDeploymentEnabled = config.ciForwardDeploymentEnabled;
+    this._ciSeparatedCaches = config.ciSeparatedCaches;
     this._containerRegistryAccessLevel = config.containerRegistryAccessLevel;
     this._containerRegistryEnabled = config.containerRegistryEnabled;
     this._defaultBranch = config.defaultBranch;
     this._description = config.description;
     this._emailsDisabled = config.emailsDisabled;
     this._externalAuthorizationClassificationLabel = config.externalAuthorizationClassificationLabel;
+    this._forkedFromProjectId = config.forkedFromProjectId;
     this._forkingAccessLevel = config.forkingAccessLevel;
     this._groupWithProjectTemplatesId = config.groupWithProjectTemplatesId;
     this._id = config.id;
@@ -1150,6 +1184,7 @@ export class Project extends cdktf.TerraformResource {
     this._requestAccessEnabled = config.requestAccessEnabled;
     this._requirementsAccessLevel = config.requirementsAccessLevel;
     this._resolveOutdatedDiffDiscussions = config.resolveOutdatedDiffDiscussions;
+    this._restrictUserDefinedVariables = config.restrictUserDefinedVariables;
     this._securityAndComplianceAccessLevel = config.securityAndComplianceAccessLevel;
     this._sharedRunnersEnabled = config.sharedRunnersEnabled;
     this._skipWaitForDefaultBranchProtection = config.skipWaitForDefaultBranchProtection;
@@ -1174,7 +1209,7 @@ export class Project extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // allow_merge_on_skipped_pipeline - computed: false, optional: true, required: false
+  // allow_merge_on_skipped_pipeline - computed: true, optional: true, required: false
   private _allowMergeOnSkippedPipeline?: boolean | cdktf.IResolvable; 
   public get allowMergeOnSkippedPipeline() {
     return this.getBooleanAttribute('allow_merge_on_skipped_pipeline');
@@ -1318,6 +1353,43 @@ export class Project extends cdktf.TerraformResource {
     return this._autocloseReferencedIssues;
   }
 
+  // avatar - computed: false, optional: true, required: false
+  private _avatar?: string; 
+  public get avatar() {
+    return this.getStringAttribute('avatar');
+  }
+  public set avatar(value: string) {
+    this._avatar = value;
+  }
+  public resetAvatar() {
+    this._avatar = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get avatarInput() {
+    return this._avatar;
+  }
+
+  // avatar_hash - computed: true, optional: true, required: false
+  private _avatarHash?: string; 
+  public get avatarHash() {
+    return this.getStringAttribute('avatar_hash');
+  }
+  public set avatarHash(value: string) {
+    this._avatarHash = value;
+  }
+  public resetAvatarHash() {
+    this._avatarHash = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get avatarHashInput() {
+    return this._avatarHash;
+  }
+
+  // avatar_url - computed: true, optional: false, required: false
+  public get avatarUrl() {
+    return this.getStringAttribute('avatar_url');
+  }
+
   // build_coverage_regex - computed: false, optional: true, required: false
   private _buildCoverageRegex?: string; 
   public get buildCoverageRegex() {
@@ -1414,7 +1486,7 @@ export class Project extends cdktf.TerraformResource {
     return this._ciDefaultGitDepth;
   }
 
-  // ci_forward_deployment_enabled - computed: false, optional: true, required: false
+  // ci_forward_deployment_enabled - computed: true, optional: true, required: false
   private _ciForwardDeploymentEnabled?: boolean | cdktf.IResolvable; 
   public get ciForwardDeploymentEnabled() {
     return this.getBooleanAttribute('ci_forward_deployment_enabled');
@@ -1428,6 +1500,22 @@ export class Project extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get ciForwardDeploymentEnabledInput() {
     return this._ciForwardDeploymentEnabled;
+  }
+
+  // ci_separated_caches - computed: true, optional: true, required: false
+  private _ciSeparatedCaches?: boolean | cdktf.IResolvable; 
+  public get ciSeparatedCaches() {
+    return this.getBooleanAttribute('ci_separated_caches');
+  }
+  public set ciSeparatedCaches(value: boolean | cdktf.IResolvable) {
+    this._ciSeparatedCaches = value;
+  }
+  public resetCiSeparatedCaches() {
+    this._ciSeparatedCaches = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ciSeparatedCachesInput() {
+    return this._ciSeparatedCaches;
   }
 
   // container_registry_access_level - computed: true, optional: true, required: false
@@ -1446,7 +1534,7 @@ export class Project extends cdktf.TerraformResource {
     return this._containerRegistryAccessLevel;
   }
 
-  // container_registry_enabled - computed: false, optional: true, required: false
+  // container_registry_enabled - computed: true, optional: true, required: false
   private _containerRegistryEnabled?: boolean | cdktf.IResolvable; 
   public get containerRegistryEnabled() {
     return this.getBooleanAttribute('container_registry_enabled');
@@ -1524,6 +1612,22 @@ export class Project extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get externalAuthorizationClassificationLabelInput() {
     return this._externalAuthorizationClassificationLabel;
+  }
+
+  // forked_from_project_id - computed: false, optional: true, required: false
+  private _forkedFromProjectId?: number; 
+  public get forkedFromProjectId() {
+    return this.getNumberAttribute('forked_from_project_id');
+  }
+  public set forkedFromProjectId(value: number) {
+    this._forkedFromProjectId = value;
+  }
+  public resetForkedFromProjectId() {
+    this._forkedFromProjectId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forkedFromProjectIdInput() {
+    return this._forkedFromProjectId;
   }
 
   // forking_access_level - computed: true, optional: true, required: false
@@ -1627,7 +1731,7 @@ export class Project extends cdktf.TerraformResource {
     return this._issuesAccessLevel;
   }
 
-  // issues_enabled - computed: false, optional: true, required: false
+  // issues_enabled - computed: true, optional: true, required: false
   private _issuesEnabled?: boolean | cdktf.IResolvable; 
   public get issuesEnabled() {
     return this.getBooleanAttribute('issues_enabled');
@@ -1659,7 +1763,7 @@ export class Project extends cdktf.TerraformResource {
     return this._issuesTemplate;
   }
 
-  // lfs_enabled - computed: false, optional: true, required: false
+  // lfs_enabled - computed: true, optional: true, required: false
   private _lfsEnabled?: boolean | cdktf.IResolvable; 
   public get lfsEnabled() {
     return this.getBooleanAttribute('lfs_enabled');
@@ -1691,7 +1795,7 @@ export class Project extends cdktf.TerraformResource {
     return this._mergeCommitTemplate;
   }
 
-  // merge_method - computed: false, optional: true, required: false
+  // merge_method - computed: true, optional: true, required: false
   private _mergeMethod?: string; 
   public get mergeMethod() {
     return this.getStringAttribute('merge_method');
@@ -1707,7 +1811,7 @@ export class Project extends cdktf.TerraformResource {
     return this._mergeMethod;
   }
 
-  // merge_pipelines_enabled - computed: false, optional: true, required: false
+  // merge_pipelines_enabled - computed: true, optional: true, required: false
   private _mergePipelinesEnabled?: boolean | cdktf.IResolvable; 
   public get mergePipelinesEnabled() {
     return this.getBooleanAttribute('merge_pipelines_enabled');
@@ -1739,7 +1843,7 @@ export class Project extends cdktf.TerraformResource {
     return this._mergeRequestsAccessLevel;
   }
 
-  // merge_requests_enabled - computed: false, optional: true, required: false
+  // merge_requests_enabled - computed: true, optional: true, required: false
   private _mergeRequestsEnabled?: boolean | cdktf.IResolvable; 
   public get mergeRequestsEnabled() {
     return this.getBooleanAttribute('merge_requests_enabled');
@@ -1771,7 +1875,7 @@ export class Project extends cdktf.TerraformResource {
     return this._mergeRequestsTemplate;
   }
 
-  // merge_trains_enabled - computed: false, optional: true, required: false
+  // merge_trains_enabled - computed: true, optional: true, required: false
   private _mergeTrainsEnabled?: boolean | cdktf.IResolvable; 
   public get mergeTrainsEnabled() {
     return this.getBooleanAttribute('merge_trains_enabled');
@@ -1803,7 +1907,7 @@ export class Project extends cdktf.TerraformResource {
     return this._mirror;
   }
 
-  // mirror_overwrites_diverged_branches - computed: false, optional: true, required: false
+  // mirror_overwrites_diverged_branches - computed: true, optional: true, required: false
   private _mirrorOverwritesDivergedBranches?: boolean | cdktf.IResolvable; 
   public get mirrorOverwritesDivergedBranches() {
     return this.getBooleanAttribute('mirror_overwrites_diverged_branches');
@@ -1819,7 +1923,7 @@ export class Project extends cdktf.TerraformResource {
     return this._mirrorOverwritesDivergedBranches;
   }
 
-  // mirror_trigger_builds - computed: false, optional: true, required: false
+  // mirror_trigger_builds - computed: true, optional: true, required: false
   private _mirrorTriggerBuilds?: boolean | cdktf.IResolvable; 
   public get mirrorTriggerBuilds() {
     return this.getBooleanAttribute('mirror_trigger_builds');
@@ -1864,7 +1968,7 @@ export class Project extends cdktf.TerraformResource {
     return this._namespaceId;
   }
 
-  // only_allow_merge_if_all_discussions_are_resolved - computed: false, optional: true, required: false
+  // only_allow_merge_if_all_discussions_are_resolved - computed: true, optional: true, required: false
   private _onlyAllowMergeIfAllDiscussionsAreResolved?: boolean | cdktf.IResolvable; 
   public get onlyAllowMergeIfAllDiscussionsAreResolved() {
     return this.getBooleanAttribute('only_allow_merge_if_all_discussions_are_resolved');
@@ -1880,7 +1984,7 @@ export class Project extends cdktf.TerraformResource {
     return this._onlyAllowMergeIfAllDiscussionsAreResolved;
   }
 
-  // only_allow_merge_if_pipeline_succeeds - computed: false, optional: true, required: false
+  // only_allow_merge_if_pipeline_succeeds - computed: true, optional: true, required: false
   private _onlyAllowMergeIfPipelineSucceeds?: boolean | cdktf.IResolvable; 
   public get onlyAllowMergeIfPipelineSucceeds() {
     return this.getBooleanAttribute('only_allow_merge_if_pipeline_succeeds');
@@ -1896,7 +2000,7 @@ export class Project extends cdktf.TerraformResource {
     return this._onlyAllowMergeIfPipelineSucceeds;
   }
 
-  // only_mirror_protected_branches - computed: false, optional: true, required: false
+  // only_mirror_protected_branches - computed: true, optional: true, required: false
   private _onlyMirrorProtectedBranches?: boolean | cdktf.IResolvable; 
   public get onlyMirrorProtectedBranches() {
     return this.getBooleanAttribute('only_mirror_protected_branches');
@@ -1928,7 +2032,7 @@ export class Project extends cdktf.TerraformResource {
     return this._operationsAccessLevel;
   }
 
-  // packages_enabled - computed: false, optional: true, required: false
+  // packages_enabled - computed: true, optional: true, required: false
   private _packagesEnabled?: boolean | cdktf.IResolvable; 
   public get packagesEnabled() {
     return this.getBooleanAttribute('packages_enabled');
@@ -1997,7 +2101,7 @@ export class Project extends cdktf.TerraformResource {
     return this._pipelinesEnabled;
   }
 
-  // printing_merge_request_link_enabled - computed: false, optional: true, required: false
+  // printing_merge_request_link_enabled - computed: true, optional: true, required: false
   private _printingMergeRequestLinkEnabled?: boolean | cdktf.IResolvable; 
   public get printingMergeRequestLinkEnabled() {
     return this.getBooleanAttribute('printing_merge_request_link_enabled');
@@ -2029,7 +2133,7 @@ export class Project extends cdktf.TerraformResource {
     return this._publicBuilds;
   }
 
-  // remove_source_branch_after_merge - computed: false, optional: true, required: false
+  // remove_source_branch_after_merge - computed: true, optional: true, required: false
   private _removeSourceBranchAfterMerge?: boolean | cdktf.IResolvable; 
   public get removeSourceBranchAfterMerge() {
     return this.getBooleanAttribute('remove_source_branch_after_merge');
@@ -2077,7 +2181,7 @@ export class Project extends cdktf.TerraformResource {
     return this._repositoryStorage;
   }
 
-  // request_access_enabled - computed: false, optional: true, required: false
+  // request_access_enabled - computed: true, optional: true, required: false
   private _requestAccessEnabled?: boolean | cdktf.IResolvable; 
   public get requestAccessEnabled() {
     return this.getBooleanAttribute('request_access_enabled');
@@ -2123,6 +2227,22 @@ export class Project extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get resolveOutdatedDiffDiscussionsInput() {
     return this._resolveOutdatedDiffDiscussions;
+  }
+
+  // restrict_user_defined_variables - computed: false, optional: true, required: false
+  private _restrictUserDefinedVariables?: boolean | cdktf.IResolvable; 
+  public get restrictUserDefinedVariables() {
+    return this.getBooleanAttribute('restrict_user_defined_variables');
+  }
+  public set restrictUserDefinedVariables(value: boolean | cdktf.IResolvable) {
+    this._restrictUserDefinedVariables = value;
+  }
+  public resetRestrictUserDefinedVariables() {
+    this._restrictUserDefinedVariables = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restrictUserDefinedVariablesInput() {
+    return this._restrictUserDefinedVariables;
   }
 
   // runners_token - computed: true, optional: false, required: false
@@ -2194,7 +2314,7 @@ export class Project extends cdktf.TerraformResource {
     return this._snippetsAccessLevel;
   }
 
-  // snippets_enabled - computed: false, optional: true, required: false
+  // snippets_enabled - computed: true, optional: true, required: false
   private _snippetsEnabled?: boolean | cdktf.IResolvable; 
   public get snippetsEnabled() {
     return this.getBooleanAttribute('snippets_enabled');
@@ -2226,7 +2346,7 @@ export class Project extends cdktf.TerraformResource {
     return this._squashCommitTemplate;
   }
 
-  // squash_option - computed: false, optional: true, required: false
+  // squash_option - computed: true, optional: true, required: false
   private _squashOption?: string; 
   public get squashOption() {
     return this.getStringAttribute('squash_option');
@@ -2343,7 +2463,7 @@ export class Project extends cdktf.TerraformResource {
     return this._useCustomTemplate;
   }
 
-  // visibility_level - computed: false, optional: true, required: false
+  // visibility_level - computed: true, optional: true, required: false
   private _visibilityLevel?: string; 
   public get visibilityLevel() {
     return this.getStringAttribute('visibility_level');
@@ -2380,7 +2500,7 @@ export class Project extends cdktf.TerraformResource {
     return this._wikiAccessLevel;
   }
 
-  // wiki_enabled - computed: false, optional: true, required: false
+  // wiki_enabled - computed: true, optional: true, required: false
   private _wikiEnabled?: boolean | cdktf.IResolvable; 
   public get wikiEnabled() {
     return this.getBooleanAttribute('wiki_enabled');
@@ -2443,6 +2563,8 @@ export class Project extends cdktf.TerraformResource {
       auto_devops_deploy_strategy: cdktf.stringToTerraform(this._autoDevopsDeployStrategy),
       auto_devops_enabled: cdktf.booleanToTerraform(this._autoDevopsEnabled),
       autoclose_referenced_issues: cdktf.booleanToTerraform(this._autocloseReferencedIssues),
+      avatar: cdktf.stringToTerraform(this._avatar),
+      avatar_hash: cdktf.stringToTerraform(this._avatarHash),
       build_coverage_regex: cdktf.stringToTerraform(this._buildCoverageRegex),
       build_git_strategy: cdktf.stringToTerraform(this._buildGitStrategy),
       build_timeout: cdktf.numberToTerraform(this._buildTimeout),
@@ -2450,12 +2572,14 @@ export class Project extends cdktf.TerraformResource {
       ci_config_path: cdktf.stringToTerraform(this._ciConfigPath),
       ci_default_git_depth: cdktf.numberToTerraform(this._ciDefaultGitDepth),
       ci_forward_deployment_enabled: cdktf.booleanToTerraform(this._ciForwardDeploymentEnabled),
+      ci_separated_caches: cdktf.booleanToTerraform(this._ciSeparatedCaches),
       container_registry_access_level: cdktf.stringToTerraform(this._containerRegistryAccessLevel),
       container_registry_enabled: cdktf.booleanToTerraform(this._containerRegistryEnabled),
       default_branch: cdktf.stringToTerraform(this._defaultBranch),
       description: cdktf.stringToTerraform(this._description),
       emails_disabled: cdktf.booleanToTerraform(this._emailsDisabled),
       external_authorization_classification_label: cdktf.stringToTerraform(this._externalAuthorizationClassificationLabel),
+      forked_from_project_id: cdktf.numberToTerraform(this._forkedFromProjectId),
       forking_access_level: cdktf.stringToTerraform(this._forkingAccessLevel),
       group_with_project_templates_id: cdktf.numberToTerraform(this._groupWithProjectTemplatesId),
       id: cdktf.stringToTerraform(this._id),
@@ -2493,6 +2617,7 @@ export class Project extends cdktf.TerraformResource {
       request_access_enabled: cdktf.booleanToTerraform(this._requestAccessEnabled),
       requirements_access_level: cdktf.stringToTerraform(this._requirementsAccessLevel),
       resolve_outdated_diff_discussions: cdktf.booleanToTerraform(this._resolveOutdatedDiffDiscussions),
+      restrict_user_defined_variables: cdktf.booleanToTerraform(this._restrictUserDefinedVariables),
       security_and_compliance_access_level: cdktf.stringToTerraform(this._securityAndComplianceAccessLevel),
       shared_runners_enabled: cdktf.booleanToTerraform(this._sharedRunnersEnabled),
       skip_wait_for_default_branch_protection: cdktf.booleanToTerraform(this._skipWaitForDefaultBranchProtection),

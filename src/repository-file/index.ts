@@ -57,6 +57,12 @@ export interface RepositoryFileConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Enable overwriting existing files, defaults to `false`. This attribute is only used during `create` and must be use carefully. We suggest to use `imports` whenever possible and limit the use of this attribute for when the project was imported on the same `apply`. This attribute is not supported during a resource import.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/repository_file#overwrite_on_create RepositoryFile#overwrite_on_create}
+  */
+  readonly overwriteOnCreate?: boolean | cdktf.IResolvable;
+  /**
   * The name or ID of the project.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/repository_file#project RepositoryFile#project}
@@ -231,8 +237,8 @@ export class RepositoryFile extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_repository_file',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.20.0',
-        providerVersionConstraint: '~> 3.14'
+        providerVersion: '15.7.1',
+        providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -250,6 +256,7 @@ export class RepositoryFile extends cdktf.TerraformResource {
     this._executeFilemode = config.executeFilemode;
     this._filePath = config.filePath;
     this._id = config.id;
+    this._overwriteOnCreate = config.overwriteOnCreate;
     this._project = config.project;
     this._startBranch = config.startBranch;
     this._timeouts.internalValue = config.timeouts;
@@ -405,6 +412,22 @@ export class RepositoryFile extends cdktf.TerraformResource {
     return this.getStringAttribute('last_commit_id');
   }
 
+  // overwrite_on_create - computed: false, optional: true, required: false
+  private _overwriteOnCreate?: boolean | cdktf.IResolvable; 
+  public get overwriteOnCreate() {
+    return this.getBooleanAttribute('overwrite_on_create');
+  }
+  public set overwriteOnCreate(value: boolean | cdktf.IResolvable) {
+    this._overwriteOnCreate = value;
+  }
+  public resetOverwriteOnCreate() {
+    this._overwriteOnCreate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get overwriteOnCreateInput() {
+    return this._overwriteOnCreate;
+  }
+
   // project - computed: false, optional: false, required: true
   private _project?: string; 
   public get project() {
@@ -474,6 +497,7 @@ export class RepositoryFile extends cdktf.TerraformResource {
       execute_filemode: cdktf.booleanToTerraform(this._executeFilemode),
       file_path: cdktf.stringToTerraform(this._filePath),
       id: cdktf.stringToTerraform(this._id),
+      overwrite_on_create: cdktf.booleanToTerraform(this._overwriteOnCreate),
       project: cdktf.stringToTerraform(this._project),
       start_branch: cdktf.stringToTerraform(this._startBranch),
       timeouts: repositoryFileTimeoutsToTerraform(this._timeouts.internalValue),

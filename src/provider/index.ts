@@ -32,7 +32,7 @@ export interface GitlabProviderConfig {
   */
   readonly clientKey?: string;
   /**
-  * (Experimental) By default the provider does a dummy request to get the current user in order to verify that the provider configuration is correct and the GitLab API is reachable. Turn it off, to skip this check. This may be useful if the GitLab instance does not yet exist and is created within the same terraform module. This is an experimental feature and may change in the future. Please make sure to always keep backups of your state.
+  * (Experimental) By default the provider does a dummy request to get the current user in order to verify that the provider configuration is correct and the GitLab API is reachable. Set this to `false` to skip this check. This may be useful if the GitLab instance does not yet exist and is created within the same terraform module. This is an experimental feature and may change in the future. Please make sure to always keep backups of your state.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab#early_auth_check GitlabProvider#early_auth_check}
   */
@@ -48,7 +48,7 @@ export interface GitlabProviderConfig {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab#token GitlabProvider#token}
   */
-  readonly token: string;
+  readonly token?: string;
   /**
   * Alias name
   * 
@@ -76,15 +76,15 @@ export class GitlabProvider extends cdktf.TerraformProvider {
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options GitlabProviderConfig
+  * @param options GitlabProviderConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: GitlabProviderConfig) {
+  public constructor(scope: Construct, id: string, config: GitlabProviderConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'gitlab',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.20.0',
-        providerVersionConstraint: '~> 3.14'
+        providerVersion: '15.7.1',
+        providerVersionConstraint: '~> 15.7'
       },
       terraformProviderSource: 'gitlabhq/gitlab'
     });
@@ -198,13 +198,16 @@ export class GitlabProvider extends cdktf.TerraformProvider {
     return this._insecure;
   }
 
-  // token - computed: false, optional: false, required: true
+  // token - computed: false, optional: true, required: false
   private _token?: string; 
   public get token() {
     return this._token;
   }
   public set token(value: string | undefined) {
     this._token = value;
+  }
+  public resetToken() {
+    this._token = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get tokenInput() {

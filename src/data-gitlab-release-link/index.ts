@@ -60,8 +60,8 @@ export class DataGitlabReleaseLink extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_release_link',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.20.0',
-        providerVersionConstraint: '~> 3.14'
+        providerVersion: '15.7.1',
+        providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

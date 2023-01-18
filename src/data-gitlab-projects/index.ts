@@ -1044,6 +1044,11 @@ export class DataGitlabProjectsProjectsOutputReference extends cdktf.ComplexObje
     return this.getBooleanAttribute('resolve_outdated_diff_discussions');
   }
 
+  // restrict_user_defined_variables - computed: true, optional: false, required: false
+  public get restrictUserDefinedVariables() {
+    return this.getBooleanAttribute('restrict_user_defined_variables');
+  }
+
   // runners_token - computed: true, optional: false, required: false
   public get runnersToken() {
     return this.getStringAttribute('runners_token');
@@ -1177,8 +1182,8 @@ export class DataGitlabProjects extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_projects',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.20.0',
-        providerVersionConstraint: '~> 3.14'
+        providerVersion: '15.7.1',
+        providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
