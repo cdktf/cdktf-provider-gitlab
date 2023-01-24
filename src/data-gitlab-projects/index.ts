@@ -51,7 +51,7 @@ export interface DataGitlabProjectsConfig extends cdktf.TerraformMetaArguments {
   */
   readonly minAccessLevel?: number;
   /**
-  * Return projects ordered by `id`, `name`, `path`, `created_at`, `updated_at`, or `last_activity_at` fields. Default is `created_at`.
+  * Return projects ordered ordered by: `id`, `name`, `path`, `created_at`, `updated_at`, `last_activity_at`, `similarity`, `repository_size`, `storage_size`, `packages_size`, `wiki_size`. Some values or only available in certain circumstances. See [upstream docs](https://docs.gitlab.com/ee/api/projects.html#list-all-projects) for details.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/projects#order_by DataGitlabProjects#order_by}
   */
@@ -1044,6 +1044,11 @@ export class DataGitlabProjectsProjectsOutputReference extends cdktf.ComplexObje
     return this.getBooleanAttribute('resolve_outdated_diff_discussions');
   }
 
+  // restrict_user_defined_variables - computed: true, optional: false, required: false
+  public get restrictUserDefinedVariables() {
+    return this.getBooleanAttribute('restrict_user_defined_variables');
+  }
+
   // runners_token - computed: true, optional: false, required: false
   public get runnersToken() {
     return this.getStringAttribute('runners_token');
@@ -1177,8 +1182,8 @@ export class DataGitlabProjects extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_projects',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.20.0',
-        providerVersionConstraint: '~> 3.14'
+        providerVersion: '15.8.0',
+        providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

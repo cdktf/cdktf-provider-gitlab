@@ -168,8 +168,8 @@ export class DataGitlabBranch extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_branch',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.20.0',
-        providerVersionConstraint: '~> 3.14'
+        providerVersion: '15.8.0',
+        providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

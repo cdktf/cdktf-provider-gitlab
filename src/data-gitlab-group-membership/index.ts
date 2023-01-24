@@ -32,6 +32,12 @@ export interface DataGitlabGroupMembershipConfig extends cdktf.TerraformMetaArgu
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
+  /**
+  * Return all project members including members through ancestor groups.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/group_membership#inherited DataGitlabGroupMembership#inherited}
+  */
+  readonly inherited?: boolean | cdktf.IResolvable;
 }
 export interface DataGitlabGroupMembershipMembers {
 }
@@ -159,8 +165,8 @@ export class DataGitlabGroupMembership extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_group_membership',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.20.0',
-        providerVersionConstraint: '~> 3.14'
+        providerVersion: '15.8.0',
+        providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -174,6 +180,7 @@ export class DataGitlabGroupMembership extends cdktf.TerraformDataSource {
     this._fullPath = config.fullPath;
     this._groupId = config.groupId;
     this._id = config.id;
+    this._inherited = config.inherited;
   }
 
   // ==========
@@ -244,6 +251,22 @@ export class DataGitlabGroupMembership extends cdktf.TerraformDataSource {
     return this._id;
   }
 
+  // inherited - computed: false, optional: true, required: false
+  private _inherited?: boolean | cdktf.IResolvable; 
+  public get inherited() {
+    return this.getBooleanAttribute('inherited');
+  }
+  public set inherited(value: boolean | cdktf.IResolvable) {
+    this._inherited = value;
+  }
+  public resetInherited() {
+    this._inherited = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inheritedInput() {
+    return this._inherited;
+  }
+
   // members - computed: true, optional: false, required: false
   private _members = new DataGitlabGroupMembershipMembersList(this, "members", false);
   public get members() {
@@ -260,6 +283,7 @@ export class DataGitlabGroupMembership extends cdktf.TerraformDataSource {
       full_path: cdktf.stringToTerraform(this._fullPath),
       group_id: cdktf.numberToTerraform(this._groupId),
       id: cdktf.stringToTerraform(this._id),
+      inherited: cdktf.booleanToTerraform(this._inherited),
     };
   }
 }

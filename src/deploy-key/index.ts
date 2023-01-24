@@ -66,8 +66,8 @@ export class DeployKey extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_deploy_key',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.20.0',
-        providerVersionConstraint: '~> 3.14'
+        providerVersion: '15.8.0',
+        providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
