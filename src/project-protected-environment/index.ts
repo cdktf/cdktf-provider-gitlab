@@ -14,13 +14,6 @@ export interface ProjectProtectedEnvironmentConfig extends cdktf.TerraformMetaAr
   */
   readonly environment: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_protected_environment#id ProjectProtectedEnvironment#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * The ID or full path of the project which the protected environment is created against.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_protected_environment#project ProjectProtectedEnvironment#project}
@@ -37,7 +30,7 @@ export interface ProjectProtectedEnvironmentConfig extends cdktf.TerraformMetaAr
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_protected_environment#deploy_access_levels ProjectProtectedEnvironment#deploy_access_levels}
   */
-  readonly deployAccessLevels: ProjectProtectedEnvironmentDeployAccessLevels[] | cdktf.IResolvable;
+  readonly deployAccessLevels?: ProjectProtectedEnvironmentDeployAccessLevels[] | cdktf.IResolvable;
 }
 export interface ProjectProtectedEnvironmentDeployAccessLevels {
   /**
@@ -128,7 +121,7 @@ export class ProjectProtectedEnvironmentDeployAccessLevelsOutputReference extend
     }
   }
 
-  // access_level - computed: true, optional: true, required: false
+  // access_level - computed: false, optional: true, required: false
   private _accessLevel?: string; 
   public get accessLevel() {
     return this.getStringAttribute('access_level');
@@ -228,8 +221,8 @@ export class ProjectProtectedEnvironment extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_protected_environment',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.20.0',
-        providerVersionConstraint: '~> 3.14'
+        providerVersion: '15.8.0',
+        providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -240,7 +233,6 @@ export class ProjectProtectedEnvironment extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._environment = config.environment;
-    this._id = config.id;
     this._project = config.project;
     this._requiredApprovalCount = config.requiredApprovalCount;
     this._deployAccessLevels.internalValue = config.deployAccessLevels;
@@ -263,20 +255,9 @@ export class ProjectProtectedEnvironment extends cdktf.TerraformResource {
     return this._environment;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // project - computed: false, optional: false, required: true
@@ -292,7 +273,7 @@ export class ProjectProtectedEnvironment extends cdktf.TerraformResource {
     return this._project;
   }
 
-  // required_approval_count - computed: false, optional: true, required: false
+  // required_approval_count - computed: true, optional: true, required: false
   private _requiredApprovalCount?: number; 
   public get requiredApprovalCount() {
     return this.getNumberAttribute('required_approval_count');
@@ -308,13 +289,16 @@ export class ProjectProtectedEnvironment extends cdktf.TerraformResource {
     return this._requiredApprovalCount;
   }
 
-  // deploy_access_levels - computed: false, optional: false, required: true
-  private _deployAccessLevels = new ProjectProtectedEnvironmentDeployAccessLevelsList(this, "deploy_access_levels", false);
+  // deploy_access_levels - computed: false, optional: true, required: false
+  private _deployAccessLevels = new ProjectProtectedEnvironmentDeployAccessLevelsList(this, "deploy_access_levels", true);
   public get deployAccessLevels() {
     return this._deployAccessLevels;
   }
   public putDeployAccessLevels(value: ProjectProtectedEnvironmentDeployAccessLevels[] | cdktf.IResolvable) {
     this._deployAccessLevels.internalValue = value;
+  }
+  public resetDeployAccessLevels() {
+    this._deployAccessLevels.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get deployAccessLevelsInput() {
@@ -328,7 +312,6 @@ export class ProjectProtectedEnvironment extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       environment: cdktf.stringToTerraform(this._environment),
-      id: cdktf.stringToTerraform(this._id),
       project: cdktf.stringToTerraform(this._project),
       required_approval_count: cdktf.numberToTerraform(this._requiredApprovalCount),
       deploy_access_levels: cdktf.listMapper(projectProtectedEnvironmentDeployAccessLevelsToTerraform, true)(this._deployAccessLevels.internalValue),

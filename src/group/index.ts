@@ -14,6 +14,18 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly autoDevopsEnabled?: boolean | cdktf.IResolvable;
   /**
+  * A local path to the avatar image to upload. **Note**: not available for imported resources.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group#avatar Group#avatar}
+  */
+  readonly avatar?: string;
+  /**
+  * The hash of the avatar image. Use `filesha256("path/to/avatar.png")` whenever possible. **Note**: this is used to trigger an update of the avatar. If it's not given, but an avatar is given, the avatar will be updated each time.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group#avatar_hash Group#avatar_hash}
+  */
+  readonly avatarHash?: string;
+  /**
   * Defaults to 2. See https://docs.gitlab.com/ee/api/groups.html#options-for-default_branch_protection
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group#default_branch_protection Group#default_branch_protection}
@@ -44,6 +56,12 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
+  /**
+  * A list of IP addresses or subnet masks to restrict group access. Will be concatenated together into a comma separated string. Only allowed on top level groups.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group#ip_restriction_ranges Group#ip_restriction_ranges}
+  */
+  readonly ipRestrictionRanges?: string[];
   /**
   * Defaults to true. Enable/disable Large File Storage (LFS) for the projects in this group.
   * 
@@ -162,8 +180,8 @@ export class Group extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.20.0',
-        providerVersionConstraint: '~> 3.14'
+        providerVersion: '15.8.0',
+        providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -174,11 +192,14 @@ export class Group extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._autoDevopsEnabled = config.autoDevopsEnabled;
+    this._avatar = config.avatar;
+    this._avatarHash = config.avatarHash;
     this._defaultBranchProtection = config.defaultBranchProtection;
     this._description = config.description;
     this._emailsDisabled = config.emailsDisabled;
     this._extraSharedRunnersMinutesLimit = config.extraSharedRunnersMinutesLimit;
     this._id = config.id;
+    this._ipRestrictionRanges = config.ipRestrictionRanges;
     this._lfsEnabled = config.lfsEnabled;
     this._membershipLock = config.membershipLock;
     this._mentionsDisabled = config.mentionsDisabled;
@@ -214,6 +235,43 @@ export class Group extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get autoDevopsEnabledInput() {
     return this._autoDevopsEnabled;
+  }
+
+  // avatar - computed: false, optional: true, required: false
+  private _avatar?: string; 
+  public get avatar() {
+    return this.getStringAttribute('avatar');
+  }
+  public set avatar(value: string) {
+    this._avatar = value;
+  }
+  public resetAvatar() {
+    this._avatar = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get avatarInput() {
+    return this._avatar;
+  }
+
+  // avatar_hash - computed: true, optional: true, required: false
+  private _avatarHash?: string; 
+  public get avatarHash() {
+    return this.getStringAttribute('avatar_hash');
+  }
+  public set avatarHash(value: string) {
+    this._avatarHash = value;
+  }
+  public resetAvatarHash() {
+    this._avatarHash = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get avatarHashInput() {
+    return this._avatarHash;
+  }
+
+  // avatar_url - computed: true, optional: false, required: false
+  public get avatarUrl() {
+    return this.getStringAttribute('avatar_url');
   }
 
   // default_branch_protection - computed: false, optional: true, required: false
@@ -264,7 +322,7 @@ export class Group extends cdktf.TerraformResource {
     return this._emailsDisabled;
   }
 
-  // extra_shared_runners_minutes_limit - computed: false, optional: true, required: false
+  // extra_shared_runners_minutes_limit - computed: true, optional: true, required: false
   private _extraSharedRunnersMinutesLimit?: number; 
   public get extraSharedRunnersMinutesLimit() {
     return this.getNumberAttribute('extra_shared_runners_minutes_limit');
@@ -304,6 +362,22 @@ export class Group extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // ip_restriction_ranges - computed: false, optional: true, required: false
+  private _ipRestrictionRanges?: string[]; 
+  public get ipRestrictionRanges() {
+    return this.getListAttribute('ip_restriction_ranges');
+  }
+  public set ipRestrictionRanges(value: string[]) {
+    this._ipRestrictionRanges = value;
+  }
+  public resetIpRestrictionRanges() {
+    this._ipRestrictionRanges = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipRestrictionRangesInput() {
+    return this._ipRestrictionRanges;
   }
 
   // lfs_enabled - computed: false, optional: true, required: false
@@ -481,7 +555,7 @@ export class Group extends cdktf.TerraformResource {
     return this._shareWithGroupLock;
   }
 
-  // shared_runners_minutes_limit - computed: false, optional: true, required: false
+  // shared_runners_minutes_limit - computed: true, optional: true, required: false
   private _sharedRunnersMinutesLimit?: number; 
   public get sharedRunnersMinutesLimit() {
     return this.getNumberAttribute('shared_runners_minutes_limit');
@@ -557,11 +631,14 @@ export class Group extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       auto_devops_enabled: cdktf.booleanToTerraform(this._autoDevopsEnabled),
+      avatar: cdktf.stringToTerraform(this._avatar),
+      avatar_hash: cdktf.stringToTerraform(this._avatarHash),
       default_branch_protection: cdktf.numberToTerraform(this._defaultBranchProtection),
       description: cdktf.stringToTerraform(this._description),
       emails_disabled: cdktf.booleanToTerraform(this._emailsDisabled),
       extra_shared_runners_minutes_limit: cdktf.numberToTerraform(this._extraSharedRunnersMinutesLimit),
       id: cdktf.stringToTerraform(this._id),
+      ip_restriction_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ipRestrictionRanges),
       lfs_enabled: cdktf.booleanToTerraform(this._lfsEnabled),
       membership_lock: cdktf.booleanToTerraform(this._membershipLock),
       mentions_disabled: cdktf.booleanToTerraform(this._mentionsDisabled),

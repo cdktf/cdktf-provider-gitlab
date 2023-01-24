@@ -270,8 +270,8 @@ export class DataGitlabProject extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_project',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.20.0',
-        providerVersionConstraint: '~> 3.14'
+        providerVersion: '15.8.0',
+        providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -355,6 +355,11 @@ export class DataGitlabProject extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get ciDefaultGitDepthInput() {
     return this._ciDefaultGitDepth;
+  }
+
+  // ci_separated_caches - computed: true, optional: false, required: false
+  public get ciSeparatedCaches() {
+    return this.getBooleanAttribute('ci_separated_caches');
   }
 
   // container_expiration_policy - computed: true, optional: false, required: false
@@ -550,6 +555,11 @@ export class DataGitlabProject extends cdktf.TerraformDataSource {
   // resolve_outdated_diff_discussions - computed: true, optional: false, required: false
   public get resolveOutdatedDiffDiscussions() {
     return this.getBooleanAttribute('resolve_outdated_diff_discussions');
+  }
+
+  // restrict_user_defined_variables - computed: true, optional: false, required: false
+  public get restrictUserDefinedVariables() {
+    return this.getBooleanAttribute('restrict_user_defined_variables');
   }
 
   // runners_token - computed: true, optional: false, required: false

@@ -14,6 +14,12 @@ export interface ProjectApprovalRuleConfig extends cdktf.TerraformMetaArguments 
   */
   readonly approvalsRequired: number;
   /**
+  * When this flag is set, the default `any_approver` rule will not be imported if present.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_approval_rule#disable_importing_default_any_approver_rule_on_create ProjectApprovalRule#disable_importing_default_any_approver_rule_on_create}
+  */
+  readonly disableImportingDefaultAnyApproverRuleOnCreate?: boolean | cdktf.IResolvable;
+  /**
   * A list of group IDs whose members can approve of the merge request.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_approval_rule#group_ids ProjectApprovalRule#group_ids}
@@ -84,8 +90,8 @@ export class ProjectApprovalRule extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_approval_rule',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '3.20.0',
-        providerVersionConstraint: '~> 3.14'
+        providerVersion: '15.8.0',
+        providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -96,6 +102,7 @@ export class ProjectApprovalRule extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._approvalsRequired = config.approvalsRequired;
+    this._disableImportingDefaultAnyApproverRuleOnCreate = config.disableImportingDefaultAnyApproverRuleOnCreate;
     this._groupIds = config.groupIds;
     this._id = config.id;
     this._name = config.name;
@@ -120,6 +127,22 @@ export class ProjectApprovalRule extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get approvalsRequiredInput() {
     return this._approvalsRequired;
+  }
+
+  // disable_importing_default_any_approver_rule_on_create - computed: false, optional: true, required: false
+  private _disableImportingDefaultAnyApproverRuleOnCreate?: boolean | cdktf.IResolvable; 
+  public get disableImportingDefaultAnyApproverRuleOnCreate() {
+    return this.getBooleanAttribute('disable_importing_default_any_approver_rule_on_create');
+  }
+  public set disableImportingDefaultAnyApproverRuleOnCreate(value: boolean | cdktf.IResolvable) {
+    this._disableImportingDefaultAnyApproverRuleOnCreate = value;
+  }
+  public resetDisableImportingDefaultAnyApproverRuleOnCreate() {
+    this._disableImportingDefaultAnyApproverRuleOnCreate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableImportingDefaultAnyApproverRuleOnCreateInput() {
+    return this._disableImportingDefaultAnyApproverRuleOnCreate;
   }
 
   // group_ids - computed: false, optional: true, required: false
@@ -235,6 +258,7 @@ export class ProjectApprovalRule extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       approvals_required: cdktf.numberToTerraform(this._approvalsRequired),
+      disable_importing_default_any_approver_rule_on_create: cdktf.booleanToTerraform(this._disableImportingDefaultAnyApproverRuleOnCreate),
       group_ids: cdktf.listMapper(cdktf.numberToTerraform, false)(this._groupIds),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),

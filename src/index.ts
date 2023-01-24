@@ -80,6 +80,7 @@ export * as dataGitlabGroups from './data-gitlab-groups';
 export * as dataGitlabInstanceDeployKeys from './data-gitlab-instance-deploy-keys';
 export * as dataGitlabInstanceVariable from './data-gitlab-instance-variable';
 export * as dataGitlabInstanceVariables from './data-gitlab-instance-variables';
+export * as dataGitlabMetadata from './data-gitlab-metadata';
 export * as dataGitlabProject from './data-gitlab-project';
 export * as dataGitlabProjectBranches from './data-gitlab-project-branches';
 export * as dataGitlabProjectHook from './data-gitlab-project-hook';
