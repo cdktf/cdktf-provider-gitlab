@@ -65,6 +65,7 @@ The following submodules are available:
 - [instanceVariable](./instanceVariable.typescript.md)
 - [label](./label.typescript.md)
 - [managedLicense](./managedLicense.typescript.md)
+- [pagesDomain](./pagesDomain.typescript.md)
 - [personalAccessToken](./personalAccessToken.typescript.md)
 - [pipelineSchedule](./pipelineSchedule.typescript.md)
 - [pipelineScheduleVariable](./pipelineScheduleVariable.typescript.md)

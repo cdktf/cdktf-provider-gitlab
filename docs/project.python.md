@@ -53,6 +53,8 @@ project.Project(
   group_with_project_templates_id: typing.Union[int, float] = None,
   id: str = None,
   import_url: str = None,
+  import_url_password: str = None,
+  import_url_username: str = None,
   initialize_with_readme: typing.Union[bool, IResolvable] = None,
   issues_access_level: str = None,
   issues_enabled: typing.Union[bool, IResolvable] = None,
@@ -150,6 +152,8 @@ project.Project(
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.groupWithProjectTemplatesId">group_with_project_templates_id</a></code> | <code>typing.Union[int, float]</code> | For group-level custom templates, specifies ID of group from which all the custom project templates are sourced. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#id Project#id}. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.importUrl">import_url</a></code> | <code>str</code> | Git URL to a repository to be imported. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.importUrlPassword">import_url_password</a></code> | <code>str</code> | The password for the `import_url`. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.importUrlUsername">import_url_username</a></code> | <code>str</code> | The username for the `import_url`. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.initializeWithReadme">initialize_with_readme</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Create main branch with first commit containing a README.md file. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.issuesAccessLevel">issues_access_level</a></code> | <code>str</code> | Set the issues access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.issuesEnabled">issues_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable issue tracking for the project. |
@@ -594,9 +598,33 @@ If you experience problems setting this value it might not be settable. Please t
 
 Git URL to a repository to be imported.
 
-Together with `mirror = true` it will setup a Pull Mirror. This can also be used together with `forked_from_project_id` to setup a Pull Mirror for a fork. The fork takes precedence over the import. This field cannot be imported via `terraform import`.
+Together with `mirror = true` it will setup a Pull Mirror. This can also be used together with `forked_from_project_id` to setup a Pull Mirror for a fork. The fork takes precedence over the import. Make sure to provide the credentials in `import_url_username` and `import_url_password`. GitLab never returns the credentials, thus the provider cannot detect configuration drift in the credentials. They can also not be imported using `terraform import`. See the examples section for how to properly use it.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#import_url Project#import_url}
+
+---
+
+##### `import_url_password`<sup>Optional</sup> <a name="import_url_password" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.importUrlPassword"></a>
+
+- *Type:* str
+
+The password for the `import_url`.
+
+The value of this field is used to construct a valid `import_url` and is only related to the provider. This field cannot be imported using `terraform import`. See the examples section for how to properly use it.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#import_url_password Project#import_url_password}
+
+---
+
+##### `import_url_username`<sup>Optional</sup> <a name="import_url_username" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.importUrlUsername"></a>
+
+- *Type:* str
+
+The username for the `import_url`.
+
+The value of this field is used to construct a valid `import_url` and is only related to the provider. This field cannot be imported using `terraform import`.  See the examples section for how to properly use it.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#import_url_username Project#import_url_username}
 
 ---
 
@@ -1175,6 +1203,8 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetGroupWithProjectTemplatesId">reset_group_with_project_templates_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetImportUrl">reset_import_url</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.resetImportUrlPassword">reset_import_url_password</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.resetImportUrlUsername">reset_import_url_username</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetInitializeWithReadme">reset_initialize_with_readme</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetIssuesAccessLevel">reset_issues_access_level</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetIssuesEnabled">reset_issues_enabled</a></code> | *No description.* |
@@ -1827,6 +1857,18 @@ def reset_id() -> None
 def reset_import_url() -> None
 ```
 
+##### `reset_import_url_password` <a name="reset_import_url_password" id="@cdktf/provider-gitlab.project.Project.resetImportUrlPassword"></a>
+
+```python
+def reset_import_url_password() -> None
+```
+
+##### `reset_import_url_username` <a name="reset_import_url_username" id="@cdktf/provider-gitlab.project.Project.resetImportUrlUsername"></a>
+
+```python
+def reset_import_url_username() -> None
+```
+
 ##### `reset_initialize_with_readme` <a name="reset_initialize_with_readme" id="@cdktf/provider-gitlab.project.Project.resetInitializeWithReadme"></a>
 
 ```python
@@ -2266,6 +2308,8 @@ project.Project.is_terraform_resource(
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.groupWithProjectTemplatesIdInput">group_with_project_templates_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlInput">import_url_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlPasswordInput">import_url_password_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlUsernameInput">import_url_username_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.initializeWithReadmeInput">initialize_with_readme_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesAccessLevelInput">issues_access_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesEnabledInput">issues_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -2348,6 +2392,8 @@ project.Project.is_terraform_resource(
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.groupWithProjectTemplatesId">group_with_project_templates_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrl">import_url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlPassword">import_url_password</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlUsername">import_url_username</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.initializeWithReadme">initialize_with_readme</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesAccessLevel">issues_access_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesEnabled">issues_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -2928,6 +2974,26 @@ id_input: str
 
 ```python
 import_url_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `import_url_password_input`<sup>Optional</sup> <a name="import_url_password_input" id="@cdktf/provider-gitlab.project.Project.property.importUrlPasswordInput"></a>
+
+```python
+import_url_password_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `import_url_username_input`<sup>Optional</sup> <a name="import_url_username_input" id="@cdktf/provider-gitlab.project.Project.property.importUrlUsernameInput"></a>
+
+```python
+import_url_username_input: str
 ```
 
 - *Type:* str
@@ -3754,6 +3820,26 @@ import_url: str
 
 ---
 
+##### `import_url_password`<sup>Required</sup> <a name="import_url_password" id="@cdktf/provider-gitlab.project.Project.property.importUrlPassword"></a>
+
+```python
+import_url_password: str
+```
+
+- *Type:* str
+
+---
+
+##### `import_url_username`<sup>Required</sup> <a name="import_url_username" id="@cdktf/provider-gitlab.project.Project.property.importUrlUsername"></a>
+
+```python
+import_url_username: str
+```
+
+- *Type:* str
+
+---
+
 ##### `initialize_with_readme`<sup>Required</sup> <a name="initialize_with_readme" id="@cdktf/provider-gitlab.project.Project.property.initializeWithReadme"></a>
 
 ```python
@@ -4331,6 +4417,8 @@ project.ProjectConfig(
   group_with_project_templates_id: typing.Union[int, float] = None,
   id: str = None,
   import_url: str = None,
+  import_url_password: str = None,
+  import_url_username: str = None,
   initialize_with_readme: typing.Union[bool, IResolvable] = None,
   issues_access_level: str = None,
   issues_enabled: typing.Union[bool, IResolvable] = None,
@@ -4428,6 +4516,8 @@ project.ProjectConfig(
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.groupWithProjectTemplatesId">group_with_project_templates_id</a></code> | <code>typing.Union[int, float]</code> | For group-level custom templates, specifies ID of group from which all the custom project templates are sourced. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#id Project#id}. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.importUrl">import_url</a></code> | <code>str</code> | Git URL to a repository to be imported. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.importUrlPassword">import_url_password</a></code> | <code>str</code> | The password for the `import_url`. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.importUrlUsername">import_url_username</a></code> | <code>str</code> | The username for the `import_url`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.initializeWithReadme">initialize_with_readme</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Create main branch with first commit containing a README.md file. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.issuesAccessLevel">issues_access_level</a></code> | <code>str</code> | Set the issues access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.issuesEnabled">issues_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable issue tracking for the project. |
@@ -5010,9 +5100,41 @@ import_url: str
 
 Git URL to a repository to be imported.
 
-Together with `mirror = true` it will setup a Pull Mirror. This can also be used together with `forked_from_project_id` to setup a Pull Mirror for a fork. The fork takes precedence over the import. This field cannot be imported via `terraform import`.
+Together with `mirror = true` it will setup a Pull Mirror. This can also be used together with `forked_from_project_id` to setup a Pull Mirror for a fork. The fork takes precedence over the import. Make sure to provide the credentials in `import_url_username` and `import_url_password`. GitLab never returns the credentials, thus the provider cannot detect configuration drift in the credentials. They can also not be imported using `terraform import`. See the examples section for how to properly use it.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#import_url Project#import_url}
+
+---
+
+##### `import_url_password`<sup>Optional</sup> <a name="import_url_password" id="@cdktf/provider-gitlab.project.ProjectConfig.property.importUrlPassword"></a>
+
+```python
+import_url_password: str
+```
+
+- *Type:* str
+
+The password for the `import_url`.
+
+The value of this field is used to construct a valid `import_url` and is only related to the provider. This field cannot be imported using `terraform import`. See the examples section for how to properly use it.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#import_url_password Project#import_url_password}
+
+---
+
+##### `import_url_username`<sup>Optional</sup> <a name="import_url_username" id="@cdktf/provider-gitlab.project.ProjectConfig.property.importUrlUsername"></a>
+
+```python
+import_url_username: str
+```
+
+- *Type:* str
+
+The username for the `import_url`.
+
+The value of this field is used to construct a valid `import_url` and is only related to the provider. This field cannot be imported using `terraform import`.  See the examples section for how to properly use it.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#import_url_username Project#import_url_username}
 
 ---
 

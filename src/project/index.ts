@@ -187,11 +187,23 @@ export interface ProjectConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
-  * Git URL to a repository to be imported. Together with `mirror = true` it will setup a Pull Mirror. This can also be used together with `forked_from_project_id` to setup a Pull Mirror for a fork. The fork takes precedence over the import. This field cannot be imported via `terraform import`.
+  * Git URL to a repository to be imported. Together with `mirror = true` it will setup a Pull Mirror. This can also be used together with `forked_from_project_id` to setup a Pull Mirror for a fork. The fork takes precedence over the import. Make sure to provide the credentials in `import_url_username` and `import_url_password`. GitLab never returns the credentials, thus the provider cannot detect configuration drift in the credentials. They can also not be imported using `terraform import`. See the examples section for how to properly use it.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#import_url Project#import_url}
   */
   readonly importUrl?: string;
+  /**
+  * The password for the `import_url`. The value of this field is used to construct a valid `import_url` and is only related to the provider. This field cannot be imported using `terraform import`. See the examples section for how to properly use it.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#import_url_password Project#import_url_password}
+  */
+  readonly importUrlPassword?: string;
+  /**
+  * The username for the `import_url`. The value of this field is used to construct a valid `import_url` and is only related to the provider. This field cannot be imported using `terraform import`.  See the examples section for how to properly use it.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#import_url_username Project#import_url_username}
+  */
+  readonly importUrlUsername?: string;
   /**
   * Create main branch with first commit containing a README.md file.
   * 
@@ -1116,7 +1128,7 @@ export class Project extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '15.8.0',
+        providerVersion: '15.9.0',
         providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,
@@ -1157,6 +1169,8 @@ export class Project extends cdktf.TerraformResource {
     this._groupWithProjectTemplatesId = config.groupWithProjectTemplatesId;
     this._id = config.id;
     this._importUrl = config.importUrl;
+    this._importUrlPassword = config.importUrlPassword;
+    this._importUrlUsername = config.importUrlUsername;
     this._initializeWithReadme = config.initializeWithReadme;
     this._issuesAccessLevel = config.issuesAccessLevel;
     this._issuesEnabled = config.issuesEnabled;
@@ -1704,6 +1718,38 @@ export class Project extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get importUrlInput() {
     return this._importUrl;
+  }
+
+  // import_url_password - computed: false, optional: true, required: false
+  private _importUrlPassword?: string; 
+  public get importUrlPassword() {
+    return this.getStringAttribute('import_url_password');
+  }
+  public set importUrlPassword(value: string) {
+    this._importUrlPassword = value;
+  }
+  public resetImportUrlPassword() {
+    this._importUrlPassword = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get importUrlPasswordInput() {
+    return this._importUrlPassword;
+  }
+
+  // import_url_username - computed: false, optional: true, required: false
+  private _importUrlUsername?: string; 
+  public get importUrlUsername() {
+    return this.getStringAttribute('import_url_username');
+  }
+  public set importUrlUsername(value: string) {
+    this._importUrlUsername = value;
+  }
+  public resetImportUrlUsername() {
+    this._importUrlUsername = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get importUrlUsernameInput() {
+    return this._importUrlUsername;
   }
 
   // initialize_with_readme - computed: false, optional: true, required: false
@@ -2607,6 +2653,8 @@ export class Project extends cdktf.TerraformResource {
       group_with_project_templates_id: cdktf.numberToTerraform(this._groupWithProjectTemplatesId),
       id: cdktf.stringToTerraform(this._id),
       import_url: cdktf.stringToTerraform(this._importUrl),
+      import_url_password: cdktf.stringToTerraform(this._importUrlPassword),
+      import_url_username: cdktf.stringToTerraform(this._importUrlUsername),
       initialize_with_readme: cdktf.booleanToTerraform(this._initializeWithReadme),
       issues_access_level: cdktf.stringToTerraform(this._issuesAccessLevel),
       issues_enabled: cdktf.booleanToTerraform(this._issuesEnabled),

@@ -24,6 +24,7 @@ export * as instanceCluster from './instance-cluster';
 export * as instanceVariable from './instance-variable';
 export * as label from './label';
 export * as managedLicense from './managed-license';
+export * as pagesDomain from './pages-domain';
 export * as personalAccessToken from './personal-access-token';
 export * as pipelineSchedule from './pipeline-schedule';
 export * as pipelineScheduleVariable from './pipeline-schedule-variable';

@@ -99,6 +99,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetGroupWithProjectTemplatesId">resetGroupWithProjectTemplatesId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetImportUrl">resetImportUrl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.resetImportUrlPassword">resetImportUrlPassword</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.resetImportUrlUsername">resetImportUrlUsername</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetInitializeWithReadme">resetInitializeWithReadme</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetIssuesAccessLevel">resetIssuesAccessLevel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetIssuesEnabled">resetIssuesEnabled</a></code> | *No description.* |
@@ -547,6 +549,18 @@ public resetId(): void
 public resetImportUrl(): void
 ```
 
+##### `resetImportUrlPassword` <a name="resetImportUrlPassword" id="@cdktf/provider-gitlab.project.Project.resetImportUrlPassword"></a>
+
+```typescript
+public resetImportUrlPassword(): void
+```
+
+##### `resetImportUrlUsername` <a name="resetImportUrlUsername" id="@cdktf/provider-gitlab.project.Project.resetImportUrlUsername"></a>
+
+```typescript
+public resetImportUrlUsername(): void
+```
+
 ##### `resetInitializeWithReadme` <a name="resetInitializeWithReadme" id="@cdktf/provider-gitlab.project.Project.resetInitializeWithReadme"></a>
 
 ```typescript
@@ -980,6 +994,8 @@ project.Project.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.groupWithProjectTemplatesIdInput">groupWithProjectTemplatesIdInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlInput">importUrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlPasswordInput">importUrlPasswordInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlUsernameInput">importUrlUsernameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.initializeWithReadmeInput">initializeWithReadmeInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesAccessLevelInput">issuesAccessLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesEnabledInput">issuesEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -1062,6 +1078,8 @@ project.Project.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.groupWithProjectTemplatesId">groupWithProjectTemplatesId</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrl">importUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlPassword">importUrlPassword</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlUsername">importUrlUsername</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.initializeWithReadme">initializeWithReadme</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesAccessLevel">issuesAccessLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesEnabled">issuesEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -1642,6 +1660,26 @@ public readonly idInput: string;
 
 ```typescript
 public readonly importUrlInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `importUrlPasswordInput`<sup>Optional</sup> <a name="importUrlPasswordInput" id="@cdktf/provider-gitlab.project.Project.property.importUrlPasswordInput"></a>
+
+```typescript
+public readonly importUrlPasswordInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `importUrlUsernameInput`<sup>Optional</sup> <a name="importUrlUsernameInput" id="@cdktf/provider-gitlab.project.Project.property.importUrlUsernameInput"></a>
+
+```typescript
+public readonly importUrlUsernameInput: string;
 ```
 
 - *Type:* string
@@ -2468,6 +2506,26 @@ public readonly importUrl: string;
 
 ---
 
+##### `importUrlPassword`<sup>Required</sup> <a name="importUrlPassword" id="@cdktf/provider-gitlab.project.Project.property.importUrlPassword"></a>
+
+```typescript
+public readonly importUrlPassword: string;
+```
+
+- *Type:* string
+
+---
+
+##### `importUrlUsername`<sup>Required</sup> <a name="importUrlUsername" id="@cdktf/provider-gitlab.project.Project.property.importUrlUsername"></a>
+
+```typescript
+public readonly importUrlUsername: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `initializeWithReadme`<sup>Required</sup> <a name="initializeWithReadme" id="@cdktf/provider-gitlab.project.Project.property.initializeWithReadme"></a>
 
 ```typescript
@@ -3051,6 +3109,8 @@ const projectConfig: project.ProjectConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.groupWithProjectTemplatesId">groupWithProjectTemplatesId</a></code> | <code>number</code> | For group-level custom templates, specifies ID of group from which all the custom project templates are sourced. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#id Project#id}. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.importUrl">importUrl</a></code> | <code>string</code> | Git URL to a repository to be imported. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.importUrlPassword">importUrlPassword</a></code> | <code>string</code> | The password for the `import_url`. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.importUrlUsername">importUrlUsername</a></code> | <code>string</code> | The username for the `import_url`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.initializeWithReadme">initializeWithReadme</a></code> | <code>boolean \| cdktf.IResolvable</code> | Create main branch with first commit containing a README.md file. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.issuesAccessLevel">issuesAccessLevel</a></code> | <code>string</code> | Set the issues access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.issuesEnabled">issuesEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable issue tracking for the project. |
@@ -3634,9 +3694,41 @@ public readonly importUrl: string;
 
 Git URL to a repository to be imported.
 
-Together with `mirror = true` it will setup a Pull Mirror. This can also be used together with `forked_from_project_id` to setup a Pull Mirror for a fork. The fork takes precedence over the import. This field cannot be imported via `terraform import`.
+Together with `mirror = true` it will setup a Pull Mirror. This can also be used together with `forked_from_project_id` to setup a Pull Mirror for a fork. The fork takes precedence over the import. Make sure to provide the credentials in `import_url_username` and `import_url_password`. GitLab never returns the credentials, thus the provider cannot detect configuration drift in the credentials. They can also not be imported using `terraform import`. See the examples section for how to properly use it.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#import_url Project#import_url}
+
+---
+
+##### `importUrlPassword`<sup>Optional</sup> <a name="importUrlPassword" id="@cdktf/provider-gitlab.project.ProjectConfig.property.importUrlPassword"></a>
+
+```typescript
+public readonly importUrlPassword: string;
+```
+
+- *Type:* string
+
+The password for the `import_url`.
+
+The value of this field is used to construct a valid `import_url` and is only related to the provider. This field cannot be imported using `terraform import`. See the examples section for how to properly use it.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#import_url_password Project#import_url_password}
+
+---
+
+##### `importUrlUsername`<sup>Optional</sup> <a name="importUrlUsername" id="@cdktf/provider-gitlab.project.ProjectConfig.property.importUrlUsername"></a>
+
+```typescript
+public readonly importUrlUsername: string;
+```
+
+- *Type:* string
+
+The username for the `import_url`.
+
+The value of this field is used to construct a valid `import_url` and is only related to the provider. This field cannot be imported using `terraform import`.  See the examples section for how to properly use it.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#import_url_username Project#import_url_username}
 
 ---
 

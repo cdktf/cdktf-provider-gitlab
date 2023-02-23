@@ -65,6 +65,7 @@ The following submodules are available:
 - [instanceVariable](./instanceVariable.java.md)
 - [label](./label.java.md)
 - [managedLicense](./managedLicense.java.md)
+- [pagesDomain](./pagesDomain.java.md)
 - [personalAccessToken](./personalAccessToken.java.md)
 - [pipelineSchedule](./pipelineSchedule.java.md)
 - [pipelineScheduleVariable](./pipelineScheduleVariable.java.md)

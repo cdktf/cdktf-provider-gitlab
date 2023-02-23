@@ -65,6 +65,7 @@ The following submodules are available:
 - [instanceVariable](./instanceVariable.csharp.md)
 - [label](./label.csharp.md)
 - [managedLicense](./managedLicense.csharp.md)
+- [pagesDomain](./pagesDomain.csharp.md)
 - [personalAccessToken](./personalAccessToken.csharp.md)
 - [pipelineSchedule](./pipelineSchedule.csharp.md)
 - [pipelineScheduleVariable](./pipelineScheduleVariable.csharp.md)

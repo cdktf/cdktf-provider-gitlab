@@ -54,7 +54,7 @@ export class DataGitlabProjectMilestone extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_project_milestone',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '15.8.0',
+        providerVersion: '15.9.0',
         providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,

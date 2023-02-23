@@ -861,6 +861,11 @@ export class DataGitlabProjectsProjectsOutputReference extends cdktf.ComplexObje
     return this.getStringAttribute('import_status');
   }
 
+  // import_url - computed: true, optional: false, required: false
+  public get importUrl() {
+    return this.getStringAttribute('import_url');
+  }
+
   // issues_access_level - computed: true, optional: false, required: false
   public get issuesAccessLevel() {
     return this.getStringAttribute('issues_access_level');
@@ -1182,7 +1187,7 @@ export class DataGitlabProjects extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_projects',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '15.8.0',
+        providerVersion: '15.9.0',
         providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,

@@ -270,7 +270,7 @@ export class DataGitlabProject extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_project',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '15.8.0',
+        providerVersion: '15.9.0',
         providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,
@@ -417,6 +417,11 @@ export class DataGitlabProject extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // import_url - computed: true, optional: false, required: false
+  public get importUrl() {
+    return this.getStringAttribute('import_url');
   }
 
   // issues_access_level - computed: true, optional: false, required: false
