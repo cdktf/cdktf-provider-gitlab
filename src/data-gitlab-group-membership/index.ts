@@ -165,7 +165,7 @@ export class DataGitlabGroupMembership extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_group_membership',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '15.8.0',
+        providerVersion: '15.9.0',
         providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,

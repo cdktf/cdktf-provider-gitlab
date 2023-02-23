@@ -32,7 +32,7 @@ export interface GitlabProviderConfig {
   */
   readonly clientKey?: string;
   /**
-  * (Experimental) By default the provider does a dummy request to get the current user in order to verify that the provider configuration is correct and the GitLab API is reachable. Set this to `false` to skip this check. This may be useful if the GitLab instance does not yet exist and is created within the same terraform module. This is an experimental feature and may change in the future. Please make sure to always keep backups of your state.
+  * (Experimental) By default the provider does a dummy request to get the current user in order to verify that the provider configuration is correct and the GitLab API is reachable. Set this to `false` to skip this check. This may be useful if the GitLab instance does not yet exist and is created within the same terraform module. It may be sourced from the `GITLAB_EARLY_AUTH_CHECK`. This is an experimental feature and may change in the future. Please make sure to always keep backups of your state.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab#early_auth_check GitlabProvider#early_auth_check}
   */
@@ -83,7 +83,7 @@ export class GitlabProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'gitlab',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '15.8.0',
+        providerVersion: '15.9.0',
         providerVersionConstraint: '~> 15.7'
       },
       terraformProviderSource: 'gitlabhq/gitlab'

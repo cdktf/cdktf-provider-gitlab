@@ -65,6 +65,7 @@ The following submodules are available:
 - [instanceVariable](./instanceVariable.python.md)
 - [label](./label.python.md)
 - [managedLicense](./managedLicense.python.md)
+- [pagesDomain](./pagesDomain.python.md)
 - [personalAccessToken](./personalAccessToken.python.md)
 - [pipelineSchedule](./pipelineSchedule.python.md)
 - [pipelineScheduleVariable](./pipelineScheduleVariable.python.md)

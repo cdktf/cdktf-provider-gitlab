@@ -65,6 +65,7 @@ The following submodules are available:
 - [instanceVariable](./instanceVariable.go.md)
 - [label](./label.go.md)
 - [managedLicense](./managedLicense.go.md)
+- [pagesDomain](./pagesDomain.go.md)
 - [personalAccessToken](./personalAccessToken.go.md)
 - [pipelineSchedule](./pipelineSchedule.go.md)
 - [pipelineScheduleVariable](./pipelineScheduleVariable.go.md)
