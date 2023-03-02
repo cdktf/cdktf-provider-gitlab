@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/group_varia
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupVariable.DataGitlabGroupVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupvariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabgroupvariable"
 
 datagitlabgroupvariable.NewDataGitlabGroupVariable(scope Construct, id *string, config DataGitlabGroupVariableConfig) DataGitlabGroupVariable
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabGroupVariable.DataGitlabGroupVariable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupvariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabgroupvariable"
 
 datagitlabgroupvariable.DataGitlabGroupVariable_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabGroupVariable.DataGitlabGroupVariable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupvariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabgroupvariable"
 
 datagitlabgroupvariable.DataGitlabGroupVariable_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ datagitlabgroupvariable.DataGitlabGroupVariable_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabGroupVariable.DataGitlabGroupVariable.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupvariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabgroupvariable"
 
 datagitlabgroupvariable.DataGitlabGroupVariable_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -635,7 +635,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabGroupVariable.DataGitlabGroupVariableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupvariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabgroupvariable"
 
 &datagitlabgroupvariable.DataGitlabGroupVariableConfig {
 	Connection: interface{},
