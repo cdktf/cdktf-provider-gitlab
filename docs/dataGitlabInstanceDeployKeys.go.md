@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/instance_de
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancedeploykeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabinstancedeploykeys"
 
 datagitlabinstancedeploykeys.NewDataGitlabInstanceDeployKeys(scope Construct, id *string, config DataGitlabInstanceDeployKeysConfig) DataGitlabInstanceDeployKeys
 ```
@@ -280,7 +280,7 @@ func ResetPublic()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeys.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancedeploykeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabinstancedeploykeys"
 
 datagitlabinstancedeploykeys.DataGitlabInstanceDeployKeys_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeys.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancedeploykeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabinstancedeploykeys"
 
 datagitlabinstancedeploykeys.DataGitlabInstanceDeployKeys_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ datagitlabinstancedeploykeys.DataGitlabInstanceDeployKeys_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeys.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancedeploykeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabinstancedeploykeys"
 
 datagitlabinstancedeploykeys.DataGitlabInstanceDeployKeys_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -558,7 +558,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeysConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancedeploykeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabinstancedeploykeys"
 
 &datagitlabinstancedeploykeys.DataGitlabInstanceDeployKeysConfig {
 	Connection: interface{},
@@ -693,7 +693,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeysDeployKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancedeploykeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabinstancedeploykeys"
 
 &datagitlabinstancedeploykeys.DataGitlabInstanceDeployKeysDeployKeys {
 
@@ -706,7 +706,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancedeplo
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeysDeployKeysProjectsWithWriteAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancedeploykeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabinstancedeploykeys"
 
 &datagitlabinstancedeploykeys.DataGitlabInstanceDeployKeysDeployKeysProjectsWithWriteAccess {
 
@@ -721,7 +721,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancedeplo
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeysDeployKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancedeploykeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabinstancedeploykeys"
 
 datagitlabinstancedeploykeys.NewDataGitlabInstanceDeployKeysDeployKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabInstanceDeployKeysDeployKeysList
 ```
@@ -853,7 +853,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeysDeployKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancedeploykeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabinstancedeploykeys"
 
 datagitlabinstancedeploykeys.NewDataGitlabInstanceDeployKeysDeployKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabInstanceDeployKeysDeployKeysOutputReference
 ```
@@ -1186,7 +1186,7 @@ func InternalValue() DataGitlabInstanceDeployKeysDeployKeys
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeysDeployKeysProjectsWithWriteAccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancedeploykeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabinstancedeploykeys"
 
 datagitlabinstancedeploykeys.NewDataGitlabInstanceDeployKeysDeployKeysProjectsWithWriteAccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabInstanceDeployKeysDeployKeysProjectsWithWriteAccessList
 ```
@@ -1318,7 +1318,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeysDeployKeysProjectsWithWriteAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancedeploykeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabinstancedeploykeys"
 
 datagitlabinstancedeploykeys.NewDataGitlabInstanceDeployKeysDeployKeysProjectsWithWriteAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabInstanceDeployKeysDeployKeysProjectsWithWriteAccessOutputReference
 ```

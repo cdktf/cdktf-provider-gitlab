@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/project git
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.project.Project.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/project"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/project"
 
 project.NewProject(scope Construct, id *string, config ProjectConfig) Project
 ```
@@ -880,7 +880,7 @@ func ResetWikiEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.project.Project.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/project"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/project"
 
 project.Project_IsConstruct(x interface{}) *bool
 ```
@@ -912,7 +912,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.project.Project.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/project"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/project"
 
 project.Project_IsTerraformElement(x interface{}) *bool
 ```
@@ -926,7 +926,7 @@ project.Project_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.project.Project.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/project"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/project"
 
 project.Project_IsTerraformResource(x interface{}) *bool
 ```
@@ -3061,7 +3061,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.project.ProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/project"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/project"
 
 &project.ProjectConfig {
 	Connection: interface{},
@@ -3091,7 +3091,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/project"
 	CiDefaultGitDepth: *f64,
 	CiForwardDeploymentEnabled: interface{},
 	CiSeparatedCaches: interface{},
-	ContainerExpirationPolicy: github.com/cdktf/cdktf-provider-gitlab-go/gitlab.project.ProjectContainerExpirationPolicy,
+	ContainerExpirationPolicy: github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6.project.ProjectContainerExpirationPolicy,
 	ContainerRegistryAccessLevel: *string,
 	ContainerRegistryEnabled: interface{},
 	DefaultBranch: *string,
@@ -3132,7 +3132,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/project"
 	PipelinesEnabled: interface{},
 	PrintingMergeRequestLinkEnabled: interface{},
 	PublicBuilds: interface{},
-	PushRules: github.com/cdktf/cdktf-provider-gitlab-go/gitlab.project.ProjectPushRules,
+	PushRules: github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6.project.ProjectPushRules,
 	RemoveSourceBranchAfterMerge: interface{},
 	RepositoryAccessLevel: *string,
 	RepositoryStorage: *string,
@@ -4555,7 +4555,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/project"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/project"
 
 &project.ProjectContainerExpirationPolicy {
 	Cadence: *string,
@@ -4671,7 +4671,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.project.ProjectPushRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/project"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/project"
 
 &project.ProjectPushRules {
 	AuthorEmailRegex: *string,
@@ -4867,7 +4867,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/project"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/project"
 
 project.NewProjectContainerExpirationPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ProjectContainerExpirationPolicyOutputReference
 ```
@@ -5301,7 +5301,7 @@ func InternalValue() ProjectContainerExpirationPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/project"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/project"
 
 project.NewProjectPushRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ProjectPushRulesOutputReference
 ```
