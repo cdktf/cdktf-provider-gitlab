@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/group_membe
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupmembership"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabgroupmembership"
 
 datagitlabgroupmembership.NewDataGitlabGroupMembership(scope Construct, id *string, config DataGitlabGroupMembershipConfig) DataGitlabGroupMembership
 ```
@@ -301,7 +301,7 @@ func ResetInherited()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembership.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupmembership"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabgroupmembership"
 
 datagitlabgroupmembership.DataGitlabGroupMembership_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupmembership"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabgroupmembership"
 
 datagitlabgroupmembership.DataGitlabGroupMembership_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ datagitlabgroupmembership.DataGitlabGroupMembership_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembership.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupmembership"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabgroupmembership"
 
 datagitlabgroupmembership.DataGitlabGroupMembership_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -645,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupmembership"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabgroupmembership"
 
 &datagitlabgroupmembership.DataGitlabGroupMembershipConfig {
 	Connection: interface{},
@@ -828,7 +828,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembershipMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupmembership"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabgroupmembership"
 
 &datagitlabgroupmembership.DataGitlabGroupMembershipMembers {
 
@@ -843,7 +843,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupmembersh
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembershipMembersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupmembership"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabgroupmembership"
 
 datagitlabgroupmembership.NewDataGitlabGroupMembershipMembersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabGroupMembershipMembersList
 ```
@@ -975,7 +975,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembershipMembersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupmembership"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabgroupmembership"
 
 datagitlabgroupmembership.NewDataGitlabGroupMembershipMembersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabGroupMembershipMembersOutputReference
 ```
