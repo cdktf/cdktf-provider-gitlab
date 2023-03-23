@@ -1080,7 +1080,7 @@ public readonly filePath: string;
 
 The full path of the file.
 
-It must be relative to the root of the project without a leading slash `/`.
+It must be relative to the root of the project without a leading slash `/` or `./`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/repository_file#file_path RepositoryFile#file_path}
 

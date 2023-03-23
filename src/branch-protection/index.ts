@@ -516,7 +516,7 @@ export class BranchProtection extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_branch_protection',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '15.9.0',
+        providerVersion: '15.10.0',
         providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,

@@ -1,11 +1,13 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [application](./application.python.md)
 - [applicationSettings](./applicationSettings.python.md)
 - [branch](./branch.python.md)
 - [branchProtection](./branchProtection.python.md)
 - [clusterAgent](./clusterAgent.python.md)
 - [clusterAgentToken](./clusterAgentToken.python.md)
+- [dataGitlabApplication](./dataGitlabApplication.python.md)
 - [dataGitlabBranch](./dataGitlabBranch.python.md)
 - [dataGitlabClusterAgent](./dataGitlabClusterAgent.python.md)
 - [dataGitlabClusterAgents](./dataGitlabClusterAgents.python.md)
@@ -94,6 +96,7 @@ The following submodules are available:
 - [releaseLink](./releaseLink.python.md)
 - [repositoryFile](./repositoryFile.python.md)
 - [runner](./runner.python.md)
+- [serviceCustomIssueTracker](./serviceCustomIssueTracker.python.md)
 - [serviceEmailsOnPush](./serviceEmailsOnPush.python.md)
 - [serviceExternalWiki](./serviceExternalWiki.python.md)
 - [serviceGithub](./serviceGithub.python.md)

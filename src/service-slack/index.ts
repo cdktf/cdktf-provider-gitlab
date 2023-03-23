@@ -135,7 +135,7 @@ export interface ServiceSlackConfig extends cdktf.TerraformMetaArguments {
   */
   readonly username?: string;
   /**
-  * Webhook URL (ex.: https://hooks.slack.com/services/...)
+  * Webhook URL (Example, https://hooks.slack.com/services/...). This value cannot be imported.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_slack#webhook ServiceSlack#webhook}
   */
@@ -180,7 +180,7 @@ export class ServiceSlack extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_service_slack',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '15.9.0',
+        providerVersion: '15.10.0',
         providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,

@@ -1,11 +1,13 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [application](./application.typescript.md)
 - [applicationSettings](./applicationSettings.typescript.md)
 - [branch](./branch.typescript.md)
 - [branchProtection](./branchProtection.typescript.md)
 - [clusterAgent](./clusterAgent.typescript.md)
 - [clusterAgentToken](./clusterAgentToken.typescript.md)
+- [dataGitlabApplication](./dataGitlabApplication.typescript.md)
 - [dataGitlabBranch](./dataGitlabBranch.typescript.md)
 - [dataGitlabClusterAgent](./dataGitlabClusterAgent.typescript.md)
 - [dataGitlabClusterAgents](./dataGitlabClusterAgents.typescript.md)
@@ -94,6 +96,7 @@ The following submodules are available:
 - [releaseLink](./releaseLink.typescript.md)
 - [repositoryFile](./repositoryFile.typescript.md)
 - [runner](./runner.typescript.md)
+- [serviceCustomIssueTracker](./serviceCustomIssueTracker.typescript.md)
 - [serviceEmailsOnPush](./serviceEmailsOnPush.typescript.md)
 - [serviceExternalWiki](./serviceExternalWiki.typescript.md)
 - [serviceGithub](./serviceGithub.typescript.md)

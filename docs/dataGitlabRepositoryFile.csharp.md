@@ -798,7 +798,7 @@ public string FilePath { get; set; }
 
 The full path of the file.
 
-It must be relative to the root of the project without a leading slash `/`.
+It must be relative to the root of the project without a leading slash `/` or `./`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/repository_file#file_path DataGitlabRepositoryFile#file_path}
 

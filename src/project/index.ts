@@ -156,11 +156,23 @@ export interface ProjectConfig extends cdktf.TerraformMetaArguments {
   */
   readonly emailsDisabled?: boolean | cdktf.IResolvable;
   /**
+  * Set the environments access level. Valid values are `disabled`, `private`, `enabled`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#environments_access_level Project#environments_access_level}
+  */
+  readonly environmentsAccessLevel?: string;
+  /**
   * The classification label for the project.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#external_authorization_classification_label Project#external_authorization_classification_label}
   */
   readonly externalAuthorizationClassificationLabel?: string;
+  /**
+  * Set the feature flags access level. Valid values are `disabled`, `private`, `enabled`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#feature_flags_access_level Project#feature_flags_access_level}
+  */
+  readonly featureFlagsAccessLevel?: string;
   /**
   * The id of the project to fork. During create the project is forked and during an update the fork relation is changed.
   * 
@@ -204,6 +216,12 @@ export interface ProjectConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#import_url_username Project#import_url_username}
   */
   readonly importUrlUsername?: string;
+  /**
+  * Set the infrastructure access level. Valid values are `disabled`, `private`, `enabled`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#infrastructure_access_level Project#infrastructure_access_level}
+  */
+  readonly infrastructureAccessLevel?: string;
   /**
   * Create main branch with first commit containing a README.md file.
   * 
@@ -295,6 +313,12 @@ export interface ProjectConfig extends cdktf.TerraformMetaArguments {
   */
   readonly mirrorTriggerBuilds?: boolean | cdktf.IResolvable;
   /**
+  * Set the monitor access level. Valid values are `disabled`, `private`, `enabled`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#monitor_access_level Project#monitor_access_level}
+  */
+  readonly monitorAccessLevel?: string;
+  /**
   * For forked projects, target merge requests to this project. If false, the target will be the upstream project.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#mr_default_target_self Project#mr_default_target_self}
@@ -372,6 +396,12 @@ export interface ProjectConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#public_builds Project#public_builds}
   */
   readonly publicBuilds?: boolean | cdktf.IResolvable;
+  /**
+  * Set the releases access level. Valid values are `disabled`, `private`, `enabled`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#releases_access_level Project#releases_access_level}
+  */
+  readonly releasesAccessLevel?: string;
   /**
   * Enable `Delete source branch` option by default for all new merge requests.
   * 
@@ -492,6 +522,7 @@ This attribute is only used during resource creation, thus changes are suppresse
   readonly topics?: string[];
   /**
   * Use either custom instance or group (with group_with_project_templates_id) project template (enterprise edition).
+		~> When using a custom template, [Group Tokens won't work](https://docs.gitlab.com/15.7/ee/user/project/settings/import_export_troubleshooting.html#import-using-the-rest-api-fails-when-using-a-group-access-token). You must use a real user's Personal Access Token.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#use_custom_template Project#use_custom_template}
   */
@@ -547,7 +578,13 @@ export interface ProjectContainerExpirationPolicy {
   */
   readonly keepN?: number;
   /**
-  * The regular expression to match image names to delete. **Note**: the upstream API has some inconsistencies with the `name_regex` field here. It's basically unusable at the moment.
+  * The regular expression to match image names to delete.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#name_regex Project#name_regex}
+  */
+  readonly nameRegex?: string;
+  /**
+  * The regular expression to match image names to delete.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#name_regex_delete Project#name_regex_delete}
   */
@@ -575,6 +612,7 @@ export function projectContainerExpirationPolicyToTerraform(struct?: ProjectCont
     cadence: cdktf.stringToTerraform(struct!.cadence),
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     keep_n: cdktf.numberToTerraform(struct!.keepN),
+    name_regex: cdktf.stringToTerraform(struct!.nameRegex),
     name_regex_delete: cdktf.stringToTerraform(struct!.nameRegexDelete),
     name_regex_keep: cdktf.stringToTerraform(struct!.nameRegexKeep),
     older_than: cdktf.stringToTerraform(struct!.olderThan),
@@ -607,6 +645,10 @@ export class ProjectContainerExpirationPolicyOutputReference extends cdktf.Compl
       hasAnyValues = true;
       internalValueResult.keepN = this._keepN;
     }
+    if (this._nameRegex !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nameRegex = this._nameRegex;
+    }
     if (this._nameRegexDelete !== undefined) {
       hasAnyValues = true;
       internalValueResult.nameRegexDelete = this._nameRegexDelete;
@@ -628,6 +670,7 @@ export class ProjectContainerExpirationPolicyOutputReference extends cdktf.Compl
       this._cadence = undefined;
       this._enabled = undefined;
       this._keepN = undefined;
+      this._nameRegex = undefined;
       this._nameRegexDelete = undefined;
       this._nameRegexKeep = undefined;
       this._olderThan = undefined;
@@ -637,6 +680,7 @@ export class ProjectContainerExpirationPolicyOutputReference extends cdktf.Compl
       this._cadence = value.cadence;
       this._enabled = value.enabled;
       this._keepN = value.keepN;
+      this._nameRegex = value.nameRegex;
       this._nameRegexDelete = value.nameRegexDelete;
       this._nameRegexKeep = value.nameRegexKeep;
       this._olderThan = value.olderThan;
@@ -689,6 +733,22 @@ export class ProjectContainerExpirationPolicyOutputReference extends cdktf.Compl
   // Temporarily expose input value. Use with caution.
   public get keepNInput() {
     return this._keepN;
+  }
+
+  // name_regex - computed: true, optional: true, required: false
+  private _nameRegex?: string; 
+  public get nameRegex() {
+    return this.getStringAttribute('name_regex');
+  }
+  public set nameRegex(value: string) {
+    this._nameRegex = value;
+  }
+  public resetNameRegex() {
+    this._nameRegex = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameRegexInput() {
+    return this._nameRegex;
   }
 
   // name_regex_delete - computed: true, optional: true, required: false
@@ -1128,7 +1188,7 @@ export class Project extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '15.9.0',
+        providerVersion: '15.10.0',
         providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,
@@ -1163,7 +1223,9 @@ export class Project extends cdktf.TerraformResource {
     this._defaultBranch = config.defaultBranch;
     this._description = config.description;
     this._emailsDisabled = config.emailsDisabled;
+    this._environmentsAccessLevel = config.environmentsAccessLevel;
     this._externalAuthorizationClassificationLabel = config.externalAuthorizationClassificationLabel;
+    this._featureFlagsAccessLevel = config.featureFlagsAccessLevel;
     this._forkedFromProjectId = config.forkedFromProjectId;
     this._forkingAccessLevel = config.forkingAccessLevel;
     this._groupWithProjectTemplatesId = config.groupWithProjectTemplatesId;
@@ -1171,6 +1233,7 @@ export class Project extends cdktf.TerraformResource {
     this._importUrl = config.importUrl;
     this._importUrlPassword = config.importUrlPassword;
     this._importUrlUsername = config.importUrlUsername;
+    this._infrastructureAccessLevel = config.infrastructureAccessLevel;
     this._initializeWithReadme = config.initializeWithReadme;
     this._issuesAccessLevel = config.issuesAccessLevel;
     this._issuesEnabled = config.issuesEnabled;
@@ -1186,6 +1249,7 @@ export class Project extends cdktf.TerraformResource {
     this._mirror = config.mirror;
     this._mirrorOverwritesDivergedBranches = config.mirrorOverwritesDivergedBranches;
     this._mirrorTriggerBuilds = config.mirrorTriggerBuilds;
+    this._monitorAccessLevel = config.monitorAccessLevel;
     this._mrDefaultTargetSelf = config.mrDefaultTargetSelf;
     this._name = config.name;
     this._namespaceId = config.namespaceId;
@@ -1199,6 +1263,7 @@ export class Project extends cdktf.TerraformResource {
     this._pipelinesEnabled = config.pipelinesEnabled;
     this._printingMergeRequestLinkEnabled = config.printingMergeRequestLinkEnabled;
     this._publicBuilds = config.publicBuilds;
+    this._releasesAccessLevel = config.releasesAccessLevel;
     this._removeSourceBranchAfterMerge = config.removeSourceBranchAfterMerge;
     this._repositoryAccessLevel = config.repositoryAccessLevel;
     this._repositoryStorage = config.repositoryStorage;
@@ -1619,6 +1684,22 @@ export class Project extends cdktf.TerraformResource {
     return this._emailsDisabled;
   }
 
+  // environments_access_level - computed: true, optional: true, required: false
+  private _environmentsAccessLevel?: string; 
+  public get environmentsAccessLevel() {
+    return this.getStringAttribute('environments_access_level');
+  }
+  public set environmentsAccessLevel(value: string) {
+    this._environmentsAccessLevel = value;
+  }
+  public resetEnvironmentsAccessLevel() {
+    this._environmentsAccessLevel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get environmentsAccessLevelInput() {
+    return this._environmentsAccessLevel;
+  }
+
   // external_authorization_classification_label - computed: false, optional: true, required: false
   private _externalAuthorizationClassificationLabel?: string; 
   public get externalAuthorizationClassificationLabel() {
@@ -1633,6 +1714,22 @@ export class Project extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get externalAuthorizationClassificationLabelInput() {
     return this._externalAuthorizationClassificationLabel;
+  }
+
+  // feature_flags_access_level - computed: true, optional: true, required: false
+  private _featureFlagsAccessLevel?: string; 
+  public get featureFlagsAccessLevel() {
+    return this.getStringAttribute('feature_flags_access_level');
+  }
+  public set featureFlagsAccessLevel(value: string) {
+    this._featureFlagsAccessLevel = value;
+  }
+  public resetFeatureFlagsAccessLevel() {
+    this._featureFlagsAccessLevel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get featureFlagsAccessLevelInput() {
+    return this._featureFlagsAccessLevel;
   }
 
   // forked_from_project_id - computed: false, optional: true, required: false
@@ -1750,6 +1847,22 @@ export class Project extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get importUrlUsernameInput() {
     return this._importUrlUsername;
+  }
+
+  // infrastructure_access_level - computed: true, optional: true, required: false
+  private _infrastructureAccessLevel?: string; 
+  public get infrastructureAccessLevel() {
+    return this.getStringAttribute('infrastructure_access_level');
+  }
+  public set infrastructureAccessLevel(value: string) {
+    this._infrastructureAccessLevel = value;
+  }
+  public resetInfrastructureAccessLevel() {
+    this._infrastructureAccessLevel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get infrastructureAccessLevelInput() {
+    return this._infrastructureAccessLevel;
   }
 
   // initialize_with_readme - computed: false, optional: true, required: false
@@ -1992,6 +2105,22 @@ export class Project extends cdktf.TerraformResource {
     return this._mirrorTriggerBuilds;
   }
 
+  // monitor_access_level - computed: true, optional: true, required: false
+  private _monitorAccessLevel?: string; 
+  public get monitorAccessLevel() {
+    return this.getStringAttribute('monitor_access_level');
+  }
+  public set monitorAccessLevel(value: string) {
+    this._monitorAccessLevel = value;
+  }
+  public resetMonitorAccessLevel() {
+    this._monitorAccessLevel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get monitorAccessLevelInput() {
+    return this._monitorAccessLevel;
+  }
+
   // mr_default_target_self - computed: false, optional: true, required: false
   private _mrDefaultTargetSelf?: boolean | cdktf.IResolvable; 
   public get mrDefaultTargetSelf() {
@@ -2200,6 +2329,22 @@ export class Project extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get publicBuildsInput() {
     return this._publicBuilds;
+  }
+
+  // releases_access_level - computed: true, optional: true, required: false
+  private _releasesAccessLevel?: string; 
+  public get releasesAccessLevel() {
+    return this.getStringAttribute('releases_access_level');
+  }
+  public set releasesAccessLevel(value: string) {
+    this._releasesAccessLevel = value;
+  }
+  public resetReleasesAccessLevel() {
+    this._releasesAccessLevel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get releasesAccessLevelInput() {
+    return this._releasesAccessLevel;
   }
 
   // remove_source_branch_after_merge - computed: true, optional: true, required: false
@@ -2647,7 +2792,9 @@ export class Project extends cdktf.TerraformResource {
       default_branch: cdktf.stringToTerraform(this._defaultBranch),
       description: cdktf.stringToTerraform(this._description),
       emails_disabled: cdktf.booleanToTerraform(this._emailsDisabled),
+      environments_access_level: cdktf.stringToTerraform(this._environmentsAccessLevel),
       external_authorization_classification_label: cdktf.stringToTerraform(this._externalAuthorizationClassificationLabel),
+      feature_flags_access_level: cdktf.stringToTerraform(this._featureFlagsAccessLevel),
       forked_from_project_id: cdktf.numberToTerraform(this._forkedFromProjectId),
       forking_access_level: cdktf.stringToTerraform(this._forkingAccessLevel),
       group_with_project_templates_id: cdktf.numberToTerraform(this._groupWithProjectTemplatesId),
@@ -2655,6 +2802,7 @@ export class Project extends cdktf.TerraformResource {
       import_url: cdktf.stringToTerraform(this._importUrl),
       import_url_password: cdktf.stringToTerraform(this._importUrlPassword),
       import_url_username: cdktf.stringToTerraform(this._importUrlUsername),
+      infrastructure_access_level: cdktf.stringToTerraform(this._infrastructureAccessLevel),
       initialize_with_readme: cdktf.booleanToTerraform(this._initializeWithReadme),
       issues_access_level: cdktf.stringToTerraform(this._issuesAccessLevel),
       issues_enabled: cdktf.booleanToTerraform(this._issuesEnabled),
@@ -2670,6 +2818,7 @@ export class Project extends cdktf.TerraformResource {
       mirror: cdktf.booleanToTerraform(this._mirror),
       mirror_overwrites_diverged_branches: cdktf.booleanToTerraform(this._mirrorOverwritesDivergedBranches),
       mirror_trigger_builds: cdktf.booleanToTerraform(this._mirrorTriggerBuilds),
+      monitor_access_level: cdktf.stringToTerraform(this._monitorAccessLevel),
       mr_default_target_self: cdktf.booleanToTerraform(this._mrDefaultTargetSelf),
       name: cdktf.stringToTerraform(this._name),
       namespace_id: cdktf.numberToTerraform(this._namespaceId),
@@ -2683,6 +2832,7 @@ export class Project extends cdktf.TerraformResource {
       pipelines_enabled: cdktf.booleanToTerraform(this._pipelinesEnabled),
       printing_merge_request_link_enabled: cdktf.booleanToTerraform(this._printingMergeRequestLinkEnabled),
       public_builds: cdktf.booleanToTerraform(this._publicBuilds),
+      releases_access_level: cdktf.stringToTerraform(this._releasesAccessLevel),
       remove_source_branch_after_merge: cdktf.booleanToTerraform(this._removeSourceBranchAfterMerge),
       repository_access_level: cdktf.stringToTerraform(this._repositoryAccessLevel),
       repository_storage: cdktf.stringToTerraform(this._repositoryStorage),

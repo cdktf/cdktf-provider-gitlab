@@ -47,7 +47,9 @@ project.Project(
   default_branch: str = None,
   description: str = None,
   emails_disabled: typing.Union[bool, IResolvable] = None,
+  environments_access_level: str = None,
   external_authorization_classification_label: str = None,
+  feature_flags_access_level: str = None,
   forked_from_project_id: typing.Union[int, float] = None,
   forking_access_level: str = None,
   group_with_project_templates_id: typing.Union[int, float] = None,
@@ -55,6 +57,7 @@ project.Project(
   import_url: str = None,
   import_url_password: str = None,
   import_url_username: str = None,
+  infrastructure_access_level: str = None,
   initialize_with_readme: typing.Union[bool, IResolvable] = None,
   issues_access_level: str = None,
   issues_enabled: typing.Union[bool, IResolvable] = None,
@@ -70,6 +73,7 @@ project.Project(
   mirror: typing.Union[bool, IResolvable] = None,
   mirror_overwrites_diverged_branches: typing.Union[bool, IResolvable] = None,
   mirror_trigger_builds: typing.Union[bool, IResolvable] = None,
+  monitor_access_level: str = None,
   mr_default_target_self: typing.Union[bool, IResolvable] = None,
   namespace_id: typing.Union[int, float] = None,
   only_allow_merge_if_all_discussions_are_resolved: typing.Union[bool, IResolvable] = None,
@@ -83,6 +87,7 @@ project.Project(
   printing_merge_request_link_enabled: typing.Union[bool, IResolvable] = None,
   public_builds: typing.Union[bool, IResolvable] = None,
   push_rules: ProjectPushRules = None,
+  releases_access_level: str = None,
   remove_source_branch_after_merge: typing.Union[bool, IResolvable] = None,
   repository_access_level: str = None,
   repository_storage: str = None,
@@ -146,7 +151,9 @@ project.Project(
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.defaultBranch">default_branch</a></code> | <code>str</code> | The default branch for the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.description">description</a></code> | <code>str</code> | A description of the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.emailsDisabled">emails_disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable email notifications. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.environmentsAccessLevel">environments_access_level</a></code> | <code>str</code> | Set the environments access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.externalAuthorizationClassificationLabel">external_authorization_classification_label</a></code> | <code>str</code> | The classification label for the project. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.featureFlagsAccessLevel">feature_flags_access_level</a></code> | <code>str</code> | Set the feature flags access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.forkedFromProjectId">forked_from_project_id</a></code> | <code>typing.Union[int, float]</code> | The id of the project to fork. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.forkingAccessLevel">forking_access_level</a></code> | <code>str</code> | Set the forking access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.groupWithProjectTemplatesId">group_with_project_templates_id</a></code> | <code>typing.Union[int, float]</code> | For group-level custom templates, specifies ID of group from which all the custom project templates are sourced. |
@@ -154,6 +161,7 @@ project.Project(
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.importUrl">import_url</a></code> | <code>str</code> | Git URL to a repository to be imported. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.importUrlPassword">import_url_password</a></code> | <code>str</code> | The password for the `import_url`. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.importUrlUsername">import_url_username</a></code> | <code>str</code> | The username for the `import_url`. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.infrastructureAccessLevel">infrastructure_access_level</a></code> | <code>str</code> | Set the infrastructure access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.initializeWithReadme">initialize_with_readme</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Create main branch with first commit containing a README.md file. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.issuesAccessLevel">issues_access_level</a></code> | <code>str</code> | Set the issues access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.issuesEnabled">issues_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable issue tracking for the project. |
@@ -169,6 +177,7 @@ project.Project(
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.mirror">mirror</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable project pull mirror. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.mirrorOverwritesDivergedBranches">mirror_overwrites_diverged_branches</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable overwrite diverged branches for a mirrored project. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.mirrorTriggerBuilds">mirror_trigger_builds</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable trigger builds on pushes for a mirrored project. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.monitorAccessLevel">monitor_access_level</a></code> | <code>str</code> | Set the monitor access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.mrDefaultTargetSelf">mr_default_target_self</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | For forked projects, target merge requests to this project. If false, the target will be the upstream project. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.namespaceId">namespace_id</a></code> | <code>typing.Union[int, float]</code> | The namespace (group or user) of the project. Defaults to your user. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.onlyAllowMergeIfAllDiscussionsAreResolved">only_allow_merge_if_all_discussions_are_resolved</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to true if you want allow merges only if all discussions are resolved. |
@@ -182,6 +191,7 @@ project.Project(
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.printingMergeRequestLinkEnabled">printing_merge_request_link_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Show link to create/view merge request when pushing from the command line. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.publicBuilds">public_builds</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, jobs can be viewed by non-project members. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.pushRules">push_rules</a></code> | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules">ProjectPushRules</a></code> | push_rules block. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.releasesAccessLevel">releases_access_level</a></code> | <code>str</code> | Set the releases access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.removeSourceBranchAfterMerge">remove_source_branch_after_merge</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable `Delete source branch` option by default for all new merge requests. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.repositoryAccessLevel">repository_access_level</a></code> | <code>str</code> | Set the repository access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.repositoryStorage">repository_storage</a></code> | <code>str</code> | Which storage shard the repository is on. (administrator only). |
@@ -537,6 +547,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 ---
 
+##### `environments_access_level`<sup>Optional</sup> <a name="environments_access_level" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.environmentsAccessLevel"></a>
+
+- *Type:* str
+
+Set the environments access level. Valid values are `disabled`, `private`, `enabled`.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#environments_access_level Project#environments_access_level}
+
+---
+
 ##### `external_authorization_classification_label`<sup>Optional</sup> <a name="external_authorization_classification_label" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.externalAuthorizationClassificationLabel"></a>
 
 - *Type:* str
@@ -544,6 +564,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 The classification label for the project.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#external_authorization_classification_label Project#external_authorization_classification_label}
+
+---
+
+##### `feature_flags_access_level`<sup>Optional</sup> <a name="feature_flags_access_level" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.featureFlagsAccessLevel"></a>
+
+- *Type:* str
+
+Set the feature flags access level. Valid values are `disabled`, `private`, `enabled`.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#feature_flags_access_level Project#feature_flags_access_level}
 
 ---
 
@@ -625,6 +655,16 @@ The username for the `import_url`.
 The value of this field is used to construct a valid `import_url` and is only related to the provider. This field cannot be imported using `terraform import`.  See the examples section for how to properly use it.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#import_url_username Project#import_url_username}
+
+---
+
+##### `infrastructure_access_level`<sup>Optional</sup> <a name="infrastructure_access_level" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.infrastructureAccessLevel"></a>
+
+- *Type:* str
+
+Set the infrastructure access level. Valid values are `disabled`, `private`, `enabled`.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#infrastructure_access_level Project#infrastructure_access_level}
 
 ---
 
@@ -778,6 +818,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 ---
 
+##### `monitor_access_level`<sup>Optional</sup> <a name="monitor_access_level" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.monitorAccessLevel"></a>
+
+- *Type:* str
+
+Set the monitor access level. Valid values are `disabled`, `private`, `enabled`.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#monitor_access_level Project#monitor_access_level}
+
+---
+
 ##### `mr_default_target_self`<sup>Optional</sup> <a name="mr_default_target_self" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.mrDefaultTargetSelf"></a>
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
@@ -905,6 +955,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 push_rules block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#push_rules Project#push_rules}
+
+---
+
+##### `releases_access_level`<sup>Optional</sup> <a name="releases_access_level" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.releasesAccessLevel"></a>
+
+- *Type:* str
+
+Set the releases access level. Valid values are `disabled`, `private`, `enabled`.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#releases_access_level Project#releases_access_level}
 
 ---
 
@@ -1116,6 +1176,8 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Use either custom instance or group (with group_with_project_templates_id) project template (enterprise edition).
 
+~> When using a custom template, [Group Tokens won't work](https://docs.gitlab.com/15.7/ee/user/project/settings/import_export_troubleshooting.html#import-using-the-rest-api-fails-when-using-a-group-access-token). You must use a real user's Personal Access Token.
+
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#use_custom_template Project#use_custom_template}
 
 ---
@@ -1197,7 +1259,9 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetDefaultBranch">reset_default_branch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetEmailsDisabled">reset_emails_disabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.resetEnvironmentsAccessLevel">reset_environments_access_level</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetExternalAuthorizationClassificationLabel">reset_external_authorization_classification_label</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.resetFeatureFlagsAccessLevel">reset_feature_flags_access_level</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetForkedFromProjectId">reset_forked_from_project_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetForkingAccessLevel">reset_forking_access_level</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetGroupWithProjectTemplatesId">reset_group_with_project_templates_id</a></code> | *No description.* |
@@ -1205,6 +1269,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetImportUrl">reset_import_url</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetImportUrlPassword">reset_import_url_password</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetImportUrlUsername">reset_import_url_username</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.resetInfrastructureAccessLevel">reset_infrastructure_access_level</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetInitializeWithReadme">reset_initialize_with_readme</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetIssuesAccessLevel">reset_issues_access_level</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetIssuesEnabled">reset_issues_enabled</a></code> | *No description.* |
@@ -1220,6 +1285,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetMirror">reset_mirror</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetMirrorOverwritesDivergedBranches">reset_mirror_overwrites_diverged_branches</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetMirrorTriggerBuilds">reset_mirror_trigger_builds</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.resetMonitorAccessLevel">reset_monitor_access_level</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetMrDefaultTargetSelf">reset_mr_default_target_self</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetNamespaceId">reset_namespace_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetOnlyAllowMergeIfAllDiscussionsAreResolved">reset_only_allow_merge_if_all_discussions_are_resolved</a></code> | *No description.* |
@@ -1233,6 +1299,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetPrintingMergeRequestLinkEnabled">reset_printing_merge_request_link_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetPublicBuilds">reset_public_builds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetPushRules">reset_push_rules</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.resetReleasesAccessLevel">reset_releases_access_level</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetRemoveSourceBranchAfterMerge">reset_remove_source_branch_after_merge</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetRepositoryAccessLevel">reset_repository_access_level</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetRepositoryStorage">reset_repository_storage</a></code> | *No description.* |
@@ -1475,6 +1542,7 @@ def put_container_expiration_policy(
   cadence: str = None,
   enabled: typing.Union[bool, IResolvable] = None,
   keep_n: typing.Union[int, float] = None,
+  name_regex: str = None,
   name_regex_delete: str = None,
   name_regex_keep: str = None,
   older_than: str = None
@@ -1511,13 +1579,21 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 ---
 
-###### `name_regex_delete`<sup>Optional</sup> <a name="name_regex_delete" id="@cdktf/provider-gitlab.project.Project.putContainerExpirationPolicy.parameter.nameRegexDelete"></a>
+###### `name_regex`<sup>Optional</sup> <a name="name_regex" id="@cdktf/provider-gitlab.project.Project.putContainerExpirationPolicy.parameter.nameRegex"></a>
 
 - *Type:* str
 
 The regular expression to match image names to delete.
 
-**Note**: the upstream API has some inconsistencies with the `name_regex` field here. It's basically unusable at the moment.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#name_regex Project#name_regex}
+
+---
+
+###### `name_regex_delete`<sup>Optional</sup> <a name="name_regex_delete" id="@cdktf/provider-gitlab.project.Project.putContainerExpirationPolicy.parameter.nameRegexDelete"></a>
+
+- *Type:* str
+
+The regular expression to match image names to delete.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#name_regex_delete Project#name_regex_delete}
 
@@ -1821,10 +1897,22 @@ def reset_description() -> None
 def reset_emails_disabled() -> None
 ```
 
+##### `reset_environments_access_level` <a name="reset_environments_access_level" id="@cdktf/provider-gitlab.project.Project.resetEnvironmentsAccessLevel"></a>
+
+```python
+def reset_environments_access_level() -> None
+```
+
 ##### `reset_external_authorization_classification_label` <a name="reset_external_authorization_classification_label" id="@cdktf/provider-gitlab.project.Project.resetExternalAuthorizationClassificationLabel"></a>
 
 ```python
 def reset_external_authorization_classification_label() -> None
+```
+
+##### `reset_feature_flags_access_level` <a name="reset_feature_flags_access_level" id="@cdktf/provider-gitlab.project.Project.resetFeatureFlagsAccessLevel"></a>
+
+```python
+def reset_feature_flags_access_level() -> None
 ```
 
 ##### `reset_forked_from_project_id` <a name="reset_forked_from_project_id" id="@cdktf/provider-gitlab.project.Project.resetForkedFromProjectId"></a>
@@ -1867,6 +1955,12 @@ def reset_import_url_password() -> None
 
 ```python
 def reset_import_url_username() -> None
+```
+
+##### `reset_infrastructure_access_level` <a name="reset_infrastructure_access_level" id="@cdktf/provider-gitlab.project.Project.resetInfrastructureAccessLevel"></a>
+
+```python
+def reset_infrastructure_access_level() -> None
 ```
 
 ##### `reset_initialize_with_readme` <a name="reset_initialize_with_readme" id="@cdktf/provider-gitlab.project.Project.resetInitializeWithReadme"></a>
@@ -1959,6 +2053,12 @@ def reset_mirror_overwrites_diverged_branches() -> None
 def reset_mirror_trigger_builds() -> None
 ```
 
+##### `reset_monitor_access_level` <a name="reset_monitor_access_level" id="@cdktf/provider-gitlab.project.Project.resetMonitorAccessLevel"></a>
+
+```python
+def reset_monitor_access_level() -> None
+```
+
 ##### `reset_mr_default_target_self` <a name="reset_mr_default_target_self" id="@cdktf/provider-gitlab.project.Project.resetMrDefaultTargetSelf"></a>
 
 ```python
@@ -2035,6 +2135,12 @@ def reset_public_builds() -> None
 
 ```python
 def reset_push_rules() -> None
+```
+
+##### `reset_releases_access_level` <a name="reset_releases_access_level" id="@cdktf/provider-gitlab.project.Project.resetReleasesAccessLevel"></a>
+
+```python
+def reset_releases_access_level() -> None
 ```
 
 ##### `reset_remove_source_branch_after_merge` <a name="reset_remove_source_branch_after_merge" id="@cdktf/provider-gitlab.project.Project.resetRemoveSourceBranchAfterMerge"></a>
@@ -2302,7 +2408,9 @@ project.Project.is_terraform_resource(
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.defaultBranchInput">default_branch_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.emailsDisabledInput">emails_disabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.environmentsAccessLevelInput">environments_access_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.externalAuthorizationClassificationLabelInput">external_authorization_classification_label_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.featureFlagsAccessLevelInput">feature_flags_access_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.forkedFromProjectIdInput">forked_from_project_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.forkingAccessLevelInput">forking_access_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.groupWithProjectTemplatesIdInput">group_with_project_templates_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -2310,6 +2418,7 @@ project.Project.is_terraform_resource(
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlInput">import_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlPasswordInput">import_url_password_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlUsernameInput">import_url_username_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.infrastructureAccessLevelInput">infrastructure_access_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.initializeWithReadmeInput">initialize_with_readme_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesAccessLevelInput">issues_access_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesEnabledInput">issues_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -2325,6 +2434,7 @@ project.Project.is_terraform_resource(
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorInput">mirror_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorOverwritesDivergedBranchesInput">mirror_overwrites_diverged_branches_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorTriggerBuildsInput">mirror_trigger_builds_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.monitorAccessLevelInput">monitor_access_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mrDefaultTargetSelfInput">mr_default_target_self_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.namespaceIdInput">namespace_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -2339,6 +2449,7 @@ project.Project.is_terraform_resource(
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.printingMergeRequestLinkEnabledInput">printing_merge_request_link_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.publicBuildsInput">public_builds_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.pushRulesInput">push_rules_input</a></code> | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules">ProjectPushRules</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.releasesAccessLevelInput">releases_access_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.removeSourceBranchAfterMergeInput">remove_source_branch_after_merge_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.repositoryAccessLevelInput">repository_access_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.repositoryStorageInput">repository_storage_input</a></code> | <code>str</code> | *No description.* |
@@ -2386,7 +2497,9 @@ project.Project.is_terraform_resource(
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.defaultBranch">default_branch</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.emailsDisabled">emails_disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.environmentsAccessLevel">environments_access_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.externalAuthorizationClassificationLabel">external_authorization_classification_label</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.featureFlagsAccessLevel">feature_flags_access_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.forkedFromProjectId">forked_from_project_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.forkingAccessLevel">forking_access_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.groupWithProjectTemplatesId">group_with_project_templates_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -2394,6 +2507,7 @@ project.Project.is_terraform_resource(
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrl">import_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlPassword">import_url_password</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlUsername">import_url_username</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.infrastructureAccessLevel">infrastructure_access_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.initializeWithReadme">initialize_with_readme</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesAccessLevel">issues_access_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesEnabled">issues_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -2409,6 +2523,7 @@ project.Project.is_terraform_resource(
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirror">mirror</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorOverwritesDivergedBranches">mirror_overwrites_diverged_branches</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorTriggerBuilds">mirror_trigger_builds</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.monitorAccessLevel">monitor_access_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mrDefaultTargetSelf">mr_default_target_self</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.namespaceId">namespace_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -2422,6 +2537,7 @@ project.Project.is_terraform_resource(
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.pipelinesEnabled">pipelines_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.printingMergeRequestLinkEnabled">printing_merge_request_link_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.publicBuilds">public_builds</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.releasesAccessLevel">releases_access_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.removeSourceBranchAfterMerge">remove_source_branch_after_merge</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.repositoryAccessLevel">repository_access_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.repositoryStorage">repository_storage</a></code> | <code>str</code> | *No description.* |
@@ -2920,10 +3036,30 @@ emails_disabled_input: typing.Union[bool, IResolvable]
 
 ---
 
+##### `environments_access_level_input`<sup>Optional</sup> <a name="environments_access_level_input" id="@cdktf/provider-gitlab.project.Project.property.environmentsAccessLevelInput"></a>
+
+```python
+environments_access_level_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `external_authorization_classification_label_input`<sup>Optional</sup> <a name="external_authorization_classification_label_input" id="@cdktf/provider-gitlab.project.Project.property.externalAuthorizationClassificationLabelInput"></a>
 
 ```python
 external_authorization_classification_label_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `feature_flags_access_level_input`<sup>Optional</sup> <a name="feature_flags_access_level_input" id="@cdktf/provider-gitlab.project.Project.property.featureFlagsAccessLevelInput"></a>
+
+```python
+feature_flags_access_level_input: str
 ```
 
 - *Type:* str
@@ -2994,6 +3130,16 @@ import_url_password_input: str
 
 ```python
 import_url_username_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `infrastructure_access_level_input`<sup>Optional</sup> <a name="infrastructure_access_level_input" id="@cdktf/provider-gitlab.project.Project.property.infrastructureAccessLevelInput"></a>
+
+```python
+infrastructure_access_level_input: str
 ```
 
 - *Type:* str
@@ -3150,6 +3296,16 @@ mirror_trigger_builds_input: typing.Union[bool, IResolvable]
 
 ---
 
+##### `monitor_access_level_input`<sup>Optional</sup> <a name="monitor_access_level_input" id="@cdktf/provider-gitlab.project.Project.property.monitorAccessLevelInput"></a>
+
+```python
+monitor_access_level_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `mr_default_target_self_input`<sup>Optional</sup> <a name="mr_default_target_self_input" id="@cdktf/provider-gitlab.project.Project.property.mrDefaultTargetSelfInput"></a>
 
 ```python
@@ -3287,6 +3443,16 @@ push_rules_input: ProjectPushRules
 ```
 
 - *Type:* <a href="#@cdktf/provider-gitlab.project.ProjectPushRules">ProjectPushRules</a>
+
+---
+
+##### `releases_access_level_input`<sup>Optional</sup> <a name="releases_access_level_input" id="@cdktf/provider-gitlab.project.Project.property.releasesAccessLevelInput"></a>
+
+```python
+releases_access_level_input: str
+```
+
+- *Type:* str
 
 ---
 
@@ -3760,10 +3926,30 @@ emails_disabled: typing.Union[bool, IResolvable]
 
 ---
 
+##### `environments_access_level`<sup>Required</sup> <a name="environments_access_level" id="@cdktf/provider-gitlab.project.Project.property.environmentsAccessLevel"></a>
+
+```python
+environments_access_level: str
+```
+
+- *Type:* str
+
+---
+
 ##### `external_authorization_classification_label`<sup>Required</sup> <a name="external_authorization_classification_label" id="@cdktf/provider-gitlab.project.Project.property.externalAuthorizationClassificationLabel"></a>
 
 ```python
 external_authorization_classification_label: str
+```
+
+- *Type:* str
+
+---
+
+##### `feature_flags_access_level`<sup>Required</sup> <a name="feature_flags_access_level" id="@cdktf/provider-gitlab.project.Project.property.featureFlagsAccessLevel"></a>
+
+```python
+feature_flags_access_level: str
 ```
 
 - *Type:* str
@@ -3834,6 +4020,16 @@ import_url_password: str
 
 ```python
 import_url_username: str
+```
+
+- *Type:* str
+
+---
+
+##### `infrastructure_access_level`<sup>Required</sup> <a name="infrastructure_access_level" id="@cdktf/provider-gitlab.project.Project.property.infrastructureAccessLevel"></a>
+
+```python
+infrastructure_access_level: str
 ```
 
 - *Type:* str
@@ -3990,6 +4186,16 @@ mirror_trigger_builds: typing.Union[bool, IResolvable]
 
 ---
 
+##### `monitor_access_level`<sup>Required</sup> <a name="monitor_access_level" id="@cdktf/provider-gitlab.project.Project.property.monitorAccessLevel"></a>
+
+```python
+monitor_access_level: str
+```
+
+- *Type:* str
+
+---
+
 ##### `mr_default_target_self`<sup>Required</sup> <a name="mr_default_target_self" id="@cdktf/provider-gitlab.project.Project.property.mrDefaultTargetSelf"></a>
 
 ```python
@@ -4117,6 +4323,16 @@ public_builds: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `releases_access_level`<sup>Required</sup> <a name="releases_access_level" id="@cdktf/provider-gitlab.project.Project.property.releasesAccessLevel"></a>
+
+```python
+releases_access_level: str
+```
+
+- *Type:* str
 
 ---
 
@@ -4411,7 +4627,9 @@ project.ProjectConfig(
   default_branch: str = None,
   description: str = None,
   emails_disabled: typing.Union[bool, IResolvable] = None,
+  environments_access_level: str = None,
   external_authorization_classification_label: str = None,
+  feature_flags_access_level: str = None,
   forked_from_project_id: typing.Union[int, float] = None,
   forking_access_level: str = None,
   group_with_project_templates_id: typing.Union[int, float] = None,
@@ -4419,6 +4637,7 @@ project.ProjectConfig(
   import_url: str = None,
   import_url_password: str = None,
   import_url_username: str = None,
+  infrastructure_access_level: str = None,
   initialize_with_readme: typing.Union[bool, IResolvable] = None,
   issues_access_level: str = None,
   issues_enabled: typing.Union[bool, IResolvable] = None,
@@ -4434,6 +4653,7 @@ project.ProjectConfig(
   mirror: typing.Union[bool, IResolvable] = None,
   mirror_overwrites_diverged_branches: typing.Union[bool, IResolvable] = None,
   mirror_trigger_builds: typing.Union[bool, IResolvable] = None,
+  monitor_access_level: str = None,
   mr_default_target_self: typing.Union[bool, IResolvable] = None,
   namespace_id: typing.Union[int, float] = None,
   only_allow_merge_if_all_discussions_are_resolved: typing.Union[bool, IResolvable] = None,
@@ -4447,6 +4667,7 @@ project.ProjectConfig(
   printing_merge_request_link_enabled: typing.Union[bool, IResolvable] = None,
   public_builds: typing.Union[bool, IResolvable] = None,
   push_rules: ProjectPushRules = None,
+  releases_access_level: str = None,
   remove_source_branch_after_merge: typing.Union[bool, IResolvable] = None,
   repository_access_level: str = None,
   repository_storage: str = None,
@@ -4510,7 +4731,9 @@ project.ProjectConfig(
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.defaultBranch">default_branch</a></code> | <code>str</code> | The default branch for the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.description">description</a></code> | <code>str</code> | A description of the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.emailsDisabled">emails_disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable email notifications. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.environmentsAccessLevel">environments_access_level</a></code> | <code>str</code> | Set the environments access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.externalAuthorizationClassificationLabel">external_authorization_classification_label</a></code> | <code>str</code> | The classification label for the project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.featureFlagsAccessLevel">feature_flags_access_level</a></code> | <code>str</code> | Set the feature flags access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.forkedFromProjectId">forked_from_project_id</a></code> | <code>typing.Union[int, float]</code> | The id of the project to fork. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.forkingAccessLevel">forking_access_level</a></code> | <code>str</code> | Set the forking access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.groupWithProjectTemplatesId">group_with_project_templates_id</a></code> | <code>typing.Union[int, float]</code> | For group-level custom templates, specifies ID of group from which all the custom project templates are sourced. |
@@ -4518,6 +4741,7 @@ project.ProjectConfig(
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.importUrl">import_url</a></code> | <code>str</code> | Git URL to a repository to be imported. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.importUrlPassword">import_url_password</a></code> | <code>str</code> | The password for the `import_url`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.importUrlUsername">import_url_username</a></code> | <code>str</code> | The username for the `import_url`. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.infrastructureAccessLevel">infrastructure_access_level</a></code> | <code>str</code> | Set the infrastructure access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.initializeWithReadme">initialize_with_readme</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Create main branch with first commit containing a README.md file. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.issuesAccessLevel">issues_access_level</a></code> | <code>str</code> | Set the issues access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.issuesEnabled">issues_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable issue tracking for the project. |
@@ -4533,6 +4757,7 @@ project.ProjectConfig(
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mirror">mirror</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable project pull mirror. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mirrorOverwritesDivergedBranches">mirror_overwrites_diverged_branches</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable overwrite diverged branches for a mirrored project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mirrorTriggerBuilds">mirror_trigger_builds</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable trigger builds on pushes for a mirrored project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.monitorAccessLevel">monitor_access_level</a></code> | <code>str</code> | Set the monitor access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mrDefaultTargetSelf">mr_default_target_self</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | For forked projects, target merge requests to this project. If false, the target will be the upstream project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.namespaceId">namespace_id</a></code> | <code>typing.Union[int, float]</code> | The namespace (group or user) of the project. Defaults to your user. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.onlyAllowMergeIfAllDiscussionsAreResolved">only_allow_merge_if_all_discussions_are_resolved</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to true if you want allow merges only if all discussions are resolved. |
@@ -4546,6 +4771,7 @@ project.ProjectConfig(
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.printingMergeRequestLinkEnabled">printing_merge_request_link_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Show link to create/view merge request when pushing from the command line. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.publicBuilds">public_builds</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, jobs can be viewed by non-project members. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.pushRules">push_rules</a></code> | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules">ProjectPushRules</a></code> | push_rules block. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.releasesAccessLevel">releases_access_level</a></code> | <code>str</code> | Set the releases access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.removeSourceBranchAfterMerge">remove_source_branch_after_merge</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable `Delete source branch` option by default for all new merge requests. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.repositoryAccessLevel">repository_access_level</a></code> | <code>str</code> | Set the repository access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.repositoryStorage">repository_storage</a></code> | <code>str</code> | Which storage shard the repository is on. (administrator only). |
@@ -5015,6 +5241,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 ---
 
+##### `environments_access_level`<sup>Optional</sup> <a name="environments_access_level" id="@cdktf/provider-gitlab.project.ProjectConfig.property.environmentsAccessLevel"></a>
+
+```python
+environments_access_level: str
+```
+
+- *Type:* str
+
+Set the environments access level. Valid values are `disabled`, `private`, `enabled`.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#environments_access_level Project#environments_access_level}
+
+---
+
 ##### `external_authorization_classification_label`<sup>Optional</sup> <a name="external_authorization_classification_label" id="@cdktf/provider-gitlab.project.ProjectConfig.property.externalAuthorizationClassificationLabel"></a>
 
 ```python
@@ -5026,6 +5266,20 @@ external_authorization_classification_label: str
 The classification label for the project.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#external_authorization_classification_label Project#external_authorization_classification_label}
+
+---
+
+##### `feature_flags_access_level`<sup>Optional</sup> <a name="feature_flags_access_level" id="@cdktf/provider-gitlab.project.ProjectConfig.property.featureFlagsAccessLevel"></a>
+
+```python
+feature_flags_access_level: str
+```
+
+- *Type:* str
+
+Set the feature flags access level. Valid values are `disabled`, `private`, `enabled`.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#feature_flags_access_level Project#feature_flags_access_level}
 
 ---
 
@@ -5135,6 +5389,20 @@ The username for the `import_url`.
 The value of this field is used to construct a valid `import_url` and is only related to the provider. This field cannot be imported using `terraform import`.  See the examples section for how to properly use it.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#import_url_username Project#import_url_username}
+
+---
+
+##### `infrastructure_access_level`<sup>Optional</sup> <a name="infrastructure_access_level" id="@cdktf/provider-gitlab.project.ProjectConfig.property.infrastructureAccessLevel"></a>
+
+```python
+infrastructure_access_level: str
+```
+
+- *Type:* str
+
+Set the infrastructure access level. Valid values are `disabled`, `private`, `enabled`.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#infrastructure_access_level Project#infrastructure_access_level}
 
 ---
 
@@ -5348,6 +5616,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 ---
 
+##### `monitor_access_level`<sup>Optional</sup> <a name="monitor_access_level" id="@cdktf/provider-gitlab.project.ProjectConfig.property.monitorAccessLevel"></a>
+
+```python
+monitor_access_level: str
+```
+
+- *Type:* str
+
+Set the monitor access level. Valid values are `disabled`, `private`, `enabled`.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#monitor_access_level Project#monitor_access_level}
+
+---
+
 ##### `mr_default_target_self`<sup>Optional</sup> <a name="mr_default_target_self" id="@cdktf/provider-gitlab.project.ProjectConfig.property.mrDefaultTargetSelf"></a>
 
 ```python
@@ -5527,6 +5809,20 @@ push_rules: ProjectPushRules
 push_rules block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#push_rules Project#push_rules}
+
+---
+
+##### `releases_access_level`<sup>Optional</sup> <a name="releases_access_level" id="@cdktf/provider-gitlab.project.ProjectConfig.property.releasesAccessLevel"></a>
+
+```python
+releases_access_level: str
+```
+
+- *Type:* str
+
+Set the releases access level. Valid values are `disabled`, `private`, `enabled`.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#releases_access_level Project#releases_access_level}
 
 ---
 
@@ -5818,6 +6114,8 @@ use_custom_template: typing.Union[bool, IResolvable]
 
 Use either custom instance or group (with group_with_project_templates_id) project template (enterprise edition).
 
+~> When using a custom template, [Group Tokens won't work](https://docs.gitlab.com/15.7/ee/user/project/settings/import_export_troubleshooting.html#import-using-the-rest-api-fails-when-using-a-group-access-token). You must use a real user's Personal Access Token.
+
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#use_custom_template Project#use_custom_template}
 
 ---
@@ -5875,6 +6173,7 @@ project.ProjectContainerExpirationPolicy(
   cadence: str = None,
   enabled: typing.Union[bool, IResolvable] = None,
   keep_n: typing.Union[int, float] = None,
+  name_regex: str = None,
   name_regex_delete: str = None,
   name_regex_keep: str = None,
   older_than: str = None
@@ -5888,6 +6187,7 @@ project.ProjectContainerExpirationPolicy(
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.cadence">cadence</a></code> | <code>str</code> | The cadence of the policy. Valid values are: `1d`, `7d`, `14d`, `1month`, `3month`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the policy is enabled. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.keepN">keep_n</a></code> | <code>typing.Union[int, float]</code> | The number of images to keep. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.nameRegex">name_regex</a></code> | <code>str</code> | The regular expression to match image names to delete. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.nameRegexDelete">name_regex_delete</a></code> | <code>str</code> | The regular expression to match image names to delete. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.nameRegexKeep">name_regex_keep</a></code> | <code>str</code> | The regular expression to match image names to keep. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.olderThan">older_than</a></code> | <code>str</code> | The number of days to keep images. |
@@ -5936,6 +6236,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 ---
 
+##### `name_regex`<sup>Optional</sup> <a name="name_regex" id="@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.nameRegex"></a>
+
+```python
+name_regex: str
+```
+
+- *Type:* str
+
+The regular expression to match image names to delete.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#name_regex Project#name_regex}
+
+---
+
 ##### `name_regex_delete`<sup>Optional</sup> <a name="name_regex_delete" id="@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.nameRegexDelete"></a>
 
 ```python
@@ -5945,8 +6259,6 @@ name_regex_delete: str
 - *Type:* str
 
 The regular expression to match image names to delete.
-
-**Note**: the upstream API has some inconsistencies with the `name_regex` field here. It's basically unusable at the moment.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#name_regex_delete Project#name_regex_delete}
 
@@ -6232,6 +6544,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.resetCadence">reset_cadence</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.resetEnabled">reset_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.resetKeepN">reset_keep_n</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.resetNameRegex">reset_name_regex</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.resetNameRegexDelete">reset_name_regex_delete</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.resetNameRegexKeep">reset_name_regex_keep</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.resetOlderThan">reset_older_than</a></code> | *No description.* |
@@ -6428,6 +6741,12 @@ def reset_enabled() -> None
 def reset_keep_n() -> None
 ```
 
+##### `reset_name_regex` <a name="reset_name_regex" id="@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.resetNameRegex"></a>
+
+```python
+def reset_name_regex() -> None
+```
+
 ##### `reset_name_regex_delete` <a name="reset_name_regex_delete" id="@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.resetNameRegexDelete"></a>
 
 ```python
@@ -6458,11 +6777,13 @@ def reset_older_than() -> None
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.enabledInput">enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.keepNInput">keep_n_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.nameRegexDeleteInput">name_regex_delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.nameRegexInput">name_regex_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.nameRegexKeepInput">name_regex_keep_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.olderThanInput">older_than_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.cadence">cadence</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.keepN">keep_n</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.nameRegex">name_regex</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.nameRegexDelete">name_regex_delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.nameRegexKeep">name_regex_keep</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.olderThan">older_than</a></code> | <code>str</code> | *No description.* |
@@ -6544,6 +6865,16 @@ name_regex_delete_input: str
 
 ---
 
+##### `name_regex_input`<sup>Optional</sup> <a name="name_regex_input" id="@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.nameRegexInput"></a>
+
+```python
+name_regex_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `name_regex_keep_input`<sup>Optional</sup> <a name="name_regex_keep_input" id="@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.nameRegexKeepInput"></a>
 
 ```python
@@ -6591,6 +6922,16 @@ keep_n: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `name_regex`<sup>Required</sup> <a name="name_regex" id="@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.nameRegex"></a>
+
+```python
+name_regex: str
+```
+
+- *Type:* str
 
 ---
 
