@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/personal_ac
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/personalaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/personalaccesstoken"
 
 personalaccesstoken.NewPersonalAccessToken(scope Construct, id *string, config PersonalAccessTokenConfig) PersonalAccessToken
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/personalaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/personalaccesstoken"
 
 personalaccesstoken.PersonalAccessToken_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/personalaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/personalaccesstoken"
 
 personalaccesstoken.PersonalAccessToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ personalaccesstoken.PersonalAccessToken_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/personalaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/personalaccesstoken"
 
 personalaccesstoken.PersonalAccessToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -679,7 +679,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/personalaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/personalaccesstoken"
 
 &personalaccesstoken.PersonalAccessTokenConfig {
 	Connection: interface{},
@@ -810,7 +810,7 @@ Scopes *[]*string
 
 The scope for the personal access token.
 
-It determines the actions which can be performed when authenticating with this token. Valid values are: `api`, `read_user`, `read_api`, `read_repository`, `write_repository`, `read_registry`, `write_registry`, `sudo`.
+It determines the actions which can be performed when authenticating with this token. Valid values are: `api`, `read_user`, `read_api`, `read_repository`, `write_repository`, `read_registry`, `write_registry`, `sudo`, `admin_mode`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/personal_access_token#scopes PersonalAccessToken#scopes}
 

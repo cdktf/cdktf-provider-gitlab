@@ -1,11 +1,13 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [application](./application.java.md)
 - [applicationSettings](./applicationSettings.java.md)
 - [branch](./branch.java.md)
 - [branchProtection](./branchProtection.java.md)
 - [clusterAgent](./clusterAgent.java.md)
 - [clusterAgentToken](./clusterAgentToken.java.md)
+- [dataGitlabApplication](./dataGitlabApplication.java.md)
 - [dataGitlabBranch](./dataGitlabBranch.java.md)
 - [dataGitlabClusterAgent](./dataGitlabClusterAgent.java.md)
 - [dataGitlabClusterAgents](./dataGitlabClusterAgents.java.md)
@@ -94,6 +96,7 @@ The following submodules are available:
 - [releaseLink](./releaseLink.java.md)
 - [repositoryFile](./repositoryFile.java.md)
 - [runner](./runner.java.md)
+- [serviceCustomIssueTracker](./serviceCustomIssueTracker.java.md)
 - [serviceEmailsOnPush](./serviceEmailsOnPush.java.md)
 - [serviceExternalWiki](./serviceExternalWiki.java.md)
 - [serviceGithub](./serviceGithub.java.md)

@@ -44,7 +44,7 @@ export interface RepositoryFileConfig extends cdktf.TerraformMetaArguments {
   */
   readonly executeFilemode?: boolean | cdktf.IResolvable;
   /**
-  * The full path of the file. It must be relative to the root of the project without a leading slash `/`.
+  * The full path of the file. It must be relative to the root of the project without a leading slash `/` or `./`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/repository_file#file_path RepositoryFile#file_path}
   */
@@ -237,7 +237,7 @@ export class RepositoryFile extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_repository_file',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '15.9.0',
+        providerVersion: '15.10.0',
         providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,

@@ -81,7 +81,7 @@ export interface ServiceMicrosoftTeamsConfig extends cdktf.TerraformMetaArgument
   */
   readonly tagPushEvents?: boolean | cdktf.IResolvable;
   /**
-  * The Microsoft Teams webhook. For example, https://outlook.office.com/webhook/...
+  * The Microsoft Teams webhook (Example, https://outlook.office.com/webhook/...). This value cannot be imported.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#webhook ServiceMicrosoftTeams#webhook}
   */
@@ -120,7 +120,7 @@ export class ServiceMicrosoftTeams extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_service_microsoft_teams',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '15.9.0',
+        providerVersion: '15.10.0',
         providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,

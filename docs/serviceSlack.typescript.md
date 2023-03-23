@@ -1221,7 +1221,7 @@ const serviceSlackConfig: serviceSlack.ServiceSlackConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlackConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlackConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlackConfig.property.project">project</a></code> | <code>string</code> | ID of the project you want to activate integration on. |
-| <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlackConfig.property.webhook">webhook</a></code> | <code>string</code> | Webhook URL (ex.: https://hooks.slack.com/services/...). |
+| <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlackConfig.property.webhook">webhook</a></code> | <code>string</code> | Webhook URL (Example, https://hooks.slack.com/services/...). This value cannot be imported. |
 | <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlackConfig.property.branchesToBeNotified">branchesToBeNotified</a></code> | <code>string</code> | Branches to send notifications for. Valid options are "all", "default", "protected", and "default_and_protected". |
 | <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlackConfig.property.confidentialIssueChannel">confidentialIssueChannel</a></code> | <code>string</code> | The name of the channel to receive confidential issue events notifications. |
 | <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlackConfig.property.confidentialIssuesEvents">confidentialIssuesEvents</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable notifications for confidential issues events. |
@@ -1339,7 +1339,7 @@ public readonly webhook: string;
 
 - *Type:* string
 
-Webhook URL (ex.: https://hooks.slack.com/services/...).
+Webhook URL (Example, https://hooks.slack.com/services/...). This value cannot be imported.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_slack#webhook ServiceSlack#webhook}
 

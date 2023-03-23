@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataGitlabRepositoryFileConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The full path of the file. It must be relative to the root of the project without a leading slash `/`.
+  * The full path of the file. It must be relative to the root of the project without a leading slash `/` or `./`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/repository_file#file_path DataGitlabRepositoryFile#file_path}
   */
@@ -60,7 +60,7 @@ export class DataGitlabRepositoryFile extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_repository_file',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '15.9.0',
+        providerVersion: '15.10.0',
         providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,

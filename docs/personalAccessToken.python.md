@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 The scope for the personal access token.
 
-It determines the actions which can be performed when authenticating with this token. Valid values are: `api`, `read_user`, `read_api`, `read_repository`, `write_repository`, `read_registry`, `write_registry`, `sudo`.
+It determines the actions which can be performed when authenticating with this token. Valid values are: `api`, `read_user`, `read_api`, `read_repository`, `write_repository`, `read_registry`, `write_registry`, `sudo`, `admin_mode`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/personal_access_token#scopes PersonalAccessToken#scopes}
 
@@ -958,7 +958,7 @@ scopes: typing.List[str]
 
 The scope for the personal access token.
 
-It determines the actions which can be performed when authenticating with this token. Valid values are: `api`, `read_user`, `read_api`, `read_repository`, `write_repository`, `read_registry`, `write_registry`, `sudo`.
+It determines the actions which can be performed when authenticating with this token. Valid values are: `api`, `read_user`, `read_api`, `read_repository`, `write_repository`, `read_registry`, `write_registry`, `sudo`, `admin_mode`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/personal_access_token#scopes PersonalAccessToken#scopes}
 

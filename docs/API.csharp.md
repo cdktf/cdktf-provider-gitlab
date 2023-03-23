@@ -1,11 +1,13 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [application](./application.csharp.md)
 - [applicationSettings](./applicationSettings.csharp.md)
 - [branch](./branch.csharp.md)
 - [branchProtection](./branchProtection.csharp.md)
 - [clusterAgent](./clusterAgent.csharp.md)
 - [clusterAgentToken](./clusterAgentToken.csharp.md)
+- [dataGitlabApplication](./dataGitlabApplication.csharp.md)
 - [dataGitlabBranch](./dataGitlabBranch.csharp.md)
 - [dataGitlabClusterAgent](./dataGitlabClusterAgent.csharp.md)
 - [dataGitlabClusterAgents](./dataGitlabClusterAgents.csharp.md)
@@ -94,6 +96,7 @@ The following submodules are available:
 - [releaseLink](./releaseLink.csharp.md)
 - [repositoryFile](./repositoryFile.csharp.md)
 - [runner](./runner.csharp.md)
+- [serviceCustomIssueTracker](./serviceCustomIssueTracker.csharp.md)
 - [serviceEmailsOnPush](./serviceEmailsOnPush.csharp.md)
 - [serviceExternalWiki](./serviceExternalWiki.csharp.md)
 - [serviceGithub](./serviceGithub.csharp.md)

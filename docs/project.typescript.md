@@ -93,7 +93,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetDefaultBranch">resetDefaultBranch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetEmailsDisabled">resetEmailsDisabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.resetEnvironmentsAccessLevel">resetEnvironmentsAccessLevel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetExternalAuthorizationClassificationLabel">resetExternalAuthorizationClassificationLabel</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.resetFeatureFlagsAccessLevel">resetFeatureFlagsAccessLevel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetForkedFromProjectId">resetForkedFromProjectId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetForkingAccessLevel">resetForkingAccessLevel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetGroupWithProjectTemplatesId">resetGroupWithProjectTemplatesId</a></code> | *No description.* |
@@ -101,6 +103,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetImportUrl">resetImportUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetImportUrlPassword">resetImportUrlPassword</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetImportUrlUsername">resetImportUrlUsername</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.resetInfrastructureAccessLevel">resetInfrastructureAccessLevel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetInitializeWithReadme">resetInitializeWithReadme</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetIssuesAccessLevel">resetIssuesAccessLevel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetIssuesEnabled">resetIssuesEnabled</a></code> | *No description.* |
@@ -116,6 +119,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetMirror">resetMirror</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetMirrorOverwritesDivergedBranches">resetMirrorOverwritesDivergedBranches</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetMirrorTriggerBuilds">resetMirrorTriggerBuilds</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.resetMonitorAccessLevel">resetMonitorAccessLevel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetMrDefaultTargetSelf">resetMrDefaultTargetSelf</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetNamespaceId">resetNamespaceId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetOnlyAllowMergeIfAllDiscussionsAreResolved">resetOnlyAllowMergeIfAllDiscussionsAreResolved</a></code> | *No description.* |
@@ -129,6 +133,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetPrintingMergeRequestLinkEnabled">resetPrintingMergeRequestLinkEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetPublicBuilds">resetPublicBuilds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetPushRules">resetPushRules</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.resetReleasesAccessLevel">resetReleasesAccessLevel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetRemoveSourceBranchAfterMerge">resetRemoveSourceBranchAfterMerge</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetRepositoryAccessLevel">resetRepositoryAccessLevel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetRepositoryStorage">resetRepositoryStorage</a></code> | *No description.* |
@@ -513,10 +518,22 @@ public resetDescription(): void
 public resetEmailsDisabled(): void
 ```
 
+##### `resetEnvironmentsAccessLevel` <a name="resetEnvironmentsAccessLevel" id="@cdktf/provider-gitlab.project.Project.resetEnvironmentsAccessLevel"></a>
+
+```typescript
+public resetEnvironmentsAccessLevel(): void
+```
+
 ##### `resetExternalAuthorizationClassificationLabel` <a name="resetExternalAuthorizationClassificationLabel" id="@cdktf/provider-gitlab.project.Project.resetExternalAuthorizationClassificationLabel"></a>
 
 ```typescript
 public resetExternalAuthorizationClassificationLabel(): void
+```
+
+##### `resetFeatureFlagsAccessLevel` <a name="resetFeatureFlagsAccessLevel" id="@cdktf/provider-gitlab.project.Project.resetFeatureFlagsAccessLevel"></a>
+
+```typescript
+public resetFeatureFlagsAccessLevel(): void
 ```
 
 ##### `resetForkedFromProjectId` <a name="resetForkedFromProjectId" id="@cdktf/provider-gitlab.project.Project.resetForkedFromProjectId"></a>
@@ -559,6 +576,12 @@ public resetImportUrlPassword(): void
 
 ```typescript
 public resetImportUrlUsername(): void
+```
+
+##### `resetInfrastructureAccessLevel` <a name="resetInfrastructureAccessLevel" id="@cdktf/provider-gitlab.project.Project.resetInfrastructureAccessLevel"></a>
+
+```typescript
+public resetInfrastructureAccessLevel(): void
 ```
 
 ##### `resetInitializeWithReadme` <a name="resetInitializeWithReadme" id="@cdktf/provider-gitlab.project.Project.resetInitializeWithReadme"></a>
@@ -651,6 +674,12 @@ public resetMirrorOverwritesDivergedBranches(): void
 public resetMirrorTriggerBuilds(): void
 ```
 
+##### `resetMonitorAccessLevel` <a name="resetMonitorAccessLevel" id="@cdktf/provider-gitlab.project.Project.resetMonitorAccessLevel"></a>
+
+```typescript
+public resetMonitorAccessLevel(): void
+```
+
 ##### `resetMrDefaultTargetSelf` <a name="resetMrDefaultTargetSelf" id="@cdktf/provider-gitlab.project.Project.resetMrDefaultTargetSelf"></a>
 
 ```typescript
@@ -727,6 +756,12 @@ public resetPublicBuilds(): void
 
 ```typescript
 public resetPushRules(): void
+```
+
+##### `resetReleasesAccessLevel` <a name="resetReleasesAccessLevel" id="@cdktf/provider-gitlab.project.Project.resetReleasesAccessLevel"></a>
+
+```typescript
+public resetReleasesAccessLevel(): void
 ```
 
 ##### `resetRemoveSourceBranchAfterMerge` <a name="resetRemoveSourceBranchAfterMerge" id="@cdktf/provider-gitlab.project.Project.resetRemoveSourceBranchAfterMerge"></a>
@@ -988,7 +1023,9 @@ project.Project.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.defaultBranchInput">defaultBranchInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.emailsDisabledInput">emailsDisabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.environmentsAccessLevelInput">environmentsAccessLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.externalAuthorizationClassificationLabelInput">externalAuthorizationClassificationLabelInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.featureFlagsAccessLevelInput">featureFlagsAccessLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.forkedFromProjectIdInput">forkedFromProjectIdInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.forkingAccessLevelInput">forkingAccessLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.groupWithProjectTemplatesIdInput">groupWithProjectTemplatesIdInput</a></code> | <code>number</code> | *No description.* |
@@ -996,6 +1033,7 @@ project.Project.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlInput">importUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlPasswordInput">importUrlPasswordInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlUsernameInput">importUrlUsernameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.infrastructureAccessLevelInput">infrastructureAccessLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.initializeWithReadmeInput">initializeWithReadmeInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesAccessLevelInput">issuesAccessLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesEnabledInput">issuesEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -1011,6 +1049,7 @@ project.Project.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorInput">mirrorInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorOverwritesDivergedBranchesInput">mirrorOverwritesDivergedBranchesInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorTriggerBuildsInput">mirrorTriggerBuildsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.monitorAccessLevelInput">monitorAccessLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mrDefaultTargetSelfInput">mrDefaultTargetSelfInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.namespaceIdInput">namespaceIdInput</a></code> | <code>number</code> | *No description.* |
@@ -1025,6 +1064,7 @@ project.Project.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.printingMergeRequestLinkEnabledInput">printingMergeRequestLinkEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.publicBuildsInput">publicBuildsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.pushRulesInput">pushRulesInput</a></code> | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules">ProjectPushRules</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.releasesAccessLevelInput">releasesAccessLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.removeSourceBranchAfterMergeInput">removeSourceBranchAfterMergeInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.repositoryAccessLevelInput">repositoryAccessLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.repositoryStorageInput">repositoryStorageInput</a></code> | <code>string</code> | *No description.* |
@@ -1072,7 +1112,9 @@ project.Project.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.defaultBranch">defaultBranch</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.emailsDisabled">emailsDisabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.environmentsAccessLevel">environmentsAccessLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.externalAuthorizationClassificationLabel">externalAuthorizationClassificationLabel</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.featureFlagsAccessLevel">featureFlagsAccessLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.forkedFromProjectId">forkedFromProjectId</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.forkingAccessLevel">forkingAccessLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.groupWithProjectTemplatesId">groupWithProjectTemplatesId</a></code> | <code>number</code> | *No description.* |
@@ -1080,6 +1122,7 @@ project.Project.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrl">importUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlPassword">importUrlPassword</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlUsername">importUrlUsername</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.infrastructureAccessLevel">infrastructureAccessLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.initializeWithReadme">initializeWithReadme</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesAccessLevel">issuesAccessLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesEnabled">issuesEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -1095,6 +1138,7 @@ project.Project.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirror">mirror</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorOverwritesDivergedBranches">mirrorOverwritesDivergedBranches</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorTriggerBuilds">mirrorTriggerBuilds</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.monitorAccessLevel">monitorAccessLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mrDefaultTargetSelf">mrDefaultTargetSelf</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.namespaceId">namespaceId</a></code> | <code>number</code> | *No description.* |
@@ -1108,6 +1152,7 @@ project.Project.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.pipelinesEnabled">pipelinesEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.printingMergeRequestLinkEnabled">printingMergeRequestLinkEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.publicBuilds">publicBuilds</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.releasesAccessLevel">releasesAccessLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.removeSourceBranchAfterMerge">removeSourceBranchAfterMerge</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.repositoryAccessLevel">repositoryAccessLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.repositoryStorage">repositoryStorage</a></code> | <code>string</code> | *No description.* |
@@ -1606,10 +1651,30 @@ public readonly emailsDisabledInput: boolean | IResolvable;
 
 ---
 
+##### `environmentsAccessLevelInput`<sup>Optional</sup> <a name="environmentsAccessLevelInput" id="@cdktf/provider-gitlab.project.Project.property.environmentsAccessLevelInput"></a>
+
+```typescript
+public readonly environmentsAccessLevelInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `externalAuthorizationClassificationLabelInput`<sup>Optional</sup> <a name="externalAuthorizationClassificationLabelInput" id="@cdktf/provider-gitlab.project.Project.property.externalAuthorizationClassificationLabelInput"></a>
 
 ```typescript
 public readonly externalAuthorizationClassificationLabelInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `featureFlagsAccessLevelInput`<sup>Optional</sup> <a name="featureFlagsAccessLevelInput" id="@cdktf/provider-gitlab.project.Project.property.featureFlagsAccessLevelInput"></a>
+
+```typescript
+public readonly featureFlagsAccessLevelInput: string;
 ```
 
 - *Type:* string
@@ -1680,6 +1745,16 @@ public readonly importUrlPasswordInput: string;
 
 ```typescript
 public readonly importUrlUsernameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `infrastructureAccessLevelInput`<sup>Optional</sup> <a name="infrastructureAccessLevelInput" id="@cdktf/provider-gitlab.project.Project.property.infrastructureAccessLevelInput"></a>
+
+```typescript
+public readonly infrastructureAccessLevelInput: string;
 ```
 
 - *Type:* string
@@ -1836,6 +1911,16 @@ public readonly mirrorTriggerBuildsInput: boolean | IResolvable;
 
 ---
 
+##### `monitorAccessLevelInput`<sup>Optional</sup> <a name="monitorAccessLevelInput" id="@cdktf/provider-gitlab.project.Project.property.monitorAccessLevelInput"></a>
+
+```typescript
+public readonly monitorAccessLevelInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `mrDefaultTargetSelfInput`<sup>Optional</sup> <a name="mrDefaultTargetSelfInput" id="@cdktf/provider-gitlab.project.Project.property.mrDefaultTargetSelfInput"></a>
 
 ```typescript
@@ -1973,6 +2058,16 @@ public readonly pushRulesInput: ProjectPushRules;
 ```
 
 - *Type:* <a href="#@cdktf/provider-gitlab.project.ProjectPushRules">ProjectPushRules</a>
+
+---
+
+##### `releasesAccessLevelInput`<sup>Optional</sup> <a name="releasesAccessLevelInput" id="@cdktf/provider-gitlab.project.Project.property.releasesAccessLevelInput"></a>
+
+```typescript
+public readonly releasesAccessLevelInput: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -2446,10 +2541,30 @@ public readonly emailsDisabled: boolean | IResolvable;
 
 ---
 
+##### `environmentsAccessLevel`<sup>Required</sup> <a name="environmentsAccessLevel" id="@cdktf/provider-gitlab.project.Project.property.environmentsAccessLevel"></a>
+
+```typescript
+public readonly environmentsAccessLevel: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `externalAuthorizationClassificationLabel`<sup>Required</sup> <a name="externalAuthorizationClassificationLabel" id="@cdktf/provider-gitlab.project.Project.property.externalAuthorizationClassificationLabel"></a>
 
 ```typescript
 public readonly externalAuthorizationClassificationLabel: string;
+```
+
+- *Type:* string
+
+---
+
+##### `featureFlagsAccessLevel`<sup>Required</sup> <a name="featureFlagsAccessLevel" id="@cdktf/provider-gitlab.project.Project.property.featureFlagsAccessLevel"></a>
+
+```typescript
+public readonly featureFlagsAccessLevel: string;
 ```
 
 - *Type:* string
@@ -2520,6 +2635,16 @@ public readonly importUrlPassword: string;
 
 ```typescript
 public readonly importUrlUsername: string;
+```
+
+- *Type:* string
+
+---
+
+##### `infrastructureAccessLevel`<sup>Required</sup> <a name="infrastructureAccessLevel" id="@cdktf/provider-gitlab.project.Project.property.infrastructureAccessLevel"></a>
+
+```typescript
+public readonly infrastructureAccessLevel: string;
 ```
 
 - *Type:* string
@@ -2676,6 +2801,16 @@ public readonly mirrorTriggerBuilds: boolean | IResolvable;
 
 ---
 
+##### `monitorAccessLevel`<sup>Required</sup> <a name="monitorAccessLevel" id="@cdktf/provider-gitlab.project.Project.property.monitorAccessLevel"></a>
+
+```typescript
+public readonly monitorAccessLevel: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `mrDefaultTargetSelf`<sup>Required</sup> <a name="mrDefaultTargetSelf" id="@cdktf/provider-gitlab.project.Project.property.mrDefaultTargetSelf"></a>
 
 ```typescript
@@ -2803,6 +2938,16 @@ public readonly publicBuilds: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `releasesAccessLevel`<sup>Required</sup> <a name="releasesAccessLevel" id="@cdktf/provider-gitlab.project.Project.property.releasesAccessLevel"></a>
+
+```typescript
+public readonly releasesAccessLevel: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -3103,7 +3248,9 @@ const projectConfig: project.ProjectConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.defaultBranch">defaultBranch</a></code> | <code>string</code> | The default branch for the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.description">description</a></code> | <code>string</code> | A description of the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.emailsDisabled">emailsDisabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Disable email notifications. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.environmentsAccessLevel">environmentsAccessLevel</a></code> | <code>string</code> | Set the environments access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.externalAuthorizationClassificationLabel">externalAuthorizationClassificationLabel</a></code> | <code>string</code> | The classification label for the project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.featureFlagsAccessLevel">featureFlagsAccessLevel</a></code> | <code>string</code> | Set the feature flags access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.forkedFromProjectId">forkedFromProjectId</a></code> | <code>number</code> | The id of the project to fork. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.forkingAccessLevel">forkingAccessLevel</a></code> | <code>string</code> | Set the forking access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.groupWithProjectTemplatesId">groupWithProjectTemplatesId</a></code> | <code>number</code> | For group-level custom templates, specifies ID of group from which all the custom project templates are sourced. |
@@ -3111,6 +3258,7 @@ const projectConfig: project.ProjectConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.importUrl">importUrl</a></code> | <code>string</code> | Git URL to a repository to be imported. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.importUrlPassword">importUrlPassword</a></code> | <code>string</code> | The password for the `import_url`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.importUrlUsername">importUrlUsername</a></code> | <code>string</code> | The username for the `import_url`. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.infrastructureAccessLevel">infrastructureAccessLevel</a></code> | <code>string</code> | Set the infrastructure access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.initializeWithReadme">initializeWithReadme</a></code> | <code>boolean \| cdktf.IResolvable</code> | Create main branch with first commit containing a README.md file. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.issuesAccessLevel">issuesAccessLevel</a></code> | <code>string</code> | Set the issues access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.issuesEnabled">issuesEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable issue tracking for the project. |
@@ -3126,6 +3274,7 @@ const projectConfig: project.ProjectConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mirror">mirror</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable project pull mirror. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mirrorOverwritesDivergedBranches">mirrorOverwritesDivergedBranches</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable overwrite diverged branches for a mirrored project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mirrorTriggerBuilds">mirrorTriggerBuilds</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable trigger builds on pushes for a mirrored project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.monitorAccessLevel">monitorAccessLevel</a></code> | <code>string</code> | Set the monitor access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mrDefaultTargetSelf">mrDefaultTargetSelf</a></code> | <code>boolean \| cdktf.IResolvable</code> | For forked projects, target merge requests to this project. If false, the target will be the upstream project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.namespaceId">namespaceId</a></code> | <code>number</code> | The namespace (group or user) of the project. Defaults to your user. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.onlyAllowMergeIfAllDiscussionsAreResolved">onlyAllowMergeIfAllDiscussionsAreResolved</a></code> | <code>boolean \| cdktf.IResolvable</code> | Set to true if you want allow merges only if all discussions are resolved. |
@@ -3139,6 +3288,7 @@ const projectConfig: project.ProjectConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.printingMergeRequestLinkEnabled">printingMergeRequestLinkEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Show link to create/view merge request when pushing from the command line. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.publicBuilds">publicBuilds</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, jobs can be viewed by non-project members. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.pushRules">pushRules</a></code> | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules">ProjectPushRules</a></code> | push_rules block. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.releasesAccessLevel">releasesAccessLevel</a></code> | <code>string</code> | Set the releases access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.removeSourceBranchAfterMerge">removeSourceBranchAfterMerge</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable `Delete source branch` option by default for all new merge requests. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.repositoryAccessLevel">repositoryAccessLevel</a></code> | <code>string</code> | Set the repository access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.repositoryStorage">repositoryStorage</a></code> | <code>string</code> | Which storage shard the repository is on. (administrator only). |
@@ -3609,6 +3759,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 ---
 
+##### `environmentsAccessLevel`<sup>Optional</sup> <a name="environmentsAccessLevel" id="@cdktf/provider-gitlab.project.ProjectConfig.property.environmentsAccessLevel"></a>
+
+```typescript
+public readonly environmentsAccessLevel: string;
+```
+
+- *Type:* string
+
+Set the environments access level. Valid values are `disabled`, `private`, `enabled`.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#environments_access_level Project#environments_access_level}
+
+---
+
 ##### `externalAuthorizationClassificationLabel`<sup>Optional</sup> <a name="externalAuthorizationClassificationLabel" id="@cdktf/provider-gitlab.project.ProjectConfig.property.externalAuthorizationClassificationLabel"></a>
 
 ```typescript
@@ -3620,6 +3784,20 @@ public readonly externalAuthorizationClassificationLabel: string;
 The classification label for the project.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#external_authorization_classification_label Project#external_authorization_classification_label}
+
+---
+
+##### `featureFlagsAccessLevel`<sup>Optional</sup> <a name="featureFlagsAccessLevel" id="@cdktf/provider-gitlab.project.ProjectConfig.property.featureFlagsAccessLevel"></a>
+
+```typescript
+public readonly featureFlagsAccessLevel: string;
+```
+
+- *Type:* string
+
+Set the feature flags access level. Valid values are `disabled`, `private`, `enabled`.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#feature_flags_access_level Project#feature_flags_access_level}
 
 ---
 
@@ -3729,6 +3907,20 @@ The username for the `import_url`.
 The value of this field is used to construct a valid `import_url` and is only related to the provider. This field cannot be imported using `terraform import`.  See the examples section for how to properly use it.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#import_url_username Project#import_url_username}
+
+---
+
+##### `infrastructureAccessLevel`<sup>Optional</sup> <a name="infrastructureAccessLevel" id="@cdktf/provider-gitlab.project.ProjectConfig.property.infrastructureAccessLevel"></a>
+
+```typescript
+public readonly infrastructureAccessLevel: string;
+```
+
+- *Type:* string
+
+Set the infrastructure access level. Valid values are `disabled`, `private`, `enabled`.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#infrastructure_access_level Project#infrastructure_access_level}
 
 ---
 
@@ -3942,6 +4134,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 ---
 
+##### `monitorAccessLevel`<sup>Optional</sup> <a name="monitorAccessLevel" id="@cdktf/provider-gitlab.project.ProjectConfig.property.monitorAccessLevel"></a>
+
+```typescript
+public readonly monitorAccessLevel: string;
+```
+
+- *Type:* string
+
+Set the monitor access level. Valid values are `disabled`, `private`, `enabled`.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#monitor_access_level Project#monitor_access_level}
+
+---
+
 ##### `mrDefaultTargetSelf`<sup>Optional</sup> <a name="mrDefaultTargetSelf" id="@cdktf/provider-gitlab.project.ProjectConfig.property.mrDefaultTargetSelf"></a>
 
 ```typescript
@@ -4121,6 +4327,20 @@ public readonly pushRules: ProjectPushRules;
 push_rules block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#push_rules Project#push_rules}
+
+---
+
+##### `releasesAccessLevel`<sup>Optional</sup> <a name="releasesAccessLevel" id="@cdktf/provider-gitlab.project.ProjectConfig.property.releasesAccessLevel"></a>
+
+```typescript
+public readonly releasesAccessLevel: string;
+```
+
+- *Type:* string
+
+Set the releases access level. Valid values are `disabled`, `private`, `enabled`.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#releases_access_level Project#releases_access_level}
 
 ---
 
@@ -4413,6 +4633,8 @@ public readonly useCustomTemplate: boolean | IResolvable;
 
 Use either custom instance or group (with group_with_project_templates_id) project template (enterprise edition).
 
+~> When using a custom template, [Group Tokens won't work](https://docs.gitlab.com/15.7/ee/user/project/settings/import_export_troubleshooting.html#import-using-the-rest-api-fails-when-using-a-group-access-token). You must use a real user's Personal Access Token.
+
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#use_custom_template Project#use_custom_template}
 
 ---
@@ -4476,6 +4698,7 @@ const projectContainerExpirationPolicy: project.ProjectContainerExpirationPolicy
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.cadence">cadence</a></code> | <code>string</code> | The cadence of the policy. Valid values are: `1d`, `7d`, `14d`, `1month`, `3month`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, the policy is enabled. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.keepN">keepN</a></code> | <code>number</code> | The number of images to keep. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.nameRegex">nameRegex</a></code> | <code>string</code> | The regular expression to match image names to delete. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.nameRegexDelete">nameRegexDelete</a></code> | <code>string</code> | The regular expression to match image names to delete. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.nameRegexKeep">nameRegexKeep</a></code> | <code>string</code> | The regular expression to match image names to keep. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.olderThan">olderThan</a></code> | <code>string</code> | The number of days to keep images. |
@@ -4524,6 +4747,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 ---
 
+##### `nameRegex`<sup>Optional</sup> <a name="nameRegex" id="@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.nameRegex"></a>
+
+```typescript
+public readonly nameRegex: string;
+```
+
+- *Type:* string
+
+The regular expression to match image names to delete.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#name_regex Project#name_regex}
+
+---
+
 ##### `nameRegexDelete`<sup>Optional</sup> <a name="nameRegexDelete" id="@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.nameRegexDelete"></a>
 
 ```typescript
@@ -4533,8 +4770,6 @@ public readonly nameRegexDelete: string;
 - *Type:* string
 
 The regular expression to match image names to delete.
-
-**Note**: the upstream API has some inconsistencies with the `name_regex` field here. It's basically unusable at the moment.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project#name_regex_delete Project#name_regex_delete}
 
@@ -4805,6 +5040,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.resetCadence">resetCadence</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.resetEnabled">resetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.resetKeepN">resetKeepN</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.resetNameRegex">resetNameRegex</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.resetNameRegexDelete">resetNameRegexDelete</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.resetNameRegexKeep">resetNameRegexKeep</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.resetOlderThan">resetOlderThan</a></code> | *No description.* |
@@ -4979,6 +5215,12 @@ public resetEnabled(): void
 public resetKeepN(): void
 ```
 
+##### `resetNameRegex` <a name="resetNameRegex" id="@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.resetNameRegex"></a>
+
+```typescript
+public resetNameRegex(): void
+```
+
 ##### `resetNameRegexDelete` <a name="resetNameRegexDelete" id="@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.resetNameRegexDelete"></a>
 
 ```typescript
@@ -5009,11 +5251,13 @@ public resetOlderThan(): void
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.keepNInput">keepNInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.nameRegexDeleteInput">nameRegexDeleteInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.nameRegexInput">nameRegexInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.nameRegexKeepInput">nameRegexKeepInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.olderThanInput">olderThanInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.cadence">cadence</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.keepN">keepN</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.nameRegex">nameRegex</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.nameRegexDelete">nameRegexDelete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.nameRegexKeep">nameRegexKeep</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.olderThan">olderThan</a></code> | <code>string</code> | *No description.* |
@@ -5095,6 +5339,16 @@ public readonly nameRegexDeleteInput: string;
 
 ---
 
+##### `nameRegexInput`<sup>Optional</sup> <a name="nameRegexInput" id="@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.nameRegexInput"></a>
+
+```typescript
+public readonly nameRegexInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `nameRegexKeepInput`<sup>Optional</sup> <a name="nameRegexKeepInput" id="@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.nameRegexKeepInput"></a>
 
 ```typescript
@@ -5142,6 +5396,16 @@ public readonly keepN: number;
 ```
 
 - *Type:* number
+
+---
+
+##### `nameRegex`<sup>Required</sup> <a name="nameRegex" id="@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.nameRegex"></a>
+
+```typescript
+public readonly nameRegex: string;
+```
+
+- *Type:* string
 
 ---
 

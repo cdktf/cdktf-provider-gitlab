@@ -27,7 +27,7 @@ export interface PersonalAccessTokenConfig extends cdktf.TerraformMetaArguments 
   */
   readonly name: string;
   /**
-  * The scope for the personal access token. It determines the actions which can be performed when authenticating with this token. Valid values are: `api`, `read_user`, `read_api`, `read_repository`, `write_repository`, `read_registry`, `write_registry`, `sudo`.
+  * The scope for the personal access token. It determines the actions which can be performed when authenticating with this token. Valid values are: `api`, `read_user`, `read_api`, `read_repository`, `write_repository`, `read_registry`, `write_registry`, `sudo`, `admin_mode`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/personal_access_token#scopes PersonalAccessToken#scopes}
   */
@@ -66,7 +66,7 @@ export class PersonalAccessToken extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_personal_access_token',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '15.9.0',
+        providerVersion: '15.10.0',
         providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,

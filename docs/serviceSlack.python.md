@@ -60,7 +60,7 @@ serviceSlack.ServiceSlack(
 | <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlack.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlack.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlack.Initializer.parameter.project">project</a></code> | <code>str</code> | ID of the project you want to activate integration on. |
-| <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlack.Initializer.parameter.webhook">webhook</a></code> | <code>str</code> | Webhook URL (ex.: https://hooks.slack.com/services/...). |
+| <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlack.Initializer.parameter.webhook">webhook</a></code> | <code>str</code> | Webhook URL (Example, https://hooks.slack.com/services/...). This value cannot be imported. |
 | <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlack.Initializer.parameter.branchesToBeNotified">branches_to_be_notified</a></code> | <code>str</code> | Branches to send notifications for. Valid options are "all", "default", "protected", and "default_and_protected". |
 | <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlack.Initializer.parameter.confidentialIssueChannel">confidential_issue_channel</a></code> | <code>str</code> | The name of the channel to receive confidential issue events notifications. |
 | <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlack.Initializer.parameter.confidentialIssuesEvents">confidential_issues_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for confidential issues events. |
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 - *Type:* str
 
-Webhook URL (ex.: https://hooks.slack.com/services/...).
+Webhook URL (Example, https://hooks.slack.com/services/...). This value cannot be imported.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_slack#webhook ServiceSlack#webhook}
 
@@ -1625,7 +1625,7 @@ serviceSlack.ServiceSlackConfig(
 | <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlackConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlackConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlackConfig.property.project">project</a></code> | <code>str</code> | ID of the project you want to activate integration on. |
-| <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlackConfig.property.webhook">webhook</a></code> | <code>str</code> | Webhook URL (ex.: https://hooks.slack.com/services/...). |
+| <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlackConfig.property.webhook">webhook</a></code> | <code>str</code> | Webhook URL (Example, https://hooks.slack.com/services/...). This value cannot be imported. |
 | <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlackConfig.property.branchesToBeNotified">branches_to_be_notified</a></code> | <code>str</code> | Branches to send notifications for. Valid options are "all", "default", "protected", and "default_and_protected". |
 | <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlackConfig.property.confidentialIssueChannel">confidential_issue_channel</a></code> | <code>str</code> | The name of the channel to receive confidential issue events notifications. |
 | <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlackConfig.property.confidentialIssuesEvents">confidential_issues_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for confidential issues events. |
@@ -1743,7 +1743,7 @@ webhook: str
 
 - *Type:* str
 
-Webhook URL (ex.: https://hooks.slack.com/services/...).
+Webhook URL (Example, https://hooks.slack.com/services/...). This value cannot be imported.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_slack#webhook ServiceSlack#webhook}
 

@@ -196,6 +196,11 @@ export class DataGitlabProjectsProjectsContainerExpirationPolicyOutputReference 
     return this.getNumberAttribute('keep_n');
   }
 
+  // name_regex - computed: true, optional: false, required: false
+  public get nameRegex() {
+    return this.getStringAttribute('name_regex');
+  }
+
   // name_regex_delete - computed: true, optional: false, required: false
   public get nameRegexDelete() {
     return this.getStringAttribute('name_regex_delete');
@@ -820,9 +825,19 @@ export class DataGitlabProjectsProjectsOutputReference extends cdktf.ComplexObje
     return this.getBooleanAttribute('emails_disabled');
   }
 
+  // environments_access_level - computed: true, optional: false, required: false
+  public get environmentsAccessLevel() {
+    return this.getStringAttribute('environments_access_level');
+  }
+
   // external_authorization_classification_label - computed: true, optional: false, required: false
   public get externalAuthorizationClassificationLabel() {
     return this.getStringAttribute('external_authorization_classification_label');
+  }
+
+  // feature_flags_access_level - computed: true, optional: false, required: false
+  public get featureFlagsAccessLevel() {
+    return this.getStringAttribute('feature_flags_access_level');
   }
 
   // forked_from_project - computed: true, optional: false, required: false
@@ -864,6 +879,11 @@ export class DataGitlabProjectsProjectsOutputReference extends cdktf.ComplexObje
   // import_url - computed: true, optional: false, required: false
   public get importUrl() {
     return this.getStringAttribute('import_url');
+  }
+
+  // infrastructure_access_level - computed: true, optional: false, required: false
+  public get infrastructureAccessLevel() {
+    return this.getStringAttribute('infrastructure_access_level');
   }
 
   // issues_access_level - computed: true, optional: false, required: false
@@ -939,6 +959,11 @@ export class DataGitlabProjectsProjectsOutputReference extends cdktf.ComplexObje
   // mirror_user_id - computed: true, optional: false, required: false
   public get mirrorUserId() {
     return this.getNumberAttribute('mirror_user_id');
+  }
+
+  // monitor_access_level - computed: true, optional: false, required: false
+  public get monitorAccessLevel() {
+    return this.getStringAttribute('monitor_access_level');
   }
 
   // name - computed: true, optional: false, required: false
@@ -1022,6 +1047,11 @@ export class DataGitlabProjectsProjectsOutputReference extends cdktf.ComplexObje
   // readme_url - computed: true, optional: false, required: false
   public get readmeUrl() {
     return this.getStringAttribute('readme_url');
+  }
+
+  // releases_access_level - computed: true, optional: false, required: false
+  public get releasesAccessLevel() {
+    return this.getStringAttribute('releases_access_level');
   }
 
   // repository_access_level - computed: true, optional: false, required: false
@@ -1187,7 +1217,7 @@ export class DataGitlabProjects extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_projects',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '15.9.0',
+        providerVersion: '15.10.0',
         providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,

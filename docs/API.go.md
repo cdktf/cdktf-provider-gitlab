@@ -1,11 +1,13 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [application](./application.go.md)
 - [applicationSettings](./applicationSettings.go.md)
 - [branch](./branch.go.md)
 - [branchProtection](./branchProtection.go.md)
 - [clusterAgent](./clusterAgent.go.md)
 - [clusterAgentToken](./clusterAgentToken.go.md)
+- [dataGitlabApplication](./dataGitlabApplication.go.md)
 - [dataGitlabBranch](./dataGitlabBranch.go.md)
 - [dataGitlabClusterAgent](./dataGitlabClusterAgent.go.md)
 - [dataGitlabClusterAgents](./dataGitlabClusterAgents.go.md)
@@ -94,6 +96,7 @@ The following submodules are available:
 - [releaseLink](./releaseLink.go.md)
 - [repositoryFile](./repositoryFile.go.md)
 - [runner](./runner.go.md)
+- [serviceCustomIssueTracker](./serviceCustomIssueTracker.go.md)
 - [serviceEmailsOnPush](./serviceEmailsOnPush.go.md)
 - [serviceExternalWiki](./serviceExternalWiki.go.md)
 - [serviceGithub](./serviceGithub.go.md)

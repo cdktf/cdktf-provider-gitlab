@@ -84,7 +84,7 @@ export class ProjectVariable extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_variable',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '15.9.0',
+        providerVersion: '15.10.0',
         providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,

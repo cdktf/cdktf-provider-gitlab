@@ -14,7 +14,7 @@ export interface DataGitlabProjectConfig extends cdktf.TerraformMetaArguments {
   */
   readonly ciDefaultGitDepth?: number;
   /**
-  * The integer or path with namespace that uniquely identifies the project within the gitlab install.
+  * The integer that uniquely identifies the project within the gitlab install.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project#id DataGitlabProject#id}
   *
@@ -88,6 +88,11 @@ export class DataGitlabProjectContainerExpirationPolicyOutputReference extends c
   // keep_n - computed: true, optional: false, required: false
   public get keepN() {
     return this.getNumberAttribute('keep_n');
+  }
+
+  // name_regex - computed: true, optional: false, required: false
+  public get nameRegex() {
+    return this.getStringAttribute('name_regex');
   }
 
   // name_regex_delete - computed: true, optional: false, required: false
@@ -270,7 +275,7 @@ export class DataGitlabProject extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_project',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '15.9.0',
+        providerVersion: '15.10.0',
         providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,
@@ -388,9 +393,19 @@ export class DataGitlabProject extends cdktf.TerraformDataSource {
     return this.getBooleanAttribute('emails_disabled');
   }
 
+  // environments_access_level - computed: true, optional: false, required: false
+  public get environmentsAccessLevel() {
+    return this.getStringAttribute('environments_access_level');
+  }
+
   // external_authorization_classification_label - computed: true, optional: false, required: false
   public get externalAuthorizationClassificationLabel() {
     return this.getStringAttribute('external_authorization_classification_label');
+  }
+
+  // feature_flags_access_level - computed: true, optional: false, required: false
+  public get featureFlagsAccessLevel() {
+    return this.getStringAttribute('feature_flags_access_level');
   }
 
   // forking_access_level - computed: true, optional: false, required: false
@@ -422,6 +437,11 @@ export class DataGitlabProject extends cdktf.TerraformDataSource {
   // import_url - computed: true, optional: false, required: false
   public get importUrl() {
     return this.getStringAttribute('import_url');
+  }
+
+  // infrastructure_access_level - computed: true, optional: false, required: false
+  public get infrastructureAccessLevel() {
+    return this.getStringAttribute('infrastructure_access_level');
   }
 
   // issues_access_level - computed: true, optional: false, required: false
@@ -462,6 +482,11 @@ export class DataGitlabProject extends cdktf.TerraformDataSource {
   // merge_trains_enabled - computed: true, optional: false, required: false
   public get mergeTrainsEnabled() {
     return this.getBooleanAttribute('merge_trains_enabled');
+  }
+
+  // monitor_access_level - computed: true, optional: false, required: false
+  public get monitorAccessLevel() {
+    return this.getStringAttribute('monitor_access_level');
   }
 
   // name - computed: true, optional: false, required: false
@@ -530,6 +555,11 @@ export class DataGitlabProject extends cdktf.TerraformDataSource {
   private _pushRules = new DataGitlabProjectPushRulesList(this, "push_rules", false);
   public get pushRules() {
     return this._pushRules;
+  }
+
+  // releases_access_level - computed: true, optional: false, required: false
+  public get releasesAccessLevel() {
+    return this.getStringAttribute('releases_access_level');
   }
 
   // remove_source_branch_after_merge - computed: true, optional: false, required: false

@@ -180,7 +180,7 @@ export class Group extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '15.9.0',
+        providerVersion: '15.10.0',
         providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,
@@ -221,7 +221,7 @@ export class Group extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // auto_devops_enabled - computed: false, optional: true, required: false
+  // auto_devops_enabled - computed: true, optional: true, required: false
   private _autoDevopsEnabled?: boolean | cdktf.IResolvable; 
   public get autoDevopsEnabled() {
     return this.getBooleanAttribute('auto_devops_enabled');
@@ -274,7 +274,7 @@ export class Group extends cdktf.TerraformResource {
     return this.getStringAttribute('avatar_url');
   }
 
-  // default_branch_protection - computed: false, optional: true, required: false
+  // default_branch_protection - computed: true, optional: true, required: false
   private _defaultBranchProtection?: number; 
   public get defaultBranchProtection() {
     return this.getNumberAttribute('default_branch_protection');
@@ -306,7 +306,7 @@ export class Group extends cdktf.TerraformResource {
     return this._description;
   }
 
-  // emails_disabled - computed: false, optional: true, required: false
+  // emails_disabled - computed: true, optional: true, required: false
   private _emailsDisabled?: boolean | cdktf.IResolvable; 
   public get emailsDisabled() {
     return this.getBooleanAttribute('emails_disabled');
@@ -380,7 +380,7 @@ export class Group extends cdktf.TerraformResource {
     return this._ipRestrictionRanges;
   }
 
-  // lfs_enabled - computed: false, optional: true, required: false
+  // lfs_enabled - computed: true, optional: true, required: false
   private _lfsEnabled?: boolean | cdktf.IResolvable; 
   public get lfsEnabled() {
     return this.getBooleanAttribute('lfs_enabled');
@@ -412,7 +412,7 @@ export class Group extends cdktf.TerraformResource {
     return this._membershipLock;
   }
 
-  // mentions_disabled - computed: false, optional: true, required: false
+  // mentions_disabled - computed: true, optional: true, required: false
   private _mentionsDisabled?: boolean | cdktf.IResolvable; 
   public get mentionsDisabled() {
     return this.getBooleanAttribute('mentions_disabled');
@@ -441,7 +441,7 @@ export class Group extends cdktf.TerraformResource {
     return this._name;
   }
 
-  // parent_id - computed: false, optional: true, required: false
+  // parent_id - computed: true, optional: true, required: false
   private _parentId?: number; 
   public get parentId() {
     return this.getNumberAttribute('parent_id');
@@ -470,7 +470,7 @@ export class Group extends cdktf.TerraformResource {
     return this._path;
   }
 
-  // prevent_forking_outside_group - computed: false, optional: true, required: false
+  // prevent_forking_outside_group - computed: true, optional: true, required: false
   private _preventForkingOutsideGroup?: boolean | cdktf.IResolvable; 
   public get preventForkingOutsideGroup() {
     return this.getBooleanAttribute('prevent_forking_outside_group');
@@ -486,7 +486,7 @@ export class Group extends cdktf.TerraformResource {
     return this._preventForkingOutsideGroup;
   }
 
-  // project_creation_level - computed: false, optional: true, required: false
+  // project_creation_level - computed: true, optional: true, required: false
   private _projectCreationLevel?: string; 
   public get projectCreationLevel() {
     return this.getStringAttribute('project_creation_level');
@@ -502,7 +502,7 @@ export class Group extends cdktf.TerraformResource {
     return this._projectCreationLevel;
   }
 
-  // request_access_enabled - computed: false, optional: true, required: false
+  // request_access_enabled - computed: true, optional: true, required: false
   private _requestAccessEnabled?: boolean | cdktf.IResolvable; 
   public get requestAccessEnabled() {
     return this.getBooleanAttribute('request_access_enabled');
@@ -518,7 +518,7 @@ export class Group extends cdktf.TerraformResource {
     return this._requestAccessEnabled;
   }
 
-  // require_two_factor_authentication - computed: false, optional: true, required: false
+  // require_two_factor_authentication - computed: true, optional: true, required: false
   private _requireTwoFactorAuthentication?: boolean | cdktf.IResolvable; 
   public get requireTwoFactorAuthentication() {
     return this.getBooleanAttribute('require_two_factor_authentication');
@@ -539,7 +539,7 @@ export class Group extends cdktf.TerraformResource {
     return this.getStringAttribute('runners_token');
   }
 
-  // share_with_group_lock - computed: false, optional: true, required: false
+  // share_with_group_lock - computed: true, optional: true, required: false
   private _shareWithGroupLock?: boolean | cdktf.IResolvable; 
   public get shareWithGroupLock() {
     return this.getBooleanAttribute('share_with_group_lock');
@@ -571,7 +571,7 @@ export class Group extends cdktf.TerraformResource {
     return this._sharedRunnersMinutesLimit;
   }
 
-  // subgroup_creation_level - computed: false, optional: true, required: false
+  // subgroup_creation_level - computed: true, optional: true, required: false
   private _subgroupCreationLevel?: string; 
   public get subgroupCreationLevel() {
     return this.getStringAttribute('subgroup_creation_level');
@@ -587,7 +587,7 @@ export class Group extends cdktf.TerraformResource {
     return this._subgroupCreationLevel;
   }
 
-  // two_factor_grace_period - computed: false, optional: true, required: false
+  // two_factor_grace_period - computed: true, optional: true, required: false
   private _twoFactorGracePeriod?: number; 
   public get twoFactorGracePeriod() {
     return this.getNumberAttribute('two_factor_grace_period');
