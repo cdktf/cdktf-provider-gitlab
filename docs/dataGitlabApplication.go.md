@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/application
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabapplication"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabapplication"
 
 datagitlabapplication.NewDataGitlabApplication(scope Construct, id *string, config DataGitlabApplicationConfig) DataGitlabApplication
 ```
@@ -266,7 +266,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabapplication"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabapplication"
 
 datagitlabapplication.DataGitlabApplication_IsConstruct(x interface{}) *bool
 ```
@@ -298,7 +298,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabapplication"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabapplication"
 
 datagitlabapplication.DataGitlabApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ datagitlabapplication.DataGitlabApplication_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplication.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabapplication"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabapplication"
 
 datagitlabapplication.DataGitlabApplication_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabapplication"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabapplication"
 
 &datagitlabapplication.DataGitlabApplicationConfig {
 	Connection: interface{},

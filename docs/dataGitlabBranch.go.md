@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/branch gitl
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabBranch.DataGitlabBranch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabbranch"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabbranch"
 
 datagitlabbranch.NewDataGitlabBranch(scope Construct, id *string, config DataGitlabBranchConfig) DataGitlabBranch
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabBranch.DataGitlabBranch.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabbranch"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabbranch"
 
 datagitlabbranch.DataGitlabBranch_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabBranch.DataGitlabBranch.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabbranch"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabbranch"
 
 datagitlabbranch.DataGitlabBranch_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datagitlabbranch.DataGitlabBranch_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabBranch.DataGitlabBranch.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabbranch"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabbranch"
 
 datagitlabbranch.DataGitlabBranch_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -650,7 +650,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabBranch.DataGitlabBranchCommit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabbranch"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabbranch"
 
 &datagitlabbranch.DataGitlabBranchCommit {
 
@@ -663,7 +663,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabbranch"
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabBranch.DataGitlabBranchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabbranch"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabbranch"
 
 &datagitlabbranch.DataGitlabBranchConfig {
 	Connection: interface{},
@@ -816,7 +816,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabBranch.DataGitlabBranchCommitList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabbranch"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabbranch"
 
 datagitlabbranch.NewDataGitlabBranchCommitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabBranchCommitList
 ```
@@ -948,7 +948,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabBranch.DataGitlabBranchCommitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabbranch"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabbranch"
 
 datagitlabbranch.NewDataGitlabBranchCommitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabBranchCommitOutputReference
 ```
