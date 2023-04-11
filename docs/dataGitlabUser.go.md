@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/user gitlab
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabuser"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabuser"
 
 datagitlabuser.NewDataGitlabUser(scope Construct, id *string, config DataGitlabUserConfig) DataGitlabUser
 ```
@@ -301,7 +301,7 @@ func ResetUsername()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabuser"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabuser"
 
 datagitlabuser.DataGitlabUser_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabuser"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabuser"
 
 datagitlabuser.DataGitlabUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ datagitlabuser.DataGitlabUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabuser"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabuser"
 
 datagitlabuser.DataGitlabUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -898,7 +898,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabuser"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabuser"
 
 &datagitlabuser.DataGitlabUserConfig {
 	Connection: interface{},

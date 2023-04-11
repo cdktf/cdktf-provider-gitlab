@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/project_var
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectVariable.ProjectVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectvariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectvariable"
 
 projectvariable.NewProjectVariable(scope Construct, id *string, config ProjectVariableConfig) ProjectVariable
 ```
@@ -301,7 +301,7 @@ func ResetVariableType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectVariable.ProjectVariable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectvariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectvariable"
 
 projectvariable.ProjectVariable_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectVariable.ProjectVariable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectvariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectvariable"
 
 projectvariable.ProjectVariable_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ projectvariable.ProjectVariable_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectVariable.ProjectVariable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectvariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectvariable"
 
 projectvariable.ProjectVariable_IsTerraformResource(x interface{}) *bool
 ```
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectvariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectvariable"
 
 &projectvariable.ProjectVariableConfig {
 	Connection: interface{},
