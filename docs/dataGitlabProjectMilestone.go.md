@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/project_mil
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabprojectmilestone"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmilestone"
 
 datagitlabprojectmilestone.NewDataGitlabProjectMilestone(scope Construct, id *string, config DataGitlabProjectMilestoneConfig) DataGitlabProjectMilestone
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabprojectmilestone"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmilestone"
 
 datagitlabprojectmilestone.DataGitlabProjectMilestone_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabprojectmilestone"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmilestone"
 
 datagitlabprojectmilestone.DataGitlabProjectMilestone_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datagitlabprojectmilestone.DataGitlabProjectMilestone_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabprojectmilestone"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmilestone"
 
 datagitlabprojectmilestone.DataGitlabProjectMilestone_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -683,7 +683,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabprojectmilestone"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmilestone"
 
 &datagitlabprojectmilestone.DataGitlabProjectMilestoneConfig {
 	Connection: interface{},
