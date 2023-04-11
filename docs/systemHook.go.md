@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.systemHook.SystemHook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/systemhook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/systemhook"
 
 systemhook.NewSystemHook(scope Construct, id *string, config SystemHookConfig) SystemHook
 ```
@@ -315,7 +315,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.systemHook.SystemHook.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/systemhook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/systemhook"
 
 systemhook.SystemHook_IsConstruct(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.systemHook.SystemHook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/systemhook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/systemhook"
 
 systemhook.SystemHook_IsTerraformElement(x interface{}) *bool
 ```
@@ -361,7 +361,7 @@ systemhook.SystemHook_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.systemHook.SystemHook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/systemhook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/systemhook"
 
 systemhook.SystemHook_IsTerraformResource(x interface{}) *bool
 ```
@@ -747,7 +747,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.systemHook.SystemHookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/systemhook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/systemhook"
 
 &systemhook.SystemHookConfig {
 	Connection: interface{},

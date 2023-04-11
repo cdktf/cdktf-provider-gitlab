@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/project_app
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/projectapprovalrule"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectapprovalrule"
 
 projectapprovalrule.NewProjectApprovalRule(scope Construct, id *string, config ProjectApprovalRuleConfig) ProjectApprovalRule
 ```
@@ -308,7 +308,7 @@ func ResetUserIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/projectapprovalrule"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectapprovalrule"
 
 projectapprovalrule.ProjectApprovalRule_IsConstruct(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/projectapprovalrule"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectapprovalrule"
 
 projectapprovalrule.ProjectApprovalRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ projectapprovalrule.ProjectApprovalRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/projectapprovalrule"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectapprovalrule"
 
 projectapprovalrule.ProjectApprovalRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/projectapprovalrule"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectapprovalrule"
 
 &projectapprovalrule.ProjectApprovalRuleConfig {
 	Connection: interface{},

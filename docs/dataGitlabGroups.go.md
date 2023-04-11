@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/groups gitl
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabgroups"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabgroups"
 
 datagitlabgroups.NewDataGitlabGroups(scope Construct, id *string, config DataGitlabGroupsConfig) DataGitlabGroups
 ```
@@ -294,7 +294,7 @@ func ResetSort()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroups.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabgroups"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabgroups"
 
 datagitlabgroups.DataGitlabGroups_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroups.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabgroups"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabgroups"
 
 datagitlabgroups.DataGitlabGroups_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ datagitlabgroups.DataGitlabGroups_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroups.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabgroups"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabgroups"
 
 datagitlabgroups.DataGitlabGroups_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -616,7 +616,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroupsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabgroups"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabgroups"
 
 &datagitlabgroups.DataGitlabGroupsConfig {
 	Connection: interface{},
@@ -783,7 +783,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroupsGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabgroups"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabgroups"
 
 &datagitlabgroups.DataGitlabGroupsGroups {
 
@@ -798,7 +798,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabgroups"
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroupsGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabgroups"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabgroups"
 
 datagitlabgroups.NewDataGitlabGroupsGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabGroupsGroupsList
 ```
@@ -930,7 +930,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroupsGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/datagitlabgroups"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabgroups"
 
 datagitlabgroups.NewDataGitlabGroupsGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabGroupsGroupsOutputReference
 ```

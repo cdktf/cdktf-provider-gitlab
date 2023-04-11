@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/project_hoo
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectHook.ProjectHook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/projecthook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projecthook"
 
 projecthook.NewProjectHook(scope Construct, id *string, config ProjectHookConfig) ProjectHook
 ```
@@ -378,7 +378,7 @@ func ResetWikiPageEvents()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectHook.ProjectHook.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/projecthook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projecthook"
 
 projecthook.ProjectHook_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectHook.ProjectHook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/projecthook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projecthook"
 
 projecthook.ProjectHook_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ projecthook.ProjectHook_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectHook.ProjectHook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/projecthook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projecthook"
 
 projecthook.ProjectHook_IsTerraformResource(x interface{}) *bool
 ```
@@ -1041,7 +1041,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectHook.ProjectHookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/projecthook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projecthook"
 
 &projecthook.ProjectHookConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/label gitla
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.label.Label.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/label"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/label"
 
 label.NewLabel(scope Construct, id *string, config LabelConfig) Label
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.label.Label.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/label"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/label"
 
 label.Label_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.label.Label.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/label"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/label"
 
 label.Label_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ label.Label_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.label.Label.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/label"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/label"
 
 label.Label_IsTerraformResource(x interface{}) *bool
 ```
@@ -635,7 +635,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.label.LabelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/label"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/label"
 
 &label.LabelConfig {
 	Connection: interface{},

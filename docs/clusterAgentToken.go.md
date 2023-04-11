@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_age
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/clusteragenttoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/clusteragenttoken"
 
 clusteragenttoken.NewClusterAgentToken(scope Construct, id *string, config ClusterAgentTokenConfig) ClusterAgentToken
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/clusteragenttoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/clusteragenttoken"
 
 clusteragenttoken.ClusterAgentToken_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/clusteragenttoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/clusteragenttoken"
 
 clusteragenttoken.ClusterAgentToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ clusteragenttoken.ClusterAgentToken_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/clusteragenttoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/clusteragenttoken"
 
 clusteragenttoken.ClusterAgentToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -701,7 +701,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v6/clusteragenttoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/clusteragenttoken"
 
 &clusteragenttoken.ClusterAgentTokenConfig {
 	Connection: interface{},
