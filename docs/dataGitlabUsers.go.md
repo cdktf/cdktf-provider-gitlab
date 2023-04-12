@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/users gitla
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusers"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabusers"
 
 datagitlabusers.NewDataGitlabUsers(scope Construct, id *string, config DataGitlabUsersConfig) DataGitlabUsers
 ```
@@ -336,7 +336,7 @@ func ResetSort()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusers"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabusers"
 
 datagitlabusers.DataGitlabUsers_IsConstruct(x interface{}) *bool
 ```
@@ -368,7 +368,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusers"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabusers"
 
 datagitlabusers.DataGitlabUsers_IsTerraformElement(x interface{}) *bool
 ```
@@ -382,7 +382,7 @@ datagitlabusers.DataGitlabUsers_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusers"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabusers"
 
 datagitlabusers.DataGitlabUsers_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -790,7 +790,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusers"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabusers"
 
 &datagitlabusers.DataGitlabUsersConfig {
 	Connection: interface{},
@@ -1053,7 +1053,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsersUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusers"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabusers"
 
 &datagitlabusers.DataGitlabUsersUsers {
 
@@ -1068,7 +1068,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusers"
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsersUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusers"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabusers"
 
 datagitlabusers.NewDataGitlabUsersUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabUsersUsersList
 ```
@@ -1200,7 +1200,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsersUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusers"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabusers"
 
 datagitlabusers.NewDataGitlabUsersUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabUsersUsersOutputReference
 ```
