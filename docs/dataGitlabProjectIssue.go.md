@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/project_iss
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectIssue.DataGitlabProjectIssue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabprojectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectissue"
 
 datagitlabprojectissue.NewDataGitlabProjectIssue(scope Construct, id *string, config DataGitlabProjectIssueConfig) DataGitlabProjectIssue
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabProjectIssue.DataGitlabProjectIssue.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabprojectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectissue"
 
 datagitlabprojectissue.DataGitlabProjectIssue_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabProjectIssue.DataGitlabProjectIssue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabprojectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectissue"
 
 datagitlabprojectissue.DataGitlabProjectIssue_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datagitlabprojectissue.DataGitlabProjectIssue_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabProjectIssue.DataGitlabProjectIssue.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabprojectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectissue"
 
 datagitlabprojectissue.DataGitlabProjectIssue_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -969,7 +969,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectIssue.DataGitlabProjectIssueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabprojectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectissue"
 
 &datagitlabprojectissue.DataGitlabProjectIssueConfig {
 	Connection: interface{},
@@ -1120,7 +1120,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectIssue.DataGitlabProjectIssueTaskCompletionStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabprojectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectissue"
 
 &datagitlabprojectissue.DataGitlabProjectIssueTaskCompletionStatus {
 
@@ -1135,7 +1135,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabprojectiss
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectIssue.DataGitlabProjectIssueTaskCompletionStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabprojectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectissue"
 
 datagitlabprojectissue.NewDataGitlabProjectIssueTaskCompletionStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectIssueTaskCompletionStatusList
 ```
@@ -1267,7 +1267,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectIssue.DataGitlabProjectIssueTaskCompletionStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabprojectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectissue"
 
 datagitlabprojectissue.NewDataGitlabProjectIssueTaskCompletionStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabProjectIssueTaskCompletionStatusOutputReference
 ```

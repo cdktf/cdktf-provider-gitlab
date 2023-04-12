@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/service_git
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.serviceGithub.ServiceGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/servicegithub"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicegithub"
 
 servicegithub.NewServiceGithub(scope Construct, id *string, config ServiceGithubConfig) ServiceGithub
 ```
@@ -280,7 +280,7 @@ func ResetStaticContext()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.serviceGithub.ServiceGithub.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/servicegithub"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicegithub"
 
 servicegithub.ServiceGithub_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.serviceGithub.ServiceGithub.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/servicegithub"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicegithub"
 
 servicegithub.ServiceGithub_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ servicegithub.ServiceGithub_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.serviceGithub.ServiceGithub.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/servicegithub"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicegithub"
 
 servicegithub.ServiceGithub_IsTerraformResource(x interface{}) *bool
 ```
@@ -679,7 +679,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.serviceGithub.ServiceGithubConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/servicegithub"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicegithub"
 
 &servicegithub.ServiceGithubConfig {
 	Connection: interface{},

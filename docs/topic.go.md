@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/topic gitla
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.topic.Topic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/topic"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/topic"
 
 topic.NewTopic(scope Construct, id *string, config TopicConfig) Topic
 ```
@@ -308,7 +308,7 @@ func ResetTitle()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.topic.Topic.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/topic"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/topic"
 
 topic.Topic_IsConstruct(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.topic.Topic.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/topic"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/topic"
 
 topic.Topic_IsTerraformElement(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ topic.Topic_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.topic.Topic.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/topic"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/topic"
 
 topic.Topic_IsTerraformResource(x interface{}) *bool
 ```
@@ -718,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.topic.TopicConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/topic"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/topic"
 
 &topic.TopicConfig {
 	Connection: interface{},

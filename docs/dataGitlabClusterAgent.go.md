@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/cluster_age
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabclusteragent"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabclusteragent"
 
 datagitlabclusteragent.NewDataGitlabClusterAgent(scope Construct, id *string, config DataGitlabClusterAgentConfig) DataGitlabClusterAgent
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabclusteragent"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabclusteragent"
 
 datagitlabclusteragent.DataGitlabClusterAgent_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabclusteragent"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabclusteragent"
 
 datagitlabclusteragent.DataGitlabClusterAgent_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datagitlabclusteragent.DataGitlabClusterAgent_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabclusteragent"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabclusteragent"
 
 datagitlabclusteragent.DataGitlabClusterAgent_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabclusteragent"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabclusteragent"
 
 &datagitlabclusteragent.DataGitlabClusterAgentConfig {
 	Connection: interface{},

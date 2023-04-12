@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key_
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/deploykeyenable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/deploykeyenable"
 
 deploykeyenable.NewDeployKeyEnable(scope Construct, id *string, config DeployKeyEnableConfig) DeployKeyEnable
 ```
@@ -294,7 +294,7 @@ func ResetTitle()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/deploykeyenable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/deploykeyenable"
 
 deploykeyenable.DeployKeyEnable_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/deploykeyenable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/deploykeyenable"
 
 deploykeyenable.DeployKeyEnable_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ deploykeyenable.DeployKeyEnable_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/deploykeyenable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/deploykeyenable"
 
 deploykeyenable.DeployKeyEnable_IsTerraformResource(x interface{}) *bool
 ```
@@ -671,7 +671,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/deploykeyenable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/deploykeyenable"
 
 &deploykeyenable.DeployKeyEnableConfig {
 	Connection: interface{},

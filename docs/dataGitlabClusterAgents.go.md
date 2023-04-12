@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/cluster_age
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabClusterAgents.DataGitlabClusterAgents.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabclusteragents"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabclusteragents"
 
 datagitlabclusteragents.NewDataGitlabClusterAgents(scope Construct, id *string, config DataGitlabClusterAgentsConfig) DataGitlabClusterAgents
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabClusterAgents.DataGitlabClusterAgents.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabclusteragents"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabclusteragents"
 
 datagitlabclusteragents.DataGitlabClusterAgents_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabClusterAgents.DataGitlabClusterAgents.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabclusteragents"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabclusteragents"
 
 datagitlabclusteragents.DataGitlabClusterAgents_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datagitlabclusteragents.DataGitlabClusterAgents_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabClusterAgents.DataGitlabClusterAgents.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabclusteragents"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabclusteragents"
 
 datagitlabclusteragents.DataGitlabClusterAgents_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -551,7 +551,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabClusterAgents.DataGitlabClusterAgentsClusterAgents.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabclusteragents"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabclusteragents"
 
 &datagitlabclusteragents.DataGitlabClusterAgentsClusterAgents {
 
@@ -564,7 +564,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabclusterage
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabClusterAgents.DataGitlabClusterAgentsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabclusteragents"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabclusteragents"
 
 &datagitlabclusteragents.DataGitlabClusterAgentsConfig {
 	Connection: interface{},
@@ -701,7 +701,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabClusterAgents.DataGitlabClusterAgentsClusterAgentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabclusteragents"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabclusteragents"
 
 datagitlabclusteragents.NewDataGitlabClusterAgentsClusterAgentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabClusterAgentsClusterAgentsList
 ```
@@ -833,7 +833,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabClusterAgents.DataGitlabClusterAgentsClusterAgentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabclusteragents"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabclusteragents"
 
 datagitlabclusteragents.NewDataGitlabClusterAgentsClusterAgentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabClusterAgentsClusterAgentsOutputReference
 ```
