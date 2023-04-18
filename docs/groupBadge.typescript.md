@@ -1,3 +1,7 @@
+# `gitlab_group_badge`
+
+Refer to the Terraform Registory for docs: [`gitlab_group_badge`](https://www.terraform.io/docs/providers/gitlab/r/group_badge).
+
 # `groupBadge` Submodule <a name="`groupBadge` Submodule" id="@cdktf/provider-gitlab.groupBadge"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `gitlab_group_project_file_template`
+
+Refer to the Terraform Registory for docs: [`gitlab_group_project_file_template`](https://www.terraform.io/docs/providers/gitlab/r/group_project_file_template).
+
 # `groupProjectFileTemplate` Submodule <a name="`groupProjectFileTemplate` Submodule" id="@cdktf/provider-gitlab.groupProjectFileTemplate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

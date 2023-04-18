@@ -1,3 +1,7 @@
+# `gitlab_service_custom_issue_tracker`
+
+Refer to the Terraform Registory for docs: [`gitlab_service_custom_issue_tracker`](https://www.terraform.io/docs/providers/gitlab/r/service_custom_issue_tracker).
+
 # `serviceCustomIssueTracker` Submodule <a name="`serviceCustomIssueTracker` Submodule" id="@cdktf/provider-gitlab.serviceCustomIssueTracker"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

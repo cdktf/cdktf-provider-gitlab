@@ -1,3 +1,7 @@
+# `data_gitlab_cluster_agent`
+
+Refer to the Terraform Registory for docs: [`data_gitlab_cluster_agent`](https://www.terraform.io/docs/providers/gitlab/d/cluster_agent).
+
 # `dataGitlabClusterAgent` Submodule <a name="`dataGitlabClusterAgent` Submodule" id="@cdktf/provider-gitlab.dataGitlabClusterAgent"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

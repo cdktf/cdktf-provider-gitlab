@@ -1,3 +1,7 @@
+# `gitlab_managed_license`
+
+Refer to the Terraform Registory for docs: [`gitlab_managed_license`](https://www.terraform.io/docs/providers/gitlab/r/managed_license).
+
 # `managedLicense` Submodule <a name="`managedLicense` Submodule" id="@cdktf/provider-gitlab.managedLicense"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

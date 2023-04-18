@@ -1,3 +1,7 @@
+# `gitlab_project_mirror`
+
+Refer to the Terraform Registory for docs: [`gitlab_project_mirror`](https://www.terraform.io/docs/providers/gitlab/r/project_mirror).
+
 # `projectMirror` Submodule <a name="`projectMirror` Submodule" id="@cdktf/provider-gitlab.projectMirror"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

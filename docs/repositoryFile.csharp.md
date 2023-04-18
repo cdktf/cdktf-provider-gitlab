@@ -1,3 +1,7 @@
+# `gitlab_repository_file`
+
+Refer to the Terraform Registory for docs: [`gitlab_repository_file`](https://www.terraform.io/docs/providers/gitlab/r/repository_file).
+
 # `repositoryFile` Submodule <a name="`repositoryFile` Submodule" id="@cdktf/provider-gitlab.repositoryFile"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

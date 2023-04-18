@@ -1,3 +1,7 @@
+# `data_gitlab_group_hook`
+
+Refer to the Terraform Registory for docs: [`data_gitlab_group_hook`](https://www.terraform.io/docs/providers/gitlab/d/group_hook).
+
 # `dataGitlabGroupHook` Submodule <a name="`dataGitlabGroupHook` Submodule" id="@cdktf/provider-gitlab.dataGitlabGroupHook"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

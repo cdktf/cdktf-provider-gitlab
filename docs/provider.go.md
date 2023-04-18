@@ -1,3 +1,7 @@
+# `provider`
+
+Refer to the Terraform Registory for docs: [`gitlab`](https://www.terraform.io/docs/providers/gitlab).
+
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-gitlab.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

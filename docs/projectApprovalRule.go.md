@@ -1,3 +1,7 @@
+# `gitlab_project_approval_rule`
+
+Refer to the Terraform Registory for docs: [`gitlab_project_approval_rule`](https://www.terraform.io/docs/providers/gitlab/r/project_approval_rule).
+
 # `projectApprovalRule` Submodule <a name="`projectApprovalRule` Submodule" id="@cdktf/provider-gitlab.projectApprovalRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `gitlab_branch_protection`
+
+Refer to the Terraform Registory for docs: [`gitlab_branch_protection`](https://www.terraform.io/docs/providers/gitlab/r/branch_protection).
+
 # `branchProtection` Submodule <a name="`branchProtection` Submodule" id="@cdktf/provider-gitlab.branchProtection"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

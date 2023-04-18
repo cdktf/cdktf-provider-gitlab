@@ -1,3 +1,7 @@
+# `gitlab_project_issue_board`
+
+Refer to the Terraform Registory for docs: [`gitlab_project_issue_board`](https://www.terraform.io/docs/providers/gitlab/r/project_issue_board).
+
 # `projectIssueBoard` Submodule <a name="`projectIssueBoard` Submodule" id="@cdktf/provider-gitlab.projectIssueBoard"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

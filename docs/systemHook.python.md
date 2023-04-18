@@ -1,3 +1,7 @@
+# `gitlab_system_hook`
+
+Refer to the Terraform Registory for docs: [`gitlab_system_hook`](https://www.terraform.io/docs/providers/gitlab/r/system_hook).
+
 # `systemHook` Submodule <a name="`systemHook` Submodule" id="@cdktf/provider-gitlab.systemHook"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

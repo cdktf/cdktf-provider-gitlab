@@ -1,3 +1,7 @@
+# `data_gitlab_users`
+
+Refer to the Terraform Registory for docs: [`data_gitlab_users`](https://www.terraform.io/docs/providers/gitlab/d/users).
+
 # `dataGitlabUsers` Submodule <a name="`dataGitlabUsers` Submodule" id="@cdktf/provider-gitlab.dataGitlabUsers"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
