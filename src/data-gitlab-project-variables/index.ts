@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/gitlab/d/project_variables
+// https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/project_variables
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface DataGitlabProjectVariablesConfig extends cdktf.TerraformMetaArg
   /**
   * The environment scope of the variable. Defaults to all environment (`*`).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_variables#environment_scope DataGitlabProjectVariables#environment_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/project_variables#environment_scope DataGitlabProjectVariables#environment_scope}
   */
   readonly environmentScope?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_variables#id DataGitlabProjectVariables#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/project_variables#id DataGitlabProjectVariables#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,7 +23,7 @@ export interface DataGitlabProjectVariablesConfig extends cdktf.TerraformMetaArg
   /**
   * The name or id of the project.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_variables#project DataGitlabProjectVariables#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/project_variables#project DataGitlabProjectVariables#project}
   */
   readonly project: string;
 }
@@ -123,7 +123,7 @@ export class DataGitlabProjectVariablesVariablesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/project_variables gitlab_project_variables}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/project_variables gitlab_project_variables}
 */
 export class DataGitlabProjectVariables extends cdktf.TerraformDataSource {
 
@@ -137,7 +137,7 @@ export class DataGitlabProjectVariables extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/project_variables gitlab_project_variables} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/project_variables gitlab_project_variables} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

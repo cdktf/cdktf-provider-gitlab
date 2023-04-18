@@ -1,6 +1,6 @@
 # `gitlab_project_hook`
 
-Refer to the Terraform Registory for docs: [`gitlab_project_hook`](https://www.terraform.io/docs/providers/gitlab/r/project_hook).
+Refer to the Terraform Registory for docs: [`gitlab_project_hook`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_hook).
 
 # `projectHook` Submodule <a name="`projectHook` Submodule" id="@cdktf/provider-gitlab.projectHook"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_project_hook`](https://www.t
 
 ### ProjectHook <a name="ProjectHook" id="@cdktf/provider-gitlab.projectHook.ProjectHook"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/project_hook gitlab_project_hook}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_hook gitlab_project_hook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectHook.ProjectHook.Initializer"></a>
 
@@ -451,7 +451,7 @@ projecthook.ProjectHook_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-gitlab.projectHook.ProjectHook.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectHook.ProjectHook.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectHook.ProjectHook.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectHook.ProjectHook.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectHook.ProjectHook.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectHook.ProjectHook.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectHook.ProjectHook.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectHook.ProjectHook.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -583,10 +583,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.projectHook.ProjectHook.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -1049,7 +1049,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projecthook"
 
 &projecthook.ProjectHookConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -1081,7 +1081,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projecthook"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.projectHook.ProjectHookConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectHook.ProjectHookConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectHook.ProjectHookConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectHook.ProjectHookConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectHook.ProjectHookConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectHook.ProjectHookConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1093,7 +1093,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projecthook"
 | <code><a href="#@cdktf/provider-gitlab.projectHook.ProjectHookConfig.property.confidentialNoteEvents">ConfidentialNoteEvents</a></code> | <code>interface{}</code> | Invoke the hook for confidential notes events. |
 | <code><a href="#@cdktf/provider-gitlab.projectHook.ProjectHookConfig.property.deploymentEvents">DeploymentEvents</a></code> | <code>interface{}</code> | Invoke the hook for deployment events. |
 | <code><a href="#@cdktf/provider-gitlab.projectHook.ProjectHookConfig.property.enableSslVerification">EnableSslVerification</a></code> | <code>interface{}</code> | Enable ssl verification when invoking the hook. |
-| <code><a href="#@cdktf/provider-gitlab.projectHook.ProjectHookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_hook#id ProjectHook#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectHook.ProjectHookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_hook#id ProjectHook#id}. |
 | <code><a href="#@cdktf/provider-gitlab.projectHook.ProjectHookConfig.property.issuesEvents">IssuesEvents</a></code> | <code>interface{}</code> | Invoke the hook for issues events. |
 | <code><a href="#@cdktf/provider-gitlab.projectHook.ProjectHookConfig.property.jobEvents">JobEvents</a></code> | <code>interface{}</code> | Invoke the hook for job events. |
 | <code><a href="#@cdktf/provider-gitlab.projectHook.ProjectHookConfig.property.mergeRequestsEvents">MergeRequestsEvents</a></code> | <code>interface{}</code> | Invoke the hook for merge requests. |
@@ -1121,10 +1121,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.projectHook.ProjectHookConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -1188,7 +1188,7 @@ Project *string
 
 The name or id of the project to add the hook to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_hook#project ProjectHook#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_hook#project ProjectHook#project}
 
 ---
 
@@ -1202,7 +1202,7 @@ Url *string
 
 The url of the hook to invoke.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_hook#url ProjectHook#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_hook#url ProjectHook#url}
 
 ---
 
@@ -1216,7 +1216,7 @@ ConfidentialIssuesEvents interface{}
 
 Invoke the hook for confidential issues events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_hook#confidential_issues_events ProjectHook#confidential_issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_hook#confidential_issues_events ProjectHook#confidential_issues_events}
 
 ---
 
@@ -1230,7 +1230,7 @@ ConfidentialNoteEvents interface{}
 
 Invoke the hook for confidential notes events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_hook#confidential_note_events ProjectHook#confidential_note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_hook#confidential_note_events ProjectHook#confidential_note_events}
 
 ---
 
@@ -1244,7 +1244,7 @@ DeploymentEvents interface{}
 
 Invoke the hook for deployment events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_hook#deployment_events ProjectHook#deployment_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_hook#deployment_events ProjectHook#deployment_events}
 
 ---
 
@@ -1258,7 +1258,7 @@ EnableSslVerification interface{}
 
 Enable ssl verification when invoking the hook.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_hook#enable_ssl_verification ProjectHook#enable_ssl_verification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_hook#enable_ssl_verification ProjectHook#enable_ssl_verification}
 
 ---
 
@@ -1270,7 +1270,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_hook#id ProjectHook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_hook#id ProjectHook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1287,7 +1287,7 @@ IssuesEvents interface{}
 
 Invoke the hook for issues events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_hook#issues_events ProjectHook#issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_hook#issues_events ProjectHook#issues_events}
 
 ---
 
@@ -1301,7 +1301,7 @@ JobEvents interface{}
 
 Invoke the hook for job events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_hook#job_events ProjectHook#job_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_hook#job_events ProjectHook#job_events}
 
 ---
 
@@ -1315,7 +1315,7 @@ MergeRequestsEvents interface{}
 
 Invoke the hook for merge requests.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_hook#merge_requests_events ProjectHook#merge_requests_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_hook#merge_requests_events ProjectHook#merge_requests_events}
 
 ---
 
@@ -1329,7 +1329,7 @@ NoteEvents interface{}
 
 Invoke the hook for notes events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_hook#note_events ProjectHook#note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_hook#note_events ProjectHook#note_events}
 
 ---
 
@@ -1343,7 +1343,7 @@ PipelineEvents interface{}
 
 Invoke the hook for pipeline events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_hook#pipeline_events ProjectHook#pipeline_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_hook#pipeline_events ProjectHook#pipeline_events}
 
 ---
 
@@ -1357,7 +1357,7 @@ PushEvents interface{}
 
 Invoke the hook for push events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_hook#push_events ProjectHook#push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_hook#push_events ProjectHook#push_events}
 
 ---
 
@@ -1371,7 +1371,7 @@ PushEventsBranchFilter *string
 
 Invoke the hook for push events on matching branches only.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_hook#push_events_branch_filter ProjectHook#push_events_branch_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_hook#push_events_branch_filter ProjectHook#push_events_branch_filter}
 
 ---
 
@@ -1385,7 +1385,7 @@ ReleasesEvents interface{}
 
 Invoke the hook for releases events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_hook#releases_events ProjectHook#releases_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_hook#releases_events ProjectHook#releases_events}
 
 ---
 
@@ -1399,7 +1399,7 @@ TagPushEvents interface{}
 
 Invoke the hook for tag push events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_hook#tag_push_events ProjectHook#tag_push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_hook#tag_push_events ProjectHook#tag_push_events}
 
 ---
 
@@ -1413,7 +1413,7 @@ Token *string
 
 A token to present when invoking the hook. The token is not available for imported resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_hook#token ProjectHook#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_hook#token ProjectHook#token}
 
 ---
 
@@ -1427,7 +1427,7 @@ WikiPageEvents interface{}
 
 Invoke the hook for wiki page events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_hook#wiki_page_events ProjectHook#wiki_page_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_hook#wiki_page_events ProjectHook#wiki_page_events}
 
 ---
 

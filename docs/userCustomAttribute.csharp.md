@@ -1,6 +1,6 @@
 # `gitlab_user_custom_attribute`
 
-Refer to the Terraform Registory for docs: [`gitlab_user_custom_attribute`](https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute).
+Refer to the Terraform Registory for docs: [`gitlab_user_custom_attribute`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute).
 
 # `userCustomAttribute` Submodule <a name="`userCustomAttribute` Submodule" id="@cdktf/provider-gitlab.userCustomAttribute"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_user_custom_attribute`](http
 
 ### UserCustomAttribute <a name="UserCustomAttribute" id="@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute gitlab_user_custom_attribute}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute gitlab_user_custom_attribute}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.Initializer"></a>
 
@@ -346,7 +346,7 @@ UserCustomAttribute.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -448,10 +448,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -614,7 +614,7 @@ using HashiCorp.Cdktf.Providers.Gitlab;
 
 new UserCustomAttributeConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -632,7 +632,7 @@ new UserCustomAttributeConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttributeConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttributeConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttributeConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttributeConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttributeConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttributeConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -641,7 +641,7 @@ new UserCustomAttributeConfig {
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttributeConfig.property.key">Key</a></code> | <code>string</code> | Key for the Custom Attribute. |
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttributeConfig.property.user">User</a></code> | <code>double</code> | The id of the user. |
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttributeConfig.property.value">Value</a></code> | <code>string</code> | Value for the Custom Attribute. |
-| <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttributeConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute#id UserCustomAttribute#id}. |
+| <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttributeConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute#id UserCustomAttribute#id}. |
 
 ---
 
@@ -658,10 +658,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttributeConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -725,7 +725,7 @@ public string Key { get; set; }
 
 Key for the Custom Attribute.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute#key UserCustomAttribute#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute#key UserCustomAttribute#key}
 
 ---
 
@@ -739,7 +739,7 @@ public double User { get; set; }
 
 The id of the user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute#user UserCustomAttribute#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute#user UserCustomAttribute#user}
 
 ---
 
@@ -753,7 +753,7 @@ public string Value { get; set; }
 
 Value for the Custom Attribute.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute#value UserCustomAttribute#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute#value UserCustomAttribute#value}
 
 ---
 
@@ -765,7 +765,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute#id UserCustomAttribute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute#id UserCustomAttribute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

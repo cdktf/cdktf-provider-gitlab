@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/gitlab/d/project_tag
+// https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/project_tag
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataGitlabProjectTagConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_tag#id DataGitlabProjectTag#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/project_tag#id DataGitlabProjectTag#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,13 +17,13 @@ export interface DataGitlabProjectTagConfig extends cdktf.TerraformMetaArguments
   /**
   * The name of a tag.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_tag#name DataGitlabProjectTag#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/project_tag#name DataGitlabProjectTag#name}
   */
   readonly name: string;
   /**
   * The ID or URL-encoded path of the project owned by the authenticated user.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_tag#project DataGitlabProjectTag#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/project_tag#project DataGitlabProjectTag#project}
   */
   readonly project: string;
 }
@@ -212,7 +212,7 @@ export class DataGitlabProjectTagReleaseList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/project_tag gitlab_project_tag}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/project_tag gitlab_project_tag}
 */
 export class DataGitlabProjectTag extends cdktf.TerraformDataSource {
 
@@ -226,7 +226,7 @@ export class DataGitlabProjectTag extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/project_tag gitlab_project_tag} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/project_tag gitlab_project_tag} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

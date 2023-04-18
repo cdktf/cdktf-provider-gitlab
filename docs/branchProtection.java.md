@@ -1,6 +1,6 @@
 # `gitlab_branch_protection`
 
-Refer to the Terraform Registory for docs: [`gitlab_branch_protection`](https://www.terraform.io/docs/providers/gitlab/r/branch_protection).
+Refer to the Terraform Registory for docs: [`gitlab_branch_protection`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection).
 
 # `branchProtection` Submodule <a name="`branchProtection` Submodule" id="@cdktf/provider-gitlab.branchProtection"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_branch_protection`](https://
 
 ### BranchProtection <a name="BranchProtection" id="@cdktf/provider-gitlab.branchProtection.BranchProtection"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection gitlab_branch_protection}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection gitlab_branch_protection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer"></a>
 
@@ -19,6 +19,7 @@ BranchProtection.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -50,7 +51,7 @@ BranchProtection.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -63,7 +64,7 @@ BranchProtection.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer.parameter.allowedToUnprotect">allowedToUnprotect</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToUnprotect">BranchProtectionAllowedToUnprotect</a>></code> | allowed_to_unprotect block. |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer.parameter.allowForcePush">allowForcePush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Can be set to true to allow users with push access to force push. |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer.parameter.codeOwnerApprovalRequired">codeOwnerApprovalRequired</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Can be set to true to require code owner approval before merging. Only available own Premium and Ultimate instances. |
-| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#id BranchProtection#id}. |
+| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#id BranchProtection#id}. |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer.parameter.mergeAccessLevel">mergeAccessLevel</a></code> | <code>java.lang.String</code> | Access levels allowed to merge. Valid values are: `no one`, `developer`, `maintainer`. |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer.parameter.pushAccessLevel">pushAccessLevel</a></code> | <code>java.lang.String</code> | Access levels allowed to push. Valid values are: `no one`, `developer`, `maintainer`. |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer.parameter.unprotectAccessLevel">unprotectAccessLevel</a></code> | <code>java.lang.String</code> | Access levels allowed to unprotect. Valid values are: `no one`, `developer`, `maintainer`. |
@@ -96,7 +97,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -136,7 +137,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the branch.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#branch BranchProtection#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#branch BranchProtection#branch}
 
 ---
 
@@ -146,7 +147,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 The id of the project.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#project BranchProtection#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#project BranchProtection#project}
 
 ---
 
@@ -156,7 +157,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 allowed_to_merge block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#allowed_to_merge BranchProtection#allowed_to_merge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#allowed_to_merge BranchProtection#allowed_to_merge}
 
 ---
 
@@ -166,7 +167,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 allowed_to_push block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#allowed_to_push BranchProtection#allowed_to_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#allowed_to_push BranchProtection#allowed_to_push}
 
 ---
 
@@ -176,7 +177,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 allowed_to_unprotect block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#allowed_to_unprotect BranchProtection#allowed_to_unprotect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#allowed_to_unprotect BranchProtection#allowed_to_unprotect}
 
 ---
 
@@ -186,7 +187,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Can be set to true to allow users with push access to force push.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#allow_force_push BranchProtection#allow_force_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#allow_force_push BranchProtection#allow_force_push}
 
 ---
 
@@ -196,7 +197,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Can be set to true to require code owner approval before merging. Only available own Premium and Ultimate instances.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#code_owner_approval_required BranchProtection#code_owner_approval_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#code_owner_approval_required BranchProtection#code_owner_approval_required}
 
 ---
 
@@ -204,7 +205,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#id BranchProtection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#id BranchProtection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -217,7 +218,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Access levels allowed to merge. Valid values are: `no one`, `developer`, `maintainer`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#merge_access_level BranchProtection#merge_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#merge_access_level BranchProtection#merge_access_level}
 
 ---
 
@@ -227,7 +228,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Access levels allowed to push. Valid values are: `no one`, `developer`, `maintainer`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#push_access_level BranchProtection#push_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#push_access_level BranchProtection#push_access_level}
 
 ---
 
@@ -237,7 +238,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Access levels allowed to unprotect. Valid values are: `no one`, `developer`, `maintainer`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#unprotect_access_level BranchProtection#unprotect_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#unprotect_access_level BranchProtection#unprotect_access_level}
 
 ---
 
@@ -632,7 +633,7 @@ BranchProtection.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -749,10 +750,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.branchProtection.BranchProtection.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1088,7 +1089,7 @@ public java.lang.Number getGroupId();
 
 The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `user_id`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#group_id BranchProtection#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#group_id BranchProtection#group_id}
 
 ---
 
@@ -1102,7 +1103,7 @@ public java.lang.Number getUserId();
 
 The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `group_id`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#user_id BranchProtection#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#user_id BranchProtection#user_id}
 
 ---
 
@@ -1138,7 +1139,7 @@ public java.lang.Number getGroupId();
 
 The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `user_id`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#group_id BranchProtection#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#group_id BranchProtection#group_id}
 
 ---
 
@@ -1152,7 +1153,7 @@ public java.lang.Number getUserId();
 
 The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `group_id`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#user_id BranchProtection#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#user_id BranchProtection#user_id}
 
 ---
 
@@ -1188,7 +1189,7 @@ public java.lang.Number getGroupId();
 
 The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `user_id`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#group_id BranchProtection#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#group_id BranchProtection#group_id}
 
 ---
 
@@ -1202,7 +1203,7 @@ public java.lang.Number getUserId();
 
 The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `group_id`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#user_id BranchProtection#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#user_id BranchProtection#user_id}
 
 ---
 
@@ -1217,6 +1218,7 @@ BranchProtectionConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -1248,7 +1250,7 @@ BranchProtectionConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1261,7 +1263,7 @@ BranchProtectionConfig.builder()
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.allowedToUnprotect">allowedToUnprotect</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToUnprotect">BranchProtectionAllowedToUnprotect</a>></code> | allowed_to_unprotect block. |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.allowForcePush">allowForcePush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Can be set to true to allow users with push access to force push. |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.codeOwnerApprovalRequired">codeOwnerApprovalRequired</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Can be set to true to require code owner approval before merging. Only available own Premium and Ultimate instances. |
-| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#id BranchProtection#id}. |
+| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#id BranchProtection#id}. |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.mergeAccessLevel">mergeAccessLevel</a></code> | <code>java.lang.String</code> | Access levels allowed to merge. Valid values are: `no one`, `developer`, `maintainer`. |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.pushAccessLevel">pushAccessLevel</a></code> | <code>java.lang.String</code> | Access levels allowed to push. Valid values are: `no one`, `developer`, `maintainer`. |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.unprotectAccessLevel">unprotectAccessLevel</a></code> | <code>java.lang.String</code> | Access levels allowed to unprotect. Valid values are: `no one`, `developer`, `maintainer`. |
@@ -1281,10 +1283,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1348,7 +1350,7 @@ public java.lang.String getBranch();
 
 Name of the branch.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#branch BranchProtection#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#branch BranchProtection#branch}
 
 ---
 
@@ -1362,7 +1364,7 @@ public java.lang.String getProject();
 
 The id of the project.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#project BranchProtection#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#project BranchProtection#project}
 
 ---
 
@@ -1376,7 +1378,7 @@ public java.lang.Object getAllowedToMerge();
 
 allowed_to_merge block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#allowed_to_merge BranchProtection#allowed_to_merge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#allowed_to_merge BranchProtection#allowed_to_merge}
 
 ---
 
@@ -1390,7 +1392,7 @@ public java.lang.Object getAllowedToPush();
 
 allowed_to_push block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#allowed_to_push BranchProtection#allowed_to_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#allowed_to_push BranchProtection#allowed_to_push}
 
 ---
 
@@ -1404,7 +1406,7 @@ public java.lang.Object getAllowedToUnprotect();
 
 allowed_to_unprotect block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#allowed_to_unprotect BranchProtection#allowed_to_unprotect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#allowed_to_unprotect BranchProtection#allowed_to_unprotect}
 
 ---
 
@@ -1418,7 +1420,7 @@ public java.lang.Object getAllowForcePush();
 
 Can be set to true to allow users with push access to force push.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#allow_force_push BranchProtection#allow_force_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#allow_force_push BranchProtection#allow_force_push}
 
 ---
 
@@ -1432,7 +1434,7 @@ public java.lang.Object getCodeOwnerApprovalRequired();
 
 Can be set to true to require code owner approval before merging. Only available own Premium and Ultimate instances.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#code_owner_approval_required BranchProtection#code_owner_approval_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#code_owner_approval_required BranchProtection#code_owner_approval_required}
 
 ---
 
@@ -1444,7 +1446,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#id BranchProtection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#id BranchProtection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1461,7 +1463,7 @@ public java.lang.String getMergeAccessLevel();
 
 Access levels allowed to merge. Valid values are: `no one`, `developer`, `maintainer`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#merge_access_level BranchProtection#merge_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#merge_access_level BranchProtection#merge_access_level}
 
 ---
 
@@ -1475,7 +1477,7 @@ public java.lang.String getPushAccessLevel();
 
 Access levels allowed to push. Valid values are: `no one`, `developer`, `maintainer`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#push_access_level BranchProtection#push_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#push_access_level BranchProtection#push_access_level}
 
 ---
 
@@ -1489,7 +1491,7 @@ public java.lang.String getUnprotectAccessLevel();
 
 Access levels allowed to unprotect. Valid values are: `no one`, `developer`, `maintainer`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/branch_protection#unprotect_access_level BranchProtection#unprotect_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch_protection#unprotect_access_level BranchProtection#unprotect_access_level}
 
 ---
 

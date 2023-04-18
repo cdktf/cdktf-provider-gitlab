@@ -1,3 +1,3 @@
 # `gitlab_project_hook`
 
-Refer to the Terraform Registory for docs: [`gitlab_project_hook`](https://www.terraform.io/docs/providers/gitlab/r/project_hook).
+Refer to the Terraform Registory for docs: [`gitlab_project_hook`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_hook).

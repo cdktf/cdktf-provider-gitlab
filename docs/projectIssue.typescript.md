@@ -1,6 +1,6 @@
 # `gitlab_project_issue`
 
-Refer to the Terraform Registory for docs: [`gitlab_project_issue`](https://www.terraform.io/docs/providers/gitlab/r/project_issue).
+Refer to the Terraform Registory for docs: [`gitlab_project_issue`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue).
 
 # `projectIssue` Submodule <a name="`projectIssue` Submodule" id="@cdktf/provider-gitlab.projectIssue"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_project_issue`](https://www.
 
 ### ProjectIssue <a name="ProjectIssue" id="@cdktf/provider-gitlab.projectIssue.ProjectIssue"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue gitlab_project_issue}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue gitlab_project_issue}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectIssue.ProjectIssue.Initializer"></a>
 
@@ -465,7 +465,7 @@ projectIssue.ProjectIssue.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssue.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssue.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssue.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssue.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssue.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssue.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssue.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssue.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -620,10 +620,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.projectIssue.ProjectIssue.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -1322,7 +1322,7 @@ const projectIssueConfig: projectIssue.ProjectIssueConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssueConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssueConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssueConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssueConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssueConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssueConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1339,7 +1339,7 @@ const projectIssueConfig: projectIssue.ProjectIssueConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssueConfig.property.discussionToResolve">discussionToResolve</a></code> | <code>string</code> | The ID of a discussion to resolve. |
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssueConfig.property.dueDate">dueDate</a></code> | <code>string</code> | The due date. |
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssueConfig.property.epicIssueId">epicIssueId</a></code> | <code>number</code> | The ID of the epic issue. |
-| <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssueConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#id ProjectIssue#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssueConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue#id ProjectIssue#id}. |
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssueConfig.property.iid">iid</a></code> | <code>number</code> | The internal ID of the project's issue. |
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssueConfig.property.issueType">issueType</a></code> | <code>string</code> | The type of issue. Valid values are: `issue`, `incident`, `test_case`. |
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssueConfig.property.labels">labels</a></code> | <code>string[]</code> | The labels of an issue. |
@@ -1364,10 +1364,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.projectIssue.ProjectIssueConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -1431,7 +1431,7 @@ public readonly project: string;
 
 The name or ID of the project.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#project ProjectIssue#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue#project ProjectIssue#project}
 
 ---
 
@@ -1445,7 +1445,7 @@ public readonly title: string;
 
 The title of the issue.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#title ProjectIssue#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue#title ProjectIssue#title}
 
 ---
 
@@ -1459,7 +1459,7 @@ public readonly assigneeIds: number[];
 
 The IDs of the users to assign the issue to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#assignee_ids ProjectIssue#assignee_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue#assignee_ids ProjectIssue#assignee_ids}
 
 ---
 
@@ -1473,7 +1473,7 @@ public readonly confidential: boolean | IResolvable;
 
 Set an issue to be confidential.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#confidential ProjectIssue#confidential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue#confidential ProjectIssue#confidential}
 
 ---
 
@@ -1489,7 +1489,7 @@ When the issue was created.
 
 Date time string, ISO 8601 formatted, for example 2016-03-11T03:45:40Z. Requires administrator or project/group owner rights.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#created_at ProjectIssue#created_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue#created_at ProjectIssue#created_at}
 
 ---
 
@@ -1503,7 +1503,7 @@ public readonly deleteOnDestroy: boolean | IResolvable;
 
 Whether the issue is deleted instead of closed during destroy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#delete_on_destroy ProjectIssue#delete_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue#delete_on_destroy ProjectIssue#delete_on_destroy}
 
 ---
 
@@ -1517,7 +1517,7 @@ public readonly description: string;
 
 The description of an issue. Limited to 1,048,576 characters.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#description ProjectIssue#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue#description ProjectIssue#description}
 
 ---
 
@@ -1531,7 +1531,7 @@ public readonly discussionLocked: boolean | IResolvable;
 
 Whether the issue is locked for discussions or not.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#discussion_locked ProjectIssue#discussion_locked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue#discussion_locked ProjectIssue#discussion_locked}
 
 ---
 
@@ -1547,7 +1547,7 @@ The ID of a discussion to resolve.
 
 This fills out the issue with a default description and mark the discussion as resolved. Use in combination with merge_request_to_resolve_discussions_of.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#discussion_to_resolve ProjectIssue#discussion_to_resolve}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue#discussion_to_resolve ProjectIssue#discussion_to_resolve}
 
 ---
 
@@ -1565,7 +1565,7 @@ Date time string in the format YYYY-MM-DD, for example 2016-03-11.
 *Note:** removing a due date is currently not supported, see https://github.com/xanzy/go-gitlab/issues/1384 for details.
 
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#due_date ProjectIssue#due_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue#due_date ProjectIssue#due_date}
 
 ---
 
@@ -1579,7 +1579,7 @@ public readonly epicIssueId: number;
 
 The ID of the epic issue.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#epic_issue_id ProjectIssue#epic_issue_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue#epic_issue_id ProjectIssue#epic_issue_id}
 
 ---
 
@@ -1591,7 +1591,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#id ProjectIssue#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue#id ProjectIssue#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1608,7 +1608,7 @@ public readonly iid: number;
 
 The internal ID of the project's issue.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#iid ProjectIssue#iid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue#iid ProjectIssue#iid}
 
 ---
 
@@ -1622,7 +1622,7 @@ public readonly issueType: string;
 
 The type of issue. Valid values are: `issue`, `incident`, `test_case`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#issue_type ProjectIssue#issue_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue#issue_type ProjectIssue#issue_type}
 
 ---
 
@@ -1636,7 +1636,7 @@ public readonly labels: string[];
 
 The labels of an issue.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#labels ProjectIssue#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue#labels ProjectIssue#labels}
 
 ---
 
@@ -1652,7 +1652,7 @@ The IID of a merge request in which to resolve all issues.
 
 This fills out the issue with a default description and mark all discussions as resolved. When passing a description or title, these values take precedence over the default values.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#merge_request_to_resolve_discussions_of ProjectIssue#merge_request_to_resolve_discussions_of}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue#merge_request_to_resolve_discussions_of ProjectIssue#merge_request_to_resolve_discussions_of}
 
 ---
 
@@ -1668,7 +1668,7 @@ The global ID of a milestone to assign issue.
 
 To find the milestone_id associated with a milestone, view an issue with the milestone assigned and use the API to retrieve the issue's details.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#milestone_id ProjectIssue#milestone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue#milestone_id ProjectIssue#milestone_id}
 
 ---
 
@@ -1682,7 +1682,7 @@ public readonly state: string;
 
 The state of the issue. Valid values are: `opened`, `closed`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#state ProjectIssue#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue#state ProjectIssue#state}
 
 ---
 
@@ -1696,7 +1696,7 @@ public readonly updatedAt: string;
 
 When the issue was updated. Date time string, ISO 8601 formatted, for example 2016-03-11T03:45:40Z.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#updated_at ProjectIssue#updated_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue#updated_at ProjectIssue#updated_at}
 
 ---
 
@@ -1710,7 +1710,7 @@ public readonly weight: number;
 
 The weight of the issue. Valid values are greater than or equal to 0.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue#weight ProjectIssue#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue#weight ProjectIssue#weight}
 
 ---
 

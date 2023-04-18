@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/gitlab/d/user
+// https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface DataGitlabUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * The public email address of the user. **Note**: before GitLab 14.8 the lookup was based on the users primary email address.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/user#email DataGitlabUser#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/user#email DataGitlabUser#email}
   */
   readonly email?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/user#id DataGitlabUser#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/user#id DataGitlabUser#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,25 +23,25 @@ export interface DataGitlabUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of the user's namespace. Requires admin token to access this field. Available since GitLab 14.10.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/user#namespace_id DataGitlabUser#namespace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/user#namespace_id DataGitlabUser#namespace_id}
   */
   readonly namespaceId?: number;
   /**
   * The ID of the user.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/user#user_id DataGitlabUser#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/user#user_id DataGitlabUser#user_id}
   */
   readonly userId?: number;
   /**
   * The username of the user.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/user#username DataGitlabUser#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/user#username DataGitlabUser#username}
   */
   readonly username?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/user gitlab_user}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/user gitlab_user}
 */
 export class DataGitlabUser extends cdktf.TerraformDataSource {
 
@@ -55,7 +55,7 @@ export class DataGitlabUser extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/user gitlab_user} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/user gitlab_user} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,3 +1,3 @@
 # `gitlab_group_badge`
 
-Refer to the Terraform Registory for docs: [`gitlab_group_badge`](https://www.terraform.io/docs/providers/gitlab/r/group_badge).
+Refer to the Terraform Registory for docs: [`gitlab_group_badge`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_badge).

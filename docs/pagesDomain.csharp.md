@@ -1,6 +1,6 @@
 # `gitlab_pages_domain`
 
-Refer to the Terraform Registory for docs: [`gitlab_pages_domain`](https://www.terraform.io/docs/providers/gitlab/r/pages_domain).
+Refer to the Terraform Registory for docs: [`gitlab_pages_domain`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/pages_domain).
 
 # `pagesDomain` Submodule <a name="`pagesDomain` Submodule" id="@cdktf/provider-gitlab.pagesDomain"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_pages_domain`](https://www.t
 
 ### PagesDomain <a name="PagesDomain" id="@cdktf/provider-gitlab.pagesDomain.PagesDomain"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/pages_domain gitlab_pages_domain}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/pages_domain gitlab_pages_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.pagesDomain.PagesDomain.Initializer"></a>
 
@@ -367,7 +367,7 @@ PagesDomain.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomain.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomain.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomain.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomain.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomain.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomain.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomain.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomain.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -477,10 +477,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.pagesDomain.PagesDomain.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -723,7 +723,7 @@ using HashiCorp.Cdktf.Providers.Gitlab;
 
 new PagesDomainConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -743,7 +743,7 @@ new PagesDomainConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomainConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomainConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomainConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomainConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomainConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomainConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -771,10 +771,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.pagesDomain.PagesDomainConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -838,7 +838,7 @@ public string Domain { get; set; }
 
 The custom domain indicated by the user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/pages_domain#domain PagesDomain#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/pages_domain#domain PagesDomain#domain}
 
 ---
 
@@ -852,7 +852,7 @@ public string Project { get; set; }
 
 The ID or [URL-encoded path of the project](https://docs.gitlab.com/ee/api/index.html#namespaced-path-encoding) owned by the authenticated user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/pages_domain#project PagesDomain#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/pages_domain#project PagesDomain#project}
 
 ---
 
@@ -866,7 +866,7 @@ public object AutoSslEnabled { get; set; }
 
 Enables [automatic generation](https://docs.gitlab.com/ee/user/project/pages/custom_domains_ssl_tls_certification/lets_encrypt_integration.html) of SSL certificates issued by Let’s Encrypt for custom domains. When this is set to "true", certificate can't be provided.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/pages_domain#auto_ssl_enabled PagesDomain#auto_ssl_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/pages_domain#auto_ssl_enabled PagesDomain#auto_ssl_enabled}
 
 ---
 
@@ -880,7 +880,7 @@ public string Certificate { get; set; }
 
 The certificate in PEM format with intermediates following in most specific to least specific order.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/pages_domain#certificate PagesDomain#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/pages_domain#certificate PagesDomain#certificate}
 
 ---
 
@@ -894,7 +894,7 @@ public object Expired { get; set; }
 
 Whether the certificate is expired.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/pages_domain#expired PagesDomain#expired}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/pages_domain#expired PagesDomain#expired}
 
 ---
 
@@ -908,7 +908,7 @@ public string Key { get; set; }
 
 The certificate key in PEM format.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/pages_domain#key PagesDomain#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/pages_domain#key PagesDomain#key}
 
 ---
 
