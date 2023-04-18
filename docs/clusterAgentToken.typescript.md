@@ -1,6 +1,6 @@
 # `gitlab_cluster_agent_token`
 
-Refer to the Terraform Registory for docs: [`gitlab_cluster_agent_token`](https://www.terraform.io/docs/providers/gitlab/r/cluster_agent_token).
+Refer to the Terraform Registory for docs: [`gitlab_cluster_agent_token`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/cluster_agent_token).
 
 # `clusterAgentToken` Submodule <a name="`clusterAgentToken` Submodule" id="@cdktf/provider-gitlab.clusterAgentToken"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_cluster_agent_token`](https:
 
 ### ClusterAgentToken <a name="ClusterAgentToken" id="@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent_token gitlab_cluster_agent_token}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/cluster_agent_token gitlab_cluster_agent_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.Initializer"></a>
 
@@ -353,7 +353,7 @@ clusterAgentToken.ClusterAgentToken.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -463,10 +463,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -715,7 +715,7 @@ const clusterAgentTokenConfig: clusterAgentToken.ClusterAgentTokenConfig = { ...
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentTokenConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentTokenConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentTokenConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentTokenConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentTokenConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentTokenConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -725,7 +725,7 @@ const clusterAgentTokenConfig: clusterAgentToken.ClusterAgentTokenConfig = { ...
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentTokenConfig.property.name">name</a></code> | <code>string</code> | The Name of the agent. |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentTokenConfig.property.project">project</a></code> | <code>string</code> | ID or full path of the project maintained by the authenticated user. |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentTokenConfig.property.description">description</a></code> | <code>string</code> | The Description for the agent. |
-| <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentTokenConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent_token#id ClusterAgentToken#id}. |
+| <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentTokenConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/cluster_agent_token#id ClusterAgentToken#id}. |
 
 ---
 
@@ -742,10 +742,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentTokenConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -809,7 +809,7 @@ public readonly agentId: number;
 
 The ID of the agent.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent_token#agent_id ClusterAgentToken#agent_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/cluster_agent_token#agent_id ClusterAgentToken#agent_id}
 
 ---
 
@@ -823,7 +823,7 @@ public readonly name: string;
 
 The Name of the agent.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent_token#name ClusterAgentToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/cluster_agent_token#name ClusterAgentToken#name}
 
 ---
 
@@ -837,7 +837,7 @@ public readonly project: string;
 
 ID or full path of the project maintained by the authenticated user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent_token#project ClusterAgentToken#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/cluster_agent_token#project ClusterAgentToken#project}
 
 ---
 
@@ -851,7 +851,7 @@ public readonly description: string;
 
 The Description for the agent.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent_token#description ClusterAgentToken#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/cluster_agent_token#description ClusterAgentToken#description}
 
 ---
 
@@ -863,7 +863,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/cluster_agent_token#id ClusterAgentToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/cluster_agent_token#id ClusterAgentToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

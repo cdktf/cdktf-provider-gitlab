@@ -1,6 +1,6 @@
 # `data_gitlab_user_sshkeys`
 
-Refer to the Terraform Registory for docs: [`data_gitlab_user_sshkeys`](https://www.terraform.io/docs/providers/gitlab/d/user_sshkeys).
+Refer to the Terraform Registory for docs: [`data_gitlab_user_sshkeys`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/user_sshkeys).
 
 # `dataGitlabUserSshkeys` Submodule <a name="`dataGitlabUserSshkeys` Submodule" id="@cdktf/provider-gitlab.dataGitlabUserSshkeys"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_gitlab_user_sshkeys`](https://
 
 ### DataGitlabUserSshkeys <a name="DataGitlabUserSshkeys" id="@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeys"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/user_sshkeys gitlab_user_sshkeys}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/user_sshkeys gitlab_user_sshkeys}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabusersshkeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusersshkeys"
 
 datagitlabusersshkeys.NewDataGitlabUserSshkeys(scope Construct, id *string, config DataGitlabUserSshkeysConfig) DataGitlabUserSshkeys
 ```
@@ -291,7 +291,7 @@ func ResetUsername()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeys.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabusersshkeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusersshkeys"
 
 datagitlabusersshkeys.DataGitlabUserSshkeys_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeys.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabusersshkeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusersshkeys"
 
 datagitlabusersshkeys.DataGitlabUserSshkeys_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ datagitlabusersshkeys.DataGitlabUserSshkeys_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeys.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabusersshkeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusersshkeys"
 
 datagitlabusersshkeys.DataGitlabUserSshkeys_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -359,7 +359,7 @@ datagitlabusersshkeys.DataGitlabUserSshkeys_IsTerraformDataSource(x interface{})
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeys.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeys.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeys.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeys.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeys.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeys.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeys.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeys.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -449,10 +449,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeys.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -591,11 +591,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeysConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabusersshkeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusersshkeys"
 
 &datagitlabusersshkeys.DataGitlabUserSshkeysConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -612,13 +612,13 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabusersshkey
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeysConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeysConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeysConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeysConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeysConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeysConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeysConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeysConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeysConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/user_sshkeys#id DataGitlabUserSshkeys#id}. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeysConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/user_sshkeys#id DataGitlabUserSshkeys#id}. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeysConfig.property.userId">UserId</a></code> | <code>*f64</code> | ID of the user to get the SSH keys for. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeysConfig.property.username">Username</a></code> | <code>*string</code> | Username of the user to get the SSH keys for. |
 
@@ -637,10 +637,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeysConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -702,7 +702,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/user_sshkeys#id DataGitlabUserSshkeys#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/user_sshkeys#id DataGitlabUserSshkeys#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -719,7 +719,7 @@ UserId *f64
 
 ID of the user to get the SSH keys for.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/user_sshkeys#user_id DataGitlabUserSshkeys#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/user_sshkeys#user_id DataGitlabUserSshkeys#user_id}
 
 ---
 
@@ -733,7 +733,7 @@ Username *string
 
 Username of the user to get the SSH keys for.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/user_sshkeys#username DataGitlabUserSshkeys#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/user_sshkeys#username DataGitlabUserSshkeys#username}
 
 ---
 
@@ -742,7 +742,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeysKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabusersshkeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusersshkeys"
 
 &datagitlabusersshkeys.DataGitlabUserSshkeysKeys {
 
@@ -757,7 +757,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabusersshkey
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeysKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabusersshkeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusersshkeys"
 
 datagitlabusersshkeys.NewDataGitlabUserSshkeysKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabUserSshkeysKeysList
 ```
@@ -889,7 +889,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeysKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabusersshkeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusersshkeys"
 
 datagitlabusersshkeys.NewDataGitlabUserSshkeysKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabUserSshkeysKeysOutputReference
 ```

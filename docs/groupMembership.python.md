@@ -1,6 +1,6 @@
 # `gitlab_group_membership`
 
-Refer to the Terraform Registory for docs: [`gitlab_group_membership`](https://www.terraform.io/docs/providers/gitlab/r/group_membership).
+Refer to the Terraform Registory for docs: [`gitlab_group_membership`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_membership).
 
 # `groupMembership` Submodule <a name="`groupMembership` Submodule" id="@cdktf/provider-gitlab.groupMembership"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_group_membership`](https://w
 
 ### GroupMembership <a name="GroupMembership" id="@cdktf/provider-gitlab.groupMembership.GroupMembership"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/group_membership gitlab_group_membership}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_membership gitlab_group_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer"></a>
 
@@ -19,7 +19,7 @@ groupMembership.GroupMembership(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -40,7 +40,7 @@ groupMembership.GroupMembership(
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -50,7 +50,7 @@ groupMembership.GroupMembership(
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.groupId">group_id</a></code> | <code>str</code> | The id of the group. |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.userId">user_id</a></code> | <code>typing.Union[int, float]</code> | The id of the user. |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.expiresAt">expires_at</a></code> | <code>str</code> | Expiration date for the group membership. Format: `YYYY-MM-DD`. |
-| <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_membership#id GroupMembership#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_membership#id GroupMembership#id}. |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.skipSubresourcesOnDestroy">skip_subresources_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the deletion of direct memberships of the removed member in subgroups and projects should be skipped. |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.unassignIssuablesOnDestroy">unassign_issuables_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the removed member should be unassigned from any issues or merge requests inside a given group or project. |
 
@@ -82,7 +82,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 Access level for the member. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_membership#access_level GroupMembership#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_membership#access_level GroupMembership#access_level}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 The id of the group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_membership#group_id GroupMembership#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_membership#group_id GroupMembership#group_id}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 The id of the user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_membership#user_id GroupMembership#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_membership#user_id GroupMembership#user_id}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Expiration date for the group membership. Format: `YYYY-MM-DD`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_membership#expires_at GroupMembership#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_membership#expires_at GroupMembership#expires_at}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_membership#id GroupMembership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_membership#id GroupMembership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -175,7 +175,7 @@ Whether the deletion of direct memberships of the removed member in subgroups an
 
 Only used during a destroy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_membership#skip_subresources_on_destroy GroupMembership#skip_subresources_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_membership#skip_subresources_on_destroy GroupMembership#skip_subresources_on_destroy}
 
 ---
 
@@ -187,7 +187,7 @@ Whether the removed member should be unassigned from any issues or merge request
 
 Only used during a destroy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_membership#unassign_issuables_on_destroy GroupMembership#unassign_issuables_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_membership#unassign_issuables_on_destroy GroupMembership#unassign_issuables_on_destroy}
 
 ---
 
@@ -539,7 +539,7 @@ groupMembership.GroupMembership.is_terraform_resource(
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -647,10 +647,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.groupMembership.GroupMembership.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -873,7 +873,7 @@ from cdktf_cdktf_provider_gitlab import group_membership
 
 groupMembership.GroupMembershipConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -894,7 +894,7 @@ groupMembership.GroupMembershipConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -904,7 +904,7 @@ groupMembership.GroupMembershipConfig(
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.groupId">group_id</a></code> | <code>str</code> | The id of the group. |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.userId">user_id</a></code> | <code>typing.Union[int, float]</code> | The id of the user. |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.expiresAt">expires_at</a></code> | <code>str</code> | Expiration date for the group membership. Format: `YYYY-MM-DD`. |
-| <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_membership#id GroupMembership#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_membership#id GroupMembership#id}. |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.skipSubresourcesOnDestroy">skip_subresources_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the deletion of direct memberships of the removed member in subgroups and projects should be skipped. |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.unassignIssuablesOnDestroy">unassign_issuables_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the removed member should be unassigned from any issues or merge requests inside a given group or project. |
 
@@ -923,10 +923,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -990,7 +990,7 @@ access_level: str
 
 Access level for the member. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_membership#access_level GroupMembership#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_membership#access_level GroupMembership#access_level}
 
 ---
 
@@ -1004,7 +1004,7 @@ group_id: str
 
 The id of the group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_membership#group_id GroupMembership#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_membership#group_id GroupMembership#group_id}
 
 ---
 
@@ -1018,7 +1018,7 @@ user_id: typing.Union[int, float]
 
 The id of the user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_membership#user_id GroupMembership#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_membership#user_id GroupMembership#user_id}
 
 ---
 
@@ -1032,7 +1032,7 @@ expires_at: str
 
 Expiration date for the group membership. Format: `YYYY-MM-DD`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_membership#expires_at GroupMembership#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_membership#expires_at GroupMembership#expires_at}
 
 ---
 
@@ -1044,7 +1044,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_membership#id GroupMembership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_membership#id GroupMembership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1063,7 +1063,7 @@ Whether the deletion of direct memberships of the removed member in subgroups an
 
 Only used during a destroy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_membership#skip_subresources_on_destroy GroupMembership#skip_subresources_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_membership#skip_subresources_on_destroy GroupMembership#skip_subresources_on_destroy}
 
 ---
 
@@ -1079,7 +1079,7 @@ Whether the removed member should be unassigned from any issues or merge request
 
 Only used during a destroy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_membership#unassign_issuables_on_destroy GroupMembership#unassign_issuables_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_membership#unassign_issuables_on_destroy GroupMembership#unassign_issuables_on_destroy}
 
 ---
 

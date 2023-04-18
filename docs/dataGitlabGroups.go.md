@@ -1,6 +1,6 @@
 # `data_gitlab_groups`
 
-Refer to the Terraform Registory for docs: [`data_gitlab_groups`](https://www.terraform.io/docs/providers/gitlab/d/groups).
+Refer to the Terraform Registory for docs: [`data_gitlab_groups`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/groups).
 
 # `dataGitlabGroups` Submodule <a name="`dataGitlabGroups` Submodule" id="@cdktf/provider-gitlab.dataGitlabGroups"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_gitlab_groups`](https://www.te
 
 ### DataGitlabGroups <a name="DataGitlabGroups" id="@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroups"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/groups gitlab_groups}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/groups gitlab_groups}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabgroups"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroups"
 
 datagitlabgroups.NewDataGitlabGroups(scope Construct, id *string, config DataGitlabGroupsConfig) DataGitlabGroups
 ```
@@ -298,7 +298,7 @@ func ResetSort()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroups.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabgroups"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroups"
 
 datagitlabgroups.DataGitlabGroups_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroups.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabgroups"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroups"
 
 datagitlabgroups.DataGitlabGroups_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datagitlabgroups.DataGitlabGroups_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroups.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabgroups"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroups"
 
 datagitlabgroups.DataGitlabGroups_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -366,7 +366,7 @@ datagitlabgroups.DataGitlabGroups_IsTerraformDataSource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroups.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroups.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroups.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroups.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroups.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroups.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroups.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroups.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -458,10 +458,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroups.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -620,11 +620,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroupsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabgroups"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroups"
 
 &datagitlabgroups.DataGitlabGroupsConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -642,13 +642,13 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabgroups"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroupsConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroupsConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroupsConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroupsConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroupsConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroupsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroupsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroupsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroupsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/groups#id DataGitlabGroups#id}. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroupsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/groups#id DataGitlabGroups#id}. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroupsConfig.property.orderBy">OrderBy</a></code> | <code>*string</code> | Order the groups' list by `id`, `name`, `path`, or `similarity`. (Requires administrator privileges). |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroupsConfig.property.search">Search</a></code> | <code>*string</code> | Search groups by name or path. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroupsConfig.property.sort">Sort</a></code> | <code>*string</code> | Sort groups' list in asc or desc order. (Requires administrator privileges). |
@@ -668,10 +668,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroupsConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -733,7 +733,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/groups#id DataGitlabGroups#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/groups#id DataGitlabGroups#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -750,7 +750,7 @@ OrderBy *string
 
 Order the groups' list by `id`, `name`, `path`, or `similarity`. (Requires administrator privileges).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/groups#order_by DataGitlabGroups#order_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/groups#order_by DataGitlabGroups#order_by}
 
 ---
 
@@ -764,7 +764,7 @@ Search *string
 
 Search groups by name or path.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/groups#search DataGitlabGroups#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/groups#search DataGitlabGroups#search}
 
 ---
 
@@ -778,7 +778,7 @@ Sort *string
 
 Sort groups' list in asc or desc order. (Requires administrator privileges).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/groups#sort DataGitlabGroups#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/groups#sort DataGitlabGroups#sort}
 
 ---
 
@@ -787,7 +787,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroupsGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabgroups"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroups"
 
 &datagitlabgroups.DataGitlabGroupsGroups {
 
@@ -802,7 +802,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabgroups"
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroupsGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabgroups"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroups"
 
 datagitlabgroups.NewDataGitlabGroupsGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabGroupsGroupsList
 ```
@@ -934,7 +934,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroupsGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabgroups"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroups"
 
 datagitlabgroups.NewDataGitlabGroupsGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabGroupsGroupsOutputReference
 ```

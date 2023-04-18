@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/gitlab/r/instance_variable
+// https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/instance_variable
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface InstanceVariableConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/instance_variable#id InstanceVariable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/instance_variable#id InstanceVariable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,37 +17,37 @@ export interface InstanceVariableConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the variable.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/instance_variable#key InstanceVariable#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/instance_variable#key InstanceVariable#key}
   */
   readonly key: string;
   /**
   * If set to `true`, the value of the variable will be hidden in job logs. The value must meet the [masking requirements](https://docs.gitlab.com/ee/ci/variables/#masked-variables). Defaults to `false`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/instance_variable#masked InstanceVariable#masked}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/instance_variable#masked InstanceVariable#masked}
   */
   readonly masked?: boolean | cdktf.IResolvable;
   /**
   * If set to `true`, the variable will be passed only to pipelines running on protected branches and tags. Defaults to `false`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/instance_variable#protected InstanceVariable#protected}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/instance_variable#protected InstanceVariable#protected}
   */
   readonly protected?: boolean | cdktf.IResolvable;
   /**
   * The value of the variable.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/instance_variable#value InstanceVariable#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/instance_variable#value InstanceVariable#value}
   */
   readonly value: string;
   /**
   * The type of a variable. Valid values are: `env_var`, `file`. Default is `env_var`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/instance_variable#variable_type InstanceVariable#variable_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/instance_variable#variable_type InstanceVariable#variable_type}
   */
   readonly variableType?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/instance_variable gitlab_instance_variable}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/instance_variable gitlab_instance_variable}
 */
 export class InstanceVariable extends cdktf.TerraformResource {
 
@@ -61,7 +61,7 @@ export class InstanceVariable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/instance_variable gitlab_instance_variable} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/instance_variable gitlab_instance_variable} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

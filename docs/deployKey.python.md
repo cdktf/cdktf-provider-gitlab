@@ -1,6 +1,6 @@
 # `gitlab_deploy_key`
 
-Refer to the Terraform Registory for docs: [`gitlab_deploy_key`](https://www.terraform.io/docs/providers/gitlab/r/deploy_key).
+Refer to the Terraform Registory for docs: [`gitlab_deploy_key`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_key).
 
 # `deployKey` Submodule <a name="`deployKey` Submodule" id="@cdktf/provider-gitlab.deployKey"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_deploy_key`](https://www.ter
 
 ### DeployKey <a name="DeployKey" id="@cdktf/provider-gitlab.deployKey.DeployKey"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key gitlab_deploy_key}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_key gitlab_deploy_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.deployKey.DeployKey.Initializer"></a>
 
@@ -19,7 +19,7 @@ deployKey.DeployKey(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -38,7 +38,7 @@ deployKey.DeployKey(
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -48,7 +48,7 @@ deployKey.DeployKey(
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.Initializer.parameter.project">project</a></code> | <code>str</code> | The name or id of the project to add the deploy key to. |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.Initializer.parameter.title">title</a></code> | <code>str</code> | A title to describe the deploy key with. |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.Initializer.parameter.canPush">can_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow this deploy key to be used to push changes to the project. Defaults to `false`. |
-| <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key#id DeployKey#id}. |
+| <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_key#id DeployKey#id}. |
 
 ---
 
@@ -78,7 +78,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.deployKey.DeployKey.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The public ssh key body.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key#key DeployKey#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_key#key DeployKey#key}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 The name or id of the project to add the deploy key to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key#project DeployKey#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_key#project DeployKey#project}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 A title to describe the deploy key with.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key#title DeployKey#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_key#title DeployKey#title}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Allow this deploy key to be used to push changes to the project. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key#can_push DeployKey#can_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_key#can_push DeployKey#can_push}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key#id DeployKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_key#id DeployKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -497,7 +497,7 @@ deployKey.DeployKey.is_terraform_resource(
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -601,10 +601,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.deployKey.DeployKey.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -787,7 +787,7 @@ from cdktf_cdktf_provider_gitlab import deploy_key
 
 deployKey.DeployKeyConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -806,7 +806,7 @@ deployKey.DeployKeyConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKeyConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKeyConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKeyConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKeyConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKeyConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -816,7 +816,7 @@ deployKey.DeployKeyConfig(
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKeyConfig.property.project">project</a></code> | <code>str</code> | The name or id of the project to add the deploy key to. |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKeyConfig.property.title">title</a></code> | <code>str</code> | A title to describe the deploy key with. |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKeyConfig.property.canPush">can_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow this deploy key to be used to push changes to the project. Defaults to `false`. |
-| <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKeyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key#id DeployKey#id}. |
+| <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKeyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_key#id DeployKey#id}. |
 
 ---
 
@@ -833,10 +833,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.deployKey.DeployKeyConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -900,7 +900,7 @@ key: str
 
 The public ssh key body.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key#key DeployKey#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_key#key DeployKey#key}
 
 ---
 
@@ -914,7 +914,7 @@ project: str
 
 The name or id of the project to add the deploy key to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key#project DeployKey#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_key#project DeployKey#project}
 
 ---
 
@@ -928,7 +928,7 @@ title: str
 
 A title to describe the deploy key with.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key#title DeployKey#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_key#title DeployKey#title}
 
 ---
 
@@ -942,7 +942,7 @@ can_push: typing.Union[bool, IResolvable]
 
 Allow this deploy key to be used to push changes to the project. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key#can_push DeployKey#can_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_key#can_push DeployKey#can_push}
 
 ---
 
@@ -954,7 +954,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key#id DeployKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_key#id DeployKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

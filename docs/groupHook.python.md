@@ -1,6 +1,6 @@
 # `gitlab_group_hook`
 
-Refer to the Terraform Registory for docs: [`gitlab_group_hook`](https://www.terraform.io/docs/providers/gitlab/r/group_hook).
+Refer to the Terraform Registory for docs: [`gitlab_group_hook`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook).
 
 # `groupHook` Submodule <a name="`groupHook` Submodule" id="@cdktf/provider-gitlab.groupHook"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_group_hook`](https://www.ter
 
 ### GroupHook <a name="GroupHook" id="@cdktf/provider-gitlab.groupHook.GroupHook"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook gitlab_group_hook}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook gitlab_group_hook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupHook.GroupHook.Initializer"></a>
 
@@ -19,7 +19,7 @@ groupHook.GroupHook(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -52,7 +52,7 @@ groupHook.GroupHook(
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -64,7 +64,7 @@ groupHook.GroupHook(
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.Initializer.parameter.confidentialNoteEvents">confidential_note_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Invoke the hook for confidential notes events. |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.Initializer.parameter.deploymentEvents">deployment_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Invoke the hook for deployment events. |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.Initializer.parameter.enableSslVerification">enable_ssl_verification</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable ssl verification when invoking the hook. |
-| <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#id GroupHook#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#id GroupHook#id}. |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.Initializer.parameter.issuesEvents">issues_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Invoke the hook for issues events. |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.Initializer.parameter.jobEvents">job_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Invoke the hook for job events. |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.Initializer.parameter.mergeRequestsEvents">merge_requests_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Invoke the hook for merge requests. |
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.groupHook.GroupHook.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -146,7 +146,7 @@ Must be unique amongst siblings in the same scope
 
 The ID or full path of the group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#group GroupHook#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#group GroupHook#group}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 The url of the hook to invoke.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#url GroupHook#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#url GroupHook#url}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Invoke the hook for confidential issues events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#confidential_issues_events GroupHook#confidential_issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#confidential_issues_events GroupHook#confidential_issues_events}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Invoke the hook for confidential notes events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#confidential_note_events GroupHook#confidential_note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#confidential_note_events GroupHook#confidential_note_events}
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Invoke the hook for deployment events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#deployment_events GroupHook#deployment_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#deployment_events GroupHook#deployment_events}
 
 ---
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Enable ssl verification when invoking the hook.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#enable_ssl_verification GroupHook#enable_ssl_verification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#enable_ssl_verification GroupHook#enable_ssl_verification}
 
 ---
 
@@ -204,7 +204,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#id GroupHook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#id GroupHook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -217,7 +217,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Invoke the hook for issues events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#issues_events GroupHook#issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#issues_events GroupHook#issues_events}
 
 ---
 
@@ -227,7 +227,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Invoke the hook for job events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#job_events GroupHook#job_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#job_events GroupHook#job_events}
 
 ---
 
@@ -237,7 +237,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Invoke the hook for merge requests.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#merge_requests_events GroupHook#merge_requests_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#merge_requests_events GroupHook#merge_requests_events}
 
 ---
 
@@ -247,7 +247,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Invoke the hook for notes events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#note_events GroupHook#note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#note_events GroupHook#note_events}
 
 ---
 
@@ -257,7 +257,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Invoke the hook for pipeline events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#pipeline_events GroupHook#pipeline_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#pipeline_events GroupHook#pipeline_events}
 
 ---
 
@@ -267,7 +267,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Invoke the hook for push events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#push_events GroupHook#push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#push_events GroupHook#push_events}
 
 ---
 
@@ -277,7 +277,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Invoke the hook for push events on matching branches only.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#push_events_branch_filter GroupHook#push_events_branch_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#push_events_branch_filter GroupHook#push_events_branch_filter}
 
 ---
 
@@ -287,7 +287,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Invoke the hook for releases events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#releases_events GroupHook#releases_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#releases_events GroupHook#releases_events}
 
 ---
 
@@ -297,7 +297,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Invoke the hook for subgroup events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#subgroup_events GroupHook#subgroup_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#subgroup_events GroupHook#subgroup_events}
 
 ---
 
@@ -307,7 +307,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Invoke the hook for tag push events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#tag_push_events GroupHook#tag_push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#tag_push_events GroupHook#tag_push_events}
 
 ---
 
@@ -317,7 +317,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 A token to present when invoking the hook. The token is not available for imported resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#token GroupHook#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#token GroupHook#token}
 
 ---
 
@@ -327,7 +327,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Invoke the hook for wiki page events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#wiki_page_events GroupHook#wiki_page_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#wiki_page_events GroupHook#wiki_page_events}
 
 ---
 
@@ -770,7 +770,7 @@ groupHook.GroupHook.is_terraform_resource(
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -904,10 +904,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.groupHook.GroupHook.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1390,7 +1390,7 @@ from cdktf_cdktf_provider_gitlab import group_hook
 
 groupHook.GroupHookConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -1423,7 +1423,7 @@ groupHook.GroupHookConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1435,7 +1435,7 @@ groupHook.GroupHookConfig(
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.confidentialNoteEvents">confidential_note_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Invoke the hook for confidential notes events. |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.deploymentEvents">deployment_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Invoke the hook for deployment events. |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.enableSslVerification">enable_ssl_verification</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable ssl verification when invoking the hook. |
-| <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#id GroupHook#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#id GroupHook#id}. |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.issuesEvents">issues_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Invoke the hook for issues events. |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.jobEvents">job_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Invoke the hook for job events. |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.mergeRequestsEvents">merge_requests_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Invoke the hook for merge requests. |
@@ -1464,10 +1464,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1531,7 +1531,7 @@ group: str
 
 The ID or full path of the group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#group GroupHook#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#group GroupHook#group}
 
 ---
 
@@ -1545,7 +1545,7 @@ url: str
 
 The url of the hook to invoke.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#url GroupHook#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#url GroupHook#url}
 
 ---
 
@@ -1559,7 +1559,7 @@ confidential_issues_events: typing.Union[bool, IResolvable]
 
 Invoke the hook for confidential issues events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#confidential_issues_events GroupHook#confidential_issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#confidential_issues_events GroupHook#confidential_issues_events}
 
 ---
 
@@ -1573,7 +1573,7 @@ confidential_note_events: typing.Union[bool, IResolvable]
 
 Invoke the hook for confidential notes events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#confidential_note_events GroupHook#confidential_note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#confidential_note_events GroupHook#confidential_note_events}
 
 ---
 
@@ -1587,7 +1587,7 @@ deployment_events: typing.Union[bool, IResolvable]
 
 Invoke the hook for deployment events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#deployment_events GroupHook#deployment_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#deployment_events GroupHook#deployment_events}
 
 ---
 
@@ -1601,7 +1601,7 @@ enable_ssl_verification: typing.Union[bool, IResolvable]
 
 Enable ssl verification when invoking the hook.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#enable_ssl_verification GroupHook#enable_ssl_verification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#enable_ssl_verification GroupHook#enable_ssl_verification}
 
 ---
 
@@ -1613,7 +1613,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#id GroupHook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#id GroupHook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1630,7 +1630,7 @@ issues_events: typing.Union[bool, IResolvable]
 
 Invoke the hook for issues events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#issues_events GroupHook#issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#issues_events GroupHook#issues_events}
 
 ---
 
@@ -1644,7 +1644,7 @@ job_events: typing.Union[bool, IResolvable]
 
 Invoke the hook for job events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#job_events GroupHook#job_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#job_events GroupHook#job_events}
 
 ---
 
@@ -1658,7 +1658,7 @@ merge_requests_events: typing.Union[bool, IResolvable]
 
 Invoke the hook for merge requests.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#merge_requests_events GroupHook#merge_requests_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#merge_requests_events GroupHook#merge_requests_events}
 
 ---
 
@@ -1672,7 +1672,7 @@ note_events: typing.Union[bool, IResolvable]
 
 Invoke the hook for notes events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#note_events GroupHook#note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#note_events GroupHook#note_events}
 
 ---
 
@@ -1686,7 +1686,7 @@ pipeline_events: typing.Union[bool, IResolvable]
 
 Invoke the hook for pipeline events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#pipeline_events GroupHook#pipeline_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#pipeline_events GroupHook#pipeline_events}
 
 ---
 
@@ -1700,7 +1700,7 @@ push_events: typing.Union[bool, IResolvable]
 
 Invoke the hook for push events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#push_events GroupHook#push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#push_events GroupHook#push_events}
 
 ---
 
@@ -1714,7 +1714,7 @@ push_events_branch_filter: str
 
 Invoke the hook for push events on matching branches only.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#push_events_branch_filter GroupHook#push_events_branch_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#push_events_branch_filter GroupHook#push_events_branch_filter}
 
 ---
 
@@ -1728,7 +1728,7 @@ releases_events: typing.Union[bool, IResolvable]
 
 Invoke the hook for releases events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#releases_events GroupHook#releases_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#releases_events GroupHook#releases_events}
 
 ---
 
@@ -1742,7 +1742,7 @@ subgroup_events: typing.Union[bool, IResolvable]
 
 Invoke the hook for subgroup events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#subgroup_events GroupHook#subgroup_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#subgroup_events GroupHook#subgroup_events}
 
 ---
 
@@ -1756,7 +1756,7 @@ tag_push_events: typing.Union[bool, IResolvable]
 
 Invoke the hook for tag push events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#tag_push_events GroupHook#tag_push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#tag_push_events GroupHook#tag_push_events}
 
 ---
 
@@ -1770,7 +1770,7 @@ token: str
 
 A token to present when invoking the hook. The token is not available for imported resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#token GroupHook#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#token GroupHook#token}
 
 ---
 
@@ -1784,7 +1784,7 @@ wiki_page_events: typing.Union[bool, IResolvable]
 
 Invoke the hook for wiki page events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_hook#wiki_page_events GroupHook#wiki_page_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_hook#wiki_page_events GroupHook#wiki_page_events}
 
 ---
 

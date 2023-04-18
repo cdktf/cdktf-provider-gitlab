@@ -1,6 +1,6 @@
 # `gitlab_project_badge`
 
-Refer to the Terraform Registory for docs: [`gitlab_project_badge`](https://www.terraform.io/docs/providers/gitlab/r/project_badge).
+Refer to the Terraform Registory for docs: [`gitlab_project_badge`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge).
 
 # `projectBadge` Submodule <a name="`projectBadge` Submodule" id="@cdktf/provider-gitlab.projectBadge"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_project_badge`](https://www.
 
 ### ProjectBadge <a name="ProjectBadge" id="@cdktf/provider-gitlab.projectBadge.ProjectBadge"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge gitlab_project_badge}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge gitlab_project_badge}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectBadge.ProjectBadge.Initializer"></a>
 
@@ -19,7 +19,7 @@ projectBadge.ProjectBadge(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -38,7 +38,7 @@ projectBadge.ProjectBadge(
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -47,7 +47,7 @@ projectBadge.ProjectBadge(
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.Initializer.parameter.imageUrl">image_url</a></code> | <code>str</code> | The image url which will be presented on project overview. |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.Initializer.parameter.linkUrl">link_url</a></code> | <code>str</code> | The url linked with the badge. |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.Initializer.parameter.project">project</a></code> | <code>str</code> | The id of the project to add the badge to. |
-| <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge#id ProjectBadge#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge#id ProjectBadge#id}. |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the badge. |
 
 ---
@@ -78,7 +78,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.projectBadge.ProjectBadge.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The image url which will be presented on project overview.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge#image_url ProjectBadge#image_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge#image_url ProjectBadge#image_url}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 The url linked with the badge.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge#link_url ProjectBadge#link_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge#link_url ProjectBadge#link_url}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 The id of the project to add the badge to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge#project ProjectBadge#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge#project ProjectBadge#project}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge#id ProjectBadge#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge#id ProjectBadge#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +159,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The name of the badge.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge#name ProjectBadge#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge#name ProjectBadge#name}
 
 ---
 
@@ -497,7 +497,7 @@ projectBadge.ProjectBadge.is_terraform_resource(
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -603,10 +603,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.projectBadge.ProjectBadge.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -809,7 +809,7 @@ from cdktf_cdktf_provider_gitlab import project_badge
 
 projectBadge.ProjectBadgeConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -828,7 +828,7 @@ projectBadge.ProjectBadgeConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadgeConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadgeConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadgeConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadgeConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadgeConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadgeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -837,7 +837,7 @@ projectBadge.ProjectBadgeConfig(
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadgeConfig.property.imageUrl">image_url</a></code> | <code>str</code> | The image url which will be presented on project overview. |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadgeConfig.property.linkUrl">link_url</a></code> | <code>str</code> | The url linked with the badge. |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadgeConfig.property.project">project</a></code> | <code>str</code> | The id of the project to add the badge to. |
-| <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadgeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge#id ProjectBadge#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadgeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge#id ProjectBadge#id}. |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadgeConfig.property.name">name</a></code> | <code>str</code> | The name of the badge. |
 
 ---
@@ -855,10 +855,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.projectBadge.ProjectBadgeConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -922,7 +922,7 @@ image_url: str
 
 The image url which will be presented on project overview.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge#image_url ProjectBadge#image_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge#image_url ProjectBadge#image_url}
 
 ---
 
@@ -936,7 +936,7 @@ link_url: str
 
 The url linked with the badge.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge#link_url ProjectBadge#link_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge#link_url ProjectBadge#link_url}
 
 ---
 
@@ -950,7 +950,7 @@ project: str
 
 The id of the project to add the badge to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge#project ProjectBadge#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge#project ProjectBadge#project}
 
 ---
 
@@ -962,7 +962,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge#id ProjectBadge#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge#id ProjectBadge#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -979,7 +979,7 @@ name: str
 
 The name of the badge.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge#name ProjectBadge#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge#name ProjectBadge#name}
 
 ---
 

@@ -1,6 +1,6 @@
 # `gitlab_service_microsoft_teams`
 
-Refer to the Terraform Registory for docs: [`gitlab_service_microsoft_teams`](https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams).
+Refer to the Terraform Registory for docs: [`gitlab_service_microsoft_teams`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams).
 
 # `serviceMicrosoftTeams` Submodule <a name="`serviceMicrosoftTeams` Submodule" id="@cdktf/provider-gitlab.serviceMicrosoftTeams"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_service_microsoft_teams`](ht
 
 ### ServiceMicrosoftTeams <a name="ServiceMicrosoftTeams" id="@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams gitlab_service_microsoft_teams}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams gitlab_service_microsoft_teams}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.Initializer"></a>
 
@@ -19,7 +19,7 @@ serviceMicrosoftTeams.ServiceMicrosoftTeams(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -47,7 +47,7 @@ serviceMicrosoftTeams.ServiceMicrosoftTeams(
 | <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -58,7 +58,7 @@ serviceMicrosoftTeams.ServiceMicrosoftTeams(
 | <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.Initializer.parameter.branchesToBeNotified">branches_to_be_notified</a></code> | <code>str</code> | Branches to send notifications for. Valid options are “all”, “default”, “protected”, and “default_and_protected”. The default value is “default”. |
 | <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.Initializer.parameter.confidentialIssuesEvents">confidential_issues_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for confidential issue events. |
 | <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.Initializer.parameter.confidentialNoteEvents">confidential_note_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for confidential note events. |
-| <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#id ServiceMicrosoftTeams#id}. |
+| <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#id ServiceMicrosoftTeams#id}. |
 | <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.Initializer.parameter.issuesEvents">issues_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for issue events. |
 | <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.Initializer.parameter.mergeRequestsEvents">merge_requests_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for merge request events. |
 | <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.Initializer.parameter.noteEvents">note_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for note events. |
@@ -96,7 +96,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -136,7 +136,7 @@ Must be unique amongst siblings in the same scope
 
 ID of the project you want to activate integration on.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#project ServiceMicrosoftTeams#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#project ServiceMicrosoftTeams#project}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 The Microsoft Teams webhook (Example, https://outlook.office.com/webhook/...). This value cannot be imported.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#webhook ServiceMicrosoftTeams#webhook}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#webhook ServiceMicrosoftTeams#webhook}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Branches to send notifications for. Valid options are “all”, “default”, “protected”, and “default_and_protected”. The default value is “default”.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#branches_to_be_notified ServiceMicrosoftTeams#branches_to_be_notified}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#branches_to_be_notified ServiceMicrosoftTeams#branches_to_be_notified}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Enable notifications for confidential issue events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#confidential_issues_events ServiceMicrosoftTeams#confidential_issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#confidential_issues_events ServiceMicrosoftTeams#confidential_issues_events}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Enable notifications for confidential note events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#confidential_note_events ServiceMicrosoftTeams#confidential_note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#confidential_note_events ServiceMicrosoftTeams#confidential_note_events}
 
 ---
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#id ServiceMicrosoftTeams#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#id ServiceMicrosoftTeams#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -197,7 +197,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Enable notifications for issue events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#issues_events ServiceMicrosoftTeams#issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#issues_events ServiceMicrosoftTeams#issues_events}
 
 ---
 
@@ -207,7 +207,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Enable notifications for merge request events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#merge_requests_events ServiceMicrosoftTeams#merge_requests_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#merge_requests_events ServiceMicrosoftTeams#merge_requests_events}
 
 ---
 
@@ -217,7 +217,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Enable notifications for note events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#note_events ServiceMicrosoftTeams#note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#note_events ServiceMicrosoftTeams#note_events}
 
 ---
 
@@ -227,7 +227,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Send notifications for broken pipelines.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#notify_only_broken_pipelines ServiceMicrosoftTeams#notify_only_broken_pipelines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#notify_only_broken_pipelines ServiceMicrosoftTeams#notify_only_broken_pipelines}
 
 ---
 
@@ -237,7 +237,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Enable notifications for pipeline events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#pipeline_events ServiceMicrosoftTeams#pipeline_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#pipeline_events ServiceMicrosoftTeams#pipeline_events}
 
 ---
 
@@ -247,7 +247,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Enable notifications for push events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#push_events ServiceMicrosoftTeams#push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#push_events ServiceMicrosoftTeams#push_events}
 
 ---
 
@@ -257,7 +257,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Enable notifications for tag push events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#tag_push_events ServiceMicrosoftTeams#tag_push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#tag_push_events ServiceMicrosoftTeams#tag_push_events}
 
 ---
 
@@ -267,7 +267,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Enable notifications for wiki page events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#wiki_page_events ServiceMicrosoftTeams#wiki_page_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#wiki_page_events ServiceMicrosoftTeams#wiki_page_events}
 
 ---
 
@@ -675,7 +675,7 @@ serviceMicrosoftTeams.ServiceMicrosoftTeams.is_terraform_resource(
 | <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -800,10 +800,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1196,7 +1196,7 @@ from cdktf_cdktf_provider_gitlab import service_microsoft_teams
 
 serviceMicrosoftTeams.ServiceMicrosoftTeamsConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -1224,7 +1224,7 @@ serviceMicrosoftTeams.ServiceMicrosoftTeamsConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeamsConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeamsConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeamsConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeamsConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeamsConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeamsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1235,7 +1235,7 @@ serviceMicrosoftTeams.ServiceMicrosoftTeamsConfig(
 | <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeamsConfig.property.branchesToBeNotified">branches_to_be_notified</a></code> | <code>str</code> | Branches to send notifications for. Valid options are “all”, “default”, “protected”, and “default_and_protected”. The default value is “default”. |
 | <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeamsConfig.property.confidentialIssuesEvents">confidential_issues_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for confidential issue events. |
 | <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeamsConfig.property.confidentialNoteEvents">confidential_note_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for confidential note events. |
-| <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeamsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#id ServiceMicrosoftTeams#id}. |
+| <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeamsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#id ServiceMicrosoftTeams#id}. |
 | <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeamsConfig.property.issuesEvents">issues_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for issue events. |
 | <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeamsConfig.property.mergeRequestsEvents">merge_requests_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for merge request events. |
 | <code><a href="#@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeamsConfig.property.noteEvents">note_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for note events. |
@@ -1260,10 +1260,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeamsConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1327,7 +1327,7 @@ project: str
 
 ID of the project you want to activate integration on.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#project ServiceMicrosoftTeams#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#project ServiceMicrosoftTeams#project}
 
 ---
 
@@ -1341,7 +1341,7 @@ webhook: str
 
 The Microsoft Teams webhook (Example, https://outlook.office.com/webhook/...). This value cannot be imported.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#webhook ServiceMicrosoftTeams#webhook}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#webhook ServiceMicrosoftTeams#webhook}
 
 ---
 
@@ -1355,7 +1355,7 @@ branches_to_be_notified: str
 
 Branches to send notifications for. Valid options are “all”, “default”, “protected”, and “default_and_protected”. The default value is “default”.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#branches_to_be_notified ServiceMicrosoftTeams#branches_to_be_notified}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#branches_to_be_notified ServiceMicrosoftTeams#branches_to_be_notified}
 
 ---
 
@@ -1369,7 +1369,7 @@ confidential_issues_events: typing.Union[bool, IResolvable]
 
 Enable notifications for confidential issue events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#confidential_issues_events ServiceMicrosoftTeams#confidential_issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#confidential_issues_events ServiceMicrosoftTeams#confidential_issues_events}
 
 ---
 
@@ -1383,7 +1383,7 @@ confidential_note_events: typing.Union[bool, IResolvable]
 
 Enable notifications for confidential note events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#confidential_note_events ServiceMicrosoftTeams#confidential_note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#confidential_note_events ServiceMicrosoftTeams#confidential_note_events}
 
 ---
 
@@ -1395,7 +1395,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#id ServiceMicrosoftTeams#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#id ServiceMicrosoftTeams#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1412,7 +1412,7 @@ issues_events: typing.Union[bool, IResolvable]
 
 Enable notifications for issue events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#issues_events ServiceMicrosoftTeams#issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#issues_events ServiceMicrosoftTeams#issues_events}
 
 ---
 
@@ -1426,7 +1426,7 @@ merge_requests_events: typing.Union[bool, IResolvable]
 
 Enable notifications for merge request events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#merge_requests_events ServiceMicrosoftTeams#merge_requests_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#merge_requests_events ServiceMicrosoftTeams#merge_requests_events}
 
 ---
 
@@ -1440,7 +1440,7 @@ note_events: typing.Union[bool, IResolvable]
 
 Enable notifications for note events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#note_events ServiceMicrosoftTeams#note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#note_events ServiceMicrosoftTeams#note_events}
 
 ---
 
@@ -1454,7 +1454,7 @@ notify_only_broken_pipelines: typing.Union[bool, IResolvable]
 
 Send notifications for broken pipelines.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#notify_only_broken_pipelines ServiceMicrosoftTeams#notify_only_broken_pipelines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#notify_only_broken_pipelines ServiceMicrosoftTeams#notify_only_broken_pipelines}
 
 ---
 
@@ -1468,7 +1468,7 @@ pipeline_events: typing.Union[bool, IResolvable]
 
 Enable notifications for pipeline events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#pipeline_events ServiceMicrosoftTeams#pipeline_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#pipeline_events ServiceMicrosoftTeams#pipeline_events}
 
 ---
 
@@ -1482,7 +1482,7 @@ push_events: typing.Union[bool, IResolvable]
 
 Enable notifications for push events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#push_events ServiceMicrosoftTeams#push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#push_events ServiceMicrosoftTeams#push_events}
 
 ---
 
@@ -1496,7 +1496,7 @@ tag_push_events: typing.Union[bool, IResolvable]
 
 Enable notifications for tag push events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#tag_push_events ServiceMicrosoftTeams#tag_push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#tag_push_events ServiceMicrosoftTeams#tag_push_events}
 
 ---
 
@@ -1510,7 +1510,7 @@ wiki_page_events: typing.Union[bool, IResolvable]
 
 Enable notifications for wiki page events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_microsoft_teams#wiki_page_events ServiceMicrosoftTeams#wiki_page_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_microsoft_teams#wiki_page_events ServiceMicrosoftTeams#wiki_page_events}
 
 ---
 

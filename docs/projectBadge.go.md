@@ -1,6 +1,6 @@
 # `gitlab_project_badge`
 
-Refer to the Terraform Registory for docs: [`gitlab_project_badge`](https://www.terraform.io/docs/providers/gitlab/r/project_badge).
+Refer to the Terraform Registory for docs: [`gitlab_project_badge`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge).
 
 # `projectBadge` Submodule <a name="`projectBadge` Submodule" id="@cdktf/provider-gitlab.projectBadge"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`gitlab_project_badge`](https://www.
 
 ### ProjectBadge <a name="ProjectBadge" id="@cdktf/provider-gitlab.projectBadge.ProjectBadge"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge gitlab_project_badge}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge gitlab_project_badge}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectBadge.ProjectBadge.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectbadge"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectbadge"
 
 projectbadge.NewProjectBadge(scope Construct, id *string, config ProjectBadgeConfig) ProjectBadge
 ```
@@ -284,7 +284,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectBadge.ProjectBadge.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectbadge"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectbadge"
 
 projectbadge.ProjectBadge_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectBadge.ProjectBadge.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectbadge"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectbadge"
 
 projectbadge.ProjectBadge_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ projectbadge.ProjectBadge_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectBadge.ProjectBadge.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectbadge"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectbadge"
 
 projectbadge.ProjectBadge_IsTerraformResource(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ projectbadge.ProjectBadge_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadge.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -459,10 +459,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.projectBadge.ProjectBadge.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -661,11 +661,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectBadge.ProjectBadgeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectbadge"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectbadge"
 
 &projectbadge.ProjectBadgeConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -684,7 +684,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectbadge"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadgeConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadgeConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadgeConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadgeConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadgeConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadgeConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -693,7 +693,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectbadge"
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadgeConfig.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | The image url which will be presented on project overview. |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadgeConfig.property.linkUrl">LinkUrl</a></code> | <code>*string</code> | The url linked with the badge. |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadgeConfig.property.project">Project</a></code> | <code>*string</code> | The id of the project to add the badge to. |
-| <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadgeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge#id ProjectBadge#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadgeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge#id ProjectBadge#id}. |
 | <code><a href="#@cdktf/provider-gitlab.projectBadge.ProjectBadgeConfig.property.name">Name</a></code> | <code>*string</code> | The name of the badge. |
 
 ---
@@ -711,10 +711,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.projectBadge.ProjectBadgeConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -778,7 +778,7 @@ ImageUrl *string
 
 The image url which will be presented on project overview.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge#image_url ProjectBadge#image_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge#image_url ProjectBadge#image_url}
 
 ---
 
@@ -792,7 +792,7 @@ LinkUrl *string
 
 The url linked with the badge.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge#link_url ProjectBadge#link_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge#link_url ProjectBadge#link_url}
 
 ---
 
@@ -806,7 +806,7 @@ Project *string
 
 The id of the project to add the badge to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge#project ProjectBadge#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge#project ProjectBadge#project}
 
 ---
 
@@ -818,7 +818,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge#id ProjectBadge#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge#id ProjectBadge#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -835,7 +835,7 @@ Name *string
 
 The name of the badge.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge#name ProjectBadge#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge#name ProjectBadge#name}
 
 ---
 

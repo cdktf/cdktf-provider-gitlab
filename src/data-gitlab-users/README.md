@@ -1,3 +1,3 @@
 # `data_gitlab_users`
 
-Refer to the Terraform Registory for docs: [`data_gitlab_users`](https://www.terraform.io/docs/providers/gitlab/d/users).
+Refer to the Terraform Registory for docs: [`data_gitlab_users`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/users).

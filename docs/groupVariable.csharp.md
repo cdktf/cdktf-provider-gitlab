@@ -1,6 +1,6 @@
 # `gitlab_group_variable`
 
-Refer to the Terraform Registory for docs: [`gitlab_group_variable`](https://www.terraform.io/docs/providers/gitlab/r/group_variable).
+Refer to the Terraform Registory for docs: [`gitlab_group_variable`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_variable).
 
 # `groupVariable` Submodule <a name="`groupVariable` Submodule" id="@cdktf/provider-gitlab.groupVariable"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_group_variable`](https://www
 
 ### GroupVariable <a name="GroupVariable" id="@cdktf/provider-gitlab.groupVariable.GroupVariable"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/group_variable gitlab_group_variable}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_variable gitlab_group_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupVariable.GroupVariable.Initializer"></a>
 
@@ -374,7 +374,7 @@ GroupVariable.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariable.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariable.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariable.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariable.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariable.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariable.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariable.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariable.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -484,10 +484,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.groupVariable.GroupVariable.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -730,7 +730,7 @@ using HashiCorp.Cdktf.Providers.Gitlab;
 
 new GroupVariableConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -752,7 +752,7 @@ new GroupVariableConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariableConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariableConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariableConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariableConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariableConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariableConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -762,7 +762,7 @@ new GroupVariableConfig {
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariableConfig.property.key">Key</a></code> | <code>string</code> | The name of the variable. |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariableConfig.property.value">Value</a></code> | <code>string</code> | The value of the variable. |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariableConfig.property.environmentScope">EnvironmentScope</a></code> | <code>string</code> | The environment scope of the variable. |
-| <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariableConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_variable#id GroupVariable#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariableConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_variable#id GroupVariable#id}. |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariableConfig.property.masked">Masked</a></code> | <code>object</code> | If set to `true`, the value of the variable will be hidden in job logs. |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariableConfig.property.protected">Protected</a></code> | <code>object</code> | If set to `true`, the variable will be passed only to pipelines running on protected branches and tags. |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariableConfig.property.variableType">VariableType</a></code> | <code>string</code> | The type of a variable. Valid values are: `env_var`, `file`. Default is `env_var`. |
@@ -782,10 +782,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.groupVariable.GroupVariableConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -849,7 +849,7 @@ public string Group { get; set; }
 
 The name or id of the group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_variable#group GroupVariable#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_variable#group GroupVariable#group}
 
 ---
 
@@ -863,7 +863,7 @@ public string Key { get; set; }
 
 The name of the variable.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_variable#key GroupVariable#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_variable#key GroupVariable#key}
 
 ---
 
@@ -877,7 +877,7 @@ public string Value { get; set; }
 
 The value of the variable.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_variable#value GroupVariable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_variable#value GroupVariable#value}
 
 ---
 
@@ -893,7 +893,7 @@ The environment scope of the variable.
 
 Defaults to all environment (`*`). Note that in Community Editions of Gitlab, values other than `*` will cause inconsistent plans.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_variable#environment_scope GroupVariable#environment_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_variable#environment_scope GroupVariable#environment_scope}
 
 ---
 
@@ -905,7 +905,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_variable#id GroupVariable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_variable#id GroupVariable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -924,7 +924,7 @@ If set to `true`, the value of the variable will be hidden in job logs.
 
 The value must meet the [masking requirements](https://docs.gitlab.com/ee/ci/variables/#masked-variables). Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_variable#masked GroupVariable#masked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_variable#masked GroupVariable#masked}
 
 ---
 
@@ -940,7 +940,7 @@ If set to `true`, the variable will be passed only to pipelines running on prote
 
 Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_variable#protected GroupVariable#protected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_variable#protected GroupVariable#protected}
 
 ---
 
@@ -954,7 +954,7 @@ public string VariableType { get; set; }
 
 The type of a variable. Valid values are: `env_var`, `file`. Default is `env_var`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_variable#variable_type GroupVariable#variable_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_variable#variable_type GroupVariable#variable_type}
 
 ---
 

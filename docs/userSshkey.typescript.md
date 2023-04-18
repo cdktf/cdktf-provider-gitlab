@@ -1,6 +1,6 @@
 # `gitlab_user_sshkey`
 
-Refer to the Terraform Registory for docs: [`gitlab_user_sshkey`](https://www.terraform.io/docs/providers/gitlab/r/user_sshkey).
+Refer to the Terraform Registory for docs: [`gitlab_user_sshkey`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_sshkey).
 
 # `userSshkey` Submodule <a name="`userSshkey` Submodule" id="@cdktf/provider-gitlab.userSshkey"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_user_sshkey`](https://www.te
 
 ### UserSshkey <a name="UserSshkey" id="@cdktf/provider-gitlab.userSshkey.UserSshkey"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/user_sshkey gitlab_user_sshkey}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_sshkey gitlab_user_sshkey}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.userSshkey.UserSshkey.Initializer"></a>
 
@@ -353,7 +353,7 @@ userSshkey.UserSshkey.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkey.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkey.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkey.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkey.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkey.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkey.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkey.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkey.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -459,10 +459,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.userSshkey.UserSshkey.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -671,7 +671,7 @@ const userSshkeyConfig: userSshkey.UserSshkeyConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkeyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkeyConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkeyConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkeyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkeyConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -681,7 +681,7 @@ const userSshkeyConfig: userSshkey.UserSshkeyConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkeyConfig.property.title">title</a></code> | <code>string</code> | The title of the ssh key. |
 | <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkeyConfig.property.userId">userId</a></code> | <code>number</code> | The ID or username of the user. |
 | <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkeyConfig.property.expiresAt">expiresAt</a></code> | <code>string</code> | The expiration date of the SSH key in ISO 8601 format (YYYY-MM-DDTHH:MM:SSZ). |
-| <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_sshkey#id UserSshkey#id}. |
+| <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_sshkey#id UserSshkey#id}. |
 
 ---
 
@@ -698,10 +698,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.userSshkey.UserSshkeyConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -767,7 +767,7 @@ The ssh key.
 
 The SSH key `comment` (trailing part) is optional and ignored for diffing, because GitLab overrides it with the username and GitLab hostname.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_sshkey#key UserSshkey#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_sshkey#key UserSshkey#key}
 
 ---
 
@@ -781,7 +781,7 @@ public readonly title: string;
 
 The title of the ssh key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_sshkey#title UserSshkey#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_sshkey#title UserSshkey#title}
 
 ---
 
@@ -795,7 +795,7 @@ public readonly userId: number;
 
 The ID or username of the user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_sshkey#user_id UserSshkey#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_sshkey#user_id UserSshkey#user_id}
 
 ---
 
@@ -809,7 +809,7 @@ public readonly expiresAt: string;
 
 The expiration date of the SSH key in ISO 8601 format (YYYY-MM-DDTHH:MM:SSZ).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_sshkey#expires_at UserSshkey#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_sshkey#expires_at UserSshkey#expires_at}
 
 ---
 
@@ -821,7 +821,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_sshkey#id UserSshkey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_sshkey#id UserSshkey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

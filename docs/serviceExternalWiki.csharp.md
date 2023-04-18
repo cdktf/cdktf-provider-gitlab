@@ -1,6 +1,6 @@
 # `gitlab_service_external_wiki`
 
-Refer to the Terraform Registory for docs: [`gitlab_service_external_wiki`](https://www.terraform.io/docs/providers/gitlab/r/service_external_wiki).
+Refer to the Terraform Registory for docs: [`gitlab_service_external_wiki`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_external_wiki).
 
 # `serviceExternalWiki` Submodule <a name="`serviceExternalWiki` Submodule" id="@cdktf/provider-gitlab.serviceExternalWiki"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_service_external_wiki`](http
 
 ### ServiceExternalWiki <a name="ServiceExternalWiki" id="@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWiki"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/service_external_wiki gitlab_service_external_wiki}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_external_wiki gitlab_service_external_wiki}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWiki.Initializer"></a>
 
@@ -346,7 +346,7 @@ ServiceExternalWiki.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWiki.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWiki.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWiki.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWiki.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWiki.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWiki.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWiki.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWiki.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -451,10 +451,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWiki.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -647,7 +647,7 @@ using HashiCorp.Cdktf.Providers.Gitlab;
 
 new ServiceExternalWikiConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -664,7 +664,7 @@ new ServiceExternalWikiConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWikiConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWikiConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWikiConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWikiConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWikiConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWikiConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -672,7 +672,7 @@ new ServiceExternalWikiConfig {
 | <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWikiConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWikiConfig.property.externalWikiUrl">ExternalWikiUrl</a></code> | <code>string</code> | The URL of the external wiki. |
 | <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWikiConfig.property.project">Project</a></code> | <code>string</code> | ID of the project you want to activate integration on. |
-| <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWikiConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_external_wiki#id ServiceExternalWiki#id}. |
+| <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWikiConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_external_wiki#id ServiceExternalWiki#id}. |
 
 ---
 
@@ -689,10 +689,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWikiConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -756,7 +756,7 @@ public string ExternalWikiUrl { get; set; }
 
 The URL of the external wiki.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_external_wiki#external_wiki_url ServiceExternalWiki#external_wiki_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_external_wiki#external_wiki_url ServiceExternalWiki#external_wiki_url}
 
 ---
 
@@ -770,7 +770,7 @@ public string Project { get; set; }
 
 ID of the project you want to activate integration on.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_external_wiki#project ServiceExternalWiki#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_external_wiki#project ServiceExternalWiki#project}
 
 ---
 
@@ -782,7 +782,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_external_wiki#id ServiceExternalWiki#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_external_wiki#id ServiceExternalWiki#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

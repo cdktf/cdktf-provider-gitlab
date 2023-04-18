@@ -1,6 +1,6 @@
 # `data_gitlab_group_membership`
 
-Refer to the Terraform Registory for docs: [`data_gitlab_group_membership`](https://www.terraform.io/docs/providers/gitlab/d/group_membership).
+Refer to the Terraform Registory for docs: [`data_gitlab_group_membership`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group_membership).
 
 # `dataGitlabGroupMembership` Submodule <a name="`dataGitlabGroupMembership` Submodule" id="@cdktf/provider-gitlab.dataGitlabGroupMembership"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_gitlab_group_membership`](http
 
 ### DataGitlabGroupMembership <a name="DataGitlabGroupMembership" id="@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembership"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/group_membership gitlab_group_membership}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group_membership gitlab_group_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembership.Initializer"></a>
 
@@ -373,7 +373,7 @@ DataGitlabGroupMembership.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembership.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembership.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembership.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembership.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembership.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembership.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembership.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembership.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -467,10 +467,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembership.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -653,7 +653,7 @@ using HashiCorp.Cdktf.Providers.Gitlab;
 
 new DataGitlabGroupMembershipConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -672,7 +672,7 @@ new DataGitlabGroupMembershipConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembershipConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembershipConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembershipConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembershipConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembershipConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembershipConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -681,7 +681,7 @@ new DataGitlabGroupMembershipConfig {
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembershipConfig.property.accessLevel">AccessLevel</a></code> | <code>string</code> | Only return members with the desired access level. Acceptable values are: `guest`, `reporter`, `developer`, `maintainer`, `owner`. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembershipConfig.property.fullPath">FullPath</a></code> | <code>string</code> | The full path of the group. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembershipConfig.property.groupId">GroupId</a></code> | <code>double</code> | The ID of the group. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembershipConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/group_membership#id DataGitlabGroupMembership#id}. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembershipConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group_membership#id DataGitlabGroupMembership#id}. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembershipConfig.property.inherited">Inherited</a></code> | <code>object</code> | Return all project members including members through ancestor groups. |
 
 ---
@@ -699,10 +699,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.dataGitlabGroupMembership.DataGitlabGroupMembershipConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -766,7 +766,7 @@ public string AccessLevel { get; set; }
 
 Only return members with the desired access level. Acceptable values are: `guest`, `reporter`, `developer`, `maintainer`, `owner`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/group_membership#access_level DataGitlabGroupMembership#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group_membership#access_level DataGitlabGroupMembership#access_level}
 
 ---
 
@@ -780,7 +780,7 @@ public string FullPath { get; set; }
 
 The full path of the group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/group_membership#full_path DataGitlabGroupMembership#full_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group_membership#full_path DataGitlabGroupMembership#full_path}
 
 ---
 
@@ -794,7 +794,7 @@ public double GroupId { get; set; }
 
 The ID of the group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/group_membership#group_id DataGitlabGroupMembership#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group_membership#group_id DataGitlabGroupMembership#group_id}
 
 ---
 
@@ -806,7 +806,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/group_membership#id DataGitlabGroupMembership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group_membership#id DataGitlabGroupMembership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -823,7 +823,7 @@ public object Inherited { get; set; }
 
 Return all project members including members through ancestor groups.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/group_membership#inherited DataGitlabGroupMembership#inherited}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group_membership#inherited DataGitlabGroupMembership#inherited}
 
 ---
 

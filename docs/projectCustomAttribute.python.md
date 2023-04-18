@@ -1,6 +1,6 @@
 # `gitlab_project_custom_attribute`
 
-Refer to the Terraform Registory for docs: [`gitlab_project_custom_attribute`](https://www.terraform.io/docs/providers/gitlab/r/project_custom_attribute).
+Refer to the Terraform Registory for docs: [`gitlab_project_custom_attribute`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_custom_attribute).
 
 # `projectCustomAttribute` Submodule <a name="`projectCustomAttribute` Submodule" id="@cdktf/provider-gitlab.projectCustomAttribute"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_project_custom_attribute`](h
 
 ### ProjectCustomAttribute <a name="ProjectCustomAttribute" id="@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/project_custom_attribute gitlab_project_custom_attribute}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_custom_attribute gitlab_project_custom_attribute}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute.Initializer"></a>
 
@@ -19,7 +19,7 @@ projectCustomAttribute.ProjectCustomAttribute(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -37,7 +37,7 @@ projectCustomAttribute.ProjectCustomAttribute(
 | <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -46,7 +46,7 @@ projectCustomAttribute.ProjectCustomAttribute(
 | <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute.Initializer.parameter.key">key</a></code> | <code>str</code> | Key for the Custom Attribute. |
 | <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute.Initializer.parameter.project">project</a></code> | <code>typing.Union[int, float]</code> | The id of the project. |
 | <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute.Initializer.parameter.value">value</a></code> | <code>str</code> | Value for the Custom Attribute. |
-| <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_custom_attribute#id ProjectCustomAttribute#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_custom_attribute#id ProjectCustomAttribute#id}. |
 
 ---
 
@@ -76,7 +76,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 Key for the Custom Attribute.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_custom_attribute#key ProjectCustomAttribute#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_custom_attribute#key ProjectCustomAttribute#key}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 The id of the project.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_custom_attribute#project ProjectCustomAttribute#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_custom_attribute#project ProjectCustomAttribute#project}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Value for the Custom Attribute.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_custom_attribute#value ProjectCustomAttribute#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_custom_attribute#value ProjectCustomAttribute#value}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_custom_attribute#id ProjectCustomAttribute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_custom_attribute#id ProjectCustomAttribute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -478,7 +478,7 @@ projectCustomAttribute.ProjectCustomAttribute.is_terraform_resource(
 | <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -580,10 +580,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -746,7 +746,7 @@ from cdktf_cdktf_provider_gitlab import project_custom_attribute
 
 projectCustomAttribute.ProjectCustomAttributeConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -764,7 +764,7 @@ projectCustomAttribute.ProjectCustomAttributeConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttributeConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttributeConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttributeConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttributeConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttributeConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttributeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -773,7 +773,7 @@ projectCustomAttribute.ProjectCustomAttributeConfig(
 | <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttributeConfig.property.key">key</a></code> | <code>str</code> | Key for the Custom Attribute. |
 | <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttributeConfig.property.project">project</a></code> | <code>typing.Union[int, float]</code> | The id of the project. |
 | <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttributeConfig.property.value">value</a></code> | <code>str</code> | Value for the Custom Attribute. |
-| <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttributeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_custom_attribute#id ProjectCustomAttribute#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttributeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_custom_attribute#id ProjectCustomAttribute#id}. |
 
 ---
 
@@ -790,10 +790,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttributeConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -857,7 +857,7 @@ key: str
 
 Key for the Custom Attribute.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_custom_attribute#key ProjectCustomAttribute#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_custom_attribute#key ProjectCustomAttribute#key}
 
 ---
 
@@ -871,7 +871,7 @@ project: typing.Union[int, float]
 
 The id of the project.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_custom_attribute#project ProjectCustomAttribute#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_custom_attribute#project ProjectCustomAttribute#project}
 
 ---
 
@@ -885,7 +885,7 @@ value: str
 
 Value for the Custom Attribute.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_custom_attribute#value ProjectCustomAttribute#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_custom_attribute#value ProjectCustomAttribute#value}
 
 ---
 
@@ -897,7 +897,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_custom_attribute#id ProjectCustomAttribute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_custom_attribute#id ProjectCustomAttribute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

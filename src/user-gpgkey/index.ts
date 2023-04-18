@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/gitlab/r/user_gpgkey
+// https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_gpgkey
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface UserGpgkeyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_gpgkey#id UserGpgkey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_gpgkey#id UserGpgkey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,19 +17,19 @@ export interface UserGpgkeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * The armored GPG public key.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_gpgkey#key UserGpgkey#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_gpgkey#key UserGpgkey#key}
   */
   readonly key: string;
   /**
   * The ID of the user to add the GPG key to. If this field is omitted, this resource manages a GPG key for the current user. Otherwise, this resource manages a GPG key for the speicifed user, and an admin token is required.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_gpgkey#user_id UserGpgkey#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_gpgkey#user_id UserGpgkey#user_id}
   */
   readonly userId?: number;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/user_gpgkey gitlab_user_gpgkey}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_gpgkey gitlab_user_gpgkey}
 */
 export class UserGpgkey extends cdktf.TerraformResource {
 
@@ -43,7 +43,7 @@ export class UserGpgkey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/user_gpgkey gitlab_user_gpgkey} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_gpgkey gitlab_user_gpgkey} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,6 +1,6 @@
 # `data_gitlab_project_protected_branch`
 
-Refer to the Terraform Registory for docs: [`data_gitlab_project_protected_branch`](https://www.terraform.io/docs/providers/gitlab/d/project_protected_branch).
+Refer to the Terraform Registory for docs: [`data_gitlab_project_protected_branch`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/project_protected_branch).
 
 # `dataGitlabProjectProtectedBranch` Submodule <a name="`dataGitlabProjectProtectedBranch` Submodule" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_gitlab_project_protected_branc
 
 ### DataGitlabProjectProtectedBranch <a name="DataGitlabProjectProtectedBranch" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranch"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/project_protected_branch gitlab_project_protected_branch}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/project_protected_branch gitlab_project_protected_branch}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabprojectprotectedbranch"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectprotectedbranch"
 
 datagitlabprojectprotectedbranch.NewDataGitlabProjectProtectedBranch(scope Construct, id *string, config DataGitlabProjectProtectedBranchConfig) DataGitlabProjectProtectedBranch
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranch.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabprojectprotectedbranch"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectprotectedbranch"
 
 datagitlabprojectprotectedbranch.DataGitlabProjectProtectedBranch_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranch.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabprojectprotectedbranch"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectprotectedbranch"
 
 datagitlabprojectprotectedbranch.DataGitlabProjectProtectedBranch_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ datagitlabprojectprotectedbranch.DataGitlabProjectProtectedBranch_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranch.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabprojectprotectedbranch"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectprotectedbranch"
 
 datagitlabprojectprotectedbranch.DataGitlabProjectProtectedBranch_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datagitlabprojectprotectedbranch.DataGitlabProjectProtectedBranch_IsTerraformDat
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranch.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranch.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranch.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranch.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranch.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranch.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranch.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranch.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -430,10 +430,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranch.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -592,11 +592,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabprojectprotectedbranch"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectprotectedbranch"
 
 &datagitlabprojectprotectedbranch.DataGitlabProjectProtectedBranchConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -612,7 +612,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabprojectpro
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -636,10 +636,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -703,7 +703,7 @@ Name *string
 
 The name of the protected branch.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_protected_branch#name DataGitlabProjectProtectedBranch#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/project_protected_branch#name DataGitlabProjectProtectedBranch#name}
 
 ---
 
@@ -717,7 +717,7 @@ ProjectId *string
 
 The integer or path with namespace that uniquely identifies the project.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/project_protected_branch#project_id DataGitlabProjectProtectedBranch#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/project_protected_branch#project_id DataGitlabProjectProtectedBranch#project_id}
 
 ---
 
@@ -726,7 +726,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchMergeAccessLevels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabprojectprotectedbranch"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectprotectedbranch"
 
 &datagitlabprojectprotectedbranch.DataGitlabProjectProtectedBranchMergeAccessLevels {
 
@@ -739,7 +739,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabprojectpro
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabprojectprotectedbranch"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectprotectedbranch"
 
 &datagitlabprojectprotectedbranch.DataGitlabProjectProtectedBranchPushAccessLevels {
 
@@ -754,7 +754,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabprojectpro
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchMergeAccessLevelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabprojectprotectedbranch"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectprotectedbranch"
 
 datagitlabprojectprotectedbranch.NewDataGitlabProjectProtectedBranchMergeAccessLevelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectProtectedBranchMergeAccessLevelsList
 ```
@@ -886,7 +886,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchMergeAccessLevelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabprojectprotectedbranch"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectprotectedbranch"
 
 datagitlabprojectprotectedbranch.NewDataGitlabProjectProtectedBranchMergeAccessLevelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabProjectProtectedBranchMergeAccessLevelsOutputReference
 ```
@@ -1197,7 +1197,7 @@ func InternalValue() DataGitlabProjectProtectedBranchMergeAccessLevels
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabprojectprotectedbranch"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectprotectedbranch"
 
 datagitlabprojectprotectedbranch.NewDataGitlabProjectProtectedBranchPushAccessLevelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectProtectedBranchPushAccessLevelsList
 ```
@@ -1329,7 +1329,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabprojectprotectedbranch"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectprotectedbranch"
 
 datagitlabprojectprotectedbranch.NewDataGitlabProjectProtectedBranchPushAccessLevelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference
 ```

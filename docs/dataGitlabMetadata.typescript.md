@@ -1,6 +1,6 @@
 # `data_gitlab_metadata`
 
-Refer to the Terraform Registory for docs: [`data_gitlab_metadata`](https://www.terraform.io/docs/providers/gitlab/d/metadata).
+Refer to the Terraform Registory for docs: [`data_gitlab_metadata`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/metadata).
 
 # `dataGitlabMetadata` Submodule <a name="`dataGitlabMetadata` Submodule" id="@cdktf/provider-gitlab.dataGitlabMetadata"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_gitlab_metadata`](https://www.
 
 ### DataGitlabMetadata <a name="DataGitlabMetadata" id="@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadata"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/metadata gitlab_metadata}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/metadata gitlab_metadata}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadata.Initializer"></a>
 
@@ -338,7 +338,7 @@ dataGitlabMetadata.DataGitlabMetadata.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadata.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadata.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadata.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadata.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadata.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadata.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadata.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadata.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -426,10 +426,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadata.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -558,7 +558,7 @@ const dataGitlabMetadataConfig: dataGitlabMetadata.DataGitlabMetadataConfig = { 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadataConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadataConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadataConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadataConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadataConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadataConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -580,10 +580,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadataConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 

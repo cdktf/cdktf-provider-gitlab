@@ -1,6 +1,6 @@
 # `gitlab_group_label`
 
-Refer to the Terraform Registory for docs: [`gitlab_group_label`](https://www.terraform.io/docs/providers/gitlab/r/group_label).
+Refer to the Terraform Registory for docs: [`gitlab_group_label`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_label).
 
 # `groupLabel` Submodule <a name="`groupLabel` Submodule" id="@cdktf/provider-gitlab.groupLabel"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_group_label`](https://www.te
 
 ### GroupLabel <a name="GroupLabel" id="@cdktf/provider-gitlab.groupLabel.GroupLabel"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/group_label gitlab_group_label}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_label gitlab_group_label}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupLabel.GroupLabel.Initializer"></a>
 
@@ -353,7 +353,7 @@ groupLabel.GroupLabel.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabel.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabel.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabel.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabel.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabel.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabel.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabel.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabel.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -457,10 +457,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.groupLabel.GroupLabel.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -649,7 +649,7 @@ const groupLabelConfig: groupLabel.GroupLabelConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -659,7 +659,7 @@ const groupLabelConfig: groupLabel.GroupLabelConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.property.group">group</a></code> | <code>string</code> | The name or id of the group to add the label to. |
 | <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.property.name">name</a></code> | <code>string</code> | The name of the label. |
 | <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.property.description">description</a></code> | <code>string</code> | The description of the label. |
-| <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_label#id GroupLabel#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_label#id GroupLabel#id}. |
 
 ---
 
@@ -676,10 +676,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -743,7 +743,7 @@ public readonly color: string;
 
 The color of the label given in 6-digit hex notation with leading '#' sign (e.g. #FFAABB) or one of the [CSS color names](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Color_keywords).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_label#color GroupLabel#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_label#color GroupLabel#color}
 
 ---
 
@@ -757,7 +757,7 @@ public readonly group: string;
 
 The name or id of the group to add the label to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_label#group GroupLabel#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_label#group GroupLabel#group}
 
 ---
 
@@ -771,7 +771,7 @@ public readonly name: string;
 
 The name of the label.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_label#name GroupLabel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_label#name GroupLabel#name}
 
 ---
 
@@ -785,7 +785,7 @@ public readonly description: string;
 
 The description of the label.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_label#description GroupLabel#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_label#description GroupLabel#description}
 
 ---
 
@@ -797,7 +797,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_label#id GroupLabel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_label#id GroupLabel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

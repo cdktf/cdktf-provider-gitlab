@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/gitlab/r/system_hook
+// https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface SystemHookConfig extends cdktf.TerraformMetaArguments {
   /**
   * Do SSL verification when triggering the hook.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook#enable_ssl_verification SystemHook#enable_ssl_verification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook#enable_ssl_verification SystemHook#enable_ssl_verification}
   */
   readonly enableSslVerification?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook#id SystemHook#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook#id SystemHook#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,43 +23,43 @@ export interface SystemHookConfig extends cdktf.TerraformMetaArguments {
   /**
   * Trigger hook on merge requests events.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook#merge_requests_events SystemHook#merge_requests_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook#merge_requests_events SystemHook#merge_requests_events}
   */
   readonly mergeRequestsEvents?: boolean | cdktf.IResolvable;
   /**
   * When true, the hook fires on push events.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook#push_events SystemHook#push_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook#push_events SystemHook#push_events}
   */
   readonly pushEvents?: boolean | cdktf.IResolvable;
   /**
   * Trigger hook on repository update events.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook#repository_update_events SystemHook#repository_update_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook#repository_update_events SystemHook#repository_update_events}
   */
   readonly repositoryUpdateEvents?: boolean | cdktf.IResolvable;
   /**
   * When true, the hook fires on new tags being pushed.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook#tag_push_events SystemHook#tag_push_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook#tag_push_events SystemHook#tag_push_events}
   */
   readonly tagPushEvents?: boolean | cdktf.IResolvable;
   /**
   * Secret token to validate received payloads; this isn’t returned in the response. This attribute is not available for imported resources.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook#token SystemHook#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook#token SystemHook#token}
   */
   readonly token?: string;
   /**
   * The hook URL.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook#url SystemHook#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook#url SystemHook#url}
   */
   readonly url: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook gitlab_system_hook}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook gitlab_system_hook}
 */
 export class SystemHook extends cdktf.TerraformResource {
 
@@ -73,7 +73,7 @@ export class SystemHook extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook gitlab_system_hook} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook gitlab_system_hook} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

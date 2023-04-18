@@ -1,3 +1,3 @@
 # `data_gitlab_instance_variable`
 
-Refer to the Terraform Registory for docs: [`data_gitlab_instance_variable`](https://www.terraform.io/docs/providers/gitlab/d/instance_variable).
+Refer to the Terraform Registory for docs: [`data_gitlab_instance_variable`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/instance_variable).

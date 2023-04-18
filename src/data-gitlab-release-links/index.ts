@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/gitlab/d/release_links
+// https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/release_links
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataGitlabReleaseLinksConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/release_links#id DataGitlabReleaseLinks#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/release_links#id DataGitlabReleaseLinks#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,13 +17,13 @@ export interface DataGitlabReleaseLinksConfig extends cdktf.TerraformMetaArgumen
   /**
   * The ID or full path to the project.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/release_links#project DataGitlabReleaseLinks#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/release_links#project DataGitlabReleaseLinks#project}
   */
   readonly project: string;
   /**
   * The tag associated with the Release.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/release_links#tag_name DataGitlabReleaseLinks#tag_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/release_links#tag_name DataGitlabReleaseLinks#tag_name}
   */
   readonly tagName: string;
 }
@@ -133,7 +133,7 @@ export class DataGitlabReleaseLinksReleaseLinksList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/release_links gitlab_release_links}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/release_links gitlab_release_links}
 */
 export class DataGitlabReleaseLinks extends cdktf.TerraformDataSource {
 
@@ -147,7 +147,7 @@ export class DataGitlabReleaseLinks extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/release_links gitlab_release_links} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/release_links gitlab_release_links} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

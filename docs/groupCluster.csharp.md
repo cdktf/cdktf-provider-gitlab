@@ -1,6 +1,6 @@
 # `gitlab_group_cluster`
 
-Refer to the Terraform Registory for docs: [`gitlab_group_cluster`](https://www.terraform.io/docs/providers/gitlab/r/group_cluster).
+Refer to the Terraform Registory for docs: [`gitlab_group_cluster`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_cluster).
 
 # `groupCluster` Submodule <a name="`groupCluster` Submodule" id="@cdktf/provider-gitlab.groupCluster"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_group_cluster`](https://www.
 
 ### GroupCluster <a name="GroupCluster" id="@cdktf/provider-gitlab.groupCluster.GroupCluster"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/group_cluster gitlab_group_cluster}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_cluster gitlab_group_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupCluster.GroupCluster.Initializer"></a>
 
@@ -395,7 +395,7 @@ GroupCluster.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupCluster.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupCluster.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupCluster.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupCluster.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupCluster.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupCluster.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupCluster.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupCluster.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -517,10 +517,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.groupCluster.GroupCluster.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -883,7 +883,7 @@ using HashiCorp.Cdktf.Providers.Gitlab;
 
 new GroupClusterConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -909,7 +909,7 @@ new GroupClusterConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -922,7 +922,7 @@ new GroupClusterConfig {
 | <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.domain">Domain</a></code> | <code>string</code> | The base domain of the cluster. |
 | <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.enabled">Enabled</a></code> | <code>object</code> | Determines if cluster is active or not. Defaults to `true`. This attribute cannot be read. |
 | <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.environmentScope">EnvironmentScope</a></code> | <code>string</code> | The associated environment to the cluster. Defaults to `*`. |
-| <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_cluster#id GroupCluster#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_cluster#id GroupCluster#id}. |
 | <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.kubernetesAuthorizationType">KubernetesAuthorizationType</a></code> | <code>string</code> | The cluster authorization type. Valid values are `rbac`, `abac`, `unknown_authorization`. Defaults to `rbac`. |
 | <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.kubernetesCaCert">KubernetesCaCert</a></code> | <code>string</code> | TLS certificate (needed if API is using a self-signed TLS certificate). |
 | <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.managed">Managed</a></code> | <code>object</code> | Determines if cluster is managed by gitlab or not. Defaults to `true`. This attribute cannot be read. |
@@ -943,10 +943,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -1010,7 +1010,7 @@ public string Group { get; set; }
 
 The id of the group to add the cluster to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_cluster#group GroupCluster#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_cluster#group GroupCluster#group}
 
 ---
 
@@ -1024,7 +1024,7 @@ public string KubernetesApiUrl { get; set; }
 
 The URL to access the Kubernetes API.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_cluster#kubernetes_api_url GroupCluster#kubernetes_api_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_cluster#kubernetes_api_url GroupCluster#kubernetes_api_url}
 
 ---
 
@@ -1038,7 +1038,7 @@ public string KubernetesToken { get; set; }
 
 The token to authenticate against Kubernetes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_cluster#kubernetes_token GroupCluster#kubernetes_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_cluster#kubernetes_token GroupCluster#kubernetes_token}
 
 ---
 
@@ -1052,7 +1052,7 @@ public string Name { get; set; }
 
 The name of cluster.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_cluster#name GroupCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_cluster#name GroupCluster#name}
 
 ---
 
@@ -1066,7 +1066,7 @@ public string Domain { get; set; }
 
 The base domain of the cluster.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_cluster#domain GroupCluster#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_cluster#domain GroupCluster#domain}
 
 ---
 
@@ -1080,7 +1080,7 @@ public object Enabled { get; set; }
 
 Determines if cluster is active or not. Defaults to `true`. This attribute cannot be read.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_cluster#enabled GroupCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_cluster#enabled GroupCluster#enabled}
 
 ---
 
@@ -1094,7 +1094,7 @@ public string EnvironmentScope { get; set; }
 
 The associated environment to the cluster. Defaults to `*`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_cluster#environment_scope GroupCluster#environment_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_cluster#environment_scope GroupCluster#environment_scope}
 
 ---
 
@@ -1106,7 +1106,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_cluster#id GroupCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_cluster#id GroupCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1123,7 +1123,7 @@ public string KubernetesAuthorizationType { get; set; }
 
 The cluster authorization type. Valid values are `rbac`, `abac`, `unknown_authorization`. Defaults to `rbac`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_cluster#kubernetes_authorization_type GroupCluster#kubernetes_authorization_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_cluster#kubernetes_authorization_type GroupCluster#kubernetes_authorization_type}
 
 ---
 
@@ -1137,7 +1137,7 @@ public string KubernetesCaCert { get; set; }
 
 TLS certificate (needed if API is using a self-signed TLS certificate).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_cluster#kubernetes_ca_cert GroupCluster#kubernetes_ca_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_cluster#kubernetes_ca_cert GroupCluster#kubernetes_ca_cert}
 
 ---
 
@@ -1151,7 +1151,7 @@ public object Managed { get; set; }
 
 Determines if cluster is managed by gitlab or not. Defaults to `true`. This attribute cannot be read.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_cluster#managed GroupCluster#managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_cluster#managed GroupCluster#managed}
 
 ---
 
@@ -1165,7 +1165,7 @@ public string ManagementProjectId { get; set; }
 
 The ID of the management project for the cluster.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_cluster#management_project_id GroupCluster#management_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_cluster#management_project_id GroupCluster#management_project_id}
 
 ---
 

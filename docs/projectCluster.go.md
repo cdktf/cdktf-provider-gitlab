@@ -1,6 +1,6 @@
 # `gitlab_project_cluster`
 
-Refer to the Terraform Registory for docs: [`gitlab_project_cluster`](https://www.terraform.io/docs/providers/gitlab/r/project_cluster).
+Refer to the Terraform Registory for docs: [`gitlab_project_cluster`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_cluster).
 
 # `projectCluster` Submodule <a name="`projectCluster` Submodule" id="@cdktf/provider-gitlab.projectCluster"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`gitlab_project_cluster`](https://ww
 
 ### ProjectCluster <a name="ProjectCluster" id="@cdktf/provider-gitlab.projectCluster.ProjectCluster"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/project_cluster gitlab_project_cluster}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_cluster gitlab_project_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectCluster.ProjectCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectcluster"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectcluster"
 
 projectcluster.NewProjectCluster(scope Construct, id *string, config ProjectClusterConfig) ProjectCluster
 ```
@@ -333,7 +333,7 @@ func ResetManagementProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectCluster.ProjectCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectcluster"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectcluster"
 
 projectcluster.ProjectCluster_IsConstruct(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectCluster.ProjectCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectcluster"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectcluster"
 
 projectcluster.ProjectCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ projectcluster.ProjectCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectCluster.ProjectCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectcluster"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectcluster"
 
 projectcluster.ProjectCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -402,7 +402,7 @@ projectcluster.ProjectCluster_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectCluster.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectCluster.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectCluster.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectCluster.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectCluster.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectCluster.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectCluster.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectCluster.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -526,10 +526,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.projectCluster.ProjectCluster.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -908,11 +908,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectCluster.ProjectClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectcluster"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectcluster"
 
 &projectcluster.ProjectClusterConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -939,7 +939,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectcluster"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectClusterConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectClusterConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectClusterConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectClusterConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectClusterConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectClusterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -952,7 +952,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectcluster"
 | <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectClusterConfig.property.domain">Domain</a></code> | <code>*string</code> | The base domain of the cluster. |
 | <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectClusterConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Determines if cluster is active or not. Defaults to `true`. This attribute cannot be read. |
 | <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectClusterConfig.property.environmentScope">EnvironmentScope</a></code> | <code>*string</code> | The associated environment to the cluster. Defaults to `*`. |
-| <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_cluster#id ProjectCluster#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_cluster#id ProjectCluster#id}. |
 | <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectClusterConfig.property.kubernetesAuthorizationType">KubernetesAuthorizationType</a></code> | <code>*string</code> | The cluster authorization type. Valid values are `rbac`, `abac`, `unknown_authorization`. Defaults to `rbac`. |
 | <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectClusterConfig.property.kubernetesCaCert">KubernetesCaCert</a></code> | <code>*string</code> | TLS certificate (needed if API is using a self-signed TLS certificate). |
 | <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectClusterConfig.property.kubernetesNamespace">KubernetesNamespace</a></code> | <code>*string</code> | The unique namespace related to the project. |
@@ -974,10 +974,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.projectCluster.ProjectClusterConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -1041,7 +1041,7 @@ KubernetesApiUrl *string
 
 The URL to access the Kubernetes API.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_cluster#kubernetes_api_url ProjectCluster#kubernetes_api_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_cluster#kubernetes_api_url ProjectCluster#kubernetes_api_url}
 
 ---
 
@@ -1055,7 +1055,7 @@ KubernetesToken *string
 
 The token to authenticate against Kubernetes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_cluster#kubernetes_token ProjectCluster#kubernetes_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_cluster#kubernetes_token ProjectCluster#kubernetes_token}
 
 ---
 
@@ -1069,7 +1069,7 @@ Name *string
 
 The name of cluster.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_cluster#name ProjectCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_cluster#name ProjectCluster#name}
 
 ---
 
@@ -1083,7 +1083,7 @@ Project *string
 
 The id of the project to add the cluster to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_cluster#project ProjectCluster#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_cluster#project ProjectCluster#project}
 
 ---
 
@@ -1097,7 +1097,7 @@ Domain *string
 
 The base domain of the cluster.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_cluster#domain ProjectCluster#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_cluster#domain ProjectCluster#domain}
 
 ---
 
@@ -1111,7 +1111,7 @@ Enabled interface{}
 
 Determines if cluster is active or not. Defaults to `true`. This attribute cannot be read.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_cluster#enabled ProjectCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_cluster#enabled ProjectCluster#enabled}
 
 ---
 
@@ -1125,7 +1125,7 @@ EnvironmentScope *string
 
 The associated environment to the cluster. Defaults to `*`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_cluster#environment_scope ProjectCluster#environment_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_cluster#environment_scope ProjectCluster#environment_scope}
 
 ---
 
@@ -1137,7 +1137,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_cluster#id ProjectCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_cluster#id ProjectCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1154,7 +1154,7 @@ KubernetesAuthorizationType *string
 
 The cluster authorization type. Valid values are `rbac`, `abac`, `unknown_authorization`. Defaults to `rbac`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_cluster#kubernetes_authorization_type ProjectCluster#kubernetes_authorization_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_cluster#kubernetes_authorization_type ProjectCluster#kubernetes_authorization_type}
 
 ---
 
@@ -1168,7 +1168,7 @@ KubernetesCaCert *string
 
 TLS certificate (needed if API is using a self-signed TLS certificate).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_cluster#kubernetes_ca_cert ProjectCluster#kubernetes_ca_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_cluster#kubernetes_ca_cert ProjectCluster#kubernetes_ca_cert}
 
 ---
 
@@ -1182,7 +1182,7 @@ KubernetesNamespace *string
 
 The unique namespace related to the project.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_cluster#kubernetes_namespace ProjectCluster#kubernetes_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_cluster#kubernetes_namespace ProjectCluster#kubernetes_namespace}
 
 ---
 
@@ -1196,7 +1196,7 @@ Managed interface{}
 
 Determines if cluster is managed by gitlab or not. Defaults to `true`. This attribute cannot be read.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_cluster#managed ProjectCluster#managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_cluster#managed ProjectCluster#managed}
 
 ---
 
@@ -1210,7 +1210,7 @@ ManagementProjectId *string
 
 The ID of the management project for the cluster.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_cluster#management_project_id ProjectCluster#management_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_cluster#management_project_id ProjectCluster#management_project_id}
 
 ---
 

@@ -1,6 +1,6 @@
 # `gitlab_runner`
 
-Refer to the Terraform Registory for docs: [`gitlab_runner`](https://www.terraform.io/docs/providers/gitlab/r/runner).
+Refer to the Terraform Registory for docs: [`gitlab_runner`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/runner).
 
 # `runner` Submodule <a name="`runner` Submodule" id="@cdktf/provider-gitlab.runner"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_runner`](https://www.terrafo
 
 ### Runner <a name="Runner" id="@cdktf/provider-gitlab.runner.Runner"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/runner gitlab_runner}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/runner gitlab_runner}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.runner.Runner.Initializer"></a>
 
@@ -19,7 +19,7 @@ runner.Runner(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -42,7 +42,7 @@ runner.Runner(
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.runner.Runner.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.runner.Runner.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -51,7 +51,7 @@ runner.Runner(
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.Initializer.parameter.registrationToken">registration_token</a></code> | <code>str</code> | The registration token used to register the runner. |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.Initializer.parameter.accessLevel">access_level</a></code> | <code>str</code> | The access_level of the runner. Valid values are: `not_protected`, `ref_protected`. |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.Initializer.parameter.description">description</a></code> | <code>str</code> | The runner's description. |
-| <code><a href="#@cdktf/provider-gitlab.runner.Runner.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#id Runner#id}. |
+| <code><a href="#@cdktf/provider-gitlab.runner.Runner.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/runner#id Runner#id}. |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.Initializer.parameter.locked">locked</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the runner should be locked for current project. |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.Initializer.parameter.maximumTimeout">maximum_timeout</a></code> | <code>typing.Union[int, float]</code> | Maximum timeout set when this runner handles the job. |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.Initializer.parameter.paused">paused</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the runner should ignore new jobs. |
@@ -86,7 +86,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.runner.Runner.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 The registration token used to register the runner.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#registration_token Runner#registration_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/runner#registration_token Runner#registration_token}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 The access_level of the runner. Valid values are: `not_protected`, `ref_protected`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#access_level Runner#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/runner#access_level Runner#access_level}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 The runner's description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#description Runner#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/runner#description Runner#description}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#id Runner#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/runner#id Runner#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -167,7 +167,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Whether the runner should be locked for current project.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#locked Runner#locked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/runner#locked Runner#locked}
 
 ---
 
@@ -177,7 +177,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Maximum timeout set when this runner handles the job.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#maximum_timeout Runner#maximum_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/runner#maximum_timeout Runner#maximum_timeout}
 
 ---
 
@@ -187,7 +187,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Whether the runner should ignore new jobs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#paused Runner#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/runner#paused Runner#paused}
 
 ---
 
@@ -197,7 +197,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Whether the runner should handle untagged jobs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#run_untagged Runner#run_untagged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/runner#run_untagged Runner#run_untagged}
 
 ---
 
@@ -207,7 +207,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 List of runner’s tags.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#tag_list Runner#tag_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/runner#tag_list Runner#tag_list}
 
 ---
 
@@ -587,7 +587,7 @@ runner.Runner.is_terraform_resource(
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.runner.Runner.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.runner.Runner.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -701,10 +701,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.runner.Runner.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -987,7 +987,7 @@ from cdktf_cdktf_provider_gitlab import runner
 
 runner.RunnerConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -1010,7 +1010,7 @@ runner.RunnerConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1019,7 +1019,7 @@ runner.RunnerConfig(
 | <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.registrationToken">registration_token</a></code> | <code>str</code> | The registration token used to register the runner. |
 | <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.accessLevel">access_level</a></code> | <code>str</code> | The access_level of the runner. Valid values are: `not_protected`, `ref_protected`. |
 | <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.description">description</a></code> | <code>str</code> | The runner's description. |
-| <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#id Runner#id}. |
+| <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/runner#id Runner#id}. |
 | <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.locked">locked</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the runner should be locked for current project. |
 | <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.maximumTimeout">maximum_timeout</a></code> | <code>typing.Union[int, float]</code> | Maximum timeout set when this runner handles the job. |
 | <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.paused">paused</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the runner should ignore new jobs. |
@@ -1041,10 +1041,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.runner.RunnerConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1108,7 +1108,7 @@ registration_token: str
 
 The registration token used to register the runner.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#registration_token Runner#registration_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/runner#registration_token Runner#registration_token}
 
 ---
 
@@ -1122,7 +1122,7 @@ access_level: str
 
 The access_level of the runner. Valid values are: `not_protected`, `ref_protected`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#access_level Runner#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/runner#access_level Runner#access_level}
 
 ---
 
@@ -1136,7 +1136,7 @@ description: str
 
 The runner's description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#description Runner#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/runner#description Runner#description}
 
 ---
 
@@ -1148,7 +1148,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#id Runner#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/runner#id Runner#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1165,7 +1165,7 @@ locked: typing.Union[bool, IResolvable]
 
 Whether the runner should be locked for current project.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#locked Runner#locked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/runner#locked Runner#locked}
 
 ---
 
@@ -1179,7 +1179,7 @@ maximum_timeout: typing.Union[int, float]
 
 Maximum timeout set when this runner handles the job.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#maximum_timeout Runner#maximum_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/runner#maximum_timeout Runner#maximum_timeout}
 
 ---
 
@@ -1193,7 +1193,7 @@ paused: typing.Union[bool, IResolvable]
 
 Whether the runner should ignore new jobs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#paused Runner#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/runner#paused Runner#paused}
 
 ---
 
@@ -1207,7 +1207,7 @@ run_untagged: typing.Union[bool, IResolvable]
 
 Whether the runner should handle untagged jobs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#run_untagged Runner#run_untagged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/runner#run_untagged Runner#run_untagged}
 
 ---
 
@@ -1221,7 +1221,7 @@ tag_list: typing.List[str]
 
 List of runner’s tags.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/runner#tag_list Runner#tag_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/runner#tag_list Runner#tag_list}
 
 ---
 

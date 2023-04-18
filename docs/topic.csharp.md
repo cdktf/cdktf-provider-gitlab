@@ -1,6 +1,6 @@
 # `gitlab_topic`
 
-Refer to the Terraform Registory for docs: [`gitlab_topic`](https://www.terraform.io/docs/providers/gitlab/r/topic).
+Refer to the Terraform Registory for docs: [`gitlab_topic`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/topic).
 
 # `topic` Submodule <a name="`topic` Submodule" id="@cdktf/provider-gitlab.topic"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_topic`](https://www.terrafor
 
 ### Topic <a name="Topic" id="@cdktf/provider-gitlab.topic.Topic"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/topic gitlab_topic}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/topic gitlab_topic}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.topic.Topic.Initializer"></a>
 
@@ -381,7 +381,7 @@ Topic.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-gitlab.topic.Topic.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.topic.Topic.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.topic.Topic.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.topic.Topic.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.topic.Topic.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.topic.Topic.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.topic.Topic.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.topic.Topic.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -490,10 +490,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.topic.Topic.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -726,7 +726,7 @@ using HashiCorp.Cdktf.Providers.Gitlab;
 
 new TopicConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -747,7 +747,7 @@ new TopicConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -757,7 +757,7 @@ new TopicConfig {
 | <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.avatar">Avatar</a></code> | <code>string</code> | A local path to the avatar image to upload. **Note**: not available for imported resources. |
 | <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.avatarHash">AvatarHash</a></code> | <code>string</code> | The hash of the avatar image. |
 | <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.description">Description</a></code> | <code>string</code> | A text describing the topic. |
-| <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/topic#id Topic#id}. |
+| <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/topic#id Topic#id}. |
 | <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.softDestroy">SoftDestroy</a></code> | <code>object</code> | Empty the topics fields instead of deleting it. |
 | <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.title">Title</a></code> | <code>string</code> | The topic's description. Requires at least GitLab 15.0 for which it's a required argument. |
 
@@ -776,10 +776,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.topic.TopicConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -843,7 +843,7 @@ public string Name { get; set; }
 
 The topic's name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/topic#name Topic#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/topic#name Topic#name}
 
 ---
 
@@ -857,7 +857,7 @@ public string Avatar { get; set; }
 
 A local path to the avatar image to upload. **Note**: not available for imported resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/topic#avatar Topic#avatar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/topic#avatar Topic#avatar}
 
 ---
 
@@ -873,7 +873,7 @@ The hash of the avatar image.
 
 Use `filesha256("path/to/avatar.png")` whenever possible. **Note**: this is used to trigger an update of the avatar. If it's not given, but an avatar is given, the avatar will be updated each time.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/topic#avatar_hash Topic#avatar_hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/topic#avatar_hash Topic#avatar_hash}
 
 ---
 
@@ -887,7 +887,7 @@ public string Description { get; set; }
 
 A text describing the topic.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/topic#description Topic#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/topic#description Topic#description}
 
 ---
 
@@ -899,7 +899,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/topic#id Topic#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/topic#id Topic#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -916,7 +916,7 @@ public object SoftDestroy { get; set; }
 
 Empty the topics fields instead of deleting it.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/topic#soft_destroy Topic#soft_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/topic#soft_destroy Topic#soft_destroy}
 
 ---
 
@@ -930,7 +930,7 @@ public string Title { get; set; }
 
 The topic's description. Requires at least GitLab 15.0 for which it's a required argument.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/topic#title Topic#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/topic#title Topic#title}
 
 ---
 

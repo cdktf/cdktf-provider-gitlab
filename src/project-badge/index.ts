@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/gitlab/r/project_badge
+// https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface ProjectBadgeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge#id ProjectBadge#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge#id ProjectBadge#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,31 +17,31 @@ export interface ProjectBadgeConfig extends cdktf.TerraformMetaArguments {
   /**
   * The image url which will be presented on project overview.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge#image_url ProjectBadge#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge#image_url ProjectBadge#image_url}
   */
   readonly imageUrl: string;
   /**
   * The url linked with the badge.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge#link_url ProjectBadge#link_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge#link_url ProjectBadge#link_url}
   */
   readonly linkUrl: string;
   /**
   * The name of the badge.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge#name ProjectBadge#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge#name ProjectBadge#name}
   */
   readonly name?: string;
   /**
   * The id of the project to add the badge to.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge#project ProjectBadge#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge#project ProjectBadge#project}
   */
   readonly project: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge gitlab_project_badge}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge gitlab_project_badge}
 */
 export class ProjectBadge extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class ProjectBadge extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/project_badge gitlab_project_badge} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_badge gitlab_project_badge} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

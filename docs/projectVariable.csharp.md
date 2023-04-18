@@ -1,6 +1,6 @@
 # `gitlab_project_variable`
 
-Refer to the Terraform Registory for docs: [`gitlab_project_variable`](https://www.terraform.io/docs/providers/gitlab/r/project_variable).
+Refer to the Terraform Registory for docs: [`gitlab_project_variable`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_variable).
 
 # `projectVariable` Submodule <a name="`projectVariable` Submodule" id="@cdktf/provider-gitlab.projectVariable"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_project_variable`](https://w
 
 ### ProjectVariable <a name="ProjectVariable" id="@cdktf/provider-gitlab.projectVariable.ProjectVariable"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/project_variable gitlab_project_variable}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_variable gitlab_project_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectVariable.ProjectVariable.Initializer"></a>
 
@@ -374,7 +374,7 @@ ProjectVariable.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -484,10 +484,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -730,7 +730,7 @@ using HashiCorp.Cdktf.Providers.Gitlab;
 
 new ProjectVariableConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -752,7 +752,7 @@ new ProjectVariableConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -762,7 +762,7 @@ new ProjectVariableConfig {
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.project">Project</a></code> | <code>string</code> | The name or id of the project. |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.value">Value</a></code> | <code>string</code> | The value of the variable. |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.environmentScope">EnvironmentScope</a></code> | <code>string</code> | The environment scope of the variable. |
-| <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_variable#id ProjectVariable#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_variable#id ProjectVariable#id}. |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.masked">Masked</a></code> | <code>object</code> | If set to `true`, the value of the variable will be hidden in job logs. |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.protected">Protected</a></code> | <code>object</code> | If set to `true`, the variable will be passed only to pipelines running on protected branches and tags. |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.variableType">VariableType</a></code> | <code>string</code> | The type of a variable. Valid values are: `env_var`, `file`. Default is `env_var`. |
@@ -782,10 +782,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -849,7 +849,7 @@ public string Key { get; set; }
 
 The name of the variable.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_variable#key ProjectVariable#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_variable#key ProjectVariable#key}
 
 ---
 
@@ -863,7 +863,7 @@ public string Project { get; set; }
 
 The name or id of the project.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_variable#project ProjectVariable#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_variable#project ProjectVariable#project}
 
 ---
 
@@ -877,7 +877,7 @@ public string Value { get; set; }
 
 The value of the variable.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_variable#value ProjectVariable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_variable#value ProjectVariable#value}
 
 ---
 
@@ -893,7 +893,7 @@ The environment scope of the variable.
 
 Defaults to all environment (`*`). Note that in Community Editions of Gitlab, values other than `*` will cause inconsistent plans.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_variable#environment_scope ProjectVariable#environment_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_variable#environment_scope ProjectVariable#environment_scope}
 
 ---
 
@@ -905,7 +905,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_variable#id ProjectVariable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_variable#id ProjectVariable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -924,7 +924,7 @@ If set to `true`, the value of the variable will be hidden in job logs.
 
 The value must meet the [masking requirements](https://docs.gitlab.com/ee/ci/variables/#masked-variables). Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_variable#masked ProjectVariable#masked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_variable#masked ProjectVariable#masked}
 
 ---
 
@@ -940,7 +940,7 @@ If set to `true`, the variable will be passed only to pipelines running on prote
 
 Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_variable#protected ProjectVariable#protected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_variable#protected ProjectVariable#protected}
 
 ---
 
@@ -954,7 +954,7 @@ public string VariableType { get; set; }
 
 The type of a variable. Valid values are: `env_var`, `file`. Default is `env_var`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_variable#variable_type ProjectVariable#variable_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_variable#variable_type ProjectVariable#variable_type}
 
 ---
 

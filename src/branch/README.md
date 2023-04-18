@@ -1,3 +1,3 @@
 # `gitlab_branch`
 
-Refer to the Terraform Registory for docs: [`gitlab_branch`](https://www.terraform.io/docs/providers/gitlab/r/branch).
+Refer to the Terraform Registory for docs: [`gitlab_branch`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/branch).

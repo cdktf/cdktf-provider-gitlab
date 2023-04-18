@@ -1,6 +1,6 @@
 # `gitlab_group_label`
 
-Refer to the Terraform Registory for docs: [`gitlab_group_label`](https://www.terraform.io/docs/providers/gitlab/r/group_label).
+Refer to the Terraform Registory for docs: [`gitlab_group_label`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_label).
 
 # `groupLabel` Submodule <a name="`groupLabel` Submodule" id="@cdktf/provider-gitlab.groupLabel"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`gitlab_group_label`](https://www.te
 
 ### GroupLabel <a name="GroupLabel" id="@cdktf/provider-gitlab.groupLabel.GroupLabel"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/group_label gitlab_group_label}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_label gitlab_group_label}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupLabel.GroupLabel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/grouplabel"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/grouplabel"
 
 grouplabel.NewGroupLabel(scope Construct, id *string, config GroupLabelConfig) GroupLabel
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.groupLabel.GroupLabel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/grouplabel"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/grouplabel"
 
 grouplabel.GroupLabel_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.groupLabel.GroupLabel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/grouplabel"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/grouplabel"
 
 grouplabel.GroupLabel_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ grouplabel.GroupLabel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.groupLabel.GroupLabel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/grouplabel"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/grouplabel"
 
 grouplabel.GroupLabel_IsTerraformResource(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ grouplabel.GroupLabel_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabel.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabel.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabel.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabel.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabel.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabel.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabel.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabel.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -457,10 +457,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.groupLabel.GroupLabel.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -639,11 +639,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/grouplabel"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/grouplabel"
 
 &grouplabel.GroupLabelConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -662,7 +662,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/grouplabel"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -672,7 +672,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/grouplabel"
 | <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.property.group">Group</a></code> | <code>*string</code> | The name or id of the group to add the label to. |
 | <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.property.name">Name</a></code> | <code>*string</code> | The name of the label. |
 | <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.property.description">Description</a></code> | <code>*string</code> | The description of the label. |
-| <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_label#id GroupLabel#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_label#id GroupLabel#id}. |
 
 ---
 
@@ -689,10 +689,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -756,7 +756,7 @@ Color *string
 
 The color of the label given in 6-digit hex notation with leading '#' sign (e.g. #FFAABB) or one of the [CSS color names](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Color_keywords).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_label#color GroupLabel#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_label#color GroupLabel#color}
 
 ---
 
@@ -770,7 +770,7 @@ Group *string
 
 The name or id of the group to add the label to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_label#group GroupLabel#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_label#group GroupLabel#group}
 
 ---
 
@@ -784,7 +784,7 @@ Name *string
 
 The name of the label.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_label#name GroupLabel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_label#name GroupLabel#name}
 
 ---
 
@@ -798,7 +798,7 @@ Description *string
 
 The description of the label.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_label#description GroupLabel#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_label#description GroupLabel#description}
 
 ---
 
@@ -810,7 +810,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_label#id GroupLabel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_label#id GroupLabel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,6 +1,6 @@
 # `data_gitlab_projects`
 
-Refer to the Terraform Registory for docs: [`data_gitlab_projects`](https://www.terraform.io/docs/providers/gitlab/d/projects).
+Refer to the Terraform Registory for docs: [`data_gitlab_projects`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/projects).
 
 # `dataGitlabProjects` Submodule <a name="`dataGitlabProjects` Submodule" id="@cdktf/provider-gitlab.dataGitlabProjects"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_gitlab_projects`](https://www.
 
 ### DataGitlabProjects <a name="DataGitlabProjects" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjects"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/projects gitlab_projects}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/projects gitlab_projects}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjects.Initializer"></a>
 
@@ -492,7 +492,7 @@ DataGitlabProjects.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjects.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjects.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjects.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjects.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjects.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjects.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjects.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjects.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -620,10 +620,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjects.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -1146,7 +1146,7 @@ using HashiCorp.Cdktf.Providers.Gitlab;
 
 new DataGitlabProjectsConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -1182,7 +1182,7 @@ new DataGitlabProjectsConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1190,7 +1190,7 @@ new DataGitlabProjectsConfig {
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsConfig.property.archived">Archived</a></code> | <code>object</code> | Limit by archived status. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsConfig.property.groupId">GroupId</a></code> | <code>double</code> | The ID of the group owned by the authenticated user to look projects for within. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/projects#id DataGitlabProjects#id}. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/projects#id DataGitlabProjects#id}. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsConfig.property.includeSubgroups">IncludeSubgroups</a></code> | <code>object</code> | Include projects in subgroups of this group. Default is `false`. Needs `group_id`. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsConfig.property.maxQueryablePages">MaxQueryablePages</a></code> | <code>double</code> | The maximum number of project results pages that may be queried. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsConfig.property.membership">Membership</a></code> | <code>object</code> | Limit by projects that the current user is a member of. |
@@ -1226,10 +1226,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -1293,7 +1293,7 @@ public object Archived { get; set; }
 
 Limit by archived status.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/projects#archived DataGitlabProjects#archived}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/projects#archived DataGitlabProjects#archived}
 
 ---
 
@@ -1309,7 +1309,7 @@ The ID of the group owned by the authenticated user to look projects for within.
 
 Cannot be used with `min_access_level`, `with_programming_language` or `statistics`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/projects#group_id DataGitlabProjects#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/projects#group_id DataGitlabProjects#group_id}
 
 ---
 
@@ -1321,7 +1321,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/projects#id DataGitlabProjects#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/projects#id DataGitlabProjects#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1338,7 +1338,7 @@ public object IncludeSubgroups { get; set; }
 
 Include projects in subgroups of this group. Default is `false`. Needs `group_id`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/projects#include_subgroups DataGitlabProjects#include_subgroups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/projects#include_subgroups DataGitlabProjects#include_subgroups}
 
 ---
 
@@ -1354,7 +1354,7 @@ The maximum number of project results pages that may be queried.
 
 Prevents overloading your Gitlab instance in case of a misconfiguration.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/projects#max_queryable_pages DataGitlabProjects#max_queryable_pages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/projects#max_queryable_pages DataGitlabProjects#max_queryable_pages}
 
 ---
 
@@ -1368,7 +1368,7 @@ public object Membership { get; set; }
 
 Limit by projects that the current user is a member of.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/projects#membership DataGitlabProjects#membership}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/projects#membership DataGitlabProjects#membership}
 
 ---
 
@@ -1382,7 +1382,7 @@ public double MinAccessLevel { get; set; }
 
 Limit to projects where current user has at least this access level, refer to the [official documentation](https://docs.gitlab.com/ee/api/members.html) for values. Cannot be used with `group_id`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/projects#min_access_level DataGitlabProjects#min_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/projects#min_access_level DataGitlabProjects#min_access_level}
 
 ---
 
@@ -1398,7 +1398,7 @@ Return projects ordered ordered by: `id`, `name`, `path`, `created_at`, `updated
 
 Some values or only available in certain circumstances. See [upstream docs](https://docs.gitlab.com/ee/api/projects.html#list-all-projects) for details.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/projects#order_by DataGitlabProjects#order_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/projects#order_by DataGitlabProjects#order_by}
 
 ---
 
@@ -1412,7 +1412,7 @@ public object Owned { get; set; }
 
 Limit by projects owned by the current user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/projects#owned DataGitlabProjects#owned}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/projects#owned DataGitlabProjects#owned}
 
 ---
 
@@ -1426,7 +1426,7 @@ public double Page { get; set; }
 
 The first page to begin the query on.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/projects#page DataGitlabProjects#page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/projects#page DataGitlabProjects#page}
 
 ---
 
@@ -1440,7 +1440,7 @@ public double PerPage { get; set; }
 
 The number of results to return per page.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/projects#per_page DataGitlabProjects#per_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/projects#per_page DataGitlabProjects#per_page}
 
 ---
 
@@ -1454,7 +1454,7 @@ public string Search { get; set; }
 
 Return list of authorized projects matching the search criteria.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/projects#search DataGitlabProjects#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/projects#search DataGitlabProjects#search}
 
 ---
 
@@ -1468,7 +1468,7 @@ public object Simple { get; set; }
 
 Return only the ID, URL, name, and path of each project.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/projects#simple DataGitlabProjects#simple}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/projects#simple DataGitlabProjects#simple}
 
 ---
 
@@ -1482,7 +1482,7 @@ public string Sort { get; set; }
 
 Return projects sorted in `asc` or `desc` order. Default is `desc`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/projects#sort DataGitlabProjects#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/projects#sort DataGitlabProjects#sort}
 
 ---
 
@@ -1496,7 +1496,7 @@ public object Starred { get; set; }
 
 Limit by projects starred by the current user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/projects#starred DataGitlabProjects#starred}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/projects#starred DataGitlabProjects#starred}
 
 ---
 
@@ -1510,7 +1510,7 @@ public object Statistics { get; set; }
 
 Include project statistics. Cannot be used with `group_id`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/projects#statistics DataGitlabProjects#statistics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/projects#statistics DataGitlabProjects#statistics}
 
 ---
 
@@ -1524,7 +1524,7 @@ public string Visibility { get; set; }
 
 Limit by visibility `public`, `internal`, or `private`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/projects#visibility DataGitlabProjects#visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/projects#visibility DataGitlabProjects#visibility}
 
 ---
 
@@ -1538,7 +1538,7 @@ public object WithCustomAttributes { get; set; }
 
 Include custom attributes in response _(admins only)_.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/projects#with_custom_attributes DataGitlabProjects#with_custom_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/projects#with_custom_attributes DataGitlabProjects#with_custom_attributes}
 
 ---
 
@@ -1552,7 +1552,7 @@ public object WithIssuesEnabled { get; set; }
 
 Limit by projects with issues feature enabled. Default is `false`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/projects#with_issues_enabled DataGitlabProjects#with_issues_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/projects#with_issues_enabled DataGitlabProjects#with_issues_enabled}
 
 ---
 
@@ -1566,7 +1566,7 @@ public object WithMergeRequestsEnabled { get; set; }
 
 Limit by projects with merge requests feature enabled. Default is `false`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/projects#with_merge_requests_enabled DataGitlabProjects#with_merge_requests_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/projects#with_merge_requests_enabled DataGitlabProjects#with_merge_requests_enabled}
 
 ---
 
@@ -1580,7 +1580,7 @@ public string WithProgrammingLanguage { get; set; }
 
 Limit by projects which use the given programming language. Cannot be used with `group_id`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/projects#with_programming_language DataGitlabProjects#with_programming_language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/projects#with_programming_language DataGitlabProjects#with_programming_language}
 
 ---
 
@@ -1594,7 +1594,7 @@ public object WithShared { get; set; }
 
 Include projects shared to this group. Default is `true`. Needs `group_id`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/projects#with_shared DataGitlabProjects#with_shared}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/projects#with_shared DataGitlabProjects#with_shared}
 
 ---
 

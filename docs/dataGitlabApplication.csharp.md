@@ -1,6 +1,6 @@
 # `data_gitlab_application`
 
-Refer to the Terraform Registory for docs: [`data_gitlab_application`](https://www.terraform.io/docs/providers/gitlab/d/application).
+Refer to the Terraform Registory for docs: [`data_gitlab_application`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/application).
 
 # `dataGitlabApplication` Submodule <a name="`dataGitlabApplication` Submodule" id="@cdktf/provider-gitlab.dataGitlabApplication"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_gitlab_application`](https://w
 
 ### DataGitlabApplication <a name="DataGitlabApplication" id="@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplication"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/application gitlab_application}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/application gitlab_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplication.Initializer"></a>
 
@@ -338,7 +338,7 @@ DataGitlabApplication.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplication.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplication.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplication.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplication.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplication.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplication.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplication.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplication.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -427,10 +427,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplication.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -563,7 +563,7 @@ using HashiCorp.Cdktf.Providers.Gitlab;
 
 new DataGitlabApplicationConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -578,7 +578,7 @@ new DataGitlabApplicationConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplicationConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplicationConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplicationConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplicationConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplicationConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplicationConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -601,10 +601,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplicationConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -668,7 +668,7 @@ public string Id { get; set; }
 
 The ID of this Terraform resource. In the format of `<application_id>`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/application#id DataGitlabApplication#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/application#id DataGitlabApplication#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

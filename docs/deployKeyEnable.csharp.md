@@ -1,6 +1,6 @@
 # `gitlab_deploy_key_enable`
 
-Refer to the Terraform Registory for docs: [`gitlab_deploy_key_enable`](https://www.terraform.io/docs/providers/gitlab/r/deploy_key_enable).
+Refer to the Terraform Registory for docs: [`gitlab_deploy_key_enable`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_key_enable).
 
 # `deployKeyEnable` Submodule <a name="`deployKeyEnable` Submodule" id="@cdktf/provider-gitlab.deployKeyEnable"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_deploy_key_enable`](https://
 
 ### DeployKeyEnable <a name="DeployKeyEnable" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key_enable gitlab_deploy_key_enable}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_key_enable gitlab_deploy_key_enable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.Initializer"></a>
 
@@ -367,7 +367,7 @@ DeployKeyEnable.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -473,10 +473,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -679,7 +679,7 @@ using HashiCorp.Cdktf.Providers.Gitlab;
 
 new DeployKeyEnableConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -699,7 +699,7 @@ new DeployKeyEnableConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnableConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnableConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnableConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnableConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnableConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnableConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -708,7 +708,7 @@ new DeployKeyEnableConfig {
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnableConfig.property.keyId">KeyId</a></code> | <code>string</code> | The Gitlab key id for the pre-existing deploy key. |
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnableConfig.property.project">Project</a></code> | <code>string</code> | The name or id of the project to add the deploy key to. |
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnableConfig.property.canPush">CanPush</a></code> | <code>object</code> | Can deploy key push to the project's repository. |
-| <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnableConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key_enable#id DeployKeyEnable#id}. |
+| <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnableConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_key_enable#id DeployKeyEnable#id}. |
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnableConfig.property.key">Key</a></code> | <code>string</code> | Deploy key. |
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnableConfig.property.title">Title</a></code> | <code>string</code> | Deploy key's title. |
 
@@ -727,10 +727,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnableConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -794,7 +794,7 @@ public string KeyId { get; set; }
 
 The Gitlab key id for the pre-existing deploy key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key_enable#key_id DeployKeyEnable#key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_key_enable#key_id DeployKeyEnable#key_id}
 
 ---
 
@@ -808,7 +808,7 @@ public string Project { get; set; }
 
 The name or id of the project to add the deploy key to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key_enable#project DeployKeyEnable#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_key_enable#project DeployKeyEnable#project}
 
 ---
 
@@ -822,7 +822,7 @@ public object CanPush { get; set; }
 
 Can deploy key push to the project's repository.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key_enable#can_push DeployKeyEnable#can_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_key_enable#can_push DeployKeyEnable#can_push}
 
 ---
 
@@ -834,7 +834,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key_enable#id DeployKeyEnable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_key_enable#id DeployKeyEnable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -851,7 +851,7 @@ public string Key { get; set; }
 
 Deploy key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key_enable#key DeployKeyEnable#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_key_enable#key DeployKeyEnable#key}
 
 ---
 
@@ -865,7 +865,7 @@ public string Title { get; set; }
 
 Deploy key's title.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/deploy_key_enable#title DeployKeyEnable#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/deploy_key_enable#title DeployKeyEnable#title}
 
 ---
 

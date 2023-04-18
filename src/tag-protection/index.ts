@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/gitlab/r/tag_protection
+// https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/tag_protection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface TagProtectionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Access levels which are allowed to create. Valid values are: `no one`, `developer`, `maintainer`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/tag_protection#create_access_level TagProtection#create_access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/tag_protection#create_access_level TagProtection#create_access_level}
   */
   readonly createAccessLevel: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/tag_protection#id TagProtection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/tag_protection#id TagProtection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,19 +23,19 @@ export interface TagProtectionConfig extends cdktf.TerraformMetaArguments {
   /**
   * The id of the project.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/tag_protection#project TagProtection#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/tag_protection#project TagProtection#project}
   */
   readonly project: string;
   /**
   * Name of the tag or wildcard.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/tag_protection#tag TagProtection#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/tag_protection#tag TagProtection#tag}
   */
   readonly tag: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/tag_protection gitlab_tag_protection}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/tag_protection gitlab_tag_protection}
 */
 export class TagProtection extends cdktf.TerraformResource {
 
@@ -49,7 +49,7 @@ export class TagProtection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/tag_protection gitlab_tag_protection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/tag_protection gitlab_tag_protection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

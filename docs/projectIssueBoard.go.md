@@ -1,6 +1,6 @@
 # `gitlab_project_issue_board`
 
-Refer to the Terraform Registory for docs: [`gitlab_project_issue_board`](https://www.terraform.io/docs/providers/gitlab/r/project_issue_board).
+Refer to the Terraform Registory for docs: [`gitlab_project_issue_board`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue_board).
 
 # `projectIssueBoard` Submodule <a name="`projectIssueBoard` Submodule" id="@cdktf/provider-gitlab.projectIssueBoard"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`gitlab_project_issue_board`](https:
 
 ### ProjectIssueBoard <a name="ProjectIssueBoard" id="@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoard"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue_board gitlab_project_issue_board}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue_board gitlab_project_issue_board}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoard.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectissueboard"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectissueboard"
 
 projectissueboard.NewProjectIssueBoard(scope Construct, id *string, config ProjectIssueBoardConfig) ProjectIssueBoard
 ```
@@ -325,7 +325,7 @@ func ResetWeight()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoard.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectissueboard"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectissueboard"
 
 projectissueboard.ProjectIssueBoard_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoard.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectissueboard"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectissueboard"
 
 projectissueboard.ProjectIssueBoard_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ projectissueboard.ProjectIssueBoard_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoard.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectissueboard"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectissueboard"
 
 projectissueboard.ProjectIssueBoard_IsTerraformResource(x interface{}) *bool
 ```
@@ -394,7 +394,7 @@ projectissueboard.ProjectIssueBoard_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoard.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoard.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoard.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoard.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoard.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoard.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoard.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoard.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -504,10 +504,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoard.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -746,11 +746,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoardConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectissueboard"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectissueboard"
 
 &projectissueboard.ProjectIssueBoardConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -772,7 +772,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectissueboard"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoardConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoardConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoardConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoardConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoardConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoardConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -781,7 +781,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectissueboard"
 | <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoardConfig.property.name">Name</a></code> | <code>*string</code> | The name of the board. |
 | <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoardConfig.property.project">Project</a></code> | <code>*string</code> | The ID or full path of the project maintained by the authenticated user. |
 | <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoardConfig.property.assigneeId">AssigneeId</a></code> | <code>*f64</code> | The assignee the board should be scoped to. Requires a GitLab EE license. |
-| <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoardConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue_board#id ProjectIssueBoard#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoardConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue_board#id ProjectIssueBoard#id}. |
 | <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoardConfig.property.labels">Labels</a></code> | <code>*[]*string</code> | The list of label names which the board should be scoped to. Requires a GitLab EE license. |
 | <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoardConfig.property.lists">Lists</a></code> | <code>interface{}</code> | lists block. |
 | <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoardConfig.property.milestoneId">MilestoneId</a></code> | <code>*f64</code> | The milestone the board should be scoped to. Requires a GitLab EE license. |
@@ -802,10 +802,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoardConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -869,7 +869,7 @@ Name *string
 
 The name of the board.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue_board#name ProjectIssueBoard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue_board#name ProjectIssueBoard#name}
 
 ---
 
@@ -883,7 +883,7 @@ Project *string
 
 The ID or full path of the project maintained by the authenticated user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue_board#project ProjectIssueBoard#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue_board#project ProjectIssueBoard#project}
 
 ---
 
@@ -897,7 +897,7 @@ AssigneeId *f64
 
 The assignee the board should be scoped to. Requires a GitLab EE license.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue_board#assignee_id ProjectIssueBoard#assignee_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue_board#assignee_id ProjectIssueBoard#assignee_id}
 
 ---
 
@@ -909,7 +909,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue_board#id ProjectIssueBoard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue_board#id ProjectIssueBoard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -926,7 +926,7 @@ Labels *[]*string
 
 The list of label names which the board should be scoped to. Requires a GitLab EE license.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue_board#labels ProjectIssueBoard#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue_board#labels ProjectIssueBoard#labels}
 
 ---
 
@@ -940,7 +940,7 @@ Lists interface{}
 
 lists block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue_board#lists ProjectIssueBoard#lists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue_board#lists ProjectIssueBoard#lists}
 
 ---
 
@@ -954,7 +954,7 @@ MilestoneId *f64
 
 The milestone the board should be scoped to. Requires a GitLab EE license.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue_board#milestone_id ProjectIssueBoard#milestone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue_board#milestone_id ProjectIssueBoard#milestone_id}
 
 ---
 
@@ -970,7 +970,7 @@ The weight range from 0 to 9, to which the board should be scoped to.
 
 Requires a GitLab EE license.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue_board#weight ProjectIssueBoard#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue_board#weight ProjectIssueBoard#weight}
 
 ---
 
@@ -979,7 +979,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoardLists.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectissueboard"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectissueboard"
 
 &projectissueboard.ProjectIssueBoardLists {
 	AssigneeId: *f64,
@@ -1010,7 +1010,7 @@ AssigneeId *f64
 
 The ID of the assignee the list should be scoped to. Requires a GitLab EE license.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue_board#assignee_id ProjectIssueBoard#assignee_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue_board#assignee_id ProjectIssueBoard#assignee_id}
 
 ---
 
@@ -1024,7 +1024,7 @@ IterationId *f64
 
 The ID of the iteration the list should be scoped to. Requires a GitLab EE license.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue_board#iteration_id ProjectIssueBoard#iteration_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue_board#iteration_id ProjectIssueBoard#iteration_id}
 
 ---
 
@@ -1038,7 +1038,7 @@ LabelId *f64
 
 The ID of the label the list should be scoped to. Requires a GitLab EE license.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue_board#label_id ProjectIssueBoard#label_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue_board#label_id ProjectIssueBoard#label_id}
 
 ---
 
@@ -1052,7 +1052,7 @@ MilestoneId *f64
 
 The ID of the milestone the list should be scoped to. Requires a GitLab EE license.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_issue_board#milestone_id ProjectIssueBoard#milestone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_issue_board#milestone_id ProjectIssueBoard#milestone_id}
 
 ---
 
@@ -1063,7 +1063,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoardListsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectissueboard"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectissueboard"
 
 projectissueboard.NewProjectIssueBoardListsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProjectIssueBoardListsList
 ```
@@ -1206,7 +1206,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoardListsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/projectissueboard"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectissueboard"
 
 projectissueboard.NewProjectIssueBoardListsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProjectIssueBoardListsOutputReference
 ```

@@ -1,6 +1,6 @@
 # `gitlab_release_link`
 
-Refer to the Terraform Registory for docs: [`gitlab_release_link`](https://www.terraform.io/docs/providers/gitlab/r/release_link).
+Refer to the Terraform Registory for docs: [`gitlab_release_link`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/release_link).
 
 # `releaseLink` Submodule <a name="`releaseLink` Submodule" id="@cdktf/provider-gitlab.releaseLink"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`gitlab_release_link`](https://www.t
 
 ### ReleaseLink <a name="ReleaseLink" id="@cdktf/provider-gitlab.releaseLink.ReleaseLink"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/release_link gitlab_release_link}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/release_link gitlab_release_link}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.releaseLink.ReleaseLink.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/releaselink"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/releaselink"
 
 releaselink.NewReleaseLink(scope Construct, id *string, config ReleaseLinkConfig) ReleaseLink
 ```
@@ -291,7 +291,7 @@ func ResetLinkType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.releaseLink.ReleaseLink.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/releaselink"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/releaselink"
 
 releaselink.ReleaseLink_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.releaseLink.ReleaseLink.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/releaselink"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/releaselink"
 
 releaselink.ReleaseLink_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ releaselink.ReleaseLink_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.releaseLink.ReleaseLink.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/releaselink"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/releaselink"
 
 releaselink.ReleaseLink_IsTerraformResource(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ releaselink.ReleaseLink_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -471,10 +471,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -723,11 +723,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/releaselink"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/releaselink"
 
 &releaselink.ReleaseLinkConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -748,7 +748,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/releaselink"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -759,7 +759,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/releaselink"
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.tagName">TagName</a></code> | <code>*string</code> | The tag associated with the Release. |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.url">Url</a></code> | <code>*string</code> | The URL of the link. Link URLs must be unique within the release. |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.filepath">Filepath</a></code> | <code>*string</code> | Relative path for a [Direct Asset link](https://docs.gitlab.com/ee/user/project/releases/index.html#permanent-links-to-release-assets). |
-| <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#id ReleaseLink#id}. |
+| <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/release_link#id ReleaseLink#id}. |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.linkType">LinkType</a></code> | <code>*string</code> | The type of the link. Valid values are `other`, `runbook`, `image`, `package`. Defaults to other. |
 
 ---
@@ -777,10 +777,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -844,7 +844,7 @@ Name *string
 
 The name of the link. Link names must be unique within the release.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#name ReleaseLink#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/release_link#name ReleaseLink#name}
 
 ---
 
@@ -858,7 +858,7 @@ Project *string
 
 The ID or [URL-encoded path of the project](https://docs.gitlab.com/ee/api/index.html#namespaced-path-encoding).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#project ReleaseLink#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/release_link#project ReleaseLink#project}
 
 ---
 
@@ -872,7 +872,7 @@ TagName *string
 
 The tag associated with the Release.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#tag_name ReleaseLink#tag_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/release_link#tag_name ReleaseLink#tag_name}
 
 ---
 
@@ -886,7 +886,7 @@ Url *string
 
 The URL of the link. Link URLs must be unique within the release.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#url ReleaseLink#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/release_link#url ReleaseLink#url}
 
 ---
 
@@ -900,7 +900,7 @@ Filepath *string
 
 Relative path for a [Direct Asset link](https://docs.gitlab.com/ee/user/project/releases/index.html#permanent-links-to-release-assets).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#filepath ReleaseLink#filepath}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/release_link#filepath ReleaseLink#filepath}
 
 ---
 
@@ -912,7 +912,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#id ReleaseLink#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/release_link#id ReleaseLink#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -929,7 +929,7 @@ LinkType *string
 
 The type of the link. Valid values are `other`, `runbook`, `image`, `package`. Defaults to other.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#link_type ReleaseLink#link_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/release_link#link_type ReleaseLink#link_type}
 
 ---
 

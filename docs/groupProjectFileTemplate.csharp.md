@@ -1,6 +1,6 @@
 # `gitlab_group_project_file_template`
 
-Refer to the Terraform Registory for docs: [`gitlab_group_project_file_template`](https://www.terraform.io/docs/providers/gitlab/r/group_project_file_template).
+Refer to the Terraform Registory for docs: [`gitlab_group_project_file_template`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_project_file_template).
 
 # `groupProjectFileTemplate` Submodule <a name="`groupProjectFileTemplate` Submodule" id="@cdktf/provider-gitlab.groupProjectFileTemplate"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_group_project_file_template`
 
 ### GroupProjectFileTemplate <a name="GroupProjectFileTemplate" id="@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplate"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/group_project_file_template gitlab_group_project_file_template}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_project_file_template gitlab_group_project_file_template}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplate.Initializer"></a>
 
@@ -346,7 +346,7 @@ GroupProjectFileTemplate.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplate.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplate.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplate.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplate.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplate.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplate.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplate.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplate.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -446,10 +446,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplate.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -592,7 +592,7 @@ using HashiCorp.Cdktf.Providers.Gitlab;
 
 new GroupProjectFileTemplateConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -609,7 +609,7 @@ new GroupProjectFileTemplateConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplateConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplateConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplateConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplateConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplateConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplateConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -617,7 +617,7 @@ new GroupProjectFileTemplateConfig {
 | <code><a href="#@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplateConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplateConfig.property.fileTemplateProjectId">FileTemplateProjectId</a></code> | <code>double</code> | The ID of the project that will be used for file templates. |
 | <code><a href="#@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplateConfig.property.groupId">GroupId</a></code> | <code>double</code> | The ID of the group that will use the file template project. |
-| <code><a href="#@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplateConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_project_file_template#id GroupProjectFileTemplate#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplateConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_project_file_template#id GroupProjectFileTemplate#id}. |
 
 ---
 
@@ -634,10 +634,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplateConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -704,7 +704,7 @@ The ID of the project that will be used for file templates.
 This project must be the direct
 child of the project defined by the group_id
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_project_file_template#file_template_project_id GroupProjectFileTemplate#file_template_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_project_file_template#file_template_project_id GroupProjectFileTemplate#file_template_project_id}
 
 ---
 
@@ -721,7 +721,7 @@ The ID of the group that will use the file template project.
 This group must be the direct
 parent of the project defined by project_id
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_project_file_template#group_id GroupProjectFileTemplate#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_project_file_template#group_id GroupProjectFileTemplate#group_id}
 
 ---
 
@@ -733,7 +733,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/group_project_file_template#id GroupProjectFileTemplate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_project_file_template#id GroupProjectFileTemplate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

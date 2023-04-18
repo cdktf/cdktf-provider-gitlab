@@ -1,6 +1,6 @@
 # `gitlab_service_emails_on_push`
 
-Refer to the Terraform Registory for docs: [`gitlab_service_emails_on_push`](https://www.terraform.io/docs/providers/gitlab/r/service_emails_on_push).
+Refer to the Terraform Registory for docs: [`gitlab_service_emails_on_push`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_emails_on_push).
 
 # `serviceEmailsOnPush` Submodule <a name="`serviceEmailsOnPush` Submodule" id="@cdktf/provider-gitlab.serviceEmailsOnPush"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_service_emails_on_push`](htt
 
 ### ServiceEmailsOnPush <a name="ServiceEmailsOnPush" id="@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/service_emails_on_push gitlab_service_emails_on_push}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_emails_on_push gitlab_service_emails_on_push}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush.Initializer"></a>
 
@@ -19,7 +19,7 @@ serviceEmailsOnPush.ServiceEmailsOnPush(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -41,7 +41,7 @@ serviceEmailsOnPush.ServiceEmailsOnPush(
 | <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -51,7 +51,7 @@ serviceEmailsOnPush.ServiceEmailsOnPush(
 | <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush.Initializer.parameter.recipients">recipients</a></code> | <code>str</code> | Emails separated by whitespace. |
 | <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush.Initializer.parameter.branchesToBeNotified">branches_to_be_notified</a></code> | <code>str</code> | Branches to send notifications for. Valid options are `all`, `default`, `protected`, `default_and_protected`. Notifications are always fired for tag pushes. |
 | <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush.Initializer.parameter.disableDiffs">disable_diffs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable code diffs. |
-| <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_emails_on_push#id ServiceEmailsOnPush#id}. |
+| <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_emails_on_push#id ServiceEmailsOnPush#id}. |
 | <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush.Initializer.parameter.pushEvents">push_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for push events. |
 | <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush.Initializer.parameter.sendFromCommitterEmail">send_from_committer_email</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Send from committer. |
 | <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush.Initializer.parameter.tagPushEvents">tag_push_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for tag push events. |
@@ -84,7 +84,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 ID or full-path of the project you want to activate integration on.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_emails_on_push#project ServiceEmailsOnPush#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_emails_on_push#project ServiceEmailsOnPush#project}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Emails separated by whitespace.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_emails_on_push#recipients ServiceEmailsOnPush#recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_emails_on_push#recipients ServiceEmailsOnPush#recipients}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Branches to send notifications for. Valid options are `all`, `default`, `protected`, `default_and_protected`. Notifications are always fired for tag pushes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_emails_on_push#branches_to_be_notified ServiceEmailsOnPush#branches_to_be_notified}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_emails_on_push#branches_to_be_notified ServiceEmailsOnPush#branches_to_be_notified}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Disable code diffs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_emails_on_push#disable_diffs ServiceEmailsOnPush#disable_diffs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_emails_on_push#disable_diffs ServiceEmailsOnPush#disable_diffs}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_emails_on_push#id ServiceEmailsOnPush#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_emails_on_push#id ServiceEmailsOnPush#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -175,7 +175,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Enable notifications for push events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_emails_on_push#push_events ServiceEmailsOnPush#push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_emails_on_push#push_events ServiceEmailsOnPush#push_events}
 
 ---
 
@@ -185,7 +185,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Send from committer.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_emails_on_push#send_from_committer_email ServiceEmailsOnPush#send_from_committer_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_emails_on_push#send_from_committer_email ServiceEmailsOnPush#send_from_committer_email}
 
 ---
 
@@ -195,7 +195,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Enable notifications for tag push events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_emails_on_push#tag_push_events ServiceEmailsOnPush#tag_push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_emails_on_push#tag_push_events ServiceEmailsOnPush#tag_push_events}
 
 ---
 
@@ -561,7 +561,7 @@ serviceEmailsOnPush.ServiceEmailsOnPush.is_terraform_resource(
 | <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -676,10 +676,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPush.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -972,7 +972,7 @@ from cdktf_cdktf_provider_gitlab import service_emails_on_push
 
 serviceEmailsOnPush.ServiceEmailsOnPushConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -994,7 +994,7 @@ serviceEmailsOnPush.ServiceEmailsOnPushConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPushConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPushConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPushConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPushConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPushConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPushConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1004,7 +1004,7 @@ serviceEmailsOnPush.ServiceEmailsOnPushConfig(
 | <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPushConfig.property.recipients">recipients</a></code> | <code>str</code> | Emails separated by whitespace. |
 | <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPushConfig.property.branchesToBeNotified">branches_to_be_notified</a></code> | <code>str</code> | Branches to send notifications for. Valid options are `all`, `default`, `protected`, `default_and_protected`. Notifications are always fired for tag pushes. |
 | <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPushConfig.property.disableDiffs">disable_diffs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable code diffs. |
-| <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPushConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_emails_on_push#id ServiceEmailsOnPush#id}. |
+| <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPushConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_emails_on_push#id ServiceEmailsOnPush#id}. |
 | <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPushConfig.property.pushEvents">push_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for push events. |
 | <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPushConfig.property.sendFromCommitterEmail">send_from_committer_email</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Send from committer. |
 | <code><a href="#@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPushConfig.property.tagPushEvents">tag_push_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for tag push events. |
@@ -1024,10 +1024,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.serviceEmailsOnPush.ServiceEmailsOnPushConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1091,7 +1091,7 @@ project: str
 
 ID or full-path of the project you want to activate integration on.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_emails_on_push#project ServiceEmailsOnPush#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_emails_on_push#project ServiceEmailsOnPush#project}
 
 ---
 
@@ -1105,7 +1105,7 @@ recipients: str
 
 Emails separated by whitespace.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_emails_on_push#recipients ServiceEmailsOnPush#recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_emails_on_push#recipients ServiceEmailsOnPush#recipients}
 
 ---
 
@@ -1119,7 +1119,7 @@ branches_to_be_notified: str
 
 Branches to send notifications for. Valid options are `all`, `default`, `protected`, `default_and_protected`. Notifications are always fired for tag pushes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_emails_on_push#branches_to_be_notified ServiceEmailsOnPush#branches_to_be_notified}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_emails_on_push#branches_to_be_notified ServiceEmailsOnPush#branches_to_be_notified}
 
 ---
 
@@ -1133,7 +1133,7 @@ disable_diffs: typing.Union[bool, IResolvable]
 
 Disable code diffs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_emails_on_push#disable_diffs ServiceEmailsOnPush#disable_diffs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_emails_on_push#disable_diffs ServiceEmailsOnPush#disable_diffs}
 
 ---
 
@@ -1145,7 +1145,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_emails_on_push#id ServiceEmailsOnPush#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_emails_on_push#id ServiceEmailsOnPush#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1162,7 +1162,7 @@ push_events: typing.Union[bool, IResolvable]
 
 Enable notifications for push events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_emails_on_push#push_events ServiceEmailsOnPush#push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_emails_on_push#push_events ServiceEmailsOnPush#push_events}
 
 ---
 
@@ -1176,7 +1176,7 @@ send_from_committer_email: typing.Union[bool, IResolvable]
 
 Send from committer.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_emails_on_push#send_from_committer_email ServiceEmailsOnPush#send_from_committer_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_emails_on_push#send_from_committer_email ServiceEmailsOnPush#send_from_committer_email}
 
 ---
 
@@ -1190,7 +1190,7 @@ tag_push_events: typing.Union[bool, IResolvable]
 
 Enable notifications for tag push events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/service_emails_on_push#tag_push_events ServiceEmailsOnPush#tag_push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/service_emails_on_push#tag_push_events ServiceEmailsOnPush#tag_push_events}
 
 ---
 

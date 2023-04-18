@@ -1,6 +1,6 @@
 # `gitlab_label`
 
-Refer to the Terraform Registory for docs: [`gitlab_label`](https://www.terraform.io/docs/providers/gitlab/r/label).
+Refer to the Terraform Registory for docs: [`gitlab_label`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/label).
 
 # `label` Submodule <a name="`label` Submodule" id="@cdktf/provider-gitlab.label"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_label`](https://www.terrafor
 
 ### Label <a name="Label" id="@cdktf/provider-gitlab.label.Label"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/label gitlab_label}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/label gitlab_label}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.label.Label.Initializer"></a>
 
@@ -353,7 +353,7 @@ label.Label.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-gitlab.label.Label.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.label.Label.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.label.Label.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.label.Label.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.label.Label.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.label.Label.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.label.Label.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.label.Label.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -457,10 +457,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.label.Label.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -649,7 +649,7 @@ const labelConfig: label.LabelConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.label.LabelConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.label.LabelConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.label.LabelConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.label.LabelConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.label.LabelConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.label.LabelConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -659,7 +659,7 @@ const labelConfig: label.LabelConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.label.LabelConfig.property.name">name</a></code> | <code>string</code> | The name of the label. |
 | <code><a href="#@cdktf/provider-gitlab.label.LabelConfig.property.project">project</a></code> | <code>string</code> | The name or id of the project to add the label to. |
 | <code><a href="#@cdktf/provider-gitlab.label.LabelConfig.property.description">description</a></code> | <code>string</code> | The description of the label. |
-| <code><a href="#@cdktf/provider-gitlab.label.LabelConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/label#id Label#id}. |
+| <code><a href="#@cdktf/provider-gitlab.label.LabelConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/label#id Label#id}. |
 
 ---
 
@@ -676,10 +676,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.label.LabelConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -743,7 +743,7 @@ public readonly color: string;
 
 The color of the label given in 6-digit hex notation with leading '#' sign (e.g. #FFAABB) or one of the [CSS color names](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Color_keywords).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/label#color Label#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/label#color Label#color}
 
 ---
 
@@ -757,7 +757,7 @@ public readonly name: string;
 
 The name of the label.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/label#name Label#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/label#name Label#name}
 
 ---
 
@@ -771,7 +771,7 @@ public readonly project: string;
 
 The name or id of the project to add the label to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/label#project Label#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/label#project Label#project}
 
 ---
 
@@ -785,7 +785,7 @@ public readonly description: string;
 
 The description of the label.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/label#description Label#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/label#description Label#description}
 
 ---
 
@@ -797,7 +797,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/label#id Label#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/label#id Label#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

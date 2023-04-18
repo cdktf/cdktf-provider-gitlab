@@ -1,6 +1,6 @@
 # `gitlab_project_tag`
 
-Refer to the Terraform Registory for docs: [`gitlab_project_tag`](https://www.terraform.io/docs/providers/gitlab/r/project_tag).
+Refer to the Terraform Registory for docs: [`gitlab_project_tag`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_tag).
 
 # `projectTag` Submodule <a name="`projectTag` Submodule" id="@cdktf/provider-gitlab.projectTag"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_project_tag`](https://www.te
 
 ### ProjectTag <a name="ProjectTag" id="@cdktf/provider-gitlab.projectTag.ProjectTag"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/project_tag gitlab_project_tag}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_tag gitlab_project_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectTag.ProjectTag.Initializer"></a>
 
@@ -353,7 +353,7 @@ projectTag.ProjectTag.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTag.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTag.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTag.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTag.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTag.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTag.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTag.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTag.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -461,10 +461,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.projectTag.ProjectTag.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -704,7 +704,7 @@ const projectTagConfig: projectTag.ProjectTagConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTagConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTagConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTagConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTagConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTagConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTagConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -713,7 +713,7 @@ const projectTagConfig: projectTag.ProjectTagConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTagConfig.property.name">name</a></code> | <code>string</code> | The name of a tag. |
 | <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTagConfig.property.project">project</a></code> | <code>string</code> | The ID or URL-encoded path of the project owned by the authenticated user. |
 | <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTagConfig.property.ref">ref</a></code> | <code>string</code> | Create tag using commit SHA, another tag name, or branch name. This attribute is not available for imported resources. |
-| <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTagConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_tag#id ProjectTag#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTagConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_tag#id ProjectTag#id}. |
 | <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTagConfig.property.message">message</a></code> | <code>string</code> | The message of the annotated tag. |
 
 ---
@@ -731,10 +731,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.projectTag.ProjectTagConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -798,7 +798,7 @@ public readonly name: string;
 
 The name of a tag.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_tag#name ProjectTag#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_tag#name ProjectTag#name}
 
 ---
 
@@ -812,7 +812,7 @@ public readonly project: string;
 
 The ID or URL-encoded path of the project owned by the authenticated user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_tag#project ProjectTag#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_tag#project ProjectTag#project}
 
 ---
 
@@ -826,7 +826,7 @@ public readonly ref: string;
 
 Create tag using commit SHA, another tag name, or branch name. This attribute is not available for imported resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_tag#ref ProjectTag#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_tag#ref ProjectTag#ref}
 
 ---
 
@@ -838,7 +838,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_tag#id ProjectTag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_tag#id ProjectTag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -855,7 +855,7 @@ public readonly message: string;
 
 The message of the annotated tag.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_tag#message ProjectTag#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_tag#message ProjectTag#message}
 
 ---
 

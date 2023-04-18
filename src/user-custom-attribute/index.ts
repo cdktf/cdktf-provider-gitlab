@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute
+// https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface UserCustomAttributeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute#id UserCustomAttribute#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute#id UserCustomAttribute#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,25 +17,25 @@ export interface UserCustomAttributeConfig extends cdktf.TerraformMetaArguments 
   /**
   * Key for the Custom Attribute.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute#key UserCustomAttribute#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute#key UserCustomAttribute#key}
   */
   readonly key: string;
   /**
   * The id of the user.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute#user UserCustomAttribute#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute#user UserCustomAttribute#user}
   */
   readonly user: number;
   /**
   * Value for the Custom Attribute.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute#value UserCustomAttribute#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute#value UserCustomAttribute#value}
   */
   readonly value: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute gitlab_user_custom_attribute}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute gitlab_user_custom_attribute}
 */
 export class UserCustomAttribute extends cdktf.TerraformResource {
 
@@ -49,7 +49,7 @@ export class UserCustomAttribute extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute gitlab_user_custom_attribute} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute gitlab_user_custom_attribute} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

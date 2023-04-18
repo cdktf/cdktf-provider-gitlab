@@ -1,6 +1,6 @@
 # `gitlab_application`
 
-Refer to the Terraform Registory for docs: [`gitlab_application`](https://www.terraform.io/docs/providers/gitlab/r/application).
+Refer to the Terraform Registory for docs: [`gitlab_application`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/application).
 
 # `application` Submodule <a name="`application` Submodule" id="@cdktf/provider-gitlab.application"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_application`](https://www.te
 
 ### Application <a name="Application" id="@cdktf/provider-gitlab.application.Application"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/application gitlab_application}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/application gitlab_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.application.Application.Initializer"></a>
 
@@ -346,7 +346,7 @@ Application.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-gitlab.application.Application.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.application.Application.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.application.Application.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.application.Application.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.application.Application.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.application.Application.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.application.Application.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.application.Application.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -451,10 +451,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.application.Application.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -647,7 +647,7 @@ using HashiCorp.Cdktf.Providers.Gitlab;
 
 new ApplicationConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -665,7 +665,7 @@ new ApplicationConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.application.ApplicationConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.application.ApplicationConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.application.ApplicationConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.application.ApplicationConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.application.ApplicationConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.application.ApplicationConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -691,10 +691,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.application.ApplicationConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -758,7 +758,7 @@ public string Name { get; set; }
 
 Name of the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/application#name Application#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/application#name Application#name}
 
 ---
 
@@ -772,7 +772,7 @@ public string RedirectUrl { get; set; }
 
 The URL gitlab should send the user to after authentication.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/application#redirect_url Application#redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/application#redirect_url Application#redirect_url}
 
 ---
 
@@ -789,7 +789,7 @@ Scopes of the application.
 Use "openid" if you plan to use this as an oidc authentication application. Valid options are: `api`, `read_api`, `read_user`, `read_repository`, `write_repository`, `read_registry`, `write_registry`, `sudo`, `admin_mode`, `openid`, `profile`, `email`.
 This is only populated when creating a new application. This attribute is not available for imported resources
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/application#scopes Application#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/application#scopes Application#scopes}
 
 ---
 
@@ -805,7 +805,7 @@ The application is used where the client secret can be kept confidential.
 
 Native mobile apps and Single Page Apps are considered non-confidential. Defaults to true if not supplied
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/application#confidential Application#confidential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/application#confidential Application#confidential}
 
 ---
 

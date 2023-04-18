@@ -1,6 +1,6 @@
 # `gitlab_user_custom_attribute`
 
-Refer to the Terraform Registory for docs: [`gitlab_user_custom_attribute`](https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute).
+Refer to the Terraform Registory for docs: [`gitlab_user_custom_attribute`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute).
 
 # `userCustomAttribute` Submodule <a name="`userCustomAttribute` Submodule" id="@cdktf/provider-gitlab.userCustomAttribute"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_user_custom_attribute`](http
 
 ### UserCustomAttribute <a name="UserCustomAttribute" id="@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute gitlab_user_custom_attribute}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute gitlab_user_custom_attribute}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.Initializer"></a>
 
@@ -19,7 +19,7 @@ userCustomAttribute.UserCustomAttribute(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -37,7 +37,7 @@ userCustomAttribute.UserCustomAttribute(
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -46,7 +46,7 @@ userCustomAttribute.UserCustomAttribute(
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.Initializer.parameter.key">key</a></code> | <code>str</code> | Key for the Custom Attribute. |
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.Initializer.parameter.user">user</a></code> | <code>typing.Union[int, float]</code> | The id of the user. |
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.Initializer.parameter.value">value</a></code> | <code>str</code> | Value for the Custom Attribute. |
-| <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute#id UserCustomAttribute#id}. |
+| <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute#id UserCustomAttribute#id}. |
 
 ---
 
@@ -76,7 +76,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 Key for the Custom Attribute.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute#key UserCustomAttribute#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute#key UserCustomAttribute#key}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 The id of the user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute#user UserCustomAttribute#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute#user UserCustomAttribute#user}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Value for the Custom Attribute.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute#value UserCustomAttribute#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute#value UserCustomAttribute#value}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute#id UserCustomAttribute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute#id UserCustomAttribute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -478,7 +478,7 @@ userCustomAttribute.UserCustomAttribute.is_terraform_resource(
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -580,10 +580,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -746,7 +746,7 @@ from cdktf_cdktf_provider_gitlab import user_custom_attribute
 
 userCustomAttribute.UserCustomAttributeConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -764,7 +764,7 @@ userCustomAttribute.UserCustomAttributeConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttributeConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttributeConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttributeConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttributeConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttributeConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttributeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -773,7 +773,7 @@ userCustomAttribute.UserCustomAttributeConfig(
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttributeConfig.property.key">key</a></code> | <code>str</code> | Key for the Custom Attribute. |
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttributeConfig.property.user">user</a></code> | <code>typing.Union[int, float]</code> | The id of the user. |
 | <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttributeConfig.property.value">value</a></code> | <code>str</code> | Value for the Custom Attribute. |
-| <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttributeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute#id UserCustomAttribute#id}. |
+| <code><a href="#@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttributeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute#id UserCustomAttribute#id}. |
 
 ---
 
@@ -790,10 +790,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttributeConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -857,7 +857,7 @@ key: str
 
 Key for the Custom Attribute.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute#key UserCustomAttribute#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute#key UserCustomAttribute#key}
 
 ---
 
@@ -871,7 +871,7 @@ user: typing.Union[int, float]
 
 The id of the user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute#user UserCustomAttribute#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute#user UserCustomAttribute#user}
 
 ---
 
@@ -885,7 +885,7 @@ value: str
 
 Value for the Custom Attribute.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute#value UserCustomAttribute#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute#value UserCustomAttribute#value}
 
 ---
 
@@ -897,7 +897,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/user_custom_attribute#id UserCustomAttribute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/user_custom_attribute#id UserCustomAttribute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

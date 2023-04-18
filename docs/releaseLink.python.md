@@ -1,6 +1,6 @@
 # `gitlab_release_link`
 
-Refer to the Terraform Registory for docs: [`gitlab_release_link`](https://www.terraform.io/docs/providers/gitlab/r/release_link).
+Refer to the Terraform Registory for docs: [`gitlab_release_link`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/release_link).
 
 # `releaseLink` Submodule <a name="`releaseLink` Submodule" id="@cdktf/provider-gitlab.releaseLink"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_release_link`](https://www.t
 
 ### ReleaseLink <a name="ReleaseLink" id="@cdktf/provider-gitlab.releaseLink.ReleaseLink"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/release_link gitlab_release_link}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/release_link gitlab_release_link}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.releaseLink.ReleaseLink.Initializer"></a>
 
@@ -19,7 +19,7 @@ releaseLink.ReleaseLink(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -40,7 +40,7 @@ releaseLink.ReleaseLink(
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -51,7 +51,7 @@ releaseLink.ReleaseLink(
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.Initializer.parameter.tagName">tag_name</a></code> | <code>str</code> | The tag associated with the Release. |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.Initializer.parameter.url">url</a></code> | <code>str</code> | The URL of the link. Link URLs must be unique within the release. |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.Initializer.parameter.filepath">filepath</a></code> | <code>str</code> | Relative path for a [Direct Asset link](https://docs.gitlab.com/ee/user/project/releases/index.html#permanent-links-to-release-assets). |
-| <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#id ReleaseLink#id}. |
+| <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/release_link#id ReleaseLink#id}. |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.Initializer.parameter.linkType">link_type</a></code> | <code>str</code> | The type of the link. Valid values are `other`, `runbook`, `image`, `package`. Defaults to other. |
 
 ---
@@ -82,7 +82,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.releaseLink.ReleaseLink.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the link. Link names must be unique within the release.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#name ReleaseLink#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/release_link#name ReleaseLink#name}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 The ID or [URL-encoded path of the project](https://docs.gitlab.com/ee/api/index.html#namespaced-path-encoding).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#project ReleaseLink#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/release_link#project ReleaseLink#project}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 The tag associated with the Release.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#tag_name ReleaseLink#tag_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/release_link#tag_name ReleaseLink#tag_name}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 The URL of the link. Link URLs must be unique within the release.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#url ReleaseLink#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/release_link#url ReleaseLink#url}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Relative path for a [Direct Asset link](https://docs.gitlab.com/ee/user/project/releases/index.html#permanent-links-to-release-assets).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#filepath ReleaseLink#filepath}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/release_link#filepath ReleaseLink#filepath}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#id ReleaseLink#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/release_link#id ReleaseLink#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -183,7 +183,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The type of the link. Valid values are `other`, `runbook`, `image`, `package`. Defaults to other.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#link_type ReleaseLink#link_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/release_link#link_type ReleaseLink#link_type}
 
 ---
 
@@ -528,7 +528,7 @@ releaseLink.ReleaseLink.is_terraform_resource(
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -639,10 +639,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -895,7 +895,7 @@ from cdktf_cdktf_provider_gitlab import release_link
 
 releaseLink.ReleaseLinkConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -916,7 +916,7 @@ releaseLink.ReleaseLinkConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -927,7 +927,7 @@ releaseLink.ReleaseLinkConfig(
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.tagName">tag_name</a></code> | <code>str</code> | The tag associated with the Release. |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.url">url</a></code> | <code>str</code> | The URL of the link. Link URLs must be unique within the release. |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.filepath">filepath</a></code> | <code>str</code> | Relative path for a [Direct Asset link](https://docs.gitlab.com/ee/user/project/releases/index.html#permanent-links-to-release-assets). |
-| <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#id ReleaseLink#id}. |
+| <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/release_link#id ReleaseLink#id}. |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.linkType">link_type</a></code> | <code>str</code> | The type of the link. Valid values are `other`, `runbook`, `image`, `package`. Defaults to other. |
 
 ---
@@ -945,10 +945,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1012,7 +1012,7 @@ name: str
 
 The name of the link. Link names must be unique within the release.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#name ReleaseLink#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/release_link#name ReleaseLink#name}
 
 ---
 
@@ -1026,7 +1026,7 @@ project: str
 
 The ID or [URL-encoded path of the project](https://docs.gitlab.com/ee/api/index.html#namespaced-path-encoding).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#project ReleaseLink#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/release_link#project ReleaseLink#project}
 
 ---
 
@@ -1040,7 +1040,7 @@ tag_name: str
 
 The tag associated with the Release.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#tag_name ReleaseLink#tag_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/release_link#tag_name ReleaseLink#tag_name}
 
 ---
 
@@ -1054,7 +1054,7 @@ url: str
 
 The URL of the link. Link URLs must be unique within the release.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#url ReleaseLink#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/release_link#url ReleaseLink#url}
 
 ---
 
@@ -1068,7 +1068,7 @@ filepath: str
 
 Relative path for a [Direct Asset link](https://docs.gitlab.com/ee/user/project/releases/index.html#permanent-links-to-release-assets).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#filepath ReleaseLink#filepath}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/release_link#filepath ReleaseLink#filepath}
 
 ---
 
@@ -1080,7 +1080,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#id ReleaseLink#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/release_link#id ReleaseLink#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1097,7 +1097,7 @@ link_type: str
 
 The type of the link. Valid values are `other`, `runbook`, `image`, `package`. Defaults to other.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/release_link#link_type ReleaseLink#link_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/release_link#link_type ReleaseLink#link_type}
 
 ---
 

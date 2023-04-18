@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/gitlab/d/group_membership
+// https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group_membership
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,23 +10,23 @@ export interface DataGitlabGroupMembershipConfig extends cdktf.TerraformMetaArgu
   /**
   * Only return members with the desired access level. Acceptable values are: `guest`, `reporter`, `developer`, `maintainer`, `owner`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/group_membership#access_level DataGitlabGroupMembership#access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group_membership#access_level DataGitlabGroupMembership#access_level}
   */
   readonly accessLevel?: string;
   /**
   * The full path of the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/group_membership#full_path DataGitlabGroupMembership#full_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group_membership#full_path DataGitlabGroupMembership#full_path}
   */
   readonly fullPath?: string;
   /**
   * The ID of the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/group_membership#group_id DataGitlabGroupMembership#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group_membership#group_id DataGitlabGroupMembership#group_id}
   */
   readonly groupId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/group_membership#id DataGitlabGroupMembership#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group_membership#id DataGitlabGroupMembership#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,7 +35,7 @@ export interface DataGitlabGroupMembershipConfig extends cdktf.TerraformMetaArgu
   /**
   * Return all project members including members through ancestor groups.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/d/group_membership#inherited DataGitlabGroupMembership#inherited}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group_membership#inherited DataGitlabGroupMembership#inherited}
   */
   readonly inherited?: boolean | cdktf.IResolvable;
 }
@@ -140,7 +140,7 @@ export class DataGitlabGroupMembershipMembersList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/gitlab/d/group_membership gitlab_group_membership}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group_membership gitlab_group_membership}
 */
 export class DataGitlabGroupMembership extends cdktf.TerraformDataSource {
 
@@ -154,7 +154,7 @@ export class DataGitlabGroupMembership extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/gitlab/d/group_membership gitlab_group_membership} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group_membership gitlab_group_membership} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/gitlab/r/project_membership
+// https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_membership
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface ProjectMembershipConfig extends cdktf.TerraformMetaArguments {
   /**
   * The access level for the member. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_membership#access_level ProjectMembership#access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_membership#access_level ProjectMembership#access_level}
   */
   readonly accessLevel: string;
   /**
   * Expiration date for the project membership. Format: `YYYY-MM-DD`
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_membership#expires_at ProjectMembership#expires_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_membership#expires_at ProjectMembership#expires_at}
   */
   readonly expiresAt?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_membership#id ProjectMembership#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_membership#id ProjectMembership#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,19 +29,19 @@ export interface ProjectMembershipConfig extends cdktf.TerraformMetaArguments {
   /**
   * The id of the project.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_membership#project_id ProjectMembership#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_membership#project_id ProjectMembership#project_id}
   */
   readonly projectId: string;
   /**
   * The id of the user.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/project_membership#user_id ProjectMembership#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_membership#user_id ProjectMembership#user_id}
   */
   readonly userId: number;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/project_membership gitlab_project_membership}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_membership gitlab_project_membership}
 */
 export class ProjectMembership extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class ProjectMembership extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/gitlab/r/project_membership gitlab_project_membership} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_membership gitlab_project_membership} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

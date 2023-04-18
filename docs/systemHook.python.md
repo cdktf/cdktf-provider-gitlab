@@ -1,6 +1,6 @@
 # `gitlab_system_hook`
 
-Refer to the Terraform Registory for docs: [`gitlab_system_hook`](https://www.terraform.io/docs/providers/gitlab/r/system_hook).
+Refer to the Terraform Registory for docs: [`gitlab_system_hook`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook).
 
 # `systemHook` Submodule <a name="`systemHook` Submodule" id="@cdktf/provider-gitlab.systemHook"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_system_hook`](https://www.te
 
 ### SystemHook <a name="SystemHook" id="@cdktf/provider-gitlab.systemHook.SystemHook"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook gitlab_system_hook}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook gitlab_system_hook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.systemHook.SystemHook.Initializer"></a>
 
@@ -19,7 +19,7 @@ systemHook.SystemHook(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -41,7 +41,7 @@ systemHook.SystemHook(
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHook.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHook.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHook.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHook.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHook.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHook.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHook.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHook.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -49,7 +49,7 @@ systemHook.SystemHook(
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHook.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHook.Initializer.parameter.url">url</a></code> | <code>str</code> | The hook URL. |
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHook.Initializer.parameter.enableSslVerification">enable_ssl_verification</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do SSL verification when triggering the hook. |
-| <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHook.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook#id SystemHook#id}. |
+| <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHook.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook#id SystemHook#id}. |
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHook.Initializer.parameter.mergeRequestsEvents">merge_requests_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Trigger hook on merge requests events. |
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHook.Initializer.parameter.pushEvents">push_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When true, the hook fires on push events. |
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHook.Initializer.parameter.repositoryUpdateEvents">repository_update_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Trigger hook on repository update events. |
@@ -84,7 +84,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.systemHook.SystemHook.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 The hook URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook#url SystemHook#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook#url SystemHook#url}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Do SSL verification when triggering the hook.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook#enable_ssl_verification SystemHook#enable_ssl_verification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook#enable_ssl_verification SystemHook#enable_ssl_verification}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook#id SystemHook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook#id SystemHook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +155,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Trigger hook on merge requests events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook#merge_requests_events SystemHook#merge_requests_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook#merge_requests_events SystemHook#merge_requests_events}
 
 ---
 
@@ -165,7 +165,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 When true, the hook fires on push events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook#push_events SystemHook#push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook#push_events SystemHook#push_events}
 
 ---
 
@@ -175,7 +175,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 Trigger hook on repository update events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook#repository_update_events SystemHook#repository_update_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook#repository_update_events SystemHook#repository_update_events}
 
 ---
 
@@ -185,7 +185,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitla
 
 When true, the hook fires on new tags being pushed.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook#tag_push_events SystemHook#tag_push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook#tag_push_events SystemHook#tag_push_events}
 
 ---
 
@@ -197,7 +197,7 @@ Secret token to validate received payloads;
 
 this isn’t returned in the response. This attribute is not available for imported resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook#token SystemHook#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook#token SystemHook#token}
 
 ---
 
@@ -570,7 +570,7 @@ systemHook.SystemHook.is_terraform_resource(
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHook.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHook.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHook.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHook.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHook.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHook.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHook.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHook.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -681,10 +681,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.systemHook.SystemHook.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -937,7 +937,7 @@ from cdktf_cdktf_provider_gitlab import system_hook
 
 systemHook.SystemHookConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -959,7 +959,7 @@ systemHook.SystemHookConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHookConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHookConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHookConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHookConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHookConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHookConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -967,7 +967,7 @@ systemHook.SystemHookConfig(
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHookConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHookConfig.property.url">url</a></code> | <code>str</code> | The hook URL. |
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHookConfig.property.enableSslVerification">enable_ssl_verification</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do SSL verification when triggering the hook. |
-| <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHookConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook#id SystemHook#id}. |
+| <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHookConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook#id SystemHook#id}. |
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHookConfig.property.mergeRequestsEvents">merge_requests_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Trigger hook on merge requests events. |
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHookConfig.property.pushEvents">push_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When true, the hook fires on push events. |
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHookConfig.property.repositoryUpdateEvents">repository_update_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Trigger hook on repository update events. |
@@ -989,10 +989,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.systemHook.SystemHookConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1056,7 +1056,7 @@ url: str
 
 The hook URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook#url SystemHook#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook#url SystemHook#url}
 
 ---
 
@@ -1070,7 +1070,7 @@ enable_ssl_verification: typing.Union[bool, IResolvable]
 
 Do SSL verification when triggering the hook.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook#enable_ssl_verification SystemHook#enable_ssl_verification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook#enable_ssl_verification SystemHook#enable_ssl_verification}
 
 ---
 
@@ -1082,7 +1082,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook#id SystemHook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook#id SystemHook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1099,7 +1099,7 @@ merge_requests_events: typing.Union[bool, IResolvable]
 
 Trigger hook on merge requests events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook#merge_requests_events SystemHook#merge_requests_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook#merge_requests_events SystemHook#merge_requests_events}
 
 ---
 
@@ -1113,7 +1113,7 @@ push_events: typing.Union[bool, IResolvable]
 
 When true, the hook fires on push events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook#push_events SystemHook#push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook#push_events SystemHook#push_events}
 
 ---
 
@@ -1127,7 +1127,7 @@ repository_update_events: typing.Union[bool, IResolvable]
 
 Trigger hook on repository update events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook#repository_update_events SystemHook#repository_update_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook#repository_update_events SystemHook#repository_update_events}
 
 ---
 
@@ -1141,7 +1141,7 @@ tag_push_events: typing.Union[bool, IResolvable]
 
 When true, the hook fires on new tags being pushed.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook#tag_push_events SystemHook#tag_push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook#tag_push_events SystemHook#tag_push_events}
 
 ---
 
@@ -1157,7 +1157,7 @@ Secret token to validate received payloads;
 
 this isn’t returned in the response. This attribute is not available for imported resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/gitlab/r/system_hook#token SystemHook#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/system_hook#token SystemHook#token}
 
 ---
 
