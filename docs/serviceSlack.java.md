@@ -1,3 +1,7 @@
+# `gitlab_service_slack`
+
+Refer to the Terraform Registory for docs: [`gitlab_service_slack`](https://www.terraform.io/docs/providers/gitlab/r/service_slack).
+
 # `serviceSlack` Submodule <a name="`serviceSlack` Submodule" id="@cdktf/provider-gitlab.serviceSlack"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

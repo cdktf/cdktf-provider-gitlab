@@ -1,3 +1,7 @@
+# `gitlab_project_environment`
+
+Refer to the Terraform Registory for docs: [`gitlab_project_environment`](https://www.terraform.io/docs/providers/gitlab/r/project_environment).
+
 # `projectEnvironment` Submodule <a name="`projectEnvironment` Submodule" id="@cdktf/provider-gitlab.projectEnvironment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

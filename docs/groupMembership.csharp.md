@@ -1,3 +1,7 @@
+# `gitlab_group_membership`
+
+Refer to the Terraform Registory for docs: [`gitlab_group_membership`](https://www.terraform.io/docs/providers/gitlab/r/group_membership).
+
 # `groupMembership` Submodule <a name="`groupMembership` Submodule" id="@cdktf/provider-gitlab.groupMembership"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

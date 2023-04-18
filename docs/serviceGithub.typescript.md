@@ -1,3 +1,7 @@
+# `gitlab_service_github`
+
+Refer to the Terraform Registory for docs: [`gitlab_service_github`](https://www.terraform.io/docs/providers/gitlab/r/service_github).
+
 # `serviceGithub` Submodule <a name="`serviceGithub` Submodule" id="@cdktf/provider-gitlab.serviceGithub"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `data_gitlab_branch`
+
+Refer to the Terraform Registory for docs: [`data_gitlab_branch`](https://www.terraform.io/docs/providers/gitlab/d/branch).
+
 # `dataGitlabBranch` Submodule <a name="`dataGitlabBranch` Submodule" id="@cdktf/provider-gitlab.dataGitlabBranch"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

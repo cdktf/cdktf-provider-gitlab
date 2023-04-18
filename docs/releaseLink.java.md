@@ -1,3 +1,7 @@
+# `gitlab_release_link`
+
+Refer to the Terraform Registory for docs: [`gitlab_release_link`](https://www.terraform.io/docs/providers/gitlab/r/release_link).
+
 # `releaseLink` Submodule <a name="`releaseLink` Submodule" id="@cdktf/provider-gitlab.releaseLink"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

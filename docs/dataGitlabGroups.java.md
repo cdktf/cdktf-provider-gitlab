@@ -1,3 +1,7 @@
+# `data_gitlab_groups`
+
+Refer to the Terraform Registory for docs: [`data_gitlab_groups`](https://www.terraform.io/docs/providers/gitlab/d/groups).
+
 # `dataGitlabGroups` Submodule <a name="`dataGitlabGroups` Submodule" id="@cdktf/provider-gitlab.dataGitlabGroups"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

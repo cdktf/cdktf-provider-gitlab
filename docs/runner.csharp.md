@@ -1,3 +1,7 @@
+# `gitlab_runner`
+
+Refer to the Terraform Registory for docs: [`gitlab_runner`](https://www.terraform.io/docs/providers/gitlab/r/runner).
+
 # `runner` Submodule <a name="`runner` Submodule" id="@cdktf/provider-gitlab.runner"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
