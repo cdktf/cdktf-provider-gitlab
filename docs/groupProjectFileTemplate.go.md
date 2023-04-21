@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/groupprojectfiletemplate"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupprojectfiletemplate"
 
 groupprojectfiletemplate.NewGroupProjectFileTemplate(scope Construct, id *string, config GroupProjectFileTemplateConfig) GroupProjectFileTemplate
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/groupprojectfiletemplate"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupprojectfiletemplate"
 
 groupprojectfiletemplate.GroupProjectFileTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/groupprojectfiletemplate"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupprojectfiletemplate"
 
 groupprojectfiletemplate.GroupProjectFileTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ groupprojectfiletemplate.GroupProjectFileTemplate_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/groupprojectfiletemplate"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupprojectfiletemplate"
 
 groupprojectfiletemplate.GroupProjectFileTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/groupprojectfiletemplate"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupprojectfiletemplate"
 
 &groupprojectfiletemplate.GroupProjectFileTemplateConfig {
 	Connection: interface{},
