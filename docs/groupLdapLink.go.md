@@ -1,6 +1,6 @@
 # `gitlab_group_ldap_link`
 
-Refer to the Terraform Registory for docs: [`gitlab_group_ldap_link`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_ldap_link).
+Refer to the Terraform Registory for docs: [`gitlab_group_ldap_link`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link).
 
 # `groupLdapLink` Submodule <a name="`groupLdapLink` Submodule" id="@cdktf/provider-gitlab.groupLdapLink"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_group_ldap_link`](https://re
 
 ### GroupLdapLink <a name="GroupLdapLink" id="@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_ldap_link gitlab_group_ldap_link}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link gitlab_group_ldap_link}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.Initializer"></a>
 
@@ -734,7 +734,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/groupldaplink"
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLinkConfig.property.accessLevel">AccessLevel</a></code> | <code>*string</code> | Minimum access level for members of the LDAP group. |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLinkConfig.property.force">Force</a></code> | <code>interface{}</code> | If true, then delete and replace an existing LDAP link if one exists. |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLinkConfig.property.groupAccess">GroupAccess</a></code> | <code>*string</code> | Minimum access level for members of the LDAP group. |
-| <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLinkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_ldap_link#id GroupLdapLink#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLinkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#id GroupLdapLink#id}. |
 
 ---
 
@@ -818,7 +818,7 @@ Cn *string
 
 The CN of the LDAP group to link with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_ldap_link#cn GroupLdapLink#cn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#cn GroupLdapLink#cn}
 
 ---
 
@@ -832,7 +832,7 @@ GroupId *string
 
 The id of the GitLab group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_ldap_link#group_id GroupLdapLink#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#group_id GroupLdapLink#group_id}
 
 ---
 
@@ -848,7 +848,7 @@ The name of the LDAP provider as stored in the GitLab database.
 
 Note that this is NOT the value of the `label` attribute as shown in the web UI. In most cases this will be `ldapmain` but you may use the [LDAP check rake task](https://docs.gitlab.com/ee/administration/raketasks/ldap.html#check) for receiving the LDAP server name: `LDAP: ... Server: ldapmain`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_ldap_link#ldap_provider GroupLdapLink#ldap_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#ldap_provider GroupLdapLink#ldap_provider}
 
 ---
 
@@ -864,7 +864,7 @@ Minimum access level for members of the LDAP group.
 
 Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_ldap_link#access_level GroupLdapLink#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#access_level GroupLdapLink#access_level}
 
 ---
 
@@ -878,7 +878,7 @@ Force interface{}
 
 If true, then delete and replace an existing LDAP link if one exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_ldap_link#force GroupLdapLink#force}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#force GroupLdapLink#force}
 
 ---
 
@@ -894,7 +894,7 @@ Minimum access level for members of the LDAP group.
 
 Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_ldap_link#group_access GroupLdapLink#group_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#group_access GroupLdapLink#group_access}
 
 ---
 
@@ -906,7 +906,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/group_ldap_link#id GroupLdapLink#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#id GroupLdapLink#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
