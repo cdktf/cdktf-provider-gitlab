@@ -1,6 +1,6 @@
 # `data_gitlab_current_user`
 
-Refer to the Terraform Registory for docs: [`data_gitlab_current_user`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/current_user).
+Refer to the Terraform Registory for docs: [`data_gitlab_current_user`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/current_user).
 
 # `dataGitlabCurrentUser` Submodule <a name="`dataGitlabCurrentUser` Submodule" id="@cdktf/provider-gitlab.dataGitlabCurrentUser"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_gitlab_current_user`](https://
 
 ### DataGitlabCurrentUser <a name="DataGitlabCurrentUser" id="@cdktf/provider-gitlab.dataGitlabCurrentUser.DataGitlabCurrentUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/current_user gitlab_current_user}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/current_user gitlab_current_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabCurrentUser.DataGitlabCurrentUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabcurrentuser"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabcurrentuser"
 
 datagitlabcurrentuser.NewDataGitlabCurrentUser(scope Construct, id *string, config DataGitlabCurrentUserConfig) DataGitlabCurrentUser
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabCurrentUser.DataGitlabCurrentUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabcurrentuser"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabcurrentuser"
 
 datagitlabcurrentuser.DataGitlabCurrentUser_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabCurrentUser.DataGitlabCurrentUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabcurrentuser"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabcurrentuser"
 
 datagitlabcurrentuser.DataGitlabCurrentUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ datagitlabcurrentuser.DataGitlabCurrentUser_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabCurrentUser.DataGitlabCurrentUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabcurrentuser"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabcurrentuser"
 
 datagitlabcurrentuser.DataGitlabCurrentUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -592,7 +592,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabCurrentUser.DataGitlabCurrentUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/datagitlabcurrentuser"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabcurrentuser"
 
 &datagitlabcurrentuser.DataGitlabCurrentUserConfig {
 	Connection: interface{},

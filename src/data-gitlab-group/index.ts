@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group
+// https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface DataGitlabGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * The full path of the group.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group#full_path DataGitlabGroup#full_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/group#full_path DataGitlabGroup#full_path}
   */
   readonly fullPath?: string;
   /**
   * The ID of the group.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group#group_id DataGitlabGroup#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/group#group_id DataGitlabGroup#group_id}
   */
   readonly groupId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group#id DataGitlabGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/group#id DataGitlabGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,7 +29,7 @@ export interface DataGitlabGroupConfig extends cdktf.TerraformMetaArguments {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group gitlab_group}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/group gitlab_group}
 */
 export class DataGitlabGroup extends cdktf.TerraformDataSource {
 
@@ -43,7 +43,7 @@ export class DataGitlabGroup extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group gitlab_group} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/group gitlab_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -54,7 +54,7 @@ export class DataGitlabGroup extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_group',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '15.10.0',
+        providerVersion: '15.11.0',
         providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,

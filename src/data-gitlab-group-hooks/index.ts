@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group_hooks
+// https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/group_hooks
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface DataGitlabGroupHooksConfig extends cdktf.TerraformMetaArguments
   /**
   * The ID or full path of the group.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group_hooks#group DataGitlabGroupHooks#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/group_hooks#group DataGitlabGroupHooks#group}
   */
   readonly group: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group_hooks#id DataGitlabGroupHooks#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/group_hooks#id DataGitlabGroupHooks#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -182,7 +182,7 @@ export class DataGitlabGroupHooksHooksList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group_hooks gitlab_group_hooks}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/group_hooks gitlab_group_hooks}
 */
 export class DataGitlabGroupHooks extends cdktf.TerraformDataSource {
 
@@ -196,7 +196,7 @@ export class DataGitlabGroupHooks extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/group_hooks gitlab_group_hooks} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/group_hooks gitlab_group_hooks} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -207,7 +207,7 @@ export class DataGitlabGroupHooks extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_group_hooks',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '15.10.0',
+        providerVersion: '15.11.0',
         providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,

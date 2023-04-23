@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_custom_attribute
+// https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_custom_attribute
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface ProjectCustomAttributeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_custom_attribute#id ProjectCustomAttribute#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_custom_attribute#id ProjectCustomAttribute#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,25 +17,25 @@ export interface ProjectCustomAttributeConfig extends cdktf.TerraformMetaArgumen
   /**
   * Key for the Custom Attribute.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_custom_attribute#key ProjectCustomAttribute#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_custom_attribute#key ProjectCustomAttribute#key}
   */
   readonly key: string;
   /**
   * The id of the project.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_custom_attribute#project ProjectCustomAttribute#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_custom_attribute#project ProjectCustomAttribute#project}
   */
   readonly project: number;
   /**
   * Value for the Custom Attribute.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_custom_attribute#value ProjectCustomAttribute#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_custom_attribute#value ProjectCustomAttribute#value}
   */
   readonly value: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_custom_attribute gitlab_project_custom_attribute}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_custom_attribute gitlab_project_custom_attribute}
 */
 export class ProjectCustomAttribute extends cdktf.TerraformResource {
 
@@ -49,7 +49,7 @@ export class ProjectCustomAttribute extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_custom_attribute gitlab_project_custom_attribute} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_custom_attribute gitlab_project_custom_attribute} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class ProjectCustomAttribute extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_custom_attribute',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '15.10.0',
+        providerVersion: '15.11.0',
         providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,

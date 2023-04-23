@@ -1,6 +1,6 @@
 # `gitlab_project_access_token`
 
-Refer to the Terraform Registory for docs: [`gitlab_project_access_token`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_access_token).
+Refer to the Terraform Registory for docs: [`gitlab_project_access_token`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_access_token).
 
 # `projectAccessToken` Submodule <a name="`projectAccessToken` Submodule" id="@cdktf/provider-gitlab.projectAccessToken"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_project_access_token`](https
 
 ### ProjectAccessToken <a name="ProjectAccessToken" id="@cdktf/provider-gitlab.projectAccessToken.ProjectAccessToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_access_token gitlab_project_access_token}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_access_token gitlab_project_access_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectAccessToken.ProjectAccessToken.Initializer"></a>
 
@@ -744,7 +744,7 @@ const projectAccessTokenConfig: projectAccessToken.ProjectAccessTokenConfig = { 
 | <code><a href="#@cdktf/provider-gitlab.projectAccessToken.ProjectAccessTokenConfig.property.scopes">scopes</a></code> | <code>string[]</code> | Valid values: `api`, `read_api`, `read_repository`, `write_repository`, `read_registry`, `write_registry`. |
 | <code><a href="#@cdktf/provider-gitlab.projectAccessToken.ProjectAccessTokenConfig.property.accessLevel">accessLevel</a></code> | <code>string</code> | The access level for the project access token. |
 | <code><a href="#@cdktf/provider-gitlab.projectAccessToken.ProjectAccessTokenConfig.property.expiresAt">expiresAt</a></code> | <code>string</code> | Time the token will expire it, YYYY-MM-DD format. Will not expire per default. |
-| <code><a href="#@cdktf/provider-gitlab.projectAccessToken.ProjectAccessTokenConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_access_token#id ProjectAccessToken#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectAccessToken.ProjectAccessTokenConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_access_token#id ProjectAccessToken#id}. |
 
 ---
 
@@ -828,7 +828,7 @@ public readonly name: string;
 
 A name to describe the project access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_access_token#name ProjectAccessToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_access_token#name ProjectAccessToken#name}
 
 ---
 
@@ -842,7 +842,7 @@ public readonly project: string;
 
 The id of the project to add the project access token to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_access_token#project ProjectAccessToken#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_access_token#project ProjectAccessToken#project}
 
 ---
 
@@ -856,7 +856,7 @@ public readonly scopes: string[];
 
 Valid values: `api`, `read_api`, `read_repository`, `write_repository`, `read_registry`, `write_registry`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_access_token#scopes ProjectAccessToken#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_access_token#scopes ProjectAccessToken#scopes}
 
 ---
 
@@ -872,7 +872,7 @@ The access level for the project access token.
 
 Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`. Default is `maintainer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_access_token#access_level ProjectAccessToken#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_access_token#access_level ProjectAccessToken#access_level}
 
 ---
 
@@ -886,7 +886,7 @@ public readonly expiresAt: string;
 
 Time the token will expire it, YYYY-MM-DD format. Will not expire per default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_access_token#expires_at ProjectAccessToken#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_access_token#expires_at ProjectAccessToken#expires_at}
 
 ---
 
@@ -898,7 +898,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_access_token#id ProjectAccessToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_access_token#id ProjectAccessToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

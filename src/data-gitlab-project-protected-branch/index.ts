@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/project_protected_branch
+// https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/project_protected_branch
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface DataGitlabProjectProtectedBranchConfig extends cdktf.TerraformM
   /**
   * The name of the protected branch.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/project_protected_branch#name DataGitlabProjectProtectedBranch#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/project_protected_branch#name DataGitlabProjectProtectedBranch#name}
   */
   readonly name: string;
   /**
   * The integer or path with namespace that uniquely identifies the project.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/project_protected_branch#project_id DataGitlabProjectProtectedBranch#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/project_protected_branch#project_id DataGitlabProjectProtectedBranch#project_id}
   */
   readonly projectId: string;
 }
@@ -180,7 +180,7 @@ export class DataGitlabProjectProtectedBranchPushAccessLevelsList extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/project_protected_branch gitlab_project_protected_branch}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/project_protected_branch gitlab_project_protected_branch}
 */
 export class DataGitlabProjectProtectedBranch extends cdktf.TerraformDataSource {
 
@@ -194,7 +194,7 @@ export class DataGitlabProjectProtectedBranch extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/data-sources/project_protected_branch gitlab_project_protected_branch} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/project_protected_branch gitlab_project_protected_branch} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -205,7 +205,7 @@ export class DataGitlabProjectProtectedBranch extends cdktf.TerraformDataSource 
       terraformResourceType: 'gitlab_project_protected_branch',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '15.10.0',
+        providerVersion: '15.11.0',
         providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,

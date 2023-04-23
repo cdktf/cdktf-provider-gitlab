@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_environment
+// https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_environment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface ProjectEnvironmentConfig extends cdktf.TerraformMetaArguments {
   /**
   * Place to link to for this environment.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_environment#external_url ProjectEnvironment#external_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_environment#external_url ProjectEnvironment#external_url}
   */
   readonly externalUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_environment#id ProjectEnvironment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_environment#id ProjectEnvironment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,25 +23,25 @@ export interface ProjectEnvironmentConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the environment.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_environment#name ProjectEnvironment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_environment#name ProjectEnvironment#name}
   */
   readonly name: string;
   /**
   * The ID or full path of the project to environment is created for.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_environment#project ProjectEnvironment#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_environment#project ProjectEnvironment#project}
   */
   readonly project: string;
   /**
   * Determines whether the environment is attempted to be stopped before the environment is deleted.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_environment#stop_before_destroy ProjectEnvironment#stop_before_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_environment#stop_before_destroy ProjectEnvironment#stop_before_destroy}
   */
   readonly stopBeforeDestroy?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_environment gitlab_project_environment}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_environment gitlab_project_environment}
 */
 export class ProjectEnvironment extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class ProjectEnvironment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.10.0/docs/resources/project_environment gitlab_project_environment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_environment gitlab_project_environment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class ProjectEnvironment extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_environment',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '15.10.0',
+        providerVersion: '15.11.0',
         providerVersionConstraint: '~> 15.7'
       },
       provider: config.provider,
