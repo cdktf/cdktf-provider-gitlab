@@ -1944,7 +1944,7 @@ def reset_user_id() -> None
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToMergeOutputReference.property.userIdInput">user_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToMergeOutputReference.property.groupId">group_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToMergeOutputReference.property.userId">user_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToMergeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToMerge">BranchProtectionAllowedToMerge</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToMergeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToMerge">BranchProtectionAllowedToMerge</a>]</code> | *No description.* |
 
 ---
 
@@ -2035,10 +2035,10 @@ user_id: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToMergeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[BranchProtectionAllowedToMerge, IResolvable]
+internal_value: typing.Union[IResolvable, BranchProtectionAllowedToMerge]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToMerge">BranchProtectionAllowedToMerge</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToMerge">BranchProtectionAllowedToMerge</a>]
 
 ---
 
@@ -2469,7 +2469,7 @@ def reset_user_id() -> None
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToPushOutputReference.property.userIdInput">user_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToPushOutputReference.property.groupId">group_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToPushOutputReference.property.userId">user_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToPushOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToPush">BranchProtectionAllowedToPush</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToPushOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToPush">BranchProtectionAllowedToPush</a>]</code> | *No description.* |
 
 ---
 
@@ -2560,10 +2560,10 @@ user_id: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToPushOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[BranchProtectionAllowedToPush, IResolvable]
+internal_value: typing.Union[IResolvable, BranchProtectionAllowedToPush]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToPush">BranchProtectionAllowedToPush</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToPush">BranchProtectionAllowedToPush</a>]
 
 ---
 
@@ -2994,7 +2994,7 @@ def reset_user_id() -> None
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToUnprotectOutputReference.property.userIdInput">user_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToUnprotectOutputReference.property.groupId">group_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToUnprotectOutputReference.property.userId">user_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToUnprotectOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToUnprotect">BranchProtectionAllowedToUnprotect</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToUnprotectOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToUnprotect">BranchProtectionAllowedToUnprotect</a>]</code> | *No description.* |
 
 ---
 
@@ -3085,10 +3085,10 @@ user_id: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToUnprotectOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[BranchProtectionAllowedToUnprotect, IResolvable]
+internal_value: typing.Union[IResolvable, BranchProtectionAllowedToUnprotect]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToUnprotect">BranchProtectionAllowedToUnprotect</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToUnprotect">BranchProtectionAllowedToUnprotect</a>]
 
 ---
 

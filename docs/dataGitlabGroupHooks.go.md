@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupHooks.DataGitlabGroupHooks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/datagitlabgrouphooks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabgrouphooks"
 
 datagitlabgrouphooks.NewDataGitlabGroupHooks(scope Construct, id *string, config DataGitlabGroupHooksConfig) DataGitlabGroupHooks
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabGroupHooks.DataGitlabGroupHooks.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/datagitlabgrouphooks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabgrouphooks"
 
 datagitlabgrouphooks.DataGitlabGroupHooks_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabGroupHooks.DataGitlabGroupHooks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/datagitlabgrouphooks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabgrouphooks"
 
 datagitlabgrouphooks.DataGitlabGroupHooks_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datagitlabgrouphooks.DataGitlabGroupHooks_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabGroupHooks.DataGitlabGroupHooks.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/datagitlabgrouphooks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabgrouphooks"
 
 datagitlabgrouphooks.DataGitlabGroupHooks_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabGroupHooks.DataGitlabGroupHooksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/datagitlabgrouphooks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabgrouphooks"
 
 &datagitlabgrouphooks.DataGitlabGroupHooksConfig {
 	Connection: interface{},
@@ -690,7 +690,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabGroupHooks.DataGitlabGroupHooksHooks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/datagitlabgrouphooks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabgrouphooks"
 
 &datagitlabgrouphooks.DataGitlabGroupHooksHooks {
 
@@ -705,7 +705,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/datagitlabgrouphooks
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupHooks.DataGitlabGroupHooksHooksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/datagitlabgrouphooks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabgrouphooks"
 
 datagitlabgrouphooks.NewDataGitlabGroupHooksHooksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabGroupHooksHooksList
 ```
@@ -837,7 +837,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupHooks.DataGitlabGroupHooksHooksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/datagitlabgrouphooks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabgrouphooks"
 
 datagitlabgrouphooks.NewDataGitlabGroupHooksHooksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabGroupHooksHooksOutputReference
 ```
