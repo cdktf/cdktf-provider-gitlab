@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/groupmembership"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/groupmembership"
 
 groupmembership.NewGroupMembership(scope Construct, id *string, config GroupMembershipConfig) GroupMembership
 ```
@@ -298,7 +298,7 @@ func ResetUnassignIssuablesOnDestroy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.groupMembership.GroupMembership.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/groupmembership"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/groupmembership"
 
 groupmembership.GroupMembership_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.groupMembership.GroupMembership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/groupmembership"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/groupmembership"
 
 groupmembership.GroupMembership_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ groupmembership.GroupMembership_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.groupMembership.GroupMembership.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/groupmembership"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/groupmembership"
 
 groupmembership.GroupMembership_IsTerraformResource(x interface{}) *bool
 ```
@@ -697,7 +697,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/groupmembership"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/groupmembership"
 
 &groupmembership.GroupMembershipConfig {
 	Connection: interface{},

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupBadge.GroupBadge.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/groupbadge"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/groupbadge"
 
 groupbadge.NewGroupBadge(scope Construct, id *string, config GroupBadgeConfig) GroupBadge
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.groupBadge.GroupBadge.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/groupbadge"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/groupbadge"
 
 groupbadge.GroupBadge_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.groupBadge.GroupBadge.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/groupbadge"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/groupbadge"
 
 groupbadge.GroupBadge_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ groupbadge.GroupBadge_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.groupBadge.GroupBadge.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/groupbadge"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/groupbadge"
 
 groupbadge.GroupBadge_IsTerraformResource(x interface{}) *bool
 ```
@@ -632,7 +632,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.groupBadge.GroupBadgeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v7/groupbadge"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/groupbadge"
 
 &groupbadge.GroupBadgeConfig {
 	Connection: interface{},
