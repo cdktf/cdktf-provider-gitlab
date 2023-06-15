@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectIssue.ProjectIssue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/projectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectissue"
 
 projectissue.NewProjectIssue(scope Construct, id *string, config ProjectIssueConfig) ProjectIssue
 ```
@@ -396,7 +396,7 @@ func ResetWeight()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectIssue.ProjectIssue.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/projectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectissue"
 
 projectissue.ProjectIssue_IsConstruct(x interface{}) *bool
 ```
@@ -428,7 +428,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectIssue.ProjectIssue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/projectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectissue"
 
 projectissue.ProjectIssue_IsTerraformElement(x interface{}) *bool
 ```
@@ -442,7 +442,7 @@ projectissue.ProjectIssue_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectIssue.ProjectIssue.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/projectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectissue"
 
 projectissue.ProjectIssue_IsTerraformResource(x interface{}) *bool
 ```
@@ -1312,7 +1312,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectIssue.ProjectIssueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/projectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectissue"
 
 &projectissue.ProjectIssueConfig {
 	Connection: interface{},
@@ -1743,7 +1743,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectIssue.ProjectIssueTaskCompletionStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/projectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectissue"
 
 &projectissue.ProjectIssueTaskCompletionStatus {
 
@@ -1758,7 +1758,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/projectissue"
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectIssue.ProjectIssueTaskCompletionStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/projectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectissue"
 
 projectissue.NewProjectIssueTaskCompletionStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProjectIssueTaskCompletionStatusList
 ```
@@ -1890,7 +1890,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectIssue.ProjectIssueTaskCompletionStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/projectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectissue"
 
 projectissue.NewProjectIssueTaskCompletionStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProjectIssueTaskCompletionStatusOutputReference
 ```

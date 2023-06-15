@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/personalaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/personalaccesstoken"
 
 personalaccesstoken.NewPersonalAccessToken(scope Construct, id *string, config PersonalAccessTokenConfig) PersonalAccessToken
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/personalaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/personalaccesstoken"
 
 personalaccesstoken.PersonalAccessToken_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/personalaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/personalaccesstoken"
 
 personalaccesstoken.PersonalAccessToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ personalaccesstoken.PersonalAccessToken_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/personalaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/personalaccesstoken"
 
 personalaccesstoken.PersonalAccessToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -683,7 +683,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v8/personalaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/personalaccesstoken"
 
 &personalaccesstoken.PersonalAccessTokenConfig {
 	Connection: interface{},

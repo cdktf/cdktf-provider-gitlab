@@ -708,7 +708,7 @@ public readonly groupId: number;
 The ID of the group that will use the file template project.
 
 This group must be the direct
-             parent of the project defined by project_id
+            parent of the project defined by project_id
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_project_file_template#group_id GroupProjectFileTemplate#group_id}
 
