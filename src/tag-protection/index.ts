@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/tag_protection
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/tag_protection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface TagProtectionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Access levels which are allowed to create. Valid values are: `no one`, `developer`, `maintainer`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/tag_protection#create_access_level TagProtection#create_access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/tag_protection#create_access_level TagProtection#create_access_level}
   */
   readonly createAccessLevel: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/tag_protection#id TagProtection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/tag_protection#id TagProtection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +28,163 @@ export interface TagProtectionConfig extends cdktf.TerraformMetaArguments {
   /**
   * The id of the project.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/tag_protection#project TagProtection#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/tag_protection#project TagProtection#project}
   */
   readonly project: string;
   /**
   * Name of the tag or wildcard.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/tag_protection#tag TagProtection#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/tag_protection#tag TagProtection#tag}
   */
   readonly tag: string;
+  /**
+  * allowed_to_create block
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/tag_protection#allowed_to_create TagProtection#allowed_to_create}
+  */
+  readonly allowedToCreate?: TagProtectionAllowedToCreate[] | cdktf.IResolvable;
+}
+export interface TagProtectionAllowedToCreate {
+  /**
+  * The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `user_id`.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/tag_protection#group_id TagProtection#group_id}
+  */
+  readonly groupId?: number;
+  /**
+  * The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `group_id`.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/tag_protection#user_id TagProtection#user_id}
+  */
+  readonly userId?: number;
+}
+
+export function tagProtectionAllowedToCreateToTerraform(struct?: TagProtectionAllowedToCreate | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    group_id: cdktf.numberToTerraform(struct!.groupId),
+    user_id: cdktf.numberToTerraform(struct!.userId),
+  }
+}
+
+export class TagProtectionAllowedToCreateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): TagProtectionAllowedToCreate | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._groupId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.groupId = this._groupId;
+    }
+    if (this._userId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userId = this._userId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TagProtectionAllowedToCreate | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._groupId = undefined;
+      this._userId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._groupId = value.groupId;
+      this._userId = value.userId;
+    }
+  }
+
+  // access_level - computed: true, optional: false, required: false
+  public get accessLevel() {
+    return this.getStringAttribute('access_level');
+  }
+
+  // access_level_description - computed: true, optional: false, required: false
+  public get accessLevelDescription() {
+    return this.getStringAttribute('access_level_description');
+  }
+
+  // group_id - computed: false, optional: true, required: false
+  private _groupId?: number; 
+  public get groupId() {
+    return this.getNumberAttribute('group_id');
+  }
+  public set groupId(value: number) {
+    this._groupId = value;
+  }
+  public resetGroupId() {
+    this._groupId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupIdInput() {
+    return this._groupId;
+  }
+
+  // user_id - computed: false, optional: true, required: false
+  private _userId?: number; 
+  public get userId() {
+    return this.getNumberAttribute('user_id');
+  }
+  public set userId(value: number) {
+    this._userId = value;
+  }
+  public resetUserId() {
+    this._userId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userIdInput() {
+    return this._userId;
+  }
+}
+
+export class TagProtectionAllowedToCreateList extends cdktf.ComplexList {
+  public internalValue? : TagProtectionAllowedToCreate[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): TagProtectionAllowedToCreateOutputReference {
+    return new TagProtectionAllowedToCreateOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/tag_protection gitlab_tag_protection}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/tag_protection gitlab_tag_protection}
 */
 export class TagProtection extends cdktf.TerraformResource {
 
@@ -54,7 +198,7 @@ export class TagProtection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/tag_protection gitlab_tag_protection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/tag_protection gitlab_tag_protection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,8 +209,8 @@ export class TagProtection extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_tag_protection',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '15.11.0',
-        providerVersionConstraint: '~> 15.7'
+        providerVersion: '16.1.0',
+        providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -80,6 +224,7 @@ export class TagProtection extends cdktf.TerraformResource {
     this._id = config.id;
     this._project = config.project;
     this._tag = config.tag;
+    this._allowedToCreate.internalValue = config.allowedToCreate;
   }
 
   // ==========
@@ -141,6 +286,22 @@ export class TagProtection extends cdktf.TerraformResource {
     return this._tag;
   }
 
+  // allowed_to_create - computed: false, optional: true, required: false
+  private _allowedToCreate = new TagProtectionAllowedToCreateList(this, "allowed_to_create", true);
+  public get allowedToCreate() {
+    return this._allowedToCreate;
+  }
+  public putAllowedToCreate(value: TagProtectionAllowedToCreate[] | cdktf.IResolvable) {
+    this._allowedToCreate.internalValue = value;
+  }
+  public resetAllowedToCreate() {
+    this._allowedToCreate.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedToCreateInput() {
+    return this._allowedToCreate.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -151,6 +312,7 @@ export class TagProtection extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       project: cdktf.stringToTerraform(this._project),
       tag: cdktf.stringToTerraform(this._tag),
+      allowed_to_create: cdktf.listMapper(tagProtectionAllowedToCreateToTerraform, true)(this._allowedToCreate.internalValue),
     };
   }
 }

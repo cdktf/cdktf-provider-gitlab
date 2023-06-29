@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,35 +15,41 @@ export interface GroupLdapLinkConfig extends cdktf.TerraformMetaArguments {
   /**
   * Minimum access level for members of the LDAP group. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#access_level GroupLdapLink#access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link#access_level GroupLdapLink#access_level}
   */
   readonly accessLevel?: string;
   /**
-  * The CN of the LDAP group to link with.
+  * The CN of the LDAP group to link with. Required if `filter` is not provided.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#cn GroupLdapLink#cn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link#cn GroupLdapLink#cn}
   */
-  readonly cn: string;
+  readonly cn?: string;
+  /**
+  * The LDAP filter for the group. Required if `cn` is not provided. Requires GitLab Premium or above.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link#filter GroupLdapLink#filter}
+  */
+  readonly filter?: string;
   /**
   * If true, then delete and replace an existing LDAP link if one exists.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#force GroupLdapLink#force}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link#force GroupLdapLink#force}
   */
   readonly force?: boolean | cdktf.IResolvable;
   /**
+  * The ID or URL-encoded path of the group
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link#group GroupLdapLink#group}
+  */
+  readonly group: string;
+  /**
   * Minimum access level for members of the LDAP group. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#group_access GroupLdapLink#group_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link#group_access GroupLdapLink#group_access}
   */
   readonly groupAccess?: string;
   /**
-  * The id of the GitLab group.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#group_id GroupLdapLink#group_id}
-  */
-  readonly groupId: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#id GroupLdapLink#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link#id GroupLdapLink#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,13 +58,13 @@ export interface GroupLdapLinkConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the LDAP provider as stored in the GitLab database. Note that this is NOT the value of the `label` attribute as shown in the web UI. In most cases this will be `ldapmain` but you may use the [LDAP check rake task](https://docs.gitlab.com/ee/administration/raketasks/ldap.html#check) for receiving the LDAP server name: `LDAP: ... Server: ldapmain`
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#ldap_provider GroupLdapLink#ldap_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link#ldap_provider GroupLdapLink#ldap_provider}
   */
   readonly ldapProvider: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link gitlab_group_ldap_link}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link gitlab_group_ldap_link}
 */
 export class GroupLdapLink extends cdktf.TerraformResource {
 
@@ -72,7 +78,7 @@ export class GroupLdapLink extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link gitlab_group_ldap_link} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link gitlab_group_ldap_link} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,8 +89,8 @@ export class GroupLdapLink extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_ldap_link',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '15.11.0',
-        providerVersionConstraint: '~> 15.7'
+        providerVersion: '16.1.0',
+        providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -96,9 +102,10 @@ export class GroupLdapLink extends cdktf.TerraformResource {
     });
     this._accessLevel = config.accessLevel;
     this._cn = config.cn;
+    this._filter = config.filter;
     this._force = config.force;
+    this._group = config.group;
     this._groupAccess = config.groupAccess;
-    this._groupId = config.groupId;
     this._id = config.id;
     this._ldapProvider = config.ldapProvider;
   }
@@ -123,7 +130,7 @@ export class GroupLdapLink extends cdktf.TerraformResource {
     return this._accessLevel;
   }
 
-  // cn - computed: false, optional: false, required: true
+  // cn - computed: true, optional: true, required: false
   private _cn?: string; 
   public get cn() {
     return this.getStringAttribute('cn');
@@ -131,9 +138,28 @@ export class GroupLdapLink extends cdktf.TerraformResource {
   public set cn(value: string) {
     this._cn = value;
   }
+  public resetCn() {
+    this._cn = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get cnInput() {
     return this._cn;
+  }
+
+  // filter - computed: true, optional: true, required: false
+  private _filter?: string; 
+  public get filter() {
+    return this.getStringAttribute('filter');
+  }
+  public set filter(value: string) {
+    this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter;
   }
 
   // force - computed: false, optional: true, required: false
@@ -152,6 +178,19 @@ export class GroupLdapLink extends cdktf.TerraformResource {
     return this._force;
   }
 
+  // group - computed: false, optional: false, required: true
+  private _group?: string; 
+  public get group() {
+    return this.getStringAttribute('group');
+  }
+  public set group(value: string) {
+    this._group = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupInput() {
+    return this._group;
+  }
+
   // group_access - computed: false, optional: true, required: false
   private _groupAccess?: string; 
   public get groupAccess() {
@@ -166,19 +205,6 @@ export class GroupLdapLink extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get groupAccessInput() {
     return this._groupAccess;
-  }
-
-  // group_id - computed: false, optional: false, required: true
-  private _groupId?: string; 
-  public get groupId() {
-    return this.getStringAttribute('group_id');
-  }
-  public set groupId(value: string) {
-    this._groupId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get groupIdInput() {
-    return this._groupId;
   }
 
   // id - computed: true, optional: true, required: false
@@ -218,9 +244,10 @@ export class GroupLdapLink extends cdktf.TerraformResource {
     return {
       access_level: cdktf.stringToTerraform(this._accessLevel),
       cn: cdktf.stringToTerraform(this._cn),
+      filter: cdktf.stringToTerraform(this._filter),
       force: cdktf.booleanToTerraform(this._force),
+      group: cdktf.stringToTerraform(this._group),
       group_access: cdktf.stringToTerraform(this._groupAccess),
-      group_id: cdktf.stringToTerraform(this._groupId),
       id: cdktf.stringToTerraform(this._id),
       ldap_provider: cdktf.stringToTerraform(this._ldapProvider),
     };

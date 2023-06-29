@@ -1,6 +1,6 @@
 # `gitlab_project_membership`
 
-Refer to the Terraform Registory for docs: [`gitlab_project_membership`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_membership).
+Refer to the Terraform Registory for docs: [`gitlab_project_membership`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_membership).
 
 # `projectMembership` Submodule <a name="`projectMembership` Submodule" id="@cdktf/provider-gitlab.projectMembership"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_project_membership`](https:/
 
 ### ProjectMembership <a name="ProjectMembership" id="@cdktf/provider-gitlab.projectMembership.ProjectMembership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_membership gitlab_project_membership}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_membership gitlab_project_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectMembership.ProjectMembership.Initializer"></a>
 
@@ -28,7 +28,7 @@ ProjectMembership.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .accessLevel(java.lang.String)
-    .projectId(java.lang.String)
+    .project(java.lang.String)
     .userId(java.lang.Number)
 //  .expiresAt(java.lang.String)
 //  .id(java.lang.String)
@@ -47,10 +47,10 @@ ProjectMembership.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembership.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembership.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembership.Initializer.parameter.accessLevel">accessLevel</a></code> | <code>java.lang.String</code> | The access level for the member. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`. |
-| <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembership.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | The id of the project. |
+| <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembership.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | The ID or URL-encoded path of the project. |
 | <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembership.Initializer.parameter.userId">userId</a></code> | <code>java.lang.Number</code> | The id of the user. |
 | <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembership.Initializer.parameter.expiresAt">expiresAt</a></code> | <code>java.lang.String</code> | Expiration date for the project membership. Format: `YYYY-MM-DD`. |
-| <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembership.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_membership#id ProjectMembership#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembership.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_membership#id ProjectMembership#id}. |
 
 ---
 
@@ -120,17 +120,17 @@ Must be unique amongst siblings in the same scope
 
 The access level for the member. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_membership#access_level ProjectMembership#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_membership#access_level ProjectMembership#access_level}
 
 ---
 
-##### `projectId`<sup>Required</sup> <a name="projectId" id="@cdktf/provider-gitlab.projectMembership.ProjectMembership.Initializer.parameter.projectId"></a>
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.projectMembership.ProjectMembership.Initializer.parameter.project"></a>
 
 - *Type:* java.lang.String
 
-The id of the project.
+The ID or URL-encoded path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_membership#project_id ProjectMembership#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_membership#project ProjectMembership#project}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The id of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_membership#user_id ProjectMembership#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_membership#user_id ProjectMembership#user_id}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Expiration date for the project membership. Format: `YYYY-MM-DD`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_membership#expires_at ProjectMembership#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_membership#expires_at ProjectMembership#expires_at}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_membership#id ProjectMembership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_membership#id ProjectMembership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -477,12 +477,12 @@ ProjectMembership.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembership.property.accessLevelInput">accessLevelInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembership.property.expiresAtInput">expiresAtInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembership.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembership.property.projectIdInput">projectIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembership.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembership.property.userIdInput">userIdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembership.property.accessLevel">accessLevel</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembership.property.expiresAt">expiresAt</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembership.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembership.property.projectId">projectId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembership.property.project">project</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembership.property.userId">userId</a></code> | <code>java.lang.Number</code> | *No description.* |
 
 ---
@@ -659,10 +659,10 @@ public java.lang.String getIdInput();
 
 ---
 
-##### `projectIdInput`<sup>Optional</sup> <a name="projectIdInput" id="@cdktf/provider-gitlab.projectMembership.ProjectMembership.property.projectIdInput"></a>
+##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktf/provider-gitlab.projectMembership.ProjectMembership.property.projectInput"></a>
 
 ```java
-public java.lang.String getProjectIdInput();
+public java.lang.String getProjectInput();
 ```
 
 - *Type:* java.lang.String
@@ -709,10 +709,10 @@ public java.lang.String getId();
 
 ---
 
-##### `projectId`<sup>Required</sup> <a name="projectId" id="@cdktf/provider-gitlab.projectMembership.ProjectMembership.property.projectId"></a>
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.projectMembership.ProjectMembership.property.project"></a>
 
 ```java
-public java.lang.String getProjectId();
+public java.lang.String getProject();
 ```
 
 - *Type:* java.lang.String
@@ -769,7 +769,7 @@ ProjectMembershipConfig.builder()
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .accessLevel(java.lang.String)
-    .projectId(java.lang.String)
+    .project(java.lang.String)
     .userId(java.lang.Number)
 //  .expiresAt(java.lang.String)
 //  .id(java.lang.String)
@@ -788,10 +788,10 @@ ProjectMembershipConfig.builder()
 | <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembershipConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembershipConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembershipConfig.property.accessLevel">accessLevel</a></code> | <code>java.lang.String</code> | The access level for the member. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`. |
-| <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembershipConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | The id of the project. |
+| <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembershipConfig.property.project">project</a></code> | <code>java.lang.String</code> | The ID or URL-encoded path of the project. |
 | <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembershipConfig.property.userId">userId</a></code> | <code>java.lang.Number</code> | The id of the user. |
 | <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembershipConfig.property.expiresAt">expiresAt</a></code> | <code>java.lang.String</code> | Expiration date for the project membership. Format: `YYYY-MM-DD`. |
-| <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembershipConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_membership#id ProjectMembership#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembershipConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_membership#id ProjectMembership#id}. |
 
 ---
 
@@ -875,21 +875,21 @@ public java.lang.String getAccessLevel();
 
 The access level for the member. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_membership#access_level ProjectMembership#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_membership#access_level ProjectMembership#access_level}
 
 ---
 
-##### `projectId`<sup>Required</sup> <a name="projectId" id="@cdktf/provider-gitlab.projectMembership.ProjectMembershipConfig.property.projectId"></a>
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.projectMembership.ProjectMembershipConfig.property.project"></a>
 
 ```java
-public java.lang.String getProjectId();
+public java.lang.String getProject();
 ```
 
 - *Type:* java.lang.String
 
-The id of the project.
+The ID or URL-encoded path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_membership#project_id ProjectMembership#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_membership#project ProjectMembership#project}
 
 ---
 
@@ -903,7 +903,7 @@ public java.lang.Number getUserId();
 
 The id of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_membership#user_id ProjectMembership#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_membership#user_id ProjectMembership#user_id}
 
 ---
 
@@ -917,7 +917,7 @@ public java.lang.String getExpiresAt();
 
 Expiration date for the project membership. Format: `YYYY-MM-DD`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_membership#expires_at ProjectMembership#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_membership#expires_at ProjectMembership#expires_at}
 
 ---
 
@@ -929,7 +929,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_membership#id ProjectMembership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_membership#id ProjectMembership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

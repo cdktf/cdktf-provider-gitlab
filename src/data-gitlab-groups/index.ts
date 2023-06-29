@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/groups
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/groups
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataGitlabGroupsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/groups#id DataGitlabGroups#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/groups#id DataGitlabGroups#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +22,19 @@ export interface DataGitlabGroupsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Order the groups' list by `id`, `name`, `path`, or `similarity`. (Requires administrator privileges)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/groups#order_by DataGitlabGroups#order_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/groups#order_by DataGitlabGroups#order_by}
   */
   readonly orderBy?: string;
   /**
   * Search groups by name or path.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/groups#search DataGitlabGroups#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/groups#search DataGitlabGroups#search}
   */
   readonly search?: string;
   /**
   * Sort groups' list in asc or desc order. (Requires administrator privileges)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/groups#sort DataGitlabGroups#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/groups#sort DataGitlabGroups#sort}
   */
   readonly sort?: string;
 }
@@ -169,7 +169,7 @@ export class DataGitlabGroupsGroupsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/groups gitlab_groups}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/groups gitlab_groups}
 */
 export class DataGitlabGroups extends cdktf.TerraformDataSource {
 
@@ -183,7 +183,7 @@ export class DataGitlabGroups extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/groups gitlab_groups} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/groups gitlab_groups} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -194,8 +194,8 @@ export class DataGitlabGroups extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_groups',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '15.11.0',
-        providerVersionConstraint: '~> 15.7'
+        providerVersion: '16.1.0',
+        providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

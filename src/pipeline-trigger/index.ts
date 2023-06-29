@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/pipeline_trigger
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/pipeline_trigger
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface PipelineTriggerConfig extends cdktf.TerraformMetaArguments {
   /**
   * The description of the pipeline trigger.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/pipeline_trigger#description PipelineTrigger#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/pipeline_trigger#description PipelineTrigger#description}
   */
   readonly description: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/pipeline_trigger#id PipelineTrigger#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/pipeline_trigger#id PipelineTrigger#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +28,13 @@ export interface PipelineTriggerConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name or id of the project to add the trigger to.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/pipeline_trigger#project PipelineTrigger#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/pipeline_trigger#project PipelineTrigger#project}
   */
   readonly project: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/pipeline_trigger gitlab_pipeline_trigger}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/pipeline_trigger gitlab_pipeline_trigger}
 */
 export class PipelineTrigger extends cdktf.TerraformResource {
 
@@ -48,7 +48,7 @@ export class PipelineTrigger extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/pipeline_trigger gitlab_pipeline_trigger} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/pipeline_trigger gitlab_pipeline_trigger} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,8 +59,8 @@ export class PipelineTrigger extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_pipeline_trigger',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '15.11.0',
-        providerVersionConstraint: '~> 15.7'
+        providerVersion: '16.1.0',
+        providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -106,6 +106,11 @@ export class PipelineTrigger extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // pipeline_trigger_id - computed: true, optional: false, required: false
+  public get pipelineTriggerId() {
+    return this.getNumberAttribute('pipeline_trigger_id');
   }
 
   // project - computed: false, optional: false, required: true

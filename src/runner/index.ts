@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/runner
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/runner
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface RunnerConfig extends cdktf.TerraformMetaArguments {
   /**
   * The access_level of the runner. Valid values are: `not_protected`, `ref_protected`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/runner#access_level Runner#access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/runner#access_level Runner#access_level}
   */
   readonly accessLevel?: string;
   /**
   * The runner's description.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/runner#description Runner#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/runner#description Runner#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/runner#id Runner#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/runner#id Runner#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,43 +34,43 @@ export interface RunnerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether the runner should be locked for current project.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/runner#locked Runner#locked}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/runner#locked Runner#locked}
   */
   readonly locked?: boolean | cdktf.IResolvable;
   /**
   * Maximum timeout set when this runner handles the job.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/runner#maximum_timeout Runner#maximum_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/runner#maximum_timeout Runner#maximum_timeout}
   */
   readonly maximumTimeout?: number;
   /**
   * Whether the runner should ignore new jobs.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/runner#paused Runner#paused}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/runner#paused Runner#paused}
   */
   readonly paused?: boolean | cdktf.IResolvable;
   /**
   * The registration token used to register the runner.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/runner#registration_token Runner#registration_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/runner#registration_token Runner#registration_token}
   */
   readonly registrationToken: string;
   /**
   * Whether the runner should handle untagged jobs.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/runner#run_untagged Runner#run_untagged}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/runner#run_untagged Runner#run_untagged}
   */
   readonly runUntagged?: boolean | cdktf.IResolvable;
   /**
   * List of runner’s tags.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/runner#tag_list Runner#tag_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/runner#tag_list Runner#tag_list}
   */
   readonly tagList?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/runner gitlab_runner}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/runner gitlab_runner}
 */
 export class Runner extends cdktf.TerraformResource {
 
@@ -84,7 +84,7 @@ export class Runner extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/runner gitlab_runner} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/runner gitlab_runner} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -95,8 +95,8 @@ export class Runner extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_runner',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '15.11.0',
-        providerVersionConstraint: '~> 15.7'
+        providerVersion: '16.1.0',
+        providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
