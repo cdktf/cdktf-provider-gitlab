@@ -1,6 +1,6 @@
 # `gitlab_group_variable`
 
-Refer to the Terraform Registory for docs: [`gitlab_group_variable`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_variable).
+Refer to the Terraform Registory for docs: [`gitlab_group_variable`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_variable).
 
 # `groupVariable` Submodule <a name="`groupVariable` Submodule" id="@cdktf/provider-gitlab.groupVariable"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_group_variable`](https://reg
 
 ### GroupVariable <a name="GroupVariable" id="@cdktf/provider-gitlab.groupVariable.GroupVariable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_variable gitlab_group_variable}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_variable gitlab_group_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupVariable.GroupVariable.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariable.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariable.resetMasked">ResetMasked</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariable.resetProtected">ResetProtected</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariable.resetRaw">ResetRaw</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariable.resetVariableType">ResetVariableType</a></code> | *No description.* |
 
 ---
@@ -286,6 +287,12 @@ private void ResetMasked()
 private void ResetProtected()
 ```
 
+##### `ResetRaw` <a name="ResetRaw" id="@cdktf/provider-gitlab.groupVariable.GroupVariable.resetRaw"></a>
+
+```csharp
+private void ResetRaw()
+```
+
 ##### `ResetVariableType` <a name="ResetVariableType" id="@cdktf/provider-gitlab.groupVariable.GroupVariable.resetVariableType"></a>
 
 ```csharp
@@ -386,6 +393,7 @@ GroupVariable.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariable.property.keyInput">KeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariable.property.maskedInput">MaskedInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariable.property.protectedInput">ProtectedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariable.property.rawInput">RawInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariable.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariable.property.variableTypeInput">VariableTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariable.property.environmentScope">EnvironmentScope</a></code> | <code>string</code> | *No description.* |
@@ -394,6 +402,7 @@ GroupVariable.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariable.property.key">Key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariable.property.masked">Masked</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariable.property.protected">Protected</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariable.property.raw">Raw</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariable.property.value">Value</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariable.property.variableType">VariableType</a></code> | <code>string</code> | *No description.* |
 
@@ -601,6 +610,16 @@ public object ProtectedInput { get; }
 
 ---
 
+##### `RawInput`<sup>Optional</sup> <a name="RawInput" id="@cdktf/provider-gitlab.groupVariable.GroupVariable.property.rawInput"></a>
+
+```csharp
+public object RawInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktf/provider-gitlab.groupVariable.GroupVariable.property.valueInput"></a>
 
 ```csharp
@@ -681,6 +700,16 @@ public object Protected { get; }
 
 ---
 
+##### `Raw`<sup>Required</sup> <a name="Raw" id="@cdktf/provider-gitlab.groupVariable.GroupVariable.property.raw"></a>
+
+```csharp
+public object Raw { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-gitlab.groupVariable.GroupVariable.property.value"></a>
 
 ```csharp
@@ -743,6 +772,7 @@ new GroupVariableConfig {
     string Id = null,
     object Masked = null,
     object Protected = null,
+    object Raw = null,
     string VariableType = null
 };
 ```
@@ -762,9 +792,10 @@ new GroupVariableConfig {
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariableConfig.property.key">Key</a></code> | <code>string</code> | The name of the variable. |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariableConfig.property.value">Value</a></code> | <code>string</code> | The value of the variable. |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariableConfig.property.environmentScope">EnvironmentScope</a></code> | <code>string</code> | The environment scope of the variable. |
-| <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariableConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_variable#id GroupVariable#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariableConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_variable#id GroupVariable#id}. |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariableConfig.property.masked">Masked</a></code> | <code>object</code> | If set to `true`, the value of the variable will be hidden in job logs. |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariableConfig.property.protected">Protected</a></code> | <code>object</code> | If set to `true`, the variable will be passed only to pipelines running on protected branches and tags. |
+| <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariableConfig.property.raw">Raw</a></code> | <code>object</code> | Whether the variable is treated as a raw string. |
 | <code><a href="#@cdktf/provider-gitlab.groupVariable.GroupVariableConfig.property.variableType">VariableType</a></code> | <code>string</code> | The type of a variable. Valid values are: `env_var`, `file`. Default is `env_var`. |
 
 ---
@@ -849,7 +880,7 @@ public string Group { get; set; }
 
 The name or id of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_variable#group GroupVariable#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_variable#group GroupVariable#group}
 
 ---
 
@@ -863,7 +894,7 @@ public string Key { get; set; }
 
 The name of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_variable#key GroupVariable#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_variable#key GroupVariable#key}
 
 ---
 
@@ -877,7 +908,7 @@ public string Value { get; set; }
 
 The value of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_variable#value GroupVariable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_variable#value GroupVariable#value}
 
 ---
 
@@ -893,7 +924,7 @@ The environment scope of the variable.
 
 Defaults to all environment (`*`). Note that in Community Editions of Gitlab, values other than `*` will cause inconsistent plans.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_variable#environment_scope GroupVariable#environment_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_variable#environment_scope GroupVariable#environment_scope}
 
 ---
 
@@ -905,7 +936,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_variable#id GroupVariable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_variable#id GroupVariable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -924,7 +955,7 @@ If set to `true`, the value of the variable will be hidden in job logs.
 
 The value must meet the [masking requirements](https://docs.gitlab.com/ee/ci/variables/#masked-variables). Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_variable#masked GroupVariable#masked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_variable#masked GroupVariable#masked}
 
 ---
 
@@ -940,7 +971,23 @@ If set to `true`, the variable will be passed only to pipelines running on prote
 
 Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_variable#protected GroupVariable#protected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_variable#protected GroupVariable#protected}
+
+---
+
+##### `Raw`<sup>Optional</sup> <a name="Raw" id="@cdktf/provider-gitlab.groupVariable.GroupVariableConfig.property.raw"></a>
+
+```csharp
+public object Raw { get; set; }
+```
+
+- *Type:* object
+
+Whether the variable is treated as a raw string.
+
+Default: false. When true, variables in the value are not expanded.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_variable#raw GroupVariable#raw}
 
 ---
 
@@ -954,7 +1001,7 @@ public string VariableType { get; set; }
 
 The type of a variable. Valid values are: `env_var`, `file`. Default is `env_var`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_variable#variable_type GroupVariable#variable_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_variable#variable_type GroupVariable#variable_type}
 
 ---
 

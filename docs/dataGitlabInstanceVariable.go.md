@@ -1,6 +1,6 @@
 # `data_gitlab_instance_variable`
 
-Refer to the Terraform Registory for docs: [`data_gitlab_instance_variable`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/instance_variable).
+Refer to the Terraform Registory for docs: [`data_gitlab_instance_variable`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/instance_variable).
 
 # `dataGitlabInstanceVariable` Submodule <a name="`dataGitlabInstanceVariable` Submodule" id="@cdktf/provider-gitlab.dataGitlabInstanceVariable"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_gitlab_instance_variable`](htt
 
 ### DataGitlabInstanceVariable <a name="DataGitlabInstanceVariable" id="@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/instance_variable gitlab_instance_variable}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/instance_variable gitlab_instance_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabinstancevariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancevariable"
 
 datagitlabinstancevariable.NewDataGitlabInstanceVariable(scope Construct, id *string, config DataGitlabInstanceVariableConfig) DataGitlabInstanceVariable
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabinstancevariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancevariable"
 
 datagitlabinstancevariable.DataGitlabInstanceVariable_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabinstancevariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancevariable"
 
 datagitlabinstancevariable.DataGitlabInstanceVariable_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datagitlabinstancevariable.DataGitlabInstanceVariable_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariable.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabinstancevariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancevariable"
 
 datagitlabinstancevariable.DataGitlabInstanceVariable_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,6 +352,7 @@ datagitlabinstancevariable.DataGitlabInstanceVariable_IsTerraformDataSource(x in
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariable.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariable.property.masked">Masked</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariable.property.protected">Protected</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariable.property.raw">Raw</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariable.property.value">Value</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariable.property.variableType">VariableType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariable.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
@@ -503,6 +504,16 @@ func Protected() IResolvable
 
 ---
 
+##### `Raw`<sup>Required</sup> <a name="Raw" id="@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariable.property.raw"></a>
+
+```go
+func Raw() IResolvable
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable
+
+---
+
 ##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariable.property.value"></a>
 
 ```go
@@ -588,7 +599,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabinstancevariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancevariable"
 
 &datagitlabinstancevariable.DataGitlabInstanceVariableConfig {
 	Connection: interface{},
@@ -615,7 +626,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabinstanceva
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariableConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariableConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariableConfig.property.key">Key</a></code> | <code>*string</code> | The name of the variable. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/instance_variable#id DataGitlabInstanceVariable#id}. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/instance_variable#id DataGitlabInstanceVariable#id}. |
 
 ---
 
@@ -699,7 +710,7 @@ Key *string
 
 The name of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/instance_variable#key DataGitlabInstanceVariable#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/instance_variable#key DataGitlabInstanceVariable#key}
 
 ---
 
@@ -711,7 +722,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/instance_variable#id DataGitlabInstanceVariable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/instance_variable#id DataGitlabInstanceVariable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

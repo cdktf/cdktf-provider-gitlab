@@ -1,6 +1,6 @@
 # `gitlab_project_freeze_period`
 
-Refer to the Terraform Registory for docs: [`gitlab_project_freeze_period`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_freeze_period).
+Refer to the Terraform Registory for docs: [`gitlab_project_freeze_period`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_freeze_period).
 
 # `projectFreezePeriod` Submodule <a name="`projectFreezePeriod` Submodule" id="@cdktf/provider-gitlab.projectFreezePeriod"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_project_freeze_period`](http
 
 ### ProjectFreezePeriod <a name="ProjectFreezePeriod" id="@cdktf/provider-gitlab.projectFreezePeriod.ProjectFreezePeriod"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_freeze_period gitlab_project_freeze_period}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_freeze_period gitlab_project_freeze_period}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectFreezePeriod.ProjectFreezePeriod.Initializer"></a>
 
@@ -363,12 +363,12 @@ projectFreezePeriod.ProjectFreezePeriod.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-gitlab.projectFreezePeriod.ProjectFreezePeriod.property.freezeEndInput">freezeEndInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectFreezePeriod.ProjectFreezePeriod.property.freezeStartInput">freezeStartInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectFreezePeriod.ProjectFreezePeriod.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectFreezePeriod.ProjectFreezePeriod.property.projectIdInput">projectIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectFreezePeriod.ProjectFreezePeriod.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectFreezePeriod.ProjectFreezePeriod.property.cronTimezone">cronTimezone</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectFreezePeriod.ProjectFreezePeriod.property.freezeEnd">freezeEnd</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectFreezePeriod.ProjectFreezePeriod.property.freezeStart">freezeStart</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectFreezePeriod.ProjectFreezePeriod.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectFreezePeriod.ProjectFreezePeriod.property.projectId">projectId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectFreezePeriod.ProjectFreezePeriod.property.project">project</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -554,10 +554,10 @@ public readonly idInput: string;
 
 ---
 
-##### `projectIdInput`<sup>Optional</sup> <a name="projectIdInput" id="@cdktf/provider-gitlab.projectFreezePeriod.ProjectFreezePeriod.property.projectIdInput"></a>
+##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktf/provider-gitlab.projectFreezePeriod.ProjectFreezePeriod.property.projectInput"></a>
 
 ```typescript
-public readonly projectIdInput: string;
+public readonly projectInput: string;
 ```
 
 - *Type:* string
@@ -604,10 +604,10 @@ public readonly id: string;
 
 ---
 
-##### `projectId`<sup>Required</sup> <a name="projectId" id="@cdktf/provider-gitlab.projectFreezePeriod.ProjectFreezePeriod.property.projectId"></a>
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.projectFreezePeriod.ProjectFreezePeriod.property.project"></a>
 
 ```typescript
-public readonly projectId: string;
+public readonly project: string;
 ```
 
 - *Type:* string
@@ -657,9 +657,9 @@ const projectFreezePeriodConfig: projectFreezePeriod.ProjectFreezePeriodConfig =
 | <code><a href="#@cdktf/provider-gitlab.projectFreezePeriod.ProjectFreezePeriodConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectFreezePeriod.ProjectFreezePeriodConfig.property.freezeEnd">freezeEnd</a></code> | <code>string</code> | End of the Freeze Period in cron format (e.g. `0 2 * * *`). |
 | <code><a href="#@cdktf/provider-gitlab.projectFreezePeriod.ProjectFreezePeriodConfig.property.freezeStart">freezeStart</a></code> | <code>string</code> | Start of the Freeze Period in cron format (e.g. `0 1 * * *`). |
-| <code><a href="#@cdktf/provider-gitlab.projectFreezePeriod.ProjectFreezePeriodConfig.property.projectId">projectId</a></code> | <code>string</code> | The id of the project to add the schedule to. |
+| <code><a href="#@cdktf/provider-gitlab.projectFreezePeriod.ProjectFreezePeriodConfig.property.project">project</a></code> | <code>string</code> | The ID or URL-encoded path of the project to add the schedule to. |
 | <code><a href="#@cdktf/provider-gitlab.projectFreezePeriod.ProjectFreezePeriodConfig.property.cronTimezone">cronTimezone</a></code> | <code>string</code> | The timezone. |
-| <code><a href="#@cdktf/provider-gitlab.projectFreezePeriod.ProjectFreezePeriodConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_freeze_period#id ProjectFreezePeriod#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectFreezePeriod.ProjectFreezePeriodConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_freeze_period#id ProjectFreezePeriod#id}. |
 
 ---
 
@@ -743,7 +743,7 @@ public readonly freezeEnd: string;
 
 End of the Freeze Period in cron format (e.g. `0 2 * * *`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_freeze_period#freeze_end ProjectFreezePeriod#freeze_end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_freeze_period#freeze_end ProjectFreezePeriod#freeze_end}
 
 ---
 
@@ -757,21 +757,21 @@ public readonly freezeStart: string;
 
 Start of the Freeze Period in cron format (e.g. `0 1 * * *`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_freeze_period#freeze_start ProjectFreezePeriod#freeze_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_freeze_period#freeze_start ProjectFreezePeriod#freeze_start}
 
 ---
 
-##### `projectId`<sup>Required</sup> <a name="projectId" id="@cdktf/provider-gitlab.projectFreezePeriod.ProjectFreezePeriodConfig.property.projectId"></a>
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.projectFreezePeriod.ProjectFreezePeriodConfig.property.project"></a>
 
 ```typescript
-public readonly projectId: string;
+public readonly project: string;
 ```
 
 - *Type:* string
 
-The id of the project to add the schedule to.
+The ID or URL-encoded path of the project to add the schedule to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_freeze_period#project_id ProjectFreezePeriod#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_freeze_period#project ProjectFreezePeriod#project}
 
 ---
 
@@ -785,7 +785,7 @@ public readonly cronTimezone: string;
 
 The timezone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_freeze_period#cron_timezone ProjectFreezePeriod#cron_timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_freeze_period#cron_timezone ProjectFreezePeriod#cron_timezone}
 
 ---
 
@@ -797,7 +797,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_freeze_period#id ProjectFreezePeriod#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_freeze_period#id ProjectFreezePeriod#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/personal_access_token
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/personal_access_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface PersonalAccessTokenConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The token expires at midnight UTC on that date. The date must be in the format YYYY-MM-DD. Default is never.
+  * The token expires at midnight UTC on that date. The date must be in the format YYYY-MM-DD.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/personal_access_token#expires_at PersonalAccessToken#expires_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/personal_access_token#expires_at PersonalAccessToken#expires_at}
   */
   readonly expiresAt?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/personal_access_token#id PersonalAccessToken#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/personal_access_token#id PersonalAccessToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +23,25 @@ export interface PersonalAccessTokenConfig extends cdktf.TerraformMetaArguments 
   /**
   * The name of the personal access token.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/personal_access_token#name PersonalAccessToken#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/personal_access_token#name PersonalAccessToken#name}
   */
   readonly name: string;
   /**
   * The scope for the personal access token. It determines the actions which can be performed when authenticating with this token. Valid values are: `api`, `read_user`, `read_api`, `read_repository`, `write_repository`, `read_registry`, `write_registry`, `sudo`, `admin_mode`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/personal_access_token#scopes PersonalAccessToken#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/personal_access_token#scopes PersonalAccessToken#scopes}
   */
   readonly scopes: string[];
   /**
   * The id of the user.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/personal_access_token#user_id PersonalAccessToken#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/personal_access_token#user_id PersonalAccessToken#user_id}
   */
   readonly userId: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/personal_access_token gitlab_personal_access_token}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/personal_access_token gitlab_personal_access_token}
 */
 export class PersonalAccessToken extends cdktf.TerraformResource {
 
@@ -60,7 +55,7 @@ export class PersonalAccessToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/personal_access_token gitlab_personal_access_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/personal_access_token gitlab_personal_access_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,8 +66,8 @@ export class PersonalAccessToken extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_personal_access_token',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '15.11.0',
-        providerVersionConstraint: '~> 15.7'
+        providerVersion: '16.1.0',
+        providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -103,7 +98,7 @@ export class PersonalAccessToken extends cdktf.TerraformResource {
     return this.getStringAttribute('created_at');
   }
 
-  // expires_at - computed: false, optional: true, required: false
+  // expires_at - computed: true, optional: true, required: false
   private _expiresAt?: string; 
   public get expiresAt() {
     return this.getStringAttribute('expires_at');

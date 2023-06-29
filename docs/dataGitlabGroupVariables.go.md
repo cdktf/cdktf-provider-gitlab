@@ -1,6 +1,6 @@
 # `data_gitlab_group_variables`
 
-Refer to the Terraform Registory for docs: [`data_gitlab_group_variables`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/group_variables).
+Refer to the Terraform Registory for docs: [`data_gitlab_group_variables`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/group_variables).
 
 # `dataGitlabGroupVariables` Submodule <a name="`dataGitlabGroupVariables` Submodule" id="@cdktf/provider-gitlab.dataGitlabGroupVariables"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_gitlab_group_variables`](https
 
 ### DataGitlabGroupVariables <a name="DataGitlabGroupVariables" id="@cdktf/provider-gitlab.dataGitlabGroupVariables.DataGitlabGroupVariables"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/group_variables gitlab_group_variables}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/group_variables gitlab_group_variables}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupVariables.DataGitlabGroupVariables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabgroupvariables"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupvariables"
 
 datagitlabgroupvariables.NewDataGitlabGroupVariables(scope Construct, id *string, config DataGitlabGroupVariablesConfig) DataGitlabGroupVariables
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabGroupVariables.DataGitlabGroupVariables.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabgroupvariables"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupvariables"
 
 datagitlabgroupvariables.DataGitlabGroupVariables_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabGroupVariables.DataGitlabGroupVariables.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabgroupvariables"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupvariables"
 
 datagitlabgroupvariables.DataGitlabGroupVariables_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datagitlabgroupvariables.DataGitlabGroupVariables_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabGroupVariables.DataGitlabGroupVariables.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabgroupvariables"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupvariables"
 
 datagitlabgroupvariables.DataGitlabGroupVariables_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabGroupVariables.DataGitlabGroupVariablesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabgroupvariables"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupvariables"
 
 &datagitlabgroupvariables.DataGitlabGroupVariablesConfig {
 	Connection: interface{},
@@ -613,7 +613,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabgroupvaria
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupVariables.DataGitlabGroupVariablesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupVariables.DataGitlabGroupVariablesConfig.property.group">Group</a></code> | <code>*string</code> | The name or id of the group. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupVariables.DataGitlabGroupVariablesConfig.property.environmentScope">EnvironmentScope</a></code> | <code>*string</code> | The environment scope of the variable. Defaults to all environment (`*`). |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupVariables.DataGitlabGroupVariablesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/group_variables#id DataGitlabGroupVariables#id}. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupVariables.DataGitlabGroupVariablesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/group_variables#id DataGitlabGroupVariables#id}. |
 
 ---
 
@@ -697,7 +697,7 @@ Group *string
 
 The name or id of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/group_variables#group DataGitlabGroupVariables#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/group_variables#group DataGitlabGroupVariables#group}
 
 ---
 
@@ -711,7 +711,7 @@ EnvironmentScope *string
 
 The environment scope of the variable. Defaults to all environment (`*`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/group_variables#environment_scope DataGitlabGroupVariables#environment_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/group_variables#environment_scope DataGitlabGroupVariables#environment_scope}
 
 ---
 
@@ -723,7 +723,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/group_variables#id DataGitlabGroupVariables#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/group_variables#id DataGitlabGroupVariables#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -735,7 +735,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabGroupVariables.DataGitlabGroupVariablesVariables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabgroupvariables"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupvariables"
 
 &datagitlabgroupvariables.DataGitlabGroupVariablesVariables {
 
@@ -750,7 +750,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabgroupvaria
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupVariables.DataGitlabGroupVariablesVariablesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabgroupvariables"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupvariables"
 
 datagitlabgroupvariables.NewDataGitlabGroupVariablesVariablesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabGroupVariablesVariablesList
 ```
@@ -882,7 +882,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupVariables.DataGitlabGroupVariablesVariablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabgroupvariables"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupvariables"
 
 datagitlabgroupvariables.NewDataGitlabGroupVariablesVariablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabGroupVariablesVariablesOutputReference
 ```
@@ -1110,6 +1110,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupVariables.DataGitlabGroupVariablesVariablesOutputReference.property.key">Key</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupVariables.DataGitlabGroupVariablesVariablesOutputReference.property.masked">Masked</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupVariables.DataGitlabGroupVariablesVariablesOutputReference.property.protected">Protected</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupVariables.DataGitlabGroupVariablesVariablesOutputReference.property.raw">Raw</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupVariables.DataGitlabGroupVariablesVariablesOutputReference.property.value">Value</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupVariables.DataGitlabGroupVariablesVariablesOutputReference.property.variableType">VariableType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupVariables.DataGitlabGroupVariablesVariablesOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupVariables.DataGitlabGroupVariablesVariables">DataGitlabGroupVariablesVariables</a></code> | *No description.* |
@@ -1184,6 +1185,16 @@ func Masked() IResolvable
 
 ```go
 func Protected() IResolvable
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable
+
+---
+
+##### `Raw`<sup>Required</sup> <a name="Raw" id="@cdktf/provider-gitlab.dataGitlabGroupVariables.DataGitlabGroupVariablesVariablesOutputReference.property.raw"></a>
+
+```go
+func Raw() IResolvable
 ```
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable

@@ -1,6 +1,6 @@
 # `data_gitlab_group`
 
-Refer to the Terraform Registory for docs: [`data_gitlab_group`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/group).
+Refer to the Terraform Registory for docs: [`data_gitlab_group`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/group).
 
 # `dataGitlabGroup` Submodule <a name="`dataGitlabGroup` Submodule" id="@cdktf/provider-gitlab.dataGitlabGroup"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_gitlab_group`](https://registr
 
 ### DataGitlabGroup <a name="DataGitlabGroup" id="@cdktf/provider-gitlab.dataGitlabGroup.DataGitlabGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/group gitlab_group}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/group gitlab_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroup.DataGitlabGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabgroup"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroup"
 
 datagitlabgroup.NewDataGitlabGroup(scope Construct, id *string, config DataGitlabGroupConfig) DataGitlabGroup
 ```
@@ -291,7 +291,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabGroup.DataGitlabGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabgroup"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroup"
 
 datagitlabgroup.DataGitlabGroup_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabGroup.DataGitlabGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabgroup"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroup"
 
 datagitlabgroup.DataGitlabGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ datagitlabgroup.DataGitlabGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabGroup.DataGitlabGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabgroup"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroup"
 
 datagitlabgroup.DataGitlabGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -745,7 +745,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabGroup.DataGitlabGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabgroup"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroup"
 
 &datagitlabgroup.DataGitlabGroupConfig {
 	Connection: interface{},
@@ -774,7 +774,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabgroup"
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroup.DataGitlabGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroup.DataGitlabGroupConfig.property.fullPath">FullPath</a></code> | <code>*string</code> | The full path of the group. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroup.DataGitlabGroupConfig.property.groupId">GroupId</a></code> | <code>*f64</code> | The ID of the group. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabGroup.DataGitlabGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/group#id DataGitlabGroup#id}. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabGroup.DataGitlabGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/group#id DataGitlabGroup#id}. |
 
 ---
 
@@ -858,7 +858,7 @@ FullPath *string
 
 The full path of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/group#full_path DataGitlabGroup#full_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/group#full_path DataGitlabGroup#full_path}
 
 ---
 
@@ -872,7 +872,7 @@ GroupId *f64
 
 The ID of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/group#group_id DataGitlabGroup#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/group#group_id DataGitlabGroup#group_id}
 
 ---
 
@@ -884,7 +884,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/data-sources/group#id DataGitlabGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/group#id DataGitlabGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

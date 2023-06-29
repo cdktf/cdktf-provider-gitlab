@@ -1,6 +1,6 @@
 # `gitlab_group_ldap_link`
 
-Refer to the Terraform Registory for docs: [`gitlab_group_ldap_link`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link).
+Refer to the Terraform Registory for docs: [`gitlab_group_ldap_link`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link).
 
 # `groupLdapLink` Submodule <a name="`groupLdapLink` Submodule" id="@cdktf/provider-gitlab.groupLdapLink"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_group_ldap_link`](https://re
 
 ### GroupLdapLink <a name="GroupLdapLink" id="@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link gitlab_group_ldap_link}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link gitlab_group_ldap_link}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.Initializer"></a>
 
@@ -25,10 +25,11 @@ groupLdapLink.GroupLdapLink(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  cn: str,
-  group_id: str,
+  group: str,
   ldap_provider: str,
   access_level: str = None,
+  cn: str = None,
+  filter: str = None,
   force: typing.Union[bool, IResolvable] = None,
   group_access: str = None,
   id: str = None
@@ -46,13 +47,14 @@ groupLdapLink.GroupLdapLink(
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.Initializer.parameter.cn">cn</a></code> | <code>str</code> | The CN of the LDAP group to link with. |
-| <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.Initializer.parameter.groupId">group_id</a></code> | <code>str</code> | The id of the GitLab group. |
+| <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.Initializer.parameter.group">group</a></code> | <code>str</code> | The ID or URL-encoded path of the group. |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.Initializer.parameter.ldapProvider">ldap_provider</a></code> | <code>str</code> | The name of the LDAP provider as stored in the GitLab database. |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.Initializer.parameter.accessLevel">access_level</a></code> | <code>str</code> | Minimum access level for members of the LDAP group. |
+| <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.Initializer.parameter.cn">cn</a></code> | <code>str</code> | The CN of the LDAP group to link with. Required if `filter` is not provided. |
+| <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.Initializer.parameter.filter">filter</a></code> | <code>str</code> | The LDAP filter for the group. Required if `cn` is not provided. Requires GitLab Premium or above. |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.Initializer.parameter.force">force</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, then delete and replace an existing LDAP link if one exists. |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.Initializer.parameter.groupAccess">group_access</a></code> | <code>str</code> | Minimum access level for members of the LDAP group. |
-| <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#id GroupLdapLink#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link#id GroupLdapLink#id}. |
 
 ---
 
@@ -116,23 +118,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `cn`<sup>Required</sup> <a name="cn" id="@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.Initializer.parameter.cn"></a>
+##### `group`<sup>Required</sup> <a name="group" id="@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.Initializer.parameter.group"></a>
 
 - *Type:* str
 
-The CN of the LDAP group to link with.
+The ID or URL-encoded path of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#cn GroupLdapLink#cn}
-
----
-
-##### `group_id`<sup>Required</sup> <a name="group_id" id="@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.Initializer.parameter.groupId"></a>
-
-- *Type:* str
-
-The id of the GitLab group.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#group_id GroupLdapLink#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link#group GroupLdapLink#group}
 
 ---
 
@@ -144,7 +136,7 @@ The name of the LDAP provider as stored in the GitLab database.
 
 Note that this is NOT the value of the `label` attribute as shown in the web UI. In most cases this will be `ldapmain` but you may use the [LDAP check rake task](https://docs.gitlab.com/ee/administration/raketasks/ldap.html#check) for receiving the LDAP server name: `LDAP: ... Server: ldapmain`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#ldap_provider GroupLdapLink#ldap_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link#ldap_provider GroupLdapLink#ldap_provider}
 
 ---
 
@@ -156,7 +148,27 @@ Minimum access level for members of the LDAP group.
 
 Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#access_level GroupLdapLink#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link#access_level GroupLdapLink#access_level}
+
+---
+
+##### `cn`<sup>Optional</sup> <a name="cn" id="@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.Initializer.parameter.cn"></a>
+
+- *Type:* str
+
+The CN of the LDAP group to link with. Required if `filter` is not provided.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link#cn GroupLdapLink#cn}
+
+---
+
+##### `filter`<sup>Optional</sup> <a name="filter" id="@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.Initializer.parameter.filter"></a>
+
+- *Type:* str
+
+The LDAP filter for the group. Required if `cn` is not provided. Requires GitLab Premium or above.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link#filter GroupLdapLink#filter}
 
 ---
 
@@ -166,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 If true, then delete and replace an existing LDAP link if one exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#force GroupLdapLink#force}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link#force GroupLdapLink#force}
 
 ---
 
@@ -178,7 +190,7 @@ Minimum access level for members of the LDAP group.
 
 Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#group_access GroupLdapLink#group_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link#group_access GroupLdapLink#group_access}
 
 ---
 
@@ -186,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#id GroupLdapLink#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link#id GroupLdapLink#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -214,6 +226,8 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.resetAccessLevel">reset_access_level</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.resetCn">reset_cn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.resetFilter">reset_filter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.resetForce">reset_force</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.resetGroupAccess">reset_group_access</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.resetId">reset_id</a></code> | *No description.* |
@@ -435,6 +449,18 @@ def interpolation_for_attribute(
 def reset_access_level() -> None
 ```
 
+##### `reset_cn` <a name="reset_cn" id="@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.resetCn"></a>
+
+```python
+def reset_cn() -> None
+```
+
+##### `reset_filter` <a name="reset_filter" id="@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.resetFilter"></a>
+
+```python
+def reset_filter() -> None
+```
+
 ##### `reset_force` <a name="reset_force" id="@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.resetForce"></a>
 
 ```python
@@ -549,16 +575,18 @@ groupLdapLink.GroupLdapLink.is_terraform_resource(
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.property.accessLevelInput">access_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.property.cnInput">cn_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.property.filterInput">filter_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.property.forceInput">force_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.property.groupAccessInput">group_access_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.property.groupIdInput">group_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.property.groupInput">group_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.property.ldapProviderInput">ldap_provider_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.property.accessLevel">access_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.property.cn">cn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.property.filter">filter</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.property.force">force</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.property.group">group</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.property.groupAccess">group_access</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.property.groupId">group_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.property.ldapProvider">ldap_provider</a></code> | <code>str</code> | *No description.* |
 
@@ -726,6 +754,16 @@ cn_input: str
 
 ---
 
+##### `filter_input`<sup>Optional</sup> <a name="filter_input" id="@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.property.filterInput"></a>
+
+```python
+filter_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `force_input`<sup>Optional</sup> <a name="force_input" id="@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.property.forceInput"></a>
 
 ```python
@@ -746,10 +784,10 @@ group_access_input: str
 
 ---
 
-##### `group_id_input`<sup>Optional</sup> <a name="group_id_input" id="@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.property.groupIdInput"></a>
+##### `group_input`<sup>Optional</sup> <a name="group_input" id="@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.property.groupInput"></a>
 
 ```python
-group_id_input: str
+group_input: str
 ```
 
 - *Type:* str
@@ -796,6 +834,16 @@ cn: str
 
 ---
 
+##### `filter`<sup>Required</sup> <a name="filter" id="@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.property.filter"></a>
+
+```python
+filter: str
+```
+
+- *Type:* str
+
+---
+
 ##### `force`<sup>Required</sup> <a name="force" id="@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.property.force"></a>
 
 ```python
@@ -806,20 +854,20 @@ force: typing.Union[bool, IResolvable]
 
 ---
 
-##### `group_access`<sup>Required</sup> <a name="group_access" id="@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.property.groupAccess"></a>
+##### `group`<sup>Required</sup> <a name="group" id="@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.property.group"></a>
 
 ```python
-group_access: str
+group: str
 ```
 
 - *Type:* str
 
 ---
 
-##### `group_id`<sup>Required</sup> <a name="group_id" id="@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.property.groupId"></a>
+##### `group_access`<sup>Required</sup> <a name="group_access" id="@cdktf/provider-gitlab.groupLdapLink.GroupLdapLink.property.groupAccess"></a>
 
 ```python
-group_id: str
+group_access: str
 ```
 
 - *Type:* str
@@ -881,10 +929,11 @@ groupLdapLink.GroupLdapLinkConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  cn: str,
-  group_id: str,
+  group: str,
   ldap_provider: str,
   access_level: str = None,
+  cn: str = None,
+  filter: str = None,
   force: typing.Union[bool, IResolvable] = None,
   group_access: str = None,
   id: str = None
@@ -902,13 +951,14 @@ groupLdapLink.GroupLdapLinkConfig(
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLinkConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLinkConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLinkConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLinkConfig.property.cn">cn</a></code> | <code>str</code> | The CN of the LDAP group to link with. |
-| <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLinkConfig.property.groupId">group_id</a></code> | <code>str</code> | The id of the GitLab group. |
+| <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLinkConfig.property.group">group</a></code> | <code>str</code> | The ID or URL-encoded path of the group. |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLinkConfig.property.ldapProvider">ldap_provider</a></code> | <code>str</code> | The name of the LDAP provider as stored in the GitLab database. |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLinkConfig.property.accessLevel">access_level</a></code> | <code>str</code> | Minimum access level for members of the LDAP group. |
+| <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLinkConfig.property.cn">cn</a></code> | <code>str</code> | The CN of the LDAP group to link with. Required if `filter` is not provided. |
+| <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLinkConfig.property.filter">filter</a></code> | <code>str</code> | The LDAP filter for the group. Required if `cn` is not provided. Requires GitLab Premium or above. |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLinkConfig.property.force">force</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, then delete and replace an existing LDAP link if one exists. |
 | <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLinkConfig.property.groupAccess">group_access</a></code> | <code>str</code> | Minimum access level for members of the LDAP group. |
-| <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLinkConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#id GroupLdapLink#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupLdapLink.GroupLdapLinkConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link#id GroupLdapLink#id}. |
 
 ---
 
@@ -982,31 +1032,17 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
-##### `cn`<sup>Required</sup> <a name="cn" id="@cdktf/provider-gitlab.groupLdapLink.GroupLdapLinkConfig.property.cn"></a>
+##### `group`<sup>Required</sup> <a name="group" id="@cdktf/provider-gitlab.groupLdapLink.GroupLdapLinkConfig.property.group"></a>
 
 ```python
-cn: str
+group: str
 ```
 
 - *Type:* str
 
-The CN of the LDAP group to link with.
+The ID or URL-encoded path of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#cn GroupLdapLink#cn}
-
----
-
-##### `group_id`<sup>Required</sup> <a name="group_id" id="@cdktf/provider-gitlab.groupLdapLink.GroupLdapLinkConfig.property.groupId"></a>
-
-```python
-group_id: str
-```
-
-- *Type:* str
-
-The id of the GitLab group.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#group_id GroupLdapLink#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link#group GroupLdapLink#group}
 
 ---
 
@@ -1022,7 +1058,7 @@ The name of the LDAP provider as stored in the GitLab database.
 
 Note that this is NOT the value of the `label` attribute as shown in the web UI. In most cases this will be `ldapmain` but you may use the [LDAP check rake task](https://docs.gitlab.com/ee/administration/raketasks/ldap.html#check) for receiving the LDAP server name: `LDAP: ... Server: ldapmain`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#ldap_provider GroupLdapLink#ldap_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link#ldap_provider GroupLdapLink#ldap_provider}
 
 ---
 
@@ -1038,7 +1074,35 @@ Minimum access level for members of the LDAP group.
 
 Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#access_level GroupLdapLink#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link#access_level GroupLdapLink#access_level}
+
+---
+
+##### `cn`<sup>Optional</sup> <a name="cn" id="@cdktf/provider-gitlab.groupLdapLink.GroupLdapLinkConfig.property.cn"></a>
+
+```python
+cn: str
+```
+
+- *Type:* str
+
+The CN of the LDAP group to link with. Required if `filter` is not provided.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link#cn GroupLdapLink#cn}
+
+---
+
+##### `filter`<sup>Optional</sup> <a name="filter" id="@cdktf/provider-gitlab.groupLdapLink.GroupLdapLinkConfig.property.filter"></a>
+
+```python
+filter: str
+```
+
+- *Type:* str
+
+The LDAP filter for the group. Required if `cn` is not provided. Requires GitLab Premium or above.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link#filter GroupLdapLink#filter}
 
 ---
 
@@ -1052,7 +1116,7 @@ force: typing.Union[bool, IResolvable]
 
 If true, then delete and replace an existing LDAP link if one exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#force GroupLdapLink#force}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link#force GroupLdapLink#force}
 
 ---
 
@@ -1068,7 +1132,7 @@ Minimum access level for members of the LDAP group.
 
 Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#group_access GroupLdapLink#group_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link#group_access GroupLdapLink#group_access}
 
 ---
 
@@ -1080,7 +1144,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_ldap_link#id GroupLdapLink#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_ldap_link#id GroupLdapLink#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

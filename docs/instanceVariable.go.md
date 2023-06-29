@@ -1,6 +1,6 @@
 # `gitlab_instance_variable`
 
-Refer to the Terraform Registory for docs: [`gitlab_instance_variable`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/instance_variable).
+Refer to the Terraform Registory for docs: [`gitlab_instance_variable`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable).
 
 # `instanceVariable` Submodule <a name="`instanceVariable` Submodule" id="@cdktf/provider-gitlab.instanceVariable"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`gitlab_instance_variable`](https://
 
 ### InstanceVariable <a name="InstanceVariable" id="@cdktf/provider-gitlab.instanceVariable.InstanceVariable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/instance_variable gitlab_instance_variable}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable gitlab_instance_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.instanceVariable.InstanceVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/instancevariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/instancevariable"
 
 instancevariable.NewInstanceVariable(scope Construct, id *string, config InstanceVariableConfig) InstanceVariable
 ```
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.resetMasked">ResetMasked</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.resetProtected">ResetProtected</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.resetRaw">ResetRaw</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.resetVariableType">ResetVariableType</a></code> | *No description.* |
 
 ---
@@ -279,6 +280,12 @@ func ResetMasked()
 func ResetProtected()
 ```
 
+##### `ResetRaw` <a name="ResetRaw" id="@cdktf/provider-gitlab.instanceVariable.InstanceVariable.resetRaw"></a>
+
+```go
+func ResetRaw()
+```
+
 ##### `ResetVariableType` <a name="ResetVariableType" id="@cdktf/provider-gitlab.instanceVariable.InstanceVariable.resetVariableType"></a>
 
 ```go
@@ -298,7 +305,7 @@ func ResetVariableType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.instanceVariable.InstanceVariable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/instancevariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/instancevariable"
 
 instancevariable.InstanceVariable_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.instanceVariable.InstanceVariable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/instancevariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/instancevariable"
 
 instancevariable.InstanceVariable_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +351,7 @@ instancevariable.InstanceVariable_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.instanceVariable.InstanceVariable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/instancevariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/instancevariable"
 
 instancevariable.InstanceVariable_IsTerraformResource(x interface{}) *bool
 ```
@@ -377,12 +384,14 @@ instancevariable.InstanceVariable_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.keyInput">KeyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.maskedInput">MaskedInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.protectedInput">ProtectedInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.rawInput">RawInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.valueInput">ValueInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.variableTypeInput">VariableTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.key">Key</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.masked">Masked</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.protected">Protected</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.raw">Raw</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.value">Value</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.variableType">VariableType</a></code> | <code>*string</code> | *No description.* |
 
@@ -570,6 +579,16 @@ func ProtectedInput() interface{}
 
 ---
 
+##### `RawInput`<sup>Optional</sup> <a name="RawInput" id="@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.rawInput"></a>
+
+```go
+func RawInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.valueInput"></a>
 
 ```go
@@ -630,6 +649,16 @@ func Protected() interface{}
 
 ---
 
+##### `Raw`<sup>Required</sup> <a name="Raw" id="@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.raw"></a>
+
+```go
+func Raw() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.value"></a>
 
 ```go
@@ -675,7 +704,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.instanceVariable.InstanceVariableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/instancevariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/instancevariable"
 
 &instancevariable.InstanceVariableConfig {
 	Connection: interface{},
@@ -690,6 +719,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/instancevariable"
 	Id: *string,
 	Masked: interface{},
 	Protected: interface{},
+	Raw: interface{},
 	VariableType: *string,
 }
 ```
@@ -707,9 +737,10 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/instancevariable"
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariableConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariableConfig.property.key">Key</a></code> | <code>*string</code> | The name of the variable. |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariableConfig.property.value">Value</a></code> | <code>*string</code> | The value of the variable. |
-| <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/instance_variable#id InstanceVariable#id}. |
+| <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable#id InstanceVariable#id}. |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariableConfig.property.masked">Masked</a></code> | <code>interface{}</code> | If set to `true`, the value of the variable will be hidden in job logs. |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariableConfig.property.protected">Protected</a></code> | <code>interface{}</code> | If set to `true`, the variable will be passed only to pipelines running on protected branches and tags. |
+| <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariableConfig.property.raw">Raw</a></code> | <code>interface{}</code> | Whether the variable is treated as a raw string. |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariableConfig.property.variableType">VariableType</a></code> | <code>*string</code> | The type of a variable. Valid values are: `env_var`, `file`. Default is `env_var`. |
 
 ---
@@ -794,7 +825,7 @@ Key *string
 
 The name of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/instance_variable#key InstanceVariable#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable#key InstanceVariable#key}
 
 ---
 
@@ -808,7 +839,7 @@ Value *string
 
 The value of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/instance_variable#value InstanceVariable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable#value InstanceVariable#value}
 
 ---
 
@@ -820,7 +851,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/instance_variable#id InstanceVariable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable#id InstanceVariable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -839,7 +870,7 @@ If set to `true`, the value of the variable will be hidden in job logs.
 
 The value must meet the [masking requirements](https://docs.gitlab.com/ee/ci/variables/#masked-variables). Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/instance_variable#masked InstanceVariable#masked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable#masked InstanceVariable#masked}
 
 ---
 
@@ -855,7 +886,23 @@ If set to `true`, the variable will be passed only to pipelines running on prote
 
 Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/instance_variable#protected InstanceVariable#protected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable#protected InstanceVariable#protected}
+
+---
+
+##### `Raw`<sup>Optional</sup> <a name="Raw" id="@cdktf/provider-gitlab.instanceVariable.InstanceVariableConfig.property.raw"></a>
+
+```go
+Raw interface{}
+```
+
+- *Type:* interface{}
+
+Whether the variable is treated as a raw string.
+
+Default: false. When true, variables in the value are not expanded.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable#raw InstanceVariable#raw}
 
 ---
 
@@ -869,7 +916,7 @@ VariableType *string
 
 The type of a variable. Valid values are: `env_var`, `file`. Default is `env_var`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/instance_variable#variable_type InstanceVariable#variable_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable#variable_type InstanceVariable#variable_type}
 
 ---
 

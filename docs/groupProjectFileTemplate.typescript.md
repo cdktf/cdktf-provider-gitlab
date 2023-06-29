@@ -1,6 +1,6 @@
 # `gitlab_group_project_file_template`
 
-Refer to the Terraform Registory for docs: [`gitlab_group_project_file_template`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_project_file_template).
+Refer to the Terraform Registory for docs: [`gitlab_group_project_file_template`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_project_file_template).
 
 # `groupProjectFileTemplate` Submodule <a name="`groupProjectFileTemplate` Submodule" id="@cdktf/provider-gitlab.groupProjectFileTemplate"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_group_project_file_template`
 
 ### GroupProjectFileTemplate <a name="GroupProjectFileTemplate" id="@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_project_file_template gitlab_group_project_file_template}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_project_file_template gitlab_group_project_file_template}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplate.Initializer"></a>
 
@@ -606,7 +606,7 @@ const groupProjectFileTemplateConfig: groupProjectFileTemplate.GroupProjectFileT
 | <code><a href="#@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplateConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplateConfig.property.fileTemplateProjectId">fileTemplateProjectId</a></code> | <code>number</code> | The ID of the project that will be used for file templates. |
 | <code><a href="#@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplateConfig.property.groupId">groupId</a></code> | <code>number</code> | The ID of the group that will use the file template project. |
-| <code><a href="#@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplateConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_project_file_template#id GroupProjectFileTemplate#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupProjectFileTemplate.GroupProjectFileTemplateConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_project_file_template#id GroupProjectFileTemplate#id}. |
 
 ---
 
@@ -693,7 +693,7 @@ The ID of the project that will be used for file templates.
 This project must be the direct
 child of the project defined by the group_id
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_project_file_template#file_template_project_id GroupProjectFileTemplate#file_template_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_project_file_template#file_template_project_id GroupProjectFileTemplate#file_template_project_id}
 
 ---
 
@@ -710,7 +710,7 @@ The ID of the group that will use the file template project.
 This group must be the direct
             parent of the project defined by project_id
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_project_file_template#group_id GroupProjectFileTemplate#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_project_file_template#group_id GroupProjectFileTemplate#group_id}
 
 ---
 
@@ -722,7 +722,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/group_project_file_template#id GroupProjectFileTemplate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_project_file_template#id GroupProjectFileTemplate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

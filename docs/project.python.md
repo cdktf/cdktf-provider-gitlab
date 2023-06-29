@@ -1,6 +1,6 @@
 # `gitlab_project`
 
-Refer to the Terraform Registory for docs: [`gitlab_project`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project).
+Refer to the Terraform Registory for docs: [`gitlab_project`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project).
 
 # `project` Submodule <a name="`project` Submodule" id="@cdktf/provider-gitlab.project"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_project`](https://registry.t
 
 ### Project <a name="Project" id="@cdktf/provider-gitlab.project.Project"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project gitlab_project}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project gitlab_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.project.Project.Initializer"></a>
 
@@ -84,7 +84,6 @@ project.Project(
   only_allow_merge_if_all_discussions_are_resolved: typing.Union[bool, IResolvable] = None,
   only_allow_merge_if_pipeline_succeeds: typing.Union[bool, IResolvable] = None,
   only_mirror_protected_branches: typing.Union[bool, IResolvable] = None,
-  operations_access_level: str = None,
   packages_enabled: typing.Union[bool, IResolvable] = None,
   pages_access_level: str = None,
   path: str = None,
@@ -162,7 +161,7 @@ project.Project(
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.forkedFromProjectId">forked_from_project_id</a></code> | <code>typing.Union[int, float]</code> | The id of the project to fork. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.forkingAccessLevel">forking_access_level</a></code> | <code>str</code> | Set the forking access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.groupWithProjectTemplatesId">group_with_project_templates_id</a></code> | <code>typing.Union[int, float]</code> | For group-level custom templates, specifies ID of group from which all the custom project templates are sourced. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#id Project#id}. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#id Project#id}. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.importUrl">import_url</a></code> | <code>str</code> | Git URL to a repository to be imported. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.importUrlPassword">import_url_password</a></code> | <code>str</code> | The password for the `import_url`. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.importUrlUsername">import_url_username</a></code> | <code>str</code> | The username for the `import_url`. |
@@ -189,7 +188,6 @@ project.Project(
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.onlyAllowMergeIfAllDiscussionsAreResolved">only_allow_merge_if_all_discussions_are_resolved</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to true if you want allow merges only if all discussions are resolved. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.onlyAllowMergeIfPipelineSucceeds">only_allow_merge_if_pipeline_succeeds</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to true if you want allow merges only if a pipeline succeeds. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.onlyMirrorProtectedBranches">only_mirror_protected_branches</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable only mirror protected branches for a mirrored project. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.operationsAccessLevel">operations_access_level</a></code> | <code>str</code> | Set the operations access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.packagesEnabled">packages_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable packages repository for the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.pagesAccessLevel">pages_access_level</a></code> | <code>str</code> | Enable pages access control. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.path">path</a></code> | <code>str</code> | The path of the repository. |
@@ -290,7 +288,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#name Project#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#name Project#name}
 
 ---
 
@@ -300,7 +298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set to true if you want to treat skipped pipelines as if they finished with success.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#allow_merge_on_skipped_pipeline Project#allow_merge_on_skipped_pipeline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#allow_merge_on_skipped_pipeline Project#allow_merge_on_skipped_pipeline}
 
 ---
 
@@ -310,7 +308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set the analytics access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#analytics_access_level Project#analytics_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#analytics_access_level Project#analytics_access_level}
 
 ---
 
@@ -325,7 +323,7 @@ This field **does not** work well in combination with the `gitlab_project_approv
 and is most likely gonna be deprecated in a future GitLab version (see [this upstream epic](https://gitlab.com/groups/gitlab-org/-/epics/7572)).
 In the meantime we recommend against using this attribute and use `gitlab_project_approval_rule` instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#approvals_before_merge Project#approvals_before_merge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#approvals_before_merge Project#approvals_before_merge}
 
 ---
 
@@ -335,7 +333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Whether the project is in read-only mode (archived). Repositories can be archived/unarchived by toggling this parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#archived Project#archived}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#archived Project#archived}
 
 ---
 
@@ -347,7 +345,7 @@ Set to `true` to archive the project instead of deleting on destroy.
 
 If set to `true` it will entire omit the `DELETE` operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#archive_on_destroy Project#archive_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#archive_on_destroy Project#archive_on_destroy}
 
 ---
 
@@ -357,7 +355,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Auto-cancel pending pipelines. This isn’t a boolean, but enabled/disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#auto_cancel_pending_pipelines Project#auto_cancel_pending_pipelines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#auto_cancel_pending_pipelines Project#auto_cancel_pending_pipelines}
 
 ---
 
@@ -367,7 +365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set whether auto-closing referenced issues on default branch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#autoclose_referenced_issues Project#autoclose_referenced_issues}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#autoclose_referenced_issues Project#autoclose_referenced_issues}
 
 ---
 
@@ -377,7 +375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Auto Deploy strategy. Valid values are `continuous`, `manual`, `timed_incremental`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#auto_devops_deploy_strategy Project#auto_devops_deploy_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#auto_devops_deploy_strategy Project#auto_devops_deploy_strategy}
 
 ---
 
@@ -387,7 +385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable Auto DevOps for this project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#auto_devops_enabled Project#auto_devops_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#auto_devops_enabled Project#auto_devops_enabled}
 
 ---
 
@@ -397,7 +395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 A local path to the avatar image to upload. **Note**: not available for imported resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#avatar Project#avatar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#avatar Project#avatar}
 
 ---
 
@@ -409,7 +407,7 @@ The hash of the avatar image.
 
 Use `filesha256("path/to/avatar.png")` whenever possible. **Note**: this is used to trigger an update of the avatar. If it's not given, but an avatar is given, the avatar will be updated each time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#avatar_hash Project#avatar_hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#avatar_hash Project#avatar_hash}
 
 ---
 
@@ -419,7 +417,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Test coverage parsing for the project. This is deprecated feature in GitLab 15.0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#build_coverage_regex Project#build_coverage_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#build_coverage_regex Project#build_coverage_regex}
 
 ---
 
@@ -429,7 +427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The Git strategy. Defaults to fetch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#build_git_strategy Project#build_git_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#build_git_strategy Project#build_git_strategy}
 
 ---
 
@@ -439,7 +437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set the builds access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#builds_access_level Project#builds_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#builds_access_level Project#builds_access_level}
 
 ---
 
@@ -449,7 +447,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The maximum amount of time, in seconds, that a job can run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#build_timeout Project#build_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#build_timeout Project#build_timeout}
 
 ---
 
@@ -459,7 +457,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Custom Path to CI config file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#ci_config_path Project#ci_config_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#ci_config_path Project#ci_config_path}
 
 ---
 
@@ -469,7 +467,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Default number of revisions for shallow cloning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#ci_default_git_depth Project#ci_default_git_depth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#ci_default_git_depth Project#ci_default_git_depth}
 
 ---
 
@@ -479,7 +477,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 When a new deployment job starts, skip older deployment jobs that are still pending.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#ci_forward_deployment_enabled Project#ci_forward_deployment_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#ci_forward_deployment_enabled Project#ci_forward_deployment_enabled}
 
 ---
 
@@ -489,7 +487,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Use separate caches for protected branches.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#ci_separated_caches Project#ci_separated_caches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#ci_separated_caches Project#ci_separated_caches}
 
 ---
 
@@ -499,7 +497,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 container_expiration_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#container_expiration_policy Project#container_expiration_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#container_expiration_policy Project#container_expiration_policy}
 
 ---
 
@@ -509,7 +507,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set visibility of container registry, for this project. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#container_registry_access_level Project#container_registry_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#container_registry_access_level Project#container_registry_access_level}
 
 ---
 
@@ -519,7 +517,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable container registry for the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#container_registry_enabled Project#container_registry_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#container_registry_enabled Project#container_registry_enabled}
 
 ---
 
@@ -529,7 +527,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The default branch for the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#default_branch Project#default_branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#default_branch Project#default_branch}
 
 ---
 
@@ -539,7 +537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 A description of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#description Project#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#description Project#description}
 
 ---
 
@@ -549,7 +547,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Disable email notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#emails_disabled Project#emails_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#emails_disabled Project#emails_disabled}
 
 ---
 
@@ -559,7 +557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set the environments access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#environments_access_level Project#environments_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#environments_access_level Project#environments_access_level}
 
 ---
 
@@ -569,7 +567,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The classification label for the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#external_authorization_classification_label Project#external_authorization_classification_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#external_authorization_classification_label Project#external_authorization_classification_label}
 
 ---
 
@@ -579,7 +577,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set the feature flags access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#feature_flags_access_level Project#feature_flags_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#feature_flags_access_level Project#feature_flags_access_level}
 
 ---
 
@@ -591,7 +589,7 @@ The id of the project to fork.
 
 During create the project is forked and during an update the fork relation is changed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#forked_from_project_id Project#forked_from_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#forked_from_project_id Project#forked_from_project_id}
 
 ---
 
@@ -601,7 +599,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set the forking access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#forking_access_level Project#forking_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#forking_access_level Project#forking_access_level}
 
 ---
 
@@ -613,7 +611,7 @@ For group-level custom templates, specifies ID of group from which all the custo
 
 Leave empty for instance-level templates. Requires use_custom_template to be true (enterprise edition).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#group_with_project_templates_id Project#group_with_project_templates_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#group_with_project_templates_id Project#group_with_project_templates_id}
 
 ---
 
@@ -621,7 +619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#id Project#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#id Project#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -636,7 +634,7 @@ Git URL to a repository to be imported.
 
 Together with `mirror = true` it will setup a Pull Mirror. This can also be used together with `forked_from_project_id` to setup a Pull Mirror for a fork. The fork takes precedence over the import. Make sure to provide the credentials in `import_url_username` and `import_url_password`. GitLab never returns the credentials, thus the provider cannot detect configuration drift in the credentials. They can also not be imported using `terraform import`. See the examples section for how to properly use it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#import_url Project#import_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#import_url Project#import_url}
 
 ---
 
@@ -648,7 +646,7 @@ The password for the `import_url`.
 
 The value of this field is used to construct a valid `import_url` and is only related to the provider. This field cannot be imported using `terraform import`. See the examples section for how to properly use it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#import_url_password Project#import_url_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#import_url_password Project#import_url_password}
 
 ---
 
@@ -660,7 +658,7 @@ The username for the `import_url`.
 
 The value of this field is used to construct a valid `import_url` and is only related to the provider. This field cannot be imported using `terraform import`.  See the examples section for how to properly use it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#import_url_username Project#import_url_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#import_url_username Project#import_url_username}
 
 ---
 
@@ -670,7 +668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set the infrastructure access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#infrastructure_access_level Project#infrastructure_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#infrastructure_access_level Project#infrastructure_access_level}
 
 ---
 
@@ -680,7 +678,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Create main branch with first commit containing a README.md file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#initialize_with_readme Project#initialize_with_readme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#initialize_with_readme Project#initialize_with_readme}
 
 ---
 
@@ -690,7 +688,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set the issues access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#issues_access_level Project#issues_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#issues_access_level Project#issues_access_level}
 
 ---
 
@@ -700,7 +698,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable issue tracking for the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#issues_enabled Project#issues_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#issues_enabled Project#issues_enabled}
 
 ---
 
@@ -710,7 +708,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Sets the template for new issues in the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#issues_template Project#issues_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#issues_template Project#issues_template}
 
 ---
 
@@ -720,7 +718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Disable or enable the ability to keep the latest artifact for this project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#keep_latest_artifact Project#keep_latest_artifact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#keep_latest_artifact Project#keep_latest_artifact}
 
 ---
 
@@ -730,7 +728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable LFS for the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#lfs_enabled Project#lfs_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#lfs_enabled Project#lfs_enabled}
 
 ---
 
@@ -740,7 +738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Template used to create merge commit message in merge requests. (Introduced in GitLab 14.5.).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#merge_commit_template Project#merge_commit_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#merge_commit_template Project#merge_commit_template}
 
 ---
 
@@ -750,7 +748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set the merge method. Valid values are `merge`, `rebase_merge`, `ff`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#merge_method Project#merge_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#merge_method Project#merge_method}
 
 ---
 
@@ -760,7 +758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable or disable merge pipelines.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#merge_pipelines_enabled Project#merge_pipelines_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#merge_pipelines_enabled Project#merge_pipelines_enabled}
 
 ---
 
@@ -770,7 +768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set the merge requests access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#merge_requests_access_level Project#merge_requests_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#merge_requests_access_level Project#merge_requests_access_level}
 
 ---
 
@@ -780,7 +778,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable merge requests for the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#merge_requests_enabled Project#merge_requests_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#merge_requests_enabled Project#merge_requests_enabled}
 
 ---
 
@@ -790,7 +788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Sets the template for new merge requests in the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#merge_requests_template Project#merge_requests_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#merge_requests_template Project#merge_requests_template}
 
 ---
 
@@ -800,7 +798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable or disable merge trains. Requires `merge_pipelines_enabled` to be set to `true` to take effect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#merge_trains_enabled Project#merge_trains_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#merge_trains_enabled Project#merge_trains_enabled}
 
 ---
 
@@ -810,7 +808,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable project pull mirror.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#mirror Project#mirror}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#mirror Project#mirror}
 
 ---
 
@@ -820,7 +818,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable overwrite diverged branches for a mirrored project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#mirror_overwrites_diverged_branches Project#mirror_overwrites_diverged_branches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#mirror_overwrites_diverged_branches Project#mirror_overwrites_diverged_branches}
 
 ---
 
@@ -830,7 +828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable trigger builds on pushes for a mirrored project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#mirror_trigger_builds Project#mirror_trigger_builds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#mirror_trigger_builds Project#mirror_trigger_builds}
 
 ---
 
@@ -840,7 +838,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set the monitor access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#monitor_access_level Project#monitor_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#monitor_access_level Project#monitor_access_level}
 
 ---
 
@@ -850,7 +848,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 For forked projects, target merge requests to this project. If false, the target will be the upstream project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#mr_default_target_self Project#mr_default_target_self}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#mr_default_target_self Project#mr_default_target_self}
 
 ---
 
@@ -860,7 +858,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The namespace (group or user) of the project. Defaults to your user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#namespace_id Project#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#namespace_id Project#namespace_id}
 
 ---
 
@@ -870,7 +868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set to true if you want allow merges only if all discussions are resolved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#only_allow_merge_if_all_discussions_are_resolved Project#only_allow_merge_if_all_discussions_are_resolved}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#only_allow_merge_if_all_discussions_are_resolved Project#only_allow_merge_if_all_discussions_are_resolved}
 
 ---
 
@@ -880,7 +878,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set to true if you want allow merges only if a pipeline succeeds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#only_allow_merge_if_pipeline_succeeds Project#only_allow_merge_if_pipeline_succeeds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#only_allow_merge_if_pipeline_succeeds Project#only_allow_merge_if_pipeline_succeeds}
 
 ---
 
@@ -890,17 +888,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable only mirror protected branches for a mirrored project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#only_mirror_protected_branches Project#only_mirror_protected_branches}
-
----
-
-##### `operations_access_level`<sup>Optional</sup> <a name="operations_access_level" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.operationsAccessLevel"></a>
-
-- *Type:* str
-
-Set the operations access level. Valid values are `disabled`, `private`, `enabled`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#operations_access_level Project#operations_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#only_mirror_protected_branches Project#only_mirror_protected_branches}
 
 ---
 
@@ -910,7 +898,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable packages repository for the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#packages_enabled Project#packages_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#packages_enabled Project#packages_enabled}
 
 ---
 
@@ -920,7 +908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable pages access control.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#pages_access_level Project#pages_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#pages_access_level Project#pages_access_level}
 
 ---
 
@@ -930,7 +918,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The path of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#path Project#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#path Project#path}
 
 ---
 
@@ -940,7 +928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable pipelines for the project. The `pipelines_enabled` field is being sent as `jobs_enabled` in the GitLab API calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#pipelines_enabled Project#pipelines_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#pipelines_enabled Project#pipelines_enabled}
 
 ---
 
@@ -950,7 +938,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Show link to create/view merge request when pushing from the command line.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#printing_merge_request_link_enabled Project#printing_merge_request_link_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#printing_merge_request_link_enabled Project#printing_merge_request_link_enabled}
 
 ---
 
@@ -960,7 +948,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 If true, jobs can be viewed by non-project members.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#public_builds Project#public_builds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#public_builds Project#public_builds}
 
 ---
 
@@ -970,7 +958,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 push_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#push_rules Project#push_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#push_rules Project#push_rules}
 
 ---
 
@@ -980,7 +968,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set the releases access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#releases_access_level Project#releases_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#releases_access_level Project#releases_access_level}
 
 ---
 
@@ -990,7 +978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable `Delete source branch` option by default for all new merge requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#remove_source_branch_after_merge Project#remove_source_branch_after_merge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#remove_source_branch_after_merge Project#remove_source_branch_after_merge}
 
 ---
 
@@ -1000,7 +988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set the repository access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#repository_access_level Project#repository_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#repository_access_level Project#repository_access_level}
 
 ---
 
@@ -1010,7 +998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Which storage shard the repository is on. (administrator only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#repository_storage Project#repository_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#repository_storage Project#repository_storage}
 
 ---
 
@@ -1020,7 +1008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Allow users to request member access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#request_access_enabled Project#request_access_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#request_access_enabled Project#request_access_enabled}
 
 ---
 
@@ -1030,7 +1018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set the requirements access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#requirements_access_level Project#requirements_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#requirements_access_level Project#requirements_access_level}
 
 ---
 
@@ -1040,7 +1028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Automatically resolve merge request diffs discussions on lines changed with a push.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#resolve_outdated_diff_discussions Project#resolve_outdated_diff_discussions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#resolve_outdated_diff_discussions Project#resolve_outdated_diff_discussions}
 
 ---
 
@@ -1050,7 +1038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Allow only users with the Maintainer role to pass user-defined variables when triggering a pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#restrict_user_defined_variables Project#restrict_user_defined_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#restrict_user_defined_variables Project#restrict_user_defined_variables}
 
 ---
 
@@ -1060,7 +1048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set the security and compliance access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#security_and_compliance_access_level Project#security_and_compliance_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#security_and_compliance_access_level Project#security_and_compliance_access_level}
 
 ---
 
@@ -1070,7 +1058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable shared runners for this project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#shared_runners_enabled Project#shared_runners_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#shared_runners_enabled Project#shared_runners_enabled}
 
 ---
 
@@ -1084,7 +1072,7 @@ This is necessary if the current user is not an admin and the default branch pro
 There is currently no known way to determine if the default branch protection is disabled on an instance-level for non-admin users.
 This attribute is only used during resource creation, thus changes are suppressed and the attribute cannot be imported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#skip_wait_for_default_branch_protection Project#skip_wait_for_default_branch_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#skip_wait_for_default_branch_protection Project#skip_wait_for_default_branch_protection}
 
 ---
 
@@ -1094,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set the snippets access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#snippets_access_level Project#snippets_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#snippets_access_level Project#snippets_access_level}
 
 ---
 
@@ -1104,7 +1092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable snippets for the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#snippets_enabled Project#snippets_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#snippets_enabled Project#snippets_enabled}
 
 ---
 
@@ -1114,7 +1102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Template used to create squash commit message in merge requests. (Introduced in GitLab 14.6.).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#squash_commit_template Project#squash_commit_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#squash_commit_template Project#squash_commit_template}
 
 ---
 
@@ -1126,7 +1114,7 @@ Squash commits when merge request.
 
 Valid values are `never`, `always`, `default_on`, or `default_off`. The default value is `default_off`. [GitLab >= 14.1]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#squash_option Project#squash_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#squash_option Project#squash_option}
 
 ---
 
@@ -1136,7 +1124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The commit message used to apply merge request suggestions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#suggestion_commit_message Project#suggestion_commit_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#suggestion_commit_message Project#suggestion_commit_message}
 
 ---
 
@@ -1148,7 +1136,7 @@ The list of tags for a project;
 
 put array of tags, that should be finally assigned to a project. Use topics instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#tags Project#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#tags Project#tags}
 
 ---
 
@@ -1160,7 +1148,7 @@ When used without use_custom_template, name of a built-in project template.
 
 When used with use_custom_template, name of a custom project template. This option is mutually exclusive with `template_project_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#template_name Project#template_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#template_name Project#template_name}
 
 ---
 
@@ -1172,7 +1160,7 @@ When used with use_custom_template, project ID of a custom project template.
 
 This is preferable to using template_name since template_name may be ambiguous (enterprise edition). This option is mutually exclusive with `template_name`. See `gitlab_group_project_file_template` to set a project as a template project. If a project has not been set as a template, using it here will result in an error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#template_project_id Project#template_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#template_project_id Project#template_project_id}
 
 ---
 
@@ -1182,7 +1170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The list of topics for the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#topics Project#topics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#topics Project#topics}
 
 ---
 
@@ -1194,7 +1182,7 @@ Use either custom instance or group (with group_with_project_templates_id) proje
 
 ~> When using a custom template, [Group Tokens won't work](https://docs.gitlab.com/15.7/ee/user/project/settings/import_export_troubleshooting.html#import-using-the-rest-api-fails-when-using-a-group-access-token). You must use a real user's Personal Access Token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#use_custom_template Project#use_custom_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#use_custom_template Project#use_custom_template}
 
 ---
 
@@ -1204,7 +1192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set to `public` to create a public project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#visibility_level Project#visibility_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#visibility_level Project#visibility_level}
 
 ---
 
@@ -1214,7 +1202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set the wiki access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#wiki_access_level Project#wiki_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#wiki_access_level Project#wiki_access_level}
 
 ---
 
@@ -1224,7 +1212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable wiki for the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#wiki_enabled Project#wiki_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#wiki_enabled Project#wiki_enabled}
 
 ---
 
@@ -1308,7 +1296,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetOnlyAllowMergeIfAllDiscussionsAreResolved">reset_only_allow_merge_if_all_discussions_are_resolved</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetOnlyAllowMergeIfPipelineSucceeds">reset_only_allow_merge_if_pipeline_succeeds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetOnlyMirrorProtectedBranches">reset_only_mirror_protected_branches</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.resetOperationsAccessLevel">reset_operations_access_level</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetPackagesEnabled">reset_packages_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetPagesAccessLevel">reset_pages_access_level</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.resetPath">reset_path</a></code> | *No description.* |
@@ -1572,7 +1559,7 @@ def put_container_expiration_policy(
 
 The cadence of the policy. Valid values are: `1d`, `7d`, `14d`, `1month`, `3month`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#cadence Project#cadence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#cadence Project#cadence}
 
 ---
 
@@ -1582,7 +1569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 If true, the policy is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#enabled Project#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#enabled Project#enabled}
 
 ---
 
@@ -1592,7 +1579,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The number of images to keep.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#keep_n Project#keep_n}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#keep_n Project#keep_n}
 
 ---
 
@@ -1602,7 +1589,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The regular expression to match image names to delete.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#name_regex Project#name_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#name_regex Project#name_regex}
 
 ---
 
@@ -1612,7 +1599,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The regular expression to match image names to delete.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#name_regex_delete Project#name_regex_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#name_regex_delete Project#name_regex_delete}
 
 ---
 
@@ -1622,7 +1609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The regular expression to match image names to keep.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#name_regex_keep Project#name_regex_keep}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#name_regex_keep Project#name_regex_keep}
 
 ---
 
@@ -1632,7 +1619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The number of days to keep images.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#older_than Project#older_than}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#older_than Project#older_than}
 
 ---
 
@@ -1660,7 +1647,7 @@ def put_push_rules(
 
 All commit author emails must match this regex, e.g. `@my-company.com$`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#author_email_regex Project#author_email_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#author_email_regex Project#author_email_regex}
 
 ---
 
@@ -1670,7 +1657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 All branch names must match this regex, e.g. `(feature|hotfix)\/*`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#branch_name_regex Project#branch_name_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#branch_name_regex Project#branch_name_regex}
 
 ---
 
@@ -1680,7 +1667,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Users can only push commits to this repository that were committed with one of their own verified emails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#commit_committer_check Project#commit_committer_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#commit_committer_check Project#commit_committer_check}
 
 ---
 
@@ -1690,7 +1677,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 No commit message is allowed to match this regex, for example `ssh\:\/\/`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#commit_message_negative_regex Project#commit_message_negative_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#commit_message_negative_regex Project#commit_message_negative_regex}
 
 ---
 
@@ -1700,7 +1687,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 All commit messages must match this regex, e.g. `Fixed \d+\..*`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#commit_message_regex Project#commit_message_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#commit_message_regex Project#commit_message_regex}
 
 ---
 
@@ -1710,7 +1697,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Deny deleting a tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#deny_delete_tag Project#deny_delete_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#deny_delete_tag Project#deny_delete_tag}
 
 ---
 
@@ -1720,7 +1707,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 All committed filenames must not match this regex, e.g. `(jar|exe)$`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#file_name_regex Project#file_name_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#file_name_regex Project#file_name_regex}
 
 ---
 
@@ -1730,7 +1717,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum file size (MB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#max_file_size Project#max_file_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#max_file_size Project#max_file_size}
 
 ---
 
@@ -1740,7 +1727,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Restrict commits by author (email) to existing GitLab users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#member_check Project#member_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#member_check Project#member_check}
 
 ---
 
@@ -1750,7 +1737,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 GitLab will reject any files that are likely to contain secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#prevent_secrets Project#prevent_secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#prevent_secrets Project#prevent_secrets}
 
 ---
 
@@ -1760,7 +1747,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Reject commit when it’s not signed through GPG.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#reject_unsigned_commits Project#reject_unsigned_commits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#reject_unsigned_commits Project#reject_unsigned_commits}
 
 ---
 
@@ -2112,12 +2099,6 @@ def reset_only_allow_merge_if_pipeline_succeeds() -> None
 def reset_only_mirror_protected_branches() -> None
 ```
 
-##### `reset_operations_access_level` <a name="reset_operations_access_level" id="@cdktf/provider-gitlab.project.Project.resetOperationsAccessLevel"></a>
-
-```python
-def reset_operations_access_level() -> None
-```
-
 ##### `reset_packages_enabled` <a name="reset_packages_enabled" id="@cdktf/provider-gitlab.project.Project.resetPackagesEnabled"></a>
 
 ```python
@@ -2465,7 +2446,6 @@ project.Project.is_terraform_resource(
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyAllowMergeIfAllDiscussionsAreResolvedInput">only_allow_merge_if_all_discussions_are_resolved_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyAllowMergeIfPipelineSucceedsInput">only_allow_merge_if_pipeline_succeeds_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyMirrorProtectedBranchesInput">only_mirror_protected_branches_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.operationsAccessLevelInput">operations_access_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.packagesEnabledInput">packages_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.pagesAccessLevelInput">pages_access_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
@@ -2555,7 +2535,6 @@ project.Project.is_terraform_resource(
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyAllowMergeIfAllDiscussionsAreResolved">only_allow_merge_if_all_discussions_are_resolved</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyAllowMergeIfPipelineSucceeds">only_allow_merge_if_pipeline_succeeds</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyMirrorProtectedBranches">only_mirror_protected_branches</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.operationsAccessLevel">operations_access_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.packagesEnabled">packages_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.pagesAccessLevel">pages_access_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.path">path</a></code> | <code>str</code> | *No description.* |
@@ -3398,16 +3377,6 @@ only_mirror_protected_branches_input: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `operations_access_level_input`<sup>Optional</sup> <a name="operations_access_level_input" id="@cdktf/provider-gitlab.project.Project.property.operationsAccessLevelInput"></a>
-
-```python
-operations_access_level_input: str
-```
-
-- *Type:* str
 
 ---
 
@@ -4301,16 +4270,6 @@ only_mirror_protected_branches: typing.Union[bool, IResolvable]
 
 ---
 
-##### `operations_access_level`<sup>Required</sup> <a name="operations_access_level" id="@cdktf/provider-gitlab.project.Project.property.operationsAccessLevel"></a>
-
-```python
-operations_access_level: str
-```
-
-- *Type:* str
-
----
-
 ##### `packages_enabled`<sup>Required</sup> <a name="packages_enabled" id="@cdktf/provider-gitlab.project.Project.property.packagesEnabled"></a>
 
 ```python
@@ -4705,7 +4664,6 @@ project.ProjectConfig(
   only_allow_merge_if_all_discussions_are_resolved: typing.Union[bool, IResolvable] = None,
   only_allow_merge_if_pipeline_succeeds: typing.Union[bool, IResolvable] = None,
   only_mirror_protected_branches: typing.Union[bool, IResolvable] = None,
-  operations_access_level: str = None,
   packages_enabled: typing.Union[bool, IResolvable] = None,
   pages_access_level: str = None,
   path: str = None,
@@ -4783,7 +4741,7 @@ project.ProjectConfig(
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.forkedFromProjectId">forked_from_project_id</a></code> | <code>typing.Union[int, float]</code> | The id of the project to fork. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.forkingAccessLevel">forking_access_level</a></code> | <code>str</code> | Set the forking access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.groupWithProjectTemplatesId">group_with_project_templates_id</a></code> | <code>typing.Union[int, float]</code> | For group-level custom templates, specifies ID of group from which all the custom project templates are sourced. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#id Project#id}. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#id Project#id}. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.importUrl">import_url</a></code> | <code>str</code> | Git URL to a repository to be imported. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.importUrlPassword">import_url_password</a></code> | <code>str</code> | The password for the `import_url`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.importUrlUsername">import_url_username</a></code> | <code>str</code> | The username for the `import_url`. |
@@ -4810,7 +4768,6 @@ project.ProjectConfig(
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.onlyAllowMergeIfAllDiscussionsAreResolved">only_allow_merge_if_all_discussions_are_resolved</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to true if you want allow merges only if all discussions are resolved. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.onlyAllowMergeIfPipelineSucceeds">only_allow_merge_if_pipeline_succeeds</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to true if you want allow merges only if a pipeline succeeds. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.onlyMirrorProtectedBranches">only_mirror_protected_branches</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable only mirror protected branches for a mirrored project. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.operationsAccessLevel">operations_access_level</a></code> | <code>str</code> | Set the operations access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.packagesEnabled">packages_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable packages repository for the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.pagesAccessLevel">pages_access_level</a></code> | <code>str</code> | Enable pages access control. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.path">path</a></code> | <code>str</code> | The path of the repository. |
@@ -4925,7 +4882,7 @@ name: str
 
 The name of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#name Project#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#name Project#name}
 
 ---
 
@@ -4939,7 +4896,7 @@ allow_merge_on_skipped_pipeline: typing.Union[bool, IResolvable]
 
 Set to true if you want to treat skipped pipelines as if they finished with success.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#allow_merge_on_skipped_pipeline Project#allow_merge_on_skipped_pipeline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#allow_merge_on_skipped_pipeline Project#allow_merge_on_skipped_pipeline}
 
 ---
 
@@ -4953,7 +4910,7 @@ analytics_access_level: str
 
 Set the analytics access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#analytics_access_level Project#analytics_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#analytics_access_level Project#analytics_access_level}
 
 ---
 
@@ -4972,7 +4929,7 @@ This field **does not** work well in combination with the `gitlab_project_approv
 and is most likely gonna be deprecated in a future GitLab version (see [this upstream epic](https://gitlab.com/groups/gitlab-org/-/epics/7572)).
 In the meantime we recommend against using this attribute and use `gitlab_project_approval_rule` instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#approvals_before_merge Project#approvals_before_merge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#approvals_before_merge Project#approvals_before_merge}
 
 ---
 
@@ -4986,7 +4943,7 @@ archived: typing.Union[bool, IResolvable]
 
 Whether the project is in read-only mode (archived). Repositories can be archived/unarchived by toggling this parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#archived Project#archived}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#archived Project#archived}
 
 ---
 
@@ -5002,7 +4959,7 @@ Set to `true` to archive the project instead of deleting on destroy.
 
 If set to `true` it will entire omit the `DELETE` operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#archive_on_destroy Project#archive_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#archive_on_destroy Project#archive_on_destroy}
 
 ---
 
@@ -5016,7 +4973,7 @@ auto_cancel_pending_pipelines: str
 
 Auto-cancel pending pipelines. This isn’t a boolean, but enabled/disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#auto_cancel_pending_pipelines Project#auto_cancel_pending_pipelines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#auto_cancel_pending_pipelines Project#auto_cancel_pending_pipelines}
 
 ---
 
@@ -5030,7 +4987,7 @@ autoclose_referenced_issues: typing.Union[bool, IResolvable]
 
 Set whether auto-closing referenced issues on default branch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#autoclose_referenced_issues Project#autoclose_referenced_issues}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#autoclose_referenced_issues Project#autoclose_referenced_issues}
 
 ---
 
@@ -5044,7 +5001,7 @@ auto_devops_deploy_strategy: str
 
 Auto Deploy strategy. Valid values are `continuous`, `manual`, `timed_incremental`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#auto_devops_deploy_strategy Project#auto_devops_deploy_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#auto_devops_deploy_strategy Project#auto_devops_deploy_strategy}
 
 ---
 
@@ -5058,7 +5015,7 @@ auto_devops_enabled: typing.Union[bool, IResolvable]
 
 Enable Auto DevOps for this project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#auto_devops_enabled Project#auto_devops_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#auto_devops_enabled Project#auto_devops_enabled}
 
 ---
 
@@ -5072,7 +5029,7 @@ avatar: str
 
 A local path to the avatar image to upload. **Note**: not available for imported resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#avatar Project#avatar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#avatar Project#avatar}
 
 ---
 
@@ -5088,7 +5045,7 @@ The hash of the avatar image.
 
 Use `filesha256("path/to/avatar.png")` whenever possible. **Note**: this is used to trigger an update of the avatar. If it's not given, but an avatar is given, the avatar will be updated each time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#avatar_hash Project#avatar_hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#avatar_hash Project#avatar_hash}
 
 ---
 
@@ -5102,7 +5059,7 @@ build_coverage_regex: str
 
 Test coverage parsing for the project. This is deprecated feature in GitLab 15.0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#build_coverage_regex Project#build_coverage_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#build_coverage_regex Project#build_coverage_regex}
 
 ---
 
@@ -5116,7 +5073,7 @@ build_git_strategy: str
 
 The Git strategy. Defaults to fetch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#build_git_strategy Project#build_git_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#build_git_strategy Project#build_git_strategy}
 
 ---
 
@@ -5130,7 +5087,7 @@ builds_access_level: str
 
 Set the builds access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#builds_access_level Project#builds_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#builds_access_level Project#builds_access_level}
 
 ---
 
@@ -5144,7 +5101,7 @@ build_timeout: typing.Union[int, float]
 
 The maximum amount of time, in seconds, that a job can run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#build_timeout Project#build_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#build_timeout Project#build_timeout}
 
 ---
 
@@ -5158,7 +5115,7 @@ ci_config_path: str
 
 Custom Path to CI config file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#ci_config_path Project#ci_config_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#ci_config_path Project#ci_config_path}
 
 ---
 
@@ -5172,7 +5129,7 @@ ci_default_git_depth: typing.Union[int, float]
 
 Default number of revisions for shallow cloning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#ci_default_git_depth Project#ci_default_git_depth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#ci_default_git_depth Project#ci_default_git_depth}
 
 ---
 
@@ -5186,7 +5143,7 @@ ci_forward_deployment_enabled: typing.Union[bool, IResolvable]
 
 When a new deployment job starts, skip older deployment jobs that are still pending.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#ci_forward_deployment_enabled Project#ci_forward_deployment_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#ci_forward_deployment_enabled Project#ci_forward_deployment_enabled}
 
 ---
 
@@ -5200,7 +5157,7 @@ ci_separated_caches: typing.Union[bool, IResolvable]
 
 Use separate caches for protected branches.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#ci_separated_caches Project#ci_separated_caches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#ci_separated_caches Project#ci_separated_caches}
 
 ---
 
@@ -5214,7 +5171,7 @@ container_expiration_policy: ProjectContainerExpirationPolicy
 
 container_expiration_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#container_expiration_policy Project#container_expiration_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#container_expiration_policy Project#container_expiration_policy}
 
 ---
 
@@ -5228,7 +5185,7 @@ container_registry_access_level: str
 
 Set visibility of container registry, for this project. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#container_registry_access_level Project#container_registry_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#container_registry_access_level Project#container_registry_access_level}
 
 ---
 
@@ -5242,7 +5199,7 @@ container_registry_enabled: typing.Union[bool, IResolvable]
 
 Enable container registry for the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#container_registry_enabled Project#container_registry_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#container_registry_enabled Project#container_registry_enabled}
 
 ---
 
@@ -5256,7 +5213,7 @@ default_branch: str
 
 The default branch for the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#default_branch Project#default_branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#default_branch Project#default_branch}
 
 ---
 
@@ -5270,7 +5227,7 @@ description: str
 
 A description of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#description Project#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#description Project#description}
 
 ---
 
@@ -5284,7 +5241,7 @@ emails_disabled: typing.Union[bool, IResolvable]
 
 Disable email notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#emails_disabled Project#emails_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#emails_disabled Project#emails_disabled}
 
 ---
 
@@ -5298,7 +5255,7 @@ environments_access_level: str
 
 Set the environments access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#environments_access_level Project#environments_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#environments_access_level Project#environments_access_level}
 
 ---
 
@@ -5312,7 +5269,7 @@ external_authorization_classification_label: str
 
 The classification label for the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#external_authorization_classification_label Project#external_authorization_classification_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#external_authorization_classification_label Project#external_authorization_classification_label}
 
 ---
 
@@ -5326,7 +5283,7 @@ feature_flags_access_level: str
 
 Set the feature flags access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#feature_flags_access_level Project#feature_flags_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#feature_flags_access_level Project#feature_flags_access_level}
 
 ---
 
@@ -5342,7 +5299,7 @@ The id of the project to fork.
 
 During create the project is forked and during an update the fork relation is changed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#forked_from_project_id Project#forked_from_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#forked_from_project_id Project#forked_from_project_id}
 
 ---
 
@@ -5356,7 +5313,7 @@ forking_access_level: str
 
 Set the forking access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#forking_access_level Project#forking_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#forking_access_level Project#forking_access_level}
 
 ---
 
@@ -5372,7 +5329,7 @@ For group-level custom templates, specifies ID of group from which all the custo
 
 Leave empty for instance-level templates. Requires use_custom_template to be true (enterprise edition).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#group_with_project_templates_id Project#group_with_project_templates_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#group_with_project_templates_id Project#group_with_project_templates_id}
 
 ---
 
@@ -5384,7 +5341,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#id Project#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#id Project#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -5403,7 +5360,7 @@ Git URL to a repository to be imported.
 
 Together with `mirror = true` it will setup a Pull Mirror. This can also be used together with `forked_from_project_id` to setup a Pull Mirror for a fork. The fork takes precedence over the import. Make sure to provide the credentials in `import_url_username` and `import_url_password`. GitLab never returns the credentials, thus the provider cannot detect configuration drift in the credentials. They can also not be imported using `terraform import`. See the examples section for how to properly use it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#import_url Project#import_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#import_url Project#import_url}
 
 ---
 
@@ -5419,7 +5376,7 @@ The password for the `import_url`.
 
 The value of this field is used to construct a valid `import_url` and is only related to the provider. This field cannot be imported using `terraform import`. See the examples section for how to properly use it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#import_url_password Project#import_url_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#import_url_password Project#import_url_password}
 
 ---
 
@@ -5435,7 +5392,7 @@ The username for the `import_url`.
 
 The value of this field is used to construct a valid `import_url` and is only related to the provider. This field cannot be imported using `terraform import`.  See the examples section for how to properly use it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#import_url_username Project#import_url_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#import_url_username Project#import_url_username}
 
 ---
 
@@ -5449,7 +5406,7 @@ infrastructure_access_level: str
 
 Set the infrastructure access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#infrastructure_access_level Project#infrastructure_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#infrastructure_access_level Project#infrastructure_access_level}
 
 ---
 
@@ -5463,7 +5420,7 @@ initialize_with_readme: typing.Union[bool, IResolvable]
 
 Create main branch with first commit containing a README.md file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#initialize_with_readme Project#initialize_with_readme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#initialize_with_readme Project#initialize_with_readme}
 
 ---
 
@@ -5477,7 +5434,7 @@ issues_access_level: str
 
 Set the issues access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#issues_access_level Project#issues_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#issues_access_level Project#issues_access_level}
 
 ---
 
@@ -5491,7 +5448,7 @@ issues_enabled: typing.Union[bool, IResolvable]
 
 Enable issue tracking for the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#issues_enabled Project#issues_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#issues_enabled Project#issues_enabled}
 
 ---
 
@@ -5505,7 +5462,7 @@ issues_template: str
 
 Sets the template for new issues in the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#issues_template Project#issues_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#issues_template Project#issues_template}
 
 ---
 
@@ -5519,7 +5476,7 @@ keep_latest_artifact: typing.Union[bool, IResolvable]
 
 Disable or enable the ability to keep the latest artifact for this project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#keep_latest_artifact Project#keep_latest_artifact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#keep_latest_artifact Project#keep_latest_artifact}
 
 ---
 
@@ -5533,7 +5490,7 @@ lfs_enabled: typing.Union[bool, IResolvable]
 
 Enable LFS for the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#lfs_enabled Project#lfs_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#lfs_enabled Project#lfs_enabled}
 
 ---
 
@@ -5547,7 +5504,7 @@ merge_commit_template: str
 
 Template used to create merge commit message in merge requests. (Introduced in GitLab 14.5.).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#merge_commit_template Project#merge_commit_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#merge_commit_template Project#merge_commit_template}
 
 ---
 
@@ -5561,7 +5518,7 @@ merge_method: str
 
 Set the merge method. Valid values are `merge`, `rebase_merge`, `ff`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#merge_method Project#merge_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#merge_method Project#merge_method}
 
 ---
 
@@ -5575,7 +5532,7 @@ merge_pipelines_enabled: typing.Union[bool, IResolvable]
 
 Enable or disable merge pipelines.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#merge_pipelines_enabled Project#merge_pipelines_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#merge_pipelines_enabled Project#merge_pipelines_enabled}
 
 ---
 
@@ -5589,7 +5546,7 @@ merge_requests_access_level: str
 
 Set the merge requests access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#merge_requests_access_level Project#merge_requests_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#merge_requests_access_level Project#merge_requests_access_level}
 
 ---
 
@@ -5603,7 +5560,7 @@ merge_requests_enabled: typing.Union[bool, IResolvable]
 
 Enable merge requests for the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#merge_requests_enabled Project#merge_requests_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#merge_requests_enabled Project#merge_requests_enabled}
 
 ---
 
@@ -5617,7 +5574,7 @@ merge_requests_template: str
 
 Sets the template for new merge requests in the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#merge_requests_template Project#merge_requests_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#merge_requests_template Project#merge_requests_template}
 
 ---
 
@@ -5631,7 +5588,7 @@ merge_trains_enabled: typing.Union[bool, IResolvable]
 
 Enable or disable merge trains. Requires `merge_pipelines_enabled` to be set to `true` to take effect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#merge_trains_enabled Project#merge_trains_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#merge_trains_enabled Project#merge_trains_enabled}
 
 ---
 
@@ -5645,7 +5602,7 @@ mirror: typing.Union[bool, IResolvable]
 
 Enable project pull mirror.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#mirror Project#mirror}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#mirror Project#mirror}
 
 ---
 
@@ -5659,7 +5616,7 @@ mirror_overwrites_diverged_branches: typing.Union[bool, IResolvable]
 
 Enable overwrite diverged branches for a mirrored project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#mirror_overwrites_diverged_branches Project#mirror_overwrites_diverged_branches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#mirror_overwrites_diverged_branches Project#mirror_overwrites_diverged_branches}
 
 ---
 
@@ -5673,7 +5630,7 @@ mirror_trigger_builds: typing.Union[bool, IResolvable]
 
 Enable trigger builds on pushes for a mirrored project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#mirror_trigger_builds Project#mirror_trigger_builds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#mirror_trigger_builds Project#mirror_trigger_builds}
 
 ---
 
@@ -5687,7 +5644,7 @@ monitor_access_level: str
 
 Set the monitor access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#monitor_access_level Project#monitor_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#monitor_access_level Project#monitor_access_level}
 
 ---
 
@@ -5701,7 +5658,7 @@ mr_default_target_self: typing.Union[bool, IResolvable]
 
 For forked projects, target merge requests to this project. If false, the target will be the upstream project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#mr_default_target_self Project#mr_default_target_self}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#mr_default_target_self Project#mr_default_target_self}
 
 ---
 
@@ -5715,7 +5672,7 @@ namespace_id: typing.Union[int, float]
 
 The namespace (group or user) of the project. Defaults to your user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#namespace_id Project#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#namespace_id Project#namespace_id}
 
 ---
 
@@ -5729,7 +5686,7 @@ only_allow_merge_if_all_discussions_are_resolved: typing.Union[bool, IResolvable
 
 Set to true if you want allow merges only if all discussions are resolved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#only_allow_merge_if_all_discussions_are_resolved Project#only_allow_merge_if_all_discussions_are_resolved}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#only_allow_merge_if_all_discussions_are_resolved Project#only_allow_merge_if_all_discussions_are_resolved}
 
 ---
 
@@ -5743,7 +5700,7 @@ only_allow_merge_if_pipeline_succeeds: typing.Union[bool, IResolvable]
 
 Set to true if you want allow merges only if a pipeline succeeds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#only_allow_merge_if_pipeline_succeeds Project#only_allow_merge_if_pipeline_succeeds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#only_allow_merge_if_pipeline_succeeds Project#only_allow_merge_if_pipeline_succeeds}
 
 ---
 
@@ -5757,21 +5714,7 @@ only_mirror_protected_branches: typing.Union[bool, IResolvable]
 
 Enable only mirror protected branches for a mirrored project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#only_mirror_protected_branches Project#only_mirror_protected_branches}
-
----
-
-##### `operations_access_level`<sup>Optional</sup> <a name="operations_access_level" id="@cdktf/provider-gitlab.project.ProjectConfig.property.operationsAccessLevel"></a>
-
-```python
-operations_access_level: str
-```
-
-- *Type:* str
-
-Set the operations access level. Valid values are `disabled`, `private`, `enabled`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#operations_access_level Project#operations_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#only_mirror_protected_branches Project#only_mirror_protected_branches}
 
 ---
 
@@ -5785,7 +5728,7 @@ packages_enabled: typing.Union[bool, IResolvable]
 
 Enable packages repository for the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#packages_enabled Project#packages_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#packages_enabled Project#packages_enabled}
 
 ---
 
@@ -5799,7 +5742,7 @@ pages_access_level: str
 
 Enable pages access control.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#pages_access_level Project#pages_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#pages_access_level Project#pages_access_level}
 
 ---
 
@@ -5813,7 +5756,7 @@ path: str
 
 The path of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#path Project#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#path Project#path}
 
 ---
 
@@ -5827,7 +5770,7 @@ pipelines_enabled: typing.Union[bool, IResolvable]
 
 Enable pipelines for the project. The `pipelines_enabled` field is being sent as `jobs_enabled` in the GitLab API calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#pipelines_enabled Project#pipelines_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#pipelines_enabled Project#pipelines_enabled}
 
 ---
 
@@ -5841,7 +5784,7 @@ printing_merge_request_link_enabled: typing.Union[bool, IResolvable]
 
 Show link to create/view merge request when pushing from the command line.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#printing_merge_request_link_enabled Project#printing_merge_request_link_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#printing_merge_request_link_enabled Project#printing_merge_request_link_enabled}
 
 ---
 
@@ -5855,7 +5798,7 @@ public_builds: typing.Union[bool, IResolvable]
 
 If true, jobs can be viewed by non-project members.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#public_builds Project#public_builds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#public_builds Project#public_builds}
 
 ---
 
@@ -5869,7 +5812,7 @@ push_rules: ProjectPushRules
 
 push_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#push_rules Project#push_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#push_rules Project#push_rules}
 
 ---
 
@@ -5883,7 +5826,7 @@ releases_access_level: str
 
 Set the releases access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#releases_access_level Project#releases_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#releases_access_level Project#releases_access_level}
 
 ---
 
@@ -5897,7 +5840,7 @@ remove_source_branch_after_merge: typing.Union[bool, IResolvable]
 
 Enable `Delete source branch` option by default for all new merge requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#remove_source_branch_after_merge Project#remove_source_branch_after_merge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#remove_source_branch_after_merge Project#remove_source_branch_after_merge}
 
 ---
 
@@ -5911,7 +5854,7 @@ repository_access_level: str
 
 Set the repository access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#repository_access_level Project#repository_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#repository_access_level Project#repository_access_level}
 
 ---
 
@@ -5925,7 +5868,7 @@ repository_storage: str
 
 Which storage shard the repository is on. (administrator only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#repository_storage Project#repository_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#repository_storage Project#repository_storage}
 
 ---
 
@@ -5939,7 +5882,7 @@ request_access_enabled: typing.Union[bool, IResolvable]
 
 Allow users to request member access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#request_access_enabled Project#request_access_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#request_access_enabled Project#request_access_enabled}
 
 ---
 
@@ -5953,7 +5896,7 @@ requirements_access_level: str
 
 Set the requirements access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#requirements_access_level Project#requirements_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#requirements_access_level Project#requirements_access_level}
 
 ---
 
@@ -5967,7 +5910,7 @@ resolve_outdated_diff_discussions: typing.Union[bool, IResolvable]
 
 Automatically resolve merge request diffs discussions on lines changed with a push.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#resolve_outdated_diff_discussions Project#resolve_outdated_diff_discussions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#resolve_outdated_diff_discussions Project#resolve_outdated_diff_discussions}
 
 ---
 
@@ -5981,7 +5924,7 @@ restrict_user_defined_variables: typing.Union[bool, IResolvable]
 
 Allow only users with the Maintainer role to pass user-defined variables when triggering a pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#restrict_user_defined_variables Project#restrict_user_defined_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#restrict_user_defined_variables Project#restrict_user_defined_variables}
 
 ---
 
@@ -5995,7 +5938,7 @@ security_and_compliance_access_level: str
 
 Set the security and compliance access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#security_and_compliance_access_level Project#security_and_compliance_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#security_and_compliance_access_level Project#security_and_compliance_access_level}
 
 ---
 
@@ -6009,7 +5952,7 @@ shared_runners_enabled: typing.Union[bool, IResolvable]
 
 Enable shared runners for this project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#shared_runners_enabled Project#shared_runners_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#shared_runners_enabled Project#shared_runners_enabled}
 
 ---
 
@@ -6027,7 +5970,7 @@ This is necessary if the current user is not an admin and the default branch pro
 There is currently no known way to determine if the default branch protection is disabled on an instance-level for non-admin users.
 This attribute is only used during resource creation, thus changes are suppressed and the attribute cannot be imported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#skip_wait_for_default_branch_protection Project#skip_wait_for_default_branch_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#skip_wait_for_default_branch_protection Project#skip_wait_for_default_branch_protection}
 
 ---
 
@@ -6041,7 +5984,7 @@ snippets_access_level: str
 
 Set the snippets access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#snippets_access_level Project#snippets_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#snippets_access_level Project#snippets_access_level}
 
 ---
 
@@ -6055,7 +5998,7 @@ snippets_enabled: typing.Union[bool, IResolvable]
 
 Enable snippets for the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#snippets_enabled Project#snippets_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#snippets_enabled Project#snippets_enabled}
 
 ---
 
@@ -6069,7 +6012,7 @@ squash_commit_template: str
 
 Template used to create squash commit message in merge requests. (Introduced in GitLab 14.6.).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#squash_commit_template Project#squash_commit_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#squash_commit_template Project#squash_commit_template}
 
 ---
 
@@ -6085,7 +6028,7 @@ Squash commits when merge request.
 
 Valid values are `never`, `always`, `default_on`, or `default_off`. The default value is `default_off`. [GitLab >= 14.1]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#squash_option Project#squash_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#squash_option Project#squash_option}
 
 ---
 
@@ -6099,7 +6042,7 @@ suggestion_commit_message: str
 
 The commit message used to apply merge request suggestions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#suggestion_commit_message Project#suggestion_commit_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#suggestion_commit_message Project#suggestion_commit_message}
 
 ---
 
@@ -6115,7 +6058,7 @@ The list of tags for a project;
 
 put array of tags, that should be finally assigned to a project. Use topics instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#tags Project#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#tags Project#tags}
 
 ---
 
@@ -6131,7 +6074,7 @@ When used without use_custom_template, name of a built-in project template.
 
 When used with use_custom_template, name of a custom project template. This option is mutually exclusive with `template_project_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#template_name Project#template_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#template_name Project#template_name}
 
 ---
 
@@ -6147,7 +6090,7 @@ When used with use_custom_template, project ID of a custom project template.
 
 This is preferable to using template_name since template_name may be ambiguous (enterprise edition). This option is mutually exclusive with `template_name`. See `gitlab_group_project_file_template` to set a project as a template project. If a project has not been set as a template, using it here will result in an error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#template_project_id Project#template_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#template_project_id Project#template_project_id}
 
 ---
 
@@ -6161,7 +6104,7 @@ topics: typing.List[str]
 
 The list of topics for the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#topics Project#topics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#topics Project#topics}
 
 ---
 
@@ -6177,7 +6120,7 @@ Use either custom instance or group (with group_with_project_templates_id) proje
 
 ~> When using a custom template, [Group Tokens won't work](https://docs.gitlab.com/15.7/ee/user/project/settings/import_export_troubleshooting.html#import-using-the-rest-api-fails-when-using-a-group-access-token). You must use a real user's Personal Access Token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#use_custom_template Project#use_custom_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#use_custom_template Project#use_custom_template}
 
 ---
 
@@ -6191,7 +6134,7 @@ visibility_level: str
 
 Set to `public` to create a public project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#visibility_level Project#visibility_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#visibility_level Project#visibility_level}
 
 ---
 
@@ -6205,7 +6148,7 @@ wiki_access_level: str
 
 Set the wiki access level. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#wiki_access_level Project#wiki_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#wiki_access_level Project#wiki_access_level}
 
 ---
 
@@ -6219,7 +6162,7 @@ wiki_enabled: typing.Union[bool, IResolvable]
 
 Enable wiki for the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#wiki_enabled Project#wiki_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#wiki_enabled Project#wiki_enabled}
 
 ---
 
@@ -6265,7 +6208,7 @@ cadence: str
 
 The cadence of the policy. Valid values are: `1d`, `7d`, `14d`, `1month`, `3month`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#cadence Project#cadence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#cadence Project#cadence}
 
 ---
 
@@ -6279,7 +6222,7 @@ enabled: typing.Union[bool, IResolvable]
 
 If true, the policy is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#enabled Project#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#enabled Project#enabled}
 
 ---
 
@@ -6293,7 +6236,7 @@ keep_n: typing.Union[int, float]
 
 The number of images to keep.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#keep_n Project#keep_n}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#keep_n Project#keep_n}
 
 ---
 
@@ -6307,7 +6250,7 @@ name_regex: str
 
 The regular expression to match image names to delete.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#name_regex Project#name_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#name_regex Project#name_regex}
 
 ---
 
@@ -6321,7 +6264,7 @@ name_regex_delete: str
 
 The regular expression to match image names to delete.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#name_regex_delete Project#name_regex_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#name_regex_delete Project#name_regex_delete}
 
 ---
 
@@ -6335,7 +6278,7 @@ name_regex_keep: str
 
 The regular expression to match image names to keep.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#name_regex_keep Project#name_regex_keep}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#name_regex_keep Project#name_regex_keep}
 
 ---
 
@@ -6349,7 +6292,7 @@ older_than: str
 
 The number of days to keep images.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#older_than Project#older_than}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#older_than Project#older_than}
 
 ---
 
@@ -6403,7 +6346,7 @@ author_email_regex: str
 
 All commit author emails must match this regex, e.g. `@my-company.com$`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#author_email_regex Project#author_email_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#author_email_regex Project#author_email_regex}
 
 ---
 
@@ -6417,7 +6360,7 @@ branch_name_regex: str
 
 All branch names must match this regex, e.g. `(feature|hotfix)\/*`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#branch_name_regex Project#branch_name_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#branch_name_regex Project#branch_name_regex}
 
 ---
 
@@ -6431,7 +6374,7 @@ commit_committer_check: typing.Union[bool, IResolvable]
 
 Users can only push commits to this repository that were committed with one of their own verified emails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#commit_committer_check Project#commit_committer_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#commit_committer_check Project#commit_committer_check}
 
 ---
 
@@ -6445,7 +6388,7 @@ commit_message_negative_regex: str
 
 No commit message is allowed to match this regex, for example `ssh\:\/\/`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#commit_message_negative_regex Project#commit_message_negative_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#commit_message_negative_regex Project#commit_message_negative_regex}
 
 ---
 
@@ -6459,7 +6402,7 @@ commit_message_regex: str
 
 All commit messages must match this regex, e.g. `Fixed \d+\..*`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#commit_message_regex Project#commit_message_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#commit_message_regex Project#commit_message_regex}
 
 ---
 
@@ -6473,7 +6416,7 @@ deny_delete_tag: typing.Union[bool, IResolvable]
 
 Deny deleting a tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#deny_delete_tag Project#deny_delete_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#deny_delete_tag Project#deny_delete_tag}
 
 ---
 
@@ -6487,7 +6430,7 @@ file_name_regex: str
 
 All committed filenames must not match this regex, e.g. `(jar|exe)$`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#file_name_regex Project#file_name_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#file_name_regex Project#file_name_regex}
 
 ---
 
@@ -6501,7 +6444,7 @@ max_file_size: typing.Union[int, float]
 
 Maximum file size (MB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#max_file_size Project#max_file_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#max_file_size Project#max_file_size}
 
 ---
 
@@ -6515,7 +6458,7 @@ member_check: typing.Union[bool, IResolvable]
 
 Restrict commits by author (email) to existing GitLab users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#member_check Project#member_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#member_check Project#member_check}
 
 ---
 
@@ -6529,7 +6472,7 @@ prevent_secrets: typing.Union[bool, IResolvable]
 
 GitLab will reject any files that are likely to contain secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#prevent_secrets Project#prevent_secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#prevent_secrets Project#prevent_secrets}
 
 ---
 
@@ -6543,7 +6486,7 @@ reject_unsigned_commits: typing.Union[bool, IResolvable]
 
 Reject commit when it’s not signed through GPG.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project#reject_unsigned_commits Project#reject_unsigned_commits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project#reject_unsigned_commits Project#reject_unsigned_commits}
 
 ---
 

@@ -1,6 +1,6 @@
 # `gitlab_service_github`
 
-Refer to the Terraform Registory for docs: [`gitlab_service_github`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_github).
+Refer to the Terraform Registory for docs: [`gitlab_service_github`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_github).
 
 # `serviceGithub` Submodule <a name="`serviceGithub` Submodule" id="@cdktf/provider-gitlab.serviceGithub"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`gitlab_service_github`](https://reg
 
 ### ServiceGithub <a name="ServiceGithub" id="@cdktf/provider-gitlab.serviceGithub.ServiceGithub"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_github gitlab_service_github}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_github gitlab_service_github}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.serviceGithub.ServiceGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/servicegithub"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicegithub"
 
 servicegithub.NewServiceGithub(scope Construct, id *string, config ServiceGithubConfig) ServiceGithub
 ```
@@ -284,7 +284,7 @@ func ResetStaticContext()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.serviceGithub.ServiceGithub.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/servicegithub"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicegithub"
 
 servicegithub.ServiceGithub_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.serviceGithub.ServiceGithub.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/servicegithub"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicegithub"
 
 servicegithub.ServiceGithub_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ servicegithub.ServiceGithub_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.serviceGithub.ServiceGithub.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/servicegithub"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicegithub"
 
 servicegithub.ServiceGithub_IsTerraformResource(x interface{}) *bool
 ```
@@ -683,7 +683,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.serviceGithub.ServiceGithubConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/servicegithub"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicegithub"
 
 &servicegithub.ServiceGithubConfig {
 	Connection: interface{},
@@ -715,7 +715,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/servicegithub"
 | <code><a href="#@cdktf/provider-gitlab.serviceGithub.ServiceGithubConfig.property.project">Project</a></code> | <code>*string</code> | ID of the project you want to activate integration on. |
 | <code><a href="#@cdktf/provider-gitlab.serviceGithub.ServiceGithubConfig.property.repositoryUrl">RepositoryUrl</a></code> | <code>*string</code> | The URL of the GitHub repo to integrate with, e,g, https://github.com/gitlabhq/terraform-provider-gitlab. |
 | <code><a href="#@cdktf/provider-gitlab.serviceGithub.ServiceGithubConfig.property.token">Token</a></code> | <code>*string</code> | A GitHub personal access token with at least `repo:status` scope. |
-| <code><a href="#@cdktf/provider-gitlab.serviceGithub.ServiceGithubConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_github#id ServiceGithub#id}. |
+| <code><a href="#@cdktf/provider-gitlab.serviceGithub.ServiceGithubConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_github#id ServiceGithub#id}. |
 | <code><a href="#@cdktf/provider-gitlab.serviceGithub.ServiceGithubConfig.property.staticContext">StaticContext</a></code> | <code>interface{}</code> | Append instance name instead of branch to the status. |
 
 ---
@@ -800,7 +800,7 @@ Project *string
 
 ID of the project you want to activate integration on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_github#project ServiceGithub#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_github#project ServiceGithub#project}
 
 ---
 
@@ -814,7 +814,7 @@ RepositoryUrl *string
 
 The URL of the GitHub repo to integrate with, e,g, https://github.com/gitlabhq/terraform-provider-gitlab.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_github#repository_url ServiceGithub#repository_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_github#repository_url ServiceGithub#repository_url}
 
 ---
 
@@ -828,7 +828,7 @@ Token *string
 
 A GitHub personal access token with at least `repo:status` scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_github#token ServiceGithub#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_github#token ServiceGithub#token}
 
 ---
 
@@ -840,7 +840,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_github#id ServiceGithub#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_github#id ServiceGithub#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -859,7 +859,7 @@ Append instance name instead of branch to the status.
 
 Must enable to set a GitLab status check as *required* in GitHub. See [Static / dynamic status check names] to learn more.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_github#static_context ServiceGithub#static_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_github#static_context ServiceGithub#static_context}
 
 ---
 

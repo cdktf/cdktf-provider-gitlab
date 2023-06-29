@@ -1,6 +1,6 @@
 # `gitlab_service_jira`
 
-Refer to the Terraform Registory for docs: [`gitlab_service_jira`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_jira).
+Refer to the Terraform Registory for docs: [`gitlab_service_jira`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_jira).
 
 # `serviceJira` Submodule <a name="`serviceJira` Submodule" id="@cdktf/provider-gitlab.serviceJira"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`gitlab_service_jira`](https://regis
 
 ### ServiceJira <a name="ServiceJira" id="@cdktf/provider-gitlab.serviceJira.ServiceJira"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_jira gitlab_service_jira}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_jira gitlab_service_jira}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/servicejira"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicejira"
 
 servicejira.NewServiceJira(scope Construct, id *string, config ServiceJiraConfig) ServiceJira
 ```
@@ -361,7 +361,7 @@ func ResetTagPushEvents()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/servicejira"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicejira"
 
 servicejira.ServiceJira_IsConstruct(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/servicejira"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicejira"
 
 servicejira.ServiceJira_IsTerraformElement(x interface{}) *bool
 ```
@@ -407,7 +407,7 @@ servicejira.ServiceJira_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/servicejira"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicejira"
 
 servicejira.ServiceJira_IsTerraformResource(x interface{}) *bool
 ```
@@ -1024,7 +1024,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/servicejira"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicejira"
 
 &servicejira.ServiceJiraConfig {
 	Connection: interface{},
@@ -1072,7 +1072,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/servicejira"
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.apiUrl">ApiUrl</a></code> | <code>*string</code> | The base URL to the Jira instance API. Web URL value is used if not set. For example, https://jira-api.example.com. |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.commentOnEventEnabled">CommentOnEventEnabled</a></code> | <code>interface{}</code> | Enable comments inside Jira issues on each GitLab event (commit / merge request). |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.commitEvents">CommitEvents</a></code> | <code>interface{}</code> | Enable notifications for commit events. |
-| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_jira#id ServiceJira#id}. |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_jira#id ServiceJira#id}. |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.issuesEvents">IssuesEvents</a></code> | <code>interface{}</code> | Enable notifications for issues events. |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.jiraIssueTransitionId">JiraIssueTransitionId</a></code> | <code>*string</code> | The ID of a transition that moves issues to a closed state. |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.jobEvents">JobEvents</a></code> | <code>interface{}</code> | Enable notifications for job events. |
@@ -1165,7 +1165,7 @@ Password *string
 
 The password of the user created to be used with GitLab/JIRA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_jira#password ServiceJira#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_jira#password ServiceJira#password}
 
 ---
 
@@ -1179,7 +1179,7 @@ Project *string
 
 ID of the project you want to activate integration on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_jira#project ServiceJira#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_jira#project ServiceJira#project}
 
 ---
 
@@ -1193,7 +1193,7 @@ Url *string
 
 The URL to the JIRA project which is being linked to this GitLab project. For example, https://jira.example.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_jira#url ServiceJira#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_jira#url ServiceJira#url}
 
 ---
 
@@ -1207,7 +1207,7 @@ Username *string
 
 The username of the user created to be used with GitLab/JIRA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_jira#username ServiceJira#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_jira#username ServiceJira#username}
 
 ---
 
@@ -1221,7 +1221,7 @@ ApiUrl *string
 
 The base URL to the Jira instance API. Web URL value is used if not set. For example, https://jira-api.example.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_jira#api_url ServiceJira#api_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_jira#api_url ServiceJira#api_url}
 
 ---
 
@@ -1235,7 +1235,7 @@ CommentOnEventEnabled interface{}
 
 Enable comments inside Jira issues on each GitLab event (commit / merge request).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_jira#comment_on_event_enabled ServiceJira#comment_on_event_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_jira#comment_on_event_enabled ServiceJira#comment_on_event_enabled}
 
 ---
 
@@ -1249,7 +1249,7 @@ CommitEvents interface{}
 
 Enable notifications for commit events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_jira#commit_events ServiceJira#commit_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_jira#commit_events ServiceJira#commit_events}
 
 ---
 
@@ -1261,7 +1261,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_jira#id ServiceJira#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_jira#id ServiceJira#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1278,7 +1278,7 @@ IssuesEvents interface{}
 
 Enable notifications for issues events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_jira#issues_events ServiceJira#issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_jira#issues_events ServiceJira#issues_events}
 
 ---
 
@@ -1294,7 +1294,7 @@ The ID of a transition that moves issues to a closed state.
 
 You can find this number under the JIRA workflow administration (Administration > Issues > Workflows) by selecting View under Operations of the desired workflow of your project. By default, this ID is set to 2. *Note**: importing this field is only supported since GitLab 15.2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_jira#jira_issue_transition_id ServiceJira#jira_issue_transition_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_jira#jira_issue_transition_id ServiceJira#jira_issue_transition_id}
 
 ---
 
@@ -1308,7 +1308,7 @@ JobEvents interface{}
 
 Enable notifications for job events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_jira#job_events ServiceJira#job_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_jira#job_events ServiceJira#job_events}
 
 ---
 
@@ -1322,7 +1322,7 @@ MergeRequestsEvents interface{}
 
 Enable notifications for merge request events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_jira#merge_requests_events ServiceJira#merge_requests_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_jira#merge_requests_events ServiceJira#merge_requests_events}
 
 ---
 
@@ -1336,7 +1336,7 @@ NoteEvents interface{}
 
 Enable notifications for note events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_jira#note_events ServiceJira#note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_jira#note_events ServiceJira#note_events}
 
 ---
 
@@ -1350,7 +1350,7 @@ PipelineEvents interface{}
 
 Enable notifications for pipeline events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_jira#pipeline_events ServiceJira#pipeline_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_jira#pipeline_events ServiceJira#pipeline_events}
 
 ---
 
@@ -1364,7 +1364,7 @@ ProjectKey *string
 
 The short identifier for your JIRA project, all uppercase, e.g., PROJ.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_jira#project_key ServiceJira#project_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_jira#project_key ServiceJira#project_key}
 
 ---
 
@@ -1378,7 +1378,7 @@ PushEvents interface{}
 
 Enable notifications for push events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_jira#push_events ServiceJira#push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_jira#push_events ServiceJira#push_events}
 
 ---
 
@@ -1392,7 +1392,7 @@ TagPushEvents interface{}
 
 Enable notifications for tag_push events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/service_jira#tag_push_events ServiceJira#tag_push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/service_jira#tag_push_events ServiceJira#tag_push_events}
 
 ---
 

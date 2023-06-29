@@ -1,6 +1,6 @@
 # `gitlab_project_share_group`
 
-Refer to the Terraform Registory for docs: [`gitlab_project_share_group`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_share_group).
+Refer to the Terraform Registory for docs: [`gitlab_project_share_group`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_share_group).
 
 # `projectShareGroup` Submodule <a name="`projectShareGroup` Submodule" id="@cdktf/provider-gitlab.projectShareGroup"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_project_share_group`](https:
 
 ### ProjectShareGroup <a name="ProjectShareGroup" id="@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_share_group gitlab_project_share_group}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_share_group gitlab_project_share_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroup.Initializer"></a>
 
@@ -26,7 +26,7 @@ projectShareGroup.ProjectShareGroup(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   group_id: typing.Union[int, float],
-  project_id: str,
+  project: str,
   access_level: str = None,
   group_access: str = None,
   id: str = None
@@ -45,10 +45,10 @@ projectShareGroup.ProjectShareGroup(
 | <code><a href="#@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroup.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroup.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroup.Initializer.parameter.groupId">group_id</a></code> | <code>typing.Union[int, float]</code> | The id of the group. |
-| <code><a href="#@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroup.Initializer.parameter.projectId">project_id</a></code> | <code>str</code> | The id of the project. |
+| <code><a href="#@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroup.Initializer.parameter.project">project</a></code> | <code>str</code> | The ID or URL-encoded path of the project. |
 | <code><a href="#@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroup.Initializer.parameter.accessLevel">access_level</a></code> | <code>str</code> | The access level to grant the group for the project. |
 | <code><a href="#@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroup.Initializer.parameter.groupAccess">group_access</a></code> | <code>str</code> | The access level to grant the group for the project. |
-| <code><a href="#@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_share_group#id ProjectShareGroup#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_share_group#id ProjectShareGroup#id}. |
 
 ---
 
@@ -118,17 +118,17 @@ Must be unique amongst siblings in the same scope
 
 The id of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_share_group#group_id ProjectShareGroup#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_share_group#group_id ProjectShareGroup#group_id}
 
 ---
 
-##### `project_id`<sup>Required</sup> <a name="project_id" id="@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroup.Initializer.parameter.projectId"></a>
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroup.Initializer.parameter.project"></a>
 
 - *Type:* str
 
-The id of the project.
+The ID or URL-encoded path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_share_group#project_id ProjectShareGroup#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_share_group#project ProjectShareGroup#project}
 
 ---
 
@@ -140,7 +140,7 @@ The access level to grant the group for the project.
 
 Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_share_group#access_level ProjectShareGroup#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_share_group#access_level ProjectShareGroup#access_level}
 
 ---
 
@@ -152,7 +152,7 @@ The access level to grant the group for the project.
 
 Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_share_group#group_access ProjectShareGroup#group_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_share_group#group_access ProjectShareGroup#group_access}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_share_group#id ProjectShareGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_share_group#id ProjectShareGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -518,12 +518,12 @@ projectShareGroup.ProjectShareGroup.is_terraform_resource(
 | <code><a href="#@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroup.property.groupAccessInput">group_access_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroup.property.groupIdInput">group_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroup.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroup.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroup.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroup.property.accessLevel">access_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroup.property.groupAccess">group_access</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroup.property.groupId">group_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroup.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroup.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroup.property.project">project</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -709,10 +709,10 @@ id_input: str
 
 ---
 
-##### `project_id_input`<sup>Optional</sup> <a name="project_id_input" id="@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroup.property.projectIdInput"></a>
+##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroup.property.projectInput"></a>
 
 ```python
-project_id_input: str
+project_input: str
 ```
 
 - *Type:* str
@@ -759,10 +759,10 @@ id: str
 
 ---
 
-##### `project_id`<sup>Required</sup> <a name="project_id" id="@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroup.property.projectId"></a>
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroup.property.project"></a>
 
 ```python
-project_id: str
+project: str
 ```
 
 - *Type:* str
@@ -805,7 +805,7 @@ projectShareGroup.ProjectShareGroupConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   group_id: typing.Union[int, float],
-  project_id: str,
+  project: str,
   access_level: str = None,
   group_access: str = None,
   id: str = None
@@ -824,10 +824,10 @@ projectShareGroup.ProjectShareGroupConfig(
 | <code><a href="#@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroupConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroupConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroupConfig.property.groupId">group_id</a></code> | <code>typing.Union[int, float]</code> | The id of the group. |
-| <code><a href="#@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroupConfig.property.projectId">project_id</a></code> | <code>str</code> | The id of the project. |
+| <code><a href="#@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroupConfig.property.project">project</a></code> | <code>str</code> | The ID or URL-encoded path of the project. |
 | <code><a href="#@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroupConfig.property.accessLevel">access_level</a></code> | <code>str</code> | The access level to grant the group for the project. |
 | <code><a href="#@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroupConfig.property.groupAccess">group_access</a></code> | <code>str</code> | The access level to grant the group for the project. |
-| <code><a href="#@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_share_group#id ProjectShareGroup#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_share_group#id ProjectShareGroup#id}. |
 
 ---
 
@@ -911,21 +911,21 @@ group_id: typing.Union[int, float]
 
 The id of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_share_group#group_id ProjectShareGroup#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_share_group#group_id ProjectShareGroup#group_id}
 
 ---
 
-##### `project_id`<sup>Required</sup> <a name="project_id" id="@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroupConfig.property.projectId"></a>
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.projectShareGroup.ProjectShareGroupConfig.property.project"></a>
 
 ```python
-project_id: str
+project: str
 ```
 
 - *Type:* str
 
-The id of the project.
+The ID or URL-encoded path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_share_group#project_id ProjectShareGroup#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_share_group#project ProjectShareGroup#project}
 
 ---
 
@@ -941,7 +941,7 @@ The access level to grant the group for the project.
 
 Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_share_group#access_level ProjectShareGroup#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_share_group#access_level ProjectShareGroup#access_level}
 
 ---
 
@@ -957,7 +957,7 @@ The access level to grant the group for the project.
 
 Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_share_group#group_access ProjectShareGroup#group_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_share_group#group_access ProjectShareGroup#group_access}
 
 ---
 
@@ -969,7 +969,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/project_share_group#id ProjectShareGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_share_group#id ProjectShareGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,6 +1,6 @@
 # `gitlab_deploy_token`
 
-Refer to the Terraform Registory for docs: [`gitlab_deploy_token`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/deploy_token).
+Refer to the Terraform Registory for docs: [`gitlab_deploy_token`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/deploy_token).
 
 # `deployToken` Submodule <a name="`deployToken` Submodule" id="@cdktf/provider-gitlab.deployToken"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_deploy_token`](https://regis
 
 ### DeployToken <a name="DeployToken" id="@cdktf/provider-gitlab.deployToken.DeployToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/deploy_token gitlab_deploy_token}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/deploy_token gitlab_deploy_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.deployToken.DeployToken.Initializer"></a>
 
@@ -380,6 +380,7 @@ deployToken.DeployToken.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-gitlab.deployToken.DeployToken.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployToken.DeployToken.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployToken.DeployToken.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.deployToken.DeployToken.property.deployTokenId">deployTokenId</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployToken.DeployToken.property.token">token</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployToken.DeployToken.property.expiresAtInput">expiresAtInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployToken.DeployToken.property.groupInput">groupInput</a></code> | <code>string</code> | *No description.* |
@@ -537,6 +538,16 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 ```
 
 - *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+
+---
+
+##### `deployTokenId`<sup>Required</sup> <a name="deployTokenId" id="@cdktf/provider-gitlab.deployToken.DeployToken.property.deployTokenId"></a>
+
+```typescript
+public readonly deployTokenId: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -735,7 +746,7 @@ const deployTokenConfig: deployToken.DeployTokenConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.deployToken.DeployTokenConfig.property.scopes">scopes</a></code> | <code>string[]</code> | Valid values: `read_repository`, `read_registry`, `read_package_registry`, `write_registry`, `write_package_registry`. |
 | <code><a href="#@cdktf/provider-gitlab.deployToken.DeployTokenConfig.property.expiresAt">expiresAt</a></code> | <code>string</code> | Time the token will expire it, RFC3339 format. Will not expire per default. |
 | <code><a href="#@cdktf/provider-gitlab.deployToken.DeployTokenConfig.property.group">group</a></code> | <code>string</code> | The name or id of the group to add the deploy token to. |
-| <code><a href="#@cdktf/provider-gitlab.deployToken.DeployTokenConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/deploy_token#id DeployToken#id}. |
+| <code><a href="#@cdktf/provider-gitlab.deployToken.DeployTokenConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/deploy_token#id DeployToken#id}. |
 | <code><a href="#@cdktf/provider-gitlab.deployToken.DeployTokenConfig.property.project">project</a></code> | <code>string</code> | The name or id of the project to add the deploy token to. |
 | <code><a href="#@cdktf/provider-gitlab.deployToken.DeployTokenConfig.property.username">username</a></code> | <code>string</code> | A username for the deploy token. Default is `gitlab+deploy-token-{n}`. |
 
@@ -821,7 +832,7 @@ public readonly name: string;
 
 A name to describe the deploy token with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/deploy_token#name DeployToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/deploy_token#name DeployToken#name}
 
 ---
 
@@ -835,7 +846,7 @@ public readonly scopes: string[];
 
 Valid values: `read_repository`, `read_registry`, `read_package_registry`, `write_registry`, `write_package_registry`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/deploy_token#scopes DeployToken#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/deploy_token#scopes DeployToken#scopes}
 
 ---
 
@@ -849,7 +860,7 @@ public readonly expiresAt: string;
 
 Time the token will expire it, RFC3339 format. Will not expire per default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/deploy_token#expires_at DeployToken#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/deploy_token#expires_at DeployToken#expires_at}
 
 ---
 
@@ -863,7 +874,7 @@ public readonly group: string;
 
 The name or id of the group to add the deploy token to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/deploy_token#group DeployToken#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/deploy_token#group DeployToken#group}
 
 ---
 
@@ -875,7 +886,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/deploy_token#id DeployToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/deploy_token#id DeployToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -892,7 +903,7 @@ public readonly project: string;
 
 The name or id of the project to add the deploy token to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/deploy_token#project DeployToken#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/deploy_token#project DeployToken#project}
 
 ---
 
@@ -906,7 +917,7 @@ public readonly username: string;
 
 A username for the deploy token. Default is `gitlab+deploy-token-{n}`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/deploy_token#username DeployToken#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/deploy_token#username DeployToken#username}
 
 ---
 

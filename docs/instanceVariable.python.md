@@ -1,6 +1,6 @@
 # `gitlab_instance_variable`
 
-Refer to the Terraform Registory for docs: [`gitlab_instance_variable`](https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/instance_variable).
+Refer to the Terraform Registory for docs: [`gitlab_instance_variable`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable).
 
 # `instanceVariable` Submodule <a name="`instanceVariable` Submodule" id="@cdktf/provider-gitlab.instanceVariable"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_instance_variable`](https://
 
 ### InstanceVariable <a name="InstanceVariable" id="@cdktf/provider-gitlab.instanceVariable.InstanceVariable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/instance_variable gitlab_instance_variable}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable gitlab_instance_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.instanceVariable.InstanceVariable.Initializer"></a>
 
@@ -30,6 +30,7 @@ instanceVariable.InstanceVariable(
   id: str = None,
   masked: typing.Union[bool, IResolvable] = None,
   protected: typing.Union[bool, IResolvable] = None,
+  raw: typing.Union[bool, IResolvable] = None,
   variable_type: str = None
 )
 ```
@@ -47,9 +48,10 @@ instanceVariable.InstanceVariable(
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.Initializer.parameter.key">key</a></code> | <code>str</code> | The name of the variable. |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.Initializer.parameter.value">value</a></code> | <code>str</code> | The value of the variable. |
-| <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/instance_variable#id InstanceVariable#id}. |
+| <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable#id InstanceVariable#id}. |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.Initializer.parameter.masked">masked</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to `true`, the value of the variable will be hidden in job logs. |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.Initializer.parameter.protected">protected</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to `true`, the variable will be passed only to pipelines running on protected branches and tags. |
+| <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.Initializer.parameter.raw">raw</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the variable is treated as a raw string. |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.Initializer.parameter.variableType">variable_type</a></code> | <code>str</code> | The type of a variable. Valid values are: `env_var`, `file`. Default is `env_var`. |
 
 ---
@@ -120,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/instance_variable#key InstanceVariable#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable#key InstanceVariable#key}
 
 ---
 
@@ -130,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The value of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/instance_variable#value InstanceVariable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable#value InstanceVariable#value}
 
 ---
 
@@ -138,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/instance_variable#id InstanceVariable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable#id InstanceVariable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -153,7 +155,7 @@ If set to `true`, the value of the variable will be hidden in job logs.
 
 The value must meet the [masking requirements](https://docs.gitlab.com/ee/ci/variables/#masked-variables). Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/instance_variable#masked InstanceVariable#masked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable#masked InstanceVariable#masked}
 
 ---
 
@@ -165,7 +167,19 @@ If set to `true`, the variable will be passed only to pipelines running on prote
 
 Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/instance_variable#protected InstanceVariable#protected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable#protected InstanceVariable#protected}
+
+---
+
+##### `raw`<sup>Optional</sup> <a name="raw" id="@cdktf/provider-gitlab.instanceVariable.InstanceVariable.Initializer.parameter.raw"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Whether the variable is treated as a raw string.
+
+Default: false. When true, variables in the value are not expanded.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable#raw InstanceVariable#raw}
 
 ---
 
@@ -175,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The type of a variable. Valid values are: `env_var`, `file`. Default is `env_var`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/instance_variable#variable_type InstanceVariable#variable_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable#variable_type InstanceVariable#variable_type}
 
 ---
 
@@ -202,6 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.resetMasked">reset_masked</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.resetProtected">reset_protected</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.resetRaw">reset_raw</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.resetVariableType">reset_variable_type</a></code> | *No description.* |
 
 ---
@@ -433,6 +448,12 @@ def reset_masked() -> None
 def reset_protected() -> None
 ```
 
+##### `reset_raw` <a name="reset_raw" id="@cdktf/provider-gitlab.instanceVariable.InstanceVariable.resetRaw"></a>
+
+```python
+def reset_raw() -> None
+```
+
 ##### `reset_variable_type` <a name="reset_variable_type" id="@cdktf/provider-gitlab.instanceVariable.InstanceVariable.resetVariableType"></a>
 
 ```python
@@ -537,12 +558,14 @@ instanceVariable.InstanceVariable.is_terraform_resource(
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.maskedInput">masked_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.protectedInput">protected_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.rawInput">raw_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.variableTypeInput">variable_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.masked">masked</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.protected">protected</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.raw">raw</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.value">value</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.variableType">variable_type</a></code> | <code>str</code> | *No description.* |
 
@@ -730,6 +753,16 @@ protected_input: typing.Union[bool, IResolvable]
 
 ---
 
+##### `raw_input`<sup>Optional</sup> <a name="raw_input" id="@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.rawInput"></a>
+
+```python
+raw_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `value_input`<sup>Optional</sup> <a name="value_input" id="@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.valueInput"></a>
 
 ```python
@@ -784,6 +817,16 @@ masked: typing.Union[bool, IResolvable]
 
 ```python
 protected: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `raw`<sup>Required</sup> <a name="raw" id="@cdktf/provider-gitlab.instanceVariable.InstanceVariable.property.raw"></a>
+
+```python
+raw: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
@@ -850,6 +893,7 @@ instanceVariable.InstanceVariableConfig(
   id: str = None,
   masked: typing.Union[bool, IResolvable] = None,
   protected: typing.Union[bool, IResolvable] = None,
+  raw: typing.Union[bool, IResolvable] = None,
   variable_type: str = None
 )
 ```
@@ -867,9 +911,10 @@ instanceVariable.InstanceVariableConfig(
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariableConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariableConfig.property.key">key</a></code> | <code>str</code> | The name of the variable. |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariableConfig.property.value">value</a></code> | <code>str</code> | The value of the variable. |
-| <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariableConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/instance_variable#id InstanceVariable#id}. |
+| <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariableConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable#id InstanceVariable#id}. |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariableConfig.property.masked">masked</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to `true`, the value of the variable will be hidden in job logs. |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariableConfig.property.protected">protected</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to `true`, the variable will be passed only to pipelines running on protected branches and tags. |
+| <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariableConfig.property.raw">raw</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the variable is treated as a raw string. |
 | <code><a href="#@cdktf/provider-gitlab.instanceVariable.InstanceVariableConfig.property.variableType">variable_type</a></code> | <code>str</code> | The type of a variable. Valid values are: `env_var`, `file`. Default is `env_var`. |
 
 ---
@@ -954,7 +999,7 @@ key: str
 
 The name of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/instance_variable#key InstanceVariable#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable#key InstanceVariable#key}
 
 ---
 
@@ -968,7 +1013,7 @@ value: str
 
 The value of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/instance_variable#value InstanceVariable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable#value InstanceVariable#value}
 
 ---
 
@@ -980,7 +1025,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/instance_variable#id InstanceVariable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable#id InstanceVariable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -999,7 +1044,7 @@ If set to `true`, the value of the variable will be hidden in job logs.
 
 The value must meet the [masking requirements](https://docs.gitlab.com/ee/ci/variables/#masked-variables). Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/instance_variable#masked InstanceVariable#masked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable#masked InstanceVariable#masked}
 
 ---
 
@@ -1015,7 +1060,23 @@ If set to `true`, the variable will be passed only to pipelines running on prote
 
 Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/instance_variable#protected InstanceVariable#protected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable#protected InstanceVariable#protected}
+
+---
+
+##### `raw`<sup>Optional</sup> <a name="raw" id="@cdktf/provider-gitlab.instanceVariable.InstanceVariableConfig.property.raw"></a>
+
+```python
+raw: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Whether the variable is treated as a raw string.
+
+Default: false. When true, variables in the value are not expanded.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable#raw InstanceVariable#raw}
 
 ---
 
@@ -1029,7 +1090,7 @@ variable_type: str
 
 The type of a variable. Valid values are: `env_var`, `file`. Default is `env_var`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.11.0/docs/resources/instance_variable#variable_type InstanceVariable#variable_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/instance_variable#variable_type InstanceVariable#variable_type}
 
 ---
 
