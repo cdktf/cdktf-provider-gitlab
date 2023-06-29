@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/15.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.serviceSlack.ServiceSlack.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/serviceslack"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/serviceslack"
 
 serviceslack.NewServiceSlack(scope Construct, id *string, config ServiceSlackConfig) ServiceSlack
 ```
@@ -424,7 +424,7 @@ func ResetWikiPageEvents()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.serviceSlack.ServiceSlack.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/serviceslack"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/serviceslack"
 
 serviceslack.ServiceSlack_IsConstruct(x interface{}) *bool
 ```
@@ -456,7 +456,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.serviceSlack.ServiceSlack.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/serviceslack"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/serviceslack"
 
 serviceslack.ServiceSlack_IsTerraformElement(x interface{}) *bool
 ```
@@ -470,7 +470,7 @@ serviceslack.ServiceSlack_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.serviceSlack.ServiceSlack.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/serviceslack"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/serviceslack"
 
 serviceslack.ServiceSlack_IsTerraformResource(x interface{}) *bool
 ```
@@ -1208,7 +1208,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.serviceSlack.ServiceSlackConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/serviceslack"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/serviceslack"
 
 &serviceslack.ServiceSlackConfig {
 	Connection: interface{},
