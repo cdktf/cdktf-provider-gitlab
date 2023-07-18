@@ -1,3 +1,3 @@
 # `gitlab_application`
 
-Refer to the Terraform Registory for docs: [`gitlab_application`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/application).
+Refer to the Terraform Registory for docs: [`gitlab_application`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/application).

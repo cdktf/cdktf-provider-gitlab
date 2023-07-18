@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/user_sshkey
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/user_sshkey
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface UserSshkeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * The expiration date of the SSH key in ISO 8601 format (YYYY-MM-DDTHH:MM:SSZ)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/user_sshkey#expires_at UserSshkey#expires_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/user_sshkey#expires_at UserSshkey#expires_at}
   */
   readonly expiresAt?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/user_sshkey#id UserSshkey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/user_sshkey#id UserSshkey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +23,25 @@ export interface UserSshkeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ssh key. The SSH key `comment` (trailing part) is optional and ignored for diffing, because GitLab overrides it with the username and GitLab hostname.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/user_sshkey#key UserSshkey#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/user_sshkey#key UserSshkey#key}
   */
   readonly key: string;
   /**
   * The title of the ssh key.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/user_sshkey#title UserSshkey#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/user_sshkey#title UserSshkey#title}
   */
   readonly title: string;
   /**
   * The ID or username of the user.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/user_sshkey#user_id UserSshkey#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/user_sshkey#user_id UserSshkey#user_id}
   */
   readonly userId: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/user_sshkey gitlab_user_sshkey}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/user_sshkey gitlab_user_sshkey}
 */
 export class UserSshkey extends cdktf.TerraformResource {
 
@@ -60,7 +55,7 @@ export class UserSshkey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/user_sshkey gitlab_user_sshkey} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/user_sshkey gitlab_user_sshkey} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +66,7 @@ export class UserSshkey extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_user_sshkey',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.1.0',
+        providerVersion: '16.1.1',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,

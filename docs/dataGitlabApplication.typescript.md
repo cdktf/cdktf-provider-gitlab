@@ -1,6 +1,6 @@
 # `data_gitlab_application`
 
-Refer to the Terraform Registory for docs: [`data_gitlab_application`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/application).
+Refer to the Terraform Registory for docs: [`data_gitlab_application`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/application).
 
 # `dataGitlabApplication` Submodule <a name="`dataGitlabApplication` Submodule" id="@cdktf/provider-gitlab.dataGitlabApplication"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_gitlab_application`](https://r
 
 ### DataGitlabApplication <a name="DataGitlabApplication" id="@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/application gitlab_application}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/application gitlab_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplication.Initializer"></a>
 
@@ -659,7 +659,7 @@ public readonly id: string;
 
 The ID of this Terraform resource. In the format of `<application_id>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/application#id DataGitlabApplication#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/application#id DataGitlabApplication#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
