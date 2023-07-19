@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_level_mr_approvals
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/project_level_mr_approvals
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface ProjectLevelMrApprovalsConfig extends cdktf.TerraformMetaArgume
   /**
   * By default, users are able to edit the approval rules in merge requests. If set to true,
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_level_mr_approvals#disable_overriding_approvers_per_merge_request ProjectLevelMrApprovals#disable_overriding_approvers_per_merge_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/project_level_mr_approvals#disable_overriding_approvers_per_merge_request ProjectLevelMrApprovals#disable_overriding_approvers_per_merge_request}
   */
   readonly disableOverridingApproversPerMergeRequest?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_level_mr_approvals#id ProjectLevelMrApprovals#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/project_level_mr_approvals#id ProjectLevelMrApprovals#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,37 +23,37 @@ export interface ProjectLevelMrApprovalsConfig extends cdktf.TerraformMetaArgume
   /**
   * Set to `true` if you want to allow merge request authors to self-approve merge requests. Authors
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_level_mr_approvals#merge_requests_author_approval ProjectLevelMrApprovals#merge_requests_author_approval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/project_level_mr_approvals#merge_requests_author_approval ProjectLevelMrApprovals#merge_requests_author_approval}
   */
   readonly mergeRequestsAuthorApproval?: boolean | cdktf.IResolvable;
   /**
   * Set to `true` if you want to prevent approval of merge requests by merge request committers.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_level_mr_approvals#merge_requests_disable_committers_approval ProjectLevelMrApprovals#merge_requests_disable_committers_approval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/project_level_mr_approvals#merge_requests_disable_committers_approval ProjectLevelMrApprovals#merge_requests_disable_committers_approval}
   */
   readonly mergeRequestsDisableCommittersApproval?: boolean | cdktf.IResolvable;
   /**
   * The ID or URL-encoded path of a project to change MR approval configuration.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_level_mr_approvals#project ProjectLevelMrApprovals#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/project_level_mr_approvals#project ProjectLevelMrApprovals#project}
   */
   readonly project: string;
   /**
   * Set to `true` if you want to require authentication when approving a merge request.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_level_mr_approvals#require_password_to_approve ProjectLevelMrApprovals#require_password_to_approve}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/project_level_mr_approvals#require_password_to_approve ProjectLevelMrApprovals#require_password_to_approve}
   */
   readonly requirePasswordToApprove?: boolean | cdktf.IResolvable;
   /**
   * Set to `true` if you want to remove all approvals in a merge request when new commits are pushed to its source branch. Default is `true`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_level_mr_approvals#reset_approvals_on_push ProjectLevelMrApprovals#reset_approvals_on_push}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/project_level_mr_approvals#reset_approvals_on_push ProjectLevelMrApprovals#reset_approvals_on_push}
   */
   readonly resetApprovalsOnPush?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals}
 */
 export class ProjectLevelMrApprovals extends cdktf.TerraformResource {
 
@@ -72,7 +67,7 @@ export class ProjectLevelMrApprovals extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +78,7 @@ export class ProjectLevelMrApprovals extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_level_mr_approvals',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.1.0',
+        providerVersion: '16.1.1',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_jira
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_jira
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,23 @@ export interface IntegrationJiraConfig extends cdktf.TerraformMetaArguments {
   /**
   * The base URL to the Jira instance API. Web URL value is used if not set. For example, https://jira-api.example.com.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_jira#api_url IntegrationJira#api_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_jira#api_url IntegrationJira#api_url}
   */
   readonly apiUrl?: string;
   /**
   * Enable comments inside Jira issues on each GitLab event (commit / merge request)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_jira#comment_on_event_enabled IntegrationJira#comment_on_event_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_jira#comment_on_event_enabled IntegrationJira#comment_on_event_enabled}
   */
   readonly commentOnEventEnabled?: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for commit events
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_jira#commit_events IntegrationJira#commit_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_jira#commit_events IntegrationJira#commit_events}
   */
   readonly commitEvents?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_jira#id IntegrationJira#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_jira#id IntegrationJira#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,85 +35,85 @@ export interface IntegrationJiraConfig extends cdktf.TerraformMetaArguments {
   /**
   * Enable notifications for issues events.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_jira#issues_events IntegrationJira#issues_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_jira#issues_events IntegrationJira#issues_events}
   */
   readonly issuesEvents?: boolean | cdktf.IResolvable;
   /**
   * The ID of a transition that moves issues to a closed state. You can find this number under the JIRA workflow administration (Administration > Issues > Workflows) by selecting View under Operations of the desired workflow of your project. By default, this ID is set to 2. *Note**: importing this field is only supported since GitLab 15.2.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_jira#jira_issue_transition_id IntegrationJira#jira_issue_transition_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_jira#jira_issue_transition_id IntegrationJira#jira_issue_transition_id}
   */
   readonly jiraIssueTransitionId?: string;
   /**
   * Enable notifications for job events.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_jira#job_events IntegrationJira#job_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_jira#job_events IntegrationJira#job_events}
   */
   readonly jobEvents?: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for merge request events
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_jira#merge_requests_events IntegrationJira#merge_requests_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_jira#merge_requests_events IntegrationJira#merge_requests_events}
   */
   readonly mergeRequestsEvents?: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for note events.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_jira#note_events IntegrationJira#note_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_jira#note_events IntegrationJira#note_events}
   */
   readonly noteEvents?: boolean | cdktf.IResolvable;
   /**
   * The password of the user created to be used with GitLab/JIRA.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_jira#password IntegrationJira#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_jira#password IntegrationJira#password}
   */
   readonly password: string;
   /**
   * Enable notifications for pipeline events.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_jira#pipeline_events IntegrationJira#pipeline_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_jira#pipeline_events IntegrationJira#pipeline_events}
   */
   readonly pipelineEvents?: boolean | cdktf.IResolvable;
   /**
   * ID of the project you want to activate integration on.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_jira#project IntegrationJira#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_jira#project IntegrationJira#project}
   */
   readonly project: string;
   /**
   * The short identifier for your JIRA project, all uppercase, e.g., PROJ.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_jira#project_key IntegrationJira#project_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_jira#project_key IntegrationJira#project_key}
   */
   readonly projectKey?: string;
   /**
   * Enable notifications for push events.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_jira#push_events IntegrationJira#push_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_jira#push_events IntegrationJira#push_events}
   */
   readonly pushEvents?: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for tag_push events.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_jira#tag_push_events IntegrationJira#tag_push_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_jira#tag_push_events IntegrationJira#tag_push_events}
   */
   readonly tagPushEvents?: boolean | cdktf.IResolvable;
   /**
   * The URL to the JIRA project which is being linked to this GitLab project. For example, https://jira.example.com.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_jira#url IntegrationJira#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_jira#url IntegrationJira#url}
   */
   readonly url: string;
   /**
   * The username of the user created to be used with GitLab/JIRA.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_jira#username IntegrationJira#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_jira#username IntegrationJira#username}
   */
   readonly username: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_jira gitlab_integration_jira}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_jira gitlab_integration_jira}
 */
 export class IntegrationJira extends cdktf.TerraformResource {
 
@@ -132,7 +127,7 @@ export class IntegrationJira extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_jira gitlab_integration_jira} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_jira gitlab_integration_jira} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -143,7 +138,7 @@ export class IntegrationJira extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_integration_jira',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.1.0',
+        providerVersion: '16.1.1',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,

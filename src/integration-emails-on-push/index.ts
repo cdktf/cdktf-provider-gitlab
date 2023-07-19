@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_emails_on_push
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_emails_on_push
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface IntegrationEmailsOnPushConfig extends cdktf.TerraformMetaArgume
   /**
   * Branches to send notifications for. Valid options are `all`, `default`, `protected`, `default_and_protected`. Notifications are always fired for tag pushes.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_emails_on_push#branches_to_be_notified IntegrationEmailsOnPush#branches_to_be_notified}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_emails_on_push#branches_to_be_notified IntegrationEmailsOnPush#branches_to_be_notified}
   */
   readonly branchesToBeNotified?: string;
   /**
   * Disable code diffs.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_emails_on_push#disable_diffs IntegrationEmailsOnPush#disable_diffs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_emails_on_push#disable_diffs IntegrationEmailsOnPush#disable_diffs}
   */
   readonly disableDiffs?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_emails_on_push#id IntegrationEmailsOnPush#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_emails_on_push#id IntegrationEmailsOnPush#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,37 +29,37 @@ export interface IntegrationEmailsOnPushConfig extends cdktf.TerraformMetaArgume
   /**
   * ID or full-path of the project you want to activate integration on.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_emails_on_push#project IntegrationEmailsOnPush#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_emails_on_push#project IntegrationEmailsOnPush#project}
   */
   readonly project: string;
   /**
   * Enable notifications for push events.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_emails_on_push#push_events IntegrationEmailsOnPush#push_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_emails_on_push#push_events IntegrationEmailsOnPush#push_events}
   */
   readonly pushEvents?: boolean | cdktf.IResolvable;
   /**
   * Emails separated by whitespace.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_emails_on_push#recipients IntegrationEmailsOnPush#recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_emails_on_push#recipients IntegrationEmailsOnPush#recipients}
   */
   readonly recipients: string;
   /**
   * Send from committer.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_emails_on_push#send_from_committer_email IntegrationEmailsOnPush#send_from_committer_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_emails_on_push#send_from_committer_email IntegrationEmailsOnPush#send_from_committer_email}
   */
   readonly sendFromCommitterEmail?: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for tag push events.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_emails_on_push#tag_push_events IntegrationEmailsOnPush#tag_push_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_emails_on_push#tag_push_events IntegrationEmailsOnPush#tag_push_events}
   */
   readonly tagPushEvents?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_emails_on_push gitlab_integration_emails_on_push}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_emails_on_push gitlab_integration_emails_on_push}
 */
 export class IntegrationEmailsOnPush extends cdktf.TerraformResource {
 
@@ -78,7 +73,7 @@ export class IntegrationEmailsOnPush extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/integration_emails_on_push gitlab_integration_emails_on_push} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_emails_on_push gitlab_integration_emails_on_push} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +84,7 @@ export class IntegrationEmailsOnPush extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_integration_emails_on_push',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.1.0',
+        providerVersion: '16.1.1',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,
