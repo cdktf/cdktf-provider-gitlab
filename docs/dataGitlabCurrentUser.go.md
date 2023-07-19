@@ -1,6 +1,6 @@
 # `data_gitlab_current_user`
 
-Refer to the Terraform Registory for docs: [`data_gitlab_current_user`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/current_user).
+Refer to the Terraform Registory for docs: [`data_gitlab_current_user`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/current_user).
 
 # `dataGitlabCurrentUser` Submodule <a name="`dataGitlabCurrentUser` Submodule" id="@cdktf/provider-gitlab.dataGitlabCurrentUser"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_gitlab_current_user`](https://
 
 ### DataGitlabCurrentUser <a name="DataGitlabCurrentUser" id="@cdktf/provider-gitlab.dataGitlabCurrentUser.DataGitlabCurrentUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/data-sources/current_user gitlab_current_user}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/current_user gitlab_current_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabCurrentUser.DataGitlabCurrentUser.Initializer"></a>
 

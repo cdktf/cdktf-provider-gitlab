@@ -1,6 +1,6 @@
 # `gitlab_group`
 
-Refer to the Terraform Registory for docs: [`gitlab_group`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group).
+Refer to the Terraform Registory for docs: [`gitlab_group`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group).
 
 # `group` Submodule <a name="`group` Submodule" id="@cdktf/provider-gitlab.group"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_group`](https://registry.ter
 
 ### Group <a name="Group" id="@cdktf/provider-gitlab.group.Group"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group gitlab_group}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group gitlab_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.group.Group.Initializer"></a>
 
@@ -1309,7 +1309,7 @@ new GroupConfig {
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.description">Description</a></code> | <code>string</code> | The description of the group. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.emailsDisabled">EmailsDisabled</a></code> | <code>object</code> | Defaults to false. Disable email notifications. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.extraSharedRunnersMinutesLimit">ExtraSharedRunnersMinutesLimit</a></code> | <code>double</code> | Can be set by administrators only. Additional CI/CD minutes for this group. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group#id Group#id}. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group#id Group#id}. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.ipRestrictionRanges">IpRestrictionRanges</a></code> | <code>string[]</code> | A list of IP addresses or subnet masks to restrict group access. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.lfsEnabled">LfsEnabled</a></code> | <code>object</code> | Defaults to true. Enable/disable Large File Storage (LFS) for the projects in this group. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.membershipLock">MembershipLock</a></code> | <code>object</code> | Users cannot be added to projects in this group. |
@@ -1407,7 +1407,7 @@ public string Name { get; set; }
 
 The name of this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group#name Group#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group#name Group#name}
 
 ---
 
@@ -1421,7 +1421,7 @@ public string Path { get; set; }
 
 The path of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group#path Group#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group#path Group#path}
 
 ---
 
@@ -1435,7 +1435,7 @@ public object AutoDevopsEnabled { get; set; }
 
 Defaults to false. Default to Auto DevOps pipeline for all projects within this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group#auto_devops_enabled Group#auto_devops_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group#auto_devops_enabled Group#auto_devops_enabled}
 
 ---
 
@@ -1449,7 +1449,7 @@ public string Avatar { get; set; }
 
 A local path to the avatar image to upload. **Note**: not available for imported resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group#avatar Group#avatar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group#avatar Group#avatar}
 
 ---
 
@@ -1465,7 +1465,7 @@ The hash of the avatar image.
 
 Use `filesha256("path/to/avatar.png")` whenever possible. **Note**: this is used to trigger an update of the avatar. If it's not given, but an avatar is given, the avatar will be updated each time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group#avatar_hash Group#avatar_hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group#avatar_hash Group#avatar_hash}
 
 ---
 
@@ -1479,7 +1479,7 @@ public double DefaultBranchProtection { get; set; }
 
 Defaults to 2. See https://docs.gitlab.com/ee/api/groups.html#options-for-default_branch_protection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group#default_branch_protection Group#default_branch_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group#default_branch_protection Group#default_branch_protection}
 
 ---
 
@@ -1493,7 +1493,7 @@ public string Description { get; set; }
 
 The description of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group#description Group#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group#description Group#description}
 
 ---
 
@@ -1507,7 +1507,7 @@ public object EmailsDisabled { get; set; }
 
 Defaults to false. Disable email notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group#emails_disabled Group#emails_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group#emails_disabled Group#emails_disabled}
 
 ---
 
@@ -1521,7 +1521,7 @@ public double ExtraSharedRunnersMinutesLimit { get; set; }
 
 Can be set by administrators only. Additional CI/CD minutes for this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group#extra_shared_runners_minutes_limit Group#extra_shared_runners_minutes_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group#extra_shared_runners_minutes_limit Group#extra_shared_runners_minutes_limit}
 
 ---
 
@@ -1533,7 +1533,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group#id Group#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group#id Group#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1552,7 +1552,7 @@ A list of IP addresses or subnet masks to restrict group access.
 
 Will be concatenated together into a comma separated string. Only allowed on top level groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group#ip_restriction_ranges Group#ip_restriction_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group#ip_restriction_ranges Group#ip_restriction_ranges}
 
 ---
 
@@ -1566,7 +1566,7 @@ public object LfsEnabled { get; set; }
 
 Defaults to true. Enable/disable Large File Storage (LFS) for the projects in this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group#lfs_enabled Group#lfs_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group#lfs_enabled Group#lfs_enabled}
 
 ---
 
@@ -1580,7 +1580,7 @@ public object MembershipLock { get; set; }
 
 Users cannot be added to projects in this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group#membership_lock Group#membership_lock}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group#membership_lock Group#membership_lock}
 
 ---
 
@@ -1594,7 +1594,7 @@ public object MentionsDisabled { get; set; }
 
 Defaults to false. Disable the capability of a group from getting mentioned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group#mentions_disabled Group#mentions_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group#mentions_disabled Group#mentions_disabled}
 
 ---
 
@@ -1608,7 +1608,7 @@ public double ParentId { get; set; }
 
 Id of the parent group (creates a nested group).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group#parent_id Group#parent_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group#parent_id Group#parent_id}
 
 ---
 
@@ -1622,7 +1622,7 @@ public object PreventForkingOutsideGroup { get; set; }
 
 Defaults to false. When enabled, users can not fork projects from this group to external namespaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group#prevent_forking_outside_group Group#prevent_forking_outside_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group#prevent_forking_outside_group Group#prevent_forking_outside_group}
 
 ---
 
@@ -1636,7 +1636,7 @@ public string ProjectCreationLevel { get; set; }
 
 Defaults to maintainer. Determine if developers can create projects in the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group#project_creation_level Group#project_creation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group#project_creation_level Group#project_creation_level}
 
 ---
 
@@ -1650,7 +1650,7 @@ public object RequestAccessEnabled { get; set; }
 
 Defaults to false. Allow users to request member access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group#request_access_enabled Group#request_access_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group#request_access_enabled Group#request_access_enabled}
 
 ---
 
@@ -1664,7 +1664,7 @@ public object RequireTwoFactorAuthentication { get; set; }
 
 Defaults to false. Require all users in this group to setup Two-factor authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group#require_two_factor_authentication Group#require_two_factor_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group#require_two_factor_authentication Group#require_two_factor_authentication}
 
 ---
 
@@ -1680,7 +1680,7 @@ Can be set by administrators only.
 
 Maximum number of monthly CI/CD minutes for this group. Can be nil (default; inherit system default), 0 (unlimited), or > 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group#shared_runners_minutes_limit Group#shared_runners_minutes_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group#shared_runners_minutes_limit Group#shared_runners_minutes_limit}
 
 ---
 
@@ -1694,7 +1694,7 @@ public object ShareWithGroupLock { get; set; }
 
 Defaults to false. Prevent sharing a project with another group within this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group#share_with_group_lock Group#share_with_group_lock}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group#share_with_group_lock Group#share_with_group_lock}
 
 ---
 
@@ -1708,7 +1708,7 @@ public string SubgroupCreationLevel { get; set; }
 
 Defaults to owner. Allowed to create subgroups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group#subgroup_creation_level Group#subgroup_creation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group#subgroup_creation_level Group#subgroup_creation_level}
 
 ---
 
@@ -1722,7 +1722,7 @@ public double TwoFactorGracePeriod { get; set; }
 
 Defaults to 48. Time before Two-factor authentication is enforced (in hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group#two_factor_grace_period Group#two_factor_grace_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group#two_factor_grace_period Group#two_factor_grace_period}
 
 ---
 
@@ -1736,7 +1736,7 @@ public string VisibilityLevel { get; set; }
 
 The group's visibility. Can be `private`, `internal`, or `public`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group#visibility_level Group#visibility_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group#visibility_level Group#visibility_level}
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_hook
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_hook
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,35 +15,35 @@ export interface GroupHookConfig extends cdktf.TerraformMetaArguments {
   /**
   * Invoke the hook for confidential issues events.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_hook#confidential_issues_events GroupHook#confidential_issues_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_hook#confidential_issues_events GroupHook#confidential_issues_events}
   */
   readonly confidentialIssuesEvents?: boolean | cdktf.IResolvable;
   /**
   * Invoke the hook for confidential notes events.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_hook#confidential_note_events GroupHook#confidential_note_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_hook#confidential_note_events GroupHook#confidential_note_events}
   */
   readonly confidentialNoteEvents?: boolean | cdktf.IResolvable;
   /**
   * Invoke the hook for deployment events.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_hook#deployment_events GroupHook#deployment_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_hook#deployment_events GroupHook#deployment_events}
   */
   readonly deploymentEvents?: boolean | cdktf.IResolvable;
   /**
   * Enable ssl verification when invoking the hook.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_hook#enable_ssl_verification GroupHook#enable_ssl_verification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_hook#enable_ssl_verification GroupHook#enable_ssl_verification}
   */
   readonly enableSslVerification?: boolean | cdktf.IResolvable;
   /**
   * The ID or full path of the group.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_hook#group GroupHook#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_hook#group GroupHook#group}
   */
   readonly group: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_hook#id GroupHook#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_hook#id GroupHook#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,85 +52,85 @@ export interface GroupHookConfig extends cdktf.TerraformMetaArguments {
   /**
   * Invoke the hook for issues events.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_hook#issues_events GroupHook#issues_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_hook#issues_events GroupHook#issues_events}
   */
   readonly issuesEvents?: boolean | cdktf.IResolvable;
   /**
   * Invoke the hook for job events.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_hook#job_events GroupHook#job_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_hook#job_events GroupHook#job_events}
   */
   readonly jobEvents?: boolean | cdktf.IResolvable;
   /**
   * Invoke the hook for merge requests.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_hook#merge_requests_events GroupHook#merge_requests_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_hook#merge_requests_events GroupHook#merge_requests_events}
   */
   readonly mergeRequestsEvents?: boolean | cdktf.IResolvable;
   /**
   * Invoke the hook for notes events.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_hook#note_events GroupHook#note_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_hook#note_events GroupHook#note_events}
   */
   readonly noteEvents?: boolean | cdktf.IResolvable;
   /**
   * Invoke the hook for pipeline events.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_hook#pipeline_events GroupHook#pipeline_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_hook#pipeline_events GroupHook#pipeline_events}
   */
   readonly pipelineEvents?: boolean | cdktf.IResolvable;
   /**
   * Invoke the hook for push events.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_hook#push_events GroupHook#push_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_hook#push_events GroupHook#push_events}
   */
   readonly pushEvents?: boolean | cdktf.IResolvable;
   /**
   * Invoke the hook for push events on matching branches only.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_hook#push_events_branch_filter GroupHook#push_events_branch_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_hook#push_events_branch_filter GroupHook#push_events_branch_filter}
   */
   readonly pushEventsBranchFilter?: string;
   /**
   * Invoke the hook for releases events.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_hook#releases_events GroupHook#releases_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_hook#releases_events GroupHook#releases_events}
   */
   readonly releasesEvents?: boolean | cdktf.IResolvable;
   /**
   * Invoke the hook for subgroup events.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_hook#subgroup_events GroupHook#subgroup_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_hook#subgroup_events GroupHook#subgroup_events}
   */
   readonly subgroupEvents?: boolean | cdktf.IResolvable;
   /**
   * Invoke the hook for tag push events.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_hook#tag_push_events GroupHook#tag_push_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_hook#tag_push_events GroupHook#tag_push_events}
   */
   readonly tagPushEvents?: boolean | cdktf.IResolvable;
   /**
   * A token to present when invoking the hook. The token is not available for imported resources.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_hook#token GroupHook#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_hook#token GroupHook#token}
   */
   readonly token?: string;
   /**
   * The url of the hook to invoke.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_hook#url GroupHook#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_hook#url GroupHook#url}
   */
   readonly url: string;
   /**
   * Invoke the hook for wiki page events.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_hook#wiki_page_events GroupHook#wiki_page_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_hook#wiki_page_events GroupHook#wiki_page_events}
   */
   readonly wikiPageEvents?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_hook gitlab_group_hook}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_hook gitlab_group_hook}
 */
 export class GroupHook extends cdktf.TerraformResource {
 
@@ -144,7 +144,7 @@ export class GroupHook extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.0/docs/resources/group_hook gitlab_group_hook} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_hook gitlab_group_hook} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -155,7 +155,7 @@ export class GroupHook extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_hook',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.1.0',
+        providerVersion: '16.1.1',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,
