@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancevariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabinstancevariable"
 
 datagitlabinstancevariable.NewDataGitlabInstanceVariable(scope Construct, id *string, config DataGitlabInstanceVariableConfig) DataGitlabInstanceVariable
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancevariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabinstancevariable"
 
 datagitlabinstancevariable.DataGitlabInstanceVariable_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancevariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabinstancevariable"
 
 datagitlabinstancevariable.DataGitlabInstanceVariable_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datagitlabinstancevariable.DataGitlabInstanceVariable_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariable.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancevariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabinstancevariable"
 
 datagitlabinstancevariable.DataGitlabInstanceVariable_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -599,7 +599,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancevariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabinstancevariable"
 
 &datagitlabinstancevariable.DataGitlabInstanceVariableConfig {
 	Connection: interface{},
