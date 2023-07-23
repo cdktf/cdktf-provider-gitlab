@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_access_token
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_access_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -14,24 +9,24 @@ import * as cdktf from 'cdktf';
 export interface GroupAccessTokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * The access level for the group access token. Valid values are: `guest`, `reporter`, `developer`, `maintainer`, `owner`.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_access_token#access_level GroupAccessToken#access_level}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_access_token#access_level GroupAccessToken#access_level}
   */
   readonly accessLevel?: string;
   /**
   * The token expires at midnight UTC on that date. The date must be in the format YYYY-MM-DD.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_access_token#expires_at GroupAccessToken#expires_at}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_access_token#expires_at GroupAccessToken#expires_at}
   */
   readonly expiresAt?: string;
   /**
   * The ID or path of the group to add the group access token to.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_access_token#group GroupAccessToken#group}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_access_token#group GroupAccessToken#group}
   */
   readonly group: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_access_token#id GroupAccessToken#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_access_token#id GroupAccessToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -39,20 +34,20 @@ export interface GroupAccessTokenConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The name of the group access token.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_access_token#name GroupAccessToken#name}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_access_token#name GroupAccessToken#name}
   */
   readonly name: string;
   /**
   * The scope for the group access token. It determines the actions which can be performed when authenticating with this token. Valid values are: `api`, `read_api`, `read_registry`, `write_registry`, `read_repository`, `write_repository`.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_access_token#scopes GroupAccessToken#scopes}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_access_token#scopes GroupAccessToken#scopes}
   */
   readonly scopes: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_access_token gitlab_group_access_token}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_access_token gitlab_group_access_token}
 */
 export class GroupAccessToken extends cdktf.TerraformResource {
 
@@ -66,7 +61,7 @@ export class GroupAccessToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_access_token gitlab_group_access_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_access_token gitlab_group_access_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +72,7 @@ export class GroupAccessToken extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_access_token',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.1.1',
+        providerVersion: '16.2.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,

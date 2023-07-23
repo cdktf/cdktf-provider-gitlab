@@ -1,6 +1,6 @@
 # `data_gitlab_project_milestones`
 
-Refer to the Terraform Registory for docs: [`data_gitlab_project_milestones`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project_milestones).
+Refer to the Terraform Registory for docs: [`data_gitlab_project_milestones`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_milestones).
 
 # `dataGitlabProjectMilestones` Submodule <a name="`dataGitlabProjectMilestones` Submodule" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_gitlab_project_milestones`](ht
 
 ### DataGitlabProjectMilestones <a name="DataGitlabProjectMilestones" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project_milestones gitlab_project_milestones}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_milestones gitlab_project_milestones}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabprojectmilestones"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmilestones"
 
 datagitlabprojectmilestones.NewDataGitlabProjectMilestones(scope Construct, id *string, config DataGitlabProjectMilestonesConfig) DataGitlabProjectMilestones
 ```
@@ -312,7 +312,7 @@ func ResetTitle()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabprojectmilestones"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmilestones"
 
 datagitlabprojectmilestones.DataGitlabProjectMilestones_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabprojectmilestones"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmilestones"
 
 datagitlabprojectmilestones.DataGitlabProjectMilestones_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagitlabprojectmilestones.DataGitlabProjectMilestones_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabprojectmilestones"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmilestones"
 
 datagitlabprojectmilestones.DataGitlabProjectMilestones_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestonesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabprojectmilestones"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmilestones"
 
 &datagitlabprojectmilestones.DataGitlabProjectMilestonesConfig {
 	Connection: interface{},
@@ -732,7 +732,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabprojectmil
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestonesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestonesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestonesConfig.property.project">Project</a></code> | <code>*string</code> | The ID or URL-encoded path of the project owned by the authenticated user. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestonesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project_milestones#id DataGitlabProjectMilestones#id}. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestonesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_milestones#id DataGitlabProjectMilestones#id}. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestonesConfig.property.iids">Iids</a></code> | <code>*[]*f64</code> | Return only the milestones having the given `iid` (Note: ignored if `include_parent_milestones` is set as `true`). |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestonesConfig.property.includeParentMilestones">IncludeParentMilestones</a></code> | <code>interface{}</code> | Include group milestones from parent group and its ancestors. Introduced in GitLab 13.4. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestonesConfig.property.search">Search</a></code> | <code>*string</code> | Return only milestones with a title or description matching the provided string. |
@@ -821,7 +821,7 @@ Project *string
 
 The ID or URL-encoded path of the project owned by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project_milestones#project DataGitlabProjectMilestones#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_milestones#project DataGitlabProjectMilestones#project}
 
 ---
 
@@ -833,7 +833,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project_milestones#id DataGitlabProjectMilestones#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_milestones#id DataGitlabProjectMilestones#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -850,7 +850,7 @@ Iids *[]*f64
 
 Return only the milestones having the given `iid` (Note: ignored if `include_parent_milestones` is set as `true`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project_milestones#iids DataGitlabProjectMilestones#iids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_milestones#iids DataGitlabProjectMilestones#iids}
 
 ---
 
@@ -864,7 +864,7 @@ IncludeParentMilestones interface{}
 
 Include group milestones from parent group and its ancestors. Introduced in GitLab 13.4.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project_milestones#include_parent_milestones DataGitlabProjectMilestones#include_parent_milestones}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_milestones#include_parent_milestones DataGitlabProjectMilestones#include_parent_milestones}
 
 ---
 
@@ -878,7 +878,7 @@ Search *string
 
 Return only milestones with a title or description matching the provided string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project_milestones#search DataGitlabProjectMilestones#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_milestones#search DataGitlabProjectMilestones#search}
 
 ---
 
@@ -892,7 +892,7 @@ State *string
 
 Return only `active` or `closed` milestones.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project_milestones#state DataGitlabProjectMilestones#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_milestones#state DataGitlabProjectMilestones#state}
 
 ---
 
@@ -906,7 +906,7 @@ Title *string
 
 Return only the milestones having the given `title`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project_milestones#title DataGitlabProjectMilestones#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_milestones#title DataGitlabProjectMilestones#title}
 
 ---
 
@@ -915,7 +915,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestonesMilestones.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabprojectmilestones"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmilestones"
 
 &datagitlabprojectmilestones.DataGitlabProjectMilestonesMilestones {
 
@@ -930,7 +930,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabprojectmil
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestonesMilestonesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabprojectmilestones"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmilestones"
 
 datagitlabprojectmilestones.NewDataGitlabProjectMilestonesMilestonesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectMilestonesMilestonesList
 ```
@@ -1062,7 +1062,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestonesMilestonesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/datagitlabprojectmilestones"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmilestones"
 
 datagitlabprojectmilestones.NewDataGitlabProjectMilestonesMilestonesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabProjectMilestonesMilestonesOutputReference
 ```

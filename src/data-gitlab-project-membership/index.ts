@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project_membership
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_membership
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -14,12 +9,12 @@ import * as cdktf from 'cdktf';
 export interface DataGitlabProjectMembershipConfig extends cdktf.TerraformMetaArguments {
   /**
   * The full path of the project.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project_membership#full_path DataGitlabProjectMembership#full_path}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_membership#full_path DataGitlabProjectMembership#full_path}
   */
   readonly fullPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project_membership#id DataGitlabProjectMembership#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_membership#id DataGitlabProjectMembership#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -27,20 +22,20 @@ export interface DataGitlabProjectMembershipConfig extends cdktf.TerraformMetaAr
   readonly id?: string;
   /**
   * Return all project members including members through ancestor groups
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project_membership#inherited DataGitlabProjectMembership#inherited}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_membership#inherited DataGitlabProjectMembership#inherited}
   */
   readonly inherited?: boolean | cdktf.IResolvable;
   /**
   * The ID of the project.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project_membership#project_id DataGitlabProjectMembership#project_id}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_membership#project_id DataGitlabProjectMembership#project_id}
   */
   readonly projectId?: number;
   /**
   * A query string to search for members
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project_membership#query DataGitlabProjectMembership#query}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_membership#query DataGitlabProjectMembership#query}
   */
   readonly query?: string;
 }
@@ -145,7 +140,7 @@ export class DataGitlabProjectMembershipMembersList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project_membership gitlab_project_membership}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_membership gitlab_project_membership}
 */
 export class DataGitlabProjectMembership extends cdktf.TerraformDataSource {
 
@@ -159,7 +154,7 @@ export class DataGitlabProjectMembership extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project_membership gitlab_project_membership} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_membership gitlab_project_membership} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -170,7 +165,7 @@ export class DataGitlabProjectMembership extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_project_membership',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.1.1',
+        providerVersion: '16.2.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,

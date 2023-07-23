@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/service_pipelines_email
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/service_pipelines_email
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -14,12 +9,12 @@ import * as cdktf from 'cdktf';
 export interface ServicePipelinesEmailConfig extends cdktf.TerraformMetaArguments {
   /**
   * Branches to send notifications for. Valid options are `all`, `default`, `protected`, and `default_and_protected`. Default is `default`
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/service_pipelines_email#branches_to_be_notified ServicePipelinesEmail#branches_to_be_notified}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/service_pipelines_email#branches_to_be_notified ServicePipelinesEmail#branches_to_be_notified}
   */
   readonly branchesToBeNotified?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/service_pipelines_email#id ServicePipelinesEmail#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/service_pipelines_email#id ServicePipelinesEmail#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -27,26 +22,26 @@ export interface ServicePipelinesEmailConfig extends cdktf.TerraformMetaArgument
   readonly id?: string;
   /**
   * Notify only broken pipelines. Default is true.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/service_pipelines_email#notify_only_broken_pipelines ServicePipelinesEmail#notify_only_broken_pipelines}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/service_pipelines_email#notify_only_broken_pipelines ServicePipelinesEmail#notify_only_broken_pipelines}
   */
   readonly notifyOnlyBrokenPipelines?: boolean | cdktf.IResolvable;
   /**
   * ID of the project you want to activate integration on.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/service_pipelines_email#project ServicePipelinesEmail#project}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/service_pipelines_email#project ServicePipelinesEmail#project}
   */
   readonly project: string;
   /**
   * ) email addresses where notifications are sent.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/service_pipelines_email#recipients ServicePipelinesEmail#recipients}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/service_pipelines_email#recipients ServicePipelinesEmail#recipients}
   */
   readonly recipients: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/service_pipelines_email gitlab_service_pipelines_email}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/service_pipelines_email gitlab_service_pipelines_email}
 */
 export class ServicePipelinesEmail extends cdktf.TerraformResource {
 
@@ -60,7 +55,7 @@ export class ServicePipelinesEmail extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/service_pipelines_email gitlab_service_pipelines_email} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/service_pipelines_email gitlab_service_pipelines_email} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +66,7 @@ export class ServicePipelinesEmail extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_service_pipelines_email',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.1.1',
+        providerVersion: '16.2.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,

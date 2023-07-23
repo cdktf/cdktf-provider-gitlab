@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/current_user
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/current_user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface DataGitlabCurrentUserConfig extends cdktf.TerraformMetaArgument
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/current_user gitlab_current_user}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/current_user gitlab_current_user}
 */
 export class DataGitlabCurrentUser extends cdktf.TerraformDataSource {
 
@@ -29,7 +24,7 @@ export class DataGitlabCurrentUser extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/current_user gitlab_current_user} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/current_user gitlab_current_user} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -40,7 +35,7 @@ export class DataGitlabCurrentUser extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_current_user',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.1.1',
+        providerVersion: '16.2.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,

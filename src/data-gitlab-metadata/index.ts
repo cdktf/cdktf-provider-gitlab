@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/metadata
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/metadata
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -68,7 +63,7 @@ export class DataGitlabMetadataKasOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/metadata gitlab_metadata}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/metadata gitlab_metadata}
 */
 export class DataGitlabMetadata extends cdktf.TerraformDataSource {
 
@@ -82,7 +77,7 @@ export class DataGitlabMetadata extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/metadata gitlab_metadata} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/metadata gitlab_metadata} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -93,7 +88,7 @@ export class DataGitlabMetadata extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_metadata',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.1.1',
+        providerVersion: '16.2.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,
