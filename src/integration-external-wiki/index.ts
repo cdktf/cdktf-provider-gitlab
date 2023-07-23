@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_external_wiki
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/integration_external_wiki
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -14,12 +14,12 @@ import * as cdktf from 'cdktf';
 export interface IntegrationExternalWikiConfig extends cdktf.TerraformMetaArguments {
   /**
   * The URL of the external wiki.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_external_wiki#external_wiki_url IntegrationExternalWiki#external_wiki_url}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/integration_external_wiki#external_wiki_url IntegrationExternalWiki#external_wiki_url}
   */
   readonly externalWikiUrl: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_external_wiki#id IntegrationExternalWiki#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/integration_external_wiki#id IntegrationExternalWiki#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -27,14 +27,14 @@ export interface IntegrationExternalWikiConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * ID of the project you want to activate integration on.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_external_wiki#project IntegrationExternalWiki#project}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/integration_external_wiki#project IntegrationExternalWiki#project}
   */
   readonly project: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_external_wiki gitlab_integration_external_wiki}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/integration_external_wiki gitlab_integration_external_wiki}
 */
 export class IntegrationExternalWiki extends cdktf.TerraformResource {
 
@@ -48,7 +48,7 @@ export class IntegrationExternalWiki extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_external_wiki gitlab_integration_external_wiki} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/integration_external_wiki gitlab_integration_external_wiki} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,7 @@ export class IntegrationExternalWiki extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_integration_external_wiki',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.1.1',
+        providerVersion: '16.2.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,

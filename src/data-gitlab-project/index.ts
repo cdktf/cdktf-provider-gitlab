@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -14,14 +14,14 @@ import * as cdktf from 'cdktf';
 export interface DataGitlabProjectConfig extends cdktf.TerraformMetaArguments {
   /**
   * Default number of revisions for shallow cloning.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project#ci_default_git_depth DataGitlabProject#ci_default_git_depth}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project#ci_default_git_depth DataGitlabProject#ci_default_git_depth}
   */
   readonly ciDefaultGitDepth?: number;
   /**
   * The integer that uniquely identifies the project within the gitlab install.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project#id DataGitlabProject#id}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project#id DataGitlabProject#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,14 +29,14 @@ export interface DataGitlabProjectConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The path of the repository with namespace.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project#path_with_namespace DataGitlabProject#path_with_namespace}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project#path_with_namespace DataGitlabProject#path_with_namespace}
   */
   readonly pathWithNamespace?: string;
   /**
   * If true, jobs can be viewed by non-project members.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project#public_builds DataGitlabProject#public_builds}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project#public_builds DataGitlabProject#public_builds}
   */
   readonly publicBuilds?: boolean | cdktf.IResolvable;
 }
@@ -255,7 +255,7 @@ export class DataGitlabProjectPushRulesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project gitlab_project}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project gitlab_project}
 */
 export class DataGitlabProject extends cdktf.TerraformDataSource {
 
@@ -269,7 +269,7 @@ export class DataGitlabProject extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project gitlab_project} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project gitlab_project} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -280,7 +280,7 @@ export class DataGitlabProject extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_project',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.1.1',
+        providerVersion: '16.2.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,

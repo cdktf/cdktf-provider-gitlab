@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/group_variable
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/group_variable
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -14,18 +14,18 @@ import * as cdktf from 'cdktf';
 export interface DataGitlabGroupVariableConfig extends cdktf.TerraformMetaArguments {
   /**
   * The environment scope of the variable. Defaults to all environment (`*`). Note that in Community Editions of Gitlab, values other than `*` will cause inconsistent plans.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/group_variable#environment_scope DataGitlabGroupVariable#environment_scope}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/group_variable#environment_scope DataGitlabGroupVariable#environment_scope}
   */
   readonly environmentScope?: string;
   /**
   * The name or id of the group.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/group_variable#group DataGitlabGroupVariable#group}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/group_variable#group DataGitlabGroupVariable#group}
   */
   readonly group: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/group_variable#id DataGitlabGroupVariable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/group_variable#id DataGitlabGroupVariable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -33,14 +33,14 @@ export interface DataGitlabGroupVariableConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * The name of the variable.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/group_variable#key DataGitlabGroupVariable#key}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/group_variable#key DataGitlabGroupVariable#key}
   */
   readonly key: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/group_variable gitlab_group_variable}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/group_variable gitlab_group_variable}
 */
 export class DataGitlabGroupVariable extends cdktf.TerraformDataSource {
 
@@ -54,7 +54,7 @@ export class DataGitlabGroupVariable extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/group_variable gitlab_group_variable} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/group_variable gitlab_group_variable} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,7 @@ export class DataGitlabGroupVariable extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_group_variable',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.1.1',
+        providerVersion: '16.2.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,

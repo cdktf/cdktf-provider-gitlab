@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_ldap_link
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_ldap_link
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -14,42 +14,42 @@ import * as cdktf from 'cdktf';
 export interface GroupLdapLinkConfig extends cdktf.TerraformMetaArguments {
   /**
   * Minimum access level for members of the LDAP group. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_ldap_link#access_level GroupLdapLink#access_level}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_ldap_link#access_level GroupLdapLink#access_level}
   */
   readonly accessLevel?: string;
   /**
   * The CN of the LDAP group to link with. Required if `filter` is not provided.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_ldap_link#cn GroupLdapLink#cn}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_ldap_link#cn GroupLdapLink#cn}
   */
   readonly cn?: string;
   /**
   * The LDAP filter for the group. Required if `cn` is not provided. Requires GitLab Premium or above.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_ldap_link#filter GroupLdapLink#filter}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_ldap_link#filter GroupLdapLink#filter}
   */
   readonly filter?: string;
   /**
   * If true, then delete and replace an existing LDAP link if one exists.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_ldap_link#force GroupLdapLink#force}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_ldap_link#force GroupLdapLink#force}
   */
   readonly force?: boolean | cdktf.IResolvable;
   /**
   * The ID or URL-encoded path of the group
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_ldap_link#group GroupLdapLink#group}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_ldap_link#group GroupLdapLink#group}
   */
   readonly group: string;
   /**
   * Minimum access level for members of the LDAP group. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_ldap_link#group_access GroupLdapLink#group_access}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_ldap_link#group_access GroupLdapLink#group_access}
   */
   readonly groupAccess?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_ldap_link#id GroupLdapLink#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_ldap_link#id GroupLdapLink#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -57,14 +57,14 @@ export interface GroupLdapLinkConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The name of the LDAP provider as stored in the GitLab database. Note that this is NOT the value of the `label` attribute as shown in the web UI. In most cases this will be `ldapmain` but you may use the [LDAP check rake task](https://docs.gitlab.com/ee/administration/raketasks/ldap.html#check) for receiving the LDAP server name: `LDAP: ... Server: ldapmain`
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_ldap_link#ldap_provider GroupLdapLink#ldap_provider}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_ldap_link#ldap_provider GroupLdapLink#ldap_provider}
   */
   readonly ldapProvider: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_ldap_link gitlab_group_ldap_link}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_ldap_link gitlab_group_ldap_link}
 */
 export class GroupLdapLink extends cdktf.TerraformResource {
 
@@ -78,7 +78,7 @@ export class GroupLdapLink extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/group_ldap_link gitlab_group_ldap_link} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_ldap_link gitlab_group_ldap_link} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +89,7 @@ export class GroupLdapLink extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_ldap_link',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.1.1',
+        providerVersion: '16.2.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,

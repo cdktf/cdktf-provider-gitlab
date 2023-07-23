@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/project_protected_environment
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_protected_environment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -14,46 +14,46 @@ import * as cdktf from 'cdktf';
 export interface ProjectProtectedEnvironmentConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the environment.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/project_protected_environment#environment ProjectProtectedEnvironment#environment}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_protected_environment#environment ProjectProtectedEnvironment#environment}
   */
   readonly environment: string;
   /**
   * The ID or full path of the project which the protected environment is created against.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/project_protected_environment#project ProjectProtectedEnvironment#project}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_protected_environment#project ProjectProtectedEnvironment#project}
   */
   readonly project: string;
   /**
   * The number of approvals required to deploy to this environment.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/project_protected_environment#required_approval_count ProjectProtectedEnvironment#required_approval_count}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_protected_environment#required_approval_count ProjectProtectedEnvironment#required_approval_count}
   */
   readonly requiredApprovalCount?: number;
   /**
   * deploy_access_levels block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/project_protected_environment#deploy_access_levels ProjectProtectedEnvironment#deploy_access_levels}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_protected_environment#deploy_access_levels ProjectProtectedEnvironment#deploy_access_levels}
   */
   readonly deployAccessLevels?: ProjectProtectedEnvironmentDeployAccessLevels[] | cdktf.IResolvable;
 }
 export interface ProjectProtectedEnvironmentDeployAccessLevels {
   /**
   * Levels of access required to deploy to this protected environment. Valid values are `developer`, `maintainer`.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/project_protected_environment#access_level ProjectProtectedEnvironment#access_level}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_protected_environment#access_level ProjectProtectedEnvironment#access_level}
   */
   readonly accessLevel?: string;
   /**
   * The ID of the group allowed to deploy to this protected environment. The project must be shared with the group.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/project_protected_environment#group_id ProjectProtectedEnvironment#group_id}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_protected_environment#group_id ProjectProtectedEnvironment#group_id}
   */
   readonly groupId?: number;
   /**
   * The ID of the user allowed to deploy to this protected environment. The user must be a member of the project.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/project_protected_environment#user_id ProjectProtectedEnvironment#user_id}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_protected_environment#user_id ProjectProtectedEnvironment#user_id}
   */
   readonly userId?: number;
 }
@@ -201,7 +201,7 @@ export class ProjectProtectedEnvironmentDeployAccessLevelsList extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/project_protected_environment gitlab_project_protected_environment}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_protected_environment gitlab_project_protected_environment}
 */
 export class ProjectProtectedEnvironment extends cdktf.TerraformResource {
 
@@ -215,7 +215,7 @@ export class ProjectProtectedEnvironment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/project_protected_environment gitlab_project_protected_environment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_protected_environment gitlab_project_protected_environment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -226,7 +226,7 @@ export class ProjectProtectedEnvironment extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_protected_environment',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.1.1',
+        providerVersion: '16.2.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,

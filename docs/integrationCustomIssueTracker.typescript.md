@@ -1,6 +1,6 @@
 # `gitlab_integration_custom_issue_tracker`
 
-Refer to the Terraform Registory for docs: [`gitlab_integration_custom_issue_tracker`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_custom_issue_tracker).
+Refer to the Terraform Registory for docs: [`gitlab_integration_custom_issue_tracker`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/integration_custom_issue_tracker).
 
 # `integrationCustomIssueTracker` Submodule <a name="`integrationCustomIssueTracker` Submodule" id="@cdktf/provider-gitlab.integrationCustomIssueTracker"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_integration_custom_issue_tra
 
 ### IntegrationCustomIssueTracker <a name="IntegrationCustomIssueTracker" id="@cdktf/provider-gitlab.integrationCustomIssueTracker.IntegrationCustomIssueTracker"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_custom_issue_tracker gitlab_integration_custom_issue_tracker}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/integration_custom_issue_tracker gitlab_integration_custom_issue_tracker}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.integrationCustomIssueTracker.IntegrationCustomIssueTracker.Initializer"></a>
 
@@ -738,7 +738,7 @@ public readonly issuesUrl: string;
 
 The URL to view an issue in the external issue tracker. Must contain :id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_custom_issue_tracker#issues_url IntegrationCustomIssueTracker#issues_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/integration_custom_issue_tracker#issues_url IntegrationCustomIssueTracker#issues_url}
 
 ---
 
@@ -752,7 +752,7 @@ public readonly project: string;
 
 The ID or full path of the project for the custom issue tracker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_custom_issue_tracker#project IntegrationCustomIssueTracker#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/integration_custom_issue_tracker#project IntegrationCustomIssueTracker#project}
 
 ---
 
@@ -766,7 +766,7 @@ public readonly projectUrl: string;
 
 The URL to the project in the external issue tracker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/resources/integration_custom_issue_tracker#project_url IntegrationCustomIssueTracker#project_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/integration_custom_issue_tracker#project_url IntegrationCustomIssueTracker#project_url}
 
 ---
 

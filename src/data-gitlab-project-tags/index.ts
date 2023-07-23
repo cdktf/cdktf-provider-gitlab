@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project_tags
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_tags
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataGitlabProjectTagsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project_tags#id DataGitlabProjectTags#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_tags#id DataGitlabProjectTags#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -21,26 +21,26 @@ export interface DataGitlabProjectTagsConfig extends cdktf.TerraformMetaArgument
   readonly id?: string;
   /**
   * Return tags ordered by `name` or `updated` fields. Default is `updated`.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project_tags#order_by DataGitlabProjectTags#order_by}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_tags#order_by DataGitlabProjectTags#order_by}
   */
   readonly orderBy?: string;
   /**
   * The ID or URL-encoded path of the project owned by the authenticated user.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project_tags#project DataGitlabProjectTags#project}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_tags#project DataGitlabProjectTags#project}
   */
   readonly project: string;
   /**
   * Return list of tags matching the search criteria. You can use `^term` and `term$` to find tags that begin and end with `term` respectively. No other regular expressions are supported.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project_tags#search DataGitlabProjectTags#search}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_tags#search DataGitlabProjectTags#search}
   */
   readonly search?: string;
   /**
   * Return tags sorted in `asc` or `desc` order. Default is `desc`.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project_tags#sort DataGitlabProjectTags#sort}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_tags#sort DataGitlabProjectTags#sort}
   */
   readonly sort?: string;
 }
@@ -320,7 +320,7 @@ export class DataGitlabProjectTagsTagsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project_tags gitlab_project_tags}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_tags gitlab_project_tags}
 */
 export class DataGitlabProjectTags extends cdktf.TerraformDataSource {
 
@@ -334,7 +334,7 @@ export class DataGitlabProjectTags extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1.1/docs/data-sources/project_tags gitlab_project_tags} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/data-sources/project_tags gitlab_project_tags} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -345,7 +345,7 @@ export class DataGitlabProjectTags extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_project_tags',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.1.1',
+        providerVersion: '16.2.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,
