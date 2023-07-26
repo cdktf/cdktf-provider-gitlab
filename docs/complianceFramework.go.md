@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.complianceFramework.ComplianceFramework.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/complianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/complianceframework"
 
 complianceframework.NewComplianceFramework(scope Construct, id *string, config ComplianceFrameworkConfig) ComplianceFramework
 ```
@@ -284,7 +284,7 @@ func ResetPipelineConfigurationFullPath()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.complianceFramework.ComplianceFramework.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/complianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/complianceframework"
 
 complianceframework.ComplianceFramework_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.complianceFramework.ComplianceFramework.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/complianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/complianceframework"
 
 complianceframework.ComplianceFramework_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ complianceframework.ComplianceFramework_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.complianceFramework.ComplianceFramework.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/complianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/complianceframework"
 
 complianceframework.ComplianceFramework_IsTerraformResource(x interface{}) *bool
 ```
@@ -683,7 +683,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.complianceFramework.ComplianceFrameworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/complianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/complianceframework"
 
 &complianceframework.ComplianceFrameworkConfig {
 	Connection: interface{},
