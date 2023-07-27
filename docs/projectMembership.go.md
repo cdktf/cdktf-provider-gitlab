@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectMembership.ProjectMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectmembership"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/projectmembership"
 
 projectmembership.NewProjectMembership(scope Construct, id *string, config ProjectMembershipConfig) ProjectMembership
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectMembership.ProjectMembership.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectmembership"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/projectmembership"
 
 projectmembership.ProjectMembership_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectMembership.ProjectMembership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectmembership"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/projectmembership"
 
 projectmembership.ProjectMembership_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ projectmembership.ProjectMembership_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectMembership.ProjectMembership.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectmembership"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/projectmembership"
 
 projectmembership.ProjectMembership_IsTerraformResource(x interface{}) *bool
 ```
@@ -639,7 +639,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectMembership.ProjectMembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectmembership"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/projectmembership"
 
 &projectmembership.ProjectMembershipConfig {
 	Connection: interface{},
