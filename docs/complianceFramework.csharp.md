@@ -1,6 +1,6 @@
 # `gitlab_compliance_framework`
 
-Refer to the Terraform Registory for docs: [`gitlab_compliance_framework`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/compliance_framework).
+Refer to the Terraform Registory for docs: [`gitlab_compliance_framework`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/compliance_framework).
 
 # `complianceFramework` Submodule <a name="`complianceFramework` Submodule" id="@cdktf/provider-gitlab.complianceFramework"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_compliance_framework`](https
 
 ### ComplianceFramework <a name="ComplianceFramework" id="@cdktf/provider-gitlab.complianceFramework.ComplianceFramework"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/compliance_framework gitlab_compliance_framework}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/compliance_framework gitlab_compliance_framework}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.complianceFramework.ComplianceFramework.Initializer"></a>
 
@@ -802,7 +802,7 @@ public string Color { get; set; }
 
 New color representation of the compliance framework in hex format. e.g. #FCA121.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/compliance_framework#color ComplianceFramework#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/compliance_framework#color ComplianceFramework#color}
 
 ---
 
@@ -816,7 +816,7 @@ public string Description { get; set; }
 
 Description for the compliance framework.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/compliance_framework#description ComplianceFramework#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/compliance_framework#description ComplianceFramework#description}
 
 ---
 
@@ -830,7 +830,7 @@ public string Name { get; set; }
 
 Name for the compliance framework.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/compliance_framework#name ComplianceFramework#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/compliance_framework#name ComplianceFramework#name}
 
 ---
 
@@ -844,7 +844,7 @@ public string NamespacePath { get; set; }
 
 Full path of the namespace to add the compliance framework to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/compliance_framework#namespace_path ComplianceFramework#namespace_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/compliance_framework#namespace_path ComplianceFramework#namespace_path}
 
 ---
 
@@ -858,7 +858,7 @@ public object Default { get; set; }
 
 Set this compliance framework as the default framework for the group. Default: `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/compliance_framework#default ComplianceFramework#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/compliance_framework#default ComplianceFramework#default}
 
 ---
 
@@ -872,7 +872,7 @@ public string PipelineConfigurationFullPath { get; set; }
 
 Full path of the compliance pipeline configuration stored in a project repository, such as `.gitlab/.compliance-gitlab-ci.yml@compliance/hipaa`. Required format: `path/file.y[a]ml@group-name/project-name` **Note**: Ultimate license required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/compliance_framework#pipeline_configuration_full_path ComplianceFramework#pipeline_configuration_full_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/compliance_framework#pipeline_configuration_full_path ComplianceFramework#pipeline_configuration_full_path}
 
 ---
 

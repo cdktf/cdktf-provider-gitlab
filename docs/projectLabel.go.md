@@ -1,6 +1,6 @@
 # `gitlab_project_label`
 
-Refer to the Terraform Registory for docs: [`gitlab_project_label`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_label).
+Refer to the Terraform Registory for docs: [`gitlab_project_label`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_label).
 
 # `projectLabel` Submodule <a name="`projectLabel` Submodule" id="@cdktf/provider-gitlab.projectLabel"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`gitlab_project_label`](https://regi
 
 ### ProjectLabel <a name="ProjectLabel" id="@cdktf/provider-gitlab.projectLabel.ProjectLabel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_label gitlab_project_label}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_label gitlab_project_label}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectLabel.ProjectLabel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/projectlabel"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectlabel"
 
 projectlabel.NewProjectLabel(scope Construct, id *string, config ProjectLabelConfig) ProjectLabel
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectLabel.ProjectLabel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/projectlabel"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectlabel"
 
 projectlabel.ProjectLabel_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectLabel.ProjectLabel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/projectlabel"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectlabel"
 
 projectlabel.ProjectLabel_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ projectlabel.ProjectLabel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectLabel.ProjectLabel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/projectlabel"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectlabel"
 
 projectlabel.ProjectLabel_IsTerraformResource(x interface{}) *bool
 ```
@@ -650,7 +650,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectLabel.ProjectLabelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/projectlabel"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectlabel"
 
 &projectlabel.ProjectLabelConfig {
 	Connection: interface{},
@@ -683,7 +683,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/projectlabel"
 | <code><a href="#@cdktf/provider-gitlab.projectLabel.ProjectLabelConfig.property.name">Name</a></code> | <code>*string</code> | The name of the label. |
 | <code><a href="#@cdktf/provider-gitlab.projectLabel.ProjectLabelConfig.property.project">Project</a></code> | <code>*string</code> | The name or id of the project to add the label to. |
 | <code><a href="#@cdktf/provider-gitlab.projectLabel.ProjectLabelConfig.property.description">Description</a></code> | <code>*string</code> | The description of the label. |
-| <code><a href="#@cdktf/provider-gitlab.projectLabel.ProjectLabelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_label#id ProjectLabel#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectLabel.ProjectLabelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_label#id ProjectLabel#id}. |
 
 ---
 
@@ -767,7 +767,7 @@ Color *string
 
 The color of the label given in 6-digit hex notation with leading '#' sign (e.g. #FFAABB) or one of the [CSS color names](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Color_keywords).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_label#color ProjectLabel#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_label#color ProjectLabel#color}
 
 ---
 
@@ -781,7 +781,7 @@ Name *string
 
 The name of the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_label#name ProjectLabel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_label#name ProjectLabel#name}
 
 ---
 
@@ -795,7 +795,7 @@ Project *string
 
 The name or id of the project to add the label to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_label#project ProjectLabel#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_label#project ProjectLabel#project}
 
 ---
 
@@ -809,7 +809,7 @@ Description *string
 
 The description of the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_label#description ProjectLabel#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_label#description ProjectLabel#description}
 
 ---
 
@@ -821,7 +821,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_label#id ProjectLabel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_label#id ProjectLabel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

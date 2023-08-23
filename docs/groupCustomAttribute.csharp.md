@@ -1,6 +1,6 @@
 # `gitlab_group_custom_attribute`
 
-Refer to the Terraform Registory for docs: [`gitlab_group_custom_attribute`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_custom_attribute).
+Refer to the Terraform Registory for docs: [`gitlab_group_custom_attribute`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_custom_attribute).
 
 # `groupCustomAttribute` Submodule <a name="`groupCustomAttribute` Submodule" id="@cdktf/provider-gitlab.groupCustomAttribute"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_group_custom_attribute`](htt
 
 ### GroupCustomAttribute <a name="GroupCustomAttribute" id="@cdktf/provider-gitlab.groupCustomAttribute.GroupCustomAttribute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_custom_attribute gitlab_group_custom_attribute}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_custom_attribute gitlab_group_custom_attribute}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupCustomAttribute.GroupCustomAttribute.Initializer"></a>
 
@@ -641,7 +641,7 @@ new GroupCustomAttributeConfig {
 | <code><a href="#@cdktf/provider-gitlab.groupCustomAttribute.GroupCustomAttributeConfig.property.group">Group</a></code> | <code>double</code> | The id of the group. |
 | <code><a href="#@cdktf/provider-gitlab.groupCustomAttribute.GroupCustomAttributeConfig.property.key">Key</a></code> | <code>string</code> | Key for the Custom Attribute. |
 | <code><a href="#@cdktf/provider-gitlab.groupCustomAttribute.GroupCustomAttributeConfig.property.value">Value</a></code> | <code>string</code> | Value for the Custom Attribute. |
-| <code><a href="#@cdktf/provider-gitlab.groupCustomAttribute.GroupCustomAttributeConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_custom_attribute#id GroupCustomAttribute#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupCustomAttribute.GroupCustomAttributeConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_custom_attribute#id GroupCustomAttribute#id}. |
 
 ---
 
@@ -725,7 +725,7 @@ public double Group { get; set; }
 
 The id of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_custom_attribute#group GroupCustomAttribute#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_custom_attribute#group GroupCustomAttribute#group}
 
 ---
 
@@ -739,7 +739,7 @@ public string Key { get; set; }
 
 Key for the Custom Attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_custom_attribute#key GroupCustomAttribute#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_custom_attribute#key GroupCustomAttribute#key}
 
 ---
 
@@ -753,7 +753,7 @@ public string Value { get; set; }
 
 Value for the Custom Attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_custom_attribute#value GroupCustomAttribute#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_custom_attribute#value GroupCustomAttribute#value}
 
 ---
 
@@ -765,7 +765,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_custom_attribute#id GroupCustomAttribute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_custom_attribute#id GroupCustomAttribute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

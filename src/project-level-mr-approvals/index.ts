@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_level_mr_approvals
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_level_mr_approvals
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,52 +8,51 @@ import * as cdktf from 'cdktf';
 
 export interface ProjectLevelMrApprovalsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * By default, users are able to edit the approval rules in merge requests. If set to true,
+  * Set to `true` to disable overriding approvers per merge request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_level_mr_approvals#disable_overriding_approvers_per_merge_request ProjectLevelMrApprovals#disable_overriding_approvers_per_merge_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_level_mr_approvals#disable_overriding_approvers_per_merge_request ProjectLevelMrApprovals#disable_overriding_approvers_per_merge_request}
   */
   readonly disableOverridingApproversPerMergeRequest?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_level_mr_approvals#id ProjectLevelMrApprovals#id}
+  * Set to `true` to allow merge requests authors to approve their own merge requests.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * Set to `true` if you want to allow merge request authors to self-approve merge requests. Authors
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_level_mr_approvals#merge_requests_author_approval ProjectLevelMrApprovals#merge_requests_author_approval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_level_mr_approvals#merge_requests_author_approval ProjectLevelMrApprovals#merge_requests_author_approval}
   */
   readonly mergeRequestsAuthorApproval?: boolean | cdktf.IResolvable;
   /**
-  * Set to `true` if you want to prevent approval of merge requests by merge request committers.
+  * Set to `true` to allow merge requests committers to approve their own merge requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_level_mr_approvals#merge_requests_disable_committers_approval ProjectLevelMrApprovals#merge_requests_disable_committers_approval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_level_mr_approvals#merge_requests_disable_committers_approval ProjectLevelMrApprovals#merge_requests_disable_committers_approval}
   */
   readonly mergeRequestsDisableCommittersApproval?: boolean | cdktf.IResolvable;
   /**
   * The ID or URL-encoded path of a project to change MR approval configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_level_mr_approvals#project ProjectLevelMrApprovals#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_level_mr_approvals#project ProjectLevelMrApprovals#project}
   */
   readonly project: string;
   /**
-  * Set to `true` if you want to require authentication when approving a merge request.
+  * Set to `true` to require authentication to approve merge requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_level_mr_approvals#require_password_to_approve ProjectLevelMrApprovals#require_password_to_approve}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_level_mr_approvals#require_password_to_approve ProjectLevelMrApprovals#require_password_to_approve}
   */
   readonly requirePasswordToApprove?: boolean | cdktf.IResolvable;
   /**
-  * Set to `true` if you want to remove all approvals in a merge request when new commits are pushed to its source branch. Default is `true`.
+  * Set to `true` to remove all approvals in a merge request when new commits are pushed to its source branch. Default is `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_level_mr_approvals#reset_approvals_on_push ProjectLevelMrApprovals#reset_approvals_on_push}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_level_mr_approvals#reset_approvals_on_push ProjectLevelMrApprovals#reset_approvals_on_push}
   */
   readonly resetApprovalsOnPush?: boolean | cdktf.IResolvable;
+  /**
+  * Reset approvals from Code Owners if their files changed. Can be enabled only if reset_approvals_on_push is disabled.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_level_mr_approvals#selective_code_owner_removals ProjectLevelMrApprovals#selective_code_owner_removals}
+  */
+  readonly selectiveCodeOwnerRemovals?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals}
 */
 export class ProjectLevelMrApprovals extends cdktf.TerraformResource {
 
@@ -72,7 +66,7 @@ export class ProjectLevelMrApprovals extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +77,7 @@ export class ProjectLevelMrApprovals extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_level_mr_approvals',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.2.0',
+        providerVersion: '16.3.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,
@@ -95,19 +89,19 @@ export class ProjectLevelMrApprovals extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._disableOverridingApproversPerMergeRequest = config.disableOverridingApproversPerMergeRequest;
-    this._id = config.id;
     this._mergeRequestsAuthorApproval = config.mergeRequestsAuthorApproval;
     this._mergeRequestsDisableCommittersApproval = config.mergeRequestsDisableCommittersApproval;
     this._project = config.project;
     this._requirePasswordToApprove = config.requirePasswordToApprove;
     this._resetApprovalsOnPush = config.resetApprovalsOnPush;
+    this._selectiveCodeOwnerRemovals = config.selectiveCodeOwnerRemovals;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // disable_overriding_approvers_per_merge_request - computed: false, optional: true, required: false
+  // disable_overriding_approvers_per_merge_request - computed: true, optional: true, required: false
   private _disableOverridingApproversPerMergeRequest?: boolean | cdktf.IResolvable; 
   public get disableOverridingApproversPerMergeRequest() {
     return this.getBooleanAttribute('disable_overriding_approvers_per_merge_request');
@@ -123,23 +117,12 @@ export class ProjectLevelMrApprovals extends cdktf.TerraformResource {
     return this._disableOverridingApproversPerMergeRequest;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
-  }
 
-  // merge_requests_author_approval - computed: false, optional: true, required: false
+  // merge_requests_author_approval - computed: true, optional: true, required: false
   private _mergeRequestsAuthorApproval?: boolean | cdktf.IResolvable; 
   public get mergeRequestsAuthorApproval() {
     return this.getBooleanAttribute('merge_requests_author_approval');
@@ -155,7 +138,7 @@ export class ProjectLevelMrApprovals extends cdktf.TerraformResource {
     return this._mergeRequestsAuthorApproval;
   }
 
-  // merge_requests_disable_committers_approval - computed: false, optional: true, required: false
+  // merge_requests_disable_committers_approval - computed: true, optional: true, required: false
   private _mergeRequestsDisableCommittersApproval?: boolean | cdktf.IResolvable; 
   public get mergeRequestsDisableCommittersApproval() {
     return this.getBooleanAttribute('merge_requests_disable_committers_approval');
@@ -184,7 +167,7 @@ export class ProjectLevelMrApprovals extends cdktf.TerraformResource {
     return this._project;
   }
 
-  // require_password_to_approve - computed: false, optional: true, required: false
+  // require_password_to_approve - computed: true, optional: true, required: false
   private _requirePasswordToApprove?: boolean | cdktf.IResolvable; 
   public get requirePasswordToApprove() {
     return this.getBooleanAttribute('require_password_to_approve');
@@ -200,7 +183,7 @@ export class ProjectLevelMrApprovals extends cdktf.TerraformResource {
     return this._requirePasswordToApprove;
   }
 
-  // reset_approvals_on_push - computed: false, optional: true, required: false
+  // reset_approvals_on_push - computed: true, optional: true, required: false
   private _resetApprovalsOnPush?: boolean | cdktf.IResolvable; 
   public get resetApprovalsOnPush() {
     return this.getBooleanAttribute('reset_approvals_on_push');
@@ -216,6 +199,22 @@ export class ProjectLevelMrApprovals extends cdktf.TerraformResource {
     return this._resetApprovalsOnPush;
   }
 
+  // selective_code_owner_removals - computed: true, optional: true, required: false
+  private _selectiveCodeOwnerRemovals?: boolean | cdktf.IResolvable; 
+  public get selectiveCodeOwnerRemovals() {
+    return this.getBooleanAttribute('selective_code_owner_removals');
+  }
+  public set selectiveCodeOwnerRemovals(value: boolean | cdktf.IResolvable) {
+    this._selectiveCodeOwnerRemovals = value;
+  }
+  public resetSelectiveCodeOwnerRemovals() {
+    this._selectiveCodeOwnerRemovals = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get selectiveCodeOwnerRemovalsInput() {
+    return this._selectiveCodeOwnerRemovals;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -223,12 +222,12 @@ export class ProjectLevelMrApprovals extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       disable_overriding_approvers_per_merge_request: cdktf.booleanToTerraform(this._disableOverridingApproversPerMergeRequest),
-      id: cdktf.stringToTerraform(this._id),
       merge_requests_author_approval: cdktf.booleanToTerraform(this._mergeRequestsAuthorApproval),
       merge_requests_disable_committers_approval: cdktf.booleanToTerraform(this._mergeRequestsDisableCommittersApproval),
       project: cdktf.stringToTerraform(this._project),
       require_password_to_approve: cdktf.booleanToTerraform(this._requirePasswordToApprove),
       reset_approvals_on_push: cdktf.booleanToTerraform(this._resetApprovalsOnPush),
+      selective_code_owner_removals: cdktf.booleanToTerraform(this._selectiveCodeOwnerRemovals),
     };
   }
 }

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/deploy_key
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/deploy_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface DeployKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Allow this deploy key to be used to push changes to the project. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/deploy_key#can_push DeployKey#can_push}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/deploy_key#can_push DeployKey#can_push}
   */
   readonly canPush?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/deploy_key#id DeployKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/deploy_key#id DeployKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +23,25 @@ export interface DeployKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * The public ssh key body.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/deploy_key#key DeployKey#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/deploy_key#key DeployKey#key}
   */
   readonly key: string;
   /**
   * The name or id of the project to add the deploy key to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/deploy_key#project DeployKey#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/deploy_key#project DeployKey#project}
   */
   readonly project: string;
   /**
   * A title to describe the deploy key with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/deploy_key#title DeployKey#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/deploy_key#title DeployKey#title}
   */
   readonly title: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/deploy_key gitlab_deploy_key}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/deploy_key gitlab_deploy_key}
 */
 export class DeployKey extends cdktf.TerraformResource {
 
@@ -60,7 +55,7 @@ export class DeployKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/deploy_key gitlab_deploy_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/deploy_key gitlab_deploy_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +66,7 @@ export class DeployKey extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_deploy_key',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.2.0',
+        providerVersion: '16.3.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,

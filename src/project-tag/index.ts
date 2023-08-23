@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_tag
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_tag
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface ProjectTagConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_tag#id ProjectTag#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_tag#id ProjectTag#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,25 +17,25 @@ export interface ProjectTagConfig extends cdktf.TerraformMetaArguments {
   /**
   * The message of the annotated tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_tag#message ProjectTag#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_tag#message ProjectTag#message}
   */
   readonly message?: string;
   /**
   * The name of a tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_tag#name ProjectTag#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_tag#name ProjectTag#name}
   */
   readonly name: string;
   /**
   * The ID or URL-encoded path of the project owned by the authenticated user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_tag#project ProjectTag#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_tag#project ProjectTag#project}
   */
   readonly project: string;
   /**
   * Create tag using commit SHA, another tag name, or branch name. This attribute is not available for imported resources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_tag#ref ProjectTag#ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_tag#ref ProjectTag#ref}
   */
   readonly ref: string;
 }
@@ -229,7 +224,7 @@ export class ProjectTagReleaseList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_tag gitlab_project_tag}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_tag gitlab_project_tag}
 */
 export class ProjectTag extends cdktf.TerraformResource {
 
@@ -243,7 +238,7 @@ export class ProjectTag extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_tag gitlab_project_tag} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_tag gitlab_project_tag} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -254,7 +249,7 @@ export class ProjectTag extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_tag',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.2.0',
+        providerVersion: '16.3.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,
