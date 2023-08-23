@@ -1,6 +1,6 @@
 # `gitlab_group_badge`
 
-Refer to the Terraform Registory for docs: [`gitlab_group_badge`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_badge).
+Refer to the Terraform Registory for docs: [`gitlab_group_badge`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_badge).
 
 # `groupBadge` Submodule <a name="`groupBadge` Submodule" id="@cdktf/provider-gitlab.groupBadge"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_group_badge`](https://regist
 
 ### GroupBadge <a name="GroupBadge" id="@cdktf/provider-gitlab.groupBadge.GroupBadge"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_badge gitlab_group_badge}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_badge gitlab_group_badge}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupBadge.GroupBadge.Initializer"></a>
 
@@ -71,6 +71,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.groupBadge.GroupBadge.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupBadge.GroupBadge.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupBadge.GroupBadge.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupBadge.GroupBadge.resetName">resetName</a></code> | *No description.* |
 
 ---
 
@@ -264,6 +265,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 public resetId(): void
 ```
 
+##### `resetName` <a name="resetName" id="@cdktf/provider-gitlab.groupBadge.GroupBadge.resetName"></a>
+
+```typescript
+public resetName(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -358,10 +365,12 @@ groupBadge.GroupBadge.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-gitlab.groupBadge.GroupBadge.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupBadge.GroupBadge.property.imageUrlInput">imageUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupBadge.GroupBadge.property.linkUrlInput">linkUrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupBadge.GroupBadge.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupBadge.GroupBadge.property.group">group</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupBadge.GroupBadge.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupBadge.GroupBadge.property.imageUrl">imageUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupBadge.GroupBadge.property.linkUrl">linkUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupBadge.GroupBadge.property.name">name</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -567,6 +576,16 @@ public readonly linkUrlInput: string;
 
 ---
 
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-gitlab.groupBadge.GroupBadge.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `group`<sup>Required</sup> <a name="group" id="@cdktf/provider-gitlab.groupBadge.GroupBadge.property.group"></a>
 
 ```typescript
@@ -601,6 +620,16 @@ public readonly imageUrl: string;
 
 ```typescript
 public readonly linkUrl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-gitlab.groupBadge.GroupBadge.property.name"></a>
+
+```typescript
+public readonly name: string;
 ```
 
 - *Type:* string
@@ -651,7 +680,8 @@ const groupBadgeConfig: groupBadge.GroupBadgeConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.groupBadge.GroupBadgeConfig.property.group">group</a></code> | <code>string</code> | The id of the group to add the badge to. |
 | <code><a href="#@cdktf/provider-gitlab.groupBadge.GroupBadgeConfig.property.imageUrl">imageUrl</a></code> | <code>string</code> | The image url which will be presented on group overview. |
 | <code><a href="#@cdktf/provider-gitlab.groupBadge.GroupBadgeConfig.property.linkUrl">linkUrl</a></code> | <code>string</code> | The url linked with the badge. |
-| <code><a href="#@cdktf/provider-gitlab.groupBadge.GroupBadgeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_badge#id GroupBadge#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupBadge.GroupBadgeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_badge#id GroupBadge#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupBadge.GroupBadgeConfig.property.name">name</a></code> | <code>string</code> | The name of the badge. |
 
 ---
 
@@ -735,7 +765,7 @@ public readonly group: string;
 
 The id of the group to add the badge to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_badge#group GroupBadge#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_badge#group GroupBadge#group}
 
 ---
 
@@ -749,7 +779,7 @@ public readonly imageUrl: string;
 
 The image url which will be presented on group overview.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_badge#image_url GroupBadge#image_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_badge#image_url GroupBadge#image_url}
 
 ---
 
@@ -763,7 +793,7 @@ public readonly linkUrl: string;
 
 The url linked with the badge.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_badge#link_url GroupBadge#link_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_badge#link_url GroupBadge#link_url}
 
 ---
 
@@ -775,10 +805,24 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_badge#id GroupBadge#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_badge#id GroupBadge#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-gitlab.groupBadge.GroupBadgeConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+The name of the badge.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_badge#name GroupBadge#name}
 
 ---
 

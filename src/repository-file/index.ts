@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/repository_file
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/repository_file
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,53 +15,65 @@ export interface RepositoryFileConfig extends cdktf.TerraformMetaArguments {
   /**
   * Email of the commit author.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/repository_file#author_email RepositoryFile#author_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/repository_file#author_email RepositoryFile#author_email}
   */
   readonly authorEmail?: string;
   /**
   * Name of the commit author.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/repository_file#author_name RepositoryFile#author_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/repository_file#author_name RepositoryFile#author_name}
   */
   readonly authorName?: string;
   /**
   * Name of the branch to which to commit to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/repository_file#branch RepositoryFile#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/repository_file#branch RepositoryFile#branch}
   */
   readonly branch: string;
   /**
   * Commit message.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/repository_file#commit_message RepositoryFile#commit_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/repository_file#commit_message RepositoryFile#commit_message}
   */
-  readonly commitMessage: string;
+  readonly commitMessage?: string;
   /**
   * File content.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/repository_file#content RepositoryFile#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/repository_file#content RepositoryFile#content}
   */
   readonly content: string;
   /**
+  * Create commit message.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/repository_file#create_commit_message RepositoryFile#create_commit_message}
+  */
+  readonly createCommitMessage?: string;
+  /**
+  * Delete Commit message.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/repository_file#delete_commit_message RepositoryFile#delete_commit_message}
+  */
+  readonly deleteCommitMessage?: string;
+  /**
   * The file content encoding. Default value is `base64`. Valid values are: `base64`, `text`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/repository_file#encoding RepositoryFile#encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/repository_file#encoding RepositoryFile#encoding}
   */
   readonly encoding?: string;
   /**
   * Enables or disables the execute flag on the file. **Note**: requires GitLab 14.10 or newer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/repository_file#execute_filemode RepositoryFile#execute_filemode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/repository_file#execute_filemode RepositoryFile#execute_filemode}
   */
   readonly executeFilemode?: boolean | cdktf.IResolvable;
   /**
   * The full path of the file. It must be relative to the root of the project without a leading slash `/` or `./`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/repository_file#file_path RepositoryFile#file_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/repository_file#file_path RepositoryFile#file_path}
   */
   readonly filePath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/repository_file#id RepositoryFile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/repository_file#id RepositoryFile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -70,39 +82,45 @@ export interface RepositoryFileConfig extends cdktf.TerraformMetaArguments {
   /**
   * Enable overwriting existing files, defaults to `false`. This attribute is only used during `create` and must be use carefully. We suggest to use `imports` whenever possible and limit the use of this attribute for when the project was imported on the same `apply`. This attribute is not supported during a resource import.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/repository_file#overwrite_on_create RepositoryFile#overwrite_on_create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/repository_file#overwrite_on_create RepositoryFile#overwrite_on_create}
   */
   readonly overwriteOnCreate?: boolean | cdktf.IResolvable;
   /**
   * The name or ID of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/repository_file#project RepositoryFile#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/repository_file#project RepositoryFile#project}
   */
   readonly project: string;
   /**
   * Name of the branch to start the new commit from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/repository_file#start_branch RepositoryFile#start_branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/repository_file#start_branch RepositoryFile#start_branch}
   */
   readonly startBranch?: string;
   /**
+  * Update commit message.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/repository_file#update_commit_message RepositoryFile#update_commit_message}
+  */
+  readonly updateCommitMessage?: string;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/repository_file#timeouts RepositoryFile#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/repository_file#timeouts RepositoryFile#timeouts}
   */
   readonly timeouts?: RepositoryFileTimeouts;
 }
 export interface RepositoryFileTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/repository_file#create RepositoryFile#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/repository_file#create RepositoryFile#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/repository_file#delete RepositoryFile#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/repository_file#delete RepositoryFile#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/repository_file#update RepositoryFile#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/repository_file#update RepositoryFile#update}
   */
   readonly update?: string;
 }
@@ -223,7 +241,7 @@ export class RepositoryFileTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/repository_file gitlab_repository_file}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/repository_file gitlab_repository_file}
 */
 export class RepositoryFile extends cdktf.TerraformResource {
 
@@ -237,7 +255,7 @@ export class RepositoryFile extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/repository_file gitlab_repository_file} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/repository_file gitlab_repository_file} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -248,7 +266,7 @@ export class RepositoryFile extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_repository_file',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.2.0',
+        providerVersion: '16.3.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,
@@ -264,6 +282,8 @@ export class RepositoryFile extends cdktf.TerraformResource {
     this._branch = config.branch;
     this._commitMessage = config.commitMessage;
     this._content = config.content;
+    this._createCommitMessage = config.createCommitMessage;
+    this._deleteCommitMessage = config.deleteCommitMessage;
     this._encoding = config.encoding;
     this._executeFilemode = config.executeFilemode;
     this._filePath = config.filePath;
@@ -271,6 +291,7 @@ export class RepositoryFile extends cdktf.TerraformResource {
     this._overwriteOnCreate = config.overwriteOnCreate;
     this._project = config.project;
     this._startBranch = config.startBranch;
+    this._updateCommitMessage = config.updateCommitMessage;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -333,13 +354,16 @@ export class RepositoryFile extends cdktf.TerraformResource {
     return this.getStringAttribute('commit_id');
   }
 
-  // commit_message - computed: false, optional: false, required: true
+  // commit_message - computed: false, optional: true, required: false
   private _commitMessage?: string; 
   public get commitMessage() {
     return this.getStringAttribute('commit_message');
   }
   public set commitMessage(value: string) {
     this._commitMessage = value;
+  }
+  public resetCommitMessage() {
+    this._commitMessage = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get commitMessageInput() {
@@ -362,6 +386,38 @@ export class RepositoryFile extends cdktf.TerraformResource {
   // content_sha256 - computed: true, optional: false, required: false
   public get contentSha256() {
     return this.getStringAttribute('content_sha256');
+  }
+
+  // create_commit_message - computed: false, optional: true, required: false
+  private _createCommitMessage?: string; 
+  public get createCommitMessage() {
+    return this.getStringAttribute('create_commit_message');
+  }
+  public set createCommitMessage(value: string) {
+    this._createCommitMessage = value;
+  }
+  public resetCreateCommitMessage() {
+    this._createCommitMessage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createCommitMessageInput() {
+    return this._createCommitMessage;
+  }
+
+  // delete_commit_message - computed: false, optional: true, required: false
+  private _deleteCommitMessage?: string; 
+  public get deleteCommitMessage() {
+    return this.getStringAttribute('delete_commit_message');
+  }
+  public set deleteCommitMessage(value: string) {
+    this._deleteCommitMessage = value;
+  }
+  public resetDeleteCommitMessage() {
+    this._deleteCommitMessage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteCommitMessageInput() {
+    return this._deleteCommitMessage;
   }
 
   // encoding - computed: false, optional: true, required: false
@@ -490,6 +546,22 @@ export class RepositoryFile extends cdktf.TerraformResource {
     return this._startBranch;
   }
 
+  // update_commit_message - computed: false, optional: true, required: false
+  private _updateCommitMessage?: string; 
+  public get updateCommitMessage() {
+    return this.getStringAttribute('update_commit_message');
+  }
+  public set updateCommitMessage(value: string) {
+    this._updateCommitMessage = value;
+  }
+  public resetUpdateCommitMessage() {
+    this._updateCommitMessage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateCommitMessageInput() {
+    return this._updateCommitMessage;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new RepositoryFileTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -517,6 +589,8 @@ export class RepositoryFile extends cdktf.TerraformResource {
       branch: cdktf.stringToTerraform(this._branch),
       commit_message: cdktf.stringToTerraform(this._commitMessage),
       content: cdktf.stringToTerraform(this._content),
+      create_commit_message: cdktf.stringToTerraform(this._createCommitMessage),
+      delete_commit_message: cdktf.stringToTerraform(this._deleteCommitMessage),
       encoding: cdktf.stringToTerraform(this._encoding),
       execute_filemode: cdktf.booleanToTerraform(this._executeFilemode),
       file_path: cdktf.stringToTerraform(this._filePath),
@@ -524,6 +598,7 @@ export class RepositoryFile extends cdktf.TerraformResource {
       overwrite_on_create: cdktf.booleanToTerraform(this._overwriteOnCreate),
       project: cdktf.stringToTerraform(this._project),
       start_branch: cdktf.stringToTerraform(this._startBranch),
+      update_commit_message: cdktf.stringToTerraform(this._updateCommitMessage),
       timeouts: repositoryFileTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

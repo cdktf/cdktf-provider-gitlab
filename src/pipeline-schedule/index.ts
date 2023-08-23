@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/pipeline_schedule
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/pipeline_schedule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface PipelineScheduleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The activation of pipeline schedule. If false is set, the pipeline schedule will deactivated initially.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/pipeline_schedule#active PipelineSchedule#active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/pipeline_schedule#active PipelineSchedule#active}
   */
   readonly active?: boolean | cdktf.IResolvable;
   /**
   * The cron (e.g. `0 1 * * *`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/pipeline_schedule#cron PipelineSchedule#cron}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/pipeline_schedule#cron PipelineSchedule#cron}
   */
   readonly cron: string;
   /**
   * The timezone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/pipeline_schedule#cron_timezone PipelineSchedule#cron_timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/pipeline_schedule#cron_timezone PipelineSchedule#cron_timezone}
   */
   readonly cronTimezone?: string;
   /**
   * The description of the pipeline schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/pipeline_schedule#description PipelineSchedule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/pipeline_schedule#description PipelineSchedule#description}
   */
   readonly description: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/pipeline_schedule#id PipelineSchedule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/pipeline_schedule#id PipelineSchedule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,19 +46,19 @@ export interface PipelineScheduleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name or id of the project to add the schedule to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/pipeline_schedule#project PipelineSchedule#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/pipeline_schedule#project PipelineSchedule#project}
   */
   readonly project: string;
   /**
   * The branch/tag name to be triggered.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/pipeline_schedule#ref PipelineSchedule#ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/pipeline_schedule#ref PipelineSchedule#ref}
   */
   readonly ref: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule}
 */
 export class PipelineSchedule extends cdktf.TerraformResource {
 
@@ -72,7 +72,7 @@ export class PipelineSchedule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,7 @@ export class PipelineSchedule extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_pipeline_schedule',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.2.0',
+        providerVersion: '16.3.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,

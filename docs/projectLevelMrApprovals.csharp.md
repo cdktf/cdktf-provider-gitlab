@@ -1,6 +1,6 @@
 # `gitlab_project_level_mr_approvals`
 
-Refer to the Terraform Registory for docs: [`gitlab_project_level_mr_approvals`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_level_mr_approvals).
+Refer to the Terraform Registory for docs: [`gitlab_project_level_mr_approvals`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_level_mr_approvals).
 
 # `projectLevelMrApprovals` Submodule <a name="`projectLevelMrApprovals` Submodule" id="@cdktf/provider-gitlab.projectLevelMrApprovals"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_project_level_mr_approvals`]
 
 ### ProjectLevelMrApprovals <a name="ProjectLevelMrApprovals" id="@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.Initializer"></a>
 
@@ -71,11 +71,11 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.resetDisableOverridingApproversPerMergeRequest">ResetDisableOverridingApproversPerMergeRequest</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.resetMergeRequestsAuthorApproval">ResetMergeRequestsAuthorApproval</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.resetMergeRequestsDisableCommittersApproval">ResetMergeRequestsDisableCommittersApproval</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.resetRequirePasswordToApprove">ResetRequirePasswordToApprove</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.resetResetApprovalsOnPush">ResetResetApprovalsOnPush</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.resetSelectiveCodeOwnerRemovals">ResetSelectiveCodeOwnerRemovals</a></code> | *No description.* |
 
 ---
 
@@ -269,12 +269,6 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 private void ResetDisableOverridingApproversPerMergeRequest()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.resetId"></a>
-
-```csharp
-private void ResetId()
-```
-
 ##### `ResetMergeRequestsAuthorApproval` <a name="ResetMergeRequestsAuthorApproval" id="@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.resetMergeRequestsAuthorApproval"></a>
 
 ```csharp
@@ -297,6 +291,12 @@ private void ResetRequirePasswordToApprove()
 
 ```csharp
 private void ResetResetApprovalsOnPush()
+```
+
+##### `ResetSelectiveCodeOwnerRemovals` <a name="ResetSelectiveCodeOwnerRemovals" id="@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.resetSelectiveCodeOwnerRemovals"></a>
+
+```csharp
+private void ResetSelectiveCodeOwnerRemovals()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -387,20 +387,21 @@ ProjectLevelMrApprovals.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.property.disableOverridingApproversPerMergeRequestInput">DisableOverridingApproversPerMergeRequestInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.property.mergeRequestsAuthorApprovalInput">MergeRequestsAuthorApprovalInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.property.mergeRequestsDisableCommittersApprovalInput">MergeRequestsDisableCommittersApprovalInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.property.requirePasswordToApproveInput">RequirePasswordToApproveInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.property.resetApprovalsOnPushInput">ResetApprovalsOnPushInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.property.selectiveCodeOwnerRemovalsInput">SelectiveCodeOwnerRemovalsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.property.disableOverridingApproversPerMergeRequest">DisableOverridingApproversPerMergeRequest</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.property.mergeRequestsAuthorApproval">MergeRequestsAuthorApproval</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.property.mergeRequestsDisableCommittersApproval">MergeRequestsDisableCommittersApproval</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.property.project">Project</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.property.requirePasswordToApprove">RequirePasswordToApprove</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.property.resetApprovalsOnPush">ResetApprovalsOnPush</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.property.selectiveCodeOwnerRemovals">SelectiveCodeOwnerRemovals</a></code> | <code>object</code> | *No description.* |
 
 ---
 
@@ -546,6 +547,16 @@ public object[] Provisioners { get; }
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.property.id"></a>
+
+```csharp
+public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DisableOverridingApproversPerMergeRequestInput`<sup>Optional</sup> <a name="DisableOverridingApproversPerMergeRequestInput" id="@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.property.disableOverridingApproversPerMergeRequestInput"></a>
 
 ```csharp
@@ -553,16 +564,6 @@ public object DisableOverridingApproversPerMergeRequestInput { get; }
 ```
 
 - *Type:* object
-
----
-
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.property.idInput"></a>
-
-```csharp
-public string IdInput { get; }
-```
-
-- *Type:* string
 
 ---
 
@@ -616,6 +617,16 @@ public object ResetApprovalsOnPushInput { get; }
 
 ---
 
+##### `SelectiveCodeOwnerRemovalsInput`<sup>Optional</sup> <a name="SelectiveCodeOwnerRemovalsInput" id="@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.property.selectiveCodeOwnerRemovalsInput"></a>
+
+```csharp
+public object SelectiveCodeOwnerRemovalsInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `DisableOverridingApproversPerMergeRequest`<sup>Required</sup> <a name="DisableOverridingApproversPerMergeRequest" id="@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.property.disableOverridingApproversPerMergeRequest"></a>
 
 ```csharp
@@ -623,16 +634,6 @@ public object DisableOverridingApproversPerMergeRequest { get; }
 ```
 
 - *Type:* object
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.property.id"></a>
-
-```csharp
-public string Id { get; }
-```
-
-- *Type:* string
 
 ---
 
@@ -686,6 +687,16 @@ public object ResetApprovalsOnPush { get; }
 
 ---
 
+##### `SelectiveCodeOwnerRemovals`<sup>Required</sup> <a name="SelectiveCodeOwnerRemovals" id="@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovals.property.selectiveCodeOwnerRemovals"></a>
+
+```csharp
+public object SelectiveCodeOwnerRemovals { get; }
+```
+
+- *Type:* object
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -723,11 +734,11 @@ new ProjectLevelMrApprovalsConfig {
     object[] Provisioners = null,
     string Project,
     object DisableOverridingApproversPerMergeRequest = null,
-    string Id = null,
     object MergeRequestsAuthorApproval = null,
     object MergeRequestsDisableCommittersApproval = null,
     object RequirePasswordToApprove = null,
-    object ResetApprovalsOnPush = null
+    object ResetApprovalsOnPush = null,
+    object SelectiveCodeOwnerRemovals = null
 };
 ```
 
@@ -743,12 +754,12 @@ new ProjectLevelMrApprovalsConfig {
 | <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovalsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovalsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovalsConfig.property.project">Project</a></code> | <code>string</code> | The ID or URL-encoded path of a project to change MR approval configuration. |
-| <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovalsConfig.property.disableOverridingApproversPerMergeRequest">DisableOverridingApproversPerMergeRequest</a></code> | <code>object</code> | By default, users are able to edit the approval rules in merge requests. If set to true,. |
-| <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovalsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_level_mr_approvals#id ProjectLevelMrApprovals#id}. |
-| <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovalsConfig.property.mergeRequestsAuthorApproval">MergeRequestsAuthorApproval</a></code> | <code>object</code> | Set to `true` if you want to allow merge request authors to self-approve merge requests. Authors. |
-| <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovalsConfig.property.mergeRequestsDisableCommittersApproval">MergeRequestsDisableCommittersApproval</a></code> | <code>object</code> | Set to `true` if you want to prevent approval of merge requests by merge request committers. |
-| <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovalsConfig.property.requirePasswordToApprove">RequirePasswordToApprove</a></code> | <code>object</code> | Set to `true` if you want to require authentication when approving a merge request. |
-| <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovalsConfig.property.resetApprovalsOnPush">ResetApprovalsOnPush</a></code> | <code>object</code> | Set to `true` if you want to remove all approvals in a merge request when new commits are pushed to its source branch. |
+| <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovalsConfig.property.disableOverridingApproversPerMergeRequest">DisableOverridingApproversPerMergeRequest</a></code> | <code>object</code> | Set to `true` to disable overriding approvers per merge request. |
+| <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovalsConfig.property.mergeRequestsAuthorApproval">MergeRequestsAuthorApproval</a></code> | <code>object</code> | Set to `true` to allow merge requests authors to approve their own merge requests. |
+| <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovalsConfig.property.mergeRequestsDisableCommittersApproval">MergeRequestsDisableCommittersApproval</a></code> | <code>object</code> | Set to `true` to allow merge requests committers to approve their own merge requests. |
+| <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovalsConfig.property.requirePasswordToApprove">RequirePasswordToApprove</a></code> | <code>object</code> | Set to `true` to require authentication to approve merge requests. |
+| <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovalsConfig.property.resetApprovalsOnPush">ResetApprovalsOnPush</a></code> | <code>object</code> | Set to `true` to remove all approvals in a merge request when new commits are pushed to its source branch. |
+| <code><a href="#@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovalsConfig.property.selectiveCodeOwnerRemovals">SelectiveCodeOwnerRemovals</a></code> | <code>object</code> | Reset approvals from Code Owners if their files changed. Can be enabled only if reset_approvals_on_push is disabled. |
 
 ---
 
@@ -832,7 +843,7 @@ public string Project { get; set; }
 
 The ID or URL-encoded path of a project to change MR approval configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_level_mr_approvals#project ProjectLevelMrApprovals#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_level_mr_approvals#project ProjectLevelMrApprovals#project}
 
 ---
 
@@ -844,24 +855,9 @@ public object DisableOverridingApproversPerMergeRequest { get; set; }
 
 - *Type:* object
 
-By default, users are able to edit the approval rules in merge requests. If set to true,.
+Set to `true` to disable overriding approvers per merge request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_level_mr_approvals#disable_overriding_approvers_per_merge_request ProjectLevelMrApprovals#disable_overriding_approvers_per_merge_request}
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovalsConfig.property.id"></a>
-
-```csharp
-public string Id { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_level_mr_approvals#id ProjectLevelMrApprovals#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_level_mr_approvals#disable_overriding_approvers_per_merge_request ProjectLevelMrApprovals#disable_overriding_approvers_per_merge_request}
 
 ---
 
@@ -873,9 +869,9 @@ public object MergeRequestsAuthorApproval { get; set; }
 
 - *Type:* object
 
-Set to `true` if you want to allow merge request authors to self-approve merge requests. Authors.
+Set to `true` to allow merge requests authors to approve their own merge requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_level_mr_approvals#merge_requests_author_approval ProjectLevelMrApprovals#merge_requests_author_approval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_level_mr_approvals#merge_requests_author_approval ProjectLevelMrApprovals#merge_requests_author_approval}
 
 ---
 
@@ -887,9 +883,9 @@ public object MergeRequestsDisableCommittersApproval { get; set; }
 
 - *Type:* object
 
-Set to `true` if you want to prevent approval of merge requests by merge request committers.
+Set to `true` to allow merge requests committers to approve their own merge requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_level_mr_approvals#merge_requests_disable_committers_approval ProjectLevelMrApprovals#merge_requests_disable_committers_approval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_level_mr_approvals#merge_requests_disable_committers_approval ProjectLevelMrApprovals#merge_requests_disable_committers_approval}
 
 ---
 
@@ -901,9 +897,9 @@ public object RequirePasswordToApprove { get; set; }
 
 - *Type:* object
 
-Set to `true` if you want to require authentication when approving a merge request.
+Set to `true` to require authentication to approve merge requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_level_mr_approvals#require_password_to_approve ProjectLevelMrApprovals#require_password_to_approve}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_level_mr_approvals#require_password_to_approve ProjectLevelMrApprovals#require_password_to_approve}
 
 ---
 
@@ -915,11 +911,25 @@ public object ResetApprovalsOnPush { get; set; }
 
 - *Type:* object
 
-Set to `true` if you want to remove all approvals in a merge request when new commits are pushed to its source branch.
+Set to `true` to remove all approvals in a merge request when new commits are pushed to its source branch.
 
 Default is `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_level_mr_approvals#reset_approvals_on_push ProjectLevelMrApprovals#reset_approvals_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_level_mr_approvals#reset_approvals_on_push ProjectLevelMrApprovals#reset_approvals_on_push}
+
+---
+
+##### `SelectiveCodeOwnerRemovals`<sup>Optional</sup> <a name="SelectiveCodeOwnerRemovals" id="@cdktf/provider-gitlab.projectLevelMrApprovals.ProjectLevelMrApprovalsConfig.property.selectiveCodeOwnerRemovals"></a>
+
+```csharp
+public object SelectiveCodeOwnerRemovals { get; set; }
+```
+
+- *Type:* object
+
+Reset approvals from Code Owners if their files changed. Can be enabled only if reset_approvals_on_push is disabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_level_mr_approvals#selective_code_owner_removals ProjectLevelMrApprovals#selective_code_owner_removals}
 
 ---
 

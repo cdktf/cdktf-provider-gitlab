@@ -1,6 +1,6 @@
 # `gitlab_group_access_token`
 
-Refer to the Terraform Registory for docs: [`gitlab_group_access_token`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_access_token).
+Refer to the Terraform Registory for docs: [`gitlab_group_access_token`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_access_token).
 
 # `groupAccessToken` Submodule <a name="`groupAccessToken` Submodule" id="@cdktf/provider-gitlab.groupAccessToken"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_group_access_token`](https:/
 
 ### GroupAccessToken <a name="GroupAccessToken" id="@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_access_token gitlab_group_access_token}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_access_token gitlab_group_access_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.Initializer"></a>
 
@@ -71,7 +71,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.resetAccessLevel">ResetAccessLevel</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.resetExpiresAt">ResetExpiresAt</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.resetId">ResetId</a></code> | *No description.* |
 
 ---
@@ -264,12 +263,6 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ```go
 func ResetAccessLevel()
-```
-
-##### `ResetExpiresAt` <a name="ResetExpiresAt" id="@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.resetExpiresAt"></a>
-
-```go
-func ResetExpiresAt()
 ```
 
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.resetId"></a>
@@ -733,11 +726,11 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/groupaccesstoken"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
+	ExpiresAt: *string,
 	Group: *string,
 	Name: *string,
 	Scopes: *[]*string,
 	AccessLevel: *string,
-	ExpiresAt: *string,
 	Id: *string,
 }
 ```
@@ -753,12 +746,12 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/groupaccesstoken"
 | <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessTokenConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessTokenConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessTokenConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessTokenConfig.property.expiresAt">ExpiresAt</a></code> | <code>*string</code> | The token expires at midnight UTC on that date. The date must be in the format YYYY-MM-DD. |
 | <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessTokenConfig.property.group">Group</a></code> | <code>*string</code> | The ID or path of the group to add the group access token to. |
 | <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessTokenConfig.property.name">Name</a></code> | <code>*string</code> | The name of the group access token. |
 | <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessTokenConfig.property.scopes">Scopes</a></code> | <code>*[]*string</code> | The scope for the group access token. |
 | <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessTokenConfig.property.accessLevel">AccessLevel</a></code> | <code>*string</code> | The access level for the group access token. Valid values are: `guest`, `reporter`, `developer`, `maintainer`, `owner`. |
-| <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessTokenConfig.property.expiresAt">ExpiresAt</a></code> | <code>*string</code> | The token expires at midnight UTC on that date. The date must be in the format YYYY-MM-DD. |
-| <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_access_token#id GroupAccessToken#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_access_token#id GroupAccessToken#id}. |
 
 ---
 
@@ -832,6 +825,20 @@ Provisioners *[]interface{}
 
 ---
 
+##### `ExpiresAt`<sup>Required</sup> <a name="ExpiresAt" id="@cdktf/provider-gitlab.groupAccessToken.GroupAccessTokenConfig.property.expiresAt"></a>
+
+```go
+ExpiresAt *string
+```
+
+- *Type:* *string
+
+The token expires at midnight UTC on that date. The date must be in the format YYYY-MM-DD.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_access_token#expires_at GroupAccessToken#expires_at}
+
+---
+
 ##### `Group`<sup>Required</sup> <a name="Group" id="@cdktf/provider-gitlab.groupAccessToken.GroupAccessTokenConfig.property.group"></a>
 
 ```go
@@ -842,7 +849,7 @@ Group *string
 
 The ID or path of the group to add the group access token to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_access_token#group GroupAccessToken#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_access_token#group GroupAccessToken#group}
 
 ---
 
@@ -856,7 +863,7 @@ Name *string
 
 The name of the group access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_access_token#name GroupAccessToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_access_token#name GroupAccessToken#name}
 
 ---
 
@@ -872,7 +879,7 @@ The scope for the group access token.
 
 It determines the actions which can be performed when authenticating with this token. Valid values are: `api`, `read_api`, `read_registry`, `write_registry`, `read_repository`, `write_repository`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_access_token#scopes GroupAccessToken#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_access_token#scopes GroupAccessToken#scopes}
 
 ---
 
@@ -886,21 +893,7 @@ AccessLevel *string
 
 The access level for the group access token. Valid values are: `guest`, `reporter`, `developer`, `maintainer`, `owner`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_access_token#access_level GroupAccessToken#access_level}
-
----
-
-##### `ExpiresAt`<sup>Optional</sup> <a name="ExpiresAt" id="@cdktf/provider-gitlab.groupAccessToken.GroupAccessTokenConfig.property.expiresAt"></a>
-
-```go
-ExpiresAt *string
-```
-
-- *Type:* *string
-
-The token expires at midnight UTC on that date. The date must be in the format YYYY-MM-DD.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_access_token#expires_at GroupAccessToken#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_access_token#access_level GroupAccessToken#access_level}
 
 ---
 
@@ -912,7 +905,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_access_token#id GroupAccessToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_access_token#id GroupAccessToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

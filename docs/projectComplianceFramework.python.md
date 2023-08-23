@@ -1,6 +1,6 @@
 # `gitlab_project_compliance_framework`
 
-Refer to the Terraform Registory for docs: [`gitlab_project_compliance_framework`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_compliance_framework).
+Refer to the Terraform Registory for docs: [`gitlab_project_compliance_framework`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_compliance_framework).
 
 # `projectComplianceFramework` Submodule <a name="`projectComplianceFramework` Submodule" id="@cdktf/provider-gitlab.projectComplianceFramework"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_project_compliance_framework
 
 ### ProjectComplianceFramework <a name="ProjectComplianceFramework" id="@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_compliance_framework gitlab_project_compliance_framework}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_compliance_framework gitlab_project_compliance_framework}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Globally unique ID of the compliance framework to assign to the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_compliance_framework#compliance_framework_id ProjectComplianceFramework#compliance_framework_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_compliance_framework#compliance_framework_id ProjectComplianceFramework#compliance_framework_id}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The ID or full path of the project to change the compliance framework of.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_compliance_framework#project ProjectComplianceFramework#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_compliance_framework#project ProjectComplianceFramework#project}
 
 ---
 
@@ -788,7 +788,7 @@ compliance_framework_id: str
 
 Globally unique ID of the compliance framework to assign to the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_compliance_framework#compliance_framework_id ProjectComplianceFramework#compliance_framework_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_compliance_framework#compliance_framework_id ProjectComplianceFramework#compliance_framework_id}
 
 ---
 
@@ -802,7 +802,7 @@ project: str
 
 The ID or full path of the project to change the compliance framework of.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_compliance_framework#project ProjectComplianceFramework#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_compliance_framework#project ProjectComplianceFramework#project}
 
 ---
 

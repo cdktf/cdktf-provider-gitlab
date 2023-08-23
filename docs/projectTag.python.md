@@ -1,6 +1,6 @@
 # `gitlab_project_tag`
 
-Refer to the Terraform Registory for docs: [`gitlab_project_tag`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_tag).
+Refer to the Terraform Registory for docs: [`gitlab_project_tag`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_tag).
 
 # `projectTag` Submodule <a name="`projectTag` Submodule" id="@cdktf/provider-gitlab.projectTag"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_project_tag`](https://regist
 
 ### ProjectTag <a name="ProjectTag" id="@cdktf/provider-gitlab.projectTag.ProjectTag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_tag gitlab_project_tag}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_tag gitlab_project_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectTag.ProjectTag.Initializer"></a>
 
@@ -47,7 +47,7 @@ projectTag.ProjectTag(
 | <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTag.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of a tag. |
 | <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTag.Initializer.parameter.project">project</a></code> | <code>str</code> | The ID or URL-encoded path of the project owned by the authenticated user. |
 | <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTag.Initializer.parameter.ref">ref</a></code> | <code>str</code> | Create tag using commit SHA, another tag name, or branch name. This attribute is not available for imported resources. |
-| <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTag.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_tag#id ProjectTag#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTag.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_tag#id ProjectTag#id}. |
 | <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTag.Initializer.parameter.message">message</a></code> | <code>str</code> | The message of the annotated tag. |
 
 ---
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The name of a tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_tag#name ProjectTag#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_tag#name ProjectTag#name}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The ID or URL-encoded path of the project owned by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_tag#project ProjectTag#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_tag#project ProjectTag#project}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Create tag using commit SHA, another tag name, or branch name. This attribute is not available for imported resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_tag#ref ProjectTag#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_tag#ref ProjectTag#ref}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_tag#id ProjectTag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_tag#id ProjectTag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +159,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The message of the annotated tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_tag#message ProjectTag#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_tag#message ProjectTag#message}
 
 ---
 
@@ -870,7 +870,7 @@ projectTag.ProjectTagConfig(
 | <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTagConfig.property.name">name</a></code> | <code>str</code> | The name of a tag. |
 | <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTagConfig.property.project">project</a></code> | <code>str</code> | The ID or URL-encoded path of the project owned by the authenticated user. |
 | <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTagConfig.property.ref">ref</a></code> | <code>str</code> | Create tag using commit SHA, another tag name, or branch name. This attribute is not available for imported resources. |
-| <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTagConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_tag#id ProjectTag#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTagConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_tag#id ProjectTag#id}. |
 | <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTagConfig.property.message">message</a></code> | <code>str</code> | The message of the annotated tag. |
 
 ---
@@ -955,7 +955,7 @@ name: str
 
 The name of a tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_tag#name ProjectTag#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_tag#name ProjectTag#name}
 
 ---
 
@@ -969,7 +969,7 @@ project: str
 
 The ID or URL-encoded path of the project owned by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_tag#project ProjectTag#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_tag#project ProjectTag#project}
 
 ---
 
@@ -983,7 +983,7 @@ ref: str
 
 Create tag using commit SHA, another tag name, or branch name. This attribute is not available for imported resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_tag#ref ProjectTag#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_tag#ref ProjectTag#ref}
 
 ---
 
@@ -995,7 +995,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_tag#id ProjectTag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_tag#id ProjectTag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1012,7 +1012,7 @@ message: str
 
 The message of the annotated tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/project_tag#message ProjectTag#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_tag#message ProjectTag#message}
 
 ---
 

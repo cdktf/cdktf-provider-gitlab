@@ -1,6 +1,6 @@
 # `gitlab_group_membership`
 
-Refer to the Terraform Registory for docs: [`gitlab_group_membership`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_membership).
+Refer to the Terraform Registory for docs: [`gitlab_group_membership`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_membership).
 
 # `groupMembership` Submodule <a name="`groupMembership` Submodule" id="@cdktf/provider-gitlab.groupMembership"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_group_membership`](https://r
 
 ### GroupMembership <a name="GroupMembership" id="@cdktf/provider-gitlab.groupMembership.GroupMembership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_membership gitlab_group_membership}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_membership gitlab_group_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer"></a>
 
@@ -50,7 +50,7 @@ groupMembership.GroupMembership(
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.groupId">group_id</a></code> | <code>str</code> | The id of the group. |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.userId">user_id</a></code> | <code>typing.Union[int, float]</code> | The id of the user. |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.expiresAt">expires_at</a></code> | <code>str</code> | Expiration date for the group membership. Format: `YYYY-MM-DD`. |
-| <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_membership#id GroupMembership#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_membership#id GroupMembership#id}. |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.skipSubresourcesOnDestroy">skip_subresources_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the deletion of direct memberships of the removed member in subgroups and projects should be skipped. |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.unassignIssuablesOnDestroy">unassign_issuables_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the removed member should be unassigned from any issues or merge requests inside a given group or project. |
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 Access level for the member. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_membership#access_level GroupMembership#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_membership#access_level GroupMembership#access_level}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The id of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_membership#group_id GroupMembership#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_membership#group_id GroupMembership#group_id}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The id of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_membership#user_id GroupMembership#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_membership#user_id GroupMembership#user_id}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Expiration date for the group membership. Format: `YYYY-MM-DD`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_membership#expires_at GroupMembership#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_membership#expires_at GroupMembership#expires_at}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_membership#id GroupMembership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_membership#id GroupMembership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -175,7 +175,7 @@ Whether the deletion of direct memberships of the removed member in subgroups an
 
 Only used during a destroy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_membership#skip_subresources_on_destroy GroupMembership#skip_subresources_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_membership#skip_subresources_on_destroy GroupMembership#skip_subresources_on_destroy}
 
 ---
 
@@ -187,7 +187,7 @@ Whether the removed member should be unassigned from any issues or merge request
 
 Only used during a destroy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_membership#unassign_issuables_on_destroy GroupMembership#unassign_issuables_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_membership#unassign_issuables_on_destroy GroupMembership#unassign_issuables_on_destroy}
 
 ---
 
@@ -904,7 +904,7 @@ groupMembership.GroupMembershipConfig(
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.groupId">group_id</a></code> | <code>str</code> | The id of the group. |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.userId">user_id</a></code> | <code>typing.Union[int, float]</code> | The id of the user. |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.expiresAt">expires_at</a></code> | <code>str</code> | Expiration date for the group membership. Format: `YYYY-MM-DD`. |
-| <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_membership#id GroupMembership#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_membership#id GroupMembership#id}. |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.skipSubresourcesOnDestroy">skip_subresources_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the deletion of direct memberships of the removed member in subgroups and projects should be skipped. |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.unassignIssuablesOnDestroy">unassign_issuables_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the removed member should be unassigned from any issues or merge requests inside a given group or project. |
 
@@ -990,7 +990,7 @@ access_level: str
 
 Access level for the member. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_membership#access_level GroupMembership#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_membership#access_level GroupMembership#access_level}
 
 ---
 
@@ -1004,7 +1004,7 @@ group_id: str
 
 The id of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_membership#group_id GroupMembership#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_membership#group_id GroupMembership#group_id}
 
 ---
 
@@ -1018,7 +1018,7 @@ user_id: typing.Union[int, float]
 
 The id of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_membership#user_id GroupMembership#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_membership#user_id GroupMembership#user_id}
 
 ---
 
@@ -1032,7 +1032,7 @@ expires_at: str
 
 Expiration date for the group membership. Format: `YYYY-MM-DD`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_membership#expires_at GroupMembership#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_membership#expires_at GroupMembership#expires_at}
 
 ---
 
@@ -1044,7 +1044,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_membership#id GroupMembership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_membership#id GroupMembership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1063,7 +1063,7 @@ Whether the deletion of direct memberships of the removed member in subgroups an
 
 Only used during a destroy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_membership#skip_subresources_on_destroy GroupMembership#skip_subresources_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_membership#skip_subresources_on_destroy GroupMembership#skip_subresources_on_destroy}
 
 ---
 
@@ -1079,7 +1079,7 @@ Whether the removed member should be unassigned from any issues or merge request
 
 Only used during a destroy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.2.0/docs/resources/group_membership#unassign_issuables_on_destroy GroupMembership#unassign_issuables_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_membership#unassign_issuables_on_destroy GroupMembership#unassign_issuables_on_destroy}
 
 ---
 
