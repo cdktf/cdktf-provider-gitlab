@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.provider.GitlabProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/provider"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/provider"
 
 provider.NewGitlabProvider(scope Construct, id *string, config GitlabProviderConfig) GitlabProvider
 ```
@@ -196,7 +196,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.provider.GitlabProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/provider"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/provider"
 
 provider.GitlabProvider_IsConstruct(x interface{}) *bool
 ```
@@ -228,7 +228,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.provider.GitlabProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/provider"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/provider"
 
 provider.GitlabProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -242,7 +242,7 @@ provider.GitlabProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-gitlab.provider.GitlabProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/provider"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/provider"
 
 provider.GitlabProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -551,7 +551,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.provider.GitlabProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v9/provider"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/provider"
 
 &provider.GitlabProviderConfig {
 	Alias: *string,
