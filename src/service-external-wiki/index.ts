@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/service_external_wiki
 // generated from terraform resource schema
 
