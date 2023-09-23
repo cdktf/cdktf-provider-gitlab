@@ -1,6 +1,6 @@
 # `data_gitlab_project`
 
-Refer to the Terraform Registory for docs: [`data_gitlab_project`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/data-sources/project).
+Refer to the Terraform Registory for docs: [`data_gitlab_project`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project).
 
 # `dataGitlabProject` Submodule <a name="`dataGitlabProject` Submodule" id="@cdktf/provider-gitlab.dataGitlabProject"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_gitlab_project`](https://regis
 
 ### DataGitlabProject <a name="DataGitlabProject" id="@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/data-sources/project gitlab_project}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project gitlab_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.Initializer"></a>
 
@@ -1373,7 +1373,7 @@ CiDefaultGitDepth *f64
 
 Default number of revisions for shallow cloning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/data-sources/project#ci_default_git_depth DataGitlabProject#ci_default_git_depth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project#ci_default_git_depth DataGitlabProject#ci_default_git_depth}
 
 ---
 
@@ -1387,7 +1387,7 @@ Id *string
 
 The integer that uniquely identifies the project within the gitlab install.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/data-sources/project#id DataGitlabProject#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project#id DataGitlabProject#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1404,7 +1404,7 @@ PathWithNamespace *string
 
 The path of the repository with namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/data-sources/project#path_with_namespace DataGitlabProject#path_with_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project#path_with_namespace DataGitlabProject#path_with_namespace}
 
 ---
 
@@ -1418,7 +1418,7 @@ PublicBuilds interface{}
 
 If true, jobs can be viewed by non-project members.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/data-sources/project#public_builds DataGitlabProject#public_builds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project#public_builds DataGitlabProject#public_builds}
 
 ---
 

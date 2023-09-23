@@ -36,6 +36,7 @@ export * as integrationEmailsOnPush from './integration-emails-on-push';
 export * as integrationExternalWiki from './integration-external-wiki';
 export * as integrationGithub from './integration-github';
 export * as integrationJira from './integration-jira';
+export * as integrationMattermost from './integration-mattermost';
 export * as integrationMicrosoftTeams from './integration-microsoft-teams';
 export * as integrationPipelinesEmail from './integration-pipelines-email';
 export * as integrationSlack from './integration-slack';

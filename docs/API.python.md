@@ -73,6 +73,7 @@ The following submodules are available:
 - [integrationExternalWiki](./integrationExternalWiki.python.md)
 - [integrationGithub](./integrationGithub.python.md)
 - [integrationJira](./integrationJira.python.md)
+- [integrationMattermost](./integrationMattermost.python.md)
 - [integrationMicrosoftTeams](./integrationMicrosoftTeams.python.md)
 - [integrationPipelinesEmail](./integrationPipelinesEmail.python.md)
 - [integrationSlack](./integrationSlack.python.md)

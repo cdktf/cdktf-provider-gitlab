@@ -36,6 +36,7 @@ Object.defineProperty(exports, 'integrationEmailsOnPush', { get: function () { r
 Object.defineProperty(exports, 'integrationExternalWiki', { get: function () { return require('./integration-external-wiki'); } });
 Object.defineProperty(exports, 'integrationGithub', { get: function () { return require('./integration-github'); } });
 Object.defineProperty(exports, 'integrationJira', { get: function () { return require('./integration-jira'); } });
+Object.defineProperty(exports, 'integrationMattermost', { get: function () { return require('./integration-mattermost'); } });
 Object.defineProperty(exports, 'integrationMicrosoftTeams', { get: function () { return require('./integration-microsoft-teams'); } });
 Object.defineProperty(exports, 'integrationPipelinesEmail', { get: function () { return require('./integration-pipelines-email'); } });
 Object.defineProperty(exports, 'integrationSlack', { get: function () { return require('./integration-slack'); } });

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_protected_environment
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_protected_environment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,47 +13,249 @@ import * as cdktf from 'cdktf';
 
 export interface ProjectProtectedEnvironmentConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Array of approval rules to deploy, with each described by a hash.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_protected_environment#approval_rules ProjectProtectedEnvironment#approval_rules}
+  */
+  readonly approvalRules?: ProjectProtectedEnvironmentApprovalRules[] | cdktf.IResolvable;
+  /**
   * The name of the environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_protected_environment#environment ProjectProtectedEnvironment#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_protected_environment#environment ProjectProtectedEnvironment#environment}
   */
   readonly environment: string;
   /**
   * The ID or full path of the project which the protected environment is created against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_protected_environment#project ProjectProtectedEnvironment#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_protected_environment#project ProjectProtectedEnvironment#project}
   */
   readonly project: string;
   /**
   * The number of approvals required to deploy to this environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_protected_environment#required_approval_count ProjectProtectedEnvironment#required_approval_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_protected_environment#required_approval_count ProjectProtectedEnvironment#required_approval_count}
   */
   readonly requiredApprovalCount?: number;
   /**
   * deploy_access_levels block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_protected_environment#deploy_access_levels ProjectProtectedEnvironment#deploy_access_levels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_protected_environment#deploy_access_levels ProjectProtectedEnvironment#deploy_access_levels}
   */
   readonly deployAccessLevels?: ProjectProtectedEnvironmentDeployAccessLevels[] | cdktf.IResolvable;
+}
+export interface ProjectProtectedEnvironmentApprovalRules {
+  /**
+  * Levels of access allowed to approve a deployment to this protected environment. Valid values are `developer`, `maintainer`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_protected_environment#access_level ProjectProtectedEnvironment#access_level}
+  */
+  readonly accessLevel?: string;
+  /**
+  * The ID of the group allowed to approve a deployment to this protected environment. The project must be shared with the group. This is mutually exclusive with user_id.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_protected_environment#group_id ProjectProtectedEnvironment#group_id}
+  */
+  readonly groupId?: number;
+  /**
+  * The number of approval required to allow deployment to this protected environment. This is mutually exclusive with user_id.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_protected_environment#required_approvals ProjectProtectedEnvironment#required_approvals}
+  */
+  readonly requiredApprovals?: number;
+  /**
+  * The ID of the user allowed to approve a deployment to this protected environment. The user must be a member of the project. This is mutually exclusive with group_id and required_approvals.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_protected_environment#user_id ProjectProtectedEnvironment#user_id}
+  */
+  readonly userId?: number;
+}
+
+export function projectProtectedEnvironmentApprovalRulesToTerraform(struct?: ProjectProtectedEnvironmentApprovalRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    access_level: cdktf.stringToTerraform(struct!.accessLevel),
+    group_id: cdktf.numberToTerraform(struct!.groupId),
+    required_approvals: cdktf.numberToTerraform(struct!.requiredApprovals),
+    user_id: cdktf.numberToTerraform(struct!.userId),
+  }
+}
+
+export class ProjectProtectedEnvironmentApprovalRulesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ProjectProtectedEnvironmentApprovalRules | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._accessLevel !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accessLevel = this._accessLevel;
+    }
+    if (this._groupId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.groupId = this._groupId;
+    }
+    if (this._requiredApprovals !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.requiredApprovals = this._requiredApprovals;
+    }
+    if (this._userId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userId = this._userId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ProjectProtectedEnvironmentApprovalRules | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._accessLevel = undefined;
+      this._groupId = undefined;
+      this._requiredApprovals = undefined;
+      this._userId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._accessLevel = value.accessLevel;
+      this._groupId = value.groupId;
+      this._requiredApprovals = value.requiredApprovals;
+      this._userId = value.userId;
+    }
+  }
+
+  // access_level - computed: true, optional: true, required: false
+  private _accessLevel?: string; 
+  public get accessLevel() {
+    return this.getStringAttribute('access_level');
+  }
+  public set accessLevel(value: string) {
+    this._accessLevel = value;
+  }
+  public resetAccessLevel() {
+    this._accessLevel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessLevelInput() {
+    return this._accessLevel;
+  }
+
+  // access_level_description - computed: true, optional: false, required: false
+  public get accessLevelDescription() {
+    return this.getStringAttribute('access_level_description');
+  }
+
+  // group_id - computed: true, optional: true, required: false
+  private _groupId?: number; 
+  public get groupId() {
+    return this.getNumberAttribute('group_id');
+  }
+  public set groupId(value: number) {
+    this._groupId = value;
+  }
+  public resetGroupId() {
+    this._groupId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupIdInput() {
+    return this._groupId;
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getNumberAttribute('id');
+  }
+
+  // required_approvals - computed: true, optional: true, required: false
+  private _requiredApprovals?: number; 
+  public get requiredApprovals() {
+    return this.getNumberAttribute('required_approvals');
+  }
+  public set requiredApprovals(value: number) {
+    this._requiredApprovals = value;
+  }
+  public resetRequiredApprovals() {
+    this._requiredApprovals = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requiredApprovalsInput() {
+    return this._requiredApprovals;
+  }
+
+  // user_id - computed: true, optional: true, required: false
+  private _userId?: number; 
+  public get userId() {
+    return this.getNumberAttribute('user_id');
+  }
+  public set userId(value: number) {
+    this._userId = value;
+  }
+  public resetUserId() {
+    this._userId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userIdInput() {
+    return this._userId;
+  }
+}
+
+export class ProjectProtectedEnvironmentApprovalRulesList extends cdktf.ComplexList {
+  public internalValue? : ProjectProtectedEnvironmentApprovalRules[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ProjectProtectedEnvironmentApprovalRulesOutputReference {
+    return new ProjectProtectedEnvironmentApprovalRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface ProjectProtectedEnvironmentDeployAccessLevels {
   /**
   * Levels of access required to deploy to this protected environment. Valid values are `developer`, `maintainer`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_protected_environment#access_level ProjectProtectedEnvironment#access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_protected_environment#access_level ProjectProtectedEnvironment#access_level}
   */
   readonly accessLevel?: string;
   /**
   * The ID of the group allowed to deploy to this protected environment. The project must be shared with the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_protected_environment#group_id ProjectProtectedEnvironment#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_protected_environment#group_id ProjectProtectedEnvironment#group_id}
   */
   readonly groupId?: number;
   /**
   * The ID of the user allowed to deploy to this protected environment. The user must be a member of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_protected_environment#user_id ProjectProtectedEnvironment#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_protected_environment#user_id ProjectProtectedEnvironment#user_id}
   */
   readonly userId?: number;
 }
@@ -163,6 +365,11 @@ export class ProjectProtectedEnvironmentDeployAccessLevelsOutputReference extend
     return this._groupId;
   }
 
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getNumberAttribute('id');
+  }
+
   // user_id - computed: false, optional: true, required: false
   private _userId?: number; 
   public get userId() {
@@ -201,7 +408,7 @@ export class ProjectProtectedEnvironmentDeployAccessLevelsList extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_protected_environment gitlab_project_protected_environment}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_protected_environment gitlab_project_protected_environment}
 */
 export class ProjectProtectedEnvironment extends cdktf.TerraformResource {
 
@@ -215,7 +422,7 @@ export class ProjectProtectedEnvironment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/project_protected_environment gitlab_project_protected_environment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_protected_environment gitlab_project_protected_environment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -226,7 +433,7 @@ export class ProjectProtectedEnvironment extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_protected_environment',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.3.0',
+        providerVersion: '16.4.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,
@@ -237,6 +444,7 @@ export class ProjectProtectedEnvironment extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._approvalRules.internalValue = config.approvalRules;
     this._environment = config.environment;
     this._project = config.project;
     this._requiredApprovalCount = config.requiredApprovalCount;
@@ -246,6 +454,22 @@ export class ProjectProtectedEnvironment extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // approval_rules - computed: true, optional: true, required: false
+  private _approvalRules = new ProjectProtectedEnvironmentApprovalRulesList(this, "approval_rules", false);
+  public get approvalRules() {
+    return this._approvalRules;
+  }
+  public putApprovalRules(value: ProjectProtectedEnvironmentApprovalRules[] | cdktf.IResolvable) {
+    this._approvalRules.internalValue = value;
+  }
+  public resetApprovalRules() {
+    this._approvalRules.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get approvalRulesInput() {
+    return this._approvalRules.internalValue;
+  }
 
   // environment - computed: false, optional: false, required: true
   private _environment?: string; 
@@ -316,6 +540,7 @@ export class ProjectProtectedEnvironment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      approval_rules: cdktf.listMapper(projectProtectedEnvironmentApprovalRulesToTerraform, false)(this._approvalRules.internalValue),
       environment: cdktf.stringToTerraform(this._environment),
       project: cdktf.stringToTerraform(this._project),
       required_approval_count: cdktf.numberToTerraform(this._requiredApprovalCount),

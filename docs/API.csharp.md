@@ -73,6 +73,7 @@ The following submodules are available:
 - [integrationExternalWiki](./integrationExternalWiki.csharp.md)
 - [integrationGithub](./integrationGithub.csharp.md)
 - [integrationJira](./integrationJira.csharp.md)
+- [integrationMattermost](./integrationMattermost.csharp.md)
 - [integrationMicrosoftTeams](./integrationMicrosoftTeams.csharp.md)
 - [integrationPipelinesEmail](./integrationPipelinesEmail.csharp.md)
 - [integrationSlack](./integrationSlack.csharp.md)

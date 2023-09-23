@@ -1,6 +1,6 @@
 # `gitlab_group_issue_board`
 
-Refer to the Terraform Registory for docs: [`gitlab_group_issue_board`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_issue_board).
+Refer to the Terraform Registory for docs: [`gitlab_group_issue_board`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/group_issue_board).
 
 # `groupIssueBoard` Submodule <a name="`groupIssueBoard` Submodule" id="@cdktf/provider-gitlab.groupIssueBoard"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_group_issue_board`](https://
 
 ### GroupIssueBoard <a name="GroupIssueBoard" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_issue_board gitlab_group_issue_board}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/group_issue_board gitlab_group_issue_board}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.Initializer"></a>
 
@@ -756,7 +756,7 @@ public string Group { get; set; }
 
 The ID or URL-encoded path of the group owned by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_issue_board#group GroupIssueBoard#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/group_issue_board#group GroupIssueBoard#group}
 
 ---
 
@@ -770,7 +770,7 @@ public string Name { get; set; }
 
 The name of the board.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_issue_board#name GroupIssueBoard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/group_issue_board#name GroupIssueBoard#name}
 
 ---
 
@@ -784,7 +784,7 @@ public object Lists { get; set; }
 
 lists block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_issue_board#lists GroupIssueBoard#lists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/group_issue_board#lists GroupIssueBoard#lists}
 
 ---
 
@@ -798,7 +798,7 @@ public double MilestoneId { get; set; }
 
 The milestone the board should be scoped to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_issue_board#milestone_id GroupIssueBoard#milestone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/group_issue_board#milestone_id GroupIssueBoard#milestone_id}
 
 ---
 
@@ -832,7 +832,7 @@ public double LabelId { get; set; }
 
 The ID of the label the list should be scoped to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/group_issue_board#label_id GroupIssueBoard#label_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/group_issue_board#label_id GroupIssueBoard#label_id}
 
 ---
 

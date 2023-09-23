@@ -1,6 +1,6 @@
 # `data_gitlab_instance_variable`
 
-Refer to the Terraform Registory for docs: [`data_gitlab_instance_variable`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/data-sources/instance_variable).
+Refer to the Terraform Registory for docs: [`data_gitlab_instance_variable`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/instance_variable).
 
 # `dataGitlabInstanceVariable` Submodule <a name="`dataGitlabInstanceVariable` Submodule" id="@cdktf/provider-gitlab.dataGitlabInstanceVariable"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_gitlab_instance_variable`](htt
 
 ### DataGitlabInstanceVariable <a name="DataGitlabInstanceVariable" id="@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/data-sources/instance_variable gitlab_instance_variable}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/instance_variable gitlab_instance_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariable.Initializer"></a>
 
@@ -44,7 +44,7 @@ DataGitlabInstanceVariable.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariable.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariable.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariable.Initializer.parameter.key">key</a></code> | <code>java.lang.String</code> | The name of the variable. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariable.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/data-sources/instance_variable#id DataGitlabInstanceVariable#id}. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariable.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/instance_variable#id DataGitlabInstanceVariable#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/data-sources/instance_variable#key DataGitlabInstanceVariable#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/instance_variable#key DataGitlabInstanceVariable#key}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/data-sources/instance_variable#id DataGitlabInstanceVariable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/instance_variable#id DataGitlabInstanceVariable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -709,7 +709,7 @@ DataGitlabInstanceVariableConfig.builder()
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariableConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariableConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariableConfig.property.key">key</a></code> | <code>java.lang.String</code> | The name of the variable. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariableConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/data-sources/instance_variable#id DataGitlabInstanceVariable#id}. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariableConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/instance_variable#id DataGitlabInstanceVariable#id}. |
 
 ---
 
@@ -793,7 +793,7 @@ public java.lang.String getKey();
 
 The name of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/data-sources/instance_variable#key DataGitlabInstanceVariable#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/instance_variable#key DataGitlabInstanceVariable#key}
 
 ---
 
@@ -805,7 +805,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/data-sources/instance_variable#id DataGitlabInstanceVariable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/instance_variable#id DataGitlabInstanceVariable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

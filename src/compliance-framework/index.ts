@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/compliance_framework
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/compliance_framework
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,43 +15,43 @@ export interface ComplianceFrameworkConfig extends cdktf.TerraformMetaArguments 
   /**
   * New color representation of the compliance framework in hex format. e.g. #FCA121.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/compliance_framework#color ComplianceFramework#color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/compliance_framework#color ComplianceFramework#color}
   */
   readonly color: string;
   /**
   * Set this compliance framework as the default framework for the group. Default: `false`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/compliance_framework#default ComplianceFramework#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/compliance_framework#default ComplianceFramework#default}
   */
   readonly default?: boolean | cdktf.IResolvable;
   /**
   * Description for the compliance framework.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/compliance_framework#description ComplianceFramework#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/compliance_framework#description ComplianceFramework#description}
   */
   readonly description: string;
   /**
   * Name for the compliance framework.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/compliance_framework#name ComplianceFramework#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/compliance_framework#name ComplianceFramework#name}
   */
   readonly name: string;
   /**
   * Full path of the namespace to add the compliance framework to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/compliance_framework#namespace_path ComplianceFramework#namespace_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/compliance_framework#namespace_path ComplianceFramework#namespace_path}
   */
   readonly namespacePath: string;
   /**
   * Full path of the compliance pipeline configuration stored in a project repository, such as `.gitlab/.compliance-gitlab-ci.yml@compliance/hipaa`. Required format: `path/file.y[a]ml@group-name/project-name` **Note**: Ultimate license required.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/compliance_framework#pipeline_configuration_full_path ComplianceFramework#pipeline_configuration_full_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/compliance_framework#pipeline_configuration_full_path ComplianceFramework#pipeline_configuration_full_path}
   */
   readonly pipelineConfigurationFullPath?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/compliance_framework gitlab_compliance_framework}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/compliance_framework gitlab_compliance_framework}
 */
 export class ComplianceFramework extends cdktf.TerraformResource {
 
@@ -65,7 +65,7 @@ export class ComplianceFramework extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/compliance_framework gitlab_compliance_framework} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/compliance_framework gitlab_compliance_framework} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -76,7 +76,7 @@ export class ComplianceFramework extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_compliance_framework',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.3.0',
+        providerVersion: '16.4.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,
