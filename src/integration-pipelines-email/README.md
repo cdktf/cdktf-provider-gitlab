@@ -1,3 +1,3 @@
 # `gitlab_integration_pipelines_email`
 
-Refer to the Terraform Registory for docs: [`gitlab_integration_pipelines_email`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/integration_pipelines_email).
+Refer to the Terraform Registory for docs: [`gitlab_integration_pipelines_email`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_pipelines_email).

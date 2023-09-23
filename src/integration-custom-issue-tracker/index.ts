@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/integration_custom_issue_tracker
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_custom_issue_tracker
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +10,25 @@ export interface IntegrationCustomIssueTrackerConfig extends cdktf.TerraformMeta
   /**
   * The URL to view an issue in the external issue tracker. Must contain :id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/integration_custom_issue_tracker#issues_url IntegrationCustomIssueTracker#issues_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_custom_issue_tracker#issues_url IntegrationCustomIssueTracker#issues_url}
   */
   readonly issuesUrl: string;
   /**
   * The ID or full path of the project for the custom issue tracker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/integration_custom_issue_tracker#project IntegrationCustomIssueTracker#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_custom_issue_tracker#project IntegrationCustomIssueTracker#project}
   */
   readonly project: string;
   /**
   * The URL to the project in the external issue tracker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/integration_custom_issue_tracker#project_url IntegrationCustomIssueTracker#project_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_custom_issue_tracker#project_url IntegrationCustomIssueTracker#project_url}
   */
   readonly projectUrl: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/integration_custom_issue_tracker gitlab_integration_custom_issue_tracker}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_custom_issue_tracker gitlab_integration_custom_issue_tracker}
 */
 export class IntegrationCustomIssueTracker extends cdktf.TerraformResource {
 
@@ -47,7 +42,7 @@ export class IntegrationCustomIssueTracker extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/integration_custom_issue_tracker gitlab_integration_custom_issue_tracker} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_custom_issue_tracker gitlab_integration_custom_issue_tracker} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -58,7 +53,7 @@ export class IntegrationCustomIssueTracker extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_integration_custom_issue_tracker',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.3.0',
+        providerVersion: '16.4.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,

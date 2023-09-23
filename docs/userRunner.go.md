@@ -1,6 +1,6 @@
 # `gitlab_user_runner`
 
-Refer to the Terraform Registory for docs: [`gitlab_user_runner`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/user_runner).
+Refer to the Terraform Registory for docs: [`gitlab_user_runner`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/user_runner).
 
 # `userRunner` Submodule <a name="`userRunner` Submodule" id="@cdktf/provider-gitlab.userRunner"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`gitlab_user_runner`](https://regist
 
 ### UserRunner <a name="UserRunner" id="@cdktf/provider-gitlab.userRunner.UserRunner"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/user_runner gitlab_user_runner}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/user_runner gitlab_user_runner}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.userRunner.UserRunner.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/userrunner"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/userrunner"
 
 userrunner.NewUserRunner(scope Construct, id *string, config UserRunnerConfig) UserRunner
 ```
@@ -333,7 +333,7 @@ func ResetUntagged()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.userRunner.UserRunner.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/userrunner"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/userrunner"
 
 userrunner.UserRunner_IsConstruct(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.userRunner.UserRunner.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/userrunner"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/userrunner"
 
 userrunner.UserRunner_IsTerraformElement(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ userrunner.UserRunner_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.userRunner.UserRunner.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/userrunner"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/userrunner"
 
 userrunner.UserRunner_IsTerraformResource(x interface{}) *bool
 ```
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.userRunner.UserRunnerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/userrunner"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/userrunner"
 
 &userrunner.UserRunnerConfig {
 	Connection: interface{},
@@ -947,7 +947,7 @@ RunnerType *string
 
 The scope of the runner. Valid values are: `instance_type`, `group_type`, `project_type`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/user_runner#runner_type UserRunner#runner_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/user_runner#runner_type UserRunner#runner_type}
 
 ---
 
@@ -961,7 +961,7 @@ AccessLevel *string
 
 The access level of the runner. Valid values are: `not_protected`, `ref_protected`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/user_runner#access_level UserRunner#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/user_runner#access_level UserRunner#access_level}
 
 ---
 
@@ -975,7 +975,7 @@ Description *string
 
 Description of the runner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/user_runner#description UserRunner#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/user_runner#description UserRunner#description}
 
 ---
 
@@ -989,7 +989,7 @@ GroupId *f64
 
 The ID of the group that the runner is created in. Required if runner_type is group_type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/user_runner#group_id UserRunner#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/user_runner#group_id UserRunner#group_id}
 
 ---
 
@@ -1003,7 +1003,7 @@ Locked interface{}
 
 Specifies if the runner should be locked for the current project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/user_runner#locked UserRunner#locked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/user_runner#locked UserRunner#locked}
 
 ---
 
@@ -1019,7 +1019,7 @@ Maximum timeout that limits the amount of time (in seconds) that runners can run
 
 Must be at least 600 (10 minutes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/user_runner#maximum_timeout UserRunner#maximum_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/user_runner#maximum_timeout UserRunner#maximum_timeout}
 
 ---
 
@@ -1033,7 +1033,7 @@ Paused interface{}
 
 Specifies if the runner should ignore new jobs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/user_runner#paused UserRunner#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/user_runner#paused UserRunner#paused}
 
 ---
 
@@ -1047,7 +1047,7 @@ ProjectId *f64
 
 The ID of the project that the runner is created in. Required if runner_type is project_type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/user_runner#project_id UserRunner#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/user_runner#project_id UserRunner#project_id}
 
 ---
 
@@ -1061,7 +1061,7 @@ TagList *[]*string
 
 A list of runner tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/user_runner#tag_list UserRunner#tag_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/user_runner#tag_list UserRunner#tag_list}
 
 ---
 
@@ -1075,7 +1075,7 @@ Untagged interface{}
 
 Specifies if the runner should handle untagged jobs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/user_runner#untagged UserRunner#untagged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/user_runner#untagged UserRunner#untagged}
 
 ---
 

@@ -73,6 +73,7 @@ The following submodules are available:
 - [integrationExternalWiki](./integrationExternalWiki.java.md)
 - [integrationGithub](./integrationGithub.java.md)
 - [integrationJira](./integrationJira.java.md)
+- [integrationMattermost](./integrationMattermost.java.md)
 - [integrationMicrosoftTeams](./integrationMicrosoftTeams.java.md)
 - [integrationPipelinesEmail](./integrationPipelinesEmail.java.md)
 - [integrationSlack](./integrationSlack.java.md)

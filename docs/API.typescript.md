@@ -73,6 +73,7 @@ The following submodules are available:
 - [integrationExternalWiki](./integrationExternalWiki.typescript.md)
 - [integrationGithub](./integrationGithub.typescript.md)
 - [integrationJira](./integrationJira.typescript.md)
+- [integrationMattermost](./integrationMattermost.typescript.md)
 - [integrationMicrosoftTeams](./integrationMicrosoftTeams.typescript.md)
 - [integrationPipelinesEmail](./integrationPipelinesEmail.typescript.md)
 - [integrationSlack](./integrationSlack.typescript.md)

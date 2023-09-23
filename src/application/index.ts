@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/application
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +10,19 @@ export interface ApplicationConfig extends cdktf.TerraformMetaArguments {
   /**
   * The application is used where the client secret can be kept confidential. Native mobile apps and Single Page Apps are considered non-confidential. Defaults to true if not supplied
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/application#confidential Application#confidential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/application#confidential Application#confidential}
   */
   readonly confidential?: boolean | cdktf.IResolvable;
   /**
   * Name of the application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/application#name Application#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/application#name Application#name}
   */
   readonly name: string;
   /**
   * The URL gitlab should send the user to after authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/application#redirect_url Application#redirect_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/application#redirect_url Application#redirect_url}
   */
   readonly redirectUrl: string;
   /**
@@ -36,13 +31,13 @@ export interface ApplicationConfig extends cdktf.TerraformMetaArguments {
 This is only populated when creating a new application. This attribute is not available for imported resources
 					
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/application#scopes Application#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/application#scopes Application#scopes}
   */
   readonly scopes: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/application gitlab_application}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/application gitlab_application}
 */
 export class Application extends cdktf.TerraformResource {
 
@@ -56,7 +51,7 @@ export class Application extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.3.0/docs/resources/application gitlab_application} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/application gitlab_application} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +62,7 @@ export class Application extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_application',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.3.0',
+        providerVersion: '16.4.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,
