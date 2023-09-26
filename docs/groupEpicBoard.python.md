@@ -1,6 +1,6 @@
 # `gitlab_group_epic_board`
 
-Refer to the Terraform Registory for docs: [`gitlab_group_epic_board`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/group_epic_board).
+Refer to the Terraform Registory for docs: [`gitlab_group_epic_board`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group_epic_board).
 
 # `groupEpicBoard` Submodule <a name="`groupEpicBoard` Submodule" id="@cdktf/provider-gitlab.groupEpicBoard"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_group_epic_board`](https://r
 
 ### GroupEpicBoard <a name="GroupEpicBoard" id="@cdktf/provider-gitlab.groupEpicBoard.GroupEpicBoard"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/group_epic_board gitlab_group_epic_board}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group_epic_board gitlab_group_epic_board}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupEpicBoard.GroupEpicBoard.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The ID or URL-encoded path of the group owned by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/group_epic_board#group GroupEpicBoard#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group_epic_board#group GroupEpicBoard#group}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The name of the board.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/group_epic_board#name GroupEpicBoard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group_epic_board#name GroupEpicBoard#name}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 lists block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/group_epic_board#lists GroupEpicBoard#lists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group_epic_board#lists GroupEpicBoard#lists}
 
 ---
 
@@ -846,7 +846,7 @@ group: str
 
 The ID or URL-encoded path of the group owned by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/group_epic_board#group GroupEpicBoard#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group_epic_board#group GroupEpicBoard#group}
 
 ---
 
@@ -860,7 +860,7 @@ name: str
 
 The name of the board.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/group_epic_board#name GroupEpicBoard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group_epic_board#name GroupEpicBoard#name}
 
 ---
 
@@ -874,7 +874,7 @@ lists: typing.Union[IResolvable, typing.List[GroupEpicBoardLists]]
 
 lists block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/group_epic_board#lists GroupEpicBoard#lists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group_epic_board#lists GroupEpicBoard#lists}
 
 ---
 
@@ -908,7 +908,7 @@ label_id: typing.Union[int, float]
 
 The ID of the label the list should be scoped to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/group_epic_board#label_id GroupEpicBoard#label_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group_epic_board#label_id GroupEpicBoard#label_id}
 
 ---
 

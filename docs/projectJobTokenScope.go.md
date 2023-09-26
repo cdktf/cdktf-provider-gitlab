@@ -1,6 +1,6 @@
 # `gitlab_project_job_token_scope`
 
-Refer to the Terraform Registory for docs: [`gitlab_project_job_token_scope`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_job_token_scope).
+Refer to the Terraform Registory for docs: [`gitlab_project_job_token_scope`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_job_token_scope).
 
 # `projectJobTokenScope` Submodule <a name="`projectJobTokenScope` Submodule" id="@cdktf/provider-gitlab.projectJobTokenScope"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_project_job_token_scope`](ht
 
 ### ProjectJobTokenScope <a name="ProjectJobTokenScope" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_job_token_scope gitlab_project_job_token_scope}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_job_token_scope gitlab_project_job_token_scope}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.Initializer"></a>
 
@@ -681,7 +681,7 @@ Project *string
 
 The ID or full path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_job_token_scope#project ProjectJobTokenScope#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_job_token_scope#project ProjectJobTokenScope#project}
 
 ---
 
@@ -695,7 +695,7 @@ TargetProjectId *f64
 
 The ID of the project that is in the CI/CD job token inbound allowlist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_job_token_scope#target_project_id ProjectJobTokenScope#target_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_job_token_scope#target_project_id ProjectJobTokenScope#target_project_id}
 
 ---
 

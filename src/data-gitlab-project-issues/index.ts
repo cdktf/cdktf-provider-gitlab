@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,47 +15,47 @@ export interface DataGitlabProjectIssuesConfig extends cdktf.TerraformMetaArgume
   /**
   * Return issues assigned to the given user id. Mutually exclusive with assignee_username. None returns unassigned issues. Any returns issues with an assignee.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues#assignee_id DataGitlabProjectIssues#assignee_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues#assignee_id DataGitlabProjectIssues#assignee_id}
   */
   readonly assigneeId?: number;
   /**
   * Return issues assigned to the given username. Similar to assignee_id and mutually exclusive with assignee_id. In GitLab CE, the assignee_username array should only contain a single value. Otherwise, an invalid parameter error is returned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues#assignee_username DataGitlabProjectIssues#assignee_username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues#assignee_username DataGitlabProjectIssues#assignee_username}
   */
   readonly assigneeUsername?: string;
   /**
   * Return issues created by the given user id. Combine with scope=all or scope=assigned_to_me.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues#author_id DataGitlabProjectIssues#author_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues#author_id DataGitlabProjectIssues#author_id}
   */
   readonly authorId?: number;
   /**
   * Filter confidential or public issues.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues#confidential DataGitlabProjectIssues#confidential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues#confidential DataGitlabProjectIssues#confidential}
   */
   readonly confidential?: boolean | cdktf.IResolvable;
   /**
   * Return issues created on or after the given time. Expected in ISO 8601 format (2019-03-15T08:00:00Z)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues#created_after DataGitlabProjectIssues#created_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues#created_after DataGitlabProjectIssues#created_after}
   */
   readonly createdAfter?: string;
   /**
   * Return issues created on or before the given time. Expected in ISO 8601 format (2019-03-15T08:00:00Z)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues#created_before DataGitlabProjectIssues#created_before}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues#created_before DataGitlabProjectIssues#created_before}
   */
   readonly createdBefore?: string;
   /**
   * Return issues that have no due date, are overdue, or whose due date is this week, this month, or between two weeks ago and next month. Accepts: 0 (no due date), any, today, tomorrow, overdue, week, month, next_month_and_previous_two_weeks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues#due_date DataGitlabProjectIssues#due_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues#due_date DataGitlabProjectIssues#due_date}
   */
   readonly dueDate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues#id DataGitlabProjectIssues#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues#id DataGitlabProjectIssues#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -64,115 +64,115 @@ export interface DataGitlabProjectIssuesConfig extends cdktf.TerraformMetaArgume
   /**
   * Return only the issues having the given iid
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues#iids DataGitlabProjectIssues#iids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues#iids DataGitlabProjectIssues#iids}
   */
   readonly iids?: number[];
   /**
   * Filter to a given type of issue. Valid values are [issue incident test_case]. (Introduced in GitLab 13.12)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues#issue_type DataGitlabProjectIssues#issue_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues#issue_type DataGitlabProjectIssues#issue_type}
   */
   readonly issueType?: string;
   /**
   * Return issues with labels. Issues must have all labels to be returned. None lists all issues with no labels. Any lists all issues with at least one label. No+Label (Deprecated) lists all issues with no labels. Predefined names are case-insensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues#labels DataGitlabProjectIssues#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues#labels DataGitlabProjectIssues#labels}
   */
   readonly labels?: string[];
   /**
   * The milestone title. None lists all issues with no milestone. Any lists all issues that have an assigned milestone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues#milestone DataGitlabProjectIssues#milestone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues#milestone DataGitlabProjectIssues#milestone}
   */
   readonly milestone?: string;
   /**
   * Return issues reacted by the authenticated user by the given emoji. None returns issues not given a reaction. Any returns issues given at least one reaction.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues#my_reaction_emoji DataGitlabProjectIssues#my_reaction_emoji}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues#my_reaction_emoji DataGitlabProjectIssues#my_reaction_emoji}
   */
   readonly myReactionEmoji?: string;
   /**
   * Return issues that do not match the assignee id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues#not_assignee_id DataGitlabProjectIssues#not_assignee_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues#not_assignee_id DataGitlabProjectIssues#not_assignee_id}
   */
   readonly notAssigneeId?: number[];
   /**
   * Return issues that do not match the author id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues#not_author_id DataGitlabProjectIssues#not_author_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues#not_author_id DataGitlabProjectIssues#not_author_id}
   */
   readonly notAuthorId?: number[];
   /**
   * Return issues that do not match the labels.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues#not_labels DataGitlabProjectIssues#not_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues#not_labels DataGitlabProjectIssues#not_labels}
   */
   readonly notLabels?: string[];
   /**
   * Return issues that do not match the milestone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues#not_milestone DataGitlabProjectIssues#not_milestone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues#not_milestone DataGitlabProjectIssues#not_milestone}
   */
   readonly notMilestone?: string;
   /**
   * Return issues not reacted by the authenticated user by the given emoji.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues#not_my_reaction_emoji DataGitlabProjectIssues#not_my_reaction_emoji}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues#not_my_reaction_emoji DataGitlabProjectIssues#not_my_reaction_emoji}
   */
   readonly notMyReactionEmoji?: string[];
   /**
   * Return issues ordered by. Valid values are `created_at`, `updated_at`, `priority`, `due_date`, `relative_position`, `label_priority`, `milestone_due`, `popularity`, `weight`. Default is created_at
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues#order_by DataGitlabProjectIssues#order_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues#order_by DataGitlabProjectIssues#order_by}
   */
   readonly orderBy?: string;
   /**
   * The name or id of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues#project DataGitlabProjectIssues#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues#project DataGitlabProjectIssues#project}
   */
   readonly project: string;
   /**
   * Return issues for the given scope. Valid values are `created_by_me`, `assigned_to_me`, `all`. Defaults to all.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues#scope DataGitlabProjectIssues#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues#scope DataGitlabProjectIssues#scope}
   */
   readonly scope?: string;
   /**
   * Search project issues against their title and description
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues#search DataGitlabProjectIssues#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues#search DataGitlabProjectIssues#search}
   */
   readonly search?: string;
   /**
   * Return issues sorted in asc or desc order. Default is desc
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues#sort DataGitlabProjectIssues#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues#sort DataGitlabProjectIssues#sort}
   */
   readonly sort?: string;
   /**
   * Return issues updated on or after the given time. Expected in ISO 8601 format (2019-03-15T08:00:00Z)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues#updated_after DataGitlabProjectIssues#updated_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues#updated_after DataGitlabProjectIssues#updated_after}
   */
   readonly updatedAfter?: string;
   /**
   * Return issues updated on or before the given time. Expected in ISO 8601 format (2019-03-15T08:00:00Z)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues#updated_before DataGitlabProjectIssues#updated_before}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues#updated_before DataGitlabProjectIssues#updated_before}
   */
   readonly updatedBefore?: string;
   /**
   * Return issues with the specified weight. None returns issues with no weight assigned. Any returns issues with a weight assigned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues#weight DataGitlabProjectIssues#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues#weight DataGitlabProjectIssues#weight}
   */
   readonly weight?: number;
   /**
   * If true, the response returns more details for each label in labels field: :name, :color, :description, :description_html, :text_color. Default is false. description_html was introduced in GitLab 12.7
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues#with_labels_details DataGitlabProjectIssues#with_labels_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues#with_labels_details DataGitlabProjectIssues#with_labels_details}
   */
   readonly withLabelsDetails?: boolean | cdktf.IResolvable;
 }
@@ -504,7 +504,7 @@ export class DataGitlabProjectIssuesIssuesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues gitlab_project_issues}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues gitlab_project_issues}
 */
 export class DataGitlabProjectIssues extends cdktf.TerraformDataSource {
 
@@ -518,7 +518,7 @@ export class DataGitlabProjectIssues extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_issues gitlab_project_issues} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues gitlab_project_issues} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -529,7 +529,7 @@ export class DataGitlabProjectIssues extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_project_issues',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.4.0',
+        providerVersion: '16.4.1',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,

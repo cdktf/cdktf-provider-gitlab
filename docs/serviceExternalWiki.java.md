@@ -1,6 +1,6 @@
 # `gitlab_service_external_wiki`
 
-Refer to the Terraform Registory for docs: [`gitlab_service_external_wiki`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/service_external_wiki).
+Refer to the Terraform Registory for docs: [`gitlab_service_external_wiki`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_external_wiki).
 
 # `serviceExternalWiki` Submodule <a name="`serviceExternalWiki` Submodule" id="@cdktf/provider-gitlab.serviceExternalWiki"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_service_external_wiki`](http
 
 ### ServiceExternalWiki <a name="ServiceExternalWiki" id="@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWiki"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/service_external_wiki gitlab_service_external_wiki}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_external_wiki gitlab_service_external_wiki}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWiki.Initializer"></a>
 
@@ -46,7 +46,7 @@ ServiceExternalWiki.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWiki.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWiki.Initializer.parameter.externalWikiUrl">externalWikiUrl</a></code> | <code>java.lang.String</code> | The URL of the external wiki. |
 | <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWiki.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | ID of the project you want to activate integration on. |
-| <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWiki.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/service_external_wiki#id ServiceExternalWiki#id}. |
+| <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWiki.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_external_wiki#id ServiceExternalWiki#id}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The URL of the external wiki.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/service_external_wiki#external_wiki_url ServiceExternalWiki#external_wiki_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_external_wiki#external_wiki_url ServiceExternalWiki#external_wiki_url}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ID of the project you want to activate integration on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/service_external_wiki#project ServiceExternalWiki#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_external_wiki#project ServiceExternalWiki#project}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/service_external_wiki#id ServiceExternalWiki#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_external_wiki#id ServiceExternalWiki#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -767,7 +767,7 @@ ServiceExternalWikiConfig.builder()
 | <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWikiConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWikiConfig.property.externalWikiUrl">externalWikiUrl</a></code> | <code>java.lang.String</code> | The URL of the external wiki. |
 | <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWikiConfig.property.project">project</a></code> | <code>java.lang.String</code> | ID of the project you want to activate integration on. |
-| <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWikiConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/service_external_wiki#id ServiceExternalWiki#id}. |
+| <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWikiConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_external_wiki#id ServiceExternalWiki#id}. |
 
 ---
 
@@ -851,7 +851,7 @@ public java.lang.String getExternalWikiUrl();
 
 The URL of the external wiki.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/service_external_wiki#external_wiki_url ServiceExternalWiki#external_wiki_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_external_wiki#external_wiki_url ServiceExternalWiki#external_wiki_url}
 
 ---
 
@@ -865,7 +865,7 @@ public java.lang.String getProject();
 
 ID of the project you want to activate integration on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/service_external_wiki#project ServiceExternalWiki#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_external_wiki#project ServiceExternalWiki#project}
 
 ---
 
@@ -877,7 +877,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/service_external_wiki#id ServiceExternalWiki#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_external_wiki#id ServiceExternalWiki#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
