@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_job_token_scope
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_job_token_scope
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +10,19 @@ export interface ProjectJobTokenScopeConfig extends cdktf.TerraformMetaArguments
   /**
   * The ID or full path of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_job_token_scope#project ProjectJobTokenScope#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_job_token_scope#project ProjectJobTokenScope#project}
   */
   readonly project: string;
   /**
   * The ID of the project that is in the CI/CD job token inbound allowlist.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_job_token_scope#target_project_id ProjectJobTokenScope#target_project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_job_token_scope#target_project_id ProjectJobTokenScope#target_project_id}
   */
   readonly targetProjectId: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_job_token_scope gitlab_project_job_token_scope}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_job_token_scope gitlab_project_job_token_scope}
 */
 export class ProjectJobTokenScope extends cdktf.TerraformResource {
 
@@ -41,7 +36,7 @@ export class ProjectJobTokenScope extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_job_token_scope gitlab_project_job_token_scope} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_job_token_scope gitlab_project_job_token_scope} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -52,7 +47,7 @@ export class ProjectJobTokenScope extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_job_token_scope',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.4.0',
+        providerVersion: '16.4.1',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `gitlab_integration_mattermost`
 
-Refer to the Terraform Registory for docs: [`gitlab_integration_mattermost`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost).
+Refer to the Terraform Registory for docs: [`gitlab_integration_mattermost`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost).
 
 # `integrationMattermost` Submodule <a name="`integrationMattermost` Submodule" id="@cdktf/provider-gitlab.integrationMattermost"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_integration_mattermost`](htt
 
 ### IntegrationMattermost <a name="IntegrationMattermost" id="@cdktf/provider-gitlab.integrationMattermost.IntegrationMattermost"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost gitlab_integration_mattermost}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost gitlab_integration_mattermost}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.integrationMattermost.IntegrationMattermost.Initializer"></a>
 
@@ -70,7 +70,7 @@ integrationMattermost.IntegrationMattermost(
 | <code><a href="#@cdktf/provider-gitlab.integrationMattermost.IntegrationMattermost.Initializer.parameter.confidentialIssuesEvents">confidential_issues_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for confidential issues events. |
 | <code><a href="#@cdktf/provider-gitlab.integrationMattermost.IntegrationMattermost.Initializer.parameter.confidentialNoteChannel">confidential_note_channel</a></code> | <code>str</code> | The name of the channel to receive confidential note events notifications. |
 | <code><a href="#@cdktf/provider-gitlab.integrationMattermost.IntegrationMattermost.Initializer.parameter.confidentialNoteEvents">confidential_note_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for confidential note events. |
-| <code><a href="#@cdktf/provider-gitlab.integrationMattermost.IntegrationMattermost.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#id IntegrationMattermost#id}. |
+| <code><a href="#@cdktf/provider-gitlab.integrationMattermost.IntegrationMattermost.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#id IntegrationMattermost#id}. |
 | <code><a href="#@cdktf/provider-gitlab.integrationMattermost.IntegrationMattermost.Initializer.parameter.issueChannel">issue_channel</a></code> | <code>str</code> | The name of the channel to receive issue events notifications. |
 | <code><a href="#@cdktf/provider-gitlab.integrationMattermost.IntegrationMattermost.Initializer.parameter.issuesEvents">issues_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for issues events. |
 | <code><a href="#@cdktf/provider-gitlab.integrationMattermost.IntegrationMattermost.Initializer.parameter.mergeRequestChannel">merge_request_channel</a></code> | <code>str</code> | The name of the channel to receive merge request events notifications. |
@@ -156,7 +156,7 @@ Must be unique amongst siblings in the same scope
 
 ID of the project you want to activate integration on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#project IntegrationMattermost#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#project IntegrationMattermost#project}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Webhook URL (Example, https://mattermost.yourdomain.com/hooks/...). This value cannot be imported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#webhook IntegrationMattermost#webhook}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#webhook IntegrationMattermost#webhook}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Branches to send notifications for. Valid options are "all", "default", "protected", and "default_and_protected".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#branches_to_be_notified IntegrationMattermost#branches_to_be_notified}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#branches_to_be_notified IntegrationMattermost#branches_to_be_notified}
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The name of the channel to receive confidential issue events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#confidential_issue_channel IntegrationMattermost#confidential_issue_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#confidential_issue_channel IntegrationMattermost#confidential_issue_channel}
 
 ---
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable notifications for confidential issues events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#confidential_issues_events IntegrationMattermost#confidential_issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#confidential_issues_events IntegrationMattermost#confidential_issues_events}
 
 ---
 
@@ -206,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The name of the channel to receive confidential note events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#confidential_note_channel IntegrationMattermost#confidential_note_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#confidential_note_channel IntegrationMattermost#confidential_note_channel}
 
 ---
 
@@ -216,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable notifications for confidential note events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#confidential_note_events IntegrationMattermost#confidential_note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#confidential_note_events IntegrationMattermost#confidential_note_events}
 
 ---
 
@@ -224,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#id IntegrationMattermost#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#id IntegrationMattermost#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -237,7 +237,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The name of the channel to receive issue events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#issue_channel IntegrationMattermost#issue_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#issue_channel IntegrationMattermost#issue_channel}
 
 ---
 
@@ -247,7 +247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable notifications for issues events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#issues_events IntegrationMattermost#issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#issues_events IntegrationMattermost#issues_events}
 
 ---
 
@@ -257,7 +257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The name of the channel to receive merge request events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#merge_request_channel IntegrationMattermost#merge_request_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#merge_request_channel IntegrationMattermost#merge_request_channel}
 
 ---
 
@@ -267,7 +267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable notifications for merge requests events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#merge_requests_events IntegrationMattermost#merge_requests_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#merge_requests_events IntegrationMattermost#merge_requests_events}
 
 ---
 
@@ -277,7 +277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The name of the channel to receive note events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#note_channel IntegrationMattermost#note_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#note_channel IntegrationMattermost#note_channel}
 
 ---
 
@@ -287,7 +287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable notifications for note events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#note_events IntegrationMattermost#note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#note_events IntegrationMattermost#note_events}
 
 ---
 
@@ -297,7 +297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Send notifications for broken pipelines.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#notify_only_broken_pipelines IntegrationMattermost#notify_only_broken_pipelines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#notify_only_broken_pipelines IntegrationMattermost#notify_only_broken_pipelines}
 
 ---
 
@@ -307,7 +307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The name of the channel to receive pipeline events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#pipeline_channel IntegrationMattermost#pipeline_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#pipeline_channel IntegrationMattermost#pipeline_channel}
 
 ---
 
@@ -317,7 +317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable notifications for pipeline events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#pipeline_events IntegrationMattermost#pipeline_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#pipeline_events IntegrationMattermost#pipeline_events}
 
 ---
 
@@ -327,7 +327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The name of the channel to receive push events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#push_channel IntegrationMattermost#push_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#push_channel IntegrationMattermost#push_channel}
 
 ---
 
@@ -337,7 +337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable notifications for push events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#push_events IntegrationMattermost#push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#push_events IntegrationMattermost#push_events}
 
 ---
 
@@ -347,7 +347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The name of the channel to receive tag push events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#tag_push_channel IntegrationMattermost#tag_push_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#tag_push_channel IntegrationMattermost#tag_push_channel}
 
 ---
 
@@ -357,7 +357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable notifications for tag push events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#tag_push_events IntegrationMattermost#tag_push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#tag_push_events IntegrationMattermost#tag_push_events}
 
 ---
 
@@ -367,7 +367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Username to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#username IntegrationMattermost#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#username IntegrationMattermost#username}
 
 ---
 
@@ -377,7 +377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The name of the channel to receive wiki page events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#wiki_page_channel IntegrationMattermost#wiki_page_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#wiki_page_channel IntegrationMattermost#wiki_page_channel}
 
 ---
 
@@ -387,7 +387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable notifications for wiki page events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#wiki_page_events IntegrationMattermost#wiki_page_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#wiki_page_events IntegrationMattermost#wiki_page_events}
 
 ---
 
@@ -1624,7 +1624,7 @@ integrationMattermost.IntegrationMattermostConfig(
 | <code><a href="#@cdktf/provider-gitlab.integrationMattermost.IntegrationMattermostConfig.property.confidentialIssuesEvents">confidential_issues_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for confidential issues events. |
 | <code><a href="#@cdktf/provider-gitlab.integrationMattermost.IntegrationMattermostConfig.property.confidentialNoteChannel">confidential_note_channel</a></code> | <code>str</code> | The name of the channel to receive confidential note events notifications. |
 | <code><a href="#@cdktf/provider-gitlab.integrationMattermost.IntegrationMattermostConfig.property.confidentialNoteEvents">confidential_note_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for confidential note events. |
-| <code><a href="#@cdktf/provider-gitlab.integrationMattermost.IntegrationMattermostConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#id IntegrationMattermost#id}. |
+| <code><a href="#@cdktf/provider-gitlab.integrationMattermost.IntegrationMattermostConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#id IntegrationMattermost#id}. |
 | <code><a href="#@cdktf/provider-gitlab.integrationMattermost.IntegrationMattermostConfig.property.issueChannel">issue_channel</a></code> | <code>str</code> | The name of the channel to receive issue events notifications. |
 | <code><a href="#@cdktf/provider-gitlab.integrationMattermost.IntegrationMattermostConfig.property.issuesEvents">issues_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for issues events. |
 | <code><a href="#@cdktf/provider-gitlab.integrationMattermost.IntegrationMattermostConfig.property.mergeRequestChannel">merge_request_channel</a></code> | <code>str</code> | The name of the channel to receive merge request events notifications. |
@@ -1724,7 +1724,7 @@ project: str
 
 ID of the project you want to activate integration on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#project IntegrationMattermost#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#project IntegrationMattermost#project}
 
 ---
 
@@ -1738,7 +1738,7 @@ webhook: str
 
 Webhook URL (Example, https://mattermost.yourdomain.com/hooks/...). This value cannot be imported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#webhook IntegrationMattermost#webhook}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#webhook IntegrationMattermost#webhook}
 
 ---
 
@@ -1752,7 +1752,7 @@ branches_to_be_notified: str
 
 Branches to send notifications for. Valid options are "all", "default", "protected", and "default_and_protected".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#branches_to_be_notified IntegrationMattermost#branches_to_be_notified}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#branches_to_be_notified IntegrationMattermost#branches_to_be_notified}
 
 ---
 
@@ -1766,7 +1766,7 @@ confidential_issue_channel: str
 
 The name of the channel to receive confidential issue events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#confidential_issue_channel IntegrationMattermost#confidential_issue_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#confidential_issue_channel IntegrationMattermost#confidential_issue_channel}
 
 ---
 
@@ -1780,7 +1780,7 @@ confidential_issues_events: typing.Union[bool, IResolvable]
 
 Enable notifications for confidential issues events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#confidential_issues_events IntegrationMattermost#confidential_issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#confidential_issues_events IntegrationMattermost#confidential_issues_events}
 
 ---
 
@@ -1794,7 +1794,7 @@ confidential_note_channel: str
 
 The name of the channel to receive confidential note events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#confidential_note_channel IntegrationMattermost#confidential_note_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#confidential_note_channel IntegrationMattermost#confidential_note_channel}
 
 ---
 
@@ -1808,7 +1808,7 @@ confidential_note_events: typing.Union[bool, IResolvable]
 
 Enable notifications for confidential note events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#confidential_note_events IntegrationMattermost#confidential_note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#confidential_note_events IntegrationMattermost#confidential_note_events}
 
 ---
 
@@ -1820,7 +1820,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#id IntegrationMattermost#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#id IntegrationMattermost#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1837,7 +1837,7 @@ issue_channel: str
 
 The name of the channel to receive issue events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#issue_channel IntegrationMattermost#issue_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#issue_channel IntegrationMattermost#issue_channel}
 
 ---
 
@@ -1851,7 +1851,7 @@ issues_events: typing.Union[bool, IResolvable]
 
 Enable notifications for issues events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#issues_events IntegrationMattermost#issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#issues_events IntegrationMattermost#issues_events}
 
 ---
 
@@ -1865,7 +1865,7 @@ merge_request_channel: str
 
 The name of the channel to receive merge request events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#merge_request_channel IntegrationMattermost#merge_request_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#merge_request_channel IntegrationMattermost#merge_request_channel}
 
 ---
 
@@ -1879,7 +1879,7 @@ merge_requests_events: typing.Union[bool, IResolvable]
 
 Enable notifications for merge requests events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#merge_requests_events IntegrationMattermost#merge_requests_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#merge_requests_events IntegrationMattermost#merge_requests_events}
 
 ---
 
@@ -1893,7 +1893,7 @@ note_channel: str
 
 The name of the channel to receive note events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#note_channel IntegrationMattermost#note_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#note_channel IntegrationMattermost#note_channel}
 
 ---
 
@@ -1907,7 +1907,7 @@ note_events: typing.Union[bool, IResolvable]
 
 Enable notifications for note events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#note_events IntegrationMattermost#note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#note_events IntegrationMattermost#note_events}
 
 ---
 
@@ -1921,7 +1921,7 @@ notify_only_broken_pipelines: typing.Union[bool, IResolvable]
 
 Send notifications for broken pipelines.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#notify_only_broken_pipelines IntegrationMattermost#notify_only_broken_pipelines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#notify_only_broken_pipelines IntegrationMattermost#notify_only_broken_pipelines}
 
 ---
 
@@ -1935,7 +1935,7 @@ pipeline_channel: str
 
 The name of the channel to receive pipeline events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#pipeline_channel IntegrationMattermost#pipeline_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#pipeline_channel IntegrationMattermost#pipeline_channel}
 
 ---
 
@@ -1949,7 +1949,7 @@ pipeline_events: typing.Union[bool, IResolvable]
 
 Enable notifications for pipeline events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#pipeline_events IntegrationMattermost#pipeline_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#pipeline_events IntegrationMattermost#pipeline_events}
 
 ---
 
@@ -1963,7 +1963,7 @@ push_channel: str
 
 The name of the channel to receive push events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#push_channel IntegrationMattermost#push_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#push_channel IntegrationMattermost#push_channel}
 
 ---
 
@@ -1977,7 +1977,7 @@ push_events: typing.Union[bool, IResolvable]
 
 Enable notifications for push events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#push_events IntegrationMattermost#push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#push_events IntegrationMattermost#push_events}
 
 ---
 
@@ -1991,7 +1991,7 @@ tag_push_channel: str
 
 The name of the channel to receive tag push events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#tag_push_channel IntegrationMattermost#tag_push_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#tag_push_channel IntegrationMattermost#tag_push_channel}
 
 ---
 
@@ -2005,7 +2005,7 @@ tag_push_events: typing.Union[bool, IResolvable]
 
 Enable notifications for tag push events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#tag_push_events IntegrationMattermost#tag_push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#tag_push_events IntegrationMattermost#tag_push_events}
 
 ---
 
@@ -2019,7 +2019,7 @@ username: str
 
 Username to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#username IntegrationMattermost#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#username IntegrationMattermost#username}
 
 ---
 
@@ -2033,7 +2033,7 @@ wiki_page_channel: str
 
 The name of the channel to receive wiki page events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#wiki_page_channel IntegrationMattermost#wiki_page_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#wiki_page_channel IntegrationMattermost#wiki_page_channel}
 
 ---
 
@@ -2047,7 +2047,7 @@ wiki_page_events: typing.Union[bool, IResolvable]
 
 Enable notifications for wiki page events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/integration_mattermost#wiki_page_events IntegrationMattermost#wiki_page_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_mattermost#wiki_page_events IntegrationMattermost#wiki_page_events}
 
 ---
 

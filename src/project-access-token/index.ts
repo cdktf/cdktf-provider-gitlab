@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_access_token
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_access_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface ProjectAccessTokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * The access level for the project access token. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`. Default is `maintainer`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_access_token#access_level ProjectAccessToken#access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_access_token#access_level ProjectAccessToken#access_level}
   */
   readonly accessLevel?: string;
   /**
   * Time the token will expire it, YYYY-MM-DD format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_access_token#expires_at ProjectAccessToken#expires_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_access_token#expires_at ProjectAccessToken#expires_at}
   */
   readonly expiresAt: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_access_token#id ProjectAccessToken#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_access_token#id ProjectAccessToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,25 +29,25 @@ export interface ProjectAccessTokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * A name to describe the project access token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_access_token#name ProjectAccessToken#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_access_token#name ProjectAccessToken#name}
   */
   readonly name: string;
   /**
   * The id of the project to add the project access token to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_access_token#project ProjectAccessToken#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_access_token#project ProjectAccessToken#project}
   */
   readonly project: string;
   /**
   * The scope for the project access token. It determines the actions which can be performed when authenticating with this token. Valid values are: `api`, `read_api`, `read_registry`, `write_registry`, `read_repository`, `write_repository`, `create_runner`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_access_token#scopes ProjectAccessToken#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_access_token#scopes ProjectAccessToken#scopes}
   */
   readonly scopes: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_access_token gitlab_project_access_token}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_access_token gitlab_project_access_token}
 */
 export class ProjectAccessToken extends cdktf.TerraformResource {
 
@@ -66,7 +61,7 @@ export class ProjectAccessToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/project_access_token gitlab_project_access_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_access_token gitlab_project_access_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +72,7 @@ export class ProjectAccessToken extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_access_token',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.4.0',
+        providerVersion: '16.4.1',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,

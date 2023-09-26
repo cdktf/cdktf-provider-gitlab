@@ -1,6 +1,6 @@
 # `data_gitlab_project_protected_branch`
 
-Refer to the Terraform Registory for docs: [`data_gitlab_project_protected_branch`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_protected_branch).
+Refer to the Terraform Registory for docs: [`data_gitlab_project_protected_branch`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_protected_branch).
 
 # `dataGitlabProjectProtectedBranch` Submodule <a name="`dataGitlabProjectProtectedBranch` Submodule" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_gitlab_project_protected_branc
 
 ### DataGitlabProjectProtectedBranch <a name="DataGitlabProjectProtectedBranch" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranch"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_protected_branch gitlab_project_protected_branch}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_protected_branch gitlab_project_protected_branch}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranch.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the protected branch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_protected_branch#name DataGitlabProjectProtectedBranch#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_protected_branch#name DataGitlabProjectProtectedBranch#name}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The integer or path with namespace that uniquely identifies the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_protected_branch#project_id DataGitlabProjectProtectedBranch#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_protected_branch#project_id DataGitlabProjectProtectedBranch#project_id}
 
 ---
 
@@ -785,7 +785,7 @@ public java.lang.String getName();
 
 The name of the protected branch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_protected_branch#name DataGitlabProjectProtectedBranch#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_protected_branch#name DataGitlabProjectProtectedBranch#name}
 
 ---
 
@@ -799,7 +799,7 @@ public java.lang.String getProjectId();
 
 The integer or path with namespace that uniquely identifies the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/data-sources/project_protected_branch#project_id DataGitlabProjectProtectedBranch#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_protected_branch#project_id DataGitlabProjectProtectedBranch#project_id}
 
 ---
 

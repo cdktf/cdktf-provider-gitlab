@@ -1,6 +1,6 @@
 # `gitlab_service_external_wiki`
 
-Refer to the Terraform Registory for docs: [`gitlab_service_external_wiki`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/service_external_wiki).
+Refer to the Terraform Registory for docs: [`gitlab_service_external_wiki`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_external_wiki).
 
 # `serviceExternalWiki` Submodule <a name="`serviceExternalWiki` Submodule" id="@cdktf/provider-gitlab.serviceExternalWiki"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_service_external_wiki`](http
 
 ### ServiceExternalWiki <a name="ServiceExternalWiki" id="@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWiki"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/service_external_wiki gitlab_service_external_wiki}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_external_wiki gitlab_service_external_wiki}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWiki.Initializer"></a>
 
@@ -661,7 +661,7 @@ const serviceExternalWikiConfig: serviceExternalWiki.ServiceExternalWikiConfig =
 | <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWikiConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWikiConfig.property.externalWikiUrl">externalWikiUrl</a></code> | <code>string</code> | The URL of the external wiki. |
 | <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWikiConfig.property.project">project</a></code> | <code>string</code> | ID of the project you want to activate integration on. |
-| <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWikiConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/service_external_wiki#id ServiceExternalWiki#id}. |
+| <code><a href="#@cdktf/provider-gitlab.serviceExternalWiki.ServiceExternalWikiConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_external_wiki#id ServiceExternalWiki#id}. |
 
 ---
 
@@ -745,7 +745,7 @@ public readonly externalWikiUrl: string;
 
 The URL of the external wiki.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/service_external_wiki#external_wiki_url ServiceExternalWiki#external_wiki_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_external_wiki#external_wiki_url ServiceExternalWiki#external_wiki_url}
 
 ---
 
@@ -759,7 +759,7 @@ public readonly project: string;
 
 ID of the project you want to activate integration on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/service_external_wiki#project ServiceExternalWiki#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_external_wiki#project ServiceExternalWiki#project}
 
 ---
 
@@ -771,7 +771,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.0/docs/resources/service_external_wiki#id ServiceExternalWiki#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_external_wiki#id ServiceExternalWiki#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
