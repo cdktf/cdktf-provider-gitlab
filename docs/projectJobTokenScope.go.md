@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/projectjobtokenscope"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectjobtokenscope"
 
 projectjobtokenscope.NewProjectJobTokenScope(scope Construct, id *string, config ProjectJobTokenScopeConfig) ProjectJobTokenScope
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/projectjobtokenscope"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectjobtokenscope"
 
 projectjobtokenscope.ProjectJobTokenScope_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/projectjobtokenscope"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectjobtokenscope"
 
 projectjobtokenscope.ProjectJobTokenScope_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ projectjobtokenscope.ProjectJobTokenScope_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/projectjobtokenscope"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectjobtokenscope"
 
 projectjobtokenscope.ProjectJobTokenScope_IsTerraformResource(x interface{}) *bool
 ```
@@ -570,7 +570,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScopeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/projectjobtokenscope"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectjobtokenscope"
 
 &projectjobtokenscope.ProjectJobTokenScopeConfig {
 	Connection: interface{},
