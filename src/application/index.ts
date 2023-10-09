@@ -32,9 +32,9 @@ export interface ApplicationConfig extends cdktf.TerraformMetaArguments {
   readonly redirectUrl: string;
   /**
   * 
-					Scopes of the application. Use "openid" if you plan to use this as an oidc authentication application. Valid options are: `api`, `read_api`, `read_user`, `read_repository`, `write_repository`, `read_registry`, `write_registry`, `sudo`, `admin_mode`, `openid`, `profile`, `email`.
-This is only populated when creating a new application. This attribute is not available for imported resources
-					
+  * 					Scopes of the application. Use "openid" if you plan to use this as an oidc authentication application. Valid options are: `api`, `read_api`, `read_user`, `read_repository`, `write_repository`, `read_registry`, `write_registry`, `sudo`, `admin_mode`, `openid`, `profile`, `email`.
+  * This is only populated when creating a new application. This attribute is not available for imported resources
+  * 					
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/application#scopes Application#scopes}
   */

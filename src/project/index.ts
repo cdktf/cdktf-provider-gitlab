@@ -26,10 +26,10 @@ export interface ProjectConfig extends cdktf.TerraformMetaArguments {
   readonly analyticsAccessLevel?: string;
   /**
   * Number of merge request approvals required for merging. Default is 0.
-  This field **does not** work well in combination with the `gitlab_project_approval_rule` resource
-  and is most likely gonna be deprecated in a future GitLab version (see [this upstream epic](https://gitlab.com/groups/gitlab-org/-/epics/7572)).
-  In the meantime we recommend against using this attribute and use `gitlab_project_approval_rule` instead.
-
+  *   This field **does not** work well in combination with the `gitlab_project_approval_rule` resource
+  *   and is most likely gonna be deprecated in a future GitLab version (see [this upstream epic](https://gitlab.com/groups/gitlab-org/-/epics/7572)).
+  *   In the meantime we recommend against using this attribute and use `gitlab_project_approval_rule` instead.
+  * 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project#approvals_before_merge Project#approvals_before_merge}
   */
@@ -463,10 +463,10 @@ export interface ProjectConfig extends cdktf.TerraformMetaArguments {
   readonly sharedRunnersEnabled?: boolean | cdktf.IResolvable;
   /**
   * If `true`, the default behavior to wait for the default branch protection to be created is skipped.
-This is necessary if the current user is not an admin and the default branch protection is disabled on an instance-level.
-There is currently no known way to determine if the default branch protection is disabled on an instance-level for non-admin users.
-This attribute is only used during resource creation, thus changes are suppressed and the attribute cannot be imported.
-
+  * This is necessary if the current user is not an admin and the default branch protection is disabled on an instance-level.
+  * There is currently no known way to determine if the default branch protection is disabled on an instance-level for non-admin users.
+  * This attribute is only used during resource creation, thus changes are suppressed and the attribute cannot be imported.
+  * 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project#skip_wait_for_default_branch_protection Project#skip_wait_for_default_branch_protection}
   */
@@ -527,7 +527,7 @@ This attribute is only used during resource creation, thus changes are suppresse
   readonly topics?: string[];
   /**
   * Use either custom instance or group (with group_with_project_templates_id) project template (enterprise edition).
-		~> When using a custom template, [Group Tokens won't work](https://docs.gitlab.com/15.7/ee/user/project/settings/import_export_troubleshooting.html#import-using-the-rest-api-fails-when-using-a-group-access-token). You must use a real user's Personal Access Token.
+  * 		~> When using a custom template, [Group Tokens won't work](https://docs.gitlab.com/15.7/ee/user/project/settings/import_export_troubleshooting.html#import-using-the-rest-api-fails-when-using-a-group-access-token). You must use a real user's Personal Access Token.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project#use_custom_template Project#use_custom_template}
   */

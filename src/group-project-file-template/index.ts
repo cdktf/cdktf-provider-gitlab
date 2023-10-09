@@ -14,14 +14,14 @@ import * as cdktf from 'cdktf';
 export interface GroupProjectFileTemplateConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of the project that will be used for file templates. This project must be the direct
-				child of the project defined by the group_id
+  * 				child of the project defined by the group_id
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group_project_file_template#file_template_project_id GroupProjectFileTemplate#file_template_project_id}
   */
   readonly fileTemplateProjectId: number;
   /**
   * The ID of the group that will use the file template project. This group must be the direct
-                parent of the project defined by project_id
+  *                 parent of the project defined by project_id
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group_project_file_template#group_id GroupProjectFileTemplate#group_id}
   */
