@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/servicejira"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/servicejira"
 
 servicejira.NewServiceJira(scope Construct, id *string, config ServiceJiraConfig) ServiceJira
 ```
@@ -361,7 +361,7 @@ func ResetTagPushEvents()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/servicejira"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/servicejira"
 
 servicejira.ServiceJira_IsConstruct(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/servicejira"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/servicejira"
 
 servicejira.ServiceJira_IsTerraformElement(x interface{}) *bool
 ```
@@ -407,7 +407,7 @@ servicejira.ServiceJira_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/servicejira"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/servicejira"
 
 servicejira.ServiceJira_IsTerraformResource(x interface{}) *bool
 ```
@@ -1024,7 +1024,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v10/servicejira"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/servicejira"
 
 &servicejira.ServiceJiraConfig {
 	Connection: interface{},
