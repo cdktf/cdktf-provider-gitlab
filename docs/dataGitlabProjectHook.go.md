@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojecthook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojecthook"
 
 datagitlabprojecthook.NewDataGitlabProjectHook(scope Construct, id *string, config DataGitlabProjectHookConfig) DataGitlabProjectHook
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojecthook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojecthook"
 
 datagitlabprojecthook.DataGitlabProjectHook_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojecthook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojecthook"
 
 datagitlabprojecthook.DataGitlabProjectHook_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datagitlabprojecthook.DataGitlabProjectHook_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojecthook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojecthook"
 
 datagitlabprojecthook.DataGitlabProjectHook_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -753,7 +753,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojecthook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojecthook"
 
 &datagitlabprojecthook.DataGitlabProjectHookConfig {
 	Connection: interface{},
