@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectMirror.ProjectMirror.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectmirror"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectmirror"
 
 projectmirror.NewProjectMirror(scope Construct, id *string, config ProjectMirrorConfig) ProjectMirror
 ```
@@ -360,7 +360,7 @@ func ResetOnlyProtectedBranches()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectMirror.ProjectMirror.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectmirror"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectmirror"
 
 projectmirror.ProjectMirror_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectMirror.ProjectMirror.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectmirror"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectmirror"
 
 projectmirror.ProjectMirror_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ projectmirror.ProjectMirror_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectMirror.ProjectMirror.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectmirror"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectmirror"
 
 projectmirror.ProjectMirror_IsTerraformResource(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ projectmirror.ProjectMirror_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectMirror.ProjectMirror.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectmirror"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectmirror"
 
 projectmirror.ProjectMirror_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -792,7 +792,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectMirror.ProjectMirrorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectmirror"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectmirror"
 
 &projectmirror.ProjectMirrorConfig {
 	Connection: interface{},
