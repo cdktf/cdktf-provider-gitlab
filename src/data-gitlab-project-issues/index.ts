@@ -513,6 +513,20 @@ export class DataGitlabProjectIssues extends cdktf.TerraformDataSource {
   // =================
   public static readonly tfResourceType = "gitlab_project_issues";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataGitlabProjectIssues resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataGitlabProjectIssues to import
+  * @param importFromId The id of the existing DataGitlabProjectIssues that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issues#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataGitlabProjectIssues to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "gitlab_project_issues", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

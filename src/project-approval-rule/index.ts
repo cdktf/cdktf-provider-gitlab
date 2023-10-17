@@ -79,6 +79,20 @@ export class ProjectApprovalRule extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "gitlab_project_approval_rule";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a ProjectApprovalRule resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the ProjectApprovalRule to import
+  * @param importFromId The id of the existing ProjectApprovalRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_approval_rule#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the ProjectApprovalRule to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "gitlab_project_approval_rule", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========
