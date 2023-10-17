@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabinstancedeploykeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancedeploykeys"
 
 datagitlabinstancedeploykeys.NewDataGitlabInstanceDeployKeys(scope Construct, id *string, config DataGitlabInstanceDeployKeysConfig) DataGitlabInstanceDeployKeys
 ```
@@ -278,13 +278,14 @@ func ResetPublic()
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeys.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeys.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeys.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeys.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataGitlabInstanceDeployKeys resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeys.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabinstancedeploykeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancedeploykeys"
 
 datagitlabinstancedeploykeys.DataGitlabInstanceDeployKeys_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeys.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabinstancedeploykeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancedeploykeys"
 
 datagitlabinstancedeploykeys.DataGitlabInstanceDeployKeys_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +331,7 @@ datagitlabinstancedeploykeys.DataGitlabInstanceDeployKeys_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeys.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabinstancedeploykeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancedeploykeys"
 
 datagitlabinstancedeploykeys.DataGitlabInstanceDeployKeys_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,6 +339,50 @@ datagitlabinstancedeploykeys.DataGitlabInstanceDeployKeys_IsTerraformDataSource(
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeys.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeys.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancedeploykeys"
+
+datagitlabinstancedeploykeys.DataGitlabInstanceDeployKeys_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataGitlabInstanceDeployKeys resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeys.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeys.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataGitlabInstanceDeployKeys to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeys.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataGitlabInstanceDeployKeys that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/instance_deploy_keys#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeys.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataGitlabInstanceDeployKeys to import is found.
 
 ---
 
@@ -562,7 +607,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeysConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabinstancedeploykeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancedeploykeys"
 
 &datagitlabinstancedeploykeys.DataGitlabInstanceDeployKeysConfig {
 	Connection: interface{},
@@ -697,7 +742,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeysDeployKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabinstancedeploykeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancedeploykeys"
 
 &datagitlabinstancedeploykeys.DataGitlabInstanceDeployKeysDeployKeys {
 
@@ -710,7 +755,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabinstanced
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeysDeployKeysProjectsWithWriteAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabinstancedeploykeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancedeploykeys"
 
 &datagitlabinstancedeploykeys.DataGitlabInstanceDeployKeysDeployKeysProjectsWithWriteAccess {
 
@@ -725,7 +770,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabinstanced
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeysDeployKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabinstancedeploykeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancedeploykeys"
 
 datagitlabinstancedeploykeys.NewDataGitlabInstanceDeployKeysDeployKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabInstanceDeployKeysDeployKeysList
 ```
@@ -857,7 +902,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeysDeployKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabinstancedeploykeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancedeploykeys"
 
 datagitlabinstancedeploykeys.NewDataGitlabInstanceDeployKeysDeployKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabInstanceDeployKeysDeployKeysOutputReference
 ```
@@ -1190,7 +1235,7 @@ func InternalValue() DataGitlabInstanceDeployKeysDeployKeys
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeysDeployKeysProjectsWithWriteAccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabinstancedeploykeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancedeploykeys"
 
 datagitlabinstancedeploykeys.NewDataGitlabInstanceDeployKeysDeployKeysProjectsWithWriteAccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabInstanceDeployKeysDeployKeysProjectsWithWriteAccessList
 ```
@@ -1322,7 +1367,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabInstanceDeployKeys.DataGitlabInstanceDeployKeysDeployKeysProjectsWithWriteAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabinstancedeploykeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstancedeploykeys"
 
 datagitlabinstancedeploykeys.NewDataGitlabInstanceDeployKeysDeployKeysProjectsWithWriteAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabInstanceDeployKeysDeployKeysProjectsWithWriteAccessOutputReference
 ```

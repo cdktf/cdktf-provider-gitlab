@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectIssue.DataGitlabProjectIssue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectissue"
 
 datagitlabprojectissue.NewDataGitlabProjectIssue(scope Construct, id *string, config DataGitlabProjectIssueConfig) DataGitlabProjectIssue
 ```
@@ -271,13 +271,14 @@ func ResetId()
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectIssue.DataGitlabProjectIssue.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectIssue.DataGitlabProjectIssue.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectIssue.DataGitlabProjectIssue.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectIssue.DataGitlabProjectIssue.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataGitlabProjectIssue resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabProjectIssue.DataGitlabProjectIssue.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectissue"
 
 datagitlabprojectissue.DataGitlabProjectIssue_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabProjectIssue.DataGitlabProjectIssue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectissue"
 
 datagitlabprojectissue.DataGitlabProjectIssue_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +324,7 @@ datagitlabprojectissue.DataGitlabProjectIssue_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabProjectIssue.DataGitlabProjectIssue.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectissue"
 
 datagitlabprojectissue.DataGitlabProjectIssue_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -331,6 +332,50 @@ datagitlabprojectissue.DataGitlabProjectIssue_IsTerraformDataSource(x interface{
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-gitlab.dataGitlabProjectIssue.DataGitlabProjectIssue.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabProjectIssue.DataGitlabProjectIssue.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectissue"
+
+datagitlabprojectissue.DataGitlabProjectIssue_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataGitlabProjectIssue resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-gitlab.dataGitlabProjectIssue.DataGitlabProjectIssue.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-gitlab.dataGitlabProjectIssue.DataGitlabProjectIssue.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataGitlabProjectIssue to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-gitlab.dataGitlabProjectIssue.DataGitlabProjectIssue.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataGitlabProjectIssue that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_issue#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.dataGitlabProjectIssue.DataGitlabProjectIssue.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataGitlabProjectIssue to import is found.
 
 ---
 
@@ -973,7 +1018,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectIssue.DataGitlabProjectIssueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectissue"
 
 &datagitlabprojectissue.DataGitlabProjectIssueConfig {
 	Connection: interface{},
@@ -1124,7 +1169,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectIssue.DataGitlabProjectIssueTaskCompletionStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectissue"
 
 &datagitlabprojectissue.DataGitlabProjectIssueTaskCompletionStatus {
 
@@ -1139,7 +1184,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojectis
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectIssue.DataGitlabProjectIssueTaskCompletionStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectissue"
 
 datagitlabprojectissue.NewDataGitlabProjectIssueTaskCompletionStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectIssueTaskCompletionStatusList
 ```
@@ -1271,7 +1316,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectIssue.DataGitlabProjectIssueTaskCompletionStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectissue"
 
 datagitlabprojectissue.NewDataGitlabProjectIssueTaskCompletionStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabProjectIssueTaskCompletionStatusOutputReference
 ```
