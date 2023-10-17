@@ -184,6 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomain.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomain.toMetadata">to_metadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomain.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomain.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomain.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomain.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomain.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
@@ -193,7 +194,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomain.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomain.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomain.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomain.importFrom">import_from</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomain.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomain.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomain.resetAutoSslEnabled">reset_auto_ssl_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomain.resetCertificate">reset_certificate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomain.resetExpired">reset_expired</a></code> | *No description.* |
@@ -269,6 +272,24 @@ def to_terraform() -> typing.Any
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-gitlab.pagesDomain.PagesDomain.addMoveTarget"></a>
+
+```python
+def add_move_target(
+  move_target: str
+) -> None
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-gitlab.pagesDomain.PagesDomain.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* str
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-gitlab.pagesDomain.PagesDomain.getAnyMapAttribute"></a>
 
@@ -396,6 +417,27 @@ def get_string_map_attribute(
 
 ---
 
+##### `import_from` <a name="import_from" id="@cdktf/provider-gitlab.pagesDomain.PagesDomain.importFrom"></a>
+
+```python
+def import_from(
+  id: str,
+  provider: TerraformProvider = None
+) -> None
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.pagesDomain.PagesDomain.importFrom.parameter.id"></a>
+
+- *Type:* str
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.pagesDomain.PagesDomain.importFrom.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
 ##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-gitlab.pagesDomain.PagesDomain.interpolationForAttribute"></a>
 
 ```python
@@ -407,6 +449,33 @@ def interpolation_for_attribute(
 ###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.pagesDomain.PagesDomain.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
+
+---
+
+##### `move_to` <a name="move_to" id="@cdktf/provider-gitlab.pagesDomain.PagesDomain.moveTo"></a>
+
+```python
+def move_to(
+  move_target: str,
+  index: typing.Union[str, typing.Union[int, float]] = None
+) -> None
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-gitlab.pagesDomain.PagesDomain.moveTo.parameter.moveTarget"></a>
+
+- *Type:* str
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-gitlab.pagesDomain.PagesDomain.moveTo.parameter.index"></a>
+
+- *Type:* typing.Union[str, typing.Union[int, float]]
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -441,6 +510,7 @@ def reset_key() -> None
 | <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomain.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomain.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomain.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.pagesDomain.PagesDomain.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a PagesDomain resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -507,6 +577,55 @@ pagesDomain.PagesDomain.is_terraform_resource(
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-gitlab.pagesDomain.PagesDomain.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
+
+---
+
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-gitlab.pagesDomain.PagesDomain.generateConfigForImport"></a>
+
+```python
+from cdktf_cdktf_provider_gitlab import pages_domain
+
+pagesDomain.PagesDomain.generate_config_for_import(
+  scope: Construct,
+  import_to_id: str,
+  import_from_id: str,
+  provider: TerraformProvider = None
+)
+```
+
+Generates CDKTF code for importing a PagesDomain resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-gitlab.pagesDomain.PagesDomain.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-gitlab.pagesDomain.PagesDomain.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* str
+
+The construct id used in the generated config for the PagesDomain to import.
+
+---
+
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-gitlab.pagesDomain.PagesDomain.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* str
+
+The id of the existing PagesDomain that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/pages_domain#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.pagesDomain.PagesDomain.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+? Optional instance of the provider where the PagesDomain to import is found.
 
 ---
 

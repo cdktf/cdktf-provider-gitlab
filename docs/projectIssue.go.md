@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectIssue.ProjectIssue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectissue"
 
 projectissue.NewProjectIssue(scope Construct, id *string, config ProjectIssueConfig) ProjectIssue
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssue.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssue.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssue.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssue.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssue.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssue.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssue.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssue.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssue.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssue.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssue.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssue.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssue.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssue.resetAssigneeIds">ResetAssigneeIds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssue.resetConfidential">ResetConfidential</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssue.resetCreatedAt">ResetCreatedAt</a></code> | *No description.* |
@@ -154,6 +157,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-gitlab.projectIssue.ProjectIssue.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-gitlab.projectIssue.ProjectIssue.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-gitlab.projectIssue.ProjectIssue.getAnyMapAttribute"></a>
 
@@ -263,6 +282,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-gitlab.projectIssue.ProjectIssue.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.projectIssue.ProjectIssue.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.projectIssue.ProjectIssue.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-gitlab.projectIssue.ProjectIssue.interpolationForAttribute"></a>
 
 ```go
@@ -272,6 +309,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-gitlab.projectIssue.ProjectIssue.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-gitlab.projectIssue.ProjectIssue.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-gitlab.projectIssue.ProjectIssue.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-gitlab.projectIssue.ProjectIssue.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -390,13 +451,14 @@ func ResetWeight()
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssue.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssue.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssue.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectIssue.ProjectIssue.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a ProjectIssue resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectIssue.ProjectIssue.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectissue"
 
 projectissue.ProjectIssue_IsConstruct(x interface{}) *bool
 ```
@@ -428,7 +490,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectIssue.ProjectIssue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectissue"
 
 projectissue.ProjectIssue_IsTerraformElement(x interface{}) *bool
 ```
@@ -442,7 +504,7 @@ projectissue.ProjectIssue_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectIssue.ProjectIssue.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectissue"
 
 projectissue.ProjectIssue_IsTerraformResource(x interface{}) *bool
 ```
@@ -450,6 +512,50 @@ projectissue.ProjectIssue_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-gitlab.projectIssue.ProjectIssue.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectIssue.ProjectIssue.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectissue"
+
+projectissue.ProjectIssue_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a ProjectIssue resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-gitlab.projectIssue.ProjectIssue.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-gitlab.projectIssue.ProjectIssue.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the ProjectIssue to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-gitlab.projectIssue.ProjectIssue.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing ProjectIssue that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_issue#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.projectIssue.ProjectIssue.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the ProjectIssue to import is found.
 
 ---
 
@@ -1312,7 +1418,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectIssue.ProjectIssueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectissue"
 
 &projectissue.ProjectIssueConfig {
 	Connection: interface{},
@@ -1743,7 +1849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectIssue.ProjectIssueTaskCompletionStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectissue"
 
 &projectissue.ProjectIssueTaskCompletionStatus {
 
@@ -1758,7 +1864,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectissue"
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectIssue.ProjectIssueTaskCompletionStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectissue"
 
 projectissue.NewProjectIssueTaskCompletionStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProjectIssueTaskCompletionStatusList
 ```
@@ -1890,7 +1996,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectIssue.ProjectIssueTaskCompletionStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectissue"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectissue"
 
 projectissue.NewProjectIssueTaskCompletionStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProjectIssueTaskCompletionStatusOutputReference
 ```

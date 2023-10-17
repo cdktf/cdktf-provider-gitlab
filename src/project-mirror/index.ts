@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_mirror
 // generated from terraform resource schema
 
@@ -60,6 +55,20 @@ export class ProjectMirror extends cdktf.TerraformResource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "gitlab_project_mirror";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a ProjectMirror resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the ProjectMirror to import
+  * @param importFromId The id of the existing ProjectMirror that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_mirror#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the ProjectMirror to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "gitlab_project_mirror", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectTag.DataGitlabProjectTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojecttag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojecttag"
 
 datagitlabprojecttag.NewDataGitlabProjectTag(scope Construct, id *string, config DataGitlabProjectTagConfig) DataGitlabProjectTag
 ```
@@ -271,13 +271,14 @@ func ResetId()
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectTag.DataGitlabProjectTag.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectTag.DataGitlabProjectTag.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectTag.DataGitlabProjectTag.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectTag.DataGitlabProjectTag.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataGitlabProjectTag resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabProjectTag.DataGitlabProjectTag.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojecttag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojecttag"
 
 datagitlabprojecttag.DataGitlabProjectTag_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabProjectTag.DataGitlabProjectTag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojecttag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojecttag"
 
 datagitlabprojecttag.DataGitlabProjectTag_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +324,7 @@ datagitlabprojecttag.DataGitlabProjectTag_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabProjectTag.DataGitlabProjectTag.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojecttag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojecttag"
 
 datagitlabprojecttag.DataGitlabProjectTag_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -331,6 +332,50 @@ datagitlabprojecttag.DataGitlabProjectTag_IsTerraformDataSource(x interface{}) *
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-gitlab.dataGitlabProjectTag.DataGitlabProjectTag.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabProjectTag.DataGitlabProjectTag.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojecttag"
+
+datagitlabprojecttag.DataGitlabProjectTag_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataGitlabProjectTag resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-gitlab.dataGitlabProjectTag.DataGitlabProjectTag.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-gitlab.dataGitlabProjectTag.DataGitlabProjectTag.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataGitlabProjectTag to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-gitlab.dataGitlabProjectTag.DataGitlabProjectTag.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataGitlabProjectTag that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/project_tag#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-gitlab.dataGitlabProjectTag.DataGitlabProjectTag.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataGitlabProjectTag to import is found.
 
 ---
 
@@ -621,7 +666,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectTag.DataGitlabProjectTagCommit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojecttag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojecttag"
 
 &datagitlabprojecttag.DataGitlabProjectTagCommit {
 
@@ -634,7 +679,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojectta
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectTag.DataGitlabProjectTagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojecttag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojecttag"
 
 &datagitlabprojecttag.DataGitlabProjectTagConfig {
 	Connection: interface{},
@@ -785,7 +830,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectTag.DataGitlabProjectTagRelease.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojecttag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojecttag"
 
 &datagitlabprojecttag.DataGitlabProjectTagRelease {
 
@@ -800,7 +845,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojectta
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectTag.DataGitlabProjectTagCommitList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojecttag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojecttag"
 
 datagitlabprojecttag.NewDataGitlabProjectTagCommitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectTagCommitList
 ```
@@ -932,7 +977,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectTag.DataGitlabProjectTagCommitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojecttag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojecttag"
 
 datagitlabprojecttag.NewDataGitlabProjectTagCommitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabProjectTagCommitOutputReference
 ```
@@ -1320,7 +1365,7 @@ func InternalValue() DataGitlabProjectTagCommit
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectTag.DataGitlabProjectTagReleaseList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojecttag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojecttag"
 
 datagitlabprojecttag.NewDataGitlabProjectTagReleaseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectTagReleaseList
 ```
@@ -1452,7 +1497,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectTag.DataGitlabProjectTagReleaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojecttag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojecttag"
 
 datagitlabprojecttag.NewDataGitlabProjectTagReleaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabProjectTagReleaseOutputReference
 ```
