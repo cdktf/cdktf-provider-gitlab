@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgrouphook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabgrouphook"
 
 datagitlabgrouphook.NewDataGitlabGroupHook(scope Construct, id *string, config DataGitlabGroupHookConfig) DataGitlabGroupHook
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgrouphook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabgrouphook"
 
 datagitlabgrouphook.DataGitlabGroupHook_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgrouphook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabgrouphook"
 
 datagitlabgrouphook.DataGitlabGroupHook_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ datagitlabgrouphook.DataGitlabGroupHook_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgrouphook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabgrouphook"
 
 datagitlabgrouphook.DataGitlabGroupHook_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datagitlabgrouphook.DataGitlabGroupHook_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgrouphook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabgrouphook"
 
 datagitlabgrouphook.DataGitlabGroupHook_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -809,7 +809,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgrouphook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabgrouphook"
 
 &datagitlabgrouphook.DataGitlabGroupHookConfig {
 	Connection: interface{},
