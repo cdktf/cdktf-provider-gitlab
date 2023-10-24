@@ -63,6 +63,7 @@ The following submodules are available:
 - [groupLdapLink](./groupLdapLink.python.md)
 - [groupMembership](./groupMembership.python.md)
 - [groupProjectFileTemplate](./groupProjectFileTemplate.python.md)
+- [groupProtectedEnvironment](./groupProtectedEnvironment.python.md)
 - [groupSamlLink](./groupSamlLink.python.md)
 - [groupShareGroup](./groupShareGroup.python.md)
 - [groupVariable](./groupVariable.python.md)

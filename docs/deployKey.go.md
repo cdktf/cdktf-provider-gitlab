@@ -1,6 +1,6 @@
 # `gitlab_deploy_key`
 
-Refer to the Terraform Registory for docs: [`gitlab_deploy_key`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/deploy_key).
+Refer to the Terraform Registory for docs: [`gitlab_deploy_key`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/deploy_key).
 
 # `deployKey` Submodule <a name="`deployKey` Submodule" id="@cdktf/provider-gitlab.deployKey"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`gitlab_deploy_key`](https://registr
 
 ### DeployKey <a name="DeployKey" id="@cdktf/provider-gitlab.deployKey.DeployKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/deploy_key gitlab_deploy_key}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/deploy_key gitlab_deploy_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.deployKey.DeployKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/deploykey"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/deploykey"
 
 deploykey.NewDeployKey(scope Construct, id *string, config DeployKeyConfig) DeployKey
 ```
@@ -346,7 +346,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.deployKey.DeployKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/deploykey"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/deploykey"
 
 deploykey.DeployKey_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.deployKey.DeployKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/deploykey"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/deploykey"
 
 deploykey.DeployKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ deploykey.DeployKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.deployKey.DeployKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/deploykey"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/deploykey"
 
 deploykey.DeployKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ deploykey.DeployKey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.deployKey.DeployKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/deploykey"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/deploykey"
 
 deploykey.DeployKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -435,7 +435,7 @@ The construct id used in the generated config for the DeployKey to import.
 
 The id of the existing DeployKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/deploy_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/deploy_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -756,7 +756,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.deployKey.DeployKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/deploykey"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/deploykey"
 
 &deploykey.DeployKeyConfig {
 	Connection: interface{},
@@ -789,7 +789,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/deploykey"
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKeyConfig.property.project">Project</a></code> | <code>*string</code> | The name or id of the project to add the deploy key to. |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKeyConfig.property.title">Title</a></code> | <code>*string</code> | A title to describe the deploy key with. |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKeyConfig.property.canPush">CanPush</a></code> | <code>interface{}</code> | Allow this deploy key to be used to push changes to the project. Defaults to `false`. |
-| <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/deploy_key#id DeployKey#id}. |
+| <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/deploy_key#id DeployKey#id}. |
 
 ---
 
@@ -873,7 +873,7 @@ Key *string
 
 The public ssh key body.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/deploy_key#key DeployKey#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/deploy_key#key DeployKey#key}
 
 ---
 
@@ -887,7 +887,7 @@ Project *string
 
 The name or id of the project to add the deploy key to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/deploy_key#project DeployKey#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/deploy_key#project DeployKey#project}
 
 ---
 
@@ -901,7 +901,7 @@ Title *string
 
 A title to describe the deploy key with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/deploy_key#title DeployKey#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/deploy_key#title DeployKey#title}
 
 ---
 
@@ -915,7 +915,7 @@ CanPush interface{}
 
 Allow this deploy key to be used to push changes to the project. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/deploy_key#can_push DeployKey#can_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/deploy_key#can_push DeployKey#can_push}
 
 ---
 
@@ -927,7 +927,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/deploy_key#id DeployKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/deploy_key#id DeployKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

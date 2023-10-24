@@ -1,6 +1,6 @@
 # `gitlab_integration_slack`
 
-Refer to the Terraform Registory for docs: [`gitlab_integration_slack`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_slack).
+Refer to the Terraform Registory for docs: [`gitlab_integration_slack`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_slack).
 
 # `integrationSlack` Submodule <a name="`integrationSlack` Submodule" id="@cdktf/provider-gitlab.integrationSlack"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_integration_slack`](https://
 
 ### IntegrationSlack <a name="IntegrationSlack" id="@cdktf/provider-gitlab.integrationSlack.IntegrationSlack"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_slack gitlab_integration_slack}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_slack gitlab_integration_slack}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.integrationSlack.IntegrationSlack.Initializer"></a>
 
@@ -575,7 +575,7 @@ The construct id used in the generated config for the IntegrationSlack to import
 
 The id of the existing IntegrationSlack that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_slack#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_slack#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1336,7 +1336,7 @@ const integrationSlackConfig: integrationSlack.IntegrationSlackConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.integrationSlack.IntegrationSlackConfig.property.confidentialIssueChannel">confidentialIssueChannel</a></code> | <code>string</code> | The name of the channel to receive confidential issue events notifications. |
 | <code><a href="#@cdktf/provider-gitlab.integrationSlack.IntegrationSlackConfig.property.confidentialIssuesEvents">confidentialIssuesEvents</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable notifications for confidential issues events. |
 | <code><a href="#@cdktf/provider-gitlab.integrationSlack.IntegrationSlackConfig.property.confidentialNoteEvents">confidentialNoteEvents</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable notifications for confidential note events. |
-| <code><a href="#@cdktf/provider-gitlab.integrationSlack.IntegrationSlackConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_slack#id IntegrationSlack#id}. |
+| <code><a href="#@cdktf/provider-gitlab.integrationSlack.IntegrationSlackConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_slack#id IntegrationSlack#id}. |
 | <code><a href="#@cdktf/provider-gitlab.integrationSlack.IntegrationSlackConfig.property.issueChannel">issueChannel</a></code> | <code>string</code> | The name of the channel to receive issue events notifications. |
 | <code><a href="#@cdktf/provider-gitlab.integrationSlack.IntegrationSlackConfig.property.issuesEvents">issuesEvents</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable notifications for issues events. |
 | <code><a href="#@cdktf/provider-gitlab.integrationSlack.IntegrationSlackConfig.property.mergeRequestChannel">mergeRequestChannel</a></code> | <code>string</code> | The name of the channel to receive merge request events notifications. |
@@ -1437,7 +1437,7 @@ public readonly project: string;
 
 ID of the project you want to activate integration on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_slack#project IntegrationSlack#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_slack#project IntegrationSlack#project}
 
 ---
 
@@ -1451,7 +1451,7 @@ public readonly webhook: string;
 
 Webhook URL (Example, https://hooks.slack.com/services/...). This value cannot be imported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_slack#webhook IntegrationSlack#webhook}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_slack#webhook IntegrationSlack#webhook}
 
 ---
 
@@ -1465,7 +1465,7 @@ public readonly branchesToBeNotified: string;
 
 Branches to send notifications for. Valid options are "all", "default", "protected", and "default_and_protected".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_slack#branches_to_be_notified IntegrationSlack#branches_to_be_notified}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_slack#branches_to_be_notified IntegrationSlack#branches_to_be_notified}
 
 ---
 
@@ -1479,7 +1479,7 @@ public readonly confidentialIssueChannel: string;
 
 The name of the channel to receive confidential issue events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_slack#confidential_issue_channel IntegrationSlack#confidential_issue_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_slack#confidential_issue_channel IntegrationSlack#confidential_issue_channel}
 
 ---
 
@@ -1493,7 +1493,7 @@ public readonly confidentialIssuesEvents: boolean | IResolvable;
 
 Enable notifications for confidential issues events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_slack#confidential_issues_events IntegrationSlack#confidential_issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_slack#confidential_issues_events IntegrationSlack#confidential_issues_events}
 
 ---
 
@@ -1507,7 +1507,7 @@ public readonly confidentialNoteEvents: boolean | IResolvable;
 
 Enable notifications for confidential note events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_slack#confidential_note_events IntegrationSlack#confidential_note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_slack#confidential_note_events IntegrationSlack#confidential_note_events}
 
 ---
 
@@ -1519,7 +1519,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_slack#id IntegrationSlack#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_slack#id IntegrationSlack#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1536,7 +1536,7 @@ public readonly issueChannel: string;
 
 The name of the channel to receive issue events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_slack#issue_channel IntegrationSlack#issue_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_slack#issue_channel IntegrationSlack#issue_channel}
 
 ---
 
@@ -1550,7 +1550,7 @@ public readonly issuesEvents: boolean | IResolvable;
 
 Enable notifications for issues events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_slack#issues_events IntegrationSlack#issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_slack#issues_events IntegrationSlack#issues_events}
 
 ---
 
@@ -1564,7 +1564,7 @@ public readonly mergeRequestChannel: string;
 
 The name of the channel to receive merge request events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_slack#merge_request_channel IntegrationSlack#merge_request_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_slack#merge_request_channel IntegrationSlack#merge_request_channel}
 
 ---
 
@@ -1578,7 +1578,7 @@ public readonly mergeRequestsEvents: boolean | IResolvable;
 
 Enable notifications for merge requests events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_slack#merge_requests_events IntegrationSlack#merge_requests_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_slack#merge_requests_events IntegrationSlack#merge_requests_events}
 
 ---
 
@@ -1592,7 +1592,7 @@ public readonly noteChannel: string;
 
 The name of the channel to receive note events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_slack#note_channel IntegrationSlack#note_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_slack#note_channel IntegrationSlack#note_channel}
 
 ---
 
@@ -1606,7 +1606,7 @@ public readonly noteEvents: boolean | IResolvable;
 
 Enable notifications for note events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_slack#note_events IntegrationSlack#note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_slack#note_events IntegrationSlack#note_events}
 
 ---
 
@@ -1620,7 +1620,7 @@ public readonly notifyOnlyBrokenPipelines: boolean | IResolvable;
 
 Send notifications for broken pipelines.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_slack#notify_only_broken_pipelines IntegrationSlack#notify_only_broken_pipelines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_slack#notify_only_broken_pipelines IntegrationSlack#notify_only_broken_pipelines}
 
 ---
 
@@ -1634,7 +1634,7 @@ public readonly notifyOnlyDefaultBranch: boolean | IResolvable;
 
 This parameter has been replaced with `branches_to_be_notified`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_slack#notify_only_default_branch IntegrationSlack#notify_only_default_branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_slack#notify_only_default_branch IntegrationSlack#notify_only_default_branch}
 
 ---
 
@@ -1648,7 +1648,7 @@ public readonly pipelineChannel: string;
 
 The name of the channel to receive pipeline events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_slack#pipeline_channel IntegrationSlack#pipeline_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_slack#pipeline_channel IntegrationSlack#pipeline_channel}
 
 ---
 
@@ -1662,7 +1662,7 @@ public readonly pipelineEvents: boolean | IResolvable;
 
 Enable notifications for pipeline events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_slack#pipeline_events IntegrationSlack#pipeline_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_slack#pipeline_events IntegrationSlack#pipeline_events}
 
 ---
 
@@ -1676,7 +1676,7 @@ public readonly pushChannel: string;
 
 The name of the channel to receive push events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_slack#push_channel IntegrationSlack#push_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_slack#push_channel IntegrationSlack#push_channel}
 
 ---
 
@@ -1690,7 +1690,7 @@ public readonly pushEvents: boolean | IResolvable;
 
 Enable notifications for push events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_slack#push_events IntegrationSlack#push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_slack#push_events IntegrationSlack#push_events}
 
 ---
 
@@ -1704,7 +1704,7 @@ public readonly tagPushChannel: string;
 
 The name of the channel to receive tag push events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_slack#tag_push_channel IntegrationSlack#tag_push_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_slack#tag_push_channel IntegrationSlack#tag_push_channel}
 
 ---
 
@@ -1718,7 +1718,7 @@ public readonly tagPushEvents: boolean | IResolvable;
 
 Enable notifications for tag push events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_slack#tag_push_events IntegrationSlack#tag_push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_slack#tag_push_events IntegrationSlack#tag_push_events}
 
 ---
 
@@ -1732,7 +1732,7 @@ public readonly username: string;
 
 Username to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_slack#username IntegrationSlack#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_slack#username IntegrationSlack#username}
 
 ---
 
@@ -1746,7 +1746,7 @@ public readonly wikiPageChannel: string;
 
 The name of the channel to receive wiki page events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_slack#wiki_page_channel IntegrationSlack#wiki_page_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_slack#wiki_page_channel IntegrationSlack#wiki_page_channel}
 
 ---
 
@@ -1760,7 +1760,7 @@ public readonly wikiPageEvents: boolean | IResolvable;
 
 Enable notifications for wiki page events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/integration_slack#wiki_page_events IntegrationSlack#wiki_page_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_slack#wiki_page_events IntegrationSlack#wiki_page_events}
 
 ---
 

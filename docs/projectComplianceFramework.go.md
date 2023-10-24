@@ -1,6 +1,6 @@
 # `gitlab_project_compliance_framework`
 
-Refer to the Terraform Registory for docs: [`gitlab_project_compliance_framework`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_compliance_framework).
+Refer to the Terraform Registory for docs: [`gitlab_project_compliance_framework`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_compliance_framework).
 
 # `projectComplianceFramework` Submodule <a name="`projectComplianceFramework` Submodule" id="@cdktf/provider-gitlab.projectComplianceFramework"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`gitlab_project_compliance_framework
 
 ### ProjectComplianceFramework <a name="ProjectComplianceFramework" id="@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_compliance_framework gitlab_project_compliance_framework}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_compliance_framework gitlab_project_compliance_framework}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectcomplianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectcomplianceframework"
 
 projectcomplianceframework.NewProjectComplianceFramework(scope Construct, id *string, config ProjectComplianceFrameworkConfig) ProjectComplianceFramework
 ```
@@ -332,7 +332,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectcomplianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectcomplianceframework"
 
 projectcomplianceframework.ProjectComplianceFramework_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectcomplianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectcomplianceframework"
 
 projectcomplianceframework.ProjectComplianceFramework_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ projectcomplianceframework.ProjectComplianceFramework_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectcomplianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectcomplianceframework"
 
 projectcomplianceframework.ProjectComplianceFramework_IsTerraformResource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ projectcomplianceframework.ProjectComplianceFramework_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectcomplianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectcomplianceframework"
 
 projectcomplianceframework.ProjectComplianceFramework_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -421,7 +421,7 @@ The construct id used in the generated config for the ProjectComplianceFramework
 
 The id of the existing ProjectComplianceFramework that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_compliance_framework#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_compliance_framework#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -676,7 +676,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFrameworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectcomplianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectcomplianceframework"
 
 &projectcomplianceframework.ProjectComplianceFrameworkConfig {
 	Connection: interface{},
@@ -787,7 +787,7 @@ ComplianceFrameworkId *string
 
 Globally unique ID of the compliance framework to assign to the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_compliance_framework#compliance_framework_id ProjectComplianceFramework#compliance_framework_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_compliance_framework#compliance_framework_id ProjectComplianceFramework#compliance_framework_id}
 
 ---
 
@@ -801,7 +801,7 @@ Project *string
 
 The ID or full path of the project to change the compliance framework of.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_compliance_framework#project ProjectComplianceFramework#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_compliance_framework#project ProjectComplianceFramework#project}
 
 ---
 

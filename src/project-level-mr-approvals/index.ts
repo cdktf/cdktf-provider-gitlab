@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_level_mr_approvals
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_level_mr_approvals
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,49 +10,49 @@ export interface ProjectLevelMrApprovalsConfig extends cdktf.TerraformMetaArgume
   /**
   * Set to `true` to disable overriding approvers per merge request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_level_mr_approvals#disable_overriding_approvers_per_merge_request ProjectLevelMrApprovals#disable_overriding_approvers_per_merge_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_level_mr_approvals#disable_overriding_approvers_per_merge_request ProjectLevelMrApprovals#disable_overriding_approvers_per_merge_request}
   */
   readonly disableOverridingApproversPerMergeRequest?: boolean | cdktf.IResolvable;
   /**
   * Set to `true` to allow merge requests authors to approve their own merge requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_level_mr_approvals#merge_requests_author_approval ProjectLevelMrApprovals#merge_requests_author_approval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_level_mr_approvals#merge_requests_author_approval ProjectLevelMrApprovals#merge_requests_author_approval}
   */
   readonly mergeRequestsAuthorApproval?: boolean | cdktf.IResolvable;
   /**
   * Set to `true` to allow merge requests committers to approve their own merge requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_level_mr_approvals#merge_requests_disable_committers_approval ProjectLevelMrApprovals#merge_requests_disable_committers_approval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_level_mr_approvals#merge_requests_disable_committers_approval ProjectLevelMrApprovals#merge_requests_disable_committers_approval}
   */
   readonly mergeRequestsDisableCommittersApproval?: boolean | cdktf.IResolvable;
   /**
   * The ID or URL-encoded path of a project to change MR approval configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_level_mr_approvals#project ProjectLevelMrApprovals#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_level_mr_approvals#project ProjectLevelMrApprovals#project}
   */
   readonly project: string;
   /**
   * Set to `true` to require authentication to approve merge requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_level_mr_approvals#require_password_to_approve ProjectLevelMrApprovals#require_password_to_approve}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_level_mr_approvals#require_password_to_approve ProjectLevelMrApprovals#require_password_to_approve}
   */
   readonly requirePasswordToApprove?: boolean | cdktf.IResolvable;
   /**
   * Set to `true` to remove all approvals in a merge request when new commits are pushed to its source branch. Default is `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_level_mr_approvals#reset_approvals_on_push ProjectLevelMrApprovals#reset_approvals_on_push}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_level_mr_approvals#reset_approvals_on_push ProjectLevelMrApprovals#reset_approvals_on_push}
   */
   readonly resetApprovalsOnPush?: boolean | cdktf.IResolvable;
   /**
   * Reset approvals from Code Owners if their files changed. Can be enabled only if reset_approvals_on_push is disabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_level_mr_approvals#selective_code_owner_removals ProjectLevelMrApprovals#selective_code_owner_removals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_level_mr_approvals#selective_code_owner_removals ProjectLevelMrApprovals#selective_code_owner_removals}
   */
   readonly selectiveCodeOwnerRemovals?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals}
 */
 export class ProjectLevelMrApprovals extends cdktf.TerraformResource {
 
@@ -73,7 +68,7 @@ export class ProjectLevelMrApprovals extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ProjectLevelMrApprovals resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProjectLevelMrApprovals to import
-  * @param importFromId The id of the existing ProjectLevelMrApprovals that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_level_mr_approvals#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ProjectLevelMrApprovals that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_level_mr_approvals#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProjectLevelMrApprovals to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -85,7 +80,7 @@ export class ProjectLevelMrApprovals extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_level_mr_approvals gitlab_project_level_mr_approvals} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +91,7 @@ export class ProjectLevelMrApprovals extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_level_mr_approvals',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.4.1',
+        providerVersion: '16.5.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,

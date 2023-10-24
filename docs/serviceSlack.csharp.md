@@ -1,6 +1,6 @@
 # `gitlab_service_slack`
 
-Refer to the Terraform Registory for docs: [`gitlab_service_slack`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_slack).
+Refer to the Terraform Registory for docs: [`gitlab_service_slack`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_slack).
 
 # `serviceSlack` Submodule <a name="`serviceSlack` Submodule" id="@cdktf/provider-gitlab.serviceSlack"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_service_slack`](https://regi
 
 ### ServiceSlack <a name="ServiceSlack" id="@cdktf/provider-gitlab.serviceSlack.ServiceSlack"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_slack gitlab_service_slack}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_slack gitlab_service_slack}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.serviceSlack.ServiceSlack.Initializer"></a>
 
@@ -575,7 +575,7 @@ The construct id used in the generated config for the ServiceSlack to import.
 
 The id of the existing ServiceSlack that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_slack#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_slack#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1368,7 +1368,7 @@ new ServiceSlackConfig {
 | <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlackConfig.property.confidentialIssueChannel">ConfidentialIssueChannel</a></code> | <code>string</code> | The name of the channel to receive confidential issue events notifications. |
 | <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlackConfig.property.confidentialIssuesEvents">ConfidentialIssuesEvents</a></code> | <code>object</code> | Enable notifications for confidential issues events. |
 | <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlackConfig.property.confidentialNoteEvents">ConfidentialNoteEvents</a></code> | <code>object</code> | Enable notifications for confidential note events. |
-| <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlackConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_slack#id ServiceSlack#id}. |
+| <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlackConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_slack#id ServiceSlack#id}. |
 | <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlackConfig.property.issueChannel">IssueChannel</a></code> | <code>string</code> | The name of the channel to receive issue events notifications. |
 | <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlackConfig.property.issuesEvents">IssuesEvents</a></code> | <code>object</code> | Enable notifications for issues events. |
 | <code><a href="#@cdktf/provider-gitlab.serviceSlack.ServiceSlackConfig.property.mergeRequestChannel">MergeRequestChannel</a></code> | <code>string</code> | The name of the channel to receive merge request events notifications. |
@@ -1469,7 +1469,7 @@ public string Project { get; set; }
 
 ID of the project you want to activate integration on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_slack#project ServiceSlack#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_slack#project ServiceSlack#project}
 
 ---
 
@@ -1483,7 +1483,7 @@ public string Webhook { get; set; }
 
 Webhook URL (Example, https://hooks.slack.com/services/...). This value cannot be imported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_slack#webhook ServiceSlack#webhook}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_slack#webhook ServiceSlack#webhook}
 
 ---
 
@@ -1497,7 +1497,7 @@ public string BranchesToBeNotified { get; set; }
 
 Branches to send notifications for. Valid options are "all", "default", "protected", and "default_and_protected".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_slack#branches_to_be_notified ServiceSlack#branches_to_be_notified}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_slack#branches_to_be_notified ServiceSlack#branches_to_be_notified}
 
 ---
 
@@ -1511,7 +1511,7 @@ public string ConfidentialIssueChannel { get; set; }
 
 The name of the channel to receive confidential issue events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_slack#confidential_issue_channel ServiceSlack#confidential_issue_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_slack#confidential_issue_channel ServiceSlack#confidential_issue_channel}
 
 ---
 
@@ -1525,7 +1525,7 @@ public object ConfidentialIssuesEvents { get; set; }
 
 Enable notifications for confidential issues events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_slack#confidential_issues_events ServiceSlack#confidential_issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_slack#confidential_issues_events ServiceSlack#confidential_issues_events}
 
 ---
 
@@ -1539,7 +1539,7 @@ public object ConfidentialNoteEvents { get; set; }
 
 Enable notifications for confidential note events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_slack#confidential_note_events ServiceSlack#confidential_note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_slack#confidential_note_events ServiceSlack#confidential_note_events}
 
 ---
 
@@ -1551,7 +1551,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_slack#id ServiceSlack#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_slack#id ServiceSlack#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1568,7 +1568,7 @@ public string IssueChannel { get; set; }
 
 The name of the channel to receive issue events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_slack#issue_channel ServiceSlack#issue_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_slack#issue_channel ServiceSlack#issue_channel}
 
 ---
 
@@ -1582,7 +1582,7 @@ public object IssuesEvents { get; set; }
 
 Enable notifications for issues events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_slack#issues_events ServiceSlack#issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_slack#issues_events ServiceSlack#issues_events}
 
 ---
 
@@ -1596,7 +1596,7 @@ public string MergeRequestChannel { get; set; }
 
 The name of the channel to receive merge request events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_slack#merge_request_channel ServiceSlack#merge_request_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_slack#merge_request_channel ServiceSlack#merge_request_channel}
 
 ---
 
@@ -1610,7 +1610,7 @@ public object MergeRequestsEvents { get; set; }
 
 Enable notifications for merge requests events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_slack#merge_requests_events ServiceSlack#merge_requests_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_slack#merge_requests_events ServiceSlack#merge_requests_events}
 
 ---
 
@@ -1624,7 +1624,7 @@ public string NoteChannel { get; set; }
 
 The name of the channel to receive note events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_slack#note_channel ServiceSlack#note_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_slack#note_channel ServiceSlack#note_channel}
 
 ---
 
@@ -1638,7 +1638,7 @@ public object NoteEvents { get; set; }
 
 Enable notifications for note events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_slack#note_events ServiceSlack#note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_slack#note_events ServiceSlack#note_events}
 
 ---
 
@@ -1652,7 +1652,7 @@ public object NotifyOnlyBrokenPipelines { get; set; }
 
 Send notifications for broken pipelines.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_slack#notify_only_broken_pipelines ServiceSlack#notify_only_broken_pipelines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_slack#notify_only_broken_pipelines ServiceSlack#notify_only_broken_pipelines}
 
 ---
 
@@ -1666,7 +1666,7 @@ public object NotifyOnlyDefaultBranch { get; set; }
 
 This parameter has been replaced with `branches_to_be_notified`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_slack#notify_only_default_branch ServiceSlack#notify_only_default_branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_slack#notify_only_default_branch ServiceSlack#notify_only_default_branch}
 
 ---
 
@@ -1680,7 +1680,7 @@ public string PipelineChannel { get; set; }
 
 The name of the channel to receive pipeline events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_slack#pipeline_channel ServiceSlack#pipeline_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_slack#pipeline_channel ServiceSlack#pipeline_channel}
 
 ---
 
@@ -1694,7 +1694,7 @@ public object PipelineEvents { get; set; }
 
 Enable notifications for pipeline events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_slack#pipeline_events ServiceSlack#pipeline_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_slack#pipeline_events ServiceSlack#pipeline_events}
 
 ---
 
@@ -1708,7 +1708,7 @@ public string PushChannel { get; set; }
 
 The name of the channel to receive push events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_slack#push_channel ServiceSlack#push_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_slack#push_channel ServiceSlack#push_channel}
 
 ---
 
@@ -1722,7 +1722,7 @@ public object PushEvents { get; set; }
 
 Enable notifications for push events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_slack#push_events ServiceSlack#push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_slack#push_events ServiceSlack#push_events}
 
 ---
 
@@ -1736,7 +1736,7 @@ public string TagPushChannel { get; set; }
 
 The name of the channel to receive tag push events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_slack#tag_push_channel ServiceSlack#tag_push_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_slack#tag_push_channel ServiceSlack#tag_push_channel}
 
 ---
 
@@ -1750,7 +1750,7 @@ public object TagPushEvents { get; set; }
 
 Enable notifications for tag push events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_slack#tag_push_events ServiceSlack#tag_push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_slack#tag_push_events ServiceSlack#tag_push_events}
 
 ---
 
@@ -1764,7 +1764,7 @@ public string Username { get; set; }
 
 Username to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_slack#username ServiceSlack#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_slack#username ServiceSlack#username}
 
 ---
 
@@ -1778,7 +1778,7 @@ public string WikiPageChannel { get; set; }
 
 The name of the channel to receive wiki page events notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_slack#wiki_page_channel ServiceSlack#wiki_page_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_slack#wiki_page_channel ServiceSlack#wiki_page_channel}
 
 ---
 
@@ -1792,7 +1792,7 @@ public object WikiPageEvents { get; set; }
 
 Enable notifications for wiki page events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/service_slack#wiki_page_events ServiceSlack#wiki_page_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_slack#wiki_page_events ServiceSlack#wiki_page_events}
 
 ---
 
