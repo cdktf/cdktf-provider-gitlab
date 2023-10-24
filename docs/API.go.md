@@ -63,6 +63,7 @@ The following submodules are available:
 - [groupLdapLink](./groupLdapLink.go.md)
 - [groupMembership](./groupMembership.go.md)
 - [groupProjectFileTemplate](./groupProjectFileTemplate.go.md)
+- [groupProtectedEnvironment](./groupProtectedEnvironment.go.md)
 - [groupSamlLink](./groupSamlLink.go.md)
 - [groupShareGroup](./groupShareGroup.go.md)
 - [groupVariable](./groupVariable.go.md)

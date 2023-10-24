@@ -63,6 +63,7 @@ The following submodules are available:
 - [groupLdapLink](./groupLdapLink.typescript.md)
 - [groupMembership](./groupMembership.typescript.md)
 - [groupProjectFileTemplate](./groupProjectFileTemplate.typescript.md)
+- [groupProtectedEnvironment](./groupProtectedEnvironment.typescript.md)
 - [groupSamlLink](./groupSamlLink.typescript.md)
 - [groupShareGroup](./groupShareGroup.typescript.md)
 - [groupVariable](./groupVariable.typescript.md)

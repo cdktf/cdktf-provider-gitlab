@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group_issue_board
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_issue_board
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface GroupIssueBoardConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID or URL-encoded path of the group owned by the authenticated user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group_issue_board#group GroupIssueBoard#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_issue_board#group GroupIssueBoard#group}
   */
   readonly group: string;
   /**
   * The milestone the board should be scoped to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group_issue_board#milestone_id GroupIssueBoard#milestone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_issue_board#milestone_id GroupIssueBoard#milestone_id}
   */
   readonly milestoneId?: number;
   /**
   * The name of the board.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group_issue_board#name GroupIssueBoard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_issue_board#name GroupIssueBoard#name}
   */
   readonly name: string;
   /**
   * lists block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group_issue_board#lists GroupIssueBoard#lists}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_issue_board#lists GroupIssueBoard#lists}
   */
   readonly lists?: GroupIssueBoardLists[] | cdktf.IResolvable;
 }
@@ -41,7 +41,7 @@ export interface GroupIssueBoardLists {
   /**
   * The ID of the label the list should be scoped to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group_issue_board#label_id GroupIssueBoard#label_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_issue_board#label_id GroupIssueBoard#label_id}
   */
   readonly labelId?: number;
 }
@@ -148,7 +148,7 @@ export class GroupIssueBoardListsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group_issue_board gitlab_group_issue_board}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_issue_board gitlab_group_issue_board}
 */
 export class GroupIssueBoard extends cdktf.TerraformResource {
 
@@ -164,7 +164,7 @@ export class GroupIssueBoard extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GroupIssueBoard resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GroupIssueBoard to import
-  * @param importFromId The id of the existing GroupIssueBoard that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group_issue_board#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GroupIssueBoard that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_issue_board#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GroupIssueBoard to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -176,7 +176,7 @@ export class GroupIssueBoard extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group_issue_board gitlab_group_issue_board} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_issue_board gitlab_group_issue_board} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -187,7 +187,7 @@ export class GroupIssueBoard extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_issue_board',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.4.1',
+        providerVersion: '16.5.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,

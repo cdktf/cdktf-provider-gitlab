@@ -26,6 +26,7 @@ export * as groupLabel from './group-label';
 export * as groupLdapLink from './group-ldap-link';
 export * as groupMembership from './group-membership';
 export * as groupProjectFileTemplate from './group-project-file-template';
+export * as groupProtectedEnvironment from './group-protected-environment';
 export * as groupSamlLink from './group-saml-link';
 export * as groupShareGroup from './group-share-group';
 export * as groupVariable from './group-variable';

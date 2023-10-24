@@ -63,6 +63,7 @@ The following submodules are available:
 - [groupLdapLink](./groupLdapLink.csharp.md)
 - [groupMembership](./groupMembership.csharp.md)
 - [groupProjectFileTemplate](./groupProjectFileTemplate.csharp.md)
+- [groupProtectedEnvironment](./groupProtectedEnvironment.csharp.md)
 - [groupSamlLink](./groupSamlLink.csharp.md)
 - [groupShareGroup](./groupShareGroup.csharp.md)
 - [groupVariable](./groupVariable.csharp.md)

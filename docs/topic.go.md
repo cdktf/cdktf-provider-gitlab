@@ -1,6 +1,6 @@
 # `gitlab_topic`
 
-Refer to the Terraform Registory for docs: [`gitlab_topic`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/topic).
+Refer to the Terraform Registory for docs: [`gitlab_topic`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/topic).
 
 # `topic` Submodule <a name="`topic` Submodule" id="@cdktf/provider-gitlab.topic"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_topic`](https://registry.ter
 
 ### Topic <a name="Topic" id="@cdktf/provider-gitlab.topic.Topic"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/topic gitlab_topic}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/topic gitlab_topic}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.topic.Topic.Initializer"></a>
 
@@ -463,7 +463,7 @@ The construct id used in the generated config for the Topic to import.
 
 The id of the existing Topic that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/topic#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/topic#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -863,7 +863,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/topic"
 | <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.avatar">Avatar</a></code> | <code>*string</code> | A local path to the avatar image to upload. **Note**: not available for imported resources. |
 | <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.avatarHash">AvatarHash</a></code> | <code>*string</code> | The hash of the avatar image. |
 | <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.description">Description</a></code> | <code>*string</code> | A text describing the topic. |
-| <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/topic#id Topic#id}. |
+| <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/topic#id Topic#id}. |
 | <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.softDestroy">SoftDestroy</a></code> | <code>interface{}</code> | Empty the topics fields instead of deleting it. |
 | <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.title">Title</a></code> | <code>*string</code> | The topic's description. Requires at least GitLab 15.0 for which it's a required argument. |
 
@@ -949,7 +949,7 @@ Name *string
 
 The topic's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/topic#name Topic#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/topic#name Topic#name}
 
 ---
 
@@ -963,7 +963,7 @@ Avatar *string
 
 A local path to the avatar image to upload. **Note**: not available for imported resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/topic#avatar Topic#avatar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/topic#avatar Topic#avatar}
 
 ---
 
@@ -979,7 +979,7 @@ The hash of the avatar image.
 
 Use `filesha256("path/to/avatar.png")` whenever possible. **Note**: this is used to trigger an update of the avatar. If it's not given, but an avatar is given, the avatar will be updated each time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/topic#avatar_hash Topic#avatar_hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/topic#avatar_hash Topic#avatar_hash}
 
 ---
 
@@ -993,7 +993,7 @@ Description *string
 
 A text describing the topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/topic#description Topic#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/topic#description Topic#description}
 
 ---
 
@@ -1005,7 +1005,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/topic#id Topic#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/topic#id Topic#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1022,7 +1022,7 @@ SoftDestroy interface{}
 
 Empty the topics fields instead of deleting it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/topic#soft_destroy Topic#soft_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/topic#soft_destroy Topic#soft_destroy}
 
 ---
 
@@ -1036,7 +1036,7 @@ Title *string
 
 The topic's description. Requires at least GitLab 15.0 for which it's a required argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/topic#title Topic#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/topic#title Topic#title}
 
 ---
 

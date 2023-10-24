@@ -63,6 +63,7 @@ The following submodules are available:
 - [groupLdapLink](./groupLdapLink.java.md)
 - [groupMembership](./groupMembership.java.md)
 - [groupProjectFileTemplate](./groupProjectFileTemplate.java.md)
+- [groupProtectedEnvironment](./groupProtectedEnvironment.java.md)
 - [groupSamlLink](./groupSamlLink.java.md)
 - [groupShareGroup](./groupShareGroup.java.md)
 - [groupVariable](./groupVariable.java.md)

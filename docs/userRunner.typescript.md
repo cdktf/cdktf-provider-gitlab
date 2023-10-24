@@ -1,6 +1,6 @@
 # `gitlab_user_runner`
 
-Refer to the Terraform Registory for docs: [`gitlab_user_runner`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/user_runner).
+Refer to the Terraform Registory for docs: [`gitlab_user_runner`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/user_runner).
 
 # `userRunner` Submodule <a name="`userRunner` Submodule" id="@cdktf/provider-gitlab.userRunner"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_user_runner`](https://regist
 
 ### UserRunner <a name="UserRunner" id="@cdktf/provider-gitlab.userRunner.UserRunner"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/user_runner gitlab_user_runner}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/user_runner gitlab_user_runner}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.userRunner.UserRunner.Initializer"></a>
 
@@ -484,7 +484,7 @@ The construct id used in the generated config for the UserRunner to import.
 
 The id of the existing UserRunner that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/user_runner#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/user_runner#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1035,7 +1035,7 @@ public readonly runnerType: string;
 
 The scope of the runner. Valid values are: `instance_type`, `group_type`, `project_type`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/user_runner#runner_type UserRunner#runner_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/user_runner#runner_type UserRunner#runner_type}
 
 ---
 
@@ -1049,7 +1049,7 @@ public readonly accessLevel: string;
 
 The access level of the runner. Valid values are: `not_protected`, `ref_protected`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/user_runner#access_level UserRunner#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/user_runner#access_level UserRunner#access_level}
 
 ---
 
@@ -1063,7 +1063,7 @@ public readonly description: string;
 
 Description of the runner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/user_runner#description UserRunner#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/user_runner#description UserRunner#description}
 
 ---
 
@@ -1077,7 +1077,7 @@ public readonly groupId: number;
 
 The ID of the group that the runner is created in. Required if runner_type is group_type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/user_runner#group_id UserRunner#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/user_runner#group_id UserRunner#group_id}
 
 ---
 
@@ -1091,7 +1091,7 @@ public readonly locked: boolean | IResolvable;
 
 Specifies if the runner should be locked for the current project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/user_runner#locked UserRunner#locked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/user_runner#locked UserRunner#locked}
 
 ---
 
@@ -1107,7 +1107,7 @@ Maximum timeout that limits the amount of time (in seconds) that runners can run
 
 Must be at least 600 (10 minutes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/user_runner#maximum_timeout UserRunner#maximum_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/user_runner#maximum_timeout UserRunner#maximum_timeout}
 
 ---
 
@@ -1121,7 +1121,7 @@ public readonly paused: boolean | IResolvable;
 
 Specifies if the runner should ignore new jobs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/user_runner#paused UserRunner#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/user_runner#paused UserRunner#paused}
 
 ---
 
@@ -1135,7 +1135,7 @@ public readonly projectId: number;
 
 The ID of the project that the runner is created in. Required if runner_type is project_type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/user_runner#project_id UserRunner#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/user_runner#project_id UserRunner#project_id}
 
 ---
 
@@ -1149,7 +1149,7 @@ public readonly tagList: string[];
 
 A list of runner tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/user_runner#tag_list UserRunner#tag_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/user_runner#tag_list UserRunner#tag_list}
 
 ---
 
@@ -1163,7 +1163,7 @@ public readonly untagged: boolean | IResolvable;
 
 Specifies if the runner should handle untagged jobs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/user_runner#untagged UserRunner#untagged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/user_runner#untagged UserRunner#untagged}
 
 ---
 

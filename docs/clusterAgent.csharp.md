@@ -1,6 +1,6 @@
 # `gitlab_cluster_agent`
 
-Refer to the Terraform Registory for docs: [`gitlab_cluster_agent`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/cluster_agent).
+Refer to the Terraform Registory for docs: [`gitlab_cluster_agent`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/cluster_agent).
 
 # `clusterAgent` Submodule <a name="`clusterAgent` Submodule" id="@cdktf/provider-gitlab.clusterAgent"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_cluster_agent`](https://regi
 
 ### ClusterAgent <a name="ClusterAgent" id="@cdktf/provider-gitlab.clusterAgent.ClusterAgent"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/cluster_agent gitlab_cluster_agent}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/cluster_agent gitlab_cluster_agent}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.clusterAgent.ClusterAgent.Initializer"></a>
 
@@ -428,7 +428,7 @@ The construct id used in the generated config for the ClusterAgent to import.
 
 The id of the existing ClusterAgent that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/cluster_agent#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/cluster_agent#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -756,7 +756,7 @@ new ClusterAgentConfig {
 | <code><a href="#@cdktf/provider-gitlab.clusterAgent.ClusterAgentConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgent.ClusterAgentConfig.property.name">Name</a></code> | <code>string</code> | The Name of the agent. |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgent.ClusterAgentConfig.property.project">Project</a></code> | <code>string</code> | ID or full path of the project maintained by the authenticated user. |
-| <code><a href="#@cdktf/provider-gitlab.clusterAgent.ClusterAgentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/cluster_agent#id ClusterAgent#id}. |
+| <code><a href="#@cdktf/provider-gitlab.clusterAgent.ClusterAgentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/cluster_agent#id ClusterAgent#id}. |
 
 ---
 
@@ -840,7 +840,7 @@ public string Name { get; set; }
 
 The Name of the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/cluster_agent#name ClusterAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/cluster_agent#name ClusterAgent#name}
 
 ---
 
@@ -854,7 +854,7 @@ public string Project { get; set; }
 
 ID or full path of the project maintained by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/cluster_agent#project ClusterAgent#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/cluster_agent#project ClusterAgent#project}
 
 ---
 
@@ -866,7 +866,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/cluster_agent#id ClusterAgent#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/cluster_agent#id ClusterAgent#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

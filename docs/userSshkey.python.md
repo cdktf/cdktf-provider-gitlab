@@ -1,6 +1,6 @@
 # `gitlab_user_sshkey`
 
-Refer to the Terraform Registory for docs: [`gitlab_user_sshkey`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/user_sshkey).
+Refer to the Terraform Registory for docs: [`gitlab_user_sshkey`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/user_sshkey).
 
 # `userSshkey` Submodule <a name="`userSshkey` Submodule" id="@cdktf/provider-gitlab.userSshkey"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_user_sshkey`](https://regist
 
 ### UserSshkey <a name="UserSshkey" id="@cdktf/provider-gitlab.userSshkey.UserSshkey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/user_sshkey gitlab_user_sshkey}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/user_sshkey gitlab_user_sshkey}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.userSshkey.UserSshkey.Initializer"></a>
 
@@ -27,9 +27,9 @@ userSshkey.UserSshkey(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   key: str,
   title: str,
-  user_id: typing.Union[int, float],
   expires_at: str = None,
-  id: str = None
+  id: str = None,
+  user_id: typing.Union[int, float] = None
 )
 ```
 
@@ -46,9 +46,9 @@ userSshkey.UserSshkey(
 | <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkey.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkey.Initializer.parameter.key">key</a></code> | <code>str</code> | The ssh key. |
 | <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkey.Initializer.parameter.title">title</a></code> | <code>str</code> | The title of the ssh key. |
-| <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkey.Initializer.parameter.userId">user_id</a></code> | <code>typing.Union[int, float]</code> | The ID or username of the user. |
 | <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkey.Initializer.parameter.expiresAt">expires_at</a></code> | <code>str</code> | The expiration date of the SSH key in ISO 8601 format (YYYY-MM-DDTHH:MM:SSZ). |
-| <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkey.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/user_sshkey#id UserSshkey#id}. |
+| <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkey.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/user_sshkey#id UserSshkey#id}. |
+| <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkey.Initializer.parameter.userId">user_id</a></code> | <code>typing.Union[int, float]</code> | The ID or username of the user. |
 
 ---
 
@@ -120,7 +120,7 @@ The ssh key.
 
 The SSH key `comment` (trailing part) is optional and ignored for diffing, because GitLab overrides it with the username and GitLab hostname.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/user_sshkey#key UserSshkey#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/user_sshkey#key UserSshkey#key}
 
 ---
 
@@ -130,17 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The title of the ssh key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/user_sshkey#title UserSshkey#title}
-
----
-
-##### `user_id`<sup>Required</sup> <a name="user_id" id="@cdktf/provider-gitlab.userSshkey.UserSshkey.Initializer.parameter.userId"></a>
-
-- *Type:* typing.Union[int, float]
-
-The ID or username of the user.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/user_sshkey#user_id UserSshkey#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/user_sshkey#title UserSshkey#title}
 
 ---
 
@@ -150,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The expiration date of the SSH key in ISO 8601 format (YYYY-MM-DDTHH:MM:SSZ).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/user_sshkey#expires_at UserSshkey#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/user_sshkey#expires_at UserSshkey#expires_at}
 
 ---
 
@@ -158,10 +148,22 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/user_sshkey#id UserSshkey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/user_sshkey#id UserSshkey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `user_id`<sup>Optional</sup> <a name="user_id" id="@cdktf/provider-gitlab.userSshkey.UserSshkey.Initializer.parameter.userId"></a>
+
+- *Type:* typing.Union[int, float]
+
+The ID or username of the user.
+
+If this field is omitted, this resource manages a SSH key for the current user. Otherwise, this resource manages a SSH key for the specified user, and an admin token is required.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/user_sshkey#user_id UserSshkey#user_id}
 
 ---
 
@@ -190,6 +192,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkey.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkey.resetExpiresAt">reset_expires_at</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkey.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkey.resetUserId">reset_user_id</a></code> | *No description.* |
 
 ---
 
@@ -480,6 +483,12 @@ def reset_expires_at() -> None
 def reset_id() -> None
 ```
 
+##### `reset_user_id` <a name="reset_user_id" id="@cdktf/provider-gitlab.userSshkey.UserSshkey.resetUserId"></a>
+
+```python
+def reset_user_id() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -594,7 +603,7 @@ The construct id used in the generated config for the UserSshkey to import.
 
 The id of the existing UserSshkey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/user_sshkey#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/user_sshkey#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -938,9 +947,9 @@ userSshkey.UserSshkeyConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   key: str,
   title: str,
-  user_id: typing.Union[int, float],
   expires_at: str = None,
-  id: str = None
+  id: str = None,
+  user_id: typing.Union[int, float] = None
 )
 ```
 
@@ -957,9 +966,9 @@ userSshkey.UserSshkeyConfig(
 | <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkeyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkeyConfig.property.key">key</a></code> | <code>str</code> | The ssh key. |
 | <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkeyConfig.property.title">title</a></code> | <code>str</code> | The title of the ssh key. |
-| <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkeyConfig.property.userId">user_id</a></code> | <code>typing.Union[int, float]</code> | The ID or username of the user. |
 | <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkeyConfig.property.expiresAt">expires_at</a></code> | <code>str</code> | The expiration date of the SSH key in ISO 8601 format (YYYY-MM-DDTHH:MM:SSZ). |
-| <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkeyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/user_sshkey#id UserSshkey#id}. |
+| <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkeyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/user_sshkey#id UserSshkey#id}. |
+| <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkeyConfig.property.userId">user_id</a></code> | <code>typing.Union[int, float]</code> | The ID or username of the user. |
 
 ---
 
@@ -1045,7 +1054,7 @@ The ssh key.
 
 The SSH key `comment` (trailing part) is optional and ignored for diffing, because GitLab overrides it with the username and GitLab hostname.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/user_sshkey#key UserSshkey#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/user_sshkey#key UserSshkey#key}
 
 ---
 
@@ -1059,21 +1068,7 @@ title: str
 
 The title of the ssh key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/user_sshkey#title UserSshkey#title}
-
----
-
-##### `user_id`<sup>Required</sup> <a name="user_id" id="@cdktf/provider-gitlab.userSshkey.UserSshkeyConfig.property.userId"></a>
-
-```python
-user_id: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
-The ID or username of the user.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/user_sshkey#user_id UserSshkey#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/user_sshkey#title UserSshkey#title}
 
 ---
 
@@ -1087,7 +1082,7 @@ expires_at: str
 
 The expiration date of the SSH key in ISO 8601 format (YYYY-MM-DDTHH:MM:SSZ).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/user_sshkey#expires_at UserSshkey#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/user_sshkey#expires_at UserSshkey#expires_at}
 
 ---
 
@@ -1099,10 +1094,26 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/user_sshkey#id UserSshkey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/user_sshkey#id UserSshkey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `user_id`<sup>Optional</sup> <a name="user_id" id="@cdktf/provider-gitlab.userSshkey.UserSshkeyConfig.property.userId"></a>
+
+```python
+user_id: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The ID or username of the user.
+
+If this field is omitted, this resource manages a SSH key for the current user. Otherwise, this resource manages a SSH key for the specified user, and an admin token is required.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/user_sshkey#user_id UserSshkey#user_id}
 
 ---
 

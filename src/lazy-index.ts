@@ -26,6 +26,7 @@ Object.defineProperty(exports, 'groupLabel', { get: function () { return require
 Object.defineProperty(exports, 'groupLdapLink', { get: function () { return require('./group-ldap-link'); } });
 Object.defineProperty(exports, 'groupMembership', { get: function () { return require('./group-membership'); } });
 Object.defineProperty(exports, 'groupProjectFileTemplate', { get: function () { return require('./group-project-file-template'); } });
+Object.defineProperty(exports, 'groupProtectedEnvironment', { get: function () { return require('./group-protected-environment'); } });
 Object.defineProperty(exports, 'groupSamlLink', { get: function () { return require('./group-saml-link'); } });
 Object.defineProperty(exports, 'groupShareGroup', { get: function () { return require('./group-share-group'); } });
 Object.defineProperty(exports, 'groupVariable', { get: function () { return require('./group-variable'); } });

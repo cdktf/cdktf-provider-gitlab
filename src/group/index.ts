@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,49 +13,49 @@ import * as cdktf from 'cdktf';
 
 export interface GroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Defaults to false. Default to Auto DevOps pipeline for all projects within this group.
+  * Default to Auto DevOps pipeline for all projects within this group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#auto_devops_enabled Group#auto_devops_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#auto_devops_enabled Group#auto_devops_enabled}
   */
   readonly autoDevopsEnabled?: boolean | cdktf.IResolvable;
   /**
   * A local path to the avatar image to upload. **Note**: not available for imported resources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#avatar Group#avatar}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#avatar Group#avatar}
   */
   readonly avatar?: string;
   /**
   * The hash of the avatar image. Use `filesha256("path/to/avatar.png")` whenever possible. **Note**: this is used to trigger an update of the avatar. If it's not given, but an avatar is given, the avatar will be updated each time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#avatar_hash Group#avatar_hash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#avatar_hash Group#avatar_hash}
   */
   readonly avatarHash?: string;
   /**
-  * Defaults to 2. See https://docs.gitlab.com/ee/api/groups.html#options-for-default_branch_protection
+  * See https://docs.gitlab.com/ee/api/groups.html#options-for-default_branch_protection. Valid values are: `0`, `1`, `2`, `3`, `4`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#default_branch_protection Group#default_branch_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#default_branch_protection Group#default_branch_protection}
   */
   readonly defaultBranchProtection?: number;
   /**
-  * The description of the group.
+  * The group's description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#description Group#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#description Group#description}
   */
   readonly description?: string;
   /**
-  * Defaults to false. Disable email notifications.
+  * Disable email notifications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#emails_disabled Group#emails_disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#emails_disabled Group#emails_disabled}
   */
   readonly emailsDisabled?: boolean | cdktf.IResolvable;
   /**
   * Can be set by administrators only. Additional CI/CD minutes for this group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#extra_shared_runners_minutes_limit Group#extra_shared_runners_minutes_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#extra_shared_runners_minutes_limit Group#extra_shared_runners_minutes_limit}
   */
   readonly extraSharedRunnersMinutesLimit?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#id Group#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#id Group#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -64,109 +64,115 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * A list of IP addresses or subnet masks to restrict group access. Will be concatenated together into a comma separated string. Only allowed on top level groups.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#ip_restriction_ranges Group#ip_restriction_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#ip_restriction_ranges Group#ip_restriction_ranges}
   */
   readonly ipRestrictionRanges?: string[];
   /**
-  * Defaults to true. Enable/disable Large File Storage (LFS) for the projects in this group.
+  * Enable/disable Large File Storage (LFS) for the projects in this group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#lfs_enabled Group#lfs_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#lfs_enabled Group#lfs_enabled}
   */
   readonly lfsEnabled?: boolean | cdktf.IResolvable;
   /**
   * Users cannot be added to projects in this group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#membership_lock Group#membership_lock}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#membership_lock Group#membership_lock}
   */
   readonly membershipLock?: boolean | cdktf.IResolvable;
   /**
-  * Defaults to false. Disable the capability of a group from getting mentioned.
+  * Disable the capability of a group from getting mentioned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#mentions_disabled Group#mentions_disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#mentions_disabled Group#mentions_disabled}
   */
   readonly mentionsDisabled?: boolean | cdktf.IResolvable;
   /**
-  * The name of this group.
+  * The name of the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#name Group#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#name Group#name}
   */
   readonly name: string;
   /**
   * Id of the parent group (creates a nested group).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#parent_id Group#parent_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#parent_id Group#parent_id}
   */
   readonly parentId?: number;
   /**
   * The path of the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#path Group#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#path Group#path}
   */
   readonly path: string;
   /**
   * Defaults to false. When enabled, users can not fork projects from this group to external namespaces.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#prevent_forking_outside_group Group#prevent_forking_outside_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#prevent_forking_outside_group Group#prevent_forking_outside_group}
   */
   readonly preventForkingOutsideGroup?: boolean | cdktf.IResolvable;
   /**
-  * Defaults to maintainer. Determine if developers can create projects in the group.
+  * Determine if developers can create projects in the group. Valid values are: `noone`, `maintainer`, `developer`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#project_creation_level Group#project_creation_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#project_creation_level Group#project_creation_level}
   */
   readonly projectCreationLevel?: string;
   /**
-  * Defaults to false. Allow users to request member access.
+  * Allow users to request member access.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#request_access_enabled Group#request_access_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#request_access_enabled Group#request_access_enabled}
   */
   readonly requestAccessEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Defaults to false. Require all users in this group to setup Two-factor authentication.
+  * Require all users in this group to setup Two-factor authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#require_two_factor_authentication Group#require_two_factor_authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#require_two_factor_authentication Group#require_two_factor_authentication}
   */
   readonly requireTwoFactorAuthentication?: boolean | cdktf.IResolvable;
   /**
-  * Defaults to false. Prevent sharing a project with another group within this group.
+  * Prevent sharing a project with another group within this group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#share_with_group_lock Group#share_with_group_lock}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#share_with_group_lock Group#share_with_group_lock}
   */
   readonly shareWithGroupLock?: boolean | cdktf.IResolvable;
   /**
   * Can be set by administrators only. Maximum number of monthly CI/CD minutes for this group. Can be nil (default; inherit system default), 0 (unlimited), or > 0.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#shared_runners_minutes_limit Group#shared_runners_minutes_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#shared_runners_minutes_limit Group#shared_runners_minutes_limit}
   */
   readonly sharedRunnersMinutesLimit?: number;
   /**
-  * Defaults to owner. Allowed to create subgroups.
+  * Enable or disable shared runners for a group’s subgroups and projects. Valid values are: `enabled`, `disabled_and_overridable`, `disabled_and_unoverridable`, `disabled_with_override`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#subgroup_creation_level Group#subgroup_creation_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#shared_runners_setting Group#shared_runners_setting}
+  */
+  readonly sharedRunnersSetting?: string;
+  /**
+  * Allowed to create subgroups. Valid values are: `owner`, `maintainer`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#subgroup_creation_level Group#subgroup_creation_level}
   */
   readonly subgroupCreationLevel?: string;
   /**
   * Defaults to 48. Time before Two-factor authentication is enforced (in hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#two_factor_grace_period Group#two_factor_grace_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#two_factor_grace_period Group#two_factor_grace_period}
   */
   readonly twoFactorGracePeriod?: number;
   /**
-  * The group's visibility. Can be `private`, `internal`, or `public`.
+  * The group's visibility. Can be `private`, `internal`, or `public`. Valid values are: `private`, `internal`, `public`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#visibility_level Group#visibility_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#visibility_level Group#visibility_level}
   */
   readonly visibilityLevel?: string;
   /**
   * The group's wiki access level. Only available on Premium and Ultimate plans. Valid values are `disabled`, `private`, `enabled`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#wiki_access_level Group#wiki_access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#wiki_access_level Group#wiki_access_level}
   */
   readonly wikiAccessLevel?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group gitlab_group}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group gitlab_group}
 */
 export class Group extends cdktf.TerraformResource {
 
@@ -182,7 +188,7 @@ export class Group extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Group resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Group to import
-  * @param importFromId The id of the existing Group that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Group that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Group to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -194,7 +200,7 @@ export class Group extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group gitlab_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group gitlab_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -205,7 +211,7 @@ export class Group extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.4.1',
+        providerVersion: '16.5.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,
@@ -237,6 +243,7 @@ export class Group extends cdktf.TerraformResource {
     this._requireTwoFactorAuthentication = config.requireTwoFactorAuthentication;
     this._shareWithGroupLock = config.shareWithGroupLock;
     this._sharedRunnersMinutesLimit = config.sharedRunnersMinutesLimit;
+    this._sharedRunnersSetting = config.sharedRunnersSetting;
     this._subgroupCreationLevel = config.subgroupCreationLevel;
     this._twoFactorGracePeriod = config.twoFactorGracePeriod;
     this._visibilityLevel = config.visibilityLevel;
@@ -597,6 +604,22 @@ export class Group extends cdktf.TerraformResource {
     return this._sharedRunnersMinutesLimit;
   }
 
+  // shared_runners_setting - computed: true, optional: true, required: false
+  private _sharedRunnersSetting?: string; 
+  public get sharedRunnersSetting() {
+    return this.getStringAttribute('shared_runners_setting');
+  }
+  public set sharedRunnersSetting(value: string) {
+    this._sharedRunnersSetting = value;
+  }
+  public resetSharedRunnersSetting() {
+    this._sharedRunnersSetting = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sharedRunnersSettingInput() {
+    return this._sharedRunnersSetting;
+  }
+
   // subgroup_creation_level - computed: true, optional: true, required: false
   private _subgroupCreationLevel?: string; 
   public get subgroupCreationLevel() {
@@ -693,6 +716,7 @@ export class Group extends cdktf.TerraformResource {
       require_two_factor_authentication: cdktf.booleanToTerraform(this._requireTwoFactorAuthentication),
       share_with_group_lock: cdktf.booleanToTerraform(this._shareWithGroupLock),
       shared_runners_minutes_limit: cdktf.numberToTerraform(this._sharedRunnersMinutesLimit),
+      shared_runners_setting: cdktf.stringToTerraform(this._sharedRunnersSetting),
       subgroup_creation_level: cdktf.stringToTerraform(this._subgroupCreationLevel),
       two_factor_grace_period: cdktf.numberToTerraform(this._twoFactorGracePeriod),
       visibility_level: cdktf.stringToTerraform(this._visibilityLevel),

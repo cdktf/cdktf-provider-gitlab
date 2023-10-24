@@ -1,6 +1,6 @@
 # `data_gitlab_current_user`
 
-Refer to the Terraform Registory for docs: [`data_gitlab_current_user`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/current_user).
+Refer to the Terraform Registory for docs: [`data_gitlab_current_user`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/data-sources/current_user).
 
 # `dataGitlabCurrentUser` Submodule <a name="`dataGitlabCurrentUser` Submodule" id="@cdktf/provider-gitlab.dataGitlabCurrentUser"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_gitlab_current_user`](https://
 
 ### DataGitlabCurrentUser <a name="DataGitlabCurrentUser" id="@cdktf/provider-gitlab.dataGitlabCurrentUser.DataGitlabCurrentUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/current_user gitlab_current_user}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/data-sources/current_user gitlab_current_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabCurrentUser.DataGitlabCurrentUser.Initializer"></a>
 
@@ -448,7 +448,7 @@ The construct id used in the generated config for the DataGitlabCurrentUser to i
 
 The id of the existing DataGitlabCurrentUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/data-sources/current_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/data-sources/current_user#import import section} in the documentation of this resource for the id to use
 
 ---
 

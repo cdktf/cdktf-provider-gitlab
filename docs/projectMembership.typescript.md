@@ -1,6 +1,6 @@
 # `gitlab_project_membership`
 
-Refer to the Terraform Registory for docs: [`gitlab_project_membership`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_membership).
+Refer to the Terraform Registory for docs: [`gitlab_project_membership`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_membership).
 
 # `projectMembership` Submodule <a name="`projectMembership` Submodule" id="@cdktf/provider-gitlab.projectMembership"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_project_membership`](https:/
 
 ### ProjectMembership <a name="ProjectMembership" id="@cdktf/provider-gitlab.projectMembership.ProjectMembership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_membership gitlab_project_membership}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_membership gitlab_project_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectMembership.ProjectMembership.Initializer"></a>
 
@@ -435,7 +435,7 @@ The construct id used in the generated config for the ProjectMembership to impor
 
 The id of the existing ProjectMembership that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_membership#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_membership#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -765,7 +765,7 @@ const projectMembershipConfig: projectMembership.ProjectMembershipConfig = { ...
 | <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembershipConfig.property.project">project</a></code> | <code>string</code> | The ID or URL-encoded path of the project. |
 | <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembershipConfig.property.userId">userId</a></code> | <code>number</code> | The id of the user. |
 | <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembershipConfig.property.expiresAt">expiresAt</a></code> | <code>string</code> | Expiration date for the project membership. Format: `YYYY-MM-DD`. |
-| <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembershipConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_membership#id ProjectMembership#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectMembership.ProjectMembershipConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_membership#id ProjectMembership#id}. |
 
 ---
 
@@ -849,7 +849,7 @@ public readonly accessLevel: string;
 
 The access level for the member. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_membership#access_level ProjectMembership#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_membership#access_level ProjectMembership#access_level}
 
 ---
 
@@ -863,7 +863,7 @@ public readonly project: string;
 
 The ID or URL-encoded path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_membership#project ProjectMembership#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_membership#project ProjectMembership#project}
 
 ---
 
@@ -877,7 +877,7 @@ public readonly userId: number;
 
 The id of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_membership#user_id ProjectMembership#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_membership#user_id ProjectMembership#user_id}
 
 ---
 
@@ -891,7 +891,7 @@ public readonly expiresAt: string;
 
 Expiration date for the project membership. Format: `YYYY-MM-DD`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_membership#expires_at ProjectMembership#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_membership#expires_at ProjectMembership#expires_at}
 
 ---
 
@@ -903,7 +903,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/project_membership#id ProjectMembership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_membership#id ProjectMembership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,6 +1,6 @@
 # `gitlab_group`
 
-Refer to the Terraform Registory for docs: [`gitlab_group`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group).
+Refer to the Terraform Registory for docs: [`gitlab_group`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group).
 
 # `group` Submodule <a name="`group` Submodule" id="@cdktf/provider-gitlab.group"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_group`](https://registry.ter
 
 ### Group <a name="Group" id="@cdktf/provider-gitlab.group.Group"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group gitlab_group}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group gitlab_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.group.Group.Initializer"></a>
 
@@ -91,6 +91,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.group.Group.resetRequestAccessEnabled">ResetRequestAccessEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.resetRequireTwoFactorAuthentication">ResetRequireTwoFactorAuthentication</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.resetSharedRunnersMinutesLimit">ResetSharedRunnersMinutesLimit</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.resetSharedRunnersSetting">ResetSharedRunnersSetting</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.resetShareWithGroupLock">ResetShareWithGroupLock</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.resetSubgroupCreationLevel">ResetSubgroupCreationLevel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.resetTwoFactorGracePeriod">ResetTwoFactorGracePeriod</a></code> | *No description.* |
@@ -449,6 +450,12 @@ func ResetRequireTwoFactorAuthentication()
 func ResetSharedRunnersMinutesLimit()
 ```
 
+##### `ResetSharedRunnersSetting` <a name="ResetSharedRunnersSetting" id="@cdktf/provider-gitlab.group.Group.resetSharedRunnersSetting"></a>
+
+```go
+func ResetSharedRunnersSetting()
+```
+
 ##### `ResetShareWithGroupLock` <a name="ResetShareWithGroupLock" id="@cdktf/provider-gitlab.group.Group.resetShareWithGroupLock"></a>
 
 ```go
@@ -582,7 +589,7 @@ The construct id used in the generated config for the Group to import.
 
 The id of the existing Group that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -637,6 +644,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.requestAccessEnabledInput">RequestAccessEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.requireTwoFactorAuthenticationInput">RequireTwoFactorAuthenticationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.sharedRunnersMinutesLimitInput">SharedRunnersMinutesLimitInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.property.sharedRunnersSettingInput">SharedRunnersSettingInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.shareWithGroupLockInput">ShareWithGroupLockInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.subgroupCreationLevelInput">SubgroupCreationLevelInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.twoFactorGracePeriodInput">TwoFactorGracePeriodInput</a></code> | <code>*f64</code> | *No description.* |
@@ -662,6 +670,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.requestAccessEnabled">RequestAccessEnabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.requireTwoFactorAuthentication">RequireTwoFactorAuthentication</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.sharedRunnersMinutesLimit">SharedRunnersMinutesLimit</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.property.sharedRunnersSetting">SharedRunnersSetting</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.shareWithGroupLock">ShareWithGroupLock</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.subgroupCreationLevel">SubgroupCreationLevel</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.twoFactorGracePeriod">TwoFactorGracePeriod</a></code> | <code>*f64</code> | *No description.* |
@@ -1062,6 +1071,16 @@ func SharedRunnersMinutesLimitInput() *f64
 
 ---
 
+##### `SharedRunnersSettingInput`<sup>Optional</sup> <a name="SharedRunnersSettingInput" id="@cdktf/provider-gitlab.group.Group.property.sharedRunnersSettingInput"></a>
+
+```go
+func SharedRunnersSettingInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ShareWithGroupLockInput`<sup>Optional</sup> <a name="ShareWithGroupLockInput" id="@cdktf/provider-gitlab.group.Group.property.shareWithGroupLockInput"></a>
 
 ```go
@@ -1312,6 +1331,16 @@ func SharedRunnersMinutesLimit() *f64
 
 ---
 
+##### `SharedRunnersSetting`<sup>Required</sup> <a name="SharedRunnersSetting" id="@cdktf/provider-gitlab.group.Group.property.sharedRunnersSetting"></a>
+
+```go
+func SharedRunnersSetting() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ShareWithGroupLock`<sup>Required</sup> <a name="ShareWithGroupLock" id="@cdktf/provider-gitlab.group.Group.property.shareWithGroupLock"></a>
 
 ```go
@@ -1417,6 +1446,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/group"
 	RequestAccessEnabled: interface{},
 	RequireTwoFactorAuthentication: interface{},
 	SharedRunnersMinutesLimit: *f64,
+	SharedRunnersSetting: *string,
 	ShareWithGroupLock: interface{},
 	SubgroupCreationLevel: *string,
 	TwoFactorGracePeriod: *f64,
@@ -1436,30 +1466,31 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/group"
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.name">Name</a></code> | <code>*string</code> | The name of this group. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.name">Name</a></code> | <code>*string</code> | The name of the group. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.path">Path</a></code> | <code>*string</code> | The path of the group. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.autoDevopsEnabled">AutoDevopsEnabled</a></code> | <code>interface{}</code> | Defaults to false. Default to Auto DevOps pipeline for all projects within this group. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.autoDevopsEnabled">AutoDevopsEnabled</a></code> | <code>interface{}</code> | Default to Auto DevOps pipeline for all projects within this group. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.avatar">Avatar</a></code> | <code>*string</code> | A local path to the avatar image to upload. **Note**: not available for imported resources. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.avatarHash">AvatarHash</a></code> | <code>*string</code> | The hash of the avatar image. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.defaultBranchProtection">DefaultBranchProtection</a></code> | <code>*f64</code> | Defaults to 2. See https://docs.gitlab.com/ee/api/groups.html#options-for-default_branch_protection. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.description">Description</a></code> | <code>*string</code> | The description of the group. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.emailsDisabled">EmailsDisabled</a></code> | <code>interface{}</code> | Defaults to false. Disable email notifications. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.defaultBranchProtection">DefaultBranchProtection</a></code> | <code>*f64</code> | See https://docs.gitlab.com/ee/api/groups.html#options-for-default_branch_protection. Valid values are: `0`, `1`, `2`, `3`, `4`. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.description">Description</a></code> | <code>*string</code> | The group's description. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.emailsDisabled">EmailsDisabled</a></code> | <code>interface{}</code> | Disable email notifications. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.extraSharedRunnersMinutesLimit">ExtraSharedRunnersMinutesLimit</a></code> | <code>*f64</code> | Can be set by administrators only. Additional CI/CD minutes for this group. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#id Group#id}. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#id Group#id}. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.ipRestrictionRanges">IpRestrictionRanges</a></code> | <code>*[]*string</code> | A list of IP addresses or subnet masks to restrict group access. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.lfsEnabled">LfsEnabled</a></code> | <code>interface{}</code> | Defaults to true. Enable/disable Large File Storage (LFS) for the projects in this group. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.lfsEnabled">LfsEnabled</a></code> | <code>interface{}</code> | Enable/disable Large File Storage (LFS) for the projects in this group. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.membershipLock">MembershipLock</a></code> | <code>interface{}</code> | Users cannot be added to projects in this group. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.mentionsDisabled">MentionsDisabled</a></code> | <code>interface{}</code> | Defaults to false. Disable the capability of a group from getting mentioned. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.mentionsDisabled">MentionsDisabled</a></code> | <code>interface{}</code> | Disable the capability of a group from getting mentioned. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.parentId">ParentId</a></code> | <code>*f64</code> | Id of the parent group (creates a nested group). |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.preventForkingOutsideGroup">PreventForkingOutsideGroup</a></code> | <code>interface{}</code> | Defaults to false. When enabled, users can not fork projects from this group to external namespaces. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.projectCreationLevel">ProjectCreationLevel</a></code> | <code>*string</code> | Defaults to maintainer. Determine if developers can create projects in the group. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.requestAccessEnabled">RequestAccessEnabled</a></code> | <code>interface{}</code> | Defaults to false. Allow users to request member access. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.requireTwoFactorAuthentication">RequireTwoFactorAuthentication</a></code> | <code>interface{}</code> | Defaults to false. Require all users in this group to setup Two-factor authentication. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.projectCreationLevel">ProjectCreationLevel</a></code> | <code>*string</code> | Determine if developers can create projects in the group. Valid values are: `noone`, `maintainer`, `developer`. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.requestAccessEnabled">RequestAccessEnabled</a></code> | <code>interface{}</code> | Allow users to request member access. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.requireTwoFactorAuthentication">RequireTwoFactorAuthentication</a></code> | <code>interface{}</code> | Require all users in this group to setup Two-factor authentication. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.sharedRunnersMinutesLimit">SharedRunnersMinutesLimit</a></code> | <code>*f64</code> | Can be set by administrators only. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.shareWithGroupLock">ShareWithGroupLock</a></code> | <code>interface{}</code> | Defaults to false. Prevent sharing a project with another group within this group. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.subgroupCreationLevel">SubgroupCreationLevel</a></code> | <code>*string</code> | Defaults to owner. Allowed to create subgroups. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.sharedRunnersSetting">SharedRunnersSetting</a></code> | <code>*string</code> | Enable or disable shared runners for a group’s subgroups and projects. Valid values are: `enabled`, `disabled_and_overridable`, `disabled_and_unoverridable`, `disabled_with_override`. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.shareWithGroupLock">ShareWithGroupLock</a></code> | <code>interface{}</code> | Prevent sharing a project with another group within this group. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.subgroupCreationLevel">SubgroupCreationLevel</a></code> | <code>*string</code> | Allowed to create subgroups. Valid values are: `owner`, `maintainer`. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.twoFactorGracePeriod">TwoFactorGracePeriod</a></code> | <code>*f64</code> | Defaults to 48. Time before Two-factor authentication is enforced (in hours). |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.visibilityLevel">VisibilityLevel</a></code> | <code>*string</code> | The group's visibility. Can be `private`, `internal`, or `public`. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.visibilityLevel">VisibilityLevel</a></code> | <code>*string</code> | The group's visibility. Can be `private`, `internal`, or `public`. Valid values are: `private`, `internal`, `public`. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.wikiAccessLevel">WikiAccessLevel</a></code> | <code>*string</code> | The group's wiki access level. Only available on Premium and Ultimate plans. Valid values are `disabled`, `private`, `enabled`. |
 
 ---
@@ -1542,9 +1573,9 @@ Name *string
 
 - *Type:* *string
 
-The name of this group.
+The name of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#name Group#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#name Group#name}
 
 ---
 
@@ -1558,7 +1589,7 @@ Path *string
 
 The path of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#path Group#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#path Group#path}
 
 ---
 
@@ -1570,9 +1601,9 @@ AutoDevopsEnabled interface{}
 
 - *Type:* interface{}
 
-Defaults to false. Default to Auto DevOps pipeline for all projects within this group.
+Default to Auto DevOps pipeline for all projects within this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#auto_devops_enabled Group#auto_devops_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#auto_devops_enabled Group#auto_devops_enabled}
 
 ---
 
@@ -1586,7 +1617,7 @@ Avatar *string
 
 A local path to the avatar image to upload. **Note**: not available for imported resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#avatar Group#avatar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#avatar Group#avatar}
 
 ---
 
@@ -1602,7 +1633,7 @@ The hash of the avatar image.
 
 Use `filesha256("path/to/avatar.png")` whenever possible. **Note**: this is used to trigger an update of the avatar. If it's not given, but an avatar is given, the avatar will be updated each time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#avatar_hash Group#avatar_hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#avatar_hash Group#avatar_hash}
 
 ---
 
@@ -1614,9 +1645,9 @@ DefaultBranchProtection *f64
 
 - *Type:* *f64
 
-Defaults to 2. See https://docs.gitlab.com/ee/api/groups.html#options-for-default_branch_protection.
+See https://docs.gitlab.com/ee/api/groups.html#options-for-default_branch_protection. Valid values are: `0`, `1`, `2`, `3`, `4`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#default_branch_protection Group#default_branch_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#default_branch_protection Group#default_branch_protection}
 
 ---
 
@@ -1628,9 +1659,9 @@ Description *string
 
 - *Type:* *string
 
-The description of the group.
+The group's description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#description Group#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#description Group#description}
 
 ---
 
@@ -1642,9 +1673,9 @@ EmailsDisabled interface{}
 
 - *Type:* interface{}
 
-Defaults to false. Disable email notifications.
+Disable email notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#emails_disabled Group#emails_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#emails_disabled Group#emails_disabled}
 
 ---
 
@@ -1658,7 +1689,7 @@ ExtraSharedRunnersMinutesLimit *f64
 
 Can be set by administrators only. Additional CI/CD minutes for this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#extra_shared_runners_minutes_limit Group#extra_shared_runners_minutes_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#extra_shared_runners_minutes_limit Group#extra_shared_runners_minutes_limit}
 
 ---
 
@@ -1670,7 +1701,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#id Group#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#id Group#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1689,7 +1720,7 @@ A list of IP addresses or subnet masks to restrict group access.
 
 Will be concatenated together into a comma separated string. Only allowed on top level groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#ip_restriction_ranges Group#ip_restriction_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#ip_restriction_ranges Group#ip_restriction_ranges}
 
 ---
 
@@ -1701,9 +1732,9 @@ LfsEnabled interface{}
 
 - *Type:* interface{}
 
-Defaults to true. Enable/disable Large File Storage (LFS) for the projects in this group.
+Enable/disable Large File Storage (LFS) for the projects in this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#lfs_enabled Group#lfs_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#lfs_enabled Group#lfs_enabled}
 
 ---
 
@@ -1717,7 +1748,7 @@ MembershipLock interface{}
 
 Users cannot be added to projects in this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#membership_lock Group#membership_lock}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#membership_lock Group#membership_lock}
 
 ---
 
@@ -1729,9 +1760,9 @@ MentionsDisabled interface{}
 
 - *Type:* interface{}
 
-Defaults to false. Disable the capability of a group from getting mentioned.
+Disable the capability of a group from getting mentioned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#mentions_disabled Group#mentions_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#mentions_disabled Group#mentions_disabled}
 
 ---
 
@@ -1745,7 +1776,7 @@ ParentId *f64
 
 Id of the parent group (creates a nested group).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#parent_id Group#parent_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#parent_id Group#parent_id}
 
 ---
 
@@ -1759,7 +1790,7 @@ PreventForkingOutsideGroup interface{}
 
 Defaults to false. When enabled, users can not fork projects from this group to external namespaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#prevent_forking_outside_group Group#prevent_forking_outside_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#prevent_forking_outside_group Group#prevent_forking_outside_group}
 
 ---
 
@@ -1771,9 +1802,9 @@ ProjectCreationLevel *string
 
 - *Type:* *string
 
-Defaults to maintainer. Determine if developers can create projects in the group.
+Determine if developers can create projects in the group. Valid values are: `noone`, `maintainer`, `developer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#project_creation_level Group#project_creation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#project_creation_level Group#project_creation_level}
 
 ---
 
@@ -1785,9 +1816,9 @@ RequestAccessEnabled interface{}
 
 - *Type:* interface{}
 
-Defaults to false. Allow users to request member access.
+Allow users to request member access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#request_access_enabled Group#request_access_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#request_access_enabled Group#request_access_enabled}
 
 ---
 
@@ -1799,9 +1830,9 @@ RequireTwoFactorAuthentication interface{}
 
 - *Type:* interface{}
 
-Defaults to false. Require all users in this group to setup Two-factor authentication.
+Require all users in this group to setup Two-factor authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#require_two_factor_authentication Group#require_two_factor_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#require_two_factor_authentication Group#require_two_factor_authentication}
 
 ---
 
@@ -1817,7 +1848,21 @@ Can be set by administrators only.
 
 Maximum number of monthly CI/CD minutes for this group. Can be nil (default; inherit system default), 0 (unlimited), or > 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#shared_runners_minutes_limit Group#shared_runners_minutes_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#shared_runners_minutes_limit Group#shared_runners_minutes_limit}
+
+---
+
+##### `SharedRunnersSetting`<sup>Optional</sup> <a name="SharedRunnersSetting" id="@cdktf/provider-gitlab.group.GroupConfig.property.sharedRunnersSetting"></a>
+
+```go
+SharedRunnersSetting *string
+```
+
+- *Type:* *string
+
+Enable or disable shared runners for a group’s subgroups and projects. Valid values are: `enabled`, `disabled_and_overridable`, `disabled_and_unoverridable`, `disabled_with_override`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#shared_runners_setting Group#shared_runners_setting}
 
 ---
 
@@ -1829,9 +1874,9 @@ ShareWithGroupLock interface{}
 
 - *Type:* interface{}
 
-Defaults to false. Prevent sharing a project with another group within this group.
+Prevent sharing a project with another group within this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#share_with_group_lock Group#share_with_group_lock}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#share_with_group_lock Group#share_with_group_lock}
 
 ---
 
@@ -1843,9 +1888,9 @@ SubgroupCreationLevel *string
 
 - *Type:* *string
 
-Defaults to owner. Allowed to create subgroups.
+Allowed to create subgroups. Valid values are: `owner`, `maintainer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#subgroup_creation_level Group#subgroup_creation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#subgroup_creation_level Group#subgroup_creation_level}
 
 ---
 
@@ -1859,7 +1904,7 @@ TwoFactorGracePeriod *f64
 
 Defaults to 48. Time before Two-factor authentication is enforced (in hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#two_factor_grace_period Group#two_factor_grace_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#two_factor_grace_period Group#two_factor_grace_period}
 
 ---
 
@@ -1871,9 +1916,9 @@ VisibilityLevel *string
 
 - *Type:* *string
 
-The group's visibility. Can be `private`, `internal`, or `public`.
+The group's visibility. Can be `private`, `internal`, or `public`. Valid values are: `private`, `internal`, `public`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#visibility_level Group#visibility_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#visibility_level Group#visibility_level}
 
 ---
 
@@ -1887,7 +1932,7 @@ WikiAccessLevel *string
 
 The group's wiki access level. Only available on Premium and Ultimate plans. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.4.1/docs/resources/group#wiki_access_level Group#wiki_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#wiki_access_level Group#wiki_access_level}
 
 ---
 
