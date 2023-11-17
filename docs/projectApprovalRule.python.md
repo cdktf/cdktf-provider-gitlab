@@ -1,6 +1,6 @@
 # `gitlab_project_approval_rule`
 
-Refer to the Terraform Registory for docs: [`gitlab_project_approval_rule`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_approval_rule).
+Refer to the Terraform Registory for docs: [`gitlab_project_approval_rule`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_approval_rule).
 
 # `projectApprovalRule` Submodule <a name="`projectApprovalRule` Submodule" id="@cdktf/provider-gitlab.projectApprovalRule"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_project_approval_rule`](http
 
 ### ProjectApprovalRule <a name="ProjectApprovalRule" id="@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_approval_rule gitlab_project_approval_rule}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_approval_rule gitlab_project_approval_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.Initializer"></a>
 
@@ -28,6 +28,7 @@ projectApprovalRule.ProjectApprovalRule(
   approvals_required: typing.Union[int, float],
   name: str,
   project: str,
+  applies_to_all_protected_branches: typing.Union[bool, IResolvable] = None,
   disable_importing_default_any_approver_rule_on_create: typing.Union[bool, IResolvable] = None,
   group_ids: typing.List[typing.Union[int, float]] = None,
   id: str = None,
@@ -51,9 +52,10 @@ projectApprovalRule.ProjectApprovalRule(
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.Initializer.parameter.approvalsRequired">approvals_required</a></code> | <code>typing.Union[int, float]</code> | The number of approvals required for this rule. |
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the approval rule. |
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.Initializer.parameter.project">project</a></code> | <code>str</code> | The name or id of the project to add the approval rules. |
+| <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.Initializer.parameter.appliesToAllProtectedBranches">applies_to_all_protected_branches</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the rule is applied to all protected branches. |
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.Initializer.parameter.disableImportingDefaultAnyApproverRuleOnCreate">disable_importing_default_any_approver_rule_on_create</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this flag is set, the default `any_approver` rule will not be imported if present. |
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.Initializer.parameter.groupIds">group_ids</a></code> | <code>typing.List[typing.Union[int, float]]</code> | A list of group IDs whose members can approve of the merge request. |
-| <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_approval_rule#id ProjectApprovalRule#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_approval_rule#id ProjectApprovalRule#id}. |
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.Initializer.parameter.protectedBranchIds">protected_branch_ids</a></code> | <code>typing.List[typing.Union[int, float]]</code> | A list of protected branch IDs (not branch names) for which the rule applies. |
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.Initializer.parameter.ruleType">rule_type</a></code> | <code>str</code> | String, defaults to 'regular'. |
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.Initializer.parameter.userIds">user_ids</a></code> | <code>typing.List[typing.Union[int, float]]</code> | A list of specific User IDs to add to the list of approvers. |
@@ -126,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 The number of approvals required for this rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_approval_rule#approvals_required ProjectApprovalRule#approvals_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_approval_rule#approvals_required ProjectApprovalRule#approvals_required}
 
 ---
 
@@ -136,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The name of the approval rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_approval_rule#name ProjectApprovalRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_approval_rule#name ProjectApprovalRule#name}
 
 ---
 
@@ -146,7 +148,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The name or id of the project to add the approval rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_approval_rule#project ProjectApprovalRule#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_approval_rule#project ProjectApprovalRule#project}
+
+---
+
+##### `applies_to_all_protected_branches`<sup>Optional</sup> <a name="applies_to_all_protected_branches" id="@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.Initializer.parameter.appliesToAllProtectedBranches"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Whether the rule is applied to all protected branches.
+
+If set to 'true', the value of `protected_branch_ids` is ignored. Default is 'false'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_approval_rule#applies_to_all_protected_branches ProjectApprovalRule#applies_to_all_protected_branches}
 
 ---
 
@@ -156,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 When this flag is set, the default `any_approver` rule will not be imported if present.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_approval_rule#disable_importing_default_any_approver_rule_on_create ProjectApprovalRule#disable_importing_default_any_approver_rule_on_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_approval_rule#disable_importing_default_any_approver_rule_on_create ProjectApprovalRule#disable_importing_default_any_approver_rule_on_create}
 
 ---
 
@@ -166,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 A list of group IDs whose members can approve of the merge request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_approval_rule#group_ids ProjectApprovalRule#group_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_approval_rule#group_ids ProjectApprovalRule#group_ids}
 
 ---
 
@@ -174,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_approval_rule#id ProjectApprovalRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_approval_rule#id ProjectApprovalRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -187,7 +201,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 A list of protected branch IDs (not branch names) for which the rule applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_approval_rule#protected_branch_ids ProjectApprovalRule#protected_branch_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_approval_rule#protected_branch_ids ProjectApprovalRule#protected_branch_ids}
 
 ---
 
@@ -199,7 +213,7 @@ String, defaults to 'regular'.
 
 The type of rule. `any_approver` is a pre-configured default rule with `approvals_required` at `0`. Valid values are `regular`, `any_approver`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_approval_rule#rule_type ProjectApprovalRule#rule_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_approval_rule#rule_type ProjectApprovalRule#rule_type}
 
 ---
 
@@ -209,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 A list of specific User IDs to add to the list of approvers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_approval_rule#user_ids ProjectApprovalRule#user_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_approval_rule#user_ids ProjectApprovalRule#user_ids}
 
 ---
 
@@ -236,6 +250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.importFrom">import_from</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.resetAppliesToAllProtectedBranches">reset_applies_to_all_protected_branches</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.resetDisableImportingDefaultAnyApproverRuleOnCreate">reset_disable_importing_default_any_approver_rule_on_create</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.resetGroupIds">reset_group_ids</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.resetId">reset_id</a></code> | *No description.* |
@@ -520,6 +535,12 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
+##### `reset_applies_to_all_protected_branches` <a name="reset_applies_to_all_protected_branches" id="@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.resetAppliesToAllProtectedBranches"></a>
+
+```python
+def reset_applies_to_all_protected_branches() -> None
+```
+
 ##### `reset_disable_importing_default_any_approver_rule_on_create` <a name="reset_disable_importing_default_any_approver_rule_on_create" id="@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.resetDisableImportingDefaultAnyApproverRuleOnCreate"></a>
 
 ```python
@@ -670,7 +691,7 @@ The construct id used in the generated config for the ProjectApprovalRule to imp
 
 The id of the existing ProjectApprovalRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_approval_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_approval_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -700,6 +721,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.property.appliesToAllProtectedBranchesInput">applies_to_all_protected_branches_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.property.approvalsRequiredInput">approvals_required_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.property.disableImportingDefaultAnyApproverRuleOnCreateInput">disable_importing_default_any_approver_rule_on_create_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.property.groupIdsInput">group_ids_input</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
@@ -709,6 +731,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.property.protectedBranchIdsInput">protected_branch_ids_input</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.property.ruleTypeInput">rule_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.property.userIdsInput">user_ids_input</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.property.appliesToAllProtectedBranches">applies_to_all_protected_branches</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.property.approvalsRequired">approvals_required</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.property.disableImportingDefaultAnyApproverRuleOnCreate">disable_importing_default_any_approver_rule_on_create</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.property.groupIds">group_ids</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
@@ -863,6 +886,16 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
+##### `applies_to_all_protected_branches_input`<sup>Optional</sup> <a name="applies_to_all_protected_branches_input" id="@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.property.appliesToAllProtectedBranchesInput"></a>
+
+```python
+applies_to_all_protected_branches_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `approvals_required_input`<sup>Optional</sup> <a name="approvals_required_input" id="@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.property.approvalsRequiredInput"></a>
 
 ```python
@@ -950,6 +983,16 @@ user_ids_input: typing.List[typing.Union[int, float]]
 ```
 
 - *Type:* typing.List[typing.Union[int, float]]
+
+---
+
+##### `applies_to_all_protected_branches`<sup>Required</sup> <a name="applies_to_all_protected_branches" id="@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.property.appliesToAllProtectedBranches"></a>
+
+```python
+applies_to_all_protected_branches: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -1081,6 +1124,7 @@ projectApprovalRule.ProjectApprovalRuleConfig(
   approvals_required: typing.Union[int, float],
   name: str,
   project: str,
+  applies_to_all_protected_branches: typing.Union[bool, IResolvable] = None,
   disable_importing_default_any_approver_rule_on_create: typing.Union[bool, IResolvable] = None,
   group_ids: typing.List[typing.Union[int, float]] = None,
   id: str = None,
@@ -1104,9 +1148,10 @@ projectApprovalRule.ProjectApprovalRuleConfig(
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRuleConfig.property.approvalsRequired">approvals_required</a></code> | <code>typing.Union[int, float]</code> | The number of approvals required for this rule. |
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRuleConfig.property.name">name</a></code> | <code>str</code> | The name of the approval rule. |
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRuleConfig.property.project">project</a></code> | <code>str</code> | The name or id of the project to add the approval rules. |
+| <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRuleConfig.property.appliesToAllProtectedBranches">applies_to_all_protected_branches</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the rule is applied to all protected branches. |
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRuleConfig.property.disableImportingDefaultAnyApproverRuleOnCreate">disable_importing_default_any_approver_rule_on_create</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this flag is set, the default `any_approver` rule will not be imported if present. |
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRuleConfig.property.groupIds">group_ids</a></code> | <code>typing.List[typing.Union[int, float]]</code> | A list of group IDs whose members can approve of the merge request. |
-| <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_approval_rule#id ProjectApprovalRule#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_approval_rule#id ProjectApprovalRule#id}. |
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRuleConfig.property.protectedBranchIds">protected_branch_ids</a></code> | <code>typing.List[typing.Union[int, float]]</code> | A list of protected branch IDs (not branch names) for which the rule applies. |
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRuleConfig.property.ruleType">rule_type</a></code> | <code>str</code> | String, defaults to 'regular'. |
 | <code><a href="#@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRuleConfig.property.userIds">user_ids</a></code> | <code>typing.List[typing.Union[int, float]]</code> | A list of specific User IDs to add to the list of approvers. |
@@ -1193,7 +1238,7 @@ approvals_required: typing.Union[int, float]
 
 The number of approvals required for this rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_approval_rule#approvals_required ProjectApprovalRule#approvals_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_approval_rule#approvals_required ProjectApprovalRule#approvals_required}
 
 ---
 
@@ -1207,7 +1252,7 @@ name: str
 
 The name of the approval rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_approval_rule#name ProjectApprovalRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_approval_rule#name ProjectApprovalRule#name}
 
 ---
 
@@ -1221,7 +1266,23 @@ project: str
 
 The name or id of the project to add the approval rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_approval_rule#project ProjectApprovalRule#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_approval_rule#project ProjectApprovalRule#project}
+
+---
+
+##### `applies_to_all_protected_branches`<sup>Optional</sup> <a name="applies_to_all_protected_branches" id="@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRuleConfig.property.appliesToAllProtectedBranches"></a>
+
+```python
+applies_to_all_protected_branches: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Whether the rule is applied to all protected branches.
+
+If set to 'true', the value of `protected_branch_ids` is ignored. Default is 'false'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_approval_rule#applies_to_all_protected_branches ProjectApprovalRule#applies_to_all_protected_branches}
 
 ---
 
@@ -1235,7 +1296,7 @@ disable_importing_default_any_approver_rule_on_create: typing.Union[bool, IResol
 
 When this flag is set, the default `any_approver` rule will not be imported if present.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_approval_rule#disable_importing_default_any_approver_rule_on_create ProjectApprovalRule#disable_importing_default_any_approver_rule_on_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_approval_rule#disable_importing_default_any_approver_rule_on_create ProjectApprovalRule#disable_importing_default_any_approver_rule_on_create}
 
 ---
 
@@ -1249,7 +1310,7 @@ group_ids: typing.List[typing.Union[int, float]]
 
 A list of group IDs whose members can approve of the merge request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_approval_rule#group_ids ProjectApprovalRule#group_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_approval_rule#group_ids ProjectApprovalRule#group_ids}
 
 ---
 
@@ -1261,7 +1322,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_approval_rule#id ProjectApprovalRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_approval_rule#id ProjectApprovalRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1278,7 +1339,7 @@ protected_branch_ids: typing.List[typing.Union[int, float]]
 
 A list of protected branch IDs (not branch names) for which the rule applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_approval_rule#protected_branch_ids ProjectApprovalRule#protected_branch_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_approval_rule#protected_branch_ids ProjectApprovalRule#protected_branch_ids}
 
 ---
 
@@ -1294,7 +1355,7 @@ String, defaults to 'regular'.
 
 The type of rule. `any_approver` is a pre-configured default rule with `approvals_required` at `0`. Valid values are `regular`, `any_approver`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_approval_rule#rule_type ProjectApprovalRule#rule_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_approval_rule#rule_type ProjectApprovalRule#rule_type}
 
 ---
 
@@ -1308,7 +1369,7 @@ user_ids: typing.List[typing.Union[int, float]]
 
 A list of specific User IDs to add to the list of approvers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_approval_rule#user_ids ProjectApprovalRule#user_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_approval_rule#user_ids ProjectApprovalRule#user_ids}
 
 ---
 

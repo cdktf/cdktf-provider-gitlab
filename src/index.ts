@@ -62,6 +62,7 @@ export * as projectIssueBoard from './project-issue-board';
 export * as projectJobTokenScope from './project-job-token-scope';
 export * as projectLabel from './project-label';
 export * as projectLevelMrApprovals from './project-level-mr-approvals';
+export * as projectLevelNotifications from './project-level-notifications';
 export * as projectMembership from './project-membership';
 export * as projectMilestone from './project-milestone';
 export * as projectMirror from './project-mirror';

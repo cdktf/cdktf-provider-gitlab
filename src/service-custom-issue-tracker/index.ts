@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_custom_issue_tracker
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/service_custom_issue_tracker
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface ServiceCustomIssueTrackerConfig extends cdktf.TerraformMetaArgu
   /**
   * The URL to view an issue in the external issue tracker. Must contain :id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_custom_issue_tracker#issues_url ServiceCustomIssueTracker#issues_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/service_custom_issue_tracker#issues_url ServiceCustomIssueTracker#issues_url}
   */
   readonly issuesUrl: string;
   /**
   * The ID or full path of the project for the custom issue tracker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_custom_issue_tracker#project ServiceCustomIssueTracker#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/service_custom_issue_tracker#project ServiceCustomIssueTracker#project}
   */
   readonly project: string;
   /**
   * The URL to the project in the external issue tracker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_custom_issue_tracker#project_url ServiceCustomIssueTracker#project_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/service_custom_issue_tracker#project_url ServiceCustomIssueTracker#project_url}
   */
   readonly projectUrl: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_custom_issue_tracker gitlab_service_custom_issue_tracker}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/service_custom_issue_tracker gitlab_service_custom_issue_tracker}
 */
 export class ServiceCustomIssueTracker extends cdktf.TerraformResource {
 
@@ -49,7 +49,7 @@ export class ServiceCustomIssueTracker extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ServiceCustomIssueTracker resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServiceCustomIssueTracker to import
-  * @param importFromId The id of the existing ServiceCustomIssueTracker that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_custom_issue_tracker#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServiceCustomIssueTracker that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/service_custom_issue_tracker#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServiceCustomIssueTracker to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -61,7 +61,7 @@ export class ServiceCustomIssueTracker extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_custom_issue_tracker gitlab_service_custom_issue_tracker} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/service_custom_issue_tracker gitlab_service_custom_issue_tracker} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class ServiceCustomIssueTracker extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_service_custom_issue_tracker',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.5.0',
+        providerVersion: '16.6.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,

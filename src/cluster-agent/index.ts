@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/cluster_agent
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/cluster_agent
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface ClusterAgentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/cluster_agent#id ClusterAgent#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/cluster_agent#id ClusterAgent#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +22,19 @@ export interface ClusterAgentConfig extends cdktf.TerraformMetaArguments {
   /**
   * The Name of the agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/cluster_agent#name ClusterAgent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/cluster_agent#name ClusterAgent#name}
   */
   readonly name: string;
   /**
   * ID or full path of the project maintained by the authenticated user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/cluster_agent#project ClusterAgent#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/cluster_agent#project ClusterAgent#project}
   */
   readonly project: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/cluster_agent gitlab_cluster_agent}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/cluster_agent gitlab_cluster_agent}
 */
 export class ClusterAgent extends cdktf.TerraformResource {
 
@@ -50,7 +50,7 @@ export class ClusterAgent extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ClusterAgent resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ClusterAgent to import
-  * @param importFromId The id of the existing ClusterAgent that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/cluster_agent#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ClusterAgent that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/cluster_agent#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ClusterAgent to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +62,7 @@ export class ClusterAgent extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/cluster_agent gitlab_cluster_agent} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/cluster_agent gitlab_cluster_agent} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +73,7 @@ export class ClusterAgent extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_cluster_agent',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.5.0',
+        providerVersion: '16.6.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,

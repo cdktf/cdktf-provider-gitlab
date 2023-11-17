@@ -99,6 +99,7 @@ The following submodules are available:
 - [projectJobTokenScope](./projectJobTokenScope.csharp.md)
 - [projectLabel](./projectLabel.csharp.md)
 - [projectLevelMrApprovals](./projectLevelMrApprovals.csharp.md)
+- [projectLevelNotifications](./projectLevelNotifications.csharp.md)
 - [projectMembership](./projectMembership.csharp.md)
 - [projectMilestone](./projectMilestone.csharp.md)
 - [projectMirror](./projectMirror.csharp.md)

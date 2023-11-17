@@ -62,6 +62,7 @@ Object.defineProperty(exports, 'projectIssueBoard', { get: function () { return 
 Object.defineProperty(exports, 'projectJobTokenScope', { get: function () { return require('./project-job-token-scope'); } });
 Object.defineProperty(exports, 'projectLabel', { get: function () { return require('./project-label'); } });
 Object.defineProperty(exports, 'projectLevelMrApprovals', { get: function () { return require('./project-level-mr-approvals'); } });
+Object.defineProperty(exports, 'projectLevelNotifications', { get: function () { return require('./project-level-notifications'); } });
 Object.defineProperty(exports, 'projectMembership', { get: function () { return require('./project-membership'); } });
 Object.defineProperty(exports, 'projectMilestone', { get: function () { return require('./project-milestone'); } });
 Object.defineProperty(exports, 'projectMirror', { get: function () { return require('./project-mirror'); } });

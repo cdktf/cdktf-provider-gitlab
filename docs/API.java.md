@@ -99,6 +99,7 @@ The following submodules are available:
 - [projectJobTokenScope](./projectJobTokenScope.java.md)
 - [projectLabel](./projectLabel.java.md)
 - [projectLevelMrApprovals](./projectLevelMrApprovals.java.md)
+- [projectLevelNotifications](./projectLevelNotifications.java.md)
 - [projectMembership](./projectMembership.java.md)
 - [projectMilestone](./projectMilestone.java.md)
 - [projectMirror](./projectMirror.java.md)
