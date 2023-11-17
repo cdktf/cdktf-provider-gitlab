@@ -1,3 +1,3 @@
 # `gitlab_service_microsoft_teams`
 
-Refer to the Terraform Registory for docs: [`gitlab_service_microsoft_teams`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/service_microsoft_teams).
+Refer to the Terraform Registory for docs: [`gitlab_service_microsoft_teams`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/service_microsoft_teams).

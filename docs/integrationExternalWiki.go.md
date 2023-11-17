@@ -1,6 +1,6 @@
 # `gitlab_integration_external_wiki`
 
-Refer to the Terraform Registory for docs: [`gitlab_integration_external_wiki`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_external_wiki).
+Refer to the Terraform Registory for docs: [`gitlab_integration_external_wiki`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/integration_external_wiki).
 
 # `integrationExternalWiki` Submodule <a name="`integrationExternalWiki` Submodule" id="@cdktf/provider-gitlab.integrationExternalWiki"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`gitlab_integration_external_wiki`](
 
 ### IntegrationExternalWiki <a name="IntegrationExternalWiki" id="@cdktf/provider-gitlab.integrationExternalWiki.IntegrationExternalWiki"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_external_wiki gitlab_integration_external_wiki}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/integration_external_wiki gitlab_integration_external_wiki}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.integrationExternalWiki.IntegrationExternalWiki.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/integrationexternalwiki"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationexternalwiki"
 
 integrationexternalwiki.NewIntegrationExternalWiki(scope Construct, id *string, config IntegrationExternalWikiConfig) IntegrationExternalWiki
 ```
@@ -339,7 +339,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.integrationExternalWiki.IntegrationExternalWiki.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/integrationexternalwiki"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationexternalwiki"
 
 integrationexternalwiki.IntegrationExternalWiki_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.integrationExternalWiki.IntegrationExternalWiki.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/integrationexternalwiki"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationexternalwiki"
 
 integrationexternalwiki.IntegrationExternalWiki_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ integrationexternalwiki.IntegrationExternalWiki_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.integrationExternalWiki.IntegrationExternalWiki.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/integrationexternalwiki"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationexternalwiki"
 
 integrationexternalwiki.IntegrationExternalWiki_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ integrationexternalwiki.IntegrationExternalWiki_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.integrationExternalWiki.IntegrationExternalWiki.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/integrationexternalwiki"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationexternalwiki"
 
 integrationexternalwiki.IntegrationExternalWiki_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -428,7 +428,7 @@ The construct id used in the generated config for the IntegrationExternalWiki to
 
 The id of the existing IntegrationExternalWiki that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_external_wiki#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/integration_external_wiki#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -749,7 +749,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.integrationExternalWiki.IntegrationExternalWikiConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/integrationexternalwiki"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationexternalwiki"
 
 &integrationexternalwiki.IntegrationExternalWikiConfig {
 	Connection: interface{},
@@ -778,7 +778,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/integrationexternal
 | <code><a href="#@cdktf/provider-gitlab.integrationExternalWiki.IntegrationExternalWikiConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationExternalWiki.IntegrationExternalWikiConfig.property.externalWikiUrl">ExternalWikiUrl</a></code> | <code>*string</code> | The URL of the external wiki. |
 | <code><a href="#@cdktf/provider-gitlab.integrationExternalWiki.IntegrationExternalWikiConfig.property.project">Project</a></code> | <code>*string</code> | ID of the project you want to activate integration on. |
-| <code><a href="#@cdktf/provider-gitlab.integrationExternalWiki.IntegrationExternalWikiConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_external_wiki#id IntegrationExternalWiki#id}. |
+| <code><a href="#@cdktf/provider-gitlab.integrationExternalWiki.IntegrationExternalWikiConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/integration_external_wiki#id IntegrationExternalWiki#id}. |
 
 ---
 
@@ -862,7 +862,7 @@ ExternalWikiUrl *string
 
 The URL of the external wiki.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_external_wiki#external_wiki_url IntegrationExternalWiki#external_wiki_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/integration_external_wiki#external_wiki_url IntegrationExternalWiki#external_wiki_url}
 
 ---
 
@@ -876,7 +876,7 @@ Project *string
 
 ID of the project you want to activate integration on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_external_wiki#project IntegrationExternalWiki#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/integration_external_wiki#project IntegrationExternalWiki#project}
 
 ---
 
@@ -888,7 +888,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/integration_external_wiki#id IntegrationExternalWiki#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/integration_external_wiki#id IntegrationExternalWiki#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

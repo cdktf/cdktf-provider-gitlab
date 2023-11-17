@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/pipeline_schedule
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/pipeline_schedule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +10,29 @@ export interface PipelineScheduleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The activation of pipeline schedule. If false is set, the pipeline schedule will deactivated initially.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/pipeline_schedule#active PipelineSchedule#active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/pipeline_schedule#active PipelineSchedule#active}
   */
   readonly active?: boolean | cdktf.IResolvable;
   /**
   * The cron (e.g. `0 1 * * *`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/pipeline_schedule#cron PipelineSchedule#cron}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/pipeline_schedule#cron PipelineSchedule#cron}
   */
   readonly cron: string;
   /**
   * The timezone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/pipeline_schedule#cron_timezone PipelineSchedule#cron_timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/pipeline_schedule#cron_timezone PipelineSchedule#cron_timezone}
   */
   readonly cronTimezone?: string;
   /**
   * The description of the pipeline schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/pipeline_schedule#description PipelineSchedule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/pipeline_schedule#description PipelineSchedule#description}
   */
   readonly description: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/pipeline_schedule#id PipelineSchedule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/pipeline_schedule#id PipelineSchedule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,19 +41,25 @@ export interface PipelineScheduleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name or id of the project to add the schedule to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/pipeline_schedule#project PipelineSchedule#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/pipeline_schedule#project PipelineSchedule#project}
   */
   readonly project: string;
   /**
   * The branch/tag name to be triggered.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/pipeline_schedule#ref PipelineSchedule#ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/pipeline_schedule#ref PipelineSchedule#ref}
   */
   readonly ref: string;
+  /**
+  * When set to `true`, the user represented by the token running Terraform will take ownership of the scheduled pipeline prior to editing it. This can help when managing scheduled pipeline drift when other users are making changes outside Terraform.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/pipeline_schedule#take_ownership PipelineSchedule#take_ownership}
+  */
+  readonly takeOwnership?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule}
 */
 export class PipelineSchedule extends cdktf.TerraformResource {
 
@@ -74,7 +75,7 @@ export class PipelineSchedule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a PipelineSchedule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PipelineSchedule to import
-  * @param importFromId The id of the existing PipelineSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/pipeline_schedule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PipelineSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/pipeline_schedule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PipelineSchedule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -86,7 +87,7 @@ export class PipelineSchedule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +98,7 @@ export class PipelineSchedule extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_pipeline_schedule',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.5.0',
+        providerVersion: '16.6.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,
@@ -115,6 +116,7 @@ export class PipelineSchedule extends cdktf.TerraformResource {
     this._id = config.id;
     this._project = config.project;
     this._ref = config.ref;
+    this._takeOwnership = config.takeOwnership;
   }
 
   // ==========
@@ -195,6 +197,11 @@ export class PipelineSchedule extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // owner - computed: true, optional: false, required: false
+  public get owner() {
+    return this.getNumberAttribute('owner');
+  }
+
   // pipeline_schedule_id - computed: true, optional: false, required: false
   public get pipelineScheduleId() {
     return this.getNumberAttribute('pipeline_schedule_id');
@@ -226,6 +233,22 @@ export class PipelineSchedule extends cdktf.TerraformResource {
     return this._ref;
   }
 
+  // take_ownership - computed: false, optional: true, required: false
+  private _takeOwnership?: boolean | cdktf.IResolvable; 
+  public get takeOwnership() {
+    return this.getBooleanAttribute('take_ownership');
+  }
+  public set takeOwnership(value: boolean | cdktf.IResolvable) {
+    this._takeOwnership = value;
+  }
+  public resetTakeOwnership() {
+    this._takeOwnership = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get takeOwnershipInput() {
+    return this._takeOwnership;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -239,6 +262,7 @@ export class PipelineSchedule extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       project: cdktf.stringToTerraform(this._project),
       ref: cdktf.stringToTerraform(this._ref),
+      take_ownership: cdktf.booleanToTerraform(this._takeOwnership),
     };
   }
 }

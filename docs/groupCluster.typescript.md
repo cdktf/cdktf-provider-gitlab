@@ -1,6 +1,6 @@
 # `gitlab_group_cluster`
 
-Refer to the Terraform Registory for docs: [`gitlab_group_cluster`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_cluster).
+Refer to the Terraform Registory for docs: [`gitlab_group_cluster`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster).
 
 # `groupCluster` Submodule <a name="`groupCluster` Submodule" id="@cdktf/provider-gitlab.groupCluster"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_group_cluster`](https://regi
 
 ### GroupCluster <a name="GroupCluster" id="@cdktf/provider-gitlab.groupCluster.GroupCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_cluster gitlab_group_cluster}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster gitlab_group_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupCluster.GroupCluster.Initializer"></a>
 
@@ -477,7 +477,7 @@ The construct id used in the generated config for the GroupCluster to import.
 
 The id of the existing GroupCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1008,7 +1008,7 @@ const groupClusterConfig: groupCluster.GroupClusterConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.domain">domain</a></code> | <code>string</code> | The base domain of the cluster. |
 | <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Determines if cluster is active or not. Defaults to `true`. This attribute cannot be read. |
 | <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.environmentScope">environmentScope</a></code> | <code>string</code> | The associated environment to the cluster. Defaults to `*`. |
-| <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_cluster#id GroupCluster#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster#id GroupCluster#id}. |
 | <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.kubernetesAuthorizationType">kubernetesAuthorizationType</a></code> | <code>string</code> | The cluster authorization type. Valid values are `rbac`, `abac`, `unknown_authorization`. Defaults to `rbac`. |
 | <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.kubernetesCaCert">kubernetesCaCert</a></code> | <code>string</code> | TLS certificate (needed if API is using a self-signed TLS certificate). |
 | <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.managed">managed</a></code> | <code>boolean \| cdktf.IResolvable</code> | Determines if cluster is managed by gitlab or not. Defaults to `true`. This attribute cannot be read. |
@@ -1096,7 +1096,7 @@ public readonly group: string;
 
 The id of the group to add the cluster to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_cluster#group GroupCluster#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster#group GroupCluster#group}
 
 ---
 
@@ -1110,7 +1110,7 @@ public readonly kubernetesApiUrl: string;
 
 The URL to access the Kubernetes API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_cluster#kubernetes_api_url GroupCluster#kubernetes_api_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster#kubernetes_api_url GroupCluster#kubernetes_api_url}
 
 ---
 
@@ -1124,7 +1124,7 @@ public readonly kubernetesToken: string;
 
 The token to authenticate against Kubernetes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_cluster#kubernetes_token GroupCluster#kubernetes_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster#kubernetes_token GroupCluster#kubernetes_token}
 
 ---
 
@@ -1138,7 +1138,7 @@ public readonly name: string;
 
 The name of cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_cluster#name GroupCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster#name GroupCluster#name}
 
 ---
 
@@ -1152,7 +1152,7 @@ public readonly domain: string;
 
 The base domain of the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_cluster#domain GroupCluster#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster#domain GroupCluster#domain}
 
 ---
 
@@ -1166,7 +1166,7 @@ public readonly enabled: boolean | IResolvable;
 
 Determines if cluster is active or not. Defaults to `true`. This attribute cannot be read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_cluster#enabled GroupCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster#enabled GroupCluster#enabled}
 
 ---
 
@@ -1180,7 +1180,7 @@ public readonly environmentScope: string;
 
 The associated environment to the cluster. Defaults to `*`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_cluster#environment_scope GroupCluster#environment_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster#environment_scope GroupCluster#environment_scope}
 
 ---
 
@@ -1192,7 +1192,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_cluster#id GroupCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster#id GroupCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1209,7 +1209,7 @@ public readonly kubernetesAuthorizationType: string;
 
 The cluster authorization type. Valid values are `rbac`, `abac`, `unknown_authorization`. Defaults to `rbac`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_cluster#kubernetes_authorization_type GroupCluster#kubernetes_authorization_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster#kubernetes_authorization_type GroupCluster#kubernetes_authorization_type}
 
 ---
 
@@ -1223,7 +1223,7 @@ public readonly kubernetesCaCert: string;
 
 TLS certificate (needed if API is using a self-signed TLS certificate).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_cluster#kubernetes_ca_cert GroupCluster#kubernetes_ca_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster#kubernetes_ca_cert GroupCluster#kubernetes_ca_cert}
 
 ---
 
@@ -1237,7 +1237,7 @@ public readonly managed: boolean | IResolvable;
 
 Determines if cluster is managed by gitlab or not. Defaults to `true`. This attribute cannot be read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_cluster#managed GroupCluster#managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster#managed GroupCluster#managed}
 
 ---
 
@@ -1251,7 +1251,7 @@ public readonly managementProjectId: string;
 
 The ID of the management project for the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_cluster#management_project_id GroupCluster#management_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster#management_project_id GroupCluster#management_project_id}
 
 ---
 

@@ -99,6 +99,7 @@ The following submodules are available:
 - [projectJobTokenScope](./projectJobTokenScope.typescript.md)
 - [projectLabel](./projectLabel.typescript.md)
 - [projectLevelMrApprovals](./projectLevelMrApprovals.typescript.md)
+- [projectLevelNotifications](./projectLevelNotifications.typescript.md)
 - [projectMembership](./projectMembership.typescript.md)
 - [projectMilestone](./projectMilestone.typescript.md)
 - [projectMirror](./projectMirror.typescript.md)

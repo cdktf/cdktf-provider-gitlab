@@ -1,6 +1,6 @@
 # `gitlab_group`
 
-Refer to the Terraform Registory for docs: [`gitlab_group`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group).
+Refer to the Terraform Registory for docs: [`gitlab_group`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group).
 
 # `group` Submodule <a name="`group` Submodule" id="@cdktf/provider-gitlab.group"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_group`](https://registry.ter
 
 ### Group <a name="Group" id="@cdktf/provider-gitlab.group.Group"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group gitlab_group}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group gitlab_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.group.Group.Initializer"></a>
 
@@ -42,6 +42,7 @@ group.Group(
   parent_id: typing.Union[int, float] = None,
   prevent_forking_outside_group: typing.Union[bool, IResolvable] = None,
   project_creation_level: str = None,
+  push_rules: GroupPushRules = None,
   request_access_enabled: typing.Union[bool, IResolvable] = None,
   require_two_factor_authentication: typing.Union[bool, IResolvable] = None,
   shared_runners_minutes_limit: typing.Union[int, float] = None,
@@ -74,7 +75,7 @@ group.Group(
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.description">description</a></code> | <code>str</code> | The group's description. |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.emailsDisabled">emails_disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable email notifications. |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.extraSharedRunnersMinutesLimit">extra_shared_runners_minutes_limit</a></code> | <code>typing.Union[int, float]</code> | Can be set by administrators only. Additional CI/CD minutes for this group. |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#id Group#id}. |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#id Group#id}. |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.ipRestrictionRanges">ip_restriction_ranges</a></code> | <code>typing.List[str]</code> | A list of IP addresses or subnet masks to restrict group access. |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.lfsEnabled">lfs_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable/disable Large File Storage (LFS) for the projects in this group. |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.membershipLock">membership_lock</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Users cannot be added to projects in this group. |
@@ -82,6 +83,7 @@ group.Group(
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.parentId">parent_id</a></code> | <code>typing.Union[int, float]</code> | Id of the parent group (creates a nested group). |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.preventForkingOutsideGroup">prevent_forking_outside_group</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Defaults to false. When enabled, users can not fork projects from this group to external namespaces. |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.projectCreationLevel">project_creation_level</a></code> | <code>str</code> | Determine if developers can create projects in the group. Valid values are: `noone`, `maintainer`, `developer`. |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.pushRules">push_rules</a></code> | <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules">GroupPushRules</a></code> | push_rules block. |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.requestAccessEnabled">request_access_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow users to request member access. |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.requireTwoFactorAuthentication">require_two_factor_authentication</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Require all users in this group to setup Two-factor authentication. |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.sharedRunnersMinutesLimit">shared_runners_minutes_limit</a></code> | <code>typing.Union[int, float]</code> | Can be set by administrators only. |
@@ -160,7 +162,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#name Group#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#name Group#name}
 
 ---
 
@@ -170,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The path of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#path Group#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#path Group#path}
 
 ---
 
@@ -180,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Default to Auto DevOps pipeline for all projects within this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#auto_devops_enabled Group#auto_devops_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#auto_devops_enabled Group#auto_devops_enabled}
 
 ---
 
@@ -190,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 A local path to the avatar image to upload. **Note**: not available for imported resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#avatar Group#avatar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#avatar Group#avatar}
 
 ---
 
@@ -202,7 +204,7 @@ The hash of the avatar image.
 
 Use `filesha256("path/to/avatar.png")` whenever possible. **Note**: this is used to trigger an update of the avatar. If it's not given, but an avatar is given, the avatar will be updated each time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#avatar_hash Group#avatar_hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#avatar_hash Group#avatar_hash}
 
 ---
 
@@ -212,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 See https://docs.gitlab.com/ee/api/groups.html#options-for-default_branch_protection. Valid values are: `0`, `1`, `2`, `3`, `4`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#default_branch_protection Group#default_branch_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#default_branch_protection Group#default_branch_protection}
 
 ---
 
@@ -222,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The group's description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#description Group#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#description Group#description}
 
 ---
 
@@ -232,7 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Disable email notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#emails_disabled Group#emails_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#emails_disabled Group#emails_disabled}
 
 ---
 
@@ -242,7 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Can be set by administrators only. Additional CI/CD minutes for this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#extra_shared_runners_minutes_limit Group#extra_shared_runners_minutes_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#extra_shared_runners_minutes_limit Group#extra_shared_runners_minutes_limit}
 
 ---
 
@@ -250,7 +252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#id Group#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#id Group#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -265,7 +267,7 @@ A list of IP addresses or subnet masks to restrict group access.
 
 Will be concatenated together into a comma separated string. Only allowed on top level groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#ip_restriction_ranges Group#ip_restriction_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#ip_restriction_ranges Group#ip_restriction_ranges}
 
 ---
 
@@ -275,7 +277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable/disable Large File Storage (LFS) for the projects in this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#lfs_enabled Group#lfs_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#lfs_enabled Group#lfs_enabled}
 
 ---
 
@@ -285,7 +287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Users cannot be added to projects in this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#membership_lock Group#membership_lock}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#membership_lock Group#membership_lock}
 
 ---
 
@@ -295,7 +297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Disable the capability of a group from getting mentioned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#mentions_disabled Group#mentions_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#mentions_disabled Group#mentions_disabled}
 
 ---
 
@@ -305,7 +307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Id of the parent group (creates a nested group).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#parent_id Group#parent_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#parent_id Group#parent_id}
 
 ---
 
@@ -315,7 +317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Defaults to false. When enabled, users can not fork projects from this group to external namespaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#prevent_forking_outside_group Group#prevent_forking_outside_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#prevent_forking_outside_group Group#prevent_forking_outside_group}
 
 ---
 
@@ -325,7 +327,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Determine if developers can create projects in the group. Valid values are: `noone`, `maintainer`, `developer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#project_creation_level Group#project_creation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#project_creation_level Group#project_creation_level}
+
+---
+
+##### `push_rules`<sup>Optional</sup> <a name="push_rules" id="@cdktf/provider-gitlab.group.Group.Initializer.parameter.pushRules"></a>
+
+- *Type:* <a href="#@cdktf/provider-gitlab.group.GroupPushRules">GroupPushRules</a>
+
+push_rules block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#push_rules Group#push_rules}
 
 ---
 
@@ -335,7 +347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Allow users to request member access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#request_access_enabled Group#request_access_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#request_access_enabled Group#request_access_enabled}
 
 ---
 
@@ -345,7 +357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Require all users in this group to setup Two-factor authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#require_two_factor_authentication Group#require_two_factor_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#require_two_factor_authentication Group#require_two_factor_authentication}
 
 ---
 
@@ -357,7 +369,7 @@ Can be set by administrators only.
 
 Maximum number of monthly CI/CD minutes for this group. Can be nil (default; inherit system default), 0 (unlimited), or > 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#shared_runners_minutes_limit Group#shared_runners_minutes_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#shared_runners_minutes_limit Group#shared_runners_minutes_limit}
 
 ---
 
@@ -367,7 +379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable or disable shared runners for a group’s subgroups and projects. Valid values are: `enabled`, `disabled_and_overridable`, `disabled_and_unoverridable`, `disabled_with_override`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#shared_runners_setting Group#shared_runners_setting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#shared_runners_setting Group#shared_runners_setting}
 
 ---
 
@@ -377,7 +389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Prevent sharing a project with another group within this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#share_with_group_lock Group#share_with_group_lock}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#share_with_group_lock Group#share_with_group_lock}
 
 ---
 
@@ -387,7 +399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Allowed to create subgroups. Valid values are: `owner`, `maintainer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#subgroup_creation_level Group#subgroup_creation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#subgroup_creation_level Group#subgroup_creation_level}
 
 ---
 
@@ -397,7 +409,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Defaults to 48. Time before Two-factor authentication is enforced (in hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#two_factor_grace_period Group#two_factor_grace_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#two_factor_grace_period Group#two_factor_grace_period}
 
 ---
 
@@ -407,7 +419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The group's visibility. Can be `private`, `internal`, or `public`. Valid values are: `private`, `internal`, `public`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#visibility_level Group#visibility_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#visibility_level Group#visibility_level}
 
 ---
 
@@ -417,7 +429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The group's wiki access level. Only available on Premium and Ultimate plans. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#wiki_access_level Group#wiki_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#wiki_access_level Group#wiki_access_level}
 
 ---
 
@@ -444,6 +456,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.group.Group.importFrom">import_from</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.putPushRules">put_push_rules</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.resetAutoDevopsEnabled">reset_auto_devops_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.resetAvatar">reset_avatar</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.resetAvatarHash">reset_avatar_hash</a></code> | *No description.* |
@@ -459,6 +472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.group.Group.resetParentId">reset_parent_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.resetPreventForkingOutsideGroup">reset_prevent_forking_outside_group</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.resetProjectCreationLevel">reset_project_creation_level</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.resetPushRules">reset_push_rules</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.resetRequestAccessEnabled">reset_request_access_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.resetRequireTwoFactorAuthentication">reset_require_two_factor_authentication</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.resetSharedRunnersMinutesLimit">reset_shared_runners_minutes_limit</a></code> | *No description.* |
@@ -746,6 +760,136 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
+##### `put_push_rules` <a name="put_push_rules" id="@cdktf/provider-gitlab.group.Group.putPushRules"></a>
+
+```python
+def put_push_rules(
+  author_email_regex: str = None,
+  branch_name_regex: str = None,
+  commit_committer_check: typing.Union[bool, IResolvable] = None,
+  commit_message_negative_regex: str = None,
+  commit_message_regex: str = None,
+  deny_delete_tag: typing.Union[bool, IResolvable] = None,
+  file_name_regex: str = None,
+  max_file_size: typing.Union[int, float] = None,
+  member_check: typing.Union[bool, IResolvable] = None,
+  prevent_secrets: typing.Union[bool, IResolvable] = None,
+  reject_unsigned_commits: typing.Union[bool, IResolvable] = None
+) -> None
+```
+
+###### `author_email_regex`<sup>Optional</sup> <a name="author_email_regex" id="@cdktf/provider-gitlab.group.Group.putPushRules.parameter.authorEmailRegex"></a>
+
+- *Type:* str
+
+All commit author emails must match this regex, e.g. `@my-company.com$`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#author_email_regex Group#author_email_regex}
+
+---
+
+###### `branch_name_regex`<sup>Optional</sup> <a name="branch_name_regex" id="@cdktf/provider-gitlab.group.Group.putPushRules.parameter.branchNameRegex"></a>
+
+- *Type:* str
+
+All branch names must match this regex, e.g. `(feature|hotfix)\/*`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#branch_name_regex Group#branch_name_regex}
+
+---
+
+###### `commit_committer_check`<sup>Optional</sup> <a name="commit_committer_check" id="@cdktf/provider-gitlab.group.Group.putPushRules.parameter.commitCommitterCheck"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Only commits pushed using verified emails are allowed.
+
+**Note** This attribute is only supported in GitLab versions >= 16.4.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#commit_committer_check Group#commit_committer_check}
+
+---
+
+###### `commit_message_negative_regex`<sup>Optional</sup> <a name="commit_message_negative_regex" id="@cdktf/provider-gitlab.group.Group.putPushRules.parameter.commitMessageNegativeRegex"></a>
+
+- *Type:* str
+
+No commit message is allowed to match this regex, for example `ssh\:\/\/`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#commit_message_negative_regex Group#commit_message_negative_regex}
+
+---
+
+###### `commit_message_regex`<sup>Optional</sup> <a name="commit_message_regex" id="@cdktf/provider-gitlab.group.Group.putPushRules.parameter.commitMessageRegex"></a>
+
+- *Type:* str
+
+All commit messages must match this regex, e.g. `Fixed \d+\..*`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#commit_message_regex Group#commit_message_regex}
+
+---
+
+###### `deny_delete_tag`<sup>Optional</sup> <a name="deny_delete_tag" id="@cdktf/provider-gitlab.group.Group.putPushRules.parameter.denyDeleteTag"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Deny deleting a tag.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#deny_delete_tag Group#deny_delete_tag}
+
+---
+
+###### `file_name_regex`<sup>Optional</sup> <a name="file_name_regex" id="@cdktf/provider-gitlab.group.Group.putPushRules.parameter.fileNameRegex"></a>
+
+- *Type:* str
+
+Filenames matching the regular expression provided in this attribute are not allowed, for example, `(jar|exe)$`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#file_name_regex Group#file_name_regex}
+
+---
+
+###### `max_file_size`<sup>Optional</sup> <a name="max_file_size" id="@cdktf/provider-gitlab.group.Group.putPushRules.parameter.maxFileSize"></a>
+
+- *Type:* typing.Union[int, float]
+
+Maximum file size (MB) allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#max_file_size Group#max_file_size}
+
+---
+
+###### `member_check`<sup>Optional</sup> <a name="member_check" id="@cdktf/provider-gitlab.group.Group.putPushRules.parameter.memberCheck"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Allows only GitLab users to author commits.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#member_check Group#member_check}
+
+---
+
+###### `prevent_secrets`<sup>Optional</sup> <a name="prevent_secrets" id="@cdktf/provider-gitlab.group.Group.putPushRules.parameter.preventSecrets"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+GitLab will reject any files that are likely to contain secrets.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#prevent_secrets Group#prevent_secrets}
+
+---
+
+###### `reject_unsigned_commits`<sup>Optional</sup> <a name="reject_unsigned_commits" id="@cdktf/provider-gitlab.group.Group.putPushRules.parameter.rejectUnsignedCommits"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Only commits signed through GPG are allowed.  **Note** This attribute is only supported in GitLab versions >= 16.4.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#reject_unsigned_commits Group#reject_unsigned_commits}
+
+---
+
 ##### `reset_auto_devops_enabled` <a name="reset_auto_devops_enabled" id="@cdktf/provider-gitlab.group.Group.resetAutoDevopsEnabled"></a>
 
 ```python
@@ -834,6 +978,12 @@ def reset_prevent_forking_outside_group() -> None
 
 ```python
 def reset_project_creation_level() -> None
+```
+
+##### `reset_push_rules` <a name="reset_push_rules" id="@cdktf/provider-gitlab.group.Group.resetPushRules"></a>
+
+```python
+def reset_push_rules() -> None
 ```
 
 ##### `reset_request_access_enabled` <a name="reset_request_access_enabled" id="@cdktf/provider-gitlab.group.Group.resetRequestAccessEnabled"></a>
@@ -1004,7 +1154,7 @@ The construct id used in the generated config for the Group to import.
 
 The id of the existing Group that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1037,6 +1187,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.avatarUrl">avatar_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.fullName">full_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.fullPath">full_path</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.property.pushRules">push_rules</a></code> | <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference">GroupPushRulesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.runnersToken">runners_token</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.webUrl">web_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.autoDevopsEnabledInput">auto_devops_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -1056,6 +1207,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.preventForkingOutsideGroupInput">prevent_forking_outside_group_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.projectCreationLevelInput">project_creation_level_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.property.pushRulesInput">push_rules_input</a></code> | <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules">GroupPushRules</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.requestAccessEnabledInput">request_access_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.requireTwoFactorAuthenticationInput">require_two_factor_authentication_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.sharedRunnersMinutesLimitInput">shared_runners_minutes_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -1266,6 +1418,16 @@ full_path: str
 
 ---
 
+##### `push_rules`<sup>Required</sup> <a name="push_rules" id="@cdktf/provider-gitlab.group.Group.property.pushRules"></a>
+
+```python
+push_rules: GroupPushRulesOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference">GroupPushRulesOutputReference</a>
+
+---
+
 ##### `runners_token`<sup>Required</sup> <a name="runners_token" id="@cdktf/provider-gitlab.group.Group.property.runnersToken"></a>
 
 ```python
@@ -1453,6 +1615,16 @@ project_creation_level_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `push_rules_input`<sup>Optional</sup> <a name="push_rules_input" id="@cdktf/provider-gitlab.group.Group.property.pushRulesInput"></a>
+
+```python
+push_rules_input: GroupPushRules
+```
+
+- *Type:* <a href="#@cdktf/provider-gitlab.group.GroupPushRules">GroupPushRules</a>
 
 ---
 
@@ -1858,6 +2030,7 @@ group.GroupConfig(
   parent_id: typing.Union[int, float] = None,
   prevent_forking_outside_group: typing.Union[bool, IResolvable] = None,
   project_creation_level: str = None,
+  push_rules: GroupPushRules = None,
   request_access_enabled: typing.Union[bool, IResolvable] = None,
   require_two_factor_authentication: typing.Union[bool, IResolvable] = None,
   shared_runners_minutes_limit: typing.Union[int, float] = None,
@@ -1890,7 +2063,7 @@ group.GroupConfig(
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.description">description</a></code> | <code>str</code> | The group's description. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.emailsDisabled">emails_disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable email notifications. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.extraSharedRunnersMinutesLimit">extra_shared_runners_minutes_limit</a></code> | <code>typing.Union[int, float]</code> | Can be set by administrators only. Additional CI/CD minutes for this group. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#id Group#id}. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#id Group#id}. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.ipRestrictionRanges">ip_restriction_ranges</a></code> | <code>typing.List[str]</code> | A list of IP addresses or subnet masks to restrict group access. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.lfsEnabled">lfs_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable/disable Large File Storage (LFS) for the projects in this group. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.membershipLock">membership_lock</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Users cannot be added to projects in this group. |
@@ -1898,6 +2071,7 @@ group.GroupConfig(
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.parentId">parent_id</a></code> | <code>typing.Union[int, float]</code> | Id of the parent group (creates a nested group). |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.preventForkingOutsideGroup">prevent_forking_outside_group</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Defaults to false. When enabled, users can not fork projects from this group to external namespaces. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.projectCreationLevel">project_creation_level</a></code> | <code>str</code> | Determine if developers can create projects in the group. Valid values are: `noone`, `maintainer`, `developer`. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.pushRules">push_rules</a></code> | <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules">GroupPushRules</a></code> | push_rules block. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.requestAccessEnabled">request_access_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow users to request member access. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.requireTwoFactorAuthentication">require_two_factor_authentication</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Require all users in this group to setup Two-factor authentication. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.sharedRunnersMinutesLimit">shared_runners_minutes_limit</a></code> | <code>typing.Union[int, float]</code> | Can be set by administrators only. |
@@ -1990,7 +2164,7 @@ name: str
 
 The name of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#name Group#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#name Group#name}
 
 ---
 
@@ -2004,7 +2178,7 @@ path: str
 
 The path of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#path Group#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#path Group#path}
 
 ---
 
@@ -2018,7 +2192,7 @@ auto_devops_enabled: typing.Union[bool, IResolvable]
 
 Default to Auto DevOps pipeline for all projects within this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#auto_devops_enabled Group#auto_devops_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#auto_devops_enabled Group#auto_devops_enabled}
 
 ---
 
@@ -2032,7 +2206,7 @@ avatar: str
 
 A local path to the avatar image to upload. **Note**: not available for imported resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#avatar Group#avatar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#avatar Group#avatar}
 
 ---
 
@@ -2048,7 +2222,7 @@ The hash of the avatar image.
 
 Use `filesha256("path/to/avatar.png")` whenever possible. **Note**: this is used to trigger an update of the avatar. If it's not given, but an avatar is given, the avatar will be updated each time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#avatar_hash Group#avatar_hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#avatar_hash Group#avatar_hash}
 
 ---
 
@@ -2062,7 +2236,7 @@ default_branch_protection: typing.Union[int, float]
 
 See https://docs.gitlab.com/ee/api/groups.html#options-for-default_branch_protection. Valid values are: `0`, `1`, `2`, `3`, `4`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#default_branch_protection Group#default_branch_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#default_branch_protection Group#default_branch_protection}
 
 ---
 
@@ -2076,7 +2250,7 @@ description: str
 
 The group's description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#description Group#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#description Group#description}
 
 ---
 
@@ -2090,7 +2264,7 @@ emails_disabled: typing.Union[bool, IResolvable]
 
 Disable email notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#emails_disabled Group#emails_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#emails_disabled Group#emails_disabled}
 
 ---
 
@@ -2104,7 +2278,7 @@ extra_shared_runners_minutes_limit: typing.Union[int, float]
 
 Can be set by administrators only. Additional CI/CD minutes for this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#extra_shared_runners_minutes_limit Group#extra_shared_runners_minutes_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#extra_shared_runners_minutes_limit Group#extra_shared_runners_minutes_limit}
 
 ---
 
@@ -2116,7 +2290,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#id Group#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#id Group#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2135,7 +2309,7 @@ A list of IP addresses or subnet masks to restrict group access.
 
 Will be concatenated together into a comma separated string. Only allowed on top level groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#ip_restriction_ranges Group#ip_restriction_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#ip_restriction_ranges Group#ip_restriction_ranges}
 
 ---
 
@@ -2149,7 +2323,7 @@ lfs_enabled: typing.Union[bool, IResolvable]
 
 Enable/disable Large File Storage (LFS) for the projects in this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#lfs_enabled Group#lfs_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#lfs_enabled Group#lfs_enabled}
 
 ---
 
@@ -2163,7 +2337,7 @@ membership_lock: typing.Union[bool, IResolvable]
 
 Users cannot be added to projects in this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#membership_lock Group#membership_lock}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#membership_lock Group#membership_lock}
 
 ---
 
@@ -2177,7 +2351,7 @@ mentions_disabled: typing.Union[bool, IResolvable]
 
 Disable the capability of a group from getting mentioned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#mentions_disabled Group#mentions_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#mentions_disabled Group#mentions_disabled}
 
 ---
 
@@ -2191,7 +2365,7 @@ parent_id: typing.Union[int, float]
 
 Id of the parent group (creates a nested group).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#parent_id Group#parent_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#parent_id Group#parent_id}
 
 ---
 
@@ -2205,7 +2379,7 @@ prevent_forking_outside_group: typing.Union[bool, IResolvable]
 
 Defaults to false. When enabled, users can not fork projects from this group to external namespaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#prevent_forking_outside_group Group#prevent_forking_outside_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#prevent_forking_outside_group Group#prevent_forking_outside_group}
 
 ---
 
@@ -2219,7 +2393,21 @@ project_creation_level: str
 
 Determine if developers can create projects in the group. Valid values are: `noone`, `maintainer`, `developer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#project_creation_level Group#project_creation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#project_creation_level Group#project_creation_level}
+
+---
+
+##### `push_rules`<sup>Optional</sup> <a name="push_rules" id="@cdktf/provider-gitlab.group.GroupConfig.property.pushRules"></a>
+
+```python
+push_rules: GroupPushRules
+```
+
+- *Type:* <a href="#@cdktf/provider-gitlab.group.GroupPushRules">GroupPushRules</a>
+
+push_rules block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#push_rules Group#push_rules}
 
 ---
 
@@ -2233,7 +2421,7 @@ request_access_enabled: typing.Union[bool, IResolvable]
 
 Allow users to request member access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#request_access_enabled Group#request_access_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#request_access_enabled Group#request_access_enabled}
 
 ---
 
@@ -2247,7 +2435,7 @@ require_two_factor_authentication: typing.Union[bool, IResolvable]
 
 Require all users in this group to setup Two-factor authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#require_two_factor_authentication Group#require_two_factor_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#require_two_factor_authentication Group#require_two_factor_authentication}
 
 ---
 
@@ -2263,7 +2451,7 @@ Can be set by administrators only.
 
 Maximum number of monthly CI/CD minutes for this group. Can be nil (default; inherit system default), 0 (unlimited), or > 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#shared_runners_minutes_limit Group#shared_runners_minutes_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#shared_runners_minutes_limit Group#shared_runners_minutes_limit}
 
 ---
 
@@ -2277,7 +2465,7 @@ shared_runners_setting: str
 
 Enable or disable shared runners for a group’s subgroups and projects. Valid values are: `enabled`, `disabled_and_overridable`, `disabled_and_unoverridable`, `disabled_with_override`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#shared_runners_setting Group#shared_runners_setting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#shared_runners_setting Group#shared_runners_setting}
 
 ---
 
@@ -2291,7 +2479,7 @@ share_with_group_lock: typing.Union[bool, IResolvable]
 
 Prevent sharing a project with another group within this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#share_with_group_lock Group#share_with_group_lock}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#share_with_group_lock Group#share_with_group_lock}
 
 ---
 
@@ -2305,7 +2493,7 @@ subgroup_creation_level: str
 
 Allowed to create subgroups. Valid values are: `owner`, `maintainer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#subgroup_creation_level Group#subgroup_creation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#subgroup_creation_level Group#subgroup_creation_level}
 
 ---
 
@@ -2319,7 +2507,7 @@ two_factor_grace_period: typing.Union[int, float]
 
 Defaults to 48. Time before Two-factor authentication is enforced (in hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#two_factor_grace_period Group#two_factor_grace_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#two_factor_grace_period Group#two_factor_grace_period}
 
 ---
 
@@ -2333,7 +2521,7 @@ visibility_level: str
 
 The group's visibility. Can be `private`, `internal`, or `public`. Valid values are: `private`, `internal`, `public`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#visibility_level Group#visibility_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#visibility_level Group#visibility_level}
 
 ---
 
@@ -2347,7 +2535,797 @@ wiki_access_level: str
 
 The group's wiki access level. Only available on Premium and Ultimate plans. Valid values are `disabled`, `private`, `enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group#wiki_access_level Group#wiki_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#wiki_access_level Group#wiki_access_level}
+
+---
+
+### GroupPushRules <a name="GroupPushRules" id="@cdktf/provider-gitlab.group.GroupPushRules"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.group.GroupPushRules.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_gitlab import group
+
+group.GroupPushRules(
+  author_email_regex: str = None,
+  branch_name_regex: str = None,
+  commit_committer_check: typing.Union[bool, IResolvable] = None,
+  commit_message_negative_regex: str = None,
+  commit_message_regex: str = None,
+  deny_delete_tag: typing.Union[bool, IResolvable] = None,
+  file_name_regex: str = None,
+  max_file_size: typing.Union[int, float] = None,
+  member_check: typing.Union[bool, IResolvable] = None,
+  prevent_secrets: typing.Union[bool, IResolvable] = None,
+  reject_unsigned_commits: typing.Union[bool, IResolvable] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.authorEmailRegex">author_email_regex</a></code> | <code>str</code> | All commit author emails must match this regex, e.g. `@my-company.com$`. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.branchNameRegex">branch_name_regex</a></code> | <code>str</code> | All branch names must match this regex, e.g. `(feature\|hotfix)\/*`. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.commitCommitterCheck">commit_committer_check</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Only commits pushed using verified emails are allowed. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.commitMessageNegativeRegex">commit_message_negative_regex</a></code> | <code>str</code> | No commit message is allowed to match this regex, for example `ssh\:\/\/`. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.commitMessageRegex">commit_message_regex</a></code> | <code>str</code> | All commit messages must match this regex, e.g. `Fixed \d+\..*`. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.denyDeleteTag">deny_delete_tag</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Deny deleting a tag. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.fileNameRegex">file_name_regex</a></code> | <code>str</code> | Filenames matching the regular expression provided in this attribute are not allowed, for example, `(jar\|exe)$`. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.maxFileSize">max_file_size</a></code> | <code>typing.Union[int, float]</code> | Maximum file size (MB) allowed. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.memberCheck">member_check</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allows only GitLab users to author commits. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.preventSecrets">prevent_secrets</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | GitLab will reject any files that are likely to contain secrets. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.rejectUnsignedCommits">reject_unsigned_commits</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Only commits signed through GPG are allowed.  **Note** This attribute is only supported in GitLab versions >= 16.4. |
+
+---
+
+##### `author_email_regex`<sup>Optional</sup> <a name="author_email_regex" id="@cdktf/provider-gitlab.group.GroupPushRules.property.authorEmailRegex"></a>
+
+```python
+author_email_regex: str
+```
+
+- *Type:* str
+
+All commit author emails must match this regex, e.g. `@my-company.com$`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#author_email_regex Group#author_email_regex}
+
+---
+
+##### `branch_name_regex`<sup>Optional</sup> <a name="branch_name_regex" id="@cdktf/provider-gitlab.group.GroupPushRules.property.branchNameRegex"></a>
+
+```python
+branch_name_regex: str
+```
+
+- *Type:* str
+
+All branch names must match this regex, e.g. `(feature|hotfix)\/*`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#branch_name_regex Group#branch_name_regex}
+
+---
+
+##### `commit_committer_check`<sup>Optional</sup> <a name="commit_committer_check" id="@cdktf/provider-gitlab.group.GroupPushRules.property.commitCommitterCheck"></a>
+
+```python
+commit_committer_check: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Only commits pushed using verified emails are allowed.
+
+**Note** This attribute is only supported in GitLab versions >= 16.4.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#commit_committer_check Group#commit_committer_check}
+
+---
+
+##### `commit_message_negative_regex`<sup>Optional</sup> <a name="commit_message_negative_regex" id="@cdktf/provider-gitlab.group.GroupPushRules.property.commitMessageNegativeRegex"></a>
+
+```python
+commit_message_negative_regex: str
+```
+
+- *Type:* str
+
+No commit message is allowed to match this regex, for example `ssh\:\/\/`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#commit_message_negative_regex Group#commit_message_negative_regex}
+
+---
+
+##### `commit_message_regex`<sup>Optional</sup> <a name="commit_message_regex" id="@cdktf/provider-gitlab.group.GroupPushRules.property.commitMessageRegex"></a>
+
+```python
+commit_message_regex: str
+```
+
+- *Type:* str
+
+All commit messages must match this regex, e.g. `Fixed \d+\..*`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#commit_message_regex Group#commit_message_regex}
+
+---
+
+##### `deny_delete_tag`<sup>Optional</sup> <a name="deny_delete_tag" id="@cdktf/provider-gitlab.group.GroupPushRules.property.denyDeleteTag"></a>
+
+```python
+deny_delete_tag: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Deny deleting a tag.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#deny_delete_tag Group#deny_delete_tag}
+
+---
+
+##### `file_name_regex`<sup>Optional</sup> <a name="file_name_regex" id="@cdktf/provider-gitlab.group.GroupPushRules.property.fileNameRegex"></a>
+
+```python
+file_name_regex: str
+```
+
+- *Type:* str
+
+Filenames matching the regular expression provided in this attribute are not allowed, for example, `(jar|exe)$`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#file_name_regex Group#file_name_regex}
+
+---
+
+##### `max_file_size`<sup>Optional</sup> <a name="max_file_size" id="@cdktf/provider-gitlab.group.GroupPushRules.property.maxFileSize"></a>
+
+```python
+max_file_size: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Maximum file size (MB) allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#max_file_size Group#max_file_size}
+
+---
+
+##### `member_check`<sup>Optional</sup> <a name="member_check" id="@cdktf/provider-gitlab.group.GroupPushRules.property.memberCheck"></a>
+
+```python
+member_check: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Allows only GitLab users to author commits.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#member_check Group#member_check}
+
+---
+
+##### `prevent_secrets`<sup>Optional</sup> <a name="prevent_secrets" id="@cdktf/provider-gitlab.group.GroupPushRules.property.preventSecrets"></a>
+
+```python
+prevent_secrets: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+GitLab will reject any files that are likely to contain secrets.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#prevent_secrets Group#prevent_secrets}
+
+---
+
+##### `reject_unsigned_commits`<sup>Optional</sup> <a name="reject_unsigned_commits" id="@cdktf/provider-gitlab.group.GroupPushRules.property.rejectUnsignedCommits"></a>
+
+```python
+reject_unsigned_commits: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Only commits signed through GPG are allowed.  **Note** This attribute is only supported in GitLab versions >= 16.4.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group#reject_unsigned_commits Group#reject_unsigned_commits}
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### GroupPushRulesOutputReference <a name="GroupPushRulesOutputReference" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_gitlab import group
+
+group.GroupPushRulesOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.resetAuthorEmailRegex">reset_author_email_regex</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.resetBranchNameRegex">reset_branch_name_regex</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.resetCommitCommitterCheck">reset_commit_committer_check</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.resetCommitMessageNegativeRegex">reset_commit_message_negative_regex</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.resetCommitMessageRegex">reset_commit_message_regex</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.resetDenyDeleteTag">reset_deny_delete_tag</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.resetFileNameRegex">reset_file_name_regex</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.resetMaxFileSize">reset_max_file_size</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.resetMemberCheck">reset_member_check</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.resetPreventSecrets">reset_prevent_secrets</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.resetRejectUnsignedCommits">reset_reject_unsigned_commits</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_author_email_regex` <a name="reset_author_email_regex" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.resetAuthorEmailRegex"></a>
+
+```python
+def reset_author_email_regex() -> None
+```
+
+##### `reset_branch_name_regex` <a name="reset_branch_name_regex" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.resetBranchNameRegex"></a>
+
+```python
+def reset_branch_name_regex() -> None
+```
+
+##### `reset_commit_committer_check` <a name="reset_commit_committer_check" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.resetCommitCommitterCheck"></a>
+
+```python
+def reset_commit_committer_check() -> None
+```
+
+##### `reset_commit_message_negative_regex` <a name="reset_commit_message_negative_regex" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.resetCommitMessageNegativeRegex"></a>
+
+```python
+def reset_commit_message_negative_regex() -> None
+```
+
+##### `reset_commit_message_regex` <a name="reset_commit_message_regex" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.resetCommitMessageRegex"></a>
+
+```python
+def reset_commit_message_regex() -> None
+```
+
+##### `reset_deny_delete_tag` <a name="reset_deny_delete_tag" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.resetDenyDeleteTag"></a>
+
+```python
+def reset_deny_delete_tag() -> None
+```
+
+##### `reset_file_name_regex` <a name="reset_file_name_regex" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.resetFileNameRegex"></a>
+
+```python
+def reset_file_name_regex() -> None
+```
+
+##### `reset_max_file_size` <a name="reset_max_file_size" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.resetMaxFileSize"></a>
+
+```python
+def reset_max_file_size() -> None
+```
+
+##### `reset_member_check` <a name="reset_member_check" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.resetMemberCheck"></a>
+
+```python
+def reset_member_check() -> None
+```
+
+##### `reset_prevent_secrets` <a name="reset_prevent_secrets" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.resetPreventSecrets"></a>
+
+```python
+def reset_prevent_secrets() -> None
+```
+
+##### `reset_reject_unsigned_commits` <a name="reset_reject_unsigned_commits" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.resetRejectUnsignedCommits"></a>
+
+```python
+def reset_reject_unsigned_commits() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.authorEmailRegexInput">author_email_regex_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.branchNameRegexInput">branch_name_regex_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.commitCommitterCheckInput">commit_committer_check_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.commitMessageNegativeRegexInput">commit_message_negative_regex_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.commitMessageRegexInput">commit_message_regex_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.denyDeleteTagInput">deny_delete_tag_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.fileNameRegexInput">file_name_regex_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.maxFileSizeInput">max_file_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.memberCheckInput">member_check_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.preventSecretsInput">prevent_secrets_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.rejectUnsignedCommitsInput">reject_unsigned_commits_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.authorEmailRegex">author_email_regex</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.branchNameRegex">branch_name_regex</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.commitCommitterCheck">commit_committer_check</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.commitMessageNegativeRegex">commit_message_negative_regex</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.commitMessageRegex">commit_message_regex</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.denyDeleteTag">deny_delete_tag</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.fileNameRegex">file_name_regex</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.maxFileSize">max_file_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.memberCheck">member_check</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.preventSecrets">prevent_secrets</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.rejectUnsignedCommits">reject_unsigned_commits</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules">GroupPushRules</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `author_email_regex_input`<sup>Optional</sup> <a name="author_email_regex_input" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.authorEmailRegexInput"></a>
+
+```python
+author_email_regex_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `branch_name_regex_input`<sup>Optional</sup> <a name="branch_name_regex_input" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.branchNameRegexInput"></a>
+
+```python
+branch_name_regex_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `commit_committer_check_input`<sup>Optional</sup> <a name="commit_committer_check_input" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.commitCommitterCheckInput"></a>
+
+```python
+commit_committer_check_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `commit_message_negative_regex_input`<sup>Optional</sup> <a name="commit_message_negative_regex_input" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.commitMessageNegativeRegexInput"></a>
+
+```python
+commit_message_negative_regex_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `commit_message_regex_input`<sup>Optional</sup> <a name="commit_message_regex_input" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.commitMessageRegexInput"></a>
+
+```python
+commit_message_regex_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `deny_delete_tag_input`<sup>Optional</sup> <a name="deny_delete_tag_input" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.denyDeleteTagInput"></a>
+
+```python
+deny_delete_tag_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `file_name_regex_input`<sup>Optional</sup> <a name="file_name_regex_input" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.fileNameRegexInput"></a>
+
+```python
+file_name_regex_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `max_file_size_input`<sup>Optional</sup> <a name="max_file_size_input" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.maxFileSizeInput"></a>
+
+```python
+max_file_size_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `member_check_input`<sup>Optional</sup> <a name="member_check_input" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.memberCheckInput"></a>
+
+```python
+member_check_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `prevent_secrets_input`<sup>Optional</sup> <a name="prevent_secrets_input" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.preventSecretsInput"></a>
+
+```python
+prevent_secrets_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `reject_unsigned_commits_input`<sup>Optional</sup> <a name="reject_unsigned_commits_input" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.rejectUnsignedCommitsInput"></a>
+
+```python
+reject_unsigned_commits_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `author_email_regex`<sup>Required</sup> <a name="author_email_regex" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.authorEmailRegex"></a>
+
+```python
+author_email_regex: str
+```
+
+- *Type:* str
+
+---
+
+##### `branch_name_regex`<sup>Required</sup> <a name="branch_name_regex" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.branchNameRegex"></a>
+
+```python
+branch_name_regex: str
+```
+
+- *Type:* str
+
+---
+
+##### `commit_committer_check`<sup>Required</sup> <a name="commit_committer_check" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.commitCommitterCheck"></a>
+
+```python
+commit_committer_check: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `commit_message_negative_regex`<sup>Required</sup> <a name="commit_message_negative_regex" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.commitMessageNegativeRegex"></a>
+
+```python
+commit_message_negative_regex: str
+```
+
+- *Type:* str
+
+---
+
+##### `commit_message_regex`<sup>Required</sup> <a name="commit_message_regex" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.commitMessageRegex"></a>
+
+```python
+commit_message_regex: str
+```
+
+- *Type:* str
+
+---
+
+##### `deny_delete_tag`<sup>Required</sup> <a name="deny_delete_tag" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.denyDeleteTag"></a>
+
+```python
+deny_delete_tag: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `file_name_regex`<sup>Required</sup> <a name="file_name_regex" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.fileNameRegex"></a>
+
+```python
+file_name_regex: str
+```
+
+- *Type:* str
+
+---
+
+##### `max_file_size`<sup>Required</sup> <a name="max_file_size" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.maxFileSize"></a>
+
+```python
+max_file_size: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `member_check`<sup>Required</sup> <a name="member_check" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.memberCheck"></a>
+
+```python
+member_check: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `prevent_secrets`<sup>Required</sup> <a name="prevent_secrets" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.preventSecrets"></a>
+
+```python
+prevent_secrets: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `reject_unsigned_commits`<sup>Required</sup> <a name="reject_unsigned_commits" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.rejectUnsignedCommits"></a>
+
+```python
+reject_unsigned_commits: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.internalValue"></a>
+
+```python
+internal_value: GroupPushRules
+```
+
+- *Type:* <a href="#@cdktf/provider-gitlab.group.GroupPushRules">GroupPushRules</a>
 
 ---
 

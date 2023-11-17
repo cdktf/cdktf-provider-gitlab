@@ -1,6 +1,6 @@
 # `gitlab_group_epic_board`
 
-Refer to the Terraform Registory for docs: [`gitlab_group_epic_board`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_epic_board).
+Refer to the Terraform Registory for docs: [`gitlab_group_epic_board`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_epic_board).
 
 # `groupEpicBoard` Submodule <a name="`groupEpicBoard` Submodule" id="@cdktf/provider-gitlab.groupEpicBoard"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`gitlab_group_epic_board`](https://r
 
 ### GroupEpicBoard <a name="GroupEpicBoard" id="@cdktf/provider-gitlab.groupEpicBoard.GroupEpicBoard"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_epic_board gitlab_group_epic_board}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_epic_board gitlab_group_epic_board}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupEpicBoard.GroupEpicBoard.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupepicboard"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupepicboard"
 
 groupepicboard.NewGroupEpicBoard(scope Construct, id *string, config GroupEpicBoardConfig) GroupEpicBoard
 ```
@@ -352,7 +352,7 @@ func ResetLists()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.groupEpicBoard.GroupEpicBoard.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupepicboard"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupepicboard"
 
 groupepicboard.GroupEpicBoard_IsConstruct(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.groupEpicBoard.GroupEpicBoard.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupepicboard"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupepicboard"
 
 groupepicboard.GroupEpicBoard_IsTerraformElement(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ groupepicboard.GroupEpicBoard_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.groupEpicBoard.GroupEpicBoard.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupepicboard"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupepicboard"
 
 groupepicboard.GroupEpicBoard_IsTerraformResource(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ groupepicboard.GroupEpicBoard_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.groupEpicBoard.GroupEpicBoard.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupepicboard"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupepicboard"
 
 groupepicboard.GroupEpicBoard_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -441,7 +441,7 @@ The construct id used in the generated config for the GroupEpicBoard to import.
 
 The id of the existing GroupEpicBoard that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_epic_board#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_epic_board#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -718,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.groupEpicBoard.GroupEpicBoardConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupepicboard"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupepicboard"
 
 &groupepicboard.GroupEpicBoardConfig {
 	Connection: interface{},
@@ -831,7 +831,7 @@ Group *string
 
 The ID or URL-encoded path of the group owned by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_epic_board#group GroupEpicBoard#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_epic_board#group GroupEpicBoard#group}
 
 ---
 
@@ -845,7 +845,7 @@ Name *string
 
 The name of the board.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_epic_board#name GroupEpicBoard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_epic_board#name GroupEpicBoard#name}
 
 ---
 
@@ -859,7 +859,7 @@ Lists interface{}
 
 lists block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_epic_board#lists GroupEpicBoard#lists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_epic_board#lists GroupEpicBoard#lists}
 
 ---
 
@@ -868,7 +868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.groupEpicBoard.GroupEpicBoardLists.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupepicboard"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupepicboard"
 
 &groupepicboard.GroupEpicBoardLists {
 	LabelId: *f64,
@@ -893,7 +893,7 @@ LabelId *f64
 
 The ID of the label the list should be scoped to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/group_epic_board#label_id GroupEpicBoard#label_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_epic_board#label_id GroupEpicBoard#label_id}
 
 ---
 
@@ -904,7 +904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupEpicBoard.GroupEpicBoardListsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupepicboard"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupepicboard"
 
 groupepicboard.NewGroupEpicBoardListsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GroupEpicBoardListsList
 ```
@@ -1047,7 +1047,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupEpicBoard.GroupEpicBoardListsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupepicboard"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupepicboard"
 
 groupepicboard.NewGroupEpicBoardListsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GroupEpicBoardListsOutputReference
 ```

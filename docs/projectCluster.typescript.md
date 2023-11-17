@@ -1,6 +1,6 @@
 # `gitlab_project_cluster`
 
-Refer to the Terraform Registory for docs: [`gitlab_project_cluster`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_cluster).
+Refer to the Terraform Registory for docs: [`gitlab_project_cluster`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_cluster).
 
 # `projectCluster` Submodule <a name="`projectCluster` Submodule" id="@cdktf/provider-gitlab.projectCluster"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`gitlab_project_cluster`](https://re
 
 ### ProjectCluster <a name="ProjectCluster" id="@cdktf/provider-gitlab.projectCluster.ProjectCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_cluster gitlab_project_cluster}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_cluster gitlab_project_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectCluster.ProjectCluster.Initializer"></a>
 
@@ -484,7 +484,7 @@ The construct id used in the generated config for the ProjectCluster to import.
 
 The id of the existing ProjectCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1037,7 +1037,7 @@ const projectClusterConfig: projectCluster.ProjectClusterConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectClusterConfig.property.domain">domain</a></code> | <code>string</code> | The base domain of the cluster. |
 | <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectClusterConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Determines if cluster is active or not. Defaults to `true`. This attribute cannot be read. |
 | <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectClusterConfig.property.environmentScope">environmentScope</a></code> | <code>string</code> | The associated environment to the cluster. Defaults to `*`. |
-| <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectClusterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_cluster#id ProjectCluster#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectClusterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_cluster#id ProjectCluster#id}. |
 | <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectClusterConfig.property.kubernetesAuthorizationType">kubernetesAuthorizationType</a></code> | <code>string</code> | The cluster authorization type. Valid values are `rbac`, `abac`, `unknown_authorization`. Defaults to `rbac`. |
 | <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectClusterConfig.property.kubernetesCaCert">kubernetesCaCert</a></code> | <code>string</code> | TLS certificate (needed if API is using a self-signed TLS certificate). |
 | <code><a href="#@cdktf/provider-gitlab.projectCluster.ProjectClusterConfig.property.kubernetesNamespace">kubernetesNamespace</a></code> | <code>string</code> | The unique namespace related to the project. |
@@ -1126,7 +1126,7 @@ public readonly kubernetesApiUrl: string;
 
 The URL to access the Kubernetes API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_cluster#kubernetes_api_url ProjectCluster#kubernetes_api_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_cluster#kubernetes_api_url ProjectCluster#kubernetes_api_url}
 
 ---
 
@@ -1140,7 +1140,7 @@ public readonly kubernetesToken: string;
 
 The token to authenticate against Kubernetes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_cluster#kubernetes_token ProjectCluster#kubernetes_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_cluster#kubernetes_token ProjectCluster#kubernetes_token}
 
 ---
 
@@ -1154,7 +1154,7 @@ public readonly name: string;
 
 The name of cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_cluster#name ProjectCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_cluster#name ProjectCluster#name}
 
 ---
 
@@ -1168,7 +1168,7 @@ public readonly project: string;
 
 The id of the project to add the cluster to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_cluster#project ProjectCluster#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_cluster#project ProjectCluster#project}
 
 ---
 
@@ -1182,7 +1182,7 @@ public readonly domain: string;
 
 The base domain of the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_cluster#domain ProjectCluster#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_cluster#domain ProjectCluster#domain}
 
 ---
 
@@ -1196,7 +1196,7 @@ public readonly enabled: boolean | IResolvable;
 
 Determines if cluster is active or not. Defaults to `true`. This attribute cannot be read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_cluster#enabled ProjectCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_cluster#enabled ProjectCluster#enabled}
 
 ---
 
@@ -1210,7 +1210,7 @@ public readonly environmentScope: string;
 
 The associated environment to the cluster. Defaults to `*`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_cluster#environment_scope ProjectCluster#environment_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_cluster#environment_scope ProjectCluster#environment_scope}
 
 ---
 
@@ -1222,7 +1222,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_cluster#id ProjectCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_cluster#id ProjectCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1239,7 +1239,7 @@ public readonly kubernetesAuthorizationType: string;
 
 The cluster authorization type. Valid values are `rbac`, `abac`, `unknown_authorization`. Defaults to `rbac`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_cluster#kubernetes_authorization_type ProjectCluster#kubernetes_authorization_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_cluster#kubernetes_authorization_type ProjectCluster#kubernetes_authorization_type}
 
 ---
 
@@ -1253,7 +1253,7 @@ public readonly kubernetesCaCert: string;
 
 TLS certificate (needed if API is using a self-signed TLS certificate).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_cluster#kubernetes_ca_cert ProjectCluster#kubernetes_ca_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_cluster#kubernetes_ca_cert ProjectCluster#kubernetes_ca_cert}
 
 ---
 
@@ -1267,7 +1267,7 @@ public readonly kubernetesNamespace: string;
 
 The unique namespace related to the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_cluster#kubernetes_namespace ProjectCluster#kubernetes_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_cluster#kubernetes_namespace ProjectCluster#kubernetes_namespace}
 
 ---
 
@@ -1281,7 +1281,7 @@ public readonly managed: boolean | IResolvable;
 
 Determines if cluster is managed by gitlab or not. Defaults to `true`. This attribute cannot be read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_cluster#managed ProjectCluster#managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_cluster#managed ProjectCluster#managed}
 
 ---
 
@@ -1295,7 +1295,7 @@ public readonly managementProjectId: string;
 
 The ID of the management project for the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.5.0/docs/resources/project_cluster#management_project_id ProjectCluster#management_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_cluster#management_project_id ProjectCluster#management_project_id}
 
 ---
 
