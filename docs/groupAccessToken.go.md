@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupaccesstoken"
 
 groupaccesstoken.NewGroupAccessToken(scope Construct, id *string, config GroupAccessTokenConfig) GroupAccessToken
 ```
@@ -342,7 +342,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupaccesstoken"
 
 groupaccesstoken.GroupAccessToken_IsConstruct(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupaccesstoken"
 
 groupaccesstoken.GroupAccessToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -388,7 +388,7 @@ groupaccesstoken.GroupAccessToken_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupaccesstoken"
 
 groupaccesstoken.GroupAccessToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -402,7 +402,7 @@ groupaccesstoken.GroupAccessToken_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupaccesstoken"
 
 groupaccesstoken.GroupAccessToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -818,7 +818,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.groupAccessToken.GroupAccessTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupaccesstoken"
 
 &groupaccesstoken.GroupAccessTokenConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.repositoryFile.RepositoryFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/repositoryfile"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/repositoryfile"
 
 repositoryfile.NewRepositoryFile(scope Construct, id *string, config RepositoryFileConfig) RepositoryFile
 ```
@@ -425,7 +425,7 @@ func ResetUpdateCommitMessage()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.repositoryFile.RepositoryFile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/repositoryfile"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/repositoryfile"
 
 repositoryfile.RepositoryFile_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.repositoryFile.RepositoryFile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/repositoryfile"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/repositoryfile"
 
 repositoryfile.RepositoryFile_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ repositoryfile.RepositoryFile_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.repositoryFile.RepositoryFile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/repositoryfile"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/repositoryfile"
 
 repositoryfile.RepositoryFile_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ repositoryfile.RepositoryFile_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.repositoryFile.RepositoryFile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/repositoryfile"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/repositoryfile"
 
 repositoryfile.RepositoryFile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1143,7 +1143,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.repositoryFile.RepositoryFileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/repositoryfile"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/repositoryfile"
 
 &repositoryfile.RepositoryFileConfig {
 	Connection: interface{},
@@ -1167,7 +1167,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/repositoryfile"
 	Id: *string,
 	OverwriteOnCreate: interface{},
 	StartBranch: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-gitlab-go/gitlab.repositoryFile.RepositoryFileTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11.repositoryFile.RepositoryFileTimeouts,
 	UpdateCommitMessage: *string,
 }
 ```
@@ -1506,7 +1506,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.repositoryFile.RepositoryFileTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/repositoryfile"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/repositoryfile"
 
 &repositoryfile.RepositoryFileTimeouts {
 	Create: *string,
@@ -1568,7 +1568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.repositoryFile.RepositoryFileTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/repositoryfile"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/repositoryfile"
 
 repositoryfile.NewRepositoryFileTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RepositoryFileTimeoutsOutputReference
 ```

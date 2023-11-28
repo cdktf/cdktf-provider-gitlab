@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectAccessToken.ProjectAccessToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectaccesstoken"
 
 projectaccesstoken.NewProjectAccessToken(scope Construct, id *string, config ProjectAccessTokenConfig) ProjectAccessToken
 ```
@@ -342,7 +342,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectAccessToken.ProjectAccessToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectaccesstoken"
 
 projectaccesstoken.ProjectAccessToken_IsConstruct(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectAccessToken.ProjectAccessToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectaccesstoken"
 
 projectaccesstoken.ProjectAccessToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -388,7 +388,7 @@ projectaccesstoken.ProjectAccessToken_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectAccessToken.ProjectAccessToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectaccesstoken"
 
 projectaccesstoken.ProjectAccessToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -402,7 +402,7 @@ projectaccesstoken.ProjectAccessToken_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectAccessToken.ProjectAccessToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectaccesstoken"
 
 projectaccesstoken.ProjectAccessToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -818,7 +818,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectAccessToken.ProjectAccessTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectaccesstoken"
 
 &projectaccesstoken.ProjectAccessTokenConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectRunnerEnablement.ProjectRunnerEnablement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectrunnerenablement"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectrunnerenablement"
 
 projectrunnerenablement.NewProjectRunnerEnablement(scope Construct, id *string, config ProjectRunnerEnablementConfig) ProjectRunnerEnablement
 ```
@@ -335,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectRunnerEnablement.ProjectRunnerEnablement.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectrunnerenablement"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectrunnerenablement"
 
 projectrunnerenablement.ProjectRunnerEnablement_IsConstruct(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectRunnerEnablement.ProjectRunnerEnablement.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectrunnerenablement"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectrunnerenablement"
 
 projectrunnerenablement.ProjectRunnerEnablement_IsTerraformElement(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ projectrunnerenablement.ProjectRunnerEnablement_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectRunnerEnablement.ProjectRunnerEnablement.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectrunnerenablement"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectrunnerenablement"
 
 projectrunnerenablement.ProjectRunnerEnablement_IsTerraformResource(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ projectrunnerenablement.ProjectRunnerEnablement_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectRunnerEnablement.ProjectRunnerEnablement.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectrunnerenablement"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectrunnerenablement"
 
 projectrunnerenablement.ProjectRunnerEnablement_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -690,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectRunnerEnablement.ProjectRunnerEnablementConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectrunnerenablement"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectrunnerenablement"
 
 &projectrunnerenablement.ProjectRunnerEnablementConfig {
 	Connection: interface{},
