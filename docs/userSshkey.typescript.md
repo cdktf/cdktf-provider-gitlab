@@ -1,7 +1,3 @@
-# `gitlab_user_sshkey`
-
-Refer to the Terraform Registory for docs: [`gitlab_user_sshkey`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/user_sshkey).
-
 # `userSshkey` Submodule <a name="`userSshkey` Submodule" id="@cdktf/provider-gitlab.userSshkey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

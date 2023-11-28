@@ -1,7 +1,3 @@
-# `gitlab_integration_custom_issue_tracker`
-
-Refer to the Terraform Registory for docs: [`gitlab_integration_custom_issue_tracker`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/integration_custom_issue_tracker).
-
 # `integrationCustomIssueTracker` Submodule <a name="`integrationCustomIssueTracker` Submodule" id="@cdktf/provider-gitlab.integrationCustomIssueTracker"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

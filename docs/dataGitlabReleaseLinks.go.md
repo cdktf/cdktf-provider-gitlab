@@ -1,7 +1,3 @@
-# `data_gitlab_release_links`
-
-Refer to the Terraform Registory for docs: [`data_gitlab_release_links`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/release_links).
-
 # `dataGitlabReleaseLinks` Submodule <a name="`dataGitlabReleaseLinks` Submodule" id="@cdktf/provider-gitlab.dataGitlabReleaseLinks"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

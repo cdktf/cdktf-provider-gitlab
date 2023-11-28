@@ -1,7 +1,3 @@
-# `gitlab_project_cluster`
-
-Refer to the Terraform Registory for docs: [`gitlab_project_cluster`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_cluster).
-
 # `projectCluster` Submodule <a name="`projectCluster` Submodule" id="@cdktf/provider-gitlab.projectCluster"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

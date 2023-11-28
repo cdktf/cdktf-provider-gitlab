@@ -1,7 +1,3 @@
-# `gitlab_group_share_group`
-
-Refer to the Terraform Registory for docs: [`gitlab_group_share_group`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_share_group).
-
 # `groupShareGroup` Submodule <a name="`groupShareGroup` Submodule" id="@cdktf/provider-gitlab.groupShareGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

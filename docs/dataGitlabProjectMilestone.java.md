@@ -1,7 +1,3 @@
-# `data_gitlab_project_milestone`
-
-Refer to the Terraform Registory for docs: [`data_gitlab_project_milestone`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/project_milestone).
-
 # `dataGitlabProjectMilestone` Submodule <a name="`dataGitlabProjectMilestone` Submodule" id="@cdktf/provider-gitlab.dataGitlabProjectMilestone"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

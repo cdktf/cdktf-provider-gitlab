@@ -1,7 +1,3 @@
-# `data_gitlab_application`
-
-Refer to the Terraform Registory for docs: [`data_gitlab_application`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/application).
-
 # `dataGitlabApplication` Submodule <a name="`dataGitlabApplication` Submodule" id="@cdktf/provider-gitlab.dataGitlabApplication"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

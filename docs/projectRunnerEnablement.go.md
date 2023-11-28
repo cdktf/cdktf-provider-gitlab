@@ -1,7 +1,3 @@
-# `gitlab_project_runner_enablement`
-
-Refer to the Terraform Registory for docs: [`gitlab_project_runner_enablement`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_runner_enablement).
-
 # `projectRunnerEnablement` Submodule <a name="`projectRunnerEnablement` Submodule" id="@cdktf/provider-gitlab.projectRunnerEnablement"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

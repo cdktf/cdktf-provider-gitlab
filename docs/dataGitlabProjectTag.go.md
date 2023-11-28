@@ -1,7 +1,3 @@
-# `data_gitlab_project_tag`
-
-Refer to the Terraform Registory for docs: [`data_gitlab_project_tag`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/project_tag).
-
 # `dataGitlabProjectTag` Submodule <a name="`dataGitlabProjectTag` Submodule" id="@cdktf/provider-gitlab.dataGitlabProjectTag"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

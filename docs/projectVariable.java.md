@@ -1,7 +1,3 @@
-# `gitlab_project_variable`
-
-Refer to the Terraform Registory for docs: [`gitlab_project_variable`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_variable).
-
 # `projectVariable` Submodule <a name="`projectVariable` Submodule" id="@cdktf/provider-gitlab.projectVariable"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

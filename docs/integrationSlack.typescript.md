@@ -1,7 +1,3 @@
-# `gitlab_integration_slack`
-
-Refer to the Terraform Registory for docs: [`gitlab_integration_slack`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/integration_slack).
-
 # `integrationSlack` Submodule <a name="`integrationSlack` Submodule" id="@cdktf/provider-gitlab.integrationSlack"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

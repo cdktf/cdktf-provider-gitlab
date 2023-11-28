@@ -1,7 +1,3 @@
-# `gitlab_service_microsoft_teams`
-
-Refer to the Terraform Registory for docs: [`gitlab_service_microsoft_teams`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/service_microsoft_teams).
-
 # `serviceMicrosoftTeams` Submodule <a name="`serviceMicrosoftTeams` Submodule" id="@cdktf/provider-gitlab.serviceMicrosoftTeams"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `gitlab_group_ldap_link`
-
-Refer to the Terraform Registory for docs: [`gitlab_group_ldap_link`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_ldap_link).
-
 # `groupLdapLink` Submodule <a name="`groupLdapLink` Submodule" id="@cdktf/provider-gitlab.groupLdapLink"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

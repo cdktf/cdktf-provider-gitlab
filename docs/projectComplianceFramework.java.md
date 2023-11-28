@@ -1,7 +1,3 @@
-# `gitlab_project_compliance_framework`
-
-Refer to the Terraform Registory for docs: [`gitlab_project_compliance_framework`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_compliance_framework).
-
 # `projectComplianceFramework` Submodule <a name="`projectComplianceFramework` Submodule" id="@cdktf/provider-gitlab.projectComplianceFramework"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

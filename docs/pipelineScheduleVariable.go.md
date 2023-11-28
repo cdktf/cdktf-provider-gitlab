@@ -1,7 +1,3 @@
-# `gitlab_pipeline_schedule_variable`
-
-Refer to the Terraform Registory for docs: [`gitlab_pipeline_schedule_variable`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/pipeline_schedule_variable).
-
 # `pipelineScheduleVariable` Submodule <a name="`pipelineScheduleVariable` Submodule" id="@cdktf/provider-gitlab.pipelineScheduleVariable"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

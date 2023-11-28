@@ -1,7 +1,3 @@
-# `gitlab_project_hook`
-
-Refer to the Terraform Registory for docs: [`gitlab_project_hook`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_hook).
-
 # `projectHook` Submodule <a name="`projectHook` Submodule" id="@cdktf/provider-gitlab.projectHook"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

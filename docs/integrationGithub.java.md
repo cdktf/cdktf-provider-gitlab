@@ -1,7 +1,3 @@
-# `gitlab_integration_github`
-
-Refer to the Terraform Registory for docs: [`gitlab_integration_github`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/integration_github).
-
 # `integrationGithub` Submodule <a name="`integrationGithub` Submodule" id="@cdktf/provider-gitlab.integrationGithub"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

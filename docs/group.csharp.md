@@ -1,7 +1,3 @@
-# `gitlab_group`
-
-Refer to the Terraform Registory for docs: [`gitlab_group`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group).
-
 # `group` Submodule <a name="`group` Submodule" id="@cdktf/provider-gitlab.group"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

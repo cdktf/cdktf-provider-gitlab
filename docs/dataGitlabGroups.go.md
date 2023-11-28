@@ -1,7 +1,3 @@
-# `data_gitlab_groups`
-
-Refer to the Terraform Registory for docs: [`data_gitlab_groups`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/groups).
-
 # `dataGitlabGroups` Submodule <a name="`dataGitlabGroups` Submodule" id="@cdktf/provider-gitlab.dataGitlabGroups"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

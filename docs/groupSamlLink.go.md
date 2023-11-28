@@ -1,7 +1,3 @@
-# `gitlab_group_saml_link`
-
-Refer to the Terraform Registory for docs: [`gitlab_group_saml_link`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_saml_link).
-
 # `groupSamlLink` Submodule <a name="`groupSamlLink` Submodule" id="@cdktf/provider-gitlab.groupSamlLink"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

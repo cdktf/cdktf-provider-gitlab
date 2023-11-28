@@ -1,7 +1,3 @@
-# `gitlab_label`
-
-Refer to the Terraform Registory for docs: [`gitlab_label`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/label).
-
 # `label` Submodule <a name="`label` Submodule" id="@cdktf/provider-gitlab.label"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

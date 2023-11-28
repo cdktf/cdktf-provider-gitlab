@@ -1,7 +1,3 @@
-# `data_gitlab_current_user`
-
-Refer to the Terraform Registory for docs: [`data_gitlab_current_user`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/current_user).
-
 # `dataGitlabCurrentUser` Submodule <a name="`dataGitlabCurrentUser` Submodule" id="@cdktf/provider-gitlab.dataGitlabCurrentUser"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

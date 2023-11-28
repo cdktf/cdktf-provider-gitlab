@@ -1,7 +1,3 @@
-# `gitlab_service_slack`
-
-Refer to the Terraform Registory for docs: [`gitlab_service_slack`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/service_slack).
-
 # `serviceSlack` Submodule <a name="`serviceSlack` Submodule" id="@cdktf/provider-gitlab.serviceSlack"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

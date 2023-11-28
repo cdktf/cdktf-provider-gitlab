@@ -1,7 +1,3 @@
-# `gitlab_group_variable`
-
-Refer to the Terraform Registory for docs: [`gitlab_group_variable`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_variable).
-
 # `groupVariable` Submodule <a name="`groupVariable` Submodule" id="@cdktf/provider-gitlab.groupVariable"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

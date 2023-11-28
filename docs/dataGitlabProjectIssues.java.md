@@ -1,7 +1,3 @@
-# `data_gitlab_project_issues`
-
-Refer to the Terraform Registory for docs: [`data_gitlab_project_issues`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/project_issues).
-
 # `dataGitlabProjectIssues` Submodule <a name="`dataGitlabProjectIssues` Submodule" id="@cdktf/provider-gitlab.dataGitlabProjectIssues"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_gitlab_project_protected_branches`
-
-Refer to the Terraform Registory for docs: [`data_gitlab_project_protected_branches`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/project_protected_branches).
-
 # `dataGitlabProjectProtectedBranches` Submodule <a name="`dataGitlabProjectProtectedBranches` Submodule" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

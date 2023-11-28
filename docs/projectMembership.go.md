@@ -1,7 +1,3 @@
-# `gitlab_project_membership`
-
-Refer to the Terraform Registory for docs: [`gitlab_project_membership`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_membership).
-
 # `projectMembership` Submodule <a name="`projectMembership` Submodule" id="@cdktf/provider-gitlab.projectMembership"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
