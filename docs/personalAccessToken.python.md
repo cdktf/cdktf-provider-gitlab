@@ -1,7 +1,3 @@
-# `gitlab_personal_access_token`
-
-Refer to the Terraform Registory for docs: [`gitlab_personal_access_token`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/personal_access_token).
-
 # `personalAccessToken` Submodule <a name="`personalAccessToken` Submodule" id="@cdktf/provider-gitlab.personalAccessToken"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `gitlab_project_label`
-
-Refer to the Terraform Registory for docs: [`gitlab_project_label`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_label).
-
 # `projectLabel` Submodule <a name="`projectLabel` Submodule" id="@cdktf/provider-gitlab.projectLabel"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectLabel.ProjectLabel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectlabel"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectlabel"
 
 projectlabel.NewProjectLabel(scope Construct, id *string, config ProjectLabelConfig) ProjectLabel
 ```
@@ -346,7 +342,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectLabel.ProjectLabel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectlabel"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectlabel"
 
 projectlabel.ProjectLabel_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectLabel.ProjectLabel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectlabel"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectlabel"
 
 projectlabel.ProjectLabel_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ projectlabel.ProjectLabel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectLabel.ProjectLabel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectlabel"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectlabel"
 
 projectlabel.ProjectLabel_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ projectlabel.ProjectLabel_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectLabel.ProjectLabel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectlabel"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectlabel"
 
 projectlabel.ProjectLabel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -756,7 +752,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectLabel.ProjectLabelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectlabel"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectlabel"
 
 &projectlabel.ProjectLabelConfig {
 	Connection: interface{},

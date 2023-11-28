@@ -1,7 +1,3 @@
-# `gitlab_deploy_key_enable`
-
-Refer to the Terraform Registory for docs: [`gitlab_deploy_key_enable`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/deploy_key_enable).
-
 # `deployKeyEnable` Submodule <a name="`deployKeyEnable` Submodule" id="@cdktf/provider-gitlab.deployKeyEnable"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

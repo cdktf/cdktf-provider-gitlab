@@ -1,7 +1,3 @@
-# `data_gitlab_instance_variables`
-
-Refer to the Terraform Registory for docs: [`data_gitlab_instance_variables`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/instance_variables).
-
 # `dataGitlabInstanceVariables` Submodule <a name="`dataGitlabInstanceVariables` Submodule" id="@cdktf/provider-gitlab.dataGitlabInstanceVariables"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

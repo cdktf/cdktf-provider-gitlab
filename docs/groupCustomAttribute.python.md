@@ -1,7 +1,3 @@
-# `gitlab_group_custom_attribute`
-
-Refer to the Terraform Registory for docs: [`gitlab_group_custom_attribute`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_custom_attribute).
-
 # `groupCustomAttribute` Submodule <a name="`groupCustomAttribute` Submodule" id="@cdktf/provider-gitlab.groupCustomAttribute"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_gitlab_group`
-
-Refer to the Terraform Registory for docs: [`data_gitlab_group`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/group).
-
 # `dataGitlabGroup` Submodule <a name="`dataGitlabGroup` Submodule" id="@cdktf/provider-gitlab.dataGitlabGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroup.DataGitlabGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabgroup"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroup"
 
 datagitlabgroup.NewDataGitlabGroup(scope Construct, id *string, config DataGitlabGroupConfig) DataGitlabGroup
 ```
@@ -292,7 +288,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabGroup.DataGitlabGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabgroup"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroup"
 
 datagitlabgroup.DataGitlabGroup_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabGroup.DataGitlabGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabgroup"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroup"
 
 datagitlabgroup.DataGitlabGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datagitlabgroup.DataGitlabGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabGroup.DataGitlabGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabgroup"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroup"
 
 datagitlabgroup.DataGitlabGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +348,7 @@ datagitlabgroup.DataGitlabGroup_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabGroup.DataGitlabGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabgroup"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroup"
 
 datagitlabgroup.DataGitlabGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -812,7 +808,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabGroup.DataGitlabGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabgroup"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroup"
 
 &datagitlabgroup.DataGitlabGroupConfig {
 	Connection: interface{},

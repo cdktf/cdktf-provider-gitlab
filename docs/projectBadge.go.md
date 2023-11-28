@@ -1,7 +1,3 @@
-# `gitlab_project_badge`
-
-Refer to the Terraform Registory for docs: [`gitlab_project_badge`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_badge).
-
 # `projectBadge` Submodule <a name="`projectBadge` Submodule" id="@cdktf/provider-gitlab.projectBadge"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectBadge.ProjectBadge.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectbadge"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectbadge"
 
 projectbadge.NewProjectBadge(scope Construct, id *string, config ProjectBadgeConfig) ProjectBadge
 ```
@@ -346,7 +342,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectBadge.ProjectBadge.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectbadge"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectbadge"
 
 projectbadge.ProjectBadge_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectBadge.ProjectBadge.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectbadge"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectbadge"
 
 projectbadge.ProjectBadge_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ projectbadge.ProjectBadge_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectBadge.ProjectBadge.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectbadge"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectbadge"
 
 projectbadge.ProjectBadge_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ projectbadge.ProjectBadge_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectBadge.ProjectBadge.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectbadge"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectbadge"
 
 projectbadge.ProjectBadge_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -767,7 +763,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectBadge.ProjectBadgeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectbadge"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectbadge"
 
 &projectbadge.ProjectBadgeConfig {
 	Connection: interface{},

@@ -1,7 +1,3 @@
-# `gitlab_pipeline_trigger`
-
-Refer to the Terraform Registory for docs: [`gitlab_pipeline_trigger`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/pipeline_trigger).
-
 # `pipelineTrigger` Submodule <a name="`pipelineTrigger` Submodule" id="@cdktf/provider-gitlab.pipelineTrigger"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

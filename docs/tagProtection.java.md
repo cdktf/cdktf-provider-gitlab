@@ -1,7 +1,3 @@
-# `gitlab_tag_protection`
-
-Refer to the Terraform Registory for docs: [`gitlab_tag_protection`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/tag_protection).
-
 # `tagProtection` Submodule <a name="`tagProtection` Submodule" id="@cdktf/provider-gitlab.tagProtection"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

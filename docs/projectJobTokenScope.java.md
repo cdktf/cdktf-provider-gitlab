@@ -1,7 +1,3 @@
-# `gitlab_project_job_token_scope`
-
-Refer to the Terraform Registory for docs: [`gitlab_project_job_token_scope`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_job_token_scope).
-
 # `projectJobTokenScope` Submodule <a name="`projectJobTokenScope` Submodule" id="@cdktf/provider-gitlab.projectJobTokenScope"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

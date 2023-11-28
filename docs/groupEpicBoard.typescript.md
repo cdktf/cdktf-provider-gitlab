@@ -1,7 +1,3 @@
-# `gitlab_group_epic_board`
-
-Refer to the Terraform Registory for docs: [`gitlab_group_epic_board`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_epic_board).
-
 # `groupEpicBoard` Submodule <a name="`groupEpicBoard` Submodule" id="@cdktf/provider-gitlab.groupEpicBoard"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `gitlab_cluster_agent_token`
-
-Refer to the Terraform Registory for docs: [`gitlab_cluster_agent_token`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/cluster_agent_token).
-
 # `clusterAgentToken` Submodule <a name="`clusterAgentToken` Submodule" id="@cdktf/provider-gitlab.clusterAgentToken"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

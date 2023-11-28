@@ -1,7 +1,3 @@
-# `gitlab_topic`
-
-Refer to the Terraform Registory for docs: [`gitlab_topic`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/topic).
-
 # `topic` Submodule <a name="`topic` Submodule" id="@cdktf/provider-gitlab.topic"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.topic.Topic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/topic"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/topic"
 
 topic.NewTopic(scope Construct, id *string, config TopicConfig) Topic
 ```
@@ -374,7 +370,7 @@ func ResetTitle()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.topic.Topic.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/topic"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/topic"
 
 topic.Topic_IsConstruct(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.topic.Topic.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/topic"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/topic"
 
 topic.Topic_IsTerraformElement(x interface{}) *bool
 ```
@@ -420,7 +416,7 @@ topic.Topic_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.topic.Topic.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/topic"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/topic"
 
 topic.Topic_IsTerraformResource(x interface{}) *bool
 ```
@@ -434,7 +430,7 @@ topic.Topic_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.topic.Topic.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/topic"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/topic"
 
 topic.Topic_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -828,7 +824,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.topic.TopicConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/topic"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/topic"
 
 &topic.TopicConfig {
 	Connection: interface{},

@@ -1,7 +1,3 @@
-# `gitlab_project_approval_rule`
-
-Refer to the Terraform Registory for docs: [`gitlab_project_approval_rule`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_approval_rule).
-
 # `projectApprovalRule` Submodule <a name="`projectApprovalRule` Submodule" id="@cdktf/provider-gitlab.projectApprovalRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectapprovalrule"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectapprovalrule"
 
 projectapprovalrule.NewProjectApprovalRule(scope Construct, id *string, config ProjectApprovalRuleConfig) ProjectApprovalRule
 ```
@@ -381,7 +377,7 @@ func ResetUserIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectapprovalrule"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectapprovalrule"
 
 projectapprovalrule.ProjectApprovalRule_IsConstruct(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectapprovalrule"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectapprovalrule"
 
 projectapprovalrule.ProjectApprovalRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -427,7 +423,7 @@ projectapprovalrule.ProjectApprovalRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectapprovalrule"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectapprovalrule"
 
 projectapprovalrule.ProjectApprovalRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -441,7 +437,7 @@ projectapprovalrule.ProjectApprovalRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectapprovalrule"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectapprovalrule"
 
 projectapprovalrule.ProjectApprovalRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -890,7 +886,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectApprovalRule.ProjectApprovalRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectapprovalrule"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectapprovalrule"
 
 &projectapprovalrule.ProjectApprovalRuleConfig {
 	Connection: interface{},

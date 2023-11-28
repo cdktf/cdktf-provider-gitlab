@@ -1,7 +1,3 @@
-# `data_gitlab_repository_file`
-
-Refer to the Terraform Registory for docs: [`data_gitlab_repository_file`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/repository_file).
-
 # `dataGitlabRepositoryFile` Submodule <a name="`dataGitlabRepositoryFile` Submodule" id="@cdktf/provider-gitlab.dataGitlabRepositoryFile"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabrepositoryfile"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrepositoryfile"
 
 datagitlabrepositoryfile.NewDataGitlabRepositoryFile(scope Construct, id *string, config DataGitlabRepositoryFileConfig) DataGitlabRepositoryFile
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabrepositoryfile"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrepositoryfile"
 
 datagitlabrepositoryfile.DataGitlabRepositoryFile_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabrepositoryfile"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrepositoryfile"
 
 datagitlabrepositoryfile.DataGitlabRepositoryFile_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ datagitlabrepositoryfile.DataGitlabRepositoryFile_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabrepositoryfile"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrepositoryfile"
 
 datagitlabrepositoryfile.DataGitlabRepositoryFile_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datagitlabrepositoryfile.DataGitlabRepositoryFile_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabrepositoryfile"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrepositoryfile"
 
 datagitlabrepositoryfile.DataGitlabRepositoryFile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -732,7 +728,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabrepositoryfile"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrepositoryfile"
 
 &datagitlabrepositoryfile.DataGitlabRepositoryFileConfig {
 	Connection: interface{},

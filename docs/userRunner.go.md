@@ -1,7 +1,3 @@
-# `gitlab_user_runner`
-
-Refer to the Terraform Registory for docs: [`gitlab_user_runner`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/user_runner).
-
 # `userRunner` Submodule <a name="`userRunner` Submodule" id="@cdktf/provider-gitlab.userRunner"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.userRunner.UserRunner.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/userrunner"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/userrunner"
 
 userrunner.NewUserRunner(scope Construct, id *string, config UserRunnerConfig) UserRunner
 ```
@@ -395,7 +391,7 @@ func ResetUntagged()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.userRunner.UserRunner.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/userrunner"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/userrunner"
 
 userrunner.UserRunner_IsConstruct(x interface{}) *bool
 ```
@@ -427,7 +423,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.userRunner.UserRunner.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/userrunner"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/userrunner"
 
 userrunner.UserRunner_IsTerraformElement(x interface{}) *bool
 ```
@@ -441,7 +437,7 @@ userrunner.UserRunner_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.userRunner.UserRunner.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/userrunner"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/userrunner"
 
 userrunner.UserRunner_IsTerraformResource(x interface{}) *bool
 ```
@@ -455,7 +451,7 @@ userrunner.UserRunner_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.userRunner.UserRunner.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/userrunner"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/userrunner"
 
 userrunner.UserRunner_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -926,7 +922,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.userRunner.UserRunnerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/userrunner"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/userrunner"
 
 &userrunner.UserRunnerConfig {
 	Connection: interface{},

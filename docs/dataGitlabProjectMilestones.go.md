@@ -1,7 +1,3 @@
-# `data_gitlab_project_milestones`
-
-Refer to the Terraform Registory for docs: [`data_gitlab_project_milestones`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/project_milestones).
-
 # `dataGitlabProjectMilestones` Submodule <a name="`dataGitlabProjectMilestones` Submodule" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojectmilestones"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmilestones"
 
 datagitlabprojectmilestones.NewDataGitlabProjectMilestones(scope Construct, id *string, config DataGitlabProjectMilestonesConfig) DataGitlabProjectMilestones
 ```
@@ -313,7 +309,7 @@ func ResetTitle()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojectmilestones"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmilestones"
 
 datagitlabprojectmilestones.DataGitlabProjectMilestones_IsConstruct(x interface{}) *bool
 ```
@@ -345,7 +341,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojectmilestones"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmilestones"
 
 datagitlabprojectmilestones.DataGitlabProjectMilestones_IsTerraformElement(x interface{}) *bool
 ```
@@ -359,7 +355,7 @@ datagitlabprojectmilestones.DataGitlabProjectMilestones_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojectmilestones"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmilestones"
 
 datagitlabprojectmilestones.DataGitlabProjectMilestones_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -373,7 +369,7 @@ datagitlabprojectmilestones.DataGitlabProjectMilestones_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojectmilestones"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmilestones"
 
 datagitlabprojectmilestones.DataGitlabProjectMilestones_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -745,7 +741,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestonesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojectmilestones"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmilestones"
 
 &datagitlabprojectmilestones.DataGitlabProjectMilestonesConfig {
 	Connection: interface{},
@@ -960,7 +956,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestonesMilestones.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojectmilestones"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmilestones"
 
 &datagitlabprojectmilestones.DataGitlabProjectMilestonesMilestones {
 
@@ -975,7 +971,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojectmi
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestonesMilestonesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojectmilestones"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmilestones"
 
 datagitlabprojectmilestones.NewDataGitlabProjectMilestonesMilestonesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectMilestonesMilestonesList
 ```
@@ -1107,7 +1103,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestonesMilestonesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojectmilestones"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmilestones"
 
 datagitlabprojectmilestones.NewDataGitlabProjectMilestonesMilestonesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabProjectMilestonesMilestonesOutputReference
 ```

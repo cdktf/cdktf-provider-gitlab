@@ -1,7 +1,3 @@
-# `gitlab_group_hook`
-
-Refer to the Terraform Registory for docs: [`gitlab_group_hook`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_hook).
-
 # `groupHook` Submodule <a name="`groupHook` Submodule" id="@cdktf/provider-gitlab.groupHook"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupHook.GroupHook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/grouphook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/grouphook"
 
 grouphook.NewGroupHook(scope Construct, id *string, config GroupHookConfig) GroupHook
 ```
@@ -451,7 +447,7 @@ func ResetWikiPageEvents()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.groupHook.GroupHook.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/grouphook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/grouphook"
 
 grouphook.GroupHook_IsConstruct(x interface{}) *bool
 ```
@@ -483,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.groupHook.GroupHook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/grouphook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/grouphook"
 
 grouphook.GroupHook_IsTerraformElement(x interface{}) *bool
 ```
@@ -497,7 +493,7 @@ grouphook.GroupHook_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.groupHook.GroupHook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/grouphook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/grouphook"
 
 grouphook.GroupHook_IsTerraformResource(x interface{}) *bool
 ```
@@ -511,7 +507,7 @@ grouphook.GroupHook_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.groupHook.GroupHook.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/grouphook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/grouphook"
 
 grouphook.GroupHook_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1180,7 +1176,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.groupHook.GroupHookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/grouphook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/grouphook"
 
 &grouphook.GroupHookConfig {
 	Connection: interface{},

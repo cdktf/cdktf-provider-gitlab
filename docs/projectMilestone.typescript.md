@@ -1,7 +1,3 @@
-# `gitlab_project_milestone`
-
-Refer to the Terraform Registory for docs: [`gitlab_project_milestone`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_milestone).
-
 # `projectMilestone` Submodule <a name="`projectMilestone` Submodule" id="@cdktf/provider-gitlab.projectMilestone"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

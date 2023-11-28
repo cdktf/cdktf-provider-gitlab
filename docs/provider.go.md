@@ -1,7 +1,3 @@
-# `provider`
-
-Refer to the Terraform Registory for docs: [`gitlab`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs).
-
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-gitlab.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.provider.GitlabProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/provider"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/provider"
 
 provider.NewGitlabProvider(scope Construct, id *string, config GitlabProviderConfig) GitlabProvider
 ```
@@ -197,7 +193,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.provider.GitlabProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/provider"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/provider"
 
 provider.GitlabProvider_IsConstruct(x interface{}) *bool
 ```
@@ -229,7 +225,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.provider.GitlabProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/provider"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/provider"
 
 provider.GitlabProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -243,7 +239,7 @@ provider.GitlabProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-gitlab.provider.GitlabProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/provider"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/provider"
 
 provider.GitlabProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -257,7 +253,7 @@ provider.GitlabProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.provider.GitlabProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/provider"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/provider"
 
 provider.GitlabProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -596,7 +592,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.provider.GitlabProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/provider"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/provider"
 
 &provider.GitlabProviderConfig {
 	Alias: *string,

@@ -1,7 +1,3 @@
-# `gitlab_group_protected_environment`
-
-Refer to the Terraform Registory for docs: [`gitlab_group_protected_environment`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_protected_environment).
-
 # `groupProtectedEnvironment` Submodule <a name="`groupProtectedEnvironment` Submodule" id="@cdktf/provider-gitlab.groupProtectedEnvironment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
