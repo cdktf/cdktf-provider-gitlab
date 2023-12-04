@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjects.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojects"
 
 datagitlabprojects.NewDataGitlabProjects(scope Construct, id *string, config DataGitlabProjectsConfig) DataGitlabProjects
 ```
@@ -428,7 +428,7 @@ func ResetWithShared()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjects.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojects"
 
 datagitlabprojects.DataGitlabProjects_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjects.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojects"
 
 datagitlabprojects.DataGitlabProjects_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ datagitlabprojects.DataGitlabProjects_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjects.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojects"
 
 datagitlabprojects.DataGitlabProjects_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ datagitlabprojects.DataGitlabProjects_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjects.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojects"
 
 datagitlabprojects.DataGitlabProjects_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1212,7 +1212,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojects"
 
 &datagitlabprojects.DataGitlabProjectsConfig {
 	Connection: interface{},
@@ -1689,7 +1689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsProjects.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojects"
 
 &datagitlabprojects.DataGitlabProjectsProjects {
 
@@ -1702,7 +1702,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsProjectsContainerExpirationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojects"
 
 &datagitlabprojects.DataGitlabProjectsProjectsContainerExpirationPolicy {
 
@@ -1715,7 +1715,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsProjectsForkedFromProject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojects"
 
 &datagitlabprojects.DataGitlabProjectsProjectsForkedFromProject {
 
@@ -1728,7 +1728,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsProjectsNamespace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojects"
 
 &datagitlabprojects.DataGitlabProjectsProjectsNamespace {
 
@@ -1741,7 +1741,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsProjectsOwner.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojects"
 
 &datagitlabprojects.DataGitlabProjectsProjectsOwner {
 
@@ -1754,7 +1754,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsProjectsPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojects"
 
 &datagitlabprojects.DataGitlabProjectsProjectsPermissions {
 
@@ -1767,7 +1767,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsProjectsSharedWithGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojects"
 
 &datagitlabprojects.DataGitlabProjectsProjectsSharedWithGroups {
 
@@ -1782,7 +1782,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsProjectsContainerExpirationPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojects"
 
 datagitlabprojects.NewDataGitlabProjectsProjectsContainerExpirationPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectsProjectsContainerExpirationPolicyList
 ```
@@ -1914,7 +1914,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsProjectsContainerExpirationPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojects"
 
 datagitlabprojects.NewDataGitlabProjectsProjectsContainerExpirationPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabProjectsProjectsContainerExpirationPolicyOutputReference
 ```
@@ -2269,7 +2269,7 @@ func InternalValue() DataGitlabProjectsProjectsContainerExpirationPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsProjectsForkedFromProjectList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojects"
 
 datagitlabprojects.NewDataGitlabProjectsProjectsForkedFromProjectList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectsProjectsForkedFromProjectList
 ```
@@ -2401,7 +2401,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsProjectsForkedFromProjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojects"
 
 datagitlabprojects.NewDataGitlabProjectsProjectsForkedFromProjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabProjectsProjectsForkedFromProjectOutputReference
 ```
@@ -2745,7 +2745,7 @@ func InternalValue() DataGitlabProjectsProjectsForkedFromProject
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsProjectsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojects"
 
 datagitlabprojects.NewDataGitlabProjectsProjectsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectsProjectsList
 ```
@@ -2877,7 +2877,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsProjectsNamespaceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojects"
 
 datagitlabprojects.NewDataGitlabProjectsProjectsNamespaceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectsProjectsNamespaceList
 ```
@@ -3009,7 +3009,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsProjectsNamespaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojects"
 
 datagitlabprojects.NewDataGitlabProjectsProjectsNamespaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabProjectsProjectsNamespaceOutputReference
 ```
@@ -3331,7 +3331,7 @@ func InternalValue() DataGitlabProjectsProjectsNamespace
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsProjectsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojects"
 
 datagitlabprojects.NewDataGitlabProjectsProjectsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabProjectsProjectsOutputReference
 ```
@@ -4643,7 +4643,7 @@ func InternalValue() DataGitlabProjectsProjects
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsProjectsOwnerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojects"
 
 datagitlabprojects.NewDataGitlabProjectsProjectsOwnerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectsProjectsOwnerList
 ```
@@ -4775,7 +4775,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsProjectsOwnerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojects"
 
 datagitlabprojects.NewDataGitlabProjectsProjectsOwnerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabProjectsProjectsOwnerOutputReference
 ```
@@ -5108,7 +5108,7 @@ func InternalValue() DataGitlabProjectsProjectsOwner
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsProjectsPermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojects"
 
 datagitlabprojects.NewDataGitlabProjectsProjectsPermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectsProjectsPermissionsList
 ```
@@ -5240,7 +5240,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsProjectsPermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojects"
 
 datagitlabprojects.NewDataGitlabProjectsProjectsPermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabProjectsProjectsPermissionsOutputReference
 ```
@@ -5529,7 +5529,7 @@ func InternalValue() DataGitlabProjectsProjectsPermissions
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsProjectsSharedWithGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojects"
 
 datagitlabprojects.NewDataGitlabProjectsProjectsSharedWithGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectsProjectsSharedWithGroupsList
 ```
@@ -5661,7 +5661,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsProjectsSharedWithGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojects"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabprojects"
 
 datagitlabprojects.NewDataGitlabProjectsProjectsSharedWithGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabProjectsProjectsSharedWithGroupsOutputReference
 ```
