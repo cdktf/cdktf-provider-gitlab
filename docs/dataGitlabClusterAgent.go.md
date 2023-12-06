@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabclusteragent"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabclusteragent"
 
 datagitlabclusteragent.NewDataGitlabClusterAgent(scope Construct, id *string, config DataGitlabClusterAgentConfig) DataGitlabClusterAgent
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabclusteragent"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabclusteragent"
 
 datagitlabclusteragent.DataGitlabClusterAgent_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabclusteragent"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabclusteragent"
 
 datagitlabclusteragent.DataGitlabClusterAgent_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datagitlabclusteragent.DataGitlabClusterAgent_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabclusteragent"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabclusteragent"
 
 datagitlabclusteragent.DataGitlabClusterAgent_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datagitlabclusteragent.DataGitlabClusterAgent_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabclusteragent"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabclusteragent"
 
 datagitlabclusteragent.DataGitlabClusterAgent_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -640,7 +640,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabclusteragent"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabclusteragent"
 
 &datagitlabclusteragent.DataGitlabClusterAgentConfig {
 	Connection: interface{},
