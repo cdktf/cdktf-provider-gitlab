@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectMilestone.ProjectMilestone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectmilestone"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectmilestone"
 
 projectmilestone.NewProjectMilestone(scope Construct, id *string, config ProjectMilestoneConfig) ProjectMilestone
 ```
@@ -406,7 +406,7 @@ func ResetState()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectMilestone.ProjectMilestone.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectmilestone"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectmilestone"
 
 projectmilestone.ProjectMilestone_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectMilestone.ProjectMilestone.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectmilestone"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectmilestone"
 
 projectmilestone.ProjectMilestone_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ projectmilestone.ProjectMilestone_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectMilestone.ProjectMilestone.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectmilestone"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectmilestone"
 
 projectmilestone.ProjectMilestone_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ projectmilestone.ProjectMilestone_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectMilestone.ProjectMilestone.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectmilestone"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectmilestone"
 
 projectmilestone.ProjectMilestone_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -926,7 +926,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectMilestone.ProjectMilestoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectmilestone"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectmilestone"
 
 &projectmilestone.ProjectMilestoneConfig {
 	Connection: interface{},
