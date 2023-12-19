@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabapplication"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabapplication"
 
 datagitlabapplication.NewDataGitlabApplication(scope Construct, id *string, config DataGitlabApplicationConfig) DataGitlabApplication
 ```
@@ -267,7 +267,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabapplication"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabapplication"
 
 datagitlabapplication.DataGitlabApplication_IsConstruct(x interface{}) *bool
 ```
@@ -299,7 +299,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabapplication"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabapplication"
 
 datagitlabapplication.DataGitlabApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ datagitlabapplication.DataGitlabApplication_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplication.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabapplication"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabapplication"
 
 datagitlabapplication.DataGitlabApplication_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ datagitlabapplication.DataGitlabApplication_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabapplication"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabapplication"
 
 datagitlabapplication.DataGitlabApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -600,7 +600,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabApplication.DataGitlabApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabapplication"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabapplication"
 
 &datagitlabapplication.DataGitlabApplicationConfig {
 	Connection: interface{},
