@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupprotectedenvironment"
 
 groupprotectedenvironment.NewGroupProtectedEnvironment(scope Construct, id *string, config GroupProtectedEnvironmentConfig) GroupProtectedEnvironment
 ```
@@ -411,7 +411,7 @@ func ResetRequiredApprovalCount()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupprotectedenvironment"
 
 groupprotectedenvironment.GroupProtectedEnvironment_IsConstruct(x interface{}) *bool
 ```
@@ -443,7 +443,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupprotectedenvironment"
 
 groupprotectedenvironment.GroupProtectedEnvironment_IsTerraformElement(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ groupprotectedenvironment.GroupProtectedEnvironment_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupprotectedenvironment"
 
 groupprotectedenvironment.GroupProtectedEnvironment_IsTerraformResource(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ groupprotectedenvironment.GroupProtectedEnvironment_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupprotectedenvironment"
 
 groupprotectedenvironment.GroupProtectedEnvironment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -821,7 +821,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupprotectedenvironment"
 
 &groupprotectedenvironment.GroupProtectedEnvironmentApprovalRules {
 	AccessLevel: *string,
@@ -907,7 +907,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupprotectedenvironment"
 
 &groupprotectedenvironment.GroupProtectedEnvironmentConfig {
 	Connection: interface{},
@@ -1089,7 +1089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupprotectedenvironment"
 
 &groupprotectedenvironment.GroupProtectedEnvironmentDeployAccessLevels {
 	AccessLevel: *string,
@@ -1161,7 +1161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupprotectedenvironment"
 
 groupprotectedenvironment.NewGroupProtectedEnvironmentApprovalRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GroupProtectedEnvironmentApprovalRulesList
 ```
@@ -1304,7 +1304,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupprotectedenvironment"
 
 groupprotectedenvironment.NewGroupProtectedEnvironmentApprovalRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GroupProtectedEnvironmentApprovalRulesOutputReference
 ```
@@ -1709,7 +1709,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupprotectedenvironment"
 
 groupprotectedenvironment.NewGroupProtectedEnvironmentDeployAccessLevelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GroupProtectedEnvironmentDeployAccessLevelsList
 ```
@@ -1852,7 +1852,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupprotectedenvironment"
 
 groupprotectedenvironment.NewGroupProtectedEnvironmentDeployAccessLevelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GroupProtectedEnvironmentDeployAccessLevelsOutputReference
 ```

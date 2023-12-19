@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupissueboard"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupissueboard"
 
 groupissueboard.NewGroupIssueBoard(scope Construct, id *string, config GroupIssueBoardConfig) GroupIssueBoard
 ```
@@ -398,7 +398,7 @@ func ResetMilestoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupissueboard"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupissueboard"
 
 groupissueboard.GroupIssueBoard_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupissueboard"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupissueboard"
 
 groupissueboard.GroupIssueBoard_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ groupissueboard.GroupIssueBoard_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupissueboard"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupissueboard"
 
 groupissueboard.GroupIssueBoard_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ groupissueboard.GroupIssueBoard_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupissueboard"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupissueboard"
 
 groupissueboard.GroupIssueBoard_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -786,7 +786,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupissueboard"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupissueboard"
 
 &groupissueboard.GroupIssueBoardConfig {
 	Connection: interface{},
@@ -952,7 +952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardLists.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupissueboard"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupissueboard"
 
 &groupissueboard.GroupIssueBoardLists {
 	LabelId: *f64,
@@ -988,7 +988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupissueboard"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupissueboard"
 
 groupissueboard.NewGroupIssueBoardListsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GroupIssueBoardListsList
 ```
@@ -1131,7 +1131,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupissueboard"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupissueboard"
 
 groupissueboard.NewGroupIssueBoardListsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GroupIssueBoardListsOutputReference
 ```

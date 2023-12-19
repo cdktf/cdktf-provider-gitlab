@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/usercustomattribute"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/usercustomattribute"
 
 usercustomattribute.NewUserCustomAttribute(scope Construct, id *string, config UserCustomAttributeConfig) UserCustomAttribute
 ```
@@ -378,7 +378,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/usercustomattribute"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/usercustomattribute"
 
 usercustomattribute.UserCustomAttribute_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/usercustomattribute"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/usercustomattribute"
 
 usercustomattribute.UserCustomAttribute_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ usercustomattribute.UserCustomAttribute_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/usercustomattribute"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/usercustomattribute"
 
 usercustomattribute.UserCustomAttribute_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ usercustomattribute.UserCustomAttribute_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttribute.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/usercustomattribute"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/usercustomattribute"
 
 usercustomattribute.UserCustomAttribute_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -755,7 +755,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.userCustomAttribute.UserCustomAttributeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/usercustomattribute"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/usercustomattribute"
 
 &usercustomattribute.UserCustomAttributeConfig {
 	Connection: interface{},
