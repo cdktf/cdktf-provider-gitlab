@@ -4,12 +4,12 @@
 
 ### DataGitlabUsers <a name="DataGitlabUsers" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/users gitlab_users}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/users gitlab_users}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabusers"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusers"
 
 datagitlabusers.NewDataGitlabUsers(scope Construct, id *string, config DataGitlabUsersConfig) DataGitlabUsers
 ```
@@ -337,7 +337,7 @@ func ResetSort()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabusers"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusers"
 
 datagitlabusers.DataGitlabUsers_IsConstruct(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabusers"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusers"
 
 datagitlabusers.DataGitlabUsers_IsTerraformElement(x interface{}) *bool
 ```
@@ -383,7 +383,7 @@ datagitlabusers.DataGitlabUsers_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabusers"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusers"
 
 datagitlabusers.DataGitlabUsers_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -397,7 +397,7 @@ datagitlabusers.DataGitlabUsers_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabusers"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusers"
 
 datagitlabusers.DataGitlabUsers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -426,7 +426,7 @@ The construct id used in the generated config for the DataGitlabUsers to import.
 
 The id of the existing DataGitlabUsers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -835,7 +835,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabusers"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusers"
 
 &datagitlabusers.DataGitlabUsersConfig {
 	Connection: interface{},
@@ -875,7 +875,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabusers"
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsersConfig.property.createdBefore">CreatedBefore</a></code> | <code>*string</code> | Search for users created before a specific date. (Requires administrator privileges). |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsersConfig.property.externProvider">ExternProvider</a></code> | <code>*string</code> | Lookup users by external provider. (Requires administrator privileges). |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsersConfig.property.externUid">ExternUid</a></code> | <code>*string</code> | Lookup users by external UID. (Requires administrator privileges). |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/users#id DataGitlabUsers#id}. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/users#id DataGitlabUsers#id}. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsersConfig.property.orderBy">OrderBy</a></code> | <code>*string</code> | Order the users' list by `id`, `name`, `username`, `created_at` or `updated_at`. (Requires administrator privileges). |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsersConfig.property.search">Search</a></code> | <code>*string</code> | Search users by username, name or email. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsersConfig.property.sort">Sort</a></code> | <code>*string</code> | Sort users' list in asc or desc order. (Requires administrator privileges). |
@@ -962,7 +962,7 @@ Active interface{}
 
 Filter users that are active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/users#active DataGitlabUsers#active}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/users#active DataGitlabUsers#active}
 
 ---
 
@@ -976,7 +976,7 @@ Blocked interface{}
 
 Filter users that are blocked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/users#blocked DataGitlabUsers#blocked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/users#blocked DataGitlabUsers#blocked}
 
 ---
 
@@ -990,7 +990,7 @@ CreatedAfter *string
 
 Search for users created after a specific date. (Requires administrator privileges).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/users#created_after DataGitlabUsers#created_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/users#created_after DataGitlabUsers#created_after}
 
 ---
 
@@ -1004,7 +1004,7 @@ CreatedBefore *string
 
 Search for users created before a specific date. (Requires administrator privileges).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/users#created_before DataGitlabUsers#created_before}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/users#created_before DataGitlabUsers#created_before}
 
 ---
 
@@ -1018,7 +1018,7 @@ ExternProvider *string
 
 Lookup users by external provider. (Requires administrator privileges).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/users#extern_provider DataGitlabUsers#extern_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/users#extern_provider DataGitlabUsers#extern_provider}
 
 ---
 
@@ -1032,7 +1032,7 @@ ExternUid *string
 
 Lookup users by external UID. (Requires administrator privileges).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/users#extern_uid DataGitlabUsers#extern_uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/users#extern_uid DataGitlabUsers#extern_uid}
 
 ---
 
@@ -1044,7 +1044,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/users#id DataGitlabUsers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/users#id DataGitlabUsers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1061,7 +1061,7 @@ OrderBy *string
 
 Order the users' list by `id`, `name`, `username`, `created_at` or `updated_at`. (Requires administrator privileges).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/users#order_by DataGitlabUsers#order_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/users#order_by DataGitlabUsers#order_by}
 
 ---
 
@@ -1075,7 +1075,7 @@ Search *string
 
 Search users by username, name or email.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/users#search DataGitlabUsers#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/users#search DataGitlabUsers#search}
 
 ---
 
@@ -1089,7 +1089,7 @@ Sort *string
 
 Sort users' list in asc or desc order. (Requires administrator privileges).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/users#sort DataGitlabUsers#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/users#sort DataGitlabUsers#sort}
 
 ---
 
@@ -1098,7 +1098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsersUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabusers"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusers"
 
 &datagitlabusers.DataGitlabUsersUsers {
 
@@ -1113,7 +1113,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabusers"
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsersUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabusers"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusers"
 
 datagitlabusers.NewDataGitlabUsersUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabUsersUsersList
 ```
@@ -1245,7 +1245,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsersUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/datagitlabusers"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusers"
 
 datagitlabusers.NewDataGitlabUsersUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabUsersUsersOutputReference
 ```

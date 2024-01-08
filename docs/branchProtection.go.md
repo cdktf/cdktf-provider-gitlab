@@ -4,12 +4,12 @@
 
 ### BranchProtection <a name="BranchProtection" id="@cdktf/provider-gitlab.branchProtection.BranchProtection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection gitlab_branch_protection}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection gitlab_branch_protection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/branchprotection"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/branchprotection"
 
 branchprotection.NewBranchProtection(scope Construct, id *string, config BranchProtectionConfig) BranchProtection
 ```
@@ -80,7 +80,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.resetAllowedToUnprotect">ResetAllowedToUnprotect</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.resetAllowForcePush">ResetAllowForcePush</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.resetCodeOwnerApprovalRequired">ResetCodeOwnerApprovalRequired</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.resetMergeAccessLevel">ResetMergeAccessLevel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.resetPushAccessLevel">ResetPushAccessLevel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.resetUnprotectAccessLevel">ResetUnprotectAccessLevel</a></code> | *No description.* |
@@ -435,12 +434,6 @@ func ResetAllowForcePush()
 func ResetCodeOwnerApprovalRequired()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-gitlab.branchProtection.BranchProtection.resetId"></a>
-
-```go
-func ResetId()
-```
-
 ##### `ResetMergeAccessLevel` <a name="ResetMergeAccessLevel" id="@cdktf/provider-gitlab.branchProtection.BranchProtection.resetMergeAccessLevel"></a>
 
 ```go
@@ -473,7 +466,7 @@ func ResetUnprotectAccessLevel()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.branchProtection.BranchProtection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/branchprotection"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/branchprotection"
 
 branchprotection.BranchProtection_IsConstruct(x interface{}) *bool
 ```
@@ -505,7 +498,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.branchProtection.BranchProtection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/branchprotection"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/branchprotection"
 
 branchprotection.BranchProtection_IsTerraformElement(x interface{}) *bool
 ```
@@ -519,7 +512,7 @@ branchprotection.BranchProtection_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.branchProtection.BranchProtection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/branchprotection"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/branchprotection"
 
 branchprotection.BranchProtection_IsTerraformResource(x interface{}) *bool
 ```
@@ -533,7 +526,7 @@ branchprotection.BranchProtection_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.branchProtection.BranchProtection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/branchprotection"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/branchprotection"
 
 branchprotection.BranchProtection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -562,7 +555,7 @@ The construct id used in the generated config for the BranchProtection to import
 
 The id of the existing BranchProtection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -596,13 +589,13 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.allowedToPush">AllowedToPush</a></code> | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToPushList">BranchProtectionAllowedToPushList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.allowedToUnprotect">AllowedToUnprotect</a></code> | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToUnprotectList">BranchProtectionAllowedToUnprotectList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.branchProtectionId">BranchProtectionId</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.allowedToMergeInput">AllowedToMergeInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.allowedToPushInput">AllowedToPushInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.allowedToUnprotectInput">AllowedToUnprotectInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.allowForcePushInput">AllowForcePushInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.branchInput">BranchInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.codeOwnerApprovalRequiredInput">CodeOwnerApprovalRequiredInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.mergeAccessLevelInput">MergeAccessLevelInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.pushAccessLevelInput">PushAccessLevelInput</a></code> | <code>*string</code> | *No description.* |
@@ -610,7 +603,6 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.allowForcePush">AllowForcePush</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.branch">Branch</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.codeOwnerApprovalRequired">CodeOwnerApprovalRequired</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.mergeAccessLevel">MergeAccessLevel</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.project">Project</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.pushAccessLevel">PushAccessLevel</a></code> | <code>*string</code> | *No description.* |
@@ -800,6 +792,16 @@ func BranchProtectionId() *f64
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-gitlab.branchProtection.BranchProtection.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `AllowedToMergeInput`<sup>Optional</sup> <a name="AllowedToMergeInput" id="@cdktf/provider-gitlab.branchProtection.BranchProtection.property.allowedToMergeInput"></a>
 
 ```go
@@ -857,16 +859,6 @@ func CodeOwnerApprovalRequiredInput() interface{}
 ```
 
 - *Type:* interface{}
-
----
-
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-gitlab.branchProtection.BranchProtection.property.idInput"></a>
-
-```go
-func IdInput() *string
-```
-
-- *Type:* *string
 
 ---
 
@@ -940,16 +932,6 @@ func CodeOwnerApprovalRequired() interface{}
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-gitlab.branchProtection.BranchProtection.property.id"></a>
-
-```go
-func Id() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `MergeAccessLevel`<sup>Required</sup> <a name="MergeAccessLevel" id="@cdktf/provider-gitlab.branchProtection.BranchProtection.property.mergeAccessLevel"></a>
 
 ```go
@@ -1015,7 +997,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToMerge.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/branchprotection"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/branchprotection"
 
 &branchprotection.BranchProtectionAllowedToMerge {
 	GroupId: *f64,
@@ -1042,7 +1024,7 @@ GroupId *f64
 
 The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `user_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#group_id BranchProtection#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#group_id BranchProtection#group_id}
 
 ---
 
@@ -1056,7 +1038,7 @@ UserId *f64
 
 The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `group_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#user_id BranchProtection#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#user_id BranchProtection#user_id}
 
 ---
 
@@ -1065,7 +1047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToPush.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/branchprotection"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/branchprotection"
 
 &branchprotection.BranchProtectionAllowedToPush {
 	GroupId: *f64,
@@ -1092,7 +1074,7 @@ GroupId *f64
 
 The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `user_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#group_id BranchProtection#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#group_id BranchProtection#group_id}
 
 ---
 
@@ -1106,7 +1088,7 @@ UserId *f64
 
 The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `group_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#user_id BranchProtection#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#user_id BranchProtection#user_id}
 
 ---
 
@@ -1115,7 +1097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToUnprotect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/branchprotection"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/branchprotection"
 
 &branchprotection.BranchProtectionAllowedToUnprotect {
 	GroupId: *f64,
@@ -1142,7 +1124,7 @@ GroupId *f64
 
 The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `user_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#group_id BranchProtection#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#group_id BranchProtection#group_id}
 
 ---
 
@@ -1156,7 +1138,7 @@ UserId *f64
 
 The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `group_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#user_id BranchProtection#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#user_id BranchProtection#user_id}
 
 ---
 
@@ -1165,7 +1147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/branchprotection"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/branchprotection"
 
 &branchprotection.BranchProtectionConfig {
 	Connection: interface{},
@@ -1182,7 +1164,6 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/branchprotection"
 	AllowedToUnprotect: interface{},
 	AllowForcePush: interface{},
 	CodeOwnerApprovalRequired: interface{},
-	Id: *string,
 	MergeAccessLevel: *string,
 	PushAccessLevel: *string,
 	UnprotectAccessLevel: *string,
@@ -1206,8 +1187,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/branchprotection"
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.allowedToPush">AllowedToPush</a></code> | <code>interface{}</code> | allowed_to_push block. |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.allowedToUnprotect">AllowedToUnprotect</a></code> | <code>interface{}</code> | allowed_to_unprotect block. |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.allowForcePush">AllowForcePush</a></code> | <code>interface{}</code> | Can be set to true to allow users with push access to force push. |
-| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.codeOwnerApprovalRequired">CodeOwnerApprovalRequired</a></code> | <code>interface{}</code> | Can be set to true to require code owner approval before merging. Only available own Premium and Ultimate instances. |
-| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#id BranchProtection#id}. |
+| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.codeOwnerApprovalRequired">CodeOwnerApprovalRequired</a></code> | <code>interface{}</code> | Can be set to true to require code owner approval before merging. Only available for Premium and Ultimate instances. |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.mergeAccessLevel">MergeAccessLevel</a></code> | <code>*string</code> | Access levels allowed to merge. Valid values are: `no one`, `developer`, `maintainer`. |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.pushAccessLevel">PushAccessLevel</a></code> | <code>*string</code> | Access levels allowed to push. Valid values are: `no one`, `developer`, `maintainer`. |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.unprotectAccessLevel">UnprotectAccessLevel</a></code> | <code>*string</code> | Access levels allowed to unprotect. Valid values are: `developer`, `maintainer`, `admin`. |
@@ -1294,7 +1274,7 @@ Branch *string
 
 Name of the branch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#branch BranchProtection#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#branch BranchProtection#branch}
 
 ---
 
@@ -1308,7 +1288,7 @@ Project *string
 
 The id of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#project BranchProtection#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#project BranchProtection#project}
 
 ---
 
@@ -1322,7 +1302,7 @@ AllowedToMerge interface{}
 
 allowed_to_merge block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#allowed_to_merge BranchProtection#allowed_to_merge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#allowed_to_merge BranchProtection#allowed_to_merge}
 
 ---
 
@@ -1336,7 +1316,7 @@ AllowedToPush interface{}
 
 allowed_to_push block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#allowed_to_push BranchProtection#allowed_to_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#allowed_to_push BranchProtection#allowed_to_push}
 
 ---
 
@@ -1350,7 +1330,7 @@ AllowedToUnprotect interface{}
 
 allowed_to_unprotect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#allowed_to_unprotect BranchProtection#allowed_to_unprotect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#allowed_to_unprotect BranchProtection#allowed_to_unprotect}
 
 ---
 
@@ -1364,7 +1344,7 @@ AllowForcePush interface{}
 
 Can be set to true to allow users with push access to force push.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#allow_force_push BranchProtection#allow_force_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#allow_force_push BranchProtection#allow_force_push}
 
 ---
 
@@ -1376,24 +1356,9 @@ CodeOwnerApprovalRequired interface{}
 
 - *Type:* interface{}
 
-Can be set to true to require code owner approval before merging. Only available own Premium and Ultimate instances.
+Can be set to true to require code owner approval before merging. Only available for Premium and Ultimate instances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#code_owner_approval_required BranchProtection#code_owner_approval_required}
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#id BranchProtection#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#code_owner_approval_required BranchProtection#code_owner_approval_required}
 
 ---
 
@@ -1407,7 +1372,7 @@ MergeAccessLevel *string
 
 Access levels allowed to merge. Valid values are: `no one`, `developer`, `maintainer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#merge_access_level BranchProtection#merge_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#merge_access_level BranchProtection#merge_access_level}
 
 ---
 
@@ -1421,7 +1386,7 @@ PushAccessLevel *string
 
 Access levels allowed to push. Valid values are: `no one`, `developer`, `maintainer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#push_access_level BranchProtection#push_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#push_access_level BranchProtection#push_access_level}
 
 ---
 
@@ -1435,7 +1400,7 @@ UnprotectAccessLevel *string
 
 Access levels allowed to unprotect. Valid values are: `developer`, `maintainer`, `admin`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#unprotect_access_level BranchProtection#unprotect_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#unprotect_access_level BranchProtection#unprotect_access_level}
 
 ---
 
@@ -1446,7 +1411,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToMergeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/branchprotection"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/branchprotection"
 
 branchprotection.NewBranchProtectionAllowedToMergeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BranchProtectionAllowedToMergeList
 ```
@@ -1589,7 +1554,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToMergeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/branchprotection"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/branchprotection"
 
 branchprotection.NewBranchProtectionAllowedToMergeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BranchProtectionAllowedToMergeOutputReference
 ```
@@ -1936,7 +1901,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToPushList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/branchprotection"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/branchprotection"
 
 branchprotection.NewBranchProtectionAllowedToPushList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BranchProtectionAllowedToPushList
 ```
@@ -2079,7 +2044,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToPushOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/branchprotection"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/branchprotection"
 
 branchprotection.NewBranchProtectionAllowedToPushOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BranchProtectionAllowedToPushOutputReference
 ```
@@ -2426,7 +2391,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToUnprotectList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/branchprotection"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/branchprotection"
 
 branchprotection.NewBranchProtectionAllowedToUnprotectList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BranchProtectionAllowedToUnprotectList
 ```
@@ -2569,7 +2534,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToUnprotectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/branchprotection"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/branchprotection"
 
 branchprotection.NewBranchProtectionAllowedToUnprotectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BranchProtectionAllowedToUnprotectOutputReference
 ```

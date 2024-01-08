@@ -4,12 +4,12 @@
 
 ### PipelineTrigger <a name="PipelineTrigger" id="@cdktf/provider-gitlab.pipelineTrigger.PipelineTrigger"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/pipeline_trigger gitlab_pipeline_trigger}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/pipeline_trigger gitlab_pipeline_trigger}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.pipelineTrigger.PipelineTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/pipelinetrigger"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/pipelinetrigger"
 
 pipelinetrigger.NewPipelineTrigger(scope Construct, id *string, config PipelineTriggerConfig) PipelineTrigger
 ```
@@ -378,7 +378,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.pipelineTrigger.PipelineTrigger.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/pipelinetrigger"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/pipelinetrigger"
 
 pipelinetrigger.PipelineTrigger_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.pipelineTrigger.PipelineTrigger.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/pipelinetrigger"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/pipelinetrigger"
 
 pipelinetrigger.PipelineTrigger_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ pipelinetrigger.PipelineTrigger_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.pipelineTrigger.PipelineTrigger.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/pipelinetrigger"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/pipelinetrigger"
 
 pipelinetrigger.PipelineTrigger_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ pipelinetrigger.PipelineTrigger_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.pipelineTrigger.PipelineTrigger.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/pipelinetrigger"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/pipelinetrigger"
 
 pipelinetrigger.PipelineTrigger_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the PipelineTrigger to import.
 
 The id of the existing PipelineTrigger that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/pipeline_trigger#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/pipeline_trigger#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -755,7 +755,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.pipelineTrigger.PipelineTriggerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/pipelinetrigger"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/pipelinetrigger"
 
 &pipelinetrigger.PipelineTriggerConfig {
 	Connection: interface{},
@@ -784,7 +784,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/pipelinetrigger"
 | <code><a href="#@cdktf/provider-gitlab.pipelineTrigger.PipelineTriggerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.pipelineTrigger.PipelineTriggerConfig.property.description">Description</a></code> | <code>*string</code> | The description of the pipeline trigger. |
 | <code><a href="#@cdktf/provider-gitlab.pipelineTrigger.PipelineTriggerConfig.property.project">Project</a></code> | <code>*string</code> | The name or id of the project to add the trigger to. |
-| <code><a href="#@cdktf/provider-gitlab.pipelineTrigger.PipelineTriggerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/pipeline_trigger#id PipelineTrigger#id}. |
+| <code><a href="#@cdktf/provider-gitlab.pipelineTrigger.PipelineTriggerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/pipeline_trigger#id PipelineTrigger#id}. |
 
 ---
 
@@ -868,7 +868,7 @@ Description *string
 
 The description of the pipeline trigger.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/pipeline_trigger#description PipelineTrigger#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/pipeline_trigger#description PipelineTrigger#description}
 
 ---
 
@@ -882,7 +882,7 @@ Project *string
 
 The name or id of the project to add the trigger to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/pipeline_trigger#project PipelineTrigger#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/pipeline_trigger#project PipelineTrigger#project}
 
 ---
 
@@ -894,7 +894,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/pipeline_trigger#id PipelineTrigger#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/pipeline_trigger#id PipelineTrigger#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

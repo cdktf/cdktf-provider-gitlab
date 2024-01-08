@@ -4,12 +4,12 @@
 
 ### ClusterAgent <a name="ClusterAgent" id="@cdktf/provider-gitlab.clusterAgent.ClusterAgent"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/cluster_agent gitlab_cluster_agent}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/cluster_agent gitlab_cluster_agent}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.clusterAgent.ClusterAgent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/clusteragent"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/clusteragent"
 
 clusteragent.NewClusterAgent(scope Construct, id *string, config ClusterAgentConfig) ClusterAgent
 ```
@@ -378,7 +378,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.clusterAgent.ClusterAgent.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/clusteragent"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/clusteragent"
 
 clusteragent.ClusterAgent_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.clusterAgent.ClusterAgent.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/clusteragent"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/clusteragent"
 
 clusteragent.ClusterAgent_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ clusteragent.ClusterAgent_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.clusterAgent.ClusterAgent.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/clusteragent"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/clusteragent"
 
 clusteragent.ClusterAgent_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ clusteragent.ClusterAgent_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.clusterAgent.ClusterAgent.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/clusteragent"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/clusteragent"
 
 clusteragent.ClusterAgent_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the ClusterAgent to import.
 
 The id of the existing ClusterAgent that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/cluster_agent#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/cluster_agent#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -766,7 +766,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.clusterAgent.ClusterAgentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/clusteragent"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/clusteragent"
 
 &clusteragent.ClusterAgentConfig {
 	Connection: interface{},
@@ -795,7 +795,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/clusteragent"
 | <code><a href="#@cdktf/provider-gitlab.clusterAgent.ClusterAgentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgent.ClusterAgentConfig.property.name">Name</a></code> | <code>*string</code> | The Name of the agent. |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgent.ClusterAgentConfig.property.project">Project</a></code> | <code>*string</code> | ID or full path of the project maintained by the authenticated user. |
-| <code><a href="#@cdktf/provider-gitlab.clusterAgent.ClusterAgentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/cluster_agent#id ClusterAgent#id}. |
+| <code><a href="#@cdktf/provider-gitlab.clusterAgent.ClusterAgentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/cluster_agent#id ClusterAgent#id}. |
 
 ---
 
@@ -879,7 +879,7 @@ Name *string
 
 The Name of the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/cluster_agent#name ClusterAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/cluster_agent#name ClusterAgent#name}
 
 ---
 
@@ -893,7 +893,7 @@ Project *string
 
 ID or full path of the project maintained by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/cluster_agent#project ClusterAgent#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/cluster_agent#project ClusterAgent#project}
 
 ---
 
@@ -905,7 +905,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/cluster_agent#id ClusterAgent#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/cluster_agent#id ClusterAgent#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

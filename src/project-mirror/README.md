@@ -1,3 +1,3 @@
 # `gitlab_project_mirror`
 
-Refer to the Terraform Registory for docs: [`gitlab_project_mirror`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/project_mirror).
+Refer to the Terraform Registory for docs: [`gitlab_project_mirror`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/project_mirror).

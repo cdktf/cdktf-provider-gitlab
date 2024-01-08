@@ -4,7 +4,7 @@
 
 ### GroupIssueBoard <a name="GroupIssueBoard" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board gitlab_group_issue_board}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board gitlab_group_issue_board}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.Initializer"></a>
 
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.putLists">PutLists</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.resetLabels">ResetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.resetLists">ResetLists</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.resetMilestoneId">ResetMilestoneId</a></code> | *No description.* |
 
@@ -372,6 +373,12 @@ private void PutLists(object Value)
 
 ---
 
+##### `ResetLabels` <a name="ResetLabels" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.resetLabels"></a>
+
+```csharp
+private void ResetLabels()
+```
+
 ##### `ResetLists` <a name="ResetLists" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.resetLists"></a>
 
 ```csharp
@@ -487,7 +494,7 @@ The construct id used in the generated config for the GroupIssueBoard to import.
 
 The id of the existing GroupIssueBoard that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -520,10 +527,12 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.property.lists">Lists</a></code> | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsList">GroupIssueBoardListsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.property.groupInput">GroupInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.property.labelsInput">LabelsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.property.listsInput">ListsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.property.milestoneIdInput">MilestoneIdInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.property.group">Group</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.property.labels">Labels</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.property.milestoneId">MilestoneId</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.property.name">Name</a></code> | <code>string</code> | *No description.* |
 
@@ -701,6 +710,16 @@ public string GroupInput { get; }
 
 ---
 
+##### `LabelsInput`<sup>Optional</sup> <a name="LabelsInput" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.property.labelsInput"></a>
+
+```csharp
+public string[] LabelsInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
 ##### `ListsInput`<sup>Optional</sup> <a name="ListsInput" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.property.listsInput"></a>
 
 ```csharp
@@ -738,6 +757,16 @@ public string Group { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `Labels`<sup>Required</sup> <a name="Labels" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.property.labels"></a>
+
+```csharp
+public string[] Labels { get; }
+```
+
+- *Type:* string[]
 
 ---
 
@@ -798,6 +827,7 @@ new GroupIssueBoardConfig {
     object[] Provisioners = null,
     string Group,
     string Name,
+    string[] Labels = null,
     object Lists = null,
     double MilestoneId = null
 };
@@ -816,6 +846,7 @@ new GroupIssueBoardConfig {
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardConfig.property.group">Group</a></code> | <code>string</code> | The ID or URL-encoded path of the group owned by the authenticated user. |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardConfig.property.name">Name</a></code> | <code>string</code> | The name of the board. |
+| <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardConfig.property.labels">Labels</a></code> | <code>string[]</code> | The list of label names which the board should be scoped to. |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardConfig.property.lists">Lists</a></code> | <code>object</code> | lists block. |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardConfig.property.milestoneId">MilestoneId</a></code> | <code>double</code> | The milestone the board should be scoped to. |
 
@@ -901,7 +932,7 @@ public string Group { get; set; }
 
 The ID or URL-encoded path of the group owned by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board#group GroupIssueBoard#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board#group GroupIssueBoard#group}
 
 ---
 
@@ -915,7 +946,21 @@ public string Name { get; set; }
 
 The name of the board.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board#name GroupIssueBoard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board#name GroupIssueBoard#name}
+
+---
+
+##### `Labels`<sup>Optional</sup> <a name="Labels" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardConfig.property.labels"></a>
+
+```csharp
+public string[] Labels { get; set; }
+```
+
+- *Type:* string[]
+
+The list of label names which the board should be scoped to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board#labels GroupIssueBoard#labels}
 
 ---
 
@@ -929,7 +974,7 @@ public object Lists { get; set; }
 
 lists block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board#lists GroupIssueBoard#lists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board#lists GroupIssueBoard#lists}
 
 ---
 
@@ -943,7 +988,7 @@ public double MilestoneId { get; set; }
 
 The milestone the board should be scoped to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board#milestone_id GroupIssueBoard#milestone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board#milestone_id GroupIssueBoard#milestone_id}
 
 ---
 
@@ -955,7 +1000,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 using HashiCorp.Cdktf.Providers.Gitlab;
 
 new GroupIssueBoardLists {
-    double LabelId = null
+    double LabelId = null,
+    double Position = null
 };
 ```
 
@@ -964,6 +1010,7 @@ new GroupIssueBoardLists {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardLists.property.labelId">LabelId</a></code> | <code>double</code> | The ID of the label the list should be scoped to. |
+| <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardLists.property.position">Position</a></code> | <code>double</code> | The explicit position of the list within the board, zero based. |
 
 ---
 
@@ -977,7 +1024,21 @@ public double LabelId { get; set; }
 
 The ID of the label the list should be scoped to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board#label_id GroupIssueBoard#label_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board#label_id GroupIssueBoard#label_id}
+
+---
+
+##### `Position`<sup>Optional</sup> <a name="Position" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardLists.property.position"></a>
+
+```csharp
+public double Position { get; set; }
+```
+
+- *Type:* double
+
+The explicit position of the list within the board, zero based.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board#position GroupIssueBoard#position}
 
 ---
 
@@ -1195,6 +1256,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.resetLabelId">ResetLabelId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.resetPosition">ResetPosition</a></code> | *No description.* |
 
 ---
 
@@ -1354,6 +1416,12 @@ Returns a reversible string representation.
 private void ResetLabelId()
 ```
 
+##### `ResetPosition` <a name="ResetPosition" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.resetPosition"></a>
+
+```csharp
+private void ResetPosition()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1362,9 +1430,10 @@ private void ResetLabelId()
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.property.id">Id</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.property.position">Position</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.property.labelIdInput">LabelIdInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.property.positionInput">PositionInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.property.labelId">LabelId</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.property.position">Position</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
 
 ---
@@ -1403,16 +1472,6 @@ public double Id { get; }
 
 ---
 
-##### `Position`<sup>Required</sup> <a name="Position" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.property.position"></a>
-
-```csharp
-public double Position { get; }
-```
-
-- *Type:* double
-
----
-
 ##### `LabelIdInput`<sup>Optional</sup> <a name="LabelIdInput" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.property.labelIdInput"></a>
 
 ```csharp
@@ -1423,10 +1482,30 @@ public double LabelIdInput { get; }
 
 ---
 
+##### `PositionInput`<sup>Optional</sup> <a name="PositionInput" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.property.positionInput"></a>
+
+```csharp
+public double PositionInput { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `LabelId`<sup>Required</sup> <a name="LabelId" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.property.labelId"></a>
 
 ```csharp
 public double LabelId { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `Position`<sup>Required</sup> <a name="Position" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.property.position"></a>
+
+```csharp
+public double Position { get; }
 ```
 
 - *Type:* double

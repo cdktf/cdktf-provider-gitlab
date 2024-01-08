@@ -4,7 +4,7 @@
 
 ### GitlabProvider <a name="GitlabProvider" id="@cdktf/provider-gitlab.provider.GitlabProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs gitlab}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs gitlab}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.provider.GitlabProvider.Initializer"></a>
 
@@ -64,7 +64,7 @@ Must be unique amongst siblings in the same scope
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs#alias GitlabProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs#alias GitlabProvider#alias}
 
 ---
 
@@ -76,7 +76,7 @@ This is the target GitLab base API endpoint.
 
 Providing a value is a requirement when working with GitLab CE or GitLab Enterprise e.g. `https://my.gitlab.server/api/v4/`. It is optional to provide this value and it can also be sourced from the `GITLAB_BASE_URL` environment variable. The value must end with a slash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs#base_url GitlabProvider#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs#base_url GitlabProvider#base_url}
 
 ---
 
@@ -88,7 +88,7 @@ This is a file containing the ca cert to verify the gitlab instance.
 
 This is available for use when working with GitLab CE or Gitlab Enterprise with a locally-issued or self-signed certificate chain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs#cacert_file GitlabProvider#cacert_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs#cacert_file GitlabProvider#cacert_file}
 
 ---
 
@@ -98,7 +98,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 File path to client certificate when GitLab instance is behind company proxy. File must contain PEM encoded data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs#client_cert GitlabProvider#client_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs#client_cert GitlabProvider#client_cert}
 
 ---
 
@@ -110,7 +110,7 @@ File path to client key when GitLab instance is behind company proxy.
 
 File must contain PEM encoded data. Required when `client_cert` is set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs#client_key GitlabProvider#client_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs#client_key GitlabProvider#client_key}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set this to `false` to skip this check. This may be useful if the GitLab instance does not yet exist and is created within the same terraform module. It may be sourced from the `GITLAB_EARLY_AUTH_CHECK`. This is an experimental feature and may change in the future. Please make sure to always keep backups of your state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs#early_auth_check GitlabProvider#early_auth_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs#early_auth_check GitlabProvider#early_auth_check}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 When set to true this disables SSL verification of the connection to the GitLab instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs#insecure GitlabProvider#insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs#insecure GitlabProvider#insecure}
 
 ---
 
@@ -144,7 +144,7 @@ The OAuth2 Token, Project, Group, Personal Access Token or CI Job Token used to 
 
 The OAuth method is used in this provider for authentication (using Bearer authorization token). See https://docs.gitlab.com/ee/api/#authentication for details. It may be sourced from the `GITLAB_TOKEN` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs#token GitlabProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs#token GitlabProvider#token}
 
 ---
 
@@ -384,7 +384,7 @@ The construct id used in the generated config for the GitlabProvider to import.
 
 The id of the existing GitlabProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -735,7 +735,7 @@ public java.lang.String getAlias();
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs#alias GitlabProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs#alias GitlabProvider#alias}
 
 ---
 
@@ -751,7 +751,7 @@ This is the target GitLab base API endpoint.
 
 Providing a value is a requirement when working with GitLab CE or GitLab Enterprise e.g. `https://my.gitlab.server/api/v4/`. It is optional to provide this value and it can also be sourced from the `GITLAB_BASE_URL` environment variable. The value must end with a slash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs#base_url GitlabProvider#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs#base_url GitlabProvider#base_url}
 
 ---
 
@@ -767,7 +767,7 @@ This is a file containing the ca cert to verify the gitlab instance.
 
 This is available for use when working with GitLab CE or Gitlab Enterprise with a locally-issued or self-signed certificate chain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs#cacert_file GitlabProvider#cacert_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs#cacert_file GitlabProvider#cacert_file}
 
 ---
 
@@ -781,7 +781,7 @@ public java.lang.String getClientCert();
 
 File path to client certificate when GitLab instance is behind company proxy. File must contain PEM encoded data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs#client_cert GitlabProvider#client_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs#client_cert GitlabProvider#client_cert}
 
 ---
 
@@ -797,7 +797,7 @@ File path to client key when GitLab instance is behind company proxy.
 
 File must contain PEM encoded data. Required when `client_cert` is set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs#client_key GitlabProvider#client_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs#client_key GitlabProvider#client_key}
 
 ---
 
@@ -813,7 +813,7 @@ public java.lang.Object getEarlyAuthCheck();
 
 Set this to `false` to skip this check. This may be useful if the GitLab instance does not yet exist and is created within the same terraform module. It may be sourced from the `GITLAB_EARLY_AUTH_CHECK`. This is an experimental feature and may change in the future. Please make sure to always keep backups of your state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs#early_auth_check GitlabProvider#early_auth_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs#early_auth_check GitlabProvider#early_auth_check}
 
 ---
 
@@ -827,7 +827,7 @@ public java.lang.Object getInsecure();
 
 When set to true this disables SSL verification of the connection to the GitLab instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs#insecure GitlabProvider#insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs#insecure GitlabProvider#insecure}
 
 ---
 
@@ -843,7 +843,7 @@ The OAuth2 Token, Project, Group, Personal Access Token or CI Job Token used to 
 
 The OAuth method is used in this provider for authentication (using Bearer authorization token). See https://docs.gitlab.com/ee/api/#authentication for details. It may be sourced from the `GITLAB_TOKEN` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs#token GitlabProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs#token GitlabProvider#token}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### GroupCluster <a name="GroupCluster" id="@cdktf/provider-gitlab.groupCluster.GroupCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster gitlab_group_cluster}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_cluster gitlab_group_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupCluster.GroupCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupcluster"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupcluster"
 
 groupcluster.NewGroupCluster(scope Construct, id *string, config GroupClusterConfig) GroupCluster
 ```
@@ -427,7 +427,7 @@ func ResetManagementProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.groupCluster.GroupCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupcluster"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupcluster"
 
 groupcluster.GroupCluster_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.groupCluster.GroupCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupcluster"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupcluster"
 
 groupcluster.GroupCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ groupcluster.GroupCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.groupCluster.GroupCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupcluster"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupcluster"
 
 groupcluster.GroupCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ groupcluster.GroupCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.groupCluster.GroupCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupcluster"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupcluster"
 
 groupcluster.GroupCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +516,7 @@ The construct id used in the generated config for the GroupCluster to import.
 
 The id of the existing GroupCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1024,7 +1024,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupcluster"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupcluster"
 
 &groupcluster.GroupClusterConfig {
 	Connection: interface{},
@@ -1067,7 +1067,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/groupcluster"
 | <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.domain">Domain</a></code> | <code>*string</code> | The base domain of the cluster. |
 | <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Determines if cluster is active or not. Defaults to `true`. This attribute cannot be read. |
 | <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.environmentScope">EnvironmentScope</a></code> | <code>*string</code> | The associated environment to the cluster. Defaults to `*`. |
-| <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster#id GroupCluster#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_cluster#id GroupCluster#id}. |
 | <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.kubernetesAuthorizationType">KubernetesAuthorizationType</a></code> | <code>*string</code> | The cluster authorization type. Valid values are `rbac`, `abac`, `unknown_authorization`. Defaults to `rbac`. |
 | <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.kubernetesCaCert">KubernetesCaCert</a></code> | <code>*string</code> | TLS certificate (needed if API is using a self-signed TLS certificate). |
 | <code><a href="#@cdktf/provider-gitlab.groupCluster.GroupClusterConfig.property.managed">Managed</a></code> | <code>interface{}</code> | Determines if cluster is managed by gitlab or not. Defaults to `true`. This attribute cannot be read. |
@@ -1155,7 +1155,7 @@ Group *string
 
 The id of the group to add the cluster to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster#group GroupCluster#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_cluster#group GroupCluster#group}
 
 ---
 
@@ -1169,7 +1169,7 @@ KubernetesApiUrl *string
 
 The URL to access the Kubernetes API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster#kubernetes_api_url GroupCluster#kubernetes_api_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_cluster#kubernetes_api_url GroupCluster#kubernetes_api_url}
 
 ---
 
@@ -1183,7 +1183,7 @@ KubernetesToken *string
 
 The token to authenticate against Kubernetes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster#kubernetes_token GroupCluster#kubernetes_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_cluster#kubernetes_token GroupCluster#kubernetes_token}
 
 ---
 
@@ -1197,7 +1197,7 @@ Name *string
 
 The name of cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster#name GroupCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_cluster#name GroupCluster#name}
 
 ---
 
@@ -1211,7 +1211,7 @@ Domain *string
 
 The base domain of the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster#domain GroupCluster#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_cluster#domain GroupCluster#domain}
 
 ---
 
@@ -1225,7 +1225,7 @@ Enabled interface{}
 
 Determines if cluster is active or not. Defaults to `true`. This attribute cannot be read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster#enabled GroupCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_cluster#enabled GroupCluster#enabled}
 
 ---
 
@@ -1239,7 +1239,7 @@ EnvironmentScope *string
 
 The associated environment to the cluster. Defaults to `*`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster#environment_scope GroupCluster#environment_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_cluster#environment_scope GroupCluster#environment_scope}
 
 ---
 
@@ -1251,7 +1251,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster#id GroupCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_cluster#id GroupCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1268,7 +1268,7 @@ KubernetesAuthorizationType *string
 
 The cluster authorization type. Valid values are `rbac`, `abac`, `unknown_authorization`. Defaults to `rbac`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster#kubernetes_authorization_type GroupCluster#kubernetes_authorization_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_cluster#kubernetes_authorization_type GroupCluster#kubernetes_authorization_type}
 
 ---
 
@@ -1282,7 +1282,7 @@ KubernetesCaCert *string
 
 TLS certificate (needed if API is using a self-signed TLS certificate).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster#kubernetes_ca_cert GroupCluster#kubernetes_ca_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_cluster#kubernetes_ca_cert GroupCluster#kubernetes_ca_cert}
 
 ---
 
@@ -1296,7 +1296,7 @@ Managed interface{}
 
 Determines if cluster is managed by gitlab or not. Defaults to `true`. This attribute cannot be read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster#managed GroupCluster#managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_cluster#managed GroupCluster#managed}
 
 ---
 
@@ -1310,7 +1310,7 @@ ManagementProjectId *string
 
 The ID of the management project for the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_cluster#management_project_id GroupCluster#management_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_cluster#management_project_id GroupCluster#management_project_id}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### RepositoryFile <a name="RepositoryFile" id="@cdktf/provider-gitlab.repositoryFile.RepositoryFile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/repository_file gitlab_repository_file}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/repository_file gitlab_repository_file}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.repositoryFile.RepositoryFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/repositoryfile"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/repositoryfile"
 
 repositoryfile.NewRepositoryFile(scope Construct, id *string, config RepositoryFileConfig) RepositoryFile
 ```
@@ -468,7 +468,7 @@ func ResetUpdateCommitMessage()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.repositoryFile.RepositoryFile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/repositoryfile"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/repositoryfile"
 
 repositoryfile.RepositoryFile_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.repositoryFile.RepositoryFile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/repositoryfile"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/repositoryfile"
 
 repositoryfile.RepositoryFile_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ repositoryfile.RepositoryFile_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.repositoryFile.RepositoryFile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/repositoryfile"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/repositoryfile"
 
 repositoryfile.RepositoryFile_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ repositoryfile.RepositoryFile_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.repositoryFile.RepositoryFile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/repositoryfile"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/repositoryfile"
 
 repositoryfile.RepositoryFile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -557,7 +557,7 @@ The construct id used in the generated config for the RepositoryFile to import.
 
 The id of the existing RepositoryFile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/repository_file#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/repository_file#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1186,7 +1186,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.repositoryFile.RepositoryFileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/repositoryfile"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/repositoryfile"
 
 &repositoryfile.RepositoryFileConfig {
 	Connection: interface{},
@@ -1210,7 +1210,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/repositoryfile"
 	Id: *string,
 	OverwriteOnCreate: interface{},
 	StartBranch: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11.repositoryFile.RepositoryFileTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-gitlab-go/gitlab.repositoryFile.RepositoryFileTimeouts,
 	UpdateCommitMessage: *string,
 }
 ```
@@ -1237,7 +1237,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/repositoryfile"
 | <code><a href="#@cdktf/provider-gitlab.repositoryFile.RepositoryFileConfig.property.deleteCommitMessage">DeleteCommitMessage</a></code> | <code>*string</code> | Delete Commit message. |
 | <code><a href="#@cdktf/provider-gitlab.repositoryFile.RepositoryFileConfig.property.encoding">Encoding</a></code> | <code>*string</code> | The file content encoding. Default value is `base64`. Valid values are: `base64`, `text`. |
 | <code><a href="#@cdktf/provider-gitlab.repositoryFile.RepositoryFileConfig.property.executeFilemode">ExecuteFilemode</a></code> | <code>interface{}</code> | Enables or disables the execute flag on the file. **Note**: requires GitLab 14.10 or newer. |
-| <code><a href="#@cdktf/provider-gitlab.repositoryFile.RepositoryFileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/repository_file#id RepositoryFile#id}. |
+| <code><a href="#@cdktf/provider-gitlab.repositoryFile.RepositoryFileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/repository_file#id RepositoryFile#id}. |
 | <code><a href="#@cdktf/provider-gitlab.repositoryFile.RepositoryFileConfig.property.overwriteOnCreate">OverwriteOnCreate</a></code> | <code>interface{}</code> | Enable overwriting existing files, defaults to `false`. |
 | <code><a href="#@cdktf/provider-gitlab.repositoryFile.RepositoryFileConfig.property.startBranch">StartBranch</a></code> | <code>*string</code> | Name of the branch to start the new commit from. |
 | <code><a href="#@cdktf/provider-gitlab.repositoryFile.RepositoryFileConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-gitlab.repositoryFile.RepositoryFileTimeouts">RepositoryFileTimeouts</a></code> | timeouts block. |
@@ -1325,7 +1325,7 @@ Branch *string
 
 Name of the branch to which to commit to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/repository_file#branch RepositoryFile#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/repository_file#branch RepositoryFile#branch}
 
 ---
 
@@ -1339,7 +1339,7 @@ Content *string
 
 File content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/repository_file#content RepositoryFile#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/repository_file#content RepositoryFile#content}
 
 ---
 
@@ -1355,7 +1355,7 @@ The full path of the file.
 
 It must be relative to the root of the project without a leading slash `/` or `./`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/repository_file#file_path RepositoryFile#file_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/repository_file#file_path RepositoryFile#file_path}
 
 ---
 
@@ -1369,7 +1369,7 @@ Project *string
 
 The name or ID of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/repository_file#project RepositoryFile#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/repository_file#project RepositoryFile#project}
 
 ---
 
@@ -1383,7 +1383,7 @@ AuthorEmail *string
 
 Email of the commit author.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/repository_file#author_email RepositoryFile#author_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/repository_file#author_email RepositoryFile#author_email}
 
 ---
 
@@ -1397,7 +1397,7 @@ AuthorName *string
 
 Name of the commit author.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/repository_file#author_name RepositoryFile#author_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/repository_file#author_name RepositoryFile#author_name}
 
 ---
 
@@ -1411,7 +1411,7 @@ CommitMessage *string
 
 Commit message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/repository_file#commit_message RepositoryFile#commit_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/repository_file#commit_message RepositoryFile#commit_message}
 
 ---
 
@@ -1425,7 +1425,7 @@ CreateCommitMessage *string
 
 Create commit message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/repository_file#create_commit_message RepositoryFile#create_commit_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/repository_file#create_commit_message RepositoryFile#create_commit_message}
 
 ---
 
@@ -1439,7 +1439,7 @@ DeleteCommitMessage *string
 
 Delete Commit message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/repository_file#delete_commit_message RepositoryFile#delete_commit_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/repository_file#delete_commit_message RepositoryFile#delete_commit_message}
 
 ---
 
@@ -1453,7 +1453,7 @@ Encoding *string
 
 The file content encoding. Default value is `base64`. Valid values are: `base64`, `text`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/repository_file#encoding RepositoryFile#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/repository_file#encoding RepositoryFile#encoding}
 
 ---
 
@@ -1467,7 +1467,7 @@ ExecuteFilemode interface{}
 
 Enables or disables the execute flag on the file. **Note**: requires GitLab 14.10 or newer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/repository_file#execute_filemode RepositoryFile#execute_filemode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/repository_file#execute_filemode RepositoryFile#execute_filemode}
 
 ---
 
@@ -1479,7 +1479,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/repository_file#id RepositoryFile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/repository_file#id RepositoryFile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1498,7 +1498,7 @@ Enable overwriting existing files, defaults to `false`.
 
 This attribute is only used during `create` and must be use carefully. We suggest to use `imports` whenever possible and limit the use of this attribute for when the project was imported on the same `apply`. This attribute is not supported during a resource import.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/repository_file#overwrite_on_create RepositoryFile#overwrite_on_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/repository_file#overwrite_on_create RepositoryFile#overwrite_on_create}
 
 ---
 
@@ -1512,7 +1512,7 @@ StartBranch *string
 
 Name of the branch to start the new commit from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/repository_file#start_branch RepositoryFile#start_branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/repository_file#start_branch RepositoryFile#start_branch}
 
 ---
 
@@ -1526,7 +1526,7 @@ Timeouts RepositoryFileTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/repository_file#timeouts RepositoryFile#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/repository_file#timeouts RepositoryFile#timeouts}
 
 ---
 
@@ -1540,7 +1540,7 @@ UpdateCommitMessage *string
 
 Update commit message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/repository_file#update_commit_message RepositoryFile#update_commit_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/repository_file#update_commit_message RepositoryFile#update_commit_message}
 
 ---
 
@@ -1549,7 +1549,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.repositoryFile.RepositoryFileTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/repositoryfile"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/repositoryfile"
 
 &repositoryfile.RepositoryFileTimeouts {
 	Create: *string,
@@ -1562,9 +1562,9 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/repositoryfile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-gitlab.repositoryFile.RepositoryFileTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/repository_file#create RepositoryFile#create}. |
-| <code><a href="#@cdktf/provider-gitlab.repositoryFile.RepositoryFileTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/repository_file#delete RepositoryFile#delete}. |
-| <code><a href="#@cdktf/provider-gitlab.repositoryFile.RepositoryFileTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/repository_file#update RepositoryFile#update}. |
+| <code><a href="#@cdktf/provider-gitlab.repositoryFile.RepositoryFileTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/repository_file#create RepositoryFile#create}. |
+| <code><a href="#@cdktf/provider-gitlab.repositoryFile.RepositoryFileTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/repository_file#delete RepositoryFile#delete}. |
+| <code><a href="#@cdktf/provider-gitlab.repositoryFile.RepositoryFileTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/repository_file#update RepositoryFile#update}. |
 
 ---
 
@@ -1576,7 +1576,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/repository_file#create RepositoryFile#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/repository_file#create RepositoryFile#create}.
 
 ---
 
@@ -1588,7 +1588,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/repository_file#delete RepositoryFile#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/repository_file#delete RepositoryFile#delete}.
 
 ---
 
@@ -1600,7 +1600,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/repository_file#update RepositoryFile#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/repository_file#update RepositoryFile#update}.
 
 ---
 
@@ -1611,7 +1611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.repositoryFile.RepositoryFileTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/repositoryfile"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/repositoryfile"
 
 repositoryfile.NewRepositoryFileTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RepositoryFileTimeoutsOutputReference
 ```

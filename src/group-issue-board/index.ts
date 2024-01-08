@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +10,31 @@ export interface GroupIssueBoardConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID or URL-encoded path of the group owned by the authenticated user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board#group GroupIssueBoard#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board#group GroupIssueBoard#group}
   */
   readonly group: string;
   /**
+  * The list of label names which the board should be scoped to.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board#labels GroupIssueBoard#labels}
+  */
+  readonly labels?: string[];
+  /**
   * The milestone the board should be scoped to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board#milestone_id GroupIssueBoard#milestone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board#milestone_id GroupIssueBoard#milestone_id}
   */
   readonly milestoneId?: number;
   /**
   * The name of the board.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board#name GroupIssueBoard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board#name GroupIssueBoard#name}
   */
   readonly name: string;
   /**
   * lists block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board#lists GroupIssueBoard#lists}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board#lists GroupIssueBoard#lists}
   */
   readonly lists?: GroupIssueBoardLists[] | cdktf.IResolvable;
 }
@@ -41,9 +42,15 @@ export interface GroupIssueBoardLists {
   /**
   * The ID of the label the list should be scoped to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board#label_id GroupIssueBoard#label_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board#label_id GroupIssueBoard#label_id}
   */
   readonly labelId?: number;
+  /**
+  * The explicit position of the list within the board, zero based.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board#position GroupIssueBoard#position}
+  */
+  readonly position?: number;
 }
 
 export function groupIssueBoardListsToTerraform(struct?: GroupIssueBoardLists | cdktf.IResolvable): any {
@@ -53,6 +60,7 @@ export function groupIssueBoardListsToTerraform(struct?: GroupIssueBoardLists | 
   }
   return {
     label_id: cdktf.numberToTerraform(struct!.labelId),
+    position: cdktf.numberToTerraform(struct!.position),
   }
 }
 
@@ -80,6 +88,10 @@ export class GroupIssueBoardListsOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.labelId = this._labelId;
     }
+    if (this._position !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.position = this._position;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -88,6 +100,7 @@ export class GroupIssueBoardListsOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._labelId = undefined;
+      this._position = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -97,6 +110,7 @@ export class GroupIssueBoardListsOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._labelId = value.labelId;
+      this._position = value.position;
     }
   }
 
@@ -121,9 +135,20 @@ export class GroupIssueBoardListsOutputReference extends cdktf.ComplexObject {
     return this._labelId;
   }
 
-  // position - computed: true, optional: false, required: false
+  // position - computed: true, optional: true, required: false
+  private _position?: number; 
   public get position() {
     return this.getNumberAttribute('position');
+  }
+  public set position(value: number) {
+    this._position = value;
+  }
+  public resetPosition() {
+    this._position = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get positionInput() {
+    return this._position;
   }
 }
 
@@ -148,7 +173,7 @@ export class GroupIssueBoardListsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board gitlab_group_issue_board}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board gitlab_group_issue_board}
 */
 export class GroupIssueBoard extends cdktf.TerraformResource {
 
@@ -164,7 +189,7 @@ export class GroupIssueBoard extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GroupIssueBoard resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GroupIssueBoard to import
-  * @param importFromId The id of the existing GroupIssueBoard that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GroupIssueBoard that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GroupIssueBoard to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -176,7 +201,7 @@ export class GroupIssueBoard extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board gitlab_group_issue_board} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board gitlab_group_issue_board} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -187,7 +212,7 @@ export class GroupIssueBoard extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_issue_board',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.6.0',
+        providerVersion: '16.7.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,
@@ -199,6 +224,7 @@ export class GroupIssueBoard extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._group = config.group;
+    this._labels = config.labels;
     this._milestoneId = config.milestoneId;
     this._name = config.name;
     this._lists.internalValue = config.lists;
@@ -224,6 +250,22 @@ export class GroupIssueBoard extends cdktf.TerraformResource {
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // labels - computed: false, optional: true, required: false
+  private _labels?: string[]; 
+  public get labels() {
+    return cdktf.Fn.tolist(this.getListAttribute('labels'));
+  }
+  public set labels(value: string[]) {
+    this._labels = value;
+  }
+  public resetLabels() {
+    this._labels = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get labelsInput() {
+    return this._labels;
   }
 
   // milestone_id - computed: false, optional: true, required: false
@@ -278,6 +320,7 @@ export class GroupIssueBoard extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       group: cdktf.stringToTerraform(this._group),
+      labels: cdktf.listMapper(cdktf.stringToTerraform, false)(this._labels),
       milestone_id: cdktf.numberToTerraform(this._milestoneId),
       name: cdktf.stringToTerraform(this._name),
       lists: cdktf.listMapper(groupIssueBoardListsToTerraform, true)(this._lists.internalValue),
