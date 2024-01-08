@@ -1,3 +1,3 @@
 # `gitlab_service_jira`
 
-Refer to the Terraform Registory for docs: [`gitlab_service_jira`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/service_jira).
+Refer to the Terraform Registory for docs: [`gitlab_service_jira`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/service_jira).

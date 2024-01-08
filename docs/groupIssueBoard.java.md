@@ -4,7 +4,7 @@
 
 ### GroupIssueBoard <a name="GroupIssueBoard" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board gitlab_group_issue_board}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board gitlab_group_issue_board}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.Initializer"></a>
 
@@ -25,6 +25,7 @@ GroupIssueBoard.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(RemoteExecProvisioner>)
     .group(java.lang.String)
     .name(java.lang.String)
+//  .labels(java.util.List<java.lang.String>)
 //  .lists(IResolvable)
 //  .lists(java.util.List<GroupIssueBoardLists>)
 //  .milestoneId(java.lang.Number)
@@ -44,6 +45,7 @@ GroupIssueBoard.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.Initializer.parameter.group">group</a></code> | <code>java.lang.String</code> | The ID or URL-encoded path of the group owned by the authenticated user. |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the board. |
+| <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.Initializer.parameter.labels">labels</a></code> | <code>java.util.List<java.lang.String></code> | The list of label names which the board should be scoped to. |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.Initializer.parameter.lists">lists</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardLists">GroupIssueBoardLists</a>></code> | lists block. |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.Initializer.parameter.milestoneId">milestoneId</a></code> | <code>java.lang.Number</code> | The milestone the board should be scoped to. |
 
@@ -115,7 +117,7 @@ Must be unique amongst siblings in the same scope
 
 The ID or URL-encoded path of the group owned by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board#group GroupIssueBoard#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board#group GroupIssueBoard#group}
 
 ---
 
@@ -125,7 +127,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The name of the board.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board#name GroupIssueBoard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board#name GroupIssueBoard#name}
+
+---
+
+##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.Initializer.parameter.labels"></a>
+
+- *Type:* java.util.List<java.lang.String>
+
+The list of label names which the board should be scoped to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board#labels GroupIssueBoard#labels}
 
 ---
 
@@ -135,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 lists block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board#lists GroupIssueBoard#lists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board#lists GroupIssueBoard#lists}
 
 ---
 
@@ -145,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The milestone the board should be scoped to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board#milestone_id GroupIssueBoard#milestone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board#milestone_id GroupIssueBoard#milestone_id}
 
 ---
 
@@ -176,6 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.putLists">putLists</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.resetLabels">resetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.resetLists">resetLists</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.resetMilestoneId">resetMilestoneId</a></code> | *No description.* |
 
@@ -477,6 +490,12 @@ public void putLists(IResolvable OR java.util.List<GroupIssueBoardLists> value)
 
 ---
 
+##### `resetLabels` <a name="resetLabels" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.resetLabels"></a>
+
+```java
+public void resetLabels()
+```
+
 ##### `resetLists` <a name="resetLists" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.resetLists"></a>
 
 ```java
@@ -592,7 +611,7 @@ The construct id used in the generated config for the GroupIssueBoard to import.
 
 The id of the existing GroupIssueBoard that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -625,10 +644,12 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.property.lists">lists</a></code> | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsList">GroupIssueBoardListsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.property.groupInput">groupInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.property.labelsInput">labelsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.property.listsInput">listsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardLists">GroupIssueBoardLists</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.property.milestoneIdInput">milestoneIdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.property.group">group</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.property.labels">labels</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.property.milestoneId">milestoneId</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -806,6 +827,16 @@ public java.lang.String getGroupInput();
 
 ---
 
+##### `labelsInput`<sup>Optional</sup> <a name="labelsInput" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.property.labelsInput"></a>
+
+```java
+public java.util.List<java.lang.String> getLabelsInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `listsInput`<sup>Optional</sup> <a name="listsInput" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.property.listsInput"></a>
 
 ```java
@@ -843,6 +874,16 @@ public java.lang.String getGroup();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `labels`<sup>Required</sup> <a name="labels" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoard.property.labels"></a>
+
+```java
+public java.util.List<java.lang.String> getLabels();
+```
+
+- *Type:* java.util.List<java.lang.String>
 
 ---
 
@@ -907,6 +948,7 @@ GroupIssueBoardConfig.builder()
 //  .provisioners(RemoteExecProvisioner>)
     .group(java.lang.String)
     .name(java.lang.String)
+//  .labels(java.util.List<java.lang.String>)
 //  .lists(IResolvable)
 //  .lists(java.util.List<GroupIssueBoardLists>)
 //  .milestoneId(java.lang.Number)
@@ -926,6 +968,7 @@ GroupIssueBoardConfig.builder()
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardConfig.property.group">group</a></code> | <code>java.lang.String</code> | The ID or URL-encoded path of the group owned by the authenticated user. |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the board. |
+| <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardConfig.property.labels">labels</a></code> | <code>java.util.List<java.lang.String></code> | The list of label names which the board should be scoped to. |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardConfig.property.lists">lists</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardLists">GroupIssueBoardLists</a>></code> | lists block. |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardConfig.property.milestoneId">milestoneId</a></code> | <code>java.lang.Number</code> | The milestone the board should be scoped to. |
 
@@ -1011,7 +1054,7 @@ public java.lang.String getGroup();
 
 The ID or URL-encoded path of the group owned by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board#group GroupIssueBoard#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board#group GroupIssueBoard#group}
 
 ---
 
@@ -1025,7 +1068,21 @@ public java.lang.String getName();
 
 The name of the board.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board#name GroupIssueBoard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board#name GroupIssueBoard#name}
+
+---
+
+##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardConfig.property.labels"></a>
+
+```java
+public java.util.List<java.lang.String> getLabels();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The list of label names which the board should be scoped to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board#labels GroupIssueBoard#labels}
 
 ---
 
@@ -1039,7 +1096,7 @@ public java.lang.Object getLists();
 
 lists block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board#lists GroupIssueBoard#lists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board#lists GroupIssueBoard#lists}
 
 ---
 
@@ -1053,7 +1110,7 @@ public java.lang.Number getMilestoneId();
 
 The milestone the board should be scoped to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board#milestone_id GroupIssueBoard#milestone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board#milestone_id GroupIssueBoard#milestone_id}
 
 ---
 
@@ -1066,6 +1123,7 @@ import com.hashicorp.cdktf.providers.gitlab.group_issue_board.GroupIssueBoardLis
 
 GroupIssueBoardLists.builder()
 //  .labelId(java.lang.Number)
+//  .position(java.lang.Number)
     .build();
 ```
 
@@ -1074,6 +1132,7 @@ GroupIssueBoardLists.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardLists.property.labelId">labelId</a></code> | <code>java.lang.Number</code> | The ID of the label the list should be scoped to. |
+| <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardLists.property.position">position</a></code> | <code>java.lang.Number</code> | The explicit position of the list within the board, zero based. |
 
 ---
 
@@ -1087,7 +1146,21 @@ public java.lang.Number getLabelId();
 
 The ID of the label the list should be scoped to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_issue_board#label_id GroupIssueBoard#label_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board#label_id GroupIssueBoard#label_id}
+
+---
+
+##### `position`<sup>Optional</sup> <a name="position" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardLists.property.position"></a>
+
+```java
+public java.lang.Number getPosition();
+```
+
+- *Type:* java.lang.Number
+
+The explicit position of the list within the board, zero based.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_issue_board#position GroupIssueBoard#position}
 
 ---
 
@@ -1305,6 +1378,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.resetLabelId">resetLabelId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.resetPosition">resetPosition</a></code> | *No description.* |
 
 ---
 
@@ -1464,6 +1538,12 @@ Returns a reversible string representation.
 public void resetLabelId()
 ```
 
+##### `resetPosition` <a name="resetPosition" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.resetPosition"></a>
+
+```java
+public void resetPosition()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1472,9 +1552,10 @@ public void resetLabelId()
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.property.id">id</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.property.position">position</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.property.labelIdInput">labelIdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.property.positionInput">positionInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.property.labelId">labelId</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.property.position">position</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardLists">GroupIssueBoardLists</a></code> | *No description.* |
 
 ---
@@ -1513,16 +1594,6 @@ public java.lang.Number getId();
 
 ---
 
-##### `position`<sup>Required</sup> <a name="position" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.property.position"></a>
-
-```java
-public java.lang.Number getPosition();
-```
-
-- *Type:* java.lang.Number
-
----
-
 ##### `labelIdInput`<sup>Optional</sup> <a name="labelIdInput" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.property.labelIdInput"></a>
 
 ```java
@@ -1533,10 +1604,30 @@ public java.lang.Number getLabelIdInput();
 
 ---
 
+##### `positionInput`<sup>Optional</sup> <a name="positionInput" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.property.positionInput"></a>
+
+```java
+public java.lang.Number getPositionInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `labelId`<sup>Required</sup> <a name="labelId" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.property.labelId"></a>
 
 ```java
 public java.lang.Number getLabelId();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `position`<sup>Required</sup> <a name="position" id="@cdktf/provider-gitlab.groupIssueBoard.GroupIssueBoardListsOutputReference.property.position"></a>
+
+```java
+public java.lang.Number getPosition();
 ```
 
 - *Type:* java.lang.Number

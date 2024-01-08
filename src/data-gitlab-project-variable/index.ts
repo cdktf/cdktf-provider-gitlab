@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/project_variable
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/project_variable
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataGitlabProjectVariableConfig extends cdktf.TerraformMetaArgu
   /**
   * The environment scope of the variable. Defaults to all environment (`*`). Note that in Community Editions of Gitlab, values other than `*` will cause inconsistent plans.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/project_variable#environment_scope DataGitlabProjectVariable#environment_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/project_variable#environment_scope DataGitlabProjectVariable#environment_scope}
   */
   readonly environmentScope?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/project_variable#id DataGitlabProjectVariable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/project_variable#id DataGitlabProjectVariable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +28,19 @@ export interface DataGitlabProjectVariableConfig extends cdktf.TerraformMetaArgu
   /**
   * The name of the variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/project_variable#key DataGitlabProjectVariable#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/project_variable#key DataGitlabProjectVariable#key}
   */
   readonly key: string;
   /**
   * The name or id of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/project_variable#project DataGitlabProjectVariable#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/project_variable#project DataGitlabProjectVariable#project}
   */
   readonly project: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/project_variable gitlab_project_variable}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/project_variable gitlab_project_variable}
 */
 export class DataGitlabProjectVariable extends cdktf.TerraformDataSource {
 
@@ -56,7 +56,7 @@ export class DataGitlabProjectVariable extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGitlabProjectVariable resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabProjectVariable to import
-  * @param importFromId The id of the existing DataGitlabProjectVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/project_variable#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabProjectVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/project_variable#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabProjectVariable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +68,7 @@ export class DataGitlabProjectVariable extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/project_variable gitlab_project_variable} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/project_variable gitlab_project_variable} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,7 @@ export class DataGitlabProjectVariable extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_project_variable',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.6.0',
+        providerVersion: '16.7.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### GroupLabel <a name="GroupLabel" id="@cdktf/provider-gitlab.groupLabel.GroupLabel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_label gitlab_group_label}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_label gitlab_group_label}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupLabel.GroupLabel.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the GroupLabel to import.
 
 The id of the existing GroupLabel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_label#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_label#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -828,7 +828,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/grouplabel"
 | <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.property.group">Group</a></code> | <code>*string</code> | The name or id of the group to add the label to. |
 | <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.property.name">Name</a></code> | <code>*string</code> | The name of the label. |
 | <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.property.description">Description</a></code> | <code>*string</code> | The description of the label. |
-| <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_label#id GroupLabel#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_label#id GroupLabel#id}. |
 
 ---
 
@@ -912,7 +912,7 @@ Color *string
 
 The color of the label given in 6-digit hex notation with leading '#' sign (e.g. #FFAABB) or one of the [CSS color names](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Color_keywords).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_label#color GroupLabel#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_label#color GroupLabel#color}
 
 ---
 
@@ -926,7 +926,7 @@ Group *string
 
 The name or id of the group to add the label to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_label#group GroupLabel#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_label#group GroupLabel#group}
 
 ---
 
@@ -940,7 +940,7 @@ Name *string
 
 The name of the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_label#name GroupLabel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_label#name GroupLabel#name}
 
 ---
 
@@ -954,7 +954,7 @@ Description *string
 
 The description of the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_label#description GroupLabel#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_label#description GroupLabel#description}
 
 ---
 
@@ -966,7 +966,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_label#id GroupLabel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_label#id GroupLabel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

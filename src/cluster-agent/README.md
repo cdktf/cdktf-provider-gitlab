@@ -1,3 +1,3 @@
 # `gitlab_cluster_agent`
 
-Refer to the Terraform Registory for docs: [`gitlab_cluster_agent`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/cluster_agent).
+Refer to the Terraform Registory for docs: [`gitlab_cluster_agent`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/cluster_agent).

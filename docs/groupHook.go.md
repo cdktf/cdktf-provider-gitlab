@@ -4,7 +4,7 @@
 
 ### GroupHook <a name="GroupHook" id="@cdktf/provider-gitlab.groupHook.GroupHook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_hook gitlab_group_hook}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_hook gitlab_group_hook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupHook.GroupHook.Initializer"></a>
 
@@ -579,7 +579,7 @@ The construct id used in the generated config for the GroupHook to import.
 
 The id of the existing GroupHook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_hook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_hook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1268,7 +1268,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/grouphook"
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.confidentialNoteEvents">ConfidentialNoteEvents</a></code> | <code>interface{}</code> | Invoke the hook for confidential notes events. |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.deploymentEvents">DeploymentEvents</a></code> | <code>interface{}</code> | Invoke the hook for deployment events. |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.enableSslVerification">EnableSslVerification</a></code> | <code>interface{}</code> | Enable ssl verification when invoking the hook. |
-| <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_hook#id GroupHook#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_hook#id GroupHook#id}. |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.issuesEvents">IssuesEvents</a></code> | <code>interface{}</code> | Invoke the hook for issues events. |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.jobEvents">JobEvents</a></code> | <code>interface{}</code> | Invoke the hook for job events. |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.mergeRequestsEvents">MergeRequestsEvents</a></code> | <code>interface{}</code> | Invoke the hook for merge requests. |
@@ -1364,7 +1364,7 @@ Group *string
 
 The ID or full path of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_hook#group GroupHook#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_hook#group GroupHook#group}
 
 ---
 
@@ -1378,7 +1378,7 @@ Url *string
 
 The url of the hook to invoke.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_hook#url GroupHook#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_hook#url GroupHook#url}
 
 ---
 
@@ -1392,7 +1392,7 @@ ConfidentialIssuesEvents interface{}
 
 Invoke the hook for confidential issues events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_hook#confidential_issues_events GroupHook#confidential_issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_hook#confidential_issues_events GroupHook#confidential_issues_events}
 
 ---
 
@@ -1406,7 +1406,7 @@ ConfidentialNoteEvents interface{}
 
 Invoke the hook for confidential notes events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_hook#confidential_note_events GroupHook#confidential_note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_hook#confidential_note_events GroupHook#confidential_note_events}
 
 ---
 
@@ -1420,7 +1420,7 @@ DeploymentEvents interface{}
 
 Invoke the hook for deployment events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_hook#deployment_events GroupHook#deployment_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_hook#deployment_events GroupHook#deployment_events}
 
 ---
 
@@ -1434,7 +1434,7 @@ EnableSslVerification interface{}
 
 Enable ssl verification when invoking the hook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_hook#enable_ssl_verification GroupHook#enable_ssl_verification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_hook#enable_ssl_verification GroupHook#enable_ssl_verification}
 
 ---
 
@@ -1446,7 +1446,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_hook#id GroupHook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_hook#id GroupHook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1463,7 +1463,7 @@ IssuesEvents interface{}
 
 Invoke the hook for issues events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_hook#issues_events GroupHook#issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_hook#issues_events GroupHook#issues_events}
 
 ---
 
@@ -1477,7 +1477,7 @@ JobEvents interface{}
 
 Invoke the hook for job events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_hook#job_events GroupHook#job_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_hook#job_events GroupHook#job_events}
 
 ---
 
@@ -1491,7 +1491,7 @@ MergeRequestsEvents interface{}
 
 Invoke the hook for merge requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_hook#merge_requests_events GroupHook#merge_requests_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_hook#merge_requests_events GroupHook#merge_requests_events}
 
 ---
 
@@ -1505,7 +1505,7 @@ NoteEvents interface{}
 
 Invoke the hook for notes events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_hook#note_events GroupHook#note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_hook#note_events GroupHook#note_events}
 
 ---
 
@@ -1519,7 +1519,7 @@ PipelineEvents interface{}
 
 Invoke the hook for pipeline events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_hook#pipeline_events GroupHook#pipeline_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_hook#pipeline_events GroupHook#pipeline_events}
 
 ---
 
@@ -1533,7 +1533,7 @@ PushEvents interface{}
 
 Invoke the hook for push events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_hook#push_events GroupHook#push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_hook#push_events GroupHook#push_events}
 
 ---
 
@@ -1547,7 +1547,7 @@ PushEventsBranchFilter *string
 
 Invoke the hook for push events on matching branches only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_hook#push_events_branch_filter GroupHook#push_events_branch_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_hook#push_events_branch_filter GroupHook#push_events_branch_filter}
 
 ---
 
@@ -1561,7 +1561,7 @@ ReleasesEvents interface{}
 
 Invoke the hook for releases events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_hook#releases_events GroupHook#releases_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_hook#releases_events GroupHook#releases_events}
 
 ---
 
@@ -1575,7 +1575,7 @@ SubgroupEvents interface{}
 
 Invoke the hook for subgroup events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_hook#subgroup_events GroupHook#subgroup_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_hook#subgroup_events GroupHook#subgroup_events}
 
 ---
 
@@ -1589,7 +1589,7 @@ TagPushEvents interface{}
 
 Invoke the hook for tag push events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_hook#tag_push_events GroupHook#tag_push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_hook#tag_push_events GroupHook#tag_push_events}
 
 ---
 
@@ -1603,7 +1603,7 @@ Token *string
 
 A token to present when invoking the hook. The token is not available for imported resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_hook#token GroupHook#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_hook#token GroupHook#token}
 
 ---
 
@@ -1617,7 +1617,7 @@ WikiPageEvents interface{}
 
 Invoke the hook for wiki page events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_hook#wiki_page_events GroupHook#wiki_page_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_hook#wiki_page_events GroupHook#wiki_page_events}
 
 ---
 

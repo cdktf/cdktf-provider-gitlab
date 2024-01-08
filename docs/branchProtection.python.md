@@ -4,7 +4,7 @@
 
 ### BranchProtection <a name="BranchProtection" id="@cdktf/provider-gitlab.branchProtection.BranchProtection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection gitlab_branch_protection}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection gitlab_branch_protection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer"></a>
 
@@ -28,7 +28,6 @@ branchProtection.BranchProtection(
   allowed_to_unprotect: typing.Union[IResolvable, typing.List[BranchProtectionAllowedToUnprotect]] = None,
   allow_force_push: typing.Union[bool, IResolvable] = None,
   code_owner_approval_required: typing.Union[bool, IResolvable] = None,
-  id: str = None,
   merge_access_level: str = None,
   push_access_level: str = None,
   unprotect_access_level: str = None
@@ -52,8 +51,7 @@ branchProtection.BranchProtection(
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer.parameter.allowedToPush">allowed_to_push</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToPush">BranchProtectionAllowedToPush</a>]]</code> | allowed_to_push block. |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer.parameter.allowedToUnprotect">allowed_to_unprotect</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToUnprotect">BranchProtectionAllowedToUnprotect</a>]]</code> | allowed_to_unprotect block. |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer.parameter.allowForcePush">allow_force_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Can be set to true to allow users with push access to force push. |
-| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer.parameter.codeOwnerApprovalRequired">code_owner_approval_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Can be set to true to require code owner approval before merging. Only available own Premium and Ultimate instances. |
-| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#id BranchProtection#id}. |
+| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer.parameter.codeOwnerApprovalRequired">code_owner_approval_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Can be set to true to require code owner approval before merging. Only available for Premium and Ultimate instances. |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer.parameter.mergeAccessLevel">merge_access_level</a></code> | <code>str</code> | Access levels allowed to merge. Valid values are: `no one`, `developer`, `maintainer`. |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer.parameter.pushAccessLevel">push_access_level</a></code> | <code>str</code> | Access levels allowed to push. Valid values are: `no one`, `developer`, `maintainer`. |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer.parameter.unprotectAccessLevel">unprotect_access_level</a></code> | <code>str</code> | Access levels allowed to unprotect. Valid values are: `developer`, `maintainer`, `admin`. |
@@ -126,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the branch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#branch BranchProtection#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#branch BranchProtection#branch}
 
 ---
 
@@ -136,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The id of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#project BranchProtection#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#project BranchProtection#project}
 
 ---
 
@@ -146,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 allowed_to_merge block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#allowed_to_merge BranchProtection#allowed_to_merge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#allowed_to_merge BranchProtection#allowed_to_merge}
 
 ---
 
@@ -156,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 allowed_to_push block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#allowed_to_push BranchProtection#allowed_to_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#allowed_to_push BranchProtection#allowed_to_push}
 
 ---
 
@@ -166,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 allowed_to_unprotect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#allowed_to_unprotect BranchProtection#allowed_to_unprotect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#allowed_to_unprotect BranchProtection#allowed_to_unprotect}
 
 ---
 
@@ -176,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Can be set to true to allow users with push access to force push.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#allow_force_push BranchProtection#allow_force_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#allow_force_push BranchProtection#allow_force_push}
 
 ---
 
@@ -184,20 +182,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Can be set to true to require code owner approval before merging. Only available own Premium and Ultimate instances.
+Can be set to true to require code owner approval before merging. Only available for Premium and Ultimate instances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#code_owner_approval_required BranchProtection#code_owner_approval_required}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.branchProtection.BranchProtection.Initializer.parameter.id"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#id BranchProtection#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#code_owner_approval_required BranchProtection#code_owner_approval_required}
 
 ---
 
@@ -207,7 +194,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Access levels allowed to merge. Valid values are: `no one`, `developer`, `maintainer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#merge_access_level BranchProtection#merge_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#merge_access_level BranchProtection#merge_access_level}
 
 ---
 
@@ -217,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Access levels allowed to push. Valid values are: `no one`, `developer`, `maintainer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#push_access_level BranchProtection#push_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#push_access_level BranchProtection#push_access_level}
 
 ---
 
@@ -227,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Access levels allowed to unprotect. Valid values are: `developer`, `maintainer`, `admin`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#unprotect_access_level BranchProtection#unprotect_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#unprotect_access_level BranchProtection#unprotect_access_level}
 
 ---
 
@@ -265,7 +252,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.resetAllowedToUnprotect">reset_allowed_to_unprotect</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.resetAllowForcePush">reset_allow_force_push</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.resetCodeOwnerApprovalRequired">reset_code_owner_approval_required</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.resetMergeAccessLevel">reset_merge_access_level</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.resetPushAccessLevel">reset_push_access_level</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.resetUnprotectAccessLevel">reset_unprotect_access_level</a></code> | *No description.* |
@@ -663,12 +649,6 @@ def reset_allow_force_push() -> None
 def reset_code_owner_approval_required() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-gitlab.branchProtection.BranchProtection.resetId"></a>
-
-```python
-def reset_id() -> None
-```
-
 ##### `reset_merge_access_level` <a name="reset_merge_access_level" id="@cdktf/provider-gitlab.branchProtection.BranchProtection.resetMergeAccessLevel"></a>
 
 ```python
@@ -801,7 +781,7 @@ The construct id used in the generated config for the BranchProtection to import
 
 The id of the existing BranchProtection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -835,13 +815,13 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.allowedToPush">allowed_to_push</a></code> | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToPushList">BranchProtectionAllowedToPushList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.allowedToUnprotect">allowed_to_unprotect</a></code> | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToUnprotectList">BranchProtectionAllowedToUnprotectList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.branchProtectionId">branch_protection_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.allowedToMergeInput">allowed_to_merge_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToMerge">BranchProtectionAllowedToMerge</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.allowedToPushInput">allowed_to_push_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToPush">BranchProtectionAllowedToPush</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.allowedToUnprotectInput">allowed_to_unprotect_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToUnprotect">BranchProtectionAllowedToUnprotect</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.allowForcePushInput">allow_force_push_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.branchInput">branch_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.codeOwnerApprovalRequiredInput">code_owner_approval_required_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.mergeAccessLevelInput">merge_access_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.pushAccessLevelInput">push_access_level_input</a></code> | <code>str</code> | *No description.* |
@@ -849,7 +829,6 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.allowForcePush">allow_force_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.branch">branch</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.codeOwnerApprovalRequired">code_owner_approval_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.mergeAccessLevel">merge_access_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.project">project</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtection.property.pushAccessLevel">push_access_level</a></code> | <code>str</code> | *No description.* |
@@ -1039,6 +1018,16 @@ branch_protection_id: typing.Union[int, float]
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.branchProtection.BranchProtection.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `allowed_to_merge_input`<sup>Optional</sup> <a name="allowed_to_merge_input" id="@cdktf/provider-gitlab.branchProtection.BranchProtection.property.allowedToMergeInput"></a>
 
 ```python
@@ -1096,16 +1085,6 @@ code_owner_approval_required_input: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-gitlab.branchProtection.BranchProtection.property.idInput"></a>
-
-```python
-id_input: str
-```
-
-- *Type:* str
 
 ---
 
@@ -1176,16 +1155,6 @@ code_owner_approval_required: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.branchProtection.BranchProtection.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
 
 ---
 
@@ -1281,7 +1250,7 @@ group_id: typing.Union[int, float]
 
 The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `user_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#group_id BranchProtection#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#group_id BranchProtection#group_id}
 
 ---
 
@@ -1295,7 +1264,7 @@ user_id: typing.Union[int, float]
 
 The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `group_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#user_id BranchProtection#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#user_id BranchProtection#user_id}
 
 ---
 
@@ -1331,7 +1300,7 @@ group_id: typing.Union[int, float]
 
 The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `user_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#group_id BranchProtection#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#group_id BranchProtection#group_id}
 
 ---
 
@@ -1345,7 +1314,7 @@ user_id: typing.Union[int, float]
 
 The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `group_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#user_id BranchProtection#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#user_id BranchProtection#user_id}
 
 ---
 
@@ -1381,7 +1350,7 @@ group_id: typing.Union[int, float]
 
 The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `user_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#group_id BranchProtection#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#group_id BranchProtection#group_id}
 
 ---
 
@@ -1395,7 +1364,7 @@ user_id: typing.Union[int, float]
 
 The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `group_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#user_id BranchProtection#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#user_id BranchProtection#user_id}
 
 ---
 
@@ -1421,7 +1390,6 @@ branchProtection.BranchProtectionConfig(
   allowed_to_unprotect: typing.Union[IResolvable, typing.List[BranchProtectionAllowedToUnprotect]] = None,
   allow_force_push: typing.Union[bool, IResolvable] = None,
   code_owner_approval_required: typing.Union[bool, IResolvable] = None,
-  id: str = None,
   merge_access_level: str = None,
   push_access_level: str = None,
   unprotect_access_level: str = None
@@ -1445,8 +1413,7 @@ branchProtection.BranchProtectionConfig(
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.allowedToPush">allowed_to_push</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToPush">BranchProtectionAllowedToPush</a>]]</code> | allowed_to_push block. |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.allowedToUnprotect">allowed_to_unprotect</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionAllowedToUnprotect">BranchProtectionAllowedToUnprotect</a>]]</code> | allowed_to_unprotect block. |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.allowForcePush">allow_force_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Can be set to true to allow users with push access to force push. |
-| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.codeOwnerApprovalRequired">code_owner_approval_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Can be set to true to require code owner approval before merging. Only available own Premium and Ultimate instances. |
-| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#id BranchProtection#id}. |
+| <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.codeOwnerApprovalRequired">code_owner_approval_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Can be set to true to require code owner approval before merging. Only available for Premium and Ultimate instances. |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.mergeAccessLevel">merge_access_level</a></code> | <code>str</code> | Access levels allowed to merge. Valid values are: `no one`, `developer`, `maintainer`. |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.pushAccessLevel">push_access_level</a></code> | <code>str</code> | Access levels allowed to push. Valid values are: `no one`, `developer`, `maintainer`. |
 | <code><a href="#@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.unprotectAccessLevel">unprotect_access_level</a></code> | <code>str</code> | Access levels allowed to unprotect. Valid values are: `developer`, `maintainer`, `admin`. |
@@ -1533,7 +1500,7 @@ branch: str
 
 Name of the branch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#branch BranchProtection#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#branch BranchProtection#branch}
 
 ---
 
@@ -1547,7 +1514,7 @@ project: str
 
 The id of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#project BranchProtection#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#project BranchProtection#project}
 
 ---
 
@@ -1561,7 +1528,7 @@ allowed_to_merge: typing.Union[IResolvable, typing.List[BranchProtectionAllowedT
 
 allowed_to_merge block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#allowed_to_merge BranchProtection#allowed_to_merge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#allowed_to_merge BranchProtection#allowed_to_merge}
 
 ---
 
@@ -1575,7 +1542,7 @@ allowed_to_push: typing.Union[IResolvable, typing.List[BranchProtectionAllowedTo
 
 allowed_to_push block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#allowed_to_push BranchProtection#allowed_to_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#allowed_to_push BranchProtection#allowed_to_push}
 
 ---
 
@@ -1589,7 +1556,7 @@ allowed_to_unprotect: typing.Union[IResolvable, typing.List[BranchProtectionAllo
 
 allowed_to_unprotect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#allowed_to_unprotect BranchProtection#allowed_to_unprotect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#allowed_to_unprotect BranchProtection#allowed_to_unprotect}
 
 ---
 
@@ -1603,7 +1570,7 @@ allow_force_push: typing.Union[bool, IResolvable]
 
 Can be set to true to allow users with push access to force push.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#allow_force_push BranchProtection#allow_force_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#allow_force_push BranchProtection#allow_force_push}
 
 ---
 
@@ -1615,24 +1582,9 @@ code_owner_approval_required: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Can be set to true to require code owner approval before merging. Only available own Premium and Ultimate instances.
+Can be set to true to require code owner approval before merging. Only available for Premium and Ultimate instances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#code_owner_approval_required BranchProtection#code_owner_approval_required}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.branchProtection.BranchProtectionConfig.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#id BranchProtection#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#code_owner_approval_required BranchProtection#code_owner_approval_required}
 
 ---
 
@@ -1646,7 +1598,7 @@ merge_access_level: str
 
 Access levels allowed to merge. Valid values are: `no one`, `developer`, `maintainer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#merge_access_level BranchProtection#merge_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#merge_access_level BranchProtection#merge_access_level}
 
 ---
 
@@ -1660,7 +1612,7 @@ push_access_level: str
 
 Access levels allowed to push. Valid values are: `no one`, `developer`, `maintainer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#push_access_level BranchProtection#push_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#push_access_level BranchProtection#push_access_level}
 
 ---
 
@@ -1674,7 +1626,7 @@ unprotect_access_level: str
 
 Access levels allowed to unprotect. Valid values are: `developer`, `maintainer`, `admin`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/branch_protection#unprotect_access_level BranchProtection#unprotect_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection#unprotect_access_level BranchProtection#unprotect_access_level}
 
 ---
 

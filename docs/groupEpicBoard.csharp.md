@@ -4,7 +4,7 @@
 
 ### GroupEpicBoard <a name="GroupEpicBoard" id="@cdktf/provider-gitlab.groupEpicBoard.GroupEpicBoard"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_epic_board gitlab_group_epic_board}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_epic_board gitlab_group_epic_board}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupEpicBoard.GroupEpicBoard.Initializer"></a>
 
@@ -480,7 +480,7 @@ The construct id used in the generated config for the GroupEpicBoard to import.
 
 The id of the existing GroupEpicBoard that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_epic_board#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_epic_board#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -870,7 +870,7 @@ public string Group { get; set; }
 
 The ID or URL-encoded path of the group owned by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_epic_board#group GroupEpicBoard#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_epic_board#group GroupEpicBoard#group}
 
 ---
 
@@ -884,7 +884,7 @@ public string Name { get; set; }
 
 The name of the board.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_epic_board#name GroupEpicBoard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_epic_board#name GroupEpicBoard#name}
 
 ---
 
@@ -898,7 +898,7 @@ public object Lists { get; set; }
 
 lists block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_epic_board#lists GroupEpicBoard#lists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_epic_board#lists GroupEpicBoard#lists}
 
 ---
 
@@ -932,7 +932,7 @@ public double LabelId { get; set; }
 
 The ID of the label the list should be scoped to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/resources/group_epic_board#label_id GroupEpicBoard#label_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_epic_board#label_id GroupEpicBoard#label_id}
 
 ---
 

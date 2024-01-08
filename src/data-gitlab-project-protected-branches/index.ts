@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/project_protected_branches
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/project_protected_branches
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,33 +13,47 @@ import * as cdktf from 'cdktf';
 
 export interface DataGitlabProjectProtectedBranchesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/project_protected_branches#id DataGitlabProjectProtectedBranches#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * The integer or path with namespace that uniquely identifies the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/project_protected_branches#project_id DataGitlabProjectProtectedBranches#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/project_protected_branches#project_id DataGitlabProjectProtectedBranches#project_id}
   */
   readonly projectId: string;
+  /**
+  * protected_branches block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/project_protected_branches#protected_branches DataGitlabProjectProtectedBranches#protected_branches}
+  */
+  readonly protectedBranches?: DataGitlabProjectProtectedBranchesProtectedBranches[] | cdktf.IResolvable;
 }
 export interface DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevels {
+  /**
+  * The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `user_id`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/project_protected_branches#group_id DataGitlabProjectProtectedBranches#group_id}
+  */
+  readonly groupId?: number;
+  /**
+  * The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `group_id`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/project_protected_branches#user_id DataGitlabProjectProtectedBranches#user_id}
+  */
+  readonly userId?: number;
 }
 
-export function dataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevelsToTerraform(struct?: DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevels): any {
+export function dataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevelsToTerraform(struct?: DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevels | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    group_id: cdktf.numberToTerraform(struct!.groupId),
+    user_id: cdktf.numberToTerraform(struct!.userId),
   }
 }
 
 export class DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevelsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -51,18 +65,39 @@ export class DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevel
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevels | undefined {
+  public get internalValue(): DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevels | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._groupId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.groupId = this._groupId;
+    }
+    if (this._userId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userId = this._userId;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevels | undefined) {
+  public set internalValue(value: DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevels | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._groupId = undefined;
+      this._userId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._groupId = value.groupId;
+      this._userId = value.userId;
     }
   }
 
@@ -76,18 +111,41 @@ export class DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevel
     return this.getStringAttribute('access_level_description');
   }
 
-  // group_id - computed: true, optional: false, required: false
+  // group_id - computed: false, optional: true, required: false
+  private _groupId?: number; 
   public get groupId() {
     return this.getNumberAttribute('group_id');
   }
+  public set groupId(value: number) {
+    this._groupId = value;
+  }
+  public resetGroupId() {
+    this._groupId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupIdInput() {
+    return this._groupId;
+  }
 
-  // user_id - computed: true, optional: false, required: false
+  // user_id - computed: false, optional: true, required: false
+  private _userId?: number; 
   public get userId() {
     return this.getNumberAttribute('user_id');
+  }
+  public set userId(value: number) {
+    this._userId = value;
+  }
+  public resetUserId() {
+    this._userId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userIdInput() {
+    return this._userId;
   }
 }
 
 export class DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevelsList extends cdktf.ComplexList {
+  public internalValue? : DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevels[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -106,19 +164,34 @@ export class DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevel
   }
 }
 export interface DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels {
+  /**
+  * The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `user_id`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/project_protected_branches#group_id DataGitlabProjectProtectedBranches#group_id}
+  */
+  readonly groupId?: number;
+  /**
+  * The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `group_id`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/project_protected_branches#user_id DataGitlabProjectProtectedBranches#user_id}
+  */
+  readonly userId?: number;
 }
 
-export function dataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsToTerraform(struct?: DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels): any {
+export function dataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsToTerraform(struct?: DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    group_id: cdktf.numberToTerraform(struct!.groupId),
+    user_id: cdktf.numberToTerraform(struct!.userId),
   }
 }
 
 export class DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -130,18 +203,39 @@ export class DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels | undefined {
+  public get internalValue(): DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._groupId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.groupId = this._groupId;
+    }
+    if (this._userId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userId = this._userId;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels | undefined) {
+  public set internalValue(value: DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._groupId = undefined;
+      this._userId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._groupId = value.groupId;
+      this._userId = value.userId;
     }
   }
 
@@ -155,18 +249,41 @@ export class DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels
     return this.getStringAttribute('access_level_description');
   }
 
-  // group_id - computed: true, optional: false, required: false
+  // group_id - computed: false, optional: true, required: false
+  private _groupId?: number; 
   public get groupId() {
     return this.getNumberAttribute('group_id');
   }
+  public set groupId(value: number) {
+    this._groupId = value;
+  }
+  public resetGroupId() {
+    this._groupId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupIdInput() {
+    return this._groupId;
+  }
 
-  // user_id - computed: true, optional: false, required: false
+  // user_id - computed: false, optional: true, required: false
+  private _userId?: number; 
   public get userId() {
     return this.getNumberAttribute('user_id');
+  }
+  public set userId(value: number) {
+    this._userId = value;
+  }
+  public resetUserId() {
+    this._userId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userIdInput() {
+    return this._userId;
   }
 }
 
 export class DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsList extends cdktf.ComplexList {
+  public internalValue? : DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -185,19 +302,34 @@ export class DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels
   }
 }
 export interface DataGitlabProjectProtectedBranchesProtectedBranches {
+  /**
+  * merge_access_levels block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/project_protected_branches#merge_access_levels DataGitlabProjectProtectedBranches#merge_access_levels}
+  */
+  readonly mergeAccessLevels?: DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevels[] | cdktf.IResolvable;
+  /**
+  * push_access_levels block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/project_protected_branches#push_access_levels DataGitlabProjectProtectedBranches#push_access_levels}
+  */
+  readonly pushAccessLevels?: DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels[] | cdktf.IResolvable;
 }
 
-export function dataGitlabProjectProtectedBranchesProtectedBranchesToTerraform(struct?: DataGitlabProjectProtectedBranchesProtectedBranches): any {
+export function dataGitlabProjectProtectedBranchesProtectedBranchesToTerraform(struct?: DataGitlabProjectProtectedBranchesProtectedBranches | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    merge_access_levels: cdktf.listMapper(dataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevelsToTerraform, true)(struct!.mergeAccessLevels),
+    push_access_levels: cdktf.listMapper(dataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsToTerraform, true)(struct!.pushAccessLevels),
   }
 }
 
 export class DataGitlabProjectProtectedBranchesProtectedBranchesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -209,18 +341,39 @@ export class DataGitlabProjectProtectedBranchesProtectedBranchesOutputReference 
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataGitlabProjectProtectedBranchesProtectedBranches | undefined {
+  public get internalValue(): DataGitlabProjectProtectedBranchesProtectedBranches | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._mergeAccessLevels?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mergeAccessLevels = this._mergeAccessLevels?.internalValue;
+    }
+    if (this._pushAccessLevels?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pushAccessLevels = this._pushAccessLevels?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataGitlabProjectProtectedBranchesProtectedBranches | undefined) {
+  public set internalValue(value: DataGitlabProjectProtectedBranchesProtectedBranches | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._mergeAccessLevels.internalValue = undefined;
+      this._pushAccessLevels.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._mergeAccessLevels.internalValue = value.mergeAccessLevels;
+      this._pushAccessLevels.internalValue = value.pushAccessLevels;
     }
   }
 
@@ -239,25 +392,46 @@ export class DataGitlabProjectProtectedBranchesProtectedBranchesOutputReference 
     return this.getNumberAttribute('id');
   }
 
-  // merge_access_levels - computed: true, optional: false, required: false
-  private _mergeAccessLevels = new DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevelsList(this, "merge_access_levels", false);
-  public get mergeAccessLevels() {
-    return this._mergeAccessLevels;
-  }
-
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
 
-  // push_access_levels - computed: true, optional: false, required: false
-  private _pushAccessLevels = new DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsList(this, "push_access_levels", false);
+  // merge_access_levels - computed: false, optional: true, required: false
+  private _mergeAccessLevels = new DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevelsList(this, "merge_access_levels", true);
+  public get mergeAccessLevels() {
+    return this._mergeAccessLevels;
+  }
+  public putMergeAccessLevels(value: DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevels[] | cdktf.IResolvable) {
+    this._mergeAccessLevels.internalValue = value;
+  }
+  public resetMergeAccessLevels() {
+    this._mergeAccessLevels.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mergeAccessLevelsInput() {
+    return this._mergeAccessLevels.internalValue;
+  }
+
+  // push_access_levels - computed: false, optional: true, required: false
+  private _pushAccessLevels = new DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsList(this, "push_access_levels", true);
   public get pushAccessLevels() {
     return this._pushAccessLevels;
+  }
+  public putPushAccessLevels(value: DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels[] | cdktf.IResolvable) {
+    this._pushAccessLevels.internalValue = value;
+  }
+  public resetPushAccessLevels() {
+    this._pushAccessLevels.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pushAccessLevelsInput() {
+    return this._pushAccessLevels.internalValue;
   }
 }
 
 export class DataGitlabProjectProtectedBranchesProtectedBranchesList extends cdktf.ComplexList {
+  public internalValue? : DataGitlabProjectProtectedBranchesProtectedBranches[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -277,7 +451,7 @@ export class DataGitlabProjectProtectedBranchesProtectedBranchesList extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/project_protected_branches gitlab_project_protected_branches}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/project_protected_branches gitlab_project_protected_branches}
 */
 export class DataGitlabProjectProtectedBranches extends cdktf.TerraformDataSource {
 
@@ -293,7 +467,7 @@ export class DataGitlabProjectProtectedBranches extends cdktf.TerraformDataSourc
   * Generates CDKTF code for importing a DataGitlabProjectProtectedBranches resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabProjectProtectedBranches to import
-  * @param importFromId The id of the existing DataGitlabProjectProtectedBranches that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/project_protected_branches#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabProjectProtectedBranches that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/project_protected_branches#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabProjectProtectedBranches to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -305,7 +479,7 @@ export class DataGitlabProjectProtectedBranches extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.6.0/docs/data-sources/project_protected_branches gitlab_project_protected_branches} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/project_protected_branches gitlab_project_protected_branches} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -316,7 +490,7 @@ export class DataGitlabProjectProtectedBranches extends cdktf.TerraformDataSourc
       terraformResourceType: 'gitlab_project_protected_branches',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.6.0',
+        providerVersion: '16.7.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,
@@ -327,28 +501,17 @@ export class DataGitlabProjectProtectedBranches extends cdktf.TerraformDataSourc
       connection: config.connection,
       forEach: config.forEach
     });
-    this._id = config.id;
     this._projectId = config.projectId;
+    this._protectedBranches.internalValue = config.protectedBranches;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
-    return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
+    return this.getNumberAttribute('id');
   }
 
   // project_id - computed: false, optional: false, required: true
@@ -364,10 +527,20 @@ export class DataGitlabProjectProtectedBranches extends cdktf.TerraformDataSourc
     return this._projectId;
   }
 
-  // protected_branches - computed: true, optional: false, required: false
+  // protected_branches - computed: false, optional: true, required: false
   private _protectedBranches = new DataGitlabProjectProtectedBranchesProtectedBranchesList(this, "protected_branches", false);
   public get protectedBranches() {
     return this._protectedBranches;
+  }
+  public putProtectedBranches(value: DataGitlabProjectProtectedBranchesProtectedBranches[] | cdktf.IResolvable) {
+    this._protectedBranches.internalValue = value;
+  }
+  public resetProtectedBranches() {
+    this._protectedBranches.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get protectedBranchesInput() {
+    return this._protectedBranches.internalValue;
   }
 
   // =========
@@ -376,8 +549,8 @@ export class DataGitlabProjectProtectedBranches extends cdktf.TerraformDataSourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
       project_id: cdktf.stringToTerraform(this._projectId),
+      protected_branches: cdktf.listMapper(dataGitlabProjectProtectedBranchesProtectedBranchesToTerraform, true)(this._protectedBranches.internalValue),
     };
   }
 }
