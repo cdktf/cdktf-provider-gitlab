@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.instanceCluster.InstanceCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/instancecluster"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/instancecluster"
 
 instancecluster.NewInstanceCluster(scope Construct, id *string, config InstanceClusterConfig) InstanceCluster
 ```
@@ -434,7 +434,7 @@ func ResetManagementProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.instanceCluster.InstanceCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/instancecluster"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/instancecluster"
 
 instancecluster.InstanceCluster_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.instanceCluster.InstanceCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/instancecluster"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/instancecluster"
 
 instancecluster.InstanceCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ instancecluster.InstanceCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.instanceCluster.InstanceCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/instancecluster"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/instancecluster"
 
 instancecluster.InstanceCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ instancecluster.InstanceCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.instanceCluster.InstanceCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/instancecluster"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/instancecluster"
 
 instancecluster.InstanceCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1031,7 +1031,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.instanceCluster.InstanceClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/instancecluster"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/instancecluster"
 
 &instancecluster.InstanceClusterConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectcustomattribute"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectcustomattribute"
 
 projectcustomattribute.NewProjectCustomAttribute(scope Construct, id *string, config ProjectCustomAttributeConfig) ProjectCustomAttribute
 ```
@@ -378,7 +378,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectcustomattribute"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectcustomattribute"
 
 projectcustomattribute.ProjectCustomAttribute_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectcustomattribute"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectcustomattribute"
 
 projectcustomattribute.ProjectCustomAttribute_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ projectcustomattribute.ProjectCustomAttribute_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectcustomattribute"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectcustomattribute"
 
 projectcustomattribute.ProjectCustomAttribute_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ projectcustomattribute.ProjectCustomAttribute_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttribute.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectcustomattribute"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectcustomattribute"
 
 projectcustomattribute.ProjectCustomAttribute_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -755,7 +755,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectCustomAttribute.ProjectCustomAttributeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectcustomattribute"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectcustomattribute"
 
 &projectcustomattribute.ProjectCustomAttributeConfig {
 	Connection: interface{},
