@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_variable
 // generated from terraform resource schema
 
@@ -286,5 +281,67 @@ export class GroupVariable extends cdktf.TerraformResource {
       value: cdktf.stringToTerraform(this._value),
       variable_type: cdktf.stringToTerraform(this._variableType),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      environment_scope: {
+        value: cdktf.stringToHclTerraform(this._environmentScope),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      group: {
+        value: cdktf.stringToHclTerraform(this._group),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key: {
+        value: cdktf.stringToHclTerraform(this._key),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      masked: {
+        value: cdktf.booleanToHclTerraform(this._masked),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      protected: {
+        value: cdktf.booleanToHclTerraform(this._protected),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      raw: {
+        value: cdktf.booleanToHclTerraform(this._raw),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      value: {
+        value: cdktf.stringToHclTerraform(this._value),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      variable_type: {
+        value: cdktf.stringToHclTerraform(this._variableType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/service_custom_issue_tracker
 // generated from terraform resource schema
 
@@ -166,5 +161,31 @@ export class ServiceCustomIssueTracker extends cdktf.TerraformResource {
       project: cdktf.stringToTerraform(this._project),
       project_url: cdktf.stringToTerraform(this._projectUrl),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      issues_url: {
+        value: cdktf.stringToHclTerraform(this._issuesUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_url: {
+        value: cdktf.stringToHclTerraform(this._projectUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

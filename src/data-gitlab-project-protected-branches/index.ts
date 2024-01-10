@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/project_protected_branches
 // generated from terraform resource schema
 
@@ -49,6 +44,31 @@ export function dataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLe
     group_id: cdktf.numberToTerraform(struct!.groupId),
     user_id: cdktf.numberToTerraform(struct!.userId),
   }
+}
+
+
+export function dataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevelsToHclTerraform(struct?: DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevels | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    group_id: {
+      value: cdktf.numberToHclTerraform(struct!.groupId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    user_id: {
+      value: cdktf.numberToHclTerraform(struct!.userId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevelsOutputReference extends cdktf.ComplexObject {
@@ -189,6 +209,31 @@ export function dataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLev
   }
 }
 
+
+export function dataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsToHclTerraform(struct?: DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    group_id: {
+      value: cdktf.numberToHclTerraform(struct!.groupId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    user_id: {
+      value: cdktf.numberToHclTerraform(struct!.userId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -325,6 +370,31 @@ export function dataGitlabProjectProtectedBranchesProtectedBranchesToTerraform(s
     merge_access_levels: cdktf.listMapper(dataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevelsToTerraform, true)(struct!.mergeAccessLevels),
     push_access_levels: cdktf.listMapper(dataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsToTerraform, true)(struct!.pushAccessLevels),
   }
+}
+
+
+export function dataGitlabProjectProtectedBranchesProtectedBranchesToHclTerraform(struct?: DataGitlabProjectProtectedBranchesProtectedBranches | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    merge_access_levels: {
+      value: cdktf.listMapperHcl(dataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevelsToHclTerraform, true)(struct!.mergeAccessLevels),
+      isBlock: true,
+      type: "set",
+      storageClassType: "DataGitlabProjectProtectedBranchesProtectedBranchesMergeAccessLevelsList",
+    },
+    push_access_levels: {
+      value: cdktf.listMapperHcl(dataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsToHclTerraform, true)(struct!.pushAccessLevels),
+      isBlock: true,
+      type: "set",
+      storageClassType: "DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataGitlabProjectProtectedBranchesProtectedBranchesOutputReference extends cdktf.ComplexObject {
@@ -552,5 +622,25 @@ export class DataGitlabProjectProtectedBranches extends cdktf.TerraformDataSourc
       project_id: cdktf.stringToTerraform(this._projectId),
       protected_branches: cdktf.listMapper(dataGitlabProjectProtectedBranchesProtectedBranchesToTerraform, true)(this._protectedBranches.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      protected_branches: {
+        value: cdktf.listMapperHcl(dataGitlabProjectProtectedBranchesProtectedBranchesToHclTerraform, true)(this._protectedBranches.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataGitlabProjectProtectedBranchesProtectedBranchesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

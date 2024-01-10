@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/service_microsoft_teams
 // generated from terraform resource schema
 
@@ -424,5 +419,97 @@ export class ServiceMicrosoftTeams extends cdktf.TerraformResource {
       webhook: cdktf.stringToTerraform(this._webhook),
       wiki_page_events: cdktf.booleanToTerraform(this._wikiPageEvents),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      branches_to_be_notified: {
+        value: cdktf.stringToHclTerraform(this._branchesToBeNotified),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      confidential_issues_events: {
+        value: cdktf.booleanToHclTerraform(this._confidentialIssuesEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      confidential_note_events: {
+        value: cdktf.booleanToHclTerraform(this._confidentialNoteEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      issues_events: {
+        value: cdktf.booleanToHclTerraform(this._issuesEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      merge_requests_events: {
+        value: cdktf.booleanToHclTerraform(this._mergeRequestsEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      note_events: {
+        value: cdktf.booleanToHclTerraform(this._noteEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      notify_only_broken_pipelines: {
+        value: cdktf.booleanToHclTerraform(this._notifyOnlyBrokenPipelines),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      pipeline_events: {
+        value: cdktf.booleanToHclTerraform(this._pipelineEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      push_events: {
+        value: cdktf.booleanToHclTerraform(this._pushEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tag_push_events: {
+        value: cdktf.booleanToHclTerraform(this._tagPushEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      webhook: {
+        value: cdktf.stringToHclTerraform(this._webhook),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      wiki_page_events: {
+        value: cdktf.booleanToHclTerraform(this._wikiPageEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

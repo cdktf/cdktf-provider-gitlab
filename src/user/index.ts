@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/user
 // generated from terraform resource schema
 
@@ -406,5 +401,97 @@ export class User extends cdktf.TerraformResource {
       state: cdktf.stringToTerraform(this._state),
       username: cdktf.stringToTerraform(this._username),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      can_create_group: {
+        value: cdktf.booleanToHclTerraform(this._canCreateGroup),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      email: {
+        value: cdktf.stringToHclTerraform(this._email),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      is_admin: {
+        value: cdktf.booleanToHclTerraform(this._isAdmin),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      is_external: {
+        value: cdktf.booleanToHclTerraform(this._isExternal),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace_id: {
+        value: cdktf.numberToHclTerraform(this._namespaceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      note: {
+        value: cdktf.stringToHclTerraform(this._note),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      password: {
+        value: cdktf.stringToHclTerraform(this._password),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      projects_limit: {
+        value: cdktf.numberToHclTerraform(this._projectsLimit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      reset_password: {
+        value: cdktf.booleanToHclTerraform(this._resetPassword),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      skip_confirmation: {
+        value: cdktf.booleanToHclTerraform(this._skipConfirmation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      state: {
+        value: cdktf.stringToHclTerraform(this._state),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      username: {
+        value: cdktf.stringToHclTerraform(this._username),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

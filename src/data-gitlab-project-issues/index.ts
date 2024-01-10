@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/project_issues
 // generated from terraform resource schema
 
@@ -188,6 +183,17 @@ export function dataGitlabProjectIssuesIssuesTaskCompletionStatusToTerraform(str
   }
 }
 
+
+export function dataGitlabProjectIssuesIssuesTaskCompletionStatusToHclTerraform(struct?: DataGitlabProjectIssuesIssuesTaskCompletionStatus): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataGitlabProjectIssuesIssuesTaskCompletionStatusOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -255,6 +261,17 @@ export function dataGitlabProjectIssuesIssuesToTerraform(struct?: DataGitlabProj
   }
   return {
   }
+}
+
+
+export function dataGitlabProjectIssuesIssuesToHclTerraform(struct?: DataGitlabProjectIssuesIssues): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataGitlabProjectIssuesIssuesOutputReference extends cdktf.ComplexObject {
@@ -1056,5 +1073,175 @@ export class DataGitlabProjectIssues extends cdktf.TerraformDataSource {
       weight: cdktf.numberToTerraform(this._weight),
       with_labels_details: cdktf.booleanToTerraform(this._withLabelsDetails),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      assignee_id: {
+        value: cdktf.numberToHclTerraform(this._assigneeId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      assignee_username: {
+        value: cdktf.stringToHclTerraform(this._assigneeUsername),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      author_id: {
+        value: cdktf.numberToHclTerraform(this._authorId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      confidential: {
+        value: cdktf.booleanToHclTerraform(this._confidential),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      created_after: {
+        value: cdktf.stringToHclTerraform(this._createdAfter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      created_before: {
+        value: cdktf.stringToHclTerraform(this._createdBefore),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      due_date: {
+        value: cdktf.stringToHclTerraform(this._dueDate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      iids: {
+        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._iids),
+        isBlock: false,
+        type: "list",
+        storageClassType: "numberList",
+      },
+      issue_type: {
+        value: cdktf.stringToHclTerraform(this._issueType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._labels),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      milestone: {
+        value: cdktf.stringToHclTerraform(this._milestone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      my_reaction_emoji: {
+        value: cdktf.stringToHclTerraform(this._myReactionEmoji),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      not_assignee_id: {
+        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._notAssigneeId),
+        isBlock: false,
+        type: "list",
+        storageClassType: "numberList",
+      },
+      not_author_id: {
+        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._notAuthorId),
+        isBlock: false,
+        type: "list",
+        storageClassType: "numberList",
+      },
+      not_labels: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._notLabels),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      not_milestone: {
+        value: cdktf.stringToHclTerraform(this._notMilestone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      not_my_reaction_emoji: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._notMyReactionEmoji),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      order_by: {
+        value: cdktf.stringToHclTerraform(this._orderBy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scope: {
+        value: cdktf.stringToHclTerraform(this._scope),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      search: {
+        value: cdktf.stringToHclTerraform(this._search),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sort: {
+        value: cdktf.stringToHclTerraform(this._sort),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      updated_after: {
+        value: cdktf.stringToHclTerraform(this._updatedAfter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      updated_before: {
+        value: cdktf.stringToHclTerraform(this._updatedBefore),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      weight: {
+        value: cdktf.numberToHclTerraform(this._weight),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      with_labels_details: {
+        value: cdktf.booleanToHclTerraform(this._withLabelsDetails),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

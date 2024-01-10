@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group
 // generated from terraform resource schema
 
@@ -263,6 +258,85 @@ export function groupPushRulesToTerraform(struct?: GroupPushRulesOutputReference
     prevent_secrets: cdktf.booleanToTerraform(struct!.preventSecrets),
     reject_unsigned_commits: cdktf.booleanToTerraform(struct!.rejectUnsignedCommits),
   }
+}
+
+
+export function groupPushRulesToHclTerraform(struct?: GroupPushRulesOutputReference | GroupPushRules): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    author_email_regex: {
+      value: cdktf.stringToHclTerraform(struct!.authorEmailRegex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    branch_name_regex: {
+      value: cdktf.stringToHclTerraform(struct!.branchNameRegex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    commit_committer_check: {
+      value: cdktf.booleanToHclTerraform(struct!.commitCommitterCheck),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    commit_message_negative_regex: {
+      value: cdktf.stringToHclTerraform(struct!.commitMessageNegativeRegex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    commit_message_regex: {
+      value: cdktf.stringToHclTerraform(struct!.commitMessageRegex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    deny_delete_tag: {
+      value: cdktf.booleanToHclTerraform(struct!.denyDeleteTag),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    file_name_regex: {
+      value: cdktf.stringToHclTerraform(struct!.fileNameRegex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    max_file_size: {
+      value: cdktf.numberToHclTerraform(struct!.maxFileSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    member_check: {
+      value: cdktf.booleanToHclTerraform(struct!.memberCheck),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    prevent_secrets: {
+      value: cdktf.booleanToHclTerraform(struct!.preventSecrets),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    reject_unsigned_commits: {
+      value: cdktf.booleanToHclTerraform(struct!.rejectUnsignedCommits),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GroupPushRulesOutputReference extends cdktf.ComplexObject {
@@ -1103,5 +1177,175 @@ export class Group extends cdktf.TerraformResource {
       wiki_access_level: cdktf.stringToTerraform(this._wikiAccessLevel),
       push_rules: groupPushRulesToTerraform(this._pushRules.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auto_devops_enabled: {
+        value: cdktf.booleanToHclTerraform(this._autoDevopsEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      avatar: {
+        value: cdktf.stringToHclTerraform(this._avatar),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      avatar_hash: {
+        value: cdktf.stringToHclTerraform(this._avatarHash),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_branch_protection: {
+        value: cdktf.numberToHclTerraform(this._defaultBranchProtection),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      emails_disabled: {
+        value: cdktf.booleanToHclTerraform(this._emailsDisabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      extra_shared_runners_minutes_limit: {
+        value: cdktf.numberToHclTerraform(this._extraSharedRunnersMinutesLimit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ip_restriction_ranges: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ipRestrictionRanges),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      lfs_enabled: {
+        value: cdktf.booleanToHclTerraform(this._lfsEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      membership_lock: {
+        value: cdktf.booleanToHclTerraform(this._membershipLock),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      mentions_disabled: {
+        value: cdktf.booleanToHclTerraform(this._mentionsDisabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parent_id: {
+        value: cdktf.numberToHclTerraform(this._parentId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      path: {
+        value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      prevent_forking_outside_group: {
+        value: cdktf.booleanToHclTerraform(this._preventForkingOutsideGroup),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      project_creation_level: {
+        value: cdktf.stringToHclTerraform(this._projectCreationLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      request_access_enabled: {
+        value: cdktf.booleanToHclTerraform(this._requestAccessEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      require_two_factor_authentication: {
+        value: cdktf.booleanToHclTerraform(this._requireTwoFactorAuthentication),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      share_with_group_lock: {
+        value: cdktf.booleanToHclTerraform(this._shareWithGroupLock),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      shared_runners_minutes_limit: {
+        value: cdktf.numberToHclTerraform(this._sharedRunnersMinutesLimit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      shared_runners_setting: {
+        value: cdktf.stringToHclTerraform(this._sharedRunnersSetting),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subgroup_creation_level: {
+        value: cdktf.stringToHclTerraform(this._subgroupCreationLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      two_factor_grace_period: {
+        value: cdktf.numberToHclTerraform(this._twoFactorGracePeriod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      visibility_level: {
+        value: cdktf.stringToHclTerraform(this._visibilityLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      wiki_access_level: {
+        value: cdktf.stringToHclTerraform(this._wikiAccessLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      push_rules: {
+        value: groupPushRulesToHclTerraform(this._pushRules.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GroupPushRulesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

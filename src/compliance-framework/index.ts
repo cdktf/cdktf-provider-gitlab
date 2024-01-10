@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/compliance_framework
 // generated from terraform resource schema
 
@@ -220,5 +215,49 @@ export class ComplianceFramework extends cdktf.TerraformResource {
       namespace_path: cdktf.stringToTerraform(this._namespacePath),
       pipeline_configuration_full_path: cdktf.stringToTerraform(this._pipelineConfigurationFullPath),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      color: {
+        value: cdktf.stringToHclTerraform(this._color),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default: {
+        value: cdktf.booleanToHclTerraform(this._default),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace_path: {
+        value: cdktf.stringToHclTerraform(this._namespacePath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pipeline_configuration_full_path: {
+        value: cdktf.stringToHclTerraform(this._pipelineConfigurationFullPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

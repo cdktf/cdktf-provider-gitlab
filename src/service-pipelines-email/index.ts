@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/service_pipelines_email
 // generated from terraform resource schema
 
@@ -193,5 +188,43 @@ export class ServicePipelinesEmail extends cdktf.TerraformResource {
       project: cdktf.stringToTerraform(this._project),
       recipients: cdktf.listMapper(cdktf.stringToTerraform, false)(this._recipients),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      branches_to_be_notified: {
+        value: cdktf.stringToHclTerraform(this._branchesToBeNotified),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      notify_only_broken_pipelines: {
+        value: cdktf.booleanToHclTerraform(this._notifyOnlyBrokenPipelines),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      recipients: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._recipients),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

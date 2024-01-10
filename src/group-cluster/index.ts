@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_cluster
 // generated from terraform resource schema
 
@@ -375,5 +370,85 @@ export class GroupCluster extends cdktf.TerraformResource {
       management_project_id: cdktf.stringToTerraform(this._managementProjectId),
       name: cdktf.stringToTerraform(this._name),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      domain: {
+        value: cdktf.stringToHclTerraform(this._domain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      environment_scope: {
+        value: cdktf.stringToHclTerraform(this._environmentScope),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      group: {
+        value: cdktf.stringToHclTerraform(this._group),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kubernetes_api_url: {
+        value: cdktf.stringToHclTerraform(this._kubernetesApiUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kubernetes_authorization_type: {
+        value: cdktf.stringToHclTerraform(this._kubernetesAuthorizationType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kubernetes_ca_cert: {
+        value: cdktf.stringToHclTerraform(this._kubernetesCaCert),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kubernetes_token: {
+        value: cdktf.stringToHclTerraform(this._kubernetesToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      managed: {
+        value: cdktf.booleanToHclTerraform(this._managed),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      management_project_id: {
+        value: cdktf.stringToHclTerraform(this._managementProjectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

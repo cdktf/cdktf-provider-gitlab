@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/metadata
 // generated from terraform resource schema
 
@@ -23,6 +18,17 @@ export function dataGitlabMetadataKasToTerraform(struct?: DataGitlabMetadataKas)
   }
   return {
   }
+}
+
+
+export function dataGitlabMetadataKasToHclTerraform(struct?: DataGitlabMetadataKas): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataGitlabMetadataKasOutputReference extends cdktf.ComplexObject {
@@ -157,5 +163,11 @@ export class DataGitlabMetadata extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+    };
+    return attrs;
   }
 }

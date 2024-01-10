@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/repository_file
 // generated from terraform resource schema
 
@@ -135,6 +130,37 @@ export function repositoryFileTimeoutsToTerraform(struct?: RepositoryFileTimeout
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function repositoryFileTimeoutsToHclTerraform(struct?: RepositoryFileTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RepositoryFileTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -615,5 +641,109 @@ export class RepositoryFile extends cdktf.TerraformResource {
       update_commit_message: cdktf.stringToTerraform(this._updateCommitMessage),
       timeouts: repositoryFileTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      author_email: {
+        value: cdktf.stringToHclTerraform(this._authorEmail),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      author_name: {
+        value: cdktf.stringToHclTerraform(this._authorName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      branch: {
+        value: cdktf.stringToHclTerraform(this._branch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      commit_message: {
+        value: cdktf.stringToHclTerraform(this._commitMessage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      content: {
+        value: cdktf.stringToHclTerraform(this._content),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      create_commit_message: {
+        value: cdktf.stringToHclTerraform(this._createCommitMessage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      delete_commit_message: {
+        value: cdktf.stringToHclTerraform(this._deleteCommitMessage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      encoding: {
+        value: cdktf.stringToHclTerraform(this._encoding),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      execute_filemode: {
+        value: cdktf.booleanToHclTerraform(this._executeFilemode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      file_path: {
+        value: cdktf.stringToHclTerraform(this._filePath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      overwrite_on_create: {
+        value: cdktf.booleanToHclTerraform(this._overwriteOnCreate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      start_branch: {
+        value: cdktf.stringToHclTerraform(this._startBranch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      update_commit_message: {
+        value: cdktf.stringToHclTerraform(this._updateCommitMessage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: repositoryFileTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "RepositoryFileTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

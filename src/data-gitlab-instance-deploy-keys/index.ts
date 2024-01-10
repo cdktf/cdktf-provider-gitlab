@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/instance_deploy_keys
 // generated from terraform resource schema
 
@@ -36,6 +31,17 @@ export function dataGitlabInstanceDeployKeysDeployKeysProjectsWithWriteAccessToT
   }
   return {
   }
+}
+
+
+export function dataGitlabInstanceDeployKeysDeployKeysProjectsWithWriteAccessToHclTerraform(struct?: DataGitlabInstanceDeployKeysDeployKeysProjectsWithWriteAccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataGitlabInstanceDeployKeysDeployKeysProjectsWithWriteAccessOutputReference extends cdktf.ComplexObject {
@@ -130,6 +136,17 @@ export function dataGitlabInstanceDeployKeysDeployKeysToTerraform(struct?: DataG
   }
   return {
   }
+}
+
+
+export function dataGitlabInstanceDeployKeysDeployKeysToHclTerraform(struct?: DataGitlabInstanceDeployKeysDeployKeys): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataGitlabInstanceDeployKeysDeployKeysOutputReference extends cdktf.ComplexObject {
@@ -317,5 +334,25 @@ export class DataGitlabInstanceDeployKeys extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       public: cdktf.booleanToTerraform(this._public),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      public: {
+        value: cdktf.booleanToHclTerraform(this._public),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/integration_emails_on_push
 // generated from terraform resource schema
 
@@ -290,5 +285,61 @@ export class IntegrationEmailsOnPush extends cdktf.TerraformResource {
       send_from_committer_email: cdktf.booleanToTerraform(this._sendFromCommitterEmail),
       tag_push_events: cdktf.booleanToTerraform(this._tagPushEvents),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      branches_to_be_notified: {
+        value: cdktf.stringToHclTerraform(this._branchesToBeNotified),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disable_diffs: {
+        value: cdktf.booleanToHclTerraform(this._disableDiffs),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      push_events: {
+        value: cdktf.booleanToHclTerraform(this._pushEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      recipients: {
+        value: cdktf.stringToHclTerraform(this._recipients),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      send_from_committer_email: {
+        value: cdktf.booleanToHclTerraform(this._sendFromCommitterEmail),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tag_push_events: {
+        value: cdktf.booleanToHclTerraform(this._tagPushEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

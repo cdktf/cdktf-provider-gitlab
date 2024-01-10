@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/project_issue_board
 // generated from terraform resource schema
 
@@ -100,6 +95,43 @@ export function projectIssueBoardListsToTerraform(struct?: ProjectIssueBoardList
     label_id: cdktf.numberToTerraform(struct!.labelId),
     milestone_id: cdktf.numberToTerraform(struct!.milestoneId),
   }
+}
+
+
+export function projectIssueBoardListsToHclTerraform(struct?: ProjectIssueBoardLists | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    assignee_id: {
+      value: cdktf.numberToHclTerraform(struct!.assigneeId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    iteration_id: {
+      value: cdktf.numberToHclTerraform(struct!.iterationId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    label_id: {
+      value: cdktf.numberToHclTerraform(struct!.labelId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    milestone_id: {
+      value: cdktf.numberToHclTerraform(struct!.milestoneId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ProjectIssueBoardListsOutputReference extends cdktf.ComplexObject {
@@ -461,5 +493,61 @@ export class ProjectIssueBoard extends cdktf.TerraformResource {
       weight: cdktf.numberToTerraform(this._weight),
       lists: cdktf.listMapper(projectIssueBoardListsToTerraform, true)(this._lists.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      assignee_id: {
+        value: cdktf.numberToHclTerraform(this._assigneeId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._labels),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      milestone_id: {
+        value: cdktf.numberToHclTerraform(this._milestoneId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      weight: {
+        value: cdktf.numberToHclTerraform(this._weight),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      lists: {
+        value: cdktf.listMapperHcl(projectIssueBoardListsToHclTerraform, true)(this._lists.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ProjectIssueBoardListsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

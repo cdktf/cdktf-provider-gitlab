@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_project_file_template
 // generated from terraform resource schema
 
@@ -147,5 +142,31 @@ export class GroupProjectFileTemplate extends cdktf.TerraformResource {
       group_id: cdktf.numberToTerraform(this._groupId),
       id: cdktf.stringToTerraform(this._id),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      file_template_project_id: {
+        value: cdktf.numberToHclTerraform(this._fileTemplateProjectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      group_id: {
+        value: cdktf.numberToHclTerraform(this._groupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

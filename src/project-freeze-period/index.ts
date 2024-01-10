@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/project_freeze_period
 // generated from terraform resource schema
 
@@ -190,5 +185,43 @@ export class ProjectFreezePeriod extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       project: cdktf.stringToTerraform(this._project),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cron_timezone: {
+        value: cdktf.stringToHclTerraform(this._cronTimezone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      freeze_end: {
+        value: cdktf.stringToHclTerraform(this._freezeEnd),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      freeze_start: {
+        value: cdktf.stringToHclTerraform(this._freezeStart),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

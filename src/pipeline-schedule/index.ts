@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/pipeline_schedule
 // generated from terraform resource schema
 
@@ -269,5 +264,61 @@ export class PipelineSchedule extends cdktf.TerraformResource {
       ref: cdktf.stringToTerraform(this._ref),
       take_ownership: cdktf.booleanToTerraform(this._takeOwnership),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      active: {
+        value: cdktf.booleanToHclTerraform(this._active),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      cron: {
+        value: cdktf.stringToHclTerraform(this._cron),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cron_timezone: {
+        value: cdktf.stringToHclTerraform(this._cronTimezone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ref: {
+        value: cdktf.stringToHclTerraform(this._ref),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      take_ownership: {
+        value: cdktf.booleanToHclTerraform(this._takeOwnership),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

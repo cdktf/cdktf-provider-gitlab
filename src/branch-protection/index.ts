@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/branch_protection
 // generated from terraform resource schema
 
@@ -97,6 +92,31 @@ export function branchProtectionAllowedToMergeToTerraform(struct?: BranchProtect
     group_id: cdktf.numberToTerraform(struct!.groupId),
     user_id: cdktf.numberToTerraform(struct!.userId),
   }
+}
+
+
+export function branchProtectionAllowedToMergeToHclTerraform(struct?: BranchProtectionAllowedToMerge | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    group_id: {
+      value: cdktf.numberToHclTerraform(struct!.groupId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    user_id: {
+      value: cdktf.numberToHclTerraform(struct!.userId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class BranchProtectionAllowedToMergeOutputReference extends cdktf.ComplexObject {
@@ -237,6 +257,31 @@ export function branchProtectionAllowedToPushToTerraform(struct?: BranchProtecti
   }
 }
 
+
+export function branchProtectionAllowedToPushToHclTerraform(struct?: BranchProtectionAllowedToPush | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    group_id: {
+      value: cdktf.numberToHclTerraform(struct!.groupId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    user_id: {
+      value: cdktf.numberToHclTerraform(struct!.userId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class BranchProtectionAllowedToPushOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -373,6 +418,31 @@ export function branchProtectionAllowedToUnprotectToTerraform(struct?: BranchPro
     group_id: cdktf.numberToTerraform(struct!.groupId),
     user_id: cdktf.numberToTerraform(struct!.userId),
   }
+}
+
+
+export function branchProtectionAllowedToUnprotectToHclTerraform(struct?: BranchProtectionAllowedToUnprotect | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    group_id: {
+      value: cdktf.numberToHclTerraform(struct!.groupId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    user_id: {
+      value: cdktf.numberToHclTerraform(struct!.userId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class BranchProtectionAllowedToUnprotectOutputReference extends cdktf.ComplexObject {
@@ -736,5 +806,73 @@ export class BranchProtection extends cdktf.TerraformResource {
       allowed_to_push: cdktf.listMapper(branchProtectionAllowedToPushToTerraform, true)(this._allowedToPush.internalValue),
       allowed_to_unprotect: cdktf.listMapper(branchProtectionAllowedToUnprotectToTerraform, true)(this._allowedToUnprotect.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allow_force_push: {
+        value: cdktf.booleanToHclTerraform(this._allowForcePush),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      branch: {
+        value: cdktf.stringToHclTerraform(this._branch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      code_owner_approval_required: {
+        value: cdktf.booleanToHclTerraform(this._codeOwnerApprovalRequired),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      merge_access_level: {
+        value: cdktf.stringToHclTerraform(this._mergeAccessLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      push_access_level: {
+        value: cdktf.stringToHclTerraform(this._pushAccessLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      unprotect_access_level: {
+        value: cdktf.stringToHclTerraform(this._unprotectAccessLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      allowed_to_merge: {
+        value: cdktf.listMapperHcl(branchProtectionAllowedToMergeToHclTerraform, true)(this._allowedToMerge.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "BranchProtectionAllowedToMergeList",
+      },
+      allowed_to_push: {
+        value: cdktf.listMapperHcl(branchProtectionAllowedToPushToHclTerraform, true)(this._allowedToPush.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "BranchProtectionAllowedToPushList",
+      },
+      allowed_to_unprotect: {
+        value: cdktf.listMapperHcl(branchProtectionAllowedToUnprotectToHclTerraform, true)(this._allowedToUnprotect.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "BranchProtectionAllowedToUnprotectList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/group_subgroups
 // generated from terraform resource schema
 
@@ -90,6 +85,17 @@ export function dataGitlabGroupSubgroupsSubgroupsToTerraform(struct?: DataGitlab
   }
   return {
   }
+}
+
+
+export function dataGitlabGroupSubgroupsSubgroupsToHclTerraform(struct?: DataGitlabGroupSubgroupsSubgroups): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataGitlabGroupSubgroupsSubgroupsOutputReference extends cdktf.ComplexObject {
@@ -541,5 +547,79 @@ export class DataGitlabGroupSubgroups extends cdktf.TerraformDataSource {
       statistics: cdktf.booleanToTerraform(this._statistics),
       with_custom_attributes: cdktf.booleanToTerraform(this._withCustomAttributes),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      all_available: {
+        value: cdktf.booleanToHclTerraform(this._allAvailable),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      group_id: {
+        value: cdktf.numberToHclTerraform(this._groupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      min_access_level: {
+        value: cdktf.stringToHclTerraform(this._minAccessLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      order_by: {
+        value: cdktf.stringToHclTerraform(this._orderBy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      owned: {
+        value: cdktf.booleanToHclTerraform(this._owned),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      search: {
+        value: cdktf.stringToHclTerraform(this._search),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      skip_groups: {
+        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._skipGroups),
+        isBlock: false,
+        type: "list",
+        storageClassType: "numberList",
+      },
+      sort: {
+        value: cdktf.stringToHclTerraform(this._sort),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      statistics: {
+        value: cdktf.booleanToHclTerraform(this._statistics),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      with_custom_attributes: {
+        value: cdktf.booleanToHclTerraform(this._withCustomAttributes),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

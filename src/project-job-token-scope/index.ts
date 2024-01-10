@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/project_job_token_scope
 // generated from terraform resource schema
 
@@ -125,5 +120,25 @@ export class ProjectJobTokenScope extends cdktf.TerraformResource {
       project: cdktf.stringToTerraform(this._project),
       target_project_id: cdktf.numberToTerraform(this._targetProjectId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      target_project_id: {
+        value: cdktf.numberToHclTerraform(this._targetProjectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

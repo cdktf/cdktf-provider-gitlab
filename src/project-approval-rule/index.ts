@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/project_approval_rule
 // generated from terraform resource schema
 
@@ -310,5 +305,73 @@ export class ProjectApprovalRule extends cdktf.TerraformResource {
       rule_type: cdktf.stringToTerraform(this._ruleType),
       user_ids: cdktf.listMapper(cdktf.numberToTerraform, false)(this._userIds),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      applies_to_all_protected_branches: {
+        value: cdktf.booleanToHclTerraform(this._appliesToAllProtectedBranches),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      approvals_required: {
+        value: cdktf.numberToHclTerraform(this._approvalsRequired),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      disable_importing_default_any_approver_rule_on_create: {
+        value: cdktf.booleanToHclTerraform(this._disableImportingDefaultAnyApproverRuleOnCreate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      group_ids: {
+        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._groupIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "numberList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      protected_branch_ids: {
+        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._protectedBranchIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "numberList",
+      },
+      rule_type: {
+        value: cdktf.stringToHclTerraform(this._ruleType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_ids: {
+        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._userIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "numberList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

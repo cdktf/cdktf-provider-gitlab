@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/resources/group_epic_board
 // generated from terraform resource schema
 
@@ -48,6 +43,25 @@ export function groupEpicBoardListsToTerraform(struct?: GroupEpicBoardLists | cd
   return {
     label_id: cdktf.numberToTerraform(struct!.labelId),
   }
+}
+
+
+export function groupEpicBoardListsToHclTerraform(struct?: GroupEpicBoardLists | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    label_id: {
+      value: cdktf.numberToHclTerraform(struct!.labelId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GroupEpicBoardListsOutputReference extends cdktf.ComplexObject {
@@ -258,5 +272,31 @@ export class GroupEpicBoard extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       lists: cdktf.listMapper(groupEpicBoardListsToTerraform, true)(this._lists.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      group: {
+        value: cdktf.stringToHclTerraform(this._group),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      lists: {
+        value: cdktf.listMapperHcl(groupEpicBoardListsToHclTerraform, true)(this._lists.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GroupEpicBoardListsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

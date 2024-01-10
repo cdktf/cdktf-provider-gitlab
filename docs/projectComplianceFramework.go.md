@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectcomplianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectcomplianceframework"
 
 projectcomplianceframework.NewProjectComplianceFramework(scope Construct, id *string, config ProjectComplianceFrameworkConfig) ProjectComplianceFramework
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -124,6 +125,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework.toMetadata"></a>
 
@@ -371,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectcomplianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectcomplianceframework"
 
 projectcomplianceframework.ProjectComplianceFramework_IsConstruct(x interface{}) *bool
 ```
@@ -403,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectcomplianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectcomplianceframework"
 
 projectcomplianceframework.ProjectComplianceFramework_IsTerraformElement(x interface{}) *bool
 ```
@@ -417,7 +424,7 @@ projectcomplianceframework.ProjectComplianceFramework_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectcomplianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectcomplianceframework"
 
 projectcomplianceframework.ProjectComplianceFramework_IsTerraformResource(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ projectcomplianceframework.ProjectComplianceFramework_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectcomplianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectcomplianceframework"
 
 projectcomplianceframework.ProjectComplianceFramework_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -715,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFrameworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/projectcomplianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectcomplianceframework"
 
 &projectcomplianceframework.ProjectComplianceFrameworkConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.integrationMicrosoftTeams.IntegrationMicrosoftTeams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/integrationmicrosoftteams"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationmicrosoftteams"
 
 integrationmicrosoftteams.NewIntegrationMicrosoftTeams(scope Construct, id *string, config IntegrationMicrosoftTeamsConfig) IntegrationMicrosoftTeams
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.integrationMicrosoftTeams.IntegrationMicrosoftTeams.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationMicrosoftTeams.IntegrationMicrosoftTeams.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-gitlab.integrationMicrosoftTeams.IntegrationMicrosoftTeams.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-gitlab.integrationMicrosoftTeams.IntegrationMicrosoftTeams.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationMicrosoftTeams.IntegrationMicrosoftTeams.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationMicrosoftTeams.IntegrationMicrosoftTeams.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-gitlab.integrationMicrosoftTeams.IntegrationMicrosoftTeams.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -136,6 +137,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-gitlab.integrationMicrosoftTeams.IntegrationMicrosoftTeams.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-gitlab.integrationMicrosoftTeams.IntegrationMicrosoftTeams.toMetadata"></a>
 
@@ -455,7 +462,7 @@ func ResetWikiPageEvents()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.integrationMicrosoftTeams.IntegrationMicrosoftTeams.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/integrationmicrosoftteams"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationmicrosoftteams"
 
 integrationmicrosoftteams.IntegrationMicrosoftTeams_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.integrationMicrosoftTeams.IntegrationMicrosoftTeams.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/integrationmicrosoftteams"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationmicrosoftteams"
 
 integrationmicrosoftteams.IntegrationMicrosoftTeams_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +508,7 @@ integrationmicrosoftteams.IntegrationMicrosoftTeams_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.integrationMicrosoftTeams.IntegrationMicrosoftTeams.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/integrationmicrosoftteams"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationmicrosoftteams"
 
 integrationmicrosoftteams.IntegrationMicrosoftTeams_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +522,7 @@ integrationmicrosoftteams.IntegrationMicrosoftTeams_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.integrationMicrosoftTeams.IntegrationMicrosoftTeams.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/integrationmicrosoftteams"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationmicrosoftteams"
 
 integrationmicrosoftteams.IntegrationMicrosoftTeams_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1085,7 +1092,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.integrationMicrosoftTeams.IntegrationMicrosoftTeamsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v11/integrationmicrosoftteams"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationmicrosoftteams"
 
 &integrationmicrosoftteams.IntegrationMicrosoftTeamsConfig {
 	Connection: interface{},
