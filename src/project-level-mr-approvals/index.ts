@@ -249,4 +249,54 @@ export class ProjectLevelMrApprovals extends cdktf.TerraformResource {
       selective_code_owner_removals: cdktf.booleanToTerraform(this._selectiveCodeOwnerRemovals),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      disable_overriding_approvers_per_merge_request: {
+        value: cdktf.booleanToHclTerraform(this._disableOverridingApproversPerMergeRequest),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      merge_requests_author_approval: {
+        value: cdktf.booleanToHclTerraform(this._mergeRequestsAuthorApproval),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      merge_requests_disable_committers_approval: {
+        value: cdktf.booleanToHclTerraform(this._mergeRequestsDisableCommittersApproval),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      require_password_to_approve: {
+        value: cdktf.booleanToHclTerraform(this._requirePasswordToApprove),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      reset_approvals_on_push: {
+        value: cdktf.booleanToHclTerraform(this._resetApprovalsOnPush),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      selective_code_owner_removals: {
+        value: cdktf.booleanToHclTerraform(this._selectiveCodeOwnerRemovals),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

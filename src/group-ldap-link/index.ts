@@ -266,4 +266,60 @@ export class GroupLdapLink extends cdktf.TerraformResource {
       ldap_provider: cdktf.stringToTerraform(this._ldapProvider),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_level: {
+        value: cdktf.stringToHclTerraform(this._accessLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cn: {
+        value: cdktf.stringToHclTerraform(this._cn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      filter: {
+        value: cdktf.stringToHclTerraform(this._filter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      force: {
+        value: cdktf.booleanToHclTerraform(this._force),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      group: {
+        value: cdktf.stringToHclTerraform(this._group),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      group_access: {
+        value: cdktf.stringToHclTerraform(this._groupAccess),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ldap_provider: {
+        value: cdktf.stringToHclTerraform(this._ldapProvider),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

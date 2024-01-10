@@ -63,6 +63,31 @@ export function dataGitlabProjectProtectedBranchMergeAccessLevelsToTerraform(str
   }
 }
 
+
+export function dataGitlabProjectProtectedBranchMergeAccessLevelsToHclTerraform(struct?: DataGitlabProjectProtectedBranchMergeAccessLevels | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    group_id: {
+      value: cdktf.numberToHclTerraform(struct!.groupId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    user_id: {
+      value: cdktf.numberToHclTerraform(struct!.userId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataGitlabProjectProtectedBranchMergeAccessLevelsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -199,6 +224,31 @@ export function dataGitlabProjectProtectedBranchPushAccessLevelsToTerraform(stru
     group_id: cdktf.numberToTerraform(struct!.groupId),
     user_id: cdktf.numberToTerraform(struct!.userId),
   }
+}
+
+
+export function dataGitlabProjectProtectedBranchPushAccessLevelsToHclTerraform(struct?: DataGitlabProjectProtectedBranchPushAccessLevels | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    group_id: {
+      value: cdktf.numberToHclTerraform(struct!.groupId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    user_id: {
+      value: cdktf.numberToHclTerraform(struct!.userId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference extends cdktf.ComplexObject {
@@ -459,5 +509,37 @@ export class DataGitlabProjectProtectedBranch extends cdktf.TerraformDataSource 
       merge_access_levels: cdktf.listMapper(dataGitlabProjectProtectedBranchMergeAccessLevelsToTerraform, true)(this._mergeAccessLevels.internalValue),
       push_access_levels: cdktf.listMapper(dataGitlabProjectProtectedBranchPushAccessLevelsToTerraform, true)(this._pushAccessLevels.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      merge_access_levels: {
+        value: cdktf.listMapperHcl(dataGitlabProjectProtectedBranchMergeAccessLevelsToHclTerraform, true)(this._mergeAccessLevels.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataGitlabProjectProtectedBranchMergeAccessLevelsList",
+      },
+      push_access_levels: {
+        value: cdktf.listMapperHcl(dataGitlabProjectProtectedBranchPushAccessLevelsToHclTerraform, true)(this._pushAccessLevels.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataGitlabProjectProtectedBranchPushAccessLevelsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

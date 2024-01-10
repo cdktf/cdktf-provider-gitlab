@@ -191,4 +191,42 @@ export class ProjectFreezePeriod extends cdktf.TerraformResource {
       project: cdktf.stringToTerraform(this._project),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cron_timezone: {
+        value: cdktf.stringToHclTerraform(this._cronTimezone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      freeze_end: {
+        value: cdktf.stringToHclTerraform(this._freezeEnd),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      freeze_start: {
+        value: cdktf.stringToHclTerraform(this._freezeStart),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

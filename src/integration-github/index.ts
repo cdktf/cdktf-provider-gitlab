@@ -211,4 +211,42 @@ export class IntegrationGithub extends cdktf.TerraformResource {
       token: cdktf.stringToTerraform(this._token),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      repository_url: {
+        value: cdktf.stringToHclTerraform(this._repositoryUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      static_context: {
+        value: cdktf.booleanToHclTerraform(this._staticContext),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      token: {
+        value: cdktf.stringToHclTerraform(this._token),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

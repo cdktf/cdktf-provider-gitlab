@@ -124,4 +124,10 @@ export class DataGitlabCurrentUser extends cdktf.TerraformDataSource {
     return {
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+    };
+    return attrs;
+  }
 }

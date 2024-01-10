@@ -70,6 +70,31 @@ export function tagProtectionAllowedToCreateToTerraform(struct?: TagProtectionAl
   }
 }
 
+
+export function tagProtectionAllowedToCreateToHclTerraform(struct?: TagProtectionAllowedToCreate | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    group_id: {
+      value: cdktf.numberToHclTerraform(struct!.groupId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    user_id: {
+      value: cdktf.numberToHclTerraform(struct!.userId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class TagProtectionAllowedToCreateOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -328,5 +353,43 @@ export class TagProtection extends cdktf.TerraformResource {
       tag: cdktf.stringToTerraform(this._tag),
       allowed_to_create: cdktf.listMapper(tagProtectionAllowedToCreateToTerraform, true)(this._allowedToCreate.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      create_access_level: {
+        value: cdktf.stringToHclTerraform(this._createAccessLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tag: {
+        value: cdktf.stringToHclTerraform(this._tag),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      allowed_to_create: {
+        value: cdktf.listMapperHcl(tagProtectionAllowedToCreateToHclTerraform, true)(this._allowedToCreate.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "TagProtectionAllowedToCreateList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

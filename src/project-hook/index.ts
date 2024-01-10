@@ -516,4 +516,120 @@ export class ProjectHook extends cdktf.TerraformResource {
       wiki_page_events: cdktf.booleanToTerraform(this._wikiPageEvents),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      confidential_issues_events: {
+        value: cdktf.booleanToHclTerraform(this._confidentialIssuesEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      confidential_note_events: {
+        value: cdktf.booleanToHclTerraform(this._confidentialNoteEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      deployment_events: {
+        value: cdktf.booleanToHclTerraform(this._deploymentEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_ssl_verification: {
+        value: cdktf.booleanToHclTerraform(this._enableSslVerification),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      issues_events: {
+        value: cdktf.booleanToHclTerraform(this._issuesEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      job_events: {
+        value: cdktf.booleanToHclTerraform(this._jobEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      merge_requests_events: {
+        value: cdktf.booleanToHclTerraform(this._mergeRequestsEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      note_events: {
+        value: cdktf.booleanToHclTerraform(this._noteEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      pipeline_events: {
+        value: cdktf.booleanToHclTerraform(this._pipelineEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      push_events: {
+        value: cdktf.booleanToHclTerraform(this._pushEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      push_events_branch_filter: {
+        value: cdktf.stringToHclTerraform(this._pushEventsBranchFilter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      releases_events: {
+        value: cdktf.booleanToHclTerraform(this._releasesEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tag_push_events: {
+        value: cdktf.booleanToHclTerraform(this._tagPushEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      token: {
+        value: cdktf.stringToHclTerraform(this._token),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      url: {
+        value: cdktf.stringToHclTerraform(this._url),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      wiki_page_events: {
+        value: cdktf.booleanToHclTerraform(this._wikiPageEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -130,6 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework.addOverride">add_override</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework.toMetadata">to_metadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -205,6 +206,12 @@ def reset_override_logical_id() -> None
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework.toHclTerraform"></a>
+
+```python
+def to_hcl_terraform() -> typing.Any
+```
 
 ##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-gitlab.projectComplianceFramework.ProjectComplianceFramework.toMetadata"></a>
 

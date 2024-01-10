@@ -83,6 +83,43 @@ export function groupProtectedEnvironmentApprovalRulesToTerraform(struct?: Group
   }
 }
 
+
+export function groupProtectedEnvironmentApprovalRulesToHclTerraform(struct?: GroupProtectedEnvironmentApprovalRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_level: {
+      value: cdktf.stringToHclTerraform(struct!.accessLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    group_id: {
+      value: cdktf.numberToHclTerraform(struct!.groupId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    required_approvals: {
+      value: cdktf.numberToHclTerraform(struct!.requiredApprovals),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    user_id: {
+      value: cdktf.numberToHclTerraform(struct!.userId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GroupProtectedEnvironmentApprovalRulesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -270,6 +307,37 @@ export function groupProtectedEnvironmentDeployAccessLevelsToTerraform(struct?: 
     group_id: cdktf.numberToTerraform(struct!.groupId),
     user_id: cdktf.numberToTerraform(struct!.userId),
   }
+}
+
+
+export function groupProtectedEnvironmentDeployAccessLevelsToHclTerraform(struct?: GroupProtectedEnvironmentDeployAccessLevels | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_level: {
+      value: cdktf.stringToHclTerraform(struct!.accessLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    group_id: {
+      value: cdktf.numberToHclTerraform(struct!.groupId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    user_id: {
+      value: cdktf.numberToHclTerraform(struct!.userId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GroupProtectedEnvironmentDeployAccessLevelsOutputReference extends cdktf.ComplexObject {
@@ -557,5 +625,43 @@ export class GroupProtectedEnvironment extends cdktf.TerraformResource {
       group: cdktf.stringToTerraform(this._group),
       required_approval_count: cdktf.numberToTerraform(this._requiredApprovalCount),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      approval_rules: {
+        value: cdktf.listMapperHcl(groupProtectedEnvironmentApprovalRulesToHclTerraform, false)(this._approvalRules.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GroupProtectedEnvironmentApprovalRulesList",
+      },
+      deploy_access_levels: {
+        value: cdktf.listMapperHcl(groupProtectedEnvironmentDeployAccessLevelsToHclTerraform, false)(this._deployAccessLevels.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GroupProtectedEnvironmentDeployAccessLevelsList",
+      },
+      environment: {
+        value: cdktf.stringToHclTerraform(this._environment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      group: {
+        value: cdktf.stringToHclTerraform(this._group),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      required_approval_count: {
+        value: cdktf.numberToHclTerraform(this._requiredApprovalCount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

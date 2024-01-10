@@ -303,4 +303,66 @@ export class Runner extends cdktf.TerraformResource {
       tag_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tagList),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_level: {
+        value: cdktf.stringToHclTerraform(this._accessLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      locked: {
+        value: cdktf.booleanToHclTerraform(this._locked),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      maximum_timeout: {
+        value: cdktf.numberToHclTerraform(this._maximumTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      paused: {
+        value: cdktf.booleanToHclTerraform(this._paused),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      registration_token: {
+        value: cdktf.stringToHclTerraform(this._registrationToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      run_untagged: {
+        value: cdktf.booleanToHclTerraform(this._runUntagged),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tag_list: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tagList),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -636,6 +636,61 @@ export function projectContainerExpirationPolicyToTerraform(struct?: ProjectCont
   }
 }
 
+
+export function projectContainerExpirationPolicyToHclTerraform(struct?: ProjectContainerExpirationPolicyOutputReference | ProjectContainerExpirationPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cadence: {
+      value: cdktf.stringToHclTerraform(struct!.cadence),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    keep_n: {
+      value: cdktf.numberToHclTerraform(struct!.keepN),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    name_regex: {
+      value: cdktf.stringToHclTerraform(struct!.nameRegex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name_regex_delete: {
+      value: cdktf.stringToHclTerraform(struct!.nameRegexDelete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name_regex_keep: {
+      value: cdktf.stringToHclTerraform(struct!.nameRegexKeep),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    older_than: {
+      value: cdktf.stringToHclTerraform(struct!.olderThan),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ProjectContainerExpirationPolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -908,6 +963,85 @@ export function projectPushRulesToTerraform(struct?: ProjectPushRulesOutputRefer
     prevent_secrets: cdktf.booleanToTerraform(struct!.preventSecrets),
     reject_unsigned_commits: cdktf.booleanToTerraform(struct!.rejectUnsignedCommits),
   }
+}
+
+
+export function projectPushRulesToHclTerraform(struct?: ProjectPushRulesOutputReference | ProjectPushRules): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    author_email_regex: {
+      value: cdktf.stringToHclTerraform(struct!.authorEmailRegex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    branch_name_regex: {
+      value: cdktf.stringToHclTerraform(struct!.branchNameRegex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    commit_committer_check: {
+      value: cdktf.booleanToHclTerraform(struct!.commitCommitterCheck),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    commit_message_negative_regex: {
+      value: cdktf.stringToHclTerraform(struct!.commitMessageNegativeRegex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    commit_message_regex: {
+      value: cdktf.stringToHclTerraform(struct!.commitMessageRegex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    deny_delete_tag: {
+      value: cdktf.booleanToHclTerraform(struct!.denyDeleteTag),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    file_name_regex: {
+      value: cdktf.stringToHclTerraform(struct!.fileNameRegex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    max_file_size: {
+      value: cdktf.numberToHclTerraform(struct!.maxFileSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    member_check: {
+      value: cdktf.booleanToHclTerraform(struct!.memberCheck),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    prevent_secrets: {
+      value: cdktf.booleanToHclTerraform(struct!.preventSecrets),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    reject_unsigned_commits: {
+      value: cdktf.booleanToHclTerraform(struct!.rejectUnsignedCommits),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ProjectPushRulesOutputReference extends cdktf.ComplexObject {
@@ -2931,5 +3065,565 @@ export class Project extends cdktf.TerraformResource {
       container_expiration_policy: projectContainerExpirationPolicyToTerraform(this._containerExpirationPolicy.internalValue),
       push_rules: projectPushRulesToTerraform(this._pushRules.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allow_merge_on_skipped_pipeline: {
+        value: cdktf.booleanToHclTerraform(this._allowMergeOnSkippedPipeline),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      analytics_access_level: {
+        value: cdktf.stringToHclTerraform(this._analyticsAccessLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      approvals_before_merge: {
+        value: cdktf.numberToHclTerraform(this._approvalsBeforeMerge),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      archive_on_destroy: {
+        value: cdktf.booleanToHclTerraform(this._archiveOnDestroy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      archived: {
+        value: cdktf.booleanToHclTerraform(this._archived),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      auto_cancel_pending_pipelines: {
+        value: cdktf.stringToHclTerraform(this._autoCancelPendingPipelines),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      auto_devops_deploy_strategy: {
+        value: cdktf.stringToHclTerraform(this._autoDevopsDeployStrategy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      auto_devops_enabled: {
+        value: cdktf.booleanToHclTerraform(this._autoDevopsEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      autoclose_referenced_issues: {
+        value: cdktf.booleanToHclTerraform(this._autocloseReferencedIssues),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      avatar: {
+        value: cdktf.stringToHclTerraform(this._avatar),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      avatar_hash: {
+        value: cdktf.stringToHclTerraform(this._avatarHash),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      build_coverage_regex: {
+        value: cdktf.stringToHclTerraform(this._buildCoverageRegex),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      build_git_strategy: {
+        value: cdktf.stringToHclTerraform(this._buildGitStrategy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      build_timeout: {
+        value: cdktf.numberToHclTerraform(this._buildTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      builds_access_level: {
+        value: cdktf.stringToHclTerraform(this._buildsAccessLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ci_config_path: {
+        value: cdktf.stringToHclTerraform(this._ciConfigPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ci_default_git_depth: {
+        value: cdktf.numberToHclTerraform(this._ciDefaultGitDepth),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      ci_forward_deployment_enabled: {
+        value: cdktf.booleanToHclTerraform(this._ciForwardDeploymentEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      ci_separated_caches: {
+        value: cdktf.booleanToHclTerraform(this._ciSeparatedCaches),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      container_registry_access_level: {
+        value: cdktf.stringToHclTerraform(this._containerRegistryAccessLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      container_registry_enabled: {
+        value: cdktf.booleanToHclTerraform(this._containerRegistryEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      default_branch: {
+        value: cdktf.stringToHclTerraform(this._defaultBranch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      emails_disabled: {
+        value: cdktf.booleanToHclTerraform(this._emailsDisabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      environments_access_level: {
+        value: cdktf.stringToHclTerraform(this._environmentsAccessLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      external_authorization_classification_label: {
+        value: cdktf.stringToHclTerraform(this._externalAuthorizationClassificationLabel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      feature_flags_access_level: {
+        value: cdktf.stringToHclTerraform(this._featureFlagsAccessLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      forked_from_project_id: {
+        value: cdktf.numberToHclTerraform(this._forkedFromProjectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      forking_access_level: {
+        value: cdktf.stringToHclTerraform(this._forkingAccessLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      group_runners_enabled: {
+        value: cdktf.booleanToHclTerraform(this._groupRunnersEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      group_with_project_templates_id: {
+        value: cdktf.numberToHclTerraform(this._groupWithProjectTemplatesId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      import_url: {
+        value: cdktf.stringToHclTerraform(this._importUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      import_url_password: {
+        value: cdktf.stringToHclTerraform(this._importUrlPassword),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      import_url_username: {
+        value: cdktf.stringToHclTerraform(this._importUrlUsername),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      infrastructure_access_level: {
+        value: cdktf.stringToHclTerraform(this._infrastructureAccessLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      initialize_with_readme: {
+        value: cdktf.booleanToHclTerraform(this._initializeWithReadme),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      issues_access_level: {
+        value: cdktf.stringToHclTerraform(this._issuesAccessLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      issues_enabled: {
+        value: cdktf.booleanToHclTerraform(this._issuesEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      issues_template: {
+        value: cdktf.stringToHclTerraform(this._issuesTemplate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      keep_latest_artifact: {
+        value: cdktf.booleanToHclTerraform(this._keepLatestArtifact),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      lfs_enabled: {
+        value: cdktf.booleanToHclTerraform(this._lfsEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      merge_commit_template: {
+        value: cdktf.stringToHclTerraform(this._mergeCommitTemplate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      merge_method: {
+        value: cdktf.stringToHclTerraform(this._mergeMethod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      merge_pipelines_enabled: {
+        value: cdktf.booleanToHclTerraform(this._mergePipelinesEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      merge_requests_access_level: {
+        value: cdktf.stringToHclTerraform(this._mergeRequestsAccessLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      merge_requests_enabled: {
+        value: cdktf.booleanToHclTerraform(this._mergeRequestsEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      merge_requests_template: {
+        value: cdktf.stringToHclTerraform(this._mergeRequestsTemplate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      merge_trains_enabled: {
+        value: cdktf.booleanToHclTerraform(this._mergeTrainsEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      mirror: {
+        value: cdktf.booleanToHclTerraform(this._mirror),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      mirror_overwrites_diverged_branches: {
+        value: cdktf.booleanToHclTerraform(this._mirrorOverwritesDivergedBranches),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      mirror_trigger_builds: {
+        value: cdktf.booleanToHclTerraform(this._mirrorTriggerBuilds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      monitor_access_level: {
+        value: cdktf.stringToHclTerraform(this._monitorAccessLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mr_default_target_self: {
+        value: cdktf.booleanToHclTerraform(this._mrDefaultTargetSelf),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace_id: {
+        value: cdktf.numberToHclTerraform(this._namespaceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      only_allow_merge_if_all_discussions_are_resolved: {
+        value: cdktf.booleanToHclTerraform(this._onlyAllowMergeIfAllDiscussionsAreResolved),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      only_allow_merge_if_pipeline_succeeds: {
+        value: cdktf.booleanToHclTerraform(this._onlyAllowMergeIfPipelineSucceeds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      only_mirror_protected_branches: {
+        value: cdktf.booleanToHclTerraform(this._onlyMirrorProtectedBranches),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      packages_enabled: {
+        value: cdktf.booleanToHclTerraform(this._packagesEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      pages_access_level: {
+        value: cdktf.stringToHclTerraform(this._pagesAccessLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      path: {
+        value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pipelines_enabled: {
+        value: cdktf.booleanToHclTerraform(this._pipelinesEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      printing_merge_request_link_enabled: {
+        value: cdktf.booleanToHclTerraform(this._printingMergeRequestLinkEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      public_builds: {
+        value: cdktf.booleanToHclTerraform(this._publicBuilds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      public_jobs: {
+        value: cdktf.booleanToHclTerraform(this._publicJobs),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      releases_access_level: {
+        value: cdktf.stringToHclTerraform(this._releasesAccessLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      remove_source_branch_after_merge: {
+        value: cdktf.booleanToHclTerraform(this._removeSourceBranchAfterMerge),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      repository_access_level: {
+        value: cdktf.stringToHclTerraform(this._repositoryAccessLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      repository_storage: {
+        value: cdktf.stringToHclTerraform(this._repositoryStorage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      request_access_enabled: {
+        value: cdktf.booleanToHclTerraform(this._requestAccessEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      requirements_access_level: {
+        value: cdktf.stringToHclTerraform(this._requirementsAccessLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resolve_outdated_diff_discussions: {
+        value: cdktf.booleanToHclTerraform(this._resolveOutdatedDiffDiscussions),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      restrict_user_defined_variables: {
+        value: cdktf.booleanToHclTerraform(this._restrictUserDefinedVariables),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      security_and_compliance_access_level: {
+        value: cdktf.stringToHclTerraform(this._securityAndComplianceAccessLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      shared_runners_enabled: {
+        value: cdktf.booleanToHclTerraform(this._sharedRunnersEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      skip_wait_for_default_branch_protection: {
+        value: cdktf.booleanToHclTerraform(this._skipWaitForDefaultBranchProtection),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      snippets_access_level: {
+        value: cdktf.stringToHclTerraform(this._snippetsAccessLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      snippets_enabled: {
+        value: cdktf.booleanToHclTerraform(this._snippetsEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      squash_commit_template: {
+        value: cdktf.stringToHclTerraform(this._squashCommitTemplate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      squash_option: {
+        value: cdktf.stringToHclTerraform(this._squashOption),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      suggestion_commit_message: {
+        value: cdktf.stringToHclTerraform(this._suggestionCommitMessage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      template_name: {
+        value: cdktf.stringToHclTerraform(this._templateName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      template_project_id: {
+        value: cdktf.numberToHclTerraform(this._templateProjectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      topics: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._topics),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      use_custom_template: {
+        value: cdktf.booleanToHclTerraform(this._useCustomTemplate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      visibility_level: {
+        value: cdktf.stringToHclTerraform(this._visibilityLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      wiki_access_level: {
+        value: cdktf.stringToHclTerraform(this._wikiAccessLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      wiki_enabled: {
+        value: cdktf.booleanToHclTerraform(this._wikiEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      container_expiration_policy: {
+        value: projectContainerExpirationPolicyToHclTerraform(this._containerExpirationPolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ProjectContainerExpirationPolicyList",
+      },
+      push_rules: {
+        value: projectPushRulesToHclTerraform(this._pushRules.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ProjectPushRulesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

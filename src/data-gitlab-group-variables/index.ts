@@ -44,6 +44,17 @@ export function dataGitlabGroupVariablesVariablesToTerraform(struct?: DataGitlab
   }
 }
 
+
+export function dataGitlabGroupVariablesVariablesToHclTerraform(struct?: DataGitlabGroupVariablesVariables): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataGitlabGroupVariablesVariablesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -253,5 +264,31 @@ export class DataGitlabGroupVariables extends cdktf.TerraformDataSource {
       group: cdktf.stringToTerraform(this._group),
       id: cdktf.stringToTerraform(this._id),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      environment_scope: {
+        value: cdktf.stringToHclTerraform(this._environmentScope),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      group: {
+        value: cdktf.stringToHclTerraform(this._group),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

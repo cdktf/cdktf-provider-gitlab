@@ -496,4 +496,114 @@ export class ServiceJira extends cdktf.TerraformResource {
       username: cdktf.stringToTerraform(this._username),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      api_url: {
+        value: cdktf.stringToHclTerraform(this._apiUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      comment_on_event_enabled: {
+        value: cdktf.booleanToHclTerraform(this._commentOnEventEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      commit_events: {
+        value: cdktf.booleanToHclTerraform(this._commitEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      issues_events: {
+        value: cdktf.booleanToHclTerraform(this._issuesEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      jira_issue_transition_id: {
+        value: cdktf.stringToHclTerraform(this._jiraIssueTransitionId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      job_events: {
+        value: cdktf.booleanToHclTerraform(this._jobEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      merge_requests_events: {
+        value: cdktf.booleanToHclTerraform(this._mergeRequestsEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      note_events: {
+        value: cdktf.booleanToHclTerraform(this._noteEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      password: {
+        value: cdktf.stringToHclTerraform(this._password),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pipeline_events: {
+        value: cdktf.booleanToHclTerraform(this._pipelineEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_key: {
+        value: cdktf.stringToHclTerraform(this._projectKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      push_events: {
+        value: cdktf.booleanToHclTerraform(this._pushEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tag_push_events: {
+        value: cdktf.booleanToHclTerraform(this._tagPushEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      url: {
+        value: cdktf.stringToHclTerraform(this._url),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      username: {
+        value: cdktf.stringToHclTerraform(this._username),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

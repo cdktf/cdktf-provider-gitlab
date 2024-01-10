@@ -537,4 +537,126 @@ export class ProjectLevelNotifications extends cdktf.TerraformResource {
       success_pipeline: cdktf.booleanToTerraform(this._successPipeline),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      close_issue: {
+        value: cdktf.booleanToHclTerraform(this._closeIssue),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      close_merge_request: {
+        value: cdktf.booleanToHclTerraform(this._closeMergeRequest),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      failed_pipeline: {
+        value: cdktf.booleanToHclTerraform(this._failedPipeline),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      fixed_pipeline: {
+        value: cdktf.booleanToHclTerraform(this._fixedPipeline),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      issue_due: {
+        value: cdktf.booleanToHclTerraform(this._issueDue),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      level: {
+        value: cdktf.stringToHclTerraform(this._level),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      merge_merge_request: {
+        value: cdktf.booleanToHclTerraform(this._mergeMergeRequest),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      merge_when_pipeline_succeeds: {
+        value: cdktf.booleanToHclTerraform(this._mergeWhenPipelineSucceeds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      moved_project: {
+        value: cdktf.booleanToHclTerraform(this._movedProject),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      new_issue: {
+        value: cdktf.booleanToHclTerraform(this._newIssue),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      new_merge_request: {
+        value: cdktf.booleanToHclTerraform(this._newMergeRequest),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      new_note: {
+        value: cdktf.booleanToHclTerraform(this._newNote),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      push_to_merge_request: {
+        value: cdktf.booleanToHclTerraform(this._pushToMergeRequest),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      reassign_issue: {
+        value: cdktf.booleanToHclTerraform(this._reassignIssue),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      reassign_merge_request: {
+        value: cdktf.booleanToHclTerraform(this._reassignMergeRequest),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      reopen_issue: {
+        value: cdktf.booleanToHclTerraform(this._reopenIssue),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      reopen_merge_request: {
+        value: cdktf.booleanToHclTerraform(this._reopenMergeRequest),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      success_pipeline: {
+        value: cdktf.booleanToHclTerraform(this._successPipeline),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

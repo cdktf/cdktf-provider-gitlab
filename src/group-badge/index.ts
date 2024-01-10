@@ -201,4 +201,42 @@ export class GroupBadge extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      group: {
+        value: cdktf.stringToHclTerraform(this._group),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      image_url: {
+        value: cdktf.stringToHclTerraform(this._imageUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      link_url: {
+        value: cdktf.stringToHclTerraform(this._linkUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

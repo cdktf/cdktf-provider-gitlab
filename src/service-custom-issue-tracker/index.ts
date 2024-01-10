@@ -167,4 +167,30 @@ export class ServiceCustomIssueTracker extends cdktf.TerraformResource {
       project_url: cdktf.stringToTerraform(this._projectUrl),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      issues_url: {
+        value: cdktf.stringToHclTerraform(this._issuesUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_url: {
+        value: cdktf.stringToHclTerraform(this._projectUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

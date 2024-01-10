@@ -655,4 +655,156 @@ export class ServiceSlack extends cdktf.TerraformResource {
       wiki_page_events: cdktf.booleanToTerraform(this._wikiPageEvents),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      branches_to_be_notified: {
+        value: cdktf.stringToHclTerraform(this._branchesToBeNotified),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      confidential_issue_channel: {
+        value: cdktf.stringToHclTerraform(this._confidentialIssueChannel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      confidential_issues_events: {
+        value: cdktf.booleanToHclTerraform(this._confidentialIssuesEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      confidential_note_events: {
+        value: cdktf.booleanToHclTerraform(this._confidentialNoteEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      issue_channel: {
+        value: cdktf.stringToHclTerraform(this._issueChannel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      issues_events: {
+        value: cdktf.booleanToHclTerraform(this._issuesEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      merge_request_channel: {
+        value: cdktf.stringToHclTerraform(this._mergeRequestChannel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      merge_requests_events: {
+        value: cdktf.booleanToHclTerraform(this._mergeRequestsEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      note_channel: {
+        value: cdktf.stringToHclTerraform(this._noteChannel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      note_events: {
+        value: cdktf.booleanToHclTerraform(this._noteEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      notify_only_broken_pipelines: {
+        value: cdktf.booleanToHclTerraform(this._notifyOnlyBrokenPipelines),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      notify_only_default_branch: {
+        value: cdktf.booleanToHclTerraform(this._notifyOnlyDefaultBranch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      pipeline_channel: {
+        value: cdktf.stringToHclTerraform(this._pipelineChannel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pipeline_events: {
+        value: cdktf.booleanToHclTerraform(this._pipelineEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      push_channel: {
+        value: cdktf.stringToHclTerraform(this._pushChannel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      push_events: {
+        value: cdktf.booleanToHclTerraform(this._pushEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tag_push_channel: {
+        value: cdktf.stringToHclTerraform(this._tagPushChannel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tag_push_events: {
+        value: cdktf.booleanToHclTerraform(this._tagPushEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      username: {
+        value: cdktf.stringToHclTerraform(this._username),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      webhook: {
+        value: cdktf.stringToHclTerraform(this._webhook),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      wiki_page_channel: {
+        value: cdktf.stringToHclTerraform(this._wikiPageChannel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      wiki_page_events: {
+        value: cdktf.booleanToHclTerraform(this._wikiPageEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

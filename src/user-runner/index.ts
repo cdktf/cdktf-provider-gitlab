@@ -326,4 +326,72 @@ export class UserRunner extends cdktf.TerraformResource {
       untagged: cdktf.booleanToTerraform(this._untagged),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_level: {
+        value: cdktf.stringToHclTerraform(this._accessLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      group_id: {
+        value: cdktf.numberToHclTerraform(this._groupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      locked: {
+        value: cdktf.booleanToHclTerraform(this._locked),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      maximum_timeout: {
+        value: cdktf.numberToHclTerraform(this._maximumTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      paused: {
+        value: cdktf.booleanToHclTerraform(this._paused),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      project_id: {
+        value: cdktf.numberToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      runner_type: {
+        value: cdktf.stringToHclTerraform(this._runnerType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tag_list: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tagList),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      untagged: {
+        value: cdktf.booleanToHclTerraform(this._untagged),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

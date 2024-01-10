@@ -68,6 +68,17 @@ export function dataGitlabProjectMilestonesMilestonesToTerraform(struct?: DataGi
   }
 }
 
+
+export function dataGitlabProjectMilestonesMilestonesToHclTerraform(struct?: DataGitlabProjectMilestonesMilestones): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataGitlabProjectMilestonesMilestonesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -374,5 +385,55 @@ export class DataGitlabProjectMilestones extends cdktf.TerraformDataSource {
       state: cdktf.stringToTerraform(this._state),
       title: cdktf.stringToTerraform(this._title),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      iids: {
+        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._iids),
+        isBlock: false,
+        type: "list",
+        storageClassType: "numberList",
+      },
+      include_parent_milestones: {
+        value: cdktf.booleanToHclTerraform(this._includeParentMilestones),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      search: {
+        value: cdktf.stringToHclTerraform(this._search),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      state: {
+        value: cdktf.stringToHclTerraform(this._state),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      title: {
+        value: cdktf.stringToHclTerraform(this._title),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

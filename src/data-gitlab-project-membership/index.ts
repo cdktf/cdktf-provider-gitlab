@@ -56,6 +56,17 @@ export function dataGitlabProjectMembershipMembersToTerraform(struct?: DataGitla
   }
 }
 
+
+export function dataGitlabProjectMembershipMembersToHclTerraform(struct?: DataGitlabProjectMembershipMembers): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataGitlabProjectMembershipMembersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -304,5 +315,43 @@ export class DataGitlabProjectMembership extends cdktf.TerraformDataSource {
       project_id: cdktf.numberToTerraform(this._projectId),
       query: cdktf.stringToTerraform(this._query),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      full_path: {
+        value: cdktf.stringToHclTerraform(this._fullPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      inherited: {
+        value: cdktf.booleanToHclTerraform(this._inherited),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      project_id: {
+        value: cdktf.numberToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      query: {
+        value: cdktf.stringToHclTerraform(this._query),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -265,4 +265,60 @@ export class GitlabProvider extends cdktf.TerraformProvider {
       alias: cdktf.stringToTerraform(this._alias),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      base_url: {
+        value: cdktf.stringToHclTerraform(this._baseUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cacert_file: {
+        value: cdktf.stringToHclTerraform(this._cacertFile),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_cert: {
+        value: cdktf.stringToHclTerraform(this._clientCert),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_key: {
+        value: cdktf.stringToHclTerraform(this._clientKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      early_auth_check: {
+        value: cdktf.booleanToHclTerraform(this._earlyAuthCheck),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      insecure: {
+        value: cdktf.booleanToHclTerraform(this._insecure),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      token: {
+        value: cdktf.stringToHclTerraform(this._token),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alias: {
+        value: cdktf.stringToHclTerraform(this._alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

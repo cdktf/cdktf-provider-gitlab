@@ -400,4 +400,90 @@ export class ProjectCluster extends cdktf.TerraformResource {
       project: cdktf.stringToTerraform(this._project),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      domain: {
+        value: cdktf.stringToHclTerraform(this._domain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      environment_scope: {
+        value: cdktf.stringToHclTerraform(this._environmentScope),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kubernetes_api_url: {
+        value: cdktf.stringToHclTerraform(this._kubernetesApiUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kubernetes_authorization_type: {
+        value: cdktf.stringToHclTerraform(this._kubernetesAuthorizationType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kubernetes_ca_cert: {
+        value: cdktf.stringToHclTerraform(this._kubernetesCaCert),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kubernetes_namespace: {
+        value: cdktf.stringToHclTerraform(this._kubernetesNamespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kubernetes_token: {
+        value: cdktf.stringToHclTerraform(this._kubernetesToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      managed: {
+        value: cdktf.booleanToHclTerraform(this._managed),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      management_project_id: {
+        value: cdktf.stringToHclTerraform(this._managementProjectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

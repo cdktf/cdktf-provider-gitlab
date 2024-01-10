@@ -221,4 +221,48 @@ export class ComplianceFramework extends cdktf.TerraformResource {
       pipeline_configuration_full_path: cdktf.stringToTerraform(this._pipelineConfigurationFullPath),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      color: {
+        value: cdktf.stringToHclTerraform(this._color),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default: {
+        value: cdktf.booleanToHclTerraform(this._default),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace_path: {
+        value: cdktf.stringToHclTerraform(this._namespacePath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pipeline_configuration_full_path: {
+        value: cdktf.stringToHclTerraform(this._pipelineConfigurationFullPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

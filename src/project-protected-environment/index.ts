@@ -83,6 +83,43 @@ export function projectProtectedEnvironmentApprovalRulesToTerraform(struct?: Pro
   }
 }
 
+
+export function projectProtectedEnvironmentApprovalRulesToHclTerraform(struct?: ProjectProtectedEnvironmentApprovalRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_level: {
+      value: cdktf.stringToHclTerraform(struct!.accessLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    group_id: {
+      value: cdktf.numberToHclTerraform(struct!.groupId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    required_approvals: {
+      value: cdktf.numberToHclTerraform(struct!.requiredApprovals),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    user_id: {
+      value: cdktf.numberToHclTerraform(struct!.userId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ProjectProtectedEnvironmentApprovalRulesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -270,6 +307,37 @@ export function projectProtectedEnvironmentDeployAccessLevelsToTerraform(struct?
     group_id: cdktf.numberToTerraform(struct!.groupId),
     user_id: cdktf.numberToTerraform(struct!.userId),
   }
+}
+
+
+export function projectProtectedEnvironmentDeployAccessLevelsToHclTerraform(struct?: ProjectProtectedEnvironmentDeployAccessLevels | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_level: {
+      value: cdktf.stringToHclTerraform(struct!.accessLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    group_id: {
+      value: cdktf.numberToHclTerraform(struct!.groupId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    user_id: {
+      value: cdktf.numberToHclTerraform(struct!.userId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ProjectProtectedEnvironmentDeployAccessLevelsOutputReference extends cdktf.ComplexObject {
@@ -560,5 +628,43 @@ export class ProjectProtectedEnvironment extends cdktf.TerraformResource {
       required_approval_count: cdktf.numberToTerraform(this._requiredApprovalCount),
       deploy_access_levels: cdktf.listMapper(projectProtectedEnvironmentDeployAccessLevelsToTerraform, true)(this._deployAccessLevels.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      approval_rules: {
+        value: cdktf.listMapperHcl(projectProtectedEnvironmentApprovalRulesToHclTerraform, false)(this._approvalRules.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ProjectProtectedEnvironmentApprovalRulesList",
+      },
+      environment: {
+        value: cdktf.stringToHclTerraform(this._environment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project: {
+        value: cdktf.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      required_approval_count: {
+        value: cdktf.numberToHclTerraform(this._requiredApprovalCount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      deploy_access_levels: {
+        value: cdktf.listMapperHcl(projectProtectedEnvironmentDeployAccessLevelsToHclTerraform, true)(this._deployAccessLevels.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ProjectProtectedEnvironmentDeployAccessLevelsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

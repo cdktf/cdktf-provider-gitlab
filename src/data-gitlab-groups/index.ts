@@ -56,6 +56,17 @@ export function dataGitlabGroupsGroupsToTerraform(struct?: DataGitlabGroupsGroup
   }
 }
 
+
+export function dataGitlabGroupsGroupsToHclTerraform(struct?: DataGitlabGroupsGroups): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataGitlabGroupsGroupsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -344,5 +355,43 @@ export class DataGitlabGroups extends cdktf.TerraformDataSource {
       sort: cdktf.stringToTerraform(this._sort),
       top_level_only: cdktf.booleanToTerraform(this._topLevelOnly),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      order_by: {
+        value: cdktf.stringToHclTerraform(this._orderBy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      search: {
+        value: cdktf.stringToHclTerraform(this._search),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sort: {
+        value: cdktf.stringToHclTerraform(this._sort),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      top_level_only: {
+        value: cdktf.booleanToHclTerraform(this._topLevelOnly),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
