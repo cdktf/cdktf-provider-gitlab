@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabReleaseLinks.DataGitlabReleaseLinks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabreleaselinks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabreleaselinks"
 
 datagitlabreleaselinks.NewDataGitlabReleaseLinks(scope Construct, id *string, config DataGitlabReleaseLinksConfig) DataGitlabReleaseLinks
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabReleaseLinks.DataGitlabReleaseLinks.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabreleaselinks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabreleaselinks"
 
 datagitlabreleaselinks.DataGitlabReleaseLinks_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabReleaseLinks.DataGitlabReleaseLinks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabreleaselinks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabreleaselinks"
 
 datagitlabreleaselinks.DataGitlabReleaseLinks_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datagitlabreleaselinks.DataGitlabReleaseLinks_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabReleaseLinks.DataGitlabReleaseLinks.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabreleaselinks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabreleaselinks"
 
 datagitlabreleaselinks.DataGitlabReleaseLinks_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagitlabreleaselinks.DataGitlabReleaseLinks_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabReleaseLinks.DataGitlabReleaseLinks.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabreleaselinks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabreleaselinks"
 
 datagitlabreleaselinks.DataGitlabReleaseLinks_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabReleaseLinks.DataGitlabReleaseLinksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabreleaselinks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabreleaselinks"
 
 &datagitlabreleaselinks.DataGitlabReleaseLinksConfig {
 	Connection: interface{},
@@ -778,7 +778,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabReleaseLinks.DataGitlabReleaseLinksReleaseLinks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabreleaselinks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabreleaselinks"
 
 &datagitlabreleaselinks.DataGitlabReleaseLinksReleaseLinks {
 
@@ -793,7 +793,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabreleaselinks"
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabReleaseLinks.DataGitlabReleaseLinksReleaseLinksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabreleaselinks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabreleaselinks"
 
 datagitlabreleaselinks.NewDataGitlabReleaseLinksReleaseLinksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabReleaseLinksReleaseLinksList
 ```
@@ -942,7 +942,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabReleaseLinks.DataGitlabReleaseLinksReleaseLinksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabreleaselinks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabreleaselinks"
 
 datagitlabreleaselinks.NewDataGitlabReleaseLinksReleaseLinksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabReleaseLinksReleaseLinksOutputReference
 ```
