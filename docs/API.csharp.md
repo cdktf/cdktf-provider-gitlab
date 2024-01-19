@@ -54,6 +54,7 @@ The following submodules are available:
 - [deployKey](./deployKey.csharp.md)
 - [deployKeyEnable](./deployKeyEnable.csharp.md)
 - [deployToken](./deployToken.csharp.md)
+- [globalLevelNotifications](./globalLevelNotifications.csharp.md)
 - [group](./group.csharp.md)
 - [groupAccessToken](./groupAccessToken.csharp.md)
 - [groupBadge](./groupBadge.csharp.md)

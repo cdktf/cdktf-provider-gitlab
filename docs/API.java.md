@@ -54,6 +54,7 @@ The following submodules are available:
 - [deployKey](./deployKey.java.md)
 - [deployKeyEnable](./deployKeyEnable.java.md)
 - [deployToken](./deployToken.java.md)
+- [globalLevelNotifications](./globalLevelNotifications.java.md)
 - [group](./group.java.md)
 - [groupAccessToken](./groupAccessToken.java.md)
 - [groupBadge](./groupBadge.java.md)

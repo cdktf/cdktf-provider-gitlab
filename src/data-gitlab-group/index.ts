@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/group
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,26 +15,121 @@ export interface DataGitlabGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * The full path of the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/group#full_path DataGitlabGroup#full_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/group#full_path DataGitlabGroup#full_path}
   */
   readonly fullPath?: string;
   /**
   * The ID of the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/group#group_id DataGitlabGroup#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/group#group_id DataGitlabGroup#group_id}
   */
   readonly groupId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/group#id DataGitlabGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/group#id DataGitlabGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
 }
+export interface DataGitlabGroupSharedWithGroups {
+}
+
+export function dataGitlabGroupSharedWithGroupsToTerraform(struct?: DataGitlabGroupSharedWithGroups): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataGitlabGroupSharedWithGroupsToHclTerraform(struct?: DataGitlabGroupSharedWithGroups): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGitlabGroupSharedWithGroupsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGitlabGroupSharedWithGroups | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGitlabGroupSharedWithGroups | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // expires_at - computed: true, optional: false, required: false
+  public get expiresAt() {
+    return this.getStringAttribute('expires_at');
+  }
+
+  // group_access_level - computed: true, optional: false, required: false
+  public get groupAccessLevel() {
+    return this.getNumberAttribute('group_access_level');
+  }
+
+  // group_full_path - computed: true, optional: false, required: false
+  public get groupFullPath() {
+    return this.getStringAttribute('group_full_path');
+  }
+
+  // group_id - computed: true, optional: false, required: false
+  public get groupId() {
+    return this.getNumberAttribute('group_id');
+  }
+
+  // group_name - computed: true, optional: false, required: false
+  public get groupName() {
+    return this.getStringAttribute('group_name');
+  }
+}
+
+export class DataGitlabGroupSharedWithGroupsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGitlabGroupSharedWithGroupsOutputReference {
+    return new DataGitlabGroupSharedWithGroupsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/group gitlab_group}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/group gitlab_group}
 */
 export class DataGitlabGroup extends cdktf.TerraformDataSource {
 
@@ -50,7 +145,7 @@ export class DataGitlabGroup extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGitlabGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabGroup to import
-  * @param importFromId The id of the existing DataGitlabGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +157,7 @@ export class DataGitlabGroup extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.7.0/docs/data-sources/group gitlab_group} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/group gitlab_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +168,7 @@ export class DataGitlabGroup extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_group',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.7.0',
+        providerVersion: '16.8.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,
@@ -209,6 +304,12 @@ export class DataGitlabGroup extends cdktf.TerraformDataSource {
   // shared_runners_setting - computed: true, optional: false, required: false
   public get sharedRunnersSetting() {
     return this.getStringAttribute('shared_runners_setting');
+  }
+
+  // shared_with_groups - computed: true, optional: false, required: false
+  private _sharedWithGroups = new DataGitlabGroupSharedWithGroupsList(this, "shared_with_groups", false);
+  public get sharedWithGroups() {
+    return this._sharedWithGroups;
   }
 
   // visibility_level - computed: true, optional: false, required: false

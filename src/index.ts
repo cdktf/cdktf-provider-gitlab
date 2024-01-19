@@ -14,6 +14,7 @@ export * as complianceFramework from './compliance-framework';
 export * as deployKey from './deploy-key';
 export * as deployKeyEnable from './deploy-key-enable';
 export * as deployToken from './deploy-token';
+export * as globalLevelNotifications from './global-level-notifications';
 export * as group from './group';
 export * as groupAccessToken from './group-access-token';
 export * as groupBadge from './group-badge';

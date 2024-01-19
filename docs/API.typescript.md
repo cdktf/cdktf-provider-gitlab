@@ -54,6 +54,7 @@ The following submodules are available:
 - [deployKey](./deployKey.typescript.md)
 - [deployKeyEnable](./deployKeyEnable.typescript.md)
 - [deployToken](./deployToken.typescript.md)
+- [globalLevelNotifications](./globalLevelNotifications.typescript.md)
 - [group](./group.typescript.md)
 - [groupAccessToken](./groupAccessToken.typescript.md)
 - [groupBadge](./groupBadge.typescript.md)

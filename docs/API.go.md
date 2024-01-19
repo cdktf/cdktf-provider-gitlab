@@ -54,6 +54,7 @@ The following submodules are available:
 - [deployKey](./deployKey.go.md)
 - [deployKeyEnable](./deployKeyEnable.go.md)
 - [deployToken](./deployToken.go.md)
+- [globalLevelNotifications](./globalLevelNotifications.go.md)
 - [group](./group.go.md)
 - [groupAccessToken](./groupAccessToken.go.md)
 - [groupBadge](./groupBadge.go.md)

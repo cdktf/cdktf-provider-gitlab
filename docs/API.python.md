@@ -54,6 +54,7 @@ The following submodules are available:
 - [deployKey](./deployKey.python.md)
 - [deployKeyEnable](./deployKeyEnable.python.md)
 - [deployToken](./deployToken.python.md)
+- [globalLevelNotifications](./globalLevelNotifications.python.md)
 - [group](./group.python.md)
 - [groupAccessToken](./groupAccessToken.python.md)
 - [groupBadge](./groupBadge.python.md)
