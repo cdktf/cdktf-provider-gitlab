@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/resources/pipeline_schedule
 // generated from terraform resource schema
 
