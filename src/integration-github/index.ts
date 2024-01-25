@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/resources/integration_github
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/integration_github
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface IntegrationGithubConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/resources/integration_github#id IntegrationGithub#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/integration_github#id IntegrationGithub#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,31 +17,31 @@ export interface IntegrationGithubConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID of the project you want to activate integration on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/resources/integration_github#project IntegrationGithub#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/integration_github#project IntegrationGithub#project}
   */
   readonly project: string;
   /**
   * The URL of the GitHub repo to integrate with, e,g, https://github.com/gitlabhq/terraform-provider-gitlab.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/resources/integration_github#repository_url IntegrationGithub#repository_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/integration_github#repository_url IntegrationGithub#repository_url}
   */
   readonly repositoryUrl: string;
   /**
   * Append instance name instead of branch to the status. Must enable to set a GitLab status check as _required_ in GitHub. See [Static / dynamic status check names] to learn more.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/resources/integration_github#static_context IntegrationGithub#static_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/integration_github#static_context IntegrationGithub#static_context}
   */
   readonly staticContext?: boolean | cdktf.IResolvable;
   /**
   * A GitHub personal access token with at least `repo:status` scope.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/resources/integration_github#token IntegrationGithub#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/integration_github#token IntegrationGithub#token}
   */
   readonly token: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/resources/integration_github gitlab_integration_github}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/integration_github gitlab_integration_github}
 */
 export class IntegrationGithub extends cdktf.TerraformResource {
 
@@ -62,7 +57,7 @@ export class IntegrationGithub extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IntegrationGithub resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationGithub to import
-  * @param importFromId The id of the existing IntegrationGithub that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/resources/integration_github#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IntegrationGithub that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/integration_github#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationGithub to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +69,7 @@ export class IntegrationGithub extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/resources/integration_github gitlab_integration_github} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/integration_github gitlab_integration_github} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +80,7 @@ export class IntegrationGithub extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_integration_github',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.8.0',
+        providerVersion: '16.8.1',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,
