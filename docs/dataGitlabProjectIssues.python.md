@@ -4,7 +4,7 @@
 
 ### DataGitlabProjectIssues <a name="DataGitlabProjectIssues" id="@cdktf/provider-gitlab.dataGitlabProjectIssues.DataGitlabProjectIssues"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues gitlab_project_issues}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues gitlab_project_issues}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectIssues.DataGitlabProjectIssues.Initializer"></a>
 
@@ -70,7 +70,7 @@ dataGitlabProjectIssues.DataGitlabProjectIssues(
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectIssues.DataGitlabProjectIssues.Initializer.parameter.createdAfter">created_after</a></code> | <code>str</code> | Return issues created on or after the given time. Expected in ISO 8601 format (2019-03-15T08:00:00Z). |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectIssues.DataGitlabProjectIssues.Initializer.parameter.createdBefore">created_before</a></code> | <code>str</code> | Return issues created on or before the given time. Expected in ISO 8601 format (2019-03-15T08:00:00Z). |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectIssues.DataGitlabProjectIssues.Initializer.parameter.dueDate">due_date</a></code> | <code>str</code> | Return issues that have no due date, are overdue, or whose due date is this week, this month, or between two weeks ago and next month. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectIssues.DataGitlabProjectIssues.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#id DataGitlabProjectIssues#id}. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectIssues.DataGitlabProjectIssues.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#id DataGitlabProjectIssues#id}. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectIssues.DataGitlabProjectIssues.Initializer.parameter.iids">iids</a></code> | <code>typing.List[typing.Union[int, float]]</code> | Return only the issues having the given iid. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectIssues.DataGitlabProjectIssues.Initializer.parameter.issueType">issue_type</a></code> | <code>str</code> | Filter to a given type of issue. Valid values are [issue incident test_case]. (Introduced in GitLab 13.12). |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectIssues.DataGitlabProjectIssues.Initializer.parameter.labels">labels</a></code> | <code>typing.List[str]</code> | Return issues with labels. |
@@ -158,7 +158,7 @@ Must be unique amongst siblings in the same scope
 
 The name or id of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#project DataGitlabProjectIssues#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#project DataGitlabProjectIssues#project}
 
 ---
 
@@ -170,7 +170,7 @@ Return issues assigned to the given user id.
 
 Mutually exclusive with assignee_username. None returns unassigned issues. Any returns issues with an assignee.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#assignee_id DataGitlabProjectIssues#assignee_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#assignee_id DataGitlabProjectIssues#assignee_id}
 
 ---
 
@@ -182,7 +182,7 @@ Return issues assigned to the given username.
 
 Similar to assignee_id and mutually exclusive with assignee_id. In GitLab CE, the assignee_username array should only contain a single value. Otherwise, an invalid parameter error is returned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#assignee_username DataGitlabProjectIssues#assignee_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#assignee_username DataGitlabProjectIssues#assignee_username}
 
 ---
 
@@ -192,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Return issues created by the given user id. Combine with scope=all or scope=assigned_to_me.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#author_id DataGitlabProjectIssues#author_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#author_id DataGitlabProjectIssues#author_id}
 
 ---
 
@@ -202,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Filter confidential or public issues.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#confidential DataGitlabProjectIssues#confidential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#confidential DataGitlabProjectIssues#confidential}
 
 ---
 
@@ -212,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Return issues created on or after the given time. Expected in ISO 8601 format (2019-03-15T08:00:00Z).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#created_after DataGitlabProjectIssues#created_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#created_after DataGitlabProjectIssues#created_after}
 
 ---
 
@@ -222,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Return issues created on or before the given time. Expected in ISO 8601 format (2019-03-15T08:00:00Z).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#created_before DataGitlabProjectIssues#created_before}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#created_before DataGitlabProjectIssues#created_before}
 
 ---
 
@@ -234,7 +234,7 @@ Return issues that have no due date, are overdue, or whose due date is this week
 
 Accepts: 0 (no due date), any, today, tomorrow, overdue, week, month, next_month_and_previous_two_weeks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#due_date DataGitlabProjectIssues#due_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#due_date DataGitlabProjectIssues#due_date}
 
 ---
 
@@ -242,7 +242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#id DataGitlabProjectIssues#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#id DataGitlabProjectIssues#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -255,7 +255,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Return only the issues having the given iid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#iids DataGitlabProjectIssues#iids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#iids DataGitlabProjectIssues#iids}
 
 ---
 
@@ -265,7 +265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Filter to a given type of issue. Valid values are [issue incident test_case]. (Introduced in GitLab 13.12).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#issue_type DataGitlabProjectIssues#issue_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#issue_type DataGitlabProjectIssues#issue_type}
 
 ---
 
@@ -277,7 +277,7 @@ Return issues with labels.
 
 Issues must have all labels to be returned. None lists all issues with no labels. Any lists all issues with at least one label. No+Label (Deprecated) lists all issues with no labels. Predefined names are case-insensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#labels DataGitlabProjectIssues#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#labels DataGitlabProjectIssues#labels}
 
 ---
 
@@ -287,7 +287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The milestone title. None lists all issues with no milestone. Any lists all issues that have an assigned milestone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#milestone DataGitlabProjectIssues#milestone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#milestone DataGitlabProjectIssues#milestone}
 
 ---
 
@@ -299,7 +299,7 @@ Return issues reacted by the authenticated user by the given emoji.
 
 None returns issues not given a reaction. Any returns issues given at least one reaction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#my_reaction_emoji DataGitlabProjectIssues#my_reaction_emoji}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#my_reaction_emoji DataGitlabProjectIssues#my_reaction_emoji}
 
 ---
 
@@ -309,7 +309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Return issues that do not match the assignee id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#not_assignee_id DataGitlabProjectIssues#not_assignee_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#not_assignee_id DataGitlabProjectIssues#not_assignee_id}
 
 ---
 
@@ -319,7 +319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Return issues that do not match the author id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#not_author_id DataGitlabProjectIssues#not_author_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#not_author_id DataGitlabProjectIssues#not_author_id}
 
 ---
 
@@ -329,7 +329,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Return issues that do not match the labels.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#not_labels DataGitlabProjectIssues#not_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#not_labels DataGitlabProjectIssues#not_labels}
 
 ---
 
@@ -339,7 +339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Return issues that do not match the milestone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#not_milestone DataGitlabProjectIssues#not_milestone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#not_milestone DataGitlabProjectIssues#not_milestone}
 
 ---
 
@@ -349,7 +349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Return issues not reacted by the authenticated user by the given emoji.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#not_my_reaction_emoji DataGitlabProjectIssues#not_my_reaction_emoji}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#not_my_reaction_emoji DataGitlabProjectIssues#not_my_reaction_emoji}
 
 ---
 
@@ -359,7 +359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Return issues ordered by. Valid values are `created_at`, `updated_at`, `priority`, `due_date`, `relative_position`, `label_priority`, `milestone_due`, `popularity`, `weight`. Default is created_at.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#order_by DataGitlabProjectIssues#order_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#order_by DataGitlabProjectIssues#order_by}
 
 ---
 
@@ -369,7 +369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Return issues for the given scope. Valid values are `created_by_me`, `assigned_to_me`, `all`. Defaults to all.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#scope DataGitlabProjectIssues#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#scope DataGitlabProjectIssues#scope}
 
 ---
 
@@ -379,7 +379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Search project issues against their title and description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#search DataGitlabProjectIssues#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#search DataGitlabProjectIssues#search}
 
 ---
 
@@ -389,7 +389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Return issues sorted in asc or desc order. Default is desc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#sort DataGitlabProjectIssues#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#sort DataGitlabProjectIssues#sort}
 
 ---
 
@@ -399,7 +399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Return issues updated on or after the given time. Expected in ISO 8601 format (2019-03-15T08:00:00Z).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#updated_after DataGitlabProjectIssues#updated_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#updated_after DataGitlabProjectIssues#updated_after}
 
 ---
 
@@ -409,7 +409,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Return issues updated on or before the given time. Expected in ISO 8601 format (2019-03-15T08:00:00Z).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#updated_before DataGitlabProjectIssues#updated_before}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#updated_before DataGitlabProjectIssues#updated_before}
 
 ---
 
@@ -421,7 +421,7 @@ Return issues with the specified weight.
 
 None returns issues with no weight assigned. Any returns issues with a weight assigned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#weight DataGitlabProjectIssues#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#weight DataGitlabProjectIssues#weight}
 
 ---
 
@@ -433,7 +433,7 @@ If true, the response returns more details for each label in labels field: :name
 
 Default is false. description_html was introduced in GitLab 12.7
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#with_labels_details DataGitlabProjectIssues#with_labels_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#with_labels_details DataGitlabProjectIssues#with_labels_details}
 
 ---
 
@@ -974,7 +974,7 @@ The construct id used in the generated config for the DataGitlabProjectIssues to
 
 The id of the existing DataGitlabProjectIssues that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1816,7 +1816,7 @@ dataGitlabProjectIssues.DataGitlabProjectIssuesConfig(
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectIssues.DataGitlabProjectIssuesConfig.property.createdAfter">created_after</a></code> | <code>str</code> | Return issues created on or after the given time. Expected in ISO 8601 format (2019-03-15T08:00:00Z). |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectIssues.DataGitlabProjectIssuesConfig.property.createdBefore">created_before</a></code> | <code>str</code> | Return issues created on or before the given time. Expected in ISO 8601 format (2019-03-15T08:00:00Z). |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectIssues.DataGitlabProjectIssuesConfig.property.dueDate">due_date</a></code> | <code>str</code> | Return issues that have no due date, are overdue, or whose due date is this week, this month, or between two weeks ago and next month. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectIssues.DataGitlabProjectIssuesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#id DataGitlabProjectIssues#id}. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectIssues.DataGitlabProjectIssuesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#id DataGitlabProjectIssues#id}. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectIssues.DataGitlabProjectIssuesConfig.property.iids">iids</a></code> | <code>typing.List[typing.Union[int, float]]</code> | Return only the issues having the given iid. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectIssues.DataGitlabProjectIssuesConfig.property.issueType">issue_type</a></code> | <code>str</code> | Filter to a given type of issue. Valid values are [issue incident test_case]. (Introduced in GitLab 13.12). |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectIssues.DataGitlabProjectIssuesConfig.property.labels">labels</a></code> | <code>typing.List[str]</code> | Return issues with labels. |
@@ -1918,7 +1918,7 @@ project: str
 
 The name or id of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#project DataGitlabProjectIssues#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#project DataGitlabProjectIssues#project}
 
 ---
 
@@ -1934,7 +1934,7 @@ Return issues assigned to the given user id.
 
 Mutually exclusive with assignee_username. None returns unassigned issues. Any returns issues with an assignee.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#assignee_id DataGitlabProjectIssues#assignee_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#assignee_id DataGitlabProjectIssues#assignee_id}
 
 ---
 
@@ -1950,7 +1950,7 @@ Return issues assigned to the given username.
 
 Similar to assignee_id and mutually exclusive with assignee_id. In GitLab CE, the assignee_username array should only contain a single value. Otherwise, an invalid parameter error is returned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#assignee_username DataGitlabProjectIssues#assignee_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#assignee_username DataGitlabProjectIssues#assignee_username}
 
 ---
 
@@ -1964,7 +1964,7 @@ author_id: typing.Union[int, float]
 
 Return issues created by the given user id. Combine with scope=all or scope=assigned_to_me.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#author_id DataGitlabProjectIssues#author_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#author_id DataGitlabProjectIssues#author_id}
 
 ---
 
@@ -1978,7 +1978,7 @@ confidential: typing.Union[bool, IResolvable]
 
 Filter confidential or public issues.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#confidential DataGitlabProjectIssues#confidential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#confidential DataGitlabProjectIssues#confidential}
 
 ---
 
@@ -1992,7 +1992,7 @@ created_after: str
 
 Return issues created on or after the given time. Expected in ISO 8601 format (2019-03-15T08:00:00Z).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#created_after DataGitlabProjectIssues#created_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#created_after DataGitlabProjectIssues#created_after}
 
 ---
 
@@ -2006,7 +2006,7 @@ created_before: str
 
 Return issues created on or before the given time. Expected in ISO 8601 format (2019-03-15T08:00:00Z).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#created_before DataGitlabProjectIssues#created_before}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#created_before DataGitlabProjectIssues#created_before}
 
 ---
 
@@ -2022,7 +2022,7 @@ Return issues that have no due date, are overdue, or whose due date is this week
 
 Accepts: 0 (no due date), any, today, tomorrow, overdue, week, month, next_month_and_previous_two_weeks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#due_date DataGitlabProjectIssues#due_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#due_date DataGitlabProjectIssues#due_date}
 
 ---
 
@@ -2034,7 +2034,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#id DataGitlabProjectIssues#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#id DataGitlabProjectIssues#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2051,7 +2051,7 @@ iids: typing.List[typing.Union[int, float]]
 
 Return only the issues having the given iid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#iids DataGitlabProjectIssues#iids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#iids DataGitlabProjectIssues#iids}
 
 ---
 
@@ -2065,7 +2065,7 @@ issue_type: str
 
 Filter to a given type of issue. Valid values are [issue incident test_case]. (Introduced in GitLab 13.12).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#issue_type DataGitlabProjectIssues#issue_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#issue_type DataGitlabProjectIssues#issue_type}
 
 ---
 
@@ -2081,7 +2081,7 @@ Return issues with labels.
 
 Issues must have all labels to be returned. None lists all issues with no labels. Any lists all issues with at least one label. No+Label (Deprecated) lists all issues with no labels. Predefined names are case-insensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#labels DataGitlabProjectIssues#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#labels DataGitlabProjectIssues#labels}
 
 ---
 
@@ -2095,7 +2095,7 @@ milestone: str
 
 The milestone title. None lists all issues with no milestone. Any lists all issues that have an assigned milestone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#milestone DataGitlabProjectIssues#milestone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#milestone DataGitlabProjectIssues#milestone}
 
 ---
 
@@ -2111,7 +2111,7 @@ Return issues reacted by the authenticated user by the given emoji.
 
 None returns issues not given a reaction. Any returns issues given at least one reaction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#my_reaction_emoji DataGitlabProjectIssues#my_reaction_emoji}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#my_reaction_emoji DataGitlabProjectIssues#my_reaction_emoji}
 
 ---
 
@@ -2125,7 +2125,7 @@ not_assignee_id: typing.List[typing.Union[int, float]]
 
 Return issues that do not match the assignee id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#not_assignee_id DataGitlabProjectIssues#not_assignee_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#not_assignee_id DataGitlabProjectIssues#not_assignee_id}
 
 ---
 
@@ -2139,7 +2139,7 @@ not_author_id: typing.List[typing.Union[int, float]]
 
 Return issues that do not match the author id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#not_author_id DataGitlabProjectIssues#not_author_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#not_author_id DataGitlabProjectIssues#not_author_id}
 
 ---
 
@@ -2153,7 +2153,7 @@ not_labels: typing.List[str]
 
 Return issues that do not match the labels.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#not_labels DataGitlabProjectIssues#not_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#not_labels DataGitlabProjectIssues#not_labels}
 
 ---
 
@@ -2167,7 +2167,7 @@ not_milestone: str
 
 Return issues that do not match the milestone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#not_milestone DataGitlabProjectIssues#not_milestone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#not_milestone DataGitlabProjectIssues#not_milestone}
 
 ---
 
@@ -2181,7 +2181,7 @@ not_my_reaction_emoji: typing.List[str]
 
 Return issues not reacted by the authenticated user by the given emoji.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#not_my_reaction_emoji DataGitlabProjectIssues#not_my_reaction_emoji}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#not_my_reaction_emoji DataGitlabProjectIssues#not_my_reaction_emoji}
 
 ---
 
@@ -2195,7 +2195,7 @@ order_by: str
 
 Return issues ordered by. Valid values are `created_at`, `updated_at`, `priority`, `due_date`, `relative_position`, `label_priority`, `milestone_due`, `popularity`, `weight`. Default is created_at.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#order_by DataGitlabProjectIssues#order_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#order_by DataGitlabProjectIssues#order_by}
 
 ---
 
@@ -2209,7 +2209,7 @@ scope: str
 
 Return issues for the given scope. Valid values are `created_by_me`, `assigned_to_me`, `all`. Defaults to all.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#scope DataGitlabProjectIssues#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#scope DataGitlabProjectIssues#scope}
 
 ---
 
@@ -2223,7 +2223,7 @@ search: str
 
 Search project issues against their title and description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#search DataGitlabProjectIssues#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#search DataGitlabProjectIssues#search}
 
 ---
 
@@ -2237,7 +2237,7 @@ sort: str
 
 Return issues sorted in asc or desc order. Default is desc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#sort DataGitlabProjectIssues#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#sort DataGitlabProjectIssues#sort}
 
 ---
 
@@ -2251,7 +2251,7 @@ updated_after: str
 
 Return issues updated on or after the given time. Expected in ISO 8601 format (2019-03-15T08:00:00Z).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#updated_after DataGitlabProjectIssues#updated_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#updated_after DataGitlabProjectIssues#updated_after}
 
 ---
 
@@ -2265,7 +2265,7 @@ updated_before: str
 
 Return issues updated on or before the given time. Expected in ISO 8601 format (2019-03-15T08:00:00Z).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#updated_before DataGitlabProjectIssues#updated_before}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#updated_before DataGitlabProjectIssues#updated_before}
 
 ---
 
@@ -2281,7 +2281,7 @@ Return issues with the specified weight.
 
 None returns issues with no weight assigned. Any returns issues with a weight assigned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#weight DataGitlabProjectIssues#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#weight DataGitlabProjectIssues#weight}
 
 ---
 
@@ -2297,7 +2297,7 @@ If true, the response returns more details for each label in labels field: :name
 
 Default is false. description_html was introduced in GitLab 12.7
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/data-sources/project_issues#with_labels_details DataGitlabProjectIssues#with_labels_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/project_issues#with_labels_details DataGitlabProjectIssues#with_labels_details}
 
 ---
 

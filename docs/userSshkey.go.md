@@ -4,7 +4,7 @@
 
 ### UserSshkey <a name="UserSshkey" id="@cdktf/provider-gitlab.userSshkey.UserSshkey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/resources/user_sshkey gitlab_user_sshkey}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/user_sshkey gitlab_user_sshkey}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.userSshkey.UserSshkey.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the UserSshkey to import.
 
 The id of the existing UserSshkey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/resources/user_sshkey#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/user_sshkey#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -852,7 +852,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/usersshkey"
 | <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkeyConfig.property.key">Key</a></code> | <code>*string</code> | The ssh key. |
 | <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkeyConfig.property.title">Title</a></code> | <code>*string</code> | The title of the ssh key. |
 | <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkeyConfig.property.expiresAt">ExpiresAt</a></code> | <code>*string</code> | The expiration date of the SSH key in ISO 8601 format (YYYY-MM-DDTHH:MM:SSZ). |
-| <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/resources/user_sshkey#id UserSshkey#id}. |
+| <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/user_sshkey#id UserSshkey#id}. |
 | <code><a href="#@cdktf/provider-gitlab.userSshkey.UserSshkeyConfig.property.userId">UserId</a></code> | <code>*f64</code> | The ID or username of the user. |
 
 ---
@@ -939,7 +939,7 @@ The ssh key.
 
 The SSH key `comment` (trailing part) is optional and ignored for diffing, because GitLab overrides it with the username and GitLab hostname.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/resources/user_sshkey#key UserSshkey#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/user_sshkey#key UserSshkey#key}
 
 ---
 
@@ -953,7 +953,7 @@ Title *string
 
 The title of the ssh key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/resources/user_sshkey#title UserSshkey#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/user_sshkey#title UserSshkey#title}
 
 ---
 
@@ -967,7 +967,7 @@ ExpiresAt *string
 
 The expiration date of the SSH key in ISO 8601 format (YYYY-MM-DDTHH:MM:SSZ).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/resources/user_sshkey#expires_at UserSshkey#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/user_sshkey#expires_at UserSshkey#expires_at}
 
 ---
 
@@ -979,7 +979,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/resources/user_sshkey#id UserSshkey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/user_sshkey#id UserSshkey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -998,7 +998,7 @@ The ID or username of the user.
 
 If this field is omitted, this resource manages a SSH key for the current user. Otherwise, this resource manages a SSH key for the specified user, and an admin token is required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.0/docs/resources/user_sshkey#user_id UserSshkey#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/user_sshkey#user_id UserSshkey#user_id}
 
 ---
 
