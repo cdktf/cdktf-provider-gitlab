@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectVariables.DataGitlabProjectVariables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectvariables"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabprojectvariables"
 
 datagitlabprojectvariables.NewDataGitlabProjectVariables(scope Construct, id *string, config DataGitlabProjectVariablesConfig) DataGitlabProjectVariables
 ```
@@ -290,7 +290,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabProjectVariables.DataGitlabProjectVariables.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectvariables"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabprojectvariables"
 
 datagitlabprojectvariables.DataGitlabProjectVariables_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabProjectVariables.DataGitlabProjectVariables.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectvariables"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabprojectvariables"
 
 datagitlabprojectvariables.DataGitlabProjectVariables_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagitlabprojectvariables.DataGitlabProjectVariables_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabProjectVariables.DataGitlabProjectVariables.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectvariables"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabprojectvariables"
 
 datagitlabprojectvariables.DataGitlabProjectVariables_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datagitlabprojectvariables.DataGitlabProjectVariables_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabProjectVariables.DataGitlabProjectVariables.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectvariables"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabprojectvariables"
 
 datagitlabprojectvariables.DataGitlabProjectVariables_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectVariables.DataGitlabProjectVariablesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectvariables"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabprojectvariables"
 
 &datagitlabprojectvariables.DataGitlabProjectVariablesConfig {
 	Connection: interface{},
@@ -785,7 +785,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectVariables.DataGitlabProjectVariablesVariables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectvariables"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabprojectvariables"
 
 &datagitlabprojectvariables.DataGitlabProjectVariablesVariables {
 
@@ -800,7 +800,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectvariab
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectVariables.DataGitlabProjectVariablesVariablesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectvariables"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabprojectvariables"
 
 datagitlabprojectvariables.NewDataGitlabProjectVariablesVariablesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectVariablesVariablesList
 ```
@@ -949,7 +949,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectVariables.DataGitlabProjectVariablesVariablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectvariables"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabprojectvariables"
 
 datagitlabprojectvariables.NewDataGitlabProjectVariablesVariablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabProjectVariablesVariablesOutputReference
 ```
