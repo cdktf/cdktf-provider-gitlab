@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_variable
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,19 @@ import * as cdktf from 'cdktf';
 
 export interface ProjectVariableConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The description of the variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable#description ProjectVariable#description}
+  */
+  readonly description?: string;
+  /**
   * The environment scope of the variable. Defaults to all environment (`*`). Note that in Community Editions of Gitlab, values other than `*` will cause inconsistent plans.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_variable#environment_scope ProjectVariable#environment_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable#environment_scope ProjectVariable#environment_scope}
   */
   readonly environmentScope?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_variable#id ProjectVariable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable#id ProjectVariable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,49 +34,49 @@ export interface ProjectVariableConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_variable#key ProjectVariable#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable#key ProjectVariable#key}
   */
   readonly key: string;
   /**
   * If set to `true`, the value of the variable will be hidden in job logs. The value must meet the [masking requirements](https://docs.gitlab.com/ee/ci/variables/#masked-variables). Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_variable#masked ProjectVariable#masked}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable#masked ProjectVariable#masked}
   */
   readonly masked?: boolean | cdktf.IResolvable;
   /**
   * The name or id of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_variable#project ProjectVariable#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable#project ProjectVariable#project}
   */
   readonly project: string;
   /**
   * If set to `true`, the variable will be passed only to pipelines running on protected branches and tags. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_variable#protected ProjectVariable#protected}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable#protected ProjectVariable#protected}
   */
   readonly protected?: boolean | cdktf.IResolvable;
   /**
   * Whether the variable is treated as a raw string. Default: false. When true, variables in the value are not expanded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_variable#raw ProjectVariable#raw}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable#raw ProjectVariable#raw}
   */
   readonly raw?: boolean | cdktf.IResolvable;
   /**
   * The value of the variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_variable#value ProjectVariable#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable#value ProjectVariable#value}
   */
   readonly value: string;
   /**
   * The type of a variable. Valid values are: `env_var`, `file`. Default is `env_var`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_variable#variable_type ProjectVariable#variable_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable#variable_type ProjectVariable#variable_type}
   */
   readonly variableType?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_variable gitlab_project_variable}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable gitlab_project_variable}
 */
 export class ProjectVariable extends cdktf.TerraformResource {
 
@@ -86,7 +92,7 @@ export class ProjectVariable extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ProjectVariable resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProjectVariable to import
-  * @param importFromId The id of the existing ProjectVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_variable#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ProjectVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProjectVariable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -98,7 +104,7 @@ export class ProjectVariable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_variable gitlab_project_variable} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable gitlab_project_variable} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -109,7 +115,7 @@ export class ProjectVariable extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_variable',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.8.1',
+        providerVersion: '16.9.1',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,
@@ -120,6 +126,7 @@ export class ProjectVariable extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._description = config.description;
     this._environmentScope = config.environmentScope;
     this._id = config.id;
     this._key = config.key;
@@ -134,6 +141,22 @@ export class ProjectVariable extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
 
   // environment_scope - computed: false, optional: true, required: false
   private _environmentScope?: string; 
@@ -276,6 +299,7 @@ export class ProjectVariable extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      description: cdktf.stringToTerraform(this._description),
       environment_scope: cdktf.stringToTerraform(this._environmentScope),
       id: cdktf.stringToTerraform(this._id),
       key: cdktf.stringToTerraform(this._key),
@@ -290,6 +314,12 @@ export class ProjectVariable extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       environment_scope: {
         value: cdktf.stringToHclTerraform(this._environmentScope),
         isBlock: false,

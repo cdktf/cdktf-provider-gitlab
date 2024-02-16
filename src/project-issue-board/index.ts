@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_issue_board
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_issue_board
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface ProjectIssueBoardConfig extends cdktf.TerraformMetaArguments {
   /**
   * The assignee the board should be scoped to. Requires a GitLab EE license.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_issue_board#assignee_id ProjectIssueBoard#assignee_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_issue_board#assignee_id ProjectIssueBoard#assignee_id}
   */
   readonly assigneeId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_issue_board#id ProjectIssueBoard#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_issue_board#id ProjectIssueBoard#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,37 +28,37 @@ export interface ProjectIssueBoardConfig extends cdktf.TerraformMetaArguments {
   /**
   * The list of label names which the board should be scoped to. Requires a GitLab EE license.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_issue_board#labels ProjectIssueBoard#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_issue_board#labels ProjectIssueBoard#labels}
   */
   readonly labels?: string[];
   /**
   * The milestone the board should be scoped to. Requires a GitLab EE license.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_issue_board#milestone_id ProjectIssueBoard#milestone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_issue_board#milestone_id ProjectIssueBoard#milestone_id}
   */
   readonly milestoneId?: number;
   /**
   * The name of the board.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_issue_board#name ProjectIssueBoard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_issue_board#name ProjectIssueBoard#name}
   */
   readonly name: string;
   /**
   * The ID or full path of the project maintained by the authenticated user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_issue_board#project ProjectIssueBoard#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_issue_board#project ProjectIssueBoard#project}
   */
   readonly project: string;
   /**
   * The weight range from 0 to 9, to which the board should be scoped to. Requires a GitLab EE license.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_issue_board#weight ProjectIssueBoard#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_issue_board#weight ProjectIssueBoard#weight}
   */
   readonly weight?: number;
   /**
   * lists block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_issue_board#lists ProjectIssueBoard#lists}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_issue_board#lists ProjectIssueBoard#lists}
   */
   readonly lists?: ProjectIssueBoardLists[] | cdktf.IResolvable;
 }
@@ -66,25 +66,25 @@ export interface ProjectIssueBoardLists {
   /**
   * The ID of the assignee the list should be scoped to. Requires a GitLab EE license.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_issue_board#assignee_id ProjectIssueBoard#assignee_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_issue_board#assignee_id ProjectIssueBoard#assignee_id}
   */
   readonly assigneeId?: number;
   /**
   * The ID of the iteration the list should be scoped to. Requires a GitLab EE license.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_issue_board#iteration_id ProjectIssueBoard#iteration_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_issue_board#iteration_id ProjectIssueBoard#iteration_id}
   */
   readonly iterationId?: number;
   /**
   * The ID of the label the list should be scoped to. Requires a GitLab EE license.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_issue_board#label_id ProjectIssueBoard#label_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_issue_board#label_id ProjectIssueBoard#label_id}
   */
   readonly labelId?: number;
   /**
   * The ID of the milestone the list should be scoped to. Requires a GitLab EE license.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_issue_board#milestone_id ProjectIssueBoard#milestone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_issue_board#milestone_id ProjectIssueBoard#milestone_id}
   */
   readonly milestoneId?: number;
 }
@@ -297,7 +297,7 @@ export class ProjectIssueBoardListsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_issue_board gitlab_project_issue_board}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_issue_board gitlab_project_issue_board}
 */
 export class ProjectIssueBoard extends cdktf.TerraformResource {
 
@@ -313,7 +313,7 @@ export class ProjectIssueBoard extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ProjectIssueBoard resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProjectIssueBoard to import
-  * @param importFromId The id of the existing ProjectIssueBoard that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_issue_board#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ProjectIssueBoard that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_issue_board#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProjectIssueBoard to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -325,7 +325,7 @@ export class ProjectIssueBoard extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_issue_board gitlab_project_issue_board} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_issue_board gitlab_project_issue_board} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -336,7 +336,7 @@ export class ProjectIssueBoard extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_issue_board',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.8.1',
+        providerVersion: '16.9.1',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,
