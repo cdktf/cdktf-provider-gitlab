@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/instance_variable
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/instance_variable
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface InstanceVariableConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/instance_variable#id InstanceVariable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/instance_variable#id InstanceVariable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,43 +17,43 @@ export interface InstanceVariableConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/instance_variable#key InstanceVariable#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/instance_variable#key InstanceVariable#key}
   */
   readonly key: string;
   /**
   * If set to `true`, the value of the variable will be hidden in job logs. The value must meet the [masking requirements](https://docs.gitlab.com/ee/ci/variables/#masked-variables). Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/instance_variable#masked InstanceVariable#masked}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/instance_variable#masked InstanceVariable#masked}
   */
   readonly masked?: boolean | cdktf.IResolvable;
   /**
   * If set to `true`, the variable will be passed only to pipelines running on protected branches and tags. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/instance_variable#protected InstanceVariable#protected}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/instance_variable#protected InstanceVariable#protected}
   */
   readonly protected?: boolean | cdktf.IResolvable;
   /**
   * Whether the variable is treated as a raw string. Default: false. When true, variables in the value are not expanded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/instance_variable#raw InstanceVariable#raw}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/instance_variable#raw InstanceVariable#raw}
   */
   readonly raw?: boolean | cdktf.IResolvable;
   /**
   * The value of the variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/instance_variable#value InstanceVariable#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/instance_variable#value InstanceVariable#value}
   */
   readonly value: string;
   /**
   * The type of a variable. Valid values are: `env_var`, `file`. Default is `env_var`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/instance_variable#variable_type InstanceVariable#variable_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/instance_variable#variable_type InstanceVariable#variable_type}
   */
   readonly variableType?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/instance_variable gitlab_instance_variable}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/instance_variable gitlab_instance_variable}
 */
 export class InstanceVariable extends cdktf.TerraformResource {
 
@@ -74,7 +69,7 @@ export class InstanceVariable extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a InstanceVariable resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the InstanceVariable to import
-  * @param importFromId The id of the existing InstanceVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/instance_variable#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing InstanceVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/instance_variable#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the InstanceVariable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -86,7 +81,7 @@ export class InstanceVariable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/instance_variable gitlab_instance_variable} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/instance_variable gitlab_instance_variable} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +92,7 @@ export class InstanceVariable extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_instance_variable',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.8.1',
+        providerVersion: '16.9.1',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,

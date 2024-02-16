@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/instance_deploy_keys
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/data-sources/instance_deploy_keys
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataGitlabInstanceDeployKeysConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/instance_deploy_keys#id DataGitlabInstanceDeployKeys#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/data-sources/instance_deploy_keys#id DataGitlabInstanceDeployKeys#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,7 +17,7 @@ export interface DataGitlabInstanceDeployKeysConfig extends cdktf.TerraformMetaA
   /**
   * Only return deploy keys that are public.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/instance_deploy_keys#public DataGitlabInstanceDeployKeys#public}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/data-sources/instance_deploy_keys#public DataGitlabInstanceDeployKeys#public}
   */
   readonly public?: boolean | cdktf.IResolvable;
 }
@@ -234,7 +229,7 @@ export class DataGitlabInstanceDeployKeysDeployKeysList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/instance_deploy_keys gitlab_instance_deploy_keys}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/data-sources/instance_deploy_keys gitlab_instance_deploy_keys}
 */
 export class DataGitlabInstanceDeployKeys extends cdktf.TerraformDataSource {
 
@@ -250,7 +245,7 @@ export class DataGitlabInstanceDeployKeys extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGitlabInstanceDeployKeys resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabInstanceDeployKeys to import
-  * @param importFromId The id of the existing DataGitlabInstanceDeployKeys that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/instance_deploy_keys#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabInstanceDeployKeys that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/data-sources/instance_deploy_keys#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabInstanceDeployKeys to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -262,7 +257,7 @@ export class DataGitlabInstanceDeployKeys extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/data-sources/instance_deploy_keys gitlab_instance_deploy_keys} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/data-sources/instance_deploy_keys gitlab_instance_deploy_keys} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -273,7 +268,7 @@ export class DataGitlabInstanceDeployKeys extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_instance_deploy_keys',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.8.1',
+        providerVersion: '16.9.1',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,

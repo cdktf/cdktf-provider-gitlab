@@ -1,3 +1,3 @@
 # `gitlab_topic`
 
-Refer to the Terraform Registry for docs: [`gitlab_topic`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/topic).
+Refer to the Terraform Registry for docs: [`gitlab_topic`](https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/topic).

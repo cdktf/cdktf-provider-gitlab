@@ -4,7 +4,7 @@
 
 ### ProjectVariable <a name="ProjectVariable" id="@cdktf/provider-gitlab.projectVariable.ProjectVariable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_variable gitlab_project_variable}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable gitlab_project_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectVariable.ProjectVariable.Initializer"></a>
 
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.resetEnvironmentScope">ResetEnvironmentScope</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.resetMasked">ResetMasked</a></code> | *No description.* |
@@ -370,6 +371,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-gitlab.projectVariable.ProjectVariable.resetDescription"></a>
+
+```csharp
+private void ResetDescription()
+```
+
 ##### `ResetEnvironmentScope` <a name="ResetEnvironmentScope" id="@cdktf/provider-gitlab.projectVariable.ProjectVariable.resetEnvironmentScope"></a>
 
 ```csharp
@@ -509,7 +516,7 @@ The construct id used in the generated config for the ProjectVariable to import.
 
 The id of the existing ProjectVariable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_variable#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -539,6 +546,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.environmentScopeInput">EnvironmentScopeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.keyInput">KeyInput</a></code> | <code>string</code> | *No description.* |
@@ -548,6 +556,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.rawInput">RawInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.variableTypeInput">VariableTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.environmentScope">EnvironmentScope</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.key">Key</a></code> | <code>string</code> | *No description.* |
@@ -702,6 +711,16 @@ public object[] Provisioners { get; }
 
 ---
 
+##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.descriptionInput"></a>
+
+```csharp
+public string DescriptionInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `EnvironmentScopeInput`<sup>Optional</sup> <a name="EnvironmentScopeInput" id="@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.environmentScopeInput"></a>
 
 ```csharp
@@ -786,6 +805,16 @@ public string ValueInput { get; }
 
 ```csharp
 public string VariableTypeInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.description"></a>
+
+```csharp
+public string Description { get; }
 ```
 
 - *Type:* string
@@ -920,6 +949,7 @@ new ProjectVariableConfig {
     string Key,
     string Project,
     string Value,
+    string Description = null,
     string EnvironmentScope = null,
     string Id = null,
     object Masked = null,
@@ -943,8 +973,9 @@ new ProjectVariableConfig {
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.key">Key</a></code> | <code>string</code> | The name of the variable. |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.project">Project</a></code> | <code>string</code> | The name or id of the project. |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.value">Value</a></code> | <code>string</code> | The value of the variable. |
+| <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.description">Description</a></code> | <code>string</code> | The description of the variable. |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.environmentScope">EnvironmentScope</a></code> | <code>string</code> | The environment scope of the variable. |
-| <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_variable#id ProjectVariable#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable#id ProjectVariable#id}. |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.masked">Masked</a></code> | <code>object</code> | If set to `true`, the value of the variable will be hidden in job logs. |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.protected">Protected</a></code> | <code>object</code> | If set to `true`, the variable will be passed only to pipelines running on protected branches and tags. |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.raw">Raw</a></code> | <code>object</code> | Whether the variable is treated as a raw string. |
@@ -1032,7 +1063,7 @@ public string Key { get; set; }
 
 The name of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_variable#key ProjectVariable#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable#key ProjectVariable#key}
 
 ---
 
@@ -1046,7 +1077,7 @@ public string Project { get; set; }
 
 The name or id of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_variable#project ProjectVariable#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable#project ProjectVariable#project}
 
 ---
 
@@ -1060,7 +1091,21 @@ public string Value { get; set; }
 
 The value of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_variable#value ProjectVariable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable#value ProjectVariable#value}
+
+---
+
+##### `Description`<sup>Optional</sup> <a name="Description" id="@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.description"></a>
+
+```csharp
+public string Description { get; set; }
+```
+
+- *Type:* string
+
+The description of the variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable#description ProjectVariable#description}
 
 ---
 
@@ -1076,7 +1121,7 @@ The environment scope of the variable.
 
 Defaults to all environment (`*`). Note that in Community Editions of Gitlab, values other than `*` will cause inconsistent plans.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_variable#environment_scope ProjectVariable#environment_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable#environment_scope ProjectVariable#environment_scope}
 
 ---
 
@@ -1088,7 +1133,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_variable#id ProjectVariable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable#id ProjectVariable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1107,7 +1152,7 @@ If set to `true`, the value of the variable will be hidden in job logs.
 
 The value must meet the [masking requirements](https://docs.gitlab.com/ee/ci/variables/#masked-variables). Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_variable#masked ProjectVariable#masked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable#masked ProjectVariable#masked}
 
 ---
 
@@ -1123,7 +1168,7 @@ If set to `true`, the variable will be passed only to pipelines running on prote
 
 Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_variable#protected ProjectVariable#protected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable#protected ProjectVariable#protected}
 
 ---
 
@@ -1139,7 +1184,7 @@ Whether the variable is treated as a raw string.
 
 Default: false. When true, variables in the value are not expanded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_variable#raw ProjectVariable#raw}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable#raw ProjectVariable#raw}
 
 ---
 
@@ -1153,7 +1198,7 @@ public string VariableType { get; set; }
 
 The type of a variable. Valid values are: `env_var`, `file`. Default is `env_var`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.8.1/docs/resources/project_variable#variable_type ProjectVariable#variable_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_variable#variable_type ProjectVariable#variable_type}
 
 ---
 
