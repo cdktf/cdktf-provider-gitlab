@@ -44,6 +44,7 @@ The following submodules are available:
 - [dataGitlabProjectVariable](./dataGitlabProjectVariable.python.md)
 - [dataGitlabProjectVariables](./dataGitlabProjectVariables.python.md)
 - [dataGitlabProjects](./dataGitlabProjects.python.md)
+- [dataGitlabRelease](./dataGitlabRelease.python.md)
 - [dataGitlabReleaseLink](./dataGitlabReleaseLink.python.md)
 - [dataGitlabReleaseLinks](./dataGitlabReleaseLinks.python.md)
 - [dataGitlabRepositoryFile](./dataGitlabRepositoryFile.python.md)

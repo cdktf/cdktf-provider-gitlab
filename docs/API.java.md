@@ -44,6 +44,7 @@ The following submodules are available:
 - [dataGitlabProjectVariable](./dataGitlabProjectVariable.java.md)
 - [dataGitlabProjectVariables](./dataGitlabProjectVariables.java.md)
 - [dataGitlabProjects](./dataGitlabProjects.java.md)
+- [dataGitlabRelease](./dataGitlabRelease.java.md)
 - [dataGitlabReleaseLink](./dataGitlabReleaseLink.java.md)
 - [dataGitlabReleaseLinks](./dataGitlabReleaseLinks.java.md)
 - [dataGitlabRepositoryFile](./dataGitlabRepositoryFile.java.md)

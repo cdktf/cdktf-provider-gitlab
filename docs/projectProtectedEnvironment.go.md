@@ -4,12 +4,12 @@
 
 ### ProjectProtectedEnvironment <a name="ProjectProtectedEnvironment" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_protected_environment gitlab_project_protected_environment}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_protected_environment gitlab_project_protected_environment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectprotectedenvironment"
 
 projectprotectedenvironment.NewProjectProtectedEnvironment(scope Construct, id *string, config ProjectProtectedEnvironmentConfig) ProjectProtectedEnvironment
 ```
@@ -425,7 +425,7 @@ func ResetRequiredApprovalCount()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectprotectedenvironment"
 
 projectprotectedenvironment.ProjectProtectedEnvironment_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectprotectedenvironment"
 
 projectprotectedenvironment.ProjectProtectedEnvironment_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ projectprotectedenvironment.ProjectProtectedEnvironment_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectprotectedenvironment"
 
 projectprotectedenvironment.ProjectProtectedEnvironment_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ projectprotectedenvironment.ProjectProtectedEnvironment_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectprotectedenvironment"
 
 projectprotectedenvironment.ProjectProtectedEnvironment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -514,7 +514,7 @@ The construct id used in the generated config for the ProjectProtectedEnvironmen
 
 The id of the existing ProjectProtectedEnvironment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_protected_environment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_protected_environment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -835,7 +835,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironmentApprovalRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectprotectedenvironment"
 
 &projectprotectedenvironment.ProjectProtectedEnvironmentApprovalRules {
 	AccessLevel: *string,
@@ -866,7 +866,7 @@ AccessLevel *string
 
 Levels of access allowed to approve a deployment to this protected environment. Valid values are `developer`, `maintainer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_protected_environment#access_level ProjectProtectedEnvironment#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_protected_environment#access_level ProjectProtectedEnvironment#access_level}
 
 ---
 
@@ -882,7 +882,7 @@ The ID of the group allowed to approve a deployment to this protected environmen
 
 The project must be shared with the group. This is mutually exclusive with user_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_protected_environment#group_id ProjectProtectedEnvironment#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_protected_environment#group_id ProjectProtectedEnvironment#group_id}
 
 ---
 
@@ -896,7 +896,7 @@ RequiredApprovals *f64
 
 The number of approval required to allow deployment to this protected environment. This is mutually exclusive with user_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_protected_environment#required_approvals ProjectProtectedEnvironment#required_approvals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_protected_environment#required_approvals ProjectProtectedEnvironment#required_approvals}
 
 ---
 
@@ -912,7 +912,7 @@ The ID of the user allowed to approve a deployment to this protected environment
 
 The user must be a member of the project. This is mutually exclusive with group_id and required_approvals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_protected_environment#user_id ProjectProtectedEnvironment#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_protected_environment#user_id ProjectProtectedEnvironment#user_id}
 
 ---
 
@@ -921,7 +921,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectprotectedenvironment"
 
 &projectprotectedenvironment.ProjectProtectedEnvironmentConfig {
 	Connection: interface{},
@@ -1038,7 +1038,7 @@ Environment *string
 
 The name of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_protected_environment#environment ProjectProtectedEnvironment#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_protected_environment#environment ProjectProtectedEnvironment#environment}
 
 ---
 
@@ -1052,7 +1052,7 @@ Project *string
 
 The ID or full path of the project which the protected environment is created against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_protected_environment#project ProjectProtectedEnvironment#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_protected_environment#project ProjectProtectedEnvironment#project}
 
 ---
 
@@ -1066,7 +1066,7 @@ ApprovalRules interface{}
 
 Array of approval rules to deploy, with each described by a hash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_protected_environment#approval_rules ProjectProtectedEnvironment#approval_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_protected_environment#approval_rules ProjectProtectedEnvironment#approval_rules}
 
 ---
 
@@ -1080,7 +1080,7 @@ DeployAccessLevels interface{}
 
 deploy_access_levels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_protected_environment#deploy_access_levels ProjectProtectedEnvironment#deploy_access_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_protected_environment#deploy_access_levels ProjectProtectedEnvironment#deploy_access_levels}
 
 ---
 
@@ -1094,7 +1094,7 @@ RequiredApprovalCount *f64
 
 The number of approvals required to deploy to this environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_protected_environment#required_approval_count ProjectProtectedEnvironment#required_approval_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_protected_environment#required_approval_count ProjectProtectedEnvironment#required_approval_count}
 
 ---
 
@@ -1103,7 +1103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironmentDeployAccessLevels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectprotectedenvironment"
 
 &projectprotectedenvironment.ProjectProtectedEnvironmentDeployAccessLevels {
 	AccessLevel: *string,
@@ -1132,7 +1132,7 @@ AccessLevel *string
 
 Levels of access required to deploy to this protected environment. Valid values are `developer`, `maintainer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_protected_environment#access_level ProjectProtectedEnvironment#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_protected_environment#access_level ProjectProtectedEnvironment#access_level}
 
 ---
 
@@ -1148,7 +1148,7 @@ The ID of the group allowed to deploy to this protected environment.
 
 The project must be shared with the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_protected_environment#group_id ProjectProtectedEnvironment#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_protected_environment#group_id ProjectProtectedEnvironment#group_id}
 
 ---
 
@@ -1164,7 +1164,7 @@ The ID of the user allowed to deploy to this protected environment.
 
 The user must be a member of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_protected_environment#user_id ProjectProtectedEnvironment#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_protected_environment#user_id ProjectProtectedEnvironment#user_id}
 
 ---
 
@@ -1175,7 +1175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironmentApprovalRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectprotectedenvironment"
 
 projectprotectedenvironment.NewProjectProtectedEnvironmentApprovalRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProjectProtectedEnvironmentApprovalRulesList
 ```
@@ -1335,7 +1335,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironmentApprovalRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectprotectedenvironment"
 
 projectprotectedenvironment.NewProjectProtectedEnvironmentApprovalRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProjectProtectedEnvironmentApprovalRulesOutputReference
 ```
@@ -1740,7 +1740,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironmentDeployAccessLevelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectprotectedenvironment"
 
 projectprotectedenvironment.NewProjectProtectedEnvironmentDeployAccessLevelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProjectProtectedEnvironmentDeployAccessLevelsList
 ```
@@ -1900,7 +1900,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironmentDeployAccessLevelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectprotectedenvironment"
 
 projectprotectedenvironment.NewProjectProtectedEnvironmentDeployAccessLevelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProjectProtectedEnvironmentDeployAccessLevelsOutputReference
 ```

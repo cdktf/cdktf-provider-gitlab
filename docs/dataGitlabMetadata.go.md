@@ -4,12 +4,12 @@
 
 ### DataGitlabMetadata <a name="DataGitlabMetadata" id="@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadata"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/data-sources/metadata gitlab_metadata}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/data-sources/metadata gitlab_metadata}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabmetadata"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabmetadata"
 
 datagitlabmetadata.NewDataGitlabMetadata(scope Construct, id *string, config DataGitlabMetadataConfig) DataGitlabMetadata
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadata.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabmetadata"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabmetadata"
 
 datagitlabmetadata.DataGitlabMetadata_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadata.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabmetadata"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabmetadata"
 
 datagitlabmetadata.DataGitlabMetadata_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datagitlabmetadata.DataGitlabMetadata_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadata.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabmetadata"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabmetadata"
 
 datagitlabmetadata.DataGitlabMetadata_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagitlabmetadata.DataGitlabMetadata_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadata.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabmetadata"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabmetadata"
 
 datagitlabmetadata.DataGitlabMetadata_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataGitlabMetadata to impo
 
 The id of the existing DataGitlabMetadata that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/data-sources/metadata#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/data-sources/metadata#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadataConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabmetadata"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabmetadata"
 
 &datagitlabmetadata.DataGitlabMetadataConfig {
 	Connection: interface{},
@@ -700,7 +700,7 @@ Provisioners *[]interface{}
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadataKas.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabmetadata"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabmetadata"
 
 &datagitlabmetadata.DataGitlabMetadataKas {
 
@@ -715,7 +715,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabmetadata"
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadataKasOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabmetadata"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabmetadata"
 
 datagitlabmetadata.NewDataGitlabMetadataKasOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataGitlabMetadataKasOutputReference
 ```
