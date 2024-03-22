@@ -44,6 +44,7 @@ The following submodules are available:
 - [dataGitlabProjectVariable](./dataGitlabProjectVariable.go.md)
 - [dataGitlabProjectVariables](./dataGitlabProjectVariables.go.md)
 - [dataGitlabProjects](./dataGitlabProjects.go.md)
+- [dataGitlabRelease](./dataGitlabRelease.go.md)
 - [dataGitlabReleaseLink](./dataGitlabReleaseLink.go.md)
 - [dataGitlabReleaseLinks](./dataGitlabReleaseLinks.go.md)
 - [dataGitlabRepositoryFile](./dataGitlabRepositoryFile.go.md)

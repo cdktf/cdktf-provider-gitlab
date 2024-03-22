@@ -124,6 +124,7 @@ Object.defineProperty(exports, 'dataGitlabProjectTags', { get: function () { ret
 Object.defineProperty(exports, 'dataGitlabProjectVariable', { get: function () { return require('./data-gitlab-project-variable'); } });
 Object.defineProperty(exports, 'dataGitlabProjectVariables', { get: function () { return require('./data-gitlab-project-variables'); } });
 Object.defineProperty(exports, 'dataGitlabProjects', { get: function () { return require('./data-gitlab-projects'); } });
+Object.defineProperty(exports, 'dataGitlabRelease', { get: function () { return require('./data-gitlab-release'); } });
 Object.defineProperty(exports, 'dataGitlabReleaseLink', { get: function () { return require('./data-gitlab-release-link'); } });
 Object.defineProperty(exports, 'dataGitlabReleaseLinks', { get: function () { return require('./data-gitlab-release-links'); } });
 Object.defineProperty(exports, 'dataGitlabRepositoryFile', { get: function () { return require('./data-gitlab-repository-file'); } });

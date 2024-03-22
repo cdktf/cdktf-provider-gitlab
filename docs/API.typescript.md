@@ -44,6 +44,7 @@ The following submodules are available:
 - [dataGitlabProjectVariable](./dataGitlabProjectVariable.typescript.md)
 - [dataGitlabProjectVariables](./dataGitlabProjectVariables.typescript.md)
 - [dataGitlabProjects](./dataGitlabProjects.typescript.md)
+- [dataGitlabRelease](./dataGitlabRelease.typescript.md)
 - [dataGitlabReleaseLink](./dataGitlabReleaseLink.typescript.md)
 - [dataGitlabReleaseLinks](./dataGitlabReleaseLinks.typescript.md)
 - [dataGitlabRepositoryFile](./dataGitlabRepositoryFile.typescript.md)

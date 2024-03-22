@@ -44,6 +44,7 @@ The following submodules are available:
 - [dataGitlabProjectVariable](./dataGitlabProjectVariable.csharp.md)
 - [dataGitlabProjectVariables](./dataGitlabProjectVariables.csharp.md)
 - [dataGitlabProjects](./dataGitlabProjects.csharp.md)
+- [dataGitlabRelease](./dataGitlabRelease.csharp.md)
 - [dataGitlabReleaseLink](./dataGitlabReleaseLink.csharp.md)
 - [dataGitlabReleaseLinks](./dataGitlabReleaseLinks.csharp.md)
 - [dataGitlabRepositoryFile](./dataGitlabRepositoryFile.csharp.md)

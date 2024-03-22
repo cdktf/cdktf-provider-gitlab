@@ -4,7 +4,7 @@
 
 ### ProjectLevelNotifications <a name="ProjectLevelNotifications" id="@cdktf/provider-gitlab.projectLevelNotifications.ProjectLevelNotifications"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_level_notifications gitlab_project_level_notifications}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_level_notifications gitlab_project_level_notifications}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectLevelNotifications.ProjectLevelNotifications.Initializer"></a>
 
@@ -593,7 +593,7 @@ The construct id used in the generated config for the ProjectLevelNotifications 
 
 The id of the existing ProjectLevelNotifications that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_level_notifications#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_level_notifications#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1367,7 +1367,7 @@ Project *string
 
 The ID or URL-encoded path of a project where notifications will be configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_level_notifications#project ProjectLevelNotifications#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_level_notifications#project ProjectLevelNotifications#project}
 
 ---
 
@@ -1381,7 +1381,7 @@ CloseIssue interface{}
 
 Enable notifications for closed issues. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_level_notifications#close_issue ProjectLevelNotifications#close_issue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_level_notifications#close_issue ProjectLevelNotifications#close_issue}
 
 ---
 
@@ -1395,7 +1395,7 @@ CloseMergeRequest interface{}
 
 Enable notifications for closed merge requests. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_level_notifications#close_merge_request ProjectLevelNotifications#close_merge_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_level_notifications#close_merge_request ProjectLevelNotifications#close_merge_request}
 
 ---
 
@@ -1409,7 +1409,7 @@ FailedPipeline interface{}
 
 Enable notifications for failed pipelines. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_level_notifications#failed_pipeline ProjectLevelNotifications#failed_pipeline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_level_notifications#failed_pipeline ProjectLevelNotifications#failed_pipeline}
 
 ---
 
@@ -1423,7 +1423,7 @@ FixedPipeline interface{}
 
 Enable notifications for fixed pipelines. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_level_notifications#fixed_pipeline ProjectLevelNotifications#fixed_pipeline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_level_notifications#fixed_pipeline ProjectLevelNotifications#fixed_pipeline}
 
 ---
 
@@ -1437,7 +1437,7 @@ IssueDue interface{}
 
 Enable notifications for due issues. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_level_notifications#issue_due ProjectLevelNotifications#issue_due}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_level_notifications#issue_due ProjectLevelNotifications#issue_due}
 
 ---
 
@@ -1451,7 +1451,7 @@ Level *string
 
 The level of the notification. Valid values are: `disabled`, `participating`, `watch`, `global`, `mention`, `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_level_notifications#level ProjectLevelNotifications#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_level_notifications#level ProjectLevelNotifications#level}
 
 ---
 
@@ -1465,7 +1465,7 @@ MergeMergeRequest interface{}
 
 Enable notifications for merged merge requests. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_level_notifications#merge_merge_request ProjectLevelNotifications#merge_merge_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_level_notifications#merge_merge_request ProjectLevelNotifications#merge_merge_request}
 
 ---
 
@@ -1479,7 +1479,7 @@ MergeWhenPipelineSucceeds interface{}
 
 Enable notifications for merged merge requests when the pipeline succeeds. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_level_notifications#merge_when_pipeline_succeeds ProjectLevelNotifications#merge_when_pipeline_succeeds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_level_notifications#merge_when_pipeline_succeeds ProjectLevelNotifications#merge_when_pipeline_succeeds}
 
 ---
 
@@ -1493,7 +1493,7 @@ MovedProject interface{}
 
 Enable notifications for moved projects. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_level_notifications#moved_project ProjectLevelNotifications#moved_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_level_notifications#moved_project ProjectLevelNotifications#moved_project}
 
 ---
 
@@ -1507,7 +1507,7 @@ NewIssue interface{}
 
 Enable notifications for new issues. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_level_notifications#new_issue ProjectLevelNotifications#new_issue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_level_notifications#new_issue ProjectLevelNotifications#new_issue}
 
 ---
 
@@ -1521,7 +1521,7 @@ NewMergeRequest interface{}
 
 Enable notifications for new merge requests. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_level_notifications#new_merge_request ProjectLevelNotifications#new_merge_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_level_notifications#new_merge_request ProjectLevelNotifications#new_merge_request}
 
 ---
 
@@ -1535,7 +1535,7 @@ NewNote interface{}
 
 Enable notifications for new notes on merge requests. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_level_notifications#new_note ProjectLevelNotifications#new_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_level_notifications#new_note ProjectLevelNotifications#new_note}
 
 ---
 
@@ -1549,7 +1549,7 @@ PushToMergeRequest interface{}
 
 Enable notifications for push to merge request branches. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_level_notifications#push_to_merge_request ProjectLevelNotifications#push_to_merge_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_level_notifications#push_to_merge_request ProjectLevelNotifications#push_to_merge_request}
 
 ---
 
@@ -1563,7 +1563,7 @@ ReassignIssue interface{}
 
 Enable notifications for issue reassignments. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_level_notifications#reassign_issue ProjectLevelNotifications#reassign_issue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_level_notifications#reassign_issue ProjectLevelNotifications#reassign_issue}
 
 ---
 
@@ -1577,7 +1577,7 @@ ReassignMergeRequest interface{}
 
 Enable notifications for merge request reassignments. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_level_notifications#reassign_merge_request ProjectLevelNotifications#reassign_merge_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_level_notifications#reassign_merge_request ProjectLevelNotifications#reassign_merge_request}
 
 ---
 
@@ -1591,7 +1591,7 @@ ReopenIssue interface{}
 
 Enable notifications for reopened issues. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_level_notifications#reopen_issue ProjectLevelNotifications#reopen_issue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_level_notifications#reopen_issue ProjectLevelNotifications#reopen_issue}
 
 ---
 
@@ -1605,7 +1605,7 @@ ReopenMergeRequest interface{}
 
 Enable notifications for reopened merge requests. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_level_notifications#reopen_merge_request ProjectLevelNotifications#reopen_merge_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_level_notifications#reopen_merge_request ProjectLevelNotifications#reopen_merge_request}
 
 ---
 
@@ -1619,7 +1619,7 @@ SuccessPipeline interface{}
 
 Enable notifications for successful pipelines. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.9.1/docs/resources/project_level_notifications#success_pipeline ProjectLevelNotifications#success_pipeline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/project_level_notifications#success_pipeline ProjectLevelNotifications#success_pipeline}
 
 ---
 

@@ -124,6 +124,7 @@ export * as dataGitlabProjectTags from './data-gitlab-project-tags';
 export * as dataGitlabProjectVariable from './data-gitlab-project-variable';
 export * as dataGitlabProjectVariables from './data-gitlab-project-variables';
 export * as dataGitlabProjects from './data-gitlab-projects';
+export * as dataGitlabRelease from './data-gitlab-release';
 export * as dataGitlabReleaseLink from './data-gitlab-release-link';
 export * as dataGitlabReleaseLinks from './data-gitlab-release-links';
 export * as dataGitlabRepositoryFile from './data-gitlab-repository-file';
