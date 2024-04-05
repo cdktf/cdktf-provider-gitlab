@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectprotectedenvironment"
 
 projectprotectedenvironment.NewProjectProtectedEnvironment(scope Construct, id *string, config ProjectProtectedEnvironmentConfig) ProjectProtectedEnvironment
 ```
@@ -425,7 +425,7 @@ func ResetRequiredApprovalCount()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectprotectedenvironment"
 
 projectprotectedenvironment.ProjectProtectedEnvironment_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectprotectedenvironment"
 
 projectprotectedenvironment.ProjectProtectedEnvironment_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ projectprotectedenvironment.ProjectProtectedEnvironment_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectprotectedenvironment"
 
 projectprotectedenvironment.ProjectProtectedEnvironment_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ projectprotectedenvironment.ProjectProtectedEnvironment_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectprotectedenvironment"
 
 projectprotectedenvironment.ProjectProtectedEnvironment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -835,7 +835,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironmentApprovalRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectprotectedenvironment"
 
 &projectprotectedenvironment.ProjectProtectedEnvironmentApprovalRules {
 	AccessLevel: *string,
@@ -921,7 +921,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectprotectedenvironment"
 
 &projectprotectedenvironment.ProjectProtectedEnvironmentConfig {
 	Connection: interface{},
@@ -1103,7 +1103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironmentDeployAccessLevels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectprotectedenvironment"
 
 &projectprotectedenvironment.ProjectProtectedEnvironmentDeployAccessLevels {
 	AccessLevel: *string,
@@ -1175,7 +1175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironmentApprovalRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectprotectedenvironment"
 
 projectprotectedenvironment.NewProjectProtectedEnvironmentApprovalRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProjectProtectedEnvironmentApprovalRulesList
 ```
@@ -1335,7 +1335,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironmentApprovalRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectprotectedenvironment"
 
 projectprotectedenvironment.NewProjectProtectedEnvironmentApprovalRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProjectProtectedEnvironmentApprovalRulesOutputReference
 ```
@@ -1740,7 +1740,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironmentDeployAccessLevelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectprotectedenvironment"
 
 projectprotectedenvironment.NewProjectProtectedEnvironmentDeployAccessLevelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProjectProtectedEnvironmentDeployAccessLevelsList
 ```
@@ -1900,7 +1900,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironmentDeployAccessLevelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectprotectedenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectprotectedenvironment"
 
 projectprotectedenvironment.NewProjectProtectedEnvironmentDeployAccessLevelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProjectProtectedEnvironmentDeployAccessLevelsOutputReference
 ```
