@@ -4,7 +4,7 @@
 
 ### GroupMembership <a name="GroupMembership" id="@cdktf/provider-gitlab.groupMembership.GroupMembership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_membership gitlab_group_membership}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_membership gitlab_group_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer"></a>
 
@@ -28,6 +28,7 @@ GroupMembership.Builder.create(Construct scope, java.lang.String id)
     .userId(java.lang.Number)
 //  .expiresAt(java.lang.String)
 //  .id(java.lang.String)
+//  .memberRoleId(java.lang.Number)
 //  .skipSubresourcesOnDestroy(java.lang.Boolean)
 //  .skipSubresourcesOnDestroy(IResolvable)
 //  .unassignIssuablesOnDestroy(java.lang.Boolean)
@@ -50,7 +51,8 @@ GroupMembership.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.groupId">groupId</a></code> | <code>java.lang.String</code> | The id of the group. |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.userId">userId</a></code> | <code>java.lang.Number</code> | The id of the user. |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.expiresAt">expiresAt</a></code> | <code>java.lang.String</code> | Expiration date for the group membership. Format: `YYYY-MM-DD`. |
-| <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_membership#id GroupMembership#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_membership#id GroupMembership#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.memberRoleId">memberRoleId</a></code> | <code>java.lang.Number</code> | The ID of a custom member role. Only available for Ultimate instances. |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.skipSubresourcesOnDestroy">skipSubresourcesOnDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the deletion of direct memberships of the removed member in subgroups and projects should be skipped. |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.unassignIssuablesOnDestroy">unassignIssuablesOnDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the removed member should be unassigned from any issues or merge requests inside a given group or project. |
 
@@ -122,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 Access level for the member. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_membership#access_level GroupMembership#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_membership#access_level GroupMembership#access_level}
 
 ---
 
@@ -132,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The id of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_membership#group_id GroupMembership#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_membership#group_id GroupMembership#group_id}
 
 ---
 
@@ -142,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The id of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_membership#user_id GroupMembership#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_membership#user_id GroupMembership#user_id}
 
 ---
 
@@ -152,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Expiration date for the group membership. Format: `YYYY-MM-DD`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_membership#expires_at GroupMembership#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_membership#expires_at GroupMembership#expires_at}
 
 ---
 
@@ -160,10 +162,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_membership#id GroupMembership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_membership#id GroupMembership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `memberRoleId`<sup>Optional</sup> <a name="memberRoleId" id="@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer.parameter.memberRoleId"></a>
+
+- *Type:* java.lang.Number
+
+The ID of a custom member role. Only available for Ultimate instances.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_membership#member_role_id GroupMembership#member_role_id}
 
 ---
 
@@ -175,7 +187,7 @@ Whether the deletion of direct memberships of the removed member in subgroups an
 
 Only used during a destroy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_membership#skip_subresources_on_destroy GroupMembership#skip_subresources_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_membership#skip_subresources_on_destroy GroupMembership#skip_subresources_on_destroy}
 
 ---
 
@@ -187,7 +199,7 @@ Whether the removed member should be unassigned from any issues or merge request
 
 Only used during a destroy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_membership#unassign_issuables_on_destroy GroupMembership#unassign_issuables_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_membership#unassign_issuables_on_destroy GroupMembership#unassign_issuables_on_destroy}
 
 ---
 
@@ -220,6 +232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.resetExpiresAt">resetExpiresAt</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.resetMemberRoleId">resetMemberRoleId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.resetSkipSubresourcesOnDestroy">resetSkipSubresourcesOnDestroy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.resetUnassignIssuablesOnDestroy">resetUnassignIssuablesOnDestroy</a></code> | *No description.* |
 
@@ -527,6 +540,12 @@ public void resetExpiresAt()
 public void resetId()
 ```
 
+##### `resetMemberRoleId` <a name="resetMemberRoleId" id="@cdktf/provider-gitlab.groupMembership.GroupMembership.resetMemberRoleId"></a>
+
+```java
+public void resetMemberRoleId()
+```
+
 ##### `resetSkipSubresourcesOnDestroy` <a name="resetSkipSubresourcesOnDestroy" id="@cdktf/provider-gitlab.groupMembership.GroupMembership.resetSkipSubresourcesOnDestroy"></a>
 
 ```java
@@ -642,7 +661,7 @@ The construct id used in the generated config for the GroupMembership to import.
 
 The id of the existing GroupMembership that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_membership#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_membership#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -676,6 +695,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.property.expiresAtInput">expiresAtInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.property.groupIdInput">groupIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.property.memberRoleIdInput">memberRoleIdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.property.skipSubresourcesOnDestroyInput">skipSubresourcesOnDestroyInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.property.unassignIssuablesOnDestroyInput">unassignIssuablesOnDestroyInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.property.userIdInput">userIdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -683,6 +703,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.property.expiresAt">expiresAt</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.property.groupId">groupId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.property.memberRoleId">memberRoleId</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.property.skipSubresourcesOnDestroy">skipSubresourcesOnDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.property.unassignIssuablesOnDestroy">unassignIssuablesOnDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembership.property.userId">userId</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -871,6 +892,16 @@ public java.lang.String getIdInput();
 
 ---
 
+##### `memberRoleIdInput`<sup>Optional</sup> <a name="memberRoleIdInput" id="@cdktf/provider-gitlab.groupMembership.GroupMembership.property.memberRoleIdInput"></a>
+
+```java
+public java.lang.Number getMemberRoleIdInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `skipSubresourcesOnDestroyInput`<sup>Optional</sup> <a name="skipSubresourcesOnDestroyInput" id="@cdktf/provider-gitlab.groupMembership.GroupMembership.property.skipSubresourcesOnDestroyInput"></a>
 
 ```java
@@ -938,6 +969,16 @@ public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `memberRoleId`<sup>Required</sup> <a name="memberRoleId" id="@cdktf/provider-gitlab.groupMembership.GroupMembership.property.memberRoleId"></a>
+
+```java
+public java.lang.Number getMemberRoleId();
+```
+
+- *Type:* java.lang.Number
 
 ---
 
@@ -1015,6 +1056,7 @@ GroupMembershipConfig.builder()
     .userId(java.lang.Number)
 //  .expiresAt(java.lang.String)
 //  .id(java.lang.String)
+//  .memberRoleId(java.lang.Number)
 //  .skipSubresourcesOnDestroy(java.lang.Boolean)
 //  .skipSubresourcesOnDestroy(IResolvable)
 //  .unassignIssuablesOnDestroy(java.lang.Boolean)
@@ -1037,7 +1079,8 @@ GroupMembershipConfig.builder()
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.groupId">groupId</a></code> | <code>java.lang.String</code> | The id of the group. |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.userId">userId</a></code> | <code>java.lang.Number</code> | The id of the user. |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.expiresAt">expiresAt</a></code> | <code>java.lang.String</code> | Expiration date for the group membership. Format: `YYYY-MM-DD`. |
-| <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_membership#id GroupMembership#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_membership#id GroupMembership#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.memberRoleId">memberRoleId</a></code> | <code>java.lang.Number</code> | The ID of a custom member role. Only available for Ultimate instances. |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.skipSubresourcesOnDestroy">skipSubresourcesOnDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the deletion of direct memberships of the removed member in subgroups and projects should be skipped. |
 | <code><a href="#@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.unassignIssuablesOnDestroy">unassignIssuablesOnDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the removed member should be unassigned from any issues or merge requests inside a given group or project. |
 
@@ -1123,7 +1166,7 @@ public java.lang.String getAccessLevel();
 
 Access level for the member. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`, `master`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_membership#access_level GroupMembership#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_membership#access_level GroupMembership#access_level}
 
 ---
 
@@ -1137,7 +1180,7 @@ public java.lang.String getGroupId();
 
 The id of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_membership#group_id GroupMembership#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_membership#group_id GroupMembership#group_id}
 
 ---
 
@@ -1151,7 +1194,7 @@ public java.lang.Number getUserId();
 
 The id of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_membership#user_id GroupMembership#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_membership#user_id GroupMembership#user_id}
 
 ---
 
@@ -1165,7 +1208,7 @@ public java.lang.String getExpiresAt();
 
 Expiration date for the group membership. Format: `YYYY-MM-DD`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_membership#expires_at GroupMembership#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_membership#expires_at GroupMembership#expires_at}
 
 ---
 
@@ -1177,10 +1220,24 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_membership#id GroupMembership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_membership#id GroupMembership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `memberRoleId`<sup>Optional</sup> <a name="memberRoleId" id="@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.property.memberRoleId"></a>
+
+```java
+public java.lang.Number getMemberRoleId();
+```
+
+- *Type:* java.lang.Number
+
+The ID of a custom member role. Only available for Ultimate instances.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_membership#member_role_id GroupMembership#member_role_id}
 
 ---
 
@@ -1196,7 +1253,7 @@ Whether the deletion of direct memberships of the removed member in subgroups an
 
 Only used during a destroy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_membership#skip_subresources_on_destroy GroupMembership#skip_subresources_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_membership#skip_subresources_on_destroy GroupMembership#skip_subresources_on_destroy}
 
 ---
 
@@ -1212,7 +1269,7 @@ Whether the removed member should be unassigned from any issues or merge request
 
 Only used during a destroy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_membership#unassign_issuables_on_destroy GroupMembership#unassign_issuables_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_membership#unassign_issuables_on_destroy GroupMembership#unassign_issuables_on_destroy}
 
 ---
 

@@ -15,6 +15,7 @@ The following submodules are available:
 - [dataGitlabBranch](./dataGitlabBranch.java.md)
 - [dataGitlabClusterAgent](./dataGitlabClusterAgent.java.md)
 - [dataGitlabClusterAgents](./dataGitlabClusterAgents.java.md)
+- [dataGitlabComplianceFramework](./dataGitlabComplianceFramework.java.md)
 - [dataGitlabCurrentUser](./dataGitlabCurrentUser.java.md)
 - [dataGitlabGroup](./dataGitlabGroup.java.md)
 - [dataGitlabGroupHook](./dataGitlabGroupHook.java.md)

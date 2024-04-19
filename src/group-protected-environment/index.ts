@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment
+// https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface GroupProtectedEnvironmentConfig extends cdktf.TerraformMetaArgu
   /**
   * Array of approval rules to deploy, with each described by a hash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#approval_rules GroupProtectedEnvironment#approval_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#approval_rules GroupProtectedEnvironment#approval_rules}
   */
   readonly approvalRules?: GroupProtectedEnvironmentApprovalRules[] | cdktf.IResolvable;
   /**
   * Array of access levels allowed to deploy, with each described by a hash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#deploy_access_levels GroupProtectedEnvironment#deploy_access_levels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#deploy_access_levels GroupProtectedEnvironment#deploy_access_levels}
   */
   readonly deployAccessLevels: GroupProtectedEnvironmentDeployAccessLevels[] | cdktf.IResolvable;
   /**
   * The deployment tier of the environment.  Valid values are `production`, `staging`, `testing`, `development`, `other`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#environment GroupProtectedEnvironment#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#environment GroupProtectedEnvironment#environment}
   */
   readonly environment: string;
   /**
   * The ID or full path of the group which the protected environment is created against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#group GroupProtectedEnvironment#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#group GroupProtectedEnvironment#group}
   */
   readonly group: string;
   /**
   * The number of approvals required to deploy to this environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#required_approval_count GroupProtectedEnvironment#required_approval_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#required_approval_count GroupProtectedEnvironment#required_approval_count}
   */
   readonly requiredApprovalCount?: number;
 }
@@ -47,25 +47,31 @@ export interface GroupProtectedEnvironmentApprovalRules {
   /**
   * Levels of access allowed to approve a deployment to this protected environment. Valid values are `developer`, `maintainer`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#access_level GroupProtectedEnvironment#access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#access_level GroupProtectedEnvironment#access_level}
   */
   readonly accessLevel?: string;
   /**
   * The ID of the group allowed to approve a deployment to this protected environment. TThe group must be a sub-group under the given group. This is mutually exclusive with user_id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#group_id GroupProtectedEnvironment#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#group_id GroupProtectedEnvironment#group_id}
   */
   readonly groupId?: number;
   /**
+  * Group inheritance allows access rules to take inherited group membership into account. Valid values are `0`, `1`. `0` => Direct group membership only, `1` => All inherited groups. Default: `0`
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#group_inheritance_type GroupProtectedEnvironment#group_inheritance_type}
+  */
+  readonly groupInheritanceType?: number;
+  /**
   * The number of approval required to allow deployment to this protected environment. This is mutually exclusive with user_id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#required_approvals GroupProtectedEnvironment#required_approvals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#required_approvals GroupProtectedEnvironment#required_approvals}
   */
   readonly requiredApprovals?: number;
   /**
   * The ID of the user allowed to approve a deployment to this protected environment. The user must be a member of the group with Maintainer role or higher. This is mutually exclusive with group_id and required_approvals.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#user_id GroupProtectedEnvironment#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#user_id GroupProtectedEnvironment#user_id}
   */
   readonly userId?: number;
 }
@@ -78,6 +84,7 @@ export function groupProtectedEnvironmentApprovalRulesToTerraform(struct?: Group
   return {
     access_level: cdktf.stringToTerraform(struct!.accessLevel),
     group_id: cdktf.numberToTerraform(struct!.groupId),
+    group_inheritance_type: cdktf.numberToTerraform(struct!.groupInheritanceType),
     required_approvals: cdktf.numberToTerraform(struct!.requiredApprovals),
     user_id: cdktf.numberToTerraform(struct!.userId),
   }
@@ -98,6 +105,12 @@ export function groupProtectedEnvironmentApprovalRulesToHclTerraform(struct?: Gr
     },
     group_id: {
       value: cdktf.numberToHclTerraform(struct!.groupId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    group_inheritance_type: {
+      value: cdktf.numberToHclTerraform(struct!.groupInheritanceType),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -148,6 +161,10 @@ export class GroupProtectedEnvironmentApprovalRulesOutputReference extends cdktf
       hasAnyValues = true;
       internalValueResult.groupId = this._groupId;
     }
+    if (this._groupInheritanceType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.groupInheritanceType = this._groupInheritanceType;
+    }
     if (this._requiredApprovals !== undefined) {
       hasAnyValues = true;
       internalValueResult.requiredApprovals = this._requiredApprovals;
@@ -165,6 +182,7 @@ export class GroupProtectedEnvironmentApprovalRulesOutputReference extends cdktf
       this.resolvableValue = undefined;
       this._accessLevel = undefined;
       this._groupId = undefined;
+      this._groupInheritanceType = undefined;
       this._requiredApprovals = undefined;
       this._userId = undefined;
     }
@@ -177,6 +195,7 @@ export class GroupProtectedEnvironmentApprovalRulesOutputReference extends cdktf
       this.resolvableValue = undefined;
       this._accessLevel = value.accessLevel;
       this._groupId = value.groupId;
+      this._groupInheritanceType = value.groupInheritanceType;
       this._requiredApprovals = value.requiredApprovals;
       this._userId = value.userId;
     }
@@ -217,6 +236,22 @@ export class GroupProtectedEnvironmentApprovalRulesOutputReference extends cdktf
   // Temporarily expose input value. Use with caution.
   public get groupIdInput() {
     return this._groupId;
+  }
+
+  // group_inheritance_type - computed: true, optional: true, required: false
+  private _groupInheritanceType?: number; 
+  public get groupInheritanceType() {
+    return this.getNumberAttribute('group_inheritance_type');
+  }
+  public set groupInheritanceType(value: number) {
+    this._groupInheritanceType = value;
+  }
+  public resetGroupInheritanceType() {
+    this._groupInheritanceType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupInheritanceTypeInput() {
+    return this._groupInheritanceType;
   }
 
   // id - computed: true, optional: false, required: false
@@ -280,19 +315,25 @@ export interface GroupProtectedEnvironmentDeployAccessLevels {
   /**
   * Levels of access required to deploy to this protected environment. Valid values are `developer`, `maintainer`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#access_level GroupProtectedEnvironment#access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#access_level GroupProtectedEnvironment#access_level}
   */
   readonly accessLevel?: string;
   /**
   * The ID of the group allowed to deploy to this protected environment. The group must be a sub-group under the given group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#group_id GroupProtectedEnvironment#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#group_id GroupProtectedEnvironment#group_id}
   */
   readonly groupId?: number;
   /**
+  * Group inheritance allows deploy access levels to take inherited group membership into account. Valid values are `0`, `1`. `0` => Direct group membership only, `1` => All inherited groups. Default: `0`
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#group_inheritance_type GroupProtectedEnvironment#group_inheritance_type}
+  */
+  readonly groupInheritanceType?: number;
+  /**
   * The ID of the user allowed to deploy to this protected environment. The user must be a member of the group with Maintainer role or higher.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#user_id GroupProtectedEnvironment#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#user_id GroupProtectedEnvironment#user_id}
   */
   readonly userId?: number;
 }
@@ -305,6 +346,7 @@ export function groupProtectedEnvironmentDeployAccessLevelsToTerraform(struct?: 
   return {
     access_level: cdktf.stringToTerraform(struct!.accessLevel),
     group_id: cdktf.numberToTerraform(struct!.groupId),
+    group_inheritance_type: cdktf.numberToTerraform(struct!.groupInheritanceType),
     user_id: cdktf.numberToTerraform(struct!.userId),
   }
 }
@@ -324,6 +366,12 @@ export function groupProtectedEnvironmentDeployAccessLevelsToHclTerraform(struct
     },
     group_id: {
       value: cdktf.numberToHclTerraform(struct!.groupId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    group_inheritance_type: {
+      value: cdktf.numberToHclTerraform(struct!.groupInheritanceType),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -368,6 +416,10 @@ export class GroupProtectedEnvironmentDeployAccessLevelsOutputReference extends 
       hasAnyValues = true;
       internalValueResult.groupId = this._groupId;
     }
+    if (this._groupInheritanceType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.groupInheritanceType = this._groupInheritanceType;
+    }
     if (this._userId !== undefined) {
       hasAnyValues = true;
       internalValueResult.userId = this._userId;
@@ -381,6 +433,7 @@ export class GroupProtectedEnvironmentDeployAccessLevelsOutputReference extends 
       this.resolvableValue = undefined;
       this._accessLevel = undefined;
       this._groupId = undefined;
+      this._groupInheritanceType = undefined;
       this._userId = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -392,6 +445,7 @@ export class GroupProtectedEnvironmentDeployAccessLevelsOutputReference extends 
       this.resolvableValue = undefined;
       this._accessLevel = value.accessLevel;
       this._groupId = value.groupId;
+      this._groupInheritanceType = value.groupInheritanceType;
       this._userId = value.userId;
     }
   }
@@ -431,6 +485,22 @@ export class GroupProtectedEnvironmentDeployAccessLevelsOutputReference extends 
   // Temporarily expose input value. Use with caution.
   public get groupIdInput() {
     return this._groupId;
+  }
+
+  // group_inheritance_type - computed: true, optional: true, required: false
+  private _groupInheritanceType?: number; 
+  public get groupInheritanceType() {
+    return this.getNumberAttribute('group_inheritance_type');
+  }
+  public set groupInheritanceType(value: number) {
+    this._groupInheritanceType = value;
+  }
+  public resetGroupInheritanceType() {
+    this._groupInheritanceType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupInheritanceTypeInput() {
+    return this._groupInheritanceType;
   }
 
   // id - computed: true, optional: false, required: false
@@ -476,7 +546,7 @@ export class GroupProtectedEnvironmentDeployAccessLevelsList extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment gitlab_group_protected_environment}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment gitlab_group_protected_environment}
 */
 export class GroupProtectedEnvironment extends cdktf.TerraformResource {
 
@@ -492,7 +562,7 @@ export class GroupProtectedEnvironment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GroupProtectedEnvironment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GroupProtectedEnvironment to import
-  * @param importFromId The id of the existing GroupProtectedEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GroupProtectedEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GroupProtectedEnvironment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -504,7 +574,7 @@ export class GroupProtectedEnvironment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment gitlab_group_protected_environment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment gitlab_group_protected_environment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -515,7 +585,7 @@ export class GroupProtectedEnvironment extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_protected_environment',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.10.0',
+        providerVersion: '16.11.0',
         providerVersionConstraint: '~> 16.0'
       },
       provider: config.provider,

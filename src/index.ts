@@ -95,6 +95,7 @@ export * as dataGitlabApplication from './data-gitlab-application';
 export * as dataGitlabBranch from './data-gitlab-branch';
 export * as dataGitlabClusterAgent from './data-gitlab-cluster-agent';
 export * as dataGitlabClusterAgents from './data-gitlab-cluster-agents';
+export * as dataGitlabComplianceFramework from './data-gitlab-compliance-framework';
 export * as dataGitlabCurrentUser from './data-gitlab-current-user';
 export * as dataGitlabGroup from './data-gitlab-group';
 export * as dataGitlabGroupHook from './data-gitlab-group-hook';

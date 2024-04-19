@@ -15,6 +15,7 @@ The following submodules are available:
 - [dataGitlabBranch](./dataGitlabBranch.go.md)
 - [dataGitlabClusterAgent](./dataGitlabClusterAgent.go.md)
 - [dataGitlabClusterAgents](./dataGitlabClusterAgents.go.md)
+- [dataGitlabComplianceFramework](./dataGitlabComplianceFramework.go.md)
 - [dataGitlabCurrentUser](./dataGitlabCurrentUser.go.md)
 - [dataGitlabGroup](./dataGitlabGroup.go.md)
 - [dataGitlabGroupHook](./dataGitlabGroupHook.go.md)

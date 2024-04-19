@@ -95,6 +95,7 @@ Object.defineProperty(exports, 'dataGitlabApplication', { get: function () { ret
 Object.defineProperty(exports, 'dataGitlabBranch', { get: function () { return require('./data-gitlab-branch'); } });
 Object.defineProperty(exports, 'dataGitlabClusterAgent', { get: function () { return require('./data-gitlab-cluster-agent'); } });
 Object.defineProperty(exports, 'dataGitlabClusterAgents', { get: function () { return require('./data-gitlab-cluster-agents'); } });
+Object.defineProperty(exports, 'dataGitlabComplianceFramework', { get: function () { return require('./data-gitlab-compliance-framework'); } });
 Object.defineProperty(exports, 'dataGitlabCurrentUser', { get: function () { return require('./data-gitlab-current-user'); } });
 Object.defineProperty(exports, 'dataGitlabGroup', { get: function () { return require('./data-gitlab-group'); } });
 Object.defineProperty(exports, 'dataGitlabGroupHook', { get: function () { return require('./data-gitlab-group-hook'); } });

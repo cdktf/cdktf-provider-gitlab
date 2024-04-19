@@ -15,6 +15,7 @@ The following submodules are available:
 - [dataGitlabBranch](./dataGitlabBranch.typescript.md)
 - [dataGitlabClusterAgent](./dataGitlabClusterAgent.typescript.md)
 - [dataGitlabClusterAgents](./dataGitlabClusterAgents.typescript.md)
+- [dataGitlabComplianceFramework](./dataGitlabComplianceFramework.typescript.md)
 - [dataGitlabCurrentUser](./dataGitlabCurrentUser.typescript.md)
 - [dataGitlabGroup](./dataGitlabGroup.typescript.md)
 - [dataGitlabGroupHook](./dataGitlabGroupHook.typescript.md)

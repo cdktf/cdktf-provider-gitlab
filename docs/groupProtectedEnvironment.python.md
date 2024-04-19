@@ -4,7 +4,7 @@
 
 ### GroupProtectedEnvironment <a name="GroupProtectedEnvironment" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment gitlab_group_protected_environment}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment gitlab_group_protected_environment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Array of access levels allowed to deploy, with each described by a hash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#deploy_access_levels GroupProtectedEnvironment#deploy_access_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#deploy_access_levels GroupProtectedEnvironment#deploy_access_levels}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The deployment tier of the environment.  Valid values are `production`, `staging`, `testing`, `development`, `other`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#environment GroupProtectedEnvironment#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#environment GroupProtectedEnvironment#environment}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The ID or full path of the group which the protected environment is created against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#group GroupProtectedEnvironment#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#group GroupProtectedEnvironment#group}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Array of approval rules to deploy, with each described by a hash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#approval_rules GroupProtectedEnvironment#approval_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#approval_rules GroupProtectedEnvironment#approval_rules}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The number of approvals required to deploy to this environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#required_approval_count GroupProtectedEnvironment#required_approval_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#required_approval_count GroupProtectedEnvironment#required_approval_count}
 
 ---
 
@@ -671,7 +671,7 @@ The construct id used in the generated config for the GroupProtectedEnvironment 
 
 The id of the existing GroupProtectedEnvironment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -997,6 +997,7 @@ from cdktf_cdktf_provider_gitlab import group_protected_environment
 groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRules(
   access_level: str = None,
   group_id: typing.Union[int, float] = None,
+  group_inheritance_type: typing.Union[int, float] = None,
   required_approvals: typing.Union[int, float] = None,
   user_id: typing.Union[int, float] = None
 )
@@ -1008,6 +1009,7 @@ groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRules(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRules.property.accessLevel">access_level</a></code> | <code>str</code> | Levels of access allowed to approve a deployment to this protected environment. Valid values are `developer`, `maintainer`. |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRules.property.groupId">group_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the group allowed to approve a deployment to this protected environment. |
+| <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRules.property.groupInheritanceType">group_inheritance_type</a></code> | <code>typing.Union[int, float]</code> | Group inheritance allows access rules to take inherited group membership into account. |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRules.property.requiredApprovals">required_approvals</a></code> | <code>typing.Union[int, float]</code> | The number of approval required to allow deployment to this protected environment. This is mutually exclusive with user_id. |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRules.property.userId">user_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the user allowed to approve a deployment to this protected environment. |
 
@@ -1023,7 +1025,7 @@ access_level: str
 
 Levels of access allowed to approve a deployment to this protected environment. Valid values are `developer`, `maintainer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#access_level GroupProtectedEnvironment#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#access_level GroupProtectedEnvironment#access_level}
 
 ---
 
@@ -1039,7 +1041,23 @@ The ID of the group allowed to approve a deployment to this protected environmen
 
 TThe group must be a sub-group under the given group. This is mutually exclusive with user_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#group_id GroupProtectedEnvironment#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#group_id GroupProtectedEnvironment#group_id}
+
+---
+
+##### `group_inheritance_type`<sup>Optional</sup> <a name="group_inheritance_type" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRules.property.groupInheritanceType"></a>
+
+```python
+group_inheritance_type: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Group inheritance allows access rules to take inherited group membership into account.
+
+Valid values are `0`, `1`. `0` => Direct group membership only, `1` => All inherited groups. Default: `0`
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#group_inheritance_type GroupProtectedEnvironment#group_inheritance_type}
 
 ---
 
@@ -1053,7 +1071,7 @@ required_approvals: typing.Union[int, float]
 
 The number of approval required to allow deployment to this protected environment. This is mutually exclusive with user_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#required_approvals GroupProtectedEnvironment#required_approvals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#required_approvals GroupProtectedEnvironment#required_approvals}
 
 ---
 
@@ -1069,7 +1087,7 @@ The ID of the user allowed to approve a deployment to this protected environment
 
 The user must be a member of the group with Maintainer role or higher. This is mutually exclusive with group_id and required_approvals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#user_id GroupProtectedEnvironment#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#user_id GroupProtectedEnvironment#user_id}
 
 ---
 
@@ -1195,7 +1213,7 @@ deploy_access_levels: typing.Union[IResolvable, typing.List[GroupProtectedEnviro
 
 Array of access levels allowed to deploy, with each described by a hash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#deploy_access_levels GroupProtectedEnvironment#deploy_access_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#deploy_access_levels GroupProtectedEnvironment#deploy_access_levels}
 
 ---
 
@@ -1209,7 +1227,7 @@ environment: str
 
 The deployment tier of the environment.  Valid values are `production`, `staging`, `testing`, `development`, `other`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#environment GroupProtectedEnvironment#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#environment GroupProtectedEnvironment#environment}
 
 ---
 
@@ -1223,7 +1241,7 @@ group: str
 
 The ID or full path of the group which the protected environment is created against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#group GroupProtectedEnvironment#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#group GroupProtectedEnvironment#group}
 
 ---
 
@@ -1237,7 +1255,7 @@ approval_rules: typing.Union[IResolvable, typing.List[GroupProtectedEnvironmentA
 
 Array of approval rules to deploy, with each described by a hash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#approval_rules GroupProtectedEnvironment#approval_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#approval_rules GroupProtectedEnvironment#approval_rules}
 
 ---
 
@@ -1251,7 +1269,7 @@ required_approval_count: typing.Union[int, float]
 
 The number of approvals required to deploy to this environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#required_approval_count GroupProtectedEnvironment#required_approval_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#required_approval_count GroupProtectedEnvironment#required_approval_count}
 
 ---
 
@@ -1265,6 +1283,7 @@ from cdktf_cdktf_provider_gitlab import group_protected_environment
 groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevels(
   access_level: str = None,
   group_id: typing.Union[int, float] = None,
+  group_inheritance_type: typing.Union[int, float] = None,
   user_id: typing.Union[int, float] = None
 )
 ```
@@ -1275,6 +1294,7 @@ groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevels(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevels.property.accessLevel">access_level</a></code> | <code>str</code> | Levels of access required to deploy to this protected environment. Valid values are `developer`, `maintainer`. |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevels.property.groupId">group_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the group allowed to deploy to this protected environment. |
+| <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevels.property.groupInheritanceType">group_inheritance_type</a></code> | <code>typing.Union[int, float]</code> | Group inheritance allows deploy access levels to take inherited group membership into account. |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevels.property.userId">user_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the user allowed to deploy to this protected environment. |
 
 ---
@@ -1289,7 +1309,7 @@ access_level: str
 
 Levels of access required to deploy to this protected environment. Valid values are `developer`, `maintainer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#access_level GroupProtectedEnvironment#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#access_level GroupProtectedEnvironment#access_level}
 
 ---
 
@@ -1305,7 +1325,23 @@ The ID of the group allowed to deploy to this protected environment.
 
 The group must be a sub-group under the given group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#group_id GroupProtectedEnvironment#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#group_id GroupProtectedEnvironment#group_id}
+
+---
+
+##### `group_inheritance_type`<sup>Optional</sup> <a name="group_inheritance_type" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevels.property.groupInheritanceType"></a>
+
+```python
+group_inheritance_type: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Group inheritance allows deploy access levels to take inherited group membership into account.
+
+Valid values are `0`, `1`. `0` => Direct group membership only, `1` => All inherited groups. Default: `0`
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#group_inheritance_type GroupProtectedEnvironment#group_inheritance_type}
 
 ---
 
@@ -1321,7 +1357,7 @@ The ID of the user allowed to deploy to this protected environment.
 
 The user must be a member of the group with Maintainer role or higher.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.10.0/docs/resources/group_protected_environment#user_id GroupProtectedEnvironment#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#user_id GroupProtectedEnvironment#user_id}
 
 ---
 
@@ -1572,6 +1608,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRulesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRulesOutputReference.resetAccessLevel">reset_access_level</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRulesOutputReference.resetGroupId">reset_group_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRulesOutputReference.resetGroupInheritanceType">reset_group_inheritance_type</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRulesOutputReference.resetRequiredApprovals">reset_required_approvals</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRulesOutputReference.resetUserId">reset_user_id</a></code> | *No description.* |
 
@@ -1761,6 +1798,12 @@ def reset_access_level() -> None
 def reset_group_id() -> None
 ```
 
+##### `reset_group_inheritance_type` <a name="reset_group_inheritance_type" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRulesOutputReference.resetGroupInheritanceType"></a>
+
+```python
+def reset_group_inheritance_type() -> None
+```
+
 ##### `reset_required_approvals` <a name="reset_required_approvals" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRulesOutputReference.resetRequiredApprovals"></a>
 
 ```python
@@ -1784,10 +1827,12 @@ def reset_user_id() -> None
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRulesOutputReference.property.id">id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRulesOutputReference.property.accessLevelInput">access_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRulesOutputReference.property.groupIdInput">group_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRulesOutputReference.property.groupInheritanceTypeInput">group_inheritance_type_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRulesOutputReference.property.requiredApprovalsInput">required_approvals_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRulesOutputReference.property.userIdInput">user_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRulesOutputReference.property.accessLevel">access_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRulesOutputReference.property.groupId">group_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRulesOutputReference.property.groupInheritanceType">group_inheritance_type</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRulesOutputReference.property.requiredApprovals">required_approvals</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRulesOutputReference.property.userId">user_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRulesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRules">GroupProtectedEnvironmentApprovalRules</a>]</code> | *No description.* |
@@ -1858,6 +1903,16 @@ group_id_input: typing.Union[int, float]
 
 ---
 
+##### `group_inheritance_type_input`<sup>Optional</sup> <a name="group_inheritance_type_input" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRulesOutputReference.property.groupInheritanceTypeInput"></a>
+
+```python
+group_inheritance_type_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `required_approvals_input`<sup>Optional</sup> <a name="required_approvals_input" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRulesOutputReference.property.requiredApprovalsInput"></a>
 
 ```python
@@ -1892,6 +1947,16 @@ access_level: str
 
 ```python
 group_id: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `group_inheritance_type`<sup>Required</sup> <a name="group_inheritance_type" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRulesOutputReference.property.groupInheritanceType"></a>
+
+```python
+group_inheritance_type: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
@@ -2174,6 +2239,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevelsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevelsOutputReference.resetAccessLevel">reset_access_level</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevelsOutputReference.resetGroupId">reset_group_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevelsOutputReference.resetGroupInheritanceType">reset_group_inheritance_type</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevelsOutputReference.resetUserId">reset_user_id</a></code> | *No description.* |
 
 ---
@@ -2362,6 +2428,12 @@ def reset_access_level() -> None
 def reset_group_id() -> None
 ```
 
+##### `reset_group_inheritance_type` <a name="reset_group_inheritance_type" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevelsOutputReference.resetGroupInheritanceType"></a>
+
+```python
+def reset_group_inheritance_type() -> None
+```
+
 ##### `reset_user_id` <a name="reset_user_id" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevelsOutputReference.resetUserId"></a>
 
 ```python
@@ -2379,9 +2451,11 @@ def reset_user_id() -> None
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevelsOutputReference.property.id">id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevelsOutputReference.property.accessLevelInput">access_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevelsOutputReference.property.groupIdInput">group_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevelsOutputReference.property.groupInheritanceTypeInput">group_inheritance_type_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevelsOutputReference.property.userIdInput">user_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevelsOutputReference.property.accessLevel">access_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevelsOutputReference.property.groupId">group_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevelsOutputReference.property.groupInheritanceType">group_inheritance_type</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevelsOutputReference.property.userId">user_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevelsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevels">GroupProtectedEnvironmentDeployAccessLevels</a>]</code> | *No description.* |
 
@@ -2451,6 +2525,16 @@ group_id_input: typing.Union[int, float]
 
 ---
 
+##### `group_inheritance_type_input`<sup>Optional</sup> <a name="group_inheritance_type_input" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevelsOutputReference.property.groupInheritanceTypeInput"></a>
+
+```python
+group_inheritance_type_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `user_id_input`<sup>Optional</sup> <a name="user_id_input" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevelsOutputReference.property.userIdInput"></a>
 
 ```python
@@ -2475,6 +2559,16 @@ access_level: str
 
 ```python
 group_id: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `group_inheritance_type`<sup>Required</sup> <a name="group_inheritance_type" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevelsOutputReference.property.groupInheritanceType"></a>
+
+```python
+group_inheritance_type: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
