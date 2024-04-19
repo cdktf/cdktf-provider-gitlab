@@ -15,6 +15,7 @@ The following submodules are available:
 - [dataGitlabBranch](./dataGitlabBranch.python.md)
 - [dataGitlabClusterAgent](./dataGitlabClusterAgent.python.md)
 - [dataGitlabClusterAgents](./dataGitlabClusterAgents.python.md)
+- [dataGitlabComplianceFramework](./dataGitlabComplianceFramework.python.md)
 - [dataGitlabCurrentUser](./dataGitlabCurrentUser.python.md)
 - [dataGitlabGroup](./dataGitlabGroup.python.md)
 - [dataGitlabGroupHook](./dataGitlabGroupHook.python.md)

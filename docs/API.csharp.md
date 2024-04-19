@@ -15,6 +15,7 @@ The following submodules are available:
 - [dataGitlabBranch](./dataGitlabBranch.csharp.md)
 - [dataGitlabClusterAgent](./dataGitlabClusterAgent.csharp.md)
 - [dataGitlabClusterAgents](./dataGitlabClusterAgents.csharp.md)
+- [dataGitlabComplianceFramework](./dataGitlabComplianceFramework.csharp.md)
 - [dataGitlabCurrentUser](./dataGitlabCurrentUser.csharp.md)
 - [dataGitlabGroup](./dataGitlabGroup.csharp.md)
 - [dataGitlabGroupHook](./dataGitlabGroupHook.csharp.md)
