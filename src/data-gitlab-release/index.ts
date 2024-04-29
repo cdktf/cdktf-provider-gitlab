@@ -24,6 +24,12 @@ export interface DataGitlabReleaseConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/data-sources/release#tag_name DataGitlabRelease#tag_name}
   */
   readonly tagName: string;
+  /**
+  * assets block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/data-sources/release#assets DataGitlabRelease#assets}
+  */
+  readonly assets?: DataGitlabReleaseAssets;
 }
 export interface DataGitlabReleaseAssetsLinks {
 }
@@ -407,6 +413,7 @@ export class DataGitlabRelease extends cdktf.TerraformDataSource {
     });
     this._projectId = config.projectId;
     this._tagName = config.tagName;
+    this._assets.internalValue = config.assets;
   }
 
   // ==========
@@ -464,10 +471,20 @@ export class DataGitlabRelease extends cdktf.TerraformDataSource {
     return this._tagName;
   }
 
-  // assets - computed: false, optional: false, required: false
+  // assets - computed: false, optional: true, required: false
   private _assets = new DataGitlabReleaseAssetsOutputReference(this, "assets");
   public get assets() {
     return this._assets;
+  }
+  public putAssets(value: DataGitlabReleaseAssets) {
+    this._assets.internalValue = value;
+  }
+  public resetAssets() {
+    this._assets.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get assetsInput() {
+    return this._assets.internalValue;
   }
 
   // =========
@@ -478,6 +495,7 @@ export class DataGitlabRelease extends cdktf.TerraformDataSource {
     return {
       project_id: cdktf.stringToTerraform(this._projectId),
       tag_name: cdktf.stringToTerraform(this._tagName),
+      assets: dataGitlabReleaseAssetsToTerraform(this._assets.internalValue),
     };
   }
 
@@ -494,6 +512,12 @@ export class DataGitlabRelease extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      assets: {
+        value: dataGitlabReleaseAssetsToHclTerraform(this._assets.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataGitlabReleaseAssets",
       },
     };
 
