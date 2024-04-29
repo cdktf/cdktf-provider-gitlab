@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabRelease.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabrelease"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrelease"
 
 datagitlabrelease.NewDataGitlabRelease(scope Construct, id *string, config DataGitlabReleaseConfig) DataGitlabRelease
 ```
@@ -67,6 +67,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabRelease.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabRelease.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabRelease.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabRelease.putAssets">PutAssets</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabRelease.resetAssets">ResetAssets</a></code> | *No description.* |
 
 ---
 
@@ -262,6 +264,24 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `PutAssets` <a name="PutAssets" id="@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabRelease.putAssets"></a>
+
+```go
+func PutAssets(value DataGitlabReleaseAssets)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabRelease.putAssets.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabReleaseAssets">DataGitlabReleaseAssets</a>
+
+---
+
+##### `ResetAssets` <a name="ResetAssets" id="@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabRelease.resetAssets"></a>
+
+```go
+func ResetAssets()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -276,7 +296,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabRelease.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabrelease"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrelease"
 
 datagitlabrelease.DataGitlabRelease_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +328,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabRelease.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabrelease"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrelease"
 
 datagitlabrelease.DataGitlabRelease_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +342,7 @@ datagitlabrelease.DataGitlabRelease_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabRelease.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabrelease"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrelease"
 
 datagitlabrelease.DataGitlabRelease_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +356,7 @@ datagitlabrelease.DataGitlabRelease_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabRelease.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabrelease"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrelease"
 
 datagitlabrelease.DataGitlabRelease_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -399,6 +419,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabRelease.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabRelease.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabRelease.property.releasedAt">ReleasedAt</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabRelease.property.assetsInput">AssetsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabRelease.property.projectIdInput">ProjectIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabRelease.property.tagNameInput">TagNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabRelease.property.projectId">ProjectId</a></code> | <code>*string</code> | *No description.* |
@@ -588,6 +609,16 @@ func ReleasedAt() *string
 
 ---
 
+##### `AssetsInput`<sup>Optional</sup> <a name="AssetsInput" id="@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabRelease.property.assetsInput"></a>
+
+```go
+func AssetsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `ProjectIdInput`<sup>Optional</sup> <a name="ProjectIdInput" id="@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabRelease.property.projectIdInput"></a>
 
 ```go
@@ -653,7 +684,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabReleaseAssets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabrelease"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrelease"
 
 &datagitlabrelease.DataGitlabReleaseAssets {
 	Links: interface{},
@@ -703,7 +734,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabReleaseAssetsLinks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabrelease"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrelease"
 
 &datagitlabrelease.DataGitlabReleaseAssetsLinks {
 
@@ -716,7 +747,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabrelease"
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabReleaseAssetsSources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabrelease"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrelease"
 
 &datagitlabrelease.DataGitlabReleaseAssetsSources {
 
@@ -729,7 +760,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabrelease"
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabReleaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabrelease"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrelease"
 
 &datagitlabrelease.DataGitlabReleaseConfig {
 	Connection: interface{},
@@ -741,6 +772,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabrelease"
 	Provisioners: *[]interface{},
 	ProjectId: *string,
 	TagName: *string,
+	Assets: github.com/cdktf/cdktf-provider-gitlab-go/gitlab.dataGitlabRelease.DataGitlabReleaseAssets,
 }
 ```
 
@@ -757,6 +789,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabrelease"
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabReleaseConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabReleaseConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | The ID or URL-encoded path of the project. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabReleaseConfig.property.tagName">TagName</a></code> | <code>*string</code> | The Git tag the release is associated with. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabReleaseConfig.property.assets">Assets</a></code> | <code><a href="#@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabReleaseAssets">DataGitlabReleaseAssets</a></code> | assets block. |
 
 ---
 
@@ -858,6 +891,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ---
 
+##### `Assets`<sup>Optional</sup> <a name="Assets" id="@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabReleaseConfig.property.assets"></a>
+
+```go
+Assets DataGitlabReleaseAssets
+```
+
+- *Type:* <a href="#@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabReleaseAssets">DataGitlabReleaseAssets</a>
+
+assets block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/data-sources/release#assets DataGitlabRelease#assets}
+
+---
+
 ## Classes <a name="Classes" id="Classes"></a>
 
 ### DataGitlabReleaseAssetsLinksList <a name="DataGitlabReleaseAssetsLinksList" id="@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabReleaseAssetsLinksList"></a>
@@ -865,7 +912,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabReleaseAssetsLinksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabrelease"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrelease"
 
 datagitlabrelease.NewDataGitlabReleaseAssetsLinksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabReleaseAssetsLinksList
 ```
@@ -1025,7 +1072,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabReleaseAssetsLinksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabrelease"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrelease"
 
 datagitlabrelease.NewDataGitlabReleaseAssetsLinksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabReleaseAssetsLinksOutputReference
 ```
@@ -1336,7 +1383,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabReleaseAssetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabrelease"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrelease"
 
 datagitlabrelease.NewDataGitlabReleaseAssetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataGitlabReleaseAssetsOutputReference
 ```
@@ -1680,7 +1727,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabReleaseAssetsSourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabrelease"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrelease"
 
 datagitlabrelease.NewDataGitlabReleaseAssetsSourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabReleaseAssetsSourcesList
 ```
@@ -1840,7 +1887,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabReleaseAssetsSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/datagitlabrelease"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrelease"
 
 datagitlabrelease.NewDataGitlabReleaseAssetsSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabReleaseAssetsSourcesOutputReference
 ```
