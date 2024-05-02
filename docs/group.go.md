@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.group.Group.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/group"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/group"
 
 group.NewGroup(scope Construct, id *string, config GroupConfig) Group
 ```
@@ -573,7 +573,7 @@ func ResetWikiAccessLevel()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.group.Group.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/group"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/group"
 
 group.Group_IsConstruct(x interface{}) *bool
 ```
@@ -605,7 +605,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.group.Group.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/group"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/group"
 
 group.Group_IsTerraformElement(x interface{}) *bool
 ```
@@ -619,7 +619,7 @@ group.Group_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.group.Group.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/group"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/group"
 
 group.Group_IsTerraformResource(x interface{}) *bool
 ```
@@ -633,7 +633,7 @@ group.Group_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.group.Group.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/group"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/group"
 
 group.Group_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1533,7 +1533,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.group.GroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/group"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/group"
 
 &group.GroupConfig {
 	Connection: interface{},
@@ -1561,7 +1561,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/group"
 	ParentId: *f64,
 	PreventForkingOutsideGroup: interface{},
 	ProjectCreationLevel: *string,
-	PushRules: github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12.group.GroupPushRules,
+	PushRules: github.com/cdktf/cdktf-provider-gitlab-go/gitlab.group.GroupPushRules,
 	RequestAccessEnabled: interface{},
 	RequireTwoFactorAuthentication: interface{},
 	SharedRunnersMinutesLimit: *f64,
@@ -2090,7 +2090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.group.GroupPushRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/group"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/group"
 
 &group.GroupPushRules {
 	AuthorEmailRegex: *string,
@@ -2288,7 +2288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/group"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/group"
 
 group.NewGroupPushRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupPushRulesOutputReference
 ```
