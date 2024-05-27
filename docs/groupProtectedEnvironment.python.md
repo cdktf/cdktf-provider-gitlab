@@ -4,7 +4,7 @@
 
 ### GroupProtectedEnvironment <a name="GroupProtectedEnvironment" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment gitlab_group_protected_environment}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_protected_environment gitlab_group_protected_environment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment.Initializer"></a>
 
@@ -24,8 +24,7 @@ groupProtectedEnvironment.GroupProtectedEnvironment(
   deploy_access_levels: typing.Union[IResolvable, typing.List[GroupProtectedEnvironmentDeployAccessLevels]],
   environment: str,
   group: str,
-  approval_rules: typing.Union[IResolvable, typing.List[GroupProtectedEnvironmentApprovalRules]] = None,
-  required_approval_count: typing.Union[int, float] = None
+  approval_rules: typing.Union[IResolvable, typing.List[GroupProtectedEnvironmentApprovalRules]] = None
 )
 ```
 
@@ -44,7 +43,6 @@ groupProtectedEnvironment.GroupProtectedEnvironment(
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment.Initializer.parameter.environment">environment</a></code> | <code>str</code> | The deployment tier of the environment.  Valid values are `production`, `staging`, `testing`, `development`, `other`. |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment.Initializer.parameter.group">group</a></code> | <code>str</code> | The ID or full path of the group which the protected environment is created against. |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment.Initializer.parameter.approvalRules">approval_rules</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRules">GroupProtectedEnvironmentApprovalRules</a>]]</code> | Array of approval rules to deploy, with each described by a hash. |
-| <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment.Initializer.parameter.requiredApprovalCount">required_approval_count</a></code> | <code>typing.Union[int, float]</code> | The number of approvals required to deploy to this environment. |
 
 ---
 
@@ -114,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Array of access levels allowed to deploy, with each described by a hash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#deploy_access_levels GroupProtectedEnvironment#deploy_access_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_protected_environment#deploy_access_levels GroupProtectedEnvironment#deploy_access_levels}
 
 ---
 
@@ -124,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The deployment tier of the environment.  Valid values are `production`, `staging`, `testing`, `development`, `other`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#environment GroupProtectedEnvironment#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_protected_environment#environment GroupProtectedEnvironment#environment}
 
 ---
 
@@ -134,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The ID or full path of the group which the protected environment is created against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#group GroupProtectedEnvironment#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_protected_environment#group GroupProtectedEnvironment#group}
 
 ---
 
@@ -144,17 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Array of approval rules to deploy, with each described by a hash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#approval_rules GroupProtectedEnvironment#approval_rules}
-
----
-
-##### `required_approval_count`<sup>Optional</sup> <a name="required_approval_count" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment.Initializer.parameter.requiredApprovalCount"></a>
-
-- *Type:* typing.Union[int, float]
-
-The number of approvals required to deploy to this environment.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#required_approval_count GroupProtectedEnvironment#required_approval_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_protected_environment#approval_rules GroupProtectedEnvironment#approval_rules}
 
 ---
 
@@ -188,7 +176,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment.putApprovalRules">put_approval_rules</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment.putDeployAccessLevels">put_deploy_access_levels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment.resetApprovalRules">reset_approval_rules</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment.resetRequiredApprovalCount">reset_required_approval_count</a></code> | *No description.* |
 
 ---
 
@@ -551,12 +538,6 @@ def put_deploy_access_levels(
 def reset_approval_rules() -> None
 ```
 
-##### `reset_required_approval_count` <a name="reset_required_approval_count" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment.resetRequiredApprovalCount"></a>
-
-```python
-def reset_required_approval_count() -> None
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -671,7 +652,7 @@ The construct id used in the generated config for the GroupProtectedEnvironment 
 
 The id of the existing GroupProtectedEnvironment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_protected_environment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -708,10 +689,8 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment.property.deployAccessLevelsInput">deploy_access_levels_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevels">GroupProtectedEnvironmentDeployAccessLevels</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment.property.environmentInput">environment_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment.property.groupInput">group_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment.property.requiredApprovalCountInput">required_approval_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment.property.environment">environment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment.property.group">group</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment.property.requiredApprovalCount">required_approval_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 
 ---
 
@@ -927,16 +906,6 @@ group_input: str
 
 ---
 
-##### `required_approval_count_input`<sup>Optional</sup> <a name="required_approval_count_input" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment.property.requiredApprovalCountInput"></a>
-
-```python
-required_approval_count_input: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
 ##### `environment`<sup>Required</sup> <a name="environment" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment.property.environment"></a>
 
 ```python
@@ -954,16 +923,6 @@ group: str
 ```
 
 - *Type:* str
-
----
-
-##### `required_approval_count`<sup>Required</sup> <a name="required_approval_count" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment.property.requiredApprovalCount"></a>
-
-```python
-required_approval_count: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
 
 ---
 
@@ -1025,7 +984,7 @@ access_level: str
 
 Levels of access allowed to approve a deployment to this protected environment. Valid values are `developer`, `maintainer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#access_level GroupProtectedEnvironment#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_protected_environment#access_level GroupProtectedEnvironment#access_level}
 
 ---
 
@@ -1041,7 +1000,7 @@ The ID of the group allowed to approve a deployment to this protected environmen
 
 TThe group must be a sub-group under the given group. This is mutually exclusive with user_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#group_id GroupProtectedEnvironment#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_protected_environment#group_id GroupProtectedEnvironment#group_id}
 
 ---
 
@@ -1057,7 +1016,7 @@ Group inheritance allows access rules to take inherited group membership into ac
 
 Valid values are `0`, `1`. `0` => Direct group membership only, `1` => All inherited groups. Default: `0`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#group_inheritance_type GroupProtectedEnvironment#group_inheritance_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_protected_environment#group_inheritance_type GroupProtectedEnvironment#group_inheritance_type}
 
 ---
 
@@ -1071,7 +1030,7 @@ required_approvals: typing.Union[int, float]
 
 The number of approval required to allow deployment to this protected environment. This is mutually exclusive with user_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#required_approvals GroupProtectedEnvironment#required_approvals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_protected_environment#required_approvals GroupProtectedEnvironment#required_approvals}
 
 ---
 
@@ -1087,7 +1046,7 @@ The ID of the user allowed to approve a deployment to this protected environment
 
 The user must be a member of the group with Maintainer role or higher. This is mutually exclusive with group_id and required_approvals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#user_id GroupProtectedEnvironment#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_protected_environment#user_id GroupProtectedEnvironment#user_id}
 
 ---
 
@@ -1109,8 +1068,7 @@ groupProtectedEnvironment.GroupProtectedEnvironmentConfig(
   deploy_access_levels: typing.Union[IResolvable, typing.List[GroupProtectedEnvironmentDeployAccessLevels]],
   environment: str,
   group: str,
-  approval_rules: typing.Union[IResolvable, typing.List[GroupProtectedEnvironmentApprovalRules]] = None,
-  required_approval_count: typing.Union[int, float] = None
+  approval_rules: typing.Union[IResolvable, typing.List[GroupProtectedEnvironmentApprovalRules]] = None
 )
 ```
 
@@ -1129,7 +1087,6 @@ groupProtectedEnvironment.GroupProtectedEnvironmentConfig(
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentConfig.property.environment">environment</a></code> | <code>str</code> | The deployment tier of the environment.  Valid values are `production`, `staging`, `testing`, `development`, `other`. |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentConfig.property.group">group</a></code> | <code>str</code> | The ID or full path of the group which the protected environment is created against. |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentConfig.property.approvalRules">approval_rules</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRules">GroupProtectedEnvironmentApprovalRules</a>]]</code> | Array of approval rules to deploy, with each described by a hash. |
-| <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentConfig.property.requiredApprovalCount">required_approval_count</a></code> | <code>typing.Union[int, float]</code> | The number of approvals required to deploy to this environment. |
 
 ---
 
@@ -1213,7 +1170,7 @@ deploy_access_levels: typing.Union[IResolvable, typing.List[GroupProtectedEnviro
 
 Array of access levels allowed to deploy, with each described by a hash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#deploy_access_levels GroupProtectedEnvironment#deploy_access_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_protected_environment#deploy_access_levels GroupProtectedEnvironment#deploy_access_levels}
 
 ---
 
@@ -1227,7 +1184,7 @@ environment: str
 
 The deployment tier of the environment.  Valid values are `production`, `staging`, `testing`, `development`, `other`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#environment GroupProtectedEnvironment#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_protected_environment#environment GroupProtectedEnvironment#environment}
 
 ---
 
@@ -1241,7 +1198,7 @@ group: str
 
 The ID or full path of the group which the protected environment is created against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#group GroupProtectedEnvironment#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_protected_environment#group GroupProtectedEnvironment#group}
 
 ---
 
@@ -1255,21 +1212,7 @@ approval_rules: typing.Union[IResolvable, typing.List[GroupProtectedEnvironmentA
 
 Array of approval rules to deploy, with each described by a hash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#approval_rules GroupProtectedEnvironment#approval_rules}
-
----
-
-##### `required_approval_count`<sup>Optional</sup> <a name="required_approval_count" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentConfig.property.requiredApprovalCount"></a>
-
-```python
-required_approval_count: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
-The number of approvals required to deploy to this environment.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#required_approval_count GroupProtectedEnvironment#required_approval_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_protected_environment#approval_rules GroupProtectedEnvironment#approval_rules}
 
 ---
 
@@ -1309,7 +1252,7 @@ access_level: str
 
 Levels of access required to deploy to this protected environment. Valid values are `developer`, `maintainer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#access_level GroupProtectedEnvironment#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_protected_environment#access_level GroupProtectedEnvironment#access_level}
 
 ---
 
@@ -1325,7 +1268,7 @@ The ID of the group allowed to deploy to this protected environment.
 
 The group must be a sub-group under the given group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#group_id GroupProtectedEnvironment#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_protected_environment#group_id GroupProtectedEnvironment#group_id}
 
 ---
 
@@ -1341,7 +1284,7 @@ Group inheritance allows deploy access levels to take inherited group membership
 
 Valid values are `0`, `1`. `0` => Direct group membership only, `1` => All inherited groups. Default: `0`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#group_inheritance_type GroupProtectedEnvironment#group_inheritance_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_protected_environment#group_inheritance_type GroupProtectedEnvironment#group_inheritance_type}
 
 ---
 
@@ -1357,7 +1300,7 @@ The ID of the user allowed to deploy to this protected environment.
 
 The user must be a member of the group with Maintainer role or higher.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_protected_environment#user_id GroupProtectedEnvironment#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_protected_environment#user_id GroupProtectedEnvironment#user_id}
 
 ---
 

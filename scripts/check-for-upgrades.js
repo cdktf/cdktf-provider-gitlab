@@ -13,7 +13,7 @@ const actions = require("@actions/core");
 // const { versionMatchesConstraint } = require('cdktf-cli/lib/dependencies/version-constraints');
 
 // set by the projen file that generates this script
-const CONSTRAINT = "~> 16.0";
+const CONSTRAINT = "~> 17.0";
 const FQ_PROVIDER_NAME = "gitlabhq/gitlab";
 
 (async function main() {

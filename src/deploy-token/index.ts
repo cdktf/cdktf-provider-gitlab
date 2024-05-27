@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/deploy_token
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/deploy_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface DeployTokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * Time the token will expire it, RFC3339 format. Will not expire per default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/deploy_token#expires_at DeployToken#expires_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/deploy_token#expires_at DeployToken#expires_at}
   */
   readonly expiresAt?: string;
   /**
   * The name or id of the group to add the deploy token to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/deploy_token#group DeployToken#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/deploy_token#group DeployToken#group}
   */
   readonly group?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/deploy_token#id DeployToken#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/deploy_token#id DeployToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,31 +29,31 @@ export interface DeployTokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * A name to describe the deploy token with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/deploy_token#name DeployToken#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/deploy_token#name DeployToken#name}
   */
   readonly name: string;
   /**
   * The name or id of the project to add the deploy token to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/deploy_token#project DeployToken#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/deploy_token#project DeployToken#project}
   */
   readonly project?: string;
   /**
   * Valid values: `read_repository`, `read_registry`, `read_package_registry`, `write_registry`, `write_package_registry`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/deploy_token#scopes DeployToken#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/deploy_token#scopes DeployToken#scopes}
   */
   readonly scopes: string[];
   /**
   * A username for the deploy token. Default is `gitlab+deploy-token-{n}`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/deploy_token#username DeployToken#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/deploy_token#username DeployToken#username}
   */
   readonly username?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/deploy_token gitlab_deploy_token}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/deploy_token gitlab_deploy_token}
 */
 export class DeployToken extends cdktf.TerraformResource {
 
@@ -74,7 +69,7 @@ export class DeployToken extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DeployToken resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DeployToken to import
-  * @param importFromId The id of the existing DeployToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/deploy_token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DeployToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/deploy_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DeployToken to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -86,7 +81,7 @@ export class DeployToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/deploy_token gitlab_deploy_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/deploy_token gitlab_deploy_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,8 +92,8 @@ export class DeployToken extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_deploy_token',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.11.0',
-        providerVersionConstraint: '~> 16.0'
+        providerVersion: '17.0.0',
+        providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
