@@ -37,6 +37,7 @@ Object.defineProperty(exports, 'integrationCustomIssueTracker', { get: function 
 Object.defineProperty(exports, 'integrationEmailsOnPush', { get: function () { return require('./integration-emails-on-push'); } });
 Object.defineProperty(exports, 'integrationExternalWiki', { get: function () { return require('./integration-external-wiki'); } });
 Object.defineProperty(exports, 'integrationGithub', { get: function () { return require('./integration-github'); } });
+Object.defineProperty(exports, 'integrationJenkins', { get: function () { return require('./integration-jenkins'); } });
 Object.defineProperty(exports, 'integrationJira', { get: function () { return require('./integration-jira'); } });
 Object.defineProperty(exports, 'integrationMattermost', { get: function () { return require('./integration-mattermost'); } });
 Object.defineProperty(exports, 'integrationMicrosoftTeams', { get: function () { return require('./integration-microsoft-teams'); } });
@@ -61,6 +62,7 @@ Object.defineProperty(exports, 'projectHook', { get: function () { return requir
 Object.defineProperty(exports, 'projectIssue', { get: function () { return require('./project-issue'); } });
 Object.defineProperty(exports, 'projectIssueBoard', { get: function () { return require('./project-issue-board'); } });
 Object.defineProperty(exports, 'projectJobTokenScope', { get: function () { return require('./project-job-token-scope'); } });
+Object.defineProperty(exports, 'projectJobTokenScopes', { get: function () { return require('./project-job-token-scopes'); } });
 Object.defineProperty(exports, 'projectLabel', { get: function () { return require('./project-label'); } });
 Object.defineProperty(exports, 'projectLevelMrApprovals', { get: function () { return require('./project-level-mr-approvals'); } });
 Object.defineProperty(exports, 'projectLevelNotifications', { get: function () { return require('./project-level-notifications'); } });
@@ -68,6 +70,7 @@ Object.defineProperty(exports, 'projectMembership', { get: function () { return 
 Object.defineProperty(exports, 'projectMilestone', { get: function () { return require('./project-milestone'); } });
 Object.defineProperty(exports, 'projectMirror', { get: function () { return require('./project-mirror'); } });
 Object.defineProperty(exports, 'projectProtectedEnvironment', { get: function () { return require('./project-protected-environment'); } });
+Object.defineProperty(exports, 'projectPushRules', { get: function () { return require('./project-push-rules'); } });
 Object.defineProperty(exports, 'projectRunnerEnablement', { get: function () { return require('./project-runner-enablement'); } });
 Object.defineProperty(exports, 'projectShareGroup', { get: function () { return require('./project-share-group'); } });
 Object.defineProperty(exports, 'projectTag', { get: function () { return require('./project-tag'); } });

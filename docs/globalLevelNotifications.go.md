@@ -4,12 +4,12 @@
 
 ### GlobalLevelNotifications <a name="GlobalLevelNotifications" id="@cdktf/provider-gitlab.globalLevelNotifications.GlobalLevelNotifications"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/global_level_notifications gitlab_global_level_notifications}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/global_level_notifications gitlab_global_level_notifications}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.globalLevelNotifications.GlobalLevelNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/globallevelnotifications"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/globallevelnotifications"
 
 globallevelnotifications.NewGlobalLevelNotifications(scope Construct, id *string, config GlobalLevelNotificationsConfig) GlobalLevelNotifications
 ```
@@ -504,7 +504,7 @@ func ResetSuccessPipeline()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.globalLevelNotifications.GlobalLevelNotifications.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/globallevelnotifications"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/globallevelnotifications"
 
 globallevelnotifications.GlobalLevelNotifications_IsConstruct(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.globalLevelNotifications.GlobalLevelNotifications.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/globallevelnotifications"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/globallevelnotifications"
 
 globallevelnotifications.GlobalLevelNotifications_IsTerraformElement(x interface{}) *bool
 ```
@@ -550,7 +550,7 @@ globallevelnotifications.GlobalLevelNotifications_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.globalLevelNotifications.GlobalLevelNotifications.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/globallevelnotifications"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/globallevelnotifications"
 
 globallevelnotifications.GlobalLevelNotifications_IsTerraformResource(x interface{}) *bool
 ```
@@ -564,7 +564,7 @@ globallevelnotifications.GlobalLevelNotifications_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.globalLevelNotifications.GlobalLevelNotifications.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/globallevelnotifications"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/globallevelnotifications"
 
 globallevelnotifications.GlobalLevelNotifications_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -593,7 +593,7 @@ The construct id used in the generated config for the GlobalLevelNotifications t
 
 The id of the existing GlobalLevelNotifications that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/global_level_notifications#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/global_level_notifications#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1200,7 +1200,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.globalLevelNotifications.GlobalLevelNotificationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/globallevelnotifications"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/globallevelnotifications"
 
 &globallevelnotifications.GlobalLevelNotificationsConfig {
 	Connection: interface{},
@@ -1343,7 +1343,7 @@ CloseIssue interface{}
 
 Enable notifications for closed issues. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/global_level_notifications#close_issue GlobalLevelNotifications#close_issue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/global_level_notifications#close_issue GlobalLevelNotifications#close_issue}
 
 ---
 
@@ -1357,7 +1357,7 @@ CloseMergeRequest interface{}
 
 Enable notifications for closed merge requests. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/global_level_notifications#close_merge_request GlobalLevelNotifications#close_merge_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/global_level_notifications#close_merge_request GlobalLevelNotifications#close_merge_request}
 
 ---
 
@@ -1371,7 +1371,7 @@ FailedPipeline interface{}
 
 Enable notifications for failed pipelines. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/global_level_notifications#failed_pipeline GlobalLevelNotifications#failed_pipeline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/global_level_notifications#failed_pipeline GlobalLevelNotifications#failed_pipeline}
 
 ---
 
@@ -1385,7 +1385,7 @@ FixedPipeline interface{}
 
 Enable notifications for fixed pipelines. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/global_level_notifications#fixed_pipeline GlobalLevelNotifications#fixed_pipeline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/global_level_notifications#fixed_pipeline GlobalLevelNotifications#fixed_pipeline}
 
 ---
 
@@ -1399,7 +1399,7 @@ IssueDue interface{}
 
 Enable notifications for due issues. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/global_level_notifications#issue_due GlobalLevelNotifications#issue_due}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/global_level_notifications#issue_due GlobalLevelNotifications#issue_due}
 
 ---
 
@@ -1413,7 +1413,7 @@ Level *string
 
 The level of the notification. Valid values are: `disabled`, `participating`, `watch`, `global`, `mention`, `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/global_level_notifications#level GlobalLevelNotifications#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/global_level_notifications#level GlobalLevelNotifications#level}
 
 ---
 
@@ -1427,7 +1427,7 @@ MergeMergeRequest interface{}
 
 Enable notifications for merged merge requests. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/global_level_notifications#merge_merge_request GlobalLevelNotifications#merge_merge_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/global_level_notifications#merge_merge_request GlobalLevelNotifications#merge_merge_request}
 
 ---
 
@@ -1441,7 +1441,7 @@ MergeWhenPipelineSucceeds interface{}
 
 Enable notifications for merged merge requests when the pipeline succeeds. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/global_level_notifications#merge_when_pipeline_succeeds GlobalLevelNotifications#merge_when_pipeline_succeeds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/global_level_notifications#merge_when_pipeline_succeeds GlobalLevelNotifications#merge_when_pipeline_succeeds}
 
 ---
 
@@ -1455,7 +1455,7 @@ MovedProject interface{}
 
 Enable notifications for moved projects. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/global_level_notifications#moved_project GlobalLevelNotifications#moved_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/global_level_notifications#moved_project GlobalLevelNotifications#moved_project}
 
 ---
 
@@ -1469,7 +1469,7 @@ NewIssue interface{}
 
 Enable notifications for new issues. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/global_level_notifications#new_issue GlobalLevelNotifications#new_issue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/global_level_notifications#new_issue GlobalLevelNotifications#new_issue}
 
 ---
 
@@ -1483,7 +1483,7 @@ NewMergeRequest interface{}
 
 Enable notifications for new merge requests. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/global_level_notifications#new_merge_request GlobalLevelNotifications#new_merge_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/global_level_notifications#new_merge_request GlobalLevelNotifications#new_merge_request}
 
 ---
 
@@ -1497,7 +1497,7 @@ NewNote interface{}
 
 Enable notifications for new notes on merge requests. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/global_level_notifications#new_note GlobalLevelNotifications#new_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/global_level_notifications#new_note GlobalLevelNotifications#new_note}
 
 ---
 
@@ -1511,7 +1511,7 @@ PushToMergeRequest interface{}
 
 Enable notifications for push to merge request branches. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/global_level_notifications#push_to_merge_request GlobalLevelNotifications#push_to_merge_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/global_level_notifications#push_to_merge_request GlobalLevelNotifications#push_to_merge_request}
 
 ---
 
@@ -1525,7 +1525,7 @@ ReassignIssue interface{}
 
 Enable notifications for issue reassignments. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/global_level_notifications#reassign_issue GlobalLevelNotifications#reassign_issue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/global_level_notifications#reassign_issue GlobalLevelNotifications#reassign_issue}
 
 ---
 
@@ -1539,7 +1539,7 @@ ReassignMergeRequest interface{}
 
 Enable notifications for merge request reassignments. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/global_level_notifications#reassign_merge_request GlobalLevelNotifications#reassign_merge_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/global_level_notifications#reassign_merge_request GlobalLevelNotifications#reassign_merge_request}
 
 ---
 
@@ -1553,7 +1553,7 @@ ReopenIssue interface{}
 
 Enable notifications for reopened issues. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/global_level_notifications#reopen_issue GlobalLevelNotifications#reopen_issue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/global_level_notifications#reopen_issue GlobalLevelNotifications#reopen_issue}
 
 ---
 
@@ -1567,7 +1567,7 @@ ReopenMergeRequest interface{}
 
 Enable notifications for reopened merge requests. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/global_level_notifications#reopen_merge_request GlobalLevelNotifications#reopen_merge_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/global_level_notifications#reopen_merge_request GlobalLevelNotifications#reopen_merge_request}
 
 ---
 
@@ -1581,7 +1581,7 @@ SuccessPipeline interface{}
 
 Enable notifications for successful pipelines. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/global_level_notifications#success_pipeline GlobalLevelNotifications#success_pipeline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/global_level_notifications#success_pipeline GlobalLevelNotifications#success_pipeline}
 
 ---
 

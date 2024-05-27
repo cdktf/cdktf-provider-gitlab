@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_custom_attribute
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_custom_attribute
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface GroupCustomAttributeConfig extends cdktf.TerraformMetaArguments
   /**
   * The id of the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_custom_attribute#group GroupCustomAttribute#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_custom_attribute#group GroupCustomAttribute#group}
   */
   readonly group: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_custom_attribute#id GroupCustomAttribute#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_custom_attribute#id GroupCustomAttribute#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +28,19 @@ export interface GroupCustomAttributeConfig extends cdktf.TerraformMetaArguments
   /**
   * Key for the Custom Attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_custom_attribute#key GroupCustomAttribute#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_custom_attribute#key GroupCustomAttribute#key}
   */
   readonly key: string;
   /**
   * Value for the Custom Attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_custom_attribute#value GroupCustomAttribute#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_custom_attribute#value GroupCustomAttribute#value}
   */
   readonly value: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_custom_attribute gitlab_group_custom_attribute}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_custom_attribute gitlab_group_custom_attribute}
 */
 export class GroupCustomAttribute extends cdktf.TerraformResource {
 
@@ -56,7 +56,7 @@ export class GroupCustomAttribute extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GroupCustomAttribute resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GroupCustomAttribute to import
-  * @param importFromId The id of the existing GroupCustomAttribute that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_custom_attribute#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GroupCustomAttribute that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_custom_attribute#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GroupCustomAttribute to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +68,7 @@ export class GroupCustomAttribute extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/group_custom_attribute gitlab_group_custom_attribute} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/group_custom_attribute gitlab_group_custom_attribute} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,8 +79,8 @@ export class GroupCustomAttribute extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_custom_attribute',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.11.0',
-        providerVersionConstraint: '~> 16.0'
+        providerVersion: '17.0.0',
+        providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -4,12 +4,12 @@
 
 ### ProjectEnvironment <a name="ProjectEnvironment" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_environment gitlab_project_environment}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_environment gitlab_project_environment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectenvironment"
 
 projectenvironment.NewProjectEnvironment(scope Construct, id *string, config ProjectEnvironmentConfig) ProjectEnvironment
 ```
@@ -399,7 +399,7 @@ func ResetStopBeforeDestroy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectenvironment"
 
 projectenvironment.ProjectEnvironment_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectenvironment"
 
 projectenvironment.ProjectEnvironment_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ projectenvironment.ProjectEnvironment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectenvironment"
 
 projectenvironment.ProjectEnvironment_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ projectenvironment.ProjectEnvironment_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectenvironment"
 
 projectenvironment.ProjectEnvironment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the ProjectEnvironment to impo
 
 The id of the existing ProjectEnvironment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_environment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_environment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -842,7 +842,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectenvironment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectenvironment"
 
 &projectenvironment.ProjectEnvironmentConfig {
 	Connection: interface{},
@@ -874,7 +874,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/projectenvironment"
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironmentConfig.property.name">Name</a></code> | <code>*string</code> | The name of the environment. |
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironmentConfig.property.project">Project</a></code> | <code>*string</code> | The ID or full path of the project to environment is created for. |
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironmentConfig.property.externalUrl">ExternalUrl</a></code> | <code>*string</code> | Place to link to for this environment. |
-| <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_environment#id ProjectEnvironment#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_environment#id ProjectEnvironment#id}. |
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironmentConfig.property.stopBeforeDestroy">StopBeforeDestroy</a></code> | <code>interface{}</code> | Determines whether the environment is attempted to be stopped before the environment is deleted. |
 
 ---
@@ -959,7 +959,7 @@ Name *string
 
 The name of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_environment#name ProjectEnvironment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_environment#name ProjectEnvironment#name}
 
 ---
 
@@ -973,7 +973,7 @@ Project *string
 
 The ID or full path of the project to environment is created for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_environment#project ProjectEnvironment#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_environment#project ProjectEnvironment#project}
 
 ---
 
@@ -987,7 +987,7 @@ ExternalUrl *string
 
 Place to link to for this environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_environment#external_url ProjectEnvironment#external_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_environment#external_url ProjectEnvironment#external_url}
 
 ---
 
@@ -999,7 +999,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_environment#id ProjectEnvironment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_environment#id ProjectEnvironment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1016,7 +1016,7 @@ StopBeforeDestroy interface{}
 
 Determines whether the environment is attempted to be stopped before the environment is deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_environment#stop_before_destroy ProjectEnvironment#stop_before_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_environment#stop_before_destroy ProjectEnvironment#stop_before_destroy}
 
 ---
 

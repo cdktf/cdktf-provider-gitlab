@@ -4,7 +4,7 @@
 
 ### ProjectProtectedEnvironment <a name="ProjectProtectedEnvironment" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_protected_environment gitlab_project_protected_environment}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_protected_environment gitlab_project_protected_environment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment.Initializer"></a>
 
@@ -77,7 +77,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment.putDeployAccessLevels">putDeployAccessLevels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment.resetApprovalRules">resetApprovalRules</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment.resetDeployAccessLevels">resetDeployAccessLevels</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment.resetRequiredApprovalCount">resetRequiredApprovalCount</a></code> | *No description.* |
 
 ---
 
@@ -405,12 +404,6 @@ public resetApprovalRules(): void
 public resetDeployAccessLevels(): void
 ```
 
-##### `resetRequiredApprovalCount` <a name="resetRequiredApprovalCount" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment.resetRequiredApprovalCount"></a>
-
-```typescript
-public resetRequiredApprovalCount(): void
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -514,7 +507,7 @@ The construct id used in the generated config for the ProjectProtectedEnvironmen
 
 The id of the existing ProjectProtectedEnvironment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_protected_environment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_protected_environment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -551,10 +544,8 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1
 | <code><a href="#@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment.property.deployAccessLevelsInput">deployAccessLevelsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironmentDeployAccessLevels">ProjectProtectedEnvironmentDeployAccessLevels</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment.property.environmentInput">environmentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment.property.requiredApprovalCountInput">requiredApprovalCountInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment.property.environment">environment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment.property.project">project</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment.property.requiredApprovalCount">requiredApprovalCount</a></code> | <code>number</code> | *No description.* |
 
 ---
 
@@ -770,16 +761,6 @@ public readonly projectInput: string;
 
 ---
 
-##### `requiredApprovalCountInput`<sup>Optional</sup> <a name="requiredApprovalCountInput" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment.property.requiredApprovalCountInput"></a>
-
-```typescript
-public readonly requiredApprovalCountInput: number;
-```
-
-- *Type:* number
-
----
-
 ##### `environment`<sup>Required</sup> <a name="environment" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment.property.environment"></a>
 
 ```typescript
@@ -797,16 +778,6 @@ public readonly project: string;
 ```
 
 - *Type:* string
-
----
-
-##### `requiredApprovalCount`<sup>Required</sup> <a name="requiredApprovalCount" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment.property.requiredApprovalCount"></a>
-
-```typescript
-public readonly requiredApprovalCount: number;
-```
-
-- *Type:* number
 
 ---
 
@@ -862,7 +833,7 @@ public readonly accessLevel: string;
 
 Levels of access allowed to approve a deployment to this protected environment. Valid values are `developer`, `maintainer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_protected_environment#access_level ProjectProtectedEnvironment#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_protected_environment#access_level ProjectProtectedEnvironment#access_level}
 
 ---
 
@@ -878,7 +849,7 @@ The ID of the group allowed to approve a deployment to this protected environmen
 
 The project must be shared with the group. This is mutually exclusive with user_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_protected_environment#group_id ProjectProtectedEnvironment#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_protected_environment#group_id ProjectProtectedEnvironment#group_id}
 
 ---
 
@@ -894,7 +865,7 @@ Group inheritance allows deploy access levels to take inherited group membership
 
 Valid values are `0`, `1`. `0` => Direct group membership only, `1` => All inherited groups. Default: `0`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_protected_environment#group_inheritance_type ProjectProtectedEnvironment#group_inheritance_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_protected_environment#group_inheritance_type ProjectProtectedEnvironment#group_inheritance_type}
 
 ---
 
@@ -908,7 +879,7 @@ public readonly requiredApprovals: number;
 
 The number of approval required to allow deployment to this protected environment. This is mutually exclusive with user_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_protected_environment#required_approvals ProjectProtectedEnvironment#required_approvals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_protected_environment#required_approvals ProjectProtectedEnvironment#required_approvals}
 
 ---
 
@@ -924,7 +895,7 @@ The ID of the user allowed to approve a deployment to this protected environment
 
 The user must be a member of the project. This is mutually exclusive with group_id and required_approvals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_protected_environment#user_id ProjectProtectedEnvironment#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_protected_environment#user_id ProjectProtectedEnvironment#user_id}
 
 ---
 
@@ -953,7 +924,6 @@ const projectProtectedEnvironmentConfig: projectProtectedEnvironment.ProjectProt
 | <code><a href="#@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironmentConfig.property.project">project</a></code> | <code>string</code> | The ID or full path of the project which the protected environment is created against. |
 | <code><a href="#@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironmentConfig.property.approvalRules">approvalRules</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironmentApprovalRules">ProjectProtectedEnvironmentApprovalRules</a>[]</code> | Array of approval rules to deploy, with each described by a hash. |
 | <code><a href="#@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironmentConfig.property.deployAccessLevels">deployAccessLevels</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironmentDeployAccessLevels">ProjectProtectedEnvironmentDeployAccessLevels</a>[]</code> | deploy_access_levels block. |
-| <code><a href="#@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironmentConfig.property.requiredApprovalCount">requiredApprovalCount</a></code> | <code>number</code> | The number of approvals required to deploy to this environment. |
 
 ---
 
@@ -1037,7 +1007,7 @@ public readonly environment: string;
 
 The name of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_protected_environment#environment ProjectProtectedEnvironment#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_protected_environment#environment ProjectProtectedEnvironment#environment}
 
 ---
 
@@ -1051,7 +1021,7 @@ public readonly project: string;
 
 The ID or full path of the project which the protected environment is created against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_protected_environment#project ProjectProtectedEnvironment#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_protected_environment#project ProjectProtectedEnvironment#project}
 
 ---
 
@@ -1065,7 +1035,7 @@ public readonly approvalRules: IResolvable | ProjectProtectedEnvironmentApproval
 
 Array of approval rules to deploy, with each described by a hash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_protected_environment#approval_rules ProjectProtectedEnvironment#approval_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_protected_environment#approval_rules ProjectProtectedEnvironment#approval_rules}
 
 ---
 
@@ -1079,21 +1049,7 @@ public readonly deployAccessLevels: IResolvable | ProjectProtectedEnvironmentDep
 
 deploy_access_levels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_protected_environment#deploy_access_levels ProjectProtectedEnvironment#deploy_access_levels}
-
----
-
-##### `requiredApprovalCount`<sup>Optional</sup> <a name="requiredApprovalCount" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironmentConfig.property.requiredApprovalCount"></a>
-
-```typescript
-public readonly requiredApprovalCount: number;
-```
-
-- *Type:* number
-
-The number of approvals required to deploy to this environment.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_protected_environment#required_approval_count ProjectProtectedEnvironment#required_approval_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_protected_environment#deploy_access_levels ProjectProtectedEnvironment#deploy_access_levels}
 
 ---
 
@@ -1128,7 +1084,7 @@ public readonly accessLevel: string;
 
 Levels of access required to deploy to this protected environment. Valid values are `developer`, `maintainer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_protected_environment#access_level ProjectProtectedEnvironment#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_protected_environment#access_level ProjectProtectedEnvironment#access_level}
 
 ---
 
@@ -1144,7 +1100,7 @@ The ID of the group allowed to deploy to this protected environment.
 
 The project must be shared with the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_protected_environment#group_id ProjectProtectedEnvironment#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_protected_environment#group_id ProjectProtectedEnvironment#group_id}
 
 ---
 
@@ -1160,7 +1116,7 @@ Group inheritance allows deploy access levels to take inherited group membership
 
 Valid values are `0`, `1`. `0` => Direct group membership only, `1` => All inherited groups. Default: `0`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_protected_environment#group_inheritance_type ProjectProtectedEnvironment#group_inheritance_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_protected_environment#group_inheritance_type ProjectProtectedEnvironment#group_inheritance_type}
 
 ---
 
@@ -1176,7 +1132,7 @@ The ID of the user allowed to deploy to this protected environment.
 
 The user must be a member of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/project_protected_environment#user_id ProjectProtectedEnvironment#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_protected_environment#user_id ProjectProtectedEnvironment#user_id}
 
 ---
 

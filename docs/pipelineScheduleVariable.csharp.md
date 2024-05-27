@@ -4,7 +4,7 @@
 
 ### PipelineScheduleVariable <a name="PipelineScheduleVariable" id="@cdktf/provider-gitlab.pipelineScheduleVariable.PipelineScheduleVariable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/pipeline_schedule_variable gitlab_pipeline_schedule_variable}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/pipeline_schedule_variable gitlab_pipeline_schedule_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.pipelineScheduleVariable.PipelineScheduleVariable.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.pipelineScheduleVariable.PipelineScheduleVariable.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-gitlab.pipelineScheduleVariable.PipelineScheduleVariable.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-gitlab.pipelineScheduleVariable.PipelineScheduleVariable.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.pipelineScheduleVariable.PipelineScheduleVariable.resetVariableType">ResetVariableType</a></code> | *No description.* |
 
 ---
 
@@ -371,6 +372,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 private void ResetId()
 ```
 
+##### `ResetVariableType` <a name="ResetVariableType" id="@cdktf/provider-gitlab.pipelineScheduleVariable.PipelineScheduleVariable.resetVariableType"></a>
+
+```csharp
+private void ResetVariableType()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -474,7 +481,7 @@ The construct id used in the generated config for the PipelineScheduleVariable t
 
 The id of the existing PipelineScheduleVariable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/pipeline_schedule_variable#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/pipeline_schedule_variable#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -509,11 +516,13 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.1
 | <code><a href="#@cdktf/provider-gitlab.pipelineScheduleVariable.PipelineScheduleVariable.property.pipelineScheduleIdInput">PipelineScheduleIdInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.pipelineScheduleVariable.PipelineScheduleVariable.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.pipelineScheduleVariable.PipelineScheduleVariable.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.pipelineScheduleVariable.PipelineScheduleVariable.property.variableTypeInput">VariableTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.pipelineScheduleVariable.PipelineScheduleVariable.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.pipelineScheduleVariable.PipelineScheduleVariable.property.key">Key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.pipelineScheduleVariable.PipelineScheduleVariable.property.pipelineScheduleId">PipelineScheduleId</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.pipelineScheduleVariable.PipelineScheduleVariable.property.project">Project</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.pipelineScheduleVariable.PipelineScheduleVariable.property.value">Value</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.pipelineScheduleVariable.PipelineScheduleVariable.property.variableType">VariableType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -709,6 +718,16 @@ public string ValueInput { get; }
 
 ---
 
+##### `VariableTypeInput`<sup>Optional</sup> <a name="VariableTypeInput" id="@cdktf/provider-gitlab.pipelineScheduleVariable.PipelineScheduleVariable.property.variableTypeInput"></a>
+
+```csharp
+public string VariableTypeInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-gitlab.pipelineScheduleVariable.PipelineScheduleVariable.property.id"></a>
 
 ```csharp
@@ -759,6 +778,16 @@ public string Value { get; }
 
 ---
 
+##### `VariableType`<sup>Required</sup> <a name="VariableType" id="@cdktf/provider-gitlab.pipelineScheduleVariable.PipelineScheduleVariable.property.variableType"></a>
+
+```csharp
+public string VariableType { get; }
+```
+
+- *Type:* string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -798,7 +827,8 @@ new PipelineScheduleVariableConfig {
     double PipelineScheduleId,
     string Project,
     string Value,
-    string Id = null
+    string Id = null,
+    string VariableType = null
 };
 ```
 
@@ -817,7 +847,8 @@ new PipelineScheduleVariableConfig {
 | <code><a href="#@cdktf/provider-gitlab.pipelineScheduleVariable.PipelineScheduleVariableConfig.property.pipelineScheduleId">PipelineScheduleId</a></code> | <code>double</code> | The id of the pipeline schedule. |
 | <code><a href="#@cdktf/provider-gitlab.pipelineScheduleVariable.PipelineScheduleVariableConfig.property.project">Project</a></code> | <code>string</code> | The id of the project to add the schedule to. |
 | <code><a href="#@cdktf/provider-gitlab.pipelineScheduleVariable.PipelineScheduleVariableConfig.property.value">Value</a></code> | <code>string</code> | Value of the variable. |
-| <code><a href="#@cdktf/provider-gitlab.pipelineScheduleVariable.PipelineScheduleVariableConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/pipeline_schedule_variable#id PipelineScheduleVariable#id}. |
+| <code><a href="#@cdktf/provider-gitlab.pipelineScheduleVariable.PipelineScheduleVariableConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/pipeline_schedule_variable#id PipelineScheduleVariable#id}. |
+| <code><a href="#@cdktf/provider-gitlab.pipelineScheduleVariable.PipelineScheduleVariableConfig.property.variableType">VariableType</a></code> | <code>string</code> | The type of a variable. Available types are: `env_var`, `file`. Default is `env_var`. |
 
 ---
 
@@ -901,7 +932,7 @@ public string Key { get; set; }
 
 Name of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/pipeline_schedule_variable#key PipelineScheduleVariable#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/pipeline_schedule_variable#key PipelineScheduleVariable#key}
 
 ---
 
@@ -915,7 +946,7 @@ public double PipelineScheduleId { get; set; }
 
 The id of the pipeline schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/pipeline_schedule_variable#pipeline_schedule_id PipelineScheduleVariable#pipeline_schedule_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/pipeline_schedule_variable#pipeline_schedule_id PipelineScheduleVariable#pipeline_schedule_id}
 
 ---
 
@@ -929,7 +960,7 @@ public string Project { get; set; }
 
 The id of the project to add the schedule to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/pipeline_schedule_variable#project PipelineScheduleVariable#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/pipeline_schedule_variable#project PipelineScheduleVariable#project}
 
 ---
 
@@ -943,7 +974,7 @@ public string Value { get; set; }
 
 Value of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/pipeline_schedule_variable#value PipelineScheduleVariable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/pipeline_schedule_variable#value PipelineScheduleVariable#value}
 
 ---
 
@@ -955,10 +986,24 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/pipeline_schedule_variable#id PipelineScheduleVariable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/pipeline_schedule_variable#id PipelineScheduleVariable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `VariableType`<sup>Optional</sup> <a name="VariableType" id="@cdktf/provider-gitlab.pipelineScheduleVariable.PipelineScheduleVariableConfig.property.variableType"></a>
+
+```csharp
+public string VariableType { get; set; }
+```
+
+- *Type:* string
+
+The type of a variable. Available types are: `env_var`, `file`. Default is `env_var`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/pipeline_schedule_variable#variable_type PipelineScheduleVariable#variable_type}
 
 ---
 

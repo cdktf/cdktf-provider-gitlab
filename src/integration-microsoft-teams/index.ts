@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/integration_microsoft_teams
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_microsoft_teams
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface IntegrationMicrosoftTeamsConfig extends cdktf.TerraformMetaArgu
   /**
   * Branches to send notifications for. Valid options are “all”, “default”, “protected”, and “default_and_protected”. The default value is “default”
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/integration_microsoft_teams#branches_to_be_notified IntegrationMicrosoftTeams#branches_to_be_notified}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_microsoft_teams#branches_to_be_notified IntegrationMicrosoftTeams#branches_to_be_notified}
   */
   readonly branchesToBeNotified?: string;
   /**
   * Enable notifications for confidential issue events
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/integration_microsoft_teams#confidential_issues_events IntegrationMicrosoftTeams#confidential_issues_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_microsoft_teams#confidential_issues_events IntegrationMicrosoftTeams#confidential_issues_events}
   */
   readonly confidentialIssuesEvents?: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for confidential note events
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/integration_microsoft_teams#confidential_note_events IntegrationMicrosoftTeams#confidential_note_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_microsoft_teams#confidential_note_events IntegrationMicrosoftTeams#confidential_note_events}
   */
   readonly confidentialNoteEvents?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/integration_microsoft_teams#id IntegrationMicrosoftTeams#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_microsoft_teams#id IntegrationMicrosoftTeams#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,67 +40,67 @@ export interface IntegrationMicrosoftTeamsConfig extends cdktf.TerraformMetaArgu
   /**
   * Enable notifications for issue events
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/integration_microsoft_teams#issues_events IntegrationMicrosoftTeams#issues_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_microsoft_teams#issues_events IntegrationMicrosoftTeams#issues_events}
   */
   readonly issuesEvents?: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for merge request events
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/integration_microsoft_teams#merge_requests_events IntegrationMicrosoftTeams#merge_requests_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_microsoft_teams#merge_requests_events IntegrationMicrosoftTeams#merge_requests_events}
   */
   readonly mergeRequestsEvents?: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for note events
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/integration_microsoft_teams#note_events IntegrationMicrosoftTeams#note_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_microsoft_teams#note_events IntegrationMicrosoftTeams#note_events}
   */
   readonly noteEvents?: boolean | cdktf.IResolvable;
   /**
   * Send notifications for broken pipelines
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/integration_microsoft_teams#notify_only_broken_pipelines IntegrationMicrosoftTeams#notify_only_broken_pipelines}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_microsoft_teams#notify_only_broken_pipelines IntegrationMicrosoftTeams#notify_only_broken_pipelines}
   */
   readonly notifyOnlyBrokenPipelines?: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for pipeline events
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/integration_microsoft_teams#pipeline_events IntegrationMicrosoftTeams#pipeline_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_microsoft_teams#pipeline_events IntegrationMicrosoftTeams#pipeline_events}
   */
   readonly pipelineEvents?: boolean | cdktf.IResolvable;
   /**
   * ID of the project you want to activate integration on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/integration_microsoft_teams#project IntegrationMicrosoftTeams#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_microsoft_teams#project IntegrationMicrosoftTeams#project}
   */
   readonly project: string;
   /**
   * Enable notifications for push events
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/integration_microsoft_teams#push_events IntegrationMicrosoftTeams#push_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_microsoft_teams#push_events IntegrationMicrosoftTeams#push_events}
   */
   readonly pushEvents?: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for tag push events
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/integration_microsoft_teams#tag_push_events IntegrationMicrosoftTeams#tag_push_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_microsoft_teams#tag_push_events IntegrationMicrosoftTeams#tag_push_events}
   */
   readonly tagPushEvents?: boolean | cdktf.IResolvable;
   /**
   * The Microsoft Teams webhook (Example, https://outlook.office.com/webhook/...). This value cannot be imported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/integration_microsoft_teams#webhook IntegrationMicrosoftTeams#webhook}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_microsoft_teams#webhook IntegrationMicrosoftTeams#webhook}
   */
   readonly webhook: string;
   /**
   * Enable notifications for wiki page events
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/integration_microsoft_teams#wiki_page_events IntegrationMicrosoftTeams#wiki_page_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_microsoft_teams#wiki_page_events IntegrationMicrosoftTeams#wiki_page_events}
   */
   readonly wikiPageEvents?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/integration_microsoft_teams gitlab_integration_microsoft_teams}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_microsoft_teams gitlab_integration_microsoft_teams}
 */
 export class IntegrationMicrosoftTeams extends cdktf.TerraformResource {
 
@@ -116,7 +116,7 @@ export class IntegrationMicrosoftTeams extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IntegrationMicrosoftTeams resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationMicrosoftTeams to import
-  * @param importFromId The id of the existing IntegrationMicrosoftTeams that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/integration_microsoft_teams#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IntegrationMicrosoftTeams that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_microsoft_teams#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationMicrosoftTeams to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -128,7 +128,7 @@ export class IntegrationMicrosoftTeams extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/integration_microsoft_teams gitlab_integration_microsoft_teams} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_microsoft_teams gitlab_integration_microsoft_teams} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -139,8 +139,8 @@ export class IntegrationMicrosoftTeams extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_integration_microsoft_teams',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '16.11.0',
-        providerVersionConstraint: '~> 16.0'
+        providerVersion: '17.0.0',
+        providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

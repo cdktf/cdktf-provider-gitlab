@@ -4,12 +4,12 @@
 
 ### PipelineSchedule <a name="PipelineSchedule" id="@cdktf/provider-gitlab.pipelineSchedule.PipelineSchedule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/pipeline_schedule gitlab_pipeline_schedule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.pipelineSchedule.PipelineSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/pipelineschedule"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/pipelineschedule"
 
 pipelineschedule.NewPipelineSchedule(scope Construct, id *string, config PipelineScheduleConfig) PipelineSchedule
 ```
@@ -399,7 +399,7 @@ func ResetTakeOwnership()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.pipelineSchedule.PipelineSchedule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/pipelineschedule"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/pipelineschedule"
 
 pipelineschedule.PipelineSchedule_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.pipelineSchedule.PipelineSchedule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/pipelineschedule"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/pipelineschedule"
 
 pipelineschedule.PipelineSchedule_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ pipelineschedule.PipelineSchedule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.pipelineSchedule.PipelineSchedule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/pipelineschedule"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/pipelineschedule"
 
 pipelineschedule.PipelineSchedule_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ pipelineschedule.PipelineSchedule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.pipelineSchedule.PipelineSchedule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/pipelineschedule"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/pipelineschedule"
 
 pipelineschedule.PipelineSchedule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the PipelineSchedule to import
 
 The id of the existing PipelineSchedule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/pipeline_schedule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/pipeline_schedule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -875,7 +875,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.pipelineSchedule.PipelineScheduleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/pipelineschedule"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/pipelineschedule"
 
 &pipelineschedule.PipelineScheduleConfig {
 	Connection: interface{},
@@ -909,7 +909,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v12/pipelineschedule"
 | <code><a href="#@cdktf/provider-gitlab.pipelineSchedule.PipelineScheduleConfig.property.cron">Cron</a></code> | <code>*string</code> | The cron (e.g. `0 1 * * *`). |
 | <code><a href="#@cdktf/provider-gitlab.pipelineSchedule.PipelineScheduleConfig.property.description">Description</a></code> | <code>*string</code> | The description of the pipeline schedule. |
 | <code><a href="#@cdktf/provider-gitlab.pipelineSchedule.PipelineScheduleConfig.property.project">Project</a></code> | <code>*string</code> | The name or id of the project to add the schedule to. |
-| <code><a href="#@cdktf/provider-gitlab.pipelineSchedule.PipelineScheduleConfig.property.ref">Ref</a></code> | <code>*string</code> | The branch/tag name to be triggered. |
+| <code><a href="#@cdktf/provider-gitlab.pipelineSchedule.PipelineScheduleConfig.property.ref">Ref</a></code> | <code>*string</code> | The branch/tag name to be triggered. This must be the full branch reference, for example: `refs/heads/main`, not `main`. |
 | <code><a href="#@cdktf/provider-gitlab.pipelineSchedule.PipelineScheduleConfig.property.active">Active</a></code> | <code>interface{}</code> | The activation of pipeline schedule. If false is set, the pipeline schedule will deactivated initially. |
 | <code><a href="#@cdktf/provider-gitlab.pipelineSchedule.PipelineScheduleConfig.property.cronTimezone">CronTimezone</a></code> | <code>*string</code> | The timezone. |
 | <code><a href="#@cdktf/provider-gitlab.pipelineSchedule.PipelineScheduleConfig.property.takeOwnership">TakeOwnership</a></code> | <code>interface{}</code> | When set to `true`, the user represented by the token running Terraform will take ownership of the scheduled pipeline prior to editing it. |
@@ -996,7 +996,7 @@ Cron *string
 
 The cron (e.g. `0 1 * * *`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/pipeline_schedule#cron PipelineSchedule#cron}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/pipeline_schedule#cron PipelineSchedule#cron}
 
 ---
 
@@ -1010,7 +1010,7 @@ Description *string
 
 The description of the pipeline schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/pipeline_schedule#description PipelineSchedule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/pipeline_schedule#description PipelineSchedule#description}
 
 ---
 
@@ -1024,7 +1024,7 @@ Project *string
 
 The name or id of the project to add the schedule to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/pipeline_schedule#project PipelineSchedule#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/pipeline_schedule#project PipelineSchedule#project}
 
 ---
 
@@ -1036,9 +1036,9 @@ Ref *string
 
 - *Type:* *string
 
-The branch/tag name to be triggered.
+The branch/tag name to be triggered. This must be the full branch reference, for example: `refs/heads/main`, not `main`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/pipeline_schedule#ref PipelineSchedule#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/pipeline_schedule#ref PipelineSchedule#ref}
 
 ---
 
@@ -1052,7 +1052,7 @@ Active interface{}
 
 The activation of pipeline schedule. If false is set, the pipeline schedule will deactivated initially.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/pipeline_schedule#active PipelineSchedule#active}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/pipeline_schedule#active PipelineSchedule#active}
 
 ---
 
@@ -1066,7 +1066,7 @@ CronTimezone *string
 
 The timezone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/pipeline_schedule#cron_timezone PipelineSchedule#cron_timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/pipeline_schedule#cron_timezone PipelineSchedule#cron_timezone}
 
 ---
 
@@ -1082,7 +1082,7 @@ When set to `true`, the user represented by the token running Terraform will tak
 
 This can help when managing scheduled pipeline drift when other users are making changes outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/16.11.0/docs/resources/pipeline_schedule#take_ownership PipelineSchedule#take_ownership}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/pipeline_schedule#take_ownership PipelineSchedule#take_ownership}
 
 ---
 
