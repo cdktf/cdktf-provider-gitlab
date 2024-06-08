@@ -1,3 +1,3 @@
 # `gitlab_repository_file`
 
-Refer to the Terraform Registry for docs: [`gitlab_repository_file`](https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/repository_file).
+Refer to the Terraform Registry for docs: [`gitlab_repository_file`](https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/repository_file).

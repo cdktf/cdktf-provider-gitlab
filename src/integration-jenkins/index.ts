@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_jenkins
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/integration_jenkins
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,61 +15,61 @@ export interface IntegrationJenkinsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Enable SSL verification. Defaults to `true` (enabled).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_jenkins#enable_ssl_verification IntegrationJenkins#enable_ssl_verification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/integration_jenkins#enable_ssl_verification IntegrationJenkins#enable_ssl_verification}
   */
   readonly enableSslVerification?: boolean | cdktf.IResolvable;
   /**
   * Jenkins URL like `http://jenkins.example.com`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_jenkins#jenkins_url IntegrationJenkins#jenkins_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/integration_jenkins#jenkins_url IntegrationJenkins#jenkins_url}
   */
   readonly jenkinsUrl: string;
   /**
   * Enable notifications for merge request events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_jenkins#merge_request_events IntegrationJenkins#merge_request_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/integration_jenkins#merge_request_events IntegrationJenkins#merge_request_events}
   */
   readonly mergeRequestEvents?: boolean | cdktf.IResolvable;
   /**
   * Password for authentication with the Jenkins server, if authentication is required by the server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_jenkins#password IntegrationJenkins#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/integration_jenkins#password IntegrationJenkins#password}
   */
   readonly password?: string;
   /**
   * ID of the project you want to activate integration on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_jenkins#project IntegrationJenkins#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/integration_jenkins#project IntegrationJenkins#project}
   */
   readonly project: string;
   /**
   * The URL-friendly project name. Example: `my_project_name`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_jenkins#project_name IntegrationJenkins#project_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/integration_jenkins#project_name IntegrationJenkins#project_name}
   */
   readonly projectName: string;
   /**
   * Enable notifications for push events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_jenkins#push_events IntegrationJenkins#push_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/integration_jenkins#push_events IntegrationJenkins#push_events}
   */
   readonly pushEvents?: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for tag push events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_jenkins#tag_push_events IntegrationJenkins#tag_push_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/integration_jenkins#tag_push_events IntegrationJenkins#tag_push_events}
   */
   readonly tagPushEvents?: boolean | cdktf.IResolvable;
   /**
   * Username for authentication with the Jenkins server, if authentication is required by the server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_jenkins#username IntegrationJenkins#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/integration_jenkins#username IntegrationJenkins#username}
   */
   readonly username?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_jenkins gitlab_integration_jenkins}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/integration_jenkins gitlab_integration_jenkins}
 */
 export class IntegrationJenkins extends cdktf.TerraformResource {
 
@@ -85,7 +85,7 @@ export class IntegrationJenkins extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IntegrationJenkins resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationJenkins to import
-  * @param importFromId The id of the existing IntegrationJenkins that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_jenkins#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IntegrationJenkins that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/integration_jenkins#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationJenkins to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -97,7 +97,7 @@ export class IntegrationJenkins extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/integration_jenkins gitlab_integration_jenkins} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/integration_jenkins gitlab_integration_jenkins} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -108,7 +108,7 @@ export class IntegrationJenkins extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_integration_jenkins',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.0.0',
+        providerVersion: '17.0.1',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,
