@@ -4,12 +4,12 @@
 
 ### ComplianceFramework <a name="ComplianceFramework" id="@cdktf/provider-gitlab.complianceFramework.ComplianceFramework"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/compliance_framework gitlab_compliance_framework}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/compliance_framework gitlab_compliance_framework}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.complianceFramework.ComplianceFramework.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/complianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/complianceframework"
 
 complianceframework.NewComplianceFramework(scope Construct, id *string, config ComplianceFrameworkConfig) ComplianceFramework
 ```
@@ -392,7 +392,7 @@ func ResetPipelineConfigurationFullPath()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.complianceFramework.ComplianceFramework.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/complianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/complianceframework"
 
 complianceframework.ComplianceFramework_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.complianceFramework.ComplianceFramework.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/complianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/complianceframework"
 
 complianceframework.ComplianceFramework_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ complianceframework.ComplianceFramework_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.complianceFramework.ComplianceFramework.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/complianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/complianceframework"
 
 complianceframework.ComplianceFramework_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ complianceframework.ComplianceFramework_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.complianceFramework.ComplianceFramework.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/complianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/complianceframework"
 
 complianceframework.ComplianceFramework_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the ComplianceFramework to imp
 
 The id of the existing ComplianceFramework that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/compliance_framework#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/compliance_framework#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -835,7 +835,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.complianceFramework.ComplianceFrameworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/complianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/complianceframework"
 
 &complianceframework.ComplianceFrameworkConfig {
 	Connection: interface{},
@@ -954,7 +954,7 @@ Color *string
 
 New color representation of the compliance framework in hex format. e.g. #FCA121.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/compliance_framework#color ComplianceFramework#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/compliance_framework#color ComplianceFramework#color}
 
 ---
 
@@ -968,7 +968,7 @@ Description *string
 
 Description for the compliance framework.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/compliance_framework#description ComplianceFramework#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/compliance_framework#description ComplianceFramework#description}
 
 ---
 
@@ -982,7 +982,7 @@ Name *string
 
 Name for the compliance framework.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/compliance_framework#name ComplianceFramework#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/compliance_framework#name ComplianceFramework#name}
 
 ---
 
@@ -996,7 +996,7 @@ NamespacePath *string
 
 Full path of the namespace to add the compliance framework to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/compliance_framework#namespace_path ComplianceFramework#namespace_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/compliance_framework#namespace_path ComplianceFramework#namespace_path}
 
 ---
 
@@ -1010,7 +1010,7 @@ Default interface{}
 
 Set this compliance framework as the default framework for the group. Default: `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/compliance_framework#default ComplianceFramework#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/compliance_framework#default ComplianceFramework#default}
 
 ---
 
@@ -1024,7 +1024,7 @@ PipelineConfigurationFullPath *string
 
 Full path of the compliance pipeline configuration stored in a project repository, such as `.gitlab/.compliance-gitlab-ci.yml@compliance/hipaa`. Required format: `path/file.y[a]ml@group-name/project-name` **Note**: Ultimate license required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/compliance_framework#pipeline_configuration_full_path ComplianceFramework#pipeline_configuration_full_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/compliance_framework#pipeline_configuration_full_path ComplianceFramework#pipeline_configuration_full_path}
 
 ---
 

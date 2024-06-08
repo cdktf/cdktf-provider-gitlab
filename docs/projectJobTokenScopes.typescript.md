@@ -4,7 +4,7 @@
 
 ### ProjectJobTokenScopes <a name="ProjectJobTokenScopes" id="@cdktf/provider-gitlab.projectJobTokenScopes.ProjectJobTokenScopes"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_job_token_scopes gitlab_project_job_token_scopes}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/project_job_token_scopes gitlab_project_job_token_scopes}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectJobTokenScopes.ProjectJobTokenScopes.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the ProjectJobTokenScopes to i
 
 The id of the existing ProjectJobTokenScopes that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_job_token_scopes#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/project_job_token_scopes#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -823,7 +823,7 @@ public readonly projectId: number;
 
 The ID of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_job_token_scopes#project_id ProjectJobTokenScopes#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/project_job_token_scopes#project_id ProjectJobTokenScopes#project_id}
 
 ---
 
@@ -837,7 +837,7 @@ public readonly targetProjectIds: number[];
 
 A set of project IDs that are in the CI/CD job token inbound allowlist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_job_token_scopes#target_project_ids ProjectJobTokenScopes#target_project_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/project_job_token_scopes#target_project_ids ProjectJobTokenScopes#target_project_ids}
 
 ---
 

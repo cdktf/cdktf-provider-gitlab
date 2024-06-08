@@ -4,12 +4,12 @@
 
 ### ProjectAccessToken <a name="ProjectAccessToken" id="@cdktf/provider-gitlab.projectAccessToken.ProjectAccessToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_access_token gitlab_project_access_token}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/project_access_token gitlab_project_access_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectAccessToken.ProjectAccessToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectaccesstoken"
 
 projectaccesstoken.NewProjectAccessToken(scope Construct, id *string, config ProjectAccessTokenConfig) ProjectAccessToken
 ```
@@ -412,7 +412,7 @@ func ResetRotationConfiguration()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectAccessToken.ProjectAccessToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectaccesstoken"
 
 projectaccesstoken.ProjectAccessToken_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectAccessToken.ProjectAccessToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectaccesstoken"
 
 projectaccesstoken.ProjectAccessToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ projectaccesstoken.ProjectAccessToken_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectAccessToken.ProjectAccessToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectaccesstoken"
 
 projectaccesstoken.ProjectAccessToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ projectaccesstoken.ProjectAccessToken_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectAccessToken.ProjectAccessToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectaccesstoken"
 
 projectaccesstoken.ProjectAccessToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the ProjectAccessToken to impo
 
 The id of the existing ProjectAccessToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_access_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/project_access_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -899,7 +899,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectAccessToken.ProjectAccessTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectaccesstoken"
 
 &projectaccesstoken.ProjectAccessTokenConfig {
 	Connection: interface{},
@@ -914,7 +914,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectaccesstoken"
 	Scopes: *[]*string,
 	AccessLevel: *string,
 	ExpiresAt: *string,
-	RotationConfiguration: github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13.projectAccessToken.ProjectAccessTokenRotationConfiguration,
+	RotationConfiguration: github.com/cdktf/cdktf-provider-gitlab-go/gitlab.projectAccessToken.ProjectAccessTokenRotationConfiguration,
 }
 ```
 
@@ -1018,7 +1018,7 @@ Name *string
 
 The name of the project access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_access_token#name ProjectAccessToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/project_access_token#name ProjectAccessToken#name}
 
 ---
 
@@ -1032,7 +1032,7 @@ Project *string
 
 The ID or full path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_access_token#project ProjectAccessToken#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/project_access_token#project ProjectAccessToken#project}
 
 ---
 
@@ -1048,7 +1048,7 @@ The scopes of the project access token.
 
 valid values are: `api`, `read_api`, `read_user`, `k8s_proxy`, `read_registry`, `write_registry`, `read_repository`, `write_repository`, `create_runner`, `ai_features`, `k8s_proxy`, `read_observability`, `write_observability`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_access_token#scopes ProjectAccessToken#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/project_access_token#scopes ProjectAccessToken#scopes}
 
 ---
 
@@ -1064,7 +1064,7 @@ The access level for the project access token.
 
 Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`. Default is `maintainer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_access_token#access_level ProjectAccessToken#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/project_access_token#access_level ProjectAccessToken#access_level}
 
 ---
 
@@ -1078,7 +1078,7 @@ ExpiresAt *string
 
 When the token will expire, YYYY-MM-DD format. Is automatically set when `rotation_configuration` is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_access_token#expires_at ProjectAccessToken#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/project_access_token#expires_at ProjectAccessToken#expires_at}
 
 ---
 
@@ -1092,7 +1092,7 @@ RotationConfiguration ProjectAccessTokenRotationConfiguration
 
 The configuration for when to rotate a token automatically. Will not rotate a token until `terraform apply` is run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_access_token#rotation_configuration ProjectAccessToken#rotation_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/project_access_token#rotation_configuration ProjectAccessToken#rotation_configuration}
 
 ---
 
@@ -1101,7 +1101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectAccessToken.ProjectAccessTokenRotationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectaccesstoken"
 
 &projectaccesstoken.ProjectAccessTokenRotationConfiguration {
 	ExpirationDays: *f64,
@@ -1128,7 +1128,7 @@ ExpirationDays *f64
 
 The duration (in days) the new token should be valid for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_access_token#expiration_days ProjectAccessToken#expiration_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/project_access_token#expiration_days ProjectAccessToken#expiration_days}
 
 ---
 
@@ -1144,7 +1144,7 @@ The duration (in days) before the expiration when the token should be rotated.
 
 As an example, if set to 7 days, the token will rotate 7 days before the expiration date, but only when `terraform apply` is run in that timeframe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.0/docs/resources/project_access_token#rotate_before_days ProjectAccessToken#rotate_before_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/project_access_token#rotate_before_days ProjectAccessToken#rotate_before_days}
 
 ---
 
@@ -1155,7 +1155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectAccessToken.ProjectAccessTokenRotationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectaccesstoken"
 
 projectaccesstoken.NewProjectAccessTokenRotationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ProjectAccessTokenRotationConfigurationOutputReference
 ```
