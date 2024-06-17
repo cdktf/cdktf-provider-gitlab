@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.serviceGithub.ServiceGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicegithub"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/servicegithub"
 
 servicegithub.NewServiceGithub(scope Construct, id *string, config ServiceGithubConfig) ServiceGithub
 ```
@@ -392,7 +392,7 @@ func ResetStaticContext()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.serviceGithub.ServiceGithub.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicegithub"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/servicegithub"
 
 servicegithub.ServiceGithub_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.serviceGithub.ServiceGithub.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicegithub"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/servicegithub"
 
 servicegithub.ServiceGithub_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ servicegithub.ServiceGithub_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.serviceGithub.ServiceGithub.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicegithub"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/servicegithub"
 
 servicegithub.ServiceGithub_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ servicegithub.ServiceGithub_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.serviceGithub.ServiceGithub.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicegithub"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/servicegithub"
 
 servicegithub.ServiceGithub_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -835,7 +835,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.serviceGithub.ServiceGithubConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicegithub"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/servicegithub"
 
 &servicegithub.ServiceGithubConfig {
 	Connection: interface{},
