@@ -85,6 +85,7 @@ The following submodules are available:
 - [integrationMicrosoftTeams](./integrationMicrosoftTeams.csharp.md)
 - [integrationPipelinesEmail](./integrationPipelinesEmail.csharp.md)
 - [integrationSlack](./integrationSlack.csharp.md)
+- [integrationTelegram](./integrationTelegram.csharp.md)
 - [label](./label.csharp.md)
 - [pagesDomain](./pagesDomain.csharp.md)
 - [personalAccessToken](./personalAccessToken.csharp.md)

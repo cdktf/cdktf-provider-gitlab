@@ -1,3 +1,3 @@
 # `gitlab_group_saml_link`
 
-Refer to the Terraform Registry for docs: [`gitlab_group_saml_link`](https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/group_saml_link).
+Refer to the Terraform Registry for docs: [`gitlab_group_saml_link`](https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/group_saml_link).

@@ -1,3 +1,3 @@
 # `gitlab_pipeline_trigger`
 
-Refer to the Terraform Registry for docs: [`gitlab_pipeline_trigger`](https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/pipeline_trigger).
+Refer to the Terraform Registry for docs: [`gitlab_pipeline_trigger`](https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/pipeline_trigger).

@@ -85,6 +85,7 @@ The following submodules are available:
 - [integrationMicrosoftTeams](./integrationMicrosoftTeams.python.md)
 - [integrationPipelinesEmail](./integrationPipelinesEmail.python.md)
 - [integrationSlack](./integrationSlack.python.md)
+- [integrationTelegram](./integrationTelegram.python.md)
 - [label](./label.python.md)
 - [pagesDomain](./pagesDomain.python.md)
 - [personalAccessToken](./personalAccessToken.python.md)

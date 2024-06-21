@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/service_emails_on_push
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/service_emails_on_push
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface ServiceEmailsOnPushConfig extends cdktf.TerraformMetaArguments 
   /**
   * Branches to send notifications for. Valid options are `all`, `default`, `protected`, `default_and_protected`. Notifications are always fired for tag pushes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/service_emails_on_push#branches_to_be_notified ServiceEmailsOnPush#branches_to_be_notified}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/service_emails_on_push#branches_to_be_notified ServiceEmailsOnPush#branches_to_be_notified}
   */
   readonly branchesToBeNotified?: string;
   /**
   * Disable code diffs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/service_emails_on_push#disable_diffs ServiceEmailsOnPush#disable_diffs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/service_emails_on_push#disable_diffs ServiceEmailsOnPush#disable_diffs}
   */
   readonly disableDiffs?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/service_emails_on_push#id ServiceEmailsOnPush#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/service_emails_on_push#id ServiceEmailsOnPush#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,37 +29,37 @@ export interface ServiceEmailsOnPushConfig extends cdktf.TerraformMetaArguments 
   /**
   * ID or full-path of the project you want to activate integration on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/service_emails_on_push#project ServiceEmailsOnPush#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/service_emails_on_push#project ServiceEmailsOnPush#project}
   */
   readonly project: string;
   /**
   * Enable notifications for push events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/service_emails_on_push#push_events ServiceEmailsOnPush#push_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/service_emails_on_push#push_events ServiceEmailsOnPush#push_events}
   */
   readonly pushEvents?: boolean | cdktf.IResolvable;
   /**
   * Emails separated by whitespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/service_emails_on_push#recipients ServiceEmailsOnPush#recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/service_emails_on_push#recipients ServiceEmailsOnPush#recipients}
   */
   readonly recipients: string;
   /**
   * Send from committer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/service_emails_on_push#send_from_committer_email ServiceEmailsOnPush#send_from_committer_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/service_emails_on_push#send_from_committer_email ServiceEmailsOnPush#send_from_committer_email}
   */
   readonly sendFromCommitterEmail?: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for tag push events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/service_emails_on_push#tag_push_events ServiceEmailsOnPush#tag_push_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/service_emails_on_push#tag_push_events ServiceEmailsOnPush#tag_push_events}
   */
   readonly tagPushEvents?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/service_emails_on_push gitlab_service_emails_on_push}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/service_emails_on_push gitlab_service_emails_on_push}
 */
 export class ServiceEmailsOnPush extends cdktf.TerraformResource {
 
@@ -80,7 +75,7 @@ export class ServiceEmailsOnPush extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ServiceEmailsOnPush resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServiceEmailsOnPush to import
-  * @param importFromId The id of the existing ServiceEmailsOnPush that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/service_emails_on_push#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServiceEmailsOnPush that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/service_emails_on_push#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServiceEmailsOnPush to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -92,7 +87,7 @@ export class ServiceEmailsOnPush extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/service_emails_on_push gitlab_service_emails_on_push} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/service_emails_on_push gitlab_service_emails_on_push} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -103,7 +98,7 @@ export class ServiceEmailsOnPush extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_service_emails_on_push',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.0.1',
+        providerVersion: '17.1.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,
