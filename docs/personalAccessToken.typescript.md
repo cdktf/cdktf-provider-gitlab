@@ -4,7 +4,7 @@
 
 ### PersonalAccessToken <a name="PersonalAccessToken" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/personal_access_token gitlab_personal_access_token}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/personal_access_token gitlab_personal_access_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.Initializer"></a>
 
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.resetExpiresAt">resetExpiresAt</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.resetId">resetId</a></code> | *No description.* |
 
 ---
@@ -365,6 +366,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetExpiresAt` <a name="resetExpiresAt" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.resetExpiresAt"></a>
+
+```typescript
+public resetExpiresAt(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.resetId"></a>
 
 ```typescript
@@ -474,7 +481,7 @@ The construct id used in the generated config for the PersonalAccessToken to imp
 
 The id of the existing PersonalAccessToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/personal_access_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/personal_access_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -844,11 +851,11 @@ const personalAccessTokenConfig: personalAccessToken.PersonalAccessTokenConfig =
 | <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessTokenConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessTokenConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessTokenConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessTokenConfig.property.expiresAt">expiresAt</a></code> | <code>string</code> | The token expires at midnight UTC on that date. The date must be in the format YYYY-MM-DD. |
 | <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessTokenConfig.property.name">name</a></code> | <code>string</code> | The name of the personal access token. |
 | <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessTokenConfig.property.scopes">scopes</a></code> | <code>string[]</code> | The scope for the personal access token. |
 | <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessTokenConfig.property.userId">userId</a></code> | <code>number</code> | The id of the user. |
-| <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessTokenConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/personal_access_token#id PersonalAccessToken#id}. |
+| <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessTokenConfig.property.expiresAt">expiresAt</a></code> | <code>string</code> | The token expires at midnight UTC on that date. The date must be in the format YYYY-MM-DD. |
+| <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessTokenConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/personal_access_token#id PersonalAccessToken#id}. |
 
 ---
 
@@ -922,20 +929,6 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
-##### `expiresAt`<sup>Required</sup> <a name="expiresAt" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessTokenConfig.property.expiresAt"></a>
-
-```typescript
-public readonly expiresAt: string;
-```
-
-- *Type:* string
-
-The token expires at midnight UTC on that date. The date must be in the format YYYY-MM-DD.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/personal_access_token#expires_at PersonalAccessToken#expires_at}
-
----
-
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessTokenConfig.property.name"></a>
 
 ```typescript
@@ -946,7 +939,7 @@ public readonly name: string;
 
 The name of the personal access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/personal_access_token#name PersonalAccessToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/personal_access_token#name PersonalAccessToken#name}
 
 ---
 
@@ -960,9 +953,9 @@ public readonly scopes: string[];
 
 The scope for the personal access token.
 
-It determines the actions which can be performed when authenticating with this token. Valid values are: `api`, `read_user`, `read_api`, `read_repository`, `write_repository`, `read_registry`, `write_registry`, `sudo`, `admin_mode`, `create_runner`.
+It determines the actions which can be performed when authenticating with this token. Valid values are: `api`, `read_user`, `read_api`, `read_repository`, `write_repository`, `read_registry`, `write_registry`, `sudo`, `admin_mode`, `create_runner`, `manage_runner`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/personal_access_token#scopes PersonalAccessToken#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/personal_access_token#scopes PersonalAccessToken#scopes}
 
 ---
 
@@ -976,7 +969,21 @@ public readonly userId: number;
 
 The id of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/personal_access_token#user_id PersonalAccessToken#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/personal_access_token#user_id PersonalAccessToken#user_id}
+
+---
+
+##### `expiresAt`<sup>Optional</sup> <a name="expiresAt" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessTokenConfig.property.expiresAt"></a>
+
+```typescript
+public readonly expiresAt: string;
+```
+
+- *Type:* string
+
+The token expires at midnight UTC on that date. The date must be in the format YYYY-MM-DD.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/personal_access_token#expires_at PersonalAccessToken#expires_at}
 
 ---
 
@@ -988,7 +995,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/personal_access_token#id PersonalAccessToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/personal_access_token#id PersonalAccessToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

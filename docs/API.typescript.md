@@ -85,6 +85,7 @@ The following submodules are available:
 - [integrationMicrosoftTeams](./integrationMicrosoftTeams.typescript.md)
 - [integrationPipelinesEmail](./integrationPipelinesEmail.typescript.md)
 - [integrationSlack](./integrationSlack.typescript.md)
+- [integrationTelegram](./integrationTelegram.typescript.md)
 - [label](./label.typescript.md)
 - [pagesDomain](./pagesDomain.typescript.md)
 - [personalAccessToken](./personalAccessToken.typescript.md)

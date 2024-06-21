@@ -85,6 +85,7 @@ The following submodules are available:
 - [integrationMicrosoftTeams](./integrationMicrosoftTeams.go.md)
 - [integrationPipelinesEmail](./integrationPipelinesEmail.go.md)
 - [integrationSlack](./integrationSlack.go.md)
+- [integrationTelegram](./integrationTelegram.go.md)
 - [label](./label.go.md)
 - [pagesDomain](./pagesDomain.go.md)
 - [personalAccessToken](./personalAccessToken.go.md)

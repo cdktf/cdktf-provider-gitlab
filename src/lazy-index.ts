@@ -43,6 +43,7 @@ Object.defineProperty(exports, 'integrationMattermost', { get: function () { ret
 Object.defineProperty(exports, 'integrationMicrosoftTeams', { get: function () { return require('./integration-microsoft-teams'); } });
 Object.defineProperty(exports, 'integrationPipelinesEmail', { get: function () { return require('./integration-pipelines-email'); } });
 Object.defineProperty(exports, 'integrationSlack', { get: function () { return require('./integration-slack'); } });
+Object.defineProperty(exports, 'integrationTelegram', { get: function () { return require('./integration-telegram'); } });
 Object.defineProperty(exports, 'label', { get: function () { return require('./label'); } });
 Object.defineProperty(exports, 'pagesDomain', { get: function () { return require('./pages-domain'); } });
 Object.defineProperty(exports, 'personalAccessToken', { get: function () { return require('./personal-access-token'); } });

@@ -85,6 +85,7 @@ The following submodules are available:
 - [integrationMicrosoftTeams](./integrationMicrosoftTeams.java.md)
 - [integrationPipelinesEmail](./integrationPipelinesEmail.java.md)
 - [integrationSlack](./integrationSlack.java.md)
+- [integrationTelegram](./integrationTelegram.java.md)
 - [label](./label.java.md)
 - [pagesDomain](./pagesDomain.java.md)
 - [personalAccessToken](./personalAccessToken.java.md)

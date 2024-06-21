@@ -43,6 +43,7 @@ export * as integrationMattermost from './integration-mattermost';
 export * as integrationMicrosoftTeams from './integration-microsoft-teams';
 export * as integrationPipelinesEmail from './integration-pipelines-email';
 export * as integrationSlack from './integration-slack';
+export * as integrationTelegram from './integration-telegram';
 export * as label from './label';
 export * as pagesDomain from './pages-domain';
 export * as personalAccessToken from './personal-access-token';

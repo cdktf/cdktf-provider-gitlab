@@ -4,7 +4,7 @@
 
 ### GroupSamlLink <a name="GroupSamlLink" id="@cdktf/provider-gitlab.groupSamlLink.GroupSamlLink"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/group_saml_link gitlab_group_saml_link}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/group_saml_link gitlab_group_saml_link}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupSamlLink.GroupSamlLink.Initializer"></a>
 
@@ -24,7 +24,8 @@ groupSamlLink.GroupSamlLink(
   access_level: str,
   group: str,
   saml_group_name: str,
-  id: str = None
+  id: str = None,
+  member_role_id: typing.Union[int, float] = None
 )
 ```
 
@@ -42,7 +43,8 @@ groupSamlLink.GroupSamlLink(
 | <code><a href="#@cdktf/provider-gitlab.groupSamlLink.GroupSamlLink.Initializer.parameter.accessLevel">access_level</a></code> | <code>str</code> | Access level for members of the SAML group. Valid values are: `guest`, `reporter`, `developer`, `maintainer`, `owner`. |
 | <code><a href="#@cdktf/provider-gitlab.groupSamlLink.GroupSamlLink.Initializer.parameter.group">group</a></code> | <code>str</code> | The ID or path of the group to add the SAML Group Link to. |
 | <code><a href="#@cdktf/provider-gitlab.groupSamlLink.GroupSamlLink.Initializer.parameter.samlGroupName">saml_group_name</a></code> | <code>str</code> | The name of the SAML group. |
-| <code><a href="#@cdktf/provider-gitlab.groupSamlLink.GroupSamlLink.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/group_saml_link#id GroupSamlLink#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupSamlLink.GroupSamlLink.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/group_saml_link#id GroupSamlLink#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupSamlLink.GroupSamlLink.Initializer.parameter.memberRoleId">member_role_id</a></code> | <code>typing.Union[int, float]</code> | The ID of a custom member role. Only available for Ultimate instances. |
 
 ---
 
@@ -112,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Access level for members of the SAML group. Valid values are: `guest`, `reporter`, `developer`, `maintainer`, `owner`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/group_saml_link#access_level GroupSamlLink#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/group_saml_link#access_level GroupSamlLink#access_level}
 
 ---
 
@@ -122,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The ID or path of the group to add the SAML Group Link to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/group_saml_link#group GroupSamlLink#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/group_saml_link#group GroupSamlLink#group}
 
 ---
 
@@ -132,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The name of the SAML group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/group_saml_link#saml_group_name GroupSamlLink#saml_group_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/group_saml_link#saml_group_name GroupSamlLink#saml_group_name}
 
 ---
 
@@ -140,10 +142,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/group_saml_link#id GroupSamlLink#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/group_saml_link#id GroupSamlLink#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `member_role_id`<sup>Optional</sup> <a name="member_role_id" id="@cdktf/provider-gitlab.groupSamlLink.GroupSamlLink.Initializer.parameter.memberRoleId"></a>
+
+- *Type:* typing.Union[int, float]
+
+The ID of a custom member role. Only available for Ultimate instances.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/group_saml_link#member_role_id GroupSamlLink#member_role_id}
 
 ---
 
@@ -175,6 +187,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-gitlab.groupSamlLink.GroupSamlLink.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-gitlab.groupSamlLink.GroupSamlLink.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-gitlab.groupSamlLink.GroupSamlLink.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupSamlLink.GroupSamlLink.resetMemberRoleId">reset_member_role_id</a></code> | *No description.* |
 
 ---
 
@@ -509,6 +522,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def reset_id() -> None
 ```
 
+##### `reset_member_role_id` <a name="reset_member_role_id" id="@cdktf/provider-gitlab.groupSamlLink.GroupSamlLink.resetMemberRoleId"></a>
+
+```python
+def reset_member_role_id() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -623,7 +642,7 @@ The construct id used in the generated config for the GroupSamlLink to import.
 
 The id of the existing GroupSamlLink that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/group_saml_link#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/group_saml_link#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -656,10 +675,12 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0
 | <code><a href="#@cdktf/provider-gitlab.groupSamlLink.GroupSamlLink.property.accessLevelInput">access_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupSamlLink.GroupSamlLink.property.groupInput">group_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupSamlLink.GroupSamlLink.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupSamlLink.GroupSamlLink.property.memberRoleIdInput">member_role_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupSamlLink.GroupSamlLink.property.samlGroupNameInput">saml_group_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupSamlLink.GroupSamlLink.property.accessLevel">access_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupSamlLink.GroupSamlLink.property.group">group</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupSamlLink.GroupSamlLink.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupSamlLink.GroupSamlLink.property.memberRoleId">member_role_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupSamlLink.GroupSamlLink.property.samlGroupName">saml_group_name</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -836,6 +857,16 @@ id_input: str
 
 ---
 
+##### `member_role_id_input`<sup>Optional</sup> <a name="member_role_id_input" id="@cdktf/provider-gitlab.groupSamlLink.GroupSamlLink.property.memberRoleIdInput"></a>
+
+```python
+member_role_id_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `saml_group_name_input`<sup>Optional</sup> <a name="saml_group_name_input" id="@cdktf/provider-gitlab.groupSamlLink.GroupSamlLink.property.samlGroupNameInput"></a>
 
 ```python
@@ -873,6 +904,16 @@ id: str
 ```
 
 - *Type:* str
+
+---
+
+##### `member_role_id`<sup>Required</sup> <a name="member_role_id" id="@cdktf/provider-gitlab.groupSamlLink.GroupSamlLink.property.memberRoleId"></a>
+
+```python
+member_role_id: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
@@ -924,7 +965,8 @@ groupSamlLink.GroupSamlLinkConfig(
   access_level: str,
   group: str,
   saml_group_name: str,
-  id: str = None
+  id: str = None,
+  member_role_id: typing.Union[int, float] = None
 )
 ```
 
@@ -942,7 +984,8 @@ groupSamlLink.GroupSamlLinkConfig(
 | <code><a href="#@cdktf/provider-gitlab.groupSamlLink.GroupSamlLinkConfig.property.accessLevel">access_level</a></code> | <code>str</code> | Access level for members of the SAML group. Valid values are: `guest`, `reporter`, `developer`, `maintainer`, `owner`. |
 | <code><a href="#@cdktf/provider-gitlab.groupSamlLink.GroupSamlLinkConfig.property.group">group</a></code> | <code>str</code> | The ID or path of the group to add the SAML Group Link to. |
 | <code><a href="#@cdktf/provider-gitlab.groupSamlLink.GroupSamlLinkConfig.property.samlGroupName">saml_group_name</a></code> | <code>str</code> | The name of the SAML group. |
-| <code><a href="#@cdktf/provider-gitlab.groupSamlLink.GroupSamlLinkConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/group_saml_link#id GroupSamlLink#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupSamlLink.GroupSamlLinkConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/group_saml_link#id GroupSamlLink#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupSamlLink.GroupSamlLinkConfig.property.memberRoleId">member_role_id</a></code> | <code>typing.Union[int, float]</code> | The ID of a custom member role. Only available for Ultimate instances. |
 
 ---
 
@@ -1026,7 +1069,7 @@ access_level: str
 
 Access level for members of the SAML group. Valid values are: `guest`, `reporter`, `developer`, `maintainer`, `owner`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/group_saml_link#access_level GroupSamlLink#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/group_saml_link#access_level GroupSamlLink#access_level}
 
 ---
 
@@ -1040,7 +1083,7 @@ group: str
 
 The ID or path of the group to add the SAML Group Link to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/group_saml_link#group GroupSamlLink#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/group_saml_link#group GroupSamlLink#group}
 
 ---
 
@@ -1054,7 +1097,7 @@ saml_group_name: str
 
 The name of the SAML group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/group_saml_link#saml_group_name GroupSamlLink#saml_group_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/group_saml_link#saml_group_name GroupSamlLink#saml_group_name}
 
 ---
 
@@ -1066,10 +1109,24 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/group_saml_link#id GroupSamlLink#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/group_saml_link#id GroupSamlLink#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `member_role_id`<sup>Optional</sup> <a name="member_role_id" id="@cdktf/provider-gitlab.groupSamlLink.GroupSamlLinkConfig.property.memberRoleId"></a>
+
+```python
+member_role_id: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The ID of a custom member role. Only available for Ultimate instances.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/group_saml_link#member_role_id GroupSamlLink#member_role_id}
 
 ---
 

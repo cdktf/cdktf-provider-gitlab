@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/group_saml_link
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/group_saml_link
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,32 +15,38 @@ export interface GroupSamlLinkConfig extends cdktf.TerraformMetaArguments {
   /**
   * Access level for members of the SAML group. Valid values are: `guest`, `reporter`, `developer`, `maintainer`, `owner`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/group_saml_link#access_level GroupSamlLink#access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/group_saml_link#access_level GroupSamlLink#access_level}
   */
   readonly accessLevel: string;
   /**
   * The ID or path of the group to add the SAML Group Link to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/group_saml_link#group GroupSamlLink#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/group_saml_link#group GroupSamlLink#group}
   */
   readonly group: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/group_saml_link#id GroupSamlLink#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/group_saml_link#id GroupSamlLink#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * The ID of a custom member role. Only available for Ultimate instances.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/group_saml_link#member_role_id GroupSamlLink#member_role_id}
+  */
+  readonly memberRoleId?: number;
+  /**
   * The name of the SAML group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/group_saml_link#saml_group_name GroupSamlLink#saml_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/group_saml_link#saml_group_name GroupSamlLink#saml_group_name}
   */
   readonly samlGroupName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/group_saml_link gitlab_group_saml_link}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/group_saml_link gitlab_group_saml_link}
 */
 export class GroupSamlLink extends cdktf.TerraformResource {
 
@@ -56,7 +62,7 @@ export class GroupSamlLink extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GroupSamlLink resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GroupSamlLink to import
-  * @param importFromId The id of the existing GroupSamlLink that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/group_saml_link#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GroupSamlLink that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/group_saml_link#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GroupSamlLink to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +74,7 @@ export class GroupSamlLink extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/resources/group_saml_link gitlab_group_saml_link} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/group_saml_link gitlab_group_saml_link} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +85,7 @@ export class GroupSamlLink extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_saml_link',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.0.1',
+        providerVersion: '17.1.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,
@@ -93,6 +99,7 @@ export class GroupSamlLink extends cdktf.TerraformResource {
     this._accessLevel = config.accessLevel;
     this._group = config.group;
     this._id = config.id;
+    this._memberRoleId = config.memberRoleId;
     this._samlGroupName = config.samlGroupName;
   }
 
@@ -142,6 +149,22 @@ export class GroupSamlLink extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // member_role_id - computed: false, optional: true, required: false
+  private _memberRoleId?: number; 
+  public get memberRoleId() {
+    return this.getNumberAttribute('member_role_id');
+  }
+  public set memberRoleId(value: number) {
+    this._memberRoleId = value;
+  }
+  public resetMemberRoleId() {
+    this._memberRoleId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get memberRoleIdInput() {
+    return this._memberRoleId;
+  }
+
   // saml_group_name - computed: false, optional: false, required: true
   private _samlGroupName?: string; 
   public get samlGroupName() {
@@ -164,6 +187,7 @@ export class GroupSamlLink extends cdktf.TerraformResource {
       access_level: cdktf.stringToTerraform(this._accessLevel),
       group: cdktf.stringToTerraform(this._group),
       id: cdktf.stringToTerraform(this._id),
+      member_role_id: cdktf.numberToTerraform(this._memberRoleId),
       saml_group_name: cdktf.stringToTerraform(this._samlGroupName),
     };
   }
@@ -187,6 +211,12 @@ export class GroupSamlLink extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      member_role_id: {
+        value: cdktf.numberToHclTerraform(this._memberRoleId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       saml_group_name: {
         value: cdktf.stringToHclTerraform(this._samlGroupName),

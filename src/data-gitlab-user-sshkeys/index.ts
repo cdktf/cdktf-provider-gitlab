@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/data-sources/user_sshkeys
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/data-sources/user_sshkeys
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataGitlabUserSshkeysConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/data-sources/user_sshkeys#id DataGitlabUserSshkeys#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/data-sources/user_sshkeys#id DataGitlabUserSshkeys#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +22,13 @@ export interface DataGitlabUserSshkeysConfig extends cdktf.TerraformMetaArgument
   /**
   * ID of the user to get the SSH keys for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/data-sources/user_sshkeys#user_id DataGitlabUserSshkeys#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/data-sources/user_sshkeys#user_id DataGitlabUserSshkeys#user_id}
   */
   readonly userId?: number;
   /**
   * Username of the user to get the SSH keys for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/data-sources/user_sshkeys#username DataGitlabUserSshkeys#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/data-sources/user_sshkeys#username DataGitlabUserSshkeys#username}
   */
   readonly username?: string;
 }
@@ -134,7 +134,7 @@ export class DataGitlabUserSshkeysKeysList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/data-sources/user_sshkeys gitlab_user_sshkeys}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/data-sources/user_sshkeys gitlab_user_sshkeys}
 */
 export class DataGitlabUserSshkeys extends cdktf.TerraformDataSource {
 
@@ -150,7 +150,7 @@ export class DataGitlabUserSshkeys extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGitlabUserSshkeys resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabUserSshkeys to import
-  * @param importFromId The id of the existing DataGitlabUserSshkeys that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/data-sources/user_sshkeys#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabUserSshkeys that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/data-sources/user_sshkeys#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabUserSshkeys to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -162,7 +162,7 @@ export class DataGitlabUserSshkeys extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.0.1/docs/data-sources/user_sshkeys gitlab_user_sshkeys} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/data-sources/user_sshkeys gitlab_user_sshkeys} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -173,7 +173,7 @@ export class DataGitlabUserSshkeys extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_user_sshkeys',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.0.1',
+        providerVersion: '17.1.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,
