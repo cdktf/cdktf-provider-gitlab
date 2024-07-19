@@ -73,6 +73,7 @@ export * as projectMirror from './project-mirror';
 export * as projectProtectedEnvironment from './project-protected-environment';
 export * as projectPushRules from './project-push-rules';
 export * as projectRunnerEnablement from './project-runner-enablement';
+export * as projectSecurityPolicyAttachment from './project-security-policy-attachment';
 export * as projectShareGroup from './project-share-group';
 export * as projectTag from './project-tag';
 export * as projectVariable from './project-variable';

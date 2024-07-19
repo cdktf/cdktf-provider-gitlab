@@ -115,6 +115,7 @@ The following submodules are available:
 - [projectProtectedEnvironment](./projectProtectedEnvironment.typescript.md)
 - [projectPushRules](./projectPushRules.typescript.md)
 - [projectRunnerEnablement](./projectRunnerEnablement.typescript.md)
+- [projectSecurityPolicyAttachment](./projectSecurityPolicyAttachment.typescript.md)
 - [projectShareGroup](./projectShareGroup.typescript.md)
 - [projectTag](./projectTag.typescript.md)
 - [projectVariable](./projectVariable.typescript.md)

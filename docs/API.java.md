@@ -115,6 +115,7 @@ The following submodules are available:
 - [projectProtectedEnvironment](./projectProtectedEnvironment.java.md)
 - [projectPushRules](./projectPushRules.java.md)
 - [projectRunnerEnablement](./projectRunnerEnablement.java.md)
+- [projectSecurityPolicyAttachment](./projectSecurityPolicyAttachment.java.md)
 - [projectShareGroup](./projectShareGroup.java.md)
 - [projectTag](./projectTag.java.md)
 - [projectVariable](./projectVariable.java.md)

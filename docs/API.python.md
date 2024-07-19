@@ -115,6 +115,7 @@ The following submodules are available:
 - [projectProtectedEnvironment](./projectProtectedEnvironment.python.md)
 - [projectPushRules](./projectPushRules.python.md)
 - [projectRunnerEnablement](./projectRunnerEnablement.python.md)
+- [projectSecurityPolicyAttachment](./projectSecurityPolicyAttachment.python.md)
 - [projectShareGroup](./projectShareGroup.python.md)
 - [projectTag](./projectTag.python.md)
 - [projectVariable](./projectVariable.python.md)

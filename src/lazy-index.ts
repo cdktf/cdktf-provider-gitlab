@@ -73,6 +73,7 @@ Object.defineProperty(exports, 'projectMirror', { get: function () { return requ
 Object.defineProperty(exports, 'projectProtectedEnvironment', { get: function () { return require('./project-protected-environment'); } });
 Object.defineProperty(exports, 'projectPushRules', { get: function () { return require('./project-push-rules'); } });
 Object.defineProperty(exports, 'projectRunnerEnablement', { get: function () { return require('./project-runner-enablement'); } });
+Object.defineProperty(exports, 'projectSecurityPolicyAttachment', { get: function () { return require('./project-security-policy-attachment'); } });
 Object.defineProperty(exports, 'projectShareGroup', { get: function () { return require('./project-share-group'); } });
 Object.defineProperty(exports, 'projectTag', { get: function () { return require('./project-tag'); } });
 Object.defineProperty(exports, 'projectVariable', { get: function () { return require('./project-variable'); } });

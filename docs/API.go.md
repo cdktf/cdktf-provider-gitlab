@@ -115,6 +115,7 @@ The following submodules are available:
 - [projectProtectedEnvironment](./projectProtectedEnvironment.go.md)
 - [projectPushRules](./projectPushRules.go.md)
 - [projectRunnerEnablement](./projectRunnerEnablement.go.md)
+- [projectSecurityPolicyAttachment](./projectSecurityPolicyAttachment.go.md)
 - [projectShareGroup](./projectShareGroup.go.md)
 - [projectTag](./projectTag.go.md)
 - [projectVariable](./projectVariable.go.md)
