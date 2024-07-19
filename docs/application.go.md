@@ -4,12 +4,12 @@
 
 ### Application <a name="Application" id="@cdktf/provider-gitlab.application.Application"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/application gitlab_application}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/application gitlab_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.application.Application.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/application"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/application"
 
 application.NewApplication(scope Construct, id *string, config ApplicationConfig) Application
 ```
@@ -385,7 +385,7 @@ func ResetConfidential()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.application.Application.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/application"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/application"
 
 application.Application_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.application.Application.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/application"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/application"
 
 application.Application_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ application.Application_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.application.Application.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/application"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/application"
 
 application.Application_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ application.Application_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.application.Application.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/application"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/application"
 
 application.Application_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the Application to import.
 
 The id of the existing Application that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -795,7 +795,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.application.ApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/application"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/application"
 
 &application.ApplicationConfig {
 	Connection: interface{},
@@ -910,7 +910,7 @@ Name *string
 
 Name of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/application#name Application#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/application#name Application#name}
 
 ---
 
@@ -924,7 +924,7 @@ RedirectUrl *string
 
 The URL gitlab should send the user to after authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/application#redirect_url Application#redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/application#redirect_url Application#redirect_url}
 
 ---
 
@@ -941,7 +941,7 @@ Scopes of the application.
 Use "openid" if you plan to use this as an oidc authentication application. Valid options are: `api`, `read_api`, `read_user`, `read_repository`, `write_repository`, `read_registry`, `write_registry`, `sudo`, `admin_mode`, `openid`, `profile`, `email`.
 This is only populated when creating a new application. This attribute is not available for imported resources
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/application#scopes Application#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/application#scopes Application#scopes}
 
 ---
 
@@ -957,7 +957,7 @@ The application is used where the client secret can be kept confidential.
 
 Native mobile apps and Single Page Apps are considered non-confidential. Defaults to true if not supplied
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/application#confidential Application#confidential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/application#confidential Application#confidential}
 
 ---
 

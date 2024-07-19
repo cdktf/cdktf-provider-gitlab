@@ -4,12 +4,12 @@
 
 ### SystemHook <a name="SystemHook" id="@cdktf/provider-gitlab.systemHook.SystemHook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/system_hook gitlab_system_hook}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/system_hook gitlab_system_hook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.systemHook.SystemHook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/systemhook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/systemhook"
 
 systemhook.NewSystemHook(scope Construct, id *string, config SystemHookConfig) SystemHook
 ```
@@ -427,7 +427,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.systemHook.SystemHook.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/systemhook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/systemhook"
 
 systemhook.SystemHook_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.systemHook.SystemHook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/systemhook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/systemhook"
 
 systemhook.SystemHook_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ systemhook.SystemHook_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.systemHook.SystemHook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/systemhook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/systemhook"
 
 systemhook.SystemHook_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ systemhook.SystemHook_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.systemHook.SystemHook.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/systemhook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/systemhook"
 
 systemhook.SystemHook_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +516,7 @@ The construct id used in the generated config for the SystemHook to import.
 
 The id of the existing SystemHook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/system_hook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/system_hook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -903,7 +903,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.systemHook.SystemHookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/systemhook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/systemhook"
 
 &systemhook.SystemHookConfig {
 	Connection: interface{},
@@ -937,7 +937,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/systemhook"
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHookConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHookConfig.property.url">Url</a></code> | <code>*string</code> | The hook URL. |
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHookConfig.property.enableSslVerification">EnableSslVerification</a></code> | <code>interface{}</code> | Do SSL verification when triggering the hook. |
-| <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/system_hook#id SystemHook#id}. |
+| <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/system_hook#id SystemHook#id}. |
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHookConfig.property.mergeRequestsEvents">MergeRequestsEvents</a></code> | <code>interface{}</code> | Trigger hook on merge requests events. |
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHookConfig.property.pushEvents">PushEvents</a></code> | <code>interface{}</code> | When true, the hook fires on push events. |
 | <code><a href="#@cdktf/provider-gitlab.systemHook.SystemHookConfig.property.repositoryUpdateEvents">RepositoryUpdateEvents</a></code> | <code>interface{}</code> | Trigger hook on repository update events. |
@@ -1026,7 +1026,7 @@ Url *string
 
 The hook URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/system_hook#url SystemHook#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/system_hook#url SystemHook#url}
 
 ---
 
@@ -1040,7 +1040,7 @@ EnableSslVerification interface{}
 
 Do SSL verification when triggering the hook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/system_hook#enable_ssl_verification SystemHook#enable_ssl_verification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/system_hook#enable_ssl_verification SystemHook#enable_ssl_verification}
 
 ---
 
@@ -1052,7 +1052,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/system_hook#id SystemHook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/system_hook#id SystemHook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1069,7 +1069,7 @@ MergeRequestsEvents interface{}
 
 Trigger hook on merge requests events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/system_hook#merge_requests_events SystemHook#merge_requests_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/system_hook#merge_requests_events SystemHook#merge_requests_events}
 
 ---
 
@@ -1083,7 +1083,7 @@ PushEvents interface{}
 
 When true, the hook fires on push events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/system_hook#push_events SystemHook#push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/system_hook#push_events SystemHook#push_events}
 
 ---
 
@@ -1097,7 +1097,7 @@ RepositoryUpdateEvents interface{}
 
 Trigger hook on repository update events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/system_hook#repository_update_events SystemHook#repository_update_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/system_hook#repository_update_events SystemHook#repository_update_events}
 
 ---
 
@@ -1111,7 +1111,7 @@ TagPushEvents interface{}
 
 When true, the hook fires on new tags being pushed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/system_hook#tag_push_events SystemHook#tag_push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/system_hook#tag_push_events SystemHook#tag_push_events}
 
 ---
 
@@ -1127,7 +1127,7 @@ Secret token to validate received payloads;
 
 this isn’t returned in the response. This attribute is not available for imported resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1.0/docs/resources/system_hook#token SystemHook#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/system_hook#token SystemHook#token}
 
 ---
 

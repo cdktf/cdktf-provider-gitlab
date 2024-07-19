@@ -115,6 +115,7 @@ The following submodules are available:
 - [projectProtectedEnvironment](./projectProtectedEnvironment.csharp.md)
 - [projectPushRules](./projectPushRules.csharp.md)
 - [projectRunnerEnablement](./projectRunnerEnablement.csharp.md)
+- [projectSecurityPolicyAttachment](./projectSecurityPolicyAttachment.csharp.md)
 - [projectShareGroup](./projectShareGroup.csharp.md)
 - [projectTag](./projectTag.csharp.md)
 - [projectVariable](./projectVariable.csharp.md)
