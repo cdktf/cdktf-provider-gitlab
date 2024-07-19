@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.servicePipelinesEmail.ServicePipelinesEmail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicepipelinesemail"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/servicepipelinesemail"
 
 servicepipelinesemail.NewServicePipelinesEmail(scope Construct, id *string, config ServicePipelinesEmailConfig) ServicePipelinesEmail
 ```
@@ -399,7 +399,7 @@ func ResetNotifyOnlyBrokenPipelines()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.servicePipelinesEmail.ServicePipelinesEmail.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicepipelinesemail"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/servicepipelinesemail"
 
 servicepipelinesemail.ServicePipelinesEmail_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.servicePipelinesEmail.ServicePipelinesEmail.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicepipelinesemail"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/servicepipelinesemail"
 
 servicepipelinesemail.ServicePipelinesEmail_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ servicepipelinesemail.ServicePipelinesEmail_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.servicePipelinesEmail.ServicePipelinesEmail.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicepipelinesemail"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/servicepipelinesemail"
 
 servicepipelinesemail.ServicePipelinesEmail_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ servicepipelinesemail.ServicePipelinesEmail_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.servicePipelinesEmail.ServicePipelinesEmail.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicepipelinesemail"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/servicepipelinesemail"
 
 servicepipelinesemail.ServicePipelinesEmail_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -798,7 +798,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.servicePipelinesEmail.ServicePipelinesEmailConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicepipelinesemail"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/servicepipelinesemail"
 
 &servicepipelinesemail.ServicePipelinesEmailConfig {
 	Connection: interface{},
