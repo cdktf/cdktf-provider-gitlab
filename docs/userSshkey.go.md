@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.userSshkey.UserSshkey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/usersshkey"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/usersshkey"
 
 usersshkey.NewUserSshkey(scope Construct, id *string, config UserSshkeyConfig) UserSshkey
 ```
@@ -399,7 +399,7 @@ func ResetUserId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.userSshkey.UserSshkey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/usersshkey"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/usersshkey"
 
 usersshkey.UserSshkey_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.userSshkey.UserSshkey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/usersshkey"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/usersshkey"
 
 usersshkey.UserSshkey_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ usersshkey.UserSshkey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.userSshkey.UserSshkey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/usersshkey"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/usersshkey"
 
 usersshkey.UserSshkey_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ usersshkey.UserSshkey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.userSshkey.UserSshkey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/usersshkey"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/usersshkey"
 
 usersshkey.UserSshkey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.userSshkey.UserSshkeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/usersshkey"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/usersshkey"
 
 &usersshkey.UserSshkeyConfig {
 	Connection: interface{},
