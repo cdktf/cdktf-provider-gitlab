@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/group_project_file_template
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_project_file_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,18 +11,18 @@ export interface GroupProjectFileTemplateConfig extends cdktf.TerraformMetaArgum
   * The ID of the project that will be used for file templates. This project must be the direct
   * 				child of the project defined by the group_id
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/group_project_file_template#file_template_project_id GroupProjectFileTemplate#file_template_project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_project_file_template#file_template_project_id GroupProjectFileTemplate#file_template_project_id}
   */
   readonly fileTemplateProjectId: number;
   /**
   * The ID of the group that will use the file template project. This group must be the direct
   *                 parent of the project defined by project_id
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/group_project_file_template#group_id GroupProjectFileTemplate#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_project_file_template#group_id GroupProjectFileTemplate#group_id}
   */
   readonly groupId: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/group_project_file_template#id GroupProjectFileTemplate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_project_file_template#id GroupProjectFileTemplate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -36,7 +31,7 @@ export interface GroupProjectFileTemplateConfig extends cdktf.TerraformMetaArgum
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/group_project_file_template gitlab_group_project_file_template}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_project_file_template gitlab_group_project_file_template}
 */
 export class GroupProjectFileTemplate extends cdktf.TerraformResource {
 
@@ -52,7 +47,7 @@ export class GroupProjectFileTemplate extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GroupProjectFileTemplate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GroupProjectFileTemplate to import
-  * @param importFromId The id of the existing GroupProjectFileTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/group_project_file_template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GroupProjectFileTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_project_file_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GroupProjectFileTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -64,7 +59,7 @@ export class GroupProjectFileTemplate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.2.0/docs/resources/group_project_file_template gitlab_group_project_file_template} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_project_file_template gitlab_group_project_file_template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -75,7 +70,7 @@ export class GroupProjectFileTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_project_file_template',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.2.0',
+        providerVersion: '17.3.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,
