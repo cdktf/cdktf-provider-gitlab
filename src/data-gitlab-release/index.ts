@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/data-sources/release
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/release
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +10,19 @@ export interface DataGitlabReleaseConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID or URL-encoded path of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/data-sources/release#project_id DataGitlabRelease#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/release#project_id DataGitlabRelease#project_id}
   */
   readonly projectId: string;
   /**
   * The Git tag the release is associated with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/data-sources/release#tag_name DataGitlabRelease#tag_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/release#tag_name DataGitlabRelease#tag_name}
   */
   readonly tagName: string;
   /**
   * assets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/data-sources/release#assets DataGitlabRelease#assets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/release#assets DataGitlabRelease#assets}
   */
   readonly assets?: DataGitlabReleaseAssets;
 }
@@ -227,13 +222,13 @@ export interface DataGitlabReleaseAssets {
   /**
   * links block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/data-sources/release#links DataGitlabRelease#links}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/release#links DataGitlabRelease#links}
   */
   readonly links?: DataGitlabReleaseAssetsLinks[] | cdktf.IResolvable;
   /**
   * sources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/data-sources/release#sources DataGitlabRelease#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/release#sources DataGitlabRelease#sources}
   */
   readonly sources?: DataGitlabReleaseAssetsSources[] | cdktf.IResolvable;
 }
@@ -361,7 +356,7 @@ export class DataGitlabReleaseAssetsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/data-sources/release gitlab_release}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/release gitlab_release}
 */
 export class DataGitlabRelease extends cdktf.TerraformDataSource {
 
@@ -377,7 +372,7 @@ export class DataGitlabRelease extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGitlabRelease resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabRelease to import
-  * @param importFromId The id of the existing DataGitlabRelease that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/data-sources/release#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabRelease that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/release#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabRelease to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -389,7 +384,7 @@ export class DataGitlabRelease extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/data-sources/release gitlab_release} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/release gitlab_release} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -400,7 +395,7 @@ export class DataGitlabRelease extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_release',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.3.0',
+        providerVersion: '17.3.1',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,

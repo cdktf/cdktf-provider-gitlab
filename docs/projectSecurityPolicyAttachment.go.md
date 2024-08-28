@@ -4,12 +4,12 @@
 
 ### ProjectSecurityPolicyAttachment <a name="ProjectSecurityPolicyAttachment" id="@cdktf/provider-gitlab.projectSecurityPolicyAttachment.ProjectSecurityPolicyAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/project_security_policy_attachment gitlab_project_security_policy_attachment}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_security_policy_attachment gitlab_project_security_policy_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectSecurityPolicyAttachment.ProjectSecurityPolicyAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectsecuritypolicyattachment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectsecuritypolicyattachment"
 
 projectsecuritypolicyattachment.NewProjectSecurityPolicyAttachment(scope Construct, id *string, config ProjectSecurityPolicyAttachmentConfig) ProjectSecurityPolicyAttachment
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectSecurityPolicyAttachment.ProjectSecurityPolicyAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectsecuritypolicyattachment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectsecuritypolicyattachment"
 
 projectsecuritypolicyattachment.ProjectSecurityPolicyAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectSecurityPolicyAttachment.ProjectSecurityPolicyAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectsecuritypolicyattachment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectsecuritypolicyattachment"
 
 projectsecuritypolicyattachment.ProjectSecurityPolicyAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ projectsecuritypolicyattachment.ProjectSecurityPolicyAttachment_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectSecurityPolicyAttachment.ProjectSecurityPolicyAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectsecuritypolicyattachment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectsecuritypolicyattachment"
 
 projectsecuritypolicyattachment.ProjectSecurityPolicyAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ projectsecuritypolicyattachment.ProjectSecurityPolicyAttachment_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectSecurityPolicyAttachment.ProjectSecurityPolicyAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectsecuritypolicyattachment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectsecuritypolicyattachment"
 
 projectsecuritypolicyattachment.ProjectSecurityPolicyAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the ProjectSecurityPolicyAttac
 
 The id of the existing ProjectSecurityPolicyAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/project_security_policy_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_security_policy_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectSecurityPolicyAttachment.ProjectSecurityPolicyAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectsecuritypolicyattachment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectsecuritypolicyattachment"
 
 &projectsecuritypolicyattachment.ProjectSecurityPolicyAttachmentConfig {
 	Connection: interface{},
@@ -855,7 +855,7 @@ PolicyProject *string
 
 The ID or Full Path of the security policy project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/project_security_policy_attachment#policy_project ProjectSecurityPolicyAttachment#policy_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_security_policy_attachment#policy_project ProjectSecurityPolicyAttachment#policy_project}
 
 ---
 
@@ -869,7 +869,7 @@ Project *string
 
 The ID or Full Path of the project which will have the security policy project assigned to it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/project_security_policy_attachment#project ProjectSecurityPolicyAttachment#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_security_policy_attachment#project ProjectSecurityPolicyAttachment#project}
 
 ---
 

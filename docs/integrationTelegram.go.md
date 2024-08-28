@@ -4,12 +4,12 @@
 
 ### IntegrationTelegram <a name="IntegrationTelegram" id="@cdktf/provider-gitlab.integrationTelegram.IntegrationTelegram"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/integration_telegram gitlab_integration_telegram}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_telegram gitlab_integration_telegram}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.integrationTelegram.IntegrationTelegram.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/integrationtelegram"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationtelegram"
 
 integrationtelegram.NewIntegrationTelegram(scope Construct, id *string, config IntegrationTelegramConfig) IntegrationTelegram
 ```
@@ -392,7 +392,7 @@ func ResetNotifyOnlyBrokenPipelines()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.integrationTelegram.IntegrationTelegram.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/integrationtelegram"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationtelegram"
 
 integrationtelegram.IntegrationTelegram_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.integrationTelegram.IntegrationTelegram.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/integrationtelegram"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationtelegram"
 
 integrationtelegram.IntegrationTelegram_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ integrationtelegram.IntegrationTelegram_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.integrationTelegram.IntegrationTelegram.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/integrationtelegram"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationtelegram"
 
 integrationtelegram.IntegrationTelegram_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ integrationtelegram.IntegrationTelegram_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.integrationTelegram.IntegrationTelegram.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/integrationtelegram"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationtelegram"
 
 integrationtelegram.IntegrationTelegram_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the IntegrationTelegram to imp
 
 The id of the existing IntegrationTelegram that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/integration_telegram#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_telegram#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1000,7 +1000,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.integrationTelegram.IntegrationTelegramConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/integrationtelegram"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationtelegram"
 
 &integrationtelegram.IntegrationTelegramConfig {
 	Connection: interface{},
@@ -1135,7 +1135,7 @@ ConfidentialIssuesEvents interface{}
 
 Enable notifications for confidential issues events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/integration_telegram#confidential_issues_events IntegrationTelegram#confidential_issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_telegram#confidential_issues_events IntegrationTelegram#confidential_issues_events}
 
 ---
 
@@ -1149,7 +1149,7 @@ ConfidentialNoteEvents interface{}
 
 Enable notifications for confidential note events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/integration_telegram#confidential_note_events IntegrationTelegram#confidential_note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_telegram#confidential_note_events IntegrationTelegram#confidential_note_events}
 
 ---
 
@@ -1163,7 +1163,7 @@ IssuesEvents interface{}
 
 Enable notifications for issues events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/integration_telegram#issues_events IntegrationTelegram#issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_telegram#issues_events IntegrationTelegram#issues_events}
 
 ---
 
@@ -1177,7 +1177,7 @@ MergeRequestsEvents interface{}
 
 Enable notifications for merge requests events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/integration_telegram#merge_requests_events IntegrationTelegram#merge_requests_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_telegram#merge_requests_events IntegrationTelegram#merge_requests_events}
 
 ---
 
@@ -1191,7 +1191,7 @@ NoteEvents interface{}
 
 Enable notifications for note events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/integration_telegram#note_events IntegrationTelegram#note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_telegram#note_events IntegrationTelegram#note_events}
 
 ---
 
@@ -1205,7 +1205,7 @@ PipelineEvents interface{}
 
 Enable notifications for pipeline events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/integration_telegram#pipeline_events IntegrationTelegram#pipeline_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_telegram#pipeline_events IntegrationTelegram#pipeline_events}
 
 ---
 
@@ -1219,7 +1219,7 @@ Project *string
 
 The ID or full path of the project to integrate with Telegram.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/integration_telegram#project IntegrationTelegram#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_telegram#project IntegrationTelegram#project}
 
 ---
 
@@ -1233,7 +1233,7 @@ PushEvents interface{}
 
 Enable notifications for push events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/integration_telegram#push_events IntegrationTelegram#push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_telegram#push_events IntegrationTelegram#push_events}
 
 ---
 
@@ -1247,7 +1247,7 @@ Room *string
 
 Unique identifier for the target chat or the username of the target channel (in the format `@channelusername`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/integration_telegram#room IntegrationTelegram#room}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_telegram#room IntegrationTelegram#room}
 
 ---
 
@@ -1261,7 +1261,7 @@ TagPushEvents interface{}
 
 Enable notifications for tag push events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/integration_telegram#tag_push_events IntegrationTelegram#tag_push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_telegram#tag_push_events IntegrationTelegram#tag_push_events}
 
 ---
 
@@ -1275,7 +1275,7 @@ Token *string
 
 The Telegram bot token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/integration_telegram#token IntegrationTelegram#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_telegram#token IntegrationTelegram#token}
 
 ---
 
@@ -1289,7 +1289,7 @@ WikiPageEvents interface{}
 
 Enable notifications for wiki page events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/integration_telegram#wiki_page_events IntegrationTelegram#wiki_page_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_telegram#wiki_page_events IntegrationTelegram#wiki_page_events}
 
 ---
 
@@ -1303,7 +1303,7 @@ BranchesToBeNotified *string
 
 Branches to send notifications for (introduced in GitLab 16.5). Update of this attribute was not supported before Gitlab 16.11 due to API bug. Valid options are `all`, `default`, `protected`, `default_and_protected`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/integration_telegram#branches_to_be_notified IntegrationTelegram#branches_to_be_notified}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_telegram#branches_to_be_notified IntegrationTelegram#branches_to_be_notified}
 
 ---
 
@@ -1317,7 +1317,7 @@ NotifyOnlyBrokenPipelines interface{}
 
 Send notifications for broken pipelines.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/integration_telegram#notify_only_broken_pipelines IntegrationTelegram#notify_only_broken_pipelines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_telegram#notify_only_broken_pipelines IntegrationTelegram#notify_only_broken_pipelines}
 
 ---
 

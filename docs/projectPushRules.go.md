@@ -4,12 +4,12 @@
 
 ### ProjectPushRulesA <a name="ProjectPushRulesA" id="@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/project_push_rules gitlab_project_push_rules}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules gitlab_project_push_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectpushrules"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectpushrules"
 
 projectpushrules.NewProjectPushRulesA(scope Construct, id *string, config ProjectPushRulesAConfig) ProjectPushRulesA
 ```
@@ -462,7 +462,7 @@ func ResetRejectUnsignedCommits()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectpushrules"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectpushrules"
 
 projectpushrules.ProjectPushRulesA_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectpushrules"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectpushrules"
 
 projectpushrules.ProjectPushRulesA_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ projectpushrules.ProjectPushRulesA_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectpushrules"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectpushrules"
 
 projectpushrules.ProjectPushRulesA_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ projectpushrules.ProjectPushRulesA_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectpushrules"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectpushrules"
 
 projectpushrules.ProjectPushRulesA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -551,7 +551,7 @@ The construct id used in the generated config for the ProjectPushRulesA to impor
 
 The id of the existing ProjectPushRulesA that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/project_push_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1048,7 +1048,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectpushrules"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectpushrules"
 
 &projectpushrules.ProjectPushRulesAConfig {
 	Connection: interface{},
@@ -1181,7 +1181,7 @@ Project *string
 
 The ID or URL-encoded path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/project_push_rules#project ProjectPushRulesA#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#project ProjectPushRulesA#project}
 
 ---
 
@@ -1195,7 +1195,7 @@ AuthorEmailRegex *string
 
 All commit author emails must match this regex, e.g. `@my-company.com$`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/project_push_rules#author_email_regex ProjectPushRulesA#author_email_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#author_email_regex ProjectPushRulesA#author_email_regex}
 
 ---
 
@@ -1209,7 +1209,7 @@ BranchNameRegex *string
 
 All branch names must match this regex, e.g. `(feature|hotfix)\/*`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/project_push_rules#branch_name_regex ProjectPushRulesA#branch_name_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#branch_name_regex ProjectPushRulesA#branch_name_regex}
 
 ---
 
@@ -1223,7 +1223,7 @@ CommitCommitterCheck interface{}
 
 Users can only push commits to this repository that were committed with one of their own verified emails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/project_push_rules#commit_committer_check ProjectPushRulesA#commit_committer_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#commit_committer_check ProjectPushRulesA#commit_committer_check}
 
 ---
 
@@ -1237,7 +1237,7 @@ CommitCommitterNameCheck interface{}
 
 Users can only push commits to this repository if the commit author name is consistent with their GitLab account name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/project_push_rules#commit_committer_name_check ProjectPushRulesA#commit_committer_name_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#commit_committer_name_check ProjectPushRulesA#commit_committer_name_check}
 
 ---
 
@@ -1251,7 +1251,7 @@ CommitMessageNegativeRegex *string
 
 No commit message is allowed to match this regex, e.g. `ssh\:\/\/`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/project_push_rules#commit_message_negative_regex ProjectPushRulesA#commit_message_negative_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#commit_message_negative_regex ProjectPushRulesA#commit_message_negative_regex}
 
 ---
 
@@ -1265,7 +1265,7 @@ CommitMessageRegex *string
 
 All commit messages must match this regex, e.g. `Fixed \d+\..*`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/project_push_rules#commit_message_regex ProjectPushRulesA#commit_message_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#commit_message_regex ProjectPushRulesA#commit_message_regex}
 
 ---
 
@@ -1279,7 +1279,7 @@ DenyDeleteTag interface{}
 
 Deny deleting a tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/project_push_rules#deny_delete_tag ProjectPushRulesA#deny_delete_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#deny_delete_tag ProjectPushRulesA#deny_delete_tag}
 
 ---
 
@@ -1293,7 +1293,7 @@ FileNameRegex *string
 
 All committed filenames must not match this regex, e.g. `(jar|exe)$`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/project_push_rules#file_name_regex ProjectPushRulesA#file_name_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#file_name_regex ProjectPushRulesA#file_name_regex}
 
 ---
 
@@ -1307,7 +1307,7 @@ MaxFileSize *f64
 
 Maximum file size (MB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/project_push_rules#max_file_size ProjectPushRulesA#max_file_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#max_file_size ProjectPushRulesA#max_file_size}
 
 ---
 
@@ -1321,7 +1321,7 @@ MemberCheck interface{}
 
 Restrict commits by author (email) to existing GitLab users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/project_push_rules#member_check ProjectPushRulesA#member_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#member_check ProjectPushRulesA#member_check}
 
 ---
 
@@ -1335,7 +1335,7 @@ PreventSecrets interface{}
 
 GitLab will reject any files that are likely to contain secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/project_push_rules#prevent_secrets ProjectPushRulesA#prevent_secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#prevent_secrets ProjectPushRulesA#prevent_secrets}
 
 ---
 
@@ -1349,7 +1349,7 @@ RejectUnsignedCommits interface{}
 
 Reject commit when it’s not signed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/project_push_rules#reject_unsigned_commits ProjectPushRulesA#reject_unsigned_commits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#reject_unsigned_commits ProjectPushRulesA#reject_unsigned_commits}
 
 ---
 

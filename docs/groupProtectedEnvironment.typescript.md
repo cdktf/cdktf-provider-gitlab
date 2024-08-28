@@ -4,7 +4,7 @@
 
 ### GroupProtectedEnvironment <a name="GroupProtectedEnvironment" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_protected_environment gitlab_group_protected_environment}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_protected_environment gitlab_group_protected_environment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironment.Initializer"></a>
 
@@ -500,7 +500,7 @@ The construct id used in the generated config for the GroupProtectedEnvironment 
 
 The id of the existing GroupProtectedEnvironment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_protected_environment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_protected_environment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -808,7 +808,7 @@ const groupProtectedEnvironmentApprovalRules: groupProtectedEnvironment.GroupPro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRules.property.accessLevel">accessLevel</a></code> | <code>string</code> | Levels of access allowed to approve a deployment to this protected environment. Valid values are `developer`, `maintainer`. |
+| <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRules.property.accessLevel">accessLevel</a></code> | <code>string</code> | Levels of access allowed to approve a deployment to this protected environment. |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRules.property.groupId">groupId</a></code> | <code>number</code> | The ID of the group allowed to approve a deployment to this protected environment. |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRules.property.groupInheritanceType">groupInheritanceType</a></code> | <code>number</code> | Group inheritance allows access rules to take inherited group membership into account. |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentApprovalRules.property.requiredApprovals">requiredApprovals</a></code> | <code>number</code> | The number of approval required to allow deployment to this protected environment. This is mutually exclusive with user_id. |
@@ -824,9 +824,11 @@ public readonly accessLevel: string;
 
 - *Type:* string
 
-Levels of access allowed to approve a deployment to this protected environment. Valid values are `developer`, `maintainer`.
+Levels of access allowed to approve a deployment to this protected environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_protected_environment#access_level GroupProtectedEnvironment#access_level}
+Mutually exclusive with `user_id` and `group_id`. Valid values are `developer`, `maintainer`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_protected_environment#access_level GroupProtectedEnvironment#access_level}
 
 ---
 
@@ -840,9 +842,9 @@ public readonly groupId: number;
 
 The ID of the group allowed to approve a deployment to this protected environment.
 
-TThe group must be a sub-group under the given group. This is mutually exclusive with user_id.
+TThe group must be a sub-group under the given group. Mutually exclusive with `access_level` and `user_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_protected_environment#group_id GroupProtectedEnvironment#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_protected_environment#group_id GroupProtectedEnvironment#group_id}
 
 ---
 
@@ -858,7 +860,7 @@ Group inheritance allows access rules to take inherited group membership into ac
 
 Valid values are `0`, `1`. `0` => Direct group membership only, `1` => All inherited groups. Default: `0`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_protected_environment#group_inheritance_type GroupProtectedEnvironment#group_inheritance_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_protected_environment#group_inheritance_type GroupProtectedEnvironment#group_inheritance_type}
 
 ---
 
@@ -872,7 +874,7 @@ public readonly requiredApprovals: number;
 
 The number of approval required to allow deployment to this protected environment. This is mutually exclusive with user_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_protected_environment#required_approvals GroupProtectedEnvironment#required_approvals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_protected_environment#required_approvals GroupProtectedEnvironment#required_approvals}
 
 ---
 
@@ -886,9 +888,9 @@ public readonly userId: number;
 
 The ID of the user allowed to approve a deployment to this protected environment.
 
-The user must be a member of the group with Maintainer role or higher. This is mutually exclusive with group_id and required_approvals.
+The user must be a member of the group with Maintainer role or higher. Mutually exclusive with `access_level` and `group_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_protected_environment#user_id GroupProtectedEnvironment#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_protected_environment#user_id GroupProtectedEnvironment#user_id}
 
 ---
 
@@ -1000,7 +1002,9 @@ public readonly deployAccessLevels: IResolvable | GroupProtectedEnvironmentDeplo
 
 Array of access levels allowed to deploy, with each described by a hash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_protected_environment#deploy_access_levels GroupProtectedEnvironment#deploy_access_levels}
+Elements in the `deploy_access_levels` should be one of `user_id`, `group_id` or `access_level`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_protected_environment#deploy_access_levels GroupProtectedEnvironment#deploy_access_levels}
 
 ---
 
@@ -1014,7 +1018,7 @@ public readonly environment: string;
 
 The deployment tier of the environment.  Valid values are `production`, `staging`, `testing`, `development`, `other`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_protected_environment#environment GroupProtectedEnvironment#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_protected_environment#environment GroupProtectedEnvironment#environment}
 
 ---
 
@@ -1028,7 +1032,7 @@ public readonly group: string;
 
 The ID or full path of the group which the protected environment is created against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_protected_environment#group GroupProtectedEnvironment#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_protected_environment#group GroupProtectedEnvironment#group}
 
 ---
 
@@ -1042,7 +1046,9 @@ public readonly approvalRules: IResolvable | GroupProtectedEnvironmentApprovalRu
 
 Array of approval rules to deploy, with each described by a hash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_protected_environment#approval_rules GroupProtectedEnvironment#approval_rules}
+Elements in the `approval_rules` should be one of `user_id`, `group_id` or `access_level`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_protected_environment#approval_rules GroupProtectedEnvironment#approval_rules}
 
 ---
 
@@ -1060,7 +1066,7 @@ const groupProtectedEnvironmentDeployAccessLevels: groupProtectedEnvironment.Gro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevels.property.accessLevel">accessLevel</a></code> | <code>string</code> | Levels of access required to deploy to this protected environment. Valid values are `developer`, `maintainer`. |
+| <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevels.property.accessLevel">accessLevel</a></code> | <code>string</code> | Levels of access required to deploy to this protected environment. |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevels.property.groupId">groupId</a></code> | <code>number</code> | The ID of the group allowed to deploy to this protected environment. |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevels.property.groupInheritanceType">groupInheritanceType</a></code> | <code>number</code> | Group inheritance allows deploy access levels to take inherited group membership into account. |
 | <code><a href="#@cdktf/provider-gitlab.groupProtectedEnvironment.GroupProtectedEnvironmentDeployAccessLevels.property.userId">userId</a></code> | <code>number</code> | The ID of the user allowed to deploy to this protected environment. |
@@ -1075,9 +1081,11 @@ public readonly accessLevel: string;
 
 - *Type:* string
 
-Levels of access required to deploy to this protected environment. Valid values are `developer`, `maintainer`.
+Levels of access required to deploy to this protected environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_protected_environment#access_level GroupProtectedEnvironment#access_level}
+Mutually exclusive with `user_id` and `group_id`. Valid values are `developer`, `maintainer`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_protected_environment#access_level GroupProtectedEnvironment#access_level}
 
 ---
 
@@ -1091,9 +1099,9 @@ public readonly groupId: number;
 
 The ID of the group allowed to deploy to this protected environment.
 
-The group must be a sub-group under the given group.
+The group must be a sub-group under the given group. Mutually exclusive with `access_level` and `user_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_protected_environment#group_id GroupProtectedEnvironment#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_protected_environment#group_id GroupProtectedEnvironment#group_id}
 
 ---
 
@@ -1109,7 +1117,7 @@ Group inheritance allows deploy access levels to take inherited group membership
 
 Valid values are `0`, `1`. `0` => Direct group membership only, `1` => All inherited groups. Default: `0`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_protected_environment#group_inheritance_type GroupProtectedEnvironment#group_inheritance_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_protected_environment#group_inheritance_type GroupProtectedEnvironment#group_inheritance_type}
 
 ---
 
@@ -1123,9 +1131,9 @@ public readonly userId: number;
 
 The ID of the user allowed to deploy to this protected environment.
 
-The user must be a member of the group with Maintainer role or higher.
+The user must be a member of the group with Maintainer role or higher. Mutually exclusive with `access_level` and `group_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_protected_environment#user_id GroupProtectedEnvironment#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_protected_environment#user_id GroupProtectedEnvironment#user_id}
 
 ---
 
