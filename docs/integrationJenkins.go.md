@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.integrationJenkins.IntegrationJenkins.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationjenkins"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/integrationjenkins"
 
 integrationjenkins.NewIntegrationJenkins(scope Construct, id *string, config IntegrationJenkinsConfig) IntegrationJenkins
 ```
@@ -420,7 +420,7 @@ func ResetUsername()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.integrationJenkins.IntegrationJenkins.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationjenkins"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/integrationjenkins"
 
 integrationjenkins.IntegrationJenkins_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.integrationJenkins.IntegrationJenkins.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationjenkins"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/integrationjenkins"
 
 integrationjenkins.IntegrationJenkins_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ integrationjenkins.IntegrationJenkins_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.integrationJenkins.IntegrationJenkins.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationjenkins"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/integrationjenkins"
 
 integrationjenkins.IntegrationJenkins_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ integrationjenkins.IntegrationJenkins_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.integrationJenkins.IntegrationJenkins.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationjenkins"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/integrationjenkins"
 
 integrationjenkins.IntegrationJenkins_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -929,7 +929,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.integrationJenkins.IntegrationJenkinsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationjenkins"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/integrationjenkins"
 
 &integrationjenkins.IntegrationJenkinsConfig {
 	Connection: interface{},
