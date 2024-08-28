@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_variable
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_variable
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface GroupVariableConfig extends cdktf.TerraformMetaArguments {
   /**
   * The description of the variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_variable#description GroupVariable#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_variable#description GroupVariable#description}
   */
   readonly description?: string;
   /**
   * The environment scope of the variable. Defaults to all environment (`*`). Note that in Community Editions of Gitlab, values other than `*` will cause inconsistent plans.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_variable#environment_scope GroupVariable#environment_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_variable#environment_scope GroupVariable#environment_scope}
   */
   readonly environmentScope?: string;
   /**
   * The name or id of the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_variable#group GroupVariable#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_variable#group GroupVariable#group}
   */
   readonly group: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_variable#id GroupVariable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_variable#id GroupVariable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,43 +40,43 @@ export interface GroupVariableConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_variable#key GroupVariable#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_variable#key GroupVariable#key}
   */
   readonly key: string;
   /**
   * If set to `true`, the value of the variable will be hidden in job logs. The value must meet the [masking requirements](https://docs.gitlab.com/ee/ci/variables/#masked-variables). Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_variable#masked GroupVariable#masked}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_variable#masked GroupVariable#masked}
   */
   readonly masked?: boolean | cdktf.IResolvable;
   /**
   * If set to `true`, the variable will be passed only to pipelines running on protected branches and tags. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_variable#protected GroupVariable#protected}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_variable#protected GroupVariable#protected}
   */
   readonly protected?: boolean | cdktf.IResolvable;
   /**
   * Whether the variable is treated as a raw string. Default: false. When true, variables in the value are not expanded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_variable#raw GroupVariable#raw}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_variable#raw GroupVariable#raw}
   */
   readonly raw?: boolean | cdktf.IResolvable;
   /**
   * The value of the variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_variable#value GroupVariable#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_variable#value GroupVariable#value}
   */
   readonly value: string;
   /**
   * The type of a variable. Valid values are: `env_var`, `file`. Default is `env_var`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_variable#variable_type GroupVariable#variable_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_variable#variable_type GroupVariable#variable_type}
   */
   readonly variableType?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_variable gitlab_group_variable}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_variable gitlab_group_variable}
 */
 export class GroupVariable extends cdktf.TerraformResource {
 
@@ -92,7 +92,7 @@ export class GroupVariable extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GroupVariable resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GroupVariable to import
-  * @param importFromId The id of the existing GroupVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_variable#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GroupVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_variable#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GroupVariable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -104,7 +104,7 @@ export class GroupVariable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.0/docs/resources/group_variable gitlab_group_variable} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group_variable gitlab_group_variable} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -115,7 +115,7 @@ export class GroupVariable extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_variable',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.3.0',
+        providerVersion: '17.3.1',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,
