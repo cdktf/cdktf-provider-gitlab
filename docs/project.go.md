@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.project.Project.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/project"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/project"
 
 project.NewProject(scope Construct, id *string, config ProjectConfig) Project
 ```
@@ -1068,7 +1068,7 @@ func ResetWikiEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.project.Project.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/project"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/project"
 
 project.Project_IsConstruct(x interface{}) *bool
 ```
@@ -1100,7 +1100,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.project.Project.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/project"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/project"
 
 project.Project_IsTerraformElement(x interface{}) *bool
 ```
@@ -1114,7 +1114,7 @@ project.Project_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.project.Project.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/project"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/project"
 
 project.Project_IsTerraformResource(x interface{}) *bool
 ```
@@ -1128,7 +1128,7 @@ project.Project_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.project.Project.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/project"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/project"
 
 project.Project_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -3502,7 +3502,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.project.ProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/project"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/project"
 
 &project.ProjectConfig {
 	Connection: interface{},
@@ -3533,7 +3533,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/project"
 	CiForwardDeploymentEnabled: interface{},
 	CiRestrictPipelineCancellationRole: *string,
 	CiSeparatedCaches: interface{},
-	ContainerExpirationPolicy: github.com/cdktf/cdktf-provider-gitlab-go/gitlab.project.ProjectContainerExpirationPolicy,
+	ContainerExpirationPolicy: github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13.project.ProjectContainerExpirationPolicy,
 	ContainerRegistryAccessLevel: *string,
 	ContainerRegistryEnabled: interface{},
 	DefaultBranch: *string,
@@ -3580,7 +3580,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/project"
 	PrintingMergeRequestLinkEnabled: interface{},
 	PublicBuilds: interface{},
 	PublicJobs: interface{},
-	PushRules: github.com/cdktf/cdktf-provider-gitlab-go/gitlab.project.ProjectPushRules,
+	PushRules: github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13.project.ProjectPushRules,
 	ReleasesAccessLevel: *string,
 	RemoveSourceBranchAfterMerge: interface{},
 	RepositoryAccessLevel: *string,
@@ -3600,7 +3600,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/project"
 	Tags: *[]*string,
 	TemplateName: *string,
 	TemplateProjectId: *f64,
-	Timeouts: github.com/cdktf/cdktf-provider-gitlab-go/gitlab.project.ProjectTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13.project.ProjectTimeouts,
 	Topics: *[]*string,
 	UseCustomTemplate: interface{},
 	VisibilityLevel: *string,
@@ -5144,7 +5144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/project"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/project"
 
 &project.ProjectContainerExpirationPolicy {
 	Cadence: *string,
@@ -5274,7 +5274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.project.ProjectPushRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/project"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/project"
 
 &project.ProjectPushRules {
 	AuthorEmailRegex: *string,
@@ -5484,7 +5484,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.project.ProjectTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/project"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/project"
 
 &project.ProjectTimeouts {
 	Create: *string,
@@ -5532,7 +5532,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/project"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/project"
 
 project.NewProjectContainerExpirationPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ProjectContainerExpirationPolicyOutputReference
 ```
@@ -5995,7 +5995,7 @@ func InternalValue() ProjectContainerExpirationPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/project"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/project"
 
 project.NewProjectPushRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ProjectPushRulesOutputReference
 ```
@@ -6592,7 +6592,7 @@ func InternalValue() ProjectPushRules
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.project.ProjectTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/project"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/project"
 
 project.NewProjectTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ProjectTimeoutsOutputReference
 ```

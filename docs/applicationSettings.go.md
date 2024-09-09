@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/applicationsettings"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/applicationsettings"
 
 applicationsettings.NewApplicationSettings(scope Construct, id *string, config ApplicationSettingsConfig) ApplicationSettings
 ```
@@ -2086,7 +2086,7 @@ func ResetWikiPageMaxContentBytes()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/applicationsettings"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/applicationsettings"
 
 applicationsettings.ApplicationSettings_IsConstruct(x interface{}) *bool
 ```
@@ -2118,7 +2118,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/applicationsettings"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/applicationsettings"
 
 applicationsettings.ApplicationSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -2132,7 +2132,7 @@ applicationsettings.ApplicationSettings_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/applicationsettings"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/applicationsettings"
 
 applicationsettings.ApplicationSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -2146,7 +2146,7 @@ applicationsettings.ApplicationSettings_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/applicationsettings"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/applicationsettings"
 
 applicationsettings.ApplicationSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -7743,7 +7743,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/applicationsettings"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/applicationsettings"
 
 &applicationsettings.ApplicationSettingsConfig {
 	Connection: interface{},
