@@ -46,6 +46,7 @@ Object.defineProperty(exports, 'integrationPipelinesEmail', { get: function () {
 Object.defineProperty(exports, 'integrationSlack', { get: function () { return require('./integration-slack'); } });
 Object.defineProperty(exports, 'integrationTelegram', { get: function () { return require('./integration-telegram'); } });
 Object.defineProperty(exports, 'label', { get: function () { return require('./label'); } });
+Object.defineProperty(exports, 'memberRole', { get: function () { return require('./member-role'); } });
 Object.defineProperty(exports, 'pagesDomain', { get: function () { return require('./pages-domain'); } });
 Object.defineProperty(exports, 'personalAccessToken', { get: function () { return require('./personal-access-token'); } });
 Object.defineProperty(exports, 'pipelineSchedule', { get: function () { return require('./pipeline-schedule'); } });
@@ -95,6 +96,7 @@ Object.defineProperty(exports, 'topic', { get: function () { return require('./t
 Object.defineProperty(exports, 'user', { get: function () { return require('./user'); } });
 Object.defineProperty(exports, 'userCustomAttribute', { get: function () { return require('./user-custom-attribute'); } });
 Object.defineProperty(exports, 'userGpgkey', { get: function () { return require('./user-gpgkey'); } });
+Object.defineProperty(exports, 'userImpersonationToken', { get: function () { return require('./user-impersonation-token'); } });
 Object.defineProperty(exports, 'userRunner', { get: function () { return require('./user-runner'); } });
 Object.defineProperty(exports, 'userSshkey', { get: function () { return require('./user-sshkey'); } });
 Object.defineProperty(exports, 'dataGitlabApplication', { get: function () { return require('./data-gitlab-application'); } });
@@ -116,6 +118,8 @@ Object.defineProperty(exports, 'dataGitlabInstanceDeployKeys', { get: function (
 Object.defineProperty(exports, 'dataGitlabInstanceVariable', { get: function () { return require('./data-gitlab-instance-variable'); } });
 Object.defineProperty(exports, 'dataGitlabInstanceVariables', { get: function () { return require('./data-gitlab-instance-variables'); } });
 Object.defineProperty(exports, 'dataGitlabMetadata', { get: function () { return require('./data-gitlab-metadata'); } });
+Object.defineProperty(exports, 'dataGitlabPipelineSchedule', { get: function () { return require('./data-gitlab-pipeline-schedule'); } });
+Object.defineProperty(exports, 'dataGitlabPipelineSchedules', { get: function () { return require('./data-gitlab-pipeline-schedules'); } });
 Object.defineProperty(exports, 'dataGitlabProject', { get: function () { return require('./data-gitlab-project'); } });
 Object.defineProperty(exports, 'dataGitlabProjectBranches', { get: function () { return require('./data-gitlab-project-branches'); } });
 Object.defineProperty(exports, 'dataGitlabProjectHook', { get: function () { return require('./data-gitlab-project-hook'); } });
@@ -128,6 +132,8 @@ Object.defineProperty(exports, 'dataGitlabProjectMilestone', { get: function () 
 Object.defineProperty(exports, 'dataGitlabProjectMilestones', { get: function () { return require('./data-gitlab-project-milestones'); } });
 Object.defineProperty(exports, 'dataGitlabProjectProtectedBranch', { get: function () { return require('./data-gitlab-project-protected-branch'); } });
 Object.defineProperty(exports, 'dataGitlabProjectProtectedBranches', { get: function () { return require('./data-gitlab-project-protected-branches'); } });
+Object.defineProperty(exports, 'dataGitlabProjectProtectedTag', { get: function () { return require('./data-gitlab-project-protected-tag'); } });
+Object.defineProperty(exports, 'dataGitlabProjectProtectedTags', { get: function () { return require('./data-gitlab-project-protected-tags'); } });
 Object.defineProperty(exports, 'dataGitlabProjectTag', { get: function () { return require('./data-gitlab-project-tag'); } });
 Object.defineProperty(exports, 'dataGitlabProjectTags', { get: function () { return require('./data-gitlab-project-tags'); } });
 Object.defineProperty(exports, 'dataGitlabProjectVariable', { get: function () { return require('./data-gitlab-project-variable'); } });

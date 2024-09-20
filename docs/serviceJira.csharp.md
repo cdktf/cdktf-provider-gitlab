@@ -4,7 +4,7 @@
 
 ### ServiceJira <a name="ServiceJira" id="@cdktf/provider-gitlab.serviceJira.ServiceJira"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/service_jira gitlab_service_jira}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/service_jira gitlab_service_jira}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.Initializer"></a>
 
@@ -77,15 +77,17 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.resetCommentOnEventEnabled">ResetCommentOnEventEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.resetCommitEvents">ResetCommitEvents</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.resetIssuesEvents">ResetIssuesEvents</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.resetIssuesEnabled">ResetIssuesEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.resetJiraAuthType">ResetJiraAuthType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.resetJiraIssuePrefix">ResetJiraIssuePrefix</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.resetJiraIssueRegex">ResetJiraIssueRegex</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.resetJiraIssueTransitionAutomatic">ResetJiraIssueTransitionAutomatic</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.resetJiraIssueTransitionId">ResetJiraIssueTransitionId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.resetJobEvents">ResetJobEvents</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.resetMergeRequestsEvents">ResetMergeRequestsEvents</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.resetNoteEvents">ResetNoteEvents</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.resetPipelineEvents">ResetPipelineEvents</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.resetProjectKey">ResetProjectKey</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.resetPushEvents">ResetPushEvents</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.resetTagPushEvents">ResetTagPushEvents</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.resetProjectKeys">ResetProjectKeys</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.resetUseInheritedSettings">ResetUseInheritedSettings</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.resetUsername">ResetUsername</a></code> | *No description.* |
 
 ---
 
@@ -401,10 +403,34 @@ private void ResetCommitEvents()
 private void ResetId()
 ```
 
-##### `ResetIssuesEvents` <a name="ResetIssuesEvents" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.resetIssuesEvents"></a>
+##### `ResetIssuesEnabled` <a name="ResetIssuesEnabled" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.resetIssuesEnabled"></a>
 
 ```csharp
-private void ResetIssuesEvents()
+private void ResetIssuesEnabled()
+```
+
+##### `ResetJiraAuthType` <a name="ResetJiraAuthType" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.resetJiraAuthType"></a>
+
+```csharp
+private void ResetJiraAuthType()
+```
+
+##### `ResetJiraIssuePrefix` <a name="ResetJiraIssuePrefix" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.resetJiraIssuePrefix"></a>
+
+```csharp
+private void ResetJiraIssuePrefix()
+```
+
+##### `ResetJiraIssueRegex` <a name="ResetJiraIssueRegex" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.resetJiraIssueRegex"></a>
+
+```csharp
+private void ResetJiraIssueRegex()
+```
+
+##### `ResetJiraIssueTransitionAutomatic` <a name="ResetJiraIssueTransitionAutomatic" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.resetJiraIssueTransitionAutomatic"></a>
+
+```csharp
+private void ResetJiraIssueTransitionAutomatic()
 ```
 
 ##### `ResetJiraIssueTransitionId` <a name="ResetJiraIssueTransitionId" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.resetJiraIssueTransitionId"></a>
@@ -413,28 +439,10 @@ private void ResetIssuesEvents()
 private void ResetJiraIssueTransitionId()
 ```
 
-##### `ResetJobEvents` <a name="ResetJobEvents" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.resetJobEvents"></a>
-
-```csharp
-private void ResetJobEvents()
-```
-
 ##### `ResetMergeRequestsEvents` <a name="ResetMergeRequestsEvents" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.resetMergeRequestsEvents"></a>
 
 ```csharp
 private void ResetMergeRequestsEvents()
-```
-
-##### `ResetNoteEvents` <a name="ResetNoteEvents" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.resetNoteEvents"></a>
-
-```csharp
-private void ResetNoteEvents()
-```
-
-##### `ResetPipelineEvents` <a name="ResetPipelineEvents" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.resetPipelineEvents"></a>
-
-```csharp
-private void ResetPipelineEvents()
 ```
 
 ##### `ResetProjectKey` <a name="ResetProjectKey" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.resetProjectKey"></a>
@@ -443,16 +451,22 @@ private void ResetPipelineEvents()
 private void ResetProjectKey()
 ```
 
-##### `ResetPushEvents` <a name="ResetPushEvents" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.resetPushEvents"></a>
+##### `ResetProjectKeys` <a name="ResetProjectKeys" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.resetProjectKeys"></a>
 
 ```csharp
-private void ResetPushEvents()
+private void ResetProjectKeys()
 ```
 
-##### `ResetTagPushEvents` <a name="ResetTagPushEvents" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.resetTagPushEvents"></a>
+##### `ResetUseInheritedSettings` <a name="ResetUseInheritedSettings" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.resetUseInheritedSettings"></a>
 
 ```csharp
-private void ResetTagPushEvents()
+private void ResetUseInheritedSettings()
+```
+
+##### `ResetUsername` <a name="ResetUsername" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.resetUsername"></a>
+
+```csharp
+private void ResetUsername()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -558,7 +572,7 @@ The construct id used in the generated config for the ServiceJira to import.
 
 The id of the existing ServiceJira that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/service_jira#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/service_jira#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -596,35 +610,37 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.commentOnEventEnabledInput">CommentOnEventEnabledInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.commitEventsInput">CommitEventsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.issuesEventsInput">IssuesEventsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.issuesEnabledInput">IssuesEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.jiraAuthTypeInput">JiraAuthTypeInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.jiraIssuePrefixInput">JiraIssuePrefixInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.jiraIssueRegexInput">JiraIssueRegexInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.jiraIssueTransitionAutomaticInput">JiraIssueTransitionAutomaticInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.jiraIssueTransitionIdInput">JiraIssueTransitionIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.jobEventsInput">JobEventsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.mergeRequestsEventsInput">MergeRequestsEventsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.noteEventsInput">NoteEventsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.passwordInput">PasswordInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.pipelineEventsInput">PipelineEventsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.projectKeyInput">ProjectKeyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.pushEventsInput">PushEventsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.tagPushEventsInput">TagPushEventsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.projectKeysInput">ProjectKeysInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.urlInput">UrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.useInheritedSettingsInput">UseInheritedSettingsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.usernameInput">UsernameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.apiUrl">ApiUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.commentOnEventEnabled">CommentOnEventEnabled</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.commitEvents">CommitEvents</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.issuesEvents">IssuesEvents</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.issuesEnabled">IssuesEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.jiraAuthType">JiraAuthType</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.jiraIssuePrefix">JiraIssuePrefix</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.jiraIssueRegex">JiraIssueRegex</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.jiraIssueTransitionAutomatic">JiraIssueTransitionAutomatic</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.jiraIssueTransitionId">JiraIssueTransitionId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.jobEvents">JobEvents</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.mergeRequestsEvents">MergeRequestsEvents</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.noteEvents">NoteEvents</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.password">Password</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.pipelineEvents">PipelineEvents</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.project">Project</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.projectKey">ProjectKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.pushEvents">PushEvents</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.tagPushEvents">TagPushEvents</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.projectKeys">ProjectKeys</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.url">Url</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.useInheritedSettings">UseInheritedSettings</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJira.property.username">Username</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -851,10 +867,50 @@ public string IdInput { get; }
 
 ---
 
-##### `IssuesEventsInput`<sup>Optional</sup> <a name="IssuesEventsInput" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.property.issuesEventsInput"></a>
+##### `IssuesEnabledInput`<sup>Optional</sup> <a name="IssuesEnabledInput" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.property.issuesEnabledInput"></a>
 
 ```csharp
-public object IssuesEventsInput { get; }
+public object IssuesEnabledInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `JiraAuthTypeInput`<sup>Optional</sup> <a name="JiraAuthTypeInput" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.property.jiraAuthTypeInput"></a>
+
+```csharp
+public double JiraAuthTypeInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `JiraIssuePrefixInput`<sup>Optional</sup> <a name="JiraIssuePrefixInput" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.property.jiraIssuePrefixInput"></a>
+
+```csharp
+public string JiraIssuePrefixInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `JiraIssueRegexInput`<sup>Optional</sup> <a name="JiraIssueRegexInput" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.property.jiraIssueRegexInput"></a>
+
+```csharp
+public string JiraIssueRegexInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `JiraIssueTransitionAutomaticInput`<sup>Optional</sup> <a name="JiraIssueTransitionAutomaticInput" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.property.jiraIssueTransitionAutomaticInput"></a>
+
+```csharp
+public object JiraIssueTransitionAutomaticInput { get; }
 ```
 
 - *Type:* object
@@ -871,30 +927,10 @@ public string JiraIssueTransitionIdInput { get; }
 
 ---
 
-##### `JobEventsInput`<sup>Optional</sup> <a name="JobEventsInput" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.property.jobEventsInput"></a>
-
-```csharp
-public object JobEventsInput { get; }
-```
-
-- *Type:* object
-
----
-
 ##### `MergeRequestsEventsInput`<sup>Optional</sup> <a name="MergeRequestsEventsInput" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.property.mergeRequestsEventsInput"></a>
 
 ```csharp
 public object MergeRequestsEventsInput { get; }
-```
-
-- *Type:* object
-
----
-
-##### `NoteEventsInput`<sup>Optional</sup> <a name="NoteEventsInput" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.property.noteEventsInput"></a>
-
-```csharp
-public object NoteEventsInput { get; }
 ```
 
 - *Type:* object
@@ -908,16 +944,6 @@ public string PasswordInput { get; }
 ```
 
 - *Type:* string
-
----
-
-##### `PipelineEventsInput`<sup>Optional</sup> <a name="PipelineEventsInput" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.property.pipelineEventsInput"></a>
-
-```csharp
-public object PipelineEventsInput { get; }
-```
-
-- *Type:* object
 
 ---
 
@@ -941,23 +967,13 @@ public string ProjectKeyInput { get; }
 
 ---
 
-##### `PushEventsInput`<sup>Optional</sup> <a name="PushEventsInput" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.property.pushEventsInput"></a>
+##### `ProjectKeysInput`<sup>Optional</sup> <a name="ProjectKeysInput" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.property.projectKeysInput"></a>
 
 ```csharp
-public object PushEventsInput { get; }
+public string[] ProjectKeysInput { get; }
 ```
 
-- *Type:* object
-
----
-
-##### `TagPushEventsInput`<sup>Optional</sup> <a name="TagPushEventsInput" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.property.tagPushEventsInput"></a>
-
-```csharp
-public object TagPushEventsInput { get; }
-```
-
-- *Type:* object
+- *Type:* string[]
 
 ---
 
@@ -968,6 +984,16 @@ public string UrlInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `UseInheritedSettingsInput`<sup>Optional</sup> <a name="UseInheritedSettingsInput" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.property.useInheritedSettingsInput"></a>
+
+```csharp
+public object UseInheritedSettingsInput { get; }
+```
+
+- *Type:* object
 
 ---
 
@@ -1021,10 +1047,50 @@ public string Id { get; }
 
 ---
 
-##### `IssuesEvents`<sup>Required</sup> <a name="IssuesEvents" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.property.issuesEvents"></a>
+##### `IssuesEnabled`<sup>Required</sup> <a name="IssuesEnabled" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.property.issuesEnabled"></a>
 
 ```csharp
-public object IssuesEvents { get; }
+public object IssuesEnabled { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `JiraAuthType`<sup>Required</sup> <a name="JiraAuthType" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.property.jiraAuthType"></a>
+
+```csharp
+public double JiraAuthType { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `JiraIssuePrefix`<sup>Required</sup> <a name="JiraIssuePrefix" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.property.jiraIssuePrefix"></a>
+
+```csharp
+public string JiraIssuePrefix { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `JiraIssueRegex`<sup>Required</sup> <a name="JiraIssueRegex" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.property.jiraIssueRegex"></a>
+
+```csharp
+public string JiraIssueRegex { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `JiraIssueTransitionAutomatic`<sup>Required</sup> <a name="JiraIssueTransitionAutomatic" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.property.jiraIssueTransitionAutomatic"></a>
+
+```csharp
+public object JiraIssueTransitionAutomatic { get; }
 ```
 
 - *Type:* object
@@ -1041,30 +1107,10 @@ public string JiraIssueTransitionId { get; }
 
 ---
 
-##### `JobEvents`<sup>Required</sup> <a name="JobEvents" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.property.jobEvents"></a>
-
-```csharp
-public object JobEvents { get; }
-```
-
-- *Type:* object
-
----
-
 ##### `MergeRequestsEvents`<sup>Required</sup> <a name="MergeRequestsEvents" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.property.mergeRequestsEvents"></a>
 
 ```csharp
 public object MergeRequestsEvents { get; }
-```
-
-- *Type:* object
-
----
-
-##### `NoteEvents`<sup>Required</sup> <a name="NoteEvents" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.property.noteEvents"></a>
-
-```csharp
-public object NoteEvents { get; }
 ```
 
 - *Type:* object
@@ -1078,16 +1124,6 @@ public string Password { get; }
 ```
 
 - *Type:* string
-
----
-
-##### `PipelineEvents`<sup>Required</sup> <a name="PipelineEvents" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.property.pipelineEvents"></a>
-
-```csharp
-public object PipelineEvents { get; }
-```
-
-- *Type:* object
 
 ---
 
@@ -1111,23 +1147,13 @@ public string ProjectKey { get; }
 
 ---
 
-##### `PushEvents`<sup>Required</sup> <a name="PushEvents" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.property.pushEvents"></a>
+##### `ProjectKeys`<sup>Required</sup> <a name="ProjectKeys" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.property.projectKeys"></a>
 
 ```csharp
-public object PushEvents { get; }
+public string[] ProjectKeys { get; }
 ```
 
-- *Type:* object
-
----
-
-##### `TagPushEvents`<sup>Required</sup> <a name="TagPushEvents" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.property.tagPushEvents"></a>
-
-```csharp
-public object TagPushEvents { get; }
-```
-
-- *Type:* object
+- *Type:* string[]
 
 ---
 
@@ -1138,6 +1164,16 @@ public string Url { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `UseInheritedSettings`<sup>Required</sup> <a name="UseInheritedSettings" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.property.useInheritedSettings"></a>
+
+```csharp
+public object UseInheritedSettings { get; }
+```
+
+- *Type:* object
 
 ---
 
@@ -1189,20 +1225,21 @@ new ServiceJiraConfig {
     string Password,
     string Project,
     string Url,
-    string Username,
     string ApiUrl = null,
     object CommentOnEventEnabled = null,
     object CommitEvents = null,
     string Id = null,
-    object IssuesEvents = null,
+    object IssuesEnabled = null,
+    double JiraAuthType = null,
+    string JiraIssuePrefix = null,
+    string JiraIssueRegex = null,
+    object JiraIssueTransitionAutomatic = null,
     string JiraIssueTransitionId = null,
-    object JobEvents = null,
     object MergeRequestsEvents = null,
-    object NoteEvents = null,
-    object PipelineEvents = null,
     string ProjectKey = null,
-    object PushEvents = null,
-    object TagPushEvents = null
+    string[] ProjectKeys = null,
+    object UseInheritedSettings = null,
+    string Username = null
 };
 ```
 
@@ -1217,23 +1254,24 @@ new ServiceJiraConfig {
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.password">Password</a></code> | <code>string</code> | The password of the user created to be used with GitLab/JIRA. |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.password">Password</a></code> | <code>string</code> | The Jira API token, password, or personal access token to be used with Jira. |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.project">Project</a></code> | <code>string</code> | ID of the project you want to activate integration on. |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.url">Url</a></code> | <code>string</code> | The URL to the JIRA project which is being linked to this GitLab project. For example, https://jira.example.com. |
-| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.username">Username</a></code> | <code>string</code> | The username of the user created to be used with GitLab/JIRA. |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.apiUrl">ApiUrl</a></code> | <code>string</code> | The base URL to the Jira instance API. Web URL value is used if not set. For example, https://jira-api.example.com. |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.commentOnEventEnabled">CommentOnEventEnabled</a></code> | <code>object</code> | Enable comments inside Jira issues on each GitLab event (commit / merge request). |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.commitEvents">CommitEvents</a></code> | <code>object</code> | Enable notifications for commit events. |
-| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/service_jira#id ServiceJira#id}. |
-| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.issuesEvents">IssuesEvents</a></code> | <code>object</code> | Enable notifications for issues events. |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/service_jira#id ServiceJira#id}. |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.issuesEnabled">IssuesEnabled</a></code> | <code>object</code> | Enable viewing Jira issues in GitLab. |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.jiraAuthType">JiraAuthType</a></code> | <code>double</code> | The authentication method to be used with Jira. |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.jiraIssuePrefix">JiraIssuePrefix</a></code> | <code>string</code> | Prefix to match Jira issue keys. |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.jiraIssueRegex">JiraIssueRegex</a></code> | <code>string</code> | Regular expression to match Jira issue keys. |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.jiraIssueTransitionAutomatic">JiraIssueTransitionAutomatic</a></code> | <code>object</code> | Enable automatic issue transitions. Takes precedence over jira_issue_transition_id if enabled. Defaults to false. |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.jiraIssueTransitionId">JiraIssueTransitionId</a></code> | <code>string</code> | The ID of a transition that moves issues to a closed state. |
-| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.jobEvents">JobEvents</a></code> | <code>object</code> | Enable notifications for job events. |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.mergeRequestsEvents">MergeRequestsEvents</a></code> | <code>object</code> | Enable notifications for merge request events. |
-| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.noteEvents">NoteEvents</a></code> | <code>object</code> | Enable notifications for note events. |
-| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.pipelineEvents">PipelineEvents</a></code> | <code>object</code> | Enable notifications for pipeline events. |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.projectKey">ProjectKey</a></code> | <code>string</code> | The short identifier for your JIRA project, all uppercase, e.g., PROJ. |
-| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.pushEvents">PushEvents</a></code> | <code>object</code> | Enable notifications for push events. |
-| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.tagPushEvents">TagPushEvents</a></code> | <code>object</code> | Enable notifications for tag_push events. |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.projectKeys">ProjectKeys</a></code> | <code>string[]</code> | Keys of Jira projects. |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.useInheritedSettings">UseInheritedSettings</a></code> | <code>object</code> | Indicates whether or not to inherit default settings. Defaults to false. |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.username">Username</a></code> | <code>string</code> | The email or username to be used with Jira. |
 
 ---
 
@@ -1315,9 +1353,11 @@ public string Password { get; set; }
 
 - *Type:* string
 
-The password of the user created to be used with GitLab/JIRA.
+The Jira API token, password, or personal access token to be used with Jira.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/service_jira#password ServiceJira#password}
+When your authentication method is basic (jira_auth_type is 0), use an API token for Jira Cloud or a password for Jira Data Center or Jira Server. When your authentication method is a Jira personal access token (jira_auth_type is 1), use the personal access token.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/service_jira#password ServiceJira#password}
 
 ---
 
@@ -1331,7 +1371,7 @@ public string Project { get; set; }
 
 ID of the project you want to activate integration on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/service_jira#project ServiceJira#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/service_jira#project ServiceJira#project}
 
 ---
 
@@ -1345,21 +1385,7 @@ public string Url { get; set; }
 
 The URL to the JIRA project which is being linked to this GitLab project. For example, https://jira.example.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/service_jira#url ServiceJira#url}
-
----
-
-##### `Username`<sup>Required</sup> <a name="Username" id="@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.username"></a>
-
-```csharp
-public string Username { get; set; }
-```
-
-- *Type:* string
-
-The username of the user created to be used with GitLab/JIRA.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/service_jira#username ServiceJira#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/service_jira#url ServiceJira#url}
 
 ---
 
@@ -1373,7 +1399,7 @@ public string ApiUrl { get; set; }
 
 The base URL to the Jira instance API. Web URL value is used if not set. For example, https://jira-api.example.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/service_jira#api_url ServiceJira#api_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/service_jira#api_url ServiceJira#api_url}
 
 ---
 
@@ -1387,7 +1413,7 @@ public object CommentOnEventEnabled { get; set; }
 
 Enable comments inside Jira issues on each GitLab event (commit / merge request).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/service_jira#comment_on_event_enabled ServiceJira#comment_on_event_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/service_jira#comment_on_event_enabled ServiceJira#comment_on_event_enabled}
 
 ---
 
@@ -1401,7 +1427,7 @@ public object CommitEvents { get; set; }
 
 Enable notifications for commit events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/service_jira#commit_events ServiceJira#commit_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/service_jira#commit_events ServiceJira#commit_events}
 
 ---
 
@@ -1413,24 +1439,82 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/service_jira#id ServiceJira#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/service_jira#id ServiceJira#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `IssuesEvents`<sup>Optional</sup> <a name="IssuesEvents" id="@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.issuesEvents"></a>
+##### `IssuesEnabled`<sup>Optional</sup> <a name="IssuesEnabled" id="@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.issuesEnabled"></a>
 
 ```csharp
-public object IssuesEvents { get; set; }
+public object IssuesEnabled { get; set; }
 ```
 
 - *Type:* object
 
-Enable notifications for issues events.
+Enable viewing Jira issues in GitLab.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/service_jira#issues_events ServiceJira#issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/service_jira#issues_enabled ServiceJira#issues_enabled}
+
+---
+
+##### `JiraAuthType`<sup>Optional</sup> <a name="JiraAuthType" id="@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.jiraAuthType"></a>
+
+```csharp
+public double JiraAuthType { get; set; }
+```
+
+- *Type:* double
+
+The authentication method to be used with Jira.
+
+0 means Basic Authentication. 1 means Jira personal access token. Defaults to 0.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/service_jira#jira_auth_type ServiceJira#jira_auth_type}
+
+---
+
+##### `JiraIssuePrefix`<sup>Optional</sup> <a name="JiraIssuePrefix" id="@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.jiraIssuePrefix"></a>
+
+```csharp
+public string JiraIssuePrefix { get; set; }
+```
+
+- *Type:* string
+
+Prefix to match Jira issue keys.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/service_jira#jira_issue_prefix ServiceJira#jira_issue_prefix}
+
+---
+
+##### `JiraIssueRegex`<sup>Optional</sup> <a name="JiraIssueRegex" id="@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.jiraIssueRegex"></a>
+
+```csharp
+public string JiraIssueRegex { get; set; }
+```
+
+- *Type:* string
+
+Regular expression to match Jira issue keys.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/service_jira#jira_issue_regex ServiceJira#jira_issue_regex}
+
+---
+
+##### `JiraIssueTransitionAutomatic`<sup>Optional</sup> <a name="JiraIssueTransitionAutomatic" id="@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.jiraIssueTransitionAutomatic"></a>
+
+```csharp
+public object JiraIssueTransitionAutomatic { get; set; }
+```
+
+- *Type:* object
+
+Enable automatic issue transitions. Takes precedence over jira_issue_transition_id if enabled. Defaults to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/service_jira#jira_issue_transition_automatic ServiceJira#jira_issue_transition_automatic}
 
 ---
 
@@ -1446,21 +1530,7 @@ The ID of a transition that moves issues to a closed state.
 
 You can find this number under the JIRA workflow administration (Administration > Issues > Workflows) by selecting View under Operations of the desired workflow of your project. By default, this ID is set to 2. *Note**: importing this field is only supported since GitLab 15.2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/service_jira#jira_issue_transition_id ServiceJira#jira_issue_transition_id}
-
----
-
-##### `JobEvents`<sup>Optional</sup> <a name="JobEvents" id="@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.jobEvents"></a>
-
-```csharp
-public object JobEvents { get; set; }
-```
-
-- *Type:* object
-
-Enable notifications for job events.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/service_jira#job_events ServiceJira#job_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/service_jira#jira_issue_transition_id ServiceJira#jira_issue_transition_id}
 
 ---
 
@@ -1474,35 +1544,7 @@ public object MergeRequestsEvents { get; set; }
 
 Enable notifications for merge request events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/service_jira#merge_requests_events ServiceJira#merge_requests_events}
-
----
-
-##### `NoteEvents`<sup>Optional</sup> <a name="NoteEvents" id="@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.noteEvents"></a>
-
-```csharp
-public object NoteEvents { get; set; }
-```
-
-- *Type:* object
-
-Enable notifications for note events.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/service_jira#note_events ServiceJira#note_events}
-
----
-
-##### `PipelineEvents`<sup>Optional</sup> <a name="PipelineEvents" id="@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.pipelineEvents"></a>
-
-```csharp
-public object PipelineEvents { get; set; }
-```
-
-- *Type:* object
-
-Enable notifications for pipeline events.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/service_jira#pipeline_events ServiceJira#pipeline_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/service_jira#merge_requests_events ServiceJira#merge_requests_events}
 
 ---
 
@@ -1516,35 +1558,53 @@ public string ProjectKey { get; set; }
 
 The short identifier for your JIRA project, all uppercase, e.g., PROJ.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/service_jira#project_key ServiceJira#project_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/service_jira#project_key ServiceJira#project_key}
 
 ---
 
-##### `PushEvents`<sup>Optional</sup> <a name="PushEvents" id="@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.pushEvents"></a>
+##### `ProjectKeys`<sup>Optional</sup> <a name="ProjectKeys" id="@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.projectKeys"></a>
 
 ```csharp
-public object PushEvents { get; set; }
+public string[] ProjectKeys { get; set; }
+```
+
+- *Type:* string[]
+
+Keys of Jira projects.
+
+When issues_enabled is true, this setting specifies which Jira projects to view issues from in GitLab.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/service_jira#project_keys ServiceJira#project_keys}
+
+---
+
+##### `UseInheritedSettings`<sup>Optional</sup> <a name="UseInheritedSettings" id="@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.useInheritedSettings"></a>
+
+```csharp
+public object UseInheritedSettings { get; set; }
 ```
 
 - *Type:* object
 
-Enable notifications for push events.
+Indicates whether or not to inherit default settings. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/service_jira#push_events ServiceJira#push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/service_jira#use_inherited_settings ServiceJira#use_inherited_settings}
 
 ---
 
-##### `TagPushEvents`<sup>Optional</sup> <a name="TagPushEvents" id="@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.tagPushEvents"></a>
+##### `Username`<sup>Optional</sup> <a name="Username" id="@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.username"></a>
 
 ```csharp
-public object TagPushEvents { get; set; }
+public string Username { get; set; }
 ```
 
-- *Type:* object
+- *Type:* string
 
-Enable notifications for tag_push events.
+The email or username to be used with Jira.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/service_jira#tag_push_events ServiceJira#tag_push_events}
+For Jira Cloud use an email, for Jira Data Center and Jira Server use a username. Required when using Basic authentication (jira_auth_type is 0).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/service_jira#username ServiceJira#username}
 
 ---
 

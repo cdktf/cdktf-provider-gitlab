@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_mattermost
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_mattermost
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,35 +15,35 @@ export interface IntegrationMattermostConfig extends cdktf.TerraformMetaArgument
   /**
   * Branches to send notifications for. Valid options are "all", "default", "protected", and "default_and_protected".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_mattermost#branches_to_be_notified IntegrationMattermost#branches_to_be_notified}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_mattermost#branches_to_be_notified IntegrationMattermost#branches_to_be_notified}
   */
   readonly branchesToBeNotified?: string;
   /**
   * The name of the channel to receive confidential issue events notifications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_mattermost#confidential_issue_channel IntegrationMattermost#confidential_issue_channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_mattermost#confidential_issue_channel IntegrationMattermost#confidential_issue_channel}
   */
   readonly confidentialIssueChannel?: string;
   /**
   * Enable notifications for confidential issues events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_mattermost#confidential_issues_events IntegrationMattermost#confidential_issues_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_mattermost#confidential_issues_events IntegrationMattermost#confidential_issues_events}
   */
   readonly confidentialIssuesEvents?: boolean | cdktf.IResolvable;
   /**
   * The name of the channel to receive confidential note events notifications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_mattermost#confidential_note_channel IntegrationMattermost#confidential_note_channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_mattermost#confidential_note_channel IntegrationMattermost#confidential_note_channel}
   */
   readonly confidentialNoteChannel?: string;
   /**
   * Enable notifications for confidential note events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_mattermost#confidential_note_events IntegrationMattermost#confidential_note_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_mattermost#confidential_note_events IntegrationMattermost#confidential_note_events}
   */
   readonly confidentialNoteEvents?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_mattermost#id IntegrationMattermost#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_mattermost#id IntegrationMattermost#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,115 +52,115 @@ export interface IntegrationMattermostConfig extends cdktf.TerraformMetaArgument
   /**
   * The name of the channel to receive issue events notifications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_mattermost#issue_channel IntegrationMattermost#issue_channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_mattermost#issue_channel IntegrationMattermost#issue_channel}
   */
   readonly issueChannel?: string;
   /**
   * Enable notifications for issues events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_mattermost#issues_events IntegrationMattermost#issues_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_mattermost#issues_events IntegrationMattermost#issues_events}
   */
   readonly issuesEvents?: boolean | cdktf.IResolvable;
   /**
   * The name of the channel to receive merge request events notifications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_mattermost#merge_request_channel IntegrationMattermost#merge_request_channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_mattermost#merge_request_channel IntegrationMattermost#merge_request_channel}
   */
   readonly mergeRequestChannel?: string;
   /**
   * Enable notifications for merge requests events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_mattermost#merge_requests_events IntegrationMattermost#merge_requests_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_mattermost#merge_requests_events IntegrationMattermost#merge_requests_events}
   */
   readonly mergeRequestsEvents?: boolean | cdktf.IResolvable;
   /**
   * The name of the channel to receive note events notifications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_mattermost#note_channel IntegrationMattermost#note_channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_mattermost#note_channel IntegrationMattermost#note_channel}
   */
   readonly noteChannel?: string;
   /**
   * Enable notifications for note events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_mattermost#note_events IntegrationMattermost#note_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_mattermost#note_events IntegrationMattermost#note_events}
   */
   readonly noteEvents?: boolean | cdktf.IResolvable;
   /**
   * Send notifications for broken pipelines.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_mattermost#notify_only_broken_pipelines IntegrationMattermost#notify_only_broken_pipelines}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_mattermost#notify_only_broken_pipelines IntegrationMattermost#notify_only_broken_pipelines}
   */
   readonly notifyOnlyBrokenPipelines?: boolean | cdktf.IResolvable;
   /**
   * The name of the channel to receive pipeline events notifications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_mattermost#pipeline_channel IntegrationMattermost#pipeline_channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_mattermost#pipeline_channel IntegrationMattermost#pipeline_channel}
   */
   readonly pipelineChannel?: string;
   /**
   * Enable notifications for pipeline events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_mattermost#pipeline_events IntegrationMattermost#pipeline_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_mattermost#pipeline_events IntegrationMattermost#pipeline_events}
   */
   readonly pipelineEvents?: boolean | cdktf.IResolvable;
   /**
   * ID of the project you want to activate integration on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_mattermost#project IntegrationMattermost#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_mattermost#project IntegrationMattermost#project}
   */
   readonly project: string;
   /**
   * The name of the channel to receive push events notifications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_mattermost#push_channel IntegrationMattermost#push_channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_mattermost#push_channel IntegrationMattermost#push_channel}
   */
   readonly pushChannel?: string;
   /**
   * Enable notifications for push events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_mattermost#push_events IntegrationMattermost#push_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_mattermost#push_events IntegrationMattermost#push_events}
   */
   readonly pushEvents?: boolean | cdktf.IResolvable;
   /**
   * The name of the channel to receive tag push events notifications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_mattermost#tag_push_channel IntegrationMattermost#tag_push_channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_mattermost#tag_push_channel IntegrationMattermost#tag_push_channel}
   */
   readonly tagPushChannel?: string;
   /**
   * Enable notifications for tag push events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_mattermost#tag_push_events IntegrationMattermost#tag_push_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_mattermost#tag_push_events IntegrationMattermost#tag_push_events}
   */
   readonly tagPushEvents?: boolean | cdktf.IResolvable;
   /**
   * Username to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_mattermost#username IntegrationMattermost#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_mattermost#username IntegrationMattermost#username}
   */
   readonly username?: string;
   /**
   * Webhook URL (Example, https://mattermost.yourdomain.com/hooks/...). This value cannot be imported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_mattermost#webhook IntegrationMattermost#webhook}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_mattermost#webhook IntegrationMattermost#webhook}
   */
   readonly webhook: string;
   /**
   * The name of the channel to receive wiki page events notifications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_mattermost#wiki_page_channel IntegrationMattermost#wiki_page_channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_mattermost#wiki_page_channel IntegrationMattermost#wiki_page_channel}
   */
   readonly wikiPageChannel?: string;
   /**
   * Enable notifications for wiki page events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_mattermost#wiki_page_events IntegrationMattermost#wiki_page_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_mattermost#wiki_page_events IntegrationMattermost#wiki_page_events}
   */
   readonly wikiPageEvents?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_mattermost gitlab_integration_mattermost}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_mattermost gitlab_integration_mattermost}
 */
 export class IntegrationMattermost extends cdktf.TerraformResource {
 
@@ -176,7 +176,7 @@ export class IntegrationMattermost extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IntegrationMattermost resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationMattermost to import
-  * @param importFromId The id of the existing IntegrationMattermost that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_mattermost#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IntegrationMattermost that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_mattermost#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationMattermost to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -188,7 +188,7 @@ export class IntegrationMattermost extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_mattermost gitlab_integration_mattermost} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_mattermost gitlab_integration_mattermost} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -199,7 +199,7 @@ export class IntegrationMattermost extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_integration_mattermost',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.3.1',
+        providerVersion: '17.4.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,

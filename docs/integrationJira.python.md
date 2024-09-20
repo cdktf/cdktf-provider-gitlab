@@ -4,7 +4,7 @@
 
 ### IntegrationJira <a name="IntegrationJira" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira gitlab_integration_jira}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira gitlab_integration_jira}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer"></a>
 
@@ -24,20 +24,21 @@ integrationJira.IntegrationJira(
   password: str,
   project: str,
   url: str,
-  username: str,
   api_url: str = None,
   comment_on_event_enabled: typing.Union[bool, IResolvable] = None,
   commit_events: typing.Union[bool, IResolvable] = None,
   id: str = None,
-  issues_events: typing.Union[bool, IResolvable] = None,
+  issues_enabled: typing.Union[bool, IResolvable] = None,
+  jira_auth_type: typing.Union[int, float] = None,
+  jira_issue_prefix: str = None,
+  jira_issue_regex: str = None,
+  jira_issue_transition_automatic: typing.Union[bool, IResolvable] = None,
   jira_issue_transition_id: str = None,
-  job_events: typing.Union[bool, IResolvable] = None,
   merge_requests_events: typing.Union[bool, IResolvable] = None,
-  note_events: typing.Union[bool, IResolvable] = None,
-  pipeline_events: typing.Union[bool, IResolvable] = None,
   project_key: str = None,
-  push_events: typing.Union[bool, IResolvable] = None,
-  tag_push_events: typing.Union[bool, IResolvable] = None
+  project_keys: typing.List[str] = None,
+  use_inherited_settings: typing.Union[bool, IResolvable] = None,
+  username: str = None
 )
 ```
 
@@ -52,23 +53,24 @@ integrationJira.IntegrationJira(
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.password">password</a></code> | <code>str</code> | The password of the user created to be used with GitLab/JIRA. |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.password">password</a></code> | <code>str</code> | The Jira API token, password, or personal access token to be used with Jira. |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.project">project</a></code> | <code>str</code> | ID of the project you want to activate integration on. |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.url">url</a></code> | <code>str</code> | The URL to the JIRA project which is being linked to this GitLab project. For example, https://jira.example.com. |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.username">username</a></code> | <code>str</code> | The username of the user created to be used with GitLab/JIRA. |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.apiUrl">api_url</a></code> | <code>str</code> | The base URL to the Jira instance API. Web URL value is used if not set. For example, https://jira-api.example.com. |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.commentOnEventEnabled">comment_on_event_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable comments inside Jira issues on each GitLab event (commit / merge request). |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.commitEvents">commit_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for commit events. |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#id IntegrationJira#id}. |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.issuesEvents">issues_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for issues events. |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#id IntegrationJira#id}. |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.issuesEnabled">issues_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable viewing Jira issues in GitLab. |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.jiraAuthType">jira_auth_type</a></code> | <code>typing.Union[int, float]</code> | The authentication method to be used with Jira. |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.jiraIssuePrefix">jira_issue_prefix</a></code> | <code>str</code> | Prefix to match Jira issue keys. |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.jiraIssueRegex">jira_issue_regex</a></code> | <code>str</code> | Regular expression to match Jira issue keys. |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.jiraIssueTransitionAutomatic">jira_issue_transition_automatic</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable automatic issue transitions. Takes precedence over jira_issue_transition_id if enabled. Defaults to false. |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.jiraIssueTransitionId">jira_issue_transition_id</a></code> | <code>str</code> | The ID of a transition that moves issues to a closed state. |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.jobEvents">job_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for job events. |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.mergeRequestsEvents">merge_requests_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for merge request events. |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.noteEvents">note_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for note events. |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.pipelineEvents">pipeline_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for pipeline events. |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.projectKey">project_key</a></code> | <code>str</code> | The short identifier for your JIRA project, all uppercase, e.g., PROJ. |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.pushEvents">push_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for push events. |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.tagPushEvents">tag_push_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for tag_push events. |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.projectKeys">project_keys</a></code> | <code>typing.List[str]</code> | Keys of Jira projects. |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.useInheritedSettings">use_inherited_settings</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether or not to inherit default settings. Defaults to false. |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.username">username</a></code> | <code>str</code> | The email or username to be used with Jira. |
 
 ---
 
@@ -136,9 +138,11 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-The password of the user created to be used with GitLab/JIRA.
+The Jira API token, password, or personal access token to be used with Jira.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#password IntegrationJira#password}
+When your authentication method is basic (jira_auth_type is 0), use an API token for Jira Cloud or a password for Jira Data Center or Jira Server. When your authentication method is a Jira personal access token (jira_auth_type is 1), use the personal access token.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#password IntegrationJira#password}
 
 ---
 
@@ -148,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ID of the project you want to activate integration on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#project IntegrationJira#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#project IntegrationJira#project}
 
 ---
 
@@ -158,17 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The URL to the JIRA project which is being linked to this GitLab project. For example, https://jira.example.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#url IntegrationJira#url}
-
----
-
-##### `username`<sup>Required</sup> <a name="username" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.username"></a>
-
-- *Type:* str
-
-The username of the user created to be used with GitLab/JIRA.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#username IntegrationJira#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#url IntegrationJira#url}
 
 ---
 
@@ -178,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The base URL to the Jira instance API. Web URL value is used if not set. For example, https://jira-api.example.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#api_url IntegrationJira#api_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#api_url IntegrationJira#api_url}
 
 ---
 
@@ -188,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable comments inside Jira issues on each GitLab event (commit / merge request).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#comment_on_event_enabled IntegrationJira#comment_on_event_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#comment_on_event_enabled IntegrationJira#comment_on_event_enabled}
 
 ---
 
@@ -198,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable notifications for commit events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#commit_events IntegrationJira#commit_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#commit_events IntegrationJira#commit_events}
 
 ---
 
@@ -206,20 +200,62 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#id IntegrationJira#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#id IntegrationJira#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `issues_events`<sup>Optional</sup> <a name="issues_events" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.issuesEvents"></a>
+##### `issues_enabled`<sup>Optional</sup> <a name="issues_enabled" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.issuesEnabled"></a>
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Enable notifications for issues events.
+Enable viewing Jira issues in GitLab.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#issues_events IntegrationJira#issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#issues_enabled IntegrationJira#issues_enabled}
+
+---
+
+##### `jira_auth_type`<sup>Optional</sup> <a name="jira_auth_type" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.jiraAuthType"></a>
+
+- *Type:* typing.Union[int, float]
+
+The authentication method to be used with Jira.
+
+0 means Basic Authentication. 1 means Jira personal access token. Defaults to 0.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#jira_auth_type IntegrationJira#jira_auth_type}
+
+---
+
+##### `jira_issue_prefix`<sup>Optional</sup> <a name="jira_issue_prefix" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.jiraIssuePrefix"></a>
+
+- *Type:* str
+
+Prefix to match Jira issue keys.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#jira_issue_prefix IntegrationJira#jira_issue_prefix}
+
+---
+
+##### `jira_issue_regex`<sup>Optional</sup> <a name="jira_issue_regex" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.jiraIssueRegex"></a>
+
+- *Type:* str
+
+Regular expression to match Jira issue keys.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#jira_issue_regex IntegrationJira#jira_issue_regex}
+
+---
+
+##### `jira_issue_transition_automatic`<sup>Optional</sup> <a name="jira_issue_transition_automatic" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.jiraIssueTransitionAutomatic"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Enable automatic issue transitions. Takes precedence over jira_issue_transition_id if enabled. Defaults to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#jira_issue_transition_automatic IntegrationJira#jira_issue_transition_automatic}
 
 ---
 
@@ -231,17 +267,7 @@ The ID of a transition that moves issues to a closed state.
 
 You can find this number under the JIRA workflow administration (Administration > Issues > Workflows) by selecting View under Operations of the desired workflow of your project. By default, this ID is set to 2. *Note**: importing this field is only supported since GitLab 15.2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#jira_issue_transition_id IntegrationJira#jira_issue_transition_id}
-
----
-
-##### `job_events`<sup>Optional</sup> <a name="job_events" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.jobEvents"></a>
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Enable notifications for job events.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#job_events IntegrationJira#job_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#jira_issue_transition_id IntegrationJira#jira_issue_transition_id}
 
 ---
 
@@ -251,27 +277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable notifications for merge request events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#merge_requests_events IntegrationJira#merge_requests_events}
-
----
-
-##### `note_events`<sup>Optional</sup> <a name="note_events" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.noteEvents"></a>
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Enable notifications for note events.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#note_events IntegrationJira#note_events}
-
----
-
-##### `pipeline_events`<sup>Optional</sup> <a name="pipeline_events" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.pipelineEvents"></a>
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Enable notifications for pipeline events.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#pipeline_events IntegrationJira#pipeline_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#merge_requests_events IntegrationJira#merge_requests_events}
 
 ---
 
@@ -281,27 +287,41 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The short identifier for your JIRA project, all uppercase, e.g., PROJ.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#project_key IntegrationJira#project_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#project_key IntegrationJira#project_key}
 
 ---
 
-##### `push_events`<sup>Optional</sup> <a name="push_events" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.pushEvents"></a>
+##### `project_keys`<sup>Optional</sup> <a name="project_keys" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.projectKeys"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* typing.List[str]
 
-Enable notifications for push events.
+Keys of Jira projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#push_events IntegrationJira#push_events}
+When issues_enabled is true, this setting specifies which Jira projects to view issues from in GitLab.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#project_keys IntegrationJira#project_keys}
 
 ---
 
-##### `tag_push_events`<sup>Optional</sup> <a name="tag_push_events" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.tagPushEvents"></a>
+##### `use_inherited_settings`<sup>Optional</sup> <a name="use_inherited_settings" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.useInheritedSettings"></a>
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Enable notifications for tag_push events.
+Indicates whether or not to inherit default settings. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#tag_push_events IntegrationJira#tag_push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#use_inherited_settings IntegrationJira#use_inherited_settings}
+
+---
+
+##### `username`<sup>Optional</sup> <a name="username" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.Initializer.parameter.username"></a>
+
+- *Type:* str
+
+The email or username to be used with Jira.
+
+For Jira Cloud use an email, for Jira Data Center and Jira Server use a username. Required when using Basic authentication (jira_auth_type is 0).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#username IntegrationJira#username}
 
 ---
 
@@ -336,15 +356,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetCommentOnEventEnabled">reset_comment_on_event_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetCommitEvents">reset_commit_events</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetIssuesEvents">reset_issues_events</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetIssuesEnabled">reset_issues_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetJiraAuthType">reset_jira_auth_type</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetJiraIssuePrefix">reset_jira_issue_prefix</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetJiraIssueRegex">reset_jira_issue_regex</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetJiraIssueTransitionAutomatic">reset_jira_issue_transition_automatic</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetJiraIssueTransitionId">reset_jira_issue_transition_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetJobEvents">reset_job_events</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetMergeRequestsEvents">reset_merge_requests_events</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetNoteEvents">reset_note_events</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetPipelineEvents">reset_pipeline_events</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetProjectKey">reset_project_key</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetPushEvents">reset_push_events</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetTagPushEvents">reset_tag_push_events</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetProjectKeys">reset_project_keys</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetUseInheritedSettings">reset_use_inherited_settings</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetUsername">reset_username</a></code> | *No description.* |
 
 ---
 
@@ -697,10 +719,34 @@ def reset_commit_events() -> None
 def reset_id() -> None
 ```
 
-##### `reset_issues_events` <a name="reset_issues_events" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetIssuesEvents"></a>
+##### `reset_issues_enabled` <a name="reset_issues_enabled" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetIssuesEnabled"></a>
 
 ```python
-def reset_issues_events() -> None
+def reset_issues_enabled() -> None
+```
+
+##### `reset_jira_auth_type` <a name="reset_jira_auth_type" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetJiraAuthType"></a>
+
+```python
+def reset_jira_auth_type() -> None
+```
+
+##### `reset_jira_issue_prefix` <a name="reset_jira_issue_prefix" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetJiraIssuePrefix"></a>
+
+```python
+def reset_jira_issue_prefix() -> None
+```
+
+##### `reset_jira_issue_regex` <a name="reset_jira_issue_regex" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetJiraIssueRegex"></a>
+
+```python
+def reset_jira_issue_regex() -> None
+```
+
+##### `reset_jira_issue_transition_automatic` <a name="reset_jira_issue_transition_automatic" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetJiraIssueTransitionAutomatic"></a>
+
+```python
+def reset_jira_issue_transition_automatic() -> None
 ```
 
 ##### `reset_jira_issue_transition_id` <a name="reset_jira_issue_transition_id" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetJiraIssueTransitionId"></a>
@@ -709,28 +755,10 @@ def reset_issues_events() -> None
 def reset_jira_issue_transition_id() -> None
 ```
 
-##### `reset_job_events` <a name="reset_job_events" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetJobEvents"></a>
-
-```python
-def reset_job_events() -> None
-```
-
 ##### `reset_merge_requests_events` <a name="reset_merge_requests_events" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetMergeRequestsEvents"></a>
 
 ```python
 def reset_merge_requests_events() -> None
-```
-
-##### `reset_note_events` <a name="reset_note_events" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetNoteEvents"></a>
-
-```python
-def reset_note_events() -> None
-```
-
-##### `reset_pipeline_events` <a name="reset_pipeline_events" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetPipelineEvents"></a>
-
-```python
-def reset_pipeline_events() -> None
 ```
 
 ##### `reset_project_key` <a name="reset_project_key" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetProjectKey"></a>
@@ -739,16 +767,22 @@ def reset_pipeline_events() -> None
 def reset_project_key() -> None
 ```
 
-##### `reset_push_events` <a name="reset_push_events" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetPushEvents"></a>
+##### `reset_project_keys` <a name="reset_project_keys" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetProjectKeys"></a>
 
 ```python
-def reset_push_events() -> None
+def reset_project_keys() -> None
 ```
 
-##### `reset_tag_push_events` <a name="reset_tag_push_events" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetTagPushEvents"></a>
+##### `reset_use_inherited_settings` <a name="reset_use_inherited_settings" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetUseInheritedSettings"></a>
 
 ```python
-def reset_tag_push_events() -> None
+def reset_use_inherited_settings() -> None
+```
+
+##### `reset_username` <a name="reset_username" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.resetUsername"></a>
+
+```python
+def reset_username() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -865,7 +899,7 @@ The construct id used in the generated config for the IntegrationJira to import.
 
 The id of the existing IntegrationJira that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -903,35 +937,37 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.commentOnEventEnabledInput">comment_on_event_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.commitEventsInput">commit_events_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.issuesEventsInput">issues_events_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.issuesEnabledInput">issues_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.jiraAuthTypeInput">jira_auth_type_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.jiraIssuePrefixInput">jira_issue_prefix_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.jiraIssueRegexInput">jira_issue_regex_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.jiraIssueTransitionAutomaticInput">jira_issue_transition_automatic_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.jiraIssueTransitionIdInput">jira_issue_transition_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.jobEventsInput">job_events_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.mergeRequestsEventsInput">merge_requests_events_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.noteEventsInput">note_events_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.passwordInput">password_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.pipelineEventsInput">pipeline_events_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.projectKeyInput">project_key_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.pushEventsInput">push_events_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.tagPushEventsInput">tag_push_events_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.projectKeysInput">project_keys_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.useInheritedSettingsInput">use_inherited_settings_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.usernameInput">username_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.apiUrl">api_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.commentOnEventEnabled">comment_on_event_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.commitEvents">commit_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.issuesEvents">issues_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.issuesEnabled">issues_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.jiraAuthType">jira_auth_type</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.jiraIssuePrefix">jira_issue_prefix</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.jiraIssueRegex">jira_issue_regex</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.jiraIssueTransitionAutomatic">jira_issue_transition_automatic</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.jiraIssueTransitionId">jira_issue_transition_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.jobEvents">job_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.mergeRequestsEvents">merge_requests_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.noteEvents">note_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.password">password</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.pipelineEvents">pipeline_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.project">project</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.projectKey">project_key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.pushEvents">push_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.tagPushEvents">tag_push_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.projectKeys">project_keys</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.url">url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.useInheritedSettings">use_inherited_settings</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.username">username</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -1158,10 +1194,50 @@ id_input: str
 
 ---
 
-##### `issues_events_input`<sup>Optional</sup> <a name="issues_events_input" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.issuesEventsInput"></a>
+##### `issues_enabled_input`<sup>Optional</sup> <a name="issues_enabled_input" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.issuesEnabledInput"></a>
 
 ```python
-issues_events_input: typing.Union[bool, IResolvable]
+issues_enabled_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `jira_auth_type_input`<sup>Optional</sup> <a name="jira_auth_type_input" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.jiraAuthTypeInput"></a>
+
+```python
+jira_auth_type_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `jira_issue_prefix_input`<sup>Optional</sup> <a name="jira_issue_prefix_input" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.jiraIssuePrefixInput"></a>
+
+```python
+jira_issue_prefix_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `jira_issue_regex_input`<sup>Optional</sup> <a name="jira_issue_regex_input" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.jiraIssueRegexInput"></a>
+
+```python
+jira_issue_regex_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `jira_issue_transition_automatic_input`<sup>Optional</sup> <a name="jira_issue_transition_automatic_input" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.jiraIssueTransitionAutomaticInput"></a>
+
+```python
+jira_issue_transition_automatic_input: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
@@ -1178,30 +1254,10 @@ jira_issue_transition_id_input: str
 
 ---
 
-##### `job_events_input`<sup>Optional</sup> <a name="job_events_input" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.jobEventsInput"></a>
-
-```python
-job_events_input: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
 ##### `merge_requests_events_input`<sup>Optional</sup> <a name="merge_requests_events_input" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.mergeRequestsEventsInput"></a>
 
 ```python
 merge_requests_events_input: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `note_events_input`<sup>Optional</sup> <a name="note_events_input" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.noteEventsInput"></a>
-
-```python
-note_events_input: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
@@ -1215,16 +1271,6 @@ password_input: str
 ```
 
 - *Type:* str
-
----
-
-##### `pipeline_events_input`<sup>Optional</sup> <a name="pipeline_events_input" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.pipelineEventsInput"></a>
-
-```python
-pipeline_events_input: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -1248,23 +1294,13 @@ project_key_input: str
 
 ---
 
-##### `push_events_input`<sup>Optional</sup> <a name="push_events_input" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.pushEventsInput"></a>
+##### `project_keys_input`<sup>Optional</sup> <a name="project_keys_input" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.projectKeysInput"></a>
 
 ```python
-push_events_input: typing.Union[bool, IResolvable]
+project_keys_input: typing.List[str]
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `tag_push_events_input`<sup>Optional</sup> <a name="tag_push_events_input" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.tagPushEventsInput"></a>
-
-```python
-tag_push_events_input: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* typing.List[str]
 
 ---
 
@@ -1275,6 +1311,16 @@ url_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `use_inherited_settings_input`<sup>Optional</sup> <a name="use_inherited_settings_input" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.useInheritedSettingsInput"></a>
+
+```python
+use_inherited_settings_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -1328,10 +1374,50 @@ id: str
 
 ---
 
-##### `issues_events`<sup>Required</sup> <a name="issues_events" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.issuesEvents"></a>
+##### `issues_enabled`<sup>Required</sup> <a name="issues_enabled" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.issuesEnabled"></a>
 
 ```python
-issues_events: typing.Union[bool, IResolvable]
+issues_enabled: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `jira_auth_type`<sup>Required</sup> <a name="jira_auth_type" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.jiraAuthType"></a>
+
+```python
+jira_auth_type: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `jira_issue_prefix`<sup>Required</sup> <a name="jira_issue_prefix" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.jiraIssuePrefix"></a>
+
+```python
+jira_issue_prefix: str
+```
+
+- *Type:* str
+
+---
+
+##### `jira_issue_regex`<sup>Required</sup> <a name="jira_issue_regex" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.jiraIssueRegex"></a>
+
+```python
+jira_issue_regex: str
+```
+
+- *Type:* str
+
+---
+
+##### `jira_issue_transition_automatic`<sup>Required</sup> <a name="jira_issue_transition_automatic" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.jiraIssueTransitionAutomatic"></a>
+
+```python
+jira_issue_transition_automatic: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
@@ -1348,30 +1434,10 @@ jira_issue_transition_id: str
 
 ---
 
-##### `job_events`<sup>Required</sup> <a name="job_events" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.jobEvents"></a>
-
-```python
-job_events: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
 ##### `merge_requests_events`<sup>Required</sup> <a name="merge_requests_events" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.mergeRequestsEvents"></a>
 
 ```python
 merge_requests_events: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `note_events`<sup>Required</sup> <a name="note_events" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.noteEvents"></a>
-
-```python
-note_events: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
@@ -1385,16 +1451,6 @@ password: str
 ```
 
 - *Type:* str
-
----
-
-##### `pipeline_events`<sup>Required</sup> <a name="pipeline_events" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.pipelineEvents"></a>
-
-```python
-pipeline_events: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -1418,23 +1474,13 @@ project_key: str
 
 ---
 
-##### `push_events`<sup>Required</sup> <a name="push_events" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.pushEvents"></a>
+##### `project_keys`<sup>Required</sup> <a name="project_keys" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.projectKeys"></a>
 
 ```python
-push_events: typing.Union[bool, IResolvable]
+project_keys: typing.List[str]
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `tag_push_events`<sup>Required</sup> <a name="tag_push_events" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.tagPushEvents"></a>
-
-```python
-tag_push_events: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* typing.List[str]
 
 ---
 
@@ -1445,6 +1491,16 @@ url: str
 ```
 
 - *Type:* str
+
+---
+
+##### `use_inherited_settings`<sup>Required</sup> <a name="use_inherited_settings" id="@cdktf/provider-gitlab.integrationJira.IntegrationJira.property.useInheritedSettings"></a>
+
+```python
+use_inherited_settings: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -1496,20 +1552,21 @@ integrationJira.IntegrationJiraConfig(
   password: str,
   project: str,
   url: str,
-  username: str,
   api_url: str = None,
   comment_on_event_enabled: typing.Union[bool, IResolvable] = None,
   commit_events: typing.Union[bool, IResolvable] = None,
   id: str = None,
-  issues_events: typing.Union[bool, IResolvable] = None,
+  issues_enabled: typing.Union[bool, IResolvable] = None,
+  jira_auth_type: typing.Union[int, float] = None,
+  jira_issue_prefix: str = None,
+  jira_issue_regex: str = None,
+  jira_issue_transition_automatic: typing.Union[bool, IResolvable] = None,
   jira_issue_transition_id: str = None,
-  job_events: typing.Union[bool, IResolvable] = None,
   merge_requests_events: typing.Union[bool, IResolvable] = None,
-  note_events: typing.Union[bool, IResolvable] = None,
-  pipeline_events: typing.Union[bool, IResolvable] = None,
   project_key: str = None,
-  push_events: typing.Union[bool, IResolvable] = None,
-  tag_push_events: typing.Union[bool, IResolvable] = None
+  project_keys: typing.List[str] = None,
+  use_inherited_settings: typing.Union[bool, IResolvable] = None,
+  username: str = None
 )
 ```
 
@@ -1524,23 +1581,24 @@ integrationJira.IntegrationJiraConfig(
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.password">password</a></code> | <code>str</code> | The password of the user created to be used with GitLab/JIRA. |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.password">password</a></code> | <code>str</code> | The Jira API token, password, or personal access token to be used with Jira. |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.project">project</a></code> | <code>str</code> | ID of the project you want to activate integration on. |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.url">url</a></code> | <code>str</code> | The URL to the JIRA project which is being linked to this GitLab project. For example, https://jira.example.com. |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.username">username</a></code> | <code>str</code> | The username of the user created to be used with GitLab/JIRA. |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.apiUrl">api_url</a></code> | <code>str</code> | The base URL to the Jira instance API. Web URL value is used if not set. For example, https://jira-api.example.com. |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.commentOnEventEnabled">comment_on_event_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable comments inside Jira issues on each GitLab event (commit / merge request). |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.commitEvents">commit_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for commit events. |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#id IntegrationJira#id}. |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.issuesEvents">issues_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for issues events. |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#id IntegrationJira#id}. |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.issuesEnabled">issues_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable viewing Jira issues in GitLab. |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.jiraAuthType">jira_auth_type</a></code> | <code>typing.Union[int, float]</code> | The authentication method to be used with Jira. |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.jiraIssuePrefix">jira_issue_prefix</a></code> | <code>str</code> | Prefix to match Jira issue keys. |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.jiraIssueRegex">jira_issue_regex</a></code> | <code>str</code> | Regular expression to match Jira issue keys. |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.jiraIssueTransitionAutomatic">jira_issue_transition_automatic</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable automatic issue transitions. Takes precedence over jira_issue_transition_id if enabled. Defaults to false. |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.jiraIssueTransitionId">jira_issue_transition_id</a></code> | <code>str</code> | The ID of a transition that moves issues to a closed state. |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.jobEvents">job_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for job events. |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.mergeRequestsEvents">merge_requests_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for merge request events. |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.noteEvents">note_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for note events. |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.pipelineEvents">pipeline_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for pipeline events. |
 | <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.projectKey">project_key</a></code> | <code>str</code> | The short identifier for your JIRA project, all uppercase, e.g., PROJ. |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.pushEvents">push_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for push events. |
-| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.tagPushEvents">tag_push_events</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable notifications for tag_push events. |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.projectKeys">project_keys</a></code> | <code>typing.List[str]</code> | Keys of Jira projects. |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.useInheritedSettings">use_inherited_settings</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether or not to inherit default settings. Defaults to false. |
+| <code><a href="#@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.username">username</a></code> | <code>str</code> | The email or username to be used with Jira. |
 
 ---
 
@@ -1622,9 +1680,11 @@ password: str
 
 - *Type:* str
 
-The password of the user created to be used with GitLab/JIRA.
+The Jira API token, password, or personal access token to be used with Jira.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#password IntegrationJira#password}
+When your authentication method is basic (jira_auth_type is 0), use an API token for Jira Cloud or a password for Jira Data Center or Jira Server. When your authentication method is a Jira personal access token (jira_auth_type is 1), use the personal access token.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#password IntegrationJira#password}
 
 ---
 
@@ -1638,7 +1698,7 @@ project: str
 
 ID of the project you want to activate integration on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#project IntegrationJira#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#project IntegrationJira#project}
 
 ---
 
@@ -1652,21 +1712,7 @@ url: str
 
 The URL to the JIRA project which is being linked to this GitLab project. For example, https://jira.example.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#url IntegrationJira#url}
-
----
-
-##### `username`<sup>Required</sup> <a name="username" id="@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.username"></a>
-
-```python
-username: str
-```
-
-- *Type:* str
-
-The username of the user created to be used with GitLab/JIRA.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#username IntegrationJira#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#url IntegrationJira#url}
 
 ---
 
@@ -1680,7 +1726,7 @@ api_url: str
 
 The base URL to the Jira instance API. Web URL value is used if not set. For example, https://jira-api.example.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#api_url IntegrationJira#api_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#api_url IntegrationJira#api_url}
 
 ---
 
@@ -1694,7 +1740,7 @@ comment_on_event_enabled: typing.Union[bool, IResolvable]
 
 Enable comments inside Jira issues on each GitLab event (commit / merge request).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#comment_on_event_enabled IntegrationJira#comment_on_event_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#comment_on_event_enabled IntegrationJira#comment_on_event_enabled}
 
 ---
 
@@ -1708,7 +1754,7 @@ commit_events: typing.Union[bool, IResolvable]
 
 Enable notifications for commit events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#commit_events IntegrationJira#commit_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#commit_events IntegrationJira#commit_events}
 
 ---
 
@@ -1720,24 +1766,82 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#id IntegrationJira#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#id IntegrationJira#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `issues_events`<sup>Optional</sup> <a name="issues_events" id="@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.issuesEvents"></a>
+##### `issues_enabled`<sup>Optional</sup> <a name="issues_enabled" id="@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.issuesEnabled"></a>
 
 ```python
-issues_events: typing.Union[bool, IResolvable]
+issues_enabled: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Enable notifications for issues events.
+Enable viewing Jira issues in GitLab.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#issues_events IntegrationJira#issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#issues_enabled IntegrationJira#issues_enabled}
+
+---
+
+##### `jira_auth_type`<sup>Optional</sup> <a name="jira_auth_type" id="@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.jiraAuthType"></a>
+
+```python
+jira_auth_type: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The authentication method to be used with Jira.
+
+0 means Basic Authentication. 1 means Jira personal access token. Defaults to 0.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#jira_auth_type IntegrationJira#jira_auth_type}
+
+---
+
+##### `jira_issue_prefix`<sup>Optional</sup> <a name="jira_issue_prefix" id="@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.jiraIssuePrefix"></a>
+
+```python
+jira_issue_prefix: str
+```
+
+- *Type:* str
+
+Prefix to match Jira issue keys.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#jira_issue_prefix IntegrationJira#jira_issue_prefix}
+
+---
+
+##### `jira_issue_regex`<sup>Optional</sup> <a name="jira_issue_regex" id="@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.jiraIssueRegex"></a>
+
+```python
+jira_issue_regex: str
+```
+
+- *Type:* str
+
+Regular expression to match Jira issue keys.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#jira_issue_regex IntegrationJira#jira_issue_regex}
+
+---
+
+##### `jira_issue_transition_automatic`<sup>Optional</sup> <a name="jira_issue_transition_automatic" id="@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.jiraIssueTransitionAutomatic"></a>
+
+```python
+jira_issue_transition_automatic: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Enable automatic issue transitions. Takes precedence over jira_issue_transition_id if enabled. Defaults to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#jira_issue_transition_automatic IntegrationJira#jira_issue_transition_automatic}
 
 ---
 
@@ -1753,21 +1857,7 @@ The ID of a transition that moves issues to a closed state.
 
 You can find this number under the JIRA workflow administration (Administration > Issues > Workflows) by selecting View under Operations of the desired workflow of your project. By default, this ID is set to 2. *Note**: importing this field is only supported since GitLab 15.2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#jira_issue_transition_id IntegrationJira#jira_issue_transition_id}
-
----
-
-##### `job_events`<sup>Optional</sup> <a name="job_events" id="@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.jobEvents"></a>
-
-```python
-job_events: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Enable notifications for job events.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#job_events IntegrationJira#job_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#jira_issue_transition_id IntegrationJira#jira_issue_transition_id}
 
 ---
 
@@ -1781,35 +1871,7 @@ merge_requests_events: typing.Union[bool, IResolvable]
 
 Enable notifications for merge request events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#merge_requests_events IntegrationJira#merge_requests_events}
-
----
-
-##### `note_events`<sup>Optional</sup> <a name="note_events" id="@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.noteEvents"></a>
-
-```python
-note_events: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Enable notifications for note events.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#note_events IntegrationJira#note_events}
-
----
-
-##### `pipeline_events`<sup>Optional</sup> <a name="pipeline_events" id="@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.pipelineEvents"></a>
-
-```python
-pipeline_events: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Enable notifications for pipeline events.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#pipeline_events IntegrationJira#pipeline_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#merge_requests_events IntegrationJira#merge_requests_events}
 
 ---
 
@@ -1823,35 +1885,53 @@ project_key: str
 
 The short identifier for your JIRA project, all uppercase, e.g., PROJ.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#project_key IntegrationJira#project_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#project_key IntegrationJira#project_key}
 
 ---
 
-##### `push_events`<sup>Optional</sup> <a name="push_events" id="@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.pushEvents"></a>
+##### `project_keys`<sup>Optional</sup> <a name="project_keys" id="@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.projectKeys"></a>
 
 ```python
-push_events: typing.Union[bool, IResolvable]
+project_keys: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Keys of Jira projects.
+
+When issues_enabled is true, this setting specifies which Jira projects to view issues from in GitLab.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#project_keys IntegrationJira#project_keys}
+
+---
+
+##### `use_inherited_settings`<sup>Optional</sup> <a name="use_inherited_settings" id="@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.useInheritedSettings"></a>
+
+```python
+use_inherited_settings: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Enable notifications for push events.
+Indicates whether or not to inherit default settings. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#push_events IntegrationJira#push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#use_inherited_settings IntegrationJira#use_inherited_settings}
 
 ---
 
-##### `tag_push_events`<sup>Optional</sup> <a name="tag_push_events" id="@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.tagPushEvents"></a>
+##### `username`<sup>Optional</sup> <a name="username" id="@cdktf/provider-gitlab.integrationJira.IntegrationJiraConfig.property.username"></a>
 
 ```python
-tag_push_events: typing.Union[bool, IResolvable]
+username: str
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* str
 
-Enable notifications for tag_push events.
+The email or username to be used with Jira.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#tag_push_events IntegrationJira#tag_push_events}
+For Jira Cloud use an email, for Jira Data Center and Jira Server use a username. Required when using Basic authentication (jira_auth_type is 0).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#username IntegrationJira#username}
 
 ---
 

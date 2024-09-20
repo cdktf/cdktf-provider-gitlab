@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,85 +15,91 @@ export interface ProjectPushRulesAConfig extends cdktf.TerraformMetaArguments {
   /**
   * All commit author emails must match this regex, e.g. `@my-company.com$`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#author_email_regex ProjectPushRulesA#author_email_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#author_email_regex ProjectPushRulesA#author_email_regex}
   */
   readonly authorEmailRegex?: string;
   /**
   * All branch names must match this regex, e.g. `(feature|hotfix)\/*`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#branch_name_regex ProjectPushRulesA#branch_name_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#branch_name_regex ProjectPushRulesA#branch_name_regex}
   */
   readonly branchNameRegex?: string;
   /**
   * Users can only push commits to this repository that were committed with one of their own verified emails.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#commit_committer_check ProjectPushRulesA#commit_committer_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#commit_committer_check ProjectPushRulesA#commit_committer_check}
   */
   readonly commitCommitterCheck?: boolean | cdktf.IResolvable;
   /**
   * Users can only push commits to this repository if the commit author name is consistent with their GitLab account name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#commit_committer_name_check ProjectPushRulesA#commit_committer_name_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#commit_committer_name_check ProjectPushRulesA#commit_committer_name_check}
   */
   readonly commitCommitterNameCheck?: boolean | cdktf.IResolvable;
   /**
   * No commit message is allowed to match this regex, e.g. `ssh\:\/\/`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#commit_message_negative_regex ProjectPushRulesA#commit_message_negative_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#commit_message_negative_regex ProjectPushRulesA#commit_message_negative_regex}
   */
   readonly commitMessageNegativeRegex?: string;
   /**
   * All commit messages must match this regex, e.g. `Fixed \d+\..*`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#commit_message_regex ProjectPushRulesA#commit_message_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#commit_message_regex ProjectPushRulesA#commit_message_regex}
   */
   readonly commitMessageRegex?: string;
   /**
   * Deny deleting a tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#deny_delete_tag ProjectPushRulesA#deny_delete_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#deny_delete_tag ProjectPushRulesA#deny_delete_tag}
   */
   readonly denyDeleteTag?: boolean | cdktf.IResolvable;
   /**
   * All committed filenames must not match this regex, e.g. `(jar|exe)$`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#file_name_regex ProjectPushRulesA#file_name_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#file_name_regex ProjectPushRulesA#file_name_regex}
   */
   readonly fileNameRegex?: string;
   /**
   * Maximum file size (MB).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#max_file_size ProjectPushRulesA#max_file_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#max_file_size ProjectPushRulesA#max_file_size}
   */
   readonly maxFileSize?: number;
   /**
   * Restrict commits by author (email) to existing GitLab users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#member_check ProjectPushRulesA#member_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#member_check ProjectPushRulesA#member_check}
   */
   readonly memberCheck?: boolean | cdktf.IResolvable;
   /**
   * GitLab will reject any files that are likely to contain secrets.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#prevent_secrets ProjectPushRulesA#prevent_secrets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#prevent_secrets ProjectPushRulesA#prevent_secrets}
   */
   readonly preventSecrets?: boolean | cdktf.IResolvable;
   /**
   * The ID or URL-encoded path of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#project ProjectPushRulesA#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#project ProjectPushRulesA#project}
   */
   readonly project: string;
   /**
+  * Reject commit when it’s not DCO certified.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#reject_non_dco_commits ProjectPushRulesA#reject_non_dco_commits}
+  */
+  readonly rejectNonDcoCommits?: boolean | cdktf.IResolvable;
+  /**
   * Reject commit when it’s not signed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#reject_unsigned_commits ProjectPushRulesA#reject_unsigned_commits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#reject_unsigned_commits ProjectPushRulesA#reject_unsigned_commits}
   */
   readonly rejectUnsignedCommits?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules gitlab_project_push_rules}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules gitlab_project_push_rules}
 */
 export class ProjectPushRulesA extends cdktf.TerraformResource {
 
@@ -109,7 +115,7 @@ export class ProjectPushRulesA extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ProjectPushRulesA resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProjectPushRulesA to import
-  * @param importFromId The id of the existing ProjectPushRulesA that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ProjectPushRulesA that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProjectPushRulesA to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -121,7 +127,7 @@ export class ProjectPushRulesA extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules gitlab_project_push_rules} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules gitlab_project_push_rules} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -132,7 +138,7 @@ export class ProjectPushRulesA extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_push_rules',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.3.1',
+        providerVersion: '17.4.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,
@@ -155,6 +161,7 @@ export class ProjectPushRulesA extends cdktf.TerraformResource {
     this._memberCheck = config.memberCheck;
     this._preventSecrets = config.preventSecrets;
     this._project = config.project;
+    this._rejectNonDcoCommits = config.rejectNonDcoCommits;
     this._rejectUnsignedCommits = config.rejectUnsignedCommits;
   }
 
@@ -356,6 +363,22 @@ export class ProjectPushRulesA extends cdktf.TerraformResource {
     return this._project;
   }
 
+  // reject_non_dco_commits - computed: true, optional: true, required: false
+  private _rejectNonDcoCommits?: boolean | cdktf.IResolvable; 
+  public get rejectNonDcoCommits() {
+    return this.getBooleanAttribute('reject_non_dco_commits');
+  }
+  public set rejectNonDcoCommits(value: boolean | cdktf.IResolvable) {
+    this._rejectNonDcoCommits = value;
+  }
+  public resetRejectNonDcoCommits() {
+    this._rejectNonDcoCommits = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rejectNonDcoCommitsInput() {
+    return this._rejectNonDcoCommits;
+  }
+
   // reject_unsigned_commits - computed: true, optional: true, required: false
   private _rejectUnsignedCommits?: boolean | cdktf.IResolvable; 
   public get rejectUnsignedCommits() {
@@ -390,6 +413,7 @@ export class ProjectPushRulesA extends cdktf.TerraformResource {
       member_check: cdktf.booleanToTerraform(this._memberCheck),
       prevent_secrets: cdktf.booleanToTerraform(this._preventSecrets),
       project: cdktf.stringToTerraform(this._project),
+      reject_non_dco_commits: cdktf.booleanToTerraform(this._rejectNonDcoCommits),
       reject_unsigned_commits: cdktf.booleanToTerraform(this._rejectUnsignedCommits),
     };
   }
@@ -467,6 +491,12 @@ export class ProjectPushRulesA extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      reject_non_dco_commits: {
+        value: cdktf.booleanToHclTerraform(this._rejectNonDcoCommits),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       reject_unsigned_commits: {
         value: cdktf.booleanToHclTerraform(this._rejectUnsignedCommits),

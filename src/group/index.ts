@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,47 +15,47 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Default to Auto DevOps pipeline for all projects within this group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#auto_devops_enabled Group#auto_devops_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#auto_devops_enabled Group#auto_devops_enabled}
   */
   readonly autoDevopsEnabled?: boolean | cdktf.IResolvable;
   /**
   * A local path to the avatar image to upload. **Note**: not available for imported resources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#avatar Group#avatar}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#avatar Group#avatar}
   */
   readonly avatar?: string;
   /**
   * The hash of the avatar image. Use `filesha256("path/to/avatar.png")` whenever possible. **Note**: this is used to trigger an update of the avatar. If it's not given, but an avatar is given, the avatar will be updated each time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#avatar_hash Group#avatar_hash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#avatar_hash Group#avatar_hash}
   */
   readonly avatarHash?: string;
   /**
   * See https://docs.gitlab.com/ee/api/groups.html#options-for-default_branch_protection. Valid values are: `0`, `1`, `2`, `3`, `4`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#default_branch_protection Group#default_branch_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#default_branch_protection Group#default_branch_protection}
   */
   readonly defaultBranchProtection?: number;
   /**
   * The group's description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#description Group#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#description Group#description}
   */
   readonly description?: string;
   /**
   * Enable email notifications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#emails_enabled Group#emails_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#emails_enabled Group#emails_enabled}
   */
   readonly emailsEnabled?: boolean | cdktf.IResolvable;
   /**
   * Can be set by administrators only. Additional CI/CD minutes for this group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#extra_shared_runners_minutes_limit Group#extra_shared_runners_minutes_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#extra_shared_runners_minutes_limit Group#extra_shared_runners_minutes_limit}
   */
   readonly extraSharedRunnersMinutesLimit?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#id Group#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#id Group#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -64,195 +64,398 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * A list of IP addresses or subnet masks to restrict group access. Will be concatenated together into a comma separated string. Only allowed on top level groups.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#ip_restriction_ranges Group#ip_restriction_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#ip_restriction_ranges Group#ip_restriction_ranges}
   */
   readonly ipRestrictionRanges?: string[];
   /**
   * Enable/disable Large File Storage (LFS) for the projects in this group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#lfs_enabled Group#lfs_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#lfs_enabled Group#lfs_enabled}
   */
   readonly lfsEnabled?: boolean | cdktf.IResolvable;
   /**
   * Users cannot be added to projects in this group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#membership_lock Group#membership_lock}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#membership_lock Group#membership_lock}
   */
   readonly membershipLock?: boolean | cdktf.IResolvable;
   /**
   * Disable the capability of a group from getting mentioned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#mentions_disabled Group#mentions_disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#mentions_disabled Group#mentions_disabled}
   */
   readonly mentionsDisabled?: boolean | cdktf.IResolvable;
   /**
   * The name of the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#name Group#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#name Group#name}
   */
   readonly name: string;
   /**
   * Id of the parent group (creates a nested group).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#parent_id Group#parent_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#parent_id Group#parent_id}
   */
   readonly parentId?: number;
   /**
   * The path of the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#path Group#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#path Group#path}
   */
   readonly path: string;
   /**
   * Whether the group should be permanently removed during a `delete` operation. This only works with subgroups. Must be configured via an `apply` before the `destroy` is run.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#permanently_remove_on_delete Group#permanently_remove_on_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#permanently_remove_on_delete Group#permanently_remove_on_delete}
   */
   readonly permanentlyRemoveOnDelete?: boolean | cdktf.IResolvable;
   /**
   * Defaults to false. When enabled, users can not fork projects from this group to external namespaces.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#prevent_forking_outside_group Group#prevent_forking_outside_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#prevent_forking_outside_group Group#prevent_forking_outside_group}
   */
   readonly preventForkingOutsideGroup?: boolean | cdktf.IResolvable;
   /**
   * Determine if developers can create projects in the group. Valid values are: `noone`, `maintainer`, `developer`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#project_creation_level Group#project_creation_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#project_creation_level Group#project_creation_level}
   */
   readonly projectCreationLevel?: string;
   /**
   * Allow users to request member access.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#request_access_enabled Group#request_access_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#request_access_enabled Group#request_access_enabled}
   */
   readonly requestAccessEnabled?: boolean | cdktf.IResolvable;
   /**
   * Require all users in this group to setup Two-factor authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#require_two_factor_authentication Group#require_two_factor_authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#require_two_factor_authentication Group#require_two_factor_authentication}
   */
   readonly requireTwoFactorAuthentication?: boolean | cdktf.IResolvable;
   /**
   * Prevent sharing a project with another group within this group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#share_with_group_lock Group#share_with_group_lock}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#share_with_group_lock Group#share_with_group_lock}
   */
   readonly shareWithGroupLock?: boolean | cdktf.IResolvable;
   /**
   * Can be set by administrators only. Maximum number of monthly CI/CD minutes for this group. Can be nil (default; inherit system default), 0 (unlimited), or > 0.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#shared_runners_minutes_limit Group#shared_runners_minutes_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#shared_runners_minutes_limit Group#shared_runners_minutes_limit}
   */
   readonly sharedRunnersMinutesLimit?: number;
   /**
   * Enable or disable shared runners for a group’s subgroups and projects. Valid values are: `enabled`, `disabled_and_overridable`, `disabled_and_unoverridable`, `disabled_with_override`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#shared_runners_setting Group#shared_runners_setting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#shared_runners_setting Group#shared_runners_setting}
   */
   readonly sharedRunnersSetting?: string;
   /**
   * Allowed to create subgroups. Valid values are: `owner`, `maintainer`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#subgroup_creation_level Group#subgroup_creation_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#subgroup_creation_level Group#subgroup_creation_level}
   */
   readonly subgroupCreationLevel?: string;
   /**
   * Defaults to 48. Time before Two-factor authentication is enforced (in hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#two_factor_grace_period Group#two_factor_grace_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#two_factor_grace_period Group#two_factor_grace_period}
   */
   readonly twoFactorGracePeriod?: number;
   /**
   * The group's visibility. Can be `private`, `internal`, or `public`. Valid values are: `private`, `internal`, `public`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#visibility_level Group#visibility_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#visibility_level Group#visibility_level}
   */
   readonly visibilityLevel?: string;
   /**
   * The group's wiki access level. Only available on Premium and Ultimate plans. Valid values are `disabled`, `private`, `enabled`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#wiki_access_level Group#wiki_access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#wiki_access_level Group#wiki_access_level}
   */
   readonly wikiAccessLevel?: string;
   /**
+  * default_branch_protection_defaults block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#default_branch_protection_defaults Group#default_branch_protection_defaults}
+  */
+  readonly defaultBranchProtectionDefaults?: GroupDefaultBranchProtectionDefaults;
+  /**
   * push_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#push_rules Group#push_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#push_rules Group#push_rules}
   */
   readonly pushRules?: GroupPushRules;
+}
+export interface GroupDefaultBranchProtectionDefaults {
+  /**
+  * Allow force push for all users with push access.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#allow_force_push Group#allow_force_push}
+  */
+  readonly allowForcePush?: boolean | cdktf.IResolvable;
+  /**
+  * An array of access levels allowed to merge. Valid values are: `developer`, `maintainer`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#allowed_to_merge Group#allowed_to_merge}
+  */
+  readonly allowedToMerge?: string[];
+  /**
+  * An array of access levels allowed to push. Valid values are: `developer`, `maintainer`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#allowed_to_push Group#allowed_to_push}
+  */
+  readonly allowedToPush?: string[];
+  /**
+  * Allow developers to initial push.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#developer_can_initial_push Group#developer_can_initial_push}
+  */
+  readonly developerCanInitialPush?: boolean | cdktf.IResolvable;
+}
+
+export function groupDefaultBranchProtectionDefaultsToTerraform(struct?: GroupDefaultBranchProtectionDefaultsOutputReference | GroupDefaultBranchProtectionDefaults): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    allow_force_push: cdktf.booleanToTerraform(struct!.allowForcePush),
+    allowed_to_merge: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedToMerge),
+    allowed_to_push: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedToPush),
+    developer_can_initial_push: cdktf.booleanToTerraform(struct!.developerCanInitialPush),
+  }
+}
+
+
+export function groupDefaultBranchProtectionDefaultsToHclTerraform(struct?: GroupDefaultBranchProtectionDefaultsOutputReference | GroupDefaultBranchProtectionDefaults): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allow_force_push: {
+      value: cdktf.booleanToHclTerraform(struct!.allowForcePush),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    allowed_to_merge: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedToMerge),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    allowed_to_push: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedToPush),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    developer_can_initial_push: {
+      value: cdktf.booleanToHclTerraform(struct!.developerCanInitialPush),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GroupDefaultBranchProtectionDefaultsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GroupDefaultBranchProtectionDefaults | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allowForcePush !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowForcePush = this._allowForcePush;
+    }
+    if (this._allowedToMerge !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedToMerge = this._allowedToMerge;
+    }
+    if (this._allowedToPush !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedToPush = this._allowedToPush;
+    }
+    if (this._developerCanInitialPush !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.developerCanInitialPush = this._developerCanInitialPush;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GroupDefaultBranchProtectionDefaults | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._allowForcePush = undefined;
+      this._allowedToMerge = undefined;
+      this._allowedToPush = undefined;
+      this._developerCanInitialPush = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._allowForcePush = value.allowForcePush;
+      this._allowedToMerge = value.allowedToMerge;
+      this._allowedToPush = value.allowedToPush;
+      this._developerCanInitialPush = value.developerCanInitialPush;
+    }
+  }
+
+  // allow_force_push - computed: true, optional: true, required: false
+  private _allowForcePush?: boolean | cdktf.IResolvable; 
+  public get allowForcePush() {
+    return this.getBooleanAttribute('allow_force_push');
+  }
+  public set allowForcePush(value: boolean | cdktf.IResolvable) {
+    this._allowForcePush = value;
+  }
+  public resetAllowForcePush() {
+    this._allowForcePush = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowForcePushInput() {
+    return this._allowForcePush;
+  }
+
+  // allowed_to_merge - computed: true, optional: true, required: false
+  private _allowedToMerge?: string[]; 
+  public get allowedToMerge() {
+    return this.getListAttribute('allowed_to_merge');
+  }
+  public set allowedToMerge(value: string[]) {
+    this._allowedToMerge = value;
+  }
+  public resetAllowedToMerge() {
+    this._allowedToMerge = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedToMergeInput() {
+    return this._allowedToMerge;
+  }
+
+  // allowed_to_push - computed: true, optional: true, required: false
+  private _allowedToPush?: string[]; 
+  public get allowedToPush() {
+    return this.getListAttribute('allowed_to_push');
+  }
+  public set allowedToPush(value: string[]) {
+    this._allowedToPush = value;
+  }
+  public resetAllowedToPush() {
+    this._allowedToPush = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedToPushInput() {
+    return this._allowedToPush;
+  }
+
+  // developer_can_initial_push - computed: true, optional: true, required: false
+  private _developerCanInitialPush?: boolean | cdktf.IResolvable; 
+  public get developerCanInitialPush() {
+    return this.getBooleanAttribute('developer_can_initial_push');
+  }
+  public set developerCanInitialPush(value: boolean | cdktf.IResolvable) {
+    this._developerCanInitialPush = value;
+  }
+  public resetDeveloperCanInitialPush() {
+    this._developerCanInitialPush = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get developerCanInitialPushInput() {
+    return this._developerCanInitialPush;
+  }
 }
 export interface GroupPushRules {
   /**
   * All commit author emails must match this regex, e.g. `@my-company.com$`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#author_email_regex Group#author_email_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#author_email_regex Group#author_email_regex}
   */
   readonly authorEmailRegex?: string;
   /**
   * All branch names must match this regex, e.g. `(feature|hotfix)\/*`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#branch_name_regex Group#branch_name_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#branch_name_regex Group#branch_name_regex}
   */
   readonly branchNameRegex?: string;
   /**
   * Only commits pushed using verified emails are allowed.  **Note** This attribute is only supported in GitLab versions >= 16.4.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#commit_committer_check Group#commit_committer_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#commit_committer_check Group#commit_committer_check}
   */
   readonly commitCommitterCheck?: boolean | cdktf.IResolvable;
   /**
   * Users can only push commits to this repository if the commit author name is consistent with their GitLab account name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#commit_committer_name_check Group#commit_committer_name_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#commit_committer_name_check Group#commit_committer_name_check}
   */
   readonly commitCommitterNameCheck?: boolean | cdktf.IResolvable;
   /**
   * No commit message is allowed to match this regex, for example `ssh\:\/\/`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#commit_message_negative_regex Group#commit_message_negative_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#commit_message_negative_regex Group#commit_message_negative_regex}
   */
   readonly commitMessageNegativeRegex?: string;
   /**
   * All commit messages must match this regex, e.g. `Fixed \d+\..*`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#commit_message_regex Group#commit_message_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#commit_message_regex Group#commit_message_regex}
   */
   readonly commitMessageRegex?: string;
   /**
   * Deny deleting a tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#deny_delete_tag Group#deny_delete_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#deny_delete_tag Group#deny_delete_tag}
   */
   readonly denyDeleteTag?: boolean | cdktf.IResolvable;
   /**
   * Filenames matching the regular expression provided in this attribute are not allowed, for example, `(jar|exe)$`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#file_name_regex Group#file_name_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#file_name_regex Group#file_name_regex}
   */
   readonly fileNameRegex?: string;
   /**
   * Maximum file size (MB) allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#max_file_size Group#max_file_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#max_file_size Group#max_file_size}
   */
   readonly maxFileSize?: number;
   /**
   * Allows only GitLab users to author commits.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#member_check Group#member_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#member_check Group#member_check}
   */
   readonly memberCheck?: boolean | cdktf.IResolvable;
   /**
   * GitLab will reject any files that are likely to contain secrets.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#prevent_secrets Group#prevent_secrets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#prevent_secrets Group#prevent_secrets}
   */
   readonly preventSecrets?: boolean | cdktf.IResolvable;
   /**
+  * Reject commit when it’s not DCO certified.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#reject_non_dco_commits Group#reject_non_dco_commits}
+  */
+  readonly rejectNonDcoCommits?: boolean | cdktf.IResolvable;
+  /**
   * Only commits signed through GPG are allowed.  **Note** This attribute is only supported in GitLab versions >= 16.4.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#reject_unsigned_commits Group#reject_unsigned_commits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#reject_unsigned_commits Group#reject_unsigned_commits}
   */
   readonly rejectUnsignedCommits?: boolean | cdktf.IResolvable;
 }
@@ -274,6 +477,7 @@ export function groupPushRulesToTerraform(struct?: GroupPushRulesOutputReference
     max_file_size: cdktf.numberToTerraform(struct!.maxFileSize),
     member_check: cdktf.booleanToTerraform(struct!.memberCheck),
     prevent_secrets: cdktf.booleanToTerraform(struct!.preventSecrets),
+    reject_non_dco_commits: cdktf.booleanToTerraform(struct!.rejectNonDcoCommits),
     reject_unsigned_commits: cdktf.booleanToTerraform(struct!.rejectUnsignedCommits),
   }
 }
@@ -351,6 +555,12 @@ export function groupPushRulesToHclTerraform(struct?: GroupPushRulesOutputRefere
       type: "simple",
       storageClassType: "boolean",
     },
+    reject_non_dco_commits: {
+      value: cdktf.booleanToHclTerraform(struct!.rejectNonDcoCommits),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
     reject_unsigned_commits: {
       value: cdktf.booleanToHclTerraform(struct!.rejectUnsignedCommits),
       isBlock: false,
@@ -421,6 +631,10 @@ export class GroupPushRulesOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.preventSecrets = this._preventSecrets;
     }
+    if (this._rejectNonDcoCommits !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rejectNonDcoCommits = this._rejectNonDcoCommits;
+    }
     if (this._rejectUnsignedCommits !== undefined) {
       hasAnyValues = true;
       internalValueResult.rejectUnsignedCommits = this._rejectUnsignedCommits;
@@ -442,6 +656,7 @@ export class GroupPushRulesOutputReference extends cdktf.ComplexObject {
       this._maxFileSize = undefined;
       this._memberCheck = undefined;
       this._preventSecrets = undefined;
+      this._rejectNonDcoCommits = undefined;
       this._rejectUnsignedCommits = undefined;
     }
     else {
@@ -457,6 +672,7 @@ export class GroupPushRulesOutputReference extends cdktf.ComplexObject {
       this._maxFileSize = value.maxFileSize;
       this._memberCheck = value.memberCheck;
       this._preventSecrets = value.preventSecrets;
+      this._rejectNonDcoCommits = value.rejectNonDcoCommits;
       this._rejectUnsignedCommits = value.rejectUnsignedCommits;
     }
   }
@@ -637,6 +853,22 @@ export class GroupPushRulesOutputReference extends cdktf.ComplexObject {
     return this._preventSecrets;
   }
 
+  // reject_non_dco_commits - computed: true, optional: true, required: false
+  private _rejectNonDcoCommits?: boolean | cdktf.IResolvable; 
+  public get rejectNonDcoCommits() {
+    return this.getBooleanAttribute('reject_non_dco_commits');
+  }
+  public set rejectNonDcoCommits(value: boolean | cdktf.IResolvable) {
+    this._rejectNonDcoCommits = value;
+  }
+  public resetRejectNonDcoCommits() {
+    this._rejectNonDcoCommits = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rejectNonDcoCommitsInput() {
+    return this._rejectNonDcoCommits;
+  }
+
   // reject_unsigned_commits - computed: true, optional: true, required: false
   private _rejectUnsignedCommits?: boolean | cdktf.IResolvable; 
   public get rejectUnsignedCommits() {
@@ -655,7 +887,7 @@ export class GroupPushRulesOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group gitlab_group}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group gitlab_group}
 */
 export class Group extends cdktf.TerraformResource {
 
@@ -671,7 +903,7 @@ export class Group extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Group resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Group to import
-  * @param importFromId The id of the existing Group that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Group that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Group to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -683,7 +915,7 @@ export class Group extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/group gitlab_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/group gitlab_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -694,7 +926,7 @@ export class Group extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.3.1',
+        providerVersion: '17.4.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,
@@ -732,6 +964,7 @@ export class Group extends cdktf.TerraformResource {
     this._twoFactorGracePeriod = config.twoFactorGracePeriod;
     this._visibilityLevel = config.visibilityLevel;
     this._wikiAccessLevel = config.wikiAccessLevel;
+    this._defaultBranchProtectionDefaults.internalValue = config.defaultBranchProtectionDefaults;
     this._pushRules.internalValue = config.pushRules;
   }
 
@@ -1190,6 +1423,22 @@ export class Group extends cdktf.TerraformResource {
     return this._wikiAccessLevel;
   }
 
+  // default_branch_protection_defaults - computed: false, optional: true, required: false
+  private _defaultBranchProtectionDefaults = new GroupDefaultBranchProtectionDefaultsOutputReference(this, "default_branch_protection_defaults");
+  public get defaultBranchProtectionDefaults() {
+    return this._defaultBranchProtectionDefaults;
+  }
+  public putDefaultBranchProtectionDefaults(value: GroupDefaultBranchProtectionDefaults) {
+    this._defaultBranchProtectionDefaults.internalValue = value;
+  }
+  public resetDefaultBranchProtectionDefaults() {
+    this._defaultBranchProtectionDefaults.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultBranchProtectionDefaultsInput() {
+    return this._defaultBranchProtectionDefaults.internalValue;
+  }
+
   // push_rules - computed: false, optional: true, required: false
   private _pushRules = new GroupPushRulesOutputReference(this, "push_rules");
   public get pushRules() {
@@ -1239,6 +1488,7 @@ export class Group extends cdktf.TerraformResource {
       two_factor_grace_period: cdktf.numberToTerraform(this._twoFactorGracePeriod),
       visibility_level: cdktf.stringToTerraform(this._visibilityLevel),
       wiki_access_level: cdktf.stringToTerraform(this._wikiAccessLevel),
+      default_branch_protection_defaults: groupDefaultBranchProtectionDefaultsToTerraform(this._defaultBranchProtectionDefaults.internalValue),
       push_rules: groupPushRulesToTerraform(this._pushRules.internalValue),
     };
   }
@@ -1406,6 +1656,12 @@ export class Group extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      default_branch_protection_defaults: {
+        value: groupDefaultBranchProtectionDefaultsToHclTerraform(this._defaultBranchProtectionDefaults.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GroupDefaultBranchProtectionDefaultsList",
       },
       push_rules: {
         value: groupPushRulesToHclTerraform(this._pushRules.internalValue),

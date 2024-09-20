@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/tag_protection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +13,47 @@ import * as cdktf from 'cdktf';
 
 export interface TagProtectionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Access levels which are allowed to create. Valid values are: `no one`, `developer`, `maintainer`.
+  * Access levels allowed to create. Default value of `maintainer`. The default value is always sent if not provided in the configuration. Valid values are: `no one`, `developer`, `maintainer`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection#create_access_level TagProtection#create_access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/tag_protection#create_access_level TagProtection#create_access_level}
   */
-  readonly createAccessLevel: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection#id TagProtection#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
+  readonly createAccessLevel?: string;
   /**
   * The id of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection#project TagProtection#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/tag_protection#project TagProtection#project}
   */
   readonly project: string;
   /**
   * Name of the tag or wildcard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection#tag TagProtection#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/tag_protection#tag TagProtection#tag}
   */
   readonly tag: string;
   /**
   * allowed_to_create block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection#allowed_to_create TagProtection#allowed_to_create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/tag_protection#allowed_to_create TagProtection#allowed_to_create}
   */
   readonly allowedToCreate?: TagProtectionAllowedToCreate[] | cdktf.IResolvable;
 }
 export interface TagProtectionAllowedToCreate {
   /**
+  * Access levels allowed to create protected tags. Valid values are: `no one`, `developer`, `maintainer`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/tag_protection#access_level TagProtection#access_level}
+  */
+  readonly accessLevel?: string;
+  /**
   * The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `user_id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection#group_id TagProtection#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/tag_protection#group_id TagProtection#group_id}
   */
   readonly groupId?: number;
   /**
   * The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `group_id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection#user_id TagProtection#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/tag_protection#user_id TagProtection#user_id}
   */
   readonly userId?: number;
 }
@@ -65,6 +64,7 @@ export function tagProtectionAllowedToCreateToTerraform(struct?: TagProtectionAl
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    access_level: cdktf.stringToTerraform(struct!.accessLevel),
     group_id: cdktf.numberToTerraform(struct!.groupId),
     user_id: cdktf.numberToTerraform(struct!.userId),
   }
@@ -77,6 +77,12 @@ export function tagProtectionAllowedToCreateToHclTerraform(struct?: TagProtectio
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    access_level: {
+      value: cdktf.stringToHclTerraform(struct!.accessLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     group_id: {
       value: cdktf.numberToHclTerraform(struct!.groupId),
       isBlock: false,
@@ -115,6 +121,10 @@ export class TagProtectionAllowedToCreateOutputReference extends cdktf.ComplexOb
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._accessLevel !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accessLevel = this._accessLevel;
+    }
     if (this._groupId !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupId = this._groupId;
@@ -130,6 +140,7 @@ export class TagProtectionAllowedToCreateOutputReference extends cdktf.ComplexOb
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._accessLevel = undefined;
       this._groupId = undefined;
       this._userId = undefined;
     }
@@ -140,14 +151,26 @@ export class TagProtectionAllowedToCreateOutputReference extends cdktf.ComplexOb
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._accessLevel = value.accessLevel;
       this._groupId = value.groupId;
       this._userId = value.userId;
     }
   }
 
-  // access_level - computed: true, optional: false, required: false
+  // access_level - computed: true, optional: true, required: false
+  private _accessLevel?: string; 
   public get accessLevel() {
     return this.getStringAttribute('access_level');
+  }
+  public set accessLevel(value: string) {
+    this._accessLevel = value;
+  }
+  public resetAccessLevel() {
+    this._accessLevel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessLevelInput() {
+    return this._accessLevel;
   }
 
   // access_level_description - computed: true, optional: false, required: false
@@ -209,7 +232,7 @@ export class TagProtectionAllowedToCreateList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection gitlab_tag_protection}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/tag_protection gitlab_tag_protection}
 */
 export class TagProtection extends cdktf.TerraformResource {
 
@@ -225,7 +248,7 @@ export class TagProtection extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a TagProtection resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TagProtection to import
-  * @param importFromId The id of the existing TagProtection that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TagProtection that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/tag_protection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TagProtection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -237,7 +260,7 @@ export class TagProtection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection gitlab_tag_protection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/tag_protection gitlab_tag_protection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -248,7 +271,7 @@ export class TagProtection extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_tag_protection',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.3.1',
+        providerVersion: '17.4.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,
@@ -260,7 +283,6 @@ export class TagProtection extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._createAccessLevel = config.createAccessLevel;
-    this._id = config.id;
     this._project = config.project;
     this._tag = config.tag;
     this._allowedToCreate.internalValue = config.allowedToCreate;
@@ -270,7 +292,7 @@ export class TagProtection extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // create_access_level - computed: false, optional: false, required: true
+  // create_access_level - computed: true, optional: true, required: false
   private _createAccessLevel?: string; 
   public get createAccessLevel() {
     return this.getStringAttribute('create_access_level');
@@ -278,25 +300,17 @@ export class TagProtection extends cdktf.TerraformResource {
   public set createAccessLevel(value: string) {
     this._createAccessLevel = value;
   }
+  public resetCreateAccessLevel() {
+    this._createAccessLevel = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get createAccessLevelInput() {
     return this._createAccessLevel;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // project - computed: false, optional: false, required: true
@@ -348,7 +362,6 @@ export class TagProtection extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       create_access_level: cdktf.stringToTerraform(this._createAccessLevel),
-      id: cdktf.stringToTerraform(this._id),
       project: cdktf.stringToTerraform(this._project),
       tag: cdktf.stringToTerraform(this._tag),
       allowed_to_create: cdktf.listMapper(tagProtectionAllowedToCreateToTerraform, true)(this._allowedToCreate.internalValue),
@@ -359,12 +372,6 @@ export class TagProtection extends cdktf.TerraformResource {
     const attrs = {
       create_access_level: {
         value: cdktf.stringToHclTerraform(this._createAccessLevel),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

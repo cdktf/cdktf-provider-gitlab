@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,110 +15,116 @@ export interface IntegrationJiraConfig extends cdktf.TerraformMetaArguments {
   /**
   * The base URL to the Jira instance API. Web URL value is used if not set. For example, https://jira-api.example.com.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#api_url IntegrationJira#api_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#api_url IntegrationJira#api_url}
   */
   readonly apiUrl?: string;
   /**
   * Enable comments inside Jira issues on each GitLab event (commit / merge request)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#comment_on_event_enabled IntegrationJira#comment_on_event_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#comment_on_event_enabled IntegrationJira#comment_on_event_enabled}
   */
   readonly commentOnEventEnabled?: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for commit events
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#commit_events IntegrationJira#commit_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#commit_events IntegrationJira#commit_events}
   */
   readonly commitEvents?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#id IntegrationJira#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#id IntegrationJira#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Enable notifications for issues events.
+  * Enable viewing Jira issues in GitLab.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#issues_events IntegrationJira#issues_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#issues_enabled IntegrationJira#issues_enabled}
   */
-  readonly issuesEvents?: boolean | cdktf.IResolvable;
+  readonly issuesEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * The authentication method to be used with Jira. 0 means Basic Authentication. 1 means Jira personal access token. Defaults to 0.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#jira_auth_type IntegrationJira#jira_auth_type}
+  */
+  readonly jiraAuthType?: number;
+  /**
+  * Prefix to match Jira issue keys.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#jira_issue_prefix IntegrationJira#jira_issue_prefix}
+  */
+  readonly jiraIssuePrefix?: string;
+  /**
+  * Regular expression to match Jira issue keys.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#jira_issue_regex IntegrationJira#jira_issue_regex}
+  */
+  readonly jiraIssueRegex?: string;
+  /**
+  * Enable automatic issue transitions. Takes precedence over jira_issue_transition_id if enabled. Defaults to false.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#jira_issue_transition_automatic IntegrationJira#jira_issue_transition_automatic}
+  */
+  readonly jiraIssueTransitionAutomatic?: boolean | cdktf.IResolvable;
   /**
   * The ID of a transition that moves issues to a closed state. You can find this number under the JIRA workflow administration (Administration > Issues > Workflows) by selecting View under Operations of the desired workflow of your project. By default, this ID is set to 2. *Note**: importing this field is only supported since GitLab 15.2.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#jira_issue_transition_id IntegrationJira#jira_issue_transition_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#jira_issue_transition_id IntegrationJira#jira_issue_transition_id}
   */
   readonly jiraIssueTransitionId?: string;
   /**
-  * Enable notifications for job events.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#job_events IntegrationJira#job_events}
-  */
-  readonly jobEvents?: boolean | cdktf.IResolvable;
-  /**
   * Enable notifications for merge request events
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#merge_requests_events IntegrationJira#merge_requests_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#merge_requests_events IntegrationJira#merge_requests_events}
   */
   readonly mergeRequestsEvents?: boolean | cdktf.IResolvable;
   /**
-  * Enable notifications for note events.
+  * The Jira API token, password, or personal access token to be used with Jira. When your authentication method is basic (jira_auth_type is 0), use an API token for Jira Cloud or a password for Jira Data Center or Jira Server. When your authentication method is a Jira personal access token (jira_auth_type is 1), use the personal access token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#note_events IntegrationJira#note_events}
-  */
-  readonly noteEvents?: boolean | cdktf.IResolvable;
-  /**
-  * The password of the user created to be used with GitLab/JIRA.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#password IntegrationJira#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#password IntegrationJira#password}
   */
   readonly password: string;
   /**
-  * Enable notifications for pipeline events.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#pipeline_events IntegrationJira#pipeline_events}
-  */
-  readonly pipelineEvents?: boolean | cdktf.IResolvable;
-  /**
   * ID of the project you want to activate integration on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#project IntegrationJira#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#project IntegrationJira#project}
   */
   readonly project: string;
   /**
   * The short identifier for your JIRA project, all uppercase, e.g., PROJ.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#project_key IntegrationJira#project_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#project_key IntegrationJira#project_key}
   */
   readonly projectKey?: string;
   /**
-  * Enable notifications for push events.
+  * Keys of Jira projects. When issues_enabled is true, this setting specifies which Jira projects to view issues from in GitLab.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#push_events IntegrationJira#push_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#project_keys IntegrationJira#project_keys}
   */
-  readonly pushEvents?: boolean | cdktf.IResolvable;
-  /**
-  * Enable notifications for tag_push events.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#tag_push_events IntegrationJira#tag_push_events}
-  */
-  readonly tagPushEvents?: boolean | cdktf.IResolvable;
+  readonly projectKeys?: string[];
   /**
   * The URL to the JIRA project which is being linked to this GitLab project. For example, https://jira.example.com.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#url IntegrationJira#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#url IntegrationJira#url}
   */
   readonly url: string;
   /**
-  * The username of the user created to be used with GitLab/JIRA.
+  * Indicates whether or not to inherit default settings. Defaults to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#username IntegrationJira#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#use_inherited_settings IntegrationJira#use_inherited_settings}
   */
-  readonly username: string;
+  readonly useInheritedSettings?: boolean | cdktf.IResolvable;
+  /**
+  * The email or username to be used with Jira. For Jira Cloud use an email, for Jira Data Center and Jira Server use a username. Required when using Basic authentication (jira_auth_type is 0).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#username IntegrationJira#username}
+  */
+  readonly username?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira gitlab_integration_jira}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira gitlab_integration_jira}
 */
 export class IntegrationJira extends cdktf.TerraformResource {
 
@@ -134,7 +140,7 @@ export class IntegrationJira extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IntegrationJira resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationJira to import
-  * @param importFromId The id of the existing IntegrationJira that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IntegrationJira that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationJira to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -146,7 +152,7 @@ export class IntegrationJira extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/integration_jira gitlab_integration_jira} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/integration_jira gitlab_integration_jira} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -157,7 +163,7 @@ export class IntegrationJira extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_integration_jira',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.3.1',
+        providerVersion: '17.4.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,
@@ -172,18 +178,19 @@ export class IntegrationJira extends cdktf.TerraformResource {
     this._commentOnEventEnabled = config.commentOnEventEnabled;
     this._commitEvents = config.commitEvents;
     this._id = config.id;
-    this._issuesEvents = config.issuesEvents;
+    this._issuesEnabled = config.issuesEnabled;
+    this._jiraAuthType = config.jiraAuthType;
+    this._jiraIssuePrefix = config.jiraIssuePrefix;
+    this._jiraIssueRegex = config.jiraIssueRegex;
+    this._jiraIssueTransitionAutomatic = config.jiraIssueTransitionAutomatic;
     this._jiraIssueTransitionId = config.jiraIssueTransitionId;
-    this._jobEvents = config.jobEvents;
     this._mergeRequestsEvents = config.mergeRequestsEvents;
-    this._noteEvents = config.noteEvents;
     this._password = config.password;
-    this._pipelineEvents = config.pipelineEvents;
     this._project = config.project;
     this._projectKey = config.projectKey;
-    this._pushEvents = config.pushEvents;
-    this._tagPushEvents = config.tagPushEvents;
+    this._projectKeys = config.projectKeys;
     this._url = config.url;
+    this._useInheritedSettings = config.useInheritedSettings;
     this._username = config.username;
   }
 
@@ -212,7 +219,7 @@ export class IntegrationJira extends cdktf.TerraformResource {
     return this._apiUrl;
   }
 
-  // comment_on_event_enabled - computed: true, optional: true, required: false
+  // comment_on_event_enabled - computed: false, optional: true, required: false
   private _commentOnEventEnabled?: boolean | cdktf.IResolvable; 
   public get commentOnEventEnabled() {
     return this.getBooleanAttribute('comment_on_event_enabled');
@@ -265,20 +272,84 @@ export class IntegrationJira extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // issues_events - computed: true, optional: true, required: false
-  private _issuesEvents?: boolean | cdktf.IResolvable; 
-  public get issuesEvents() {
-    return this.getBooleanAttribute('issues_events');
+  // issues_enabled - computed: false, optional: true, required: false
+  private _issuesEnabled?: boolean | cdktf.IResolvable; 
+  public get issuesEnabled() {
+    return this.getBooleanAttribute('issues_enabled');
   }
-  public set issuesEvents(value: boolean | cdktf.IResolvable) {
-    this._issuesEvents = value;
+  public set issuesEnabled(value: boolean | cdktf.IResolvable) {
+    this._issuesEnabled = value;
   }
-  public resetIssuesEvents() {
-    this._issuesEvents = undefined;
+  public resetIssuesEnabled() {
+    this._issuesEnabled = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get issuesEventsInput() {
-    return this._issuesEvents;
+  public get issuesEnabledInput() {
+    return this._issuesEnabled;
+  }
+
+  // jira_auth_type - computed: false, optional: true, required: false
+  private _jiraAuthType?: number; 
+  public get jiraAuthType() {
+    return this.getNumberAttribute('jira_auth_type');
+  }
+  public set jiraAuthType(value: number) {
+    this._jiraAuthType = value;
+  }
+  public resetJiraAuthType() {
+    this._jiraAuthType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jiraAuthTypeInput() {
+    return this._jiraAuthType;
+  }
+
+  // jira_issue_prefix - computed: false, optional: true, required: false
+  private _jiraIssuePrefix?: string; 
+  public get jiraIssuePrefix() {
+    return this.getStringAttribute('jira_issue_prefix');
+  }
+  public set jiraIssuePrefix(value: string) {
+    this._jiraIssuePrefix = value;
+  }
+  public resetJiraIssuePrefix() {
+    this._jiraIssuePrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jiraIssuePrefixInput() {
+    return this._jiraIssuePrefix;
+  }
+
+  // jira_issue_regex - computed: false, optional: true, required: false
+  private _jiraIssueRegex?: string; 
+  public get jiraIssueRegex() {
+    return this.getStringAttribute('jira_issue_regex');
+  }
+  public set jiraIssueRegex(value: string) {
+    this._jiraIssueRegex = value;
+  }
+  public resetJiraIssueRegex() {
+    this._jiraIssueRegex = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jiraIssueRegexInput() {
+    return this._jiraIssueRegex;
+  }
+
+  // jira_issue_transition_automatic - computed: false, optional: true, required: false
+  private _jiraIssueTransitionAutomatic?: boolean | cdktf.IResolvable; 
+  public get jiraIssueTransitionAutomatic() {
+    return this.getBooleanAttribute('jira_issue_transition_automatic');
+  }
+  public set jiraIssueTransitionAutomatic(value: boolean | cdktf.IResolvable) {
+    this._jiraIssueTransitionAutomatic = value;
+  }
+  public resetJiraIssueTransitionAutomatic() {
+    this._jiraIssueTransitionAutomatic = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jiraIssueTransitionAutomaticInput() {
+    return this._jiraIssueTransitionAutomatic;
   }
 
   // jira_issue_transition_id - computed: false, optional: true, required: false
@@ -297,22 +368,6 @@ export class IntegrationJira extends cdktf.TerraformResource {
     return this._jiraIssueTransitionId;
   }
 
-  // job_events - computed: true, optional: true, required: false
-  private _jobEvents?: boolean | cdktf.IResolvable; 
-  public get jobEvents() {
-    return this.getBooleanAttribute('job_events');
-  }
-  public set jobEvents(value: boolean | cdktf.IResolvable) {
-    this._jobEvents = value;
-  }
-  public resetJobEvents() {
-    this._jobEvents = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get jobEventsInput() {
-    return this._jobEvents;
-  }
-
   // merge_requests_events - computed: true, optional: true, required: false
   private _mergeRequestsEvents?: boolean | cdktf.IResolvable; 
   public get mergeRequestsEvents() {
@@ -329,22 +384,6 @@ export class IntegrationJira extends cdktf.TerraformResource {
     return this._mergeRequestsEvents;
   }
 
-  // note_events - computed: true, optional: true, required: false
-  private _noteEvents?: boolean | cdktf.IResolvable; 
-  public get noteEvents() {
-    return this.getBooleanAttribute('note_events');
-  }
-  public set noteEvents(value: boolean | cdktf.IResolvable) {
-    this._noteEvents = value;
-  }
-  public resetNoteEvents() {
-    this._noteEvents = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get noteEventsInput() {
-    return this._noteEvents;
-  }
-
   // password - computed: false, optional: false, required: true
   private _password?: string; 
   public get password() {
@@ -356,22 +395,6 @@ export class IntegrationJira extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get passwordInput() {
     return this._password;
-  }
-
-  // pipeline_events - computed: true, optional: true, required: false
-  private _pipelineEvents?: boolean | cdktf.IResolvable; 
-  public get pipelineEvents() {
-    return this.getBooleanAttribute('pipeline_events');
-  }
-  public set pipelineEvents(value: boolean | cdktf.IResolvable) {
-    this._pipelineEvents = value;
-  }
-  public resetPipelineEvents() {
-    this._pipelineEvents = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get pipelineEventsInput() {
-    return this._pipelineEvents;
   }
 
   // project - computed: false, optional: false, required: true
@@ -403,36 +426,20 @@ export class IntegrationJira extends cdktf.TerraformResource {
     return this._projectKey;
   }
 
-  // push_events - computed: true, optional: true, required: false
-  private _pushEvents?: boolean | cdktf.IResolvable; 
-  public get pushEvents() {
-    return this.getBooleanAttribute('push_events');
+  // project_keys - computed: false, optional: true, required: false
+  private _projectKeys?: string[]; 
+  public get projectKeys() {
+    return this.getListAttribute('project_keys');
   }
-  public set pushEvents(value: boolean | cdktf.IResolvable) {
-    this._pushEvents = value;
+  public set projectKeys(value: string[]) {
+    this._projectKeys = value;
   }
-  public resetPushEvents() {
-    this._pushEvents = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get pushEventsInput() {
-    return this._pushEvents;
-  }
-
-  // tag_push_events - computed: true, optional: true, required: false
-  private _tagPushEvents?: boolean | cdktf.IResolvable; 
-  public get tagPushEvents() {
-    return this.getBooleanAttribute('tag_push_events');
-  }
-  public set tagPushEvents(value: boolean | cdktf.IResolvable) {
-    this._tagPushEvents = value;
-  }
-  public resetTagPushEvents() {
-    this._tagPushEvents = undefined;
+  public resetProjectKeys() {
+    this._projectKeys = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get tagPushEventsInput() {
-    return this._tagPushEvents;
+  public get projectKeysInput() {
+    return this._projectKeys;
   }
 
   // title - computed: true, optional: false, required: false
@@ -458,13 +465,32 @@ export class IntegrationJira extends cdktf.TerraformResource {
     return this._url;
   }
 
-  // username - computed: false, optional: false, required: true
+  // use_inherited_settings - computed: false, optional: true, required: false
+  private _useInheritedSettings?: boolean | cdktf.IResolvable; 
+  public get useInheritedSettings() {
+    return this.getBooleanAttribute('use_inherited_settings');
+  }
+  public set useInheritedSettings(value: boolean | cdktf.IResolvable) {
+    this._useInheritedSettings = value;
+  }
+  public resetUseInheritedSettings() {
+    this._useInheritedSettings = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get useInheritedSettingsInput() {
+    return this._useInheritedSettings;
+  }
+
+  // username - computed: false, optional: true, required: false
   private _username?: string; 
   public get username() {
     return this.getStringAttribute('username');
   }
   public set username(value: string) {
     this._username = value;
+  }
+  public resetUsername() {
+    this._username = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get usernameInput() {
@@ -481,18 +507,19 @@ export class IntegrationJira extends cdktf.TerraformResource {
       comment_on_event_enabled: cdktf.booleanToTerraform(this._commentOnEventEnabled),
       commit_events: cdktf.booleanToTerraform(this._commitEvents),
       id: cdktf.stringToTerraform(this._id),
-      issues_events: cdktf.booleanToTerraform(this._issuesEvents),
+      issues_enabled: cdktf.booleanToTerraform(this._issuesEnabled),
+      jira_auth_type: cdktf.numberToTerraform(this._jiraAuthType),
+      jira_issue_prefix: cdktf.stringToTerraform(this._jiraIssuePrefix),
+      jira_issue_regex: cdktf.stringToTerraform(this._jiraIssueRegex),
+      jira_issue_transition_automatic: cdktf.booleanToTerraform(this._jiraIssueTransitionAutomatic),
       jira_issue_transition_id: cdktf.stringToTerraform(this._jiraIssueTransitionId),
-      job_events: cdktf.booleanToTerraform(this._jobEvents),
       merge_requests_events: cdktf.booleanToTerraform(this._mergeRequestsEvents),
-      note_events: cdktf.booleanToTerraform(this._noteEvents),
       password: cdktf.stringToTerraform(this._password),
-      pipeline_events: cdktf.booleanToTerraform(this._pipelineEvents),
       project: cdktf.stringToTerraform(this._project),
       project_key: cdktf.stringToTerraform(this._projectKey),
-      push_events: cdktf.booleanToTerraform(this._pushEvents),
-      tag_push_events: cdktf.booleanToTerraform(this._tagPushEvents),
+      project_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._projectKeys),
       url: cdktf.stringToTerraform(this._url),
+      use_inherited_settings: cdktf.booleanToTerraform(this._useInheritedSettings),
       username: cdktf.stringToTerraform(this._username),
     };
   }
@@ -523,8 +550,32 @@ export class IntegrationJira extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      issues_events: {
-        value: cdktf.booleanToHclTerraform(this._issuesEvents),
+      issues_enabled: {
+        value: cdktf.booleanToHclTerraform(this._issuesEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      jira_auth_type: {
+        value: cdktf.numberToHclTerraform(this._jiraAuthType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      jira_issue_prefix: {
+        value: cdktf.stringToHclTerraform(this._jiraIssuePrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      jira_issue_regex: {
+        value: cdktf.stringToHclTerraform(this._jiraIssueRegex),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      jira_issue_transition_automatic: {
+        value: cdktf.booleanToHclTerraform(this._jiraIssueTransitionAutomatic),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -535,20 +586,8 @@ export class IntegrationJira extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      job_events: {
-        value: cdktf.booleanToHclTerraform(this._jobEvents),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
-      },
       merge_requests_events: {
         value: cdktf.booleanToHclTerraform(this._mergeRequestsEvents),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
-      },
-      note_events: {
-        value: cdktf.booleanToHclTerraform(this._noteEvents),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -558,12 +597,6 @@ export class IntegrationJira extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      pipeline_events: {
-        value: cdktf.booleanToHclTerraform(this._pipelineEvents),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
       },
       project: {
         value: cdktf.stringToHclTerraform(this._project),
@@ -577,23 +610,23 @@ export class IntegrationJira extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      push_events: {
-        value: cdktf.booleanToHclTerraform(this._pushEvents),
+      project_keys: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._projectKeys),
         isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
-      },
-      tag_push_events: {
-        value: cdktf.booleanToHclTerraform(this._tagPushEvents),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
+        type: "list",
+        storageClassType: "stringList",
       },
       url: {
         value: cdktf.stringToHclTerraform(this._url),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      use_inherited_settings: {
+        value: cdktf.booleanToHclTerraform(this._useInheritedSettings),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       username: {
         value: cdktf.stringToHclTerraform(this._username),
