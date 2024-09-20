@@ -4,7 +4,7 @@
 
 ### TagProtection <a name="TagProtection" id="@cdktf/provider-gitlab.tagProtection.TagProtection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection gitlab_tag_protection}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/tag_protection gitlab_tag_protection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.tagProtection.TagProtection.Initializer"></a>
 
@@ -23,12 +23,11 @@ TagProtection.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
-    .createAccessLevel(java.lang.String)
     .project(java.lang.String)
     .tag(java.lang.String)
 //  .allowedToCreate(IResolvable)
 //  .allowedToCreate(java.util.List<TagProtectionAllowedToCreate>)
-//  .id(java.lang.String)
+//  .createAccessLevel(java.lang.String)
     .build();
 ```
 
@@ -43,11 +42,10 @@ TagProtection.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtection.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtection.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtection.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtection.Initializer.parameter.createAccessLevel">createAccessLevel</a></code> | <code>java.lang.String</code> | Access levels which are allowed to create. Valid values are: `no one`, `developer`, `maintainer`. |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtection.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | The id of the project. |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtection.Initializer.parameter.tag">tag</a></code> | <code>java.lang.String</code> | Name of the tag or wildcard. |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtection.Initializer.parameter.allowedToCreate">allowedToCreate</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreate">TagProtectionAllowedToCreate</a>></code> | allowed_to_create block. |
-| <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtection.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection#id TagProtection#id}. |
+| <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtection.Initializer.parameter.createAccessLevel">createAccessLevel</a></code> | <code>java.lang.String</code> | Access levels allowed to create. |
 
 ---
 
@@ -111,23 +109,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `createAccessLevel`<sup>Required</sup> <a name="createAccessLevel" id="@cdktf/provider-gitlab.tagProtection.TagProtection.Initializer.parameter.createAccessLevel"></a>
-
-- *Type:* java.lang.String
-
-Access levels which are allowed to create. Valid values are: `no one`, `developer`, `maintainer`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection#create_access_level TagProtection#create_access_level}
-
----
-
 ##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.tagProtection.TagProtection.Initializer.parameter.project"></a>
 
 - *Type:* java.lang.String
 
 The id of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection#project TagProtection#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/tag_protection#project TagProtection#project}
 
 ---
 
@@ -137,7 +125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Name of the tag or wildcard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection#tag TagProtection#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/tag_protection#tag TagProtection#tag}
 
 ---
 
@@ -147,18 +135,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 allowed_to_create block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection#allowed_to_create TagProtection#allowed_to_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/tag_protection#allowed_to_create TagProtection#allowed_to_create}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.tagProtection.TagProtection.Initializer.parameter.id"></a>
+##### `createAccessLevel`<sup>Optional</sup> <a name="createAccessLevel" id="@cdktf/provider-gitlab.tagProtection.TagProtection.Initializer.parameter.createAccessLevel"></a>
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection#id TagProtection#id}.
+Access levels allowed to create.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Default value of `maintainer`. The default value is always sent if not provided in the configuration. Valid values are: `no one`, `developer`, `maintainer`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/tag_protection#create_access_level TagProtection#create_access_level}
 
 ---
 
@@ -191,7 +180,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtection.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtection.putAllowedToCreate">putAllowedToCreate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtection.resetAllowedToCreate">resetAllowedToCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtection.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtection.resetCreateAccessLevel">resetCreateAccessLevel</a></code> | *No description.* |
 
 ---
 
@@ -503,10 +492,10 @@ public void putAllowedToCreate(IResolvable OR java.util.List<TagProtectionAllowe
 public void resetAllowedToCreate()
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-gitlab.tagProtection.TagProtection.resetId"></a>
+##### `resetCreateAccessLevel` <a name="resetCreateAccessLevel" id="@cdktf/provider-gitlab.tagProtection.TagProtection.resetCreateAccessLevel"></a>
 
 ```java
-public void resetId()
+public void resetCreateAccessLevel()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -612,7 +601,7 @@ The construct id used in the generated config for the TagProtection to import.
 
 The id of the existing TagProtection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/tag_protection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -643,13 +632,12 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtection.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtection.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtection.property.allowedToCreate">allowedToCreate</a></code> | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreateList">TagProtectionAllowedToCreateList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtection.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtection.property.allowedToCreateInput">allowedToCreateInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreate">TagProtectionAllowedToCreate</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtection.property.createAccessLevelInput">createAccessLevelInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtection.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtection.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtection.property.tagInput">tagInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtection.property.createAccessLevel">createAccessLevel</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtection.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtection.property.project">project</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtection.property.tag">tag</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -807,6 +795,16 @@ public TagProtectionAllowedToCreateList getAllowedToCreate();
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.tagProtection.TagProtection.property.id"></a>
+
+```java
+public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `allowedToCreateInput`<sup>Optional</sup> <a name="allowedToCreateInput" id="@cdktf/provider-gitlab.tagProtection.TagProtection.property.allowedToCreateInput"></a>
 
 ```java
@@ -821,16 +819,6 @@ public java.lang.Object getAllowedToCreateInput();
 
 ```java
 public java.lang.String getCreateAccessLevelInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-gitlab.tagProtection.TagProtection.property.idInput"></a>
-
-```java
-public java.lang.String getIdInput();
 ```
 
 - *Type:* java.lang.String
@@ -861,16 +849,6 @@ public java.lang.String getTagInput();
 
 ```java
 public java.lang.String getCreateAccessLevel();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.tagProtection.TagProtection.property.id"></a>
-
-```java
-public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
@@ -925,6 +903,7 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.gitlab.tag_protection.TagProtectionAllowedToCreate;
 
 TagProtectionAllowedToCreate.builder()
+//  .accessLevel(java.lang.String)
 //  .groupId(java.lang.Number)
 //  .userId(java.lang.Number)
     .build();
@@ -934,8 +913,23 @@ TagProtectionAllowedToCreate.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreate.property.accessLevel">accessLevel</a></code> | <code>java.lang.String</code> | Access levels allowed to create protected tags. Valid values are: `no one`, `developer`, `maintainer`. |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreate.property.groupId">groupId</a></code> | <code>java.lang.Number</code> | The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `user_id`. |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreate.property.userId">userId</a></code> | <code>java.lang.Number</code> | The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `group_id`. |
+
+---
+
+##### `accessLevel`<sup>Optional</sup> <a name="accessLevel" id="@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreate.property.accessLevel"></a>
+
+```java
+public java.lang.String getAccessLevel();
+```
+
+- *Type:* java.lang.String
+
+Access levels allowed to create protected tags. Valid values are: `no one`, `developer`, `maintainer`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/tag_protection#access_level TagProtection#access_level}
 
 ---
 
@@ -949,7 +943,7 @@ public java.lang.Number getGroupId();
 
 The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `user_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection#group_id TagProtection#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/tag_protection#group_id TagProtection#group_id}
 
 ---
 
@@ -963,7 +957,7 @@ public java.lang.Number getUserId();
 
 The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `group_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection#user_id TagProtection#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/tag_protection#user_id TagProtection#user_id}
 
 ---
 
@@ -986,12 +980,11 @@ TagProtectionConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
-    .createAccessLevel(java.lang.String)
     .project(java.lang.String)
     .tag(java.lang.String)
 //  .allowedToCreate(IResolvable)
 //  .allowedToCreate(java.util.List<TagProtectionAllowedToCreate>)
-//  .id(java.lang.String)
+//  .createAccessLevel(java.lang.String)
     .build();
 ```
 
@@ -1006,11 +999,10 @@ TagProtectionConfig.builder()
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionConfig.property.createAccessLevel">createAccessLevel</a></code> | <code>java.lang.String</code> | Access levels which are allowed to create. Valid values are: `no one`, `developer`, `maintainer`. |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionConfig.property.project">project</a></code> | <code>java.lang.String</code> | The id of the project. |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionConfig.property.tag">tag</a></code> | <code>java.lang.String</code> | Name of the tag or wildcard. |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionConfig.property.allowedToCreate">allowedToCreate</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreate">TagProtectionAllowedToCreate</a>></code> | allowed_to_create block. |
-| <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection#id TagProtection#id}. |
+| <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionConfig.property.createAccessLevel">createAccessLevel</a></code> | <code>java.lang.String</code> | Access levels allowed to create. |
 
 ---
 
@@ -1084,20 +1076,6 @@ public java.lang.Object getProvisioners();
 
 ---
 
-##### `createAccessLevel`<sup>Required</sup> <a name="createAccessLevel" id="@cdktf/provider-gitlab.tagProtection.TagProtectionConfig.property.createAccessLevel"></a>
-
-```java
-public java.lang.String getCreateAccessLevel();
-```
-
-- *Type:* java.lang.String
-
-Access levels which are allowed to create. Valid values are: `no one`, `developer`, `maintainer`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection#create_access_level TagProtection#create_access_level}
-
----
-
 ##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-gitlab.tagProtection.TagProtectionConfig.property.project"></a>
 
 ```java
@@ -1108,7 +1086,7 @@ public java.lang.String getProject();
 
 The id of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection#project TagProtection#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/tag_protection#project TagProtection#project}
 
 ---
 
@@ -1122,7 +1100,7 @@ public java.lang.String getTag();
 
 Name of the tag or wildcard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection#tag TagProtection#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/tag_protection#tag TagProtection#tag}
 
 ---
 
@@ -1136,22 +1114,23 @@ public java.lang.Object getAllowedToCreate();
 
 allowed_to_create block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection#allowed_to_create TagProtection#allowed_to_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/tag_protection#allowed_to_create TagProtection#allowed_to_create}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.tagProtection.TagProtectionConfig.property.id"></a>
+##### `createAccessLevel`<sup>Optional</sup> <a name="createAccessLevel" id="@cdktf/provider-gitlab.tagProtection.TagProtectionConfig.property.createAccessLevel"></a>
 
 ```java
-public java.lang.String getId();
+public java.lang.String getCreateAccessLevel();
 ```
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/tag_protection#id TagProtection#id}.
+Access levels allowed to create.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Default value of `maintainer`. The default value is always sent if not provided in the configuration. Valid values are: `no one`, `developer`, `maintainer`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/tag_protection#create_access_level TagProtection#create_access_level}
 
 ---
 
@@ -1385,6 +1364,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreateOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreateOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreateOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreateOutputReference.resetAccessLevel">resetAccessLevel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreateOutputReference.resetGroupId">resetGroupId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreateOutputReference.resetUserId">resetUserId</a></code> | *No description.* |
 
@@ -1540,6 +1520,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetAccessLevel` <a name="resetAccessLevel" id="@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreateOutputReference.resetAccessLevel"></a>
+
+```java
+public void resetAccessLevel()
+```
+
 ##### `resetGroupId` <a name="resetGroupId" id="@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreateOutputReference.resetGroupId"></a>
 
 ```java
@@ -1559,10 +1545,11 @@ public void resetUserId()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreateOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreateOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreateOutputReference.property.accessLevel">accessLevel</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreateOutputReference.property.accessLevelDescription">accessLevelDescription</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreateOutputReference.property.accessLevelInput">accessLevelInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreateOutputReference.property.groupIdInput">groupIdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreateOutputReference.property.userIdInput">userIdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreateOutputReference.property.accessLevel">accessLevel</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreateOutputReference.property.groupId">groupId</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreateOutputReference.property.userId">userId</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreateOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreate">TagProtectionAllowedToCreate</a></code> | *No description.* |
@@ -1593,20 +1580,20 @@ public java.lang.String getFqn();
 
 ---
 
-##### `accessLevel`<sup>Required</sup> <a name="accessLevel" id="@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreateOutputReference.property.accessLevel"></a>
+##### `accessLevelDescription`<sup>Required</sup> <a name="accessLevelDescription" id="@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreateOutputReference.property.accessLevelDescription"></a>
 
 ```java
-public java.lang.String getAccessLevel();
+public java.lang.String getAccessLevelDescription();
 ```
 
 - *Type:* java.lang.String
 
 ---
 
-##### `accessLevelDescription`<sup>Required</sup> <a name="accessLevelDescription" id="@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreateOutputReference.property.accessLevelDescription"></a>
+##### `accessLevelInput`<sup>Optional</sup> <a name="accessLevelInput" id="@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreateOutputReference.property.accessLevelInput"></a>
 
 ```java
-public java.lang.String getAccessLevelDescription();
+public java.lang.String getAccessLevelInput();
 ```
 
 - *Type:* java.lang.String
@@ -1630,6 +1617,16 @@ public java.lang.Number getUserIdInput();
 ```
 
 - *Type:* java.lang.Number
+
+---
+
+##### `accessLevel`<sup>Required</sup> <a name="accessLevel" id="@cdktf/provider-gitlab.tagProtection.TagProtectionAllowedToCreateOutputReference.property.accessLevel"></a>
+
+```java
+public java.lang.String getAccessLevel();
+```
+
+- *Type:* java.lang.String
 
 ---
 

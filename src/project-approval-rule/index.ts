@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_approval_rule
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_approval_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +10,29 @@ export interface ProjectApprovalRuleConfig extends cdktf.TerraformMetaArguments 
   /**
   * Whether the rule is applied to all protected branches. If set to 'true', the value of `protected_branch_ids` is ignored. Default is 'false'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_approval_rule#applies_to_all_protected_branches ProjectApprovalRule#applies_to_all_protected_branches}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_approval_rule#applies_to_all_protected_branches ProjectApprovalRule#applies_to_all_protected_branches}
   */
   readonly appliesToAllProtectedBranches?: boolean | cdktf.IResolvable;
   /**
   * The number of approvals required for this rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_approval_rule#approvals_required ProjectApprovalRule#approvals_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_approval_rule#approvals_required ProjectApprovalRule#approvals_required}
   */
   readonly approvalsRequired: number;
   /**
   * When this flag is set, the default `any_approver` rule will not be imported if present.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_approval_rule#disable_importing_default_any_approver_rule_on_create ProjectApprovalRule#disable_importing_default_any_approver_rule_on_create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_approval_rule#disable_importing_default_any_approver_rule_on_create ProjectApprovalRule#disable_importing_default_any_approver_rule_on_create}
   */
   readonly disableImportingDefaultAnyApproverRuleOnCreate?: boolean | cdktf.IResolvable;
   /**
   * A list of group IDs whose members can approve of the merge request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_approval_rule#group_ids ProjectApprovalRule#group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_approval_rule#group_ids ProjectApprovalRule#group_ids}
   */
   readonly groupIds?: number[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_approval_rule#id ProjectApprovalRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_approval_rule#id ProjectApprovalRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,37 +41,43 @@ export interface ProjectApprovalRuleConfig extends cdktf.TerraformMetaArguments 
   /**
   * The name of the approval rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_approval_rule#name ProjectApprovalRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_approval_rule#name ProjectApprovalRule#name}
   */
   readonly name: string;
   /**
   * The name or id of the project to add the approval rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_approval_rule#project ProjectApprovalRule#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_approval_rule#project ProjectApprovalRule#project}
   */
   readonly project: string;
   /**
   * A list of protected branch IDs (not branch names) for which the rule applies.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_approval_rule#protected_branch_ids ProjectApprovalRule#protected_branch_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_approval_rule#protected_branch_ids ProjectApprovalRule#protected_branch_ids}
   */
   readonly protectedBranchIds?: number[];
   /**
-  * String, defaults to 'regular'. The type of rule. `any_approver` is a pre-configured default rule with `approvals_required` at `0`. Valid values are `regular`, `any_approver`.
+  * Report type is required when the rule_type is `report_approver`. Valid values are `code_coverage`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_approval_rule#rule_type ProjectApprovalRule#rule_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_approval_rule#report_type ProjectApprovalRule#report_type}
+  */
+  readonly reportType?: string;
+  /**
+  * String, defaults to 'regular'. The type of rule. `any_approver` is a pre-configured default rule with `approvals_required` at `0`. Valid values are `regular`, `any_approver`, `report_approver`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_approval_rule#rule_type ProjectApprovalRule#rule_type}
   */
   readonly ruleType?: string;
   /**
   * A list of specific User IDs to add to the list of approvers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_approval_rule#user_ids ProjectApprovalRule#user_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_approval_rule#user_ids ProjectApprovalRule#user_ids}
   */
   readonly userIds?: number[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_approval_rule gitlab_project_approval_rule}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_approval_rule gitlab_project_approval_rule}
 */
 export class ProjectApprovalRule extends cdktf.TerraformResource {
 
@@ -92,7 +93,7 @@ export class ProjectApprovalRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ProjectApprovalRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProjectApprovalRule to import
-  * @param importFromId The id of the existing ProjectApprovalRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_approval_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ProjectApprovalRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_approval_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProjectApprovalRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -104,7 +105,7 @@ export class ProjectApprovalRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_approval_rule gitlab_project_approval_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_approval_rule gitlab_project_approval_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -115,7 +116,7 @@ export class ProjectApprovalRule extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_approval_rule',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.3.1',
+        providerVersion: '17.4.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,
@@ -134,6 +135,7 @@ export class ProjectApprovalRule extends cdktf.TerraformResource {
     this._name = config.name;
     this._project = config.project;
     this._protectedBranchIds = config.protectedBranchIds;
+    this._reportType = config.reportType;
     this._ruleType = config.ruleType;
     this._userIds = config.userIds;
   }
@@ -261,6 +263,22 @@ export class ProjectApprovalRule extends cdktf.TerraformResource {
     return this._protectedBranchIds;
   }
 
+  // report_type - computed: true, optional: true, required: false
+  private _reportType?: string; 
+  public get reportType() {
+    return this.getStringAttribute('report_type');
+  }
+  public set reportType(value: string) {
+    this._reportType = value;
+  }
+  public resetReportType() {
+    this._reportType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get reportTypeInput() {
+    return this._reportType;
+  }
+
   // rule_type - computed: true, optional: true, required: false
   private _ruleType?: string; 
   public get ruleType() {
@@ -307,6 +325,7 @@ export class ProjectApprovalRule extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
       protected_branch_ids: cdktf.listMapper(cdktf.numberToTerraform, false)(this._protectedBranchIds),
+      report_type: cdktf.stringToTerraform(this._reportType),
       rule_type: cdktf.stringToTerraform(this._ruleType),
       user_ids: cdktf.listMapper(cdktf.numberToTerraform, false)(this._userIds),
     };
@@ -361,6 +380,12 @@ export class ProjectApprovalRule extends cdktf.TerraformResource {
         isBlock: false,
         type: "set",
         storageClassType: "numberList",
+      },
+      report_type: {
+        value: cdktf.stringToHclTerraform(this._reportType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       rule_type: {
         value: cdktf.stringToHclTerraform(this._ruleType),

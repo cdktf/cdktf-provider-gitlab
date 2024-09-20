@@ -4,7 +4,7 @@
 
 ### ProjectPushRulesA <a name="ProjectPushRulesA" id="@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules gitlab_project_push_rules}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules gitlab_project_push_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.Initializer"></a>
 
@@ -33,6 +33,7 @@ projectPushRules.ProjectPushRulesA(
   max_file_size: typing.Union[int, float] = None,
   member_check: typing.Union[bool, IResolvable] = None,
   prevent_secrets: typing.Union[bool, IResolvable] = None,
+  reject_non_dco_commits: typing.Union[bool, IResolvable] = None,
   reject_unsigned_commits: typing.Union[bool, IResolvable] = None
 )
 ```
@@ -60,6 +61,7 @@ projectPushRules.ProjectPushRulesA(
 | <code><a href="#@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.Initializer.parameter.maxFileSize">max_file_size</a></code> | <code>typing.Union[int, float]</code> | Maximum file size (MB). |
 | <code><a href="#@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.Initializer.parameter.memberCheck">member_check</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Restrict commits by author (email) to existing GitLab users. |
 | <code><a href="#@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.Initializer.parameter.preventSecrets">prevent_secrets</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | GitLab will reject any files that are likely to contain secrets. |
+| <code><a href="#@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.Initializer.parameter.rejectNonDcoCommits">reject_non_dco_commits</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Reject commit when it’s not DCO certified. |
 | <code><a href="#@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.Initializer.parameter.rejectUnsignedCommits">reject_unsigned_commits</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Reject commit when it’s not signed. |
 
 ---
@@ -130,7 +132,7 @@ Must be unique amongst siblings in the same scope
 
 The ID or URL-encoded path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#project ProjectPushRulesA#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#project ProjectPushRulesA#project}
 
 ---
 
@@ -140,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 All commit author emails must match this regex, e.g. `@my-company.com$`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#author_email_regex ProjectPushRulesA#author_email_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#author_email_regex ProjectPushRulesA#author_email_regex}
 
 ---
 
@@ -150,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 All branch names must match this regex, e.g. `(feature|hotfix)\/*`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#branch_name_regex ProjectPushRulesA#branch_name_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#branch_name_regex ProjectPushRulesA#branch_name_regex}
 
 ---
 
@@ -160,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Users can only push commits to this repository that were committed with one of their own verified emails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#commit_committer_check ProjectPushRulesA#commit_committer_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#commit_committer_check ProjectPushRulesA#commit_committer_check}
 
 ---
 
@@ -170,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Users can only push commits to this repository if the commit author name is consistent with their GitLab account name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#commit_committer_name_check ProjectPushRulesA#commit_committer_name_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#commit_committer_name_check ProjectPushRulesA#commit_committer_name_check}
 
 ---
 
@@ -180,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 No commit message is allowed to match this regex, e.g. `ssh\:\/\/`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#commit_message_negative_regex ProjectPushRulesA#commit_message_negative_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#commit_message_negative_regex ProjectPushRulesA#commit_message_negative_regex}
 
 ---
 
@@ -190,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 All commit messages must match this regex, e.g. `Fixed \d+\..*`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#commit_message_regex ProjectPushRulesA#commit_message_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#commit_message_regex ProjectPushRulesA#commit_message_regex}
 
 ---
 
@@ -200,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Deny deleting a tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#deny_delete_tag ProjectPushRulesA#deny_delete_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#deny_delete_tag ProjectPushRulesA#deny_delete_tag}
 
 ---
 
@@ -210,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 All committed filenames must not match this regex, e.g. `(jar|exe)$`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#file_name_regex ProjectPushRulesA#file_name_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#file_name_regex ProjectPushRulesA#file_name_regex}
 
 ---
 
@@ -220,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum file size (MB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#max_file_size ProjectPushRulesA#max_file_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#max_file_size ProjectPushRulesA#max_file_size}
 
 ---
 
@@ -230,7 +232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Restrict commits by author (email) to existing GitLab users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#member_check ProjectPushRulesA#member_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#member_check ProjectPushRulesA#member_check}
 
 ---
 
@@ -240,7 +242,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 GitLab will reject any files that are likely to contain secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#prevent_secrets ProjectPushRulesA#prevent_secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#prevent_secrets ProjectPushRulesA#prevent_secrets}
+
+---
+
+##### `reject_non_dco_commits`<sup>Optional</sup> <a name="reject_non_dco_commits" id="@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.Initializer.parameter.rejectNonDcoCommits"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Reject commit when it’s not DCO certified.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#reject_non_dco_commits ProjectPushRulesA#reject_non_dco_commits}
 
 ---
 
@@ -250,7 +262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Reject commit when it’s not signed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#reject_unsigned_commits ProjectPushRulesA#reject_unsigned_commits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#reject_unsigned_commits ProjectPushRulesA#reject_unsigned_commits}
 
 ---
 
@@ -292,6 +304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.resetMaxFileSize">reset_max_file_size</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.resetMemberCheck">reset_member_check</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.resetPreventSecrets">reset_prevent_secrets</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.resetRejectNonDcoCommits">reset_reject_non_dco_commits</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.resetRejectUnsignedCommits">reset_reject_unsigned_commits</a></code> | *No description.* |
 
 ---
@@ -687,6 +700,12 @@ def reset_member_check() -> None
 def reset_prevent_secrets() -> None
 ```
 
+##### `reset_reject_non_dco_commits` <a name="reset_reject_non_dco_commits" id="@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.resetRejectNonDcoCommits"></a>
+
+```python
+def reset_reject_non_dco_commits() -> None
+```
+
 ##### `reset_reject_unsigned_commits` <a name="reset_reject_unsigned_commits" id="@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.resetRejectUnsignedCommits"></a>
 
 ```python
@@ -807,7 +826,7 @@ The construct id used in the generated config for the ProjectPushRulesA to impor
 
 The id of the existing ProjectPushRulesA that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -850,6 +869,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3
 | <code><a href="#@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.property.memberCheckInput">member_check_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.property.preventSecretsInput">prevent_secrets_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.property.rejectNonDcoCommitsInput">reject_non_dco_commits_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.property.rejectUnsignedCommitsInput">reject_unsigned_commits_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.property.authorEmailRegex">author_email_regex</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.property.branchNameRegex">branch_name_regex</a></code> | <code>str</code> | *No description.* |
@@ -863,6 +883,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3
 | <code><a href="#@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.property.memberCheck">member_check</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.property.preventSecrets">prevent_secrets</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.property.project">project</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.property.rejectNonDcoCommits">reject_non_dco_commits</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.property.rejectUnsignedCommits">reject_unsigned_commits</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 
 ---
@@ -1139,6 +1160,16 @@ project_input: str
 
 ---
 
+##### `reject_non_dco_commits_input`<sup>Optional</sup> <a name="reject_non_dco_commits_input" id="@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.property.rejectNonDcoCommitsInput"></a>
+
+```python
+reject_non_dco_commits_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `reject_unsigned_commits_input`<sup>Optional</sup> <a name="reject_unsigned_commits_input" id="@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.property.rejectUnsignedCommitsInput"></a>
 
 ```python
@@ -1269,6 +1300,16 @@ project: str
 
 ---
 
+##### `reject_non_dco_commits`<sup>Required</sup> <a name="reject_non_dco_commits" id="@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.property.rejectNonDcoCommits"></a>
+
+```python
+reject_non_dco_commits: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `reject_unsigned_commits`<sup>Required</sup> <a name="reject_unsigned_commits" id="@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesA.property.rejectUnsignedCommits"></a>
 
 ```python
@@ -1326,6 +1367,7 @@ projectPushRules.ProjectPushRulesAConfig(
   max_file_size: typing.Union[int, float] = None,
   member_check: typing.Union[bool, IResolvable] = None,
   prevent_secrets: typing.Union[bool, IResolvable] = None,
+  reject_non_dco_commits: typing.Union[bool, IResolvable] = None,
   reject_unsigned_commits: typing.Union[bool, IResolvable] = None
 )
 ```
@@ -1353,6 +1395,7 @@ projectPushRules.ProjectPushRulesAConfig(
 | <code><a href="#@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesAConfig.property.maxFileSize">max_file_size</a></code> | <code>typing.Union[int, float]</code> | Maximum file size (MB). |
 | <code><a href="#@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesAConfig.property.memberCheck">member_check</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Restrict commits by author (email) to existing GitLab users. |
 | <code><a href="#@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesAConfig.property.preventSecrets">prevent_secrets</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | GitLab will reject any files that are likely to contain secrets. |
+| <code><a href="#@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesAConfig.property.rejectNonDcoCommits">reject_non_dco_commits</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Reject commit when it’s not DCO certified. |
 | <code><a href="#@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesAConfig.property.rejectUnsignedCommits">reject_unsigned_commits</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Reject commit when it’s not signed. |
 
 ---
@@ -1437,7 +1480,7 @@ project: str
 
 The ID or URL-encoded path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#project ProjectPushRulesA#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#project ProjectPushRulesA#project}
 
 ---
 
@@ -1451,7 +1494,7 @@ author_email_regex: str
 
 All commit author emails must match this regex, e.g. `@my-company.com$`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#author_email_regex ProjectPushRulesA#author_email_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#author_email_regex ProjectPushRulesA#author_email_regex}
 
 ---
 
@@ -1465,7 +1508,7 @@ branch_name_regex: str
 
 All branch names must match this regex, e.g. `(feature|hotfix)\/*`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#branch_name_regex ProjectPushRulesA#branch_name_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#branch_name_regex ProjectPushRulesA#branch_name_regex}
 
 ---
 
@@ -1479,7 +1522,7 @@ commit_committer_check: typing.Union[bool, IResolvable]
 
 Users can only push commits to this repository that were committed with one of their own verified emails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#commit_committer_check ProjectPushRulesA#commit_committer_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#commit_committer_check ProjectPushRulesA#commit_committer_check}
 
 ---
 
@@ -1493,7 +1536,7 @@ commit_committer_name_check: typing.Union[bool, IResolvable]
 
 Users can only push commits to this repository if the commit author name is consistent with their GitLab account name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#commit_committer_name_check ProjectPushRulesA#commit_committer_name_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#commit_committer_name_check ProjectPushRulesA#commit_committer_name_check}
 
 ---
 
@@ -1507,7 +1550,7 @@ commit_message_negative_regex: str
 
 No commit message is allowed to match this regex, e.g. `ssh\:\/\/`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#commit_message_negative_regex ProjectPushRulesA#commit_message_negative_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#commit_message_negative_regex ProjectPushRulesA#commit_message_negative_regex}
 
 ---
 
@@ -1521,7 +1564,7 @@ commit_message_regex: str
 
 All commit messages must match this regex, e.g. `Fixed \d+\..*`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#commit_message_regex ProjectPushRulesA#commit_message_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#commit_message_regex ProjectPushRulesA#commit_message_regex}
 
 ---
 
@@ -1535,7 +1578,7 @@ deny_delete_tag: typing.Union[bool, IResolvable]
 
 Deny deleting a tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#deny_delete_tag ProjectPushRulesA#deny_delete_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#deny_delete_tag ProjectPushRulesA#deny_delete_tag}
 
 ---
 
@@ -1549,7 +1592,7 @@ file_name_regex: str
 
 All committed filenames must not match this regex, e.g. `(jar|exe)$`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#file_name_regex ProjectPushRulesA#file_name_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#file_name_regex ProjectPushRulesA#file_name_regex}
 
 ---
 
@@ -1563,7 +1606,7 @@ max_file_size: typing.Union[int, float]
 
 Maximum file size (MB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#max_file_size ProjectPushRulesA#max_file_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#max_file_size ProjectPushRulesA#max_file_size}
 
 ---
 
@@ -1577,7 +1620,7 @@ member_check: typing.Union[bool, IResolvable]
 
 Restrict commits by author (email) to existing GitLab users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#member_check ProjectPushRulesA#member_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#member_check ProjectPushRulesA#member_check}
 
 ---
 
@@ -1591,7 +1634,21 @@ prevent_secrets: typing.Union[bool, IResolvable]
 
 GitLab will reject any files that are likely to contain secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#prevent_secrets ProjectPushRulesA#prevent_secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#prevent_secrets ProjectPushRulesA#prevent_secrets}
+
+---
+
+##### `reject_non_dco_commits`<sup>Optional</sup> <a name="reject_non_dco_commits" id="@cdktf/provider-gitlab.projectPushRules.ProjectPushRulesAConfig.property.rejectNonDcoCommits"></a>
+
+```python
+reject_non_dco_commits: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Reject commit when it’s not DCO certified.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#reject_non_dco_commits ProjectPushRulesA#reject_non_dco_commits}
 
 ---
 
@@ -1605,7 +1662,7 @@ reject_unsigned_commits: typing.Union[bool, IResolvable]
 
 Reject commit when it’s not signed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_push_rules#reject_unsigned_commits ProjectPushRulesA#reject_unsigned_commits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_push_rules#reject_unsigned_commits ProjectPushRulesA#reject_unsigned_commits}
 
 ---
 

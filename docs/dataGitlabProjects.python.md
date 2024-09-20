@@ -4,7 +4,7 @@
 
 ### DataGitlabProjects <a name="DataGitlabProjects" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjects"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects gitlab_projects}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects gitlab_projects}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjects.Initializer"></a>
 
@@ -60,7 +60,7 @@ dataGitlabProjects.DataGitlabProjects(
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjects.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjects.Initializer.parameter.archived">archived</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Limit by archived status. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjects.Initializer.parameter.groupId">group_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the group owned by the authenticated user to look projects for within. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjects.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#id DataGitlabProjects#id}. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjects.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#id DataGitlabProjects#id}. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjects.Initializer.parameter.includeSubgroups">include_subgroups</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Include projects in subgroups of this group. Default is `false`. Needs `group_id`. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjects.Initializer.parameter.maxQueryablePages">max_queryable_pages</a></code> | <code>typing.Union[int, float]</code> | The maximum number of project results pages that may be queried. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjects.Initializer.parameter.membership">membership</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Limit by projects that the current user is a member of. |
@@ -150,7 +150,7 @@ Must be unique amongst siblings in the same scope
 
 Limit by archived status.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#archived DataGitlabProjects#archived}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#archived DataGitlabProjects#archived}
 
 ---
 
@@ -162,7 +162,7 @@ The ID of the group owned by the authenticated user to look projects for within.
 
 Cannot be used with `min_access_level`, `with_programming_language` or `statistics`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#group_id DataGitlabProjects#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#group_id DataGitlabProjects#group_id}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#id DataGitlabProjects#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#id DataGitlabProjects#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -183,7 +183,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Include projects in subgroups of this group. Default is `false`. Needs `group_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#include_subgroups DataGitlabProjects#include_subgroups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#include_subgroups DataGitlabProjects#include_subgroups}
 
 ---
 
@@ -195,7 +195,7 @@ The maximum number of project results pages that may be queried.
 
 Prevents overloading your Gitlab instance in case of a misconfiguration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#max_queryable_pages DataGitlabProjects#max_queryable_pages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#max_queryable_pages DataGitlabProjects#max_queryable_pages}
 
 ---
 
@@ -205,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Limit by projects that the current user is a member of.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#membership DataGitlabProjects#membership}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#membership DataGitlabProjects#membership}
 
 ---
 
@@ -215,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Limit to projects where current user has at least this access level, refer to the [official documentation](https://docs.gitlab.com/ee/api/members.html) for values. Cannot be used with `group_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#min_access_level DataGitlabProjects#min_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#min_access_level DataGitlabProjects#min_access_level}
 
 ---
 
@@ -227,7 +227,7 @@ Return projects ordered ordered by: `id`, `name`, `path`, `created_at`, `updated
 
 Some values or only available in certain circumstances. See [upstream docs](https://docs.gitlab.com/ee/api/projects.html#list-all-projects) for details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#order_by DataGitlabProjects#order_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#order_by DataGitlabProjects#order_by}
 
 ---
 
@@ -237,7 +237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Limit by projects owned by the current user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#owned DataGitlabProjects#owned}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#owned DataGitlabProjects#owned}
 
 ---
 
@@ -247,7 +247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The first page to begin the query on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#page DataGitlabProjects#page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#page DataGitlabProjects#page}
 
 ---
 
@@ -257,7 +257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The number of results to return per page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#per_page DataGitlabProjects#per_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#per_page DataGitlabProjects#per_page}
 
 ---
 
@@ -267,7 +267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Return list of authorized projects matching the search criteria.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#search DataGitlabProjects#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#search DataGitlabProjects#search}
 
 ---
 
@@ -277,7 +277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Return only the ID, URL, name, and path of each project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#simple DataGitlabProjects#simple}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#simple DataGitlabProjects#simple}
 
 ---
 
@@ -287,7 +287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Return projects sorted in `asc` or `desc` order. Default is `desc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#sort DataGitlabProjects#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#sort DataGitlabProjects#sort}
 
 ---
 
@@ -297,7 +297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Limit by projects starred by the current user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#starred DataGitlabProjects#starred}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#starred DataGitlabProjects#starred}
 
 ---
 
@@ -307,7 +307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Include project statistics. Cannot be used with `group_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#statistics DataGitlabProjects#statistics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#statistics DataGitlabProjects#statistics}
 
 ---
 
@@ -317,7 +317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Limit by projects that have all of the given topics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#topic DataGitlabProjects#topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#topic DataGitlabProjects#topic}
 
 ---
 
@@ -327,7 +327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Limit by visibility `public`, `internal`, or `private`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#visibility DataGitlabProjects#visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#visibility DataGitlabProjects#visibility}
 
 ---
 
@@ -337,7 +337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Include custom attributes in response _(admins only)_.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#with_custom_attributes DataGitlabProjects#with_custom_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#with_custom_attributes DataGitlabProjects#with_custom_attributes}
 
 ---
 
@@ -347,7 +347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Limit by projects with issues feature enabled. Default is `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#with_issues_enabled DataGitlabProjects#with_issues_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#with_issues_enabled DataGitlabProjects#with_issues_enabled}
 
 ---
 
@@ -357,7 +357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Limit by projects with merge requests feature enabled. Default is `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#with_merge_requests_enabled DataGitlabProjects#with_merge_requests_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#with_merge_requests_enabled DataGitlabProjects#with_merge_requests_enabled}
 
 ---
 
@@ -367,7 +367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Limit by projects which use the given programming language. Cannot be used with `group_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#with_programming_language DataGitlabProjects#with_programming_language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#with_programming_language DataGitlabProjects#with_programming_language}
 
 ---
 
@@ -377,7 +377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Include projects shared to this group. Default is `true`. Needs `group_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#with_shared DataGitlabProjects#with_shared}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#with_shared DataGitlabProjects#with_shared}
 
 ---
 
@@ -897,7 +897,7 @@ The construct id used in the generated config for the DataGitlabProjects to impo
 
 The id of the existing DataGitlabProjects that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1641,7 +1641,7 @@ dataGitlabProjects.DataGitlabProjectsConfig(
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsConfig.property.archived">archived</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Limit by archived status. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsConfig.property.groupId">group_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the group owned by the authenticated user to look projects for within. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#id DataGitlabProjects#id}. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#id DataGitlabProjects#id}. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsConfig.property.includeSubgroups">include_subgroups</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Include projects in subgroups of this group. Default is `false`. Needs `group_id`. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsConfig.property.maxQueryablePages">max_queryable_pages</a></code> | <code>typing.Union[int, float]</code> | The maximum number of project results pages that may be queried. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjects.DataGitlabProjectsConfig.property.membership">membership</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Limit by projects that the current user is a member of. |
@@ -1745,7 +1745,7 @@ archived: typing.Union[bool, IResolvable]
 
 Limit by archived status.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#archived DataGitlabProjects#archived}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#archived DataGitlabProjects#archived}
 
 ---
 
@@ -1761,7 +1761,7 @@ The ID of the group owned by the authenticated user to look projects for within.
 
 Cannot be used with `min_access_level`, `with_programming_language` or `statistics`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#group_id DataGitlabProjects#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#group_id DataGitlabProjects#group_id}
 
 ---
 
@@ -1773,7 +1773,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#id DataGitlabProjects#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#id DataGitlabProjects#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1790,7 +1790,7 @@ include_subgroups: typing.Union[bool, IResolvable]
 
 Include projects in subgroups of this group. Default is `false`. Needs `group_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#include_subgroups DataGitlabProjects#include_subgroups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#include_subgroups DataGitlabProjects#include_subgroups}
 
 ---
 
@@ -1806,7 +1806,7 @@ The maximum number of project results pages that may be queried.
 
 Prevents overloading your Gitlab instance in case of a misconfiguration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#max_queryable_pages DataGitlabProjects#max_queryable_pages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#max_queryable_pages DataGitlabProjects#max_queryable_pages}
 
 ---
 
@@ -1820,7 +1820,7 @@ membership: typing.Union[bool, IResolvable]
 
 Limit by projects that the current user is a member of.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#membership DataGitlabProjects#membership}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#membership DataGitlabProjects#membership}
 
 ---
 
@@ -1834,7 +1834,7 @@ min_access_level: typing.Union[int, float]
 
 Limit to projects where current user has at least this access level, refer to the [official documentation](https://docs.gitlab.com/ee/api/members.html) for values. Cannot be used with `group_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#min_access_level DataGitlabProjects#min_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#min_access_level DataGitlabProjects#min_access_level}
 
 ---
 
@@ -1850,7 +1850,7 @@ Return projects ordered ordered by: `id`, `name`, `path`, `created_at`, `updated
 
 Some values or only available in certain circumstances. See [upstream docs](https://docs.gitlab.com/ee/api/projects.html#list-all-projects) for details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#order_by DataGitlabProjects#order_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#order_by DataGitlabProjects#order_by}
 
 ---
 
@@ -1864,7 +1864,7 @@ owned: typing.Union[bool, IResolvable]
 
 Limit by projects owned by the current user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#owned DataGitlabProjects#owned}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#owned DataGitlabProjects#owned}
 
 ---
 
@@ -1878,7 +1878,7 @@ page: typing.Union[int, float]
 
 The first page to begin the query on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#page DataGitlabProjects#page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#page DataGitlabProjects#page}
 
 ---
 
@@ -1892,7 +1892,7 @@ per_page: typing.Union[int, float]
 
 The number of results to return per page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#per_page DataGitlabProjects#per_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#per_page DataGitlabProjects#per_page}
 
 ---
 
@@ -1906,7 +1906,7 @@ search: str
 
 Return list of authorized projects matching the search criteria.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#search DataGitlabProjects#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#search DataGitlabProjects#search}
 
 ---
 
@@ -1920,7 +1920,7 @@ simple: typing.Union[bool, IResolvable]
 
 Return only the ID, URL, name, and path of each project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#simple DataGitlabProjects#simple}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#simple DataGitlabProjects#simple}
 
 ---
 
@@ -1934,7 +1934,7 @@ sort: str
 
 Return projects sorted in `asc` or `desc` order. Default is `desc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#sort DataGitlabProjects#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#sort DataGitlabProjects#sort}
 
 ---
 
@@ -1948,7 +1948,7 @@ starred: typing.Union[bool, IResolvable]
 
 Limit by projects starred by the current user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#starred DataGitlabProjects#starred}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#starred DataGitlabProjects#starred}
 
 ---
 
@@ -1962,7 +1962,7 @@ statistics: typing.Union[bool, IResolvable]
 
 Include project statistics. Cannot be used with `group_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#statistics DataGitlabProjects#statistics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#statistics DataGitlabProjects#statistics}
 
 ---
 
@@ -1976,7 +1976,7 @@ topic: typing.List[str]
 
 Limit by projects that have all of the given topics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#topic DataGitlabProjects#topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#topic DataGitlabProjects#topic}
 
 ---
 
@@ -1990,7 +1990,7 @@ visibility: str
 
 Limit by visibility `public`, `internal`, or `private`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#visibility DataGitlabProjects#visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#visibility DataGitlabProjects#visibility}
 
 ---
 
@@ -2004,7 +2004,7 @@ with_custom_attributes: typing.Union[bool, IResolvable]
 
 Include custom attributes in response _(admins only)_.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#with_custom_attributes DataGitlabProjects#with_custom_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#with_custom_attributes DataGitlabProjects#with_custom_attributes}
 
 ---
 
@@ -2018,7 +2018,7 @@ with_issues_enabled: typing.Union[bool, IResolvable]
 
 Limit by projects with issues feature enabled. Default is `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#with_issues_enabled DataGitlabProjects#with_issues_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#with_issues_enabled DataGitlabProjects#with_issues_enabled}
 
 ---
 
@@ -2032,7 +2032,7 @@ with_merge_requests_enabled: typing.Union[bool, IResolvable]
 
 Limit by projects with merge requests feature enabled. Default is `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#with_merge_requests_enabled DataGitlabProjects#with_merge_requests_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#with_merge_requests_enabled DataGitlabProjects#with_merge_requests_enabled}
 
 ---
 
@@ -2046,7 +2046,7 @@ with_programming_language: str
 
 Limit by projects which use the given programming language. Cannot be used with `group_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#with_programming_language DataGitlabProjects#with_programming_language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#with_programming_language DataGitlabProjects#with_programming_language}
 
 ---
 
@@ -2060,7 +2060,7 @@ with_shared: typing.Union[bool, IResolvable]
 
 Include projects shared to this group. Default is `true`. Needs `group_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/projects#with_shared DataGitlabProjects#with_shared}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/projects#with_shared DataGitlabProjects#with_shared}
 
 ---
 

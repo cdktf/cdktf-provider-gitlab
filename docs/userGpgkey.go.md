@@ -4,12 +4,12 @@
 
 ### UserGpgkey <a name="UserGpgkey" id="@cdktf/provider-gitlab.userGpgkey.UserGpgkey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user_gpgkey gitlab_user_gpgkey}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user_gpgkey gitlab_user_gpgkey}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.userGpgkey.UserGpgkey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/usergpgkey"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/usergpgkey"
 
 usergpgkey.NewUserGpgkey(scope Construct, id *string, config UserGpgkeyConfig) UserGpgkey
 ```
@@ -392,7 +392,7 @@ func ResetUserId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.userGpgkey.UserGpgkey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/usergpgkey"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/usergpgkey"
 
 usergpgkey.UserGpgkey_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.userGpgkey.UserGpgkey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/usergpgkey"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/usergpgkey"
 
 usergpgkey.UserGpgkey_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ usergpgkey.UserGpgkey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.userGpgkey.UserGpgkey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/usergpgkey"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/usergpgkey"
 
 usergpgkey.UserGpgkey_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ usergpgkey.UserGpgkey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.userGpgkey.UserGpgkey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/usergpgkey"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/usergpgkey"
 
 usergpgkey.UserGpgkey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the UserGpgkey to import.
 
 The id of the existing UserGpgkey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user_gpgkey#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user_gpgkey#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.userGpgkey.UserGpgkeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/usergpgkey"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/usergpgkey"
 
 &usergpgkey.UserGpgkeyConfig {
 	Connection: interface{},
@@ -797,7 +797,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/usergpgkey"
 | <code><a href="#@cdktf/provider-gitlab.userGpgkey.UserGpgkeyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userGpgkey.UserGpgkeyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userGpgkey.UserGpgkeyConfig.property.key">Key</a></code> | <code>*string</code> | The armored GPG public key. |
-| <code><a href="#@cdktf/provider-gitlab.userGpgkey.UserGpgkeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user_gpgkey#id UserGpgkey#id}. |
+| <code><a href="#@cdktf/provider-gitlab.userGpgkey.UserGpgkeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user_gpgkey#id UserGpgkey#id}. |
 | <code><a href="#@cdktf/provider-gitlab.userGpgkey.UserGpgkeyConfig.property.userId">UserId</a></code> | <code>*f64</code> | The ID of the user to add the GPG key to. |
 
 ---
@@ -882,7 +882,7 @@ Key *string
 
 The armored GPG public key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user_gpgkey#key UserGpgkey#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user_gpgkey#key UserGpgkey#key}
 
 ---
 
@@ -894,7 +894,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user_gpgkey#id UserGpgkey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user_gpgkey#id UserGpgkey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -913,7 +913,7 @@ The ID of the user to add the GPG key to.
 
 If this field is omitted, this resource manages a GPG key for the current user. Otherwise, this resource manages a GPG key for the specified user, and an admin token is required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user_gpgkey#user_id UserGpgkey#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user_gpgkey#user_id UserGpgkey#user_id}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ApplicationSettings <a name="ApplicationSettings" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings gitlab_application_settings}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings gitlab_application_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer"></a>
 
@@ -27,21 +27,34 @@ applicationSettings.ApplicationSettings(
   after_sign_up_text: str = None,
   akismet_api_key: str = None,
   akismet_enabled: typing.Union[bool, IResolvable] = None,
+  allow_account_deletion: typing.Union[bool, IResolvable] = None,
   allow_group_owners_to_manage_ldap: typing.Union[bool, IResolvable] = None,
   allow_local_requests_from_system_hooks: typing.Union[bool, IResolvable] = None,
   allow_local_requests_from_web_hooks_and_services: typing.Union[bool, IResolvable] = None,
+  allow_project_creation_for_guest_and_below: typing.Union[bool, IResolvable] = None,
+  allow_runner_registration_token: typing.Union[bool, IResolvable] = None,
   archive_builds_in_human_readable: str = None,
+  asciidoc_max_includes: typing.Union[int, float] = None,
   asset_proxy_allowlist: typing.List[str] = None,
   asset_proxy_enabled: typing.Union[bool, IResolvable] = None,
   asset_proxy_secret_key: str = None,
   asset_proxy_url: str = None,
   authorized_keys_enabled: typing.Union[bool, IResolvable] = None,
+  auto_ban_user_on_excessive_projects_download: typing.Union[bool, IResolvable] = None,
   auto_devops_domain: str = None,
   auto_devops_enabled: typing.Union[bool, IResolvable] = None,
   automatic_purchased_storage_allocation: typing.Union[bool, IResolvable] = None,
+  bulk_import_concurrent_pipeline_batch_limit: typing.Union[int, float] = None,
+  bulk_import_enabled: typing.Union[bool, IResolvable] = None,
+  bulk_import_max_download_file_size: typing.Union[int, float] = None,
   can_create_group: typing.Union[bool, IResolvable] = None,
   check_namespace_plan: typing.Union[bool, IResolvable] = None,
+  ci_max_includes: typing.Union[int, float] = None,
+  ci_max_total_yaml_size_bytes: typing.Union[int, float] = None,
   commit_email_hostname: str = None,
+  concurrent_bitbucket_import_jobs_limit: typing.Union[int, float] = None,
+  concurrent_bitbucket_server_import_jobs_limit: typing.Union[int, float] = None,
+  concurrent_github_import_jobs_limit: typing.Union[int, float] = None,
   container_expiration_policies_enable_historic_entries: typing.Union[bool, IResolvable] = None,
   container_registry_cleanup_tags_service_max_list_size: typing.Union[int, float] = None,
   container_registry_delete_tags_service_timeout: typing.Union[int, float] = None,
@@ -49,27 +62,39 @@ applicationSettings.ApplicationSettings(
   container_registry_expiration_policies_worker_capacity: typing.Union[int, float] = None,
   container_registry_token_expire_delay: typing.Union[int, float] = None,
   deactivate_dormant_users: typing.Union[bool, IResolvable] = None,
+  deactivate_dormant_users_period: typing.Union[int, float] = None,
+  decompress_archive_file_timeout: typing.Union[int, float] = None,
   default_artifacts_expire_in: str = None,
   default_branch_name: str = None,
   default_branch_protection: typing.Union[int, float] = None,
+  default_branch_protection_defaults: ApplicationSettingsDefaultBranchProtectionDefaults = None,
   default_ci_config_path: str = None,
   default_group_visibility: str = None,
+  default_preferred_language: str = None,
   default_project_creation: typing.Union[int, float] = None,
   default_projects_limit: typing.Union[int, float] = None,
   default_project_visibility: str = None,
   default_snippet_visibility: str = None,
+  default_syntax_highlighting_theme: typing.Union[int, float] = None,
   delete_inactive_projects: typing.Union[bool, IResolvable] = None,
+  delete_unconfirmed_users: typing.Union[bool, IResolvable] = None,
   deletion_adjourned_period: typing.Union[int, float] = None,
+  diagramsnet_enabled: typing.Union[bool, IResolvable] = None,
+  diagramsnet_url: str = None,
   diff_max_files: typing.Union[int, float] = None,
   diff_max_lines: typing.Union[int, float] = None,
   diff_max_patch_bytes: typing.Union[int, float] = None,
+  disable_admin_oauth_scopes: typing.Union[bool, IResolvable] = None,
   disabled_oauth_sign_in_sources: typing.List[str] = None,
   disable_feed_token: typing.Union[bool, IResolvable] = None,
+  disable_personal_access_tokens: typing.Union[bool, IResolvable] = None,
   dns_rebinding_protection_enabled: typing.Union[bool, IResolvable] = None,
   domain_allowlist: typing.List[str] = None,
   domain_denylist: typing.List[str] = None,
   domain_denylist_enabled: typing.Union[bool, IResolvable] = None,
+  downstream_pipeline_trigger_limit_per_project_user_sha: typing.Union[int, float] = None,
   dsa_key_restriction: typing.Union[int, float] = None,
+  duo_features_enabled: typing.Union[bool, IResolvable] = None,
   ecdsa_key_restriction: typing.Union[int, float] = None,
   ecdsa_sk_key_restriction: typing.Union[int, float] = None,
   ed25519_key_restriction: typing.Union[int, float] = None,
@@ -285,21 +310,34 @@ applicationSettings.ApplicationSettings(
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.afterSignUpText">after_sign_up_text</a></code> | <code>str</code> | Text shown to the user after signing up. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.akismetApiKey">akismet_api_key</a></code> | <code>str</code> | API key for Akismet spam protection. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.akismetEnabled">akismet_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: akismet_api_key) Enable or disable Akismet spam protection. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.allowAccountDeletion">allow_account_deletion</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to true to allow users to delete their accounts. Premium and Ultimate only. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.allowGroupOwnersToManageLdap">allow_group_owners_to_manage_ldap</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to true to allow group owners to manage LDAP. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.allowLocalRequestsFromSystemHooks">allow_local_requests_from_system_hooks</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow requests to the local network from system hooks. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.allowLocalRequestsFromWebHooksAndServices">allow_local_requests_from_web_hooks_and_services</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow requests to the local network from web hooks and services. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.allowProjectCreationForGuestAndBelow">allow_project_creation_for_guest_and_below</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether users assigned up to the Guest role can create groups and personal projects. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.allowRunnerRegistrationToken">allow_runner_registration_token</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow using a registration token to create a runner. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.archiveBuildsInHumanReadable">archive_builds_in_human_readable</a></code> | <code>str</code> | Set the duration for which the jobs are considered as old and expired. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.asciidocMaxIncludes">asciidoc_max_includes</a></code> | <code>typing.Union[int, float]</code> | Maximum limit of AsciiDoc include directives being processed in any one document. Maximum: 64. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.assetProxyAllowlist">asset_proxy_allowlist</a></code> | <code>typing.List[str]</code> | Assets that match these domains are not proxied. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.assetProxyEnabled">asset_proxy_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: asset_proxy_url) Enable proxying of assets. GitLab restart is required to apply changes. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.assetProxySecretKey">asset_proxy_secret_key</a></code> | <code>str</code> | Shared secret with the asset proxy server. GitLab restart is required to apply changes. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.assetProxyUrl">asset_proxy_url</a></code> | <code>str</code> | URL of the asset proxy server. GitLab restart is required to apply changes. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.authorizedKeysEnabled">authorized_keys_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | By default, we write to the authorized_keys file to support Git over SSH without additional configuration. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.autoBanUserOnExcessiveProjectsDownload">auto_ban_user_on_excessive_projects_download</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When enabled, users will get automatically banned from the application when they download more than the maximum number of unique projects in the time period specified by max_number_of_repository_downloads and max_number_of_repository_downloads_within_time_period respectively. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.autoDevopsDomain">auto_devops_domain</a></code> | <code>str</code> | Specify a domain to use by default for every project’s Auto Review Apps and Auto Deploy stages. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.autoDevopsEnabled">auto_devops_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Auto DevOps for projects by default. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.automaticPurchasedStorageAllocation">automatic_purchased_storage_allocation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enabling this permits automatic allocation of purchased storage in a namespace. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.bulkImportConcurrentPipelineBatchLimit">bulk_import_concurrent_pipeline_batch_limit</a></code> | <code>typing.Union[int, float]</code> | Maximum simultaneous Direct Transfer batches to process. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.bulkImportEnabled">bulk_import_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable migrating GitLab groups by direct transfer. Introduced in GitLab 15.8. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.bulkImportMaxDownloadFileSize">bulk_import_max_download_file_size</a></code> | <code>typing.Union[int, float]</code> | Maximum download file size when importing from source GitLab instances by direct transfer. Introduced in GitLab 16.3. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.canCreateGroup">can_create_group</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether users can create top-level groups. Introduced in GitLab 15.5. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.checkNamespacePlan">check_namespace_plan</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enabling this makes only licensed EE features available to projects if the project namespace’s plan includes the feature or if the project is public. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.ciMaxIncludes">ci_max_includes</a></code> | <code>typing.Union[int, float]</code> | The maximum number of includes per pipeline. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.ciMaxTotalYamlSizeBytes">ci_max_total_yaml_size_bytes</a></code> | <code>typing.Union[int, float]</code> | The maximum amount of memory, in bytes, that can be allocated for the pipeline configuration, with all included YAML configuration files. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.commitEmailHostname">commit_email_hostname</a></code> | <code>str</code> | Custom hostname (for private commit emails). |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.concurrentBitbucketImportJobsLimit">concurrent_bitbucket_import_jobs_limit</a></code> | <code>typing.Union[int, float]</code> | Maximum number of simultaneous import jobs for the Bitbucket Cloud importer. Introduced in GitLab 16.11. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.concurrentBitbucketServerImportJobsLimit">concurrent_bitbucket_server_import_jobs_limit</a></code> | <code>typing.Union[int, float]</code> | Maximum number of simultaneous import jobs for the Bitbucket Server importer. Introduced in GitLab 16.11. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.concurrentGithubImportJobsLimit">concurrent_github_import_jobs_limit</a></code> | <code>typing.Union[int, float]</code> | Maximum number of simultaneous import jobs for the GitHub importer. Introduced in GitLab 16.11. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.containerExpirationPoliciesEnableHistoricEntries">container_expiration_policies_enable_historic_entries</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable cleanup policies for all projects. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.containerRegistryCleanupTagsServiceMaxListSize">container_registry_cleanup_tags_service_max_list_size</a></code> | <code>typing.Union[int, float]</code> | The maximum number of tags that can be deleted in a single execution of cleanup policies. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.containerRegistryDeleteTagsServiceTimeout">container_registry_delete_tags_service_timeout</a></code> | <code>typing.Union[int, float]</code> | The maximum time, in seconds, that the cleanup process can take to delete a batch of tags for cleanup policies. |
@@ -307,27 +345,39 @@ applicationSettings.ApplicationSettings(
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.containerRegistryExpirationPoliciesWorkerCapacity">container_registry_expiration_policies_worker_capacity</a></code> | <code>typing.Union[int, float]</code> | Number of workers for cleanup policies. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.containerRegistryTokenExpireDelay">container_registry_token_expire_delay</a></code> | <code>typing.Union[int, float]</code> | Container Registry token duration in minutes. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.deactivateDormantUsers">deactivate_dormant_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable automatic deactivation of dormant users. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.deactivateDormantUsersPeriod">deactivate_dormant_users_period</a></code> | <code>typing.Union[int, float]</code> | Length of time (in days) after which a user is considered dormant. Introduced in GitLab 15.3. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.decompressArchiveFileTimeout">decompress_archive_file_timeout</a></code> | <code>typing.Union[int, float]</code> | Default timeout for decompressing archived files, in seconds. Set to 0 to disable timeouts. Introduced in GitLab 16.4. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.defaultArtifactsExpireIn">default_artifacts_expire_in</a></code> | <code>str</code> | Set the default expiration time for each job’s artifacts. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.defaultBranchName">default_branch_name</a></code> | <code>str</code> | Instance-level custom initial branch name (introduced in GitLab 13.2). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.defaultBranchProtection">default_branch_protection</a></code> | <code>typing.Union[int, float]</code> | Determine if developers can push to the default branch. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.defaultBranchProtectionDefaults">default_branch_protection_defaults</a></code> | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults">ApplicationSettingsDefaultBranchProtectionDefaults</a></code> | default_branch_protection_defaults block. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.defaultCiConfigPath">default_ci_config_path</a></code> | <code>str</code> | Default CI/CD configuration file and path for new projects (.gitlab-ci.yml if not set). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.defaultGroupVisibility">default_group_visibility</a></code> | <code>str</code> | What visibility level new groups receive. Can take private, internal and public as a parameter. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.defaultPreferredLanguage">default_preferred_language</a></code> | <code>str</code> | Default preferred language for users who are not logged in. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.defaultProjectCreation">default_project_creation</a></code> | <code>typing.Union[int, float]</code> | Default project creation protection. Can take: 0 (No one), 1 (Maintainers) or 2 (Developers + Maintainers). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.defaultProjectsLimit">default_projects_limit</a></code> | <code>typing.Union[int, float]</code> | Project limit per user. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.defaultProjectVisibility">default_project_visibility</a></code> | <code>str</code> | What visibility level new projects receive. Can take private, internal and public as a parameter. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.defaultSnippetVisibility">default_snippet_visibility</a></code> | <code>str</code> | What visibility level new snippets receive. Can take private, internal and public as a parameter. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.defaultSyntaxHighlightingTheme">default_syntax_highlighting_theme</a></code> | <code>typing.Union[int, float]</code> | Default syntax highlighting theme for users who are new or not signed in. See IDs of available themes (https://gitlab.com/gitlab-org/gitlab/blob/master/lib/gitlab/themes.rb#L16). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.deleteInactiveProjects">delete_inactive_projects</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable inactive project deletion feature. Introduced in GitLab 14.10. Became operational in GitLab 15.0 (with feature flag inactive_projects_deletion). |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.deleteUnconfirmedUsers">delete_unconfirmed_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether users who have not confirmed their email should be deleted. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.deletionAdjournedPeriod">deletion_adjourned_period</a></code> | <code>typing.Union[int, float]</code> | The number of days to wait before deleting a project or group that is marked for deletion. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.diagramsnetEnabled">diagramsnet_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires diagramsnet_url) Enable Diagrams.net integration. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.diagramsnetUrl">diagramsnet_url</a></code> | <code>str</code> | The Diagrams.net instance URL for integration. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.diffMaxFiles">diff_max_files</a></code> | <code>typing.Union[int, float]</code> | Maximum files in a diff. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.diffMaxLines">diff_max_lines</a></code> | <code>typing.Union[int, float]</code> | Maximum lines in a diff. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.diffMaxPatchBytes">diff_max_patch_bytes</a></code> | <code>typing.Union[int, float]</code> | Maximum diff patch size, in bytes. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.disableAdminOauthScopes">disable_admin_oauth_scopes</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Stops administrators from connecting their GitLab accounts to non-trusted OAuth 2.0 applications that have the api, read_api, read_repository, write_repository, read_registry, write_registry, or sudo scopes. Introduced in GitLab 15.6. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.disabledOauthSignInSources">disabled_oauth_sign_in_sources</a></code> | <code>typing.List[str]</code> | Disabled OAuth sign-in sources. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.disableFeedToken">disable_feed_token</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable display of RSS/Atom and calendar feed tokens (introduced in GitLab 13.7). |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.disablePersonalAccessTokens">disable_personal_access_tokens</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable personal access tokens. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.dnsRebindingProtectionEnabled">dns_rebinding_protection_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enforce DNS rebinding attack protection. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.domainAllowlist">domain_allowlist</a></code> | <code>typing.List[str]</code> | Force people to use only corporate emails for sign-up. Null means there is no restriction. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.domainDenylist">domain_denylist</a></code> | <code>typing.List[str]</code> | Users with email addresses that match these domains cannot sign up. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.domainDenylistEnabled">domain_denylist_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: domain_denylist) Allows blocking sign-ups from emails from specific domains. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.downstreamPipelineTriggerLimitPerProjectUserSha">downstream_pipeline_trigger_limit_per_project_user_sha</a></code> | <code>typing.Union[int, float]</code> | Maximum downstream pipeline trigger rate. Introduced in GitLab 16.10. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.dsaKeyRestriction">dsa_key_restriction</a></code> | <code>typing.Union[int, float]</code> | The minimum allowed bit length of an uploaded DSA key. 0 means no restriction. -1 disables DSA keys. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.duoFeaturesEnabled">duo_features_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether GitLab Duo features are enabled for this instance. Introduced in GitLab 16.10. Self-managed, Premium and Ultimate only. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.ecdsaKeyRestriction">ecdsa_key_restriction</a></code> | <code>typing.Union[int, float]</code> | The minimum allowed curve size (in bits) of an uploaded ECDSA key. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.ecdsaSkKeyRestriction">ecdsa_sk_key_restriction</a></code> | <code>typing.Union[int, float]</code> | The minimum allowed curve size (in bits) of an uploaded ECDSA_SK key. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.ed25519KeyRestriction">ed25519_key_restriction</a></code> | <code>typing.Union[int, float]</code> | The minimum allowed curve size (in bits) of an uploaded ED25519 key. |
@@ -393,7 +443,7 @@ applicationSettings.ApplicationSettings(
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.housekeepingIncrementalRepackPeriod">housekeeping_incremental_repack_period</a></code> | <code>typing.Union[int, float]</code> | Number of Git pushes after which an incremental git repack is run. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.housekeepingOptimizeRepositoryPeriod">housekeeping_optimize_repository_period</a></code> | <code>typing.Union[int, float]</code> | Number of Git pushes after which an incremental git repack is run. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.htmlEmailsEnabled">html_emails_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable HTML emails. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#id ApplicationSettings#id}. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#id ApplicationSettings#id}. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.importSources">import_sources</a></code> | <code>typing.List[str]</code> | Sources to allow project import from. Valid values are: `github`, `bitbucket`, `bitbucket_server`, `fogbugz`, `git`, `gitlab_project`, `gitea`, `manifest`. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.inactiveProjectsDeleteAfterMonths">inactive_projects_delete_after_months</a></code> | <code>typing.Union[int, float]</code> | If delete_inactive_projects is true, the time (in months) to wait before deleting inactive projects. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.inactiveProjectsMinSizeMb">inactive_projects_min_size_mb</a></code> | <code>typing.Union[int, float]</code> | If delete_inactive_projects is true, the minimum repository size for projects to be checked for inactivity. |
@@ -592,7 +642,7 @@ Must be unique amongst siblings in the same scope
 
 If set, abuse reports are sent to this address. Abuse reports are always available in the Admin Area.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#abuse_notification_email ApplicationSettings#abuse_notification_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#abuse_notification_email ApplicationSettings#abuse_notification_email}
 
 ---
 
@@ -602,7 +652,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Require administrators to enable Admin Mode by re-authenticating for administrative tasks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#admin_mode ApplicationSettings#admin_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#admin_mode ApplicationSettings#admin_mode}
 
 ---
 
@@ -612,7 +662,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Where to redirect users after logout.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#after_sign_out_path ApplicationSettings#after_sign_out_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#after_sign_out_path ApplicationSettings#after_sign_out_path}
 
 ---
 
@@ -622,7 +672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Text shown to the user after signing up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#after_sign_up_text ApplicationSettings#after_sign_up_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#after_sign_up_text ApplicationSettings#after_sign_up_text}
 
 ---
 
@@ -632,7 +682,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 API key for Akismet spam protection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#akismet_api_key ApplicationSettings#akismet_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#akismet_api_key ApplicationSettings#akismet_api_key}
 
 ---
 
@@ -642,7 +692,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 (If enabled, requires: akismet_api_key) Enable or disable Akismet spam protection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#akismet_enabled ApplicationSettings#akismet_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#akismet_enabled ApplicationSettings#akismet_enabled}
+
+---
+
+##### `allow_account_deletion`<sup>Optional</sup> <a name="allow_account_deletion" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.allowAccountDeletion"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Set to true to allow users to delete their accounts. Premium and Ultimate only.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#allow_account_deletion ApplicationSettings#allow_account_deletion}
 
 ---
 
@@ -652,7 +712,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set to true to allow group owners to manage LDAP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#allow_group_owners_to_manage_ldap ApplicationSettings#allow_group_owners_to_manage_ldap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#allow_group_owners_to_manage_ldap ApplicationSettings#allow_group_owners_to_manage_ldap}
 
 ---
 
@@ -662,7 +722,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Allow requests to the local network from system hooks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#allow_local_requests_from_system_hooks ApplicationSettings#allow_local_requests_from_system_hooks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#allow_local_requests_from_system_hooks ApplicationSettings#allow_local_requests_from_system_hooks}
 
 ---
 
@@ -672,7 +732,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Allow requests to the local network from web hooks and services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#allow_local_requests_from_web_hooks_and_services ApplicationSettings#allow_local_requests_from_web_hooks_and_services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#allow_local_requests_from_web_hooks_and_services ApplicationSettings#allow_local_requests_from_web_hooks_and_services}
+
+---
+
+##### `allow_project_creation_for_guest_and_below`<sup>Optional</sup> <a name="allow_project_creation_for_guest_and_below" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.allowProjectCreationForGuestAndBelow"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Indicates whether users assigned up to the Guest role can create groups and personal projects.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#allow_project_creation_for_guest_and_below ApplicationSettings#allow_project_creation_for_guest_and_below}
+
+---
+
+##### `allow_runner_registration_token`<sup>Optional</sup> <a name="allow_runner_registration_token" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.allowRunnerRegistrationToken"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Allow using a registration token to create a runner.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#allow_runner_registration_token ApplicationSettings#allow_runner_registration_token}
 
 ---
 
@@ -684,7 +764,17 @@ Set the duration for which the jobs are considered as old and expired.
 
 After that time passes, the jobs are archived and no longer able to be retried. Make it empty to never expire jobs. It has to be no less than 1 day, for example: 15 days, 1 month, 2 years.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#archive_builds_in_human_readable ApplicationSettings#archive_builds_in_human_readable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#archive_builds_in_human_readable ApplicationSettings#archive_builds_in_human_readable}
+
+---
+
+##### `asciidoc_max_includes`<sup>Optional</sup> <a name="asciidoc_max_includes" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.asciidocMaxIncludes"></a>
+
+- *Type:* typing.Union[int, float]
+
+Maximum limit of AsciiDoc include directives being processed in any one document. Maximum: 64.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#asciidoc_max_includes ApplicationSettings#asciidoc_max_includes}
 
 ---
 
@@ -696,7 +786,7 @@ Assets that match these domains are not proxied.
 
 Wildcards allowed. Your GitLab installation URL is automatically allowlisted. GitLab restart is required to apply changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#asset_proxy_allowlist ApplicationSettings#asset_proxy_allowlist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#asset_proxy_allowlist ApplicationSettings#asset_proxy_allowlist}
 
 ---
 
@@ -706,7 +796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 (If enabled, requires: asset_proxy_url) Enable proxying of assets. GitLab restart is required to apply changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#asset_proxy_enabled ApplicationSettings#asset_proxy_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#asset_proxy_enabled ApplicationSettings#asset_proxy_enabled}
 
 ---
 
@@ -716,7 +806,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Shared secret with the asset proxy server. GitLab restart is required to apply changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#asset_proxy_secret_key ApplicationSettings#asset_proxy_secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#asset_proxy_secret_key ApplicationSettings#asset_proxy_secret_key}
 
 ---
 
@@ -726,7 +816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 URL of the asset proxy server. GitLab restart is required to apply changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#asset_proxy_url ApplicationSettings#asset_proxy_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#asset_proxy_url ApplicationSettings#asset_proxy_url}
 
 ---
 
@@ -738,7 +828,19 @@ By default, we write to the authorized_keys file to support Git over SSH without
 
 GitLab can be optimized to authenticate SSH keys via the database file. Only disable this if you have configured your OpenSSH server to use the AuthorizedKeysCommand.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#authorized_keys_enabled ApplicationSettings#authorized_keys_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#authorized_keys_enabled ApplicationSettings#authorized_keys_enabled}
+
+---
+
+##### `auto_ban_user_on_excessive_projects_download`<sup>Optional</sup> <a name="auto_ban_user_on_excessive_projects_download" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.autoBanUserOnExcessiveProjectsDownload"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+When enabled, users will get automatically banned from the application when they download more than the maximum number of unique projects in the time period specified by max_number_of_repository_downloads and max_number_of_repository_downloads_within_time_period respectively.
+
+Introduced in GitLab 15.4. Self-managed, Ultimate only.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#auto_ban_user_on_excessive_projects_download ApplicationSettings#auto_ban_user_on_excessive_projects_download}
 
 ---
 
@@ -748,7 +850,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Specify a domain to use by default for every project’s Auto Review Apps and Auto Deploy stages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#auto_devops_domain ApplicationSettings#auto_devops_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#auto_devops_domain ApplicationSettings#auto_devops_domain}
 
 ---
 
@@ -760,7 +862,7 @@ Enable Auto DevOps for projects by default.
 
 It automatically builds, tests, and deploys applications based on a predefined CI/CD configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#auto_devops_enabled ApplicationSettings#auto_devops_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#auto_devops_enabled ApplicationSettings#auto_devops_enabled}
 
 ---
 
@@ -770,7 +872,37 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enabling this permits automatic allocation of purchased storage in a namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#automatic_purchased_storage_allocation ApplicationSettings#automatic_purchased_storage_allocation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#automatic_purchased_storage_allocation ApplicationSettings#automatic_purchased_storage_allocation}
+
+---
+
+##### `bulk_import_concurrent_pipeline_batch_limit`<sup>Optional</sup> <a name="bulk_import_concurrent_pipeline_batch_limit" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.bulkImportConcurrentPipelineBatchLimit"></a>
+
+- *Type:* typing.Union[int, float]
+
+Maximum simultaneous Direct Transfer batches to process.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#bulk_import_concurrent_pipeline_batch_limit ApplicationSettings#bulk_import_concurrent_pipeline_batch_limit}
+
+---
+
+##### `bulk_import_enabled`<sup>Optional</sup> <a name="bulk_import_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.bulkImportEnabled"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Enable migrating GitLab groups by direct transfer. Introduced in GitLab 15.8.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#bulk_import_enabled ApplicationSettings#bulk_import_enabled}
+
+---
+
+##### `bulk_import_max_download_file_size`<sup>Optional</sup> <a name="bulk_import_max_download_file_size" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.bulkImportMaxDownloadFileSize"></a>
+
+- *Type:* typing.Union[int, float]
+
+Maximum download file size when importing from source GitLab instances by direct transfer. Introduced in GitLab 16.3.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#bulk_import_max_download_file_size ApplicationSettings#bulk_import_max_download_file_size}
 
 ---
 
@@ -780,7 +912,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Indicates whether users can create top-level groups. Introduced in GitLab 15.5.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#can_create_group ApplicationSettings#can_create_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#can_create_group ApplicationSettings#can_create_group}
 
 ---
 
@@ -790,7 +922,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enabling this makes only licensed EE features available to projects if the project namespace’s plan includes the feature or if the project is public.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#check_namespace_plan ApplicationSettings#check_namespace_plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#check_namespace_plan ApplicationSettings#check_namespace_plan}
+
+---
+
+##### `ci_max_includes`<sup>Optional</sup> <a name="ci_max_includes" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.ciMaxIncludes"></a>
+
+- *Type:* typing.Union[int, float]
+
+The maximum number of includes per pipeline.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#ci_max_includes ApplicationSettings#ci_max_includes}
+
+---
+
+##### `ci_max_total_yaml_size_bytes`<sup>Optional</sup> <a name="ci_max_total_yaml_size_bytes" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.ciMaxTotalYamlSizeBytes"></a>
+
+- *Type:* typing.Union[int, float]
+
+The maximum amount of memory, in bytes, that can be allocated for the pipeline configuration, with all included YAML configuration files.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#ci_max_total_yaml_size_bytes ApplicationSettings#ci_max_total_yaml_size_bytes}
 
 ---
 
@@ -800,7 +952,37 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Custom hostname (for private commit emails).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#commit_email_hostname ApplicationSettings#commit_email_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#commit_email_hostname ApplicationSettings#commit_email_hostname}
+
+---
+
+##### `concurrent_bitbucket_import_jobs_limit`<sup>Optional</sup> <a name="concurrent_bitbucket_import_jobs_limit" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.concurrentBitbucketImportJobsLimit"></a>
+
+- *Type:* typing.Union[int, float]
+
+Maximum number of simultaneous import jobs for the Bitbucket Cloud importer. Introduced in GitLab 16.11.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#concurrent_bitbucket_import_jobs_limit ApplicationSettings#concurrent_bitbucket_import_jobs_limit}
+
+---
+
+##### `concurrent_bitbucket_server_import_jobs_limit`<sup>Optional</sup> <a name="concurrent_bitbucket_server_import_jobs_limit" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.concurrentBitbucketServerImportJobsLimit"></a>
+
+- *Type:* typing.Union[int, float]
+
+Maximum number of simultaneous import jobs for the Bitbucket Server importer. Introduced in GitLab 16.11.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#concurrent_bitbucket_server_import_jobs_limit ApplicationSettings#concurrent_bitbucket_server_import_jobs_limit}
+
+---
+
+##### `concurrent_github_import_jobs_limit`<sup>Optional</sup> <a name="concurrent_github_import_jobs_limit" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.concurrentGithubImportJobsLimit"></a>
+
+- *Type:* typing.Union[int, float]
+
+Maximum number of simultaneous import jobs for the GitHub importer. Introduced in GitLab 16.11.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#concurrent_github_import_jobs_limit ApplicationSettings#concurrent_github_import_jobs_limit}
 
 ---
 
@@ -810,7 +992,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable cleanup policies for all projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#container_expiration_policies_enable_historic_entries ApplicationSettings#container_expiration_policies_enable_historic_entries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#container_expiration_policies_enable_historic_entries ApplicationSettings#container_expiration_policies_enable_historic_entries}
 
 ---
 
@@ -820,7 +1002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The maximum number of tags that can be deleted in a single execution of cleanup policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#container_registry_cleanup_tags_service_max_list_size ApplicationSettings#container_registry_cleanup_tags_service_max_list_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#container_registry_cleanup_tags_service_max_list_size ApplicationSettings#container_registry_cleanup_tags_service_max_list_size}
 
 ---
 
@@ -830,7 +1012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The maximum time, in seconds, that the cleanup process can take to delete a batch of tags for cleanup policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#container_registry_delete_tags_service_timeout ApplicationSettings#container_registry_delete_tags_service_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#container_registry_delete_tags_service_timeout ApplicationSettings#container_registry_delete_tags_service_timeout}
 
 ---
 
@@ -840,7 +1022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Caching during the execution of cleanup policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#container_registry_expiration_policies_caching ApplicationSettings#container_registry_expiration_policies_caching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#container_registry_expiration_policies_caching ApplicationSettings#container_registry_expiration_policies_caching}
 
 ---
 
@@ -850,7 +1032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Number of workers for cleanup policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#container_registry_expiration_policies_worker_capacity ApplicationSettings#container_registry_expiration_policies_worker_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#container_registry_expiration_policies_worker_capacity ApplicationSettings#container_registry_expiration_policies_worker_capacity}
 
 ---
 
@@ -860,7 +1042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Container Registry token duration in minutes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#container_registry_token_expire_delay ApplicationSettings#container_registry_token_expire_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#container_registry_token_expire_delay ApplicationSettings#container_registry_token_expire_delay}
 
 ---
 
@@ -870,7 +1052,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable automatic deactivation of dormant users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#deactivate_dormant_users ApplicationSettings#deactivate_dormant_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#deactivate_dormant_users ApplicationSettings#deactivate_dormant_users}
+
+---
+
+##### `deactivate_dormant_users_period`<sup>Optional</sup> <a name="deactivate_dormant_users_period" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.deactivateDormantUsersPeriod"></a>
+
+- *Type:* typing.Union[int, float]
+
+Length of time (in days) after which a user is considered dormant. Introduced in GitLab 15.3.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#deactivate_dormant_users_period ApplicationSettings#deactivate_dormant_users_period}
+
+---
+
+##### `decompress_archive_file_timeout`<sup>Optional</sup> <a name="decompress_archive_file_timeout" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.decompressArchiveFileTimeout"></a>
+
+- *Type:* typing.Union[int, float]
+
+Default timeout for decompressing archived files, in seconds. Set to 0 to disable timeouts. Introduced in GitLab 16.4.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#decompress_archive_file_timeout ApplicationSettings#decompress_archive_file_timeout}
 
 ---
 
@@ -880,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set the default expiration time for each job’s artifacts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#default_artifacts_expire_in ApplicationSettings#default_artifacts_expire_in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#default_artifacts_expire_in ApplicationSettings#default_artifacts_expire_in}
 
 ---
 
@@ -890,7 +1092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Instance-level custom initial branch name (introduced in GitLab 13.2).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#default_branch_name ApplicationSettings#default_branch_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#default_branch_name ApplicationSettings#default_branch_name}
 
 ---
 
@@ -902,7 +1104,17 @@ Determine if developers can push to the default branch.
 
 Can take: 0 (not protected, both users with the Developer role or Maintainer role can push new commits and force push), 1 (partially protected, users with the Developer role or Maintainer role can push new commits, but cannot force push) or 2 (fully protected, users with the Developer or Maintainer role cannot push new commits, but users with the Developer or Maintainer role can; no one can force push) as a parameter. Default is 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#default_branch_protection ApplicationSettings#default_branch_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#default_branch_protection ApplicationSettings#default_branch_protection}
+
+---
+
+##### `default_branch_protection_defaults`<sup>Optional</sup> <a name="default_branch_protection_defaults" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.defaultBranchProtectionDefaults"></a>
+
+- *Type:* <a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults">ApplicationSettingsDefaultBranchProtectionDefaults</a>
+
+default_branch_protection_defaults block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#default_branch_protection_defaults ApplicationSettings#default_branch_protection_defaults}
 
 ---
 
@@ -912,7 +1124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Default CI/CD configuration file and path for new projects (.gitlab-ci.yml if not set).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#default_ci_config_path ApplicationSettings#default_ci_config_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#default_ci_config_path ApplicationSettings#default_ci_config_path}
 
 ---
 
@@ -922,7 +1134,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 What visibility level new groups receive. Can take private, internal and public as a parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#default_group_visibility ApplicationSettings#default_group_visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#default_group_visibility ApplicationSettings#default_group_visibility}
+
+---
+
+##### `default_preferred_language`<sup>Optional</sup> <a name="default_preferred_language" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.defaultPreferredLanguage"></a>
+
+- *Type:* str
+
+Default preferred language for users who are not logged in.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#default_preferred_language ApplicationSettings#default_preferred_language}
 
 ---
 
@@ -932,7 +1154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Default project creation protection. Can take: 0 (No one), 1 (Maintainers) or 2 (Developers + Maintainers).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#default_project_creation ApplicationSettings#default_project_creation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#default_project_creation ApplicationSettings#default_project_creation}
 
 ---
 
@@ -942,7 +1164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Project limit per user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#default_projects_limit ApplicationSettings#default_projects_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#default_projects_limit ApplicationSettings#default_projects_limit}
 
 ---
 
@@ -952,7 +1174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 What visibility level new projects receive. Can take private, internal and public as a parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#default_project_visibility ApplicationSettings#default_project_visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#default_project_visibility ApplicationSettings#default_project_visibility}
 
 ---
 
@@ -962,7 +1184,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 What visibility level new snippets receive. Can take private, internal and public as a parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#default_snippet_visibility ApplicationSettings#default_snippet_visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#default_snippet_visibility ApplicationSettings#default_snippet_visibility}
+
+---
+
+##### `default_syntax_highlighting_theme`<sup>Optional</sup> <a name="default_syntax_highlighting_theme" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.defaultSyntaxHighlightingTheme"></a>
+
+- *Type:* typing.Union[int, float]
+
+Default syntax highlighting theme for users who are new or not signed in. See IDs of available themes (https://gitlab.com/gitlab-org/gitlab/blob/master/lib/gitlab/themes.rb#L16).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#default_syntax_highlighting_theme ApplicationSettings#default_syntax_highlighting_theme}
 
 ---
 
@@ -972,7 +1204,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable inactive project deletion feature. Introduced in GitLab 14.10. Became operational in GitLab 15.0 (with feature flag inactive_projects_deletion).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#delete_inactive_projects ApplicationSettings#delete_inactive_projects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#delete_inactive_projects ApplicationSettings#delete_inactive_projects}
+
+---
+
+##### `delete_unconfirmed_users`<sup>Optional</sup> <a name="delete_unconfirmed_users" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.deleteUnconfirmedUsers"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Specifies whether users who have not confirmed their email should be deleted.
+
+When set to true, unconfirmed users are deleted after unconfirmed_users_delete_after_days days. Introduced in GitLab 16.1. Self-managed, Premium and Ultimate only.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#delete_unconfirmed_users ApplicationSettings#delete_unconfirmed_users}
 
 ---
 
@@ -984,7 +1228,27 @@ The number of days to wait before deleting a project or group that is marked for
 
 Value must be between 1 and 90.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#deletion_adjourned_period ApplicationSettings#deletion_adjourned_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#deletion_adjourned_period ApplicationSettings#deletion_adjourned_period}
+
+---
+
+##### `diagramsnet_enabled`<sup>Optional</sup> <a name="diagramsnet_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.diagramsnetEnabled"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+(If enabled, requires diagramsnet_url) Enable Diagrams.net integration.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#diagramsnet_enabled ApplicationSettings#diagramsnet_enabled}
+
+---
+
+##### `diagramsnet_url`<sup>Optional</sup> <a name="diagramsnet_url" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.diagramsnetUrl"></a>
+
+- *Type:* str
+
+The Diagrams.net instance URL for integration.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#diagramsnet_url ApplicationSettings#diagramsnet_url}
 
 ---
 
@@ -994,7 +1258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum files in a diff.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#diff_max_files ApplicationSettings#diff_max_files}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#diff_max_files ApplicationSettings#diff_max_files}
 
 ---
 
@@ -1004,7 +1268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum lines in a diff.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#diff_max_lines ApplicationSettings#diff_max_lines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#diff_max_lines ApplicationSettings#diff_max_lines}
 
 ---
 
@@ -1014,7 +1278,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum diff patch size, in bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#diff_max_patch_bytes ApplicationSettings#diff_max_patch_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#diff_max_patch_bytes ApplicationSettings#diff_max_patch_bytes}
+
+---
+
+##### `disable_admin_oauth_scopes`<sup>Optional</sup> <a name="disable_admin_oauth_scopes" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.disableAdminOauthScopes"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Stops administrators from connecting their GitLab accounts to non-trusted OAuth 2.0 applications that have the api, read_api, read_repository, write_repository, read_registry, write_registry, or sudo scopes. Introduced in GitLab 15.6.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#disable_admin_oauth_scopes ApplicationSettings#disable_admin_oauth_scopes}
 
 ---
 
@@ -1024,7 +1298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Disabled OAuth sign-in sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#disabled_oauth_sign_in_sources ApplicationSettings#disabled_oauth_sign_in_sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#disabled_oauth_sign_in_sources ApplicationSettings#disabled_oauth_sign_in_sources}
 
 ---
 
@@ -1034,7 +1308,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Disable display of RSS/Atom and calendar feed tokens (introduced in GitLab 13.7).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#disable_feed_token ApplicationSettings#disable_feed_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#disable_feed_token ApplicationSettings#disable_feed_token}
+
+---
+
+##### `disable_personal_access_tokens`<sup>Optional</sup> <a name="disable_personal_access_tokens" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.disablePersonalAccessTokens"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Disable personal access tokens.
+
+Introduced in GitLab 15.7. Self-managed, Premium and Ultimate only. There is no method available to enable a personal access token that’s been disabled through the API. This is a known issue.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#disable_personal_access_tokens ApplicationSettings#disable_personal_access_tokens}
 
 ---
 
@@ -1044,7 +1330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enforce DNS rebinding attack protection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#dns_rebinding_protection_enabled ApplicationSettings#dns_rebinding_protection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#dns_rebinding_protection_enabled ApplicationSettings#dns_rebinding_protection_enabled}
 
 ---
 
@@ -1054,7 +1340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Force people to use only corporate emails for sign-up. Null means there is no restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#domain_allowlist ApplicationSettings#domain_allowlist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#domain_allowlist ApplicationSettings#domain_allowlist}
 
 ---
 
@@ -1066,7 +1352,7 @@ Users with email addresses that match these domains cannot sign up.
 
 Wildcards allowed. Use separate lines for multiple entries. Ex: domain.com, *.domain.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#domain_denylist ApplicationSettings#domain_denylist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#domain_denylist ApplicationSettings#domain_denylist}
 
 ---
 
@@ -1076,7 +1362,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 (If enabled, requires: domain_denylist) Allows blocking sign-ups from emails from specific domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#domain_denylist_enabled ApplicationSettings#domain_denylist_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#domain_denylist_enabled ApplicationSettings#domain_denylist_enabled}
+
+---
+
+##### `downstream_pipeline_trigger_limit_per_project_user_sha`<sup>Optional</sup> <a name="downstream_pipeline_trigger_limit_per_project_user_sha" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.downstreamPipelineTriggerLimitPerProjectUserSha"></a>
+
+- *Type:* typing.Union[int, float]
+
+Maximum downstream pipeline trigger rate. Introduced in GitLab 16.10.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#downstream_pipeline_trigger_limit_per_project_user_sha ApplicationSettings#downstream_pipeline_trigger_limit_per_project_user_sha}
 
 ---
 
@@ -1086,7 +1382,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The minimum allowed bit length of an uploaded DSA key. 0 means no restriction. -1 disables DSA keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#dsa_key_restriction ApplicationSettings#dsa_key_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#dsa_key_restriction ApplicationSettings#dsa_key_restriction}
+
+---
+
+##### `duo_features_enabled`<sup>Optional</sup> <a name="duo_features_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.duoFeaturesEnabled"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Indicates whether GitLab Duo features are enabled for this instance. Introduced in GitLab 16.10. Self-managed, Premium and Ultimate only.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#duo_features_enabled ApplicationSettings#duo_features_enabled}
 
 ---
 
@@ -1098,7 +1404,7 @@ The minimum allowed curve size (in bits) of an uploaded ECDSA key.
 
 0 means no restriction. -1 disables ECDSA keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#ecdsa_key_restriction ApplicationSettings#ecdsa_key_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#ecdsa_key_restriction ApplicationSettings#ecdsa_key_restriction}
 
 ---
 
@@ -1110,7 +1416,7 @@ The minimum allowed curve size (in bits) of an uploaded ECDSA_SK key.
 
 0 means no restriction. -1 disables ECDSA_SK keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#ecdsa_sk_key_restriction ApplicationSettings#ecdsa_sk_key_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#ecdsa_sk_key_restriction ApplicationSettings#ecdsa_sk_key_restriction}
 
 ---
 
@@ -1122,7 +1428,7 @@ The minimum allowed curve size (in bits) of an uploaded ED25519 key.
 
 0 means no restriction. -1 disables ED25519 keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#ed25519_key_restriction ApplicationSettings#ed25519_key_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#ed25519_key_restriction ApplicationSettings#ed25519_key_restriction}
 
 ---
 
@@ -1134,7 +1440,7 @@ The minimum allowed curve size (in bits) of an uploaded ED25519_SK key.
 
 0 means no restriction. -1 disables ED25519_SK keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#ed25519_sk_key_restriction ApplicationSettings#ed25519_sk_key_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#ed25519_sk_key_restriction ApplicationSettings#ed25519_sk_key_restriction}
 
 ---
 
@@ -1144,7 +1450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 AWS IAM access key ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#eks_access_key_id ApplicationSettings#eks_access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#eks_access_key_id ApplicationSettings#eks_access_key_id}
 
 ---
 
@@ -1154,7 +1460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Amazon account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#eks_account_id ApplicationSettings#eks_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#eks_account_id ApplicationSettings#eks_account_id}
 
 ---
 
@@ -1164,7 +1470,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable integration with Amazon EKS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#eks_integration_enabled ApplicationSettings#eks_integration_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#eks_integration_enabled ApplicationSettings#eks_integration_enabled}
 
 ---
 
@@ -1174,7 +1480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 AWS IAM secret access key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#eks_secret_access_key ApplicationSettings#eks_secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#eks_secret_access_key ApplicationSettings#eks_secret_access_key}
 
 ---
 
@@ -1184,7 +1490,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable the use of AWS hosted Elasticsearch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_aws ApplicationSettings#elasticsearch_aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_aws ApplicationSettings#elasticsearch_aws}
 
 ---
 
@@ -1194,7 +1500,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 AWS IAM access key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_aws_access_key ApplicationSettings#elasticsearch_aws_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_aws_access_key ApplicationSettings#elasticsearch_aws_access_key}
 
 ---
 
@@ -1204,7 +1510,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The AWS region the Elasticsearch domain is configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_aws_region ApplicationSettings#elasticsearch_aws_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_aws_region ApplicationSettings#elasticsearch_aws_region}
 
 ---
 
@@ -1214,7 +1520,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 AWS IAM secret access key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_aws_secret_access_key ApplicationSettings#elasticsearch_aws_secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_aws_secret_access_key ApplicationSettings#elasticsearch_aws_secret_access_key}
 
 ---
 
@@ -1226,7 +1532,7 @@ Maximum size of text fields to index by Elasticsearch.
 
 0 value means no limit. This does not apply to repository and wiki indexing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_indexed_field_length_limit ApplicationSettings#elasticsearch_indexed_field_length_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_indexed_field_length_limit ApplicationSettings#elasticsearch_indexed_field_length_limit}
 
 ---
 
@@ -1236,7 +1542,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum size of repository and wiki files that are indexed by Elasticsearch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_indexed_file_size_limit_kb ApplicationSettings#elasticsearch_indexed_file_size_limit_kb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_indexed_file_size_limit_kb ApplicationSettings#elasticsearch_indexed_file_size_limit_kb}
 
 ---
 
@@ -1246,7 +1552,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable Elasticsearch indexing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_indexing ApplicationSettings#elasticsearch_indexing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_indexing ApplicationSettings#elasticsearch_indexing}
 
 ---
 
@@ -1256,7 +1562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Limit Elasticsearch to index certain namespaces and projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_limit_indexing ApplicationSettings#elasticsearch_limit_indexing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_limit_indexing ApplicationSettings#elasticsearch_limit_indexing}
 
 ---
 
@@ -1266,7 +1572,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum concurrency of Elasticsearch bulk requests per indexing operation. This only applies to repository indexing operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_max_bulk_concurrency ApplicationSettings#elasticsearch_max_bulk_concurrency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_max_bulk_concurrency ApplicationSettings#elasticsearch_max_bulk_concurrency}
 
 ---
 
@@ -1276,7 +1582,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum size of Elasticsearch bulk indexing requests in MB. This only applies to repository indexing operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_max_bulk_size_mb ApplicationSettings#elasticsearch_max_bulk_size_mb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_max_bulk_size_mb ApplicationSettings#elasticsearch_max_bulk_size_mb}
 
 ---
 
@@ -1286,7 +1592,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The namespaces to index via Elasticsearch if elasticsearch_limit_indexing is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_namespace_ids ApplicationSettings#elasticsearch_namespace_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_namespace_ids ApplicationSettings#elasticsearch_namespace_ids}
 
 ---
 
@@ -1296,7 +1602,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The password of your Elasticsearch instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_password ApplicationSettings#elasticsearch_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_password ApplicationSettings#elasticsearch_password}
 
 ---
 
@@ -1306,7 +1612,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The projects to index via Elasticsearch if elasticsearch_limit_indexing is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_project_ids ApplicationSettings#elasticsearch_project_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_project_ids ApplicationSettings#elasticsearch_project_ids}
 
 ---
 
@@ -1316,7 +1622,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable Elasticsearch search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_search ApplicationSettings#elasticsearch_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_search ApplicationSettings#elasticsearch_search}
 
 ---
 
@@ -1326,7 +1632,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The URL to use for connecting to Elasticsearch. Use a comma-separated list to support cluster (for example, http://localhost:9200, http://localhost:9201).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_url ApplicationSettings#elasticsearch_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_url ApplicationSettings#elasticsearch_url}
 
 ---
 
@@ -1336,7 +1642,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The username of your Elasticsearch instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_username ApplicationSettings#elasticsearch_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_username ApplicationSettings#elasticsearch_username}
 
 ---
 
@@ -1346,7 +1652,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Additional text added to the bottom of every email for legal/auditing/compliance reasons.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#email_additional_text ApplicationSettings#email_additional_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#email_additional_text ApplicationSettings#email_additional_text}
 
 ---
 
@@ -1358,7 +1664,7 @@ Some email servers do not support overriding the email sender name.
 
 Enable this option to include the name of the author of the issue, merge request or comment in the email body instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#email_author_in_body ApplicationSettings#email_author_in_body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#email_author_in_body ApplicationSettings#email_author_in_body}
 
 ---
 
@@ -1368,7 +1674,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enabled protocols for Git access. Allowed values are: ssh, http, and nil to allow both protocols.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#enabled_git_access_protocol ApplicationSettings#enabled_git_access_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#enabled_git_access_protocol ApplicationSettings#enabled_git_access_protocol}
 
 ---
 
@@ -1378,7 +1684,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enabling this permits enforcement of namespace storage limits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#enforce_namespace_storage_limit ApplicationSettings#enforce_namespace_storage_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#enforce_namespace_storage_limit ApplicationSettings#enforce_namespace_storage_limit}
 
 ---
 
@@ -1388,7 +1694,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 (If enabled, requires: terms) Enforce application ToS to all users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#enforce_terms ApplicationSettings#enforce_terms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#enforce_terms ApplicationSettings#enforce_terms}
 
 ---
 
@@ -1398,7 +1704,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 (If enabled, requires: external_auth_client_key) The certificate to use to authenticate with the external authorization service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#external_auth_client_cert ApplicationSettings#external_auth_client_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#external_auth_client_cert ApplicationSettings#external_auth_client_cert}
 
 ---
 
@@ -1408,7 +1714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Private key for the certificate when authentication is required for the external authorization service, this is encrypted when stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#external_auth_client_key ApplicationSettings#external_auth_client_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#external_auth_client_key ApplicationSettings#external_auth_client_key}
 
 ---
 
@@ -1418,7 +1724,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Passphrase to use for the private key when authenticating with the external service this is encrypted when stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#external_auth_client_key_pass ApplicationSettings#external_auth_client_key_pass}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#external_auth_client_key_pass ApplicationSettings#external_auth_client_key_pass}
 
 ---
 
@@ -1428,7 +1734,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The default classification label to use when requesting authorization and no classification label has been specified on the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#external_authorization_service_default_label ApplicationSettings#external_authorization_service_default_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#external_authorization_service_default_label ApplicationSettings#external_authorization_service_default_label}
 
 ---
 
@@ -1438,7 +1744,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 (If enabled, requires: external_authorization_service_default_label, external_authorization_service_timeout and external_authorization_service_url) Enable using an external authorization service for accessing projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#external_authorization_service_enabled ApplicationSettings#external_authorization_service_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#external_authorization_service_enabled ApplicationSettings#external_authorization_service_enabled}
 
 ---
 
@@ -1450,7 +1756,7 @@ The timeout after which an authorization request is aborted, in seconds.
 
 When a request times out, access is denied to the user. (min: 0.001, max: 10, step: 0.001).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#external_authorization_service_timeout ApplicationSettings#external_authorization_service_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#external_authorization_service_timeout ApplicationSettings#external_authorization_service_timeout}
 
 ---
 
@@ -1460,7 +1766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 URL to which authorization requests are directed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#external_authorization_service_url ApplicationSettings#external_authorization_service_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#external_authorization_service_url ApplicationSettings#external_authorization_service_url}
 
 ---
 
@@ -1470,7 +1776,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 How long to wait for a response from the pipeline validation service. Assumes OK if it times out.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#external_pipeline_validation_service_timeout ApplicationSettings#external_pipeline_validation_service_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#external_pipeline_validation_service_timeout ApplicationSettings#external_pipeline_validation_service_timeout}
 
 ---
 
@@ -1480,7 +1786,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Optional. Token to include as the X-Gitlab-Token header in requests to the URL in external_pipeline_validation_service_url.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#external_pipeline_validation_service_token ApplicationSettings#external_pipeline_validation_service_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#external_pipeline_validation_service_token ApplicationSettings#external_pipeline_validation_service_token}
 
 ---
 
@@ -1490,7 +1796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 URL to use for pipeline validation requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#external_pipeline_validation_service_url ApplicationSettings#external_pipeline_validation_service_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#external_pipeline_validation_service_url ApplicationSettings#external_pipeline_validation_service_url}
 
 ---
 
@@ -1500,7 +1806,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The ID of a project to load custom file templates from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#file_template_project_id ApplicationSettings#file_template_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#file_template_project_id ApplicationSettings#file_template_project_id}
 
 ---
 
@@ -1512,7 +1818,7 @@ Start day of the week for calendar views and date pickers.
 
 Valid values are 0 for Sunday, 1 for Monday, and 6 for Saturday.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#first_day_of_week ApplicationSettings#first_day_of_week}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#first_day_of_week ApplicationSettings#first_day_of_week}
 
 ---
 
@@ -1522,7 +1828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Comma-separated list of IPs and CIDRs of allowed secondary nodes. For example, 1.1.1.1, 2.2.2.0/24.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#geo_node_allowed_ips ApplicationSettings#geo_node_allowed_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#geo_node_allowed_ips ApplicationSettings#geo_node_allowed_ips}
 
 ---
 
@@ -1532,7 +1838,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The amount of seconds after which a request to get a secondary node status times out.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#geo_status_timeout ApplicationSettings#geo_status_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#geo_status_timeout ApplicationSettings#geo_status_timeout}
 
 ---
 
@@ -1544,7 +1850,7 @@ Default Gitaly timeout, in seconds.
 
 This timeout is not enforced for Git fetch/push operations or Sidekiq jobs. Set to 0 to disable timeouts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#gitaly_timeout_default ApplicationSettings#gitaly_timeout_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#gitaly_timeout_default ApplicationSettings#gitaly_timeout_default}
 
 ---
 
@@ -1556,7 +1862,7 @@ Gitaly fast operation timeout, in seconds.
 
 Some Gitaly operations are expected to be fast. If they exceed this threshold, there may be a problem with a storage shard and ‘failing fast’ can help maintain the stability of the GitLab instance. Set to 0 to disable timeouts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#gitaly_timeout_fast ApplicationSettings#gitaly_timeout_fast}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#gitaly_timeout_fast ApplicationSettings#gitaly_timeout_fast}
 
 ---
 
@@ -1568,7 +1874,7 @@ Medium Gitaly timeout, in seconds.
 
 This should be a value between the Fast and the Default timeout. Set to 0 to disable timeouts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#gitaly_timeout_medium ApplicationSettings#gitaly_timeout_medium}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#gitaly_timeout_medium ApplicationSettings#gitaly_timeout_medium}
 
 ---
 
@@ -1578,7 +1884,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 List of usernames excluded from Git anti-abuse rate limits. Maximum: 100 usernames. Introduced in GitLab 15.2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#git_rate_limit_users_allowlist ApplicationSettings#git_rate_limit_users_allowlist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#git_rate_limit_users_allowlist ApplicationSettings#git_rate_limit_users_allowlist}
 
 ---
 
@@ -1588,7 +1894,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum duration (in minutes) of a session for Git operations when 2FA is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#git_two_factor_session_expiry ApplicationSettings#git_two_factor_session_expiry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#git_two_factor_session_expiry ApplicationSettings#git_two_factor_session_expiry}
 
 ---
 
@@ -1598,7 +1904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable Grafana.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#grafana_enabled ApplicationSettings#grafana_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#grafana_enabled ApplicationSettings#grafana_enabled}
 
 ---
 
@@ -1608,7 +1914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Grafana URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#grafana_url ApplicationSettings#grafana_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#grafana_url ApplicationSettings#grafana_url}
 
 ---
 
@@ -1618,7 +1924,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable Gravatar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#gravatar_enabled ApplicationSettings#gravatar_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#gravatar_enabled ApplicationSettings#gravatar_enabled}
 
 ---
 
@@ -1628,7 +1934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Prevent overrides of default branch protection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#group_owners_can_manage_default_branch_protection ApplicationSettings#group_owners_can_manage_default_branch_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#group_owners_can_manage_default_branch_protection ApplicationSettings#group_owners_can_manage_default_branch_protection}
 
 ---
 
@@ -1640,7 +1946,7 @@ Create new projects using hashed storage paths: Enable immutable, hash-based pat
 
 This prevents repositories from having to be moved or renamed when the Project URL changes and may improve disk I/O performance. (Always enabled in GitLab versions 13.0 and later, configuration is scheduled for removal in 14.0).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#hashed_storage_enabled ApplicationSettings#hashed_storage_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#hashed_storage_enabled ApplicationSettings#hashed_storage_enabled}
 
 ---
 
@@ -1650,7 +1956,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Hide marketing-related entries from help.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#help_page_hide_commercial_content ApplicationSettings#help_page_hide_commercial_content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#help_page_hide_commercial_content ApplicationSettings#help_page_hide_commercial_content}
 
 ---
 
@@ -1660,7 +1966,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Alternate support URL for help page and help dropdown.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#help_page_support_url ApplicationSettings#help_page_support_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#help_page_support_url ApplicationSettings#help_page_support_url}
 
 ---
 
@@ -1670,7 +1976,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Custom text displayed on the help page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#help_page_text ApplicationSettings#help_page_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#help_page_text ApplicationSettings#help_page_text}
 
 ---
 
@@ -1680,7 +1986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 GitLab server administrator information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#help_text ApplicationSettings#help_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#help_text ApplicationSettings#help_text}
 
 ---
 
@@ -1690,7 +1996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Do not display offers from third parties in GitLab.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#hide_third_party_offers ApplicationSettings#hide_third_party_offers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#hide_third_party_offers ApplicationSettings#hide_third_party_offers}
 
 ---
 
@@ -1700,7 +2006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Redirect to this URL when not logged in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#home_page_url ApplicationSettings#home_page_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#home_page_url ApplicationSettings#home_page_url}
 
 ---
 
@@ -1713,7 +2019,7 @@ Enable or disable Git housekeeping.
 If enabled, requires either housekeeping_optimize_repository_period OR housekeeping_bitmaps_enabled, housekeeping_full_repack_period, housekeeping_gc_period, and housekeeping_incremental_repack_period.
 Options housekeeping_bitmaps_enabled, housekeeping_full_repack_period, housekeeping_gc_period, and housekeeping_incremental_repack_period are deprecated. Use housekeeping_optimize_repository_period instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#housekeeping_enabled ApplicationSettings#housekeeping_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#housekeeping_enabled ApplicationSettings#housekeeping_enabled}
 
 ---
 
@@ -1723,7 +2029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Number of Git pushes after which an incremental git repack is run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#housekeeping_full_repack_period ApplicationSettings#housekeeping_full_repack_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#housekeeping_full_repack_period ApplicationSettings#housekeeping_full_repack_period}
 
 ---
 
@@ -1733,7 +2039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Number of Git pushes after which git gc is run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#housekeeping_gc_period ApplicationSettings#housekeeping_gc_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#housekeeping_gc_period ApplicationSettings#housekeeping_gc_period}
 
 ---
 
@@ -1743,7 +2049,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Number of Git pushes after which an incremental git repack is run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#housekeeping_incremental_repack_period ApplicationSettings#housekeeping_incremental_repack_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#housekeeping_incremental_repack_period ApplicationSettings#housekeeping_incremental_repack_period}
 
 ---
 
@@ -1753,7 +2059,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Number of Git pushes after which an incremental git repack is run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#housekeeping_optimize_repository_period ApplicationSettings#housekeeping_optimize_repository_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#housekeeping_optimize_repository_period ApplicationSettings#housekeeping_optimize_repository_period}
 
 ---
 
@@ -1763,7 +2069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable HTML emails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#html_emails_enabled ApplicationSettings#html_emails_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#html_emails_enabled ApplicationSettings#html_emails_enabled}
 
 ---
 
@@ -1771,7 +2077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#id ApplicationSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#id ApplicationSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1784,7 +2090,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Sources to allow project import from. Valid values are: `github`, `bitbucket`, `bitbucket_server`, `fogbugz`, `git`, `gitlab_project`, `gitea`, `manifest`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#import_sources ApplicationSettings#import_sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#import_sources ApplicationSettings#import_sources}
 
 ---
 
@@ -1796,7 +2102,7 @@ If delete_inactive_projects is true, the time (in months) to wait before deletin
 
 Introduced in GitLab 14.10. Became operational in GitLab 15.0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#inactive_projects_delete_after_months ApplicationSettings#inactive_projects_delete_after_months}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#inactive_projects_delete_after_months ApplicationSettings#inactive_projects_delete_after_months}
 
 ---
 
@@ -1808,7 +2114,7 @@ If delete_inactive_projects is true, the minimum repository size for projects to
 
 Introduced in GitLab 14.10. Became operational in GitLab 15.0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#inactive_projects_min_size_mb ApplicationSettings#inactive_projects_min_size_mb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#inactive_projects_min_size_mb ApplicationSettings#inactive_projects_min_size_mb}
 
 ---
 
@@ -1820,7 +2126,7 @@ If delete_inactive_projects is true, sets the time (in months) to wait before em
 
 Introduced in GitLab 14.10. Became operational in GitLab 15.0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#inactive_projects_send_warning_email_after_months ApplicationSettings#inactive_projects_send_warning_email_after_months}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#inactive_projects_send_warning_email_after_months ApplicationSettings#inactive_projects_send_warning_email_after_months}
 
 ---
 
@@ -1830,7 +2136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable in-product marketing emails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#in_product_marketing_emails_enabled ApplicationSettings#in_product_marketing_emails_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#in_product_marketing_emails_enabled ApplicationSettings#in_product_marketing_emails_enabled}
 
 ---
 
@@ -1840,7 +2146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable Invisible CAPTCHA spam detection during sign-up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#invisible_captcha_enabled ApplicationSettings#invisible_captcha_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#invisible_captcha_enabled ApplicationSettings#invisible_captcha_enabled}
 
 ---
 
@@ -1850,7 +2156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Max number of issue creation requests per minute per user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#issues_create_limit ApplicationSettings#issues_create_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#issues_create_limit ApplicationSettings#issues_create_limit}
 
 ---
 
@@ -1860,7 +2166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Prevent the deletion of the artifacts from the most recent successful jobs, regardless of the expiry time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#keep_latest_artifact ApplicationSettings#keep_latest_artifact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#keep_latest_artifact ApplicationSettings#keep_latest_artifact}
 
 ---
 
@@ -1870,7 +2176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Increase this value when any cached Markdown should be invalidated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#local_markdown_version ApplicationSettings#local_markdown_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#local_markdown_version ApplicationSettings#local_markdown_version}
 
 ---
 
@@ -1880,7 +2186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable Mailgun event receiver.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#mailgun_events_enabled ApplicationSettings#mailgun_events_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#mailgun_events_enabled ApplicationSettings#mailgun_events_enabled}
 
 ---
 
@@ -1890,7 +2196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The Mailgun HTTP webhook signing key for receiving events from webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#mailgun_signing_key ApplicationSettings#mailgun_signing_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#mailgun_signing_key ApplicationSettings#mailgun_signing_key}
 
 ---
 
@@ -1900,7 +2206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 When instance is in maintenance mode, non-administrative users can sign in with read-only access and make read-only API requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#maintenance_mode ApplicationSettings#maintenance_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#maintenance_mode ApplicationSettings#maintenance_mode}
 
 ---
 
@@ -1910,7 +2216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Message displayed when instance is in maintenance mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#maintenance_mode_message ApplicationSettings#maintenance_mode_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#maintenance_mode_message ApplicationSettings#maintenance_mode_message}
 
 ---
 
@@ -1920,7 +2226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum artifacts size in MB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#max_artifacts_size ApplicationSettings#max_artifacts_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#max_artifacts_size ApplicationSettings#max_artifacts_size}
 
 ---
 
@@ -1930,7 +2236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Limit attachment size in MB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#max_attachment_size ApplicationSettings#max_attachment_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#max_attachment_size ApplicationSettings#max_attachment_size}
 
 ---
 
@@ -1940,7 +2246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum export size in MB. 0 for unlimited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#max_export_size ApplicationSettings#max_export_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#max_export_size ApplicationSettings#max_export_size}
 
 ---
 
@@ -1950,7 +2256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum import size in MB. 0 for unlimited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#max_import_size ApplicationSettings#max_import_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#max_import_size ApplicationSettings#max_import_size}
 
 ---
 
@@ -1962,7 +2268,7 @@ Maximum number of unique repositories a user can download in the specified time 
 
 Maximum: 10,000 repositories. Introduced in GitLab 15.1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#max_number_of_repository_downloads ApplicationSettings#max_number_of_repository_downloads}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#max_number_of_repository_downloads ApplicationSettings#max_number_of_repository_downloads}
 
 ---
 
@@ -1972,7 +2278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Reporting time period (in seconds). Maximum: 864000 seconds (10 days). Introduced in GitLab 15.1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#max_number_of_repository_downloads_within_time_period ApplicationSettings#max_number_of_repository_downloads_within_time_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#max_number_of_repository_downloads_within_time_period ApplicationSettings#max_number_of_repository_downloads_within_time_period}
 
 ---
 
@@ -1982,7 +2288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum size of pages repositories in MB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#max_pages_size ApplicationSettings#max_pages_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#max_pages_size ApplicationSettings#max_pages_size}
 
 ---
 
@@ -1992,7 +2298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum allowable lifetime for access tokens in days.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#max_personal_access_token_lifetime ApplicationSettings#max_personal_access_token_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#max_personal_access_token_lifetime ApplicationSettings#max_personal_access_token_lifetime}
 
 ---
 
@@ -2002,7 +2308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum allowable lifetime for SSH keys in days. Introduced in GitLab 14.6.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#max_ssh_key_lifetime ApplicationSettings#max_ssh_key_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#max_ssh_key_lifetime ApplicationSettings#max_ssh_key_lifetime}
 
 ---
 
@@ -2012,7 +2318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum size in bytes of the Terraform state files. Set this to 0 for unlimited file size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#max_terraform_state_size_bytes ApplicationSettings#max_terraform_state_size_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#max_terraform_state_size_bytes ApplicationSettings#max_terraform_state_size_bytes}
 
 ---
 
@@ -2022,7 +2328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 A method call is only tracked when it takes longer than the given amount of milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#metrics_method_call_threshold ApplicationSettings#metrics_method_call_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#metrics_method_call_threshold ApplicationSettings#metrics_method_call_threshold}
 
 ---
 
@@ -2032,7 +2338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Indicates whether passwords require a minimum length. Introduced in GitLab 15.1. Premium and Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#minimum_password_length ApplicationSettings#minimum_password_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#minimum_password_length ApplicationSettings#minimum_password_length}
 
 ---
 
@@ -2042,7 +2348,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Allow repository mirroring to configured by project Maintainers. If disabled, only Administrators can configure repository mirroring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#mirror_available ApplicationSettings#mirror_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#mirror_available ApplicationSettings#mirror_available}
 
 ---
 
@@ -2052,7 +2358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Minimum capacity to be available before scheduling more mirrors preemptively.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#mirror_capacity_threshold ApplicationSettings#mirror_capacity_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#mirror_capacity_threshold ApplicationSettings#mirror_capacity_threshold}
 
 ---
 
@@ -2062,7 +2368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum number of mirrors that can be synchronizing at the same time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#mirror_max_capacity ApplicationSettings#mirror_max_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#mirror_max_capacity ApplicationSettings#mirror_max_capacity}
 
 ---
 
@@ -2072,7 +2378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum time (in minutes) between updates that a mirror can have when scheduled to synchronize.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#mirror_max_delay ApplicationSettings#mirror_max_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#mirror_max_delay ApplicationSettings#mirror_max_delay}
 
 ---
 
@@ -2082,7 +2388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Use npmjs.org as a default remote repository when the package is not found in the GitLab Package Registry for npm.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#npm_package_requests_forwarding ApplicationSettings#npm_package_requests_forwarding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#npm_package_requests_forwarding ApplicationSettings#npm_package_requests_forwarding}
 
 ---
 
@@ -2092,7 +2398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Define a list of trusted domains or IP addresses to which local requests are allowed when local requests for hooks and services are disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#outbound_local_requests_whitelist ApplicationSettings#outbound_local_requests_whitelist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#outbound_local_requests_whitelist ApplicationSettings#outbound_local_requests_whitelist}
 
 ---
 
@@ -2102,7 +2408,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Number of workers assigned to the packages cleanup policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#package_registry_cleanup_policies_worker_capacity ApplicationSettings#package_registry_cleanup_policies_worker_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#package_registry_cleanup_policies_worker_capacity ApplicationSettings#package_registry_cleanup_policies_worker_capacity}
 
 ---
 
@@ -2114,7 +2420,7 @@ Require users to prove ownership of custom domains.
 
 Domain verification is an essential security measure for public GitLab sites. Users are required to demonstrate they control a domain before it is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#pages_domain_verification_enabled ApplicationSettings#pages_domain_verification_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#pages_domain_verification_enabled ApplicationSettings#pages_domain_verification_enabled}
 
 ---
 
@@ -2124,7 +2430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable authentication for Git over HTTP(S) via a GitLab account password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#password_authentication_enabled_for_git ApplicationSettings#password_authentication_enabled_for_git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#password_authentication_enabled_for_git ApplicationSettings#password_authentication_enabled_for_git}
 
 ---
 
@@ -2134,7 +2440,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable authentication for the web interface via a GitLab account password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#password_authentication_enabled_for_web ApplicationSettings#password_authentication_enabled_for_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#password_authentication_enabled_for_web ApplicationSettings#password_authentication_enabled_for_web}
 
 ---
 
@@ -2144,7 +2450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Indicates whether passwords require at least one lowercase letter. Introduced in GitLab 15.1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#password_lowercase_required ApplicationSettings#password_lowercase_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#password_lowercase_required ApplicationSettings#password_lowercase_required}
 
 ---
 
@@ -2154,7 +2460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Indicates whether passwords require at least one number. Introduced in GitLab 15.1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#password_number_required ApplicationSettings#password_number_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#password_number_required ApplicationSettings#password_number_required}
 
 ---
 
@@ -2164,7 +2470,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Indicates whether passwords require at least one symbol character. Introduced in GitLab 15.1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#password_symbol_required ApplicationSettings#password_symbol_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#password_symbol_required ApplicationSettings#password_symbol_required}
 
 ---
 
@@ -2174,7 +2480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Indicates whether passwords require at least one uppercase letter. Introduced in GitLab 15.1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#password_uppercase_required ApplicationSettings#password_uppercase_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#password_uppercase_required ApplicationSettings#password_uppercase_required}
 
 ---
 
@@ -2184,7 +2490,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Path of the group that is allowed to toggle the performance bar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#performance_bar_allowed_group_path ApplicationSettings#performance_bar_allowed_group_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#performance_bar_allowed_group_path ApplicationSettings#performance_bar_allowed_group_path}
 
 ---
 
@@ -2194,7 +2500,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Prefix for all generated personal access tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#personal_access_token_prefix ApplicationSettings#personal_access_token_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#personal_access_token_prefix ApplicationSettings#personal_access_token_prefix}
 
 ---
 
@@ -2204,7 +2510,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum number of pipeline creation requests per minute per user and commit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#pipeline_limit_per_project_user_sha ApplicationSettings#pipeline_limit_per_project_user_sha}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#pipeline_limit_per_project_user_sha ApplicationSettings#pipeline_limit_per_project_user_sha}
 
 ---
 
@@ -2214,7 +2520,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 (If enabled, requires: plantuml_url) Enable PlantUML integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#plantuml_enabled ApplicationSettings#plantuml_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#plantuml_enabled ApplicationSettings#plantuml_enabled}
 
 ---
 
@@ -2224,7 +2530,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The PlantUML instance URL for integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#plantuml_url ApplicationSettings#plantuml_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#plantuml_url ApplicationSettings#plantuml_url}
 
 ---
 
@@ -2234,7 +2540,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Interval multiplier used by endpoints that perform polling. Set to 0 to disable polling.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#polling_interval_multiplier ApplicationSettings#polling_interval_multiplier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#polling_interval_multiplier ApplicationSettings#polling_interval_multiplier}
 
 ---
 
@@ -2244,7 +2550,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable project export.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#project_export_enabled ApplicationSettings#project_export_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#project_export_enabled ApplicationSettings#project_export_enabled}
 
 ---
 
@@ -2254,7 +2560,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable Prometheus metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#prometheus_metrics_enabled ApplicationSettings#prometheus_metrics_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#prometheus_metrics_enabled ApplicationSettings#prometheus_metrics_enabled}
 
 ---
 
@@ -2264,7 +2570,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 CI/CD variables are protected by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#protected_ci_variables ApplicationSettings#protected_ci_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#protected_ci_variables ApplicationSettings#protected_ci_variables}
 
 ---
 
@@ -2276,7 +2582,7 @@ Number of changes (branches or tags) in a single push to determine whether indiv
 
 Bulk push events are created if it surpasses that value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#push_event_activities_limit ApplicationSettings#push_event_activities_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#push_event_activities_limit ApplicationSettings#push_event_activities_limit}
 
 ---
 
@@ -2288,7 +2594,7 @@ Number of changes (branches or tags) in a single push to determine whether webho
 
 Webhooks and services aren’t submitted if it surpasses that value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#push_event_hooks_limit ApplicationSettings#push_event_hooks_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#push_event_hooks_limit ApplicationSettings#push_event_hooks_limit}
 
 ---
 
@@ -2298,7 +2604,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Use pypi.org as a default remote repository when the package is not found in the GitLab Package Registry for PyPI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#pypi_package_requests_forwarding ApplicationSettings#pypi_package_requests_forwarding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#pypi_package_requests_forwarding ApplicationSettings#pypi_package_requests_forwarding}
 
 ---
 
@@ -2310,7 +2616,7 @@ When rate limiting is enabled via the throttle_* settings, send this plain text 
 
 ‘Retry later’ is sent if this is blank.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#rate_limiting_response_text ApplicationSettings#rate_limiting_response_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#rate_limiting_response_text ApplicationSettings#rate_limiting_response_text}
 
 ---
 
@@ -2320,7 +2626,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Max number of requests per minute for each raw path. To disable throttling set to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#raw_blob_request_limit ApplicationSettings#raw_blob_request_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#raw_blob_request_limit ApplicationSettings#raw_blob_request_limit}
 
 ---
 
@@ -2330,7 +2636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 (If enabled, requires: recaptcha_private_key and recaptcha_site_key) Enable reCAPTCHA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#recaptcha_enabled ApplicationSettings#recaptcha_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#recaptcha_enabled ApplicationSettings#recaptcha_enabled}
 
 ---
 
@@ -2340,7 +2646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Private key for reCAPTCHA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#recaptcha_private_key ApplicationSettings#recaptcha_private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#recaptcha_private_key ApplicationSettings#recaptcha_private_key}
 
 ---
 
@@ -2350,7 +2656,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Site key for reCAPTCHA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#recaptcha_site_key ApplicationSettings#recaptcha_site_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#recaptcha_site_key ApplicationSettings#recaptcha_site_key}
 
 ---
 
@@ -2360,7 +2666,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum push size (MB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#receive_max_input_size ApplicationSettings#receive_max_input_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#receive_max_input_size ApplicationSettings#receive_max_input_size}
 
 ---
 
@@ -2370,7 +2676,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 GitLab periodically runs git fsck in all project and wiki repositories to look for silent disk corruption issues.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#repository_checks_enabled ApplicationSettings#repository_checks_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#repository_checks_enabled ApplicationSettings#repository_checks_enabled}
 
 ---
 
@@ -2380,7 +2686,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Size limit per repository (MB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#repository_size_limit ApplicationSettings#repository_size_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#repository_size_limit ApplicationSettings#repository_size_limit}
 
 ---
 
@@ -2390,7 +2696,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 (GitLab 13.0 and earlier) List of names of enabled storage paths, taken from gitlab.yml. New projects are created in one of these stores, chosen at random.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#repository_storages ApplicationSettings#repository_storages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#repository_storages ApplicationSettings#repository_storages}
 
 ---
 
@@ -2400,7 +2706,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 (GitLab 13.1 and later) Hash of names of taken from gitlab.yml to weights. New projects are created in one of these stores, chosen by a weighted random selection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#repository_storages_weighted ApplicationSettings#repository_storages_weighted}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#repository_storages_weighted ApplicationSettings#repository_storages_weighted}
 
 ---
 
@@ -2410,7 +2716,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 When enabled, any user that signs up for an account using the registration form is placed under a Pending approval state and has to be explicitly approved by an administrator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#require_admin_approval_after_user_signup ApplicationSettings#require_admin_approval_after_user_signup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#require_admin_approval_after_user_signup ApplicationSettings#require_admin_approval_after_user_signup}
 
 ---
 
@@ -2420,7 +2726,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 (If enabled, requires: two_factor_grace_period) Require all users to set up Two-factor authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#require_two_factor_authentication ApplicationSettings#require_two_factor_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#require_two_factor_authentication ApplicationSettings#require_two_factor_authentication}
 
 ---
 
@@ -2432,7 +2738,7 @@ Selected levels cannot be used by non-Administrator users for groups, projects o
 
 Can take private, internal and public as a parameter. Null means there is no restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#restricted_visibility_levels ApplicationSettings#restricted_visibility_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#restricted_visibility_levels ApplicationSettings#restricted_visibility_levels}
 
 ---
 
@@ -2442,7 +2748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The minimum allowed bit length of an uploaded RSA key. 0 means no restriction. -1 disables RSA keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#rsa_key_restriction ApplicationSettings#rsa_key_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#rsa_key_restriction ApplicationSettings#rsa_key_restriction}
 
 ---
 
@@ -2452,7 +2758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Max number of requests per minute for performing a search while authenticated. To disable throttling set to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#search_rate_limit ApplicationSettings#search_rate_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#search_rate_limit ApplicationSettings#search_rate_limit}
 
 ---
 
@@ -2462,7 +2768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Max number of requests per minute for performing a search while unauthenticated. To disable throttling set to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#search_rate_limit_unauthenticated ApplicationSettings#search_rate_limit_unauthenticated}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#search_rate_limit_unauthenticated ApplicationSettings#search_rate_limit_unauthenticated}
 
 ---
 
@@ -2472,7 +2778,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Send confirmation email on sign-up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#send_user_confirmation_email ApplicationSettings#send_user_confirmation_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#send_user_confirmation_email ApplicationSettings#send_user_confirmation_email}
 
 ---
 
@@ -2482,7 +2788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Session duration in minutes. GitLab restart is required to apply changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#session_expire_delay ApplicationSettings#session_expire_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#session_expire_delay ApplicationSettings#session_expire_delay}
 
 ---
 
@@ -2492,7 +2798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 (If enabled, requires: shared_runners_text and shared_runners_minutes) Enable shared runners for new projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#shared_runners_enabled ApplicationSettings#shared_runners_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#shared_runners_enabled ApplicationSettings#shared_runners_enabled}
 
 ---
 
@@ -2502,7 +2808,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set the maximum number of CI/CD minutes that a group can use on shared runners per month.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#shared_runners_minutes ApplicationSettings#shared_runners_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#shared_runners_minutes ApplicationSettings#shared_runners_minutes}
 
 ---
 
@@ -2512,7 +2818,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Shared runners text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#shared_runners_text ApplicationSettings#shared_runners_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#shared_runners_text ApplicationSettings#shared_runners_text}
 
 ---
 
@@ -2522,7 +2828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The threshold in bytes at which Sidekiq jobs are compressed before being stored in Redis.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#sidekiq_job_limiter_compression_threshold_bytes ApplicationSettings#sidekiq_job_limiter_compression_threshold_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#sidekiq_job_limiter_compression_threshold_bytes ApplicationSettings#sidekiq_job_limiter_compression_threshold_bytes}
 
 ---
 
@@ -2532,7 +2838,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The threshold in bytes at which Sidekiq jobs are rejected. 0 means do not reject any job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#sidekiq_job_limiter_limit_bytes ApplicationSettings#sidekiq_job_limiter_limit_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#sidekiq_job_limiter_limit_bytes ApplicationSettings#sidekiq_job_limiter_limit_bytes}
 
 ---
 
@@ -2542,7 +2848,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 track or compress. Sets the behavior for Sidekiq job size limits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#sidekiq_job_limiter_mode ApplicationSettings#sidekiq_job_limiter_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#sidekiq_job_limiter_mode ApplicationSettings#sidekiq_job_limiter_mode}
 
 ---
 
@@ -2552,7 +2858,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Text on the login page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#sign_in_text ApplicationSettings#sign_in_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#sign_in_text ApplicationSettings#sign_in_text}
 
 ---
 
@@ -2562,7 +2868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable registration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#signup_enabled ApplicationSettings#signup_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#signup_enabled ApplicationSettings#signup_enabled}
 
 ---
 
@@ -2572,7 +2878,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 (If enabled, requires: slack_app_id, slack_app_secret and slack_app_secret) Enable Slack app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#slack_app_enabled ApplicationSettings#slack_app_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#slack_app_enabled ApplicationSettings#slack_app_enabled}
 
 ---
 
@@ -2582,7 +2888,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The app ID of the Slack-app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#slack_app_id ApplicationSettings#slack_app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#slack_app_id ApplicationSettings#slack_app_id}
 
 ---
 
@@ -2592,7 +2898,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The app secret of the Slack-app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#slack_app_secret ApplicationSettings#slack_app_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#slack_app_secret ApplicationSettings#slack_app_secret}
 
 ---
 
@@ -2602,7 +2908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The signing secret of the Slack-app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#slack_app_signing_secret ApplicationSettings#slack_app_signing_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#slack_app_signing_secret ApplicationSettings#slack_app_signing_secret}
 
 ---
 
@@ -2612,7 +2918,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The verification token of the Slack-app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#slack_app_verification_token ApplicationSettings#slack_app_verification_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#slack_app_verification_token ApplicationSettings#slack_app_verification_token}
 
 ---
 
@@ -2622,7 +2928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Max snippet content size in bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#snippet_size_limit ApplicationSettings#snippet_size_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#snippet_size_limit ApplicationSettings#snippet_size_limit}
 
 ---
 
@@ -2632,7 +2938,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The Snowplow site name / application ID. (for example, gitlab).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#snowplow_app_id ApplicationSettings#snowplow_app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#snowplow_app_id ApplicationSettings#snowplow_app_id}
 
 ---
 
@@ -2642,7 +2948,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The Snowplow collector hostname. (for example, snowplow.trx.gitlab.net).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#snowplow_collector_hostname ApplicationSettings#snowplow_collector_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#snowplow_collector_hostname ApplicationSettings#snowplow_collector_hostname}
 
 ---
 
@@ -2652,7 +2958,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The Snowplow cookie domain. (for example, .gitlab.com).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#snowplow_cookie_domain ApplicationSettings#snowplow_cookie_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#snowplow_cookie_domain ApplicationSettings#snowplow_cookie_domain}
 
 ---
 
@@ -2662,7 +2968,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable snowplow tracking.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#snowplow_enabled ApplicationSettings#snowplow_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#snowplow_enabled ApplicationSettings#snowplow_enabled}
 
 ---
 
@@ -2672,7 +2978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enables Sourcegraph integration. If enabled, requires sourcegraph_url.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#sourcegraph_enabled ApplicationSettings#sourcegraph_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#sourcegraph_enabled ApplicationSettings#sourcegraph_enabled}
 
 ---
 
@@ -2682,7 +2988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Blocks Sourcegraph from being loaded on private and internal projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#sourcegraph_public_only ApplicationSettings#sourcegraph_public_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#sourcegraph_public_only ApplicationSettings#sourcegraph_public_only}
 
 ---
 
@@ -2692,7 +2998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The Sourcegraph instance URL for integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#sourcegraph_url ApplicationSettings#sourcegraph_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#sourcegraph_url ApplicationSettings#sourcegraph_url}
 
 ---
 
@@ -2702,7 +3008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 API key used by GitLab for accessing the Spam Check service endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#spam_check_api_key ApplicationSettings#spam_check_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#spam_check_api_key ApplicationSettings#spam_check_api_key}
 
 ---
 
@@ -2712,7 +3018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enables spam checking using external Spam Check API endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#spam_check_endpoint_enabled ApplicationSettings#spam_check_endpoint_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#spam_check_endpoint_enabled ApplicationSettings#spam_check_endpoint_enabled}
 
 ---
 
@@ -2724,7 +3030,7 @@ URL of the external Spamcheck service endpoint.
 
 Valid URI schemes are grpc or tls. Specifying tls forces communication to be encrypted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#spam_check_endpoint_url ApplicationSettings#spam_check_endpoint_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#spam_check_endpoint_url ApplicationSettings#spam_check_endpoint_url}
 
 ---
 
@@ -2734,7 +3040,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable pipeline suggestion banner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#suggest_pipeline_enabled ApplicationSettings#suggest_pipeline_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#suggest_pipeline_enabled ApplicationSettings#suggest_pipeline_enabled}
 
 ---
 
@@ -2744,7 +3050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum time for web terminal websocket connection (in seconds). Set to 0 for unlimited time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#terminal_max_session_time ApplicationSettings#terminal_max_session_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#terminal_max_session_time ApplicationSettings#terminal_max_session_time}
 
 ---
 
@@ -2754,7 +3060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 (Required by: enforce_terms) Markdown content for the ToS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#terms ApplicationSettings#terms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#terms ApplicationSettings#terms}
 
 ---
 
@@ -2766,7 +3072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Helps reduce request volume (for example, from crawlers or abusive bots).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_authenticated_api_enabled ApplicationSettings#throttle_authenticated_api_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_authenticated_api_enabled ApplicationSettings#throttle_authenticated_api_enabled}
 
 ---
 
@@ -2776,7 +3082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Rate limit period (in seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_authenticated_api_period_in_seconds ApplicationSettings#throttle_authenticated_api_period_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_authenticated_api_period_in_seconds ApplicationSettings#throttle_authenticated_api_period_in_seconds}
 
 ---
 
@@ -2786,7 +3092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum requests per period per user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_authenticated_api_requests_per_period ApplicationSettings#throttle_authenticated_api_requests_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_authenticated_api_requests_per_period ApplicationSettings#throttle_authenticated_api_requests_per_period}
 
 ---
 
@@ -2798,7 +3104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Helps reduce request volume (for example, from crawlers or abusive bots). View Package Registry rate limits for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_authenticated_packages_api_enabled ApplicationSettings#throttle_authenticated_packages_api_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_authenticated_packages_api_enabled ApplicationSettings#throttle_authenticated_packages_api_enabled}
 
 ---
 
@@ -2808,7 +3114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Rate limit period (in seconds). View Package Registry rate limits for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_authenticated_packages_api_period_in_seconds ApplicationSettings#throttle_authenticated_packages_api_period_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_authenticated_packages_api_period_in_seconds ApplicationSettings#throttle_authenticated_packages_api_period_in_seconds}
 
 ---
 
@@ -2818,7 +3124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum requests per period per user. View Package Registry rate limits for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_authenticated_packages_api_requests_per_period ApplicationSettings#throttle_authenticated_packages_api_requests_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_authenticated_packages_api_requests_per_period ApplicationSettings#throttle_authenticated_packages_api_requests_per_period}
 
 ---
 
@@ -2830,7 +3136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Helps reduce request volume (for example, from crawlers or abusive bots).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_authenticated_web_enabled ApplicationSettings#throttle_authenticated_web_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_authenticated_web_enabled ApplicationSettings#throttle_authenticated_web_enabled}
 
 ---
 
@@ -2840,7 +3146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Rate limit period (in seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_authenticated_web_period_in_seconds ApplicationSettings#throttle_authenticated_web_period_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_authenticated_web_period_in_seconds ApplicationSettings#throttle_authenticated_web_period_in_seconds}
 
 ---
 
@@ -2850,7 +3156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum requests per period per user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_authenticated_web_requests_per_period ApplicationSettings#throttle_authenticated_web_requests_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_authenticated_web_requests_per_period ApplicationSettings#throttle_authenticated_web_requests_per_period}
 
 ---
 
@@ -2862,7 +3168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Helps reduce request volume (for example, from crawlers or abusive bots).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_unauthenticated_api_enabled ApplicationSettings#throttle_unauthenticated_api_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_unauthenticated_api_enabled ApplicationSettings#throttle_unauthenticated_api_enabled}
 
 ---
 
@@ -2872,7 +3178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Rate limit period in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_unauthenticated_api_period_in_seconds ApplicationSettings#throttle_unauthenticated_api_period_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_unauthenticated_api_period_in_seconds ApplicationSettings#throttle_unauthenticated_api_period_in_seconds}
 
 ---
 
@@ -2882,7 +3188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Max requests per period per IP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_unauthenticated_api_requests_per_period ApplicationSettings#throttle_unauthenticated_api_requests_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_unauthenticated_api_requests_per_period ApplicationSettings#throttle_unauthenticated_api_requests_per_period}
 
 ---
 
@@ -2894,7 +3200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Helps reduce request volume (for example, from crawlers or abusive bots). View Package Registry rate limits for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_unauthenticated_packages_api_enabled ApplicationSettings#throttle_unauthenticated_packages_api_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_unauthenticated_packages_api_enabled ApplicationSettings#throttle_unauthenticated_packages_api_enabled}
 
 ---
 
@@ -2904,7 +3210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Rate limit period (in seconds). View Package Registry rate limits for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_unauthenticated_packages_api_period_in_seconds ApplicationSettings#throttle_unauthenticated_packages_api_period_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_unauthenticated_packages_api_period_in_seconds ApplicationSettings#throttle_unauthenticated_packages_api_period_in_seconds}
 
 ---
 
@@ -2914,7 +3220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum requests per period per user. View Package Registry rate limits for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_unauthenticated_packages_api_requests_per_period ApplicationSettings#throttle_unauthenticated_packages_api_requests_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_unauthenticated_packages_api_requests_per_period ApplicationSettings#throttle_unauthenticated_packages_api_requests_per_period}
 
 ---
 
@@ -2926,7 +3232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Helps reduce request volume (for example, from crawlers or abusive bots).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_unauthenticated_web_enabled ApplicationSettings#throttle_unauthenticated_web_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_unauthenticated_web_enabled ApplicationSettings#throttle_unauthenticated_web_enabled}
 
 ---
 
@@ -2936,7 +3242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Rate limit period in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_unauthenticated_web_period_in_seconds ApplicationSettings#throttle_unauthenticated_web_period_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_unauthenticated_web_period_in_seconds ApplicationSettings#throttle_unauthenticated_web_period_in_seconds}
 
 ---
 
@@ -2946,7 +3252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Max requests per period per IP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_unauthenticated_web_requests_per_period ApplicationSettings#throttle_unauthenticated_web_requests_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_unauthenticated_web_requests_per_period ApplicationSettings#throttle_unauthenticated_web_requests_per_period}
 
 ---
 
@@ -2956,7 +3262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Limit display of time tracking units to hours.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#time_tracking_limit_to_hours ApplicationSettings#time_tracking_limit_to_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#time_tracking_limit_to_hours ApplicationSettings#time_tracking_limit_to_hours}
 
 ---
 
@@ -2966,7 +3272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Amount of time (in hours) that users are allowed to skip forced configuration of two-factor authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#two_factor_grace_period ApplicationSettings#two_factor_grace_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#two_factor_grace_period ApplicationSettings#two_factor_grace_period}
 
 ---
 
@@ -2976,7 +3282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 (If enabled, requires: unique_ips_limit_per_user and unique_ips_limit_time_window) Limit sign in from multiple IPs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#unique_ips_limit_enabled ApplicationSettings#unique_ips_limit_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#unique_ips_limit_enabled ApplicationSettings#unique_ips_limit_enabled}
 
 ---
 
@@ -2986,7 +3292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum number of IPs per user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#unique_ips_limit_per_user ApplicationSettings#unique_ips_limit_per_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#unique_ips_limit_per_user ApplicationSettings#unique_ips_limit_per_user}
 
 ---
 
@@ -2996,7 +3302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 How many seconds an IP is counted towards the limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#unique_ips_limit_time_window ApplicationSettings#unique_ips_limit_time_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#unique_ips_limit_time_window ApplicationSettings#unique_ips_limit_time_window}
 
 ---
 
@@ -3006,7 +3312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Every week GitLab reports license usage back to GitLab, Inc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#usage_ping_enabled ApplicationSettings#usage_ping_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#usage_ping_enabled ApplicationSettings#usage_ping_enabled}
 
 ---
 
@@ -3016,7 +3322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Send an email to users upon account deactivation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#user_deactivation_emails_enabled ApplicationSettings#user_deactivation_emails_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#user_deactivation_emails_enabled ApplicationSettings#user_deactivation_emails_enabled}
 
 ---
 
@@ -3026,7 +3332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Newly registered users are external by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#user_default_external ApplicationSettings#user_default_external}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#user_default_external ApplicationSettings#user_default_external}
 
 ---
 
@@ -3036,7 +3342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Specify an email address regex pattern to identify default internal users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#user_default_internal_regex ApplicationSettings#user_default_internal_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#user_default_internal_regex ApplicationSettings#user_default_internal_regex}
 
 ---
 
@@ -3046,7 +3352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Allow users to register any application to use GitLab as an OAuth provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#user_oauth_applications ApplicationSettings#user_oauth_applications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#user_oauth_applications ApplicationSettings#user_oauth_applications}
 
 ---
 
@@ -3056,7 +3362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 When set to false disable the You won't be able to pull or push project code via SSH warning shown to users with no uploaded SSH key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#user_show_add_ssh_key_message ApplicationSettings#user_show_add_ssh_key_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#user_show_add_ssh_key_message ApplicationSettings#user_show_add_ssh_key_message}
 
 ---
 
@@ -3066,7 +3372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Let GitLab inform you when an update is available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#version_check_enabled ApplicationSettings#version_check_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#version_check_enabled ApplicationSettings#version_check_enabled}
 
 ---
 
@@ -3076,7 +3382,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Live Preview (allow live previews of JavaScript projects in the Web IDE using CodeSandbox Live Preview).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#web_ide_clientside_preview_enabled ApplicationSettings#web_ide_clientside_preview_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#web_ide_clientside_preview_enabled ApplicationSettings#web_ide_clientside_preview_enabled}
 
 ---
 
@@ -3086,7 +3392,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 What’s new variant, possible values: all_tiers, current_tier, and disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#whats_new_variant ApplicationSettings#whats_new_variant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#whats_new_variant ApplicationSettings#whats_new_variant}
 
 ---
 
@@ -3096,7 +3402,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum wiki page content size in bytes. The minimum value is 1024 bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#wiki_page_max_content_bytes ApplicationSettings#wiki_page_max_content_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#wiki_page_max_content_bytes ApplicationSettings#wiki_page_max_content_bytes}
 
 ---
 
@@ -3127,27 +3433,41 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.putDefaultBranchProtectionDefaults">put_default_branch_protection_defaults</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAbuseNotificationEmail">reset_abuse_notification_email</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAdminMode">reset_admin_mode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAfterSignOutPath">reset_after_sign_out_path</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAfterSignUpText">reset_after_sign_up_text</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAkismetApiKey">reset_akismet_api_key</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAkismetEnabled">reset_akismet_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAllowAccountDeletion">reset_allow_account_deletion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAllowGroupOwnersToManageLdap">reset_allow_group_owners_to_manage_ldap</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAllowLocalRequestsFromSystemHooks">reset_allow_local_requests_from_system_hooks</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAllowLocalRequestsFromWebHooksAndServices">reset_allow_local_requests_from_web_hooks_and_services</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAllowProjectCreationForGuestAndBelow">reset_allow_project_creation_for_guest_and_below</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAllowRunnerRegistrationToken">reset_allow_runner_registration_token</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetArchiveBuildsInHumanReadable">reset_archive_builds_in_human_readable</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAsciidocMaxIncludes">reset_asciidoc_max_includes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAssetProxyAllowlist">reset_asset_proxy_allowlist</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAssetProxyEnabled">reset_asset_proxy_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAssetProxySecretKey">reset_asset_proxy_secret_key</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAssetProxyUrl">reset_asset_proxy_url</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAuthorizedKeysEnabled">reset_authorized_keys_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAutoBanUserOnExcessiveProjectsDownload">reset_auto_ban_user_on_excessive_projects_download</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAutoDevopsDomain">reset_auto_devops_domain</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAutoDevopsEnabled">reset_auto_devops_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAutomaticPurchasedStorageAllocation">reset_automatic_purchased_storage_allocation</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetBulkImportConcurrentPipelineBatchLimit">reset_bulk_import_concurrent_pipeline_batch_limit</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetBulkImportEnabled">reset_bulk_import_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetBulkImportMaxDownloadFileSize">reset_bulk_import_max_download_file_size</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetCanCreateGroup">reset_can_create_group</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetCheckNamespacePlan">reset_check_namespace_plan</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetCiMaxIncludes">reset_ci_max_includes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetCiMaxTotalYamlSizeBytes">reset_ci_max_total_yaml_size_bytes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetCommitEmailHostname">reset_commit_email_hostname</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetConcurrentBitbucketImportJobsLimit">reset_concurrent_bitbucket_import_jobs_limit</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetConcurrentBitbucketServerImportJobsLimit">reset_concurrent_bitbucket_server_import_jobs_limit</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetConcurrentGithubImportJobsLimit">reset_concurrent_github_import_jobs_limit</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetContainerExpirationPoliciesEnableHistoricEntries">reset_container_expiration_policies_enable_historic_entries</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetContainerRegistryCleanupTagsServiceMaxListSize">reset_container_registry_cleanup_tags_service_max_list_size</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetContainerRegistryDeleteTagsServiceTimeout">reset_container_registry_delete_tags_service_timeout</a></code> | *No description.* |
@@ -3155,27 +3475,39 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetContainerRegistryExpirationPoliciesWorkerCapacity">reset_container_registry_expiration_policies_worker_capacity</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetContainerRegistryTokenExpireDelay">reset_container_registry_token_expire_delay</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDeactivateDormantUsers">reset_deactivate_dormant_users</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDeactivateDormantUsersPeriod">reset_deactivate_dormant_users_period</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDecompressArchiveFileTimeout">reset_decompress_archive_file_timeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDefaultArtifactsExpireIn">reset_default_artifacts_expire_in</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDefaultBranchName">reset_default_branch_name</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDefaultBranchProtection">reset_default_branch_protection</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDefaultBranchProtectionDefaults">reset_default_branch_protection_defaults</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDefaultCiConfigPath">reset_default_ci_config_path</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDefaultGroupVisibility">reset_default_group_visibility</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDefaultPreferredLanguage">reset_default_preferred_language</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDefaultProjectCreation">reset_default_project_creation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDefaultProjectsLimit">reset_default_projects_limit</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDefaultProjectVisibility">reset_default_project_visibility</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDefaultSnippetVisibility">reset_default_snippet_visibility</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDefaultSyntaxHighlightingTheme">reset_default_syntax_highlighting_theme</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDeleteInactiveProjects">reset_delete_inactive_projects</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDeleteUnconfirmedUsers">reset_delete_unconfirmed_users</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDeletionAdjournedPeriod">reset_deletion_adjourned_period</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDiagramsnetEnabled">reset_diagramsnet_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDiagramsnetUrl">reset_diagramsnet_url</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDiffMaxFiles">reset_diff_max_files</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDiffMaxLines">reset_diff_max_lines</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDiffMaxPatchBytes">reset_diff_max_patch_bytes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDisableAdminOauthScopes">reset_disable_admin_oauth_scopes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDisabledOauthSignInSources">reset_disabled_oauth_sign_in_sources</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDisableFeedToken">reset_disable_feed_token</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDisablePersonalAccessTokens">reset_disable_personal_access_tokens</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDnsRebindingProtectionEnabled">reset_dns_rebinding_protection_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDomainAllowlist">reset_domain_allowlist</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDomainDenylist">reset_domain_denylist</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDomainDenylistEnabled">reset_domain_denylist_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDownstreamPipelineTriggerLimitPerProjectUserSha">reset_downstream_pipeline_trigger_limit_per_project_user_sha</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDsaKeyRestriction">reset_dsa_key_restriction</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDuoFeaturesEnabled">reset_duo_features_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetEcdsaKeyRestriction">reset_ecdsa_key_restriction</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetEcdsaSkKeyRestriction">reset_ecdsa_sk_key_restriction</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetEd25519KeyRestriction">reset_ed25519_key_restriction</a></code> | *No description.* |
@@ -3699,6 +4031,57 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_default_branch_protection_defaults` <a name="put_default_branch_protection_defaults" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.putDefaultBranchProtectionDefaults"></a>
+
+```python
+def put_default_branch_protection_defaults(
+  allowed_to_merge: typing.List[typing.Union[int, float]] = None,
+  allowed_to_push: typing.List[typing.Union[int, float]] = None,
+  allow_force_push: typing.Union[bool, IResolvable] = None,
+  developer_can_initial_push: typing.Union[bool, IResolvable] = None
+) -> None
+```
+
+###### `allowed_to_merge`<sup>Optional</sup> <a name="allowed_to_merge" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.putDefaultBranchProtectionDefaults.parameter.allowedToMerge"></a>
+
+- *Type:* typing.List[typing.Union[int, float]]
+
+An array of access levels allowed to merge. Supports Developer (30) or Maintainer (40).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#allowed_to_merge ApplicationSettings#allowed_to_merge}
+
+---
+
+###### `allowed_to_push`<sup>Optional</sup> <a name="allowed_to_push" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.putDefaultBranchProtectionDefaults.parameter.allowedToPush"></a>
+
+- *Type:* typing.List[typing.Union[int, float]]
+
+An array of access levels allowed to push. Supports Developer (30) or Maintainer (40).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#allowed_to_push ApplicationSettings#allowed_to_push}
+
+---
+
+###### `allow_force_push`<sup>Optional</sup> <a name="allow_force_push" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.putDefaultBranchProtectionDefaults.parameter.allowForcePush"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Allow force push for all users with push access.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#allow_force_push ApplicationSettings#allow_force_push}
+
+---
+
+###### `developer_can_initial_push`<sup>Optional</sup> <a name="developer_can_initial_push" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.putDefaultBranchProtectionDefaults.parameter.developerCanInitialPush"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Allow developers to initial push.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#developer_can_initial_push ApplicationSettings#developer_can_initial_push}
+
+---
+
 ##### `reset_abuse_notification_email` <a name="reset_abuse_notification_email" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAbuseNotificationEmail"></a>
 
 ```python
@@ -3735,6 +4118,12 @@ def reset_akismet_api_key() -> None
 def reset_akismet_enabled() -> None
 ```
 
+##### `reset_allow_account_deletion` <a name="reset_allow_account_deletion" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAllowAccountDeletion"></a>
+
+```python
+def reset_allow_account_deletion() -> None
+```
+
 ##### `reset_allow_group_owners_to_manage_ldap` <a name="reset_allow_group_owners_to_manage_ldap" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAllowGroupOwnersToManageLdap"></a>
 
 ```python
@@ -3753,10 +4142,28 @@ def reset_allow_local_requests_from_system_hooks() -> None
 def reset_allow_local_requests_from_web_hooks_and_services() -> None
 ```
 
+##### `reset_allow_project_creation_for_guest_and_below` <a name="reset_allow_project_creation_for_guest_and_below" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAllowProjectCreationForGuestAndBelow"></a>
+
+```python
+def reset_allow_project_creation_for_guest_and_below() -> None
+```
+
+##### `reset_allow_runner_registration_token` <a name="reset_allow_runner_registration_token" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAllowRunnerRegistrationToken"></a>
+
+```python
+def reset_allow_runner_registration_token() -> None
+```
+
 ##### `reset_archive_builds_in_human_readable` <a name="reset_archive_builds_in_human_readable" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetArchiveBuildsInHumanReadable"></a>
 
 ```python
 def reset_archive_builds_in_human_readable() -> None
+```
+
+##### `reset_asciidoc_max_includes` <a name="reset_asciidoc_max_includes" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAsciidocMaxIncludes"></a>
+
+```python
+def reset_asciidoc_max_includes() -> None
 ```
 
 ##### `reset_asset_proxy_allowlist` <a name="reset_asset_proxy_allowlist" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAssetProxyAllowlist"></a>
@@ -3789,6 +4196,12 @@ def reset_asset_proxy_url() -> None
 def reset_authorized_keys_enabled() -> None
 ```
 
+##### `reset_auto_ban_user_on_excessive_projects_download` <a name="reset_auto_ban_user_on_excessive_projects_download" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAutoBanUserOnExcessiveProjectsDownload"></a>
+
+```python
+def reset_auto_ban_user_on_excessive_projects_download() -> None
+```
+
 ##### `reset_auto_devops_domain` <a name="reset_auto_devops_domain" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetAutoDevopsDomain"></a>
 
 ```python
@@ -3807,6 +4220,24 @@ def reset_auto_devops_enabled() -> None
 def reset_automatic_purchased_storage_allocation() -> None
 ```
 
+##### `reset_bulk_import_concurrent_pipeline_batch_limit` <a name="reset_bulk_import_concurrent_pipeline_batch_limit" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetBulkImportConcurrentPipelineBatchLimit"></a>
+
+```python
+def reset_bulk_import_concurrent_pipeline_batch_limit() -> None
+```
+
+##### `reset_bulk_import_enabled` <a name="reset_bulk_import_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetBulkImportEnabled"></a>
+
+```python
+def reset_bulk_import_enabled() -> None
+```
+
+##### `reset_bulk_import_max_download_file_size` <a name="reset_bulk_import_max_download_file_size" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetBulkImportMaxDownloadFileSize"></a>
+
+```python
+def reset_bulk_import_max_download_file_size() -> None
+```
+
 ##### `reset_can_create_group` <a name="reset_can_create_group" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetCanCreateGroup"></a>
 
 ```python
@@ -3819,10 +4250,40 @@ def reset_can_create_group() -> None
 def reset_check_namespace_plan() -> None
 ```
 
+##### `reset_ci_max_includes` <a name="reset_ci_max_includes" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetCiMaxIncludes"></a>
+
+```python
+def reset_ci_max_includes() -> None
+```
+
+##### `reset_ci_max_total_yaml_size_bytes` <a name="reset_ci_max_total_yaml_size_bytes" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetCiMaxTotalYamlSizeBytes"></a>
+
+```python
+def reset_ci_max_total_yaml_size_bytes() -> None
+```
+
 ##### `reset_commit_email_hostname` <a name="reset_commit_email_hostname" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetCommitEmailHostname"></a>
 
 ```python
 def reset_commit_email_hostname() -> None
+```
+
+##### `reset_concurrent_bitbucket_import_jobs_limit` <a name="reset_concurrent_bitbucket_import_jobs_limit" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetConcurrentBitbucketImportJobsLimit"></a>
+
+```python
+def reset_concurrent_bitbucket_import_jobs_limit() -> None
+```
+
+##### `reset_concurrent_bitbucket_server_import_jobs_limit` <a name="reset_concurrent_bitbucket_server_import_jobs_limit" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetConcurrentBitbucketServerImportJobsLimit"></a>
+
+```python
+def reset_concurrent_bitbucket_server_import_jobs_limit() -> None
+```
+
+##### `reset_concurrent_github_import_jobs_limit` <a name="reset_concurrent_github_import_jobs_limit" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetConcurrentGithubImportJobsLimit"></a>
+
+```python
+def reset_concurrent_github_import_jobs_limit() -> None
 ```
 
 ##### `reset_container_expiration_policies_enable_historic_entries` <a name="reset_container_expiration_policies_enable_historic_entries" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetContainerExpirationPoliciesEnableHistoricEntries"></a>
@@ -3867,6 +4328,18 @@ def reset_container_registry_token_expire_delay() -> None
 def reset_deactivate_dormant_users() -> None
 ```
 
+##### `reset_deactivate_dormant_users_period` <a name="reset_deactivate_dormant_users_period" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDeactivateDormantUsersPeriod"></a>
+
+```python
+def reset_deactivate_dormant_users_period() -> None
+```
+
+##### `reset_decompress_archive_file_timeout` <a name="reset_decompress_archive_file_timeout" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDecompressArchiveFileTimeout"></a>
+
+```python
+def reset_decompress_archive_file_timeout() -> None
+```
+
 ##### `reset_default_artifacts_expire_in` <a name="reset_default_artifacts_expire_in" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDefaultArtifactsExpireIn"></a>
 
 ```python
@@ -3885,6 +4358,12 @@ def reset_default_branch_name() -> None
 def reset_default_branch_protection() -> None
 ```
 
+##### `reset_default_branch_protection_defaults` <a name="reset_default_branch_protection_defaults" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDefaultBranchProtectionDefaults"></a>
+
+```python
+def reset_default_branch_protection_defaults() -> None
+```
+
 ##### `reset_default_ci_config_path` <a name="reset_default_ci_config_path" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDefaultCiConfigPath"></a>
 
 ```python
@@ -3895,6 +4374,12 @@ def reset_default_ci_config_path() -> None
 
 ```python
 def reset_default_group_visibility() -> None
+```
+
+##### `reset_default_preferred_language` <a name="reset_default_preferred_language" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDefaultPreferredLanguage"></a>
+
+```python
+def reset_default_preferred_language() -> None
 ```
 
 ##### `reset_default_project_creation` <a name="reset_default_project_creation" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDefaultProjectCreation"></a>
@@ -3921,16 +4406,40 @@ def reset_default_project_visibility() -> None
 def reset_default_snippet_visibility() -> None
 ```
 
+##### `reset_default_syntax_highlighting_theme` <a name="reset_default_syntax_highlighting_theme" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDefaultSyntaxHighlightingTheme"></a>
+
+```python
+def reset_default_syntax_highlighting_theme() -> None
+```
+
 ##### `reset_delete_inactive_projects` <a name="reset_delete_inactive_projects" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDeleteInactiveProjects"></a>
 
 ```python
 def reset_delete_inactive_projects() -> None
 ```
 
+##### `reset_delete_unconfirmed_users` <a name="reset_delete_unconfirmed_users" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDeleteUnconfirmedUsers"></a>
+
+```python
+def reset_delete_unconfirmed_users() -> None
+```
+
 ##### `reset_deletion_adjourned_period` <a name="reset_deletion_adjourned_period" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDeletionAdjournedPeriod"></a>
 
 ```python
 def reset_deletion_adjourned_period() -> None
+```
+
+##### `reset_diagramsnet_enabled` <a name="reset_diagramsnet_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDiagramsnetEnabled"></a>
+
+```python
+def reset_diagramsnet_enabled() -> None
+```
+
+##### `reset_diagramsnet_url` <a name="reset_diagramsnet_url" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDiagramsnetUrl"></a>
+
+```python
+def reset_diagramsnet_url() -> None
 ```
 
 ##### `reset_diff_max_files` <a name="reset_diff_max_files" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDiffMaxFiles"></a>
@@ -3951,6 +4460,12 @@ def reset_diff_max_lines() -> None
 def reset_diff_max_patch_bytes() -> None
 ```
 
+##### `reset_disable_admin_oauth_scopes` <a name="reset_disable_admin_oauth_scopes" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDisableAdminOauthScopes"></a>
+
+```python
+def reset_disable_admin_oauth_scopes() -> None
+```
+
 ##### `reset_disabled_oauth_sign_in_sources` <a name="reset_disabled_oauth_sign_in_sources" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDisabledOauthSignInSources"></a>
 
 ```python
@@ -3961,6 +4476,12 @@ def reset_disabled_oauth_sign_in_sources() -> None
 
 ```python
 def reset_disable_feed_token() -> None
+```
+
+##### `reset_disable_personal_access_tokens` <a name="reset_disable_personal_access_tokens" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDisablePersonalAccessTokens"></a>
+
+```python
+def reset_disable_personal_access_tokens() -> None
 ```
 
 ##### `reset_dns_rebinding_protection_enabled` <a name="reset_dns_rebinding_protection_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDnsRebindingProtectionEnabled"></a>
@@ -3987,10 +4508,22 @@ def reset_domain_denylist() -> None
 def reset_domain_denylist_enabled() -> None
 ```
 
+##### `reset_downstream_pipeline_trigger_limit_per_project_user_sha` <a name="reset_downstream_pipeline_trigger_limit_per_project_user_sha" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDownstreamPipelineTriggerLimitPerProjectUserSha"></a>
+
+```python
+def reset_downstream_pipeline_trigger_limit_per_project_user_sha() -> None
+```
+
 ##### `reset_dsa_key_restriction` <a name="reset_dsa_key_restriction" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDsaKeyRestriction"></a>
 
 ```python
 def reset_dsa_key_restriction() -> None
+```
+
+##### `reset_duo_features_enabled` <a name="reset_duo_features_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetDuoFeaturesEnabled"></a>
+
+```python
+def reset_duo_features_enabled() -> None
 ```
 
 ##### `reset_ecdsa_key_restriction` <a name="reset_ecdsa_key_restriction" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.resetEcdsaKeyRestriction"></a>
@@ -5277,7 +5810,7 @@ The construct id used in the generated config for the ApplicationSettings to imp
 
 The id of the existing ApplicationSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -5307,27 +5840,41 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultBranchProtectionDefaults">default_branch_protection_defaults</a></code> | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference">ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.abuseNotificationEmailInput">abuse_notification_email_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.adminModeInput">admin_mode_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.afterSignOutPathInput">after_sign_out_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.afterSignUpTextInput">after_sign_up_text_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.akismetApiKeyInput">akismet_api_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.akismetEnabledInput">akismet_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowAccountDeletionInput">allow_account_deletion_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowGroupOwnersToManageLdapInput">allow_group_owners_to_manage_ldap_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowLocalRequestsFromSystemHooksInput">allow_local_requests_from_system_hooks_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowLocalRequestsFromWebHooksAndServicesInput">allow_local_requests_from_web_hooks_and_services_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowProjectCreationForGuestAndBelowInput">allow_project_creation_for_guest_and_below_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowRunnerRegistrationTokenInput">allow_runner_registration_token_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.archiveBuildsInHumanReadableInput">archive_builds_in_human_readable_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.asciidocMaxIncludesInput">asciidoc_max_includes_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxyAllowlistInput">asset_proxy_allowlist_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxyEnabledInput">asset_proxy_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxySecretKeyInput">asset_proxy_secret_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxyUrlInput">asset_proxy_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.authorizedKeysEnabledInput">authorized_keys_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoBanUserOnExcessiveProjectsDownloadInput">auto_ban_user_on_excessive_projects_download_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoDevopsDomainInput">auto_devops_domain_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoDevopsEnabledInput">auto_devops_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.automaticPurchasedStorageAllocationInput">automatic_purchased_storage_allocation_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportConcurrentPipelineBatchLimitInput">bulk_import_concurrent_pipeline_batch_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportEnabledInput">bulk_import_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportMaxDownloadFileSizeInput">bulk_import_max_download_file_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.canCreateGroupInput">can_create_group_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.checkNamespacePlanInput">check_namespace_plan_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ciMaxIncludesInput">ci_max_includes_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ciMaxTotalYamlSizeBytesInput">ci_max_total_yaml_size_bytes_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.commitEmailHostnameInput">commit_email_hostname_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.concurrentBitbucketImportJobsLimitInput">concurrent_bitbucket_import_jobs_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.concurrentBitbucketServerImportJobsLimitInput">concurrent_bitbucket_server_import_jobs_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.concurrentGithubImportJobsLimitInput">concurrent_github_import_jobs_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerExpirationPoliciesEnableHistoricEntriesInput">container_expiration_policies_enable_historic_entries_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryCleanupTagsServiceMaxListSizeInput">container_registry_cleanup_tags_service_max_list_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryDeleteTagsServiceTimeoutInput">container_registry_delete_tags_service_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -5335,27 +5882,39 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryExpirationPoliciesWorkerCapacityInput">container_registry_expiration_policies_worker_capacity_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryTokenExpireDelayInput">container_registry_token_expire_delay_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deactivateDormantUsersInput">deactivate_dormant_users_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deactivateDormantUsersPeriodInput">deactivate_dormant_users_period_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.decompressArchiveFileTimeoutInput">decompress_archive_file_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultArtifactsExpireInInput">default_artifacts_expire_in_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultBranchNameInput">default_branch_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultBranchProtectionDefaultsInput">default_branch_protection_defaults_input</a></code> | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults">ApplicationSettingsDefaultBranchProtectionDefaults</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultBranchProtectionInput">default_branch_protection_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultCiConfigPathInput">default_ci_config_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultGroupVisibilityInput">default_group_visibility_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultPreferredLanguageInput">default_preferred_language_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultProjectCreationInput">default_project_creation_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultProjectsLimitInput">default_projects_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultProjectVisibilityInput">default_project_visibility_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultSnippetVisibilityInput">default_snippet_visibility_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultSyntaxHighlightingThemeInput">default_syntax_highlighting_theme_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteInactiveProjectsInput">delete_inactive_projects_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteUnconfirmedUsersInput">delete_unconfirmed_users_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deletionAdjournedPeriodInput">deletion_adjourned_period_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diagramsnetEnabledInput">diagramsnet_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diagramsnetUrlInput">diagramsnet_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diffMaxFilesInput">diff_max_files_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diffMaxLinesInput">diff_max_lines_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diffMaxPatchBytesInput">diff_max_patch_bytes_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableAdminOauthScopesInput">disable_admin_oauth_scopes_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disabledOauthSignInSourcesInput">disabled_oauth_sign_in_sources_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableFeedTokenInput">disable_feed_token_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disablePersonalAccessTokensInput">disable_personal_access_tokens_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.dnsRebindingProtectionEnabledInput">dns_rebinding_protection_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.domainAllowlistInput">domain_allowlist_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.domainDenylistEnabledInput">domain_denylist_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.domainDenylistInput">domain_denylist_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.downstreamPipelineTriggerLimitPerProjectUserShaInput">downstream_pipeline_trigger_limit_per_project_user_sha_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.dsaKeyRestrictionInput">dsa_key_restriction_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.duoFeaturesEnabledInput">duo_features_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ecdsaKeyRestrictionInput">ecdsa_key_restriction_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ecdsaSkKeyRestrictionInput">ecdsa_sk_key_restriction_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ed25519KeyRestrictionInput">ed25519_key_restriction_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -5557,21 +6116,34 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.afterSignUpText">after_sign_up_text</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.akismetApiKey">akismet_api_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.akismetEnabled">akismet_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowAccountDeletion">allow_account_deletion</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowGroupOwnersToManageLdap">allow_group_owners_to_manage_ldap</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowLocalRequestsFromSystemHooks">allow_local_requests_from_system_hooks</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowLocalRequestsFromWebHooksAndServices">allow_local_requests_from_web_hooks_and_services</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowProjectCreationForGuestAndBelow">allow_project_creation_for_guest_and_below</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowRunnerRegistrationToken">allow_runner_registration_token</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.archiveBuildsInHumanReadable">archive_builds_in_human_readable</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.asciidocMaxIncludes">asciidoc_max_includes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxyAllowlist">asset_proxy_allowlist</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxyEnabled">asset_proxy_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxySecretKey">asset_proxy_secret_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxyUrl">asset_proxy_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.authorizedKeysEnabled">authorized_keys_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoBanUserOnExcessiveProjectsDownload">auto_ban_user_on_excessive_projects_download</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoDevopsDomain">auto_devops_domain</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoDevopsEnabled">auto_devops_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.automaticPurchasedStorageAllocation">automatic_purchased_storage_allocation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportConcurrentPipelineBatchLimit">bulk_import_concurrent_pipeline_batch_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportEnabled">bulk_import_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportMaxDownloadFileSize">bulk_import_max_download_file_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.canCreateGroup">can_create_group</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.checkNamespacePlan">check_namespace_plan</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ciMaxIncludes">ci_max_includes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ciMaxTotalYamlSizeBytes">ci_max_total_yaml_size_bytes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.commitEmailHostname">commit_email_hostname</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.concurrentBitbucketImportJobsLimit">concurrent_bitbucket_import_jobs_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.concurrentBitbucketServerImportJobsLimit">concurrent_bitbucket_server_import_jobs_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.concurrentGithubImportJobsLimit">concurrent_github_import_jobs_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerExpirationPoliciesEnableHistoricEntries">container_expiration_policies_enable_historic_entries</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryCleanupTagsServiceMaxListSize">container_registry_cleanup_tags_service_max_list_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryDeleteTagsServiceTimeout">container_registry_delete_tags_service_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -5579,27 +6151,38 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryExpirationPoliciesWorkerCapacity">container_registry_expiration_policies_worker_capacity</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryTokenExpireDelay">container_registry_token_expire_delay</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deactivateDormantUsers">deactivate_dormant_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deactivateDormantUsersPeriod">deactivate_dormant_users_period</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.decompressArchiveFileTimeout">decompress_archive_file_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultArtifactsExpireIn">default_artifacts_expire_in</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultBranchName">default_branch_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultBranchProtection">default_branch_protection</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultCiConfigPath">default_ci_config_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultGroupVisibility">default_group_visibility</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultPreferredLanguage">default_preferred_language</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultProjectCreation">default_project_creation</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultProjectsLimit">default_projects_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultProjectVisibility">default_project_visibility</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultSnippetVisibility">default_snippet_visibility</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultSyntaxHighlightingTheme">default_syntax_highlighting_theme</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteInactiveProjects">delete_inactive_projects</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteUnconfirmedUsers">delete_unconfirmed_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deletionAdjournedPeriod">deletion_adjourned_period</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diagramsnetEnabled">diagramsnet_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diagramsnetUrl">diagramsnet_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diffMaxFiles">diff_max_files</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diffMaxLines">diff_max_lines</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diffMaxPatchBytes">diff_max_patch_bytes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableAdminOauthScopes">disable_admin_oauth_scopes</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disabledOauthSignInSources">disabled_oauth_sign_in_sources</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableFeedToken">disable_feed_token</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disablePersonalAccessTokens">disable_personal_access_tokens</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.dnsRebindingProtectionEnabled">dns_rebinding_protection_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.domainAllowlist">domain_allowlist</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.domainDenylist">domain_denylist</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.domainDenylistEnabled">domain_denylist_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.downstreamPipelineTriggerLimitPerProjectUserSha">downstream_pipeline_trigger_limit_per_project_user_sha</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.dsaKeyRestriction">dsa_key_restriction</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.duoFeaturesEnabled">duo_features_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ecdsaKeyRestriction">ecdsa_key_restriction</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ecdsaSkKeyRestriction">ecdsa_sk_key_restriction</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ed25519KeyRestriction">ed25519_key_restriction</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -5940,6 +6523,16 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
+##### `default_branch_protection_defaults`<sup>Required</sup> <a name="default_branch_protection_defaults" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultBranchProtectionDefaults"></a>
+
+```python
+default_branch_protection_defaults: ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference">ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference</a>
+
+---
+
 ##### `abuse_notification_email_input`<sup>Optional</sup> <a name="abuse_notification_email_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.abuseNotificationEmailInput"></a>
 
 ```python
@@ -6000,6 +6593,16 @@ akismet_enabled_input: typing.Union[bool, IResolvable]
 
 ---
 
+##### `allow_account_deletion_input`<sup>Optional</sup> <a name="allow_account_deletion_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowAccountDeletionInput"></a>
+
+```python
+allow_account_deletion_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `allow_group_owners_to_manage_ldap_input`<sup>Optional</sup> <a name="allow_group_owners_to_manage_ldap_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowGroupOwnersToManageLdapInput"></a>
 
 ```python
@@ -6030,6 +6633,26 @@ allow_local_requests_from_web_hooks_and_services_input: typing.Union[bool, IReso
 
 ---
 
+##### `allow_project_creation_for_guest_and_below_input`<sup>Optional</sup> <a name="allow_project_creation_for_guest_and_below_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowProjectCreationForGuestAndBelowInput"></a>
+
+```python
+allow_project_creation_for_guest_and_below_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `allow_runner_registration_token_input`<sup>Optional</sup> <a name="allow_runner_registration_token_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowRunnerRegistrationTokenInput"></a>
+
+```python
+allow_runner_registration_token_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `archive_builds_in_human_readable_input`<sup>Optional</sup> <a name="archive_builds_in_human_readable_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.archiveBuildsInHumanReadableInput"></a>
 
 ```python
@@ -6037,6 +6660,16 @@ archive_builds_in_human_readable_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `asciidoc_max_includes_input`<sup>Optional</sup> <a name="asciidoc_max_includes_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.asciidocMaxIncludesInput"></a>
+
+```python
+asciidoc_max_includes_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
@@ -6090,6 +6723,16 @@ authorized_keys_enabled_input: typing.Union[bool, IResolvable]
 
 ---
 
+##### `auto_ban_user_on_excessive_projects_download_input`<sup>Optional</sup> <a name="auto_ban_user_on_excessive_projects_download_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoBanUserOnExcessiveProjectsDownloadInput"></a>
+
+```python
+auto_ban_user_on_excessive_projects_download_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `auto_devops_domain_input`<sup>Optional</sup> <a name="auto_devops_domain_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoDevopsDomainInput"></a>
 
 ```python
@@ -6120,6 +6763,36 @@ automatic_purchased_storage_allocation_input: typing.Union[bool, IResolvable]
 
 ---
 
+##### `bulk_import_concurrent_pipeline_batch_limit_input`<sup>Optional</sup> <a name="bulk_import_concurrent_pipeline_batch_limit_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportConcurrentPipelineBatchLimitInput"></a>
+
+```python
+bulk_import_concurrent_pipeline_batch_limit_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `bulk_import_enabled_input`<sup>Optional</sup> <a name="bulk_import_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportEnabledInput"></a>
+
+```python
+bulk_import_enabled_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `bulk_import_max_download_file_size_input`<sup>Optional</sup> <a name="bulk_import_max_download_file_size_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportMaxDownloadFileSizeInput"></a>
+
+```python
+bulk_import_max_download_file_size_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `can_create_group_input`<sup>Optional</sup> <a name="can_create_group_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.canCreateGroupInput"></a>
 
 ```python
@@ -6140,6 +6813,26 @@ check_namespace_plan_input: typing.Union[bool, IResolvable]
 
 ---
 
+##### `ci_max_includes_input`<sup>Optional</sup> <a name="ci_max_includes_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ciMaxIncludesInput"></a>
+
+```python
+ci_max_includes_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `ci_max_total_yaml_size_bytes_input`<sup>Optional</sup> <a name="ci_max_total_yaml_size_bytes_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ciMaxTotalYamlSizeBytesInput"></a>
+
+```python
+ci_max_total_yaml_size_bytes_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `commit_email_hostname_input`<sup>Optional</sup> <a name="commit_email_hostname_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.commitEmailHostnameInput"></a>
 
 ```python
@@ -6147,6 +6840,36 @@ commit_email_hostname_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `concurrent_bitbucket_import_jobs_limit_input`<sup>Optional</sup> <a name="concurrent_bitbucket_import_jobs_limit_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.concurrentBitbucketImportJobsLimitInput"></a>
+
+```python
+concurrent_bitbucket_import_jobs_limit_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `concurrent_bitbucket_server_import_jobs_limit_input`<sup>Optional</sup> <a name="concurrent_bitbucket_server_import_jobs_limit_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.concurrentBitbucketServerImportJobsLimitInput"></a>
+
+```python
+concurrent_bitbucket_server_import_jobs_limit_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `concurrent_github_import_jobs_limit_input`<sup>Optional</sup> <a name="concurrent_github_import_jobs_limit_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.concurrentGithubImportJobsLimitInput"></a>
+
+```python
+concurrent_github_import_jobs_limit_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
@@ -6220,6 +6943,26 @@ deactivate_dormant_users_input: typing.Union[bool, IResolvable]
 
 ---
 
+##### `deactivate_dormant_users_period_input`<sup>Optional</sup> <a name="deactivate_dormant_users_period_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deactivateDormantUsersPeriodInput"></a>
+
+```python
+deactivate_dormant_users_period_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `decompress_archive_file_timeout_input`<sup>Optional</sup> <a name="decompress_archive_file_timeout_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.decompressArchiveFileTimeoutInput"></a>
+
+```python
+decompress_archive_file_timeout_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `default_artifacts_expire_in_input`<sup>Optional</sup> <a name="default_artifacts_expire_in_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultArtifactsExpireInInput"></a>
 
 ```python
@@ -6237,6 +6980,16 @@ default_branch_name_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `default_branch_protection_defaults_input`<sup>Optional</sup> <a name="default_branch_protection_defaults_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultBranchProtectionDefaultsInput"></a>
+
+```python
+default_branch_protection_defaults_input: ApplicationSettingsDefaultBranchProtectionDefaults
+```
+
+- *Type:* <a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults">ApplicationSettingsDefaultBranchProtectionDefaults</a>
 
 ---
 
@@ -6264,6 +7017,16 @@ default_ci_config_path_input: str
 
 ```python
 default_group_visibility_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `default_preferred_language_input`<sup>Optional</sup> <a name="default_preferred_language_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultPreferredLanguageInput"></a>
+
+```python
+default_preferred_language_input: str
 ```
 
 - *Type:* str
@@ -6310,10 +7073,30 @@ default_snippet_visibility_input: str
 
 ---
 
+##### `default_syntax_highlighting_theme_input`<sup>Optional</sup> <a name="default_syntax_highlighting_theme_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultSyntaxHighlightingThemeInput"></a>
+
+```python
+default_syntax_highlighting_theme_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `delete_inactive_projects_input`<sup>Optional</sup> <a name="delete_inactive_projects_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteInactiveProjectsInput"></a>
 
 ```python
 delete_inactive_projects_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `delete_unconfirmed_users_input`<sup>Optional</sup> <a name="delete_unconfirmed_users_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteUnconfirmedUsersInput"></a>
+
+```python
+delete_unconfirmed_users_input: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
@@ -6327,6 +7110,26 @@ deletion_adjourned_period_input: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `diagramsnet_enabled_input`<sup>Optional</sup> <a name="diagramsnet_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diagramsnetEnabledInput"></a>
+
+```python
+diagramsnet_enabled_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `diagramsnet_url_input`<sup>Optional</sup> <a name="diagramsnet_url_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diagramsnetUrlInput"></a>
+
+```python
+diagramsnet_url_input: str
+```
+
+- *Type:* str
 
 ---
 
@@ -6360,6 +7163,16 @@ diff_max_patch_bytes_input: typing.Union[int, float]
 
 ---
 
+##### `disable_admin_oauth_scopes_input`<sup>Optional</sup> <a name="disable_admin_oauth_scopes_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableAdminOauthScopesInput"></a>
+
+```python
+disable_admin_oauth_scopes_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `disabled_oauth_sign_in_sources_input`<sup>Optional</sup> <a name="disabled_oauth_sign_in_sources_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disabledOauthSignInSourcesInput"></a>
 
 ```python
@@ -6374,6 +7187,16 @@ disabled_oauth_sign_in_sources_input: typing.List[str]
 
 ```python
 disable_feed_token_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `disable_personal_access_tokens_input`<sup>Optional</sup> <a name="disable_personal_access_tokens_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disablePersonalAccessTokensInput"></a>
+
+```python
+disable_personal_access_tokens_input: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
@@ -6420,6 +7243,16 @@ domain_denylist_input: typing.List[str]
 
 ---
 
+##### `downstream_pipeline_trigger_limit_per_project_user_sha_input`<sup>Optional</sup> <a name="downstream_pipeline_trigger_limit_per_project_user_sha_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.downstreamPipelineTriggerLimitPerProjectUserShaInput"></a>
+
+```python
+downstream_pipeline_trigger_limit_per_project_user_sha_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `dsa_key_restriction_input`<sup>Optional</sup> <a name="dsa_key_restriction_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.dsaKeyRestrictionInput"></a>
 
 ```python
@@ -6427,6 +7260,16 @@ dsa_key_restriction_input: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `duo_features_enabled_input`<sup>Optional</sup> <a name="duo_features_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.duoFeaturesEnabledInput"></a>
+
+```python
+duo_features_enabled_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -8440,6 +9283,16 @@ akismet_enabled: typing.Union[bool, IResolvable]
 
 ---
 
+##### `allow_account_deletion`<sup>Required</sup> <a name="allow_account_deletion" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowAccountDeletion"></a>
+
+```python
+allow_account_deletion: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `allow_group_owners_to_manage_ldap`<sup>Required</sup> <a name="allow_group_owners_to_manage_ldap" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowGroupOwnersToManageLdap"></a>
 
 ```python
@@ -8470,6 +9323,26 @@ allow_local_requests_from_web_hooks_and_services: typing.Union[bool, IResolvable
 
 ---
 
+##### `allow_project_creation_for_guest_and_below`<sup>Required</sup> <a name="allow_project_creation_for_guest_and_below" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowProjectCreationForGuestAndBelow"></a>
+
+```python
+allow_project_creation_for_guest_and_below: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `allow_runner_registration_token`<sup>Required</sup> <a name="allow_runner_registration_token" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowRunnerRegistrationToken"></a>
+
+```python
+allow_runner_registration_token: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `archive_builds_in_human_readable`<sup>Required</sup> <a name="archive_builds_in_human_readable" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.archiveBuildsInHumanReadable"></a>
 
 ```python
@@ -8477,6 +9350,16 @@ archive_builds_in_human_readable: str
 ```
 
 - *Type:* str
+
+---
+
+##### `asciidoc_max_includes`<sup>Required</sup> <a name="asciidoc_max_includes" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.asciidocMaxIncludes"></a>
+
+```python
+asciidoc_max_includes: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
@@ -8530,6 +9413,16 @@ authorized_keys_enabled: typing.Union[bool, IResolvable]
 
 ---
 
+##### `auto_ban_user_on_excessive_projects_download`<sup>Required</sup> <a name="auto_ban_user_on_excessive_projects_download" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoBanUserOnExcessiveProjectsDownload"></a>
+
+```python
+auto_ban_user_on_excessive_projects_download: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `auto_devops_domain`<sup>Required</sup> <a name="auto_devops_domain" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoDevopsDomain"></a>
 
 ```python
@@ -8560,6 +9453,36 @@ automatic_purchased_storage_allocation: typing.Union[bool, IResolvable]
 
 ---
 
+##### `bulk_import_concurrent_pipeline_batch_limit`<sup>Required</sup> <a name="bulk_import_concurrent_pipeline_batch_limit" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportConcurrentPipelineBatchLimit"></a>
+
+```python
+bulk_import_concurrent_pipeline_batch_limit: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `bulk_import_enabled`<sup>Required</sup> <a name="bulk_import_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportEnabled"></a>
+
+```python
+bulk_import_enabled: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `bulk_import_max_download_file_size`<sup>Required</sup> <a name="bulk_import_max_download_file_size" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportMaxDownloadFileSize"></a>
+
+```python
+bulk_import_max_download_file_size: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `can_create_group`<sup>Required</sup> <a name="can_create_group" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.canCreateGroup"></a>
 
 ```python
@@ -8580,6 +9503,26 @@ check_namespace_plan: typing.Union[bool, IResolvable]
 
 ---
 
+##### `ci_max_includes`<sup>Required</sup> <a name="ci_max_includes" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ciMaxIncludes"></a>
+
+```python
+ci_max_includes: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `ci_max_total_yaml_size_bytes`<sup>Required</sup> <a name="ci_max_total_yaml_size_bytes" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ciMaxTotalYamlSizeBytes"></a>
+
+```python
+ci_max_total_yaml_size_bytes: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `commit_email_hostname`<sup>Required</sup> <a name="commit_email_hostname" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.commitEmailHostname"></a>
 
 ```python
@@ -8587,6 +9530,36 @@ commit_email_hostname: str
 ```
 
 - *Type:* str
+
+---
+
+##### `concurrent_bitbucket_import_jobs_limit`<sup>Required</sup> <a name="concurrent_bitbucket_import_jobs_limit" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.concurrentBitbucketImportJobsLimit"></a>
+
+```python
+concurrent_bitbucket_import_jobs_limit: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `concurrent_bitbucket_server_import_jobs_limit`<sup>Required</sup> <a name="concurrent_bitbucket_server_import_jobs_limit" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.concurrentBitbucketServerImportJobsLimit"></a>
+
+```python
+concurrent_bitbucket_server_import_jobs_limit: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `concurrent_github_import_jobs_limit`<sup>Required</sup> <a name="concurrent_github_import_jobs_limit" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.concurrentGithubImportJobsLimit"></a>
+
+```python
+concurrent_github_import_jobs_limit: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
@@ -8660,6 +9633,26 @@ deactivate_dormant_users: typing.Union[bool, IResolvable]
 
 ---
 
+##### `deactivate_dormant_users_period`<sup>Required</sup> <a name="deactivate_dormant_users_period" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deactivateDormantUsersPeriod"></a>
+
+```python
+deactivate_dormant_users_period: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `decompress_archive_file_timeout`<sup>Required</sup> <a name="decompress_archive_file_timeout" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.decompressArchiveFileTimeout"></a>
+
+```python
+decompress_archive_file_timeout: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `default_artifacts_expire_in`<sup>Required</sup> <a name="default_artifacts_expire_in" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultArtifactsExpireIn"></a>
 
 ```python
@@ -8710,6 +9703,16 @@ default_group_visibility: str
 
 ---
 
+##### `default_preferred_language`<sup>Required</sup> <a name="default_preferred_language" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultPreferredLanguage"></a>
+
+```python
+default_preferred_language: str
+```
+
+- *Type:* str
+
+---
+
 ##### `default_project_creation`<sup>Required</sup> <a name="default_project_creation" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultProjectCreation"></a>
 
 ```python
@@ -8750,10 +9753,30 @@ default_snippet_visibility: str
 
 ---
 
+##### `default_syntax_highlighting_theme`<sup>Required</sup> <a name="default_syntax_highlighting_theme" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultSyntaxHighlightingTheme"></a>
+
+```python
+default_syntax_highlighting_theme: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `delete_inactive_projects`<sup>Required</sup> <a name="delete_inactive_projects" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteInactiveProjects"></a>
 
 ```python
 delete_inactive_projects: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `delete_unconfirmed_users`<sup>Required</sup> <a name="delete_unconfirmed_users" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteUnconfirmedUsers"></a>
+
+```python
+delete_unconfirmed_users: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
@@ -8767,6 +9790,26 @@ deletion_adjourned_period: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `diagramsnet_enabled`<sup>Required</sup> <a name="diagramsnet_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diagramsnetEnabled"></a>
+
+```python
+diagramsnet_enabled: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `diagramsnet_url`<sup>Required</sup> <a name="diagramsnet_url" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diagramsnetUrl"></a>
+
+```python
+diagramsnet_url: str
+```
+
+- *Type:* str
 
 ---
 
@@ -8800,6 +9843,16 @@ diff_max_patch_bytes: typing.Union[int, float]
 
 ---
 
+##### `disable_admin_oauth_scopes`<sup>Required</sup> <a name="disable_admin_oauth_scopes" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableAdminOauthScopes"></a>
+
+```python
+disable_admin_oauth_scopes: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `disabled_oauth_sign_in_sources`<sup>Required</sup> <a name="disabled_oauth_sign_in_sources" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disabledOauthSignInSources"></a>
 
 ```python
@@ -8814,6 +9867,16 @@ disabled_oauth_sign_in_sources: typing.List[str]
 
 ```python
 disable_feed_token: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `disable_personal_access_tokens`<sup>Required</sup> <a name="disable_personal_access_tokens" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disablePersonalAccessTokens"></a>
+
+```python
+disable_personal_access_tokens: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
@@ -8860,6 +9923,16 @@ domain_denylist_enabled: typing.Union[bool, IResolvable]
 
 ---
 
+##### `downstream_pipeline_trigger_limit_per_project_user_sha`<sup>Required</sup> <a name="downstream_pipeline_trigger_limit_per_project_user_sha" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.downstreamPipelineTriggerLimitPerProjectUserSha"></a>
+
+```python
+downstream_pipeline_trigger_limit_per_project_user_sha: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `dsa_key_restriction`<sup>Required</sup> <a name="dsa_key_restriction" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.dsaKeyRestriction"></a>
 
 ```python
@@ -8867,6 +9940,16 @@ dsa_key_restriction: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `duo_features_enabled`<sup>Required</sup> <a name="duo_features_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.duoFeaturesEnabled"></a>
+
+```python
+duo_features_enabled: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -10861,21 +11944,34 @@ applicationSettings.ApplicationSettingsConfig(
   after_sign_up_text: str = None,
   akismet_api_key: str = None,
   akismet_enabled: typing.Union[bool, IResolvable] = None,
+  allow_account_deletion: typing.Union[bool, IResolvable] = None,
   allow_group_owners_to_manage_ldap: typing.Union[bool, IResolvable] = None,
   allow_local_requests_from_system_hooks: typing.Union[bool, IResolvable] = None,
   allow_local_requests_from_web_hooks_and_services: typing.Union[bool, IResolvable] = None,
+  allow_project_creation_for_guest_and_below: typing.Union[bool, IResolvable] = None,
+  allow_runner_registration_token: typing.Union[bool, IResolvable] = None,
   archive_builds_in_human_readable: str = None,
+  asciidoc_max_includes: typing.Union[int, float] = None,
   asset_proxy_allowlist: typing.List[str] = None,
   asset_proxy_enabled: typing.Union[bool, IResolvable] = None,
   asset_proxy_secret_key: str = None,
   asset_proxy_url: str = None,
   authorized_keys_enabled: typing.Union[bool, IResolvable] = None,
+  auto_ban_user_on_excessive_projects_download: typing.Union[bool, IResolvable] = None,
   auto_devops_domain: str = None,
   auto_devops_enabled: typing.Union[bool, IResolvable] = None,
   automatic_purchased_storage_allocation: typing.Union[bool, IResolvable] = None,
+  bulk_import_concurrent_pipeline_batch_limit: typing.Union[int, float] = None,
+  bulk_import_enabled: typing.Union[bool, IResolvable] = None,
+  bulk_import_max_download_file_size: typing.Union[int, float] = None,
   can_create_group: typing.Union[bool, IResolvable] = None,
   check_namespace_plan: typing.Union[bool, IResolvable] = None,
+  ci_max_includes: typing.Union[int, float] = None,
+  ci_max_total_yaml_size_bytes: typing.Union[int, float] = None,
   commit_email_hostname: str = None,
+  concurrent_bitbucket_import_jobs_limit: typing.Union[int, float] = None,
+  concurrent_bitbucket_server_import_jobs_limit: typing.Union[int, float] = None,
+  concurrent_github_import_jobs_limit: typing.Union[int, float] = None,
   container_expiration_policies_enable_historic_entries: typing.Union[bool, IResolvable] = None,
   container_registry_cleanup_tags_service_max_list_size: typing.Union[int, float] = None,
   container_registry_delete_tags_service_timeout: typing.Union[int, float] = None,
@@ -10883,27 +11979,39 @@ applicationSettings.ApplicationSettingsConfig(
   container_registry_expiration_policies_worker_capacity: typing.Union[int, float] = None,
   container_registry_token_expire_delay: typing.Union[int, float] = None,
   deactivate_dormant_users: typing.Union[bool, IResolvable] = None,
+  deactivate_dormant_users_period: typing.Union[int, float] = None,
+  decompress_archive_file_timeout: typing.Union[int, float] = None,
   default_artifacts_expire_in: str = None,
   default_branch_name: str = None,
   default_branch_protection: typing.Union[int, float] = None,
+  default_branch_protection_defaults: ApplicationSettingsDefaultBranchProtectionDefaults = None,
   default_ci_config_path: str = None,
   default_group_visibility: str = None,
+  default_preferred_language: str = None,
   default_project_creation: typing.Union[int, float] = None,
   default_projects_limit: typing.Union[int, float] = None,
   default_project_visibility: str = None,
   default_snippet_visibility: str = None,
+  default_syntax_highlighting_theme: typing.Union[int, float] = None,
   delete_inactive_projects: typing.Union[bool, IResolvable] = None,
+  delete_unconfirmed_users: typing.Union[bool, IResolvable] = None,
   deletion_adjourned_period: typing.Union[int, float] = None,
+  diagramsnet_enabled: typing.Union[bool, IResolvable] = None,
+  diagramsnet_url: str = None,
   diff_max_files: typing.Union[int, float] = None,
   diff_max_lines: typing.Union[int, float] = None,
   diff_max_patch_bytes: typing.Union[int, float] = None,
+  disable_admin_oauth_scopes: typing.Union[bool, IResolvable] = None,
   disabled_oauth_sign_in_sources: typing.List[str] = None,
   disable_feed_token: typing.Union[bool, IResolvable] = None,
+  disable_personal_access_tokens: typing.Union[bool, IResolvable] = None,
   dns_rebinding_protection_enabled: typing.Union[bool, IResolvable] = None,
   domain_allowlist: typing.List[str] = None,
   domain_denylist: typing.List[str] = None,
   domain_denylist_enabled: typing.Union[bool, IResolvable] = None,
+  downstream_pipeline_trigger_limit_per_project_user_sha: typing.Union[int, float] = None,
   dsa_key_restriction: typing.Union[int, float] = None,
+  duo_features_enabled: typing.Union[bool, IResolvable] = None,
   ecdsa_key_restriction: typing.Union[int, float] = None,
   ecdsa_sk_key_restriction: typing.Union[int, float] = None,
   ed25519_key_restriction: typing.Union[int, float] = None,
@@ -11119,21 +12227,34 @@ applicationSettings.ApplicationSettingsConfig(
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.afterSignUpText">after_sign_up_text</a></code> | <code>str</code> | Text shown to the user after signing up. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.akismetApiKey">akismet_api_key</a></code> | <code>str</code> | API key for Akismet spam protection. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.akismetEnabled">akismet_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: akismet_api_key) Enable or disable Akismet spam protection. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowAccountDeletion">allow_account_deletion</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to true to allow users to delete their accounts. Premium and Ultimate only. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowGroupOwnersToManageLdap">allow_group_owners_to_manage_ldap</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to true to allow group owners to manage LDAP. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowLocalRequestsFromSystemHooks">allow_local_requests_from_system_hooks</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow requests to the local network from system hooks. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowLocalRequestsFromWebHooksAndServices">allow_local_requests_from_web_hooks_and_services</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow requests to the local network from web hooks and services. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowProjectCreationForGuestAndBelow">allow_project_creation_for_guest_and_below</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether users assigned up to the Guest role can create groups and personal projects. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowRunnerRegistrationToken">allow_runner_registration_token</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow using a registration token to create a runner. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.archiveBuildsInHumanReadable">archive_builds_in_human_readable</a></code> | <code>str</code> | Set the duration for which the jobs are considered as old and expired. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.asciidocMaxIncludes">asciidoc_max_includes</a></code> | <code>typing.Union[int, float]</code> | Maximum limit of AsciiDoc include directives being processed in any one document. Maximum: 64. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.assetProxyAllowlist">asset_proxy_allowlist</a></code> | <code>typing.List[str]</code> | Assets that match these domains are not proxied. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.assetProxyEnabled">asset_proxy_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: asset_proxy_url) Enable proxying of assets. GitLab restart is required to apply changes. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.assetProxySecretKey">asset_proxy_secret_key</a></code> | <code>str</code> | Shared secret with the asset proxy server. GitLab restart is required to apply changes. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.assetProxyUrl">asset_proxy_url</a></code> | <code>str</code> | URL of the asset proxy server. GitLab restart is required to apply changes. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.authorizedKeysEnabled">authorized_keys_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | By default, we write to the authorized_keys file to support Git over SSH without additional configuration. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.autoBanUserOnExcessiveProjectsDownload">auto_ban_user_on_excessive_projects_download</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When enabled, users will get automatically banned from the application when they download more than the maximum number of unique projects in the time period specified by max_number_of_repository_downloads and max_number_of_repository_downloads_within_time_period respectively. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.autoDevopsDomain">auto_devops_domain</a></code> | <code>str</code> | Specify a domain to use by default for every project’s Auto Review Apps and Auto Deploy stages. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.autoDevopsEnabled">auto_devops_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Auto DevOps for projects by default. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.automaticPurchasedStorageAllocation">automatic_purchased_storage_allocation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enabling this permits automatic allocation of purchased storage in a namespace. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.bulkImportConcurrentPipelineBatchLimit">bulk_import_concurrent_pipeline_batch_limit</a></code> | <code>typing.Union[int, float]</code> | Maximum simultaneous Direct Transfer batches to process. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.bulkImportEnabled">bulk_import_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable migrating GitLab groups by direct transfer. Introduced in GitLab 15.8. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.bulkImportMaxDownloadFileSize">bulk_import_max_download_file_size</a></code> | <code>typing.Union[int, float]</code> | Maximum download file size when importing from source GitLab instances by direct transfer. Introduced in GitLab 16.3. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.canCreateGroup">can_create_group</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether users can create top-level groups. Introduced in GitLab 15.5. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.checkNamespacePlan">check_namespace_plan</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enabling this makes only licensed EE features available to projects if the project namespace’s plan includes the feature or if the project is public. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.ciMaxIncludes">ci_max_includes</a></code> | <code>typing.Union[int, float]</code> | The maximum number of includes per pipeline. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.ciMaxTotalYamlSizeBytes">ci_max_total_yaml_size_bytes</a></code> | <code>typing.Union[int, float]</code> | The maximum amount of memory, in bytes, that can be allocated for the pipeline configuration, with all included YAML configuration files. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.commitEmailHostname">commit_email_hostname</a></code> | <code>str</code> | Custom hostname (for private commit emails). |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.concurrentBitbucketImportJobsLimit">concurrent_bitbucket_import_jobs_limit</a></code> | <code>typing.Union[int, float]</code> | Maximum number of simultaneous import jobs for the Bitbucket Cloud importer. Introduced in GitLab 16.11. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.concurrentBitbucketServerImportJobsLimit">concurrent_bitbucket_server_import_jobs_limit</a></code> | <code>typing.Union[int, float]</code> | Maximum number of simultaneous import jobs for the Bitbucket Server importer. Introduced in GitLab 16.11. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.concurrentGithubImportJobsLimit">concurrent_github_import_jobs_limit</a></code> | <code>typing.Union[int, float]</code> | Maximum number of simultaneous import jobs for the GitHub importer. Introduced in GitLab 16.11. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.containerExpirationPoliciesEnableHistoricEntries">container_expiration_policies_enable_historic_entries</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable cleanup policies for all projects. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.containerRegistryCleanupTagsServiceMaxListSize">container_registry_cleanup_tags_service_max_list_size</a></code> | <code>typing.Union[int, float]</code> | The maximum number of tags that can be deleted in a single execution of cleanup policies. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.containerRegistryDeleteTagsServiceTimeout">container_registry_delete_tags_service_timeout</a></code> | <code>typing.Union[int, float]</code> | The maximum time, in seconds, that the cleanup process can take to delete a batch of tags for cleanup policies. |
@@ -11141,27 +12262,39 @@ applicationSettings.ApplicationSettingsConfig(
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.containerRegistryExpirationPoliciesWorkerCapacity">container_registry_expiration_policies_worker_capacity</a></code> | <code>typing.Union[int, float]</code> | Number of workers for cleanup policies. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.containerRegistryTokenExpireDelay">container_registry_token_expire_delay</a></code> | <code>typing.Union[int, float]</code> | Container Registry token duration in minutes. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.deactivateDormantUsers">deactivate_dormant_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable automatic deactivation of dormant users. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.deactivateDormantUsersPeriod">deactivate_dormant_users_period</a></code> | <code>typing.Union[int, float]</code> | Length of time (in days) after which a user is considered dormant. Introduced in GitLab 15.3. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.decompressArchiveFileTimeout">decompress_archive_file_timeout</a></code> | <code>typing.Union[int, float]</code> | Default timeout for decompressing archived files, in seconds. Set to 0 to disable timeouts. Introduced in GitLab 16.4. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.defaultArtifactsExpireIn">default_artifacts_expire_in</a></code> | <code>str</code> | Set the default expiration time for each job’s artifacts. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.defaultBranchName">default_branch_name</a></code> | <code>str</code> | Instance-level custom initial branch name (introduced in GitLab 13.2). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.defaultBranchProtection">default_branch_protection</a></code> | <code>typing.Union[int, float]</code> | Determine if developers can push to the default branch. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.defaultBranchProtectionDefaults">default_branch_protection_defaults</a></code> | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults">ApplicationSettingsDefaultBranchProtectionDefaults</a></code> | default_branch_protection_defaults block. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.defaultCiConfigPath">default_ci_config_path</a></code> | <code>str</code> | Default CI/CD configuration file and path for new projects (.gitlab-ci.yml if not set). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.defaultGroupVisibility">default_group_visibility</a></code> | <code>str</code> | What visibility level new groups receive. Can take private, internal and public as a parameter. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.defaultPreferredLanguage">default_preferred_language</a></code> | <code>str</code> | Default preferred language for users who are not logged in. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.defaultProjectCreation">default_project_creation</a></code> | <code>typing.Union[int, float]</code> | Default project creation protection. Can take: 0 (No one), 1 (Maintainers) or 2 (Developers + Maintainers). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.defaultProjectsLimit">default_projects_limit</a></code> | <code>typing.Union[int, float]</code> | Project limit per user. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.defaultProjectVisibility">default_project_visibility</a></code> | <code>str</code> | What visibility level new projects receive. Can take private, internal and public as a parameter. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.defaultSnippetVisibility">default_snippet_visibility</a></code> | <code>str</code> | What visibility level new snippets receive. Can take private, internal and public as a parameter. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.defaultSyntaxHighlightingTheme">default_syntax_highlighting_theme</a></code> | <code>typing.Union[int, float]</code> | Default syntax highlighting theme for users who are new or not signed in. See IDs of available themes (https://gitlab.com/gitlab-org/gitlab/blob/master/lib/gitlab/themes.rb#L16). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.deleteInactiveProjects">delete_inactive_projects</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable inactive project deletion feature. Introduced in GitLab 14.10. Became operational in GitLab 15.0 (with feature flag inactive_projects_deletion). |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.deleteUnconfirmedUsers">delete_unconfirmed_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether users who have not confirmed their email should be deleted. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.deletionAdjournedPeriod">deletion_adjourned_period</a></code> | <code>typing.Union[int, float]</code> | The number of days to wait before deleting a project or group that is marked for deletion. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.diagramsnetEnabled">diagramsnet_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires diagramsnet_url) Enable Diagrams.net integration. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.diagramsnetUrl">diagramsnet_url</a></code> | <code>str</code> | The Diagrams.net instance URL for integration. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.diffMaxFiles">diff_max_files</a></code> | <code>typing.Union[int, float]</code> | Maximum files in a diff. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.diffMaxLines">diff_max_lines</a></code> | <code>typing.Union[int, float]</code> | Maximum lines in a diff. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.diffMaxPatchBytes">diff_max_patch_bytes</a></code> | <code>typing.Union[int, float]</code> | Maximum diff patch size, in bytes. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.disableAdminOauthScopes">disable_admin_oauth_scopes</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Stops administrators from connecting their GitLab accounts to non-trusted OAuth 2.0 applications that have the api, read_api, read_repository, write_repository, read_registry, write_registry, or sudo scopes. Introduced in GitLab 15.6. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.disabledOauthSignInSources">disabled_oauth_sign_in_sources</a></code> | <code>typing.List[str]</code> | Disabled OAuth sign-in sources. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.disableFeedToken">disable_feed_token</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable display of RSS/Atom and calendar feed tokens (introduced in GitLab 13.7). |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.disablePersonalAccessTokens">disable_personal_access_tokens</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable personal access tokens. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.dnsRebindingProtectionEnabled">dns_rebinding_protection_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enforce DNS rebinding attack protection. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.domainAllowlist">domain_allowlist</a></code> | <code>typing.List[str]</code> | Force people to use only corporate emails for sign-up. Null means there is no restriction. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.domainDenylist">domain_denylist</a></code> | <code>typing.List[str]</code> | Users with email addresses that match these domains cannot sign up. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.domainDenylistEnabled">domain_denylist_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: domain_denylist) Allows blocking sign-ups from emails from specific domains. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.downstreamPipelineTriggerLimitPerProjectUserSha">downstream_pipeline_trigger_limit_per_project_user_sha</a></code> | <code>typing.Union[int, float]</code> | Maximum downstream pipeline trigger rate. Introduced in GitLab 16.10. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.dsaKeyRestriction">dsa_key_restriction</a></code> | <code>typing.Union[int, float]</code> | The minimum allowed bit length of an uploaded DSA key. 0 means no restriction. -1 disables DSA keys. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.duoFeaturesEnabled">duo_features_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether GitLab Duo features are enabled for this instance. Introduced in GitLab 16.10. Self-managed, Premium and Ultimate only. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.ecdsaKeyRestriction">ecdsa_key_restriction</a></code> | <code>typing.Union[int, float]</code> | The minimum allowed curve size (in bits) of an uploaded ECDSA key. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.ecdsaSkKeyRestriction">ecdsa_sk_key_restriction</a></code> | <code>typing.Union[int, float]</code> | The minimum allowed curve size (in bits) of an uploaded ECDSA_SK key. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.ed25519KeyRestriction">ed25519_key_restriction</a></code> | <code>typing.Union[int, float]</code> | The minimum allowed curve size (in bits) of an uploaded ED25519 key. |
@@ -11227,7 +12360,7 @@ applicationSettings.ApplicationSettingsConfig(
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.housekeepingIncrementalRepackPeriod">housekeeping_incremental_repack_period</a></code> | <code>typing.Union[int, float]</code> | Number of Git pushes after which an incremental git repack is run. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.housekeepingOptimizeRepositoryPeriod">housekeeping_optimize_repository_period</a></code> | <code>typing.Union[int, float]</code> | Number of Git pushes after which an incremental git repack is run. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.htmlEmailsEnabled">html_emails_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable HTML emails. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#id ApplicationSettings#id}. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#id ApplicationSettings#id}. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.importSources">import_sources</a></code> | <code>typing.List[str]</code> | Sources to allow project import from. Valid values are: `github`, `bitbucket`, `bitbucket_server`, `fogbugz`, `git`, `gitlab_project`, `gitea`, `manifest`. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.inactiveProjectsDeleteAfterMonths">inactive_projects_delete_after_months</a></code> | <code>typing.Union[int, float]</code> | If delete_inactive_projects is true, the time (in months) to wait before deleting inactive projects. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.inactiveProjectsMinSizeMb">inactive_projects_min_size_mb</a></code> | <code>typing.Union[int, float]</code> | If delete_inactive_projects is true, the minimum repository size for projects to be checked for inactivity. |
@@ -11440,7 +12573,7 @@ abuse_notification_email: str
 
 If set, abuse reports are sent to this address. Abuse reports are always available in the Admin Area.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#abuse_notification_email ApplicationSettings#abuse_notification_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#abuse_notification_email ApplicationSettings#abuse_notification_email}
 
 ---
 
@@ -11454,7 +12587,7 @@ admin_mode: typing.Union[bool, IResolvable]
 
 Require administrators to enable Admin Mode by re-authenticating for administrative tasks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#admin_mode ApplicationSettings#admin_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#admin_mode ApplicationSettings#admin_mode}
 
 ---
 
@@ -11468,7 +12601,7 @@ after_sign_out_path: str
 
 Where to redirect users after logout.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#after_sign_out_path ApplicationSettings#after_sign_out_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#after_sign_out_path ApplicationSettings#after_sign_out_path}
 
 ---
 
@@ -11482,7 +12615,7 @@ after_sign_up_text: str
 
 Text shown to the user after signing up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#after_sign_up_text ApplicationSettings#after_sign_up_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#after_sign_up_text ApplicationSettings#after_sign_up_text}
 
 ---
 
@@ -11496,7 +12629,7 @@ akismet_api_key: str
 
 API key for Akismet spam protection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#akismet_api_key ApplicationSettings#akismet_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#akismet_api_key ApplicationSettings#akismet_api_key}
 
 ---
 
@@ -11510,7 +12643,21 @@ akismet_enabled: typing.Union[bool, IResolvable]
 
 (If enabled, requires: akismet_api_key) Enable or disable Akismet spam protection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#akismet_enabled ApplicationSettings#akismet_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#akismet_enabled ApplicationSettings#akismet_enabled}
+
+---
+
+##### `allow_account_deletion`<sup>Optional</sup> <a name="allow_account_deletion" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowAccountDeletion"></a>
+
+```python
+allow_account_deletion: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Set to true to allow users to delete their accounts. Premium and Ultimate only.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#allow_account_deletion ApplicationSettings#allow_account_deletion}
 
 ---
 
@@ -11524,7 +12671,7 @@ allow_group_owners_to_manage_ldap: typing.Union[bool, IResolvable]
 
 Set to true to allow group owners to manage LDAP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#allow_group_owners_to_manage_ldap ApplicationSettings#allow_group_owners_to_manage_ldap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#allow_group_owners_to_manage_ldap ApplicationSettings#allow_group_owners_to_manage_ldap}
 
 ---
 
@@ -11538,7 +12685,7 @@ allow_local_requests_from_system_hooks: typing.Union[bool, IResolvable]
 
 Allow requests to the local network from system hooks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#allow_local_requests_from_system_hooks ApplicationSettings#allow_local_requests_from_system_hooks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#allow_local_requests_from_system_hooks ApplicationSettings#allow_local_requests_from_system_hooks}
 
 ---
 
@@ -11552,7 +12699,35 @@ allow_local_requests_from_web_hooks_and_services: typing.Union[bool, IResolvable
 
 Allow requests to the local network from web hooks and services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#allow_local_requests_from_web_hooks_and_services ApplicationSettings#allow_local_requests_from_web_hooks_and_services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#allow_local_requests_from_web_hooks_and_services ApplicationSettings#allow_local_requests_from_web_hooks_and_services}
+
+---
+
+##### `allow_project_creation_for_guest_and_below`<sup>Optional</sup> <a name="allow_project_creation_for_guest_and_below" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowProjectCreationForGuestAndBelow"></a>
+
+```python
+allow_project_creation_for_guest_and_below: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Indicates whether users assigned up to the Guest role can create groups and personal projects.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#allow_project_creation_for_guest_and_below ApplicationSettings#allow_project_creation_for_guest_and_below}
+
+---
+
+##### `allow_runner_registration_token`<sup>Optional</sup> <a name="allow_runner_registration_token" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowRunnerRegistrationToken"></a>
+
+```python
+allow_runner_registration_token: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Allow using a registration token to create a runner.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#allow_runner_registration_token ApplicationSettings#allow_runner_registration_token}
 
 ---
 
@@ -11568,7 +12743,21 @@ Set the duration for which the jobs are considered as old and expired.
 
 After that time passes, the jobs are archived and no longer able to be retried. Make it empty to never expire jobs. It has to be no less than 1 day, for example: 15 days, 1 month, 2 years.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#archive_builds_in_human_readable ApplicationSettings#archive_builds_in_human_readable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#archive_builds_in_human_readable ApplicationSettings#archive_builds_in_human_readable}
+
+---
+
+##### `asciidoc_max_includes`<sup>Optional</sup> <a name="asciidoc_max_includes" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.asciidocMaxIncludes"></a>
+
+```python
+asciidoc_max_includes: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Maximum limit of AsciiDoc include directives being processed in any one document. Maximum: 64.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#asciidoc_max_includes ApplicationSettings#asciidoc_max_includes}
 
 ---
 
@@ -11584,7 +12773,7 @@ Assets that match these domains are not proxied.
 
 Wildcards allowed. Your GitLab installation URL is automatically allowlisted. GitLab restart is required to apply changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#asset_proxy_allowlist ApplicationSettings#asset_proxy_allowlist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#asset_proxy_allowlist ApplicationSettings#asset_proxy_allowlist}
 
 ---
 
@@ -11598,7 +12787,7 @@ asset_proxy_enabled: typing.Union[bool, IResolvable]
 
 (If enabled, requires: asset_proxy_url) Enable proxying of assets. GitLab restart is required to apply changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#asset_proxy_enabled ApplicationSettings#asset_proxy_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#asset_proxy_enabled ApplicationSettings#asset_proxy_enabled}
 
 ---
 
@@ -11612,7 +12801,7 @@ asset_proxy_secret_key: str
 
 Shared secret with the asset proxy server. GitLab restart is required to apply changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#asset_proxy_secret_key ApplicationSettings#asset_proxy_secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#asset_proxy_secret_key ApplicationSettings#asset_proxy_secret_key}
 
 ---
 
@@ -11626,7 +12815,7 @@ asset_proxy_url: str
 
 URL of the asset proxy server. GitLab restart is required to apply changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#asset_proxy_url ApplicationSettings#asset_proxy_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#asset_proxy_url ApplicationSettings#asset_proxy_url}
 
 ---
 
@@ -11642,7 +12831,23 @@ By default, we write to the authorized_keys file to support Git over SSH without
 
 GitLab can be optimized to authenticate SSH keys via the database file. Only disable this if you have configured your OpenSSH server to use the AuthorizedKeysCommand.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#authorized_keys_enabled ApplicationSettings#authorized_keys_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#authorized_keys_enabled ApplicationSettings#authorized_keys_enabled}
+
+---
+
+##### `auto_ban_user_on_excessive_projects_download`<sup>Optional</sup> <a name="auto_ban_user_on_excessive_projects_download" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.autoBanUserOnExcessiveProjectsDownload"></a>
+
+```python
+auto_ban_user_on_excessive_projects_download: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+When enabled, users will get automatically banned from the application when they download more than the maximum number of unique projects in the time period specified by max_number_of_repository_downloads and max_number_of_repository_downloads_within_time_period respectively.
+
+Introduced in GitLab 15.4. Self-managed, Ultimate only.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#auto_ban_user_on_excessive_projects_download ApplicationSettings#auto_ban_user_on_excessive_projects_download}
 
 ---
 
@@ -11656,7 +12861,7 @@ auto_devops_domain: str
 
 Specify a domain to use by default for every project’s Auto Review Apps and Auto Deploy stages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#auto_devops_domain ApplicationSettings#auto_devops_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#auto_devops_domain ApplicationSettings#auto_devops_domain}
 
 ---
 
@@ -11672,7 +12877,7 @@ Enable Auto DevOps for projects by default.
 
 It automatically builds, tests, and deploys applications based on a predefined CI/CD configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#auto_devops_enabled ApplicationSettings#auto_devops_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#auto_devops_enabled ApplicationSettings#auto_devops_enabled}
 
 ---
 
@@ -11686,7 +12891,49 @@ automatic_purchased_storage_allocation: typing.Union[bool, IResolvable]
 
 Enabling this permits automatic allocation of purchased storage in a namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#automatic_purchased_storage_allocation ApplicationSettings#automatic_purchased_storage_allocation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#automatic_purchased_storage_allocation ApplicationSettings#automatic_purchased_storage_allocation}
+
+---
+
+##### `bulk_import_concurrent_pipeline_batch_limit`<sup>Optional</sup> <a name="bulk_import_concurrent_pipeline_batch_limit" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.bulkImportConcurrentPipelineBatchLimit"></a>
+
+```python
+bulk_import_concurrent_pipeline_batch_limit: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Maximum simultaneous Direct Transfer batches to process.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#bulk_import_concurrent_pipeline_batch_limit ApplicationSettings#bulk_import_concurrent_pipeline_batch_limit}
+
+---
+
+##### `bulk_import_enabled`<sup>Optional</sup> <a name="bulk_import_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.bulkImportEnabled"></a>
+
+```python
+bulk_import_enabled: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Enable migrating GitLab groups by direct transfer. Introduced in GitLab 15.8.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#bulk_import_enabled ApplicationSettings#bulk_import_enabled}
+
+---
+
+##### `bulk_import_max_download_file_size`<sup>Optional</sup> <a name="bulk_import_max_download_file_size" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.bulkImportMaxDownloadFileSize"></a>
+
+```python
+bulk_import_max_download_file_size: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Maximum download file size when importing from source GitLab instances by direct transfer. Introduced in GitLab 16.3.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#bulk_import_max_download_file_size ApplicationSettings#bulk_import_max_download_file_size}
 
 ---
 
@@ -11700,7 +12947,7 @@ can_create_group: typing.Union[bool, IResolvable]
 
 Indicates whether users can create top-level groups. Introduced in GitLab 15.5.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#can_create_group ApplicationSettings#can_create_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#can_create_group ApplicationSettings#can_create_group}
 
 ---
 
@@ -11714,7 +12961,35 @@ check_namespace_plan: typing.Union[bool, IResolvable]
 
 Enabling this makes only licensed EE features available to projects if the project namespace’s plan includes the feature or if the project is public.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#check_namespace_plan ApplicationSettings#check_namespace_plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#check_namespace_plan ApplicationSettings#check_namespace_plan}
+
+---
+
+##### `ci_max_includes`<sup>Optional</sup> <a name="ci_max_includes" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.ciMaxIncludes"></a>
+
+```python
+ci_max_includes: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The maximum number of includes per pipeline.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#ci_max_includes ApplicationSettings#ci_max_includes}
+
+---
+
+##### `ci_max_total_yaml_size_bytes`<sup>Optional</sup> <a name="ci_max_total_yaml_size_bytes" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.ciMaxTotalYamlSizeBytes"></a>
+
+```python
+ci_max_total_yaml_size_bytes: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The maximum amount of memory, in bytes, that can be allocated for the pipeline configuration, with all included YAML configuration files.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#ci_max_total_yaml_size_bytes ApplicationSettings#ci_max_total_yaml_size_bytes}
 
 ---
 
@@ -11728,7 +13003,49 @@ commit_email_hostname: str
 
 Custom hostname (for private commit emails).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#commit_email_hostname ApplicationSettings#commit_email_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#commit_email_hostname ApplicationSettings#commit_email_hostname}
+
+---
+
+##### `concurrent_bitbucket_import_jobs_limit`<sup>Optional</sup> <a name="concurrent_bitbucket_import_jobs_limit" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.concurrentBitbucketImportJobsLimit"></a>
+
+```python
+concurrent_bitbucket_import_jobs_limit: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Maximum number of simultaneous import jobs for the Bitbucket Cloud importer. Introduced in GitLab 16.11.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#concurrent_bitbucket_import_jobs_limit ApplicationSettings#concurrent_bitbucket_import_jobs_limit}
+
+---
+
+##### `concurrent_bitbucket_server_import_jobs_limit`<sup>Optional</sup> <a name="concurrent_bitbucket_server_import_jobs_limit" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.concurrentBitbucketServerImportJobsLimit"></a>
+
+```python
+concurrent_bitbucket_server_import_jobs_limit: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Maximum number of simultaneous import jobs for the Bitbucket Server importer. Introduced in GitLab 16.11.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#concurrent_bitbucket_server_import_jobs_limit ApplicationSettings#concurrent_bitbucket_server_import_jobs_limit}
+
+---
+
+##### `concurrent_github_import_jobs_limit`<sup>Optional</sup> <a name="concurrent_github_import_jobs_limit" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.concurrentGithubImportJobsLimit"></a>
+
+```python
+concurrent_github_import_jobs_limit: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Maximum number of simultaneous import jobs for the GitHub importer. Introduced in GitLab 16.11.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#concurrent_github_import_jobs_limit ApplicationSettings#concurrent_github_import_jobs_limit}
 
 ---
 
@@ -11742,7 +13059,7 @@ container_expiration_policies_enable_historic_entries: typing.Union[bool, IResol
 
 Enable cleanup policies for all projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#container_expiration_policies_enable_historic_entries ApplicationSettings#container_expiration_policies_enable_historic_entries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#container_expiration_policies_enable_historic_entries ApplicationSettings#container_expiration_policies_enable_historic_entries}
 
 ---
 
@@ -11756,7 +13073,7 @@ container_registry_cleanup_tags_service_max_list_size: typing.Union[int, float]
 
 The maximum number of tags that can be deleted in a single execution of cleanup policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#container_registry_cleanup_tags_service_max_list_size ApplicationSettings#container_registry_cleanup_tags_service_max_list_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#container_registry_cleanup_tags_service_max_list_size ApplicationSettings#container_registry_cleanup_tags_service_max_list_size}
 
 ---
 
@@ -11770,7 +13087,7 @@ container_registry_delete_tags_service_timeout: typing.Union[int, float]
 
 The maximum time, in seconds, that the cleanup process can take to delete a batch of tags for cleanup policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#container_registry_delete_tags_service_timeout ApplicationSettings#container_registry_delete_tags_service_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#container_registry_delete_tags_service_timeout ApplicationSettings#container_registry_delete_tags_service_timeout}
 
 ---
 
@@ -11784,7 +13101,7 @@ container_registry_expiration_policies_caching: typing.Union[bool, IResolvable]
 
 Caching during the execution of cleanup policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#container_registry_expiration_policies_caching ApplicationSettings#container_registry_expiration_policies_caching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#container_registry_expiration_policies_caching ApplicationSettings#container_registry_expiration_policies_caching}
 
 ---
 
@@ -11798,7 +13115,7 @@ container_registry_expiration_policies_worker_capacity: typing.Union[int, float]
 
 Number of workers for cleanup policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#container_registry_expiration_policies_worker_capacity ApplicationSettings#container_registry_expiration_policies_worker_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#container_registry_expiration_policies_worker_capacity ApplicationSettings#container_registry_expiration_policies_worker_capacity}
 
 ---
 
@@ -11812,7 +13129,7 @@ container_registry_token_expire_delay: typing.Union[int, float]
 
 Container Registry token duration in minutes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#container_registry_token_expire_delay ApplicationSettings#container_registry_token_expire_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#container_registry_token_expire_delay ApplicationSettings#container_registry_token_expire_delay}
 
 ---
 
@@ -11826,7 +13143,35 @@ deactivate_dormant_users: typing.Union[bool, IResolvable]
 
 Enable automatic deactivation of dormant users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#deactivate_dormant_users ApplicationSettings#deactivate_dormant_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#deactivate_dormant_users ApplicationSettings#deactivate_dormant_users}
+
+---
+
+##### `deactivate_dormant_users_period`<sup>Optional</sup> <a name="deactivate_dormant_users_period" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.deactivateDormantUsersPeriod"></a>
+
+```python
+deactivate_dormant_users_period: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Length of time (in days) after which a user is considered dormant. Introduced in GitLab 15.3.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#deactivate_dormant_users_period ApplicationSettings#deactivate_dormant_users_period}
+
+---
+
+##### `decompress_archive_file_timeout`<sup>Optional</sup> <a name="decompress_archive_file_timeout" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.decompressArchiveFileTimeout"></a>
+
+```python
+decompress_archive_file_timeout: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Default timeout for decompressing archived files, in seconds. Set to 0 to disable timeouts. Introduced in GitLab 16.4.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#decompress_archive_file_timeout ApplicationSettings#decompress_archive_file_timeout}
 
 ---
 
@@ -11840,7 +13185,7 @@ default_artifacts_expire_in: str
 
 Set the default expiration time for each job’s artifacts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#default_artifacts_expire_in ApplicationSettings#default_artifacts_expire_in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#default_artifacts_expire_in ApplicationSettings#default_artifacts_expire_in}
 
 ---
 
@@ -11854,7 +13199,7 @@ default_branch_name: str
 
 Instance-level custom initial branch name (introduced in GitLab 13.2).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#default_branch_name ApplicationSettings#default_branch_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#default_branch_name ApplicationSettings#default_branch_name}
 
 ---
 
@@ -11870,7 +13215,21 @@ Determine if developers can push to the default branch.
 
 Can take: 0 (not protected, both users with the Developer role or Maintainer role can push new commits and force push), 1 (partially protected, users with the Developer role or Maintainer role can push new commits, but cannot force push) or 2 (fully protected, users with the Developer or Maintainer role cannot push new commits, but users with the Developer or Maintainer role can; no one can force push) as a parameter. Default is 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#default_branch_protection ApplicationSettings#default_branch_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#default_branch_protection ApplicationSettings#default_branch_protection}
+
+---
+
+##### `default_branch_protection_defaults`<sup>Optional</sup> <a name="default_branch_protection_defaults" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.defaultBranchProtectionDefaults"></a>
+
+```python
+default_branch_protection_defaults: ApplicationSettingsDefaultBranchProtectionDefaults
+```
+
+- *Type:* <a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults">ApplicationSettingsDefaultBranchProtectionDefaults</a>
+
+default_branch_protection_defaults block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#default_branch_protection_defaults ApplicationSettings#default_branch_protection_defaults}
 
 ---
 
@@ -11884,7 +13243,7 @@ default_ci_config_path: str
 
 Default CI/CD configuration file and path for new projects (.gitlab-ci.yml if not set).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#default_ci_config_path ApplicationSettings#default_ci_config_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#default_ci_config_path ApplicationSettings#default_ci_config_path}
 
 ---
 
@@ -11898,7 +13257,21 @@ default_group_visibility: str
 
 What visibility level new groups receive. Can take private, internal and public as a parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#default_group_visibility ApplicationSettings#default_group_visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#default_group_visibility ApplicationSettings#default_group_visibility}
+
+---
+
+##### `default_preferred_language`<sup>Optional</sup> <a name="default_preferred_language" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.defaultPreferredLanguage"></a>
+
+```python
+default_preferred_language: str
+```
+
+- *Type:* str
+
+Default preferred language for users who are not logged in.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#default_preferred_language ApplicationSettings#default_preferred_language}
 
 ---
 
@@ -11912,7 +13285,7 @@ default_project_creation: typing.Union[int, float]
 
 Default project creation protection. Can take: 0 (No one), 1 (Maintainers) or 2 (Developers + Maintainers).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#default_project_creation ApplicationSettings#default_project_creation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#default_project_creation ApplicationSettings#default_project_creation}
 
 ---
 
@@ -11926,7 +13299,7 @@ default_projects_limit: typing.Union[int, float]
 
 Project limit per user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#default_projects_limit ApplicationSettings#default_projects_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#default_projects_limit ApplicationSettings#default_projects_limit}
 
 ---
 
@@ -11940,7 +13313,7 @@ default_project_visibility: str
 
 What visibility level new projects receive. Can take private, internal and public as a parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#default_project_visibility ApplicationSettings#default_project_visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#default_project_visibility ApplicationSettings#default_project_visibility}
 
 ---
 
@@ -11954,7 +13327,21 @@ default_snippet_visibility: str
 
 What visibility level new snippets receive. Can take private, internal and public as a parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#default_snippet_visibility ApplicationSettings#default_snippet_visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#default_snippet_visibility ApplicationSettings#default_snippet_visibility}
+
+---
+
+##### `default_syntax_highlighting_theme`<sup>Optional</sup> <a name="default_syntax_highlighting_theme" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.defaultSyntaxHighlightingTheme"></a>
+
+```python
+default_syntax_highlighting_theme: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Default syntax highlighting theme for users who are new or not signed in. See IDs of available themes (https://gitlab.com/gitlab-org/gitlab/blob/master/lib/gitlab/themes.rb#L16).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#default_syntax_highlighting_theme ApplicationSettings#default_syntax_highlighting_theme}
 
 ---
 
@@ -11968,7 +13355,23 @@ delete_inactive_projects: typing.Union[bool, IResolvable]
 
 Enable inactive project deletion feature. Introduced in GitLab 14.10. Became operational in GitLab 15.0 (with feature flag inactive_projects_deletion).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#delete_inactive_projects ApplicationSettings#delete_inactive_projects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#delete_inactive_projects ApplicationSettings#delete_inactive_projects}
+
+---
+
+##### `delete_unconfirmed_users`<sup>Optional</sup> <a name="delete_unconfirmed_users" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.deleteUnconfirmedUsers"></a>
+
+```python
+delete_unconfirmed_users: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Specifies whether users who have not confirmed their email should be deleted.
+
+When set to true, unconfirmed users are deleted after unconfirmed_users_delete_after_days days. Introduced in GitLab 16.1. Self-managed, Premium and Ultimate only.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#delete_unconfirmed_users ApplicationSettings#delete_unconfirmed_users}
 
 ---
 
@@ -11984,7 +13387,35 @@ The number of days to wait before deleting a project or group that is marked for
 
 Value must be between 1 and 90.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#deletion_adjourned_period ApplicationSettings#deletion_adjourned_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#deletion_adjourned_period ApplicationSettings#deletion_adjourned_period}
+
+---
+
+##### `diagramsnet_enabled`<sup>Optional</sup> <a name="diagramsnet_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.diagramsnetEnabled"></a>
+
+```python
+diagramsnet_enabled: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+(If enabled, requires diagramsnet_url) Enable Diagrams.net integration.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#diagramsnet_enabled ApplicationSettings#diagramsnet_enabled}
+
+---
+
+##### `diagramsnet_url`<sup>Optional</sup> <a name="diagramsnet_url" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.diagramsnetUrl"></a>
+
+```python
+diagramsnet_url: str
+```
+
+- *Type:* str
+
+The Diagrams.net instance URL for integration.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#diagramsnet_url ApplicationSettings#diagramsnet_url}
 
 ---
 
@@ -11998,7 +13429,7 @@ diff_max_files: typing.Union[int, float]
 
 Maximum files in a diff.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#diff_max_files ApplicationSettings#diff_max_files}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#diff_max_files ApplicationSettings#diff_max_files}
 
 ---
 
@@ -12012,7 +13443,7 @@ diff_max_lines: typing.Union[int, float]
 
 Maximum lines in a diff.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#diff_max_lines ApplicationSettings#diff_max_lines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#diff_max_lines ApplicationSettings#diff_max_lines}
 
 ---
 
@@ -12026,7 +13457,21 @@ diff_max_patch_bytes: typing.Union[int, float]
 
 Maximum diff patch size, in bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#diff_max_patch_bytes ApplicationSettings#diff_max_patch_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#diff_max_patch_bytes ApplicationSettings#diff_max_patch_bytes}
+
+---
+
+##### `disable_admin_oauth_scopes`<sup>Optional</sup> <a name="disable_admin_oauth_scopes" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.disableAdminOauthScopes"></a>
+
+```python
+disable_admin_oauth_scopes: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Stops administrators from connecting their GitLab accounts to non-trusted OAuth 2.0 applications that have the api, read_api, read_repository, write_repository, read_registry, write_registry, or sudo scopes. Introduced in GitLab 15.6.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#disable_admin_oauth_scopes ApplicationSettings#disable_admin_oauth_scopes}
 
 ---
 
@@ -12040,7 +13485,7 @@ disabled_oauth_sign_in_sources: typing.List[str]
 
 Disabled OAuth sign-in sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#disabled_oauth_sign_in_sources ApplicationSettings#disabled_oauth_sign_in_sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#disabled_oauth_sign_in_sources ApplicationSettings#disabled_oauth_sign_in_sources}
 
 ---
 
@@ -12054,7 +13499,23 @@ disable_feed_token: typing.Union[bool, IResolvable]
 
 Disable display of RSS/Atom and calendar feed tokens (introduced in GitLab 13.7).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#disable_feed_token ApplicationSettings#disable_feed_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#disable_feed_token ApplicationSettings#disable_feed_token}
+
+---
+
+##### `disable_personal_access_tokens`<sup>Optional</sup> <a name="disable_personal_access_tokens" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.disablePersonalAccessTokens"></a>
+
+```python
+disable_personal_access_tokens: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Disable personal access tokens.
+
+Introduced in GitLab 15.7. Self-managed, Premium and Ultimate only. There is no method available to enable a personal access token that’s been disabled through the API. This is a known issue.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#disable_personal_access_tokens ApplicationSettings#disable_personal_access_tokens}
 
 ---
 
@@ -12068,7 +13529,7 @@ dns_rebinding_protection_enabled: typing.Union[bool, IResolvable]
 
 Enforce DNS rebinding attack protection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#dns_rebinding_protection_enabled ApplicationSettings#dns_rebinding_protection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#dns_rebinding_protection_enabled ApplicationSettings#dns_rebinding_protection_enabled}
 
 ---
 
@@ -12082,7 +13543,7 @@ domain_allowlist: typing.List[str]
 
 Force people to use only corporate emails for sign-up. Null means there is no restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#domain_allowlist ApplicationSettings#domain_allowlist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#domain_allowlist ApplicationSettings#domain_allowlist}
 
 ---
 
@@ -12098,7 +13559,7 @@ Users with email addresses that match these domains cannot sign up.
 
 Wildcards allowed. Use separate lines for multiple entries. Ex: domain.com, *.domain.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#domain_denylist ApplicationSettings#domain_denylist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#domain_denylist ApplicationSettings#domain_denylist}
 
 ---
 
@@ -12112,7 +13573,21 @@ domain_denylist_enabled: typing.Union[bool, IResolvable]
 
 (If enabled, requires: domain_denylist) Allows blocking sign-ups from emails from specific domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#domain_denylist_enabled ApplicationSettings#domain_denylist_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#domain_denylist_enabled ApplicationSettings#domain_denylist_enabled}
+
+---
+
+##### `downstream_pipeline_trigger_limit_per_project_user_sha`<sup>Optional</sup> <a name="downstream_pipeline_trigger_limit_per_project_user_sha" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.downstreamPipelineTriggerLimitPerProjectUserSha"></a>
+
+```python
+downstream_pipeline_trigger_limit_per_project_user_sha: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Maximum downstream pipeline trigger rate. Introduced in GitLab 16.10.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#downstream_pipeline_trigger_limit_per_project_user_sha ApplicationSettings#downstream_pipeline_trigger_limit_per_project_user_sha}
 
 ---
 
@@ -12126,7 +13601,21 @@ dsa_key_restriction: typing.Union[int, float]
 
 The minimum allowed bit length of an uploaded DSA key. 0 means no restriction. -1 disables DSA keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#dsa_key_restriction ApplicationSettings#dsa_key_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#dsa_key_restriction ApplicationSettings#dsa_key_restriction}
+
+---
+
+##### `duo_features_enabled`<sup>Optional</sup> <a name="duo_features_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.duoFeaturesEnabled"></a>
+
+```python
+duo_features_enabled: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Indicates whether GitLab Duo features are enabled for this instance. Introduced in GitLab 16.10. Self-managed, Premium and Ultimate only.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#duo_features_enabled ApplicationSettings#duo_features_enabled}
 
 ---
 
@@ -12142,7 +13631,7 @@ The minimum allowed curve size (in bits) of an uploaded ECDSA key.
 
 0 means no restriction. -1 disables ECDSA keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#ecdsa_key_restriction ApplicationSettings#ecdsa_key_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#ecdsa_key_restriction ApplicationSettings#ecdsa_key_restriction}
 
 ---
 
@@ -12158,7 +13647,7 @@ The minimum allowed curve size (in bits) of an uploaded ECDSA_SK key.
 
 0 means no restriction. -1 disables ECDSA_SK keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#ecdsa_sk_key_restriction ApplicationSettings#ecdsa_sk_key_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#ecdsa_sk_key_restriction ApplicationSettings#ecdsa_sk_key_restriction}
 
 ---
 
@@ -12174,7 +13663,7 @@ The minimum allowed curve size (in bits) of an uploaded ED25519 key.
 
 0 means no restriction. -1 disables ED25519 keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#ed25519_key_restriction ApplicationSettings#ed25519_key_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#ed25519_key_restriction ApplicationSettings#ed25519_key_restriction}
 
 ---
 
@@ -12190,7 +13679,7 @@ The minimum allowed curve size (in bits) of an uploaded ED25519_SK key.
 
 0 means no restriction. -1 disables ED25519_SK keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#ed25519_sk_key_restriction ApplicationSettings#ed25519_sk_key_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#ed25519_sk_key_restriction ApplicationSettings#ed25519_sk_key_restriction}
 
 ---
 
@@ -12204,7 +13693,7 @@ eks_access_key_id: str
 
 AWS IAM access key ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#eks_access_key_id ApplicationSettings#eks_access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#eks_access_key_id ApplicationSettings#eks_access_key_id}
 
 ---
 
@@ -12218,7 +13707,7 @@ eks_account_id: str
 
 Amazon account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#eks_account_id ApplicationSettings#eks_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#eks_account_id ApplicationSettings#eks_account_id}
 
 ---
 
@@ -12232,7 +13721,7 @@ eks_integration_enabled: typing.Union[bool, IResolvable]
 
 Enable integration with Amazon EKS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#eks_integration_enabled ApplicationSettings#eks_integration_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#eks_integration_enabled ApplicationSettings#eks_integration_enabled}
 
 ---
 
@@ -12246,7 +13735,7 @@ eks_secret_access_key: str
 
 AWS IAM secret access key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#eks_secret_access_key ApplicationSettings#eks_secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#eks_secret_access_key ApplicationSettings#eks_secret_access_key}
 
 ---
 
@@ -12260,7 +13749,7 @@ elasticsearch_aws: typing.Union[bool, IResolvable]
 
 Enable the use of AWS hosted Elasticsearch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_aws ApplicationSettings#elasticsearch_aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_aws ApplicationSettings#elasticsearch_aws}
 
 ---
 
@@ -12274,7 +13763,7 @@ elasticsearch_aws_access_key: str
 
 AWS IAM access key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_aws_access_key ApplicationSettings#elasticsearch_aws_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_aws_access_key ApplicationSettings#elasticsearch_aws_access_key}
 
 ---
 
@@ -12288,7 +13777,7 @@ elasticsearch_aws_region: str
 
 The AWS region the Elasticsearch domain is configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_aws_region ApplicationSettings#elasticsearch_aws_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_aws_region ApplicationSettings#elasticsearch_aws_region}
 
 ---
 
@@ -12302,7 +13791,7 @@ elasticsearch_aws_secret_access_key: str
 
 AWS IAM secret access key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_aws_secret_access_key ApplicationSettings#elasticsearch_aws_secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_aws_secret_access_key ApplicationSettings#elasticsearch_aws_secret_access_key}
 
 ---
 
@@ -12318,7 +13807,7 @@ Maximum size of text fields to index by Elasticsearch.
 
 0 value means no limit. This does not apply to repository and wiki indexing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_indexed_field_length_limit ApplicationSettings#elasticsearch_indexed_field_length_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_indexed_field_length_limit ApplicationSettings#elasticsearch_indexed_field_length_limit}
 
 ---
 
@@ -12332,7 +13821,7 @@ elasticsearch_indexed_file_size_limit_kb: typing.Union[int, float]
 
 Maximum size of repository and wiki files that are indexed by Elasticsearch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_indexed_file_size_limit_kb ApplicationSettings#elasticsearch_indexed_file_size_limit_kb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_indexed_file_size_limit_kb ApplicationSettings#elasticsearch_indexed_file_size_limit_kb}
 
 ---
 
@@ -12346,7 +13835,7 @@ elasticsearch_indexing: typing.Union[bool, IResolvable]
 
 Enable Elasticsearch indexing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_indexing ApplicationSettings#elasticsearch_indexing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_indexing ApplicationSettings#elasticsearch_indexing}
 
 ---
 
@@ -12360,7 +13849,7 @@ elasticsearch_limit_indexing: typing.Union[bool, IResolvable]
 
 Limit Elasticsearch to index certain namespaces and projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_limit_indexing ApplicationSettings#elasticsearch_limit_indexing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_limit_indexing ApplicationSettings#elasticsearch_limit_indexing}
 
 ---
 
@@ -12374,7 +13863,7 @@ elasticsearch_max_bulk_concurrency: typing.Union[int, float]
 
 Maximum concurrency of Elasticsearch bulk requests per indexing operation. This only applies to repository indexing operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_max_bulk_concurrency ApplicationSettings#elasticsearch_max_bulk_concurrency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_max_bulk_concurrency ApplicationSettings#elasticsearch_max_bulk_concurrency}
 
 ---
 
@@ -12388,7 +13877,7 @@ elasticsearch_max_bulk_size_mb: typing.Union[int, float]
 
 Maximum size of Elasticsearch bulk indexing requests in MB. This only applies to repository indexing operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_max_bulk_size_mb ApplicationSettings#elasticsearch_max_bulk_size_mb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_max_bulk_size_mb ApplicationSettings#elasticsearch_max_bulk_size_mb}
 
 ---
 
@@ -12402,7 +13891,7 @@ elasticsearch_namespace_ids: typing.List[typing.Union[int, float]]
 
 The namespaces to index via Elasticsearch if elasticsearch_limit_indexing is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_namespace_ids ApplicationSettings#elasticsearch_namespace_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_namespace_ids ApplicationSettings#elasticsearch_namespace_ids}
 
 ---
 
@@ -12416,7 +13905,7 @@ elasticsearch_password: str
 
 The password of your Elasticsearch instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_password ApplicationSettings#elasticsearch_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_password ApplicationSettings#elasticsearch_password}
 
 ---
 
@@ -12430,7 +13919,7 @@ elasticsearch_project_ids: typing.List[typing.Union[int, float]]
 
 The projects to index via Elasticsearch if elasticsearch_limit_indexing is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_project_ids ApplicationSettings#elasticsearch_project_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_project_ids ApplicationSettings#elasticsearch_project_ids}
 
 ---
 
@@ -12444,7 +13933,7 @@ elasticsearch_search: typing.Union[bool, IResolvable]
 
 Enable Elasticsearch search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_search ApplicationSettings#elasticsearch_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_search ApplicationSettings#elasticsearch_search}
 
 ---
 
@@ -12458,7 +13947,7 @@ elasticsearch_url: typing.List[str]
 
 The URL to use for connecting to Elasticsearch. Use a comma-separated list to support cluster (for example, http://localhost:9200, http://localhost:9201).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_url ApplicationSettings#elasticsearch_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_url ApplicationSettings#elasticsearch_url}
 
 ---
 
@@ -12472,7 +13961,7 @@ elasticsearch_username: str
 
 The username of your Elasticsearch instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#elasticsearch_username ApplicationSettings#elasticsearch_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#elasticsearch_username ApplicationSettings#elasticsearch_username}
 
 ---
 
@@ -12486,7 +13975,7 @@ email_additional_text: str
 
 Additional text added to the bottom of every email for legal/auditing/compliance reasons.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#email_additional_text ApplicationSettings#email_additional_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#email_additional_text ApplicationSettings#email_additional_text}
 
 ---
 
@@ -12502,7 +13991,7 @@ Some email servers do not support overriding the email sender name.
 
 Enable this option to include the name of the author of the issue, merge request or comment in the email body instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#email_author_in_body ApplicationSettings#email_author_in_body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#email_author_in_body ApplicationSettings#email_author_in_body}
 
 ---
 
@@ -12516,7 +14005,7 @@ enabled_git_access_protocol: str
 
 Enabled protocols for Git access. Allowed values are: ssh, http, and nil to allow both protocols.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#enabled_git_access_protocol ApplicationSettings#enabled_git_access_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#enabled_git_access_protocol ApplicationSettings#enabled_git_access_protocol}
 
 ---
 
@@ -12530,7 +14019,7 @@ enforce_namespace_storage_limit: typing.Union[bool, IResolvable]
 
 Enabling this permits enforcement of namespace storage limits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#enforce_namespace_storage_limit ApplicationSettings#enforce_namespace_storage_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#enforce_namespace_storage_limit ApplicationSettings#enforce_namespace_storage_limit}
 
 ---
 
@@ -12544,7 +14033,7 @@ enforce_terms: typing.Union[bool, IResolvable]
 
 (If enabled, requires: terms) Enforce application ToS to all users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#enforce_terms ApplicationSettings#enforce_terms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#enforce_terms ApplicationSettings#enforce_terms}
 
 ---
 
@@ -12558,7 +14047,7 @@ external_auth_client_cert: str
 
 (If enabled, requires: external_auth_client_key) The certificate to use to authenticate with the external authorization service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#external_auth_client_cert ApplicationSettings#external_auth_client_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#external_auth_client_cert ApplicationSettings#external_auth_client_cert}
 
 ---
 
@@ -12572,7 +14061,7 @@ external_auth_client_key: str
 
 Private key for the certificate when authentication is required for the external authorization service, this is encrypted when stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#external_auth_client_key ApplicationSettings#external_auth_client_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#external_auth_client_key ApplicationSettings#external_auth_client_key}
 
 ---
 
@@ -12586,7 +14075,7 @@ external_auth_client_key_pass: str
 
 Passphrase to use for the private key when authenticating with the external service this is encrypted when stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#external_auth_client_key_pass ApplicationSettings#external_auth_client_key_pass}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#external_auth_client_key_pass ApplicationSettings#external_auth_client_key_pass}
 
 ---
 
@@ -12600,7 +14089,7 @@ external_authorization_service_default_label: str
 
 The default classification label to use when requesting authorization and no classification label has been specified on the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#external_authorization_service_default_label ApplicationSettings#external_authorization_service_default_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#external_authorization_service_default_label ApplicationSettings#external_authorization_service_default_label}
 
 ---
 
@@ -12614,7 +14103,7 @@ external_authorization_service_enabled: typing.Union[bool, IResolvable]
 
 (If enabled, requires: external_authorization_service_default_label, external_authorization_service_timeout and external_authorization_service_url) Enable using an external authorization service for accessing projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#external_authorization_service_enabled ApplicationSettings#external_authorization_service_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#external_authorization_service_enabled ApplicationSettings#external_authorization_service_enabled}
 
 ---
 
@@ -12630,7 +14119,7 @@ The timeout after which an authorization request is aborted, in seconds.
 
 When a request times out, access is denied to the user. (min: 0.001, max: 10, step: 0.001).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#external_authorization_service_timeout ApplicationSettings#external_authorization_service_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#external_authorization_service_timeout ApplicationSettings#external_authorization_service_timeout}
 
 ---
 
@@ -12644,7 +14133,7 @@ external_authorization_service_url: str
 
 URL to which authorization requests are directed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#external_authorization_service_url ApplicationSettings#external_authorization_service_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#external_authorization_service_url ApplicationSettings#external_authorization_service_url}
 
 ---
 
@@ -12658,7 +14147,7 @@ external_pipeline_validation_service_timeout: typing.Union[int, float]
 
 How long to wait for a response from the pipeline validation service. Assumes OK if it times out.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#external_pipeline_validation_service_timeout ApplicationSettings#external_pipeline_validation_service_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#external_pipeline_validation_service_timeout ApplicationSettings#external_pipeline_validation_service_timeout}
 
 ---
 
@@ -12672,7 +14161,7 @@ external_pipeline_validation_service_token: str
 
 Optional. Token to include as the X-Gitlab-Token header in requests to the URL in external_pipeline_validation_service_url.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#external_pipeline_validation_service_token ApplicationSettings#external_pipeline_validation_service_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#external_pipeline_validation_service_token ApplicationSettings#external_pipeline_validation_service_token}
 
 ---
 
@@ -12686,7 +14175,7 @@ external_pipeline_validation_service_url: str
 
 URL to use for pipeline validation requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#external_pipeline_validation_service_url ApplicationSettings#external_pipeline_validation_service_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#external_pipeline_validation_service_url ApplicationSettings#external_pipeline_validation_service_url}
 
 ---
 
@@ -12700,7 +14189,7 @@ file_template_project_id: typing.Union[int, float]
 
 The ID of a project to load custom file templates from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#file_template_project_id ApplicationSettings#file_template_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#file_template_project_id ApplicationSettings#file_template_project_id}
 
 ---
 
@@ -12716,7 +14205,7 @@ Start day of the week for calendar views and date pickers.
 
 Valid values are 0 for Sunday, 1 for Monday, and 6 for Saturday.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#first_day_of_week ApplicationSettings#first_day_of_week}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#first_day_of_week ApplicationSettings#first_day_of_week}
 
 ---
 
@@ -12730,7 +14219,7 @@ geo_node_allowed_ips: str
 
 Comma-separated list of IPs and CIDRs of allowed secondary nodes. For example, 1.1.1.1, 2.2.2.0/24.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#geo_node_allowed_ips ApplicationSettings#geo_node_allowed_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#geo_node_allowed_ips ApplicationSettings#geo_node_allowed_ips}
 
 ---
 
@@ -12744,7 +14233,7 @@ geo_status_timeout: typing.Union[int, float]
 
 The amount of seconds after which a request to get a secondary node status times out.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#geo_status_timeout ApplicationSettings#geo_status_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#geo_status_timeout ApplicationSettings#geo_status_timeout}
 
 ---
 
@@ -12760,7 +14249,7 @@ Default Gitaly timeout, in seconds.
 
 This timeout is not enforced for Git fetch/push operations or Sidekiq jobs. Set to 0 to disable timeouts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#gitaly_timeout_default ApplicationSettings#gitaly_timeout_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#gitaly_timeout_default ApplicationSettings#gitaly_timeout_default}
 
 ---
 
@@ -12776,7 +14265,7 @@ Gitaly fast operation timeout, in seconds.
 
 Some Gitaly operations are expected to be fast. If they exceed this threshold, there may be a problem with a storage shard and ‘failing fast’ can help maintain the stability of the GitLab instance. Set to 0 to disable timeouts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#gitaly_timeout_fast ApplicationSettings#gitaly_timeout_fast}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#gitaly_timeout_fast ApplicationSettings#gitaly_timeout_fast}
 
 ---
 
@@ -12792,7 +14281,7 @@ Medium Gitaly timeout, in seconds.
 
 This should be a value between the Fast and the Default timeout. Set to 0 to disable timeouts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#gitaly_timeout_medium ApplicationSettings#gitaly_timeout_medium}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#gitaly_timeout_medium ApplicationSettings#gitaly_timeout_medium}
 
 ---
 
@@ -12806,7 +14295,7 @@ git_rate_limit_users_allowlist: typing.List[str]
 
 List of usernames excluded from Git anti-abuse rate limits. Maximum: 100 usernames. Introduced in GitLab 15.2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#git_rate_limit_users_allowlist ApplicationSettings#git_rate_limit_users_allowlist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#git_rate_limit_users_allowlist ApplicationSettings#git_rate_limit_users_allowlist}
 
 ---
 
@@ -12820,7 +14309,7 @@ git_two_factor_session_expiry: typing.Union[int, float]
 
 Maximum duration (in minutes) of a session for Git operations when 2FA is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#git_two_factor_session_expiry ApplicationSettings#git_two_factor_session_expiry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#git_two_factor_session_expiry ApplicationSettings#git_two_factor_session_expiry}
 
 ---
 
@@ -12834,7 +14323,7 @@ grafana_enabled: typing.Union[bool, IResolvable]
 
 Enable Grafana.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#grafana_enabled ApplicationSettings#grafana_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#grafana_enabled ApplicationSettings#grafana_enabled}
 
 ---
 
@@ -12848,7 +14337,7 @@ grafana_url: str
 
 Grafana URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#grafana_url ApplicationSettings#grafana_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#grafana_url ApplicationSettings#grafana_url}
 
 ---
 
@@ -12862,7 +14351,7 @@ gravatar_enabled: typing.Union[bool, IResolvable]
 
 Enable Gravatar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#gravatar_enabled ApplicationSettings#gravatar_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#gravatar_enabled ApplicationSettings#gravatar_enabled}
 
 ---
 
@@ -12876,7 +14365,7 @@ group_owners_can_manage_default_branch_protection: typing.Union[bool, IResolvabl
 
 Prevent overrides of default branch protection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#group_owners_can_manage_default_branch_protection ApplicationSettings#group_owners_can_manage_default_branch_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#group_owners_can_manage_default_branch_protection ApplicationSettings#group_owners_can_manage_default_branch_protection}
 
 ---
 
@@ -12892,7 +14381,7 @@ Create new projects using hashed storage paths: Enable immutable, hash-based pat
 
 This prevents repositories from having to be moved or renamed when the Project URL changes and may improve disk I/O performance. (Always enabled in GitLab versions 13.0 and later, configuration is scheduled for removal in 14.0).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#hashed_storage_enabled ApplicationSettings#hashed_storage_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#hashed_storage_enabled ApplicationSettings#hashed_storage_enabled}
 
 ---
 
@@ -12906,7 +14395,7 @@ help_page_hide_commercial_content: typing.Union[bool, IResolvable]
 
 Hide marketing-related entries from help.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#help_page_hide_commercial_content ApplicationSettings#help_page_hide_commercial_content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#help_page_hide_commercial_content ApplicationSettings#help_page_hide_commercial_content}
 
 ---
 
@@ -12920,7 +14409,7 @@ help_page_support_url: str
 
 Alternate support URL for help page and help dropdown.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#help_page_support_url ApplicationSettings#help_page_support_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#help_page_support_url ApplicationSettings#help_page_support_url}
 
 ---
 
@@ -12934,7 +14423,7 @@ help_page_text: str
 
 Custom text displayed on the help page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#help_page_text ApplicationSettings#help_page_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#help_page_text ApplicationSettings#help_page_text}
 
 ---
 
@@ -12948,7 +14437,7 @@ help_text: str
 
 GitLab server administrator information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#help_text ApplicationSettings#help_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#help_text ApplicationSettings#help_text}
 
 ---
 
@@ -12962,7 +14451,7 @@ hide_third_party_offers: typing.Union[bool, IResolvable]
 
 Do not display offers from third parties in GitLab.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#hide_third_party_offers ApplicationSettings#hide_third_party_offers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#hide_third_party_offers ApplicationSettings#hide_third_party_offers}
 
 ---
 
@@ -12976,7 +14465,7 @@ home_page_url: str
 
 Redirect to this URL when not logged in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#home_page_url ApplicationSettings#home_page_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#home_page_url ApplicationSettings#home_page_url}
 
 ---
 
@@ -12993,7 +14482,7 @@ Enable or disable Git housekeeping.
 If enabled, requires either housekeeping_optimize_repository_period OR housekeeping_bitmaps_enabled, housekeeping_full_repack_period, housekeeping_gc_period, and housekeeping_incremental_repack_period.
 Options housekeeping_bitmaps_enabled, housekeeping_full_repack_period, housekeeping_gc_period, and housekeeping_incremental_repack_period are deprecated. Use housekeeping_optimize_repository_period instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#housekeeping_enabled ApplicationSettings#housekeeping_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#housekeeping_enabled ApplicationSettings#housekeeping_enabled}
 
 ---
 
@@ -13007,7 +14496,7 @@ housekeeping_full_repack_period: typing.Union[int, float]
 
 Number of Git pushes after which an incremental git repack is run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#housekeeping_full_repack_period ApplicationSettings#housekeeping_full_repack_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#housekeeping_full_repack_period ApplicationSettings#housekeeping_full_repack_period}
 
 ---
 
@@ -13021,7 +14510,7 @@ housekeeping_gc_period: typing.Union[int, float]
 
 Number of Git pushes after which git gc is run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#housekeeping_gc_period ApplicationSettings#housekeeping_gc_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#housekeeping_gc_period ApplicationSettings#housekeeping_gc_period}
 
 ---
 
@@ -13035,7 +14524,7 @@ housekeeping_incremental_repack_period: typing.Union[int, float]
 
 Number of Git pushes after which an incremental git repack is run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#housekeeping_incremental_repack_period ApplicationSettings#housekeeping_incremental_repack_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#housekeeping_incremental_repack_period ApplicationSettings#housekeeping_incremental_repack_period}
 
 ---
 
@@ -13049,7 +14538,7 @@ housekeeping_optimize_repository_period: typing.Union[int, float]
 
 Number of Git pushes after which an incremental git repack is run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#housekeeping_optimize_repository_period ApplicationSettings#housekeeping_optimize_repository_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#housekeeping_optimize_repository_period ApplicationSettings#housekeeping_optimize_repository_period}
 
 ---
 
@@ -13063,7 +14552,7 @@ html_emails_enabled: typing.Union[bool, IResolvable]
 
 Enable HTML emails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#html_emails_enabled ApplicationSettings#html_emails_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#html_emails_enabled ApplicationSettings#html_emails_enabled}
 
 ---
 
@@ -13075,7 +14564,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#id ApplicationSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#id ApplicationSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -13092,7 +14581,7 @@ import_sources: typing.List[str]
 
 Sources to allow project import from. Valid values are: `github`, `bitbucket`, `bitbucket_server`, `fogbugz`, `git`, `gitlab_project`, `gitea`, `manifest`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#import_sources ApplicationSettings#import_sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#import_sources ApplicationSettings#import_sources}
 
 ---
 
@@ -13108,7 +14597,7 @@ If delete_inactive_projects is true, the time (in months) to wait before deletin
 
 Introduced in GitLab 14.10. Became operational in GitLab 15.0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#inactive_projects_delete_after_months ApplicationSettings#inactive_projects_delete_after_months}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#inactive_projects_delete_after_months ApplicationSettings#inactive_projects_delete_after_months}
 
 ---
 
@@ -13124,7 +14613,7 @@ If delete_inactive_projects is true, the minimum repository size for projects to
 
 Introduced in GitLab 14.10. Became operational in GitLab 15.0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#inactive_projects_min_size_mb ApplicationSettings#inactive_projects_min_size_mb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#inactive_projects_min_size_mb ApplicationSettings#inactive_projects_min_size_mb}
 
 ---
 
@@ -13140,7 +14629,7 @@ If delete_inactive_projects is true, sets the time (in months) to wait before em
 
 Introduced in GitLab 14.10. Became operational in GitLab 15.0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#inactive_projects_send_warning_email_after_months ApplicationSettings#inactive_projects_send_warning_email_after_months}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#inactive_projects_send_warning_email_after_months ApplicationSettings#inactive_projects_send_warning_email_after_months}
 
 ---
 
@@ -13154,7 +14643,7 @@ in_product_marketing_emails_enabled: typing.Union[bool, IResolvable]
 
 Enable in-product marketing emails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#in_product_marketing_emails_enabled ApplicationSettings#in_product_marketing_emails_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#in_product_marketing_emails_enabled ApplicationSettings#in_product_marketing_emails_enabled}
 
 ---
 
@@ -13168,7 +14657,7 @@ invisible_captcha_enabled: typing.Union[bool, IResolvable]
 
 Enable Invisible CAPTCHA spam detection during sign-up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#invisible_captcha_enabled ApplicationSettings#invisible_captcha_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#invisible_captcha_enabled ApplicationSettings#invisible_captcha_enabled}
 
 ---
 
@@ -13182,7 +14671,7 @@ issues_create_limit: typing.Union[int, float]
 
 Max number of issue creation requests per minute per user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#issues_create_limit ApplicationSettings#issues_create_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#issues_create_limit ApplicationSettings#issues_create_limit}
 
 ---
 
@@ -13196,7 +14685,7 @@ keep_latest_artifact: typing.Union[bool, IResolvable]
 
 Prevent the deletion of the artifacts from the most recent successful jobs, regardless of the expiry time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#keep_latest_artifact ApplicationSettings#keep_latest_artifact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#keep_latest_artifact ApplicationSettings#keep_latest_artifact}
 
 ---
 
@@ -13210,7 +14699,7 @@ local_markdown_version: typing.Union[int, float]
 
 Increase this value when any cached Markdown should be invalidated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#local_markdown_version ApplicationSettings#local_markdown_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#local_markdown_version ApplicationSettings#local_markdown_version}
 
 ---
 
@@ -13224,7 +14713,7 @@ mailgun_events_enabled: typing.Union[bool, IResolvable]
 
 Enable Mailgun event receiver.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#mailgun_events_enabled ApplicationSettings#mailgun_events_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#mailgun_events_enabled ApplicationSettings#mailgun_events_enabled}
 
 ---
 
@@ -13238,7 +14727,7 @@ mailgun_signing_key: str
 
 The Mailgun HTTP webhook signing key for receiving events from webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#mailgun_signing_key ApplicationSettings#mailgun_signing_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#mailgun_signing_key ApplicationSettings#mailgun_signing_key}
 
 ---
 
@@ -13252,7 +14741,7 @@ maintenance_mode: typing.Union[bool, IResolvable]
 
 When instance is in maintenance mode, non-administrative users can sign in with read-only access and make read-only API requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#maintenance_mode ApplicationSettings#maintenance_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#maintenance_mode ApplicationSettings#maintenance_mode}
 
 ---
 
@@ -13266,7 +14755,7 @@ maintenance_mode_message: str
 
 Message displayed when instance is in maintenance mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#maintenance_mode_message ApplicationSettings#maintenance_mode_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#maintenance_mode_message ApplicationSettings#maintenance_mode_message}
 
 ---
 
@@ -13280,7 +14769,7 @@ max_artifacts_size: typing.Union[int, float]
 
 Maximum artifacts size in MB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#max_artifacts_size ApplicationSettings#max_artifacts_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#max_artifacts_size ApplicationSettings#max_artifacts_size}
 
 ---
 
@@ -13294,7 +14783,7 @@ max_attachment_size: typing.Union[int, float]
 
 Limit attachment size in MB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#max_attachment_size ApplicationSettings#max_attachment_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#max_attachment_size ApplicationSettings#max_attachment_size}
 
 ---
 
@@ -13308,7 +14797,7 @@ max_export_size: typing.Union[int, float]
 
 Maximum export size in MB. 0 for unlimited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#max_export_size ApplicationSettings#max_export_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#max_export_size ApplicationSettings#max_export_size}
 
 ---
 
@@ -13322,7 +14811,7 @@ max_import_size: typing.Union[int, float]
 
 Maximum import size in MB. 0 for unlimited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#max_import_size ApplicationSettings#max_import_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#max_import_size ApplicationSettings#max_import_size}
 
 ---
 
@@ -13338,7 +14827,7 @@ Maximum number of unique repositories a user can download in the specified time 
 
 Maximum: 10,000 repositories. Introduced in GitLab 15.1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#max_number_of_repository_downloads ApplicationSettings#max_number_of_repository_downloads}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#max_number_of_repository_downloads ApplicationSettings#max_number_of_repository_downloads}
 
 ---
 
@@ -13352,7 +14841,7 @@ max_number_of_repository_downloads_within_time_period: typing.Union[int, float]
 
 Reporting time period (in seconds). Maximum: 864000 seconds (10 days). Introduced in GitLab 15.1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#max_number_of_repository_downloads_within_time_period ApplicationSettings#max_number_of_repository_downloads_within_time_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#max_number_of_repository_downloads_within_time_period ApplicationSettings#max_number_of_repository_downloads_within_time_period}
 
 ---
 
@@ -13366,7 +14855,7 @@ max_pages_size: typing.Union[int, float]
 
 Maximum size of pages repositories in MB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#max_pages_size ApplicationSettings#max_pages_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#max_pages_size ApplicationSettings#max_pages_size}
 
 ---
 
@@ -13380,7 +14869,7 @@ max_personal_access_token_lifetime: typing.Union[int, float]
 
 Maximum allowable lifetime for access tokens in days.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#max_personal_access_token_lifetime ApplicationSettings#max_personal_access_token_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#max_personal_access_token_lifetime ApplicationSettings#max_personal_access_token_lifetime}
 
 ---
 
@@ -13394,7 +14883,7 @@ max_ssh_key_lifetime: typing.Union[int, float]
 
 Maximum allowable lifetime for SSH keys in days. Introduced in GitLab 14.6.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#max_ssh_key_lifetime ApplicationSettings#max_ssh_key_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#max_ssh_key_lifetime ApplicationSettings#max_ssh_key_lifetime}
 
 ---
 
@@ -13408,7 +14897,7 @@ max_terraform_state_size_bytes: typing.Union[int, float]
 
 Maximum size in bytes of the Terraform state files. Set this to 0 for unlimited file size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#max_terraform_state_size_bytes ApplicationSettings#max_terraform_state_size_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#max_terraform_state_size_bytes ApplicationSettings#max_terraform_state_size_bytes}
 
 ---
 
@@ -13422,7 +14911,7 @@ metrics_method_call_threshold: typing.Union[int, float]
 
 A method call is only tracked when it takes longer than the given amount of milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#metrics_method_call_threshold ApplicationSettings#metrics_method_call_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#metrics_method_call_threshold ApplicationSettings#metrics_method_call_threshold}
 
 ---
 
@@ -13436,7 +14925,7 @@ minimum_password_length: typing.Union[int, float]
 
 Indicates whether passwords require a minimum length. Introduced in GitLab 15.1. Premium and Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#minimum_password_length ApplicationSettings#minimum_password_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#minimum_password_length ApplicationSettings#minimum_password_length}
 
 ---
 
@@ -13450,7 +14939,7 @@ mirror_available: typing.Union[bool, IResolvable]
 
 Allow repository mirroring to configured by project Maintainers. If disabled, only Administrators can configure repository mirroring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#mirror_available ApplicationSettings#mirror_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#mirror_available ApplicationSettings#mirror_available}
 
 ---
 
@@ -13464,7 +14953,7 @@ mirror_capacity_threshold: typing.Union[int, float]
 
 Minimum capacity to be available before scheduling more mirrors preemptively.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#mirror_capacity_threshold ApplicationSettings#mirror_capacity_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#mirror_capacity_threshold ApplicationSettings#mirror_capacity_threshold}
 
 ---
 
@@ -13478,7 +14967,7 @@ mirror_max_capacity: typing.Union[int, float]
 
 Maximum number of mirrors that can be synchronizing at the same time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#mirror_max_capacity ApplicationSettings#mirror_max_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#mirror_max_capacity ApplicationSettings#mirror_max_capacity}
 
 ---
 
@@ -13492,7 +14981,7 @@ mirror_max_delay: typing.Union[int, float]
 
 Maximum time (in minutes) between updates that a mirror can have when scheduled to synchronize.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#mirror_max_delay ApplicationSettings#mirror_max_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#mirror_max_delay ApplicationSettings#mirror_max_delay}
 
 ---
 
@@ -13506,7 +14995,7 @@ npm_package_requests_forwarding: typing.Union[bool, IResolvable]
 
 Use npmjs.org as a default remote repository when the package is not found in the GitLab Package Registry for npm.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#npm_package_requests_forwarding ApplicationSettings#npm_package_requests_forwarding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#npm_package_requests_forwarding ApplicationSettings#npm_package_requests_forwarding}
 
 ---
 
@@ -13520,7 +15009,7 @@ outbound_local_requests_whitelist: typing.List[str]
 
 Define a list of trusted domains or IP addresses to which local requests are allowed when local requests for hooks and services are disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#outbound_local_requests_whitelist ApplicationSettings#outbound_local_requests_whitelist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#outbound_local_requests_whitelist ApplicationSettings#outbound_local_requests_whitelist}
 
 ---
 
@@ -13534,7 +15023,7 @@ package_registry_cleanup_policies_worker_capacity: typing.Union[int, float]
 
 Number of workers assigned to the packages cleanup policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#package_registry_cleanup_policies_worker_capacity ApplicationSettings#package_registry_cleanup_policies_worker_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#package_registry_cleanup_policies_worker_capacity ApplicationSettings#package_registry_cleanup_policies_worker_capacity}
 
 ---
 
@@ -13550,7 +15039,7 @@ Require users to prove ownership of custom domains.
 
 Domain verification is an essential security measure for public GitLab sites. Users are required to demonstrate they control a domain before it is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#pages_domain_verification_enabled ApplicationSettings#pages_domain_verification_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#pages_domain_verification_enabled ApplicationSettings#pages_domain_verification_enabled}
 
 ---
 
@@ -13564,7 +15053,7 @@ password_authentication_enabled_for_git: typing.Union[bool, IResolvable]
 
 Enable authentication for Git over HTTP(S) via a GitLab account password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#password_authentication_enabled_for_git ApplicationSettings#password_authentication_enabled_for_git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#password_authentication_enabled_for_git ApplicationSettings#password_authentication_enabled_for_git}
 
 ---
 
@@ -13578,7 +15067,7 @@ password_authentication_enabled_for_web: typing.Union[bool, IResolvable]
 
 Enable authentication for the web interface via a GitLab account password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#password_authentication_enabled_for_web ApplicationSettings#password_authentication_enabled_for_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#password_authentication_enabled_for_web ApplicationSettings#password_authentication_enabled_for_web}
 
 ---
 
@@ -13592,7 +15081,7 @@ password_lowercase_required: typing.Union[bool, IResolvable]
 
 Indicates whether passwords require at least one lowercase letter. Introduced in GitLab 15.1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#password_lowercase_required ApplicationSettings#password_lowercase_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#password_lowercase_required ApplicationSettings#password_lowercase_required}
 
 ---
 
@@ -13606,7 +15095,7 @@ password_number_required: typing.Union[bool, IResolvable]
 
 Indicates whether passwords require at least one number. Introduced in GitLab 15.1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#password_number_required ApplicationSettings#password_number_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#password_number_required ApplicationSettings#password_number_required}
 
 ---
 
@@ -13620,7 +15109,7 @@ password_symbol_required: typing.Union[bool, IResolvable]
 
 Indicates whether passwords require at least one symbol character. Introduced in GitLab 15.1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#password_symbol_required ApplicationSettings#password_symbol_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#password_symbol_required ApplicationSettings#password_symbol_required}
 
 ---
 
@@ -13634,7 +15123,7 @@ password_uppercase_required: typing.Union[bool, IResolvable]
 
 Indicates whether passwords require at least one uppercase letter. Introduced in GitLab 15.1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#password_uppercase_required ApplicationSettings#password_uppercase_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#password_uppercase_required ApplicationSettings#password_uppercase_required}
 
 ---
 
@@ -13648,7 +15137,7 @@ performance_bar_allowed_group_path: str
 
 Path of the group that is allowed to toggle the performance bar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#performance_bar_allowed_group_path ApplicationSettings#performance_bar_allowed_group_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#performance_bar_allowed_group_path ApplicationSettings#performance_bar_allowed_group_path}
 
 ---
 
@@ -13662,7 +15151,7 @@ personal_access_token_prefix: str
 
 Prefix for all generated personal access tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#personal_access_token_prefix ApplicationSettings#personal_access_token_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#personal_access_token_prefix ApplicationSettings#personal_access_token_prefix}
 
 ---
 
@@ -13676,7 +15165,7 @@ pipeline_limit_per_project_user_sha: typing.Union[int, float]
 
 Maximum number of pipeline creation requests per minute per user and commit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#pipeline_limit_per_project_user_sha ApplicationSettings#pipeline_limit_per_project_user_sha}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#pipeline_limit_per_project_user_sha ApplicationSettings#pipeline_limit_per_project_user_sha}
 
 ---
 
@@ -13690,7 +15179,7 @@ plantuml_enabled: typing.Union[bool, IResolvable]
 
 (If enabled, requires: plantuml_url) Enable PlantUML integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#plantuml_enabled ApplicationSettings#plantuml_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#plantuml_enabled ApplicationSettings#plantuml_enabled}
 
 ---
 
@@ -13704,7 +15193,7 @@ plantuml_url: str
 
 The PlantUML instance URL for integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#plantuml_url ApplicationSettings#plantuml_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#plantuml_url ApplicationSettings#plantuml_url}
 
 ---
 
@@ -13718,7 +15207,7 @@ polling_interval_multiplier: typing.Union[int, float]
 
 Interval multiplier used by endpoints that perform polling. Set to 0 to disable polling.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#polling_interval_multiplier ApplicationSettings#polling_interval_multiplier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#polling_interval_multiplier ApplicationSettings#polling_interval_multiplier}
 
 ---
 
@@ -13732,7 +15221,7 @@ project_export_enabled: typing.Union[bool, IResolvable]
 
 Enable project export.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#project_export_enabled ApplicationSettings#project_export_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#project_export_enabled ApplicationSettings#project_export_enabled}
 
 ---
 
@@ -13746,7 +15235,7 @@ prometheus_metrics_enabled: typing.Union[bool, IResolvable]
 
 Enable Prometheus metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#prometheus_metrics_enabled ApplicationSettings#prometheus_metrics_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#prometheus_metrics_enabled ApplicationSettings#prometheus_metrics_enabled}
 
 ---
 
@@ -13760,7 +15249,7 @@ protected_ci_variables: typing.Union[bool, IResolvable]
 
 CI/CD variables are protected by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#protected_ci_variables ApplicationSettings#protected_ci_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#protected_ci_variables ApplicationSettings#protected_ci_variables}
 
 ---
 
@@ -13776,7 +15265,7 @@ Number of changes (branches or tags) in a single push to determine whether indiv
 
 Bulk push events are created if it surpasses that value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#push_event_activities_limit ApplicationSettings#push_event_activities_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#push_event_activities_limit ApplicationSettings#push_event_activities_limit}
 
 ---
 
@@ -13792,7 +15281,7 @@ Number of changes (branches or tags) in a single push to determine whether webho
 
 Webhooks and services aren’t submitted if it surpasses that value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#push_event_hooks_limit ApplicationSettings#push_event_hooks_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#push_event_hooks_limit ApplicationSettings#push_event_hooks_limit}
 
 ---
 
@@ -13806,7 +15295,7 @@ pypi_package_requests_forwarding: typing.Union[bool, IResolvable]
 
 Use pypi.org as a default remote repository when the package is not found in the GitLab Package Registry for PyPI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#pypi_package_requests_forwarding ApplicationSettings#pypi_package_requests_forwarding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#pypi_package_requests_forwarding ApplicationSettings#pypi_package_requests_forwarding}
 
 ---
 
@@ -13822,7 +15311,7 @@ When rate limiting is enabled via the throttle_* settings, send this plain text 
 
 ‘Retry later’ is sent if this is blank.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#rate_limiting_response_text ApplicationSettings#rate_limiting_response_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#rate_limiting_response_text ApplicationSettings#rate_limiting_response_text}
 
 ---
 
@@ -13836,7 +15325,7 @@ raw_blob_request_limit: typing.Union[int, float]
 
 Max number of requests per minute for each raw path. To disable throttling set to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#raw_blob_request_limit ApplicationSettings#raw_blob_request_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#raw_blob_request_limit ApplicationSettings#raw_blob_request_limit}
 
 ---
 
@@ -13850,7 +15339,7 @@ recaptcha_enabled: typing.Union[bool, IResolvable]
 
 (If enabled, requires: recaptcha_private_key and recaptcha_site_key) Enable reCAPTCHA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#recaptcha_enabled ApplicationSettings#recaptcha_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#recaptcha_enabled ApplicationSettings#recaptcha_enabled}
 
 ---
 
@@ -13864,7 +15353,7 @@ recaptcha_private_key: str
 
 Private key for reCAPTCHA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#recaptcha_private_key ApplicationSettings#recaptcha_private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#recaptcha_private_key ApplicationSettings#recaptcha_private_key}
 
 ---
 
@@ -13878,7 +15367,7 @@ recaptcha_site_key: str
 
 Site key for reCAPTCHA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#recaptcha_site_key ApplicationSettings#recaptcha_site_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#recaptcha_site_key ApplicationSettings#recaptcha_site_key}
 
 ---
 
@@ -13892,7 +15381,7 @@ receive_max_input_size: typing.Union[int, float]
 
 Maximum push size (MB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#receive_max_input_size ApplicationSettings#receive_max_input_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#receive_max_input_size ApplicationSettings#receive_max_input_size}
 
 ---
 
@@ -13906,7 +15395,7 @@ repository_checks_enabled: typing.Union[bool, IResolvable]
 
 GitLab periodically runs git fsck in all project and wiki repositories to look for silent disk corruption issues.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#repository_checks_enabled ApplicationSettings#repository_checks_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#repository_checks_enabled ApplicationSettings#repository_checks_enabled}
 
 ---
 
@@ -13920,7 +15409,7 @@ repository_size_limit: typing.Union[int, float]
 
 Size limit per repository (MB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#repository_size_limit ApplicationSettings#repository_size_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#repository_size_limit ApplicationSettings#repository_size_limit}
 
 ---
 
@@ -13934,7 +15423,7 @@ repository_storages: typing.List[str]
 
 (GitLab 13.0 and earlier) List of names of enabled storage paths, taken from gitlab.yml. New projects are created in one of these stores, chosen at random.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#repository_storages ApplicationSettings#repository_storages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#repository_storages ApplicationSettings#repository_storages}
 
 ---
 
@@ -13948,7 +15437,7 @@ repository_storages_weighted: typing.Mapping[typing.Union[int, float]]
 
 (GitLab 13.1 and later) Hash of names of taken from gitlab.yml to weights. New projects are created in one of these stores, chosen by a weighted random selection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#repository_storages_weighted ApplicationSettings#repository_storages_weighted}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#repository_storages_weighted ApplicationSettings#repository_storages_weighted}
 
 ---
 
@@ -13962,7 +15451,7 @@ require_admin_approval_after_user_signup: typing.Union[bool, IResolvable]
 
 When enabled, any user that signs up for an account using the registration form is placed under a Pending approval state and has to be explicitly approved by an administrator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#require_admin_approval_after_user_signup ApplicationSettings#require_admin_approval_after_user_signup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#require_admin_approval_after_user_signup ApplicationSettings#require_admin_approval_after_user_signup}
 
 ---
 
@@ -13976,7 +15465,7 @@ require_two_factor_authentication: typing.Union[bool, IResolvable]
 
 (If enabled, requires: two_factor_grace_period) Require all users to set up Two-factor authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#require_two_factor_authentication ApplicationSettings#require_two_factor_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#require_two_factor_authentication ApplicationSettings#require_two_factor_authentication}
 
 ---
 
@@ -13992,7 +15481,7 @@ Selected levels cannot be used by non-Administrator users for groups, projects o
 
 Can take private, internal and public as a parameter. Null means there is no restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#restricted_visibility_levels ApplicationSettings#restricted_visibility_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#restricted_visibility_levels ApplicationSettings#restricted_visibility_levels}
 
 ---
 
@@ -14006,7 +15495,7 @@ rsa_key_restriction: typing.Union[int, float]
 
 The minimum allowed bit length of an uploaded RSA key. 0 means no restriction. -1 disables RSA keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#rsa_key_restriction ApplicationSettings#rsa_key_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#rsa_key_restriction ApplicationSettings#rsa_key_restriction}
 
 ---
 
@@ -14020,7 +15509,7 @@ search_rate_limit: typing.Union[int, float]
 
 Max number of requests per minute for performing a search while authenticated. To disable throttling set to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#search_rate_limit ApplicationSettings#search_rate_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#search_rate_limit ApplicationSettings#search_rate_limit}
 
 ---
 
@@ -14034,7 +15523,7 @@ search_rate_limit_unauthenticated: typing.Union[int, float]
 
 Max number of requests per minute for performing a search while unauthenticated. To disable throttling set to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#search_rate_limit_unauthenticated ApplicationSettings#search_rate_limit_unauthenticated}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#search_rate_limit_unauthenticated ApplicationSettings#search_rate_limit_unauthenticated}
 
 ---
 
@@ -14048,7 +15537,7 @@ send_user_confirmation_email: typing.Union[bool, IResolvable]
 
 Send confirmation email on sign-up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#send_user_confirmation_email ApplicationSettings#send_user_confirmation_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#send_user_confirmation_email ApplicationSettings#send_user_confirmation_email}
 
 ---
 
@@ -14062,7 +15551,7 @@ session_expire_delay: typing.Union[int, float]
 
 Session duration in minutes. GitLab restart is required to apply changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#session_expire_delay ApplicationSettings#session_expire_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#session_expire_delay ApplicationSettings#session_expire_delay}
 
 ---
 
@@ -14076,7 +15565,7 @@ shared_runners_enabled: typing.Union[bool, IResolvable]
 
 (If enabled, requires: shared_runners_text and shared_runners_minutes) Enable shared runners for new projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#shared_runners_enabled ApplicationSettings#shared_runners_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#shared_runners_enabled ApplicationSettings#shared_runners_enabled}
 
 ---
 
@@ -14090,7 +15579,7 @@ shared_runners_minutes: typing.Union[int, float]
 
 Set the maximum number of CI/CD minutes that a group can use on shared runners per month.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#shared_runners_minutes ApplicationSettings#shared_runners_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#shared_runners_minutes ApplicationSettings#shared_runners_minutes}
 
 ---
 
@@ -14104,7 +15593,7 @@ shared_runners_text: str
 
 Shared runners text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#shared_runners_text ApplicationSettings#shared_runners_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#shared_runners_text ApplicationSettings#shared_runners_text}
 
 ---
 
@@ -14118,7 +15607,7 @@ sidekiq_job_limiter_compression_threshold_bytes: typing.Union[int, float]
 
 The threshold in bytes at which Sidekiq jobs are compressed before being stored in Redis.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#sidekiq_job_limiter_compression_threshold_bytes ApplicationSettings#sidekiq_job_limiter_compression_threshold_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#sidekiq_job_limiter_compression_threshold_bytes ApplicationSettings#sidekiq_job_limiter_compression_threshold_bytes}
 
 ---
 
@@ -14132,7 +15621,7 @@ sidekiq_job_limiter_limit_bytes: typing.Union[int, float]
 
 The threshold in bytes at which Sidekiq jobs are rejected. 0 means do not reject any job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#sidekiq_job_limiter_limit_bytes ApplicationSettings#sidekiq_job_limiter_limit_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#sidekiq_job_limiter_limit_bytes ApplicationSettings#sidekiq_job_limiter_limit_bytes}
 
 ---
 
@@ -14146,7 +15635,7 @@ sidekiq_job_limiter_mode: str
 
 track or compress. Sets the behavior for Sidekiq job size limits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#sidekiq_job_limiter_mode ApplicationSettings#sidekiq_job_limiter_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#sidekiq_job_limiter_mode ApplicationSettings#sidekiq_job_limiter_mode}
 
 ---
 
@@ -14160,7 +15649,7 @@ sign_in_text: str
 
 Text on the login page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#sign_in_text ApplicationSettings#sign_in_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#sign_in_text ApplicationSettings#sign_in_text}
 
 ---
 
@@ -14174,7 +15663,7 @@ signup_enabled: typing.Union[bool, IResolvable]
 
 Enable registration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#signup_enabled ApplicationSettings#signup_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#signup_enabled ApplicationSettings#signup_enabled}
 
 ---
 
@@ -14188,7 +15677,7 @@ slack_app_enabled: typing.Union[bool, IResolvable]
 
 (If enabled, requires: slack_app_id, slack_app_secret and slack_app_secret) Enable Slack app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#slack_app_enabled ApplicationSettings#slack_app_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#slack_app_enabled ApplicationSettings#slack_app_enabled}
 
 ---
 
@@ -14202,7 +15691,7 @@ slack_app_id: str
 
 The app ID of the Slack-app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#slack_app_id ApplicationSettings#slack_app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#slack_app_id ApplicationSettings#slack_app_id}
 
 ---
 
@@ -14216,7 +15705,7 @@ slack_app_secret: str
 
 The app secret of the Slack-app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#slack_app_secret ApplicationSettings#slack_app_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#slack_app_secret ApplicationSettings#slack_app_secret}
 
 ---
 
@@ -14230,7 +15719,7 @@ slack_app_signing_secret: str
 
 The signing secret of the Slack-app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#slack_app_signing_secret ApplicationSettings#slack_app_signing_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#slack_app_signing_secret ApplicationSettings#slack_app_signing_secret}
 
 ---
 
@@ -14244,7 +15733,7 @@ slack_app_verification_token: str
 
 The verification token of the Slack-app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#slack_app_verification_token ApplicationSettings#slack_app_verification_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#slack_app_verification_token ApplicationSettings#slack_app_verification_token}
 
 ---
 
@@ -14258,7 +15747,7 @@ snippet_size_limit: typing.Union[int, float]
 
 Max snippet content size in bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#snippet_size_limit ApplicationSettings#snippet_size_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#snippet_size_limit ApplicationSettings#snippet_size_limit}
 
 ---
 
@@ -14272,7 +15761,7 @@ snowplow_app_id: str
 
 The Snowplow site name / application ID. (for example, gitlab).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#snowplow_app_id ApplicationSettings#snowplow_app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#snowplow_app_id ApplicationSettings#snowplow_app_id}
 
 ---
 
@@ -14286,7 +15775,7 @@ snowplow_collector_hostname: str
 
 The Snowplow collector hostname. (for example, snowplow.trx.gitlab.net).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#snowplow_collector_hostname ApplicationSettings#snowplow_collector_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#snowplow_collector_hostname ApplicationSettings#snowplow_collector_hostname}
 
 ---
 
@@ -14300,7 +15789,7 @@ snowplow_cookie_domain: str
 
 The Snowplow cookie domain. (for example, .gitlab.com).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#snowplow_cookie_domain ApplicationSettings#snowplow_cookie_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#snowplow_cookie_domain ApplicationSettings#snowplow_cookie_domain}
 
 ---
 
@@ -14314,7 +15803,7 @@ snowplow_enabled: typing.Union[bool, IResolvable]
 
 Enable snowplow tracking.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#snowplow_enabled ApplicationSettings#snowplow_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#snowplow_enabled ApplicationSettings#snowplow_enabled}
 
 ---
 
@@ -14328,7 +15817,7 @@ sourcegraph_enabled: typing.Union[bool, IResolvable]
 
 Enables Sourcegraph integration. If enabled, requires sourcegraph_url.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#sourcegraph_enabled ApplicationSettings#sourcegraph_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#sourcegraph_enabled ApplicationSettings#sourcegraph_enabled}
 
 ---
 
@@ -14342,7 +15831,7 @@ sourcegraph_public_only: typing.Union[bool, IResolvable]
 
 Blocks Sourcegraph from being loaded on private and internal projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#sourcegraph_public_only ApplicationSettings#sourcegraph_public_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#sourcegraph_public_only ApplicationSettings#sourcegraph_public_only}
 
 ---
 
@@ -14356,7 +15845,7 @@ sourcegraph_url: str
 
 The Sourcegraph instance URL for integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#sourcegraph_url ApplicationSettings#sourcegraph_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#sourcegraph_url ApplicationSettings#sourcegraph_url}
 
 ---
 
@@ -14370,7 +15859,7 @@ spam_check_api_key: str
 
 API key used by GitLab for accessing the Spam Check service endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#spam_check_api_key ApplicationSettings#spam_check_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#spam_check_api_key ApplicationSettings#spam_check_api_key}
 
 ---
 
@@ -14384,7 +15873,7 @@ spam_check_endpoint_enabled: typing.Union[bool, IResolvable]
 
 Enables spam checking using external Spam Check API endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#spam_check_endpoint_enabled ApplicationSettings#spam_check_endpoint_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#spam_check_endpoint_enabled ApplicationSettings#spam_check_endpoint_enabled}
 
 ---
 
@@ -14400,7 +15889,7 @@ URL of the external Spamcheck service endpoint.
 
 Valid URI schemes are grpc or tls. Specifying tls forces communication to be encrypted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#spam_check_endpoint_url ApplicationSettings#spam_check_endpoint_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#spam_check_endpoint_url ApplicationSettings#spam_check_endpoint_url}
 
 ---
 
@@ -14414,7 +15903,7 @@ suggest_pipeline_enabled: typing.Union[bool, IResolvable]
 
 Enable pipeline suggestion banner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#suggest_pipeline_enabled ApplicationSettings#suggest_pipeline_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#suggest_pipeline_enabled ApplicationSettings#suggest_pipeline_enabled}
 
 ---
 
@@ -14428,7 +15917,7 @@ terminal_max_session_time: typing.Union[int, float]
 
 Maximum time for web terminal websocket connection (in seconds). Set to 0 for unlimited time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#terminal_max_session_time ApplicationSettings#terminal_max_session_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#terminal_max_session_time ApplicationSettings#terminal_max_session_time}
 
 ---
 
@@ -14442,7 +15931,7 @@ terms: str
 
 (Required by: enforce_terms) Markdown content for the ToS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#terms ApplicationSettings#terms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#terms ApplicationSettings#terms}
 
 ---
 
@@ -14458,7 +15947,7 @@ throttle_authenticated_api_enabled: typing.Union[bool, IResolvable]
 
 Helps reduce request volume (for example, from crawlers or abusive bots).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_authenticated_api_enabled ApplicationSettings#throttle_authenticated_api_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_authenticated_api_enabled ApplicationSettings#throttle_authenticated_api_enabled}
 
 ---
 
@@ -14472,7 +15961,7 @@ throttle_authenticated_api_period_in_seconds: typing.Union[int, float]
 
 Rate limit period (in seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_authenticated_api_period_in_seconds ApplicationSettings#throttle_authenticated_api_period_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_authenticated_api_period_in_seconds ApplicationSettings#throttle_authenticated_api_period_in_seconds}
 
 ---
 
@@ -14486,7 +15975,7 @@ throttle_authenticated_api_requests_per_period: typing.Union[int, float]
 
 Maximum requests per period per user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_authenticated_api_requests_per_period ApplicationSettings#throttle_authenticated_api_requests_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_authenticated_api_requests_per_period ApplicationSettings#throttle_authenticated_api_requests_per_period}
 
 ---
 
@@ -14502,7 +15991,7 @@ throttle_authenticated_packages_api_enabled: typing.Union[bool, IResolvable]
 
 Helps reduce request volume (for example, from crawlers or abusive bots). View Package Registry rate limits for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_authenticated_packages_api_enabled ApplicationSettings#throttle_authenticated_packages_api_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_authenticated_packages_api_enabled ApplicationSettings#throttle_authenticated_packages_api_enabled}
 
 ---
 
@@ -14516,7 +16005,7 @@ throttle_authenticated_packages_api_period_in_seconds: typing.Union[int, float]
 
 Rate limit period (in seconds). View Package Registry rate limits for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_authenticated_packages_api_period_in_seconds ApplicationSettings#throttle_authenticated_packages_api_period_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_authenticated_packages_api_period_in_seconds ApplicationSettings#throttle_authenticated_packages_api_period_in_seconds}
 
 ---
 
@@ -14530,7 +16019,7 @@ throttle_authenticated_packages_api_requests_per_period: typing.Union[int, float
 
 Maximum requests per period per user. View Package Registry rate limits for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_authenticated_packages_api_requests_per_period ApplicationSettings#throttle_authenticated_packages_api_requests_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_authenticated_packages_api_requests_per_period ApplicationSettings#throttle_authenticated_packages_api_requests_per_period}
 
 ---
 
@@ -14546,7 +16035,7 @@ throttle_authenticated_web_enabled: typing.Union[bool, IResolvable]
 
 Helps reduce request volume (for example, from crawlers or abusive bots).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_authenticated_web_enabled ApplicationSettings#throttle_authenticated_web_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_authenticated_web_enabled ApplicationSettings#throttle_authenticated_web_enabled}
 
 ---
 
@@ -14560,7 +16049,7 @@ throttle_authenticated_web_period_in_seconds: typing.Union[int, float]
 
 Rate limit period (in seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_authenticated_web_period_in_seconds ApplicationSettings#throttle_authenticated_web_period_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_authenticated_web_period_in_seconds ApplicationSettings#throttle_authenticated_web_period_in_seconds}
 
 ---
 
@@ -14574,7 +16063,7 @@ throttle_authenticated_web_requests_per_period: typing.Union[int, float]
 
 Maximum requests per period per user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_authenticated_web_requests_per_period ApplicationSettings#throttle_authenticated_web_requests_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_authenticated_web_requests_per_period ApplicationSettings#throttle_authenticated_web_requests_per_period}
 
 ---
 
@@ -14590,7 +16079,7 @@ throttle_unauthenticated_api_enabled: typing.Union[bool, IResolvable]
 
 Helps reduce request volume (for example, from crawlers or abusive bots).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_unauthenticated_api_enabled ApplicationSettings#throttle_unauthenticated_api_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_unauthenticated_api_enabled ApplicationSettings#throttle_unauthenticated_api_enabled}
 
 ---
 
@@ -14604,7 +16093,7 @@ throttle_unauthenticated_api_period_in_seconds: typing.Union[int, float]
 
 Rate limit period in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_unauthenticated_api_period_in_seconds ApplicationSettings#throttle_unauthenticated_api_period_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_unauthenticated_api_period_in_seconds ApplicationSettings#throttle_unauthenticated_api_period_in_seconds}
 
 ---
 
@@ -14618,7 +16107,7 @@ throttle_unauthenticated_api_requests_per_period: typing.Union[int, float]
 
 Max requests per period per IP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_unauthenticated_api_requests_per_period ApplicationSettings#throttle_unauthenticated_api_requests_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_unauthenticated_api_requests_per_period ApplicationSettings#throttle_unauthenticated_api_requests_per_period}
 
 ---
 
@@ -14634,7 +16123,7 @@ throttle_unauthenticated_packages_api_enabled: typing.Union[bool, IResolvable]
 
 Helps reduce request volume (for example, from crawlers or abusive bots). View Package Registry rate limits for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_unauthenticated_packages_api_enabled ApplicationSettings#throttle_unauthenticated_packages_api_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_unauthenticated_packages_api_enabled ApplicationSettings#throttle_unauthenticated_packages_api_enabled}
 
 ---
 
@@ -14648,7 +16137,7 @@ throttle_unauthenticated_packages_api_period_in_seconds: typing.Union[int, float
 
 Rate limit period (in seconds). View Package Registry rate limits for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_unauthenticated_packages_api_period_in_seconds ApplicationSettings#throttle_unauthenticated_packages_api_period_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_unauthenticated_packages_api_period_in_seconds ApplicationSettings#throttle_unauthenticated_packages_api_period_in_seconds}
 
 ---
 
@@ -14662,7 +16151,7 @@ throttle_unauthenticated_packages_api_requests_per_period: typing.Union[int, flo
 
 Maximum requests per period per user. View Package Registry rate limits for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_unauthenticated_packages_api_requests_per_period ApplicationSettings#throttle_unauthenticated_packages_api_requests_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_unauthenticated_packages_api_requests_per_period ApplicationSettings#throttle_unauthenticated_packages_api_requests_per_period}
 
 ---
 
@@ -14678,7 +16167,7 @@ throttle_unauthenticated_web_enabled: typing.Union[bool, IResolvable]
 
 Helps reduce request volume (for example, from crawlers or abusive bots).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_unauthenticated_web_enabled ApplicationSettings#throttle_unauthenticated_web_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_unauthenticated_web_enabled ApplicationSettings#throttle_unauthenticated_web_enabled}
 
 ---
 
@@ -14692,7 +16181,7 @@ throttle_unauthenticated_web_period_in_seconds: typing.Union[int, float]
 
 Rate limit period in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_unauthenticated_web_period_in_seconds ApplicationSettings#throttle_unauthenticated_web_period_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_unauthenticated_web_period_in_seconds ApplicationSettings#throttle_unauthenticated_web_period_in_seconds}
 
 ---
 
@@ -14706,7 +16195,7 @@ throttle_unauthenticated_web_requests_per_period: typing.Union[int, float]
 
 Max requests per period per IP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#throttle_unauthenticated_web_requests_per_period ApplicationSettings#throttle_unauthenticated_web_requests_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#throttle_unauthenticated_web_requests_per_period ApplicationSettings#throttle_unauthenticated_web_requests_per_period}
 
 ---
 
@@ -14720,7 +16209,7 @@ time_tracking_limit_to_hours: typing.Union[bool, IResolvable]
 
 Limit display of time tracking units to hours.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#time_tracking_limit_to_hours ApplicationSettings#time_tracking_limit_to_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#time_tracking_limit_to_hours ApplicationSettings#time_tracking_limit_to_hours}
 
 ---
 
@@ -14734,7 +16223,7 @@ two_factor_grace_period: typing.Union[int, float]
 
 Amount of time (in hours) that users are allowed to skip forced configuration of two-factor authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#two_factor_grace_period ApplicationSettings#two_factor_grace_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#two_factor_grace_period ApplicationSettings#two_factor_grace_period}
 
 ---
 
@@ -14748,7 +16237,7 @@ unique_ips_limit_enabled: typing.Union[bool, IResolvable]
 
 (If enabled, requires: unique_ips_limit_per_user and unique_ips_limit_time_window) Limit sign in from multiple IPs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#unique_ips_limit_enabled ApplicationSettings#unique_ips_limit_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#unique_ips_limit_enabled ApplicationSettings#unique_ips_limit_enabled}
 
 ---
 
@@ -14762,7 +16251,7 @@ unique_ips_limit_per_user: typing.Union[int, float]
 
 Maximum number of IPs per user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#unique_ips_limit_per_user ApplicationSettings#unique_ips_limit_per_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#unique_ips_limit_per_user ApplicationSettings#unique_ips_limit_per_user}
 
 ---
 
@@ -14776,7 +16265,7 @@ unique_ips_limit_time_window: typing.Union[int, float]
 
 How many seconds an IP is counted towards the limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#unique_ips_limit_time_window ApplicationSettings#unique_ips_limit_time_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#unique_ips_limit_time_window ApplicationSettings#unique_ips_limit_time_window}
 
 ---
 
@@ -14790,7 +16279,7 @@ usage_ping_enabled: typing.Union[bool, IResolvable]
 
 Every week GitLab reports license usage back to GitLab, Inc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#usage_ping_enabled ApplicationSettings#usage_ping_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#usage_ping_enabled ApplicationSettings#usage_ping_enabled}
 
 ---
 
@@ -14804,7 +16293,7 @@ user_deactivation_emails_enabled: typing.Union[bool, IResolvable]
 
 Send an email to users upon account deactivation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#user_deactivation_emails_enabled ApplicationSettings#user_deactivation_emails_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#user_deactivation_emails_enabled ApplicationSettings#user_deactivation_emails_enabled}
 
 ---
 
@@ -14818,7 +16307,7 @@ user_default_external: typing.Union[bool, IResolvable]
 
 Newly registered users are external by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#user_default_external ApplicationSettings#user_default_external}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#user_default_external ApplicationSettings#user_default_external}
 
 ---
 
@@ -14832,7 +16321,7 @@ user_default_internal_regex: str
 
 Specify an email address regex pattern to identify default internal users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#user_default_internal_regex ApplicationSettings#user_default_internal_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#user_default_internal_regex ApplicationSettings#user_default_internal_regex}
 
 ---
 
@@ -14846,7 +16335,7 @@ user_oauth_applications: typing.Union[bool, IResolvable]
 
 Allow users to register any application to use GitLab as an OAuth provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#user_oauth_applications ApplicationSettings#user_oauth_applications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#user_oauth_applications ApplicationSettings#user_oauth_applications}
 
 ---
 
@@ -14860,7 +16349,7 @@ user_show_add_ssh_key_message: typing.Union[bool, IResolvable]
 
 When set to false disable the You won't be able to pull or push project code via SSH warning shown to users with no uploaded SSH key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#user_show_add_ssh_key_message ApplicationSettings#user_show_add_ssh_key_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#user_show_add_ssh_key_message ApplicationSettings#user_show_add_ssh_key_message}
 
 ---
 
@@ -14874,7 +16363,7 @@ version_check_enabled: typing.Union[bool, IResolvable]
 
 Let GitLab inform you when an update is available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#version_check_enabled ApplicationSettings#version_check_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#version_check_enabled ApplicationSettings#version_check_enabled}
 
 ---
 
@@ -14888,7 +16377,7 @@ web_ide_clientside_preview_enabled: typing.Union[bool, IResolvable]
 
 Live Preview (allow live previews of JavaScript projects in the Web IDE using CodeSandbox Live Preview).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#web_ide_clientside_preview_enabled ApplicationSettings#web_ide_clientside_preview_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#web_ide_clientside_preview_enabled ApplicationSettings#web_ide_clientside_preview_enabled}
 
 ---
 
@@ -14902,7 +16391,7 @@ whats_new_variant: str
 
 What’s new variant, possible values: all_tiers, current_tier, and disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#whats_new_variant ApplicationSettings#whats_new_variant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#whats_new_variant ApplicationSettings#whats_new_variant}
 
 ---
 
@@ -14916,7 +16405,480 @@ wiki_page_max_content_bytes: typing.Union[int, float]
 
 Maximum wiki page content size in bytes. The minimum value is 1024 bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/application_settings#wiki_page_max_content_bytes ApplicationSettings#wiki_page_max_content_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#wiki_page_max_content_bytes ApplicationSettings#wiki_page_max_content_bytes}
+
+---
+
+### ApplicationSettingsDefaultBranchProtectionDefaults <a name="ApplicationSettingsDefaultBranchProtectionDefaults" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_gitlab import application_settings
+
+applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults(
+  allowed_to_merge: typing.List[typing.Union[int, float]] = None,
+  allowed_to_push: typing.List[typing.Union[int, float]] = None,
+  allow_force_push: typing.Union[bool, IResolvable] = None,
+  developer_can_initial_push: typing.Union[bool, IResolvable] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults.property.allowedToMerge">allowed_to_merge</a></code> | <code>typing.List[typing.Union[int, float]]</code> | An array of access levels allowed to merge. Supports Developer (30) or Maintainer (40). |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults.property.allowedToPush">allowed_to_push</a></code> | <code>typing.List[typing.Union[int, float]]</code> | An array of access levels allowed to push. Supports Developer (30) or Maintainer (40). |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults.property.allowForcePush">allow_force_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow force push for all users with push access. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults.property.developerCanInitialPush">developer_can_initial_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow developers to initial push. |
+
+---
+
+##### `allowed_to_merge`<sup>Optional</sup> <a name="allowed_to_merge" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults.property.allowedToMerge"></a>
+
+```python
+allowed_to_merge: typing.List[typing.Union[int, float]]
+```
+
+- *Type:* typing.List[typing.Union[int, float]]
+
+An array of access levels allowed to merge. Supports Developer (30) or Maintainer (40).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#allowed_to_merge ApplicationSettings#allowed_to_merge}
+
+---
+
+##### `allowed_to_push`<sup>Optional</sup> <a name="allowed_to_push" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults.property.allowedToPush"></a>
+
+```python
+allowed_to_push: typing.List[typing.Union[int, float]]
+```
+
+- *Type:* typing.List[typing.Union[int, float]]
+
+An array of access levels allowed to push. Supports Developer (30) or Maintainer (40).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#allowed_to_push ApplicationSettings#allowed_to_push}
+
+---
+
+##### `allow_force_push`<sup>Optional</sup> <a name="allow_force_push" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults.property.allowForcePush"></a>
+
+```python
+allow_force_push: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Allow force push for all users with push access.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#allow_force_push ApplicationSettings#allow_force_push}
+
+---
+
+##### `developer_can_initial_push`<sup>Optional</sup> <a name="developer_can_initial_push" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults.property.developerCanInitialPush"></a>
+
+```python
+developer_can_initial_push: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Allow developers to initial push.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/application_settings#developer_can_initial_push ApplicationSettings#developer_can_initial_push}
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference <a name="ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_gitlab import application_settings
+
+applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.resetAllowedToMerge">reset_allowed_to_merge</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.resetAllowedToPush">reset_allowed_to_push</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.resetAllowForcePush">reset_allow_force_push</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.resetDeveloperCanInitialPush">reset_developer_can_initial_push</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_allowed_to_merge` <a name="reset_allowed_to_merge" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.resetAllowedToMerge"></a>
+
+```python
+def reset_allowed_to_merge() -> None
+```
+
+##### `reset_allowed_to_push` <a name="reset_allowed_to_push" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.resetAllowedToPush"></a>
+
+```python
+def reset_allowed_to_push() -> None
+```
+
+##### `reset_allow_force_push` <a name="reset_allow_force_push" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.resetAllowForcePush"></a>
+
+```python
+def reset_allow_force_push() -> None
+```
+
+##### `reset_developer_can_initial_push` <a name="reset_developer_can_initial_push" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.resetDeveloperCanInitialPush"></a>
+
+```python
+def reset_developer_can_initial_push() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowedToMergeInput">allowed_to_merge_input</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowedToPushInput">allowed_to_push_input</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowForcePushInput">allow_force_push_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.developerCanInitialPushInput">developer_can_initial_push_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowedToMerge">allowed_to_merge</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowedToPush">allowed_to_push</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowForcePush">allow_force_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.developerCanInitialPush">developer_can_initial_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults">ApplicationSettingsDefaultBranchProtectionDefaults</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `allowed_to_merge_input`<sup>Optional</sup> <a name="allowed_to_merge_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowedToMergeInput"></a>
+
+```python
+allowed_to_merge_input: typing.List[typing.Union[int, float]]
+```
+
+- *Type:* typing.List[typing.Union[int, float]]
+
+---
+
+##### `allowed_to_push_input`<sup>Optional</sup> <a name="allowed_to_push_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowedToPushInput"></a>
+
+```python
+allowed_to_push_input: typing.List[typing.Union[int, float]]
+```
+
+- *Type:* typing.List[typing.Union[int, float]]
+
+---
+
+##### `allow_force_push_input`<sup>Optional</sup> <a name="allow_force_push_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowForcePushInput"></a>
+
+```python
+allow_force_push_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `developer_can_initial_push_input`<sup>Optional</sup> <a name="developer_can_initial_push_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.developerCanInitialPushInput"></a>
+
+```python
+developer_can_initial_push_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `allowed_to_merge`<sup>Required</sup> <a name="allowed_to_merge" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowedToMerge"></a>
+
+```python
+allowed_to_merge: typing.List[typing.Union[int, float]]
+```
+
+- *Type:* typing.List[typing.Union[int, float]]
+
+---
+
+##### `allowed_to_push`<sup>Required</sup> <a name="allowed_to_push" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowedToPush"></a>
+
+```python
+allowed_to_push: typing.List[typing.Union[int, float]]
+```
+
+- *Type:* typing.List[typing.Union[int, float]]
+
+---
+
+##### `allow_force_push`<sup>Required</sup> <a name="allow_force_push" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowForcePush"></a>
+
+```python
+allow_force_push: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `developer_can_initial_push`<sup>Required</sup> <a name="developer_can_initial_push" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.developerCanInitialPush"></a>
+
+```python
+developer_can_initial_push: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: ApplicationSettingsDefaultBranchProtectionDefaults
+```
+
+- *Type:* <a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults">ApplicationSettingsDefaultBranchProtectionDefaults</a>
 
 ---
 

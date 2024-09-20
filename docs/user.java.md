@@ -4,7 +4,7 @@
 
 ### User <a name="User" id="@cdktf/provider-gitlab.user.User"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user gitlab_user}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user gitlab_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.user.User.Initializer"></a>
 
@@ -28,6 +28,8 @@ User.Builder.create(Construct scope, java.lang.String id)
     .username(java.lang.String)
 //  .canCreateGroup(java.lang.Boolean)
 //  .canCreateGroup(IResolvable)
+//  .externalProvider(java.lang.String)
+//  .externUid(java.lang.String)
 //  .id(java.lang.String)
 //  .isAdmin(java.lang.Boolean)
 //  .isAdmin(IResolvable)
@@ -60,7 +62,9 @@ User.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the user. |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.username">username</a></code> | <code>java.lang.String</code> | The username of the user. |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.canCreateGroup">canCreateGroup</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean, defaults to false. Whether to allow the user to create groups. |
-| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#id User#id}. |
+| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.externalProvider">externalProvider</a></code> | <code>java.lang.String</code> | String, the external provider. |
+| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.externUid">externUid</a></code> | <code>java.lang.String</code> | String, a specific external authentication provider UID. |
+| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#id User#id}. |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.isAdmin">isAdmin</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean, defaults to false.  Whether to enable administrative privileges. |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.isExternal">isExternal</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean, defaults to false. |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.namespaceId">namespaceId</a></code> | <code>java.lang.Number</code> | The ID of the user's namespace. Available since GitLab 14.10. |
@@ -139,7 +143,7 @@ Must be unique amongst siblings in the same scope
 
 The e-mail address of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#email User#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#email User#email}
 
 ---
 
@@ -149,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The name of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#name User#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#name User#name}
 
 ---
 
@@ -159,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The username of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#username User#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#username User#username}
 
 ---
 
@@ -169,7 +173,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Boolean, defaults to false. Whether to allow the user to create groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#can_create_group User#can_create_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#can_create_group User#can_create_group}
+
+---
+
+##### `externalProvider`<sup>Optional</sup> <a name="externalProvider" id="@cdktf/provider-gitlab.user.User.Initializer.parameter.externalProvider"></a>
+
+- *Type:* java.lang.String
+
+String, the external provider.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#external_provider User#external_provider}
+
+---
+
+##### `externUid`<sup>Optional</sup> <a name="externUid" id="@cdktf/provider-gitlab.user.User.Initializer.parameter.externUid"></a>
+
+- *Type:* java.lang.String
+
+String, a specific external authentication provider UID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#extern_uid User#extern_uid}
 
 ---
 
@@ -177,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#id User#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#id User#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -190,7 +214,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Boolean, defaults to false.  Whether to enable administrative privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#is_admin User#is_admin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#is_admin User#is_admin}
 
 ---
 
@@ -202,7 +226,7 @@ Boolean, defaults to false.
 
 Whether a user has access only to some internal or private projects. External users can only access projects to which they are explicitly granted access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#is_external User#is_external}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#is_external User#is_external}
 
 ---
 
@@ -212,7 +236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The ID of the user's namespace. Available since GitLab 14.10.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#namespace_id User#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#namespace_id User#namespace_id}
 
 ---
 
@@ -222,7 +246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The note associated to the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#note User#note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#note User#note}
 
 ---
 
@@ -232,7 +256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The password of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#password User#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#password User#password}
 
 ---
 
@@ -242,7 +266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Integer, defaults to 0.  Number of projects user can create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#projects_limit User#projects_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#projects_limit User#projects_limit}
 
 ---
 
@@ -252,7 +276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Boolean, defaults to false. Send user password reset link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#reset_password User#reset_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#reset_password User#reset_password}
 
 ---
 
@@ -262,7 +286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Boolean, defaults to true. Whether to skip confirmation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#skip_confirmation User#skip_confirmation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#skip_confirmation User#skip_confirmation}
 
 ---
 
@@ -272,7 +296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 String, defaults to 'active'. The state of the user account. Valid values are `active`, `deactivated`, `blocked`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#state User#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#state User#state}
 
 ---
 
@@ -304,6 +328,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.user.User.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-gitlab.user.User.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-gitlab.user.User.resetCanCreateGroup">resetCanCreateGroup</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.resetExternalProvider">resetExternalProvider</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.resetExternUid">resetExternUid</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.resetIsAdmin">resetIsAdmin</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.resetIsExternal">resetIsExternal</a></code> | *No description.* |
@@ -613,6 +639,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public void resetCanCreateGroup()
 ```
 
+##### `resetExternalProvider` <a name="resetExternalProvider" id="@cdktf/provider-gitlab.user.User.resetExternalProvider"></a>
+
+```java
+public void resetExternalProvider()
+```
+
+##### `resetExternUid` <a name="resetExternUid" id="@cdktf/provider-gitlab.user.User.resetExternUid"></a>
+
+```java
+public void resetExternUid()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-gitlab.user.User.resetId"></a>
 
 ```java
@@ -776,7 +814,7 @@ The construct id used in the generated config for the User to import.
 
 The id of the existing User that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -808,6 +846,8 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.canCreateGroupInput">canCreateGroupInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.emailInput">emailInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.externalProviderInput">externalProviderInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.externUidInput">externUidInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.isAdminInput">isAdminInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.isExternalInput">isExternalInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
@@ -822,6 +862,8 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.usernameInput">usernameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.canCreateGroup">canCreateGroup</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.email">email</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.externalProvider">externalProvider</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.externUid">externUid</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.isAdmin">isAdmin</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.isExternal">isExternal</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
@@ -999,6 +1041,26 @@ public java.lang.String getEmailInput();
 
 ---
 
+##### `externalProviderInput`<sup>Optional</sup> <a name="externalProviderInput" id="@cdktf/provider-gitlab.user.User.property.externalProviderInput"></a>
+
+```java
+public java.lang.String getExternalProviderInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `externUidInput`<sup>Optional</sup> <a name="externUidInput" id="@cdktf/provider-gitlab.user.User.property.externUidInput"></a>
+
+```java
+public java.lang.String getExternUidInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-gitlab.user.User.property.idInput"></a>
 
 ```java
@@ -1133,6 +1195,26 @@ public java.lang.Object getCanCreateGroup();
 
 ```java
 public java.lang.String getEmail();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `externalProvider`<sup>Required</sup> <a name="externalProvider" id="@cdktf/provider-gitlab.user.User.property.externalProvider"></a>
+
+```java
+public java.lang.String getExternalProvider();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `externUid`<sup>Required</sup> <a name="externUid" id="@cdktf/provider-gitlab.user.User.property.externUid"></a>
+
+```java
+public java.lang.String getExternUid();
 ```
 
 - *Type:* java.lang.String
@@ -1303,6 +1385,8 @@ UserConfig.builder()
     .username(java.lang.String)
 //  .canCreateGroup(java.lang.Boolean)
 //  .canCreateGroup(IResolvable)
+//  .externalProvider(java.lang.String)
+//  .externUid(java.lang.String)
 //  .id(java.lang.String)
 //  .isAdmin(java.lang.Boolean)
 //  .isAdmin(IResolvable)
@@ -1335,7 +1419,9 @@ UserConfig.builder()
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the user. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.username">username</a></code> | <code>java.lang.String</code> | The username of the user. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.canCreateGroup">canCreateGroup</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean, defaults to false. Whether to allow the user to create groups. |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#id User#id}. |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.externalProvider">externalProvider</a></code> | <code>java.lang.String</code> | String, the external provider. |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.externUid">externUid</a></code> | <code>java.lang.String</code> | String, a specific external authentication provider UID. |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#id User#id}. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.isAdmin">isAdmin</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean, defaults to false.  Whether to enable administrative privileges. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.isExternal">isExternal</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean, defaults to false. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.namespaceId">namespaceId</a></code> | <code>java.lang.Number</code> | The ID of the user's namespace. Available since GitLab 14.10. |
@@ -1428,7 +1514,7 @@ public java.lang.String getEmail();
 
 The e-mail address of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#email User#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#email User#email}
 
 ---
 
@@ -1442,7 +1528,7 @@ public java.lang.String getName();
 
 The name of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#name User#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#name User#name}
 
 ---
 
@@ -1456,7 +1542,7 @@ public java.lang.String getUsername();
 
 The username of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#username User#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#username User#username}
 
 ---
 
@@ -1470,7 +1556,35 @@ public java.lang.Object getCanCreateGroup();
 
 Boolean, defaults to false. Whether to allow the user to create groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#can_create_group User#can_create_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#can_create_group User#can_create_group}
+
+---
+
+##### `externalProvider`<sup>Optional</sup> <a name="externalProvider" id="@cdktf/provider-gitlab.user.UserConfig.property.externalProvider"></a>
+
+```java
+public java.lang.String getExternalProvider();
+```
+
+- *Type:* java.lang.String
+
+String, the external provider.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#external_provider User#external_provider}
+
+---
+
+##### `externUid`<sup>Optional</sup> <a name="externUid" id="@cdktf/provider-gitlab.user.UserConfig.property.externUid"></a>
+
+```java
+public java.lang.String getExternUid();
+```
+
+- *Type:* java.lang.String
+
+String, a specific external authentication provider UID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#extern_uid User#extern_uid}
 
 ---
 
@@ -1482,7 +1596,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#id User#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#id User#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1499,7 +1613,7 @@ public java.lang.Object getIsAdmin();
 
 Boolean, defaults to false.  Whether to enable administrative privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#is_admin User#is_admin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#is_admin User#is_admin}
 
 ---
 
@@ -1515,7 +1629,7 @@ Boolean, defaults to false.
 
 Whether a user has access only to some internal or private projects. External users can only access projects to which they are explicitly granted access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#is_external User#is_external}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#is_external User#is_external}
 
 ---
 
@@ -1529,7 +1643,7 @@ public java.lang.Number getNamespaceId();
 
 The ID of the user's namespace. Available since GitLab 14.10.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#namespace_id User#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#namespace_id User#namespace_id}
 
 ---
 
@@ -1543,7 +1657,7 @@ public java.lang.String getNote();
 
 The note associated to the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#note User#note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#note User#note}
 
 ---
 
@@ -1557,7 +1671,7 @@ public java.lang.String getPassword();
 
 The password of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#password User#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#password User#password}
 
 ---
 
@@ -1571,7 +1685,7 @@ public java.lang.Number getProjectsLimit();
 
 Integer, defaults to 0.  Number of projects user can create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#projects_limit User#projects_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#projects_limit User#projects_limit}
 
 ---
 
@@ -1585,7 +1699,7 @@ public java.lang.Object getResetPassword();
 
 Boolean, defaults to false. Send user password reset link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#reset_password User#reset_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#reset_password User#reset_password}
 
 ---
 
@@ -1599,7 +1713,7 @@ public java.lang.Object getSkipConfirmation();
 
 Boolean, defaults to true. Whether to skip confirmation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#skip_confirmation User#skip_confirmation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#skip_confirmation User#skip_confirmation}
 
 ---
 
@@ -1613,7 +1727,7 @@ public java.lang.String getState();
 
 String, defaults to 'active'. The state of the user account. Valid values are `active`, `deactivated`, `blocked`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/user#state User#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/user#state User#state}
 
 ---
 

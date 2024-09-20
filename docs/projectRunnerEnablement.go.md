@@ -4,12 +4,12 @@
 
 ### ProjectRunnerEnablement <a name="ProjectRunnerEnablement" id="@cdktf/provider-gitlab.projectRunnerEnablement.ProjectRunnerEnablement"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_runner_enablement gitlab_project_runner_enablement}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_runner_enablement gitlab_project_runner_enablement}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectRunnerEnablement.ProjectRunnerEnablement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectrunnerenablement"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectrunnerenablement"
 
 projectrunnerenablement.NewProjectRunnerEnablement(scope Construct, id *string, config ProjectRunnerEnablementConfig) ProjectRunnerEnablement
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectRunnerEnablement.ProjectRunnerEnablement.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectrunnerenablement"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectrunnerenablement"
 
 projectrunnerenablement.ProjectRunnerEnablement_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectRunnerEnablement.ProjectRunnerEnablement.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectrunnerenablement"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectrunnerenablement"
 
 projectrunnerenablement.ProjectRunnerEnablement_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ projectrunnerenablement.ProjectRunnerEnablement_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectRunnerEnablement.ProjectRunnerEnablement.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectrunnerenablement"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectrunnerenablement"
 
 projectrunnerenablement.ProjectRunnerEnablement_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ projectrunnerenablement.ProjectRunnerEnablement_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectRunnerEnablement.ProjectRunnerEnablement.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectrunnerenablement"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectrunnerenablement"
 
 projectrunnerenablement.ProjectRunnerEnablement_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the ProjectRunnerEnablement to
 
 The id of the existing ProjectRunnerEnablement that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_runner_enablement#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_runner_enablement#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectRunnerEnablement.ProjectRunnerEnablementConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectrunnerenablement"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectrunnerenablement"
 
 &projectrunnerenablement.ProjectRunnerEnablementConfig {
 	Connection: interface{},
@@ -769,7 +769,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectrunnerenable
 | <code><a href="#@cdktf/provider-gitlab.projectRunnerEnablement.ProjectRunnerEnablementConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectRunnerEnablement.ProjectRunnerEnablementConfig.property.project">Project</a></code> | <code>*string</code> | The ID or URL-encoded path of the project owned by the authenticated user. |
 | <code><a href="#@cdktf/provider-gitlab.projectRunnerEnablement.ProjectRunnerEnablementConfig.property.runnerId">RunnerId</a></code> | <code>*f64</code> | The ID of a runner to enable for the project. |
-| <code><a href="#@cdktf/provider-gitlab.projectRunnerEnablement.ProjectRunnerEnablementConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_runner_enablement#id ProjectRunnerEnablement#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectRunnerEnablement.ProjectRunnerEnablementConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_runner_enablement#id ProjectRunnerEnablement#id}. |
 
 ---
 
@@ -853,7 +853,7 @@ Project *string
 
 The ID or URL-encoded path of the project owned by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_runner_enablement#project ProjectRunnerEnablement#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_runner_enablement#project ProjectRunnerEnablement#project}
 
 ---
 
@@ -867,7 +867,7 @@ RunnerId *f64
 
 The ID of a runner to enable for the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_runner_enablement#runner_id ProjectRunnerEnablement#runner_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_runner_enablement#runner_id ProjectRunnerEnablement#runner_id}
 
 ---
 
@@ -879,7 +879,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_runner_enablement#id ProjectRunnerEnablement#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_runner_enablement#id ProjectRunnerEnablement#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

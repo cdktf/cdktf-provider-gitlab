@@ -4,7 +4,7 @@
 
 ### DataGitlabGroupIds <a name="DataGitlabGroupIds" id="@cdktf/provider-gitlab.dataGitlabGroupIds.DataGitlabGroupIds"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/group_ids gitlab_group_ids}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/group_ids gitlab_group_ids}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupIds.DataGitlabGroupIds.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The ID or URL-encoded path of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/group_ids#group DataGitlabGroupIds#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/group_ids#group DataGitlabGroupIds#group}
 
 ---
 
@@ -431,7 +431,7 @@ The construct id used in the generated config for the DataGitlabGroupIds to impo
 
 The id of the existing DataGitlabGroupIds that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/group_ids#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/group_ids#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -788,7 +788,7 @@ public java.lang.String getGroup();
 
 The ID or URL-encoded path of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/data-sources/group_ids#group DataGitlabGroupIds#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/group_ids#group DataGitlabGroupIds#group}
 
 ---
 

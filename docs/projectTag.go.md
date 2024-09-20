@@ -4,12 +4,12 @@
 
 ### ProjectTag <a name="ProjectTag" id="@cdktf/provider-gitlab.projectTag.ProjectTag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_tag gitlab_project_tag}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_tag gitlab_project_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectTag.ProjectTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projecttag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projecttag"
 
 projecttag.NewProjectTag(scope Construct, id *string, config ProjectTagConfig) ProjectTag
 ```
@@ -392,7 +392,7 @@ func ResetMessage()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectTag.ProjectTag.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projecttag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projecttag"
 
 projecttag.ProjectTag_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectTag.ProjectTag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projecttag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projecttag"
 
 projecttag.ProjectTag_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ projecttag.ProjectTag_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectTag.ProjectTag.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projecttag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projecttag"
 
 projecttag.ProjectTag_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ projecttag.ProjectTag_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectTag.ProjectTag.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projecttag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projecttag"
 
 projecttag.ProjectTag_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the ProjectTag to import.
 
 The id of the existing ProjectTag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_tag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_tag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -835,7 +835,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectTag.ProjectTagCommit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projecttag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projecttag"
 
 &projecttag.ProjectTagCommit {
 
@@ -848,7 +848,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projecttag"
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectTag.ProjectTagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projecttag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projecttag"
 
 &projecttag.ProjectTagConfig {
 	Connection: interface{},
@@ -880,7 +880,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projecttag"
 | <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTagConfig.property.name">Name</a></code> | <code>*string</code> | The name of a tag. |
 | <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTagConfig.property.project">Project</a></code> | <code>*string</code> | The ID or URL-encoded path of the project owned by the authenticated user. |
 | <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTagConfig.property.ref">Ref</a></code> | <code>*string</code> | Create tag using commit SHA, another tag name, or branch name. This attribute is not available for imported resources. |
-| <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_tag#id ProjectTag#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_tag#id ProjectTag#id}. |
 | <code><a href="#@cdktf/provider-gitlab.projectTag.ProjectTagConfig.property.message">Message</a></code> | <code>*string</code> | The message of the annotated tag. |
 
 ---
@@ -965,7 +965,7 @@ Name *string
 
 The name of a tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_tag#name ProjectTag#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_tag#name ProjectTag#name}
 
 ---
 
@@ -979,7 +979,7 @@ Project *string
 
 The ID or URL-encoded path of the project owned by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_tag#project ProjectTag#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_tag#project ProjectTag#project}
 
 ---
 
@@ -993,7 +993,7 @@ Ref *string
 
 Create tag using commit SHA, another tag name, or branch name. This attribute is not available for imported resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_tag#ref ProjectTag#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_tag#ref ProjectTag#ref}
 
 ---
 
@@ -1005,7 +1005,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_tag#id ProjectTag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_tag#id ProjectTag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1022,7 +1022,7 @@ Message *string
 
 The message of the annotated tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.3.1/docs/resources/project_tag#message ProjectTag#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_tag#message ProjectTag#message}
 
 ---
 
@@ -1031,7 +1031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectTag.ProjectTagRelease.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projecttag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projecttag"
 
 &projecttag.ProjectTagRelease {
 
@@ -1046,7 +1046,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projecttag"
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectTag.ProjectTagCommitList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projecttag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projecttag"
 
 projecttag.NewProjectTagCommitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProjectTagCommitList
 ```
@@ -1195,7 +1195,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectTag.ProjectTagCommitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projecttag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projecttag"
 
 projecttag.NewProjectTagCommitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProjectTagCommitOutputReference
 ```
@@ -1583,7 +1583,7 @@ func InternalValue() ProjectTagCommit
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectTag.ProjectTagReleaseList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projecttag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projecttag"
 
 projecttag.NewProjectTagReleaseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProjectTagReleaseList
 ```
@@ -1732,7 +1732,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectTag.ProjectTagReleaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projecttag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projecttag"
 
 projecttag.NewProjectTagReleaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProjectTagReleaseOutputReference
 ```
