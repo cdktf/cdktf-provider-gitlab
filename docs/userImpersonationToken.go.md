@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/userimpersonationtoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/userimpersonationtoken"
 
 userimpersonationtoken.NewUserImpersonationToken(scope Construct, id *string, config UserImpersonationTokenConfig) UserImpersonationToken
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/userimpersonationtoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/userimpersonationtoken"
 
 userimpersonationtoken.UserImpersonationToken_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/userimpersonationtoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/userimpersonationtoken"
 
 userimpersonationtoken.UserImpersonationToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ userimpersonationtoken.UserImpersonationToken_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/userimpersonationtoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/userimpersonationtoken"
 
 userimpersonationtoken.UserImpersonationToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ userimpersonationtoken.UserImpersonationToken_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/userimpersonationtoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/userimpersonationtoken"
 
 userimpersonationtoken.UserImpersonationToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -832,7 +832,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/userimpersonationtoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/userimpersonationtoken"
 
 &userimpersonationtoken.UserImpersonationTokenConfig {
 	Connection: interface{},
