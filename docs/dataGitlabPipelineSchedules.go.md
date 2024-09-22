@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabPipelineSchedules.DataGitlabPipelineSchedules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabpipelineschedules"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabpipelineschedules"
 
 datagitlabpipelineschedules.NewDataGitlabPipelineSchedules(scope Construct, id *string, config DataGitlabPipelineSchedulesConfig) DataGitlabPipelineSchedules
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabPipelineSchedules.DataGitlabPipelineSchedules.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabpipelineschedules"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabpipelineschedules"
 
 datagitlabpipelineschedules.DataGitlabPipelineSchedules_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabPipelineSchedules.DataGitlabPipelineSchedules.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabpipelineschedules"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabpipelineschedules"
 
 datagitlabpipelineschedules.DataGitlabPipelineSchedules_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datagitlabpipelineschedules.DataGitlabPipelineSchedules_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabPipelineSchedules.DataGitlabPipelineSchedules.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabpipelineschedules"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabpipelineschedules"
 
 datagitlabpipelineschedules.DataGitlabPipelineSchedules_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagitlabpipelineschedules.DataGitlabPipelineSchedules_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabPipelineSchedules.DataGitlabPipelineSchedules.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabpipelineschedules"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabpipelineschedules"
 
 datagitlabpipelineschedules.DataGitlabPipelineSchedules_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -587,7 +587,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabPipelineSchedules.DataGitlabPipelineSchedulesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabpipelineschedules"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabpipelineschedules"
 
 &datagitlabpipelineschedules.DataGitlabPipelineSchedulesConfig {
 	Connection: interface{},
@@ -705,7 +705,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabPipelineSchedules.DataGitlabPipelineSchedulesPipelineSchedules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabpipelineschedules"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabpipelineschedules"
 
 &datagitlabpipelineschedules.DataGitlabPipelineSchedulesPipelineSchedules {
 	Id: *string,
@@ -758,7 +758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabPipelineSchedules.DataGitlabPipelineSchedulesPipelineSchedulesOwner.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabpipelineschedules"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabpipelineschedules"
 
 &datagitlabpipelineschedules.DataGitlabPipelineSchedulesPipelineSchedulesOwner {
 
@@ -773,7 +773,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabpipelinesched
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabPipelineSchedules.DataGitlabPipelineSchedulesPipelineSchedulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabpipelineschedules"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabpipelineschedules"
 
 datagitlabpipelineschedules.NewDataGitlabPipelineSchedulesPipelineSchedulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabPipelineSchedulesPipelineSchedulesList
 ```
@@ -933,7 +933,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabPipelineSchedules.DataGitlabPipelineSchedulesPipelineSchedulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabpipelineschedules"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabpipelineschedules"
 
 datagitlabpipelineschedules.NewDataGitlabPipelineSchedulesPipelineSchedulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabPipelineSchedulesPipelineSchedulesOutputReference
 ```
@@ -1339,7 +1339,7 @@ func InternalValue() DataGitlabPipelineSchedulesPipelineSchedules
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabPipelineSchedules.DataGitlabPipelineSchedulesPipelineSchedulesOwnerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabpipelineschedules"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabpipelineschedules"
 
 datagitlabpipelineschedules.NewDataGitlabPipelineSchedulesPipelineSchedulesOwnerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataGitlabPipelineSchedulesPipelineSchedulesOwnerOutputReference
 ```
