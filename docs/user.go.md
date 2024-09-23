@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.user.User.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/user"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/user"
 
 user.NewUser(scope Construct, id *string, config UserConfig) User
 ```
@@ -469,7 +469,7 @@ func ResetTfPassword()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.user.User.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/user"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/user"
 
 user.User_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.user.User.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/user"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/user"
 
 user.User_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ user.User_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.user.User.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/user"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/user"
 
 user.User_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ user.User_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.user.User.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/user"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/user"
 
 user.User_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1110,7 +1110,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.user.UserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/user"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/user"
 
 &user.UserConfig {
 	Connection: interface{},
