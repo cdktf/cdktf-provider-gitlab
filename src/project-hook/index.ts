@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_hook
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_hook
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,122 +15,115 @@ export interface ProjectHookConfig extends cdktf.TerraformMetaArguments {
   /**
   * Invoke the hook for confidential issues events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_hook#confidential_issues_events ProjectHook#confidential_issues_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_hook#confidential_issues_events ProjectHook#confidential_issues_events}
   */
   readonly confidentialIssuesEvents?: boolean | cdktf.IResolvable;
   /**
-  * Invoke the hook for confidential notes events.
+  * Invoke the hook for confidential note events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_hook#confidential_note_events ProjectHook#confidential_note_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_hook#confidential_note_events ProjectHook#confidential_note_events}
   */
   readonly confidentialNoteEvents?: boolean | cdktf.IResolvable;
   /**
-  * Set a custom webhook template.
+  * Custom webhook template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_hook#custom_webhook_template ProjectHook#custom_webhook_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_hook#custom_webhook_template ProjectHook#custom_webhook_template}
   */
   readonly customWebhookTemplate?: string;
   /**
   * Invoke the hook for deployment events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_hook#deployment_events ProjectHook#deployment_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_hook#deployment_events ProjectHook#deployment_events}
   */
   readonly deploymentEvents?: boolean | cdktf.IResolvable;
   /**
-  * Enable ssl verification when invoking the hook.
+  * Enable SSL verification when invoking the hook.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_hook#enable_ssl_verification ProjectHook#enable_ssl_verification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_hook#enable_ssl_verification ProjectHook#enable_ssl_verification}
   */
   readonly enableSslVerification?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_hook#id ProjectHook#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * Invoke the hook for issues events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_hook#issues_events ProjectHook#issues_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_hook#issues_events ProjectHook#issues_events}
   */
   readonly issuesEvents?: boolean | cdktf.IResolvable;
   /**
   * Invoke the hook for job events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_hook#job_events ProjectHook#job_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_hook#job_events ProjectHook#job_events}
   */
   readonly jobEvents?: boolean | cdktf.IResolvable;
   /**
-  * Invoke the hook for merge requests.
+  * Invoke the hook for merge requests events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_hook#merge_requests_events ProjectHook#merge_requests_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_hook#merge_requests_events ProjectHook#merge_requests_events}
   */
   readonly mergeRequestsEvents?: boolean | cdktf.IResolvable;
   /**
-  * Invoke the hook for notes events.
+  * Invoke the hook for note events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_hook#note_events ProjectHook#note_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_hook#note_events ProjectHook#note_events}
   */
   readonly noteEvents?: boolean | cdktf.IResolvable;
   /**
   * Invoke the hook for pipeline events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_hook#pipeline_events ProjectHook#pipeline_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_hook#pipeline_events ProjectHook#pipeline_events}
   */
   readonly pipelineEvents?: boolean | cdktf.IResolvable;
   /**
   * The name or id of the project to add the hook to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_hook#project ProjectHook#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_hook#project ProjectHook#project}
   */
   readonly project: string;
   /**
   * Invoke the hook for push events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_hook#push_events ProjectHook#push_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_hook#push_events ProjectHook#push_events}
   */
   readonly pushEvents?: boolean | cdktf.IResolvable;
   /**
   * Invoke the hook for push events on matching branches only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_hook#push_events_branch_filter ProjectHook#push_events_branch_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_hook#push_events_branch_filter ProjectHook#push_events_branch_filter}
   */
   readonly pushEventsBranchFilter?: string;
   /**
-  * Invoke the hook for releases events.
+  * Invoke the hook for release events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_hook#releases_events ProjectHook#releases_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_hook#releases_events ProjectHook#releases_events}
   */
   readonly releasesEvents?: boolean | cdktf.IResolvable;
   /**
   * Invoke the hook for tag push events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_hook#tag_push_events ProjectHook#tag_push_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_hook#tag_push_events ProjectHook#tag_push_events}
   */
   readonly tagPushEvents?: boolean | cdktf.IResolvable;
   /**
   * A token to present when invoking the hook. The token is not available for imported resources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_hook#token ProjectHook#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_hook#token ProjectHook#token}
   */
   readonly token?: string;
   /**
   * The url of the hook to invoke. Forces re-creation to preserve `token`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_hook#url ProjectHook#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_hook#url ProjectHook#url}
   */
   readonly url: string;
   /**
   * Invoke the hook for wiki page events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_hook#wiki_page_events ProjectHook#wiki_page_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_hook#wiki_page_events ProjectHook#wiki_page_events}
   */
   readonly wikiPageEvents?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_hook gitlab_project_hook}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_hook gitlab_project_hook}
 */
 export class ProjectHook extends cdktf.TerraformResource {
 
@@ -146,7 +139,7 @@ export class ProjectHook extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ProjectHook resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProjectHook to import
-  * @param importFromId The id of the existing ProjectHook that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_hook#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ProjectHook that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_hook#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProjectHook to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -158,7 +151,7 @@ export class ProjectHook extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/project_hook gitlab_project_hook} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_hook gitlab_project_hook} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -169,7 +162,7 @@ export class ProjectHook extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_hook',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.4.0',
+        providerVersion: '17.5.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,
@@ -185,7 +178,6 @@ export class ProjectHook extends cdktf.TerraformResource {
     this._customWebhookTemplate = config.customWebhookTemplate;
     this._deploymentEvents = config.deploymentEvents;
     this._enableSslVerification = config.enableSslVerification;
-    this._id = config.id;
     this._issuesEvents = config.issuesEvents;
     this._jobEvents = config.jobEvents;
     this._mergeRequestsEvents = config.mergeRequestsEvents;
@@ -205,7 +197,7 @@ export class ProjectHook extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // confidential_issues_events - computed: false, optional: true, required: false
+  // confidential_issues_events - computed: true, optional: true, required: false
   private _confidentialIssuesEvents?: boolean | cdktf.IResolvable; 
   public get confidentialIssuesEvents() {
     return this.getBooleanAttribute('confidential_issues_events');
@@ -221,7 +213,7 @@ export class ProjectHook extends cdktf.TerraformResource {
     return this._confidentialIssuesEvents;
   }
 
-  // confidential_note_events - computed: false, optional: true, required: false
+  // confidential_note_events - computed: true, optional: true, required: false
   private _confidentialNoteEvents?: boolean | cdktf.IResolvable; 
   public get confidentialNoteEvents() {
     return this.getBooleanAttribute('confidential_note_events');
@@ -237,7 +229,7 @@ export class ProjectHook extends cdktf.TerraformResource {
     return this._confidentialNoteEvents;
   }
 
-  // custom_webhook_template - computed: false, optional: true, required: false
+  // custom_webhook_template - computed: true, optional: true, required: false
   private _customWebhookTemplate?: string; 
   public get customWebhookTemplate() {
     return this.getStringAttribute('custom_webhook_template');
@@ -253,7 +245,7 @@ export class ProjectHook extends cdktf.TerraformResource {
     return this._customWebhookTemplate;
   }
 
-  // deployment_events - computed: false, optional: true, required: false
+  // deployment_events - computed: true, optional: true, required: false
   private _deploymentEvents?: boolean | cdktf.IResolvable; 
   public get deploymentEvents() {
     return this.getBooleanAttribute('deployment_events');
@@ -269,7 +261,7 @@ export class ProjectHook extends cdktf.TerraformResource {
     return this._deploymentEvents;
   }
 
-  // enable_ssl_verification - computed: false, optional: true, required: false
+  // enable_ssl_verification - computed: true, optional: true, required: false
   private _enableSslVerification?: boolean | cdktf.IResolvable; 
   public get enableSslVerification() {
     return this.getBooleanAttribute('enable_ssl_verification');
@@ -290,23 +282,12 @@ export class ProjectHook extends cdktf.TerraformResource {
     return this.getNumberAttribute('hook_id');
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
-  }
 
-  // issues_events - computed: false, optional: true, required: false
+  // issues_events - computed: true, optional: true, required: false
   private _issuesEvents?: boolean | cdktf.IResolvable; 
   public get issuesEvents() {
     return this.getBooleanAttribute('issues_events');
@@ -322,7 +303,7 @@ export class ProjectHook extends cdktf.TerraformResource {
     return this._issuesEvents;
   }
 
-  // job_events - computed: false, optional: true, required: false
+  // job_events - computed: true, optional: true, required: false
   private _jobEvents?: boolean | cdktf.IResolvable; 
   public get jobEvents() {
     return this.getBooleanAttribute('job_events');
@@ -338,7 +319,7 @@ export class ProjectHook extends cdktf.TerraformResource {
     return this._jobEvents;
   }
 
-  // merge_requests_events - computed: false, optional: true, required: false
+  // merge_requests_events - computed: true, optional: true, required: false
   private _mergeRequestsEvents?: boolean | cdktf.IResolvable; 
   public get mergeRequestsEvents() {
     return this.getBooleanAttribute('merge_requests_events');
@@ -354,7 +335,7 @@ export class ProjectHook extends cdktf.TerraformResource {
     return this._mergeRequestsEvents;
   }
 
-  // note_events - computed: false, optional: true, required: false
+  // note_events - computed: true, optional: true, required: false
   private _noteEvents?: boolean | cdktf.IResolvable; 
   public get noteEvents() {
     return this.getBooleanAttribute('note_events');
@@ -370,7 +351,7 @@ export class ProjectHook extends cdktf.TerraformResource {
     return this._noteEvents;
   }
 
-  // pipeline_events - computed: false, optional: true, required: false
+  // pipeline_events - computed: true, optional: true, required: false
   private _pipelineEvents?: boolean | cdktf.IResolvable; 
   public get pipelineEvents() {
     return this.getBooleanAttribute('pipeline_events');
@@ -404,7 +385,7 @@ export class ProjectHook extends cdktf.TerraformResource {
     return this.getNumberAttribute('project_id');
   }
 
-  // push_events - computed: false, optional: true, required: false
+  // push_events - computed: true, optional: true, required: false
   private _pushEvents?: boolean | cdktf.IResolvable; 
   public get pushEvents() {
     return this.getBooleanAttribute('push_events');
@@ -420,7 +401,7 @@ export class ProjectHook extends cdktf.TerraformResource {
     return this._pushEvents;
   }
 
-  // push_events_branch_filter - computed: false, optional: true, required: false
+  // push_events_branch_filter - computed: true, optional: true, required: false
   private _pushEventsBranchFilter?: string; 
   public get pushEventsBranchFilter() {
     return this.getStringAttribute('push_events_branch_filter');
@@ -436,7 +417,7 @@ export class ProjectHook extends cdktf.TerraformResource {
     return this._pushEventsBranchFilter;
   }
 
-  // releases_events - computed: false, optional: true, required: false
+  // releases_events - computed: true, optional: true, required: false
   private _releasesEvents?: boolean | cdktf.IResolvable; 
   public get releasesEvents() {
     return this.getBooleanAttribute('releases_events');
@@ -452,7 +433,7 @@ export class ProjectHook extends cdktf.TerraformResource {
     return this._releasesEvents;
   }
 
-  // tag_push_events - computed: false, optional: true, required: false
+  // tag_push_events - computed: true, optional: true, required: false
   private _tagPushEvents?: boolean | cdktf.IResolvable; 
   public get tagPushEvents() {
     return this.getBooleanAttribute('tag_push_events');
@@ -468,7 +449,7 @@ export class ProjectHook extends cdktf.TerraformResource {
     return this._tagPushEvents;
   }
 
-  // token - computed: false, optional: true, required: false
+  // token - computed: true, optional: true, required: false
   private _token?: string; 
   public get token() {
     return this.getStringAttribute('token');
@@ -497,7 +478,7 @@ export class ProjectHook extends cdktf.TerraformResource {
     return this._url;
   }
 
-  // wiki_page_events - computed: false, optional: true, required: false
+  // wiki_page_events - computed: true, optional: true, required: false
   private _wikiPageEvents?: boolean | cdktf.IResolvable; 
   public get wikiPageEvents() {
     return this.getBooleanAttribute('wiki_page_events');
@@ -524,7 +505,6 @@ export class ProjectHook extends cdktf.TerraformResource {
       custom_webhook_template: cdktf.stringToTerraform(this._customWebhookTemplate),
       deployment_events: cdktf.booleanToTerraform(this._deploymentEvents),
       enable_ssl_verification: cdktf.booleanToTerraform(this._enableSslVerification),
-      id: cdktf.stringToTerraform(this._id),
       issues_events: cdktf.booleanToTerraform(this._issuesEvents),
       job_events: cdktf.booleanToTerraform(this._jobEvents),
       merge_requests_events: cdktf.booleanToTerraform(this._mergeRequestsEvents),
@@ -572,12 +552,6 @@ export class ProjectHook extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
       },
       issues_events: {
         value: cdktf.booleanToHclTerraform(this._issuesEvents),
