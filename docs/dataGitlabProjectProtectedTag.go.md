@@ -4,12 +4,12 @@
 
 ### DataGitlabProjectProtectedTag <a name="DataGitlabProjectProtectedTag" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedTag.DataGitlabProjectProtectedTag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/project_protected_tag gitlab_project_protected_tag}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_tag gitlab_project_protected_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedTag.DataGitlabProjectProtectedTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojectprotectedtag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectprotectedtag"
 
 datagitlabprojectprotectedtag.NewDataGitlabProjectProtectedTag(scope Construct, id *string, config DataGitlabProjectProtectedTagConfig) DataGitlabProjectProtectedTag
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedTag.DataGitlabProjectProtectedTag.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojectprotectedtag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectprotectedtag"
 
 datagitlabprojectprotectedtag.DataGitlabProjectProtectedTag_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedTag.DataGitlabProjectProtectedTag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojectprotectedtag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectprotectedtag"
 
 datagitlabprojectprotectedtag.DataGitlabProjectProtectedTag_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datagitlabprojectprotectedtag.DataGitlabProjectProtectedTag_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedTag.DataGitlabProjectProtectedTag.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojectprotectedtag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectprotectedtag"
 
 datagitlabprojectprotectedtag.DataGitlabProjectProtectedTag_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagitlabprojectprotectedtag.DataGitlabProjectProtectedTag_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedTag.DataGitlabProjectProtectedTag.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojectprotectedtag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectprotectedtag"
 
 datagitlabprojectprotectedtag.DataGitlabProjectProtectedTag_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataGitlabProjectProtected
 
 The id of the existing DataGitlabProjectProtectedTag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/project_protected_tag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_tag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -609,7 +609,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedTag.DataGitlabProjectProtectedTagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojectprotectedtag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectprotectedtag"
 
 &datagitlabprojectprotectedtag.DataGitlabProjectProtectedTagConfig {
 	Connection: interface{},
@@ -720,7 +720,7 @@ Project *string
 
 The integer or path with namespace that uniquely identifies the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/project_protected_tag#project DataGitlabProjectProtectedTag#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_tag#project DataGitlabProjectProtectedTag#project}
 
 ---
 
@@ -734,7 +734,7 @@ Tag *string
 
 The name of the protected tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/project_protected_tag#tag DataGitlabProjectProtectedTag#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_tag#tag DataGitlabProjectProtectedTag#tag}
 
 ---
 
@@ -743,7 +743,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedTag.DataGitlabProjectProtectedTagCreateAccessLevels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojectprotectedtag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectprotectedtag"
 
 &datagitlabprojectprotectedtag.DataGitlabProjectProtectedTagCreateAccessLevels {
 	GroupId: *f64,
@@ -770,7 +770,7 @@ GroupId *f64
 
 The ID of a GitLab group allowed to perform the relevant action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/project_protected_tag#group_id DataGitlabProjectProtectedTag#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_tag#group_id DataGitlabProjectProtectedTag#group_id}
 
 ---
 
@@ -784,7 +784,7 @@ UserId *f64
 
 The ID of a GitLab user allowed to perform the relevant action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/data-sources/project_protected_tag#user_id DataGitlabProjectProtectedTag#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_tag#user_id DataGitlabProjectProtectedTag#user_id}
 
 ---
 
@@ -795,7 +795,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedTag.DataGitlabProjectProtectedTagCreateAccessLevelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojectprotectedtag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectprotectedtag"
 
 datagitlabprojectprotectedtag.NewDataGitlabProjectProtectedTagCreateAccessLevelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectProtectedTagCreateAccessLevelsList
 ```
@@ -955,7 +955,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedTag.DataGitlabProjectProtectedTagCreateAccessLevelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojectprotectedtag"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectprotectedtag"
 
 datagitlabprojectprotectedtag.NewDataGitlabProjectProtectedTagCreateAccessLevelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabProjectProtectedTagCreateAccessLevelsOutputReference
 ```

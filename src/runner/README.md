@@ -1,3 +1,3 @@
 # `gitlab_runner`
 
-Refer to the Terraform Registry for docs: [`gitlab_runner`](https://registry.terraform.io/providers/gitlabhq/gitlab/17.4.0/docs/resources/runner).
+Refer to the Terraform Registry for docs: [`gitlab_runner`](https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/runner).
