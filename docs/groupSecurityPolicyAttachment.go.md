@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupSecurityPolicyAttachment.GroupSecurityPolicyAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/groupsecuritypolicyattachment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupsecuritypolicyattachment"
 
 groupsecuritypolicyattachment.NewGroupSecurityPolicyAttachment(scope Construct, id *string, config GroupSecurityPolicyAttachmentConfig) GroupSecurityPolicyAttachment
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.groupSecurityPolicyAttachment.GroupSecurityPolicyAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/groupsecuritypolicyattachment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupsecuritypolicyattachment"
 
 groupsecuritypolicyattachment.GroupSecurityPolicyAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.groupSecurityPolicyAttachment.GroupSecurityPolicyAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/groupsecuritypolicyattachment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupsecuritypolicyattachment"
 
 groupsecuritypolicyattachment.GroupSecurityPolicyAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ groupsecuritypolicyattachment.GroupSecurityPolicyAttachment_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.groupSecurityPolicyAttachment.GroupSecurityPolicyAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/groupsecuritypolicyattachment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupsecuritypolicyattachment"
 
 groupsecuritypolicyattachment.GroupSecurityPolicyAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ groupsecuritypolicyattachment.GroupSecurityPolicyAttachment_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.groupSecurityPolicyAttachment.GroupSecurityPolicyAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/groupsecuritypolicyattachment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupsecuritypolicyattachment"
 
 groupsecuritypolicyattachment.GroupSecurityPolicyAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.groupSecurityPolicyAttachment.GroupSecurityPolicyAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/groupsecuritypolicyattachment"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupsecuritypolicyattachment"
 
 &groupsecuritypolicyattachment.GroupSecurityPolicyAttachmentConfig {
 	Connection: interface{},
