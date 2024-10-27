@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusersshkeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabusersshkeys"
 
 datagitlabusersshkeys.NewDataGitlabUserSshkeys(scope Construct, id *string, config DataGitlabUserSshkeysConfig) DataGitlabUserSshkeys
 ```
@@ -297,7 +297,7 @@ func ResetUsername()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeys.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusersshkeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabusersshkeys"
 
 datagitlabusersshkeys.DataGitlabUserSshkeys_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeys.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusersshkeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabusersshkeys"
 
 datagitlabusersshkeys.DataGitlabUserSshkeys_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagitlabusersshkeys.DataGitlabUserSshkeys_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeys.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusersshkeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabusersshkeys"
 
 datagitlabusersshkeys.DataGitlabUserSshkeys_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datagitlabusersshkeys.DataGitlabUserSshkeys_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeys.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusersshkeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabusersshkeys"
 
 datagitlabusersshkeys.DataGitlabUserSshkeys_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -641,7 +641,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeysConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusersshkeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabusersshkeys"
 
 &datagitlabusersshkeys.DataGitlabUserSshkeysConfig {
 	Connection: interface{},
@@ -792,7 +792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeysKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusersshkeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabusersshkeys"
 
 &datagitlabusersshkeys.DataGitlabUserSshkeysKeys {
 
@@ -807,7 +807,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusersshkeys"
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeysKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusersshkeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabusersshkeys"
 
 datagitlabusersshkeys.NewDataGitlabUserSshkeysKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabUserSshkeysKeysList
 ```
@@ -956,7 +956,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabUserSshkeys.DataGitlabUserSshkeysKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabusersshkeys"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabusersshkeys"
 
 datagitlabusersshkeys.NewDataGitlabUserSshkeysKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabUserSshkeysKeysOutputReference
 ```
