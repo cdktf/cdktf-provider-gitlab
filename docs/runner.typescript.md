@@ -4,7 +4,7 @@
 
 ### Runner <a name="Runner" id="@cdktf/provider-gitlab.runner.Runner"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/runner gitlab_runner}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/runner gitlab_runner}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.runner.Runner.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.resetLocked">resetLocked</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.runner.Runner.resetMaintenanceNote">resetMaintenanceNote</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.resetMaximumTimeout">resetMaximumTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.resetPaused">resetPaused</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.resetRunUntagged">resetRunUntagged</a></code> | *No description.* |
@@ -396,6 +397,12 @@ public resetId(): void
 public resetLocked(): void
 ```
 
+##### `resetMaintenanceNote` <a name="resetMaintenanceNote" id="@cdktf/provider-gitlab.runner.Runner.resetMaintenanceNote"></a>
+
+```typescript
+public resetMaintenanceNote(): void
+```
+
 ##### `resetMaximumTimeout` <a name="resetMaximumTimeout" id="@cdktf/provider-gitlab.runner.Runner.resetMaximumTimeout"></a>
 
 ```typescript
@@ -523,7 +530,7 @@ The construct id used in the generated config for the Runner to import.
 
 The id of the existing Runner that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/runner#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/runner#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -559,6 +566,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.property.lockedInput">lockedInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.runner.Runner.property.maintenanceNoteInput">maintenanceNoteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.property.maximumTimeoutInput">maximumTimeoutInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.property.pausedInput">pausedInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.property.registrationTokenInput">registrationTokenInput</a></code> | <code>string</code> | *No description.* |
@@ -568,6 +576,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.property.locked">locked</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.runner.Runner.property.maintenanceNote">maintenanceNote</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.property.maximumTimeout">maximumTimeout</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.property.paused">paused</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.property.registrationToken">registrationToken</a></code> | <code>string</code> | *No description.* |
@@ -778,6 +787,16 @@ public readonly lockedInput: boolean | IResolvable;
 
 ---
 
+##### `maintenanceNoteInput`<sup>Optional</sup> <a name="maintenanceNoteInput" id="@cdktf/provider-gitlab.runner.Runner.property.maintenanceNoteInput"></a>
+
+```typescript
+public readonly maintenanceNoteInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `maximumTimeoutInput`<sup>Optional</sup> <a name="maximumTimeoutInput" id="@cdktf/provider-gitlab.runner.Runner.property.maximumTimeoutInput"></a>
 
 ```typescript
@@ -865,6 +884,16 @@ public readonly locked: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `maintenanceNote`<sup>Required</sup> <a name="maintenanceNote" id="@cdktf/provider-gitlab.runner.Runner.property.maintenanceNote"></a>
+
+```typescript
+public readonly maintenanceNote: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -962,8 +991,9 @@ const runnerConfig: runner.RunnerConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.registrationToken">registrationToken</a></code> | <code>string</code> | The registration token used to register the runner. |
 | <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.accessLevel">accessLevel</a></code> | <code>string</code> | The access_level of the runner. Valid values are: `not_protected`, `ref_protected`. |
 | <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.description">description</a></code> | <code>string</code> | The runner's description. |
-| <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/runner#id Runner#id}. |
+| <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/runner#id Runner#id}. |
 | <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.locked">locked</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the runner should be locked for current project. |
+| <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.maintenanceNote">maintenanceNote</a></code> | <code>string</code> | Free-form maintenance notes for the runner (1024 characters). |
 | <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.maximumTimeout">maximumTimeout</a></code> | <code>number</code> | Maximum timeout set when this runner handles the job. |
 | <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.paused">paused</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the runner should ignore new jobs. |
 | <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.runUntagged">runUntagged</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the runner should handle untagged jobs. |
@@ -1051,7 +1081,7 @@ public readonly registrationToken: string;
 
 The registration token used to register the runner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/runner#registration_token Runner#registration_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/runner#registration_token Runner#registration_token}
 
 ---
 
@@ -1065,7 +1095,7 @@ public readonly accessLevel: string;
 
 The access_level of the runner. Valid values are: `not_protected`, `ref_protected`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/runner#access_level Runner#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/runner#access_level Runner#access_level}
 
 ---
 
@@ -1079,7 +1109,7 @@ public readonly description: string;
 
 The runner's description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/runner#description Runner#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/runner#description Runner#description}
 
 ---
 
@@ -1091,7 +1121,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/runner#id Runner#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/runner#id Runner#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1108,7 +1138,21 @@ public readonly locked: boolean | IResolvable;
 
 Whether the runner should be locked for current project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/runner#locked Runner#locked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/runner#locked Runner#locked}
+
+---
+
+##### `maintenanceNote`<sup>Optional</sup> <a name="maintenanceNote" id="@cdktf/provider-gitlab.runner.RunnerConfig.property.maintenanceNote"></a>
+
+```typescript
+public readonly maintenanceNote: string;
+```
+
+- *Type:* string
+
+Free-form maintenance notes for the runner (1024 characters).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/runner#maintenance_note Runner#maintenance_note}
 
 ---
 
@@ -1122,7 +1166,7 @@ public readonly maximumTimeout: number;
 
 Maximum timeout set when this runner handles the job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/runner#maximum_timeout Runner#maximum_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/runner#maximum_timeout Runner#maximum_timeout}
 
 ---
 
@@ -1136,7 +1180,7 @@ public readonly paused: boolean | IResolvable;
 
 Whether the runner should ignore new jobs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/runner#paused Runner#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/runner#paused Runner#paused}
 
 ---
 
@@ -1150,7 +1194,7 @@ public readonly runUntagged: boolean | IResolvable;
 
 Whether the runner should handle untagged jobs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/runner#run_untagged Runner#run_untagged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/runner#run_untagged Runner#run_untagged}
 
 ---
 
@@ -1164,7 +1208,7 @@ public readonly tagList: string[];
 
 List of runner’s tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/runner#tag_list Runner#tag_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/runner#tag_list Runner#tag_list}
 
 ---
 

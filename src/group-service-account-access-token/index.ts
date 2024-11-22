@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/group_service_account_access_token
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_service_account_access_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,37 @@ export interface GroupServiceAccountAccessTokenConfig extends cdktf.TerraformMet
   /**
   * 	The personal access token expiry date. When left blank, the token follows the standard rule of expiry for personal access tokens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/group_service_account_access_token#expires_at GroupServiceAccountAccessToken#expires_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_service_account_access_token#expires_at GroupServiceAccountAccessToken#expires_at}
   */
   readonly expiresAt?: string;
   /**
   * The ID or URL-encoded path of the group containing the service account. Must be a top level group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/group_service_account_access_token#group GroupServiceAccountAccessToken#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_service_account_access_token#group GroupServiceAccountAccessToken#group}
   */
   readonly group: string;
   /**
   * The name of the personal access token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/group_service_account_access_token#name GroupServiceAccountAccessToken#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_service_account_access_token#name GroupServiceAccountAccessToken#name}
   */
   readonly name: string;
   /**
   * The scopes of the group service account access token. valid values are: `api`, `read_api`, `read_registry`, `write_registry`, `read_repository`, `write_repository`, `create_runner`, `manage_runner`, `ai_features`, `k8s_proxy`, `read_observability`, `write_observability`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/group_service_account_access_token#scopes GroupServiceAccountAccessToken#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_service_account_access_token#scopes GroupServiceAccountAccessToken#scopes}
   */
   readonly scopes: string[];
   /**
   * The ID of a service account user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/group_service_account_access_token#user_id GroupServiceAccountAccessToken#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_service_account_access_token#user_id GroupServiceAccountAccessToken#user_id}
   */
   readonly userId: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token}
 */
 export class GroupServiceAccountAccessToken extends cdktf.TerraformResource {
 
@@ -61,7 +61,7 @@ export class GroupServiceAccountAccessToken extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GroupServiceAccountAccessToken resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GroupServiceAccountAccessToken to import
-  * @param importFromId The id of the existing GroupServiceAccountAccessToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/group_service_account_access_token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GroupServiceAccountAccessToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_service_account_access_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GroupServiceAccountAccessToken to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -73,7 +73,7 @@ export class GroupServiceAccountAccessToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class GroupServiceAccountAccessToken extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_service_account_access_token',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.5.0',
+        providerVersion: '17.6.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,

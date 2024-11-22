@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/runner
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/runner
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface RunnerConfig extends cdktf.TerraformMetaArguments {
   /**
   * The access_level of the runner. Valid values are: `not_protected`, `ref_protected`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/runner#access_level Runner#access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/runner#access_level Runner#access_level}
   */
   readonly accessLevel?: string;
   /**
   * The runner's description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/runner#description Runner#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/runner#description Runner#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/runner#id Runner#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/runner#id Runner#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,43 +34,49 @@ export interface RunnerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether the runner should be locked for current project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/runner#locked Runner#locked}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/runner#locked Runner#locked}
   */
   readonly locked?: boolean | cdktf.IResolvable;
   /**
+  * Free-form maintenance notes for the runner (1024 characters).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/runner#maintenance_note Runner#maintenance_note}
+  */
+  readonly maintenanceNote?: string;
+  /**
   * Maximum timeout set when this runner handles the job.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/runner#maximum_timeout Runner#maximum_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/runner#maximum_timeout Runner#maximum_timeout}
   */
   readonly maximumTimeout?: number;
   /**
   * Whether the runner should ignore new jobs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/runner#paused Runner#paused}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/runner#paused Runner#paused}
   */
   readonly paused?: boolean | cdktf.IResolvable;
   /**
   * The registration token used to register the runner.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/runner#registration_token Runner#registration_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/runner#registration_token Runner#registration_token}
   */
   readonly registrationToken: string;
   /**
   * Whether the runner should handle untagged jobs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/runner#run_untagged Runner#run_untagged}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/runner#run_untagged Runner#run_untagged}
   */
   readonly runUntagged?: boolean | cdktf.IResolvable;
   /**
   * List of runner’s tags.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/runner#tag_list Runner#tag_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/runner#tag_list Runner#tag_list}
   */
   readonly tagList?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/runner gitlab_runner}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/runner gitlab_runner}
 */
 export class Runner extends cdktf.TerraformResource {
 
@@ -86,7 +92,7 @@ export class Runner extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Runner resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Runner to import
-  * @param importFromId The id of the existing Runner that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/runner#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Runner that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/runner#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Runner to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -98,7 +104,7 @@ export class Runner extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/runner gitlab_runner} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/runner gitlab_runner} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -109,7 +115,7 @@ export class Runner extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_runner',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.5.0',
+        providerVersion: '17.6.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,
@@ -124,6 +130,7 @@ export class Runner extends cdktf.TerraformResource {
     this._description = config.description;
     this._id = config.id;
     this._locked = config.locked;
+    this._maintenanceNote = config.maintenanceNote;
     this._maximumTimeout = config.maximumTimeout;
     this._paused = config.paused;
     this._registrationToken = config.registrationToken;
@@ -202,6 +209,22 @@ export class Runner extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get lockedInput() {
     return this._locked;
+  }
+
+  // maintenance_note - computed: false, optional: true, required: false
+  private _maintenanceNote?: string; 
+  public get maintenanceNote() {
+    return this.getStringAttribute('maintenance_note');
+  }
+  public set maintenanceNote(value: string) {
+    this._maintenanceNote = value;
+  }
+  public resetMaintenanceNote() {
+    this._maintenanceNote = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maintenanceNoteInput() {
+    return this._maintenanceNote;
   }
 
   // maximum_timeout - computed: false, optional: true, required: false
@@ -296,6 +319,7 @@ export class Runner extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       locked: cdktf.booleanToTerraform(this._locked),
+      maintenance_note: cdktf.stringToTerraform(this._maintenanceNote),
       maximum_timeout: cdktf.numberToTerraform(this._maximumTimeout),
       paused: cdktf.booleanToTerraform(this._paused),
       registration_token: cdktf.stringToTerraform(this._registrationToken),
@@ -329,6 +353,12 @@ export class Runner extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      maintenance_note: {
+        value: cdktf.stringToHclTerraform(this._maintenanceNote),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       maximum_timeout: {
         value: cdktf.numberToHclTerraform(this._maximumTimeout),

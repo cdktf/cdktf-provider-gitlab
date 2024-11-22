@@ -4,7 +4,7 @@
 
 ### DataGitlabProjectProtectedBranch <a name="DataGitlabProjectProtectedBranch" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranch"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branch gitlab_project_protected_branch}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branch gitlab_project_protected_branch}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranch.Initializer"></a>
 
@@ -405,7 +405,7 @@ The construct id used in the generated config for the DataGitlabProjectProtected
 
 The id of the existing DataGitlabProjectProtectedBranch that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branch#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branch#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -819,7 +819,7 @@ Name *string
 
 The name of the protected branch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branch#name DataGitlabProjectProtectedBranch#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branch#name DataGitlabProjectProtectedBranch#name}
 
 ---
 
@@ -833,7 +833,7 @@ ProjectId *string
 
 The integer or path with namespace that uniquely identifies the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branch#project_id DataGitlabProjectProtectedBranch#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branch#project_id DataGitlabProjectProtectedBranch#project_id}
 
 ---
 
@@ -847,7 +847,7 @@ MergeAccessLevels interface{}
 
 merge_access_levels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branch#merge_access_levels DataGitlabProjectProtectedBranch#merge_access_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branch#merge_access_levels DataGitlabProjectProtectedBranch#merge_access_levels}
 
 ---
 
@@ -861,7 +861,7 @@ PushAccessLevels interface{}
 
 push_access_levels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branch#push_access_levels DataGitlabProjectProtectedBranch#push_access_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branch#push_access_levels DataGitlabProjectProtectedBranch#push_access_levels}
 
 ---
 
@@ -897,7 +897,7 @@ GroupId *f64
 
 The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `user_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branch#group_id DataGitlabProjectProtectedBranch#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branch#group_id DataGitlabProjectProtectedBranch#group_id}
 
 ---
 
@@ -911,7 +911,7 @@ UserId *f64
 
 The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `group_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branch#user_id DataGitlabProjectProtectedBranch#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branch#user_id DataGitlabProjectProtectedBranch#user_id}
 
 ---
 
@@ -923,6 +923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojectprotectedbranch"
 
 &datagitlabprojectprotectedbranch.DataGitlabProjectProtectedBranchPushAccessLevels {
+	DeployKeyId: *f64,
 	GroupId: *f64,
 	UserId: *f64,
 }
@@ -932,8 +933,25 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojectpr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevels.property.groupId">GroupId</a></code> | <code>*f64</code> | The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `user_id`. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevels.property.userId">UserId</a></code> | <code>*f64</code> | The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `group_id`. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevels.property.deployKeyId">DeployKeyId</a></code> | <code>*f64</code> | The ID of a GitLab deploy key allowed to perform the relevant action. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevels.property.groupId">GroupId</a></code> | <code>*f64</code> | The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `deploy_key_id` and `user_id`. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevels.property.userId">UserId</a></code> | <code>*f64</code> | The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `deploy_key_id` and `group_id`. |
+
+---
+
+##### `DeployKeyId`<sup>Optional</sup> <a name="DeployKeyId" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevels.property.deployKeyId"></a>
+
+```go
+DeployKeyId *f64
+```
+
+- *Type:* *f64
+
+The ID of a GitLab deploy key allowed to perform the relevant action.
+
+Mutually exclusive with `group_id` and `user_id`. This field is read-only until Gitlab 17.5.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branch#deploy_key_id DataGitlabProjectProtectedBranch#deploy_key_id}
 
 ---
 
@@ -945,9 +963,9 @@ GroupId *f64
 
 - *Type:* *f64
 
-The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `user_id`.
+The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `deploy_key_id` and `user_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branch#group_id DataGitlabProjectProtectedBranch#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branch#group_id DataGitlabProjectProtectedBranch#group_id}
 
 ---
 
@@ -959,9 +977,9 @@ UserId *f64
 
 - *Type:* *f64
 
-The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `group_id`.
+The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `deploy_key_id` and `group_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branch#user_id DataGitlabProjectProtectedBranch#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branch#user_id DataGitlabProjectProtectedBranch#user_id}
 
 ---
 
@@ -1702,6 +1720,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference.resetDeployKeyId">ResetDeployKeyId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference.resetGroupId">ResetGroupId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference.resetUserId">ResetUserId</a></code> | *No description.* |
 
@@ -1857,6 +1876,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `ResetDeployKeyId` <a name="ResetDeployKeyId" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference.resetDeployKeyId"></a>
+
+```go
+func ResetDeployKeyId()
+```
+
 ##### `ResetGroupId` <a name="ResetGroupId" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference.resetGroupId"></a>
 
 ```go
@@ -1878,8 +1903,10 @@ func ResetUserId()
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference.property.accessLevel">AccessLevel</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference.property.accessLevelDescription">AccessLevelDescription</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference.property.deployKeyIdInput">DeployKeyIdInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference.property.groupIdInput">GroupIdInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference.property.userIdInput">UserIdInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference.property.deployKeyId">DeployKeyId</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference.property.groupId">GroupId</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference.property.userId">UserId</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
@@ -1930,6 +1957,16 @@ func AccessLevelDescription() *string
 
 ---
 
+##### `DeployKeyIdInput`<sup>Optional</sup> <a name="DeployKeyIdInput" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference.property.deployKeyIdInput"></a>
+
+```go
+func DeployKeyIdInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `GroupIdInput`<sup>Optional</sup> <a name="GroupIdInput" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference.property.groupIdInput"></a>
 
 ```go
@@ -1944,6 +1981,16 @@ func GroupIdInput() *f64
 
 ```go
 func UserIdInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `DeployKeyId`<sup>Required</sup> <a name="DeployKeyId" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranch.DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference.property.deployKeyId"></a>
+
+```go
+func DeployKeyId() *f64
 ```
 
 - *Type:* *f64

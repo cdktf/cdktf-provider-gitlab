@@ -4,7 +4,7 @@
 
 ### DataGitlabProjectProtectedBranches <a name="DataGitlabProjectProtectedBranches" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranches"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branches gitlab_project_protected_branches}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branches gitlab_project_protected_branches}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranches.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The integer or path with namespace that uniquely identifies the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branches#project_id DataGitlabProjectProtectedBranches#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branches#project_id DataGitlabProjectProtectedBranches#project_id}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 protected_branches block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branches#protected_branches DataGitlabProjectProtectedBranches#protected_branches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branches#protected_branches DataGitlabProjectProtectedBranches#protected_branches}
 
 ---
 
@@ -499,7 +499,7 @@ The construct id used in the generated config for the DataGitlabProjectProtected
 
 The id of the existing DataGitlabProjectProtectedBranches that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branches#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branches#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -843,7 +843,7 @@ project_id: str
 
 The integer or path with namespace that uniquely identifies the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branches#project_id DataGitlabProjectProtectedBranches#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branches#project_id DataGitlabProjectProtectedBranches#project_id}
 
 ---
 
@@ -857,7 +857,7 @@ protected_branches: typing.Union[IResolvable, typing.List[DataGitlabProjectProte
 
 protected_branches block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branches#protected_branches DataGitlabProjectProtectedBranches#protected_branches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branches#protected_branches DataGitlabProjectProtectedBranches#protected_branches}
 
 ---
 
@@ -893,7 +893,7 @@ merge_access_levels: typing.Union[IResolvable, typing.List[DataGitlabProjectProt
 
 merge_access_levels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branches#merge_access_levels DataGitlabProjectProtectedBranches#merge_access_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branches#merge_access_levels DataGitlabProjectProtectedBranches#merge_access_levels}
 
 ---
 
@@ -907,7 +907,7 @@ push_access_levels: typing.Union[IResolvable, typing.List[DataGitlabProjectProte
 
 push_access_levels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branches#push_access_levels DataGitlabProjectProtectedBranches#push_access_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branches#push_access_levels DataGitlabProjectProtectedBranches#push_access_levels}
 
 ---
 
@@ -943,7 +943,7 @@ group_id: typing.Union[int, float]
 
 The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `user_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branches#group_id DataGitlabProjectProtectedBranches#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branches#group_id DataGitlabProjectProtectedBranches#group_id}
 
 ---
 
@@ -957,7 +957,7 @@ user_id: typing.Union[int, float]
 
 The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `group_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branches#user_id DataGitlabProjectProtectedBranches#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branches#user_id DataGitlabProjectProtectedBranches#user_id}
 
 ---
 
@@ -969,6 +969,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 from cdktf_cdktf_provider_gitlab import data_gitlab_project_protected_branches
 
 dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels(
+  deploy_key_id: typing.Union[int, float] = None,
   group_id: typing.Union[int, float] = None,
   user_id: typing.Union[int, float] = None
 )
@@ -978,8 +979,25 @@ dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels.property.groupId">group_id</a></code> | <code>typing.Union[int, float]</code> | The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `user_id`. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels.property.userId">user_id</a></code> | <code>typing.Union[int, float]</code> | The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `group_id`. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels.property.deployKeyId">deploy_key_id</a></code> | <code>typing.Union[int, float]</code> | The ID of a GitLab deploy key allowed to perform the relevant action. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels.property.groupId">group_id</a></code> | <code>typing.Union[int, float]</code> | The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `deploy_key_id` and `user_id`. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels.property.userId">user_id</a></code> | <code>typing.Union[int, float]</code> | The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `deploy_key_id` and `group_id`. |
+
+---
+
+##### `deploy_key_id`<sup>Optional</sup> <a name="deploy_key_id" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels.property.deployKeyId"></a>
+
+```python
+deploy_key_id: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The ID of a GitLab deploy key allowed to perform the relevant action.
+
+Mutually exclusive with `group_id` and `user_id`. This field is read-only until Gitlab 17.5.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branches#deploy_key_id DataGitlabProjectProtectedBranches#deploy_key_id}
 
 ---
 
@@ -991,9 +1009,9 @@ group_id: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `user_id`.
+The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `deploy_key_id` and `user_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branches#group_id DataGitlabProjectProtectedBranches#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branches#group_id DataGitlabProjectProtectedBranches#group_id}
 
 ---
 
@@ -1005,9 +1023,9 @@ user_id: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `group_id`.
+The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `deploy_key_id` and `group_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branches#user_id DataGitlabProjectProtectedBranches#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branches#user_id DataGitlabProjectProtectedBranches#user_id}
 
 ---
 
@@ -2396,6 +2414,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.resetDeployKeyId">reset_deploy_key_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.resetGroupId">reset_group_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.resetUserId">reset_user_id</a></code> | *No description.* |
 
@@ -2573,6 +2592,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `reset_deploy_key_id` <a name="reset_deploy_key_id" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.resetDeployKeyId"></a>
+
+```python
+def reset_deploy_key_id() -> None
+```
+
 ##### `reset_group_id` <a name="reset_group_id" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.resetGroupId"></a>
 
 ```python
@@ -2594,8 +2619,10 @@ def reset_user_id() -> None
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.property.accessLevel">access_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.property.accessLevelDescription">access_level_description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.property.deployKeyIdInput">deploy_key_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.property.groupIdInput">group_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.property.userIdInput">user_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.property.deployKeyId">deploy_key_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.property.groupId">group_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.property.userId">user_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels">DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels</a>]</code> | *No description.* |
@@ -2646,6 +2673,16 @@ access_level_description: str
 
 ---
 
+##### `deploy_key_id_input`<sup>Optional</sup> <a name="deploy_key_id_input" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.property.deployKeyIdInput"></a>
+
+```python
+deploy_key_id_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `group_id_input`<sup>Optional</sup> <a name="group_id_input" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.property.groupIdInput"></a>
 
 ```python
@@ -2660,6 +2697,16 @@ group_id_input: typing.Union[int, float]
 
 ```python
 user_id_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `deploy_key_id`<sup>Required</sup> <a name="deploy_key_id" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.property.deployKeyId"></a>
+
+```python
+deploy_key_id: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]

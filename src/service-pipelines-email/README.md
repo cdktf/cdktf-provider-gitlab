@@ -1,3 +1,3 @@
 # `gitlab_service_pipelines_email`
 
-Refer to the Terraform Registry for docs: [`gitlab_service_pipelines_email`](https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/service_pipelines_email).
+Refer to the Terraform Registry for docs: [`gitlab_service_pipelines_email`](https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/service_pipelines_email).

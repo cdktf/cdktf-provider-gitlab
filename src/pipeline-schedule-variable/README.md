@@ -1,3 +1,3 @@
 # `gitlab_pipeline_schedule_variable`
 
-Refer to the Terraform Registry for docs: [`gitlab_pipeline_schedule_variable`](https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/pipeline_schedule_variable).
+Refer to the Terraform Registry for docs: [`gitlab_pipeline_schedule_variable`](https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/pipeline_schedule_variable).

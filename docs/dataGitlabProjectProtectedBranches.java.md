@@ -4,7 +4,7 @@
 
 ### DataGitlabProjectProtectedBranches <a name="DataGitlabProjectProtectedBranches" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranches"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branches gitlab_project_protected_branches}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branches gitlab_project_protected_branches}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranches.Initializer"></a>
 
@@ -111,7 +111,7 @@ Must be unique amongst siblings in the same scope
 
 The integer or path with namespace that uniquely identifies the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branches#project_id DataGitlabProjectProtectedBranches#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branches#project_id DataGitlabProjectProtectedBranches#project_id}
 
 ---
 
@@ -121,7 +121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 protected_branches block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branches#protected_branches DataGitlabProjectProtectedBranches#protected_branches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branches#protected_branches DataGitlabProjectProtectedBranches#protected_branches}
 
 ---
 
@@ -464,7 +464,7 @@ The construct id used in the generated config for the DataGitlabProjectProtected
 
 The id of the existing DataGitlabProjectProtectedBranches that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branches#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branches#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -813,7 +813,7 @@ public java.lang.String getProjectId();
 
 The integer or path with namespace that uniquely identifies the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branches#project_id DataGitlabProjectProtectedBranches#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branches#project_id DataGitlabProjectProtectedBranches#project_id}
 
 ---
 
@@ -827,7 +827,7 @@ public java.lang.Object getProtectedBranches();
 
 protected_branches block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branches#protected_branches DataGitlabProjectProtectedBranches#protected_branches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branches#protected_branches DataGitlabProjectProtectedBranches#protected_branches}
 
 ---
 
@@ -865,7 +865,7 @@ public java.lang.Object getMergeAccessLevels();
 
 merge_access_levels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branches#merge_access_levels DataGitlabProjectProtectedBranches#merge_access_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branches#merge_access_levels DataGitlabProjectProtectedBranches#merge_access_levels}
 
 ---
 
@@ -879,7 +879,7 @@ public java.lang.Object getPushAccessLevels();
 
 push_access_levels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branches#push_access_levels DataGitlabProjectProtectedBranches#push_access_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branches#push_access_levels DataGitlabProjectProtectedBranches#push_access_levels}
 
 ---
 
@@ -915,7 +915,7 @@ public java.lang.Number getGroupId();
 
 The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `user_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branches#group_id DataGitlabProjectProtectedBranches#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branches#group_id DataGitlabProjectProtectedBranches#group_id}
 
 ---
 
@@ -929,7 +929,7 @@ public java.lang.Number getUserId();
 
 The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `group_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branches#user_id DataGitlabProjectProtectedBranches#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branches#user_id DataGitlabProjectProtectedBranches#user_id}
 
 ---
 
@@ -941,6 +941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 import com.hashicorp.cdktf.providers.gitlab.data_gitlab_project_protected_branches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels;
 
 DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels.builder()
+//  .deployKeyId(java.lang.Number)
 //  .groupId(java.lang.Number)
 //  .userId(java.lang.Number)
     .build();
@@ -950,8 +951,25 @@ DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels.property.groupId">groupId</a></code> | <code>java.lang.Number</code> | The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `user_id`. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels.property.userId">userId</a></code> | <code>java.lang.Number</code> | The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `group_id`. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels.property.deployKeyId">deployKeyId</a></code> | <code>java.lang.Number</code> | The ID of a GitLab deploy key allowed to perform the relevant action. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels.property.groupId">groupId</a></code> | <code>java.lang.Number</code> | The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `deploy_key_id` and `user_id`. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels.property.userId">userId</a></code> | <code>java.lang.Number</code> | The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `deploy_key_id` and `group_id`. |
+
+---
+
+##### `deployKeyId`<sup>Optional</sup> <a name="deployKeyId" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels.property.deployKeyId"></a>
+
+```java
+public java.lang.Number getDeployKeyId();
+```
+
+- *Type:* java.lang.Number
+
+The ID of a GitLab deploy key allowed to perform the relevant action.
+
+Mutually exclusive with `group_id` and `user_id`. This field is read-only until Gitlab 17.5.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branches#deploy_key_id DataGitlabProjectProtectedBranches#deploy_key_id}
 
 ---
 
@@ -963,9 +981,9 @@ public java.lang.Number getGroupId();
 
 - *Type:* java.lang.Number
 
-The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `user_id`.
+The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `deploy_key_id` and `user_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branches#group_id DataGitlabProjectProtectedBranches#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branches#group_id DataGitlabProjectProtectedBranches#group_id}
 
 ---
 
@@ -977,9 +995,9 @@ public java.lang.Number getUserId();
 
 - *Type:* java.lang.Number
 
-The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `group_id`.
+The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `deploy_key_id` and `group_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branches#user_id DataGitlabProjectProtectedBranches#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branches#user_id DataGitlabProjectProtectedBranches#user_id}
 
 ---
 
@@ -2275,6 +2293,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.resetDeployKeyId">resetDeployKeyId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.resetGroupId">resetGroupId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.resetUserId">resetUserId</a></code> | *No description.* |
 
@@ -2430,6 +2449,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetDeployKeyId` <a name="resetDeployKeyId" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.resetDeployKeyId"></a>
+
+```java
+public void resetDeployKeyId()
+```
+
 ##### `resetGroupId` <a name="resetGroupId" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.resetGroupId"></a>
 
 ```java
@@ -2451,8 +2476,10 @@ public void resetUserId()
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.property.accessLevel">accessLevel</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.property.accessLevelDescription">accessLevelDescription</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.property.deployKeyIdInput">deployKeyIdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.property.groupIdInput">groupIdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.property.userIdInput">userIdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.property.deployKeyId">deployKeyId</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.property.groupId">groupId</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.property.userId">userId</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels">DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevels</a></code> | *No description.* |
@@ -2503,6 +2530,16 @@ public java.lang.String getAccessLevelDescription();
 
 ---
 
+##### `deployKeyIdInput`<sup>Optional</sup> <a name="deployKeyIdInput" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.property.deployKeyIdInput"></a>
+
+```java
+public java.lang.Number getDeployKeyIdInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `groupIdInput`<sup>Optional</sup> <a name="groupIdInput" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.property.groupIdInput"></a>
 
 ```java
@@ -2517,6 +2554,16 @@ public java.lang.Number getGroupIdInput();
 
 ```java
 public java.lang.Number getUserIdInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `deployKeyId`<sup>Required</sup> <a name="deployKeyId" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedBranches.DataGitlabProjectProtectedBranchesProtectedBranchesPushAccessLevelsOutputReference.property.deployKeyId"></a>
+
+```java
+public java.lang.Number getDeployKeyId();
 ```
 
 - *Type:* java.lang.Number

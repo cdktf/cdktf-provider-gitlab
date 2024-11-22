@@ -4,7 +4,7 @@
 
 ### ProjectEnvironment <a name="ProjectEnvironment" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_environment gitlab_project_environment}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_environment gitlab_project_environment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.Initializer"></a>
 
@@ -25,10 +25,14 @@ ProjectEnvironment.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(RemoteExecProvisioner>)
     .name(java.lang.String)
     .project(java.lang.String)
+//  .clusterAgentId(java.lang.Number)
 //  .externalUrl(java.lang.String)
+//  .fluxResourcePath(java.lang.String)
 //  .id(java.lang.String)
+//  .kubernetesNamespace(java.lang.String)
 //  .stopBeforeDestroy(java.lang.Boolean)
 //  .stopBeforeDestroy(IResolvable)
+//  .tier(java.lang.String)
     .build();
 ```
 
@@ -45,9 +49,13 @@ ProjectEnvironment.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the environment. |
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | The ID or full path of the project to environment is created for. |
+| <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.Initializer.parameter.clusterAgentId">clusterAgentId</a></code> | <code>java.lang.Number</code> | The cluster agent to associate with this environment. |
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.Initializer.parameter.externalUrl">externalUrl</a></code> | <code>java.lang.String</code> | Place to link to for this environment. |
-| <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_environment#id ProjectEnvironment#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.Initializer.parameter.fluxResourcePath">fluxResourcePath</a></code> | <code>java.lang.String</code> | The Flux resource path to associate with this environment. |
+| <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_environment#id ProjectEnvironment#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.Initializer.parameter.kubernetesNamespace">kubernetesNamespace</a></code> | <code>java.lang.String</code> | The Kubernetes namespace to associate with this environment. |
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.Initializer.parameter.stopBeforeDestroy">stopBeforeDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines whether the environment is attempted to be stopped before the environment is deleted. |
+| <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.Initializer.parameter.tier">tier</a></code> | <code>java.lang.String</code> | The tier of the new environment. Valid values are `production`, `staging`, `testing`, `development`, `other`. |
 
 ---
 
@@ -117,7 +125,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_environment#name ProjectEnvironment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_environment#name ProjectEnvironment#name}
 
 ---
 
@@ -127,7 +135,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The ID or full path of the project to environment is created for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_environment#project ProjectEnvironment#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_environment#project ProjectEnvironment#project}
+
+---
+
+##### `clusterAgentId`<sup>Optional</sup> <a name="clusterAgentId" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.Initializer.parameter.clusterAgentId"></a>
+
+- *Type:* java.lang.Number
+
+The cluster agent to associate with this environment.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_environment#cluster_agent_id ProjectEnvironment#cluster_agent_id}
 
 ---
 
@@ -137,7 +155,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Place to link to for this environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_environment#external_url ProjectEnvironment#external_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_environment#external_url ProjectEnvironment#external_url}
+
+---
+
+##### `fluxResourcePath`<sup>Optional</sup> <a name="fluxResourcePath" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.Initializer.parameter.fluxResourcePath"></a>
+
+- *Type:* java.lang.String
+
+The Flux resource path to associate with this environment.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_environment#flux_resource_path ProjectEnvironment#flux_resource_path}
 
 ---
 
@@ -145,10 +173,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_environment#id ProjectEnvironment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_environment#id ProjectEnvironment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `kubernetesNamespace`<sup>Optional</sup> <a name="kubernetesNamespace" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.Initializer.parameter.kubernetesNamespace"></a>
+
+- *Type:* java.lang.String
+
+The Kubernetes namespace to associate with this environment.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_environment#kubernetes_namespace ProjectEnvironment#kubernetes_namespace}
 
 ---
 
@@ -158,7 +196,17 @@ If you experience problems setting this value it might not be settable. Please t
 
 Determines whether the environment is attempted to be stopped before the environment is deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_environment#stop_before_destroy ProjectEnvironment#stop_before_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_environment#stop_before_destroy ProjectEnvironment#stop_before_destroy}
+
+---
+
+##### `tier`<sup>Optional</sup> <a name="tier" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.Initializer.parameter.tier"></a>
+
+- *Type:* java.lang.String
+
+The tier of the new environment. Valid values are `production`, `staging`, `testing`, `development`, `other`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_environment#tier ProjectEnvironment#tier}
 
 ---
 
@@ -189,9 +237,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.resetClusterAgentId">resetClusterAgentId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.resetExternalUrl">resetExternalUrl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.resetFluxResourcePath">resetFluxResourcePath</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.resetKubernetesNamespace">resetKubernetesNamespace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.resetStopBeforeDestroy">resetStopBeforeDestroy</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.resetTier">resetTier</a></code> | *No description.* |
 
 ---
 
@@ -485,10 +537,22 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetClusterAgentId` <a name="resetClusterAgentId" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.resetClusterAgentId"></a>
+
+```java
+public void resetClusterAgentId()
+```
+
 ##### `resetExternalUrl` <a name="resetExternalUrl" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.resetExternalUrl"></a>
 
 ```java
 public void resetExternalUrl()
+```
+
+##### `resetFluxResourcePath` <a name="resetFluxResourcePath" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.resetFluxResourcePath"></a>
+
+```java
+public void resetFluxResourcePath()
 ```
 
 ##### `resetId` <a name="resetId" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.resetId"></a>
@@ -497,10 +561,22 @@ public void resetExternalUrl()
 public void resetId()
 ```
 
+##### `resetKubernetesNamespace` <a name="resetKubernetesNamespace" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.resetKubernetesNamespace"></a>
+
+```java
+public void resetKubernetesNamespace()
+```
+
 ##### `resetStopBeforeDestroy` <a name="resetStopBeforeDestroy" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.resetStopBeforeDestroy"></a>
 
 ```java
 public void resetStopBeforeDestroy()
+```
+
+##### `resetTier` <a name="resetTier" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.resetTier"></a>
+
+```java
+public void resetTier()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -606,7 +682,7 @@ The construct id used in the generated config for the ProjectEnvironment to impo
 
 The id of the existing ProjectEnvironment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_environment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_environment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -640,16 +716,24 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.slug">slug</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.state">state</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.updatedAt">updatedAt</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.clusterAgentIdInput">clusterAgentIdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.externalUrlInput">externalUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.fluxResourcePathInput">fluxResourcePathInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.kubernetesNamespaceInput">kubernetesNamespaceInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.stopBeforeDestroyInput">stopBeforeDestroyInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.tierInput">tierInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.clusterAgentId">clusterAgentId</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.externalUrl">externalUrl</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.fluxResourcePath">fluxResourcePath</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.kubernetesNamespace">kubernetesNamespace</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.project">project</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.stopBeforeDestroy">stopBeforeDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.tier">tier</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
 
@@ -835,6 +919,16 @@ public java.lang.String getUpdatedAt();
 
 ---
 
+##### `clusterAgentIdInput`<sup>Optional</sup> <a name="clusterAgentIdInput" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.clusterAgentIdInput"></a>
+
+```java
+public java.lang.Number getClusterAgentIdInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `externalUrlInput`<sup>Optional</sup> <a name="externalUrlInput" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.externalUrlInput"></a>
 
 ```java
@@ -845,10 +939,30 @@ public java.lang.String getExternalUrlInput();
 
 ---
 
+##### `fluxResourcePathInput`<sup>Optional</sup> <a name="fluxResourcePathInput" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.fluxResourcePathInput"></a>
+
+```java
+public java.lang.String getFluxResourcePathInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.idInput"></a>
 
 ```java
 public java.lang.String getIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `kubernetesNamespaceInput`<sup>Optional</sup> <a name="kubernetesNamespaceInput" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.kubernetesNamespaceInput"></a>
+
+```java
+public java.lang.String getKubernetesNamespaceInput();
 ```
 
 - *Type:* java.lang.String
@@ -885,6 +999,26 @@ public java.lang.Object getStopBeforeDestroyInput();
 
 ---
 
+##### `tierInput`<sup>Optional</sup> <a name="tierInput" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.tierInput"></a>
+
+```java
+public java.lang.String getTierInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `clusterAgentId`<sup>Required</sup> <a name="clusterAgentId" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.clusterAgentId"></a>
+
+```java
+public java.lang.Number getClusterAgentId();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `externalUrl`<sup>Required</sup> <a name="externalUrl" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.externalUrl"></a>
 
 ```java
@@ -895,10 +1029,30 @@ public java.lang.String getExternalUrl();
 
 ---
 
+##### `fluxResourcePath`<sup>Required</sup> <a name="fluxResourcePath" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.fluxResourcePath"></a>
+
+```java
+public java.lang.String getFluxResourcePath();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.id"></a>
 
 ```java
 public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `kubernetesNamespace`<sup>Required</sup> <a name="kubernetesNamespace" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.kubernetesNamespace"></a>
+
+```java
+public java.lang.String getKubernetesNamespace();
 ```
 
 - *Type:* java.lang.String
@@ -932,6 +1086,16 @@ public java.lang.Object getStopBeforeDestroy();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `tier`<sup>Required</sup> <a name="tier" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironment.property.tier"></a>
+
+```java
+public java.lang.String getTier();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -976,10 +1140,14 @@ ProjectEnvironmentConfig.builder()
 //  .provisioners(RemoteExecProvisioner>)
     .name(java.lang.String)
     .project(java.lang.String)
+//  .clusterAgentId(java.lang.Number)
 //  .externalUrl(java.lang.String)
+//  .fluxResourcePath(java.lang.String)
 //  .id(java.lang.String)
+//  .kubernetesNamespace(java.lang.String)
 //  .stopBeforeDestroy(java.lang.Boolean)
 //  .stopBeforeDestroy(IResolvable)
+//  .tier(java.lang.String)
     .build();
 ```
 
@@ -996,9 +1164,13 @@ ProjectEnvironmentConfig.builder()
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironmentConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironmentConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the environment. |
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironmentConfig.property.project">project</a></code> | <code>java.lang.String</code> | The ID or full path of the project to environment is created for. |
+| <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironmentConfig.property.clusterAgentId">clusterAgentId</a></code> | <code>java.lang.Number</code> | The cluster agent to associate with this environment. |
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironmentConfig.property.externalUrl">externalUrl</a></code> | <code>java.lang.String</code> | Place to link to for this environment. |
-| <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironmentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_environment#id ProjectEnvironment#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironmentConfig.property.fluxResourcePath">fluxResourcePath</a></code> | <code>java.lang.String</code> | The Flux resource path to associate with this environment. |
+| <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironmentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_environment#id ProjectEnvironment#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironmentConfig.property.kubernetesNamespace">kubernetesNamespace</a></code> | <code>java.lang.String</code> | The Kubernetes namespace to associate with this environment. |
 | <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironmentConfig.property.stopBeforeDestroy">stopBeforeDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines whether the environment is attempted to be stopped before the environment is deleted. |
+| <code><a href="#@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironmentConfig.property.tier">tier</a></code> | <code>java.lang.String</code> | The tier of the new environment. Valid values are `production`, `staging`, `testing`, `development`, `other`. |
 
 ---
 
@@ -1082,7 +1254,7 @@ public java.lang.String getName();
 
 The name of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_environment#name ProjectEnvironment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_environment#name ProjectEnvironment#name}
 
 ---
 
@@ -1096,7 +1268,21 @@ public java.lang.String getProject();
 
 The ID or full path of the project to environment is created for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_environment#project ProjectEnvironment#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_environment#project ProjectEnvironment#project}
+
+---
+
+##### `clusterAgentId`<sup>Optional</sup> <a name="clusterAgentId" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironmentConfig.property.clusterAgentId"></a>
+
+```java
+public java.lang.Number getClusterAgentId();
+```
+
+- *Type:* java.lang.Number
+
+The cluster agent to associate with this environment.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_environment#cluster_agent_id ProjectEnvironment#cluster_agent_id}
 
 ---
 
@@ -1110,7 +1296,21 @@ public java.lang.String getExternalUrl();
 
 Place to link to for this environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_environment#external_url ProjectEnvironment#external_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_environment#external_url ProjectEnvironment#external_url}
+
+---
+
+##### `fluxResourcePath`<sup>Optional</sup> <a name="fluxResourcePath" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironmentConfig.property.fluxResourcePath"></a>
+
+```java
+public java.lang.String getFluxResourcePath();
+```
+
+- *Type:* java.lang.String
+
+The Flux resource path to associate with this environment.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_environment#flux_resource_path ProjectEnvironment#flux_resource_path}
 
 ---
 
@@ -1122,10 +1322,24 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_environment#id ProjectEnvironment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_environment#id ProjectEnvironment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `kubernetesNamespace`<sup>Optional</sup> <a name="kubernetesNamespace" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironmentConfig.property.kubernetesNamespace"></a>
+
+```java
+public java.lang.String getKubernetesNamespace();
+```
+
+- *Type:* java.lang.String
+
+The Kubernetes namespace to associate with this environment.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_environment#kubernetes_namespace ProjectEnvironment#kubernetes_namespace}
 
 ---
 
@@ -1139,7 +1353,21 @@ public java.lang.Object getStopBeforeDestroy();
 
 Determines whether the environment is attempted to be stopped before the environment is deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_environment#stop_before_destroy ProjectEnvironment#stop_before_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_environment#stop_before_destroy ProjectEnvironment#stop_before_destroy}
+
+---
+
+##### `tier`<sup>Optional</sup> <a name="tier" id="@cdktf/provider-gitlab.projectEnvironment.ProjectEnvironmentConfig.property.tier"></a>
+
+```java
+public java.lang.String getTier();
+```
+
+- *Type:* java.lang.String
+
+The tier of the new environment. Valid values are `production`, `staging`, `testing`, `development`, `other`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_environment#tier ProjectEnvironment#tier}
 
 ---
 

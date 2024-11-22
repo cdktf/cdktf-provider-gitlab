@@ -1,3 +1,3 @@
 # `gitlab_pages_domain`
 
-Refer to the Terraform Registry for docs: [`gitlab_pages_domain`](https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/pages_domain).
+Refer to the Terraform Registry for docs: [`gitlab_pages_domain`](https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/pages_domain).

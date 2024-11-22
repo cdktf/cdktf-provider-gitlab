@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branch
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branch
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface DataGitlabProjectProtectedBranchConfig extends cdktf.TerraformM
   /**
   * The name of the protected branch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branch#name DataGitlabProjectProtectedBranch#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branch#name DataGitlabProjectProtectedBranch#name}
   */
   readonly name: string;
   /**
   * The integer or path with namespace that uniquely identifies the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branch#project_id DataGitlabProjectProtectedBranch#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branch#project_id DataGitlabProjectProtectedBranch#project_id}
   */
   readonly projectId: string;
   /**
   * merge_access_levels block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branch#merge_access_levels DataGitlabProjectProtectedBranch#merge_access_levels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branch#merge_access_levels DataGitlabProjectProtectedBranch#merge_access_levels}
   */
   readonly mergeAccessLevels?: DataGitlabProjectProtectedBranchMergeAccessLevels[] | cdktf.IResolvable;
   /**
   * push_access_levels block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branch#push_access_levels DataGitlabProjectProtectedBranch#push_access_levels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branch#push_access_levels DataGitlabProjectProtectedBranch#push_access_levels}
   */
   readonly pushAccessLevels?: DataGitlabProjectProtectedBranchPushAccessLevels[] | cdktf.IResolvable;
 }
@@ -41,13 +41,13 @@ export interface DataGitlabProjectProtectedBranchMergeAccessLevels {
   /**
   * The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `user_id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branch#group_id DataGitlabProjectProtectedBranch#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branch#group_id DataGitlabProjectProtectedBranch#group_id}
   */
   readonly groupId?: number;
   /**
   * The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `group_id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branch#user_id DataGitlabProjectProtectedBranch#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branch#user_id DataGitlabProjectProtectedBranch#user_id}
   */
   readonly userId?: number;
 }
@@ -202,15 +202,21 @@ export class DataGitlabProjectProtectedBranchMergeAccessLevelsList extends cdktf
 }
 export interface DataGitlabProjectProtectedBranchPushAccessLevels {
   /**
-  * The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `user_id`.
+  * The ID of a GitLab deploy key allowed to perform the relevant action. Mutually exclusive with `group_id` and `user_id`. This field is read-only until Gitlab 17.5.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branch#group_id DataGitlabProjectProtectedBranch#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branch#deploy_key_id DataGitlabProjectProtectedBranch#deploy_key_id}
+  */
+  readonly deployKeyId?: number;
+  /**
+  * The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `deploy_key_id` and `user_id`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branch#group_id DataGitlabProjectProtectedBranch#group_id}
   */
   readonly groupId?: number;
   /**
-  * The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `group_id`.
+  * The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `deploy_key_id` and `group_id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branch#user_id DataGitlabProjectProtectedBranch#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branch#user_id DataGitlabProjectProtectedBranch#user_id}
   */
   readonly userId?: number;
 }
@@ -221,6 +227,7 @@ export function dataGitlabProjectProtectedBranchPushAccessLevelsToTerraform(stru
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    deploy_key_id: cdktf.numberToTerraform(struct!.deployKeyId),
     group_id: cdktf.numberToTerraform(struct!.groupId),
     user_id: cdktf.numberToTerraform(struct!.userId),
   }
@@ -233,6 +240,12 @@ export function dataGitlabProjectProtectedBranchPushAccessLevelsToHclTerraform(s
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    deploy_key_id: {
+      value: cdktf.numberToHclTerraform(struct!.deployKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
     group_id: {
       value: cdktf.numberToHclTerraform(struct!.groupId),
       isBlock: false,
@@ -271,6 +284,10 @@ export class DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference ext
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._deployKeyId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deployKeyId = this._deployKeyId;
+    }
     if (this._groupId !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupId = this._groupId;
@@ -286,6 +303,7 @@ export class DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference ext
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._deployKeyId = undefined;
       this._groupId = undefined;
       this._userId = undefined;
     }
@@ -296,6 +314,7 @@ export class DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference ext
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._deployKeyId = value.deployKeyId;
       this._groupId = value.groupId;
       this._userId = value.userId;
     }
@@ -309,6 +328,22 @@ export class DataGitlabProjectProtectedBranchPushAccessLevelsOutputReference ext
   // access_level_description - computed: true, optional: false, required: false
   public get accessLevelDescription() {
     return this.getStringAttribute('access_level_description');
+  }
+
+  // deploy_key_id - computed: false, optional: true, required: false
+  private _deployKeyId?: number; 
+  public get deployKeyId() {
+    return this.getNumberAttribute('deploy_key_id');
+  }
+  public set deployKeyId(value: number) {
+    this._deployKeyId = value;
+  }
+  public resetDeployKeyId() {
+    this._deployKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deployKeyIdInput() {
+    return this._deployKeyId;
   }
 
   // group_id - computed: false, optional: true, required: false
@@ -365,7 +400,7 @@ export class DataGitlabProjectProtectedBranchPushAccessLevelsList extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branch gitlab_project_protected_branch}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branch gitlab_project_protected_branch}
 */
 export class DataGitlabProjectProtectedBranch extends cdktf.TerraformDataSource {
 
@@ -381,7 +416,7 @@ export class DataGitlabProjectProtectedBranch extends cdktf.TerraformDataSource 
   * Generates CDKTF code for importing a DataGitlabProjectProtectedBranch resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabProjectProtectedBranch to import
-  * @param importFromId The id of the existing DataGitlabProjectProtectedBranch that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branch#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabProjectProtectedBranch that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branch#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabProjectProtectedBranch to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -393,7 +428,7 @@ export class DataGitlabProjectProtectedBranch extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/project_protected_branch gitlab_project_protected_branch} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/project_protected_branch gitlab_project_protected_branch} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -404,7 +439,7 @@ export class DataGitlabProjectProtectedBranch extends cdktf.TerraformDataSource 
       terraformResourceType: 'gitlab_project_protected_branch',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.5.0',
+        providerVersion: '17.6.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,
