@@ -4,7 +4,7 @@
 
 ### DataGitlabGroupServiceAccount <a name="DataGitlabGroupServiceAccount" id="@cdktf/provider-gitlab.dataGitlabGroupServiceAccount.DataGitlabGroupServiceAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/group_service_account gitlab_group_service_account}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/group_service_account gitlab_group_service_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupServiceAccount.DataGitlabGroupServiceAccount.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataGitlabGroupServiceAcco
 
 The id of the existing DataGitlabGroupServiceAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/group_service_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/group_service_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -771,7 +771,7 @@ public string Group { get; set; }
 
 The ID or URL-encoded path of the target group. Must be a top-level group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/group_service_account#group DataGitlabGroupServiceAccount#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/group_service_account#group DataGitlabGroupServiceAccount#group}
 
 ---
 
@@ -785,7 +785,7 @@ public string ServiceAccountId { get; set; }
 
 The service account id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/group_service_account#service_account_id DataGitlabGroupServiceAccount#service_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/group_service_account#service_account_id DataGitlabGroupServiceAccount#service_account_id}
 
 ---
 
@@ -799,7 +799,7 @@ public string Name { get; set; }
 
 The name of the user. If not specified, the default Service account user name is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/group_service_account#name DataGitlabGroupServiceAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/group_service_account#name DataGitlabGroupServiceAccount#name}
 
 ---
 
@@ -813,7 +813,7 @@ public string Username { get; set; }
 
 The username of the user. If not specified, it's automatically generated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/group_service_account#username DataGitlabGroupServiceAccount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/group_service_account#username DataGitlabGroupServiceAccount#username}
 
 ---
 

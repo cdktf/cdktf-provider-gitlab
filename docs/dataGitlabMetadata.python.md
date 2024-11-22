@@ -4,7 +4,7 @@
 
 ### DataGitlabMetadata <a name="DataGitlabMetadata" id="@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadata"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/metadata gitlab_metadata}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/metadata gitlab_metadata}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadata.Initializer"></a>
 
@@ -453,7 +453,7 @@ The construct id used in the generated config for the DataGitlabMetadata to impo
 
 The id of the existing DataGitlabMetadata that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/data-sources/metadata#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/metadata#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1032,6 +1032,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadataKasOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadataKasOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadataKasOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadataKasOutputReference.property.externalK8SProxyUrl">external_k8_s_proxy_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadataKasOutputReference.property.externalUrl">external_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadataKasOutputReference.property.version">version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadataKasOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadataKas">DataGitlabMetadataKas</a></code> | *No description.* |
@@ -1069,6 +1070,16 @@ enabled: IResolvable
 ```
 
 - *Type:* cdktf.IResolvable
+
+---
+
+##### `external_k8_s_proxy_url`<sup>Required</sup> <a name="external_k8_s_proxy_url" id="@cdktf/provider-gitlab.dataGitlabMetadata.DataGitlabMetadataKasOutputReference.property.externalK8SProxyUrl"></a>
+
+```python
+external_k8_s_proxy_url: str
+```
+
+- *Type:* str
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ProjectLabel <a name="ProjectLabel" id="@cdktf/provider-gitlab.projectLabel.ProjectLabel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_label gitlab_project_label}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_label gitlab_project_label}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectLabel.ProjectLabel.Initializer"></a>
 
@@ -44,7 +44,7 @@ projectLabel.ProjectLabel(
 | <code><a href="#@cdktf/provider-gitlab.projectLabel.ProjectLabel.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the label. |
 | <code><a href="#@cdktf/provider-gitlab.projectLabel.ProjectLabel.Initializer.parameter.project">project</a></code> | <code>str</code> | The name or id of the project to add the label to. |
 | <code><a href="#@cdktf/provider-gitlab.projectLabel.ProjectLabel.Initializer.parameter.description">description</a></code> | <code>str</code> | The description of the label. |
-| <code><a href="#@cdktf/provider-gitlab.projectLabel.ProjectLabel.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_label#id ProjectLabel#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectLabel.ProjectLabel.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_label#id ProjectLabel#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The color of the label given in 6-digit hex notation with leading '#' sign (e.g. #FFAABB) or one of the [CSS color names](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Color_keywords).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_label#color ProjectLabel#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_label#color ProjectLabel#color}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The name of the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_label#name ProjectLabel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_label#name ProjectLabel#name}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The name or id of the project to add the label to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_label#project ProjectLabel#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_label#project ProjectLabel#project}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The description of the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_label#description ProjectLabel#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_label#description ProjectLabel#description}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_label#id ProjectLabel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_label#id ProjectLabel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -642,7 +642,7 @@ The construct id used in the generated config for the ProjectLabel to import.
 
 The id of the existing ProjectLabel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_label#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_label#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -996,7 +996,7 @@ projectLabel.ProjectLabelConfig(
 | <code><a href="#@cdktf/provider-gitlab.projectLabel.ProjectLabelConfig.property.name">name</a></code> | <code>str</code> | The name of the label. |
 | <code><a href="#@cdktf/provider-gitlab.projectLabel.ProjectLabelConfig.property.project">project</a></code> | <code>str</code> | The name or id of the project to add the label to. |
 | <code><a href="#@cdktf/provider-gitlab.projectLabel.ProjectLabelConfig.property.description">description</a></code> | <code>str</code> | The description of the label. |
-| <code><a href="#@cdktf/provider-gitlab.projectLabel.ProjectLabelConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_label#id ProjectLabel#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectLabel.ProjectLabelConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_label#id ProjectLabel#id}. |
 
 ---
 
@@ -1080,7 +1080,7 @@ color: str
 
 The color of the label given in 6-digit hex notation with leading '#' sign (e.g. #FFAABB) or one of the [CSS color names](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Color_keywords).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_label#color ProjectLabel#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_label#color ProjectLabel#color}
 
 ---
 
@@ -1094,7 +1094,7 @@ name: str
 
 The name of the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_label#name ProjectLabel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_label#name ProjectLabel#name}
 
 ---
 
@@ -1108,7 +1108,7 @@ project: str
 
 The name or id of the project to add the label to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_label#project ProjectLabel#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_label#project ProjectLabel#project}
 
 ---
 
@@ -1122,7 +1122,7 @@ description: str
 
 The description of the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_label#description ProjectLabel#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_label#description ProjectLabel#description}
 
 ---
 
@@ -1134,7 +1134,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_label#id ProjectLabel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_label#id ProjectLabel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

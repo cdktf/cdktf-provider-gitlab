@@ -4,7 +4,7 @@
 
 ### UserRunner <a name="UserRunner" id="@cdktf/provider-gitlab.userRunner.UserRunner"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/user_runner gitlab_user_runner}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/user_runner gitlab_user_runner}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.userRunner.UserRunner.Initializer"></a>
 
@@ -26,6 +26,7 @@ userRunner.UserRunner(
   description: str = None,
   group_id: typing.Union[int, float] = None,
   locked: typing.Union[bool, IResolvable] = None,
+  maintenance_note: str = None,
   maximum_timeout: typing.Union[int, float] = None,
   paused: typing.Union[bool, IResolvable] = None,
   project_id: typing.Union[int, float] = None,
@@ -50,6 +51,7 @@ userRunner.UserRunner(
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.Initializer.parameter.description">description</a></code> | <code>str</code> | Description of the runner. |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.Initializer.parameter.groupId">group_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the group that the runner is created in. Required if runner_type is group_type. |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.Initializer.parameter.locked">locked</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies if the runner should be locked for the current project. |
+| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.Initializer.parameter.maintenanceNote">maintenance_note</a></code> | <code>str</code> | Free-form maintenance notes for the runner (1024 characters). |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.Initializer.parameter.maximumTimeout">maximum_timeout</a></code> | <code>typing.Union[int, float]</code> | Maximum timeout that limits the amount of time (in seconds) that runners can run jobs. |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.Initializer.parameter.paused">paused</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies if the runner should ignore new jobs. |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.Initializer.parameter.projectId">project_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the project that the runner is created in. Required if runner_type is project_type. |
@@ -124,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 The scope of the runner. Valid values are: `instance_type`, `group_type`, `project_type`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/user_runner#runner_type UserRunner#runner_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/user_runner#runner_type UserRunner#runner_type}
 
 ---
 
@@ -134,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The access level of the runner. Valid values are: `not_protected`, `ref_protected`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/user_runner#access_level UserRunner#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/user_runner#access_level UserRunner#access_level}
 
 ---
 
@@ -144,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Description of the runner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/user_runner#description UserRunner#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/user_runner#description UserRunner#description}
 
 ---
 
@@ -154,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The ID of the group that the runner is created in. Required if runner_type is group_type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/user_runner#group_id UserRunner#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/user_runner#group_id UserRunner#group_id}
 
 ---
 
@@ -164,7 +166,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Specifies if the runner should be locked for the current project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/user_runner#locked UserRunner#locked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/user_runner#locked UserRunner#locked}
+
+---
+
+##### `maintenance_note`<sup>Optional</sup> <a name="maintenance_note" id="@cdktf/provider-gitlab.userRunner.UserRunner.Initializer.parameter.maintenanceNote"></a>
+
+- *Type:* str
+
+Free-form maintenance notes for the runner (1024 characters).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/user_runner#maintenance_note UserRunner#maintenance_note}
 
 ---
 
@@ -176,7 +188,7 @@ Maximum timeout that limits the amount of time (in seconds) that runners can run
 
 Must be at least 600 (10 minutes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/user_runner#maximum_timeout UserRunner#maximum_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/user_runner#maximum_timeout UserRunner#maximum_timeout}
 
 ---
 
@@ -186,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Specifies if the runner should ignore new jobs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/user_runner#paused UserRunner#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/user_runner#paused UserRunner#paused}
 
 ---
 
@@ -196,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The ID of the project that the runner is created in. Required if runner_type is project_type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/user_runner#project_id UserRunner#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/user_runner#project_id UserRunner#project_id}
 
 ---
 
@@ -206,7 +218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 A list of runner tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/user_runner#tag_list UserRunner#tag_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/user_runner#tag_list UserRunner#tag_list}
 
 ---
 
@@ -216,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Specifies if the runner should handle untagged jobs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/user_runner#untagged UserRunner#untagged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/user_runner#untagged UserRunner#untagged}
 
 ---
 
@@ -251,6 +263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.resetGroupId">reset_group_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.resetLocked">reset_locked</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.resetMaintenanceNote">reset_maintenance_note</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.resetMaximumTimeout">reset_maximum_timeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.resetPaused">reset_paused</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.resetProjectId">reset_project_id</a></code> | *No description.* |
@@ -608,6 +621,12 @@ def reset_group_id() -> None
 def reset_locked() -> None
 ```
 
+##### `reset_maintenance_note` <a name="reset_maintenance_note" id="@cdktf/provider-gitlab.userRunner.UserRunner.resetMaintenanceNote"></a>
+
+```python
+def reset_maintenance_note() -> None
+```
+
 ##### `reset_maximum_timeout` <a name="reset_maximum_timeout" id="@cdktf/provider-gitlab.userRunner.UserRunner.resetMaximumTimeout"></a>
 
 ```python
@@ -752,7 +771,7 @@ The construct id used in the generated config for the UserRunner to import.
 
 The id of the existing UserRunner that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/user_runner#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/user_runner#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -788,6 +807,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.groupIdInput">group_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.lockedInput">locked_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.maintenanceNoteInput">maintenance_note_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.maximumTimeoutInput">maximum_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.pausedInput">paused_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.projectIdInput">project_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -798,6 +818,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.groupId">group_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.locked">locked</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.maintenanceNote">maintenance_note</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.maximumTimeout">maximum_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.paused">paused</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.projectId">project_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -1009,6 +1030,16 @@ locked_input: typing.Union[bool, IResolvable]
 
 ---
 
+##### `maintenance_note_input`<sup>Optional</sup> <a name="maintenance_note_input" id="@cdktf/provider-gitlab.userRunner.UserRunner.property.maintenanceNoteInput"></a>
+
+```python
+maintenance_note_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `maximum_timeout_input`<sup>Optional</sup> <a name="maximum_timeout_input" id="@cdktf/provider-gitlab.userRunner.UserRunner.property.maximumTimeoutInput"></a>
 
 ```python
@@ -1106,6 +1137,16 @@ locked: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `maintenance_note`<sup>Required</sup> <a name="maintenance_note" id="@cdktf/provider-gitlab.userRunner.UserRunner.property.maintenanceNote"></a>
+
+```python
+maintenance_note: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1209,6 +1250,7 @@ userRunner.UserRunnerConfig(
   description: str = None,
   group_id: typing.Union[int, float] = None,
   locked: typing.Union[bool, IResolvable] = None,
+  maintenance_note: str = None,
   maximum_timeout: typing.Union[int, float] = None,
   paused: typing.Union[bool, IResolvable] = None,
   project_id: typing.Union[int, float] = None,
@@ -1233,6 +1275,7 @@ userRunner.UserRunnerConfig(
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.description">description</a></code> | <code>str</code> | Description of the runner. |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.groupId">group_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the group that the runner is created in. Required if runner_type is group_type. |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.locked">locked</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies if the runner should be locked for the current project. |
+| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.maintenanceNote">maintenance_note</a></code> | <code>str</code> | Free-form maintenance notes for the runner (1024 characters). |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.maximumTimeout">maximum_timeout</a></code> | <code>typing.Union[int, float]</code> | Maximum timeout that limits the amount of time (in seconds) that runners can run jobs. |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.paused">paused</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies if the runner should ignore new jobs. |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.projectId">project_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the project that the runner is created in. Required if runner_type is project_type. |
@@ -1321,7 +1364,7 @@ runner_type: str
 
 The scope of the runner. Valid values are: `instance_type`, `group_type`, `project_type`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/user_runner#runner_type UserRunner#runner_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/user_runner#runner_type UserRunner#runner_type}
 
 ---
 
@@ -1335,7 +1378,7 @@ access_level: str
 
 The access level of the runner. Valid values are: `not_protected`, `ref_protected`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/user_runner#access_level UserRunner#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/user_runner#access_level UserRunner#access_level}
 
 ---
 
@@ -1349,7 +1392,7 @@ description: str
 
 Description of the runner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/user_runner#description UserRunner#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/user_runner#description UserRunner#description}
 
 ---
 
@@ -1363,7 +1406,7 @@ group_id: typing.Union[int, float]
 
 The ID of the group that the runner is created in. Required if runner_type is group_type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/user_runner#group_id UserRunner#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/user_runner#group_id UserRunner#group_id}
 
 ---
 
@@ -1377,7 +1420,21 @@ locked: typing.Union[bool, IResolvable]
 
 Specifies if the runner should be locked for the current project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/user_runner#locked UserRunner#locked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/user_runner#locked UserRunner#locked}
+
+---
+
+##### `maintenance_note`<sup>Optional</sup> <a name="maintenance_note" id="@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.maintenanceNote"></a>
+
+```python
+maintenance_note: str
+```
+
+- *Type:* str
+
+Free-form maintenance notes for the runner (1024 characters).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/user_runner#maintenance_note UserRunner#maintenance_note}
 
 ---
 
@@ -1393,7 +1450,7 @@ Maximum timeout that limits the amount of time (in seconds) that runners can run
 
 Must be at least 600 (10 minutes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/user_runner#maximum_timeout UserRunner#maximum_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/user_runner#maximum_timeout UserRunner#maximum_timeout}
 
 ---
 
@@ -1407,7 +1464,7 @@ paused: typing.Union[bool, IResolvable]
 
 Specifies if the runner should ignore new jobs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/user_runner#paused UserRunner#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/user_runner#paused UserRunner#paused}
 
 ---
 
@@ -1421,7 +1478,7 @@ project_id: typing.Union[int, float]
 
 The ID of the project that the runner is created in. Required if runner_type is project_type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/user_runner#project_id UserRunner#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/user_runner#project_id UserRunner#project_id}
 
 ---
 
@@ -1435,7 +1492,7 @@ tag_list: typing.List[str]
 
 A list of runner tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/user_runner#tag_list UserRunner#tag_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/user_runner#tag_list UserRunner#tag_list}
 
 ---
 
@@ -1449,7 +1506,7 @@ untagged: typing.Union[bool, IResolvable]
 
 Specifies if the runner should handle untagged jobs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/user_runner#untagged UserRunner#untagged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/user_runner#untagged UserRunner#untagged}
 
 ---
 

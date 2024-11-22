@@ -4,12 +4,12 @@
 
 ### ProjectMilestone <a name="ProjectMilestone" id="@cdktf/provider-gitlab.projectMilestone.ProjectMilestone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_milestone gitlab_project_milestone}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_milestone gitlab_project_milestone}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectMilestone.ProjectMilestone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectmilestone"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectmilestone"
 
 projectmilestone.NewProjectMilestone(scope Construct, id *string, config ProjectMilestoneConfig) ProjectMilestone
 ```
@@ -413,7 +413,7 @@ func ResetState()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectMilestone.ProjectMilestone.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectmilestone"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectmilestone"
 
 projectmilestone.ProjectMilestone_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectMilestone.ProjectMilestone.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectmilestone"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectmilestone"
 
 projectmilestone.ProjectMilestone_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ projectmilestone.ProjectMilestone_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectMilestone.ProjectMilestone.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectmilestone"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectmilestone"
 
 projectmilestone.ProjectMilestone_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ projectmilestone.ProjectMilestone_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectMilestone.ProjectMilestone.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectmilestone"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectmilestone"
 
 projectmilestone.ProjectMilestone_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -502,7 +502,7 @@ The construct id used in the generated config for the ProjectMilestone to import
 
 The id of the existing ProjectMilestone that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_milestone#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_milestone#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -933,7 +933,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectMilestone.ProjectMilestoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectmilestone"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectmilestone"
 
 &projectmilestone.ProjectMilestoneConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectmilestone"
 | <code><a href="#@cdktf/provider-gitlab.projectMilestone.ProjectMilestoneConfig.property.title">Title</a></code> | <code>*string</code> | The title of a milestone. |
 | <code><a href="#@cdktf/provider-gitlab.projectMilestone.ProjectMilestoneConfig.property.description">Description</a></code> | <code>*string</code> | The description of the milestone. |
 | <code><a href="#@cdktf/provider-gitlab.projectMilestone.ProjectMilestoneConfig.property.dueDate">DueDate</a></code> | <code>*string</code> | The due date of the milestone. Date time string in the format YYYY-MM-DD, for example 2016-03-11. |
-| <code><a href="#@cdktf/provider-gitlab.projectMilestone.ProjectMilestoneConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_milestone#id ProjectMilestone#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectMilestone.ProjectMilestoneConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_milestone#id ProjectMilestone#id}. |
 | <code><a href="#@cdktf/provider-gitlab.projectMilestone.ProjectMilestoneConfig.property.startDate">StartDate</a></code> | <code>*string</code> | The start date of the milestone. Date time string in the format YYYY-MM-DD, for example 2016-03-11. |
 | <code><a href="#@cdktf/provider-gitlab.projectMilestone.ProjectMilestoneConfig.property.state">State</a></code> | <code>*string</code> | The state of the milestone. Valid values are: `active`, `closed`. |
 
@@ -1054,7 +1054,7 @@ Project *string
 
 The ID or URL-encoded path of the project owned by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_milestone#project ProjectMilestone#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_milestone#project ProjectMilestone#project}
 
 ---
 
@@ -1068,7 +1068,7 @@ Title *string
 
 The title of a milestone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_milestone#title ProjectMilestone#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_milestone#title ProjectMilestone#title}
 
 ---
 
@@ -1082,7 +1082,7 @@ Description *string
 
 The description of the milestone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_milestone#description ProjectMilestone#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_milestone#description ProjectMilestone#description}
 
 ---
 
@@ -1096,7 +1096,7 @@ DueDate *string
 
 The due date of the milestone. Date time string in the format YYYY-MM-DD, for example 2016-03-11.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_milestone#due_date ProjectMilestone#due_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_milestone#due_date ProjectMilestone#due_date}
 
 ---
 
@@ -1108,7 +1108,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_milestone#id ProjectMilestone#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_milestone#id ProjectMilestone#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1125,7 +1125,7 @@ StartDate *string
 
 The start date of the milestone. Date time string in the format YYYY-MM-DD, for example 2016-03-11.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_milestone#start_date ProjectMilestone#start_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_milestone#start_date ProjectMilestone#start_date}
 
 ---
 
@@ -1139,7 +1139,7 @@ State *string
 
 The state of the milestone. Valid values are: `active`, `closed`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.5.0/docs/resources/project_milestone#state ProjectMilestone#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_milestone#state ProjectMilestone#state}
 
 ---
 
