@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_saml_link
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/group_saml_link
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface GroupSamlLinkConfig extends cdktf.TerraformMetaArguments {
   /**
   * Access level for members of the SAML group. Valid values are: `guest`, `reporter`, `developer`, `maintainer`, `owner`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_saml_link#access_level GroupSamlLink#access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/group_saml_link#access_level GroupSamlLink#access_level}
   */
   readonly accessLevel: string;
   /**
   * The ID or path of the group to add the SAML Group Link to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_saml_link#group GroupSamlLink#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/group_saml_link#group GroupSamlLink#group}
   */
   readonly group: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_saml_link#id GroupSamlLink#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/group_saml_link#id GroupSamlLink#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,19 +34,19 @@ export interface GroupSamlLinkConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of a custom member role. Only available for Ultimate instances. When using a custom role, the `access_level` must match the base role used to create the custom role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_saml_link#member_role_id GroupSamlLink#member_role_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/group_saml_link#member_role_id GroupSamlLink#member_role_id}
   */
   readonly memberRoleId?: number;
   /**
   * The name of the SAML group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_saml_link#saml_group_name GroupSamlLink#saml_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/group_saml_link#saml_group_name GroupSamlLink#saml_group_name}
   */
   readonly samlGroupName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_saml_link gitlab_group_saml_link}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/group_saml_link gitlab_group_saml_link}
 */
 export class GroupSamlLink extends cdktf.TerraformResource {
 
@@ -62,7 +62,7 @@ export class GroupSamlLink extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GroupSamlLink resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GroupSamlLink to import
-  * @param importFromId The id of the existing GroupSamlLink that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_saml_link#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GroupSamlLink that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/group_saml_link#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GroupSamlLink to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +74,7 @@ export class GroupSamlLink extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_saml_link gitlab_group_saml_link} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/group_saml_link gitlab_group_saml_link} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class GroupSamlLink extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_saml_link',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.6.0',
+        providerVersion: '17.6.1',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,

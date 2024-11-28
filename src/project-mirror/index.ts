@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_mirror
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/project_mirror
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface ProjectMirrorConfig extends cdktf.TerraformMetaArguments {
   /**
   * Determines if the mirror is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_mirror#enabled ProjectMirror#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/project_mirror#enabled ProjectMirror#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_mirror#id ProjectMirror#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/project_mirror#id ProjectMirror#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,31 +28,31 @@ export interface ProjectMirrorConfig extends cdktf.TerraformMetaArguments {
   /**
   * Determines if divergent refs are skipped.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_mirror#keep_divergent_refs ProjectMirror#keep_divergent_refs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/project_mirror#keep_divergent_refs ProjectMirror#keep_divergent_refs}
   */
   readonly keepDivergentRefs?: boolean | cdktf.IResolvable;
   /**
   * Determines if only protected branches are mirrored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_mirror#only_protected_branches ProjectMirror#only_protected_branches}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/project_mirror#only_protected_branches ProjectMirror#only_protected_branches}
   */
   readonly onlyProtectedBranches?: boolean | cdktf.IResolvable;
   /**
   * The id of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_mirror#project ProjectMirror#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/project_mirror#project ProjectMirror#project}
   */
   readonly project: string;
   /**
   * The URL of the remote repository to be mirrored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_mirror#url ProjectMirror#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/project_mirror#url ProjectMirror#url}
   */
   readonly url: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_mirror gitlab_project_mirror}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/project_mirror gitlab_project_mirror}
 */
 export class ProjectMirror extends cdktf.TerraformResource {
 
@@ -68,7 +68,7 @@ export class ProjectMirror extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ProjectMirror resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProjectMirror to import
-  * @param importFromId The id of the existing ProjectMirror that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_mirror#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ProjectMirror that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/project_mirror#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProjectMirror to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -80,7 +80,7 @@ export class ProjectMirror extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_mirror gitlab_project_mirror} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/project_mirror gitlab_project_mirror} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +91,7 @@ export class ProjectMirror extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_mirror',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.6.0',
+        providerVersion: '17.6.1',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,

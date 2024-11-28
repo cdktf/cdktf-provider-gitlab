@@ -4,7 +4,7 @@
 
 ### ProjectComplianceFrameworks <a name="ProjectComplianceFrameworks" id="@cdktf/provider-gitlab.projectComplianceFrameworks.ProjectComplianceFrameworks"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_compliance_frameworks gitlab_project_compliance_frameworks}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/project_compliance_frameworks gitlab_project_compliance_frameworks}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectComplianceFrameworks.ProjectComplianceFrameworks.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the ProjectComplianceFramework
 
 The id of the existing ProjectComplianceFrameworks that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_compliance_frameworks#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/project_compliance_frameworks#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -833,7 +833,7 @@ public string[] ComplianceFrameworkIds { get; set; }
 
 Globally unique IDs of the compliance frameworks to assign to the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_compliance_frameworks#compliance_framework_ids ProjectComplianceFrameworks#compliance_framework_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/project_compliance_frameworks#compliance_framework_ids ProjectComplianceFrameworks#compliance_framework_ids}
 
 ---
 
@@ -847,7 +847,7 @@ public string Project { get; set; }
 
 The ID or full path of the project to change the compliance frameworks of.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/project_compliance_frameworks#project ProjectComplianceFrameworks#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/project_compliance_frameworks#project ProjectComplianceFrameworks#project}
 
 ---
 
