@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_service_account_access_token
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/group_service_account_access_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,39 +8,138 @@ import * as cdktf from 'cdktf';
 
 export interface GroupServiceAccountAccessTokenConfig extends cdktf.TerraformMetaArguments {
   /**
-  * 	The personal access token expiry date. When left blank, the token follows the standard rule of expiry for personal access tokens.
+  * The service account access token expiry date. When left blank, the token follows the standard rule of expiry for personal access tokens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_service_account_access_token#expires_at GroupServiceAccountAccessToken#expires_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/group_service_account_access_token#expires_at GroupServiceAccountAccessToken#expires_at}
   */
   readonly expiresAt?: string;
   /**
   * The ID or URL-encoded path of the group containing the service account. Must be a top level group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_service_account_access_token#group GroupServiceAccountAccessToken#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/group_service_account_access_token#group GroupServiceAccountAccessToken#group}
   */
   readonly group: string;
   /**
   * The name of the personal access token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_service_account_access_token#name GroupServiceAccountAccessToken#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/group_service_account_access_token#name GroupServiceAccountAccessToken#name}
   */
   readonly name: string;
   /**
+  * The configuration for when to rotate a token automatically. Will not rotate a token until `terraform apply` is run.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/group_service_account_access_token#rotation_configuration GroupServiceAccountAccessToken#rotation_configuration}
+  */
+  readonly rotationConfiguration?: GroupServiceAccountAccessTokenRotationConfiguration;
+  /**
   * The scopes of the group service account access token. valid values are: `api`, `read_api`, `read_registry`, `write_registry`, `read_repository`, `write_repository`, `create_runner`, `manage_runner`, `ai_features`, `k8s_proxy`, `read_observability`, `write_observability`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_service_account_access_token#scopes GroupServiceAccountAccessToken#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/group_service_account_access_token#scopes GroupServiceAccountAccessToken#scopes}
   */
   readonly scopes: string[];
   /**
   * The ID of a service account user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_service_account_access_token#user_id GroupServiceAccountAccessToken#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/group_service_account_access_token#user_id GroupServiceAccountAccessToken#user_id}
   */
   readonly userId: number;
 }
+export interface GroupServiceAccountAccessTokenRotationConfiguration {
+  /**
+  * The duration (in days) before the expiration when the token should be rotated. As an example, if set to 7 days, the token will rotate 7 days before the expiration date, but only when `terraform apply` is run in that timeframe.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/group_service_account_access_token#rotate_before_days GroupServiceAccountAccessToken#rotate_before_days}
+  */
+  readonly rotateBeforeDays: number;
+}
+
+export function groupServiceAccountAccessTokenRotationConfigurationToTerraform(struct?: GroupServiceAccountAccessTokenRotationConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    rotate_before_days: cdktf.numberToTerraform(struct!.rotateBeforeDays),
+  }
+}
+
+
+export function groupServiceAccountAccessTokenRotationConfigurationToHclTerraform(struct?: GroupServiceAccountAccessTokenRotationConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    rotate_before_days: {
+      value: cdktf.numberToHclTerraform(struct!.rotateBeforeDays),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GroupServiceAccountAccessTokenRotationConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): GroupServiceAccountAccessTokenRotationConfiguration | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._rotateBeforeDays !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rotateBeforeDays = this._rotateBeforeDays;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GroupServiceAccountAccessTokenRotationConfiguration | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._rotateBeforeDays = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._rotateBeforeDays = value.rotateBeforeDays;
+    }
+  }
+
+  // rotate_before_days - computed: false, optional: false, required: true
+  private _rotateBeforeDays?: number; 
+  public get rotateBeforeDays() {
+    return this.getNumberAttribute('rotate_before_days');
+  }
+  public set rotateBeforeDays(value: number) {
+    this._rotateBeforeDays = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rotateBeforeDaysInput() {
+    return this._rotateBeforeDays;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token}
 */
 export class GroupServiceAccountAccessToken extends cdktf.TerraformResource {
 
@@ -61,7 +155,7 @@ export class GroupServiceAccountAccessToken extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GroupServiceAccountAccessToken resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GroupServiceAccountAccessToken to import
-  * @param importFromId The id of the existing GroupServiceAccountAccessToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_service_account_access_token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GroupServiceAccountAccessToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/group_service_account_access_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GroupServiceAccountAccessToken to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -73,7 +167,7 @@ export class GroupServiceAccountAccessToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +178,7 @@ export class GroupServiceAccountAccessToken extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_service_account_access_token',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.6.0',
+        providerVersion: '17.6.1',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,
@@ -98,6 +192,7 @@ export class GroupServiceAccountAccessToken extends cdktf.TerraformResource {
     this._expiresAt = config.expiresAt;
     this._group = config.group;
     this._name = config.name;
+    this._rotationConfiguration.internalValue = config.rotationConfiguration;
     this._scopes = config.scopes;
     this._userId = config.userId;
   }
@@ -168,6 +263,22 @@ export class GroupServiceAccountAccessToken extends cdktf.TerraformResource {
     return this.getBooleanAttribute('revoked');
   }
 
+  // rotation_configuration - computed: false, optional: true, required: false
+  private _rotationConfiguration = new GroupServiceAccountAccessTokenRotationConfigurationOutputReference(this, "rotation_configuration");
+  public get rotationConfiguration() {
+    return this._rotationConfiguration;
+  }
+  public putRotationConfiguration(value: GroupServiceAccountAccessTokenRotationConfiguration) {
+    this._rotationConfiguration.internalValue = value;
+  }
+  public resetRotationConfiguration() {
+    this._rotationConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rotationConfigurationInput() {
+    return this._rotationConfiguration.internalValue;
+  }
+
   // scopes - computed: false, optional: false, required: true
   private _scopes?: string[]; 
   public get scopes() {
@@ -208,6 +319,7 @@ export class GroupServiceAccountAccessToken extends cdktf.TerraformResource {
       expires_at: cdktf.stringToTerraform(this._expiresAt),
       group: cdktf.stringToTerraform(this._group),
       name: cdktf.stringToTerraform(this._name),
+      rotation_configuration: groupServiceAccountAccessTokenRotationConfigurationToTerraform(this._rotationConfiguration.internalValue),
       scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._scopes),
       user_id: cdktf.numberToTerraform(this._userId),
     };
@@ -232,6 +344,12 @@ export class GroupServiceAccountAccessToken extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      rotation_configuration: {
+        value: groupServiceAccountAccessTokenRotationConfigurationToHclTerraform(this._rotationConfiguration.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GroupServiceAccountAccessTokenRotationConfiguration",
       },
       scopes: {
         value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._scopes),

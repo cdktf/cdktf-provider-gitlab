@@ -4,12 +4,12 @@
 
 ### DataGitlabGroupIds <a name="DataGitlabGroupIds" id="@cdktf/provider-gitlab.dataGitlabGroupIds.DataGitlabGroupIds"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/group_ids gitlab_group_ids}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/group_ids gitlab_group_ids}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupIds.DataGitlabGroupIds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupids"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupids"
 
 datagitlabgroupids.NewDataGitlabGroupIds(scope Construct, id *string, config DataGitlabGroupIdsConfig) DataGitlabGroupIds
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabGroupIds.DataGitlabGroupIds.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupids"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupids"
 
 datagitlabgroupids.DataGitlabGroupIds_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabGroupIds.DataGitlabGroupIds.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupids"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupids"
 
 datagitlabgroupids.DataGitlabGroupIds_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datagitlabgroupids.DataGitlabGroupIds_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabGroupIds.DataGitlabGroupIds.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupids"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupids"
 
 datagitlabgroupids.DataGitlabGroupIds_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagitlabgroupids.DataGitlabGroupIds_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabGroupIds.DataGitlabGroupIds.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupids"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupids"
 
 datagitlabgroupids.DataGitlabGroupIds_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataGitlabGroupIds to impo
 
 The id of the existing DataGitlabGroupIds that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/group_ids#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/group_ids#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -609,7 +609,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabGroupIds.DataGitlabGroupIdsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupids"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupids"
 
 &datagitlabgroupids.DataGitlabGroupIdsConfig {
 	Connection: interface{},
@@ -718,7 +718,7 @@ Group *string
 
 The ID or URL-encoded path of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.0/docs/data-sources/group_ids#group DataGitlabGroupIds#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/group_ids#group DataGitlabGroupIds#group}
 
 ---
 
