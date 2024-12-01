@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.pipelineTrigger.PipelineTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/pipelinetrigger"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/pipelinetrigger"
 
 pipelinetrigger.NewPipelineTrigger(scope Construct, id *string, config PipelineTriggerConfig) PipelineTrigger
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.pipelineTrigger.PipelineTrigger.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/pipelinetrigger"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/pipelinetrigger"
 
 pipelinetrigger.PipelineTrigger_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.pipelineTrigger.PipelineTrigger.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/pipelinetrigger"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/pipelinetrigger"
 
 pipelinetrigger.PipelineTrigger_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ pipelinetrigger.PipelineTrigger_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.pipelineTrigger.PipelineTrigger.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/pipelinetrigger"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/pipelinetrigger"
 
 pipelinetrigger.PipelineTrigger_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ pipelinetrigger.PipelineTrigger_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.pipelineTrigger.PipelineTrigger.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/pipelinetrigger"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/pipelinetrigger"
 
 pipelinetrigger.PipelineTrigger_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.pipelineTrigger.PipelineTriggerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/pipelinetrigger"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/pipelinetrigger"
 
 &pipelinetrigger.PipelineTriggerConfig {
 	Connection: interface{},
