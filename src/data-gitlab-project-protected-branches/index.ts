@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/project_protected_branches
 // generated from terraform resource schema
 
