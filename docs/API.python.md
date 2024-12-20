@@ -89,6 +89,7 @@ The following submodules are available:
 - [groupShareGroup](./groupShareGroup.python.md)
 - [groupVariable](./groupVariable.python.md)
 - [instanceCluster](./instanceCluster.python.md)
+- [instanceServiceAccount](./instanceServiceAccount.python.md)
 - [instanceVariable](./instanceVariable.python.md)
 - [integrationCustomIssueTracker](./integrationCustomIssueTracker.python.md)
 - [integrationEmailsOnPush](./integrationEmailsOnPush.python.md)

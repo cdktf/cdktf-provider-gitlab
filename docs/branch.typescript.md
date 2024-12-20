@@ -4,7 +4,7 @@
 
 ### Branch <a name="Branch" id="@cdktf/provider-gitlab.branch.Branch"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/branch gitlab_branch}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/branch gitlab_branch}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.branch.Branch.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.branch.Branch.resetKeepOnDestroy">resetKeepOnDestroy</a></code> | *No description.* |
 
 ---
 
@@ -371,6 +372,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public resetId(): void
 ```
 
+##### `resetKeepOnDestroy` <a name="resetKeepOnDestroy" id="@cdktf/provider-gitlab.branch.Branch.resetKeepOnDestroy"></a>
+
+```typescript
+public resetKeepOnDestroy(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -474,7 +481,7 @@ The construct id used in the generated config for the Branch to import.
 
 The id of the existing Branch that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/branch#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/branch#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -513,10 +520,12 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.property.protected">protected</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.property.webUrl">webUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.branch.Branch.property.keepOnDestroyInput">keepOnDestroyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.property.refInput">refInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.branch.Branch.property.keepOnDestroy">keepOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.property.project">project</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.property.ref">ref</a></code> | <code>string</code> | *No description.* |
@@ -755,6 +764,16 @@ public readonly idInput: string;
 
 ---
 
+##### `keepOnDestroyInput`<sup>Optional</sup> <a name="keepOnDestroyInput" id="@cdktf/provider-gitlab.branch.Branch.property.keepOnDestroyInput"></a>
+
+```typescript
+public readonly keepOnDestroyInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-gitlab.branch.Branch.property.nameInput"></a>
 
 ```typescript
@@ -792,6 +811,16 @@ public readonly id: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `keepOnDestroy`<sup>Required</sup> <a name="keepOnDestroy" id="@cdktf/provider-gitlab.branch.Branch.property.keepOnDestroy"></a>
+
+```typescript
+public readonly keepOnDestroy: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -880,7 +909,8 @@ const branchConfig: branch.BranchConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.branch.BranchConfig.property.name">name</a></code> | <code>string</code> | The name for this branch. |
 | <code><a href="#@cdktf/provider-gitlab.branch.BranchConfig.property.project">project</a></code> | <code>string</code> | The ID or full path of the project which the branch is created against. |
 | <code><a href="#@cdktf/provider-gitlab.branch.BranchConfig.property.ref">ref</a></code> | <code>string</code> | The ref which the branch is created from. |
-| <code><a href="#@cdktf/provider-gitlab.branch.BranchConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/branch#id Branch#id}. |
+| <code><a href="#@cdktf/provider-gitlab.branch.BranchConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/branch#id Branch#id}. |
+| <code><a href="#@cdktf/provider-gitlab.branch.BranchConfig.property.keepOnDestroy">keepOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Indicates whether the branch is kept once the resource destroyed (must be applied before a destroy). |
 
 ---
 
@@ -964,7 +994,7 @@ public readonly name: string;
 
 The name for this branch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/branch#name Branch#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/branch#name Branch#name}
 
 ---
 
@@ -978,7 +1008,7 @@ public readonly project: string;
 
 The ID or full path of the project which the branch is created against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/branch#project Branch#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/branch#project Branch#project}
 
 ---
 
@@ -992,7 +1022,7 @@ public readonly ref: string;
 
 The ref which the branch is created from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/branch#ref Branch#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/branch#ref Branch#ref}
 
 ---
 
@@ -1004,10 +1034,24 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/branch#id Branch#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/branch#id Branch#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `keepOnDestroy`<sup>Optional</sup> <a name="keepOnDestroy" id="@cdktf/provider-gitlab.branch.BranchConfig.property.keepOnDestroy"></a>
+
+```typescript
+public readonly keepOnDestroy: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Indicates whether the branch is kept once the resource destroyed (must be applied before a destroy).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/branch#keep_on_destroy Branch#keep_on_destroy}
 
 ---
 

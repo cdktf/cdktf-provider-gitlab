@@ -89,6 +89,7 @@ The following submodules are available:
 - [groupShareGroup](./groupShareGroup.java.md)
 - [groupVariable](./groupVariable.java.md)
 - [instanceCluster](./instanceCluster.java.md)
+- [instanceServiceAccount](./instanceServiceAccount.java.md)
 - [instanceVariable](./instanceVariable.java.md)
 - [integrationCustomIssueTracker](./integrationCustomIssueTracker.java.md)
 - [integrationEmailsOnPush](./integrationEmailsOnPush.java.md)

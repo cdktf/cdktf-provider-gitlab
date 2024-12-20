@@ -35,6 +35,7 @@ Object.defineProperty(exports, 'groupServiceAccountAccessToken', { get: function
 Object.defineProperty(exports, 'groupShareGroup', { get: function () { return require('./group-share-group'); } });
 Object.defineProperty(exports, 'groupVariable', { get: function () { return require('./group-variable'); } });
 Object.defineProperty(exports, 'instanceCluster', { get: function () { return require('./instance-cluster'); } });
+Object.defineProperty(exports, 'instanceServiceAccount', { get: function () { return require('./instance-service-account'); } });
 Object.defineProperty(exports, 'instanceVariable', { get: function () { return require('./instance-variable'); } });
 Object.defineProperty(exports, 'integrationCustomIssueTracker', { get: function () { return require('./integration-custom-issue-tracker'); } });
 Object.defineProperty(exports, 'integrationEmailsOnPush', { get: function () { return require('./integration-emails-on-push'); } });

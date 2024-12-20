@@ -89,6 +89,7 @@ The following submodules are available:
 - [groupShareGroup](./groupShareGroup.csharp.md)
 - [groupVariable](./groupVariable.csharp.md)
 - [instanceCluster](./instanceCluster.csharp.md)
+- [instanceServiceAccount](./instanceServiceAccount.csharp.md)
 - [instanceVariable](./instanceVariable.csharp.md)
 - [integrationCustomIssueTracker](./integrationCustomIssueTracker.csharp.md)
 - [integrationEmailsOnPush](./integrationEmailsOnPush.csharp.md)

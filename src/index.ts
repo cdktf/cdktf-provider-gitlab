@@ -35,6 +35,7 @@ export * as groupServiceAccountAccessToken from './group-service-account-access-
 export * as groupShareGroup from './group-share-group';
 export * as groupVariable from './group-variable';
 export * as instanceCluster from './instance-cluster';
+export * as instanceServiceAccount from './instance-service-account';
 export * as instanceVariable from './instance-variable';
 export * as integrationCustomIssueTracker from './integration-custom-issue-tracker';
 export * as integrationEmailsOnPush from './integration-emails-on-push';

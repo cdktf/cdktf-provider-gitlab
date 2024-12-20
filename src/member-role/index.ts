@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/member_role
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/member_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,37 @@ export interface MemberRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The base access level for the custom role. Valid values are: `DEVELOPER`, `GUEST`, `MAINTAINER`, `MINIMAL_ACCESS`, `OWNER`, `REPORTER`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/member_role#base_access_level MemberRole#base_access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/member_role#base_access_level MemberRole#base_access_level}
   */
   readonly baseAccessLevel: string;
   /**
   * Description for the member role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/member_role#description MemberRole#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/member_role#description MemberRole#description}
   */
   readonly description?: string;
   /**
   * All permissions enabled for the custom role. Valid values are: `ADMIN_CICD_VARIABLES`, `ADMIN_COMPLIANCE_FRAMEWORK`, `ADMIN_GROUP_MEMBER`, `ADMIN_INTEGRATIONS`, `ADMIN_MERGE_REQUEST`, `ADMIN_PUSH_RULES`, `ADMIN_RUNNERS`, `ADMIN_TERRAFORM_STATE`, `ADMIN_VULNERABILITY`, `ADMIN_WEB_HOOK`, `ARCHIVE_PROJECT`, `MANAGE_DEPLOY_TOKENS`, `MANAGE_GROUP_ACCESS_TOKENS`, `MANAGE_MERGE_REQUEST_SETTINGS`, `MANAGE_PROJECT_ACCESS_TOKENS`, `MANAGE_SECURITY_POLICY_LINK`, `READ_CODE`, `READ_CRM_CONTACT`, `READ_DEPENDENCY`, `READ_RUNNERS`, `READ_VULNERABILITY`, `REMOVE_GROUP`, `REMOVE_PROJECT`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/member_role#enabled_permissions MemberRole#enabled_permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/member_role#enabled_permissions MemberRole#enabled_permissions}
   */
   readonly enabledPermissions: string[];
   /**
   * Full path of the namespace to create the member role in. **Required for SAAS** **Not allowed for self-managed**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/member_role#group_path MemberRole#group_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/member_role#group_path MemberRole#group_path}
   */
   readonly groupPath?: string;
   /**
   * Name for the member role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/member_role#name MemberRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/member_role#name MemberRole#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/member_role gitlab_member_role}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/member_role gitlab_member_role}
 */
 export class MemberRole extends cdktf.TerraformResource {
 
@@ -61,7 +61,7 @@ export class MemberRole extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a MemberRole resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MemberRole to import
-  * @param importFromId The id of the existing MemberRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/member_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MemberRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/member_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MemberRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -73,7 +73,7 @@ export class MemberRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/member_role gitlab_member_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/member_role gitlab_member_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class MemberRole extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_member_role',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.6.1',
+        providerVersion: '17.7.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,

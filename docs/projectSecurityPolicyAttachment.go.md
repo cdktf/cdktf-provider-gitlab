@@ -4,7 +4,7 @@
 
 ### ProjectSecurityPolicyAttachment <a name="ProjectSecurityPolicyAttachment" id="@cdktf/provider-gitlab.projectSecurityPolicyAttachment.ProjectSecurityPolicyAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/project_security_policy_attachment gitlab_project_security_policy_attachment}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/project_security_policy_attachment gitlab_project_security_policy_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectSecurityPolicyAttachment.ProjectSecurityPolicyAttachment.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the ProjectSecurityPolicyAttac
 
 The id of the existing ProjectSecurityPolicyAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/project_security_policy_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/project_security_policy_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -855,7 +855,7 @@ PolicyProject *string
 
 The ID or Full Path of the security policy project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/project_security_policy_attachment#policy_project ProjectSecurityPolicyAttachment#policy_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/project_security_policy_attachment#policy_project ProjectSecurityPolicyAttachment#policy_project}
 
 ---
 
@@ -869,7 +869,7 @@ Project *string
 
 The ID or Full Path of the project which will have the security policy project assigned to it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/project_security_policy_attachment#project ProjectSecurityPolicyAttachment#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/project_security_policy_attachment#project ProjectSecurityPolicyAttachment#project}
 
 ---
 
