@@ -89,6 +89,7 @@ The following submodules are available:
 - [groupShareGroup](./groupShareGroup.go.md)
 - [groupVariable](./groupVariable.go.md)
 - [instanceCluster](./instanceCluster.go.md)
+- [instanceServiceAccount](./instanceServiceAccount.go.md)
 - [instanceVariable](./instanceVariable.go.md)
 - [integrationCustomIssueTracker](./integrationCustomIssueTracker.go.md)
 - [integrationEmailsOnPush](./integrationEmailsOnPush.go.md)

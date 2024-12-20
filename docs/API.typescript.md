@@ -89,6 +89,7 @@ The following submodules are available:
 - [groupShareGroup](./groupShareGroup.typescript.md)
 - [groupVariable](./groupVariable.typescript.md)
 - [instanceCluster](./instanceCluster.typescript.md)
+- [instanceServiceAccount](./instanceServiceAccount.typescript.md)
 - [instanceVariable](./instanceVariable.typescript.md)
 - [integrationCustomIssueTracker](./integrationCustomIssueTracker.typescript.md)
 - [integrationEmailsOnPush](./integrationEmailsOnPush.typescript.md)

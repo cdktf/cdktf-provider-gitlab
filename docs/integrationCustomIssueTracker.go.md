@@ -4,12 +4,12 @@
 
 ### IntegrationCustomIssueTracker <a name="IntegrationCustomIssueTracker" id="@cdktf/provider-gitlab.integrationCustomIssueTracker.IntegrationCustomIssueTracker"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/integration_custom_issue_tracker gitlab_integration_custom_issue_tracker}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/integration_custom_issue_tracker gitlab_integration_custom_issue_tracker}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.integrationCustomIssueTracker.IntegrationCustomIssueTracker.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/integrationcustomissuetracker"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationcustomissuetracker"
 
 integrationcustomissuetracker.NewIntegrationCustomIssueTracker(scope Construct, id *string, config IntegrationCustomIssueTrackerConfig) IntegrationCustomIssueTracker
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.integrationCustomIssueTracker.IntegrationCustomIssueTracker.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/integrationcustomissuetracker"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationcustomissuetracker"
 
 integrationcustomissuetracker.IntegrationCustomIssueTracker_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.integrationCustomIssueTracker.IntegrationCustomIssueTracker.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/integrationcustomissuetracker"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationcustomissuetracker"
 
 integrationcustomissuetracker.IntegrationCustomIssueTracker_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ integrationcustomissuetracker.IntegrationCustomIssueTracker_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.integrationCustomIssueTracker.IntegrationCustomIssueTracker.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/integrationcustomissuetracker"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationcustomissuetracker"
 
 integrationcustomissuetracker.IntegrationCustomIssueTracker_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ integrationcustomissuetracker.IntegrationCustomIssueTracker_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.integrationCustomIssueTracker.IntegrationCustomIssueTracker.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/integrationcustomissuetracker"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationcustomissuetracker"
 
 integrationcustomissuetracker.IntegrationCustomIssueTracker_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the IntegrationCustomIssueTrac
 
 The id of the existing IntegrationCustomIssueTracker that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/integration_custom_issue_tracker#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/integration_custom_issue_tracker#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -788,7 +788,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.integrationCustomIssueTracker.IntegrationCustomIssueTrackerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/integrationcustomissuetracker"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationcustomissuetracker"
 
 &integrationcustomissuetracker.IntegrationCustomIssueTrackerConfig {
 	Connection: interface{},
@@ -901,7 +901,7 @@ IssuesUrl *string
 
 The URL to view an issue in the external issue tracker. Must contain :id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/integration_custom_issue_tracker#issues_url IntegrationCustomIssueTracker#issues_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/integration_custom_issue_tracker#issues_url IntegrationCustomIssueTracker#issues_url}
 
 ---
 
@@ -915,7 +915,7 @@ Project *string
 
 The ID or full path of the project for the custom issue tracker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/integration_custom_issue_tracker#project IntegrationCustomIssueTracker#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/integration_custom_issue_tracker#project IntegrationCustomIssueTracker#project}
 
 ---
 
@@ -929,7 +929,7 @@ ProjectUrl *string
 
 The URL to the project in the external issue tracker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/integration_custom_issue_tracker#project_url IntegrationCustomIssueTracker#project_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/integration_custom_issue_tracker#project_url IntegrationCustomIssueTracker#project_url}
 
 ---
 

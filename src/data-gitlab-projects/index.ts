@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/projects
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/projects
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface DataGitlabProjectsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Limit by archived status.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/projects#archived DataGitlabProjects#archived}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/projects#archived DataGitlabProjects#archived}
   */
   readonly archived?: boolean | cdktf.IResolvable;
   /**
   * The ID of the group owned by the authenticated user to look projects for within. Cannot be used with `min_access_level`, `with_programming_language` or `statistics`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/projects#group_id DataGitlabProjects#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/projects#group_id DataGitlabProjects#group_id}
   */
   readonly groupId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/projects#id DataGitlabProjects#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/projects#id DataGitlabProjects#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,121 +29,121 @@ export interface DataGitlabProjectsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Include projects in subgroups of this group. Default is `false`. Needs `group_id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/projects#include_subgroups DataGitlabProjects#include_subgroups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/projects#include_subgroups DataGitlabProjects#include_subgroups}
   */
   readonly includeSubgroups?: boolean | cdktf.IResolvable;
   /**
   * The maximum number of project results pages that may be queried. Prevents overloading your Gitlab instance in case of a misconfiguration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/projects#max_queryable_pages DataGitlabProjects#max_queryable_pages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/projects#max_queryable_pages DataGitlabProjects#max_queryable_pages}
   */
   readonly maxQueryablePages?: number;
   /**
   * Limit by projects that the current user is a member of.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/projects#membership DataGitlabProjects#membership}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/projects#membership DataGitlabProjects#membership}
   */
   readonly membership?: boolean | cdktf.IResolvable;
   /**
   * Limit to projects where current user has at least this access level, refer to the [official documentation](https://docs.gitlab.com/ee/api/members.html) for values. Cannot be used with `group_id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/projects#min_access_level DataGitlabProjects#min_access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/projects#min_access_level DataGitlabProjects#min_access_level}
   */
   readonly minAccessLevel?: number;
   /**
   * Return projects ordered ordered by: `id`, `name`, `path`, `created_at`, `updated_at`, `last_activity_at`, `similarity`, `repository_size`, `storage_size`, `packages_size`, `wiki_size`. Some values or only available in certain circumstances. See [upstream docs](https://docs.gitlab.com/ee/api/projects.html#list-all-projects) for details.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/projects#order_by DataGitlabProjects#order_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/projects#order_by DataGitlabProjects#order_by}
   */
   readonly orderBy?: string;
   /**
   * Limit by projects owned by the current user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/projects#owned DataGitlabProjects#owned}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/projects#owned DataGitlabProjects#owned}
   */
   readonly owned?: boolean | cdktf.IResolvable;
   /**
   * The first page to begin the query on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/projects#page DataGitlabProjects#page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/projects#page DataGitlabProjects#page}
   */
   readonly page?: number;
   /**
   * The number of results to return per page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/projects#per_page DataGitlabProjects#per_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/projects#per_page DataGitlabProjects#per_page}
   */
   readonly perPage?: number;
   /**
   * Return list of authorized projects matching the search criteria.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/projects#search DataGitlabProjects#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/projects#search DataGitlabProjects#search}
   */
   readonly search?: string;
   /**
   * Return only the ID, URL, name, and path of each project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/projects#simple DataGitlabProjects#simple}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/projects#simple DataGitlabProjects#simple}
   */
   readonly simple?: boolean | cdktf.IResolvable;
   /**
   * Return projects sorted in `asc` or `desc` order. Default is `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/projects#sort DataGitlabProjects#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/projects#sort DataGitlabProjects#sort}
   */
   readonly sort?: string;
   /**
   * Limit by projects starred by the current user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/projects#starred DataGitlabProjects#starred}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/projects#starred DataGitlabProjects#starred}
   */
   readonly starred?: boolean | cdktf.IResolvable;
   /**
   * Include project statistics. Cannot be used with `group_id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/projects#statistics DataGitlabProjects#statistics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/projects#statistics DataGitlabProjects#statistics}
   */
   readonly statistics?: boolean | cdktf.IResolvable;
   /**
   * Limit by projects that have all of the given topics.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/projects#topic DataGitlabProjects#topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/projects#topic DataGitlabProjects#topic}
   */
   readonly topic?: string[];
   /**
   * Limit by visibility `public`, `internal`, or `private`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/projects#visibility DataGitlabProjects#visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/projects#visibility DataGitlabProjects#visibility}
   */
   readonly visibility?: string;
   /**
   * Include custom attributes in response _(admins only)_.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/projects#with_custom_attributes DataGitlabProjects#with_custom_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/projects#with_custom_attributes DataGitlabProjects#with_custom_attributes}
   */
   readonly withCustomAttributes?: boolean | cdktf.IResolvable;
   /**
   * Limit by projects with issues feature enabled. Default is `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/projects#with_issues_enabled DataGitlabProjects#with_issues_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/projects#with_issues_enabled DataGitlabProjects#with_issues_enabled}
   */
   readonly withIssuesEnabled?: boolean | cdktf.IResolvable;
   /**
   * Limit by projects with merge requests feature enabled. Default is `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/projects#with_merge_requests_enabled DataGitlabProjects#with_merge_requests_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/projects#with_merge_requests_enabled DataGitlabProjects#with_merge_requests_enabled}
   */
   readonly withMergeRequestsEnabled?: boolean | cdktf.IResolvable;
   /**
   * Limit by projects which use the given programming language. Cannot be used with `group_id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/projects#with_programming_language DataGitlabProjects#with_programming_language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/projects#with_programming_language DataGitlabProjects#with_programming_language}
   */
   readonly withProgrammingLanguage?: string;
   /**
   * Include projects shared to this group. Default is `true`. Needs `group_id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/projects#with_shared DataGitlabProjects#with_shared}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/projects#with_shared DataGitlabProjects#with_shared}
   */
   readonly withShared?: boolean | cdktf.IResolvable;
 }
@@ -1157,6 +1152,11 @@ export class DataGitlabProjectsProjectsOutputReference extends cdktf.ComplexObje
     return this._permissions;
   }
 
+  // prevent_merge_without_jira_issue - computed: true, optional: false, required: false
+  public get preventMergeWithoutJiraIssue() {
+    return this.getBooleanAttribute('prevent_merge_without_jira_issue');
+  }
+
   // public_builds - computed: true, optional: false, required: false
   public get publicBuilds() {
     return this.getBooleanAttribute('public_builds');
@@ -1310,7 +1310,7 @@ export class DataGitlabProjectsProjectsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/projects gitlab_projects}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/projects gitlab_projects}
 */
 export class DataGitlabProjects extends cdktf.TerraformDataSource {
 
@@ -1326,7 +1326,7 @@ export class DataGitlabProjects extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGitlabProjects resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabProjects to import
-  * @param importFromId The id of the existing DataGitlabProjects that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/projects#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabProjects that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/projects#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabProjects to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1338,7 +1338,7 @@ export class DataGitlabProjects extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/data-sources/projects gitlab_projects} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/projects gitlab_projects} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1349,7 +1349,7 @@ export class DataGitlabProjects extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_projects',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.6.1',
+        providerVersion: '17.7.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,

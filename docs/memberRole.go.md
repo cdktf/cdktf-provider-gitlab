@@ -4,12 +4,12 @@
 
 ### MemberRole <a name="MemberRole" id="@cdktf/provider-gitlab.memberRole.MemberRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/member_role gitlab_member_role}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/member_role gitlab_member_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.memberRole.MemberRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/memberrole"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/memberrole"
 
 memberrole.NewMemberRole(scope Construct, id *string, config MemberRoleConfig) MemberRole
 ```
@@ -392,7 +392,7 @@ func ResetGroupPath()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.memberRole.MemberRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/memberrole"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/memberrole"
 
 memberrole.MemberRole_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.memberRole.MemberRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/memberrole"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/memberrole"
 
 memberrole.MemberRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ memberrole.MemberRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.memberRole.MemberRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/memberrole"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/memberrole"
 
 memberrole.MemberRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ memberrole.MemberRole_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.memberRole.MemberRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/memberrole"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/memberrole"
 
 memberrole.MemberRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the MemberRole to import.
 
 The id of the existing MemberRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/member_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/member_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -835,7 +835,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.memberRole.MemberRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/memberrole"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/memberrole"
 
 &memberrole.MemberRoleConfig {
 	Connection: interface{},
@@ -952,7 +952,7 @@ BaseAccessLevel *string
 
 The base access level for the custom role. Valid values are: `DEVELOPER`, `GUEST`, `MAINTAINER`, `MINIMAL_ACCESS`, `OWNER`, `REPORTER`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/member_role#base_access_level MemberRole#base_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/member_role#base_access_level MemberRole#base_access_level}
 
 ---
 
@@ -968,7 +968,7 @@ All permissions enabled for the custom role.
 
 Valid values are: `ADMIN_CICD_VARIABLES`, `ADMIN_COMPLIANCE_FRAMEWORK`, `ADMIN_GROUP_MEMBER`, `ADMIN_INTEGRATIONS`, `ADMIN_MERGE_REQUEST`, `ADMIN_PUSH_RULES`, `ADMIN_RUNNERS`, `ADMIN_TERRAFORM_STATE`, `ADMIN_VULNERABILITY`, `ADMIN_WEB_HOOK`, `ARCHIVE_PROJECT`, `MANAGE_DEPLOY_TOKENS`, `MANAGE_GROUP_ACCESS_TOKENS`, `MANAGE_MERGE_REQUEST_SETTINGS`, `MANAGE_PROJECT_ACCESS_TOKENS`, `MANAGE_SECURITY_POLICY_LINK`, `READ_CODE`, `READ_CRM_CONTACT`, `READ_DEPENDENCY`, `READ_RUNNERS`, `READ_VULNERABILITY`, `REMOVE_GROUP`, `REMOVE_PROJECT`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/member_role#enabled_permissions MemberRole#enabled_permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/member_role#enabled_permissions MemberRole#enabled_permissions}
 
 ---
 
@@ -982,7 +982,7 @@ Name *string
 
 Name for the member role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/member_role#name MemberRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/member_role#name MemberRole#name}
 
 ---
 
@@ -996,7 +996,7 @@ Description *string
 
 Description for the member role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/member_role#description MemberRole#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/member_role#description MemberRole#description}
 
 ---
 
@@ -1010,7 +1010,7 @@ GroupPath *string
 
 Full path of the namespace to create the member role in. **Required for SAAS** **Not allowed for self-managed**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.6.1/docs/resources/member_role#group_path MemberRole#group_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/member_role#group_path MemberRole#group_path}
 
 ---
 
