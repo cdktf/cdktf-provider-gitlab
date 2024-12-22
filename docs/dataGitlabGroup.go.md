@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroup.DataGitlabGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroup"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroup"
 
 datagitlabgroup.NewDataGitlabGroup(scope Construct, id *string, config DataGitlabGroupConfig) DataGitlabGroup
 ```
@@ -297,7 +297,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabGroup.DataGitlabGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroup"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroup"
 
 datagitlabgroup.DataGitlabGroup_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabGroup.DataGitlabGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroup"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroup"
 
 datagitlabgroup.DataGitlabGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagitlabgroup.DataGitlabGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabGroup.DataGitlabGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroup"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroup"
 
 datagitlabgroup.DataGitlabGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datagitlabgroup.DataGitlabGroup_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabGroup.DataGitlabGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroup"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroup"
 
 datagitlabgroup.DataGitlabGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -839,7 +839,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabGroup.DataGitlabGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroup"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroup"
 
 &datagitlabgroup.DataGitlabGroupConfig {
 	Connection: interface{},
@@ -990,7 +990,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabGroup.DataGitlabGroupSharedWithGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroup"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroup"
 
 &datagitlabgroup.DataGitlabGroupSharedWithGroups {
 
@@ -1005,7 +1005,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroup"
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroup.DataGitlabGroupSharedWithGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroup"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroup"
 
 datagitlabgroup.NewDataGitlabGroupSharedWithGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabGroupSharedWithGroupsList
 ```
@@ -1154,7 +1154,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroup.DataGitlabGroupSharedWithGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroup"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroup"
 
 datagitlabgroup.NewDataGitlabGroupSharedWithGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabGroupSharedWithGroupsOutputReference
 ```
