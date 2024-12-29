@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectHooks.DataGitlabProjectHooks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojecthooks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojecthooks"
 
 datagitlabprojecthooks.NewDataGitlabProjectHooks(scope Construct, id *string, config DataGitlabProjectHooksConfig) DataGitlabProjectHooks
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabProjectHooks.DataGitlabProjectHooks.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojecthooks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojecthooks"
 
 datagitlabprojecthooks.DataGitlabProjectHooks_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabProjectHooks.DataGitlabProjectHooks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojecthooks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojecthooks"
 
 datagitlabprojecthooks.DataGitlabProjectHooks_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datagitlabprojecthooks.DataGitlabProjectHooks_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabProjectHooks.DataGitlabProjectHooks.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojecthooks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojecthooks"
 
 datagitlabprojecthooks.DataGitlabProjectHooks_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagitlabprojecthooks.DataGitlabProjectHooks_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabProjectHooks.DataGitlabProjectHooks.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojecthooks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojecthooks"
 
 datagitlabprojecthooks.DataGitlabProjectHooks_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectHooks.DataGitlabProjectHooksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojecthooks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojecthooks"
 
 &datagitlabprojecthooks.DataGitlabProjectHooksConfig {
 	Connection: interface{},
@@ -740,7 +740,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectHooks.DataGitlabProjectHooksHooks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojecthooks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojecthooks"
 
 &datagitlabprojecthooks.DataGitlabProjectHooksHooks {
 
@@ -755,7 +755,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojecthooks"
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectHooks.DataGitlabProjectHooksHooksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojecthooks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojecthooks"
 
 datagitlabprojecthooks.NewDataGitlabProjectHooksHooksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectHooksHooksList
 ```
@@ -904,7 +904,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectHooks.DataGitlabProjectHooksHooksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojecthooks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojecthooks"
 
 datagitlabprojecthooks.NewDataGitlabProjectHooksHooksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabProjectHooksHooksOutputReference
 ```
