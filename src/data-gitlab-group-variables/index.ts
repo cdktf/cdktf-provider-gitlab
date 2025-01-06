@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/group_variables
 // generated from terraform resource schema
 
