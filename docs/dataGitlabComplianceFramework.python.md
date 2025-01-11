@@ -4,7 +4,7 @@
 
 ### DataGitlabComplianceFramework <a name="DataGitlabComplianceFramework" id="@cdktf/provider-gitlab.dataGitlabComplianceFramework.DataGitlabComplianceFramework"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/compliance_framework gitlab_compliance_framework}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/compliance_framework gitlab_compliance_framework}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabComplianceFramework.DataGitlabComplianceFramework.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Name for the compliance framework.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/compliance_framework#name DataGitlabComplianceFramework#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/compliance_framework#name DataGitlabComplianceFramework#name}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Full path of the namespace to where the compliance framework is.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/compliance_framework#namespace_path DataGitlabComplianceFramework#namespace_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/compliance_framework#namespace_path DataGitlabComplianceFramework#namespace_path}
 
 ---
 
@@ -477,7 +477,7 @@ The construct id used in the generated config for the DataGitlabComplianceFramew
 
 The id of the existing DataGitlabComplianceFramework that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/compliance_framework#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/compliance_framework#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -876,7 +876,7 @@ name: str
 
 Name for the compliance framework.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/compliance_framework#name DataGitlabComplianceFramework#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/compliance_framework#name DataGitlabComplianceFramework#name}
 
 ---
 
@@ -890,7 +890,7 @@ namespace_path: str
 
 Full path of the namespace to where the compliance framework is.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/compliance_framework#namespace_path DataGitlabComplianceFramework#namespace_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/compliance_framework#namespace_path DataGitlabComplianceFramework#namespace_path}
 
 ---
 
