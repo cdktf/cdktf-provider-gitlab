@@ -4,7 +4,7 @@
 
 ### GroupSecurityPolicyAttachment <a name="GroupSecurityPolicyAttachment" id="@cdktf/provider-gitlab.groupSecurityPolicyAttachment.GroupSecurityPolicyAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/group_security_policy_attachment gitlab_group_security_policy_attachment}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/group_security_policy_attachment gitlab_group_security_policy_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupSecurityPolicyAttachment.GroupSecurityPolicyAttachment.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the GroupSecurityPolicyAttachm
 
 The id of the existing GroupSecurityPolicyAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/group_security_policy_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/group_security_policy_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -845,7 +845,7 @@ public readonly group: string;
 
 The ID or Full Path of the group which will have the security policy project assigned to it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/group_security_policy_attachment#group GroupSecurityPolicyAttachment#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/group_security_policy_attachment#group GroupSecurityPolicyAttachment#group}
 
 ---
 
@@ -859,7 +859,7 @@ public readonly policyProject: string;
 
 The ID or Full Path of the security policy project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/group_security_policy_attachment#policy_project GroupSecurityPolicyAttachment#policy_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/group_security_policy_attachment#policy_project GroupSecurityPolicyAttachment#policy_project}
 
 ---
 

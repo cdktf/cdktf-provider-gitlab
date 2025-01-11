@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/group_service_account
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/group_service_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +10,25 @@ export interface GroupServiceAccountConfig extends cdktf.TerraformMetaArguments 
   /**
   * The ID or URL-encoded path of the group that the service account is created in. Must be a top level group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/group_service_account#group GroupServiceAccount#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/group_service_account#group GroupServiceAccount#group}
   */
   readonly group: string;
   /**
   * The name of the user. If not specified, the default Service account user name is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/group_service_account#name GroupServiceAccount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/group_service_account#name GroupServiceAccount#name}
   */
   readonly name?: string;
   /**
   * The username of the user. If not specified, it’s automatically generated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/group_service_account#username GroupServiceAccount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/group_service_account#username GroupServiceAccount#username}
   */
   readonly username?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/group_service_account gitlab_group_service_account}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/group_service_account gitlab_group_service_account}
 */
 export class GroupServiceAccount extends cdktf.TerraformResource {
 
@@ -49,7 +44,7 @@ export class GroupServiceAccount extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GroupServiceAccount resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GroupServiceAccount to import
-  * @param importFromId The id of the existing GroupServiceAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/group_service_account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GroupServiceAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/group_service_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GroupServiceAccount to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -61,7 +56,7 @@ export class GroupServiceAccount extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/resources/group_service_account gitlab_group_service_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/group_service_account gitlab_group_service_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +67,7 @@ export class GroupServiceAccount extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_service_account',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.7.0',
+        providerVersion: '17.7.1',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,

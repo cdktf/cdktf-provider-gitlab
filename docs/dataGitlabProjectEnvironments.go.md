@@ -4,12 +4,12 @@
 
 ### DataGitlabProjectEnvironments <a name="DataGitlabProjectEnvironments" id="@cdktf/provider-gitlab.dataGitlabProjectEnvironments.DataGitlabProjectEnvironments"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/project_environments gitlab_project_environments}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/project_environments gitlab_project_environments}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectEnvironments.DataGitlabProjectEnvironments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojectenvironments"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectenvironments"
 
 datagitlabprojectenvironments.NewDataGitlabProjectEnvironments(scope Construct, id *string, config DataGitlabProjectEnvironmentsConfig) DataGitlabProjectEnvironments
 ```
@@ -297,7 +297,7 @@ func ResetStates()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabProjectEnvironments.DataGitlabProjectEnvironments.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojectenvironments"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectenvironments"
 
 datagitlabprojectenvironments.DataGitlabProjectEnvironments_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabProjectEnvironments.DataGitlabProjectEnvironments.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojectenvironments"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectenvironments"
 
 datagitlabprojectenvironments.DataGitlabProjectEnvironments_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagitlabprojectenvironments.DataGitlabProjectEnvironments_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabProjectEnvironments.DataGitlabProjectEnvironments.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojectenvironments"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectenvironments"
 
 datagitlabprojectenvironments.DataGitlabProjectEnvironments_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datagitlabprojectenvironments.DataGitlabProjectEnvironments_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabProjectEnvironments.DataGitlabProjectEnvironments.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojectenvironments"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectenvironments"
 
 datagitlabprojectenvironments.DataGitlabProjectEnvironments_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataGitlabProjectEnvironme
 
 The id of the existing DataGitlabProjectEnvironments that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/project_environments#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/project_environments#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -674,7 +674,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectEnvironments.DataGitlabProjectEnvironmentsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojectenvironments"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectenvironments"
 
 &datagitlabprojectenvironments.DataGitlabProjectEnvironmentsConfig {
 	Connection: interface{},
@@ -789,7 +789,7 @@ Project *string
 
 The ID or full path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/project_environments#project DataGitlabProjectEnvironments#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/project_environments#project DataGitlabProjectEnvironments#project}
 
 ---
 
@@ -803,7 +803,7 @@ Name *string
 
 Return the environment with this name. Mutually exclusive with search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/project_environments#name DataGitlabProjectEnvironments#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/project_environments#name DataGitlabProjectEnvironments#name}
 
 ---
 
@@ -819,7 +819,7 @@ Return list of environments matching the search criteria.
 
 Mutually exclusive with name. Must be at least 3 characters long.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/project_environments#search DataGitlabProjectEnvironments#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/project_environments#search DataGitlabProjectEnvironments#search}
 
 ---
 
@@ -835,7 +835,7 @@ List all environments that match the specified state.
 
 Valid values are `available`, `stopping`, `stopped`. Returns all environments if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.0/docs/data-sources/project_environments#states DataGitlabProjectEnvironments#states}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/project_environments#states DataGitlabProjectEnvironments#states}
 
 ---
 
@@ -844,7 +844,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectEnvironments.DataGitlabProjectEnvironmentsEnvironments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojectenvironments"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectenvironments"
 
 &datagitlabprojectenvironments.DataGitlabProjectEnvironmentsEnvironments {
 
@@ -859,7 +859,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojecten
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectEnvironments.DataGitlabProjectEnvironmentsEnvironmentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojectenvironments"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectenvironments"
 
 datagitlabprojectenvironments.NewDataGitlabProjectEnvironmentsEnvironmentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectEnvironmentsEnvironmentsList
 ```
@@ -1008,7 +1008,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectEnvironments.DataGitlabProjectEnvironmentsEnvironmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabprojectenvironments"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectenvironments"
 
 datagitlabprojectenvironments.NewDataGitlabProjectEnvironmentsEnvironmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabProjectEnvironmentsEnvironmentsOutputReference
 ```
