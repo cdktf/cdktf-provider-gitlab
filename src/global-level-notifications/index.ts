@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/global_level_notifications
 // generated from terraform resource schema
 
