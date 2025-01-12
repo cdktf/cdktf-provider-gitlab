@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.branch.Branch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/branch"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/branch"
 
 branch.NewBranch(scope Construct, id *string, config BranchConfig) Branch
 ```
@@ -392,7 +392,7 @@ func ResetKeepOnDestroy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.branch.Branch.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/branch"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/branch"
 
 branch.Branch_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.branch.Branch.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/branch"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/branch"
 
 branch.Branch_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ branch.Branch_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.branch.Branch.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/branch"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/branch"
 
 branch.Branch_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ branch.Branch_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.branch.Branch.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/branch"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/branch"
 
 branch.Branch_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -879,7 +879,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.branch.BranchCommit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/branch"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/branch"
 
 &branch.BranchCommit {
 
@@ -892,7 +892,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/branch"
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.branch.BranchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/branch"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/branch"
 
 &branch.BranchConfig {
 	Connection: interface{},
@@ -1077,7 +1077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.branch.BranchCommitList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/branch"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/branch"
 
 branch.NewBranchCommitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BranchCommitList
 ```
@@ -1226,7 +1226,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.branch.BranchCommitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/branch"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/branch"
 
 branch.NewBranchCommitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BranchCommitOutputReference
 ```
