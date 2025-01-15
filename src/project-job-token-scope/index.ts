@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/project_job_token_scope
 // generated from terraform resource schema
 
