@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupBillableMemberMemberships.DataGitlabGroupBillableMemberMemberships.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupbillablemembermemberships"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupbillablemembermemberships"
 
 datagitlabgroupbillablemembermemberships.NewDataGitlabGroupBillableMemberMemberships(scope Construct, id *string, config DataGitlabGroupBillableMemberMembershipsConfig) DataGitlabGroupBillableMemberMemberships
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabGroupBillableMemberMemberships.DataGitlabGroupBillableMemberMemberships.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupbillablemembermemberships"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupbillablemembermemberships"
 
 datagitlabgroupbillablemembermemberships.DataGitlabGroupBillableMemberMemberships_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabGroupBillableMemberMemberships.DataGitlabGroupBillableMemberMemberships.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupbillablemembermemberships"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupbillablemembermemberships"
 
 datagitlabgroupbillablemembermemberships.DataGitlabGroupBillableMemberMemberships_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datagitlabgroupbillablemembermemberships.DataGitlabGroupBillableMemberMembership
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabGroupBillableMemberMemberships.DataGitlabGroupBillableMemberMemberships.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupbillablemembermemberships"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupbillablemembermemberships"
 
 datagitlabgroupbillablemembermemberships.DataGitlabGroupBillableMemberMemberships_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagitlabgroupbillablemembermemberships.DataGitlabGroupBillableMemberMembership
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabGroupBillableMemberMemberships.DataGitlabGroupBillableMemberMemberships.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupbillablemembermemberships"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupbillablemembermemberships"
 
 datagitlabgroupbillablemembermemberships.DataGitlabGroupBillableMemberMemberships_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -609,7 +609,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabGroupBillableMemberMemberships.DataGitlabGroupBillableMemberMembershipsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupbillablemembermemberships"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupbillablemembermemberships"
 
 &datagitlabgroupbillablemembermemberships.DataGitlabGroupBillableMemberMembershipsConfig {
 	Connection: interface{},
@@ -743,7 +743,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabGroupBillableMemberMemberships.DataGitlabGroupBillableMemberMembershipsMemberships.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupbillablemembermemberships"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupbillablemembermemberships"
 
 &datagitlabgroupbillablemembermemberships.DataGitlabGroupBillableMemberMembershipsMemberships {
 
@@ -758,7 +758,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupbillable
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupBillableMemberMemberships.DataGitlabGroupBillableMemberMembershipsMembershipsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupbillablemembermemberships"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupbillablemembermemberships"
 
 datagitlabgroupbillablemembermemberships.NewDataGitlabGroupBillableMemberMembershipsMembershipsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabGroupBillableMemberMembershipsMembershipsList
 ```
@@ -907,7 +907,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupBillableMemberMemberships.DataGitlabGroupBillableMemberMembershipsMembershipsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupbillablemembermemberships"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupbillablemembermemberships"
 
 datagitlabgroupbillablemembermemberships.NewDataGitlabGroupBillableMemberMembershipsMembershipsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabGroupBillableMemberMembershipsMembershipsOutputReference
 ```
