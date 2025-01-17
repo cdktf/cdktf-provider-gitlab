@@ -4,7 +4,7 @@
 
 ### DataGitlabPipelineSchedule <a name="DataGitlabPipelineSchedule" id="@cdktf/provider-gitlab.dataGitlabPipelineSchedule.DataGitlabPipelineSchedule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/pipeline_schedule gitlab_pipeline_schedule}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/pipeline_schedule gitlab_pipeline_schedule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabPipelineSchedule.DataGitlabPipelineSchedule.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataGitlabPipelineSchedule
 
 The id of the existing DataGitlabPipelineSchedule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/pipeline_schedule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/pipeline_schedule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -839,7 +839,7 @@ public readonly pipelineScheduleId: number;
 
 The pipeline schedule id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/pipeline_schedule#pipeline_schedule_id DataGitlabPipelineSchedule#pipeline_schedule_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/pipeline_schedule#pipeline_schedule_id DataGitlabPipelineSchedule#pipeline_schedule_id}
 
 ---
 
@@ -853,7 +853,7 @@ public readonly project: string;
 
 The name or id of the project to add the schedule to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/pipeline_schedule#project DataGitlabPipelineSchedule#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/pipeline_schedule#project DataGitlabPipelineSchedule#project}
 
 ---
 
@@ -867,7 +867,7 @@ public readonly cronTimezone: string;
 
 The timezone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/pipeline_schedule#cron_timezone DataGitlabPipelineSchedule#cron_timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/pipeline_schedule#cron_timezone DataGitlabPipelineSchedule#cron_timezone}
 
 ---
 

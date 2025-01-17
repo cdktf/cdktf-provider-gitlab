@@ -103,6 +103,7 @@ export * as userGpgkey from './user-gpgkey';
 export * as userImpersonationToken from './user-impersonation-token';
 export * as userRunner from './user-runner';
 export * as userSshkey from './user-sshkey';
+export * as valueStreamAnalytics from './value-stream-analytics';
 export * as dataGitlabApplication from './data-gitlab-application';
 export * as dataGitlabBranch from './data-gitlab-branch';
 export * as dataGitlabClusterAgent from './data-gitlab-cluster-agent';

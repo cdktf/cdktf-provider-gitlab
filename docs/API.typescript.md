@@ -158,6 +158,7 @@ The following submodules are available:
 - [userImpersonationToken](./userImpersonationToken.typescript.md)
 - [userRunner](./userRunner.typescript.md)
 - [userSshkey](./userSshkey.typescript.md)
+- [valueStreamAnalytics](./valueStreamAnalytics.typescript.md)
 
 
 

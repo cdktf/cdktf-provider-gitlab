@@ -158,6 +158,7 @@ The following submodules are available:
 - [userImpersonationToken](./userImpersonationToken.java.md)
 - [userRunner](./userRunner.java.md)
 - [userSshkey](./userSshkey.java.md)
+- [valueStreamAnalytics](./valueStreamAnalytics.java.md)
 
 
 

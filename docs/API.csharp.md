@@ -158,6 +158,7 @@ The following submodules are available:
 - [userImpersonationToken](./userImpersonationToken.csharp.md)
 - [userRunner](./userRunner.csharp.md)
 - [userSshkey](./userSshkey.csharp.md)
+- [valueStreamAnalytics](./valueStreamAnalytics.csharp.md)
 
 
 

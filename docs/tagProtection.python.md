@@ -4,7 +4,7 @@
 
 ### TagProtection <a name="TagProtection" id="@cdktf/provider-gitlab.tagProtection.TagProtection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/tag_protection gitlab_tag_protection}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/tag_protection gitlab_tag_protection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.tagProtection.TagProtection.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The id of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/tag_protection#project TagProtection#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/tag_protection#project TagProtection#project}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Name of the tag or wildcard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/tag_protection#tag TagProtection#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/tag_protection#tag TagProtection#tag}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 allowed_to_create block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/tag_protection#allowed_to_create TagProtection#allowed_to_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/tag_protection#allowed_to_create TagProtection#allowed_to_create}
 
 ---
 
@@ -144,7 +144,7 @@ Access levels allowed to create.
 
 Default value of `maintainer`. The default value is always sent if not provided in the configuration. Valid values are: `no one`, `developer`, `maintainer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/tag_protection#create_access_level TagProtection#create_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/tag_protection#create_access_level TagProtection#create_access_level}
 
 ---
 
@@ -646,7 +646,7 @@ The construct id used in the generated config for the TagProtection to import.
 
 The id of the existing TagProtection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/tag_protection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/tag_protection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -974,7 +974,7 @@ access_level: str
 
 Access levels allowed to create protected tags. Valid values are: `no one`, `developer`, `maintainer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/tag_protection#access_level TagProtection#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/tag_protection#access_level TagProtection#access_level}
 
 ---
 
@@ -988,7 +988,7 @@ group_id: typing.Union[int, float]
 
 The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `user_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/tag_protection#group_id TagProtection#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/tag_protection#group_id TagProtection#group_id}
 
 ---
 
@@ -1002,7 +1002,7 @@ user_id: typing.Union[int, float]
 
 The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `group_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/tag_protection#user_id TagProtection#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/tag_protection#user_id TagProtection#user_id}
 
 ---
 
@@ -1126,7 +1126,7 @@ project: str
 
 The id of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/tag_protection#project TagProtection#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/tag_protection#project TagProtection#project}
 
 ---
 
@@ -1140,7 +1140,7 @@ tag: str
 
 Name of the tag or wildcard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/tag_protection#tag TagProtection#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/tag_protection#tag TagProtection#tag}
 
 ---
 
@@ -1154,7 +1154,7 @@ allowed_to_create: typing.Union[IResolvable, typing.List[TagProtectionAllowedToC
 
 allowed_to_create block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/tag_protection#allowed_to_create TagProtection#allowed_to_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/tag_protection#allowed_to_create TagProtection#allowed_to_create}
 
 ---
 
@@ -1170,7 +1170,7 @@ Access levels allowed to create.
 
 Default value of `maintainer`. The default value is always sent if not provided in the configuration. Valid values are: `no one`, `developer`, `maintainer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/tag_protection#create_access_level TagProtection#create_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/tag_protection#create_access_level TagProtection#create_access_level}
 
 ---
 

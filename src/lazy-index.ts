@@ -103,6 +103,7 @@ Object.defineProperty(exports, 'userGpgkey', { get: function () { return require
 Object.defineProperty(exports, 'userImpersonationToken', { get: function () { return require('./user-impersonation-token'); } });
 Object.defineProperty(exports, 'userRunner', { get: function () { return require('./user-runner'); } });
 Object.defineProperty(exports, 'userSshkey', { get: function () { return require('./user-sshkey'); } });
+Object.defineProperty(exports, 'valueStreamAnalytics', { get: function () { return require('./value-stream-analytics'); } });
 Object.defineProperty(exports, 'dataGitlabApplication', { get: function () { return require('./data-gitlab-application'); } });
 Object.defineProperty(exports, 'dataGitlabBranch', { get: function () { return require('./data-gitlab-branch'); } });
 Object.defineProperty(exports, 'dataGitlabClusterAgent', { get: function () { return require('./data-gitlab-cluster-agent'); } });

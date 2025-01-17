@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/group_service_account
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_service_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface DataGitlabGroupServiceAccountConfig extends cdktf.TerraformMeta
   /**
   * The ID or URL-encoded path of the target group. Must be a top-level group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/group_service_account#group DataGitlabGroupServiceAccount#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_service_account#group DataGitlabGroupServiceAccount#group}
   */
   readonly group: string;
   /**
   * The name of the user. If not specified, the default Service account user name is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/group_service_account#name DataGitlabGroupServiceAccount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_service_account#name DataGitlabGroupServiceAccount#name}
   */
   readonly name?: string;
   /**
   * The service account id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/group_service_account#service_account_id DataGitlabGroupServiceAccount#service_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_service_account#service_account_id DataGitlabGroupServiceAccount#service_account_id}
   */
   readonly serviceAccountId: string;
   /**
   * The username of the user. If not specified, it's automatically generated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/group_service_account#username DataGitlabGroupServiceAccount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_service_account#username DataGitlabGroupServiceAccount#username}
   */
   readonly username?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/group_service_account gitlab_group_service_account}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_service_account gitlab_group_service_account}
 */
 export class DataGitlabGroupServiceAccount extends cdktf.TerraformDataSource {
 
@@ -55,7 +55,7 @@ export class DataGitlabGroupServiceAccount extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGitlabGroupServiceAccount resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabGroupServiceAccount to import
-  * @param importFromId The id of the existing DataGitlabGroupServiceAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/group_service_account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabGroupServiceAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_service_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabGroupServiceAccount to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +67,7 @@ export class DataGitlabGroupServiceAccount extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/group_service_account gitlab_group_service_account} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_service_account gitlab_group_service_account} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class DataGitlabGroupServiceAccount extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_group_service_account',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.7.1',
+        providerVersion: '17.8.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,

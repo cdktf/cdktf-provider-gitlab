@@ -158,6 +158,7 @@ The following submodules are available:
 - [userImpersonationToken](./userImpersonationToken.go.md)
 - [userRunner](./userRunner.go.md)
 - [userSshkey](./userSshkey.go.md)
+- [valueStreamAnalytics](./valueStreamAnalytics.go.md)
 
 
 
