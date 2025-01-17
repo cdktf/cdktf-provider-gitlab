@@ -158,6 +158,7 @@ The following submodules are available:
 - [userImpersonationToken](./userImpersonationToken.python.md)
 - [userRunner](./userRunner.python.md)
 - [userSshkey](./userSshkey.python.md)
+- [valueStreamAnalytics](./valueStreamAnalytics.python.md)
 
 
 

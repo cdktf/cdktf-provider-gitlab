@@ -4,12 +4,12 @@
 
 ### GroupServiceAccount <a name="GroupServiceAccount" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/group_service_account gitlab_group_service_account}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_service_account gitlab_group_service_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/groupserviceaccount"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupserviceaccount"
 
 groupserviceaccount.NewGroupServiceAccount(scope Construct, id *string, config GroupServiceAccountConfig) GroupServiceAccount
 ```
@@ -392,7 +392,7 @@ func ResetUsername()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/groupserviceaccount"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupserviceaccount"
 
 groupserviceaccount.GroupServiceAccount_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/groupserviceaccount"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupserviceaccount"
 
 groupserviceaccount.GroupServiceAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ groupserviceaccount.GroupServiceAccount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/groupserviceaccount"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupserviceaccount"
 
 groupserviceaccount.GroupServiceAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ groupserviceaccount.GroupServiceAccount_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/groupserviceaccount"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupserviceaccount"
 
 groupserviceaccount.GroupServiceAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the GroupServiceAccount to imp
 
 The id of the existing GroupServiceAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/group_service_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_service_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/groupserviceaccount"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupserviceaccount"
 
 &groupserviceaccount.GroupServiceAccountConfig {
 	Connection: interface{},
@@ -884,7 +884,7 @@ The ID or URL-encoded path of the group that the service account is created in.
 
 Must be a top level group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/group_service_account#group GroupServiceAccount#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_service_account#group GroupServiceAccount#group}
 
 ---
 
@@ -898,7 +898,7 @@ Name *string
 
 The name of the user. If not specified, the default Service account user name is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/group_service_account#name GroupServiceAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_service_account#name GroupServiceAccount#name}
 
 ---
 
@@ -912,7 +912,7 @@ Username *string
 
 The username of the user. If not specified, it’s automatically generated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/group_service_account#username GroupServiceAccount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_service_account#username GroupServiceAccount#username}
 
 ---
 

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/release_link
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/release_link
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface ReleaseLinkConfig extends cdktf.TerraformMetaArguments {
   /**
   * Relative path for a [Direct Asset link](https://docs.gitlab.com/ee/user/project/releases/index.html#permanent-links-to-release-assets).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/release_link#filepath ReleaseLink#filepath}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/release_link#filepath ReleaseLink#filepath}
   */
   readonly filepath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/release_link#id ReleaseLink#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/release_link#id ReleaseLink#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,37 +23,37 @@ export interface ReleaseLinkConfig extends cdktf.TerraformMetaArguments {
   /**
   * The type of the link. Valid values are `other`, `runbook`, `image`, `package`. Defaults to other.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/release_link#link_type ReleaseLink#link_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/release_link#link_type ReleaseLink#link_type}
   */
   readonly linkType?: string;
   /**
   * The name of the link. Link names must be unique within the release.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/release_link#name ReleaseLink#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/release_link#name ReleaseLink#name}
   */
   readonly name: string;
   /**
   * The ID or [URL-encoded path of the project](https://docs.gitlab.com/ee/api/index.html#namespaced-path-encoding).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/release_link#project ReleaseLink#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/release_link#project ReleaseLink#project}
   */
   readonly project: string;
   /**
   * The tag associated with the Release.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/release_link#tag_name ReleaseLink#tag_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/release_link#tag_name ReleaseLink#tag_name}
   */
   readonly tagName: string;
   /**
   * The URL of the link. Link URLs must be unique within the release.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/release_link#url ReleaseLink#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/release_link#url ReleaseLink#url}
   */
   readonly url: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/release_link gitlab_release_link}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/release_link gitlab_release_link}
 */
 export class ReleaseLink extends cdktf.TerraformResource {
 
@@ -74,7 +69,7 @@ export class ReleaseLink extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ReleaseLink resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ReleaseLink to import
-  * @param importFromId The id of the existing ReleaseLink that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/release_link#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ReleaseLink that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/release_link#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ReleaseLink to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -86,7 +81,7 @@ export class ReleaseLink extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/release_link gitlab_release_link} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/release_link gitlab_release_link} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +92,7 @@ export class ReleaseLink extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_release_link',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.7.1',
+        providerVersion: '17.8.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,

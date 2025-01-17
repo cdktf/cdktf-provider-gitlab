@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/user_sshkey
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/user_sshkey
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface UserSshkeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * The expiration date of the SSH key in ISO 8601 format (YYYY-MM-DDTHH:MM:SSZ)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/user_sshkey#expires_at UserSshkey#expires_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/user_sshkey#expires_at UserSshkey#expires_at}
   */
   readonly expiresAt?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/user_sshkey#id UserSshkey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/user_sshkey#id UserSshkey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +23,25 @@ export interface UserSshkeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ssh key. The SSH key `comment` (trailing part) is optional and ignored for diffing, because GitLab overrides it with the username and GitLab hostname.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/user_sshkey#key UserSshkey#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/user_sshkey#key UserSshkey#key}
   */
   readonly key: string;
   /**
   * The title of the ssh key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/user_sshkey#title UserSshkey#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/user_sshkey#title UserSshkey#title}
   */
   readonly title: string;
   /**
   * The ID or username of the user. If this field is omitted, this resource manages a SSH key for the current user. Otherwise, this resource manages a SSH key for the specified user, and an admin token is required.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/user_sshkey#user_id UserSshkey#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/user_sshkey#user_id UserSshkey#user_id}
   */
   readonly userId?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/user_sshkey gitlab_user_sshkey}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/user_sshkey gitlab_user_sshkey}
 */
 export class UserSshkey extends cdktf.TerraformResource {
 
@@ -62,7 +57,7 @@ export class UserSshkey extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a UserSshkey resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the UserSshkey to import
-  * @param importFromId The id of the existing UserSshkey that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/user_sshkey#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing UserSshkey that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/user_sshkey#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the UserSshkey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +69,7 @@ export class UserSshkey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/user_sshkey gitlab_user_sshkey} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/user_sshkey gitlab_user_sshkey} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +80,7 @@ export class UserSshkey extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_user_sshkey',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.7.1',
+        providerVersion: '17.8.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,

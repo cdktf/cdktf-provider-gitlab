@@ -4,12 +4,12 @@
 
 ### UserImpersonationToken <a name="UserImpersonationToken" id="@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/user_impersonation_token gitlab_user_impersonation_token}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/user_impersonation_token gitlab_user_impersonation_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/userimpersonationtoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/userimpersonationtoken"
 
 userimpersonationtoken.NewUserImpersonationToken(scope Construct, id *string, config UserImpersonationTokenConfig) UserImpersonationToken
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/userimpersonationtoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/userimpersonationtoken"
 
 userimpersonationtoken.UserImpersonationToken_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/userimpersonationtoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/userimpersonationtoken"
 
 userimpersonationtoken.UserImpersonationToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ userimpersonationtoken.UserImpersonationToken_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/userimpersonationtoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/userimpersonationtoken"
 
 userimpersonationtoken.UserImpersonationToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ userimpersonationtoken.UserImpersonationToken_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/userimpersonationtoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/userimpersonationtoken"
 
 userimpersonationtoken.UserImpersonationToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the UserImpersonationToken to 
 
 The id of the existing UserImpersonationToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/user_impersonation_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/user_impersonation_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -832,7 +832,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/userimpersonationtoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/userimpersonationtoken"
 
 &userimpersonationtoken.UserImpersonationTokenConfig {
 	Connection: interface{},
@@ -947,7 +947,7 @@ ExpiresAt *string
 
 Expiration date of the impersonation token in ISO format (YYYY-MM-DD).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/user_impersonation_token#expires_at UserImpersonationToken#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/user_impersonation_token#expires_at UserImpersonationToken#expires_at}
 
 ---
 
@@ -961,7 +961,7 @@ Name *string
 
 The name of the impersonation token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/user_impersonation_token#name UserImpersonationToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/user_impersonation_token#name UserImpersonationToken#name}
 
 ---
 
@@ -977,7 +977,7 @@ Array of scopes of the impersonation token.
 
 valid values are: `api`, `read_user`, `read_api`, `read_repository`, `write_repository`, `read_registry`, `write_registry`, `sudo`, `admin_mode`, `create_runner`, `manage_runner`, `ai_features`, `k8s_proxy`, `read_service_ping`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/user_impersonation_token#scopes UserImpersonationToken#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/user_impersonation_token#scopes UserImpersonationToken#scopes}
 
 ---
 
@@ -991,7 +991,7 @@ UserId *f64
 
 The ID of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/resources/user_impersonation_token#user_id UserImpersonationToken#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/user_impersonation_token#user_id UserImpersonationToken#user_id}
 
 ---
 

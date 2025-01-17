@@ -4,12 +4,12 @@
 
 ### DataGitlabComplianceFramework <a name="DataGitlabComplianceFramework" id="@cdktf/provider-gitlab.dataGitlabComplianceFramework.DataGitlabComplianceFramework"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/compliance_framework gitlab_compliance_framework}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/compliance_framework gitlab_compliance_framework}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabComplianceFramework.DataGitlabComplianceFramework.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabcomplianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabcomplianceframework"
 
 datagitlabcomplianceframework.NewDataGitlabComplianceFramework(scope Construct, id *string, config DataGitlabComplianceFrameworkConfig) DataGitlabComplianceFramework
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabComplianceFramework.DataGitlabComplianceFramework.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabcomplianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabcomplianceframework"
 
 datagitlabcomplianceframework.DataGitlabComplianceFramework_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabComplianceFramework.DataGitlabComplianceFramework.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabcomplianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabcomplianceframework"
 
 datagitlabcomplianceframework.DataGitlabComplianceFramework_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datagitlabcomplianceframework.DataGitlabComplianceFramework_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabComplianceFramework.DataGitlabComplianceFramework.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabcomplianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabcomplianceframework"
 
 datagitlabcomplianceframework.DataGitlabComplianceFramework_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagitlabcomplianceframework.DataGitlabComplianceFramework_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabComplianceFramework.DataGitlabComplianceFramework.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabcomplianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabcomplianceframework"
 
 datagitlabcomplianceframework.DataGitlabComplianceFramework_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataGitlabComplianceFramew
 
 The id of the existing DataGitlabComplianceFramework that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/compliance_framework#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/compliance_framework#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabComplianceFramework.DataGitlabComplianceFrameworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabcomplianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabcomplianceframework"
 
 &datagitlabcomplianceframework.DataGitlabComplianceFrameworkConfig {
 	Connection: interface{},
@@ -764,7 +764,7 @@ Name *string
 
 Name for the compliance framework.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/compliance_framework#name DataGitlabComplianceFramework#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/compliance_framework#name DataGitlabComplianceFramework#name}
 
 ---
 
@@ -778,7 +778,7 @@ NamespacePath *string
 
 Full path of the namespace to where the compliance framework is.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.7.1/docs/data-sources/compliance_framework#namespace_path DataGitlabComplianceFramework#namespace_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/compliance_framework#namespace_path DataGitlabComplianceFramework#namespace_path}
 
 ---
 
