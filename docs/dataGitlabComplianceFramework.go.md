@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabComplianceFramework.DataGitlabComplianceFramework.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabcomplianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabcomplianceframework"
 
 datagitlabcomplianceframework.NewDataGitlabComplianceFramework(scope Construct, id *string, config DataGitlabComplianceFrameworkConfig) DataGitlabComplianceFramework
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabComplianceFramework.DataGitlabComplianceFramework.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabcomplianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabcomplianceframework"
 
 datagitlabcomplianceframework.DataGitlabComplianceFramework_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabComplianceFramework.DataGitlabComplianceFramework.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabcomplianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabcomplianceframework"
 
 datagitlabcomplianceframework.DataGitlabComplianceFramework_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datagitlabcomplianceframework.DataGitlabComplianceFramework_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabComplianceFramework.DataGitlabComplianceFramework.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabcomplianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabcomplianceframework"
 
 datagitlabcomplianceframework.DataGitlabComplianceFramework_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagitlabcomplianceframework.DataGitlabComplianceFramework_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabComplianceFramework.DataGitlabComplianceFramework.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabcomplianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabcomplianceframework"
 
 datagitlabcomplianceframework.DataGitlabComplianceFramework_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabComplianceFramework.DataGitlabComplianceFrameworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabcomplianceframework"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabcomplianceframework"
 
 &datagitlabcomplianceframework.DataGitlabComplianceFrameworkConfig {
 	Connection: interface{},
