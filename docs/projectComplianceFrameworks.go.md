@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectComplianceFrameworks.ProjectComplianceFrameworks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectcomplianceframeworks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectcomplianceframeworks"
 
 projectcomplianceframeworks.NewProjectComplianceFrameworks(scope Construct, id *string, config ProjectComplianceFrameworksConfig) ProjectComplianceFrameworks
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectComplianceFrameworks.ProjectComplianceFrameworks.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectcomplianceframeworks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectcomplianceframeworks"
 
 projectcomplianceframeworks.ProjectComplianceFrameworks_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectComplianceFrameworks.ProjectComplianceFrameworks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectcomplianceframeworks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectcomplianceframeworks"
 
 projectcomplianceframeworks.ProjectComplianceFrameworks_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ projectcomplianceframeworks.ProjectComplianceFrameworks_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectComplianceFrameworks.ProjectComplianceFrameworks.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectcomplianceframeworks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectcomplianceframeworks"
 
 projectcomplianceframeworks.ProjectComplianceFrameworks_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ projectcomplianceframeworks.ProjectComplianceFrameworks_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectComplianceFrameworks.ProjectComplianceFrameworks.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectcomplianceframeworks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectcomplianceframeworks"
 
 projectcomplianceframeworks.ProjectComplianceFrameworks_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectComplianceFrameworks.ProjectComplianceFrameworksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectcomplianceframeworks"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectcomplianceframeworks"
 
 &projectcomplianceframeworks.ProjectComplianceFrameworksConfig {
 	Connection: interface{},
