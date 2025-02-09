@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupVariable.GroupVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupvariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/groupvariable"
 
 groupvariable.NewGroupVariable(scope Construct, id *string, config GroupVariableConfig) GroupVariable
 ```
@@ -427,7 +427,7 @@ func ResetVariableType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.groupVariable.GroupVariable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupvariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/groupvariable"
 
 groupvariable.GroupVariable_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.groupVariable.GroupVariable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupvariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/groupvariable"
 
 groupvariable.GroupVariable_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ groupvariable.GroupVariable_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.groupVariable.GroupVariable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupvariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/groupvariable"
 
 groupvariable.GroupVariable_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ groupvariable.GroupVariable_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.groupVariable.GroupVariable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupvariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/groupvariable"
 
 groupvariable.GroupVariable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -936,7 +936,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.groupVariable.GroupVariableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupvariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/groupvariable"
 
 &groupvariable.GroupVariableConfig {
 	Connection: interface{},
