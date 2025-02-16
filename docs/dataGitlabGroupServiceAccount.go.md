@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupServiceAccount.DataGitlabGroupServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupserviceaccount"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupserviceaccount"
 
 datagitlabgroupserviceaccount.NewDataGitlabGroupServiceAccount(scope Construct, id *string, config DataGitlabGroupServiceAccountConfig) DataGitlabGroupServiceAccount
 ```
@@ -290,7 +290,7 @@ func ResetUsername()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabGroupServiceAccount.DataGitlabGroupServiceAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupserviceaccount"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupserviceaccount"
 
 datagitlabgroupserviceaccount.DataGitlabGroupServiceAccount_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabGroupServiceAccount.DataGitlabGroupServiceAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupserviceaccount"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupserviceaccount"
 
 datagitlabgroupserviceaccount.DataGitlabGroupServiceAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagitlabgroupserviceaccount.DataGitlabGroupServiceAccount_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabGroupServiceAccount.DataGitlabGroupServiceAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupserviceaccount"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupserviceaccount"
 
 datagitlabgroupserviceaccount.DataGitlabGroupServiceAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datagitlabgroupserviceaccount.DataGitlabGroupServiceAccount_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabGroupServiceAccount.DataGitlabGroupServiceAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupserviceaccount"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupserviceaccount"
 
 datagitlabgroupserviceaccount.DataGitlabGroupServiceAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -656,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabGroupServiceAccount.DataGitlabGroupServiceAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupserviceaccount"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupserviceaccount"
 
 &datagitlabgroupserviceaccount.DataGitlabGroupServiceAccountConfig {
 	Connection: interface{},
