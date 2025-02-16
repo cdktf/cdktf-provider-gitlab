@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectHook.ProjectHook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projecthook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projecthook"
 
 projecthook.NewProjectHook(scope Construct, id *string, config ProjectHookConfig) ProjectHook
 ```
@@ -524,7 +524,7 @@ func ResetWikiPageEvents()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectHook.ProjectHook.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projecthook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projecthook"
 
 projecthook.ProjectHook_IsConstruct(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectHook.ProjectHook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projecthook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projecthook"
 
 projecthook.ProjectHook_IsTerraformElement(x interface{}) *bool
 ```
@@ -570,7 +570,7 @@ projecthook.ProjectHook_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectHook.ProjectHook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projecthook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projecthook"
 
 projecthook.ProjectHook_IsTerraformResource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ projecthook.ProjectHook_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectHook.ProjectHook.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projecthook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projecthook"
 
 projecthook.ProjectHook_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1308,7 +1308,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectHook.ProjectHookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projecthook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projecthook"
 
 &projecthook.ProjectHookConfig {
 	Connection: interface{},
@@ -1746,7 +1746,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectHook.ProjectHookCustomHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projecthook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projecthook"
 
 &projecthook.ProjectHookCustomHeaders {
 	Key: *string,
@@ -1798,7 +1798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectHook.ProjectHookCustomHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projecthook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projecthook"
 
 projecthook.NewProjectHookCustomHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProjectHookCustomHeadersList
 ```
@@ -1958,7 +1958,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectHook.ProjectHookCustomHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projecthook"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projecthook"
 
 projecthook.NewProjectHookCustomHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProjectHookCustomHeadersOutputReference
 ```
