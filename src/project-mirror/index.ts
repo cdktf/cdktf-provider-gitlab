@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_mirror
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_mirror
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,44 +15,37 @@ export interface ProjectMirrorConfig extends cdktf.TerraformMetaArguments {
   /**
   * Determines if the mirror is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_mirror#enabled ProjectMirror#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_mirror#enabled ProjectMirror#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_mirror#id ProjectMirror#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * Determines if divergent refs are skipped.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_mirror#keep_divergent_refs ProjectMirror#keep_divergent_refs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_mirror#keep_divergent_refs ProjectMirror#keep_divergent_refs}
   */
   readonly keepDivergentRefs?: boolean | cdktf.IResolvable;
   /**
   * Determines if only protected branches are mirrored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_mirror#only_protected_branches ProjectMirror#only_protected_branches}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_mirror#only_protected_branches ProjectMirror#only_protected_branches}
   */
   readonly onlyProtectedBranches?: boolean | cdktf.IResolvable;
   /**
   * The id of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_mirror#project ProjectMirror#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_mirror#project ProjectMirror#project}
   */
   readonly project: string;
   /**
   * The URL of the remote repository to be mirrored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_mirror#url ProjectMirror#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_mirror#url ProjectMirror#url}
   */
   readonly url: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_mirror gitlab_project_mirror}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_mirror gitlab_project_mirror}
 */
 export class ProjectMirror extends cdktf.TerraformResource {
 
@@ -68,7 +61,7 @@ export class ProjectMirror extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ProjectMirror resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProjectMirror to import
-  * @param importFromId The id of the existing ProjectMirror that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_mirror#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ProjectMirror that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_mirror#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProjectMirror to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -80,7 +73,7 @@ export class ProjectMirror extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_mirror gitlab_project_mirror} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_mirror gitlab_project_mirror} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +84,7 @@ export class ProjectMirror extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_mirror',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.8.0',
+        providerVersion: '17.9.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,
@@ -103,7 +96,6 @@ export class ProjectMirror extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._enabled = config.enabled;
-    this._id = config.id;
     this._keepDivergentRefs = config.keepDivergentRefs;
     this._onlyProtectedBranches = config.onlyProtectedBranches;
     this._project = config.project;
@@ -114,7 +106,7 @@ export class ProjectMirror extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // enabled - computed: false, optional: true, required: false
+  // enabled - computed: true, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
@@ -130,23 +122,12 @@ export class ProjectMirror extends cdktf.TerraformResource {
     return this._enabled;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
-  }
 
-  // keep_divergent_refs - computed: false, optional: true, required: false
+  // keep_divergent_refs - computed: true, optional: true, required: false
   private _keepDivergentRefs?: boolean | cdktf.IResolvable; 
   public get keepDivergentRefs() {
     return this.getBooleanAttribute('keep_divergent_refs');
@@ -167,7 +148,7 @@ export class ProjectMirror extends cdktf.TerraformResource {
     return this.getNumberAttribute('mirror_id');
   }
 
-  // only_protected_branches - computed: false, optional: true, required: false
+  // only_protected_branches - computed: true, optional: true, required: false
   private _onlyProtectedBranches?: boolean | cdktf.IResolvable; 
   public get onlyProtectedBranches() {
     return this.getBooleanAttribute('only_protected_branches');
@@ -216,7 +197,6 @@ export class ProjectMirror extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
       keep_divergent_refs: cdktf.booleanToTerraform(this._keepDivergentRefs),
       only_protected_branches: cdktf.booleanToTerraform(this._onlyProtectedBranches),
       project: cdktf.stringToTerraform(this._project),
@@ -231,12 +211,6 @@ export class ProjectMirror extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
       },
       keep_divergent_refs: {
         value: cdktf.booleanToHclTerraform(this._keepDivergentRefs),

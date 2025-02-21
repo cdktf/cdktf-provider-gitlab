@@ -1,3 +1,3 @@
 # `data_gitlab_repository_tree`
 
-Refer to the Terraform Registry for docs: [`data_gitlab_repository_tree`](https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/repository_tree).
+Refer to the Terraform Registry for docs: [`data_gitlab_repository_tree`](https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/repository_tree).

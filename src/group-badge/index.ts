@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_badge
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_badge
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +13,33 @@ import * as cdktf from 'cdktf';
 
 export interface GroupBadgeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The id of the group to add the badge to.
+  * The ID or URL-encoded path of the group to add the badge to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_badge#group GroupBadge#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_badge#group GroupBadge#group}
   */
   readonly group: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_badge#id GroupBadge#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * The image url which will be presented on group overview.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_badge#image_url GroupBadge#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_badge#image_url GroupBadge#image_url}
   */
   readonly imageUrl: string;
   /**
   * The url linked with the badge.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_badge#link_url GroupBadge#link_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_badge#link_url GroupBadge#link_url}
   */
   readonly linkUrl: string;
   /**
   * The name of the badge.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_badge#name GroupBadge#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_badge#name GroupBadge#name}
   */
   readonly name?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_badge gitlab_group_badge}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_badge gitlab_group_badge}
 */
 export class GroupBadge extends cdktf.TerraformResource {
 
@@ -62,7 +55,7 @@ export class GroupBadge extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GroupBadge resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GroupBadge to import
-  * @param importFromId The id of the existing GroupBadge that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_badge#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GroupBadge that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_badge#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GroupBadge to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +67,7 @@ export class GroupBadge extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_badge gitlab_group_badge} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_badge gitlab_group_badge} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +78,7 @@ export class GroupBadge extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_badge',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.8.0',
+        providerVersion: '17.9.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,
@@ -97,7 +90,6 @@ export class GroupBadge extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._group = config.group;
-    this._id = config.id;
     this._imageUrl = config.imageUrl;
     this._linkUrl = config.linkUrl;
     this._name = config.name;
@@ -120,20 +112,9 @@ export class GroupBadge extends cdktf.TerraformResource {
     return this._group;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // image_url - computed: false, optional: false, required: true
@@ -162,7 +143,7 @@ export class GroupBadge extends cdktf.TerraformResource {
     return this._linkUrl;
   }
 
-  // name - computed: false, optional: true, required: false
+  // name - computed: true, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
@@ -195,7 +176,6 @@ export class GroupBadge extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       group: cdktf.stringToTerraform(this._group),
-      id: cdktf.stringToTerraform(this._id),
       image_url: cdktf.stringToTerraform(this._imageUrl),
       link_url: cdktf.stringToTerraform(this._linkUrl),
       name: cdktf.stringToTerraform(this._name),
@@ -206,12 +186,6 @@ export class GroupBadge extends cdktf.TerraformResource {
     const attrs = {
       group: {
         value: cdktf.stringToHclTerraform(this._group),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

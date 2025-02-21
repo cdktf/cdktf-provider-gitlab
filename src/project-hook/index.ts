@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,127 +15,133 @@ export interface ProjectHookConfig extends cdktf.TerraformMetaArguments {
   /**
   * Invoke the hook for confidential issues events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook#confidential_issues_events ProjectHook#confidential_issues_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook#confidential_issues_events ProjectHook#confidential_issues_events}
   */
   readonly confidentialIssuesEvents?: boolean | cdktf.IResolvable;
   /**
   * Invoke the hook for confidential note events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook#confidential_note_events ProjectHook#confidential_note_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook#confidential_note_events ProjectHook#confidential_note_events}
   */
   readonly confidentialNoteEvents?: boolean | cdktf.IResolvable;
   /**
   * Custom headers for the project webhook.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook#custom_headers ProjectHook#custom_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook#custom_headers ProjectHook#custom_headers}
   */
   readonly customHeaders?: ProjectHookCustomHeaders[] | cdktf.IResolvable;
   /**
   * Custom webhook template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook#custom_webhook_template ProjectHook#custom_webhook_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook#custom_webhook_template ProjectHook#custom_webhook_template}
   */
   readonly customWebhookTemplate?: string;
   /**
   * Invoke the hook for deployment events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook#deployment_events ProjectHook#deployment_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook#deployment_events ProjectHook#deployment_events}
   */
   readonly deploymentEvents?: boolean | cdktf.IResolvable;
   /**
   * Description of the webhook.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook#description ProjectHook#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook#description ProjectHook#description}
   */
   readonly description?: string;
   /**
   * Enable SSL verification when invoking the hook.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook#enable_ssl_verification ProjectHook#enable_ssl_verification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook#enable_ssl_verification ProjectHook#enable_ssl_verification}
   */
   readonly enableSslVerification?: boolean | cdktf.IResolvable;
   /**
   * Invoke the hook for issues events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook#issues_events ProjectHook#issues_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook#issues_events ProjectHook#issues_events}
   */
   readonly issuesEvents?: boolean | cdktf.IResolvable;
   /**
   * Invoke the hook for job events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook#job_events ProjectHook#job_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook#job_events ProjectHook#job_events}
   */
   readonly jobEvents?: boolean | cdktf.IResolvable;
   /**
   * Invoke the hook for merge requests events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook#merge_requests_events ProjectHook#merge_requests_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook#merge_requests_events ProjectHook#merge_requests_events}
   */
   readonly mergeRequestsEvents?: boolean | cdktf.IResolvable;
   /**
   * Name of the project webhook.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook#name ProjectHook#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook#name ProjectHook#name}
   */
   readonly name?: string;
   /**
   * Invoke the hook for note events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook#note_events ProjectHook#note_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook#note_events ProjectHook#note_events}
   */
   readonly noteEvents?: boolean | cdktf.IResolvable;
   /**
   * Invoke the hook for pipeline events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook#pipeline_events ProjectHook#pipeline_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook#pipeline_events ProjectHook#pipeline_events}
   */
   readonly pipelineEvents?: boolean | cdktf.IResolvable;
   /**
   * The name or id of the project to add the hook to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook#project ProjectHook#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook#project ProjectHook#project}
   */
   readonly project: string;
   /**
   * Invoke the hook for push events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook#push_events ProjectHook#push_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook#push_events ProjectHook#push_events}
   */
   readonly pushEvents?: boolean | cdktf.IResolvable;
   /**
   * Invoke the hook for push events on matching branches only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook#push_events_branch_filter ProjectHook#push_events_branch_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook#push_events_branch_filter ProjectHook#push_events_branch_filter}
   */
   readonly pushEventsBranchFilter?: string;
   /**
   * Invoke the hook for release events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook#releases_events ProjectHook#releases_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook#releases_events ProjectHook#releases_events}
   */
   readonly releasesEvents?: boolean | cdktf.IResolvable;
   /**
+  * Invoke the hook for project access token expiry events.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook#resource_access_token_events ProjectHook#resource_access_token_events}
+  */
+  readonly resourceAccessTokenEvents?: boolean | cdktf.IResolvable;
+  /**
   * Invoke the hook for tag push events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook#tag_push_events ProjectHook#tag_push_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook#tag_push_events ProjectHook#tag_push_events}
   */
   readonly tagPushEvents?: boolean | cdktf.IResolvable;
   /**
   * A token to present when invoking the hook. The token is not available for imported resources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook#token ProjectHook#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook#token ProjectHook#token}
   */
   readonly token?: string;
   /**
   * The url of the hook to invoke. Forces re-creation to preserve `token`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook#url ProjectHook#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook#url ProjectHook#url}
   */
   readonly url: string;
   /**
   * Invoke the hook for wiki page events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook#wiki_page_events ProjectHook#wiki_page_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook#wiki_page_events ProjectHook#wiki_page_events}
   */
   readonly wikiPageEvents?: boolean | cdktf.IResolvable;
 }
@@ -143,13 +149,13 @@ export interface ProjectHookCustomHeaders {
   /**
   * Key of the custom header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook#key ProjectHook#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook#key ProjectHook#key}
   */
   readonly key: string;
   /**
   * Value of the custom header. This value cannot be imported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook#value ProjectHook#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook#value ProjectHook#value}
   */
   readonly value: string;
 }
@@ -288,7 +294,7 @@ export class ProjectHookCustomHeadersList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook gitlab_project_hook}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook gitlab_project_hook}
 */
 export class ProjectHook extends cdktf.TerraformResource {
 
@@ -304,7 +310,7 @@ export class ProjectHook extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ProjectHook resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProjectHook to import
-  * @param importFromId The id of the existing ProjectHook that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ProjectHook that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProjectHook to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -316,7 +322,7 @@ export class ProjectHook extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_hook gitlab_project_hook} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_hook gitlab_project_hook} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -327,7 +333,7 @@ export class ProjectHook extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_hook',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.8.0',
+        providerVersion: '17.9.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,
@@ -355,6 +361,7 @@ export class ProjectHook extends cdktf.TerraformResource {
     this._pushEvents = config.pushEvents;
     this._pushEventsBranchFilter = config.pushEventsBranchFilter;
     this._releasesEvents = config.releasesEvents;
+    this._resourceAccessTokenEvents = config.resourceAccessTokenEvents;
     this._tagPushEvents = config.tagPushEvents;
     this._token = config.token;
     this._url = config.url;
@@ -649,6 +656,22 @@ export class ProjectHook extends cdktf.TerraformResource {
     return this._releasesEvents;
   }
 
+  // resource_access_token_events - computed: true, optional: true, required: false
+  private _resourceAccessTokenEvents?: boolean | cdktf.IResolvable; 
+  public get resourceAccessTokenEvents() {
+    return this.getBooleanAttribute('resource_access_token_events');
+  }
+  public set resourceAccessTokenEvents(value: boolean | cdktf.IResolvable) {
+    this._resourceAccessTokenEvents = value;
+  }
+  public resetResourceAccessTokenEvents() {
+    this._resourceAccessTokenEvents = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceAccessTokenEventsInput() {
+    return this._resourceAccessTokenEvents;
+  }
+
   // tag_push_events - computed: true, optional: true, required: false
   private _tagPushEvents?: boolean | cdktf.IResolvable; 
   public get tagPushEvents() {
@@ -733,6 +756,7 @@ export class ProjectHook extends cdktf.TerraformResource {
       push_events: cdktf.booleanToTerraform(this._pushEvents),
       push_events_branch_filter: cdktf.stringToTerraform(this._pushEventsBranchFilter),
       releases_events: cdktf.booleanToTerraform(this._releasesEvents),
+      resource_access_token_events: cdktf.booleanToTerraform(this._resourceAccessTokenEvents),
       tag_push_events: cdktf.booleanToTerraform(this._tagPushEvents),
       token: cdktf.stringToTerraform(this._token),
       url: cdktf.stringToTerraform(this._url),
@@ -840,6 +864,12 @@ export class ProjectHook extends cdktf.TerraformResource {
       },
       releases_events: {
         value: cdktf.booleanToHclTerraform(this._releasesEvents),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      resource_access_token_events: {
+        value: cdktf.booleanToHclTerraform(this._resourceAccessTokenEvents),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

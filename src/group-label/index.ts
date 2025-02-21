@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_label
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_label
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,38 +15,31 @@ export interface GroupLabelConfig extends cdktf.TerraformMetaArguments {
   /**
   * The color of the label given in 6-digit hex notation with leading '#' sign (e.g. #FFAABB) or one of the [CSS color names](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Color_keywords).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_label#color GroupLabel#color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_label#color GroupLabel#color}
   */
   readonly color: string;
   /**
   * The description of the label.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_label#description GroupLabel#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_label#description GroupLabel#description}
   */
   readonly description?: string;
   /**
   * The name or id of the group to add the label to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_label#group GroupLabel#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_label#group GroupLabel#group}
   */
   readonly group: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_label#id GroupLabel#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * The name of the label.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_label#name GroupLabel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_label#name GroupLabel#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_label gitlab_group_label}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_label gitlab_group_label}
 */
 export class GroupLabel extends cdktf.TerraformResource {
 
@@ -62,7 +55,7 @@ export class GroupLabel extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GroupLabel resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GroupLabel to import
-  * @param importFromId The id of the existing GroupLabel that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_label#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GroupLabel that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_label#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GroupLabel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +67,7 @@ export class GroupLabel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_label gitlab_group_label} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_label gitlab_group_label} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +78,7 @@ export class GroupLabel extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_label',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.8.0',
+        providerVersion: '17.9.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,
@@ -99,7 +92,6 @@ export class GroupLabel extends cdktf.TerraformResource {
     this._color = config.color;
     this._description = config.description;
     this._group = config.group;
-    this._id = config.id;
     this._name = config.name;
   }
 
@@ -120,7 +112,7 @@ export class GroupLabel extends cdktf.TerraformResource {
     return this._color;
   }
 
-  // description - computed: false, optional: true, required: false
+  // description - computed: true, optional: true, required: false
   private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
@@ -149,20 +141,9 @@ export class GroupLabel extends cdktf.TerraformResource {
     return this._group;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // label_id - computed: true, optional: false, required: false
@@ -192,7 +173,6 @@ export class GroupLabel extends cdktf.TerraformResource {
       color: cdktf.stringToTerraform(this._color),
       description: cdktf.stringToTerraform(this._description),
       group: cdktf.stringToTerraform(this._group),
-      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
     };
   }
@@ -213,12 +193,6 @@ export class GroupLabel extends cdktf.TerraformResource {
       },
       group: {
         value: cdktf.stringToHclTerraform(this._group),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

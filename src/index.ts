@@ -83,6 +83,8 @@ export * as projectSecurityPolicyAttachment from './project-security-policy-atta
 export * as projectShareGroup from './project-share-group';
 export * as projectTag from './project-tag';
 export * as projectVariable from './project-variable';
+export * as projectWikiPage from './project-wiki-page';
+export * as release from './release';
 export * as releaseLink from './release-link';
 export * as repositoryFile from './repository-file';
 export * as runner from './runner';
@@ -123,6 +125,7 @@ export * as dataGitlabGroupVariable from './data-gitlab-group-variable';
 export * as dataGitlabGroupVariables from './data-gitlab-group-variables';
 export * as dataGitlabGroups from './data-gitlab-groups';
 export * as dataGitlabInstanceDeployKeys from './data-gitlab-instance-deploy-keys';
+export * as dataGitlabInstanceServiceAccount from './data-gitlab-instance-service-account';
 export * as dataGitlabInstanceVariable from './data-gitlab-instance-variable';
 export * as dataGitlabInstanceVariables from './data-gitlab-instance-variables';
 export * as dataGitlabMetadata from './data-gitlab-metadata';
