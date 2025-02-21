@@ -4,12 +4,12 @@
 
 ### Runner <a name="Runner" id="@cdktf/provider-gitlab.runner.Runner"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/runner gitlab_runner}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/runner gitlab_runner}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.runner.Runner.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/runner"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/runner"
 
 runner.NewRunner(scope Construct, id *string, config RunnerConfig) Runner
 ```
@@ -441,7 +441,7 @@ func ResetTagList()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.runner.Runner.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/runner"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/runner"
 
 runner.Runner_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.runner.Runner.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/runner"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/runner"
 
 runner.Runner_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ runner.Runner_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.runner.Runner.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/runner"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/runner"
 
 runner.Runner_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ runner.Runner_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.runner.Runner.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/runner"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/runner"
 
 runner.Runner_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the Runner to import.
 
 The id of the existing Runner that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/runner#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/runner#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -972,7 +972,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.runner.RunnerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/runner"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/runner"
 
 &runner.RunnerConfig {
 	Connection: interface{},
@@ -1009,7 +1009,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/runner"
 | <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.registrationToken">RegistrationToken</a></code> | <code>*string</code> | The registration token used to register the runner. |
 | <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.accessLevel">AccessLevel</a></code> | <code>*string</code> | The access_level of the runner. Valid values are: `not_protected`, `ref_protected`. |
 | <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.description">Description</a></code> | <code>*string</code> | The runner's description. |
-| <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/runner#id Runner#id}. |
+| <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/runner#id Runner#id}. |
 | <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.locked">Locked</a></code> | <code>interface{}</code> | Whether the runner should be locked for current project. |
 | <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.maintenanceNote">MaintenanceNote</a></code> | <code>*string</code> | Free-form maintenance notes for the runner (1024 characters). |
 | <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.maximumTimeout">MaximumTimeout</a></code> | <code>*f64</code> | Maximum timeout set when this runner handles the job. |
@@ -1099,7 +1099,7 @@ RegistrationToken *string
 
 The registration token used to register the runner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/runner#registration_token Runner#registration_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/runner#registration_token Runner#registration_token}
 
 ---
 
@@ -1113,7 +1113,7 @@ AccessLevel *string
 
 The access_level of the runner. Valid values are: `not_protected`, `ref_protected`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/runner#access_level Runner#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/runner#access_level Runner#access_level}
 
 ---
 
@@ -1127,7 +1127,7 @@ Description *string
 
 The runner's description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/runner#description Runner#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/runner#description Runner#description}
 
 ---
 
@@ -1139,7 +1139,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/runner#id Runner#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/runner#id Runner#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1156,7 +1156,7 @@ Locked interface{}
 
 Whether the runner should be locked for current project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/runner#locked Runner#locked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/runner#locked Runner#locked}
 
 ---
 
@@ -1170,7 +1170,7 @@ MaintenanceNote *string
 
 Free-form maintenance notes for the runner (1024 characters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/runner#maintenance_note Runner#maintenance_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/runner#maintenance_note Runner#maintenance_note}
 
 ---
 
@@ -1184,7 +1184,7 @@ MaximumTimeout *f64
 
 Maximum timeout set when this runner handles the job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/runner#maximum_timeout Runner#maximum_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/runner#maximum_timeout Runner#maximum_timeout}
 
 ---
 
@@ -1198,7 +1198,7 @@ Paused interface{}
 
 Whether the runner should ignore new jobs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/runner#paused Runner#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/runner#paused Runner#paused}
 
 ---
 
@@ -1212,7 +1212,7 @@ RunUntagged interface{}
 
 Whether the runner should handle untagged jobs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/runner#run_untagged Runner#run_untagged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/runner#run_untagged Runner#run_untagged}
 
 ---
 
@@ -1226,7 +1226,7 @@ TagList *[]*string
 
 List of runner’s tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/runner#tag_list Runner#tag_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/runner#tag_list Runner#tag_list}
 
 ---
 

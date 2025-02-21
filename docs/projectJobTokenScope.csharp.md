@@ -4,7 +4,7 @@
 
 ### ProjectJobTokenScope <a name="ProjectJobTokenScope" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_job_token_scope gitlab_project_job_token_scope}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_job_token_scope gitlab_project_job_token_scope}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.Initializer"></a>
 
@@ -73,6 +73,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.resetTargetGroupId">ResetTargetGroupId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.resetTargetProjectId">ResetTargetProjectId</a></code> | *No description.* |
 
 ---
 
@@ -364,6 +366,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetTargetGroupId` <a name="ResetTargetGroupId" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.resetTargetGroupId"></a>
+
+```csharp
+private void ResetTargetGroupId()
+```
+
+##### `ResetTargetProjectId` <a name="ResetTargetProjectId" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.resetTargetProjectId"></a>
+
+```csharp
+private void ResetTargetProjectId()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -467,7 +481,7 @@ The construct id used in the generated config for the ProjectJobTokenScope to im
 
 The id of the existing ProjectJobTokenScope that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_job_token_scope#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_job_token_scope#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -499,8 +513,10 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.property.targetGroupIdInput">TargetGroupIdInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.property.targetProjectIdInput">TargetProjectIdInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.property.project">Project</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.property.targetGroupId">TargetGroupId</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.property.targetProjectId">TargetProjectId</a></code> | <code>double</code> | *No description.* |
 
 ---
@@ -667,6 +683,16 @@ public string ProjectInput { get; }
 
 ---
 
+##### `TargetGroupIdInput`<sup>Optional</sup> <a name="TargetGroupIdInput" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.property.targetGroupIdInput"></a>
+
+```csharp
+public double TargetGroupIdInput { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `TargetProjectIdInput`<sup>Optional</sup> <a name="TargetProjectIdInput" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.property.targetProjectIdInput"></a>
 
 ```csharp
@@ -684,6 +710,16 @@ public string Project { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `TargetGroupId`<sup>Required</sup> <a name="TargetGroupId" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.property.targetGroupId"></a>
+
+```csharp
+public double TargetGroupId { get; }
+```
+
+- *Type:* double
 
 ---
 
@@ -733,7 +769,8 @@ new ProjectJobTokenScopeConfig {
     TerraformProvider Provider = null,
     object[] Provisioners = null,
     string Project,
-    double TargetProjectId
+    double TargetGroupId = null,
+    double TargetProjectId = null
 };
 ```
 
@@ -749,6 +786,7 @@ new ProjectJobTokenScopeConfig {
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScopeConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScopeConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScopeConfig.property.project">Project</a></code> | <code>string</code> | The ID or full path of the project. |
+| <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScopeConfig.property.targetGroupId">TargetGroupId</a></code> | <code>double</code> | The ID of the group that is in the CI/CD job token inbound allowlist. |
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScopeConfig.property.targetProjectId">TargetProjectId</a></code> | <code>double</code> | The ID of the project that is in the CI/CD job token inbound allowlist. |
 
 ---
@@ -833,11 +871,25 @@ public string Project { get; set; }
 
 The ID or full path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_job_token_scope#project ProjectJobTokenScope#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_job_token_scope#project ProjectJobTokenScope#project}
 
 ---
 
-##### `TargetProjectId`<sup>Required</sup> <a name="TargetProjectId" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScopeConfig.property.targetProjectId"></a>
+##### `TargetGroupId`<sup>Optional</sup> <a name="TargetGroupId" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScopeConfig.property.targetGroupId"></a>
+
+```csharp
+public double TargetGroupId { get; set; }
+```
+
+- *Type:* double
+
+The ID of the group that is in the CI/CD job token inbound allowlist.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_job_token_scope#target_group_id ProjectJobTokenScope#target_group_id}
+
+---
+
+##### `TargetProjectId`<sup>Optional</sup> <a name="TargetProjectId" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScopeConfig.property.targetProjectId"></a>
 
 ```csharp
 public double TargetProjectId { get; set; }
@@ -847,7 +899,7 @@ public double TargetProjectId { get; set; }
 
 The ID of the project that is in the CI/CD job token inbound allowlist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_job_token_scope#target_project_id ProjectJobTokenScope#target_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_job_token_scope#target_project_id ProjectJobTokenScope#target_project_id}
 
 ---
 

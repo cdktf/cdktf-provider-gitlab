@@ -4,7 +4,7 @@
 
 ### ProjectJobTokenScope <a name="ProjectJobTokenScope" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_job_token_scope gitlab_project_job_token_scope}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_job_token_scope gitlab_project_job_token_scope}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.Initializer"></a>
 
@@ -22,7 +22,8 @@ projectJobTokenScope.ProjectJobTokenScope(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   project: str,
-  target_project_id: typing.Union[int, float]
+  target_group_id: typing.Union[int, float] = None,
+  target_project_id: typing.Union[int, float] = None
 )
 ```
 
@@ -38,6 +39,7 @@ projectJobTokenScope.ProjectJobTokenScope(
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.Initializer.parameter.project">project</a></code> | <code>str</code> | The ID or full path of the project. |
+| <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.Initializer.parameter.targetGroupId">target_group_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the group that is in the CI/CD job token inbound allowlist. |
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.Initializer.parameter.targetProjectId">target_project_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the project that is in the CI/CD job token inbound allowlist. |
 
 ---
@@ -108,17 +110,27 @@ Must be unique amongst siblings in the same scope
 
 The ID or full path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_job_token_scope#project ProjectJobTokenScope#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_job_token_scope#project ProjectJobTokenScope#project}
 
 ---
 
-##### `target_project_id`<sup>Required</sup> <a name="target_project_id" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.Initializer.parameter.targetProjectId"></a>
+##### `target_group_id`<sup>Optional</sup> <a name="target_group_id" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.Initializer.parameter.targetGroupId"></a>
+
+- *Type:* typing.Union[int, float]
+
+The ID of the group that is in the CI/CD job token inbound allowlist.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_job_token_scope#target_group_id ProjectJobTokenScope#target_group_id}
+
+---
+
+##### `target_project_id`<sup>Optional</sup> <a name="target_project_id" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.Initializer.parameter.targetProjectId"></a>
 
 - *Type:* typing.Union[int, float]
 
 The ID of the project that is in the CI/CD job token inbound allowlist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_job_token_scope#target_project_id ProjectJobTokenScope#target_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_job_token_scope#target_project_id ProjectJobTokenScope#target_project_id}
 
 ---
 
@@ -149,6 +161,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.resetTargetGroupId">reset_target_group_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.resetTargetProjectId">reset_target_project_id</a></code> | *No description.* |
 
 ---
 
@@ -477,6 +491,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `reset_target_group_id` <a name="reset_target_group_id" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.resetTargetGroupId"></a>
+
+```python
+def reset_target_group_id() -> None
+```
+
+##### `reset_target_project_id` <a name="reset_target_project_id" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.resetTargetProjectId"></a>
+
+```python
+def reset_target_project_id() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -591,7 +617,7 @@ The construct id used in the generated config for the ProjectJobTokenScope to im
 
 The id of the existing ProjectJobTokenScope that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_job_token_scope#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_job_token_scope#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -623,8 +649,10 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.property.targetGroupIdInput">target_group_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.property.targetProjectIdInput">target_project_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.property.project">project</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.property.targetGroupId">target_group_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.property.targetProjectId">target_project_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 
 ---
@@ -791,6 +819,16 @@ project_input: str
 
 ---
 
+##### `target_group_id_input`<sup>Optional</sup> <a name="target_group_id_input" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.property.targetGroupIdInput"></a>
+
+```python
+target_group_id_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `target_project_id_input`<sup>Optional</sup> <a name="target_project_id_input" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.property.targetProjectIdInput"></a>
 
 ```python
@@ -808,6 +846,16 @@ project: str
 ```
 
 - *Type:* str
+
+---
+
+##### `target_group_id`<sup>Required</sup> <a name="target_group_id" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.property.targetGroupId"></a>
+
+```python
+target_group_id: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
@@ -857,7 +905,8 @@ projectJobTokenScope.ProjectJobTokenScopeConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   project: str,
-  target_project_id: typing.Union[int, float]
+  target_group_id: typing.Union[int, float] = None,
+  target_project_id: typing.Union[int, float] = None
 )
 ```
 
@@ -873,6 +922,7 @@ projectJobTokenScope.ProjectJobTokenScopeConfig(
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScopeConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScopeConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScopeConfig.property.project">project</a></code> | <code>str</code> | The ID or full path of the project. |
+| <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScopeConfig.property.targetGroupId">target_group_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the group that is in the CI/CD job token inbound allowlist. |
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScopeConfig.property.targetProjectId">target_project_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the project that is in the CI/CD job token inbound allowlist. |
 
 ---
@@ -957,11 +1007,25 @@ project: str
 
 The ID or full path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_job_token_scope#project ProjectJobTokenScope#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_job_token_scope#project ProjectJobTokenScope#project}
 
 ---
 
-##### `target_project_id`<sup>Required</sup> <a name="target_project_id" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScopeConfig.property.targetProjectId"></a>
+##### `target_group_id`<sup>Optional</sup> <a name="target_group_id" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScopeConfig.property.targetGroupId"></a>
+
+```python
+target_group_id: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The ID of the group that is in the CI/CD job token inbound allowlist.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_job_token_scope#target_group_id ProjectJobTokenScope#target_group_id}
+
+---
+
+##### `target_project_id`<sup>Optional</sup> <a name="target_project_id" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScopeConfig.property.targetProjectId"></a>
 
 ```python
 target_project_id: typing.Union[int, float]
@@ -971,7 +1035,7 @@ target_project_id: typing.Union[int, float]
 
 The ID of the project that is in the CI/CD job token inbound allowlist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_job_token_scope#target_project_id ProjectJobTokenScope#target_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_job_token_scope#target_project_id ProjectJobTokenScope#target_project_id}
 
 ---
 

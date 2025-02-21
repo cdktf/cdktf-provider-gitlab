@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_membership
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/group_membership
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,32 +10,25 @@ export interface DataGitlabGroupMembershipConfig extends cdktf.TerraformMetaArgu
   /**
   * Only return members with the desired access level. Acceptable values are: `guest`, `reporter`, `developer`, `maintainer`, `owner`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_membership#access_level DataGitlabGroupMembership#access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/group_membership#access_level DataGitlabGroupMembership#access_level}
   */
   readonly accessLevel?: string;
   /**
   * The full path of the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_membership#full_path DataGitlabGroupMembership#full_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/group_membership#full_path DataGitlabGroupMembership#full_path}
   */
   readonly fullPath?: string;
   /**
   * The ID of the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_membership#group_id DataGitlabGroupMembership#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/group_membership#group_id DataGitlabGroupMembership#group_id}
   */
   readonly groupId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_membership#id DataGitlabGroupMembership#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * Return all project members including members through ancestor groups.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_membership#inherited DataGitlabGroupMembership#inherited}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/group_membership#inherited DataGitlabGroupMembership#inherited}
   */
   readonly inherited?: boolean | cdktf.IResolvable;
 }
@@ -156,7 +144,7 @@ export class DataGitlabGroupMembershipMembersList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_membership gitlab_group_membership}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/group_membership gitlab_group_membership}
 */
 export class DataGitlabGroupMembership extends cdktf.TerraformDataSource {
 
@@ -172,7 +160,7 @@ export class DataGitlabGroupMembership extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGitlabGroupMembership resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabGroupMembership to import
-  * @param importFromId The id of the existing DataGitlabGroupMembership that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_membership#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabGroupMembership that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/group_membership#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabGroupMembership to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -184,7 +172,7 @@ export class DataGitlabGroupMembership extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/data-sources/group_membership gitlab_group_membership} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/group_membership gitlab_group_membership} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -195,7 +183,7 @@ export class DataGitlabGroupMembership extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_group_membership',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.8.0',
+        providerVersion: '17.9.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,
@@ -209,7 +197,6 @@ export class DataGitlabGroupMembership extends cdktf.TerraformDataSource {
     this._accessLevel = config.accessLevel;
     this._fullPath = config.fullPath;
     this._groupId = config.groupId;
-    this._id = config.id;
     this._inherited = config.inherited;
   }
 
@@ -265,20 +252,9 @@ export class DataGitlabGroupMembership extends cdktf.TerraformDataSource {
     return this._groupId;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // inherited - computed: false, optional: true, required: false
@@ -312,7 +288,6 @@ export class DataGitlabGroupMembership extends cdktf.TerraformDataSource {
       access_level: cdktf.stringToTerraform(this._accessLevel),
       full_path: cdktf.stringToTerraform(this._fullPath),
       group_id: cdktf.numberToTerraform(this._groupId),
-      id: cdktf.stringToTerraform(this._id),
       inherited: cdktf.booleanToTerraform(this._inherited),
     };
   }
@@ -336,12 +311,6 @@ export class DataGitlabGroupMembership extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "number",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
       },
       inherited: {
         value: cdktf.booleanToHclTerraform(this._inherited),

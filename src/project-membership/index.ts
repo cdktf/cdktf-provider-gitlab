@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_membership
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_membership
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,38 +10,44 @@ export interface ProjectMembershipConfig extends cdktf.TerraformMetaArguments {
   /**
   * The access level for the member. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_membership#access_level ProjectMembership#access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_membership#access_level ProjectMembership#access_level}
   */
   readonly accessLevel: string;
   /**
   * Expiration date for the project membership. Format: `YYYY-MM-DD`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_membership#expires_at ProjectMembership#expires_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_membership#expires_at ProjectMembership#expires_at}
   */
   readonly expiresAt?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_membership#id ProjectMembership#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_membership#id ProjectMembership#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * The ID of a custom member role. Only available for Ultimate instances.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_membership#member_role_id ProjectMembership#member_role_id}
+  */
+  readonly memberRoleId?: number;
+  /**
   * The ID or URL-encoded path of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_membership#project ProjectMembership#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_membership#project ProjectMembership#project}
   */
   readonly project: string;
   /**
   * The id of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_membership#user_id ProjectMembership#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_membership#user_id ProjectMembership#user_id}
   */
   readonly userId: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_membership gitlab_project_membership}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_membership gitlab_project_membership}
 */
 export class ProjectMembership extends cdktf.TerraformResource {
 
@@ -62,7 +63,7 @@ export class ProjectMembership extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ProjectMembership resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProjectMembership to import
-  * @param importFromId The id of the existing ProjectMembership that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_membership#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ProjectMembership that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_membership#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProjectMembership to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +75,7 @@ export class ProjectMembership extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/project_membership gitlab_project_membership} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_membership gitlab_project_membership} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +86,7 @@ export class ProjectMembership extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_membership',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.8.0',
+        providerVersion: '17.9.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,
@@ -99,6 +100,7 @@ export class ProjectMembership extends cdktf.TerraformResource {
     this._accessLevel = config.accessLevel;
     this._expiresAt = config.expiresAt;
     this._id = config.id;
+    this._memberRoleId = config.memberRoleId;
     this._project = config.project;
     this._userId = config.userId;
   }
@@ -152,6 +154,22 @@ export class ProjectMembership extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // member_role_id - computed: false, optional: true, required: false
+  private _memberRoleId?: number; 
+  public get memberRoleId() {
+    return this.getNumberAttribute('member_role_id');
+  }
+  public set memberRoleId(value: number) {
+    this._memberRoleId = value;
+  }
+  public resetMemberRoleId() {
+    this._memberRoleId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get memberRoleIdInput() {
+    return this._memberRoleId;
+  }
+
   // project - computed: false, optional: false, required: true
   private _project?: string; 
   public get project() {
@@ -187,6 +205,7 @@ export class ProjectMembership extends cdktf.TerraformResource {
       access_level: cdktf.stringToTerraform(this._accessLevel),
       expires_at: cdktf.stringToTerraform(this._expiresAt),
       id: cdktf.stringToTerraform(this._id),
+      member_role_id: cdktf.numberToTerraform(this._memberRoleId),
       project: cdktf.stringToTerraform(this._project),
       user_id: cdktf.numberToTerraform(this._userId),
     };
@@ -211,6 +230,12 @@ export class ProjectMembership extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      member_role_id: {
+        value: cdktf.numberToHclTerraform(this._memberRoleId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       project: {
         value: cdktf.stringToHclTerraform(this._project),

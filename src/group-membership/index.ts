@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_membership
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_membership
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,56 +10,49 @@ export interface GroupMembershipConfig extends cdktf.TerraformMetaArguments {
   /**
   * Access level for the member. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_membership#access_level GroupMembership#access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_membership#access_level GroupMembership#access_level}
   */
   readonly accessLevel: string;
   /**
   * Expiration date for the group membership. Format: `YYYY-MM-DD`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_membership#expires_at GroupMembership#expires_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_membership#expires_at GroupMembership#expires_at}
   */
   readonly expiresAt?: string;
   /**
-  * The id of the group.
+  * The ID of the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_membership#group_id GroupMembership#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_membership#group_id GroupMembership#group_id}
   */
-  readonly groupId: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_membership#id GroupMembership#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
+  readonly groupId: number;
   /**
   * The ID of a custom member role. Only available for Ultimate instances.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_membership#member_role_id GroupMembership#member_role_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_membership#member_role_id GroupMembership#member_role_id}
   */
   readonly memberRoleId?: number;
   /**
   * Whether the deletion of direct memberships of the removed member in subgroups and projects should be skipped. Only used during a destroy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_membership#skip_subresources_on_destroy GroupMembership#skip_subresources_on_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_membership#skip_subresources_on_destroy GroupMembership#skip_subresources_on_destroy}
   */
   readonly skipSubresourcesOnDestroy?: boolean | cdktf.IResolvable;
   /**
   * Whether the removed member should be unassigned from any issues or merge requests inside a given group or project. Only used during a destroy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_membership#unassign_issuables_on_destroy GroupMembership#unassign_issuables_on_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_membership#unassign_issuables_on_destroy GroupMembership#unassign_issuables_on_destroy}
   */
   readonly unassignIssuablesOnDestroy?: boolean | cdktf.IResolvable;
   /**
-  * The id of the user.
+  * The ID of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_membership#user_id GroupMembership#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_membership#user_id GroupMembership#user_id}
   */
   readonly userId: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_membership gitlab_group_membership}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_membership gitlab_group_membership}
 */
 export class GroupMembership extends cdktf.TerraformResource {
 
@@ -80,7 +68,7 @@ export class GroupMembership extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GroupMembership resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GroupMembership to import
-  * @param importFromId The id of the existing GroupMembership that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_membership#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GroupMembership that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_membership#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GroupMembership to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -92,7 +80,7 @@ export class GroupMembership extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.8.0/docs/resources/group_membership gitlab_group_membership} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_membership gitlab_group_membership} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -103,7 +91,7 @@ export class GroupMembership extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_membership',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.8.0',
+        providerVersion: '17.9.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,
@@ -117,7 +105,6 @@ export class GroupMembership extends cdktf.TerraformResource {
     this._accessLevel = config.accessLevel;
     this._expiresAt = config.expiresAt;
     this._groupId = config.groupId;
-    this._id = config.id;
     this._memberRoleId = config.memberRoleId;
     this._skipSubresourcesOnDestroy = config.skipSubresourcesOnDestroy;
     this._unassignIssuablesOnDestroy = config.unassignIssuablesOnDestroy;
@@ -158,11 +145,11 @@ export class GroupMembership extends cdktf.TerraformResource {
   }
 
   // group_id - computed: false, optional: false, required: true
-  private _groupId?: string; 
+  private _groupId?: number; 
   public get groupId() {
-    return this.getStringAttribute('group_id');
+    return this.getNumberAttribute('group_id');
   }
-  public set groupId(value: string) {
+  public set groupId(value: number) {
     this._groupId = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -170,20 +157,9 @@ export class GroupMembership extends cdktf.TerraformResource {
     return this._groupId;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // member_role_id - computed: false, optional: true, required: false
@@ -202,7 +178,7 @@ export class GroupMembership extends cdktf.TerraformResource {
     return this._memberRoleId;
   }
 
-  // skip_subresources_on_destroy - computed: false, optional: true, required: false
+  // skip_subresources_on_destroy - computed: true, optional: true, required: false
   private _skipSubresourcesOnDestroy?: boolean | cdktf.IResolvable; 
   public get skipSubresourcesOnDestroy() {
     return this.getBooleanAttribute('skip_subresources_on_destroy');
@@ -218,7 +194,7 @@ export class GroupMembership extends cdktf.TerraformResource {
     return this._skipSubresourcesOnDestroy;
   }
 
-  // unassign_issuables_on_destroy - computed: false, optional: true, required: false
+  // unassign_issuables_on_destroy - computed: true, optional: true, required: false
   private _unassignIssuablesOnDestroy?: boolean | cdktf.IResolvable; 
   public get unassignIssuablesOnDestroy() {
     return this.getBooleanAttribute('unassign_issuables_on_destroy');
@@ -255,8 +231,7 @@ export class GroupMembership extends cdktf.TerraformResource {
     return {
       access_level: cdktf.stringToTerraform(this._accessLevel),
       expires_at: cdktf.stringToTerraform(this._expiresAt),
-      group_id: cdktf.stringToTerraform(this._groupId),
-      id: cdktf.stringToTerraform(this._id),
+      group_id: cdktf.numberToTerraform(this._groupId),
       member_role_id: cdktf.numberToTerraform(this._memberRoleId),
       skip_subresources_on_destroy: cdktf.booleanToTerraform(this._skipSubresourcesOnDestroy),
       unassign_issuables_on_destroy: cdktf.booleanToTerraform(this._unassignIssuablesOnDestroy),
@@ -279,16 +254,10 @@ export class GroupMembership extends cdktf.TerraformResource {
         storageClassType: "string",
       },
       group_id: {
-        value: cdktf.stringToHclTerraform(this._groupId),
+        value: cdktf.numberToHclTerraform(this._groupId),
         isBlock: false,
         type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
+        storageClassType: "number",
       },
       member_role_id: {
         value: cdktf.numberToHclTerraform(this._memberRoleId),
