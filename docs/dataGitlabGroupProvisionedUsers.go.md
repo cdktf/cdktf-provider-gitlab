@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupProvisionedUsers.DataGitlabGroupProvisionedUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupprovisionedusers"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupprovisionedusers"
 
 datagitlabgroupprovisionedusers.NewDataGitlabGroupProvisionedUsers(scope Construct, id *string, config DataGitlabGroupProvisionedUsersConfig) DataGitlabGroupProvisionedUsers
 ```
@@ -338,7 +338,7 @@ func ResetUsername()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabGroupProvisionedUsers.DataGitlabGroupProvisionedUsers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupprovisionedusers"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupprovisionedusers"
 
 datagitlabgroupprovisionedusers.DataGitlabGroupProvisionedUsers_IsConstruct(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabGroupProvisionedUsers.DataGitlabGroupProvisionedUsers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupprovisionedusers"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupprovisionedusers"
 
 datagitlabgroupprovisionedusers.DataGitlabGroupProvisionedUsers_IsTerraformElement(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ datagitlabgroupprovisionedusers.DataGitlabGroupProvisionedUsers_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabGroupProvisionedUsers.DataGitlabGroupProvisionedUsers.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupprovisionedusers"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupprovisionedusers"
 
 datagitlabgroupprovisionedusers.DataGitlabGroupProvisionedUsers_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ datagitlabgroupprovisionedusers.DataGitlabGroupProvisionedUsers_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabGroupProvisionedUsers.DataGitlabGroupProvisionedUsers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupprovisionedusers"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupprovisionedusers"
 
 datagitlabgroupprovisionedusers.DataGitlabGroupProvisionedUsers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -781,7 +781,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabGroupProvisionedUsers.DataGitlabGroupProvisionedUsersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupprovisionedusers"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupprovisionedusers"
 
 &datagitlabgroupprovisionedusers.DataGitlabGroupProvisionedUsersConfig {
 	Connection: interface{},
@@ -1014,7 +1014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabGroupProvisionedUsers.DataGitlabGroupProvisionedUsersProvisionedUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupprovisionedusers"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupprovisionedusers"
 
 &datagitlabgroupprovisionedusers.DataGitlabGroupProvisionedUsersProvisionedUsers {
 
@@ -1029,7 +1029,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupprovisio
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupProvisionedUsers.DataGitlabGroupProvisionedUsersProvisionedUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupprovisionedusers"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupprovisionedusers"
 
 datagitlabgroupprovisionedusers.NewDataGitlabGroupProvisionedUsersProvisionedUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabGroupProvisionedUsersProvisionedUsersList
 ```
@@ -1189,7 +1189,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupProvisionedUsers.DataGitlabGroupProvisionedUsersProvisionedUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupprovisionedusers"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupprovisionedusers"
 
 datagitlabgroupprovisionedusers.NewDataGitlabGroupProvisionedUsersProvisionedUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabGroupProvisionedUsersProvisionedUsersOutputReference
 ```
