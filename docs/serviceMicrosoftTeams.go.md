@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicemicrosoftteams"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/servicemicrosoftteams"
 
 servicemicrosoftteams.NewServiceMicrosoftTeams(scope Construct, id *string, config ServiceMicrosoftTeamsConfig) ServiceMicrosoftTeams
 ```
@@ -462,7 +462,7 @@ func ResetWikiPageEvents()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicemicrosoftteams"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/servicemicrosoftteams"
 
 servicemicrosoftteams.ServiceMicrosoftTeams_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicemicrosoftteams"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/servicemicrosoftteams"
 
 servicemicrosoftteams.ServiceMicrosoftTeams_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ servicemicrosoftteams.ServiceMicrosoftTeams_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicemicrosoftteams"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/servicemicrosoftteams"
 
 servicemicrosoftteams.ServiceMicrosoftTeams_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ servicemicrosoftteams.ServiceMicrosoftTeams_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeams.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicemicrosoftteams"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/servicemicrosoftteams"
 
 servicemicrosoftteams.ServiceMicrosoftTeams_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1092,7 +1092,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.serviceMicrosoftTeams.ServiceMicrosoftTeamsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/servicemicrosoftteams"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/servicemicrosoftteams"
 
 &servicemicrosoftteams.ServiceMicrosoftTeamsConfig {
 	Connection: interface{},
