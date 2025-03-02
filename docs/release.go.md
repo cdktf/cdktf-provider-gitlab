@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.release.Release.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/release"
 
 release.NewRelease(scope Construct, id *string, config ReleaseConfig) Release
 ```
@@ -440,7 +440,7 @@ func ResetTagMessage()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.release.Release.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/release"
 
 release.Release_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.release.Release.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/release"
 
 release.Release_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ release.Release_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.release.Release.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/release"
 
 release.Release_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ release.Release_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.release.Release.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/release"
 
 release.Release_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1026,7 +1026,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.release.ReleaseAssets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/release"
 
 &release.ReleaseAssets {
 
@@ -1039,7 +1039,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.release.ReleaseAuthor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/release"
 
 &release.ReleaseAuthor {
 
@@ -1052,7 +1052,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.release.ReleaseCommit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/release"
 
 &release.ReleaseCommit {
 
@@ -1065,7 +1065,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.release.ReleaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/release"
 
 &release.ReleaseConfig {
 	Connection: interface{},
@@ -1077,7 +1077,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
 	Provisioners: *[]interface{},
 	Project: *string,
 	TagName: *string,
-	Assets: github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13.release.ReleaseAssets,
+	Assets: github.com/cdktf/cdktf-provider-gitlab-go/gitlab.release.ReleaseAssets,
 	Description: *string,
 	Milestones: *[]*string,
 	Name: *string,
@@ -1315,7 +1315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.release.ReleaseLinks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/release"
 
 &release.ReleaseLinks {
 
@@ -1330,7 +1330,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.release.ReleaseAssetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/release"
 
 release.NewReleaseAssetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReleaseAssetsOutputReference
 ```
@@ -1590,7 +1590,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.release.ReleaseAuthorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/release"
 
 release.NewReleaseAuthorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReleaseAuthorOutputReference
 ```
@@ -1905,7 +1905,7 @@ func InternalValue() ReleaseAuthor
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.release.ReleaseCommitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/release"
 
 release.NewReleaseCommitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReleaseCommitOutputReference
 ```
@@ -2286,7 +2286,7 @@ func InternalValue() ReleaseCommit
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.release.ReleaseLinksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/release"
 
 release.NewReleaseLinksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReleaseLinksOutputReference
 ```
