@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabRunners.DataGitlabRunners.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabrunners"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrunners"
 
 datagitlabrunners.NewDataGitlabRunners(scope Construct, id *string, config DataGitlabRunnersConfig) DataGitlabRunners
 ```
@@ -304,7 +304,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabRunners.DataGitlabRunners.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabrunners"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrunners"
 
 datagitlabrunners.DataGitlabRunners_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabRunners.DataGitlabRunners.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabrunners"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrunners"
 
 datagitlabrunners.DataGitlabRunners_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datagitlabrunners.DataGitlabRunners_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabRunners.DataGitlabRunners.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabrunners"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrunners"
 
 datagitlabrunners.DataGitlabRunners_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ datagitlabrunners.DataGitlabRunners_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabRunners.DataGitlabRunners.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabrunners"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrunners"
 
 datagitlabrunners.DataGitlabRunners_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -681,7 +681,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabRunners.DataGitlabRunnersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabrunners"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrunners"
 
 &datagitlabrunners.DataGitlabRunnersConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabRunners.DataGitlabRunnersRunners.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabrunners"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrunners"
 
 &datagitlabrunners.DataGitlabRunnersRunners {
 
@@ -862,7 +862,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabrunners"
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabRunners.DataGitlabRunnersRunnersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabrunners"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrunners"
 
 datagitlabrunners.NewDataGitlabRunnersRunnersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabRunnersRunnersList
 ```
@@ -1011,7 +1011,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabRunners.DataGitlabRunnersRunnersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabrunners"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrunners"
 
 datagitlabrunners.NewDataGitlabRunnersRunnersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabRunnersRunnersOutputReference
 ```
