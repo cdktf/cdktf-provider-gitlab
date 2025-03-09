@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/service_custom_issue_tracker
 // generated from terraform resource schema
 
