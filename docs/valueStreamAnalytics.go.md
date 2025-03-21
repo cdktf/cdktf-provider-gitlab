@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.valueStreamAnalytics.ValueStreamAnalytics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/valuestreamanalytics"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/valuestreamanalytics"
 
 valuestreamanalytics.NewValueStreamAnalytics(scope Construct, id *string, config ValueStreamAnalyticsConfig) ValueStreamAnalytics
 ```
@@ -405,7 +405,7 @@ func ResetProjectFullPath()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.valueStreamAnalytics.ValueStreamAnalytics.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/valuestreamanalytics"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/valuestreamanalytics"
 
 valuestreamanalytics.ValueStreamAnalytics_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.valueStreamAnalytics.ValueStreamAnalytics.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/valuestreamanalytics"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/valuestreamanalytics"
 
 valuestreamanalytics.ValueStreamAnalytics_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ valuestreamanalytics.ValueStreamAnalytics_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.valueStreamAnalytics.ValueStreamAnalytics.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/valuestreamanalytics"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/valuestreamanalytics"
 
 valuestreamanalytics.ValueStreamAnalytics_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ valuestreamanalytics.ValueStreamAnalytics_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.valueStreamAnalytics.ValueStreamAnalytics.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/valuestreamanalytics"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/valuestreamanalytics"
 
 valuestreamanalytics.ValueStreamAnalytics_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -793,7 +793,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.valueStreamAnalytics.ValueStreamAnalyticsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/valuestreamanalytics"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/valuestreamanalytics"
 
 &valuestreamanalytics.ValueStreamAnalyticsConfig {
 	Connection: interface{},
@@ -959,7 +959,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.valueStreamAnalytics.ValueStreamAnalyticsStages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/valuestreamanalytics"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/valuestreamanalytics"
 
 &valuestreamanalytics.ValueStreamAnalyticsStages {
 	Name: *string,
@@ -1095,7 +1095,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.valueStreamAnalytics.ValueStreamAnalyticsStagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/valuestreamanalytics"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/valuestreamanalytics"
 
 valuestreamanalytics.NewValueStreamAnalyticsStagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ValueStreamAnalyticsStagesList
 ```
@@ -1255,7 +1255,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.valueStreamAnalytics.ValueStreamAnalyticsStagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/valuestreamanalytics"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/valuestreamanalytics"
 
 valuestreamanalytics.NewValueStreamAnalyticsStagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ValueStreamAnalyticsStagesOutputReference
 ```

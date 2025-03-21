@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_hook
 // generated from terraform resource schema
 
