@@ -4,7 +4,7 @@
 
 ### DataGitlabInstanceServiceAccount <a name="DataGitlabInstanceServiceAccount" id="@cdktf/provider-gitlab.dataGitlabInstanceServiceAccount.DataGitlabInstanceServiceAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/instance_service_account gitlab_instance_service_account}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/instance_service_account gitlab_instance_service_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabInstanceServiceAccount.DataGitlabInstanceServiceAccount.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 The service account id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/instance_service_account#service_account_id DataGitlabInstanceServiceAccount#service_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/instance_service_account#service_account_id DataGitlabInstanceServiceAccount#service_account_id}
 
 ---
 
@@ -465,7 +465,7 @@ The construct id used in the generated config for the DataGitlabInstanceServiceA
 
 The id of the existing DataGitlabInstanceServiceAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/instance_service_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/instance_service_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -807,7 +807,7 @@ service_account_id: str
 
 The service account id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/instance_service_account#service_account_id DataGitlabInstanceServiceAccount#service_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/instance_service_account#service_account_id DataGitlabInstanceServiceAccount#service_account_id}
 
 ---
 

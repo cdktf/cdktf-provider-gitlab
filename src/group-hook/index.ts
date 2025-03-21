@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_hook
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,123 +8,147 @@ import * as cdktf from 'cdktf';
 
 export interface GroupHookConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Filter push events by branch. Valid values are: `wildcard`, `regex`, `all_branches`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook#branch_filter_strategy GroupHook#branch_filter_strategy}
+  */
+  readonly branchFilterStrategy?: string;
+  /**
   * Invoke the hook for confidential issues events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_hook#confidential_issues_events GroupHook#confidential_issues_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook#confidential_issues_events GroupHook#confidential_issues_events}
   */
   readonly confidentialIssuesEvents?: boolean | cdktf.IResolvable;
   /**
   * Invoke the hook for confidential note events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_hook#confidential_note_events GroupHook#confidential_note_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook#confidential_note_events GroupHook#confidential_note_events}
   */
   readonly confidentialNoteEvents?: boolean | cdktf.IResolvable;
   /**
   * Custom headers for the project webhook.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_hook#custom_headers GroupHook#custom_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook#custom_headers GroupHook#custom_headers}
   */
   readonly customHeaders?: GroupHookCustomHeaders[] | cdktf.IResolvable;
   /**
   * Custom webhook template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_hook#custom_webhook_template GroupHook#custom_webhook_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook#custom_webhook_template GroupHook#custom_webhook_template}
   */
   readonly customWebhookTemplate?: string;
   /**
   * Invoke the hook for deployment events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_hook#deployment_events GroupHook#deployment_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook#deployment_events GroupHook#deployment_events}
   */
   readonly deploymentEvents?: boolean | cdktf.IResolvable;
   /**
+  * Description of the group webhook.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook#description GroupHook#description}
+  */
+  readonly description?: string;
+  /**
   * Enable SSL verification when invoking the hook.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_hook#enable_ssl_verification GroupHook#enable_ssl_verification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook#enable_ssl_verification GroupHook#enable_ssl_verification}
   */
   readonly enableSslVerification?: boolean | cdktf.IResolvable;
   /**
+  * Invoke the hook for feature flag events.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook#feature_flag_events GroupHook#feature_flag_events}
+  */
+  readonly featureFlagEvents?: boolean | cdktf.IResolvable;
+  /**
   * The full path or id of the group to add the hook to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_hook#group GroupHook#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook#group GroupHook#group}
   */
   readonly group: string;
   /**
   * Invoke the hook for issues events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_hook#issues_events GroupHook#issues_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook#issues_events GroupHook#issues_events}
   */
   readonly issuesEvents?: boolean | cdktf.IResolvable;
   /**
   * Invoke the hook for job events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_hook#job_events GroupHook#job_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook#job_events GroupHook#job_events}
   */
   readonly jobEvents?: boolean | cdktf.IResolvable;
   /**
   * Invoke the hook for merge requests events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_hook#merge_requests_events GroupHook#merge_requests_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook#merge_requests_events GroupHook#merge_requests_events}
   */
   readonly mergeRequestsEvents?: boolean | cdktf.IResolvable;
   /**
+  * Name of the group webhook.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook#name GroupHook#name}
+  */
+  readonly name?: string;
+  /**
   * Invoke the hook for note events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_hook#note_events GroupHook#note_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook#note_events GroupHook#note_events}
   */
   readonly noteEvents?: boolean | cdktf.IResolvable;
   /**
   * Invoke the hook for pipeline events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_hook#pipeline_events GroupHook#pipeline_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook#pipeline_events GroupHook#pipeline_events}
   */
   readonly pipelineEvents?: boolean | cdktf.IResolvable;
   /**
   * Invoke the hook for push events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_hook#push_events GroupHook#push_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook#push_events GroupHook#push_events}
   */
   readonly pushEvents?: boolean | cdktf.IResolvable;
   /**
   * Invoke the hook for push events on matching branches only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_hook#push_events_branch_filter GroupHook#push_events_branch_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook#push_events_branch_filter GroupHook#push_events_branch_filter}
   */
   readonly pushEventsBranchFilter?: string;
   /**
   * Invoke the hook for release events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_hook#releases_events GroupHook#releases_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook#releases_events GroupHook#releases_events}
   */
   readonly releasesEvents?: boolean | cdktf.IResolvable;
   /**
   * Invoke the hook for subgroup events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_hook#subgroup_events GroupHook#subgroup_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook#subgroup_events GroupHook#subgroup_events}
   */
   readonly subgroupEvents?: boolean | cdktf.IResolvable;
   /**
   * Invoke the hook for tag push events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_hook#tag_push_events GroupHook#tag_push_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook#tag_push_events GroupHook#tag_push_events}
   */
   readonly tagPushEvents?: boolean | cdktf.IResolvable;
   /**
   * A token to present when invoking the hook. The token is not available for imported resources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_hook#token GroupHook#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook#token GroupHook#token}
   */
   readonly token?: string;
   /**
   * The url of the hook to invoke. Forces re-creation to preserve `token`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_hook#url GroupHook#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook#url GroupHook#url}
   */
   readonly url: string;
   /**
   * Invoke the hook for wiki page events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_hook#wiki_page_events GroupHook#wiki_page_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook#wiki_page_events GroupHook#wiki_page_events}
   */
   readonly wikiPageEvents?: boolean | cdktf.IResolvable;
 }
@@ -137,13 +156,13 @@ export interface GroupHookCustomHeaders {
   /**
   * Key of the custom header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_hook#key GroupHook#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook#key GroupHook#key}
   */
   readonly key: string;
   /**
   * Value of the custom header. This value cannot be imported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_hook#value GroupHook#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook#value GroupHook#value}
   */
   readonly value: string;
 }
@@ -282,7 +301,7 @@ export class GroupHookCustomHeadersList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_hook gitlab_group_hook}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook gitlab_group_hook}
 */
 export class GroupHook extends cdktf.TerraformResource {
 
@@ -298,7 +317,7 @@ export class GroupHook extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GroupHook resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GroupHook to import
-  * @param importFromId The id of the existing GroupHook that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_hook#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GroupHook that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GroupHook to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -310,7 +329,7 @@ export class GroupHook extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_hook gitlab_group_hook} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_hook gitlab_group_hook} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -321,7 +340,7 @@ export class GroupHook extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_hook',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.9.0',
+        providerVersion: '17.10.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,
@@ -332,16 +351,20 @@ export class GroupHook extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._branchFilterStrategy = config.branchFilterStrategy;
     this._confidentialIssuesEvents = config.confidentialIssuesEvents;
     this._confidentialNoteEvents = config.confidentialNoteEvents;
     this._customHeaders.internalValue = config.customHeaders;
     this._customWebhookTemplate = config.customWebhookTemplate;
     this._deploymentEvents = config.deploymentEvents;
+    this._description = config.description;
     this._enableSslVerification = config.enableSslVerification;
+    this._featureFlagEvents = config.featureFlagEvents;
     this._group = config.group;
     this._issuesEvents = config.issuesEvents;
     this._jobEvents = config.jobEvents;
     this._mergeRequestsEvents = config.mergeRequestsEvents;
+    this._name = config.name;
     this._noteEvents = config.noteEvents;
     this._pipelineEvents = config.pipelineEvents;
     this._pushEvents = config.pushEvents;
@@ -357,6 +380,22 @@ export class GroupHook extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // branch_filter_strategy - computed: true, optional: true, required: false
+  private _branchFilterStrategy?: string; 
+  public get branchFilterStrategy() {
+    return this.getStringAttribute('branch_filter_strategy');
+  }
+  public set branchFilterStrategy(value: string) {
+    this._branchFilterStrategy = value;
+  }
+  public resetBranchFilterStrategy() {
+    this._branchFilterStrategy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get branchFilterStrategyInput() {
+    return this._branchFilterStrategy;
+  }
 
   // confidential_issues_events - computed: true, optional: true, required: false
   private _confidentialIssuesEvents?: boolean | cdktf.IResolvable; 
@@ -438,6 +477,22 @@ export class GroupHook extends cdktf.TerraformResource {
     return this._deploymentEvents;
   }
 
+  // description - computed: true, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
   // enable_ssl_verification - computed: true, optional: true, required: false
   private _enableSslVerification?: boolean | cdktf.IResolvable; 
   public get enableSslVerification() {
@@ -452,6 +507,22 @@ export class GroupHook extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get enableSslVerificationInput() {
     return this._enableSslVerification;
+  }
+
+  // feature_flag_events - computed: true, optional: true, required: false
+  private _featureFlagEvents?: boolean | cdktf.IResolvable; 
+  public get featureFlagEvents() {
+    return this.getBooleanAttribute('feature_flag_events');
+  }
+  public set featureFlagEvents(value: boolean | cdktf.IResolvable) {
+    this._featureFlagEvents = value;
+  }
+  public resetFeatureFlagEvents() {
+    this._featureFlagEvents = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get featureFlagEventsInput() {
+    return this._featureFlagEvents;
   }
 
   // group - computed: false, optional: false, required: true
@@ -528,6 +599,22 @@ export class GroupHook extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get mergeRequestsEventsInput() {
     return this._mergeRequestsEvents;
+  }
+
+  // name - computed: true, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
   }
 
   // note_events - computed: true, optional: true, required: false
@@ -693,16 +780,20 @@ export class GroupHook extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      branch_filter_strategy: cdktf.stringToTerraform(this._branchFilterStrategy),
       confidential_issues_events: cdktf.booleanToTerraform(this._confidentialIssuesEvents),
       confidential_note_events: cdktf.booleanToTerraform(this._confidentialNoteEvents),
       custom_headers: cdktf.listMapper(groupHookCustomHeadersToTerraform, false)(this._customHeaders.internalValue),
       custom_webhook_template: cdktf.stringToTerraform(this._customWebhookTemplate),
       deployment_events: cdktf.booleanToTerraform(this._deploymentEvents),
+      description: cdktf.stringToTerraform(this._description),
       enable_ssl_verification: cdktf.booleanToTerraform(this._enableSslVerification),
+      feature_flag_events: cdktf.booleanToTerraform(this._featureFlagEvents),
       group: cdktf.stringToTerraform(this._group),
       issues_events: cdktf.booleanToTerraform(this._issuesEvents),
       job_events: cdktf.booleanToTerraform(this._jobEvents),
       merge_requests_events: cdktf.booleanToTerraform(this._mergeRequestsEvents),
+      name: cdktf.stringToTerraform(this._name),
       note_events: cdktf.booleanToTerraform(this._noteEvents),
       pipeline_events: cdktf.booleanToTerraform(this._pipelineEvents),
       push_events: cdktf.booleanToTerraform(this._pushEvents),
@@ -718,6 +809,12 @@ export class GroupHook extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      branch_filter_strategy: {
+        value: cdktf.stringToHclTerraform(this._branchFilterStrategy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       confidential_issues_events: {
         value: cdktf.booleanToHclTerraform(this._confidentialIssuesEvents),
         isBlock: false,
@@ -748,8 +845,20 @@ export class GroupHook extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "boolean",
       },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       enable_ssl_verification: {
         value: cdktf.booleanToHclTerraform(this._enableSslVerification),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      feature_flag_events: {
+        value: cdktf.booleanToHclTerraform(this._featureFlagEvents),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -777,6 +886,12 @@ export class GroupHook extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       note_events: {
         value: cdktf.booleanToHclTerraform(this._noteEvents),

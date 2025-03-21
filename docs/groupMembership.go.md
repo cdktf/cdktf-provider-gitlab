@@ -4,12 +4,12 @@
 
 ### GroupMembership <a name="GroupMembership" id="@cdktf/provider-gitlab.groupMembership.GroupMembership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_membership gitlab_group_membership}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_membership gitlab_group_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupMembership.GroupMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/groupmembership"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupmembership"
 
 groupmembership.NewGroupMembership(scope Construct, id *string, config GroupMembershipConfig) GroupMembership
 ```
@@ -406,7 +406,7 @@ func ResetUnassignIssuablesOnDestroy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.groupMembership.GroupMembership.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/groupmembership"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupmembership"
 
 groupmembership.GroupMembership_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.groupMembership.GroupMembership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/groupmembership"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupmembership"
 
 groupmembership.GroupMembership_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ groupmembership.GroupMembership_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.groupMembership.GroupMembership.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/groupmembership"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupmembership"
 
 groupmembership.GroupMembership_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ groupmembership.GroupMembership_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.groupMembership.GroupMembership.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/groupmembership"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupmembership"
 
 groupmembership.GroupMembership_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +495,7 @@ The construct id used in the generated config for the GroupMembership to import.
 
 The id of the existing GroupMembership that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_membership#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_membership#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -860,7 +860,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.groupMembership.GroupMembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/groupmembership"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/groupmembership"
 
 &groupmembership.GroupMembershipConfig {
 	Connection: interface{},
@@ -981,7 +981,7 @@ AccessLevel *string
 
 Access level for the member. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_membership#access_level GroupMembership#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_membership#access_level GroupMembership#access_level}
 
 ---
 
@@ -995,7 +995,7 @@ GroupId *f64
 
 The ID of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_membership#group_id GroupMembership#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_membership#group_id GroupMembership#group_id}
 
 ---
 
@@ -1009,7 +1009,7 @@ UserId *f64
 
 The ID of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_membership#user_id GroupMembership#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_membership#user_id GroupMembership#user_id}
 
 ---
 
@@ -1023,7 +1023,7 @@ ExpiresAt *string
 
 Expiration date for the group membership. Format: `YYYY-MM-DD`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_membership#expires_at GroupMembership#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_membership#expires_at GroupMembership#expires_at}
 
 ---
 
@@ -1037,7 +1037,7 @@ MemberRoleId *f64
 
 The ID of a custom member role. Only available for Ultimate instances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_membership#member_role_id GroupMembership#member_role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_membership#member_role_id GroupMembership#member_role_id}
 
 ---
 
@@ -1053,7 +1053,7 @@ Whether the deletion of direct memberships of the removed member in subgroups an
 
 Only used during a destroy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_membership#skip_subresources_on_destroy GroupMembership#skip_subresources_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_membership#skip_subresources_on_destroy GroupMembership#skip_subresources_on_destroy}
 
 ---
 
@@ -1069,7 +1069,7 @@ Whether the removed member should be unassigned from any issues or merge request
 
 Only used during a destroy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_membership#unassign_issuables_on_destroy GroupMembership#unassign_issuables_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_membership#unassign_issuables_on_destroy GroupMembership#unassign_issuables_on_destroy}
 
 ---
 

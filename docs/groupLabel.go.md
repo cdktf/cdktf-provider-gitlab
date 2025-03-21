@@ -4,12 +4,12 @@
 
 ### GroupLabel <a name="GroupLabel" id="@cdktf/provider-gitlab.groupLabel.GroupLabel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_label gitlab_group_label}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_label gitlab_group_label}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupLabel.GroupLabel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/grouplabel"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/grouplabel"
 
 grouplabel.NewGroupLabel(scope Construct, id *string, config GroupLabelConfig) GroupLabel
 ```
@@ -385,7 +385,7 @@ func ResetDescription()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.groupLabel.GroupLabel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/grouplabel"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/grouplabel"
 
 grouplabel.GroupLabel_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.groupLabel.GroupLabel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/grouplabel"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/grouplabel"
 
 grouplabel.GroupLabel_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ grouplabel.GroupLabel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.groupLabel.GroupLabel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/grouplabel"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/grouplabel"
 
 grouplabel.GroupLabel_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ grouplabel.GroupLabel_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.groupLabel.GroupLabel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/grouplabel"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/grouplabel"
 
 grouplabel.GroupLabel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the GroupLabel to import.
 
 The id of the existing GroupLabel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_label#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_label#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -784,7 +784,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.groupLabel.GroupLabelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/grouplabel"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/grouplabel"
 
 &grouplabel.GroupLabelConfig {
 	Connection: interface{},
@@ -899,7 +899,7 @@ Color *string
 
 The color of the label given in 6-digit hex notation with leading '#' sign (e.g. #FFAABB) or one of the [CSS color names](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Color_keywords).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_label#color GroupLabel#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_label#color GroupLabel#color}
 
 ---
 
@@ -913,7 +913,7 @@ Group *string
 
 The name or id of the group to add the label to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_label#group GroupLabel#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_label#group GroupLabel#group}
 
 ---
 
@@ -927,7 +927,7 @@ Name *string
 
 The name of the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_label#name GroupLabel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_label#name GroupLabel#name}
 
 ---
 
@@ -941,7 +941,7 @@ Description *string
 
 The description of the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_label#description GroupLabel#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_label#description GroupLabel#description}
 
 ---
 

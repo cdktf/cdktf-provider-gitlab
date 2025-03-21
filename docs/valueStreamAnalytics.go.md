@@ -4,12 +4,12 @@
 
 ### ValueStreamAnalytics <a name="ValueStreamAnalytics" id="@cdktf/provider-gitlab.valueStreamAnalytics.ValueStreamAnalytics"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/value_stream_analytics gitlab_value_stream_analytics}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/value_stream_analytics gitlab_value_stream_analytics}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.valueStreamAnalytics.ValueStreamAnalytics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/valuestreamanalytics"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/valuestreamanalytics"
 
 valuestreamanalytics.NewValueStreamAnalytics(scope Construct, id *string, config ValueStreamAnalyticsConfig) ValueStreamAnalytics
 ```
@@ -405,7 +405,7 @@ func ResetProjectFullPath()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.valueStreamAnalytics.ValueStreamAnalytics.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/valuestreamanalytics"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/valuestreamanalytics"
 
 valuestreamanalytics.ValueStreamAnalytics_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.valueStreamAnalytics.ValueStreamAnalytics.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/valuestreamanalytics"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/valuestreamanalytics"
 
 valuestreamanalytics.ValueStreamAnalytics_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ valuestreamanalytics.ValueStreamAnalytics_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.valueStreamAnalytics.ValueStreamAnalytics.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/valuestreamanalytics"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/valuestreamanalytics"
 
 valuestreamanalytics.ValueStreamAnalytics_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ valuestreamanalytics.ValueStreamAnalytics_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.valueStreamAnalytics.ValueStreamAnalytics.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/valuestreamanalytics"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/valuestreamanalytics"
 
 valuestreamanalytics.ValueStreamAnalytics_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the ValueStreamAnalytics to im
 
 The id of the existing ValueStreamAnalytics that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/value_stream_analytics#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/value_stream_analytics#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -793,7 +793,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.valueStreamAnalytics.ValueStreamAnalyticsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/valuestreamanalytics"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/valuestreamanalytics"
 
 &valuestreamanalytics.ValueStreamAnalyticsConfig {
 	Connection: interface{},
@@ -908,7 +908,7 @@ Name *string
 
 The name of the value stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/value_stream_analytics#name ValueStreamAnalytics#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/value_stream_analytics#name ValueStreamAnalytics#name}
 
 ---
 
@@ -922,7 +922,7 @@ Stages interface{}
 
 Stages of the value stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/value_stream_analytics#stages ValueStreamAnalytics#stages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/value_stream_analytics#stages ValueStreamAnalytics#stages}
 
 ---
 
@@ -936,7 +936,7 @@ GroupFullPath *string
 
 Full path of the group the value stream is created in. **One of `group_full_path` OR `project_full_path` is required.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/value_stream_analytics#group_full_path ValueStreamAnalytics#group_full_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/value_stream_analytics#group_full_path ValueStreamAnalytics#group_full_path}
 
 ---
 
@@ -950,7 +950,7 @@ ProjectFullPath *string
 
 Full path of the project the value stream is created in. **One of `group_full_path` OR `project_full_path` is required.**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/value_stream_analytics#project_full_path ValueStreamAnalytics#project_full_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/value_stream_analytics#project_full_path ValueStreamAnalytics#project_full_path}
 
 ---
 
@@ -959,7 +959,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.valueStreamAnalytics.ValueStreamAnalyticsStages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/valuestreamanalytics"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/valuestreamanalytics"
 
 &valuestreamanalytics.ValueStreamAnalyticsStages {
 	Name: *string,
@@ -996,7 +996,7 @@ Name *string
 
 The name of the value stream stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/value_stream_analytics#name ValueStreamAnalytics#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/value_stream_analytics#name ValueStreamAnalytics#name}
 
 ---
 
@@ -1010,7 +1010,7 @@ Custom interface{}
 
 Boolean whether the stage is customized. If false, it assigns a built-in default stage by name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/value_stream_analytics#custom ValueStreamAnalytics#custom}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/value_stream_analytics#custom ValueStreamAnalytics#custom}
 
 ---
 
@@ -1026,7 +1026,7 @@ End event identifier.
 
 Valid values are: `CODE_STAGE_START`, `ISSUE_CLOSED`, `ISSUE_CREATED`, `ISSUE_DEPLOYED_TO_PRODUCTION`, `ISSUE_FIRST_ADDED_TO_BOARD`, `ISSUE_FIRST_ADDED_TO_ITERATION`, `ISSUE_FIRST_ASSIGNED_AT`, `ISSUE_FIRST_ASSOCIATED_WITH_MILESTONE`, `ISSUE_FIRST_MENTIONED_IN_COMMIT`, `ISSUE_LABEL_ADDED`, `ISSUE_LABEL_REMOVED`, `ISSUE_LAST_EDITED`, `ISSUE_STAGE_END`, `MERGE_REQUEST_CLOSED`, `MERGE_REQUEST_CREATED`, `MERGE_REQUEST_FIRST_ASSIGNED_AT`, `MERGE_REQUEST_FIRST_COMMIT_AT`, `MERGE_REQUEST_FIRST_DEPLOYED_TO_PRODUCTION`, `MERGE_REQUEST_LABEL_ADDED`, `MERGE_REQUEST_LABEL_REMOVED`, `MERGE_REQUEST_LAST_BUILD_FINISHED`, `MERGE_REQUEST_LAST_BUILD_STARTED`, `MERGE_REQUEST_LAST_EDITED`, `MERGE_REQUEST_MERGED`, `MERGE_REQUEST_REVIEWER_FIRST_ASSIGNED`, `MERGE_REQUEST_PLAN_STAGE_START`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/value_stream_analytics#end_event_identifier ValueStreamAnalytics#end_event_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/value_stream_analytics#end_event_identifier ValueStreamAnalytics#end_event_identifier}
 
 ---
 
@@ -1040,7 +1040,7 @@ EndEventLabelId *string
 
 Label ID associated with the end event identifier. In the format of `gid://gitlab/GroupLabel/<id>` or `gid://gitlab/ProjectLabel/<id>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/value_stream_analytics#end_event_label_id ValueStreamAnalytics#end_event_label_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/value_stream_analytics#end_event_label_id ValueStreamAnalytics#end_event_label_id}
 
 ---
 
@@ -1054,7 +1054,7 @@ Hidden interface{}
 
 Boolean whether the stage is hidden, GitLab provided default stages are hidden by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/value_stream_analytics#hidden ValueStreamAnalytics#hidden}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/value_stream_analytics#hidden ValueStreamAnalytics#hidden}
 
 ---
 
@@ -1070,7 +1070,7 @@ Start event identifier.
 
 Valid values are: `CODE_STAGE_START`, `ISSUE_CLOSED`, `ISSUE_CREATED`, `ISSUE_DEPLOYED_TO_PRODUCTION`, `ISSUE_FIRST_ADDED_TO_BOARD`, `ISSUE_FIRST_ADDED_TO_ITERATION`, `ISSUE_FIRST_ASSIGNED_AT`, `ISSUE_FIRST_ASSOCIATED_WITH_MILESTONE`, `ISSUE_FIRST_MENTIONED_IN_COMMIT`, `ISSUE_LABEL_ADDED`, `ISSUE_LABEL_REMOVED`, `ISSUE_LAST_EDITED`, `ISSUE_STAGE_END`, `MERGE_REQUEST_CLOSED`, `MERGE_REQUEST_CREATED`, `MERGE_REQUEST_FIRST_ASSIGNED_AT`, `MERGE_REQUEST_FIRST_COMMIT_AT`, `MERGE_REQUEST_FIRST_DEPLOYED_TO_PRODUCTION`, `MERGE_REQUEST_LABEL_ADDED`, `MERGE_REQUEST_LABEL_REMOVED`, `MERGE_REQUEST_LAST_BUILD_FINISHED`, `MERGE_REQUEST_LAST_BUILD_STARTED`, `MERGE_REQUEST_LAST_EDITED`, `MERGE_REQUEST_MERGED`, `MERGE_REQUEST_REVIEWER_FIRST_ASSIGNED`, `MERGE_REQUEST_PLAN_STAGE_START`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/value_stream_analytics#start_event_identifier ValueStreamAnalytics#start_event_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/value_stream_analytics#start_event_identifier ValueStreamAnalytics#start_event_identifier}
 
 ---
 
@@ -1084,7 +1084,7 @@ StartEventLabelId *string
 
 Label ID associated with the start event identifier. In the format of `gid://gitlab/GroupLabel/<id>` or `gid://gitlab/ProjectLabel/<id>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/value_stream_analytics#start_event_label_id ValueStreamAnalytics#start_event_label_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/value_stream_analytics#start_event_label_id ValueStreamAnalytics#start_event_label_id}
 
 ---
 
@@ -1095,7 +1095,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.valueStreamAnalytics.ValueStreamAnalyticsStagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/valuestreamanalytics"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/valuestreamanalytics"
 
 valuestreamanalytics.NewValueStreamAnalyticsStagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ValueStreamAnalyticsStagesList
 ```
@@ -1255,7 +1255,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.valueStreamAnalytics.ValueStreamAnalyticsStagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/valuestreamanalytics"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/valuestreamanalytics"
 
 valuestreamanalytics.NewValueStreamAnalyticsStagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ValueStreamAnalyticsStagesOutputReference
 ```

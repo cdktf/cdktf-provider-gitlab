@@ -4,7 +4,7 @@
 
 ### ProjectMirror <a name="ProjectMirror" id="@cdktf/provider-gitlab.projectMirror.ProjectMirror"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_mirror gitlab_project_mirror}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_mirror gitlab_project_mirror}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectMirror.ProjectMirror.Initializer"></a>
 
@@ -25,10 +25,12 @@ ProjectMirror.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(RemoteExecProvisioner>)
     .project(java.lang.String)
     .url(java.lang.String)
+//  .authMethod(java.lang.String)
 //  .enabled(java.lang.Boolean)
 //  .enabled(IResolvable)
 //  .keepDivergentRefs(java.lang.Boolean)
 //  .keepDivergentRefs(IResolvable)
+//  .mirrorBranchRegex(java.lang.String)
 //  .onlyProtectedBranches(java.lang.Boolean)
 //  .onlyProtectedBranches(IResolvable)
     .build();
@@ -47,8 +49,10 @@ ProjectMirror.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | The id of the project. |
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.Initializer.parameter.url">url</a></code> | <code>java.lang.String</code> | The URL of the remote repository to be mirrored. |
+| <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.Initializer.parameter.authMethod">authMethod</a></code> | <code>java.lang.String</code> | Determines the mirror authentication method. Valid values are: `ssh_public_key`, `password`. |
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines if the mirror is enabled. |
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.Initializer.parameter.keepDivergentRefs">keepDivergentRefs</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines if divergent refs are skipped. |
+| <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.Initializer.parameter.mirrorBranchRegex">mirrorBranchRegex</a></code> | <code>java.lang.String</code> | Contains a regular expression. |
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.Initializer.parameter.onlyProtectedBranches">onlyProtectedBranches</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines if only protected branches are mirrored. |
 
 ---
@@ -119,7 +123,7 @@ Must be unique amongst siblings in the same scope
 
 The id of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_mirror#project ProjectMirror#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_mirror#project ProjectMirror#project}
 
 ---
 
@@ -129,7 +133,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The URL of the remote repository to be mirrored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_mirror#url ProjectMirror#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_mirror#url ProjectMirror#url}
+
+---
+
+##### `authMethod`<sup>Optional</sup> <a name="authMethod" id="@cdktf/provider-gitlab.projectMirror.ProjectMirror.Initializer.parameter.authMethod"></a>
+
+- *Type:* java.lang.String
+
+Determines the mirror authentication method. Valid values are: `ssh_public_key`, `password`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_mirror#auth_method ProjectMirror#auth_method}
 
 ---
 
@@ -139,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Determines if the mirror is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_mirror#enabled ProjectMirror#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_mirror#enabled ProjectMirror#enabled}
 
 ---
 
@@ -149,7 +163,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Determines if divergent refs are skipped.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_mirror#keep_divergent_refs ProjectMirror#keep_divergent_refs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_mirror#keep_divergent_refs ProjectMirror#keep_divergent_refs}
+
+---
+
+##### `mirrorBranchRegex`<sup>Optional</sup> <a name="mirrorBranchRegex" id="@cdktf/provider-gitlab.projectMirror.ProjectMirror.Initializer.parameter.mirrorBranchRegex"></a>
+
+- *Type:* java.lang.String
+
+Contains a regular expression.
+
+Only branches with names matching the regex are mirrored. Requires only_protected_branches to be disabled. Premium and Ultimate only.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_mirror#mirror_branch_regex ProjectMirror#mirror_branch_regex}
 
 ---
 
@@ -159,7 +185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Determines if only protected branches are mirrored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_mirror#only_protected_branches ProjectMirror#only_protected_branches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_mirror#only_protected_branches ProjectMirror#only_protected_branches}
 
 ---
 
@@ -190,8 +216,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.resetAuthMethod">resetAuthMethod</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.resetEnabled">resetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.resetKeepDivergentRefs">resetKeepDivergentRefs</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.resetMirrorBranchRegex">resetMirrorBranchRegex</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.resetOnlyProtectedBranches">resetOnlyProtectedBranches</a></code> | *No description.* |
 
 ---
@@ -486,6 +514,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetAuthMethod` <a name="resetAuthMethod" id="@cdktf/provider-gitlab.projectMirror.ProjectMirror.resetAuthMethod"></a>
+
+```java
+public void resetAuthMethod()
+```
+
 ##### `resetEnabled` <a name="resetEnabled" id="@cdktf/provider-gitlab.projectMirror.ProjectMirror.resetEnabled"></a>
 
 ```java
@@ -496,6 +530,12 @@ public void resetEnabled()
 
 ```java
 public void resetKeepDivergentRefs()
+```
+
+##### `resetMirrorBranchRegex` <a name="resetMirrorBranchRegex" id="@cdktf/provider-gitlab.projectMirror.ProjectMirror.resetMirrorBranchRegex"></a>
+
+```java
+public void resetMirrorBranchRegex()
 ```
 
 ##### `resetOnlyProtectedBranches` <a name="resetOnlyProtectedBranches" id="@cdktf/provider-gitlab.projectMirror.ProjectMirror.resetOnlyProtectedBranches"></a>
@@ -607,7 +647,7 @@ The construct id used in the generated config for the ProjectMirror to import.
 
 The id of the existing ProjectMirror that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_mirror#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_mirror#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -639,13 +679,17 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.property.mirrorId">mirrorId</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.property.authMethodInput">authMethodInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.property.keepDivergentRefsInput">keepDivergentRefsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.property.mirrorBranchRegexInput">mirrorBranchRegexInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.property.onlyProtectedBranchesInput">onlyProtectedBranchesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.property.urlInput">urlInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.property.authMethod">authMethod</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.property.keepDivergentRefs">keepDivergentRefs</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.property.mirrorBranchRegex">mirrorBranchRegex</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.property.onlyProtectedBranches">onlyProtectedBranches</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.property.project">project</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirror.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -814,6 +858,16 @@ public java.lang.Number getMirrorId();
 
 ---
 
+##### `authMethodInput`<sup>Optional</sup> <a name="authMethodInput" id="@cdktf/provider-gitlab.projectMirror.ProjectMirror.property.authMethodInput"></a>
+
+```java
+public java.lang.String getAuthMethodInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktf/provider-gitlab.projectMirror.ProjectMirror.property.enabledInput"></a>
 
 ```java
@@ -831,6 +885,16 @@ public java.lang.Object getKeepDivergentRefsInput();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `mirrorBranchRegexInput`<sup>Optional</sup> <a name="mirrorBranchRegexInput" id="@cdktf/provider-gitlab.projectMirror.ProjectMirror.property.mirrorBranchRegexInput"></a>
+
+```java
+public java.lang.String getMirrorBranchRegexInput();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -864,6 +928,16 @@ public java.lang.String getUrlInput();
 
 ---
 
+##### `authMethod`<sup>Required</sup> <a name="authMethod" id="@cdktf/provider-gitlab.projectMirror.ProjectMirror.property.authMethod"></a>
+
+```java
+public java.lang.String getAuthMethod();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-gitlab.projectMirror.ProjectMirror.property.enabled"></a>
 
 ```java
@@ -881,6 +955,16 @@ public java.lang.Object getKeepDivergentRefs();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `mirrorBranchRegex`<sup>Required</sup> <a name="mirrorBranchRegex" id="@cdktf/provider-gitlab.projectMirror.ProjectMirror.property.mirrorBranchRegex"></a>
+
+```java
+public java.lang.String getMirrorBranchRegex();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -955,10 +1039,12 @@ ProjectMirrorConfig.builder()
 //  .provisioners(RemoteExecProvisioner>)
     .project(java.lang.String)
     .url(java.lang.String)
+//  .authMethod(java.lang.String)
 //  .enabled(java.lang.Boolean)
 //  .enabled(IResolvable)
 //  .keepDivergentRefs(java.lang.Boolean)
 //  .keepDivergentRefs(IResolvable)
+//  .mirrorBranchRegex(java.lang.String)
 //  .onlyProtectedBranches(java.lang.Boolean)
 //  .onlyProtectedBranches(IResolvable)
     .build();
@@ -977,8 +1063,10 @@ ProjectMirrorConfig.builder()
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirrorConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirrorConfig.property.project">project</a></code> | <code>java.lang.String</code> | The id of the project. |
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirrorConfig.property.url">url</a></code> | <code>java.lang.String</code> | The URL of the remote repository to be mirrored. |
+| <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirrorConfig.property.authMethod">authMethod</a></code> | <code>java.lang.String</code> | Determines the mirror authentication method. Valid values are: `ssh_public_key`, `password`. |
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirrorConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines if the mirror is enabled. |
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirrorConfig.property.keepDivergentRefs">keepDivergentRefs</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines if divergent refs are skipped. |
+| <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirrorConfig.property.mirrorBranchRegex">mirrorBranchRegex</a></code> | <code>java.lang.String</code> | Contains a regular expression. |
 | <code><a href="#@cdktf/provider-gitlab.projectMirror.ProjectMirrorConfig.property.onlyProtectedBranches">onlyProtectedBranches</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines if only protected branches are mirrored. |
 
 ---
@@ -1063,7 +1151,7 @@ public java.lang.String getProject();
 
 The id of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_mirror#project ProjectMirror#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_mirror#project ProjectMirror#project}
 
 ---
 
@@ -1077,7 +1165,21 @@ public java.lang.String getUrl();
 
 The URL of the remote repository to be mirrored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_mirror#url ProjectMirror#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_mirror#url ProjectMirror#url}
+
+---
+
+##### `authMethod`<sup>Optional</sup> <a name="authMethod" id="@cdktf/provider-gitlab.projectMirror.ProjectMirrorConfig.property.authMethod"></a>
+
+```java
+public java.lang.String getAuthMethod();
+```
+
+- *Type:* java.lang.String
+
+Determines the mirror authentication method. Valid values are: `ssh_public_key`, `password`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_mirror#auth_method ProjectMirror#auth_method}
 
 ---
 
@@ -1091,7 +1193,7 @@ public java.lang.Object getEnabled();
 
 Determines if the mirror is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_mirror#enabled ProjectMirror#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_mirror#enabled ProjectMirror#enabled}
 
 ---
 
@@ -1105,7 +1207,23 @@ public java.lang.Object getKeepDivergentRefs();
 
 Determines if divergent refs are skipped.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_mirror#keep_divergent_refs ProjectMirror#keep_divergent_refs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_mirror#keep_divergent_refs ProjectMirror#keep_divergent_refs}
+
+---
+
+##### `mirrorBranchRegex`<sup>Optional</sup> <a name="mirrorBranchRegex" id="@cdktf/provider-gitlab.projectMirror.ProjectMirrorConfig.property.mirrorBranchRegex"></a>
+
+```java
+public java.lang.String getMirrorBranchRegex();
+```
+
+- *Type:* java.lang.String
+
+Contains a regular expression.
+
+Only branches with names matching the regex are mirrored. Requires only_protected_branches to be disabled. Premium and Ultimate only.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_mirror#mirror_branch_regex ProjectMirror#mirror_branch_regex}
 
 ---
 
@@ -1119,7 +1237,7 @@ public java.lang.Object getOnlyProtectedBranches();
 
 Determines if only protected branches are mirrored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_mirror#only_protected_branches ProjectMirror#only_protected_branches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_mirror#only_protected_branches ProjectMirror#only_protected_branches}
 
 ---
 

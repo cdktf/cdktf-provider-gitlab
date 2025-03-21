@@ -4,12 +4,12 @@
 
 ### DataGitlabInstanceServiceAccount <a name="DataGitlabInstanceServiceAccount" id="@cdktf/provider-gitlab.dataGitlabInstanceServiceAccount.DataGitlabInstanceServiceAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/instance_service_account gitlab_instance_service_account}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/instance_service_account gitlab_instance_service_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabInstanceServiceAccount.DataGitlabInstanceServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabinstanceserviceaccount"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstanceserviceaccount"
 
 datagitlabinstanceserviceaccount.NewDataGitlabInstanceServiceAccount(scope Construct, id *string, config DataGitlabInstanceServiceAccountConfig) DataGitlabInstanceServiceAccount
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabInstanceServiceAccount.DataGitlabInstanceServiceAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabinstanceserviceaccount"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstanceserviceaccount"
 
 datagitlabinstanceserviceaccount.DataGitlabInstanceServiceAccount_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabInstanceServiceAccount.DataGitlabInstanceServiceAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabinstanceserviceaccount"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstanceserviceaccount"
 
 datagitlabinstanceserviceaccount.DataGitlabInstanceServiceAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datagitlabinstanceserviceaccount.DataGitlabInstanceServiceAccount_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabInstanceServiceAccount.DataGitlabInstanceServiceAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabinstanceserviceaccount"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstanceserviceaccount"
 
 datagitlabinstanceserviceaccount.DataGitlabInstanceServiceAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagitlabinstanceserviceaccount.DataGitlabInstanceServiceAccount_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabInstanceServiceAccount.DataGitlabInstanceServiceAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabinstanceserviceaccount"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstanceserviceaccount"
 
 datagitlabinstanceserviceaccount.DataGitlabInstanceServiceAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataGitlabInstanceServiceA
 
 The id of the existing DataGitlabInstanceServiceAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/instance_service_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/instance_service_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabInstanceServiceAccount.DataGitlabInstanceServiceAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabinstanceserviceaccount"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabinstanceserviceaccount"
 
 &datagitlabinstanceserviceaccount.DataGitlabInstanceServiceAccountConfig {
 	Connection: interface{},
@@ -707,7 +707,7 @@ ServiceAccountId *string
 
 The service account id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/instance_service_account#service_account_id DataGitlabInstanceServiceAccount#service_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/instance_service_account#service_account_id DataGitlabInstanceServiceAccount#service_account_id}
 
 ---
 

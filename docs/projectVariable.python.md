@@ -4,7 +4,7 @@
 
 ### ProjectVariable <a name="ProjectVariable" id="@cdktf/provider-gitlab.projectVariable.ProjectVariable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_variable gitlab_project_variable}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_variable gitlab_project_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectVariable.ProjectVariable.Initializer"></a>
 
@@ -26,6 +26,7 @@ projectVariable.ProjectVariable(
   value: str,
   description: str = None,
   environment_scope: str = None,
+  hidden: typing.Union[bool, IResolvable] = None,
   masked: typing.Union[bool, IResolvable] = None,
   protected: typing.Union[bool, IResolvable] = None,
   raw: typing.Union[bool, IResolvable] = None,
@@ -49,6 +50,7 @@ projectVariable.ProjectVariable(
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.Initializer.parameter.value">value</a></code> | <code>str</code> | The value of the variable. |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.Initializer.parameter.description">description</a></code> | <code>str</code> | The description of the variable. |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.Initializer.parameter.environmentScope">environment_scope</a></code> | <code>str</code> | The environment scope of the variable. |
+| <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.Initializer.parameter.hidden">hidden</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to `true`, the value of the variable will be hidden in the CI/CD User Interface. |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.Initializer.parameter.masked">masked</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to `true`, the value of the variable will be masked in job logs. |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.Initializer.parameter.protected">protected</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to `true`, the variable will be passed only to pipelines running on protected branches and tags. |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.Initializer.parameter.raw">raw</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the variable is treated as a raw string. When true, variables in the value are not expanded. |
@@ -122,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_variable#key ProjectVariable#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_variable#key ProjectVariable#key}
 
 ---
 
@@ -132,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The name or id of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_variable#project ProjectVariable#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_variable#project ProjectVariable#project}
 
 ---
 
@@ -142,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The value of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_variable#value ProjectVariable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_variable#value ProjectVariable#value}
 
 ---
 
@@ -152,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The description of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_variable#description ProjectVariable#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_variable#description ProjectVariable#description}
 
 ---
 
@@ -164,7 +166,19 @@ The environment scope of the variable.
 
 Defaults to all environment (`*`). Note that in Community Editions of Gitlab, values other than `*` will cause inconsistent plans.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_variable#environment_scope ProjectVariable#environment_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_variable#environment_scope ProjectVariable#environment_scope}
+
+---
+
+##### `hidden`<sup>Optional</sup> <a name="hidden" id="@cdktf/provider-gitlab.projectVariable.ProjectVariable.Initializer.parameter.hidden"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+If set to `true`, the value of the variable will be hidden in the CI/CD User Interface.
+
+The value must meet the [hidden requirements](https://docs.gitlab.com/ci/variables/#hide-a-cicd-variable).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_variable#hidden ProjectVariable#hidden}
 
 ---
 
@@ -176,7 +190,7 @@ If set to `true`, the value of the variable will be masked in job logs.
 
 The value must meet the [masking requirements](https://docs.gitlab.com/ee/ci/variables/#mask-a-cicd-variable).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_variable#masked ProjectVariable#masked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_variable#masked ProjectVariable#masked}
 
 ---
 
@@ -186,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 If set to `true`, the variable will be passed only to pipelines running on protected branches and tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_variable#protected ProjectVariable#protected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_variable#protected ProjectVariable#protected}
 
 ---
 
@@ -196,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Whether the variable is treated as a raw string. When true, variables in the value are not expanded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_variable#raw ProjectVariable#raw}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_variable#raw ProjectVariable#raw}
 
 ---
 
@@ -206,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The type of a variable. Valid values are: `env_var`, `file`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_variable#variable_type ProjectVariable#variable_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_variable#variable_type ProjectVariable#variable_type}
 
 ---
 
@@ -239,6 +253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.resetEnvironmentScope">reset_environment_scope</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.resetHidden">reset_hidden</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.resetMasked">reset_masked</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.resetProtected">reset_protected</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.resetRaw">reset_raw</a></code> | *No description.* |
@@ -583,6 +598,12 @@ def reset_description() -> None
 def reset_environment_scope() -> None
 ```
 
+##### `reset_hidden` <a name="reset_hidden" id="@cdktf/provider-gitlab.projectVariable.ProjectVariable.resetHidden"></a>
+
+```python
+def reset_hidden() -> None
+```
+
 ##### `reset_masked` <a name="reset_masked" id="@cdktf/provider-gitlab.projectVariable.ProjectVariable.resetMasked"></a>
 
 ```python
@@ -721,7 +742,7 @@ The construct id used in the generated config for the ProjectVariable to import.
 
 The id of the existing ProjectVariable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_variable#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_variable#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -754,6 +775,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.environmentScopeInput">environment_scope_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.hiddenInput">hidden_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.maskedInput">masked_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
@@ -763,6 +785,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.variableTypeInput">variable_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.environmentScope">environment_scope</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.hidden">hidden</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.masked">masked</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.project">project</a></code> | <code>str</code> | *No description.* |
@@ -945,6 +968,16 @@ environment_scope_input: str
 
 ---
 
+##### `hidden_input`<sup>Optional</sup> <a name="hidden_input" id="@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.hiddenInput"></a>
+
+```python
+hidden_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.keyInput"></a>
 
 ```python
@@ -1032,6 +1065,16 @@ environment_scope: str
 ```
 
 - *Type:* str
+
+---
+
+##### `hidden`<sup>Required</sup> <a name="hidden" id="@cdktf/provider-gitlab.projectVariable.ProjectVariable.property.hidden"></a>
+
+```python
+hidden: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -1145,6 +1188,7 @@ projectVariable.ProjectVariableConfig(
   value: str,
   description: str = None,
   environment_scope: str = None,
+  hidden: typing.Union[bool, IResolvable] = None,
   masked: typing.Union[bool, IResolvable] = None,
   protected: typing.Union[bool, IResolvable] = None,
   raw: typing.Union[bool, IResolvable] = None,
@@ -1168,6 +1212,7 @@ projectVariable.ProjectVariableConfig(
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.value">value</a></code> | <code>str</code> | The value of the variable. |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.description">description</a></code> | <code>str</code> | The description of the variable. |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.environmentScope">environment_scope</a></code> | <code>str</code> | The environment scope of the variable. |
+| <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.hidden">hidden</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to `true`, the value of the variable will be hidden in the CI/CD User Interface. |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.masked">masked</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to `true`, the value of the variable will be masked in job logs. |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.protected">protected</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to `true`, the variable will be passed only to pipelines running on protected branches and tags. |
 | <code><a href="#@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.raw">raw</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the variable is treated as a raw string. When true, variables in the value are not expanded. |
@@ -1255,7 +1300,7 @@ key: str
 
 The name of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_variable#key ProjectVariable#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_variable#key ProjectVariable#key}
 
 ---
 
@@ -1269,7 +1314,7 @@ project: str
 
 The name or id of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_variable#project ProjectVariable#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_variable#project ProjectVariable#project}
 
 ---
 
@@ -1283,7 +1328,7 @@ value: str
 
 The value of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_variable#value ProjectVariable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_variable#value ProjectVariable#value}
 
 ---
 
@@ -1297,7 +1342,7 @@ description: str
 
 The description of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_variable#description ProjectVariable#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_variable#description ProjectVariable#description}
 
 ---
 
@@ -1313,7 +1358,23 @@ The environment scope of the variable.
 
 Defaults to all environment (`*`). Note that in Community Editions of Gitlab, values other than `*` will cause inconsistent plans.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_variable#environment_scope ProjectVariable#environment_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_variable#environment_scope ProjectVariable#environment_scope}
+
+---
+
+##### `hidden`<sup>Optional</sup> <a name="hidden" id="@cdktf/provider-gitlab.projectVariable.ProjectVariableConfig.property.hidden"></a>
+
+```python
+hidden: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+If set to `true`, the value of the variable will be hidden in the CI/CD User Interface.
+
+The value must meet the [hidden requirements](https://docs.gitlab.com/ci/variables/#hide-a-cicd-variable).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_variable#hidden ProjectVariable#hidden}
 
 ---
 
@@ -1329,7 +1390,7 @@ If set to `true`, the value of the variable will be masked in job logs.
 
 The value must meet the [masking requirements](https://docs.gitlab.com/ee/ci/variables/#mask-a-cicd-variable).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_variable#masked ProjectVariable#masked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_variable#masked ProjectVariable#masked}
 
 ---
 
@@ -1343,7 +1404,7 @@ protected: typing.Union[bool, IResolvable]
 
 If set to `true`, the variable will be passed only to pipelines running on protected branches and tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_variable#protected ProjectVariable#protected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_variable#protected ProjectVariable#protected}
 
 ---
 
@@ -1357,7 +1418,7 @@ raw: typing.Union[bool, IResolvable]
 
 Whether the variable is treated as a raw string. When true, variables in the value are not expanded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_variable#raw ProjectVariable#raw}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_variable#raw ProjectVariable#raw}
 
 ---
 
@@ -1371,7 +1432,7 @@ variable_type: str
 
 The type of a variable. Valid values are: `env_var`, `file`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_variable#variable_type ProjectVariable#variable_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_variable#variable_type ProjectVariable#variable_type}
 
 ---
 

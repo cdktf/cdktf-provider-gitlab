@@ -4,12 +4,12 @@
 
 ### DataGitlabGroupVariable <a name="DataGitlabGroupVariable" id="@cdktf/provider-gitlab.dataGitlabGroupVariable.DataGitlabGroupVariable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/group_variable gitlab_group_variable}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/group_variable gitlab_group_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupVariable.DataGitlabGroupVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupvariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupvariable"
 
 datagitlabgroupvariable.NewDataGitlabGroupVariable(scope Construct, id *string, config DataGitlabGroupVariableConfig) DataGitlabGroupVariable
 ```
@@ -283,7 +283,7 @@ func ResetEnvironmentScope()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabGroupVariable.DataGitlabGroupVariable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupvariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupvariable"
 
 datagitlabgroupvariable.DataGitlabGroupVariable_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabGroupVariable.DataGitlabGroupVariable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupvariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupvariable"
 
 datagitlabgroupvariable.DataGitlabGroupVariable_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datagitlabgroupvariable.DataGitlabGroupVariable_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabGroupVariable.DataGitlabGroupVariable.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupvariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupvariable"
 
 datagitlabgroupvariable.DataGitlabGroupVariable_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagitlabgroupvariable.DataGitlabGroupVariable_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabGroupVariable.DataGitlabGroupVariable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupvariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupvariable"
 
 datagitlabgroupvariable.DataGitlabGroupVariable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataGitlabGroupVariable to
 
 The id of the existing DataGitlabGroupVariable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/group_variable#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/group_variable#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -693,7 +693,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabGroupVariable.DataGitlabGroupVariableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupvariable"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupvariable"
 
 &datagitlabgroupvariable.DataGitlabGroupVariableConfig {
 	Connection: interface{},
@@ -806,7 +806,7 @@ Group *string
 
 The name or id of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/group_variable#group DataGitlabGroupVariable#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/group_variable#group DataGitlabGroupVariable#group}
 
 ---
 
@@ -820,7 +820,7 @@ Key *string
 
 The name of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/group_variable#key DataGitlabGroupVariable#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/group_variable#key DataGitlabGroupVariable#key}
 
 ---
 
@@ -836,7 +836,7 @@ The environment scope of the variable.
 
 Defaults to all environment (`*`). Note that in Community Editions of Gitlab, values other than `*` will cause inconsistent plans.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/group_variable#environment_scope DataGitlabGroupVariable#environment_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/group_variable#environment_scope DataGitlabGroupVariable#environment_scope}
 
 ---
 

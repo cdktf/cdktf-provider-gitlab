@@ -4,7 +4,7 @@
 
 ### GroupServiceAccountAccessToken <a name="GroupServiceAccountAccessToken" id="@cdktf/provider-gitlab.groupServiceAccountAccessToken.GroupServiceAccountAccessToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupServiceAccountAccessToken.GroupServiceAccountAccessToken.Initializer"></a>
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The ID or URL-encoded path of the group containing the service account. Must be a top level group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_service_account_access_token#group GroupServiceAccountAccessToken#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_service_account_access_token#group GroupServiceAccountAccessToken#group}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The name of the personal access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_service_account_access_token#name GroupServiceAccountAccessToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_service_account_access_token#name GroupServiceAccountAccessToken#name}
 
 ---
 
@@ -138,7 +138,7 @@ The scopes of the group service account access token.
 
 valid values are: `api`, `read_api`, `read_registry`, `write_registry`, `read_repository`, `write_repository`, `create_runner`, `manage_runner`, `ai_features`, `k8s_proxy`, `read_observability`, `write_observability`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_service_account_access_token#scopes GroupServiceAccountAccessToken#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_service_account_access_token#scopes GroupServiceAccountAccessToken#scopes}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The ID of a service account user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_service_account_access_token#user_id GroupServiceAccountAccessToken#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_service_account_access_token#user_id GroupServiceAccountAccessToken#user_id}
 
 ---
 
@@ -160,7 +160,7 @@ The service account access token expiry date.
 
 When left blank, the token follows the standard rule of expiry for personal access tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_service_account_access_token#expires_at GroupServiceAccountAccessToken#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_service_account_access_token#expires_at GroupServiceAccountAccessToken#expires_at}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The configuration for when to rotate a token automatically. Will not rotate a token until `terraform apply` is run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_service_account_access_token#rotation_configuration GroupServiceAccountAccessToken#rotation_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_service_account_access_token#rotation_configuration GroupServiceAccountAccessToken#rotation_configuration}
 
 ---
 
@@ -536,7 +536,8 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_rotation_configuration(
-  rotate_before_days: typing.Union[int, float]
+  rotate_before_days: typing.Union[int, float],
+  expiration_days: typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -548,7 +549,17 @@ The duration (in days) before the expiration when the token should be rotated.
 
 As an example, if set to 7 days, the token will rotate 7 days before the expiration date, but only when `terraform apply` is run in that timeframe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_service_account_access_token#rotate_before_days GroupServiceAccountAccessToken#rotate_before_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_service_account_access_token#rotate_before_days GroupServiceAccountAccessToken#rotate_before_days}
+
+---
+
+###### `expiration_days`<sup>Optional</sup> <a name="expiration_days" id="@cdktf/provider-gitlab.groupServiceAccountAccessToken.GroupServiceAccountAccessToken.putRotationConfiguration.parameter.expirationDays"></a>
+
+- *Type:* typing.Union[int, float]
+
+The duration (in days) the new token should be valid for.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_service_account_access_token#expiration_days GroupServiceAccountAccessToken#expiration_days}
 
 ---
 
@@ -678,7 +689,7 @@ The construct id used in the generated config for the GroupServiceAccountAccessT
 
 The id of the existing GroupServiceAccountAccessToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_service_account_access_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_service_account_access_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1184,7 +1195,7 @@ group: str
 
 The ID or URL-encoded path of the group containing the service account. Must be a top level group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_service_account_access_token#group GroupServiceAccountAccessToken#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_service_account_access_token#group GroupServiceAccountAccessToken#group}
 
 ---
 
@@ -1198,7 +1209,7 @@ name: str
 
 The name of the personal access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_service_account_access_token#name GroupServiceAccountAccessToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_service_account_access_token#name GroupServiceAccountAccessToken#name}
 
 ---
 
@@ -1214,7 +1225,7 @@ The scopes of the group service account access token.
 
 valid values are: `api`, `read_api`, `read_registry`, `write_registry`, `read_repository`, `write_repository`, `create_runner`, `manage_runner`, `ai_features`, `k8s_proxy`, `read_observability`, `write_observability`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_service_account_access_token#scopes GroupServiceAccountAccessToken#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_service_account_access_token#scopes GroupServiceAccountAccessToken#scopes}
 
 ---
 
@@ -1228,7 +1239,7 @@ user_id: typing.Union[int, float]
 
 The ID of a service account user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_service_account_access_token#user_id GroupServiceAccountAccessToken#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_service_account_access_token#user_id GroupServiceAccountAccessToken#user_id}
 
 ---
 
@@ -1244,7 +1255,7 @@ The service account access token expiry date.
 
 When left blank, the token follows the standard rule of expiry for personal access tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_service_account_access_token#expires_at GroupServiceAccountAccessToken#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_service_account_access_token#expires_at GroupServiceAccountAccessToken#expires_at}
 
 ---
 
@@ -1258,7 +1269,7 @@ rotation_configuration: GroupServiceAccountAccessTokenRotationConfiguration
 
 The configuration for when to rotate a token automatically. Will not rotate a token until `terraform apply` is run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_service_account_access_token#rotation_configuration GroupServiceAccountAccessToken#rotation_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_service_account_access_token#rotation_configuration GroupServiceAccountAccessToken#rotation_configuration}
 
 ---
 
@@ -1270,7 +1281,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 from cdktf_cdktf_provider_gitlab import group_service_account_access_token
 
 groupServiceAccountAccessToken.GroupServiceAccountAccessTokenRotationConfiguration(
-  rotate_before_days: typing.Union[int, float]
+  rotate_before_days: typing.Union[int, float],
+  expiration_days: typing.Union[int, float] = None
 )
 ```
 
@@ -1279,6 +1291,7 @@ groupServiceAccountAccessToken.GroupServiceAccountAccessTokenRotationConfigurati
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccountAccessToken.GroupServiceAccountAccessTokenRotationConfiguration.property.rotateBeforeDays">rotate_before_days</a></code> | <code>typing.Union[int, float]</code> | The duration (in days) before the expiration when the token should be rotated. |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccountAccessToken.GroupServiceAccountAccessTokenRotationConfiguration.property.expirationDays">expiration_days</a></code> | <code>typing.Union[int, float]</code> | The duration (in days) the new token should be valid for. |
 
 ---
 
@@ -1294,7 +1307,21 @@ The duration (in days) before the expiration when the token should be rotated.
 
 As an example, if set to 7 days, the token will rotate 7 days before the expiration date, but only when `terraform apply` is run in that timeframe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_service_account_access_token#rotate_before_days GroupServiceAccountAccessToken#rotate_before_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_service_account_access_token#rotate_before_days GroupServiceAccountAccessToken#rotate_before_days}
+
+---
+
+##### `expiration_days`<sup>Optional</sup> <a name="expiration_days" id="@cdktf/provider-gitlab.groupServiceAccountAccessToken.GroupServiceAccountAccessTokenRotationConfiguration.property.expirationDays"></a>
+
+```python
+expiration_days: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The duration (in days) the new token should be valid for.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_service_account_access_token#expiration_days GroupServiceAccountAccessToken#expiration_days}
 
 ---
 
@@ -1353,6 +1380,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccountAccessToken.GroupServiceAccountAccessTokenRotationConfigurationOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccountAccessToken.GroupServiceAccountAccessTokenRotationConfigurationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccountAccessToken.GroupServiceAccountAccessTokenRotationConfigurationOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccountAccessToken.GroupServiceAccountAccessTokenRotationConfigurationOutputReference.resetExpirationDays">reset_expiration_days</a></code> | *No description.* |
 
 ---
 
@@ -1528,6 +1556,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `reset_expiration_days` <a name="reset_expiration_days" id="@cdktf/provider-gitlab.groupServiceAccountAccessToken.GroupServiceAccountAccessTokenRotationConfigurationOutputReference.resetExpirationDays"></a>
+
+```python
+def reset_expiration_days() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1535,7 +1569,9 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccountAccessToken.GroupServiceAccountAccessTokenRotationConfigurationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccountAccessToken.GroupServiceAccountAccessTokenRotationConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccountAccessToken.GroupServiceAccountAccessTokenRotationConfigurationOutputReference.property.expirationDaysInput">expiration_days_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccountAccessToken.GroupServiceAccountAccessTokenRotationConfigurationOutputReference.property.rotateBeforeDaysInput">rotate_before_days_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccountAccessToken.GroupServiceAccountAccessTokenRotationConfigurationOutputReference.property.expirationDays">expiration_days</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccountAccessToken.GroupServiceAccountAccessTokenRotationConfigurationOutputReference.property.rotateBeforeDays">rotate_before_days</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccountAccessToken.GroupServiceAccountAccessTokenRotationConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-gitlab.groupServiceAccountAccessToken.GroupServiceAccountAccessTokenRotationConfiguration">GroupServiceAccountAccessTokenRotationConfiguration</a>]</code> | *No description.* |
 
@@ -1565,10 +1601,30 @@ fqn: str
 
 ---
 
+##### `expiration_days_input`<sup>Optional</sup> <a name="expiration_days_input" id="@cdktf/provider-gitlab.groupServiceAccountAccessToken.GroupServiceAccountAccessTokenRotationConfigurationOutputReference.property.expirationDaysInput"></a>
+
+```python
+expiration_days_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `rotate_before_days_input`<sup>Optional</sup> <a name="rotate_before_days_input" id="@cdktf/provider-gitlab.groupServiceAccountAccessToken.GroupServiceAccountAccessTokenRotationConfigurationOutputReference.property.rotateBeforeDaysInput"></a>
 
 ```python
 rotate_before_days_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `expiration_days`<sup>Required</sup> <a name="expiration_days" id="@cdktf/provider-gitlab.groupServiceAccountAccessToken.GroupServiceAccountAccessTokenRotationConfigurationOutputReference.property.expirationDays"></a>
+
+```python
+expiration_days: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]

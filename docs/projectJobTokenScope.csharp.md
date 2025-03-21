@@ -4,7 +4,7 @@
 
 ### ProjectJobTokenScope <a name="ProjectJobTokenScope" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_job_token_scope gitlab_project_job_token_scope}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_job_token_scope gitlab_project_job_token_scope}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectJobTokenScope.ProjectJobTokenScope.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the ProjectJobTokenScope to im
 
 The id of the existing ProjectJobTokenScope that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_job_token_scope#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_job_token_scope#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -871,7 +871,7 @@ public string Project { get; set; }
 
 The ID or full path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_job_token_scope#project ProjectJobTokenScope#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_job_token_scope#project ProjectJobTokenScope#project}
 
 ---
 
@@ -885,7 +885,7 @@ public double TargetGroupId { get; set; }
 
 The ID of the group that is in the CI/CD job token inbound allowlist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_job_token_scope#target_group_id ProjectJobTokenScope#target_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_job_token_scope#target_group_id ProjectJobTokenScope#target_group_id}
 
 ---
 
@@ -899,7 +899,7 @@ public double TargetProjectId { get; set; }
 
 The ID of the project that is in the CI/CD job token inbound allowlist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/project_job_token_scope#target_project_id ProjectJobTokenScope#target_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_job_token_scope#target_project_id ProjectJobTokenScope#target_project_id}
 
 ---
 

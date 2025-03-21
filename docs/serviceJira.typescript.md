@@ -4,7 +4,7 @@
 
 ### ServiceJira <a name="ServiceJira" id="@cdktf/provider-gitlab.serviceJira.ServiceJira"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/service_jira gitlab_service_jira}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/service_jira gitlab_service_jira}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.serviceJira.ServiceJira.Initializer"></a>
 
@@ -572,7 +572,7 @@ The construct id used in the generated config for the ServiceJira to import.
 
 The id of the existing ServiceJira that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/service_jira#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/service_jira#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1234,7 +1234,7 @@ const serviceJiraConfig: serviceJira.ServiceJiraConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.apiUrl">apiUrl</a></code> | <code>string</code> | The base URL to the Jira instance API. Web URL value is used if not set. For example, https://jira-api.example.com. |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.commentOnEventEnabled">commentOnEventEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable comments inside Jira issues on each GitLab event (commit / merge request). |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.commitEvents">commitEvents</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable notifications for commit events. |
-| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/service_jira#id ServiceJira#id}. |
+| <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/service_jira#id ServiceJira#id}. |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.issuesEnabled">issuesEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable viewing Jira issues in GitLab. |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.jiraAuthType">jiraAuthType</a></code> | <code>number</code> | The authentication method to be used with Jira. |
 | <code><a href="#@cdktf/provider-gitlab.serviceJira.ServiceJiraConfig.property.jiraIssuePrefix">jiraIssuePrefix</a></code> | <code>string</code> | Prefix to match Jira issue keys. |
@@ -1331,7 +1331,7 @@ The Jira API token, password, or personal access token to be used with Jira.
 
 When your authentication method is basic (jira_auth_type is 0), use an API token for Jira Cloud or a password for Jira Data Center or Jira Server. When your authentication method is a Jira personal access token (jira_auth_type is 1), use the personal access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/service_jira#password ServiceJira#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/service_jira#password ServiceJira#password}
 
 ---
 
@@ -1345,7 +1345,7 @@ public readonly project: string;
 
 ID of the project you want to activate integration on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/service_jira#project ServiceJira#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/service_jira#project ServiceJira#project}
 
 ---
 
@@ -1359,7 +1359,7 @@ public readonly url: string;
 
 The URL to the JIRA project which is being linked to this GitLab project. For example, https://jira.example.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/service_jira#url ServiceJira#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/service_jira#url ServiceJira#url}
 
 ---
 
@@ -1373,7 +1373,7 @@ public readonly apiUrl: string;
 
 The base URL to the Jira instance API. Web URL value is used if not set. For example, https://jira-api.example.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/service_jira#api_url ServiceJira#api_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/service_jira#api_url ServiceJira#api_url}
 
 ---
 
@@ -1387,7 +1387,7 @@ public readonly commentOnEventEnabled: boolean | IResolvable;
 
 Enable comments inside Jira issues on each GitLab event (commit / merge request).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/service_jira#comment_on_event_enabled ServiceJira#comment_on_event_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/service_jira#comment_on_event_enabled ServiceJira#comment_on_event_enabled}
 
 ---
 
@@ -1401,7 +1401,7 @@ public readonly commitEvents: boolean | IResolvable;
 
 Enable notifications for commit events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/service_jira#commit_events ServiceJira#commit_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/service_jira#commit_events ServiceJira#commit_events}
 
 ---
 
@@ -1413,7 +1413,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/service_jira#id ServiceJira#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/service_jira#id ServiceJira#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1430,7 +1430,7 @@ public readonly issuesEnabled: boolean | IResolvable;
 
 Enable viewing Jira issues in GitLab.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/service_jira#issues_enabled ServiceJira#issues_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/service_jira#issues_enabled ServiceJira#issues_enabled}
 
 ---
 
@@ -1446,7 +1446,7 @@ The authentication method to be used with Jira.
 
 0 means Basic Authentication. 1 means Jira personal access token. Defaults to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/service_jira#jira_auth_type ServiceJira#jira_auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/service_jira#jira_auth_type ServiceJira#jira_auth_type}
 
 ---
 
@@ -1460,7 +1460,7 @@ public readonly jiraIssuePrefix: string;
 
 Prefix to match Jira issue keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/service_jira#jira_issue_prefix ServiceJira#jira_issue_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/service_jira#jira_issue_prefix ServiceJira#jira_issue_prefix}
 
 ---
 
@@ -1474,7 +1474,7 @@ public readonly jiraIssueRegex: string;
 
 Regular expression to match Jira issue keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/service_jira#jira_issue_regex ServiceJira#jira_issue_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/service_jira#jira_issue_regex ServiceJira#jira_issue_regex}
 
 ---
 
@@ -1490,7 +1490,7 @@ Enable automatic issue transitions.
 
 Takes precedence over jira_issue_transition_id if enabled. Defaults to false. This value cannot be imported, and will not perform drift detection if changed outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/service_jira#jira_issue_transition_automatic ServiceJira#jira_issue_transition_automatic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/service_jira#jira_issue_transition_automatic ServiceJira#jira_issue_transition_automatic}
 
 ---
 
@@ -1506,7 +1506,7 @@ The ID of a transition that moves issues to a closed state.
 
 You can find this number under the JIRA workflow administration (Administration > Issues > Workflows) by selecting View under Operations of the desired workflow of your project. By default, this ID is set to 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/service_jira#jira_issue_transition_id ServiceJira#jira_issue_transition_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/service_jira#jira_issue_transition_id ServiceJira#jira_issue_transition_id}
 
 ---
 
@@ -1520,7 +1520,7 @@ public readonly mergeRequestsEvents: boolean | IResolvable;
 
 Enable notifications for merge request events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/service_jira#merge_requests_events ServiceJira#merge_requests_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/service_jira#merge_requests_events ServiceJira#merge_requests_events}
 
 ---
 
@@ -1534,7 +1534,7 @@ public readonly projectKey: string;
 
 The short identifier for your JIRA project, all uppercase, e.g., PROJ.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/service_jira#project_key ServiceJira#project_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/service_jira#project_key ServiceJira#project_key}
 
 ---
 
@@ -1550,7 +1550,7 @@ Keys of Jira projects.
 
 When issues_enabled is true, this setting specifies which Jira projects to view issues from in GitLab.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/service_jira#project_keys ServiceJira#project_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/service_jira#project_keys ServiceJira#project_keys}
 
 ---
 
@@ -1564,7 +1564,7 @@ public readonly useInheritedSettings: boolean | IResolvable;
 
 Indicates whether or not to inherit default settings. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/service_jira#use_inherited_settings ServiceJira#use_inherited_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/service_jira#use_inherited_settings ServiceJira#use_inherited_settings}
 
 ---
 
@@ -1580,7 +1580,7 @@ The email or username to be used with Jira.
 
 For Jira Cloud use an email, for Jira Data Center and Jira Server use a username. Required when using Basic authentication (jira_auth_type is 0).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/service_jira#username ServiceJira#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/service_jira#username ServiceJira#username}
 
 ---
 

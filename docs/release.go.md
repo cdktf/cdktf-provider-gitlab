@@ -4,12 +4,12 @@
 
 ### Release <a name="Release" id="@cdktf/provider-gitlab.release.Release"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/release gitlab_release}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/release gitlab_release}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.release.Release.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/release"
 
 release.NewRelease(scope Construct, id *string, config ReleaseConfig) Release
 ```
@@ -440,7 +440,7 @@ func ResetTagMessage()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.release.Release.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/release"
 
 release.Release_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.release.Release.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/release"
 
 release.Release_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ release.Release_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.release.Release.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/release"
 
 release.Release_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ release.Release_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.release.Release.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/release"
 
 release.Release_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -529,7 +529,7 @@ The construct id used in the generated config for the Release to import.
 
 The id of the existing Release that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/release#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/release#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1026,7 +1026,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.release.ReleaseAssets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/release"
 
 &release.ReleaseAssets {
 
@@ -1039,7 +1039,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.release.ReleaseAuthor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/release"
 
 &release.ReleaseAuthor {
 
@@ -1052,7 +1052,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.release.ReleaseCommit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/release"
 
 &release.ReleaseCommit {
 
@@ -1065,7 +1065,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.release.ReleaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/release"
 
 &release.ReleaseConfig {
 	Connection: interface{},
@@ -1077,7 +1077,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
 	Provisioners: *[]interface{},
 	Project: *string,
 	TagName: *string,
-	Assets: github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13.release.ReleaseAssets,
+	Assets: github.com/cdktf/cdktf-provider-gitlab-go/gitlab.release.ReleaseAssets,
 	Description: *string,
 	Milestones: *[]*string,
 	Name: *string,
@@ -1190,7 +1190,7 @@ Project *string
 
 The ID or full path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/release#project Release#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/release#project Release#project}
 
 ---
 
@@ -1204,7 +1204,7 @@ TagName *string
 
 The tag where the release is created from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/release#tag_name Release#tag_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/release#tag_name Release#tag_name}
 
 ---
 
@@ -1218,7 +1218,7 @@ Assets ReleaseAssets
 
 The release assets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/release#assets Release#assets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/release#assets Release#assets}
 
 ---
 
@@ -1232,7 +1232,7 @@ Description *string
 
 The description of the release. You can use Markdown.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/release#description Release#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/release#description Release#description}
 
 ---
 
@@ -1246,7 +1246,7 @@ Milestones *[]*string
 
 The title of each milestone the release is associated with. GitLab Premium customers can specify group milestones.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/release#milestones Release#milestones}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/release#milestones Release#milestones}
 
 ---
 
@@ -1260,7 +1260,7 @@ Name *string
 
 The name of the release.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/release#name Release#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/release#name Release#name}
 
 ---
 
@@ -1276,7 +1276,7 @@ If a tag specified in tag_name doesn't exist, the release is created from ref an
 
 It can be a commit SHA, another tag name, or a branch name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/release#ref Release#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/release#ref Release#ref}
 
 ---
 
@@ -1292,7 +1292,7 @@ Date and time for the release.
 
 Defaults to the current time. Expected in ISO 8601 format (2019-03-15T08:00:00Z). Only provide this field if creating an upcoming or historical release.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/release#released_at Release#released_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/release#released_at Release#released_at}
 
 ---
 
@@ -1306,7 +1306,7 @@ TagMessage *string
 
 Message to use if creating a new annotated tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/release#tag_message Release#tag_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/release#tag_message Release#tag_message}
 
 ---
 
@@ -1315,7 +1315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.release.ReleaseLinks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/release"
 
 &release.ReleaseLinks {
 
@@ -1330,7 +1330,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.release.ReleaseAssetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/release"
 
 release.NewReleaseAssetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReleaseAssetsOutputReference
 ```
@@ -1590,7 +1590,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.release.ReleaseAuthorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/release"
 
 release.NewReleaseAuthorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReleaseAuthorOutputReference
 ```
@@ -1905,7 +1905,7 @@ func InternalValue() ReleaseAuthor
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.release.ReleaseCommitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/release"
 
 release.NewReleaseCommitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReleaseCommitOutputReference
 ```
@@ -2286,7 +2286,7 @@ func InternalValue() ReleaseCommit
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.release.ReleaseLinksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/release"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/release"
 
 release.NewReleaseLinksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReleaseLinksOutputReference
 ```

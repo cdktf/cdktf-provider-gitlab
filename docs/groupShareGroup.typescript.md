@@ -4,7 +4,7 @@
 
 ### GroupShareGroup <a name="GroupShareGroup" id="@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_share_group gitlab_group_share_group}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_share_group gitlab_group_share_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.Initializer"></a>
 
@@ -74,7 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.resetExpiresAt">resetExpiresAt</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.resetMemberRoleId">resetMemberRoleId</a></code> | *No description.* |
 
 ---
 
@@ -372,10 +372,10 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public resetExpiresAt(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.resetId"></a>
+##### `resetMemberRoleId` <a name="resetMemberRoleId" id="@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.resetMemberRoleId"></a>
 
 ```typescript
-public resetId(): void
+public resetMemberRoleId(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -481,7 +481,7 @@ The construct id used in the generated config for the GroupShareGroup to import.
 
 The id of the existing GroupShareGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_share_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_share_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -511,15 +511,16 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9
 | <code><a href="#@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.property.expiresAtInput">expiresAtInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.property.groupAccessInput">groupAccessInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.property.groupIdInput">groupIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.property.memberRoleIdInput">memberRoleIdInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.property.shareGroupIdInput">shareGroupIdInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.property.expiresAt">expiresAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.property.groupAccess">groupAccess</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.property.groupId">groupId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.property.memberRoleId">memberRoleId</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.property.shareGroupId">shareGroupId</a></code> | <code>number</code> | *No description.* |
 
 ---
@@ -666,6 +667,16 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `expiresAtInput`<sup>Optional</sup> <a name="expiresAtInput" id="@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.property.expiresAtInput"></a>
 
 ```typescript
@@ -696,13 +707,13 @@ public readonly groupIdInput: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.property.idInput"></a>
+##### `memberRoleIdInput`<sup>Optional</sup> <a name="memberRoleIdInput" id="@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.property.memberRoleIdInput"></a>
 
 ```typescript
-public readonly idInput: string;
+public readonly memberRoleIdInput: number;
 ```
 
-- *Type:* string
+- *Type:* number
 
 ---
 
@@ -746,13 +757,13 @@ public readonly groupId: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.property.id"></a>
+##### `memberRoleId`<sup>Required</sup> <a name="memberRoleId" id="@cdktf/provider-gitlab.groupShareGroup.GroupShareGroup.property.memberRoleId"></a>
 
 ```typescript
-public readonly id: string;
+public readonly memberRoleId: number;
 ```
 
-- *Type:* string
+- *Type:* number
 
 ---
 
@@ -811,7 +822,7 @@ const groupShareGroupConfig: groupShareGroup.GroupShareGroupConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.groupShareGroup.GroupShareGroupConfig.property.groupId">groupId</a></code> | <code>string</code> | The id of the main group to be shared. |
 | <code><a href="#@cdktf/provider-gitlab.groupShareGroup.GroupShareGroupConfig.property.shareGroupId">shareGroupId</a></code> | <code>number</code> | The id of the additional group with which the main group will be shared. |
 | <code><a href="#@cdktf/provider-gitlab.groupShareGroup.GroupShareGroupConfig.property.expiresAt">expiresAt</a></code> | <code>string</code> | Share expiration date. Format: `YYYY-MM-DD`. |
-| <code><a href="#@cdktf/provider-gitlab.groupShareGroup.GroupShareGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_share_group#id GroupShareGroup#id}. |
+| <code><a href="#@cdktf/provider-gitlab.groupShareGroup.GroupShareGroupConfig.property.memberRoleId">memberRoleId</a></code> | <code>number</code> | The ID of a custom member role. Only available for Ultimate instances. |
 
 ---
 
@@ -895,7 +906,7 @@ public readonly groupAccess: string;
 
 The access level to grant the group. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_share_group#group_access GroupShareGroup#group_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_share_group#group_access GroupShareGroup#group_access}
 
 ---
 
@@ -909,7 +920,7 @@ public readonly groupId: string;
 
 The id of the main group to be shared.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_share_group#group_id GroupShareGroup#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_share_group#group_id GroupShareGroup#group_id}
 
 ---
 
@@ -923,7 +934,7 @@ public readonly shareGroupId: number;
 
 The id of the additional group with which the main group will be shared.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_share_group#share_group_id GroupShareGroup#share_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_share_group#share_group_id GroupShareGroup#share_group_id}
 
 ---
 
@@ -937,22 +948,21 @@ public readonly expiresAt: string;
 
 Share expiration date. Format: `YYYY-MM-DD`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_share_group#expires_at GroupShareGroup#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_share_group#expires_at GroupShareGroup#expires_at}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.groupShareGroup.GroupShareGroupConfig.property.id"></a>
+##### `memberRoleId`<sup>Optional</sup> <a name="memberRoleId" id="@cdktf/provider-gitlab.groupShareGroup.GroupShareGroupConfig.property.memberRoleId"></a>
 
 ```typescript
-public readonly id: string;
+public readonly memberRoleId: number;
 ```
 
-- *Type:* string
+- *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_share_group#id GroupShareGroup#id}.
+The ID of a custom member role. Only available for Ultimate instances.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_share_group#member_role_id GroupShareGroup#member_role_id}
 
 ---
 

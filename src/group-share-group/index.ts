@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_share_group
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_share_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,38 +10,37 @@ export interface GroupShareGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Share expiration date. Format: `YYYY-MM-DD`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_share_group#expires_at GroupShareGroup#expires_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_share_group#expires_at GroupShareGroup#expires_at}
   */
   readonly expiresAt?: string;
   /**
   * The access level to grant the group. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_share_group#group_access GroupShareGroup#group_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_share_group#group_access GroupShareGroup#group_access}
   */
   readonly groupAccess: string;
   /**
   * The id of the main group to be shared.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_share_group#group_id GroupShareGroup#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_share_group#group_id GroupShareGroup#group_id}
   */
   readonly groupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_share_group#id GroupShareGroup#id}
+  * The ID of a custom member role. Only available for Ultimate instances.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_share_group#member_role_id GroupShareGroup#member_role_id}
   */
-  readonly id?: string;
+  readonly memberRoleId?: number;
   /**
   * The id of the additional group with which the main group will be shared.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_share_group#share_group_id GroupShareGroup#share_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_share_group#share_group_id GroupShareGroup#share_group_id}
   */
   readonly shareGroupId: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_share_group gitlab_group_share_group}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_share_group gitlab_group_share_group}
 */
 export class GroupShareGroup extends cdktf.TerraformResource {
 
@@ -62,7 +56,7 @@ export class GroupShareGroup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GroupShareGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GroupShareGroup to import
-  * @param importFromId The id of the existing GroupShareGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_share_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GroupShareGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_share_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GroupShareGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +68,7 @@ export class GroupShareGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/group_share_group gitlab_group_share_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_share_group gitlab_group_share_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +79,7 @@ export class GroupShareGroup extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_share_group',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.9.0',
+        providerVersion: '17.10.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,
@@ -99,7 +93,7 @@ export class GroupShareGroup extends cdktf.TerraformResource {
     this._expiresAt = config.expiresAt;
     this._groupAccess = config.groupAccess;
     this._groupId = config.groupId;
-    this._id = config.id;
+    this._memberRoleId = config.memberRoleId;
     this._shareGroupId = config.shareGroupId;
   }
 
@@ -149,20 +143,25 @@ export class GroupShareGroup extends cdktf.TerraformResource {
     return this._groupId;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
+
+  // member_role_id - computed: true, optional: true, required: false
+  private _memberRoleId?: number; 
+  public get memberRoleId() {
+    return this.getNumberAttribute('member_role_id');
   }
-  public resetId() {
-    this._id = undefined;
+  public set memberRoleId(value: number) {
+    this._memberRoleId = value;
+  }
+  public resetMemberRoleId() {
+    this._memberRoleId = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
+  public get memberRoleIdInput() {
+    return this._memberRoleId;
   }
 
   // share_group_id - computed: false, optional: false, required: true
@@ -187,7 +186,7 @@ export class GroupShareGroup extends cdktf.TerraformResource {
       expires_at: cdktf.stringToTerraform(this._expiresAt),
       group_access: cdktf.stringToTerraform(this._groupAccess),
       group_id: cdktf.stringToTerraform(this._groupId),
-      id: cdktf.stringToTerraform(this._id),
+      member_role_id: cdktf.numberToTerraform(this._memberRoleId),
       share_group_id: cdktf.numberToTerraform(this._shareGroupId),
     };
   }
@@ -212,11 +211,11 @@ export class GroupShareGroup extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
+      member_role_id: {
+        value: cdktf.numberToHclTerraform(this._memberRoleId),
         isBlock: false,
         type: "simple",
-        storageClassType: "string",
+        storageClassType: "number",
       },
       share_group_id: {
         value: cdktf.numberToHclTerraform(this._shareGroupId),

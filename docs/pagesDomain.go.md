@@ -4,12 +4,12 @@
 
 ### PagesDomain <a name="PagesDomain" id="@cdktf/provider-gitlab.pagesDomain.PagesDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/pages_domain gitlab_pages_domain}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/pages_domain gitlab_pages_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.pagesDomain.PagesDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/pagesdomain"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/pagesdomain"
 
 pagesdomain.NewPagesDomain(scope Construct, id *string, config PagesDomainConfig) PagesDomain
 ```
@@ -406,7 +406,7 @@ func ResetKey()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.pagesDomain.PagesDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/pagesdomain"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/pagesdomain"
 
 pagesdomain.PagesDomain_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.pagesDomain.PagesDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/pagesdomain"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/pagesdomain"
 
 pagesdomain.PagesDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ pagesdomain.PagesDomain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.pagesDomain.PagesDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/pagesdomain"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/pagesdomain"
 
 pagesdomain.PagesDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ pagesdomain.PagesDomain_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.pagesDomain.PagesDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/pagesdomain"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/pagesdomain"
 
 pagesdomain.PagesDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +495,7 @@ The construct id used in the generated config for the PagesDomain to import.
 
 The id of the existing PagesDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/pages_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/pages_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -871,7 +871,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.pagesDomain.PagesDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/pagesdomain"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/pagesdomain"
 
 &pagesdomain.PagesDomainConfig {
 	Connection: interface{},
@@ -990,7 +990,7 @@ Domain *string
 
 The custom domain indicated by the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/pages_domain#domain PagesDomain#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/pages_domain#domain PagesDomain#domain}
 
 ---
 
@@ -1004,7 +1004,7 @@ Project *string
 
 The ID or [URL-encoded path of the project](https://docs.gitlab.com/api/index/#namespaced-path-encoding) owned by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/pages_domain#project PagesDomain#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/pages_domain#project PagesDomain#project}
 
 ---
 
@@ -1018,7 +1018,7 @@ AutoSslEnabled interface{}
 
 Enables [automatic generation](https://docs.gitlab.com/user/project/pages/custom_domains_ssl_tls_certification/lets_encrypt_integration/) of SSL certificates issued by Let’s Encrypt for custom domains. When this is set to "true", certificate can't be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/pages_domain#auto_ssl_enabled PagesDomain#auto_ssl_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/pages_domain#auto_ssl_enabled PagesDomain#auto_ssl_enabled}
 
 ---
 
@@ -1032,7 +1032,7 @@ Certificate *string
 
 The certificate in PEM format with intermediates following in most specific to least specific order.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/pages_domain#certificate PagesDomain#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/pages_domain#certificate PagesDomain#certificate}
 
 ---
 
@@ -1046,7 +1046,7 @@ Expired interface{}
 
 Whether the certificate is expired.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/pages_domain#expired PagesDomain#expired}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/pages_domain#expired PagesDomain#expired}
 
 ---
 
@@ -1060,7 +1060,7 @@ Key *string
 
 The certificate key in PEM format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/resources/pages_domain#key PagesDomain#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/pages_domain#key PagesDomain#key}
 
 ---
 
