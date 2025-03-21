@@ -4,7 +4,7 @@
 
 ### DataGitlabProjectEnvironments <a name="DataGitlabProjectEnvironments" id="@cdktf/provider-gitlab.dataGitlabProjectEnvironments.DataGitlabProjectEnvironments"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/project_environments gitlab_project_environments}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/project_environments gitlab_project_environments}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectEnvironments.DataGitlabProjectEnvironments.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataGitlabProjectEnvironme
 
 The id of the existing DataGitlabProjectEnvironments that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/project_environments#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/project_environments#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -789,7 +789,7 @@ public string Project { get; set; }
 
 The ID or full path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/project_environments#project DataGitlabProjectEnvironments#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/project_environments#project DataGitlabProjectEnvironments#project}
 
 ---
 
@@ -803,7 +803,7 @@ public string Name { get; set; }
 
 Return the environment with this name. Mutually exclusive with search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/project_environments#name DataGitlabProjectEnvironments#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/project_environments#name DataGitlabProjectEnvironments#name}
 
 ---
 
@@ -819,7 +819,7 @@ Return list of environments matching the search criteria.
 
 Mutually exclusive with name. Must be at least 3 characters long.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/project_environments#search DataGitlabProjectEnvironments#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/project_environments#search DataGitlabProjectEnvironments#search}
 
 ---
 
@@ -835,7 +835,7 @@ List all environments that match the specified state.
 
 Valid values are `available`, `stopping`, `stopped`. Returns all environments if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.9.0/docs/data-sources/project_environments#states DataGitlabProjectEnvironments#states}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/project_environments#states DataGitlabProjectEnvironments#states}
 
 ---
 
@@ -1231,6 +1231,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectEnvironments.DataGitlabProjectEnvironmentsEnvironmentsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectEnvironments.DataGitlabProjectEnvironmentsEnvironmentsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectEnvironments.DataGitlabProjectEnvironmentsEnvironmentsOutputReference.property.autoStopAt">AutoStopAt</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectEnvironments.DataGitlabProjectEnvironmentsEnvironmentsOutputReference.property.autoStopSetting">AutoStopSetting</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectEnvironments.DataGitlabProjectEnvironmentsEnvironmentsOutputReference.property.clusterAgentId">ClusterAgentId</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectEnvironments.DataGitlabProjectEnvironmentsEnvironmentsOutputReference.property.createdAt">CreatedAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectEnvironments.DataGitlabProjectEnvironmentsEnvironmentsOutputReference.property.description">Description</a></code> | <code>string</code> | *No description.* |
@@ -1265,6 +1267,26 @@ If this returns an empty array the stack will not be attached.
 
 ```csharp
 public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AutoStopAt`<sup>Required</sup> <a name="AutoStopAt" id="@cdktf/provider-gitlab.dataGitlabProjectEnvironments.DataGitlabProjectEnvironmentsEnvironmentsOutputReference.property.autoStopAt"></a>
+
+```csharp
+public string AutoStopAt { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AutoStopSetting`<sup>Required</sup> <a name="AutoStopSetting" id="@cdktf/provider-gitlab.dataGitlabProjectEnvironments.DataGitlabProjectEnvironmentsEnvironmentsOutputReference.property.autoStopSetting"></a>
+
+```csharp
+public string AutoStopSetting { get; }
 ```
 
 - *Type:* string
