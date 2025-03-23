@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupAccessTokens.DataGitlabGroupAccessTokens.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupaccesstokens"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupaccesstokens"
 
 datagitlabgroupaccesstokens.NewDataGitlabGroupAccessTokens(scope Construct, id *string, config DataGitlabGroupAccessTokensConfig) DataGitlabGroupAccessTokens
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabGroupAccessTokens.DataGitlabGroupAccessTokens.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupaccesstokens"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupaccesstokens"
 
 datagitlabgroupaccesstokens.DataGitlabGroupAccessTokens_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabGroupAccessTokens.DataGitlabGroupAccessTokens.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupaccesstokens"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupaccesstokens"
 
 datagitlabgroupaccesstokens.DataGitlabGroupAccessTokens_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datagitlabgroupaccesstokens.DataGitlabGroupAccessTokens_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabGroupAccessTokens.DataGitlabGroupAccessTokens.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupaccesstokens"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupaccesstokens"
 
 datagitlabgroupaccesstokens.DataGitlabGroupAccessTokens_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagitlabgroupaccesstokens.DataGitlabGroupAccessTokens_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabGroupAccessTokens.DataGitlabGroupAccessTokens.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupaccesstokens"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupaccesstokens"
 
 datagitlabgroupaccesstokens.DataGitlabGroupAccessTokens_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -587,7 +587,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabGroupAccessTokens.DataGitlabGroupAccessTokensAccessTokens.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupaccesstokens"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupaccesstokens"
 
 &datagitlabgroupaccesstokens.DataGitlabGroupAccessTokensAccessTokens {
 
@@ -600,7 +600,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupacce
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabGroupAccessTokens.DataGitlabGroupAccessTokensConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupaccesstokens"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupaccesstokens"
 
 &datagitlabgroupaccesstokens.DataGitlabGroupAccessTokensConfig {
 	Connection: interface{},
@@ -720,7 +720,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupAccessTokens.DataGitlabGroupAccessTokensAccessTokensList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupaccesstokens"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupaccesstokens"
 
 datagitlabgroupaccesstokens.NewDataGitlabGroupAccessTokensAccessTokensList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabGroupAccessTokensAccessTokensList
 ```
@@ -869,7 +869,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupAccessTokens.DataGitlabGroupAccessTokensAccessTokensOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/datagitlabgroupaccesstokens"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabgroupaccesstokens"
 
 datagitlabgroupaccesstokens.NewDataGitlabGroupAccessTokensAccessTokensOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabGroupAccessTokensAccessTokensOutputReference
 ```
