@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectWikiPage.ProjectWikiPage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectwikipage"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectwikipage"
 
 projectwikipage.NewProjectWikiPage(scope Construct, id *string, config ProjectWikiPageConfig) ProjectWikiPage
 ```
@@ -385,7 +385,7 @@ func ResetFormat()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectWikiPage.ProjectWikiPage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectwikipage"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectwikipage"
 
 projectwikipage.ProjectWikiPage_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectWikiPage.ProjectWikiPage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectwikipage"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectwikipage"
 
 projectwikipage.ProjectWikiPage_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ projectwikipage.ProjectWikiPage_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectWikiPage.ProjectWikiPage.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectwikipage"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectwikipage"
 
 projectwikipage.ProjectWikiPage_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ projectwikipage.ProjectWikiPage_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectWikiPage.ProjectWikiPage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectwikipage"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectwikipage"
 
 projectwikipage.ProjectWikiPage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -795,7 +795,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectWikiPage.ProjectWikiPageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/projectwikipage"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectwikipage"
 
 &projectwikipage.ProjectWikiPageConfig {
 	Connection: interface{},
