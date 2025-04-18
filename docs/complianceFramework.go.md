@@ -4,7 +4,7 @@
 
 ### ComplianceFramework <a name="ComplianceFramework" id="@cdktf/provider-gitlab.complianceFramework.ComplianceFramework"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/compliance_framework gitlab_compliance_framework}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/compliance_framework gitlab_compliance_framework}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.complianceFramework.ComplianceFramework.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the ComplianceFramework to imp
 
 The id of the existing ComplianceFramework that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/compliance_framework#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/compliance_framework#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -954,7 +954,7 @@ Color *string
 
 New color representation of the compliance framework in hex format. e.g. #FCA121.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/compliance_framework#color ComplianceFramework#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/compliance_framework#color ComplianceFramework#color}
 
 ---
 
@@ -968,7 +968,7 @@ Description *string
 
 Description for the compliance framework.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/compliance_framework#description ComplianceFramework#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/compliance_framework#description ComplianceFramework#description}
 
 ---
 
@@ -982,7 +982,7 @@ Name *string
 
 Name for the compliance framework.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/compliance_framework#name ComplianceFramework#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/compliance_framework#name ComplianceFramework#name}
 
 ---
 
@@ -996,7 +996,7 @@ NamespacePath *string
 
 Full path of the namespace to add the compliance framework to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/compliance_framework#namespace_path ComplianceFramework#namespace_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/compliance_framework#namespace_path ComplianceFramework#namespace_path}
 
 ---
 
@@ -1010,7 +1010,7 @@ Default interface{}
 
 Set this compliance framework as the default framework for the group. Default: `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/compliance_framework#default ComplianceFramework#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/compliance_framework#default ComplianceFramework#default}
 
 ---
 
@@ -1024,7 +1024,7 @@ PipelineConfigurationFullPath *string
 
 Full path of the compliance pipeline configuration stored in a project repository, such as `.gitlab/.compliance-gitlab-ci.yml@compliance/hipaa`. Required format: `path/file.y[a]ml@group-name/project-name` **Note**: Ultimate license required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/compliance_framework#pipeline_configuration_full_path ComplianceFramework#pipeline_configuration_full_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/compliance_framework#pipeline_configuration_full_path ComplianceFramework#pipeline_configuration_full_path}
 
 ---
 

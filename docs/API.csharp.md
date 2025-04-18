@@ -77,6 +77,7 @@ The following submodules are available:
 - [groupBadge](./groupBadge.csharp.md)
 - [groupCluster](./groupCluster.csharp.md)
 - [groupCustomAttribute](./groupCustomAttribute.csharp.md)
+- [groupDependencyProxy](./groupDependencyProxy.csharp.md)
 - [groupEpicBoard](./groupEpicBoard.csharp.md)
 - [groupHook](./groupHook.csharp.md)
 - [groupIssueBoard](./groupIssueBoard.csharp.md)

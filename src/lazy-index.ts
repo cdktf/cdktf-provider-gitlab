@@ -20,6 +20,7 @@ Object.defineProperty(exports, 'groupAccessToken', { get: function () { return r
 Object.defineProperty(exports, 'groupBadge', { get: function () { return require('./group-badge'); } });
 Object.defineProperty(exports, 'groupCluster', { get: function () { return require('./group-cluster'); } });
 Object.defineProperty(exports, 'groupCustomAttribute', { get: function () { return require('./group-custom-attribute'); } });
+Object.defineProperty(exports, 'groupDependencyProxy', { get: function () { return require('./group-dependency-proxy'); } });
 Object.defineProperty(exports, 'groupEpicBoard', { get: function () { return require('./group-epic-board'); } });
 Object.defineProperty(exports, 'groupHook', { get: function () { return require('./group-hook'); } });
 Object.defineProperty(exports, 'groupIssueBoard', { get: function () { return require('./group-issue-board'); } });

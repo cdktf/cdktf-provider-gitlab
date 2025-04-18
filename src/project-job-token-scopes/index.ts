@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_job_token_scopes
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_job_token_scopes
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,33 +13,39 @@ import * as cdktf from 'cdktf';
 
 export interface ProjectJobTokenScopesConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Enable the given inbound allowlist. If false, will allow any project or group regardless of the values in `target_project_ids` or `target_group_ids`. Deleting the associated `gitlab_project_job_token_scopes` resource will reset `Enabled` on the group to `true`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_job_token_scopes#enabled ProjectJobTokenScopes#enabled}
+  */
+  readonly enabled?: boolean | cdktf.IResolvable;
+  /**
   * The ID or full path of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_job_token_scopes#project ProjectJobTokenScopes#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_job_token_scopes#project ProjectJobTokenScopes#project}
   */
   readonly project?: string;
   /**
   * The ID of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_job_token_scopes#project_id ProjectJobTokenScopes#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_job_token_scopes#project_id ProjectJobTokenScopes#project_id}
   */
   readonly projectId?: number;
   /**
   * A set of group IDs that are in the CI/CD job token inbound allowlist.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_job_token_scopes#target_group_ids ProjectJobTokenScopes#target_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_job_token_scopes#target_group_ids ProjectJobTokenScopes#target_group_ids}
   */
   readonly targetGroupIds?: number[];
   /**
   * A set of project IDs that are in the CI/CD job token inbound allowlist.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_job_token_scopes#target_project_ids ProjectJobTokenScopes#target_project_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_job_token_scopes#target_project_ids ProjectJobTokenScopes#target_project_ids}
   */
   readonly targetProjectIds?: number[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_job_token_scopes gitlab_project_job_token_scopes}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_job_token_scopes gitlab_project_job_token_scopes}
 */
 export class ProjectJobTokenScopes extends cdktf.TerraformResource {
 
@@ -55,7 +61,7 @@ export class ProjectJobTokenScopes extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ProjectJobTokenScopes resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProjectJobTokenScopes to import
-  * @param importFromId The id of the existing ProjectJobTokenScopes that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_job_token_scopes#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ProjectJobTokenScopes that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_job_token_scopes#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProjectJobTokenScopes to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +73,7 @@ export class ProjectJobTokenScopes extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_job_token_scopes gitlab_project_job_token_scopes} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_job_token_scopes gitlab_project_job_token_scopes} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +84,7 @@ export class ProjectJobTokenScopes extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_job_token_scopes',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.10.0',
+        providerVersion: '17.11.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,
@@ -89,6 +95,7 @@ export class ProjectJobTokenScopes extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._enabled = config.enabled;
     this._project = config.project;
     this._projectId = config.projectId;
     this._targetGroupIds = config.targetGroupIds;
@@ -98,6 +105,22 @@ export class ProjectJobTokenScopes extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // enabled - computed: true, optional: true, required: false
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
 
   // id - computed: true, optional: false, required: false
   public get id() {
@@ -174,6 +197,7 @@ export class ProjectJobTokenScopes extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      enabled: cdktf.booleanToTerraform(this._enabled),
       project: cdktf.stringToTerraform(this._project),
       project_id: cdktf.numberToTerraform(this._projectId),
       target_group_ids: cdktf.listMapper(cdktf.numberToTerraform, false)(this._targetGroupIds),
@@ -183,6 +207,12 @@ export class ProjectJobTokenScopes extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       project: {
         value: cdktf.stringToHclTerraform(this._project),
         isBlock: false,

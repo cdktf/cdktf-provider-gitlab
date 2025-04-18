@@ -4,7 +4,7 @@
 
 ### DataGitlabProjectProtectedTags <a name="DataGitlabProjectProtectedTags" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedTags.DataGitlabProjectProtectedTags"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/project_protected_tags gitlab_project_protected_tags}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project_protected_tags gitlab_project_protected_tags}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedTags.DataGitlabProjectProtectedTags.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataGitlabProjectProtected
 
 The id of the existing DataGitlabProjectProtectedTags that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/project_protected_tags#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project_protected_tags#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -696,7 +696,7 @@ Project *string
 
 The integer or path with namespace that uniquely identifies the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/project_protected_tags#project DataGitlabProjectProtectedTags#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project_protected_tags#project DataGitlabProjectProtectedTags#project}
 
 ---
 
@@ -745,7 +745,7 @@ GroupId *f64
 
 The ID of a GitLab group allowed to perform the relevant action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/project_protected_tags#group_id DataGitlabProjectProtectedTags#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project_protected_tags#group_id DataGitlabProjectProtectedTags#group_id}
 
 ---
 
@@ -759,7 +759,7 @@ UserId *f64
 
 The ID of a GitLab user allowed to perform the relevant action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/project_protected_tags#user_id DataGitlabProjectProtectedTags#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project_protected_tags#user_id DataGitlabProjectProtectedTags#user_id}
 
 ---
 

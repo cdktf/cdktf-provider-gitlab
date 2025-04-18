@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/user_runner
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_runner
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,73 +15,73 @@ export interface UserRunnerConfig extends cdktf.TerraformMetaArguments {
   /**
   * The access level of the runner. Valid values are: `not_protected`, `ref_protected`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/user_runner#access_level UserRunner#access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_runner#access_level UserRunner#access_level}
   */
   readonly accessLevel?: string;
   /**
   * Description of the runner.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/user_runner#description UserRunner#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_runner#description UserRunner#description}
   */
   readonly description?: string;
   /**
   * The ID of the group that the runner is created in. Required if runner_type is group_type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/user_runner#group_id UserRunner#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_runner#group_id UserRunner#group_id}
   */
   readonly groupId?: number;
   /**
   * Specifies if the runner should be locked for the current project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/user_runner#locked UserRunner#locked}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_runner#locked UserRunner#locked}
   */
   readonly locked?: boolean | cdktf.IResolvable;
   /**
   * Free-form maintenance notes for the runner (1024 characters) 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/user_runner#maintenance_note UserRunner#maintenance_note}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_runner#maintenance_note UserRunner#maintenance_note}
   */
   readonly maintenanceNote?: string;
   /**
   * Maximum timeout that limits the amount of time (in seconds) that runners can run jobs. Must be at least 600 (10 minutes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/user_runner#maximum_timeout UserRunner#maximum_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_runner#maximum_timeout UserRunner#maximum_timeout}
   */
   readonly maximumTimeout?: number;
   /**
   * Specifies if the runner should ignore new jobs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/user_runner#paused UserRunner#paused}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_runner#paused UserRunner#paused}
   */
   readonly paused?: boolean | cdktf.IResolvable;
   /**
   * The ID of the project that the runner is created in. Required if runner_type is project_type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/user_runner#project_id UserRunner#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_runner#project_id UserRunner#project_id}
   */
   readonly projectId?: number;
   /**
   * The scope of the runner. Valid values are: `instance_type`, `group_type`, `project_type`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/user_runner#runner_type UserRunner#runner_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_runner#runner_type UserRunner#runner_type}
   */
   readonly runnerType: string;
   /**
   * A list of runner tags.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/user_runner#tag_list UserRunner#tag_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_runner#tag_list UserRunner#tag_list}
   */
   readonly tagList?: string[];
   /**
   * Specifies if the runner should handle untagged jobs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/user_runner#untagged UserRunner#untagged}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_runner#untagged UserRunner#untagged}
   */
   readonly untagged?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/user_runner gitlab_user_runner}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_runner gitlab_user_runner}
 */
 export class UserRunner extends cdktf.TerraformResource {
 
@@ -97,7 +97,7 @@ export class UserRunner extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a UserRunner resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the UserRunner to import
-  * @param importFromId The id of the existing UserRunner that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/user_runner#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing UserRunner that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_runner#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the UserRunner to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -109,7 +109,7 @@ export class UserRunner extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/user_runner gitlab_user_runner} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_runner gitlab_user_runner} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -120,7 +120,7 @@ export class UserRunner extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_user_runner',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.10.0',
+        providerVersion: '17.11.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/global_level_notifications
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/global_level_notifications
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,115 +15,115 @@ export interface GlobalLevelNotificationsConfig extends cdktf.TerraformMetaArgum
   /**
   * Enable notifications for closed issues. Can only be used when `level` is `custom`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/global_level_notifications#close_issue GlobalLevelNotifications#close_issue}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/global_level_notifications#close_issue GlobalLevelNotifications#close_issue}
   */
   readonly closeIssue?: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for closed merge requests. Can only be used when `level` is `custom`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/global_level_notifications#close_merge_request GlobalLevelNotifications#close_merge_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/global_level_notifications#close_merge_request GlobalLevelNotifications#close_merge_request}
   */
   readonly closeMergeRequest?: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for failed pipelines. Can only be used when `level` is `custom`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/global_level_notifications#failed_pipeline GlobalLevelNotifications#failed_pipeline}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/global_level_notifications#failed_pipeline GlobalLevelNotifications#failed_pipeline}
   */
   readonly failedPipeline?: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for fixed pipelines. Can only be used when `level` is `custom`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/global_level_notifications#fixed_pipeline GlobalLevelNotifications#fixed_pipeline}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/global_level_notifications#fixed_pipeline GlobalLevelNotifications#fixed_pipeline}
   */
   readonly fixedPipeline?: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for due issues. Can only be used when `level` is `custom`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/global_level_notifications#issue_due GlobalLevelNotifications#issue_due}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/global_level_notifications#issue_due GlobalLevelNotifications#issue_due}
   */
   readonly issueDue?: boolean | cdktf.IResolvable;
   /**
   * The level of the notification. Valid values are: `disabled`, `participating`, `watch`, `global`, `mention`, `custom`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/global_level_notifications#level GlobalLevelNotifications#level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/global_level_notifications#level GlobalLevelNotifications#level}
   */
   readonly level?: string;
   /**
   * Enable notifications for merged merge requests. Can only be used when `level` is `custom`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/global_level_notifications#merge_merge_request GlobalLevelNotifications#merge_merge_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/global_level_notifications#merge_merge_request GlobalLevelNotifications#merge_merge_request}
   */
   readonly mergeMergeRequest?: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for merged merge requests when the pipeline succeeds. Can only be used when `level` is `custom`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/global_level_notifications#merge_when_pipeline_succeeds GlobalLevelNotifications#merge_when_pipeline_succeeds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/global_level_notifications#merge_when_pipeline_succeeds GlobalLevelNotifications#merge_when_pipeline_succeeds}
   */
   readonly mergeWhenPipelineSucceeds?: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for moved projects. Can only be used when `level` is `custom`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/global_level_notifications#moved_project GlobalLevelNotifications#moved_project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/global_level_notifications#moved_project GlobalLevelNotifications#moved_project}
   */
   readonly movedProject?: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for new issues. Can only be used when `level` is `custom`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/global_level_notifications#new_issue GlobalLevelNotifications#new_issue}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/global_level_notifications#new_issue GlobalLevelNotifications#new_issue}
   */
   readonly newIssue?: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for new merge requests. Can only be used when `level` is `custom`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/global_level_notifications#new_merge_request GlobalLevelNotifications#new_merge_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/global_level_notifications#new_merge_request GlobalLevelNotifications#new_merge_request}
   */
   readonly newMergeRequest?: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for new notes on merge requests. Can only be used when `level` is `custom`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/global_level_notifications#new_note GlobalLevelNotifications#new_note}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/global_level_notifications#new_note GlobalLevelNotifications#new_note}
   */
   readonly newNote?: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for push to merge request branches. Can only be used when `level` is `custom`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/global_level_notifications#push_to_merge_request GlobalLevelNotifications#push_to_merge_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/global_level_notifications#push_to_merge_request GlobalLevelNotifications#push_to_merge_request}
   */
   readonly pushToMergeRequest?: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for issue reassignments. Can only be used when `level` is `custom`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/global_level_notifications#reassign_issue GlobalLevelNotifications#reassign_issue}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/global_level_notifications#reassign_issue GlobalLevelNotifications#reassign_issue}
   */
   readonly reassignIssue?: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for merge request reassignments. Can only be used when `level` is `custom`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/global_level_notifications#reassign_merge_request GlobalLevelNotifications#reassign_merge_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/global_level_notifications#reassign_merge_request GlobalLevelNotifications#reassign_merge_request}
   */
   readonly reassignMergeRequest?: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for reopened issues. Can only be used when `level` is `custom`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/global_level_notifications#reopen_issue GlobalLevelNotifications#reopen_issue}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/global_level_notifications#reopen_issue GlobalLevelNotifications#reopen_issue}
   */
   readonly reopenIssue?: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for reopened merge requests. Can only be used when `level` is `custom`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/global_level_notifications#reopen_merge_request GlobalLevelNotifications#reopen_merge_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/global_level_notifications#reopen_merge_request GlobalLevelNotifications#reopen_merge_request}
   */
   readonly reopenMergeRequest?: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for successful pipelines. Can only be used when `level` is `custom`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/global_level_notifications#success_pipeline GlobalLevelNotifications#success_pipeline}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/global_level_notifications#success_pipeline GlobalLevelNotifications#success_pipeline}
   */
   readonly successPipeline?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/global_level_notifications gitlab_global_level_notifications}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/global_level_notifications gitlab_global_level_notifications}
 */
 export class GlobalLevelNotifications extends cdktf.TerraformResource {
 
@@ -139,7 +139,7 @@ export class GlobalLevelNotifications extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GlobalLevelNotifications resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GlobalLevelNotifications to import
-  * @param importFromId The id of the existing GlobalLevelNotifications that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/global_level_notifications#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GlobalLevelNotifications that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/global_level_notifications#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GlobalLevelNotifications to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -151,7 +151,7 @@ export class GlobalLevelNotifications extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/global_level_notifications gitlab_global_level_notifications} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/global_level_notifications gitlab_global_level_notifications} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -162,7 +162,7 @@ export class GlobalLevelNotifications extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_global_level_notifications',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.10.0',
+        providerVersion: '17.11.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,

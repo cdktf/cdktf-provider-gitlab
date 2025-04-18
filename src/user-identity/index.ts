@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/user_identity
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_identity
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface UserIdentityConfig extends cdktf.TerraformMetaArguments {
   /**
   * The external provider name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/user_identity#external_provider UserIdentity#external_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_identity#external_provider UserIdentity#external_provider}
   */
   readonly externalProvider: string;
   /**
   * A specific external authentication provider UID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/user_identity#external_uid UserIdentity#external_uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_identity#external_uid UserIdentity#external_uid}
   */
   readonly externalUid: string;
   /**
   * The GitLab ID of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/user_identity#user_id UserIdentity#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_identity#user_id UserIdentity#user_id}
   */
   readonly userId: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/user_identity gitlab_user_identity}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_identity gitlab_user_identity}
 */
 export class UserIdentity extends cdktf.TerraformResource {
 
@@ -49,7 +49,7 @@ export class UserIdentity extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a UserIdentity resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the UserIdentity to import
-  * @param importFromId The id of the existing UserIdentity that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/user_identity#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing UserIdentity that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_identity#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the UserIdentity to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -61,7 +61,7 @@ export class UserIdentity extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/user_identity gitlab_user_identity} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_identity gitlab_user_identity} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class UserIdentity extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_user_identity',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.10.0',
+        providerVersion: '17.11.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,

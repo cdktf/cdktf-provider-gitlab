@@ -20,6 +20,7 @@ export * as groupAccessToken from './group-access-token';
 export * as groupBadge from './group-badge';
 export * as groupCluster from './group-cluster';
 export * as groupCustomAttribute from './group-custom-attribute';
+export * as groupDependencyProxy from './group-dependency-proxy';
 export * as groupEpicBoard from './group-epic-board';
 export * as groupHook from './group-hook';
 export * as groupIssueBoard from './group-issue-board';

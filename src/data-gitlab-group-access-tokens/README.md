@@ -1,3 +1,3 @@
 # `data_gitlab_group_access_tokens`
 
-Refer to the Terraform Registry for docs: [`data_gitlab_group_access_tokens`](https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/group_access_tokens).
+Refer to the Terraform Registry for docs: [`data_gitlab_group_access_tokens`](https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/group_access_tokens).

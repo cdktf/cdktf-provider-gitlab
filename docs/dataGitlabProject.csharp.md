@@ -4,7 +4,7 @@
 
 ### DataGitlabProject <a name="DataGitlabProject" id="@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/project gitlab_project}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project gitlab_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.Initializer"></a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.resetCiDefaultGitDepth">ResetCiDefaultGitDepth</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.resetCiIdTokenSubClaimComponents">ResetCiIdTokenSubClaimComponents</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.resetPathWithNamespace">ResetPathWithNamespace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.resetPublicBuilds">ResetPublicBuilds</a></code> | *No description.* |
@@ -272,6 +273,12 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 private void ResetCiDefaultGitDepth()
 ```
 
+##### `ResetCiIdTokenSubClaimComponents` <a name="ResetCiIdTokenSubClaimComponents" id="@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.resetCiIdTokenSubClaimComponents"></a>
+
+```csharp
+private void ResetCiIdTokenSubClaimComponents()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.resetId"></a>
 
 ```csharp
@@ -393,7 +400,7 @@ The construct id used in the generated config for the DataGitlabProject to impor
 
 The id of the existing DataGitlabProject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -432,6 +439,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.property.buildsAccessLevel">BuildsAccessLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.property.buildTimeout">BuildTimeout</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.property.ciConfigPath">CiConfigPath</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.property.ciDeletePipelinesInSeconds">CiDeletePipelinesInSeconds</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.property.ciPipelineVariablesMinimumOverrideRole">CiPipelineVariablesMinimumOverrideRole</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.property.ciRestrictPipelineCancellationRole">CiRestrictPipelineCancellationRole</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.property.ciSeparatedCaches">CiSeparatedCaches</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
@@ -489,10 +497,12 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.property.wikiAccessLevel">WikiAccessLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.property.wikiEnabled">WikiEnabled</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.property.ciDefaultGitDepthInput">CiDefaultGitDepthInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.property.ciIdTokenSubClaimComponentsInput">CiIdTokenSubClaimComponentsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.property.pathWithNamespaceInput">PathWithNamespaceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.property.publicBuildsInput">PublicBuildsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.property.ciDefaultGitDepth">CiDefaultGitDepth</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.property.ciIdTokenSubClaimComponents">CiIdTokenSubClaimComponents</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.property.pathWithNamespace">PathWithNamespace</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.property.publicBuilds">PublicBuilds</a></code> | <code>object</code> | *No description.* |
@@ -728,6 +738,16 @@ public string CiConfigPath { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `CiDeletePipelinesInSeconds`<sup>Required</sup> <a name="CiDeletePipelinesInSeconds" id="@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.property.ciDeletePipelinesInSeconds"></a>
+
+```csharp
+public double CiDeletePipelinesInSeconds { get; }
+```
+
+- *Type:* double
 
 ---
 
@@ -1301,6 +1321,16 @@ public double CiDefaultGitDepthInput { get; }
 
 ---
 
+##### `CiIdTokenSubClaimComponentsInput`<sup>Optional</sup> <a name="CiIdTokenSubClaimComponentsInput" id="@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.property.ciIdTokenSubClaimComponentsInput"></a>
+
+```csharp
+public string[] CiIdTokenSubClaimComponentsInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.property.idInput"></a>
 
 ```csharp
@@ -1338,6 +1368,16 @@ public double CiDefaultGitDepth { get; }
 ```
 
 - *Type:* double
+
+---
+
+##### `CiIdTokenSubClaimComponents`<sup>Required</sup> <a name="CiIdTokenSubClaimComponents" id="@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProject.property.ciIdTokenSubClaimComponents"></a>
+
+```csharp
+public string[] CiIdTokenSubClaimComponents { get; }
+```
+
+- *Type:* string[]
 
 ---
 
@@ -1407,6 +1447,7 @@ new DataGitlabProjectConfig {
     TerraformProvider Provider = null,
     object[] Provisioners = null,
     double CiDefaultGitDepth = null,
+    string[] CiIdTokenSubClaimComponents = null,
     string Id = null,
     string PathWithNamespace = null,
     object PublicBuilds = null
@@ -1425,6 +1466,7 @@ new DataGitlabProjectConfig {
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProjectConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProjectConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProjectConfig.property.ciDefaultGitDepth">CiDefaultGitDepth</a></code> | <code>double</code> | Default number of revisions for shallow cloning. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProjectConfig.property.ciIdTokenSubClaimComponents">CiIdTokenSubClaimComponents</a></code> | <code>string[]</code> | Fields included in the sub claim of the ID Token. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProjectConfig.property.id">Id</a></code> | <code>string</code> | The integer that uniquely identifies the project within the gitlab install. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProjectConfig.property.pathWithNamespace">PathWithNamespace</a></code> | <code>string</code> | The path of the repository with namespace. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProjectConfig.property.publicBuilds">PublicBuilds</a></code> | <code>object</code> | If true, jobs can be viewed by non-project members. |
@@ -1511,7 +1553,23 @@ public double CiDefaultGitDepth { get; set; }
 
 Default number of revisions for shallow cloning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/project#ci_default_git_depth DataGitlabProject#ci_default_git_depth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project#ci_default_git_depth DataGitlabProject#ci_default_git_depth}
+
+---
+
+##### `CiIdTokenSubClaimComponents`<sup>Optional</sup> <a name="CiIdTokenSubClaimComponents" id="@cdktf/provider-gitlab.dataGitlabProject.DataGitlabProjectConfig.property.ciIdTokenSubClaimComponents"></a>
+
+```csharp
+public string[] CiIdTokenSubClaimComponents { get; set; }
+```
+
+- *Type:* string[]
+
+Fields included in the sub claim of the ID Token.
+
+Accepts an array starting with project_path. The array might also include ref_type and ref. Defaults to ["project_path", "ref_type", "ref"]. Introduced in GitLab 17.10.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project#ci_id_token_sub_claim_components DataGitlabProject#ci_id_token_sub_claim_components}
 
 ---
 
@@ -1525,7 +1583,7 @@ public string Id { get; set; }
 
 The integer that uniquely identifies the project within the gitlab install.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/project#id DataGitlabProject#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project#id DataGitlabProject#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1542,7 +1600,7 @@ public string PathWithNamespace { get; set; }
 
 The path of the repository with namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/project#path_with_namespace DataGitlabProject#path_with_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project#path_with_namespace DataGitlabProject#path_with_namespace}
 
 ---
 
@@ -1556,7 +1614,7 @@ public object PublicBuilds { get; set; }
 
 If true, jobs can be viewed by non-project members.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/data-sources/project#public_builds DataGitlabProject#public_builds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project#public_builds DataGitlabProject#public_builds}
 
 ---
 
