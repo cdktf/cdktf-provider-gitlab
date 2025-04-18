@@ -77,6 +77,7 @@ The following submodules are available:
 - [groupBadge](./groupBadge.python.md)
 - [groupCluster](./groupCluster.python.md)
 - [groupCustomAttribute](./groupCustomAttribute.python.md)
+- [groupDependencyProxy](./groupDependencyProxy.python.md)
 - [groupEpicBoard](./groupEpicBoard.python.md)
 - [groupHook](./groupHook.python.md)
 - [groupIssueBoard](./groupIssueBoard.python.md)

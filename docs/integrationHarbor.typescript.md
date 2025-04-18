@@ -4,7 +4,7 @@
 
 ### IntegrationHarbor <a name="IntegrationHarbor" id="@cdktf/provider-gitlab.integrationHarbor.IntegrationHarbor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/integration_harbor gitlab_integration_harbor}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/integration_harbor gitlab_integration_harbor}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.integrationHarbor.IntegrationHarbor.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the IntegrationHarbor to impor
 
 The id of the existing IntegrationHarbor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/integration_harbor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/integration_harbor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -933,7 +933,7 @@ public readonly password: string;
 
 Password for authentication with the Harbor server, if authentication is required by the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/integration_harbor#password IntegrationHarbor#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/integration_harbor#password IntegrationHarbor#password}
 
 ---
 
@@ -947,7 +947,7 @@ public readonly project: string;
 
 ID of the GitLab project you want to activate integration on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/integration_harbor#project IntegrationHarbor#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/integration_harbor#project IntegrationHarbor#project}
 
 ---
 
@@ -961,7 +961,7 @@ public readonly projectName: string;
 
 The URL-friendly Harbor project name. This project needs to already exist in Harbor. Example: `my_project_name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/integration_harbor#project_name IntegrationHarbor#project_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/integration_harbor#project_name IntegrationHarbor#project_name}
 
 ---
 
@@ -975,7 +975,7 @@ public readonly url: string;
 
 Harbor URL. Example: `http://harbor.example.com`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/integration_harbor#url IntegrationHarbor#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/integration_harbor#url IntegrationHarbor#url}
 
 ---
 
@@ -989,7 +989,7 @@ public readonly username: string;
 
 Username for authentication with the Harbor server, if authentication is required by the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/integration_harbor#username IntegrationHarbor#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/integration_harbor#username IntegrationHarbor#username}
 
 ---
 
@@ -1003,7 +1003,7 @@ public readonly useInheritedSettings: boolean | IResolvable;
 
 Indicates whether or not to inherit default settings. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/integration_harbor#use_inherited_settings IntegrationHarbor#use_inherited_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/integration_harbor#use_inherited_settings IntegrationHarbor#use_inherited_settings}
 
 ---
 

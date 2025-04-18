@@ -77,6 +77,7 @@ The following submodules are available:
 - [groupBadge](./groupBadge.go.md)
 - [groupCluster](./groupCluster.go.md)
 - [groupCustomAttribute](./groupCustomAttribute.go.md)
+- [groupDependencyProxy](./groupDependencyProxy.go.md)
 - [groupEpicBoard](./groupEpicBoard.go.md)
 - [groupHook](./groupHook.go.md)
 - [groupIssueBoard](./groupIssueBoard.go.md)

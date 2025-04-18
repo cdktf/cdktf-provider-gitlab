@@ -77,6 +77,7 @@ The following submodules are available:
 - [groupBadge](./groupBadge.java.md)
 - [groupCluster](./groupCluster.java.md)
 - [groupCustomAttribute](./groupCustomAttribute.java.md)
+- [groupDependencyProxy](./groupDependencyProxy.java.md)
 - [groupEpicBoard](./groupEpicBoard.java.md)
 - [groupHook](./groupHook.java.md)
 - [groupIssueBoard](./groupIssueBoard.java.md)

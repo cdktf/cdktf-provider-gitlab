@@ -77,6 +77,7 @@ The following submodules are available:
 - [groupBadge](./groupBadge.typescript.md)
 - [groupCluster](./groupCluster.typescript.md)
 - [groupCustomAttribute](./groupCustomAttribute.typescript.md)
+- [groupDependencyProxy](./groupDependencyProxy.typescript.md)
 - [groupEpicBoard](./groupEpicBoard.typescript.md)
 - [groupHook](./groupHook.typescript.md)
 - [groupIssueBoard](./groupIssueBoard.typescript.md)
