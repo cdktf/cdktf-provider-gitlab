@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_security_policy_attachment
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_security_policy_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +10,19 @@ export interface GroupSecurityPolicyAttachmentConfig extends cdktf.TerraformMeta
   /**
   * The ID or Full Path of the group which will have the security policy project assigned to it.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_security_policy_attachment#group GroupSecurityPolicyAttachment#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_security_policy_attachment#group GroupSecurityPolicyAttachment#group}
   */
   readonly group: string;
   /**
   * The ID or Full Path of the security policy project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_security_policy_attachment#policy_project GroupSecurityPolicyAttachment#policy_project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_security_policy_attachment#policy_project GroupSecurityPolicyAttachment#policy_project}
   */
   readonly policyProject: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_security_policy_attachment gitlab_group_security_policy_attachment}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_security_policy_attachment gitlab_group_security_policy_attachment}
 */
 export class GroupSecurityPolicyAttachment extends cdktf.TerraformResource {
 
@@ -43,7 +38,7 @@ export class GroupSecurityPolicyAttachment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GroupSecurityPolicyAttachment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GroupSecurityPolicyAttachment to import
-  * @param importFromId The id of the existing GroupSecurityPolicyAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_security_policy_attachment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GroupSecurityPolicyAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_security_policy_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GroupSecurityPolicyAttachment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +50,7 @@ export class GroupSecurityPolicyAttachment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/group_security_policy_attachment gitlab_group_security_policy_attachment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/group_security_policy_attachment gitlab_group_security_policy_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +61,7 @@ export class GroupSecurityPolicyAttachment extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_security_policy_attachment',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.10.0',
+        providerVersion: '17.11.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,

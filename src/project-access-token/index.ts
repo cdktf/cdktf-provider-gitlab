@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_access_token
+// https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_access_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,39 +8,45 @@ import * as cdktf from 'cdktf';
 
 export interface ProjectAccessTokenConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The access level for the project access token. Valid values are: `no one`, `minimal`, `guest`, `reporter`, `developer`, `maintainer`, `owner`. Default is `maintainer`.
+  * The access level for the project access token. Valid values are: `no one`, `minimal`, `guest`, `planner`, `reporter`, `developer`, `maintainer`, `owner`. Default is `maintainer`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_access_token#access_level ProjectAccessToken#access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_access_token#access_level ProjectAccessToken#access_level}
   */
   readonly accessLevel?: string;
   /**
+  * The description of the project access token.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_access_token#description ProjectAccessToken#description}
+  */
+  readonly description?: string;
+  /**
   * When the token will expire, YYYY-MM-DD format. Is automatically set when `rotation_configuration` is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_access_token#expires_at ProjectAccessToken#expires_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_access_token#expires_at ProjectAccessToken#expires_at}
   */
   readonly expiresAt?: string;
   /**
   * The name of the project access token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_access_token#name ProjectAccessToken#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_access_token#name ProjectAccessToken#name}
   */
   readonly name: string;
   /**
   * The ID or full path of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_access_token#project ProjectAccessToken#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_access_token#project ProjectAccessToken#project}
   */
   readonly project: string;
   /**
   * The configuration for when to rotate a token automatically. Will not rotate a token until `terraform apply` is run.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_access_token#rotation_configuration ProjectAccessToken#rotation_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_access_token#rotation_configuration ProjectAccessToken#rotation_configuration}
   */
   readonly rotationConfiguration?: ProjectAccessTokenRotationConfiguration;
   /**
   * The scopes of the project access token. valid values are: `api`, `read_api`, `read_registry`, `write_registry`, `read_repository`, `write_repository`, `create_runner`, `manage_runner`, `ai_features`, `k8s_proxy`, `read_observability`, `write_observability`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_access_token#scopes ProjectAccessToken#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_access_token#scopes ProjectAccessToken#scopes}
   */
   readonly scopes: string[];
 }
@@ -53,13 +54,13 @@ export interface ProjectAccessTokenRotationConfiguration {
   /**
   * The duration (in days) the new token should be valid for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_access_token#expiration_days ProjectAccessToken#expiration_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_access_token#expiration_days ProjectAccessToken#expiration_days}
   */
   readonly expirationDays: number;
   /**
   * The duration (in days) before the expiration when the token should be rotated. As an example, if set to 7 days, the token will rotate 7 days before the expiration date, but only when `terraform apply` is run in that timeframe.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_access_token#rotate_before_days ProjectAccessToken#rotate_before_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_access_token#rotate_before_days ProjectAccessToken#rotate_before_days}
   */
   readonly rotateBeforeDays: number;
 }
@@ -176,7 +177,7 @@ export class ProjectAccessTokenRotationConfigurationOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_access_token gitlab_project_access_token}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_access_token gitlab_project_access_token}
 */
 export class ProjectAccessToken extends cdktf.TerraformResource {
 
@@ -192,7 +193,7 @@ export class ProjectAccessToken extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ProjectAccessToken resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProjectAccessToken to import
-  * @param importFromId The id of the existing ProjectAccessToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_access_token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ProjectAccessToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_access_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProjectAccessToken to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -204,7 +205,7 @@ export class ProjectAccessToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.10.0/docs/resources/project_access_token gitlab_project_access_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/project_access_token gitlab_project_access_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -215,7 +216,7 @@ export class ProjectAccessToken extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_access_token',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.10.0',
+        providerVersion: '17.11.0',
         providerVersionConstraint: '~> 17.0'
       },
       provider: config.provider,
@@ -227,6 +228,7 @@ export class ProjectAccessToken extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._accessLevel = config.accessLevel;
+    this._description = config.description;
     this._expiresAt = config.expiresAt;
     this._name = config.name;
     this._project = config.project;
@@ -262,6 +264,22 @@ export class ProjectAccessToken extends cdktf.TerraformResource {
   // created_at - computed: true, optional: false, required: false
   public get createdAt() {
     return this.getStringAttribute('created_at');
+  }
+
+  // description - computed: true, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
   }
 
   // expires_at - computed: true, optional: true, required: false
@@ -362,6 +380,7 @@ export class ProjectAccessToken extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       access_level: cdktf.stringToTerraform(this._accessLevel),
+      description: cdktf.stringToTerraform(this._description),
       expires_at: cdktf.stringToTerraform(this._expiresAt),
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
@@ -374,6 +393,12 @@ export class ProjectAccessToken extends cdktf.TerraformResource {
     const attrs = {
       access_level: {
         value: cdktf.stringToHclTerraform(this._accessLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
