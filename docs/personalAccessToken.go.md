@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/personalaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/personalaccesstoken"
 
 personalaccesstoken.NewPersonalAccessToken(scope Construct, id *string, config PersonalAccessTokenConfig) PersonalAccessToken
 ```
@@ -412,7 +412,7 @@ func ResetRotationConfiguration()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/personalaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/personalaccesstoken"
 
 personalaccesstoken.PersonalAccessToken_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/personalaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/personalaccesstoken"
 
 personalaccesstoken.PersonalAccessToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ personalaccesstoken.PersonalAccessToken_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/personalaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/personalaccesstoken"
 
 personalaccesstoken.PersonalAccessToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ personalaccesstoken.PersonalAccessToken_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/personalaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/personalaccesstoken"
 
 personalaccesstoken.PersonalAccessToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -888,7 +888,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/personalaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/personalaccesstoken"
 
 &personalaccesstoken.PersonalAccessTokenConfig {
 	Connection: interface{},
@@ -903,7 +903,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/personalaccesstoken
 	UserId: *f64,
 	Description: *string,
 	ExpiresAt: *string,
-	RotationConfiguration: github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13.personalAccessToken.PersonalAccessTokenRotationConfiguration,
+	RotationConfiguration: github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14.personalAccessToken.PersonalAccessTokenRotationConfiguration,
 }
 ```
 
@@ -1088,7 +1088,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessTokenRotationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/personalaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/personalaccesstoken"
 
 &personalaccesstoken.PersonalAccessTokenRotationConfiguration {
 	ExpirationDays: *f64,
@@ -1142,7 +1142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessTokenRotationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v13/personalaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/personalaccesstoken"
 
 personalaccesstoken.NewPersonalAccessTokenRotationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PersonalAccessTokenRotationConfigurationOutputReference
 ```
