@@ -8,7 +8,7 @@ const { CdktfProviderProject } = require("@cdktf/provider-project");
 const typescriptVersion = "~5.4.0";
 const project = new CdktfProviderProject({
   useCustomGithubRunner: false,
-  terraformProvider: "gitlabhq/gitlab@~> 17.0",
+  terraformProvider: "gitlabhq/gitlab@~> 18.0",
   cdktfVersion: "^0.20.0",
   constructsVersion: "^10.3.0",
   minNodeVersion: "18.12.0",
