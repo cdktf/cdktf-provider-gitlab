@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/groupserviceaccount"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/groupserviceaccount"
 
 groupserviceaccount.NewGroupServiceAccount(scope Construct, id *string, config GroupServiceAccountConfig) GroupServiceAccount
 ```
@@ -392,7 +392,7 @@ func ResetUsername()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/groupserviceaccount"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/groupserviceaccount"
 
 groupserviceaccount.GroupServiceAccount_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/groupserviceaccount"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/groupserviceaccount"
 
 groupserviceaccount.GroupServiceAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ groupserviceaccount.GroupServiceAccount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/groupserviceaccount"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/groupserviceaccount"
 
 groupserviceaccount.GroupServiceAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ groupserviceaccount.GroupServiceAccount_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/groupserviceaccount"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/groupserviceaccount"
 
 groupserviceaccount.GroupServiceAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/groupserviceaccount"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/groupserviceaccount"
 
 &groupserviceaccount.GroupServiceAccountConfig {
 	Connection: interface{},
