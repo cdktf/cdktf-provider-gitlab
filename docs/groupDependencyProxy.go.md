@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupDependencyProxy.GroupDependencyProxy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/groupdependencyproxy"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/groupdependencyproxy"
 
 groupdependencyproxy.NewGroupDependencyProxy(scope Construct, id *string, config GroupDependencyProxyConfig) GroupDependencyProxy
 ```
@@ -399,7 +399,7 @@ func ResetSecret()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.groupDependencyProxy.GroupDependencyProxy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/groupdependencyproxy"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/groupdependencyproxy"
 
 groupdependencyproxy.GroupDependencyProxy_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.groupDependencyProxy.GroupDependencyProxy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/groupdependencyproxy"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/groupdependencyproxy"
 
 groupdependencyproxy.GroupDependencyProxy_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ groupdependencyproxy.GroupDependencyProxy_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.groupDependencyProxy.GroupDependencyProxy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/groupdependencyproxy"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/groupdependencyproxy"
 
 groupdependencyproxy.GroupDependencyProxy_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ groupdependencyproxy.GroupDependencyProxy_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.groupDependencyProxy.GroupDependencyProxy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/groupdependencyproxy"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/groupdependencyproxy"
 
 groupdependencyproxy.GroupDependencyProxy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -787,7 +787,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.groupDependencyProxy.GroupDependencyProxyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/groupdependencyproxy"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/groupdependencyproxy"
 
 &groupdependencyproxy.GroupDependencyProxyConfig {
 	Connection: interface{},

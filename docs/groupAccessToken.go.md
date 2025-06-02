@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/groupaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/groupaccesstoken"
 
 groupaccesstoken.NewGroupAccessToken(scope Construct, id *string, config GroupAccessTokenConfig) GroupAccessToken
 ```
@@ -419,7 +419,7 @@ func ResetRotationConfiguration()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/groupaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/groupaccesstoken"
 
 groupaccesstoken.GroupAccessToken_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/groupaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/groupaccesstoken"
 
 groupaccesstoken.GroupAccessToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ groupaccesstoken.GroupAccessToken_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/groupaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/groupaccesstoken"
 
 groupaccesstoken.GroupAccessToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ groupaccesstoken.GroupAccessToken_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/groupaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/groupaccesstoken"
 
 groupaccesstoken.GroupAccessToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -928,7 +928,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.groupAccessToken.GroupAccessTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/groupaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/groupaccesstoken"
 
 &groupaccesstoken.GroupAccessTokenConfig {
 	Connection: interface{},
@@ -944,7 +944,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/groupaccesstoken"
 	AccessLevel: *string,
 	Description: *string,
 	ExpiresAt: *string,
-	RotationConfiguration: github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14.groupAccessToken.GroupAccessTokenRotationConfiguration,
+	RotationConfiguration: github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15.groupAccessToken.GroupAccessTokenRotationConfiguration,
 }
 ```
 
@@ -1146,7 +1146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.groupAccessToken.GroupAccessTokenRotationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/groupaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/groupaccesstoken"
 
 &groupaccesstoken.GroupAccessTokenRotationConfiguration {
 	ExpirationDays: *f64,
@@ -1200,7 +1200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupAccessToken.GroupAccessTokenRotationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/groupaccesstoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/groupaccesstoken"
 
 groupaccesstoken.NewGroupAccessTokenRotationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupAccessTokenRotationConfigurationOutputReference
 ```

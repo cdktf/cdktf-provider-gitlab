@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedTags.DataGitlabProjectProtectedTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/datagitlabprojectprotectedtags"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectprotectedtags"
 
 datagitlabprojectprotectedtags.NewDataGitlabProjectProtectedTags(scope Construct, id *string, config DataGitlabProjectProtectedTagsConfig) DataGitlabProjectProtectedTags
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedTags.DataGitlabProjectProtectedTags.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/datagitlabprojectprotectedtags"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectprotectedtags"
 
 datagitlabprojectprotectedtags.DataGitlabProjectProtectedTags_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedTags.DataGitlabProjectProtectedTags.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/datagitlabprojectprotectedtags"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectprotectedtags"
 
 datagitlabprojectprotectedtags.DataGitlabProjectProtectedTags_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datagitlabprojectprotectedtags.DataGitlabProjectProtectedTags_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedTags.DataGitlabProjectProtectedTags.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/datagitlabprojectprotectedtags"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectprotectedtags"
 
 datagitlabprojectprotectedtags.DataGitlabProjectProtectedTags_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagitlabprojectprotectedtags.DataGitlabProjectProtectedTags_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedTags.DataGitlabProjectProtectedTags.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/datagitlabprojectprotectedtags"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectprotectedtags"
 
 datagitlabprojectprotectedtags.DataGitlabProjectProtectedTags_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -587,7 +587,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedTags.DataGitlabProjectProtectedTagsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/datagitlabprojectprotectedtags"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectprotectedtags"
 
 &datagitlabprojectprotectedtags.DataGitlabProjectProtectedTagsConfig {
 	Connection: interface{},
@@ -705,7 +705,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedTags.DataGitlabProjectProtectedTagsProtectedTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/datagitlabprojectprotectedtags"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectprotectedtags"
 
 &datagitlabprojectprotectedtags.DataGitlabProjectProtectedTagsProtectedTags {
 
@@ -718,7 +718,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/datagitlabprojectpr
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedTags.DataGitlabProjectProtectedTagsProtectedTagsCreateAccessLevels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/datagitlabprojectprotectedtags"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectprotectedtags"
 
 &datagitlabprojectprotectedtags.DataGitlabProjectProtectedTagsProtectedTagsCreateAccessLevels {
 	GroupId: *f64,
@@ -770,7 +770,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedTags.DataGitlabProjectProtectedTagsProtectedTagsCreateAccessLevelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/datagitlabprojectprotectedtags"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectprotectedtags"
 
 datagitlabprojectprotectedtags.NewDataGitlabProjectProtectedTagsProtectedTagsCreateAccessLevelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectProtectedTagsProtectedTagsCreateAccessLevelsList
 ```
@@ -930,7 +930,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedTags.DataGitlabProjectProtectedTagsProtectedTagsCreateAccessLevelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/datagitlabprojectprotectedtags"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectprotectedtags"
 
 datagitlabprojectprotectedtags.NewDataGitlabProjectProtectedTagsProtectedTagsCreateAccessLevelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabProjectProtectedTagsProtectedTagsCreateAccessLevelsOutputReference
 ```
@@ -1288,7 +1288,7 @@ func InternalValue() DataGitlabProjectProtectedTagsProtectedTagsCreateAccessLeve
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedTags.DataGitlabProjectProtectedTagsProtectedTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/datagitlabprojectprotectedtags"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectprotectedtags"
 
 datagitlabprojectprotectedtags.NewDataGitlabProjectProtectedTagsProtectedTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectProtectedTagsProtectedTagsList
 ```
@@ -1437,7 +1437,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectProtectedTags.DataGitlabProjectProtectedTagsProtectedTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v14/datagitlabprojectprotectedtags"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectprotectedtags"
 
 datagitlabprojectprotectedtags.NewDataGitlabProjectProtectedTagsProtectedTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabProjectProtectedTagsProtectedTagsOutputReference
 ```
