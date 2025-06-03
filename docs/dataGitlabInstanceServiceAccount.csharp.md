@@ -4,7 +4,7 @@
 
 ### DataGitlabInstanceServiceAccount <a name="DataGitlabInstanceServiceAccount" id="@cdktf/provider-gitlab.dataGitlabInstanceServiceAccount.DataGitlabInstanceServiceAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/instance_service_account gitlab_instance_service_account}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/instance_service_account gitlab_instance_service_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabInstanceServiceAccount.DataGitlabInstanceServiceAccount.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataGitlabInstanceServiceA
 
 The id of the existing DataGitlabInstanceServiceAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/instance_service_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/instance_service_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -393,6 +393,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceServiceAccount.DataGitlabInstanceServiceAccount.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceServiceAccount.DataGitlabInstanceServiceAccount.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceServiceAccount.DataGitlabInstanceServiceAccount.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceServiceAccount.DataGitlabInstanceServiceAccount.property.email">Email</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceServiceAccount.DataGitlabInstanceServiceAccount.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceServiceAccount.DataGitlabInstanceServiceAccount.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabInstanceServiceAccount.DataGitlabInstanceServiceAccount.property.username">Username</a></code> | <code>string</code> | *No description.* |
@@ -520,6 +521,16 @@ public TerraformProvider Provider { get; }
 ```
 
 - *Type:* HashiCorp.Cdktf.TerraformProvider
+
+---
+
+##### `Email`<sup>Required</sup> <a name="Email" id="@cdktf/provider-gitlab.dataGitlabInstanceServiceAccount.DataGitlabInstanceServiceAccount.property.email"></a>
+
+```csharp
+public string Email { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -707,7 +718,7 @@ public string ServiceAccountId { get; set; }
 
 The service account id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/instance_service_account#service_account_id DataGitlabInstanceServiceAccount#service_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/instance_service_account#service_account_id DataGitlabInstanceServiceAccount#service_account_id}
 
 ---
 

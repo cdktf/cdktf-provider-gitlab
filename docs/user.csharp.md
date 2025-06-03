@@ -4,7 +4,7 @@
 
 ### User <a name="User" id="@cdktf/provider-gitlab.user.User"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user gitlab_user}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user gitlab_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.user.User.Initializer"></a>
 
@@ -74,8 +74,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.user.User.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-gitlab.user.User.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-gitlab.user.User.resetCanCreateGroup">ResetCanCreateGroup</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.resetExternalProvider">ResetExternalProvider</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.resetExternUid">ResetExternUid</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.resetForceRandomPassword">ResetForceRandomPassword</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.resetIsAdmin">ResetIsAdmin</a></code> | *No description.* |
@@ -384,18 +382,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 private void ResetCanCreateGroup()
 ```
 
-##### `ResetExternalProvider` <a name="ResetExternalProvider" id="@cdktf/provider-gitlab.user.User.resetExternalProvider"></a>
-
-```csharp
-private void ResetExternalProvider()
-```
-
-##### `ResetExternUid` <a name="ResetExternUid" id="@cdktf/provider-gitlab.user.User.resetExternUid"></a>
-
-```csharp
-private void ResetExternUid()
-```
-
 ##### `ResetForceRandomPassword` <a name="ResetForceRandomPassword" id="@cdktf/provider-gitlab.user.User.resetForceRandomPassword"></a>
 
 ```csharp
@@ -565,7 +551,7 @@ The construct id used in the generated config for the User to import.
 
 The id of the existing User that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -597,8 +583,6 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.canCreateGroupInput">CanCreateGroupInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.emailInput">EmailInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.externalProviderInput">ExternalProviderInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.externUidInput">ExternUidInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.forceRandomPasswordInput">ForceRandomPasswordInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.isAdminInput">IsAdminInput</a></code> | <code>object</code> | *No description.* |
@@ -614,8 +598,6 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.usernameInput">UsernameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.canCreateGroup">CanCreateGroup</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.email">Email</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.externalProvider">ExternalProvider</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.externUid">ExternUid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.forceRandomPassword">ForceRandomPassword</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.isAdmin">IsAdmin</a></code> | <code>object</code> | *No description.* |
@@ -794,26 +776,6 @@ public string EmailInput { get; }
 
 ---
 
-##### `ExternalProviderInput`<sup>Optional</sup> <a name="ExternalProviderInput" id="@cdktf/provider-gitlab.user.User.property.externalProviderInput"></a>
-
-```csharp
-public string ExternalProviderInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `ExternUidInput`<sup>Optional</sup> <a name="ExternUidInput" id="@cdktf/provider-gitlab.user.User.property.externUidInput"></a>
-
-```csharp
-public string ExternUidInput { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `ForceRandomPasswordInput`<sup>Optional</sup> <a name="ForceRandomPasswordInput" id="@cdktf/provider-gitlab.user.User.property.forceRandomPasswordInput"></a>
 
 ```csharp
@@ -958,26 +920,6 @@ public object CanCreateGroup { get; }
 
 ```csharp
 public string Email { get; }
-```
-
-- *Type:* string
-
----
-
-##### `ExternalProvider`<sup>Required</sup> <a name="ExternalProvider" id="@cdktf/provider-gitlab.user.User.property.externalProvider"></a>
-
-```csharp
-public string ExternalProvider { get; }
-```
-
-- *Type:* string
-
----
-
-##### `ExternUid`<sup>Required</sup> <a name="ExternUid" id="@cdktf/provider-gitlab.user.User.property.externUid"></a>
-
-```csharp
-public string ExternUid { get; }
 ```
 
 - *Type:* string
@@ -1153,8 +1095,6 @@ new UserConfig {
     string Name,
     string Username,
     object CanCreateGroup = null,
-    string ExternalProvider = null,
-    string ExternUid = null,
     object ForceRandomPassword = null,
     string Id = null,
     object IsAdmin = null,
@@ -1184,10 +1124,8 @@ new UserConfig {
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.name">Name</a></code> | <code>string</code> | The name of the user. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.username">Username</a></code> | <code>string</code> | The username of the user. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.canCreateGroup">CanCreateGroup</a></code> | <code>object</code> | Boolean, defaults to false. Whether to allow the user to create groups. |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.externalProvider">ExternalProvider</a></code> | <code>string</code> | String, the external provider. |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.externUid">ExternUid</a></code> | <code>string</code> | String, a specific external authentication provider UID. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.forceRandomPassword">ForceRandomPassword</a></code> | <code>object</code> | Set user password to a random value. |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#id User#id}. |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#id User#id}. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.isAdmin">IsAdmin</a></code> | <code>object</code> | Boolean, defaults to false.  Whether to enable administrative privileges. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.isExternal">IsExternal</a></code> | <code>object</code> | Boolean, defaults to false. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.namespaceId">NamespaceId</a></code> | <code>double</code> | The ID of the user's namespace. |
@@ -1280,7 +1218,7 @@ public string Email { get; set; }
 
 The e-mail address of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#email User#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#email User#email}
 
 ---
 
@@ -1294,7 +1232,7 @@ public string Name { get; set; }
 
 The name of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#name User#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#name User#name}
 
 ---
 
@@ -1308,7 +1246,7 @@ public string Username { get; set; }
 
 The username of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#username User#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#username User#username}
 
 ---
 
@@ -1322,35 +1260,7 @@ public object CanCreateGroup { get; set; }
 
 Boolean, defaults to false. Whether to allow the user to create groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#can_create_group User#can_create_group}
-
----
-
-##### `ExternalProvider`<sup>Optional</sup> <a name="ExternalProvider" id="@cdktf/provider-gitlab.user.UserConfig.property.externalProvider"></a>
-
-```csharp
-public string ExternalProvider { get; set; }
-```
-
-- *Type:* string
-
-String, the external provider.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#external_provider User#external_provider}
-
----
-
-##### `ExternUid`<sup>Optional</sup> <a name="ExternUid" id="@cdktf/provider-gitlab.user.UserConfig.property.externUid"></a>
-
-```csharp
-public string ExternUid { get; set; }
-```
-
-- *Type:* string
-
-String, a specific external authentication provider UID.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#extern_uid User#extern_uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#can_create_group User#can_create_group}
 
 ---
 
@@ -1364,7 +1274,7 @@ public object ForceRandomPassword { get; set; }
 
 Set user password to a random value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#force_random_password User#force_random_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#force_random_password User#force_random_password}
 
 ---
 
@@ -1376,7 +1286,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#id User#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#id User#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1393,7 +1303,7 @@ public object IsAdmin { get; set; }
 
 Boolean, defaults to false.  Whether to enable administrative privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#is_admin User#is_admin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#is_admin User#is_admin}
 
 ---
 
@@ -1409,7 +1319,7 @@ Boolean, defaults to false.
 
 Whether a user has access only to some internal or private projects. External users can only access projects to which they are explicitly granted access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#is_external User#is_external}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#is_external User#is_external}
 
 ---
 
@@ -1423,7 +1333,7 @@ public double NamespaceId { get; set; }
 
 The ID of the user's namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#namespace_id User#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#namespace_id User#namespace_id}
 
 ---
 
@@ -1437,7 +1347,7 @@ public string Note { get; set; }
 
 The note associated to the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#note User#note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#note User#note}
 
 ---
 
@@ -1451,7 +1361,7 @@ public string Password { get; set; }
 
 The password of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#password User#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#password User#password}
 
 ---
 
@@ -1465,7 +1375,7 @@ public double ProjectsLimit { get; set; }
 
 Integer, defaults to 0.  Number of projects user can create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#projects_limit User#projects_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#projects_limit User#projects_limit}
 
 ---
 
@@ -1479,7 +1389,7 @@ public object ResetPassword { get; set; }
 
 Boolean, defaults to false. Send user password reset link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#reset_password User#reset_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#reset_password User#reset_password}
 
 ---
 
@@ -1493,7 +1403,7 @@ public object SkipConfirmation { get; set; }
 
 Boolean, defaults to true. Whether to skip confirmation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#skip_confirmation User#skip_confirmation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#skip_confirmation User#skip_confirmation}
 
 ---
 
@@ -1507,7 +1417,7 @@ public string State { get; set; }
 
 String, defaults to 'active'. The state of the user account. Valid values are `active`, `deactivated`, `blocked`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#state User#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#state User#state}
 
 ---
 

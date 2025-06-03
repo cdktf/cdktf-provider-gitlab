@@ -4,7 +4,7 @@
 
 ### InstanceServiceAccount <a name="InstanceServiceAccount" id="@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/instance_service_account gitlab_instance_service_account}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/instance_service_account gitlab_instance_service_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccount.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccount.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccount.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccount.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccount.resetEmail">ResetEmail</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccount.resetName">ResetName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccount.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccount.resetUsername">ResetUsername</a></code> | *No description.* |
@@ -380,6 +381,12 @@ func PutTimeouts(value InstanceServiceAccountTimeouts)
 
 ---
 
+##### `ResetEmail` <a name="ResetEmail" id="@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccount.resetEmail"></a>
+
+```go
+func ResetEmail()
+```
+
 ##### `ResetName` <a name="ResetName" id="@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccount.resetName"></a>
 
 ```go
@@ -501,7 +508,7 @@ The construct id used in the generated config for the InstanceServiceAccount to 
 
 The id of the existing InstanceServiceAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/instance_service_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/instance_service_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -534,9 +541,11 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1
 | <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccount.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccount.property.serviceAccountId">ServiceAccountId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccount.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccountTimeoutsOutputReference">InstanceServiceAccountTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccount.property.emailInput">EmailInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccount.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccount.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccount.property.usernameInput">UsernameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccount.property.email">Email</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccount.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccount.property.username">Username</a></code> | <code>*string</code> | *No description.* |
 
@@ -714,6 +723,16 @@ func Timeouts() InstanceServiceAccountTimeoutsOutputReference
 
 ---
 
+##### `EmailInput`<sup>Optional</sup> <a name="EmailInput" id="@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccount.property.emailInput"></a>
+
+```go
+func EmailInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccount.property.nameInput"></a>
 
 ```go
@@ -738,6 +757,16 @@ func TimeoutsInput() interface{}
 
 ```go
 func UsernameInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Email`<sup>Required</sup> <a name="Email" id="@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccount.property.email"></a>
+
+```go
+func Email() *string
 ```
 
 - *Type:* *string
@@ -799,6 +828,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/instanceserviceacco
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
+	Email: *string,
 	Name: *string,
 	Timeouts: github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15.instanceServiceAccount.InstanceServiceAccountTimeouts,
 	Username: *string,
@@ -816,9 +846,10 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/instanceserviceacco
 | <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccountConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccountConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccountConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccountConfig.property.name">Name</a></code> | <code>*string</code> | The name of the user. If not specified, the default Service account user name is used. |
-| <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccountConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccountTimeouts">InstanceServiceAccountTimeouts</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/instance_service_account#timeouts InstanceServiceAccount#timeouts}. |
-| <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccountConfig.property.username">Username</a></code> | <code>*string</code> | The username of the user. If not specified, it’s automatically generated. |
+| <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccountConfig.property.email">Email</a></code> | <code>*string</code> | The email of the user account. If not set, generates a no-reply email address. |
+| <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccountConfig.property.name">Name</a></code> | <code>*string</code> | The name of the user. If not set, uses Service account user. |
+| <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccountConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccountTimeouts">InstanceServiceAccountTimeouts</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/instance_service_account#timeouts InstanceServiceAccount#timeouts}. |
+| <code><a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccountConfig.property.username">Username</a></code> | <code>*string</code> | The username of the user account. If not set, generates a name prepended with service_account_. |
 
 ---
 
@@ -892,6 +923,20 @@ Provisioners *[]interface{}
 
 ---
 
+##### `Email`<sup>Optional</sup> <a name="Email" id="@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccountConfig.property.email"></a>
+
+```go
+Email *string
+```
+
+- *Type:* *string
+
+The email of the user account. If not set, generates a no-reply email address.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/instance_service_account#email InstanceServiceAccount#email}
+
+---
+
 ##### `Name`<sup>Optional</sup> <a name="Name" id="@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccountConfig.property.name"></a>
 
 ```go
@@ -900,9 +945,9 @@ Name *string
 
 - *Type:* *string
 
-The name of the user. If not specified, the default Service account user name is used.
+The name of the user. If not set, uses Service account user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/instance_service_account#name InstanceServiceAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/instance_service_account#name InstanceServiceAccount#name}
 
 ---
 
@@ -914,7 +959,7 @@ Timeouts InstanceServiceAccountTimeouts
 
 - *Type:* <a href="#@cdktf/provider-gitlab.instanceServiceAccount.InstanceServiceAccountTimeouts">InstanceServiceAccountTimeouts</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/instance_service_account#timeouts InstanceServiceAccount#timeouts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/instance_service_account#timeouts InstanceServiceAccount#timeouts}.
 
 ---
 
@@ -926,9 +971,9 @@ Username *string
 
 - *Type:* *string
 
-The username of the user. If not specified, it’s automatically generated.
+The username of the user account. If not set, generates a name prepended with service_account_.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/instance_service_account#username InstanceServiceAccount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/instance_service_account#username InstanceServiceAccount#username}
 
 ---
 
@@ -962,7 +1007,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/instance_service_account#delete InstanceServiceAccount#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/instance_service_account#delete InstanceServiceAccount#delete}
 
 ---
 

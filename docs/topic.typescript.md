@@ -4,7 +4,7 @@
 
 ### Topic <a name="Topic" id="@cdktf/provider-gitlab.topic.Topic"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/topic gitlab_topic}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/topic gitlab_topic}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.topic.Topic.Initializer"></a>
 
@@ -77,8 +77,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.topic.Topic.resetAvatarHash">resetAvatarHash</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.topic.Topic.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.topic.Topic.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.topic.Topic.resetSoftDestroy">resetSoftDestroy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.topic.Topic.resetTitle">resetTitle</a></code> | *No description.* |
 
 ---
 
@@ -394,18 +392,6 @@ public resetDescription(): void
 public resetId(): void
 ```
 
-##### `resetSoftDestroy` <a name="resetSoftDestroy" id="@cdktf/provider-gitlab.topic.Topic.resetSoftDestroy"></a>
-
-```typescript
-public resetSoftDestroy(): void
-```
-
-##### `resetTitle` <a name="resetTitle" id="@cdktf/provider-gitlab.topic.Topic.resetTitle"></a>
-
-```typescript
-public resetTitle(): void
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -509,7 +495,7 @@ The construct id used in the generated config for the Topic to import.
 
 The id of the existing Topic that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/topic#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/topic#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -545,14 +531,12 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.1
 | <code><a href="#@cdktf/provider-gitlab.topic.Topic.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.topic.Topic.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.topic.Topic.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.topic.Topic.property.softDestroyInput">softDestroyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.topic.Topic.property.titleInput">titleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.topic.Topic.property.avatar">avatar</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.topic.Topic.property.avatarHash">avatarHash</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.topic.Topic.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.topic.Topic.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.topic.Topic.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.topic.Topic.property.softDestroy">softDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.topic.Topic.property.title">title</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -759,16 +743,6 @@ public readonly nameInput: string;
 
 ---
 
-##### `softDestroyInput`<sup>Optional</sup> <a name="softDestroyInput" id="@cdktf/provider-gitlab.topic.Topic.property.softDestroyInput"></a>
-
-```typescript
-public readonly softDestroyInput: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktf.IResolvable
-
----
-
 ##### `titleInput`<sup>Optional</sup> <a name="titleInput" id="@cdktf/provider-gitlab.topic.Topic.property.titleInput"></a>
 
 ```typescript
@@ -829,16 +803,6 @@ public readonly name: string;
 
 ---
 
-##### `softDestroy`<sup>Required</sup> <a name="softDestroy" id="@cdktf/provider-gitlab.topic.Topic.property.softDestroy"></a>
-
-```typescript
-public readonly softDestroy: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktf.IResolvable
-
----
-
 ##### `title`<sup>Required</sup> <a name="title" id="@cdktf/provider-gitlab.topic.Topic.property.title"></a>
 
 ```typescript
@@ -891,12 +855,11 @@ const topicConfig: topic.TopicConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.name">name</a></code> | <code>string</code> | The topic's name. |
+| <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.title">title</a></code> | <code>string</code> | The topic's description. |
 | <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.avatar">avatar</a></code> | <code>string</code> | A local path to the avatar image to upload. **Note**: not available for imported resources. |
 | <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.avatarHash">avatarHash</a></code> | <code>string</code> | The hash of the avatar image. |
 | <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.description">description</a></code> | <code>string</code> | A text describing the topic. |
-| <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/topic#id Topic#id}. |
-| <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.softDestroy">softDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Empty the topics fields instead of deleting it. |
-| <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.title">title</a></code> | <code>string</code> | The topic's description. Requires at least GitLab 15.0 for which it's a required argument. |
+| <code><a href="#@cdktf/provider-gitlab.topic.TopicConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/topic#id Topic#id}. |
 
 ---
 
@@ -980,7 +943,21 @@ public readonly name: string;
 
 The topic's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/topic#name Topic#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/topic#name Topic#name}
+
+---
+
+##### `title`<sup>Required</sup> <a name="title" id="@cdktf/provider-gitlab.topic.TopicConfig.property.title"></a>
+
+```typescript
+public readonly title: string;
+```
+
+- *Type:* string
+
+The topic's description.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/topic#title Topic#title}
 
 ---
 
@@ -994,7 +971,7 @@ public readonly avatar: string;
 
 A local path to the avatar image to upload. **Note**: not available for imported resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/topic#avatar Topic#avatar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/topic#avatar Topic#avatar}
 
 ---
 
@@ -1010,7 +987,7 @@ The hash of the avatar image.
 
 Use `filesha256("path/to/avatar.png")` whenever possible. **Note**: this is used to trigger an update of the avatar. If it's not given, but an avatar is given, the avatar will be updated each time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/topic#avatar_hash Topic#avatar_hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/topic#avatar_hash Topic#avatar_hash}
 
 ---
 
@@ -1024,7 +1001,7 @@ public readonly description: string;
 
 A text describing the topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/topic#description Topic#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/topic#description Topic#description}
 
 ---
 
@@ -1036,38 +1013,10 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/topic#id Topic#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/topic#id Topic#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `softDestroy`<sup>Optional</sup> <a name="softDestroy" id="@cdktf/provider-gitlab.topic.TopicConfig.property.softDestroy"></a>
-
-```typescript
-public readonly softDestroy: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktf.IResolvable
-
-Empty the topics fields instead of deleting it.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/topic#soft_destroy Topic#soft_destroy}
-
----
-
-##### `title`<sup>Optional</sup> <a name="title" id="@cdktf/provider-gitlab.topic.TopicConfig.property.title"></a>
-
-```typescript
-public readonly title: string;
-```
-
-- *Type:* string
-
-The topic's description. Requires at least GitLab 15.0 for which it's a required argument.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/topic#title Topic#title}
 
 ---
 
