@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/topic
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/topic
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,23 @@ export interface TopicConfig extends cdktf.TerraformMetaArguments {
   /**
   * A local path to the avatar image to upload. **Note**: not available for imported resources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/topic#avatar Topic#avatar}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/topic#avatar Topic#avatar}
   */
   readonly avatar?: string;
   /**
   * The hash of the avatar image. Use `filesha256("path/to/avatar.png")` whenever possible. **Note**: this is used to trigger an update of the avatar. If it's not given, but an avatar is given, the avatar will be updated each time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/topic#avatar_hash Topic#avatar_hash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/topic#avatar_hash Topic#avatar_hash}
   */
   readonly avatarHash?: string;
   /**
   * A text describing the topic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/topic#description Topic#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/topic#description Topic#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/topic#id Topic#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/topic#id Topic#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,25 +35,19 @@ export interface TopicConfig extends cdktf.TerraformMetaArguments {
   /**
   * The topic's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/topic#name Topic#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/topic#name Topic#name}
   */
   readonly name: string;
   /**
-  * Empty the topics fields instead of deleting it.
+  * The topic's description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/topic#soft_destroy Topic#soft_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/topic#title Topic#title}
   */
-  readonly softDestroy?: boolean | cdktf.IResolvable;
-  /**
-  * The topic's description. Requires at least GitLab 15.0 for which it's a required argument.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/topic#title Topic#title}
-  */
-  readonly title?: string;
+  readonly title: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/topic gitlab_topic}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/topic gitlab_topic}
 */
 export class Topic extends cdktf.TerraformResource {
 
@@ -74,7 +63,7 @@ export class Topic extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Topic resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Topic to import
-  * @param importFromId The id of the existing Topic that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/topic#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Topic that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/topic#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Topic to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -86,7 +75,7 @@ export class Topic extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/topic gitlab_topic} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/topic gitlab_topic} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,8 +86,8 @@ export class Topic extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_topic',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.11.0',
-        providerVersionConstraint: '~> 17.0'
+        providerVersion: '18.0.0',
+        providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -113,7 +102,6 @@ export class Topic extends cdktf.TerraformResource {
     this._description = config.description;
     this._id = config.id;
     this._name = config.name;
-    this._softDestroy = config.softDestroy;
     this._title = config.title;
   }
 
@@ -203,32 +191,13 @@ export class Topic extends cdktf.TerraformResource {
     return this._name;
   }
 
-  // soft_destroy - computed: false, optional: true, required: false
-  private _softDestroy?: boolean | cdktf.IResolvable; 
-  public get softDestroy() {
-    return this.getBooleanAttribute('soft_destroy');
-  }
-  public set softDestroy(value: boolean | cdktf.IResolvable) {
-    this._softDestroy = value;
-  }
-  public resetSoftDestroy() {
-    this._softDestroy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get softDestroyInput() {
-    return this._softDestroy;
-  }
-
-  // title - computed: false, optional: true, required: false
+  // title - computed: false, optional: false, required: true
   private _title?: string; 
   public get title() {
     return this.getStringAttribute('title');
   }
   public set title(value: string) {
     this._title = value;
-  }
-  public resetTitle() {
-    this._title = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get titleInput() {
@@ -246,7 +215,6 @@ export class Topic extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      soft_destroy: cdktf.booleanToTerraform(this._softDestroy),
       title: cdktf.stringToTerraform(this._title),
     };
   }
@@ -282,12 +250,6 @@ export class Topic extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      soft_destroy: {
-        value: cdktf.booleanToHclTerraform(this._softDestroy),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
       },
       title: {
         value: cdktf.stringToHclTerraform(this._title),

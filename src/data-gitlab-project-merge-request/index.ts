@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project_merge_request
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/project_merge_request
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +10,13 @@ export interface DataGitlabProjectMergeRequestConfig extends cdktf.TerraformMeta
   /**
   * The unique project level ID of the merge request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project_merge_request#iid DataGitlabProjectMergeRequest#iid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/project_merge_request#iid DataGitlabProjectMergeRequest#iid}
   */
   readonly iid: number;
   /**
   * The ID or path of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project_merge_request#project DataGitlabProjectMergeRequest#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/project_merge_request#project DataGitlabProjectMergeRequest#project}
   */
   readonly project: string;
 }
@@ -364,7 +359,7 @@ export class DataGitlabProjectMergeRequestClosedByOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project_merge_request gitlab_project_merge_request}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/project_merge_request gitlab_project_merge_request}
 */
 export class DataGitlabProjectMergeRequest extends cdktf.TerraformDataSource {
 
@@ -380,7 +375,7 @@ export class DataGitlabProjectMergeRequest extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGitlabProjectMergeRequest resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabProjectMergeRequest to import
-  * @param importFromId The id of the existing DataGitlabProjectMergeRequest that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project_merge_request#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabProjectMergeRequest that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/project_merge_request#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabProjectMergeRequest to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -392,7 +387,7 @@ export class DataGitlabProjectMergeRequest extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project_merge_request gitlab_project_merge_request} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/project_merge_request gitlab_project_merge_request} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -403,8 +398,8 @@ export class DataGitlabProjectMergeRequest extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_project_merge_request',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.11.0',
-        providerVersionConstraint: '~> 17.0'
+        providerVersion: '18.0.0',
+        providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,35 +10,23 @@ export interface UserConfig extends cdktf.TerraformMetaArguments {
   /**
   * Boolean, defaults to false. Whether to allow the user to create groups.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#can_create_group User#can_create_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#can_create_group User#can_create_group}
   */
   readonly canCreateGroup?: boolean | cdktf.IResolvable;
   /**
   * The e-mail address of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#email User#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#email User#email}
   */
   readonly email: string;
   /**
-  * String, a specific external authentication provider UID.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#extern_uid User#extern_uid}
-  */
-  readonly externUid?: string;
-  /**
-  * String, the external provider.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#external_provider User#external_provider}
-  */
-  readonly externalProvider?: string;
-  /**
   * Set user password to a random value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#force_random_password User#force_random_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#force_random_password User#force_random_password}
   */
   readonly forceRandomPassword?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#id User#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#id User#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,73 +35,73 @@ export interface UserConfig extends cdktf.TerraformMetaArguments {
   /**
   * Boolean, defaults to false.  Whether to enable administrative privileges
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#is_admin User#is_admin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#is_admin User#is_admin}
   */
   readonly isAdmin?: boolean | cdktf.IResolvable;
   /**
   * Boolean, defaults to false. Whether a user has access only to some internal or private projects. External users can only access projects to which they are explicitly granted access.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#is_external User#is_external}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#is_external User#is_external}
   */
   readonly isExternal?: boolean | cdktf.IResolvable;
   /**
   * The name of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#name User#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#name User#name}
   */
   readonly name: string;
   /**
   * The ID of the user's namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#namespace_id User#namespace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#namespace_id User#namespace_id}
   */
   readonly namespaceId?: number;
   /**
   * The note associated to the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#note User#note}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#note User#note}
   */
   readonly note?: string;
   /**
   * The password of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#password User#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#password User#password}
   */
   readonly password?: string;
   /**
   * Integer, defaults to 0.  Number of projects user can create.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#projects_limit User#projects_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#projects_limit User#projects_limit}
   */
   readonly projectsLimit?: number;
   /**
   * Boolean, defaults to false. Send user password reset link.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#reset_password User#reset_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#reset_password User#reset_password}
   */
   readonly resetPassword?: boolean | cdktf.IResolvable;
   /**
   * Boolean, defaults to true. Whether to skip confirmation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#skip_confirmation User#skip_confirmation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#skip_confirmation User#skip_confirmation}
   */
   readonly skipConfirmation?: boolean | cdktf.IResolvable;
   /**
   * String, defaults to 'active'. The state of the user account. Valid values are `active`, `deactivated`, `blocked`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#state User#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#state User#state}
   */
   readonly state?: string;
   /**
   * The username of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#username User#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#username User#username}
   */
   readonly username: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user gitlab_user}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user gitlab_user}
 */
 export class User extends cdktf.TerraformResource {
 
@@ -134,7 +117,7 @@ export class User extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a User resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the User to import
-  * @param importFromId The id of the existing User that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing User that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the User to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -146,7 +129,7 @@ export class User extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user gitlab_user} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user gitlab_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -157,8 +140,8 @@ export class User extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_user',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.11.0',
-        providerVersionConstraint: '~> 17.0'
+        providerVersion: '18.0.0',
+        providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -170,8 +153,6 @@ export class User extends cdktf.TerraformResource {
     });
     this._canCreateGroup = config.canCreateGroup;
     this._email = config.email;
-    this._externUid = config.externUid;
-    this._externalProvider = config.externalProvider;
     this._forceRandomPassword = config.forceRandomPassword;
     this._id = config.id;
     this._isAdmin = config.isAdmin;
@@ -218,38 +199,6 @@ export class User extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get emailInput() {
     return this._email;
-  }
-
-  // extern_uid - computed: false, optional: true, required: false
-  private _externUid?: string; 
-  public get externUid() {
-    return this.getStringAttribute('extern_uid');
-  }
-  public set externUid(value: string) {
-    this._externUid = value;
-  }
-  public resetExternUid() {
-    this._externUid = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get externUidInput() {
-    return this._externUid;
-  }
-
-  // external_provider - computed: false, optional: true, required: false
-  private _externalProvider?: string; 
-  public get externalProvider() {
-    return this.getStringAttribute('external_provider');
-  }
-  public set externalProvider(value: string) {
-    this._externalProvider = value;
-  }
-  public resetExternalProvider() {
-    this._externalProvider = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get externalProviderInput() {
-    return this._externalProvider;
   }
 
   // force_random_password - computed: false, optional: true, required: false
@@ -462,8 +411,6 @@ export class User extends cdktf.TerraformResource {
     return {
       can_create_group: cdktf.booleanToTerraform(this._canCreateGroup),
       email: cdktf.stringToTerraform(this._email),
-      extern_uid: cdktf.stringToTerraform(this._externUid),
-      external_provider: cdktf.stringToTerraform(this._externalProvider),
       force_random_password: cdktf.booleanToTerraform(this._forceRandomPassword),
       id: cdktf.stringToTerraform(this._id),
       is_admin: cdktf.booleanToTerraform(this._isAdmin),
@@ -490,18 +437,6 @@ export class User extends cdktf.TerraformResource {
       },
       email: {
         value: cdktf.stringToHclTerraform(this._email),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      extern_uid: {
-        value: cdktf.stringToHclTerraform(this._externUid),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      external_provider: {
-        value: cdktf.stringToHclTerraform(this._externalProvider),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
