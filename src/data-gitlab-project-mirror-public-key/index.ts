@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project_mirror_public_key
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/project_mirror_public_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface DataGitlabProjectMirrorPublicKeyConfig extends cdktf.TerraformM
   /**
   * The id of the remote mirror.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project_mirror_public_key#mirror_id DataGitlabProjectMirrorPublicKey#mirror_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/project_mirror_public_key#mirror_id DataGitlabProjectMirrorPublicKey#mirror_id}
   */
   readonly mirrorId: number;
   /**
   * The integer or path with namespace that uniquely identifies the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project_mirror_public_key#project_id DataGitlabProjectMirrorPublicKey#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/project_mirror_public_key#project_id DataGitlabProjectMirrorPublicKey#project_id}
   */
   readonly projectId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project_mirror_public_key gitlab_project_mirror_public_key}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/project_mirror_public_key gitlab_project_mirror_public_key}
 */
 export class DataGitlabProjectMirrorPublicKey extends cdktf.TerraformDataSource {
 
@@ -43,7 +43,7 @@ export class DataGitlabProjectMirrorPublicKey extends cdktf.TerraformDataSource 
   * Generates CDKTF code for importing a DataGitlabProjectMirrorPublicKey resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabProjectMirrorPublicKey to import
-  * @param importFromId The id of the existing DataGitlabProjectMirrorPublicKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project_mirror_public_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabProjectMirrorPublicKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/project_mirror_public_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabProjectMirrorPublicKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +55,7 @@ export class DataGitlabProjectMirrorPublicKey extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project_mirror_public_key gitlab_project_mirror_public_key} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/project_mirror_public_key gitlab_project_mirror_public_key} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,8 +66,8 @@ export class DataGitlabProjectMirrorPublicKey extends cdktf.TerraformDataSource 
       terraformResourceType: 'gitlab_project_mirror_public_key',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.11.0',
-        providerVersionConstraint: '~> 17.0'
+        providerVersion: '18.0.0',
+        providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

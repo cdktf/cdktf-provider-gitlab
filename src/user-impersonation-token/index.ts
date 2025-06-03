@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_impersonation_token
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user_impersonation_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface UserImpersonationTokenConfig extends cdktf.TerraformMetaArgumen
   /**
   * Expiration date of the impersonation token in ISO format (YYYY-MM-DD).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_impersonation_token#expires_at UserImpersonationToken#expires_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user_impersonation_token#expires_at UserImpersonationToken#expires_at}
   */
   readonly expiresAt: string;
   /**
   * The name of the impersonation token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_impersonation_token#name UserImpersonationToken#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user_impersonation_token#name UserImpersonationToken#name}
   */
   readonly name: string;
   /**
-  * Array of scopes of the impersonation token. valid values are: `api`, `read_user`, `read_api`, `read_repository`, `write_repository`, `read_registry`, `write_registry`, `sudo`, `admin_mode`, `create_runner`, `manage_runner`, `ai_features`, `k8s_proxy`, `read_service_ping`
+  * Array of scopes of the impersonation token. valid values are: `api`, `read_user`, `read_api`, `read_repository`, `write_repository`, `read_registry`, `write_registry`, `read_virtual_registry`, `write_virtual_registry`, `sudo`, `admin_mode`, `create_runner`, `manage_runner`, `ai_features`, `k8s_proxy`, `self_rotate`, `read_service_ping`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_impersonation_token#scopes UserImpersonationToken#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user_impersonation_token#scopes UserImpersonationToken#scopes}
   */
   readonly scopes: string[];
   /**
   * The ID of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_impersonation_token#user_id UserImpersonationToken#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user_impersonation_token#user_id UserImpersonationToken#user_id}
   */
   readonly userId: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_impersonation_token gitlab_user_impersonation_token}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user_impersonation_token gitlab_user_impersonation_token}
 */
 export class UserImpersonationToken extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class UserImpersonationToken extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a UserImpersonationToken resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the UserImpersonationToken to import
-  * @param importFromId The id of the existing UserImpersonationToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_impersonation_token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing UserImpersonationToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user_impersonation_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the UserImpersonationToken to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +67,7 @@ export class UserImpersonationToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/resources/user_impersonation_token gitlab_user_impersonation_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/user_impersonation_token gitlab_user_impersonation_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,8 +78,8 @@ export class UserImpersonationToken extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_user_impersonation_token',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.11.0',
-        providerVersionConstraint: '~> 17.0'
+        providerVersion: '18.0.0',
+        providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

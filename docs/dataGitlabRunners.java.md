@@ -4,7 +4,7 @@
 
 ### DataGitlabRunners <a name="DataGitlabRunners" id="@cdktf/provider-gitlab.dataGitlabRunners.DataGitlabRunners"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/runners gitlab_runners}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/runners gitlab_runners}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabRunners.DataGitlabRunners.Initializer"></a>
 
@@ -115,7 +115,7 @@ Must be unique amongst siblings in the same scope
 
 Filters for runners with the given paused value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/runners#paused DataGitlabRunners#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/runners#paused DataGitlabRunners#paused}
 
 ---
 
@@ -125,7 +125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Filters for runners with the given status. Valid Values are `online`, `offline`, `stale`, and `never_contacted`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/runners#status DataGitlabRunners#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/runners#status DataGitlabRunners#status}
 
 ---
 
@@ -135,7 +135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Filters for runners with all of the given tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/runners#tag_list DataGitlabRunners#tag_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/runners#tag_list DataGitlabRunners#tag_list}
 
 ---
 
@@ -145,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The type of runner to return. Valid values are `instance_type`, `group_type` and `project_type`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/runners#type DataGitlabRunners#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/runners#type DataGitlabRunners#type}
 
 ---
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the DataGitlabRunners to impor
 
 The id of the existing DataGitlabRunners that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/runners#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/runners#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -904,7 +904,7 @@ public java.lang.Object getPaused();
 
 Filters for runners with the given paused value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/runners#paused DataGitlabRunners#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/runners#paused DataGitlabRunners#paused}
 
 ---
 
@@ -918,7 +918,7 @@ public java.lang.String getStatus();
 
 Filters for runners with the given status. Valid Values are `online`, `offline`, `stale`, and `never_contacted`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/runners#status DataGitlabRunners#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/runners#status DataGitlabRunners#status}
 
 ---
 
@@ -932,7 +932,7 @@ public java.util.List<java.lang.String> getTagList();
 
 Filters for runners with all of the given tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/runners#tag_list DataGitlabRunners#tag_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/runners#tag_list DataGitlabRunners#tag_list}
 
 ---
 
@@ -946,7 +946,7 @@ public java.lang.String getType();
 
 The type of runner to return. Valid values are `instance_type`, `group_type` and `project_type`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/runners#type DataGitlabRunners#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/runners#type DataGitlabRunners#type}
 
 ---
 

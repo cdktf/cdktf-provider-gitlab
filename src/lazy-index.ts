@@ -48,6 +48,7 @@ Object.defineProperty(exports, 'integrationJira', { get: function () { return re
 Object.defineProperty(exports, 'integrationMattermost', { get: function () { return require('./integration-mattermost'); } });
 Object.defineProperty(exports, 'integrationMicrosoftTeams', { get: function () { return require('./integration-microsoft-teams'); } });
 Object.defineProperty(exports, 'integrationPipelinesEmail', { get: function () { return require('./integration-pipelines-email'); } });
+Object.defineProperty(exports, 'integrationRedmine', { get: function () { return require('./integration-redmine'); } });
 Object.defineProperty(exports, 'integrationSlack', { get: function () { return require('./integration-slack'); } });
 Object.defineProperty(exports, 'integrationTelegram', { get: function () { return require('./integration-telegram'); } });
 Object.defineProperty(exports, 'label', { get: function () { return require('./label'); } });
@@ -62,7 +63,6 @@ Object.defineProperty(exports, 'projectAccessToken', { get: function () { return
 Object.defineProperty(exports, 'projectApprovalRule', { get: function () { return require('./project-approval-rule'); } });
 Object.defineProperty(exports, 'projectBadge', { get: function () { return require('./project-badge'); } });
 Object.defineProperty(exports, 'projectCluster', { get: function () { return require('./project-cluster'); } });
-Object.defineProperty(exports, 'projectComplianceFramework', { get: function () { return require('./project-compliance-framework'); } });
 Object.defineProperty(exports, 'projectComplianceFrameworks', { get: function () { return require('./project-compliance-frameworks'); } });
 Object.defineProperty(exports, 'projectCustomAttribute', { get: function () { return require('./project-custom-attribute'); } });
 Object.defineProperty(exports, 'projectEnvironment', { get: function () { return require('./project-environment'); } });
@@ -91,14 +91,6 @@ Object.defineProperty(exports, 'release', { get: function () { return require('.
 Object.defineProperty(exports, 'releaseLink', { get: function () { return require('./release-link'); } });
 Object.defineProperty(exports, 'repositoryFile', { get: function () { return require('./repository-file'); } });
 Object.defineProperty(exports, 'runner', { get: function () { return require('./runner'); } });
-Object.defineProperty(exports, 'serviceCustomIssueTracker', { get: function () { return require('./service-custom-issue-tracker'); } });
-Object.defineProperty(exports, 'serviceEmailsOnPush', { get: function () { return require('./service-emails-on-push'); } });
-Object.defineProperty(exports, 'serviceExternalWiki', { get: function () { return require('./service-external-wiki'); } });
-Object.defineProperty(exports, 'serviceGithub', { get: function () { return require('./service-github'); } });
-Object.defineProperty(exports, 'serviceJira', { get: function () { return require('./service-jira'); } });
-Object.defineProperty(exports, 'serviceMicrosoftTeams', { get: function () { return require('./service-microsoft-teams'); } });
-Object.defineProperty(exports, 'servicePipelinesEmail', { get: function () { return require('./service-pipelines-email'); } });
-Object.defineProperty(exports, 'serviceSlack', { get: function () { return require('./service-slack'); } });
 Object.defineProperty(exports, 'systemHook', { get: function () { return require('./system-hook'); } });
 Object.defineProperty(exports, 'tagProtection', { get: function () { return require('./tag-protection'); } });
 Object.defineProperty(exports, 'topic', { get: function () { return require('./topic'); } });

@@ -4,7 +4,7 @@
 
 ### DataGitlabProjectMergeRequest <a name="DataGitlabProjectMergeRequest" id="@cdktf/provider-gitlab.dataGitlabProjectMergeRequest.DataGitlabProjectMergeRequest"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project_merge_request gitlab_project_merge_request}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/project_merge_request gitlab_project_merge_request}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectMergeRequest.DataGitlabProjectMergeRequest.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The unique project level ID of the merge request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project_merge_request#iid DataGitlabProjectMergeRequest#iid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/project_merge_request#iid DataGitlabProjectMergeRequest#iid}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The ID or path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project_merge_request#project DataGitlabProjectMergeRequest#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/project_merge_request#project DataGitlabProjectMergeRequest#project}
 
 ---
 
@@ -443,7 +443,7 @@ The construct id used in the generated config for the DataGitlabProjectMergeRequ
 
 The id of the existing DataGitlabProjectMergeRequest that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project_merge_request#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/project_merge_request#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -927,7 +927,7 @@ public java.lang.Number getIid();
 
 The unique project level ID of the merge request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project_merge_request#iid DataGitlabProjectMergeRequest#iid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/project_merge_request#iid DataGitlabProjectMergeRequest#iid}
 
 ---
 
@@ -941,7 +941,7 @@ public java.lang.String getProject();
 
 The ID or path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/project_merge_request#project DataGitlabProjectMergeRequest#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/project_merge_request#project DataGitlabProjectMergeRequest#project}
 
 ---
 

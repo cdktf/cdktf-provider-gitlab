@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/runners
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/runners
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface DataGitlabRunnersConfig extends cdktf.TerraformMetaArguments {
   /**
   * Filters for runners with the given paused value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/runners#paused DataGitlabRunners#paused}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/runners#paused DataGitlabRunners#paused}
   */
   readonly paused?: boolean | cdktf.IResolvable;
   /**
   * Filters for runners with the given status. Valid Values are `online`, `offline`, `stale`, and `never_contacted`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/runners#status DataGitlabRunners#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/runners#status DataGitlabRunners#status}
   */
   readonly status?: string;
   /**
   * Filters for runners with all of the given tags
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/runners#tag_list DataGitlabRunners#tag_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/runners#tag_list DataGitlabRunners#tag_list}
   */
   readonly tagList?: string[];
   /**
   * The type of runner to return. Valid values are `instance_type`, `group_type` and `project_type`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/runners#type DataGitlabRunners#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/runners#type DataGitlabRunners#type}
   */
   readonly type?: string;
 }
@@ -144,7 +144,7 @@ export class DataGitlabRunnersRunnersList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/runners gitlab_runners}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/runners gitlab_runners}
 */
 export class DataGitlabRunners extends cdktf.TerraformDataSource {
 
@@ -160,7 +160,7 @@ export class DataGitlabRunners extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGitlabRunners resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabRunners to import
-  * @param importFromId The id of the existing DataGitlabRunners that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/runners#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabRunners that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/runners#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabRunners to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -172,7 +172,7 @@ export class DataGitlabRunners extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/17.11.0/docs/data-sources/runners gitlab_runners} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/data-sources/runners gitlab_runners} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -183,8 +183,8 @@ export class DataGitlabRunners extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_runners',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '17.11.0',
-        providerVersionConstraint: '~> 17.0'
+        providerVersion: '18.0.0',
+        providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
