@@ -4,7 +4,7 @@
 
 ### DeployKey <a name="DeployKey" id="@cdktf/provider-gitlab.deployKey.DeployKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/deploy_key gitlab_deploy_key}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/deploy_key gitlab_deploy_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.deployKey.DeployKey.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.resetCanPush">ResetCanPush</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.resetExpiresAt">ResetExpiresAt</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.resetId">ResetId</a></code> | *No description.* |
 
 ---
@@ -372,6 +373,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetCanPush()
 ```
 
+##### `ResetExpiresAt` <a name="ResetExpiresAt" id="@cdktf/provider-gitlab.deployKey.DeployKey.resetExpiresAt"></a>
+
+```go
+func ResetExpiresAt()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-gitlab.deployKey.DeployKey.resetId"></a>
 
 ```go
@@ -481,7 +488,7 @@ The construct id used in the generated config for the DeployKey to import.
 
 The id of the existing DeployKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/deploy_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/deploy_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -513,11 +520,13 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.property.deployKeyId">DeployKeyId</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.property.canPushInput">CanPushInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.property.expiresAtInput">ExpiresAtInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.property.keyInput">KeyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.property.titleInput">TitleInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.property.canPush">CanPush</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.property.expiresAt">ExpiresAt</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.property.key">Key</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.property.project">Project</a></code> | <code>*string</code> | *No description.* |
@@ -687,6 +696,16 @@ func CanPushInput() interface{}
 
 ---
 
+##### `ExpiresAtInput`<sup>Optional</sup> <a name="ExpiresAtInput" id="@cdktf/provider-gitlab.deployKey.DeployKey.property.expiresAtInput"></a>
+
+```go
+func ExpiresAtInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-gitlab.deployKey.DeployKey.property.idInput"></a>
 
 ```go
@@ -734,6 +753,16 @@ func CanPush() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `ExpiresAt`<sup>Required</sup> <a name="ExpiresAt" id="@cdktf/provider-gitlab.deployKey.DeployKey.property.expiresAt"></a>
+
+```go
+func ExpiresAt() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -816,6 +845,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/deploykey"
 	Project: *string,
 	Title: *string,
 	CanPush: interface{},
+	ExpiresAt: *string,
 	Id: *string,
 }
 ```
@@ -835,7 +865,8 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/deploykey"
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKeyConfig.property.project">Project</a></code> | <code>*string</code> | The name or id of the project to add the deploy key to. |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKeyConfig.property.title">Title</a></code> | <code>*string</code> | A title to describe the deploy key with. |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKeyConfig.property.canPush">CanPush</a></code> | <code>interface{}</code> | Allow this deploy key to be used to push changes to the project. Defaults to `false`. |
-| <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/deploy_key#id DeployKey#id}. |
+| <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKeyConfig.property.expiresAt">ExpiresAt</a></code> | <code>*string</code> | Expiration date for the deploy key. Does not expire if no value is provided. Expected in RFC3339 format `(2019-03-15T08:00:00Z)`. |
+| <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/deploy_key#id DeployKey#id}. |
 
 ---
 
@@ -919,7 +950,7 @@ Key *string
 
 The public ssh key body.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/deploy_key#key DeployKey#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/deploy_key#key DeployKey#key}
 
 ---
 
@@ -933,7 +964,7 @@ Project *string
 
 The name or id of the project to add the deploy key to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/deploy_key#project DeployKey#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/deploy_key#project DeployKey#project}
 
 ---
 
@@ -947,7 +978,7 @@ Title *string
 
 A title to describe the deploy key with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/deploy_key#title DeployKey#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/deploy_key#title DeployKey#title}
 
 ---
 
@@ -961,7 +992,21 @@ CanPush interface{}
 
 Allow this deploy key to be used to push changes to the project. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/deploy_key#can_push DeployKey#can_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/deploy_key#can_push DeployKey#can_push}
+
+---
+
+##### `ExpiresAt`<sup>Optional</sup> <a name="ExpiresAt" id="@cdktf/provider-gitlab.deployKey.DeployKeyConfig.property.expiresAt"></a>
+
+```go
+ExpiresAt *string
+```
+
+- *Type:* *string
+
+Expiration date for the deploy key. Does not expire if no value is provided. Expected in RFC3339 format `(2019-03-15T08:00:00Z)`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/deploy_key#expires_at DeployKey#expires_at}
 
 ---
 
@@ -973,7 +1018,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.0.0/docs/resources/deploy_key#id DeployKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/deploy_key#id DeployKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
