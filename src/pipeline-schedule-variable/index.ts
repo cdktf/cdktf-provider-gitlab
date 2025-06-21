@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/pipeline_schedule_variable
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/pipeline_schedule_variable
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface PipelineScheduleVariableConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/pipeline_schedule_variable#id PipelineScheduleVariable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/pipeline_schedule_variable#id PipelineScheduleVariable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,37 +22,37 @@ export interface PipelineScheduleVariableConfig extends cdktf.TerraformMetaArgum
   /**
   * Name of the variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/pipeline_schedule_variable#key PipelineScheduleVariable#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/pipeline_schedule_variable#key PipelineScheduleVariable#key}
   */
   readonly key: string;
   /**
   * The id of the pipeline schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/pipeline_schedule_variable#pipeline_schedule_id PipelineScheduleVariable#pipeline_schedule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/pipeline_schedule_variable#pipeline_schedule_id PipelineScheduleVariable#pipeline_schedule_id}
   */
   readonly pipelineScheduleId: number;
   /**
   * The id of the project to add the schedule to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/pipeline_schedule_variable#project PipelineScheduleVariable#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/pipeline_schedule_variable#project PipelineScheduleVariable#project}
   */
   readonly project: string;
   /**
   * Value of the variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/pipeline_schedule_variable#value PipelineScheduleVariable#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/pipeline_schedule_variable#value PipelineScheduleVariable#value}
   */
   readonly value: string;
   /**
   * The type of a variable. Available types are: `env_var`, `file`. Default is `env_var`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/pipeline_schedule_variable#variable_type PipelineScheduleVariable#variable_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/pipeline_schedule_variable#variable_type PipelineScheduleVariable#variable_type}
   */
   readonly variableType?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/pipeline_schedule_variable gitlab_pipeline_schedule_variable}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/pipeline_schedule_variable gitlab_pipeline_schedule_variable}
 */
 export class PipelineScheduleVariable extends cdktf.TerraformResource {
 
@@ -68,7 +68,7 @@ export class PipelineScheduleVariable extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a PipelineScheduleVariable resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PipelineScheduleVariable to import
-  * @param importFromId The id of the existing PipelineScheduleVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/pipeline_schedule_variable#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PipelineScheduleVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/pipeline_schedule_variable#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PipelineScheduleVariable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -80,7 +80,7 @@ export class PipelineScheduleVariable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/pipeline_schedule_variable gitlab_pipeline_schedule_variable} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/pipeline_schedule_variable gitlab_pipeline_schedule_variable} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +91,7 @@ export class PipelineScheduleVariable extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_pipeline_schedule_variable',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.1.0',
+        providerVersion: '18.1.1',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,
