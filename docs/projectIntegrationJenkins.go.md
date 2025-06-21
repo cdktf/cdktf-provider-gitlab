@@ -4,7 +4,7 @@
 
 ### ProjectIntegrationJenkins <a name="ProjectIntegrationJenkins" id="@cdktf/provider-gitlab.projectIntegrationJenkins.ProjectIntegrationJenkins"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_integration_jenkins gitlab_project_integration_jenkins}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_integration_jenkins gitlab_project_integration_jenkins}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectIntegrationJenkins.ProjectIntegrationJenkins.Initializer"></a>
 
@@ -509,7 +509,7 @@ The construct id used in the generated config for the ProjectIntegrationJenkins 
 
 The id of the existing ProjectIntegrationJenkins that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_integration_jenkins#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_integration_jenkins#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1054,7 +1054,7 @@ JenkinsUrl *string
 
 Jenkins URL like `http://jenkins.example.com`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_integration_jenkins#jenkins_url ProjectIntegrationJenkins#jenkins_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_integration_jenkins#jenkins_url ProjectIntegrationJenkins#jenkins_url}
 
 ---
 
@@ -1068,7 +1068,7 @@ Project *string
 
 ID of the project you want to activate integration on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_integration_jenkins#project ProjectIntegrationJenkins#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_integration_jenkins#project ProjectIntegrationJenkins#project}
 
 ---
 
@@ -1082,7 +1082,7 @@ ProjectName *string
 
 The URL-friendly project name. Example: `my_project_name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_integration_jenkins#project_name ProjectIntegrationJenkins#project_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_integration_jenkins#project_name ProjectIntegrationJenkins#project_name}
 
 ---
 
@@ -1096,7 +1096,7 @@ EnableSslVerification interface{}
 
 Enable SSL verification. Defaults to `true` (enabled).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_integration_jenkins#enable_ssl_verification ProjectIntegrationJenkins#enable_ssl_verification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_integration_jenkins#enable_ssl_verification ProjectIntegrationJenkins#enable_ssl_verification}
 
 ---
 
@@ -1110,7 +1110,7 @@ MergeRequestEvents interface{}
 
 Enable notifications for merge request events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_integration_jenkins#merge_request_events ProjectIntegrationJenkins#merge_request_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_integration_jenkins#merge_request_events ProjectIntegrationJenkins#merge_request_events}
 
 ---
 
@@ -1124,7 +1124,7 @@ Password *string
 
 Password for authentication with the Jenkins server, if authentication is required by the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_integration_jenkins#password ProjectIntegrationJenkins#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_integration_jenkins#password ProjectIntegrationJenkins#password}
 
 ---
 
@@ -1138,7 +1138,7 @@ PushEvents interface{}
 
 Enable notifications for push events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_integration_jenkins#push_events ProjectIntegrationJenkins#push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_integration_jenkins#push_events ProjectIntegrationJenkins#push_events}
 
 ---
 
@@ -1152,7 +1152,7 @@ TagPushEvents interface{}
 
 Enable notifications for tag push events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_integration_jenkins#tag_push_events ProjectIntegrationJenkins#tag_push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_integration_jenkins#tag_push_events ProjectIntegrationJenkins#tag_push_events}
 
 ---
 
@@ -1166,7 +1166,7 @@ Username *string
 
 Username for authentication with the Jenkins server, if authentication is required by the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_integration_jenkins#username ProjectIntegrationJenkins#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_integration_jenkins#username ProjectIntegrationJenkins#username}
 
 ---
 

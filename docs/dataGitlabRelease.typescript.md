@@ -4,7 +4,7 @@
 
 ### DataGitlabRelease <a name="DataGitlabRelease" id="@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabRelease"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/release gitlab_release}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/release gitlab_release}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabRelease.DataGitlabRelease.Initializer"></a>
 
@@ -385,7 +385,7 @@ The construct id used in the generated config for the DataGitlabRelease to impor
 
 The id of the existing DataGitlabRelease that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/release#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/release#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -708,7 +708,7 @@ public readonly links: IResolvable | DataGitlabReleaseAssetsLinks[];
 
 links block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/release#links DataGitlabRelease#links}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/release#links DataGitlabRelease#links}
 
 ---
 
@@ -722,7 +722,7 @@ public readonly sources: IResolvable | DataGitlabReleaseAssetsSources[];
 
 sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/release#sources DataGitlabRelease#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/release#sources DataGitlabRelease#sources}
 
 ---
 
@@ -855,7 +855,7 @@ public readonly projectId: string;
 
 The ID or URL-encoded path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/release#project_id DataGitlabRelease#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/release#project_id DataGitlabRelease#project_id}
 
 ---
 
@@ -869,7 +869,7 @@ public readonly tagName: string;
 
 The Git tag the release is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/release#tag_name DataGitlabRelease#tag_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/release#tag_name DataGitlabRelease#tag_name}
 
 ---
 
@@ -883,7 +883,7 @@ public readonly assets: DataGitlabReleaseAssets;
 
 assets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/release#assets DataGitlabRelease#assets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/release#assets DataGitlabRelease#assets}
 
 ---
 
