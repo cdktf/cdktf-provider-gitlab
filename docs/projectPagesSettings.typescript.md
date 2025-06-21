@@ -4,7 +4,7 @@
 
 ### ProjectPagesSettings <a name="ProjectPagesSettings" id="@cdktf/provider-gitlab.projectPagesSettings.ProjectPagesSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_pages_settings gitlab_project_pages_settings}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_pages_settings gitlab_project_pages_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectPagesSettings.ProjectPagesSettings.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the ProjectPagesSettings to im
 
 The id of the existing ProjectPagesSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_pages_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_pages_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -912,7 +912,7 @@ public readonly project: string;
 
 The project ID or path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_pages_settings#project ProjectPagesSettings#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_pages_settings#project ProjectPagesSettings#project}
 
 ---
 
@@ -928,7 +928,7 @@ Boolean indicating if the project is set to force https.
 
 Requires `external_https` to be configured in the GitLab instance: https://docs.gitlab.com/administration/pages/#custom-domains-with-tls-support.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_pages_settings#force_https ProjectPagesSettings#force_https}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_pages_settings#force_https ProjectPagesSettings#force_https}
 
 ---
 
@@ -942,7 +942,7 @@ public readonly isUniqueDomainEnabled: boolean | IResolvable;
 
 Boolean indicating if a unique domain is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_pages_settings#is_unique_domain_enabled ProjectPagesSettings#is_unique_domain_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_pages_settings#is_unique_domain_enabled ProjectPagesSettings#is_unique_domain_enabled}
 
 ---
 
@@ -956,7 +956,7 @@ public readonly keepSettingsOnDestroy: boolean | IResolvable;
 
 Set to true if the pages settings should not be reset to their pre-terraform defaults on destroy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/project_pages_settings#keep_settings_on_destroy ProjectPagesSettings#keep_settings_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/project_pages_settings#keep_settings_on_destroy ProjectPagesSettings#keep_settings_on_destroy}
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/project_protected_tag
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/project_protected_tag
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataGitlabProjectProtectedTagConfig extends cdktf.TerraformMeta
   /**
   * The integer or path with namespace that uniquely identifies the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/project_protected_tag#project DataGitlabProjectProtectedTag#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/project_protected_tag#project DataGitlabProjectProtectedTag#project}
   */
   readonly project: string;
   /**
   * The name of the protected tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/project_protected_tag#tag DataGitlabProjectProtectedTag#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/project_protected_tag#tag DataGitlabProjectProtectedTag#tag}
   */
   readonly tag: string;
 }
@@ -29,13 +29,13 @@ export interface DataGitlabProjectProtectedTagCreateAccessLevels {
   /**
   * The ID of a GitLab group allowed to perform the relevant action.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/project_protected_tag#group_id DataGitlabProjectProtectedTag#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/project_protected_tag#group_id DataGitlabProjectProtectedTag#group_id}
   */
   readonly groupId?: number;
   /**
   * The ID of a GitLab user allowed to perform the relevant action.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/project_protected_tag#user_id DataGitlabProjectProtectedTag#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/project_protected_tag#user_id DataGitlabProjectProtectedTag#user_id}
   */
   readonly userId?: number;
 }
@@ -185,7 +185,7 @@ export class DataGitlabProjectProtectedTagCreateAccessLevelsList extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/project_protected_tag gitlab_project_protected_tag}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/project_protected_tag gitlab_project_protected_tag}
 */
 export class DataGitlabProjectProtectedTag extends cdktf.TerraformDataSource {
 
@@ -201,7 +201,7 @@ export class DataGitlabProjectProtectedTag extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGitlabProjectProtectedTag resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabProjectProtectedTag to import
-  * @param importFromId The id of the existing DataGitlabProjectProtectedTag that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/project_protected_tag#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabProjectProtectedTag that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/project_protected_tag#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabProjectProtectedTag to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -213,7 +213,7 @@ export class DataGitlabProjectProtectedTag extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/project_protected_tag gitlab_project_protected_tag} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/project_protected_tag gitlab_project_protected_tag} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -224,7 +224,7 @@ export class DataGitlabProjectProtectedTag extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_project_protected_tag',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.1.0',
+        providerVersion: '18.1.1',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

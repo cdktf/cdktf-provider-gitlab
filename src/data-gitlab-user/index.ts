@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/user
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface DataGitlabUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * The public email address of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/user#email DataGitlabUser#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/user#email DataGitlabUser#email}
   */
   readonly email?: string;
   /**
   * (Experimental) If true, returns only an exact match. Otherwise, fuzzy matching might return the closest result. If no exact match is available, the data source returns an error.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/user#email_exact_match DataGitlabUser#email_exact_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/user#email_exact_match DataGitlabUser#email_exact_match}
   */
   readonly emailExactMatch?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/user#id DataGitlabUser#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/user#id DataGitlabUser#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,25 +34,25 @@ export interface DataGitlabUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of the user's namespace. Requires admin token to access this field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/user#namespace_id DataGitlabUser#namespace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/user#namespace_id DataGitlabUser#namespace_id}
   */
   readonly namespaceId?: number;
   /**
   * The ID of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/user#user_id DataGitlabUser#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/user#user_id DataGitlabUser#user_id}
   */
   readonly userId?: number;
   /**
   * The username of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/user#username DataGitlabUser#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/user#username DataGitlabUser#username}
   */
   readonly username?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/user gitlab_user}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/user gitlab_user}
 */
 export class DataGitlabUser extends cdktf.TerraformDataSource {
 
@@ -68,7 +68,7 @@ export class DataGitlabUser extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGitlabUser resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabUser to import
-  * @param importFromId The id of the existing DataGitlabUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabUser to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -80,7 +80,7 @@ export class DataGitlabUser extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/data-sources/user gitlab_user} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/user gitlab_user} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +91,7 @@ export class DataGitlabUser extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_user',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.1.0',
+        providerVersion: '18.1.1',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

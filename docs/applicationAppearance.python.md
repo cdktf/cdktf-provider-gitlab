@@ -4,7 +4,7 @@
 
 ### ApplicationAppearance <a name="ApplicationAppearance" id="@cdktf/provider-gitlab.applicationAppearance.ApplicationAppearance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance gitlab_application_appearance}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance gitlab_application_appearance}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.applicationAppearance.ApplicationAppearance.Initializer"></a>
 
@@ -132,7 +132,7 @@ Must be unique amongst siblings in the same scope
 
 Markdown text shown on the sign-in and sign-up page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance#description ApplicationAppearance#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance#description ApplicationAppearance#description}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Add header and footer to all outgoing emails if enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance#email_header_and_footer_enabled ApplicationAppearance#email_header_and_footer_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance#email_header_and_footer_enabled ApplicationAppearance#email_header_and_footer_enabled}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Message in the system footer bar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance#footer_message ApplicationAppearance#footer_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance#footer_message ApplicationAppearance#footer_message}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Message in the system header bar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance#header_message ApplicationAppearance#header_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance#header_message ApplicationAppearance#header_message}
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set to true if the appearance settings should not be reset to their pre-terraform defaults on destroy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance#keep_settings_on_destroy ApplicationAppearance#keep_settings_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance#keep_settings_on_destroy ApplicationAppearance#keep_settings_on_destroy}
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Markdown text shown on the group or project member page for users with permission to change members.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance#member_guidelines ApplicationAppearance#member_guidelines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance#member_guidelines ApplicationAppearance#member_guidelines}
 
 ---
 
@@ -192,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Background color for the system header or footer bar, in CSS hex notation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance#message_background_color ApplicationAppearance#message_background_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance#message_background_color ApplicationAppearance#message_background_color}
 
 ---
 
@@ -202,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Font color for the system header or footer bar, in CSS hex notation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance#message_font_color ApplicationAppearance#message_font_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance#message_font_color ApplicationAppearance#message_font_color}
 
 ---
 
@@ -212,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Markdown text shown on the new project page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance#new_project_guidelines ApplicationAppearance#new_project_guidelines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance#new_project_guidelines ApplicationAppearance#new_project_guidelines}
 
 ---
 
@@ -222,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Markdown text shown on the profile page below the Public Avatar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance#profile_image_guidelines ApplicationAppearance#profile_image_guidelines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance#profile_image_guidelines ApplicationAppearance#profile_image_guidelines}
 
 ---
 
@@ -232,7 +232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 An explanation of what the Progressive Web App does. Used for the attribute `description` in `manifest.json`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance#pwa_description ApplicationAppearance#pwa_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance#pwa_description ApplicationAppearance#pwa_description}
 
 ---
 
@@ -242,7 +242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Full name of the Progressive Web App. Used for the attribute `name` in `manifest.json`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance#pwa_name ApplicationAppearance#pwa_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance#pwa_name ApplicationAppearance#pwa_name}
 
 ---
 
@@ -252,7 +252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Short name for Progressive Web App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance#pwa_short_name ApplicationAppearance#pwa_short_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance#pwa_short_name ApplicationAppearance#pwa_short_name}
 
 ---
 
@@ -262,7 +262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Application title on the sign-in and sign-up page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance#title ApplicationAppearance#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance#title ApplicationAppearance#title}
 
 ---
 
@@ -833,7 +833,7 @@ The construct id used in the generated config for the ApplicationAppearance to i
 
 The id of the existing ApplicationAppearance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1487,7 +1487,7 @@ description: str
 
 Markdown text shown on the sign-in and sign-up page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance#description ApplicationAppearance#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance#description ApplicationAppearance#description}
 
 ---
 
@@ -1501,7 +1501,7 @@ email_header_and_footer_enabled: typing.Union[bool, IResolvable]
 
 Add header and footer to all outgoing emails if enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance#email_header_and_footer_enabled ApplicationAppearance#email_header_and_footer_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance#email_header_and_footer_enabled ApplicationAppearance#email_header_and_footer_enabled}
 
 ---
 
@@ -1515,7 +1515,7 @@ footer_message: str
 
 Message in the system footer bar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance#footer_message ApplicationAppearance#footer_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance#footer_message ApplicationAppearance#footer_message}
 
 ---
 
@@ -1529,7 +1529,7 @@ header_message: str
 
 Message in the system header bar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance#header_message ApplicationAppearance#header_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance#header_message ApplicationAppearance#header_message}
 
 ---
 
@@ -1543,7 +1543,7 @@ keep_settings_on_destroy: typing.Union[bool, IResolvable]
 
 Set to true if the appearance settings should not be reset to their pre-terraform defaults on destroy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance#keep_settings_on_destroy ApplicationAppearance#keep_settings_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance#keep_settings_on_destroy ApplicationAppearance#keep_settings_on_destroy}
 
 ---
 
@@ -1557,7 +1557,7 @@ member_guidelines: str
 
 Markdown text shown on the group or project member page for users with permission to change members.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance#member_guidelines ApplicationAppearance#member_guidelines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance#member_guidelines ApplicationAppearance#member_guidelines}
 
 ---
 
@@ -1571,7 +1571,7 @@ message_background_color: str
 
 Background color for the system header or footer bar, in CSS hex notation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance#message_background_color ApplicationAppearance#message_background_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance#message_background_color ApplicationAppearance#message_background_color}
 
 ---
 
@@ -1585,7 +1585,7 @@ message_font_color: str
 
 Font color for the system header or footer bar, in CSS hex notation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance#message_font_color ApplicationAppearance#message_font_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance#message_font_color ApplicationAppearance#message_font_color}
 
 ---
 
@@ -1599,7 +1599,7 @@ new_project_guidelines: str
 
 Markdown text shown on the new project page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance#new_project_guidelines ApplicationAppearance#new_project_guidelines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance#new_project_guidelines ApplicationAppearance#new_project_guidelines}
 
 ---
 
@@ -1613,7 +1613,7 @@ profile_image_guidelines: str
 
 Markdown text shown on the profile page below the Public Avatar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance#profile_image_guidelines ApplicationAppearance#profile_image_guidelines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance#profile_image_guidelines ApplicationAppearance#profile_image_guidelines}
 
 ---
 
@@ -1627,7 +1627,7 @@ pwa_description: str
 
 An explanation of what the Progressive Web App does. Used for the attribute `description` in `manifest.json`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance#pwa_description ApplicationAppearance#pwa_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance#pwa_description ApplicationAppearance#pwa_description}
 
 ---
 
@@ -1641,7 +1641,7 @@ pwa_name: str
 
 Full name of the Progressive Web App. Used for the attribute `name` in `manifest.json`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance#pwa_name ApplicationAppearance#pwa_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance#pwa_name ApplicationAppearance#pwa_name}
 
 ---
 
@@ -1655,7 +1655,7 @@ pwa_short_name: str
 
 Short name for Progressive Web App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance#pwa_short_name ApplicationAppearance#pwa_short_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance#pwa_short_name ApplicationAppearance#pwa_short_name}
 
 ---
 
@@ -1669,7 +1669,7 @@ title: str
 
 Application title on the sign-in and sign-up page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/application_appearance#title ApplicationAppearance#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_appearance#title ApplicationAppearance#title}
 
 ---
 

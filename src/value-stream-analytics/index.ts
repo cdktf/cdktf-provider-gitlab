@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/value_stream_analytics
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/value_stream_analytics
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface ValueStreamAnalyticsConfig extends cdktf.TerraformMetaArguments
   /**
   * Full path of the group the value stream is created in. **One of `group_full_path` OR `project_full_path` is required.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/value_stream_analytics#group_full_path ValueStreamAnalytics#group_full_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/value_stream_analytics#group_full_path ValueStreamAnalytics#group_full_path}
   */
   readonly groupFullPath?: string;
   /**
   * The name of the value stream
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/value_stream_analytics#name ValueStreamAnalytics#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/value_stream_analytics#name ValueStreamAnalytics#name}
   */
   readonly name: string;
   /**
   * Full path of the project the value stream is created in. **One of `group_full_path` OR `project_full_path` is required.**
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/value_stream_analytics#project_full_path ValueStreamAnalytics#project_full_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/value_stream_analytics#project_full_path ValueStreamAnalytics#project_full_path}
   */
   readonly projectFullPath?: string;
   /**
   * Stages of the value stream
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/value_stream_analytics#stages ValueStreamAnalytics#stages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/value_stream_analytics#stages ValueStreamAnalytics#stages}
   */
   readonly stages: ValueStreamAnalyticsStages[] | cdktf.IResolvable;
 }
@@ -41,43 +41,43 @@ export interface ValueStreamAnalyticsStages {
   /**
   * Boolean whether the stage is customized. If false, it assigns a built-in default stage by name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/value_stream_analytics#custom ValueStreamAnalytics#custom}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/value_stream_analytics#custom ValueStreamAnalytics#custom}
   */
   readonly custom?: boolean | cdktf.IResolvable;
   /**
   * End event identifier. Valid values are: `CODE_STAGE_START`, `ISSUE_CLOSED`, `ISSUE_CREATED`, `ISSUE_DEPLOYED_TO_PRODUCTION`, `ISSUE_FIRST_ADDED_TO_BOARD`, `ISSUE_FIRST_ADDED_TO_ITERATION`, `ISSUE_FIRST_ASSIGNED_AT`, `ISSUE_FIRST_ASSOCIATED_WITH_MILESTONE`, `ISSUE_FIRST_MENTIONED_IN_COMMIT`, `ISSUE_LABEL_ADDED`, `ISSUE_LABEL_REMOVED`, `ISSUE_LAST_EDITED`, `ISSUE_STAGE_END`, `MERGE_REQUEST_CLOSED`, `MERGE_REQUEST_CREATED`, `MERGE_REQUEST_FIRST_ASSIGNED_AT`, `MERGE_REQUEST_FIRST_COMMIT_AT`, `MERGE_REQUEST_FIRST_DEPLOYED_TO_PRODUCTION`, `MERGE_REQUEST_LABEL_ADDED`, `MERGE_REQUEST_LABEL_REMOVED`, `MERGE_REQUEST_LAST_BUILD_FINISHED`, `MERGE_REQUEST_LAST_BUILD_STARTED`, `MERGE_REQUEST_LAST_EDITED`, `MERGE_REQUEST_MERGED`, `MERGE_REQUEST_REVIEWER_FIRST_ASSIGNED`, `MERGE_REQUEST_PLAN_STAGE_START`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/value_stream_analytics#end_event_identifier ValueStreamAnalytics#end_event_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/value_stream_analytics#end_event_identifier ValueStreamAnalytics#end_event_identifier}
   */
   readonly endEventIdentifier?: string;
   /**
   * Label ID associated with the end event identifier. In the format of `gid://gitlab/GroupLabel/<id>` or `gid://gitlab/ProjectLabel/<id>`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/value_stream_analytics#end_event_label_id ValueStreamAnalytics#end_event_label_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/value_stream_analytics#end_event_label_id ValueStreamAnalytics#end_event_label_id}
   */
   readonly endEventLabelId?: string;
   /**
   * Boolean whether the stage is hidden, GitLab provided default stages are hidden by default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/value_stream_analytics#hidden ValueStreamAnalytics#hidden}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/value_stream_analytics#hidden ValueStreamAnalytics#hidden}
   */
   readonly hidden?: boolean | cdktf.IResolvable;
   /**
   * The name of the value stream stage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/value_stream_analytics#name ValueStreamAnalytics#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/value_stream_analytics#name ValueStreamAnalytics#name}
   */
   readonly name: string;
   /**
   * Start event identifier. Valid values are: `CODE_STAGE_START`, `ISSUE_CLOSED`, `ISSUE_CREATED`, `ISSUE_DEPLOYED_TO_PRODUCTION`, `ISSUE_FIRST_ADDED_TO_BOARD`, `ISSUE_FIRST_ADDED_TO_ITERATION`, `ISSUE_FIRST_ASSIGNED_AT`, `ISSUE_FIRST_ASSOCIATED_WITH_MILESTONE`, `ISSUE_FIRST_MENTIONED_IN_COMMIT`, `ISSUE_LABEL_ADDED`, `ISSUE_LABEL_REMOVED`, `ISSUE_LAST_EDITED`, `ISSUE_STAGE_END`, `MERGE_REQUEST_CLOSED`, `MERGE_REQUEST_CREATED`, `MERGE_REQUEST_FIRST_ASSIGNED_AT`, `MERGE_REQUEST_FIRST_COMMIT_AT`, `MERGE_REQUEST_FIRST_DEPLOYED_TO_PRODUCTION`, `MERGE_REQUEST_LABEL_ADDED`, `MERGE_REQUEST_LABEL_REMOVED`, `MERGE_REQUEST_LAST_BUILD_FINISHED`, `MERGE_REQUEST_LAST_BUILD_STARTED`, `MERGE_REQUEST_LAST_EDITED`, `MERGE_REQUEST_MERGED`, `MERGE_REQUEST_REVIEWER_FIRST_ASSIGNED`, `MERGE_REQUEST_PLAN_STAGE_START`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/value_stream_analytics#start_event_identifier ValueStreamAnalytics#start_event_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/value_stream_analytics#start_event_identifier ValueStreamAnalytics#start_event_identifier}
   */
   readonly startEventIdentifier?: string;
   /**
   * Label ID associated with the start event identifier. In the format of `gid://gitlab/GroupLabel/<id>` or `gid://gitlab/ProjectLabel/<id>`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/value_stream_analytics#start_event_label_id ValueStreamAnalytics#start_event_label_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/value_stream_analytics#start_event_label_id ValueStreamAnalytics#start_event_label_id}
   */
   readonly startEventLabelId?: string;
 }
@@ -369,7 +369,7 @@ export class ValueStreamAnalyticsStagesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/value_stream_analytics gitlab_value_stream_analytics}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/value_stream_analytics gitlab_value_stream_analytics}
 */
 export class ValueStreamAnalytics extends cdktf.TerraformResource {
 
@@ -385,7 +385,7 @@ export class ValueStreamAnalytics extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ValueStreamAnalytics resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ValueStreamAnalytics to import
-  * @param importFromId The id of the existing ValueStreamAnalytics that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/value_stream_analytics#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ValueStreamAnalytics that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/value_stream_analytics#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ValueStreamAnalytics to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -397,7 +397,7 @@ export class ValueStreamAnalytics extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.0/docs/resources/value_stream_analytics gitlab_value_stream_analytics} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/value_stream_analytics gitlab_value_stream_analytics} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -408,7 +408,7 @@ export class ValueStreamAnalytics extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_value_stream_analytics',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.1.0',
+        providerVersion: '18.1.1',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,
