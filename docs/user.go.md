@@ -4,7 +4,7 @@
 
 ### User <a name="User" id="@cdktf/provider-gitlab.user.User"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/user gitlab_user}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/user gitlab_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.user.User.Initializer"></a>
 
@@ -551,7 +551,7 @@ The construct id used in the generated config for the User to import.
 
 The id of the existing User that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1125,7 +1125,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/user"
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.username">Username</a></code> | <code>*string</code> | The username of the user. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.canCreateGroup">CanCreateGroup</a></code> | <code>interface{}</code> | Boolean, defaults to false. Whether to allow the user to create groups. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.forceRandomPassword">ForceRandomPassword</a></code> | <code>interface{}</code> | Set user password to a random value. |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/user#id User#id}. |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/user#id User#id}. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.isAdmin">IsAdmin</a></code> | <code>interface{}</code> | Boolean, defaults to false.  Whether to enable administrative privileges. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.isExternal">IsExternal</a></code> | <code>interface{}</code> | Boolean, defaults to false. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.namespaceId">NamespaceId</a></code> | <code>*f64</code> | The ID of the user's namespace. |
@@ -1218,7 +1218,7 @@ Email *string
 
 The e-mail address of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/user#email User#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/user#email User#email}
 
 ---
 
@@ -1232,7 +1232,7 @@ Name *string
 
 The name of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/user#name User#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/user#name User#name}
 
 ---
 
@@ -1246,7 +1246,7 @@ Username *string
 
 The username of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/user#username User#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/user#username User#username}
 
 ---
 
@@ -1260,7 +1260,7 @@ CanCreateGroup interface{}
 
 Boolean, defaults to false. Whether to allow the user to create groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/user#can_create_group User#can_create_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/user#can_create_group User#can_create_group}
 
 ---
 
@@ -1274,7 +1274,7 @@ ForceRandomPassword interface{}
 
 Set user password to a random value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/user#force_random_password User#force_random_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/user#force_random_password User#force_random_password}
 
 ---
 
@@ -1286,7 +1286,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/user#id User#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/user#id User#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1303,7 +1303,7 @@ IsAdmin interface{}
 
 Boolean, defaults to false.  Whether to enable administrative privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/user#is_admin User#is_admin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/user#is_admin User#is_admin}
 
 ---
 
@@ -1319,7 +1319,7 @@ Boolean, defaults to false.
 
 Whether a user has access only to some internal or private projects. External users can only access projects to which they are explicitly granted access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/user#is_external User#is_external}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/user#is_external User#is_external}
 
 ---
 
@@ -1333,7 +1333,7 @@ NamespaceId *f64
 
 The ID of the user's namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/user#namespace_id User#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/user#namespace_id User#namespace_id}
 
 ---
 
@@ -1347,7 +1347,7 @@ Note *string
 
 The note associated to the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/user#note User#note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/user#note User#note}
 
 ---
 
@@ -1361,7 +1361,7 @@ Password *string
 
 The password of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/user#password User#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/user#password User#password}
 
 ---
 
@@ -1375,7 +1375,7 @@ ProjectsLimit *f64
 
 Integer, defaults to 0.  Number of projects user can create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/user#projects_limit User#projects_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/user#projects_limit User#projects_limit}
 
 ---
 
@@ -1389,7 +1389,7 @@ ResetPassword interface{}
 
 Boolean, defaults to false. Send user password reset link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/user#reset_password User#reset_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/user#reset_password User#reset_password}
 
 ---
 
@@ -1403,7 +1403,7 @@ SkipConfirmation interface{}
 
 Boolean, defaults to true. Whether to skip confirmation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/user#skip_confirmation User#skip_confirmation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/user#skip_confirmation User#skip_confirmation}
 
 ---
 
@@ -1417,7 +1417,7 @@ State *string
 
 String, defaults to 'active'. The state of the user account. Valid values are `active`, `deactivated`, `blocked`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/user#state User#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/user#state User#state}
 
 ---
 

@@ -65,6 +65,7 @@ Object.defineProperty(exports, 'projectApprovalRule', { get: function () { retur
 Object.defineProperty(exports, 'projectBadge', { get: function () { return require('./project-badge'); } });
 Object.defineProperty(exports, 'projectCluster', { get: function () { return require('./project-cluster'); } });
 Object.defineProperty(exports, 'projectComplianceFrameworks', { get: function () { return require('./project-compliance-frameworks'); } });
+Object.defineProperty(exports, 'projectContainerRepositoryProtection', { get: function () { return require('./project-container-repository-protection'); } });
 Object.defineProperty(exports, 'projectCustomAttribute', { get: function () { return require('./project-custom-attribute'); } });
 Object.defineProperty(exports, 'projectEnvironment', { get: function () { return require('./project-environment'); } });
 Object.defineProperty(exports, 'projectFreezePeriod', { get: function () { return require('./project-freeze-period'); } });
@@ -145,6 +146,7 @@ Object.defineProperty(exports, 'dataGitlabMetadata', { get: function () { return
 Object.defineProperty(exports, 'dataGitlabPipelineSchedule', { get: function () { return require('./data-gitlab-pipeline-schedule'); } });
 Object.defineProperty(exports, 'dataGitlabPipelineSchedules', { get: function () { return require('./data-gitlab-pipeline-schedules'); } });
 Object.defineProperty(exports, 'dataGitlabProject', { get: function () { return require('./data-gitlab-project'); } });
+Object.defineProperty(exports, 'dataGitlabProjectAccessTokens', { get: function () { return require('./data-gitlab-project-access-tokens'); } });
 Object.defineProperty(exports, 'dataGitlabProjectBranches', { get: function () { return require('./data-gitlab-project-branches'); } });
 Object.defineProperty(exports, 'dataGitlabProjectEnvironments', { get: function () { return require('./data-gitlab-project-environments'); } });
 Object.defineProperty(exports, 'dataGitlabProjectHook', { get: function () { return require('./data-gitlab-project-hook'); } });

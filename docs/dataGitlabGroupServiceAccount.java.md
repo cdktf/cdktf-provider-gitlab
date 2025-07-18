@@ -4,7 +4,7 @@
 
 ### DataGitlabGroupServiceAccount <a name="DataGitlabGroupServiceAccount" id="@cdktf/provider-gitlab.dataGitlabGroupServiceAccount.DataGitlabGroupServiceAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/group_service_account gitlab_group_service_account}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/group_service_account gitlab_group_service_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupServiceAccount.DataGitlabGroupServiceAccount.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The ID or URL-encoded path of the target group. Must be a top-level group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/group_service_account#group DataGitlabGroupServiceAccount#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/group_service_account#group DataGitlabGroupServiceAccount#group}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The service account id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/group_service_account#service_account_id DataGitlabGroupServiceAccount#service_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/group_service_account#service_account_id DataGitlabGroupServiceAccount#service_account_id}
 
 ---
 
@@ -443,7 +443,7 @@ The construct id used in the generated config for the DataGitlabGroupServiceAcco
 
 The id of the existing DataGitlabGroupServiceAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/group_service_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/group_service_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -813,7 +813,7 @@ public java.lang.String getGroup();
 
 The ID or URL-encoded path of the target group. Must be a top-level group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/group_service_account#group DataGitlabGroupServiceAccount#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/group_service_account#group DataGitlabGroupServiceAccount#group}
 
 ---
 
@@ -827,7 +827,7 @@ public java.lang.String getServiceAccountId();
 
 The service account id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/group_service_account#service_account_id DataGitlabGroupServiceAccount#service_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/group_service_account#service_account_id DataGitlabGroupServiceAccount#service_account_id}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### GroupHook <a name="GroupHook" id="@cdktf/provider-gitlab.groupHook.GroupHook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook gitlab_group_hook}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook gitlab_group_hook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupHook.GroupHook.Initializer"></a>
 
@@ -81,6 +81,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.resetCustomWebhookTemplate">resetCustomWebhookTemplate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.resetDeploymentEvents">resetDeploymentEvents</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.resetEmojiEvents">resetEmojiEvents</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.resetEnableSslVerification">resetEnableSslVerification</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.resetFeatureFlagEvents">resetFeatureFlagEvents</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.resetIssuesEvents">resetIssuesEvents</a></code> | *No description.* |
@@ -441,6 +442,12 @@ public resetDeploymentEvents(): void
 public resetDescription(): void
 ```
 
+##### `resetEmojiEvents` <a name="resetEmojiEvents" id="@cdktf/provider-gitlab.groupHook.GroupHook.resetEmojiEvents"></a>
+
+```typescript
+public resetEmojiEvents(): void
+```
+
 ##### `resetEnableSslVerification` <a name="resetEnableSslVerification" id="@cdktf/provider-gitlab.groupHook.GroupHook.resetEnableSslVerification"></a>
 
 ```typescript
@@ -634,7 +641,7 @@ The construct id used in the generated config for the GroupHook to import.
 
 The id of the existing GroupHook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -675,6 +682,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.property.customWebhookTemplateInput">customWebhookTemplateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.property.deploymentEventsInput">deploymentEventsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.property.emojiEventsInput">emojiEventsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.property.enableSslVerificationInput">enableSslVerificationInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.property.featureFlagEventsInput">featureFlagEventsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.property.groupInput">groupInput</a></code> | <code>string</code> | *No description.* |
@@ -698,6 +706,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.property.customWebhookTemplate">customWebhookTemplate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.property.deploymentEvents">deploymentEvents</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.property.emojiEvents">emojiEvents</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.property.enableSslVerification">enableSslVerification</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.property.featureFlagEvents">featureFlagEvents</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHook.property.group">group</a></code> | <code>string</code> | *No description.* |
@@ -970,6 +979,16 @@ public readonly descriptionInput: string;
 
 ---
 
+##### `emojiEventsInput`<sup>Optional</sup> <a name="emojiEventsInput" id="@cdktf/provider-gitlab.groupHook.GroupHook.property.emojiEventsInput"></a>
+
+```typescript
+public readonly emojiEventsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `enableSslVerificationInput`<sup>Optional</sup> <a name="enableSslVerificationInput" id="@cdktf/provider-gitlab.groupHook.GroupHook.property.enableSslVerificationInput"></a>
 
 ```typescript
@@ -1200,6 +1219,16 @@ public readonly description: string;
 
 ---
 
+##### `emojiEvents`<sup>Required</sup> <a name="emojiEvents" id="@cdktf/provider-gitlab.groupHook.GroupHook.property.emojiEvents"></a>
+
+```typescript
+public readonly emojiEvents: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `enableSslVerification`<sup>Required</sup> <a name="enableSslVerification" id="@cdktf/provider-gitlab.groupHook.GroupHook.property.enableSslVerification"></a>
 
 ```typescript
@@ -1420,6 +1449,7 @@ const groupHookConfig: groupHook.GroupHookConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.customWebhookTemplate">customWebhookTemplate</a></code> | <code>string</code> | Custom webhook template. |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.deploymentEvents">deploymentEvents</a></code> | <code>boolean \| cdktf.IResolvable</code> | Invoke the hook for deployment events. |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.description">description</a></code> | <code>string</code> | Description of the group webhook. |
+| <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.emojiEvents">emojiEvents</a></code> | <code>boolean \| cdktf.IResolvable</code> | Invoke the hook for emoji events. |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.enableSslVerification">enableSslVerification</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable SSL verification when invoking the hook. |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.featureFlagEvents">featureFlagEvents</a></code> | <code>boolean \| cdktf.IResolvable</code> | Invoke the hook for feature flag events. |
 | <code><a href="#@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.issuesEvents">issuesEvents</a></code> | <code>boolean \| cdktf.IResolvable</code> | Invoke the hook for issues events. |
@@ -1518,7 +1548,7 @@ public readonly group: string;
 
 The full path or id of the group to add the hook to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook#group GroupHook#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook#group GroupHook#group}
 
 ---
 
@@ -1532,7 +1562,7 @@ public readonly url: string;
 
 The url of the hook to invoke. Forces re-creation to preserve `token`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook#url GroupHook#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook#url GroupHook#url}
 
 ---
 
@@ -1546,7 +1576,7 @@ public readonly branchFilterStrategy: string;
 
 Filter push events by branch. Valid values are: `wildcard`, `regex`, `all_branches`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook#branch_filter_strategy GroupHook#branch_filter_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook#branch_filter_strategy GroupHook#branch_filter_strategy}
 
 ---
 
@@ -1560,7 +1590,7 @@ public readonly confidentialIssuesEvents: boolean | IResolvable;
 
 Invoke the hook for confidential issues events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook#confidential_issues_events GroupHook#confidential_issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook#confidential_issues_events GroupHook#confidential_issues_events}
 
 ---
 
@@ -1574,7 +1604,7 @@ public readonly confidentialNoteEvents: boolean | IResolvable;
 
 Invoke the hook for confidential note events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook#confidential_note_events GroupHook#confidential_note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook#confidential_note_events GroupHook#confidential_note_events}
 
 ---
 
@@ -1588,7 +1618,7 @@ public readonly customHeaders: IResolvable | GroupHookCustomHeaders[];
 
 Custom headers for the project webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook#custom_headers GroupHook#custom_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook#custom_headers GroupHook#custom_headers}
 
 ---
 
@@ -1602,7 +1632,7 @@ public readonly customWebhookTemplate: string;
 
 Custom webhook template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook#custom_webhook_template GroupHook#custom_webhook_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook#custom_webhook_template GroupHook#custom_webhook_template}
 
 ---
 
@@ -1616,7 +1646,7 @@ public readonly deploymentEvents: boolean | IResolvable;
 
 Invoke the hook for deployment events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook#deployment_events GroupHook#deployment_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook#deployment_events GroupHook#deployment_events}
 
 ---
 
@@ -1630,7 +1660,21 @@ public readonly description: string;
 
 Description of the group webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook#description GroupHook#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook#description GroupHook#description}
+
+---
+
+##### `emojiEvents`<sup>Optional</sup> <a name="emojiEvents" id="@cdktf/provider-gitlab.groupHook.GroupHookConfig.property.emojiEvents"></a>
+
+```typescript
+public readonly emojiEvents: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Invoke the hook for emoji events.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook#emoji_events GroupHook#emoji_events}
 
 ---
 
@@ -1644,7 +1688,7 @@ public readonly enableSslVerification: boolean | IResolvable;
 
 Enable SSL verification when invoking the hook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook#enable_ssl_verification GroupHook#enable_ssl_verification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook#enable_ssl_verification GroupHook#enable_ssl_verification}
 
 ---
 
@@ -1658,7 +1702,7 @@ public readonly featureFlagEvents: boolean | IResolvable;
 
 Invoke the hook for feature flag events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook#feature_flag_events GroupHook#feature_flag_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook#feature_flag_events GroupHook#feature_flag_events}
 
 ---
 
@@ -1672,7 +1716,7 @@ public readonly issuesEvents: boolean | IResolvable;
 
 Invoke the hook for issues events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook#issues_events GroupHook#issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook#issues_events GroupHook#issues_events}
 
 ---
 
@@ -1686,7 +1730,7 @@ public readonly jobEvents: boolean | IResolvable;
 
 Invoke the hook for job events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook#job_events GroupHook#job_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook#job_events GroupHook#job_events}
 
 ---
 
@@ -1700,7 +1744,7 @@ public readonly mergeRequestsEvents: boolean | IResolvable;
 
 Invoke the hook for merge requests events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook#merge_requests_events GroupHook#merge_requests_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook#merge_requests_events GroupHook#merge_requests_events}
 
 ---
 
@@ -1714,7 +1758,7 @@ public readonly name: string;
 
 Name of the group webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook#name GroupHook#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook#name GroupHook#name}
 
 ---
 
@@ -1728,7 +1772,7 @@ public readonly noteEvents: boolean | IResolvable;
 
 Invoke the hook for note events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook#note_events GroupHook#note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook#note_events GroupHook#note_events}
 
 ---
 
@@ -1742,7 +1786,7 @@ public readonly pipelineEvents: boolean | IResolvable;
 
 Invoke the hook for pipeline events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook#pipeline_events GroupHook#pipeline_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook#pipeline_events GroupHook#pipeline_events}
 
 ---
 
@@ -1756,7 +1800,7 @@ public readonly pushEvents: boolean | IResolvable;
 
 Invoke the hook for push events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook#push_events GroupHook#push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook#push_events GroupHook#push_events}
 
 ---
 
@@ -1770,7 +1814,7 @@ public readonly pushEventsBranchFilter: string;
 
 Invoke the hook for push events on matching branches only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook#push_events_branch_filter GroupHook#push_events_branch_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook#push_events_branch_filter GroupHook#push_events_branch_filter}
 
 ---
 
@@ -1784,7 +1828,7 @@ public readonly releasesEvents: boolean | IResolvable;
 
 Invoke the hook for release events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook#releases_events GroupHook#releases_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook#releases_events GroupHook#releases_events}
 
 ---
 
@@ -1798,7 +1842,7 @@ public readonly subgroupEvents: boolean | IResolvable;
 
 Invoke the hook for subgroup events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook#subgroup_events GroupHook#subgroup_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook#subgroup_events GroupHook#subgroup_events}
 
 ---
 
@@ -1812,7 +1856,7 @@ public readonly tagPushEvents: boolean | IResolvable;
 
 Invoke the hook for tag push events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook#tag_push_events GroupHook#tag_push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook#tag_push_events GroupHook#tag_push_events}
 
 ---
 
@@ -1826,7 +1870,7 @@ public readonly token: string;
 
 A token to present when invoking the hook. The token is not available for imported resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook#token GroupHook#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook#token GroupHook#token}
 
 ---
 
@@ -1840,7 +1884,7 @@ public readonly wikiPageEvents: boolean | IResolvable;
 
 Invoke the hook for wiki page events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook#wiki_page_events GroupHook#wiki_page_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook#wiki_page_events GroupHook#wiki_page_events}
 
 ---
 
@@ -1873,7 +1917,7 @@ public readonly key: string;
 
 Key of the custom header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook#key GroupHook#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook#key GroupHook#key}
 
 ---
 
@@ -1887,7 +1931,7 @@ public readonly value: string;
 
 Value of the custom header. This value cannot be imported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_hook#value GroupHook#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_hook#value GroupHook#value}
 
 ---
 

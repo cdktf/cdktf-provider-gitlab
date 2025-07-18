@@ -4,7 +4,7 @@
 
 ### GroupServiceAccount <a name="GroupServiceAccount" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_service_account gitlab_group_service_account}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_service_account gitlab_group_service_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.Initializer"></a>
 
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.resetEmail">resetEmail</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.resetName">resetName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.resetUsername">resetUsername</a></code> | *No description.* |
 
@@ -366,6 +367,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetEmail` <a name="resetEmail" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.resetEmail"></a>
+
+```typescript
+public resetEmail(): void
+```
+
 ##### `resetName` <a name="resetName" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.resetName"></a>
 
 ```typescript
@@ -481,7 +488,7 @@ The construct id used in the generated config for the GroupServiceAccount to imp
 
 The id of the existing GroupServiceAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_service_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_service_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -513,9 +520,11 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.property.serviceAccountId">serviceAccountId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.property.emailInput">emailInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.property.groupInput">groupInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.property.usernameInput">usernameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.property.email">email</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.property.group">group</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.property.username">username</a></code> | <code>string</code> | *No description.* |
@@ -684,6 +693,16 @@ public readonly serviceAccountId: string;
 
 ---
 
+##### `emailInput`<sup>Optional</sup> <a name="emailInput" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.property.emailInput"></a>
+
+```typescript
+public readonly emailInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `groupInput`<sup>Optional</sup> <a name="groupInput" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.property.groupInput"></a>
 
 ```typescript
@@ -708,6 +727,16 @@ public readonly nameInput: string;
 
 ```typescript
 public readonly usernameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `email`<sup>Required</sup> <a name="email" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.property.email"></a>
+
+```typescript
+public readonly email: string;
 ```
 
 - *Type:* string
@@ -786,6 +815,7 @@ const groupServiceAccountConfig: groupServiceAccount.GroupServiceAccountConfig =
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountConfig.property.group">group</a></code> | <code>string</code> | The ID or URL-encoded path of the group that the service account is created in. |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountConfig.property.email">email</a></code> | <code>string</code> | User account email. |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountConfig.property.name">name</a></code> | <code>string</code> | The name of the user. If not specified, the default Service account user name is used. |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountConfig.property.username">username</a></code> | <code>string</code> | The username of the user. If not specified, it’s automatically generated. |
 
@@ -873,7 +903,23 @@ The ID or URL-encoded path of the group that the service account is created in.
 
 Must be a top level group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_service_account#group GroupServiceAccount#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_service_account#group GroupServiceAccount#group}
+
+---
+
+##### `email`<sup>Optional</sup> <a name="email" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountConfig.property.email"></a>
+
+```typescript
+public readonly email: string;
+```
+
+- *Type:* string
+
+User account email.
+
+If not specified, generates an email prepended with `service_account_group_`. Custom email addresses require confirmation before the account is active, unless the group has a matching verified domain.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_service_account#email GroupServiceAccount#email}
 
 ---
 
@@ -887,7 +933,7 @@ public readonly name: string;
 
 The name of the user. If not specified, the default Service account user name is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_service_account#name GroupServiceAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_service_account#name GroupServiceAccount#name}
 
 ---
 
@@ -901,7 +947,7 @@ public readonly username: string;
 
 The username of the user. If not specified, it’s automatically generated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_service_account#username GroupServiceAccount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_service_account#username GroupServiceAccount#username}
 
 ---
 

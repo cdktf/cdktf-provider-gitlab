@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_service_account_access_token
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_service_account_access_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,37 @@ export interface GroupServiceAccountAccessTokenConfig extends cdktf.TerraformMet
   /**
   * The service account access token expiry date. When left blank, the token follows the standard rule of expiry for personal access tokens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_service_account_access_token#expires_at GroupServiceAccountAccessToken#expires_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_service_account_access_token#expires_at GroupServiceAccountAccessToken#expires_at}
   */
   readonly expiresAt?: string;
   /**
   * The ID or URL-encoded path of the group containing the service account. Must be a top level group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_service_account_access_token#group GroupServiceAccountAccessToken#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_service_account_access_token#group GroupServiceAccountAccessToken#group}
   */
   readonly group: string;
   /**
   * The name of the personal access token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_service_account_access_token#name GroupServiceAccountAccessToken#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_service_account_access_token#name GroupServiceAccountAccessToken#name}
   */
   readonly name: string;
   /**
   * The configuration for when to rotate a token automatically. Will not rotate a token until `terraform apply` is run.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_service_account_access_token#rotation_configuration GroupServiceAccountAccessToken#rotation_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_service_account_access_token#rotation_configuration GroupServiceAccountAccessToken#rotation_configuration}
   */
   readonly rotationConfiguration?: GroupServiceAccountAccessTokenRotationConfiguration;
   /**
   * The scopes of the group service account access token. Valid values are: `api`, `read_user`, `read_api`, `read_repository`, `write_repository`, `read_registry`, `write_registry`, `read_virtual_registry`, `write_virtual_registry`, `sudo`, `admin_mode`, `create_runner`, `manage_runner`, `ai_features`, `k8s_proxy`, `self_rotate`, `read_service_ping`. If `self_rotate` is included, you must also provide either `expires_at` or `rotation_configuration`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_service_account_access_token#scopes GroupServiceAccountAccessToken#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_service_account_access_token#scopes GroupServiceAccountAccessToken#scopes}
   */
   readonly scopes: string[];
   /**
   * The ID of a service account user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_service_account_access_token#user_id GroupServiceAccountAccessToken#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_service_account_access_token#user_id GroupServiceAccountAccessToken#user_id}
   */
   readonly userId: number;
 }
@@ -53,13 +53,13 @@ export interface GroupServiceAccountAccessTokenRotationConfiguration {
   /**
   * The duration (in days) the new token should be valid for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_service_account_access_token#expiration_days GroupServiceAccountAccessToken#expiration_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_service_account_access_token#expiration_days GroupServiceAccountAccessToken#expiration_days}
   */
   readonly expirationDays?: number;
   /**
   * The duration (in days) before the expiration when the token should be rotated. As an example, if set to 7 days, the token will rotate 7 days before the expiration date, but only when `terraform apply` is run in that timeframe.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_service_account_access_token#rotate_before_days GroupServiceAccountAccessToken#rotate_before_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_service_account_access_token#rotate_before_days GroupServiceAccountAccessToken#rotate_before_days}
   */
   readonly rotateBeforeDays: number;
 }
@@ -179,7 +179,7 @@ export class GroupServiceAccountAccessTokenRotationConfigurationOutputReference 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token}
 */
 export class GroupServiceAccountAccessToken extends cdktf.TerraformResource {
 
@@ -195,7 +195,7 @@ export class GroupServiceAccountAccessToken extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GroupServiceAccountAccessToken resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GroupServiceAccountAccessToken to import
-  * @param importFromId The id of the existing GroupServiceAccountAccessToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_service_account_access_token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GroupServiceAccountAccessToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_service_account_access_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GroupServiceAccountAccessToken to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -207,7 +207,7 @@ export class GroupServiceAccountAccessToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -218,7 +218,7 @@ export class GroupServiceAccountAccessToken extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_service_account_access_token',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.1.1',
+        providerVersion: '18.2.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

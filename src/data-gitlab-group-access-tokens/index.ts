@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/group_access_tokens
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/group_access_tokens
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataGitlabGroupAccessTokensConfig extends cdktf.TerraformMetaAr
   /**
   * The name or id of the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/group_access_tokens#group DataGitlabGroupAccessTokens#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/group_access_tokens#group DataGitlabGroupAccessTokens#group}
   */
   readonly group: string;
 }
@@ -141,7 +141,7 @@ export class DataGitlabGroupAccessTokensAccessTokensList extends cdktf.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/group_access_tokens gitlab_group_access_tokens}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/group_access_tokens gitlab_group_access_tokens}
 */
 export class DataGitlabGroupAccessTokens extends cdktf.TerraformDataSource {
 
@@ -157,7 +157,7 @@ export class DataGitlabGroupAccessTokens extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGitlabGroupAccessTokens resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabGroupAccessTokens to import
-  * @param importFromId The id of the existing DataGitlabGroupAccessTokens that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/group_access_tokens#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabGroupAccessTokens that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/group_access_tokens#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabGroupAccessTokens to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -169,7 +169,7 @@ export class DataGitlabGroupAccessTokens extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/data-sources/group_access_tokens gitlab_group_access_tokens} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/group_access_tokens gitlab_group_access_tokens} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -180,7 +180,7 @@ export class DataGitlabGroupAccessTokens extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_group_access_tokens',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.1.1',
+        providerVersion: '18.2.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

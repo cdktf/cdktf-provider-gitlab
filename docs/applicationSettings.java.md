@@ -4,7 +4,7 @@
 
 ### ApplicationSettings <a name="ApplicationSettings" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings gitlab_application_settings}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings gitlab_application_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer"></a>
 
@@ -603,7 +603,7 @@ ApplicationSettings.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.housekeepingEnabled">housekeepingEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enable or disable Git housekeeping. If enabled, requires housekeeping_optimize_repository_period. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.housekeepingOptimizeRepositoryPeriod">housekeepingOptimizeRepositoryPeriod</a></code> | <code>java.lang.Number</code> | Number of Git pushes after which an incremental git-repack is run. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.htmlEmailsEnabled">htmlEmailsEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enable HTML emails. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#id ApplicationSettings#id}. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#id ApplicationSettings#id}. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.importSources">importSources</a></code> | <code>java.util.List<java.lang.String></code> | Sources to allow project import from. Valid values are: `github`, `bitbucket`, `bitbucket_server`, `fogbugz`, `git`, `gitlab_project`, `gitea`, `manifest`. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.inactiveProjectsDeleteAfterMonths">inactiveProjectsDeleteAfterMonths</a></code> | <code>java.lang.Number</code> | If delete_inactive_projects is true, the time (in months) to wait before deleting inactive projects. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.inactiveProjectsMinSizeMb">inactiveProjectsMinSizeMb</a></code> | <code>java.lang.Number</code> | If delete_inactive_projects is true, the minimum repository size for projects to be checked for inactivity. |
@@ -834,7 +834,7 @@ Must be unique amongst siblings in the same scope
 
 If set, abuse reports are sent to this address. Abuse reports are always available in the Admin Area.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#abuse_notification_email ApplicationSettings#abuse_notification_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#abuse_notification_email ApplicationSettings#abuse_notification_email}
 
 ---
 
@@ -844,7 +844,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Require administrators to enable Admin Mode by re-authenticating for administrative tasks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#admin_mode ApplicationSettings#admin_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#admin_mode ApplicationSettings#admin_mode}
 
 ---
 
@@ -854,7 +854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Where to redirect users after logout.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#after_sign_out_path ApplicationSettings#after_sign_out_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#after_sign_out_path ApplicationSettings#after_sign_out_path}
 
 ---
 
@@ -864,7 +864,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Text shown to the user after signing up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#after_sign_up_text ApplicationSettings#after_sign_up_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#after_sign_up_text ApplicationSettings#after_sign_up_text}
 
 ---
 
@@ -874,7 +874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 API key for Akismet spam protection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#akismet_api_key ApplicationSettings#akismet_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#akismet_api_key ApplicationSettings#akismet_api_key}
 
 ---
 
@@ -884,7 +884,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 (If enabled, requires: akismet_api_key) Enable or disable Akismet spam protection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#akismet_enabled ApplicationSettings#akismet_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#akismet_enabled ApplicationSettings#akismet_enabled}
 
 ---
 
@@ -894,7 +894,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set to true to allow users to delete their accounts. Premium and Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#allow_account_deletion ApplicationSettings#allow_account_deletion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#allow_account_deletion ApplicationSettings#allow_account_deletion}
 
 ---
 
@@ -904,7 +904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set to true to allow group owners to manage LDAP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#allow_group_owners_to_manage_ldap ApplicationSettings#allow_group_owners_to_manage_ldap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#allow_group_owners_to_manage_ldap ApplicationSettings#allow_group_owners_to_manage_ldap}
 
 ---
 
@@ -914,7 +914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Allow requests to the local network from system hooks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#allow_local_requests_from_system_hooks ApplicationSettings#allow_local_requests_from_system_hooks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#allow_local_requests_from_system_hooks ApplicationSettings#allow_local_requests_from_system_hooks}
 
 ---
 
@@ -924,7 +924,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Allow requests to the local network from web hooks and services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#allow_local_requests_from_web_hooks_and_services ApplicationSettings#allow_local_requests_from_web_hooks_and_services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#allow_local_requests_from_web_hooks_and_services ApplicationSettings#allow_local_requests_from_web_hooks_and_services}
 
 ---
 
@@ -934,7 +934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Indicates whether users assigned up to the Guest role can create groups and personal projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#allow_project_creation_for_guest_and_below ApplicationSettings#allow_project_creation_for_guest_and_below}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#allow_project_creation_for_guest_and_below ApplicationSettings#allow_project_creation_for_guest_and_below}
 
 ---
 
@@ -944,7 +944,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Allow using a registration token to create a runner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#allow_runner_registration_token ApplicationSettings#allow_runner_registration_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#allow_runner_registration_token ApplicationSettings#allow_runner_registration_token}
 
 ---
 
@@ -956,7 +956,7 @@ Set the duration for which the jobs are considered as old and expired.
 
 After that time passes, the jobs are archived and no longer able to be retried. Make it empty to never expire jobs. It has to be no less than 1 day, for example: 15 days, 1 month, 2 years.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#archive_builds_in_human_readable ApplicationSettings#archive_builds_in_human_readable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#archive_builds_in_human_readable ApplicationSettings#archive_builds_in_human_readable}
 
 ---
 
@@ -966,7 +966,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum limit of AsciiDoc include directives being processed in any one document. Maximum: 64.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#asciidoc_max_includes ApplicationSettings#asciidoc_max_includes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#asciidoc_max_includes ApplicationSettings#asciidoc_max_includes}
 
 ---
 
@@ -978,7 +978,7 @@ Assets that match these domains are not proxied.
 
 Wildcards allowed. Your GitLab installation URL is automatically allowlisted. GitLab restart is required to apply changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#asset_proxy_allowlist ApplicationSettings#asset_proxy_allowlist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#asset_proxy_allowlist ApplicationSettings#asset_proxy_allowlist}
 
 ---
 
@@ -988,7 +988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 (If enabled, requires: asset_proxy_url) Enable proxying of assets. GitLab restart is required to apply changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#asset_proxy_enabled ApplicationSettings#asset_proxy_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#asset_proxy_enabled ApplicationSettings#asset_proxy_enabled}
 
 ---
 
@@ -998,7 +998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Shared secret with the asset proxy server. GitLab restart is required to apply changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#asset_proxy_secret_key ApplicationSettings#asset_proxy_secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#asset_proxy_secret_key ApplicationSettings#asset_proxy_secret_key}
 
 ---
 
@@ -1008,7 +1008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 URL of the asset proxy server. GitLab restart is required to apply changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#asset_proxy_url ApplicationSettings#asset_proxy_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#asset_proxy_url ApplicationSettings#asset_proxy_url}
 
 ---
 
@@ -1020,7 +1020,7 @@ By default, we write to the authorized_keys file to support Git over SSH without
 
 GitLab can be optimized to authenticate SSH keys via the database file. Only disable this if you have configured your OpenSSH server to use the AuthorizedKeysCommand.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#authorized_keys_enabled ApplicationSettings#authorized_keys_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#authorized_keys_enabled ApplicationSettings#authorized_keys_enabled}
 
 ---
 
@@ -1032,7 +1032,7 @@ When enabled, users will get automatically banned from the application when they
 
 Self-managed, Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#auto_ban_user_on_excessive_projects_download ApplicationSettings#auto_ban_user_on_excessive_projects_download}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#auto_ban_user_on_excessive_projects_download ApplicationSettings#auto_ban_user_on_excessive_projects_download}
 
 ---
 
@@ -1042,7 +1042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Specify a domain to use by default for every project’s Auto Review Apps and Auto Deploy stages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#auto_devops_domain ApplicationSettings#auto_devops_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#auto_devops_domain ApplicationSettings#auto_devops_domain}
 
 ---
 
@@ -1054,7 +1054,7 @@ Enable Auto DevOps for projects by default.
 
 It automatically builds, tests, and deploys applications based on a predefined CI/CD configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#auto_devops_enabled ApplicationSettings#auto_devops_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#auto_devops_enabled ApplicationSettings#auto_devops_enabled}
 
 ---
 
@@ -1064,7 +1064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enabling this permits automatic allocation of purchased storage in a namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#automatic_purchased_storage_allocation ApplicationSettings#automatic_purchased_storage_allocation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#automatic_purchased_storage_allocation ApplicationSettings#automatic_purchased_storage_allocation}
 
 ---
 
@@ -1074,7 +1074,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum simultaneous Direct Transfer batches to process.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#bulk_import_concurrent_pipeline_batch_limit ApplicationSettings#bulk_import_concurrent_pipeline_batch_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#bulk_import_concurrent_pipeline_batch_limit ApplicationSettings#bulk_import_concurrent_pipeline_batch_limit}
 
 ---
 
@@ -1084,7 +1084,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable migrating GitLab groups by direct transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#bulk_import_enabled ApplicationSettings#bulk_import_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#bulk_import_enabled ApplicationSettings#bulk_import_enabled}
 
 ---
 
@@ -1094,7 +1094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum download file size when importing from source GitLab instances by direct transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#bulk_import_max_download_file_size ApplicationSettings#bulk_import_max_download_file_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#bulk_import_max_download_file_size ApplicationSettings#bulk_import_max_download_file_size}
 
 ---
 
@@ -1104,7 +1104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Indicates whether users can create top-level groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#can_create_group ApplicationSettings#can_create_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#can_create_group ApplicationSettings#can_create_group}
 
 ---
 
@@ -1114,7 +1114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enabling this makes only licensed EE features available to projects if the project namespace’s plan includes the feature or if the project is public.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#check_namespace_plan ApplicationSettings#check_namespace_plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#check_namespace_plan ApplicationSettings#check_namespace_plan}
 
 ---
 
@@ -1124,7 +1124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The maximum number of includes per pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#ci_max_includes ApplicationSettings#ci_max_includes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#ci_max_includes ApplicationSettings#ci_max_includes}
 
 ---
 
@@ -1134,7 +1134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The maximum amount of memory, in bytes, that can be allocated for the pipeline configuration, with all included YAML configuration files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#ci_max_total_yaml_size_bytes ApplicationSettings#ci_max_total_yaml_size_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#ci_max_total_yaml_size_bytes ApplicationSettings#ci_max_total_yaml_size_bytes}
 
 ---
 
@@ -1144,7 +1144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Custom hostname (for private commit emails).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#commit_email_hostname ApplicationSettings#commit_email_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#commit_email_hostname ApplicationSettings#commit_email_hostname}
 
 ---
 
@@ -1154,7 +1154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum number of simultaneous import jobs for the Bitbucket Cloud importer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#concurrent_bitbucket_import_jobs_limit ApplicationSettings#concurrent_bitbucket_import_jobs_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#concurrent_bitbucket_import_jobs_limit ApplicationSettings#concurrent_bitbucket_import_jobs_limit}
 
 ---
 
@@ -1164,7 +1164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum number of simultaneous import jobs for the Bitbucket Server importer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#concurrent_bitbucket_server_import_jobs_limit ApplicationSettings#concurrent_bitbucket_server_import_jobs_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#concurrent_bitbucket_server_import_jobs_limit ApplicationSettings#concurrent_bitbucket_server_import_jobs_limit}
 
 ---
 
@@ -1174,7 +1174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum number of simultaneous import jobs for the GitHub importer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#concurrent_github_import_jobs_limit ApplicationSettings#concurrent_github_import_jobs_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#concurrent_github_import_jobs_limit ApplicationSettings#concurrent_github_import_jobs_limit}
 
 ---
 
@@ -1184,7 +1184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable cleanup policies for all projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#container_expiration_policies_enable_historic_entries ApplicationSettings#container_expiration_policies_enable_historic_entries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#container_expiration_policies_enable_historic_entries ApplicationSettings#container_expiration_policies_enable_historic_entries}
 
 ---
 
@@ -1194,7 +1194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The maximum number of tags that can be deleted in a single execution of cleanup policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#container_registry_cleanup_tags_service_max_list_size ApplicationSettings#container_registry_cleanup_tags_service_max_list_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#container_registry_cleanup_tags_service_max_list_size ApplicationSettings#container_registry_cleanup_tags_service_max_list_size}
 
 ---
 
@@ -1204,7 +1204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The maximum time, in seconds, that the cleanup process can take to delete a batch of tags for cleanup policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#container_registry_delete_tags_service_timeout ApplicationSettings#container_registry_delete_tags_service_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#container_registry_delete_tags_service_timeout ApplicationSettings#container_registry_delete_tags_service_timeout}
 
 ---
 
@@ -1214,7 +1214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Caching during the execution of cleanup policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#container_registry_expiration_policies_caching ApplicationSettings#container_registry_expiration_policies_caching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#container_registry_expiration_policies_caching ApplicationSettings#container_registry_expiration_policies_caching}
 
 ---
 
@@ -1224,7 +1224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Number of workers for cleanup policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#container_registry_expiration_policies_worker_capacity ApplicationSettings#container_registry_expiration_policies_worker_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#container_registry_expiration_policies_worker_capacity ApplicationSettings#container_registry_expiration_policies_worker_capacity}
 
 ---
 
@@ -1234,7 +1234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Container Registry token duration in minutes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#container_registry_token_expire_delay ApplicationSettings#container_registry_token_expire_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#container_registry_token_expire_delay ApplicationSettings#container_registry_token_expire_delay}
 
 ---
 
@@ -1244,7 +1244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable automatic deactivation of dormant users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#deactivate_dormant_users ApplicationSettings#deactivate_dormant_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#deactivate_dormant_users ApplicationSettings#deactivate_dormant_users}
 
 ---
 
@@ -1254,7 +1254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Length of time (in days) after which a user is considered dormant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#deactivate_dormant_users_period ApplicationSettings#deactivate_dormant_users_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#deactivate_dormant_users_period ApplicationSettings#deactivate_dormant_users_period}
 
 ---
 
@@ -1264,7 +1264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Default timeout for decompressing archived files, in seconds. Set to 0 to disable timeouts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#decompress_archive_file_timeout ApplicationSettings#decompress_archive_file_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#decompress_archive_file_timeout ApplicationSettings#decompress_archive_file_timeout}
 
 ---
 
@@ -1274,7 +1274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set the default expiration time for each job’s artifacts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#default_artifacts_expire_in ApplicationSettings#default_artifacts_expire_in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#default_artifacts_expire_in ApplicationSettings#default_artifacts_expire_in}
 
 ---
 
@@ -1284,7 +1284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Instance-level custom initial branch name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#default_branch_name ApplicationSettings#default_branch_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#default_branch_name ApplicationSettings#default_branch_name}
 
 ---
 
@@ -1296,7 +1296,7 @@ Determine if developers can push to the default branch.
 
 Can take: 0 (not protected, both users with the Developer role or Maintainer role can push new commits and force push), 1 (partially protected, users with the Developer role or Maintainer role can push new commits, but cannot force push) or 2 (fully protected, users with the Developer or Maintainer role cannot push new commits, but users with the Developer or Maintainer role can; no one can force push) as a parameter. Default is 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#default_branch_protection ApplicationSettings#default_branch_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#default_branch_protection ApplicationSettings#default_branch_protection}
 
 ---
 
@@ -1306,7 +1306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 default_branch_protection_defaults block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#default_branch_protection_defaults ApplicationSettings#default_branch_protection_defaults}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#default_branch_protection_defaults ApplicationSettings#default_branch_protection_defaults}
 
 ---
 
@@ -1316,7 +1316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Default CI/CD configuration file and path for new projects (.gitlab-ci.yml if not set).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#default_ci_config_path ApplicationSettings#default_ci_config_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#default_ci_config_path ApplicationSettings#default_ci_config_path}
 
 ---
 
@@ -1326,7 +1326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 What visibility level new groups receive. Can take private, internal and public as a parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#default_group_visibility ApplicationSettings#default_group_visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#default_group_visibility ApplicationSettings#default_group_visibility}
 
 ---
 
@@ -1336,7 +1336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Default preferred language for users who are not logged in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#default_preferred_language ApplicationSettings#default_preferred_language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#default_preferred_language ApplicationSettings#default_preferred_language}
 
 ---
 
@@ -1346,7 +1346,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Default project creation protection. Can take: 0 (No one), 1 (Maintainers) or 2 (Developers + Maintainers).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#default_project_creation ApplicationSettings#default_project_creation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#default_project_creation ApplicationSettings#default_project_creation}
 
 ---
 
@@ -1356,7 +1356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Project limit per user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#default_projects_limit ApplicationSettings#default_projects_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#default_projects_limit ApplicationSettings#default_projects_limit}
 
 ---
 
@@ -1366,7 +1366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 What visibility level new projects receive. Can take private, internal and public as a parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#default_project_visibility ApplicationSettings#default_project_visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#default_project_visibility ApplicationSettings#default_project_visibility}
 
 ---
 
@@ -1376,7 +1376,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 What visibility level new snippets receive. Can take private, internal and public as a parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#default_snippet_visibility ApplicationSettings#default_snippet_visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#default_snippet_visibility ApplicationSettings#default_snippet_visibility}
 
 ---
 
@@ -1386,7 +1386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Default syntax highlighting theme for users who are new or not signed in. See IDs of available themes (https://gitlab.com/gitlab-org/gitlab/blob/master/lib/gitlab/themes.rb#L16).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#default_syntax_highlighting_theme ApplicationSettings#default_syntax_highlighting_theme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#default_syntax_highlighting_theme ApplicationSettings#default_syntax_highlighting_theme}
 
 ---
 
@@ -1396,7 +1396,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable inactive project deletion feature.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#delete_inactive_projects ApplicationSettings#delete_inactive_projects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#delete_inactive_projects ApplicationSettings#delete_inactive_projects}
 
 ---
 
@@ -1408,7 +1408,7 @@ Specifies whether users who have not confirmed their email should be deleted.
 
 When set to true, unconfirmed users are deleted after unconfirmed_users_delete_after_days days. Self-managed, Premium and Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#delete_unconfirmed_users ApplicationSettings#delete_unconfirmed_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#delete_unconfirmed_users ApplicationSettings#delete_unconfirmed_users}
 
 ---
 
@@ -1420,7 +1420,7 @@ The number of days to wait before deleting a project or group that is marked for
 
 Value must be between 1 and 90.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#deletion_adjourned_period ApplicationSettings#deletion_adjourned_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#deletion_adjourned_period ApplicationSettings#deletion_adjourned_period}
 
 ---
 
@@ -1430,7 +1430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 (If enabled, requires diagramsnet_url) Enable Diagrams.net integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#diagramsnet_enabled ApplicationSettings#diagramsnet_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#diagramsnet_enabled ApplicationSettings#diagramsnet_enabled}
 
 ---
 
@@ -1440,7 +1440,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The Diagrams.net instance URL for integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#diagramsnet_url ApplicationSettings#diagramsnet_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#diagramsnet_url ApplicationSettings#diagramsnet_url}
 
 ---
 
@@ -1450,7 +1450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum files in a diff.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#diff_max_files ApplicationSettings#diff_max_files}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#diff_max_files ApplicationSettings#diff_max_files}
 
 ---
 
@@ -1460,7 +1460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum lines in a diff.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#diff_max_lines ApplicationSettings#diff_max_lines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#diff_max_lines ApplicationSettings#diff_max_lines}
 
 ---
 
@@ -1470,7 +1470,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum diff patch size, in bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#diff_max_patch_bytes ApplicationSettings#diff_max_patch_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#diff_max_patch_bytes ApplicationSettings#diff_max_patch_bytes}
 
 ---
 
@@ -1480,7 +1480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Stops administrators from connecting their GitLab accounts to non-trusted OAuth 2.0 applications that have the api, read_api, read_repository, write_repository, read_registry, write_registry, or sudo scopes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#disable_admin_oauth_scopes ApplicationSettings#disable_admin_oauth_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#disable_admin_oauth_scopes ApplicationSettings#disable_admin_oauth_scopes}
 
 ---
 
@@ -1490,7 +1490,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Disabled OAuth sign-in sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#disabled_oauth_sign_in_sources ApplicationSettings#disabled_oauth_sign_in_sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#disabled_oauth_sign_in_sources ApplicationSettings#disabled_oauth_sign_in_sources}
 
 ---
 
@@ -1500,7 +1500,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Disable display of RSS/Atom and calendar feed tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#disable_feed_token ApplicationSettings#disable_feed_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#disable_feed_token ApplicationSettings#disable_feed_token}
 
 ---
 
@@ -1512,7 +1512,7 @@ Disable personal access tokens.
 
 Self-managed, Premium and Ultimate only. There is no method available to enable a personal access token that’s been disabled through the API. This is a known issue.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#disable_personal_access_tokens ApplicationSettings#disable_personal_access_tokens}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#disable_personal_access_tokens ApplicationSettings#disable_personal_access_tokens}
 
 ---
 
@@ -1522,7 +1522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enforce DNS rebinding attack protection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#dns_rebinding_protection_enabled ApplicationSettings#dns_rebinding_protection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#dns_rebinding_protection_enabled ApplicationSettings#dns_rebinding_protection_enabled}
 
 ---
 
@@ -1532,7 +1532,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Force people to use only corporate emails for sign-up. Null means there is no restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#domain_allowlist ApplicationSettings#domain_allowlist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#domain_allowlist ApplicationSettings#domain_allowlist}
 
 ---
 
@@ -1544,7 +1544,7 @@ Users with email addresses that match these domains cannot sign up.
 
 Wildcards allowed. Use separate lines for multiple entries. Ex: domain.com, *.domain.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#domain_denylist ApplicationSettings#domain_denylist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#domain_denylist ApplicationSettings#domain_denylist}
 
 ---
 
@@ -1554,7 +1554,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 (If enabled, requires: domain_denylist) Allows blocking sign-ups from emails from specific domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#domain_denylist_enabled ApplicationSettings#domain_denylist_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#domain_denylist_enabled ApplicationSettings#domain_denylist_enabled}
 
 ---
 
@@ -1564,7 +1564,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum downstream pipeline trigger rate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#downstream_pipeline_trigger_limit_per_project_user_sha ApplicationSettings#downstream_pipeline_trigger_limit_per_project_user_sha}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#downstream_pipeline_trigger_limit_per_project_user_sha ApplicationSettings#downstream_pipeline_trigger_limit_per_project_user_sha}
 
 ---
 
@@ -1574,7 +1574,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The minimum allowed bit length of an uploaded DSA key. 0 means no restriction. -1 disables DSA keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#dsa_key_restriction ApplicationSettings#dsa_key_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#dsa_key_restriction ApplicationSettings#dsa_key_restriction}
 
 ---
 
@@ -1584,7 +1584,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Indicates whether GitLab Duo features are enabled for this instance. Self-managed, Premium and Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#duo_features_enabled ApplicationSettings#duo_features_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#duo_features_enabled ApplicationSettings#duo_features_enabled}
 
 ---
 
@@ -1596,7 +1596,7 @@ The minimum allowed curve size (in bits) of an uploaded ECDSA key.
 
 0 means no restriction. -1 disables ECDSA keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#ecdsa_key_restriction ApplicationSettings#ecdsa_key_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#ecdsa_key_restriction ApplicationSettings#ecdsa_key_restriction}
 
 ---
 
@@ -1608,7 +1608,7 @@ The minimum allowed curve size (in bits) of an uploaded ECDSA_SK key.
 
 0 means no restriction. -1 disables ECDSA_SK keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#ecdsa_sk_key_restriction ApplicationSettings#ecdsa_sk_key_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#ecdsa_sk_key_restriction ApplicationSettings#ecdsa_sk_key_restriction}
 
 ---
 
@@ -1620,7 +1620,7 @@ The minimum allowed curve size (in bits) of an uploaded ED25519 key.
 
 0 means no restriction. -1 disables ED25519 keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#ed25519_key_restriction ApplicationSettings#ed25519_key_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#ed25519_key_restriction ApplicationSettings#ed25519_key_restriction}
 
 ---
 
@@ -1632,7 +1632,7 @@ The minimum allowed curve size (in bits) of an uploaded ED25519_SK key.
 
 0 means no restriction. -1 disables ED25519_SK keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#ed25519_sk_key_restriction ApplicationSettings#ed25519_sk_key_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#ed25519_sk_key_restriction ApplicationSettings#ed25519_sk_key_restriction}
 
 ---
 
@@ -1642,7 +1642,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 AWS IAM access key ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#eks_access_key_id ApplicationSettings#eks_access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#eks_access_key_id ApplicationSettings#eks_access_key_id}
 
 ---
 
@@ -1652,7 +1652,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Amazon account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#eks_account_id ApplicationSettings#eks_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#eks_account_id ApplicationSettings#eks_account_id}
 
 ---
 
@@ -1662,7 +1662,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable integration with Amazon EKS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#eks_integration_enabled ApplicationSettings#eks_integration_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#eks_integration_enabled ApplicationSettings#eks_integration_enabled}
 
 ---
 
@@ -1672,7 +1672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 AWS IAM secret access key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#eks_secret_access_key ApplicationSettings#eks_secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#eks_secret_access_key ApplicationSettings#eks_secret_access_key}
 
 ---
 
@@ -1682,7 +1682,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable the use of AWS hosted Elasticsearch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_aws ApplicationSettings#elasticsearch_aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_aws ApplicationSettings#elasticsearch_aws}
 
 ---
 
@@ -1692,7 +1692,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 AWS IAM access key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_aws_access_key ApplicationSettings#elasticsearch_aws_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_aws_access_key ApplicationSettings#elasticsearch_aws_access_key}
 
 ---
 
@@ -1702,7 +1702,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The AWS region the Elasticsearch domain is configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_aws_region ApplicationSettings#elasticsearch_aws_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_aws_region ApplicationSettings#elasticsearch_aws_region}
 
 ---
 
@@ -1712,7 +1712,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 AWS IAM secret access key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_aws_secret_access_key ApplicationSettings#elasticsearch_aws_secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_aws_secret_access_key ApplicationSettings#elasticsearch_aws_secret_access_key}
 
 ---
 
@@ -1724,7 +1724,7 @@ Maximum size of text fields to index by Elasticsearch.
 
 0 value means no limit. This does not apply to repository and wiki indexing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_indexed_field_length_limit ApplicationSettings#elasticsearch_indexed_field_length_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_indexed_field_length_limit ApplicationSettings#elasticsearch_indexed_field_length_limit}
 
 ---
 
@@ -1734,7 +1734,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum size of repository and wiki files that are indexed by Elasticsearch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_indexed_file_size_limit_kb ApplicationSettings#elasticsearch_indexed_file_size_limit_kb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_indexed_file_size_limit_kb ApplicationSettings#elasticsearch_indexed_file_size_limit_kb}
 
 ---
 
@@ -1744,7 +1744,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable Elasticsearch indexing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_indexing ApplicationSettings#elasticsearch_indexing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_indexing ApplicationSettings#elasticsearch_indexing}
 
 ---
 
@@ -1754,7 +1754,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Limit Elasticsearch to index certain namespaces and projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_limit_indexing ApplicationSettings#elasticsearch_limit_indexing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_limit_indexing ApplicationSettings#elasticsearch_limit_indexing}
 
 ---
 
@@ -1764,7 +1764,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum concurrency of Elasticsearch bulk requests per indexing operation. This only applies to repository indexing operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_max_bulk_concurrency ApplicationSettings#elasticsearch_max_bulk_concurrency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_max_bulk_concurrency ApplicationSettings#elasticsearch_max_bulk_concurrency}
 
 ---
 
@@ -1774,7 +1774,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum size of Elasticsearch bulk indexing requests in MB. This only applies to repository indexing operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_max_bulk_size_mb ApplicationSettings#elasticsearch_max_bulk_size_mb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_max_bulk_size_mb ApplicationSettings#elasticsearch_max_bulk_size_mb}
 
 ---
 
@@ -1784,7 +1784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum concurrency of Elasticsearch code indexing background jobs. This only applies to repository indexing operations. Premium and Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_max_code_indexing_concurrency ApplicationSettings#elasticsearch_max_code_indexing_concurrency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_max_code_indexing_concurrency ApplicationSettings#elasticsearch_max_code_indexing_concurrency}
 
 ---
 
@@ -1794,7 +1794,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The namespaces to index via Elasticsearch if elasticsearch_limit_indexing is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_namespace_ids ApplicationSettings#elasticsearch_namespace_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_namespace_ids ApplicationSettings#elasticsearch_namespace_ids}
 
 ---
 
@@ -1804,7 +1804,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The password of your Elasticsearch instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_password ApplicationSettings#elasticsearch_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_password ApplicationSettings#elasticsearch_password}
 
 ---
 
@@ -1814,7 +1814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The projects to index via Elasticsearch if elasticsearch_limit_indexing is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_project_ids ApplicationSettings#elasticsearch_project_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_project_ids ApplicationSettings#elasticsearch_project_ids}
 
 ---
 
@@ -1826,7 +1826,7 @@ Enable automatic requeuing of indexing workers.
 
 This improves non-code indexing throughput by enqueuing Sidekiq jobs until all documents are processed. Premium and Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_requeue_workers ApplicationSettings#elasticsearch_requeue_workers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_requeue_workers ApplicationSettings#elasticsearch_requeue_workers}
 
 ---
 
@@ -1836,7 +1836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable Elasticsearch search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_search ApplicationSettings#elasticsearch_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_search ApplicationSettings#elasticsearch_search}
 
 ---
 
@@ -1846,7 +1846,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The URL to use for connecting to Elasticsearch. Use a comma-separated list to support cluster (for example, http://localhost:9200, http://localhost:9201).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_url ApplicationSettings#elasticsearch_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_url ApplicationSettings#elasticsearch_url}
 
 ---
 
@@ -1856,7 +1856,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The username of your Elasticsearch instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_username ApplicationSettings#elasticsearch_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_username ApplicationSettings#elasticsearch_username}
 
 ---
 
@@ -1868,7 +1868,7 @@ Number of indexing worker shards.
 
 This improves non-code indexing throughput by enqueuing more parallel Sidekiq jobs. Premium and Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_worker_number_of_shards ApplicationSettings#elasticsearch_worker_number_of_shards}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_worker_number_of_shards ApplicationSettings#elasticsearch_worker_number_of_shards}
 
 ---
 
@@ -1878,7 +1878,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Additional text added to the bottom of every email for legal/auditing/compliance reasons.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#email_additional_text ApplicationSettings#email_additional_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#email_additional_text ApplicationSettings#email_additional_text}
 
 ---
 
@@ -1890,7 +1890,7 @@ Some email servers do not support overriding the email sender name.
 
 Enable this option to include the name of the author of the issue, merge request or comment in the email body instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#email_author_in_body ApplicationSettings#email_author_in_body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#email_author_in_body ApplicationSettings#email_author_in_body}
 
 ---
 
@@ -1900,7 +1900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Specifies whether users must confirm their email before sign in. Possible values are off, soft, and hard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#email_confirmation_setting ApplicationSettings#email_confirmation_setting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#email_confirmation_setting ApplicationSettings#email_confirmation_setting}
 
 ---
 
@@ -1910,7 +1910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Show the external redirect page that warns you about user-generated content in GitLab Pages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#enable_artifact_external_redirect_warning_page ApplicationSettings#enable_artifact_external_redirect_warning_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#enable_artifact_external_redirect_warning_page ApplicationSettings#enable_artifact_external_redirect_warning_page}
 
 ---
 
@@ -1920,7 +1920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enabled protocols for Git access. Allowed values are: ssh, http, and nil to allow both protocols.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#enabled_git_access_protocol ApplicationSettings#enabled_git_access_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#enabled_git_access_protocol ApplicationSettings#enabled_git_access_protocol}
 
 ---
 
@@ -1930,7 +1930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enabling this permits enforcement of namespace storage limits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#enforce_namespace_storage_limit ApplicationSettings#enforce_namespace_storage_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#enforce_namespace_storage_limit ApplicationSettings#enforce_namespace_storage_limit}
 
 ---
 
@@ -1940,7 +1940,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 (If enabled, requires: terms) Enforce application ToS to all users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#enforce_terms ApplicationSettings#enforce_terms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#enforce_terms ApplicationSettings#enforce_terms}
 
 ---
 
@@ -1950,7 +1950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 (If enabled, requires: external_auth_client_key) The certificate to use to authenticate with the external authorization service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#external_auth_client_cert ApplicationSettings#external_auth_client_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#external_auth_client_cert ApplicationSettings#external_auth_client_cert}
 
 ---
 
@@ -1960,7 +1960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Private key for the certificate when authentication is required for the external authorization service, this is encrypted when stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#external_auth_client_key ApplicationSettings#external_auth_client_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#external_auth_client_key ApplicationSettings#external_auth_client_key}
 
 ---
 
@@ -1970,7 +1970,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Passphrase to use for the private key when authenticating with the external service this is encrypted when stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#external_auth_client_key_pass ApplicationSettings#external_auth_client_key_pass}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#external_auth_client_key_pass ApplicationSettings#external_auth_client_key_pass}
 
 ---
 
@@ -1980,7 +1980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The default classification label to use when requesting authorization and no classification label has been specified on the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#external_authorization_service_default_label ApplicationSettings#external_authorization_service_default_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#external_authorization_service_default_label ApplicationSettings#external_authorization_service_default_label}
 
 ---
 
@@ -1990,7 +1990,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 (If enabled, requires: external_authorization_service_default_label, external_authorization_service_timeout and external_authorization_service_url) Enable using an external authorization service for accessing projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#external_authorization_service_enabled ApplicationSettings#external_authorization_service_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#external_authorization_service_enabled ApplicationSettings#external_authorization_service_enabled}
 
 ---
 
@@ -2002,7 +2002,7 @@ The timeout after which an authorization request is aborted, in seconds.
 
 When a request times out, access is denied to the user. (min: 0.001, max: 10, step: 0.001).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#external_authorization_service_timeout ApplicationSettings#external_authorization_service_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#external_authorization_service_timeout ApplicationSettings#external_authorization_service_timeout}
 
 ---
 
@@ -2012,7 +2012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 URL to which authorization requests are directed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#external_authorization_service_url ApplicationSettings#external_authorization_service_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#external_authorization_service_url ApplicationSettings#external_authorization_service_url}
 
 ---
 
@@ -2022,7 +2022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 How long to wait for a response from the pipeline validation service. Assumes OK if it times out.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#external_pipeline_validation_service_timeout ApplicationSettings#external_pipeline_validation_service_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#external_pipeline_validation_service_timeout ApplicationSettings#external_pipeline_validation_service_timeout}
 
 ---
 
@@ -2032,7 +2032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Optional. Token to include as the X-Gitlab-Token header in requests to the URL in external_pipeline_validation_service_url.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#external_pipeline_validation_service_token ApplicationSettings#external_pipeline_validation_service_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#external_pipeline_validation_service_token ApplicationSettings#external_pipeline_validation_service_token}
 
 ---
 
@@ -2042,7 +2042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 URL to use for pipeline validation requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#external_pipeline_validation_service_url ApplicationSettings#external_pipeline_validation_service_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#external_pipeline_validation_service_url ApplicationSettings#external_pipeline_validation_service_url}
 
 ---
 
@@ -2052,7 +2052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Time period in minutes after which the user is unlocked when maximum number of failed sign-in attempts reached.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#failed_login_attempts_unlock_period_in_minutes ApplicationSettings#failed_login_attempts_unlock_period_in_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#failed_login_attempts_unlock_period_in_minutes ApplicationSettings#failed_login_attempts_unlock_period_in_minutes}
 
 ---
 
@@ -2062,7 +2062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The ID of a project to load custom file templates from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#file_template_project_id ApplicationSettings#file_template_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#file_template_project_id ApplicationSettings#file_template_project_id}
 
 ---
 
@@ -2074,7 +2074,7 @@ Start day of the week for calendar views and date pickers.
 
 Valid values are 0 for Sunday, 1 for Monday, and 6 for Saturday.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#first_day_of_week ApplicationSettings#first_day_of_week}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#first_day_of_week ApplicationSettings#first_day_of_week}
 
 ---
 
@@ -2084,7 +2084,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Comma-separated list of IPs and CIDRs of allowed secondary nodes. For example, 1.1.1.1, 2.2.2.0/24.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#geo_node_allowed_ips ApplicationSettings#geo_node_allowed_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#geo_node_allowed_ips ApplicationSettings#geo_node_allowed_ips}
 
 ---
 
@@ -2094,7 +2094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The amount of seconds after which a request to get a secondary node status times out.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#geo_status_timeout ApplicationSettings#geo_status_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#geo_status_timeout ApplicationSettings#geo_status_timeout}
 
 ---
 
@@ -2106,7 +2106,7 @@ Default Gitaly timeout, in seconds.
 
 This timeout is not enforced for Git fetch/push operations or Sidekiq jobs. Set to 0 to disable timeouts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#gitaly_timeout_default ApplicationSettings#gitaly_timeout_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#gitaly_timeout_default ApplicationSettings#gitaly_timeout_default}
 
 ---
 
@@ -2118,7 +2118,7 @@ Gitaly fast operation timeout, in seconds.
 
 Some Gitaly operations are expected to be fast. If they exceed this threshold, there may be a problem with a storage shard and ‘failing fast’ can help maintain the stability of the GitLab instance. Set to 0 to disable timeouts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#gitaly_timeout_fast ApplicationSettings#gitaly_timeout_fast}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#gitaly_timeout_fast ApplicationSettings#gitaly_timeout_fast}
 
 ---
 
@@ -2130,7 +2130,7 @@ Medium Gitaly timeout, in seconds.
 
 This should be a value between the Fast and the Default timeout. Set to 0 to disable timeouts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#gitaly_timeout_medium ApplicationSettings#gitaly_timeout_medium}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#gitaly_timeout_medium ApplicationSettings#gitaly_timeout_medium}
 
 ---
 
@@ -2140,7 +2140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum number of Git operations per minute a user can perform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#gitlab_shell_operation_limit ApplicationSettings#gitlab_shell_operation_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#gitlab_shell_operation_limit ApplicationSettings#gitlab_shell_operation_limit}
 
 ---
 
@@ -2150,7 +2150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable Gitpod integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#gitpod_enabled ApplicationSettings#gitpod_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#gitpod_enabled ApplicationSettings#gitpod_enabled}
 
 ---
 
@@ -2160,7 +2160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The Gitpod instance URL for integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#gitpod_url ApplicationSettings#gitpod_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#gitpod_url ApplicationSettings#gitpod_url}
 
 ---
 
@@ -2172,7 +2172,7 @@ List of user IDs that are emailed when the Git abuse rate limit is exceeded.
 
 Maximum: 100 user IDs. Self-managed, Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#git_rate_limit_users_alertlist ApplicationSettings#git_rate_limit_users_alertlist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#git_rate_limit_users_alertlist ApplicationSettings#git_rate_limit_users_alertlist}
 
 ---
 
@@ -2182,7 +2182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 List of usernames excluded from Git anti-abuse rate limits. Maximum: 100 usernames. Self-managed, Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#git_rate_limit_users_allowlist ApplicationSettings#git_rate_limit_users_allowlist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#git_rate_limit_users_allowlist ApplicationSettings#git_rate_limit_users_allowlist}
 
 ---
 
@@ -2192,7 +2192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum duration (in minutes) of a session for Git operations when 2FA is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#git_two_factor_session_expiry ApplicationSettings#git_two_factor_session_expiry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#git_two_factor_session_expiry ApplicationSettings#git_two_factor_session_expiry}
 
 ---
 
@@ -2202,7 +2202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Comma-separated list of IP addresses and CIDRs always allowed for inbound traffic. For example, 1.1.1.1, 2.2.2.0/24.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#globally_allowed_ips ApplicationSettings#globally_allowed_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#globally_allowed_ips ApplicationSettings#globally_allowed_ips}
 
 ---
 
@@ -2212,7 +2212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable Grafana.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#grafana_enabled ApplicationSettings#grafana_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#grafana_enabled ApplicationSettings#grafana_enabled}
 
 ---
 
@@ -2222,7 +2222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Grafana URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#grafana_url ApplicationSettings#grafana_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#grafana_url ApplicationSettings#grafana_url}
 
 ---
 
@@ -2232,7 +2232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable Gravatar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#gravatar_enabled ApplicationSettings#gravatar_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#gravatar_enabled ApplicationSettings#gravatar_enabled}
 
 ---
 
@@ -2242,7 +2242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Prevent overrides of default branch protection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#group_owners_can_manage_default_branch_protection ApplicationSettings#group_owners_can_manage_default_branch_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#group_owners_can_manage_default_branch_protection ApplicationSettings#group_owners_can_manage_default_branch_protection}
 
 ---
 
@@ -2252,7 +2252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Hide marketing-related entries from help.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#help_page_hide_commercial_content ApplicationSettings#help_page_hide_commercial_content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#help_page_hide_commercial_content ApplicationSettings#help_page_hide_commercial_content}
 
 ---
 
@@ -2262,7 +2262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Alternate support URL for help page and help dropdown.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#help_page_support_url ApplicationSettings#help_page_support_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#help_page_support_url ApplicationSettings#help_page_support_url}
 
 ---
 
@@ -2272,7 +2272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Custom text displayed on the help page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#help_page_text ApplicationSettings#help_page_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#help_page_text ApplicationSettings#help_page_text}
 
 ---
 
@@ -2282,7 +2282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 GitLab server administrator information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#help_text ApplicationSettings#help_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#help_text ApplicationSettings#help_text}
 
 ---
 
@@ -2292,7 +2292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Do not display offers from third parties in GitLab.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#hide_third_party_offers ApplicationSettings#hide_third_party_offers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#hide_third_party_offers ApplicationSettings#hide_third_party_offers}
 
 ---
 
@@ -2302,7 +2302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Redirect to this URL when not logged in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#home_page_url ApplicationSettings#home_page_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#home_page_url ApplicationSettings#home_page_url}
 
 ---
 
@@ -2312,7 +2312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable or disable Git housekeeping. If enabled, requires housekeeping_optimize_repository_period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#housekeeping_enabled ApplicationSettings#housekeeping_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#housekeeping_enabled ApplicationSettings#housekeeping_enabled}
 
 ---
 
@@ -2322,7 +2322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Number of Git pushes after which an incremental git-repack is run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#housekeeping_optimize_repository_period ApplicationSettings#housekeeping_optimize_repository_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#housekeeping_optimize_repository_period ApplicationSettings#housekeeping_optimize_repository_period}
 
 ---
 
@@ -2332,7 +2332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable HTML emails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#html_emails_enabled ApplicationSettings#html_emails_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#html_emails_enabled ApplicationSettings#html_emails_enabled}
 
 ---
 
@@ -2340,7 +2340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#id ApplicationSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#id ApplicationSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2353,7 +2353,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Sources to allow project import from. Valid values are: `github`, `bitbucket`, `bitbucket_server`, `fogbugz`, `git`, `gitlab_project`, `gitea`, `manifest`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#import_sources ApplicationSettings#import_sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#import_sources ApplicationSettings#import_sources}
 
 ---
 
@@ -2363,7 +2363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 If delete_inactive_projects is true, the time (in months) to wait before deleting inactive projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#inactive_projects_delete_after_months ApplicationSettings#inactive_projects_delete_after_months}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#inactive_projects_delete_after_months ApplicationSettings#inactive_projects_delete_after_months}
 
 ---
 
@@ -2373,7 +2373,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 If delete_inactive_projects is true, the minimum repository size for projects to be checked for inactivity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#inactive_projects_min_size_mb ApplicationSettings#inactive_projects_min_size_mb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#inactive_projects_min_size_mb ApplicationSettings#inactive_projects_min_size_mb}
 
 ---
 
@@ -2383,7 +2383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 If delete_inactive_projects is true, sets the time (in months) to wait before emailing maintainers that the project is scheduled be deleted because it is inactive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#inactive_projects_send_warning_email_after_months ApplicationSettings#inactive_projects_send_warning_email_after_months}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#inactive_projects_send_warning_email_after_months ApplicationSettings#inactive_projects_send_warning_email_after_months}
 
 ---
 
@@ -2393,7 +2393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Whether or not optional metrics are enabled in Service Ping.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#include_optional_metrics_in_service_ping ApplicationSettings#include_optional_metrics_in_service_ping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#include_optional_metrics_in_service_ping ApplicationSettings#include_optional_metrics_in_service_ping}
 
 ---
 
@@ -2403,7 +2403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable in-product marketing emails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#in_product_marketing_emails_enabled ApplicationSettings#in_product_marketing_emails_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#in_product_marketing_emails_enabled ApplicationSettings#in_product_marketing_emails_enabled}
 
 ---
 
@@ -2413,7 +2413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable Invisible CAPTCHA spam detection during sign-up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#invisible_captcha_enabled ApplicationSettings#invisible_captcha_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#invisible_captcha_enabled ApplicationSettings#invisible_captcha_enabled}
 
 ---
 
@@ -2423,7 +2423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Max number of issue creation requests per minute per user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#issues_create_limit ApplicationSettings#issues_create_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#issues_create_limit ApplicationSettings#issues_create_limit}
 
 ---
 
@@ -2433,7 +2433,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ID of the OAuth application used to authenticate with the GitLab for Jira Cloud app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#jira_connect_application_key ApplicationSettings#jira_connect_application_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#jira_connect_application_key ApplicationSettings#jira_connect_application_key}
 
 ---
 
@@ -2443,7 +2443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 URL of the GitLab instance used as a proxy for the GitLab for Jira Cloud app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#jira_connect_proxy_url ApplicationSettings#jira_connect_proxy_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#jira_connect_proxy_url ApplicationSettings#jira_connect_proxy_url}
 
 ---
 
@@ -2453,7 +2453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable public key storage for the GitLab for Jira Cloud app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#jira_connect_public_key_storage_enabled ApplicationSettings#jira_connect_public_key_storage_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#jira_connect_public_key_storage_enabled ApplicationSettings#jira_connect_public_key_storage_enabled}
 
 ---
 
@@ -2463,7 +2463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Prevent the deletion of the artifacts from the most recent successful jobs, regardless of the expiry time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#keep_latest_artifact ApplicationSettings#keep_latest_artifact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#keep_latest_artifact ApplicationSettings#keep_latest_artifact}
 
 ---
 
@@ -2473,7 +2473,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Increase this value when any cached Markdown should be invalidated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#local_markdown_version ApplicationSettings#local_markdown_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#local_markdown_version ApplicationSettings#local_markdown_version}
 
 ---
 
@@ -2483,7 +2483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Indicates whether the GitLab Duo features enabled setting is enforced for all subgroups. Self-managed, Premium and Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#lock_duo_features_enabled ApplicationSettings#lock_duo_features_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#lock_duo_features_enabled ApplicationSettings#lock_duo_features_enabled}
 
 ---
 
@@ -2493,7 +2493,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set to true to lock all memberships to LDAP. Premium and Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#lock_memberships_to_ldap ApplicationSettings#lock_memberships_to_ldap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#lock_memberships_to_ldap ApplicationSettings#lock_memberships_to_ldap}
 
 ---
 
@@ -2503,7 +2503,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable Mailgun event receiver.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#mailgun_events_enabled ApplicationSettings#mailgun_events_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#mailgun_events_enabled ApplicationSettings#mailgun_events_enabled}
 
 ---
 
@@ -2513,7 +2513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The Mailgun HTTP webhook signing key for receiving events from webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#mailgun_signing_key ApplicationSettings#mailgun_signing_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#mailgun_signing_key ApplicationSettings#mailgun_signing_key}
 
 ---
 
@@ -2523,7 +2523,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 When instance is in maintenance mode, non-administrative users can sign in with read-only access and make read-only API requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#maintenance_mode ApplicationSettings#maintenance_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#maintenance_mode ApplicationSettings#maintenance_mode}
 
 ---
 
@@ -2533,7 +2533,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Message displayed when instance is in maintenance mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#maintenance_mode_message ApplicationSettings#maintenance_mode_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#maintenance_mode_message ApplicationSettings#maintenance_mode_message}
 
 ---
 
@@ -2543,7 +2543,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Use repo.maven.apache.org as a default remote repository when the package is not found in the GitLab Package Registry for Maven. Premium and Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#maven_package_requests_forwarding ApplicationSettings#maven_package_requests_forwarding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#maven_package_requests_forwarding ApplicationSettings#maven_package_requests_forwarding}
 
 ---
 
@@ -2553,7 +2553,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum artifacts size in MB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#max_artifacts_size ApplicationSettings#max_artifacts_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#max_artifacts_size ApplicationSettings#max_artifacts_size}
 
 ---
 
@@ -2563,7 +2563,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Limit attachment size in MB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#max_attachment_size ApplicationSettings#max_attachment_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#max_attachment_size ApplicationSettings#max_attachment_size}
 
 ---
 
@@ -2573,7 +2573,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum decompressed archive size in bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#max_decompressed_archive_size ApplicationSettings#max_decompressed_archive_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#max_decompressed_archive_size ApplicationSettings#max_decompressed_archive_size}
 
 ---
 
@@ -2583,7 +2583,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum export size in MB. 0 for unlimited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#max_export_size ApplicationSettings#max_export_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#max_export_size ApplicationSettings#max_export_size}
 
 ---
 
@@ -2593,7 +2593,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum remote file size for imports from external object storages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#max_import_remote_file_size ApplicationSettings#max_import_remote_file_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#max_import_remote_file_size ApplicationSettings#max_import_remote_file_size}
 
 ---
 
@@ -2603,7 +2603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum import size in MB. 0 for unlimited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#max_import_size ApplicationSettings#max_import_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#max_import_size ApplicationSettings#max_import_size}
 
 ---
 
@@ -2613,7 +2613,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum number of sign-in attempts before locking out the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#max_login_attempts ApplicationSettings#max_login_attempts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#max_login_attempts ApplicationSettings#max_login_attempts}
 
 ---
 
@@ -2625,7 +2625,7 @@ Maximum number of unique repositories a user can download in the specified time 
 
 Maximum: 10,000 repositories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#max_number_of_repository_downloads ApplicationSettings#max_number_of_repository_downloads}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#max_number_of_repository_downloads ApplicationSettings#max_number_of_repository_downloads}
 
 ---
 
@@ -2635,7 +2635,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Reporting time period (in seconds). Maximum: 864000 seconds (10 days).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#max_number_of_repository_downloads_within_time_period ApplicationSettings#max_number_of_repository_downloads_within_time_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#max_number_of_repository_downloads_within_time_period ApplicationSettings#max_number_of_repository_downloads_within_time_period}
 
 ---
 
@@ -2645,7 +2645,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum size of pages repositories in MB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#max_pages_size ApplicationSettings#max_pages_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#max_pages_size ApplicationSettings#max_pages_size}
 
 ---
 
@@ -2655,7 +2655,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum allowable lifetime for access tokens in days.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#max_personal_access_token_lifetime ApplicationSettings#max_personal_access_token_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#max_personal_access_token_lifetime ApplicationSettings#max_personal_access_token_lifetime}
 
 ---
 
@@ -2665,7 +2665,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum allowable lifetime for SSH keys in days.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#max_ssh_key_lifetime ApplicationSettings#max_ssh_key_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#max_ssh_key_lifetime ApplicationSettings#max_ssh_key_lifetime}
 
 ---
 
@@ -2675,7 +2675,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum size in bytes of the Terraform state files. Set this to 0 for unlimited file size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#max_terraform_state_size_bytes ApplicationSettings#max_terraform_state_size_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#max_terraform_state_size_bytes ApplicationSettings#max_terraform_state_size_bytes}
 
 ---
 
@@ -2685,7 +2685,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 A method call is only tracked when it takes longer than the given amount of milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#metrics_method_call_threshold ApplicationSettings#metrics_method_call_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#metrics_method_call_threshold ApplicationSettings#metrics_method_call_threshold}
 
 ---
 
@@ -2695,7 +2695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Indicates whether passwords require a minimum length. Premium and Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#minimum_password_length ApplicationSettings#minimum_password_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#minimum_password_length ApplicationSettings#minimum_password_length}
 
 ---
 
@@ -2705,7 +2705,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Allow repository mirroring to configured by project Maintainers. If disabled, only Administrators can configure repository mirroring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#mirror_available ApplicationSettings#mirror_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#mirror_available ApplicationSettings#mirror_available}
 
 ---
 
@@ -2715,7 +2715,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Minimum capacity to be available before scheduling more mirrors preemptively.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#mirror_capacity_threshold ApplicationSettings#mirror_capacity_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#mirror_capacity_threshold ApplicationSettings#mirror_capacity_threshold}
 
 ---
 
@@ -2725,7 +2725,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum number of mirrors that can be synchronizing at the same time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#mirror_max_capacity ApplicationSettings#mirror_max_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#mirror_max_capacity ApplicationSettings#mirror_max_capacity}
 
 ---
 
@@ -2735,7 +2735,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum time (in minutes) between updates that a mirror can have when scheduled to synchronize.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#mirror_max_delay ApplicationSettings#mirror_max_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#mirror_max_delay ApplicationSettings#mirror_max_delay}
 
 ---
 
@@ -2745,7 +2745,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Use npmjs.org as a default remote repository when the package is not found in the GitLab Package Registry for npm.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#npm_package_requests_forwarding ApplicationSettings#npm_package_requests_forwarding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#npm_package_requests_forwarding ApplicationSettings#npm_package_requests_forwarding}
 
 ---
 
@@ -2755,7 +2755,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Indicates whether to skip metadata URL validation for the NuGet package.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#nuget_skip_metadata_url_validation ApplicationSettings#nuget_skip_metadata_url_validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#nuget_skip_metadata_url_validation ApplicationSettings#nuget_skip_metadata_url_validation}
 
 ---
 
@@ -2765,7 +2765,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Define a list of trusted domains or IP addresses to which local requests are allowed when local requests for hooks and services are disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#outbound_local_requests_whitelist ApplicationSettings#outbound_local_requests_whitelist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#outbound_local_requests_whitelist ApplicationSettings#outbound_local_requests_whitelist}
 
 ---
 
@@ -2775,7 +2775,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 List of package registry metadata to sync. See the list of the available values (https://gitlab.com/gitlab-org/gitlab/-/blob/ace16c20d5da7c4928dd03fb139692638b557fe3/app/models/concerns/enums/package_metadata.rb#L5). Self-managed, Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#package_metadata_purl_types ApplicationSettings#package_metadata_purl_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#package_metadata_purl_types ApplicationSettings#package_metadata_purl_types}
 
 ---
 
@@ -2785,7 +2785,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable to allow anyone to pull from Package Registry visible and changeable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#package_registry_allow_anyone_to_pull_option ApplicationSettings#package_registry_allow_anyone_to_pull_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#package_registry_allow_anyone_to_pull_option ApplicationSettings#package_registry_allow_anyone_to_pull_option}
 
 ---
 
@@ -2795,7 +2795,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Number of workers assigned to the packages cleanup policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#package_registry_cleanup_policies_worker_capacity ApplicationSettings#package_registry_cleanup_policies_worker_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#package_registry_cleanup_policies_worker_capacity ApplicationSettings#package_registry_cleanup_policies_worker_capacity}
 
 ---
 
@@ -2807,7 +2807,7 @@ Require users to prove ownership of custom domains.
 
 Domain verification is an essential security measure for public GitLab sites. Users are required to demonstrate they control a domain before it is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#pages_domain_verification_enabled ApplicationSettings#pages_domain_verification_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#pages_domain_verification_enabled ApplicationSettings#pages_domain_verification_enabled}
 
 ---
 
@@ -2817,7 +2817,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable authentication for Git over HTTP(S) via a GitLab account password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#password_authentication_enabled_for_git ApplicationSettings#password_authentication_enabled_for_git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#password_authentication_enabled_for_git ApplicationSettings#password_authentication_enabled_for_git}
 
 ---
 
@@ -2827,7 +2827,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable authentication for the web interface via a GitLab account password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#password_authentication_enabled_for_web ApplicationSettings#password_authentication_enabled_for_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#password_authentication_enabled_for_web ApplicationSettings#password_authentication_enabled_for_web}
 
 ---
 
@@ -2837,7 +2837,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Indicates whether passwords require at least one lowercase letter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#password_lowercase_required ApplicationSettings#password_lowercase_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#password_lowercase_required ApplicationSettings#password_lowercase_required}
 
 ---
 
@@ -2847,7 +2847,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Indicates whether passwords require at least one number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#password_number_required ApplicationSettings#password_number_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#password_number_required ApplicationSettings#password_number_required}
 
 ---
 
@@ -2857,7 +2857,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Indicates whether passwords require at least one symbol character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#password_symbol_required ApplicationSettings#password_symbol_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#password_symbol_required ApplicationSettings#password_symbol_required}
 
 ---
 
@@ -2867,7 +2867,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Indicates whether passwords require at least one uppercase letter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#password_uppercase_required ApplicationSettings#password_uppercase_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#password_uppercase_required ApplicationSettings#password_uppercase_required}
 
 ---
 
@@ -2877,7 +2877,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Path of the group that is allowed to toggle the performance bar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#performance_bar_allowed_group_path ApplicationSettings#performance_bar_allowed_group_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#performance_bar_allowed_group_path ApplicationSettings#performance_bar_allowed_group_path}
 
 ---
 
@@ -2887,7 +2887,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Prefix for all generated personal access tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#personal_access_token_prefix ApplicationSettings#personal_access_token_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#personal_access_token_prefix ApplicationSettings#personal_access_token_prefix}
 
 ---
 
@@ -2897,7 +2897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum number of pipeline creation requests per minute per user and commit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#pipeline_limit_per_project_user_sha ApplicationSettings#pipeline_limit_per_project_user_sha}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#pipeline_limit_per_project_user_sha ApplicationSettings#pipeline_limit_per_project_user_sha}
 
 ---
 
@@ -2907,7 +2907,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 (If enabled, requires: plantuml_url) Enable PlantUML integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#plantuml_enabled ApplicationSettings#plantuml_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#plantuml_enabled ApplicationSettings#plantuml_enabled}
 
 ---
 
@@ -2917,7 +2917,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The PlantUML instance URL for integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#plantuml_url ApplicationSettings#plantuml_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#plantuml_url ApplicationSettings#plantuml_url}
 
 ---
 
@@ -2927,7 +2927,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Interval multiplier used by endpoints that perform polling. Set to 0 to disable polling.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#polling_interval_multiplier ApplicationSettings#polling_interval_multiplier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#polling_interval_multiplier ApplicationSettings#polling_interval_multiplier}
 
 ---
 
@@ -2937,7 +2937,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable project export.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#project_export_enabled ApplicationSettings#project_export_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#project_export_enabled ApplicationSettings#project_export_enabled}
 
 ---
 
@@ -2947,7 +2947,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum authenticated requests to /project/:id/jobs per minute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#project_jobs_api_rate_limit ApplicationSettings#project_jobs_api_rate_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#project_jobs_api_rate_limit ApplicationSettings#project_jobs_api_rate_limit}
 
 ---
 
@@ -2959,7 +2959,7 @@ Max number of requests per 10 minutes per IP address for unauthenticated request
 
 To disable throttling set to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#projects_api_rate_limit_unauthenticated ApplicationSettings#projects_api_rate_limit_unauthenticated}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#projects_api_rate_limit_unauthenticated ApplicationSettings#projects_api_rate_limit_unauthenticated}
 
 ---
 
@@ -2969,7 +2969,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable Prometheus metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#prometheus_metrics_enabled ApplicationSettings#prometheus_metrics_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#prometheus_metrics_enabled ApplicationSettings#prometheus_metrics_enabled}
 
 ---
 
@@ -2979,7 +2979,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 CI/CD variables are protected by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#protected_ci_variables ApplicationSettings#protected_ci_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#protected_ci_variables ApplicationSettings#protected_ci_variables}
 
 ---
 
@@ -2991,7 +2991,7 @@ Number of changes (branches or tags) in a single push to determine whether indiv
 
 Bulk push events are created if it surpasses that value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#push_event_activities_limit ApplicationSettings#push_event_activities_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#push_event_activities_limit ApplicationSettings#push_event_activities_limit}
 
 ---
 
@@ -3003,7 +3003,7 @@ Number of changes (branches or tags) in a single push to determine whether webho
 
 Webhooks and services aren’t submitted if it surpasses that value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#push_event_hooks_limit ApplicationSettings#push_event_hooks_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#push_event_hooks_limit ApplicationSettings#push_event_hooks_limit}
 
 ---
 
@@ -3013,7 +3013,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Use pypi.org as a default remote repository when the package is not found in the GitLab Package Registry for PyPI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#pypi_package_requests_forwarding ApplicationSettings#pypi_package_requests_forwarding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#pypi_package_requests_forwarding ApplicationSettings#pypi_package_requests_forwarding}
 
 ---
 
@@ -3025,7 +3025,7 @@ When rate limiting is enabled via the throttle_* settings, send this plain text 
 
 ‘Retry later’ is sent if this is blank.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#rate_limiting_response_text ApplicationSettings#rate_limiting_response_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#rate_limiting_response_text ApplicationSettings#rate_limiting_response_text}
 
 ---
 
@@ -3035,7 +3035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Max number of requests per minute for each raw path. To disable throttling set to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#raw_blob_request_limit ApplicationSettings#raw_blob_request_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#raw_blob_request_limit ApplicationSettings#raw_blob_request_limit}
 
 ---
 
@@ -3045,7 +3045,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 (If enabled, requires: recaptcha_private_key and recaptcha_site_key) Enable reCAPTCHA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#recaptcha_enabled ApplicationSettings#recaptcha_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#recaptcha_enabled ApplicationSettings#recaptcha_enabled}
 
 ---
 
@@ -3055,7 +3055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Private key for reCAPTCHA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#recaptcha_private_key ApplicationSettings#recaptcha_private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#recaptcha_private_key ApplicationSettings#recaptcha_private_key}
 
 ---
 
@@ -3065,7 +3065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Site key for reCAPTCHA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#recaptcha_site_key ApplicationSettings#recaptcha_site_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#recaptcha_site_key ApplicationSettings#recaptcha_site_key}
 
 ---
 
@@ -3075,7 +3075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum push size (MB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#receive_max_input_size ApplicationSettings#receive_max_input_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#receive_max_input_size ApplicationSettings#receive_max_input_size}
 
 ---
 
@@ -3085,7 +3085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable receptive mode for GitLab Agents for Kubernetes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#receptive_cluster_agents_enabled ApplicationSettings#receptive_cluster_agents_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#receptive_cluster_agents_enabled ApplicationSettings#receptive_cluster_agents_enabled}
 
 ---
 
@@ -3095,7 +3095,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable Remember me setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#remember_me_enabled ApplicationSettings#remember_me_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#remember_me_enabled ApplicationSettings#remember_me_enabled}
 
 ---
 
@@ -3105,7 +3105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 GitLab periodically runs git fsck in all project and wiki repositories to look for silent disk corruption issues.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#repository_checks_enabled ApplicationSettings#repository_checks_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#repository_checks_enabled ApplicationSettings#repository_checks_enabled}
 
 ---
 
@@ -3115,7 +3115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Size limit per repository (MB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#repository_size_limit ApplicationSettings#repository_size_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#repository_size_limit ApplicationSettings#repository_size_limit}
 
 ---
 
@@ -3125,7 +3125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Hash of names taken from gitlab.yml to weights. New projects are created in one of these stores, chosen by a weighted random selection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#repository_storages_weighted ApplicationSettings#repository_storages_weighted}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#repository_storages_weighted ApplicationSettings#repository_storages_weighted}
 
 ---
 
@@ -3135,7 +3135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 When enabled, any user that signs up for an account using the registration form is placed under a Pending approval state and has to be explicitly approved by an administrator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#require_admin_approval_after_user_signup ApplicationSettings#require_admin_approval_after_user_signup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#require_admin_approval_after_user_signup ApplicationSettings#require_admin_approval_after_user_signup}
 
 ---
 
@@ -3145,7 +3145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Allow administrators to require 2FA for all administrators on the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#require_admin_two_factor_authentication ApplicationSettings#require_admin_two_factor_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#require_admin_two_factor_authentication ApplicationSettings#require_admin_two_factor_authentication}
 
 ---
 
@@ -3155,7 +3155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 When enabled, users must set an expiration date when creating a group or project access token, or a personal access token owned by a non-service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#require_personal_access_token_expiry ApplicationSettings#require_personal_access_token_expiry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#require_personal_access_token_expiry ApplicationSettings#require_personal_access_token_expiry}
 
 ---
 
@@ -3165,7 +3165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 (If enabled, requires: two_factor_grace_period) Require all users to set up Two-factor authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#require_two_factor_authentication ApplicationSettings#require_two_factor_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#require_two_factor_authentication ApplicationSettings#require_two_factor_authentication}
 
 ---
 
@@ -3177,7 +3177,7 @@ Selected levels cannot be used by non-Administrator users for groups, projects o
 
 Can take private, internal and public as a parameter. Null means there is no restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#restricted_visibility_levels ApplicationSettings#restricted_visibility_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#restricted_visibility_levels ApplicationSettings#restricted_visibility_levels}
 
 ---
 
@@ -3187,7 +3187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The minimum allowed bit length of an uploaded RSA key. 0 means no restriction. -1 disables RSA keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#rsa_key_restriction ApplicationSettings#rsa_key_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#rsa_key_restriction ApplicationSettings#rsa_key_restriction}
 
 ---
 
@@ -3197,7 +3197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Max number of requests per minute for performing a search while authenticated. To disable throttling set to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#search_rate_limit ApplicationSettings#search_rate_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#search_rate_limit ApplicationSettings#search_rate_limit}
 
 ---
 
@@ -3207,7 +3207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Max number of requests per minute for performing a search while unauthenticated. To disable throttling set to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#search_rate_limit_unauthenticated ApplicationSettings#search_rate_limit_unauthenticated}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#search_rate_limit_unauthenticated ApplicationSettings#search_rate_limit_unauthenticated}
 
 ---
 
@@ -3217,7 +3217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum number of active merge request approval policies per security policy project. Maximum: 20.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#security_approval_policies_limit ApplicationSettings#security_approval_policies_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#security_approval_policies_limit ApplicationSettings#security_approval_policies_limit}
 
 ---
 
@@ -3227,7 +3227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Whether to look up merge request approval policy approval groups globally or within project hierarchies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#security_policy_global_group_approvers_enabled ApplicationSettings#security_policy_global_group_approvers_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#security_policy_global_group_approvers_enabled ApplicationSettings#security_policy_global_group_approvers_enabled}
 
 ---
 
@@ -3237,7 +3237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Public security contact information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#security_txt_content ApplicationSettings#security_txt_content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#security_txt_content ApplicationSettings#security_txt_content}
 
 ---
 
@@ -3247,7 +3247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Send confirmation email on sign-up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#send_user_confirmation_email ApplicationSettings#send_user_confirmation_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#send_user_confirmation_email ApplicationSettings#send_user_confirmation_email}
 
 ---
 
@@ -3257,7 +3257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Flag to indicate if token expiry date can be optional for service account users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#service_access_tokens_expiration_enforced ApplicationSettings#service_access_tokens_expiration_enforced}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#service_access_tokens_expiration_enforced ApplicationSettings#service_access_tokens_expiration_enforced}
 
 ---
 
@@ -3267,7 +3267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Session duration in minutes. GitLab restart is required to apply changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#session_expire_delay ApplicationSettings#session_expire_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#session_expire_delay ApplicationSettings#session_expire_delay}
 
 ---
 
@@ -3277,7 +3277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 (If enabled, requires: shared_runners_text and shared_runners_minutes) Enable shared runners for new projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#shared_runners_enabled ApplicationSettings#shared_runners_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#shared_runners_enabled ApplicationSettings#shared_runners_enabled}
 
 ---
 
@@ -3287,7 +3287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set the maximum number of CI/CD minutes that a group can use on shared runners per month.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#shared_runners_minutes ApplicationSettings#shared_runners_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#shared_runners_minutes ApplicationSettings#shared_runners_minutes}
 
 ---
 
@@ -3297,7 +3297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Shared runners text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#shared_runners_text ApplicationSettings#shared_runners_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#shared_runners_text ApplicationSettings#shared_runners_text}
 
 ---
 
@@ -3307,7 +3307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The threshold in bytes at which Sidekiq jobs are compressed before being stored in Redis.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#sidekiq_job_limiter_compression_threshold_bytes ApplicationSettings#sidekiq_job_limiter_compression_threshold_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#sidekiq_job_limiter_compression_threshold_bytes ApplicationSettings#sidekiq_job_limiter_compression_threshold_bytes}
 
 ---
 
@@ -3317,7 +3317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The threshold in bytes at which Sidekiq jobs are rejected. 0 means do not reject any job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#sidekiq_job_limiter_limit_bytes ApplicationSettings#sidekiq_job_limiter_limit_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#sidekiq_job_limiter_limit_bytes ApplicationSettings#sidekiq_job_limiter_limit_bytes}
 
 ---
 
@@ -3327,7 +3327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 track or compress. Sets the behavior for Sidekiq job size limits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#sidekiq_job_limiter_mode ApplicationSettings#sidekiq_job_limiter_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#sidekiq_job_limiter_mode ApplicationSettings#sidekiq_job_limiter_mode}
 
 ---
 
@@ -3337,7 +3337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Text on the login page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#sign_in_text ApplicationSettings#sign_in_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#sign_in_text ApplicationSettings#sign_in_text}
 
 ---
 
@@ -3347,7 +3347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable registration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#signup_enabled ApplicationSettings#signup_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#signup_enabled ApplicationSettings#signup_enabled}
 
 ---
 
@@ -3357,7 +3357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable Silent admin exports.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#silent_admin_exports_enabled ApplicationSettings#silent_admin_exports_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#silent_admin_exports_enabled ApplicationSettings#silent_admin_exports_enabled}
 
 ---
 
@@ -3367,7 +3367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable Silent mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#silent_mode_enabled ApplicationSettings#silent_mode_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#silent_mode_enabled ApplicationSettings#silent_mode_enabled}
 
 ---
 
@@ -3377,7 +3377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 (If enabled, requires: slack_app_id, slack_app_secret and slack_app_secret) Enable Slack app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#slack_app_enabled ApplicationSettings#slack_app_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#slack_app_enabled ApplicationSettings#slack_app_enabled}
 
 ---
 
@@ -3387,7 +3387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The app ID of the Slack-app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#slack_app_id ApplicationSettings#slack_app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#slack_app_id ApplicationSettings#slack_app_id}
 
 ---
 
@@ -3397,7 +3397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The app secret of the Slack-app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#slack_app_secret ApplicationSettings#slack_app_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#slack_app_secret ApplicationSettings#slack_app_secret}
 
 ---
 
@@ -3407,7 +3407,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The signing secret of the Slack-app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#slack_app_signing_secret ApplicationSettings#slack_app_signing_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#slack_app_signing_secret ApplicationSettings#slack_app_signing_secret}
 
 ---
 
@@ -3417,7 +3417,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The verification token of the Slack-app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#slack_app_verification_token ApplicationSettings#slack_app_verification_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#slack_app_verification_token ApplicationSettings#slack_app_verification_token}
 
 ---
 
@@ -3427,7 +3427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Max snippet content size in bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#snippet_size_limit ApplicationSettings#snippet_size_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#snippet_size_limit ApplicationSettings#snippet_size_limit}
 
 ---
 
@@ -3437,7 +3437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The Snowplow site name / application ID. (for example, gitlab).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#snowplow_app_id ApplicationSettings#snowplow_app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#snowplow_app_id ApplicationSettings#snowplow_app_id}
 
 ---
 
@@ -3447,7 +3447,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The Snowplow collector hostname. (for example, snowplow.trx.gitlab.net).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#snowplow_collector_hostname ApplicationSettings#snowplow_collector_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#snowplow_collector_hostname ApplicationSettings#snowplow_collector_hostname}
 
 ---
 
@@ -3457,7 +3457,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The Snowplow cookie domain. (for example, .gitlab.com).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#snowplow_cookie_domain ApplicationSettings#snowplow_cookie_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#snowplow_cookie_domain ApplicationSettings#snowplow_cookie_domain}
 
 ---
 
@@ -3467,7 +3467,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The Snowplow collector for database events hostname. (for example, db-snowplow.trx.gitlab.net).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#snowplow_database_collector_hostname ApplicationSettings#snowplow_database_collector_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#snowplow_database_collector_hostname ApplicationSettings#snowplow_database_collector_hostname}
 
 ---
 
@@ -3477,7 +3477,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable snowplow tracking.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#snowplow_enabled ApplicationSettings#snowplow_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#snowplow_enabled ApplicationSettings#snowplow_enabled}
 
 ---
 
@@ -3487,7 +3487,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enables Sourcegraph integration. If enabled, requires sourcegraph_url.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#sourcegraph_enabled ApplicationSettings#sourcegraph_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#sourcegraph_enabled ApplicationSettings#sourcegraph_enabled}
 
 ---
 
@@ -3497,7 +3497,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Blocks Sourcegraph from being loaded on private and internal projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#sourcegraph_public_only ApplicationSettings#sourcegraph_public_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#sourcegraph_public_only ApplicationSettings#sourcegraph_public_only}
 
 ---
 
@@ -3507,7 +3507,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The Sourcegraph instance URL for integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#sourcegraph_url ApplicationSettings#sourcegraph_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#sourcegraph_url ApplicationSettings#sourcegraph_url}
 
 ---
 
@@ -3517,7 +3517,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 API key used by GitLab for accessing the Spam Check service endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#spam_check_api_key ApplicationSettings#spam_check_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#spam_check_api_key ApplicationSettings#spam_check_api_key}
 
 ---
 
@@ -3527,7 +3527,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enables spam checking using external Spam Check API endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#spam_check_endpoint_enabled ApplicationSettings#spam_check_endpoint_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#spam_check_endpoint_enabled ApplicationSettings#spam_check_endpoint_enabled}
 
 ---
 
@@ -3539,7 +3539,7 @@ URL of the external Spamcheck service endpoint.
 
 Valid URI schemes are grpc or tls. Specifying tls forces communication to be encrypted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#spam_check_endpoint_url ApplicationSettings#spam_check_endpoint_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#spam_check_endpoint_url ApplicationSettings#spam_check_endpoint_url}
 
 ---
 
@@ -3549,7 +3549,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Authentication token for the external storage linked in static_objects_external_storage_url.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#static_objects_external_storage_auth_token ApplicationSettings#static_objects_external_storage_auth_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#static_objects_external_storage_auth_token ApplicationSettings#static_objects_external_storage_auth_token}
 
 ---
 
@@ -3559,7 +3559,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 URL to an external storage for repository static objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#static_objects_external_storage_url ApplicationSettings#static_objects_external_storage_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#static_objects_external_storage_url ApplicationSettings#static_objects_external_storage_url}
 
 ---
 
@@ -3569,7 +3569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable pipeline suggestion banner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#suggest_pipeline_enabled ApplicationSettings#suggest_pipeline_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#suggest_pipeline_enabled ApplicationSettings#suggest_pipeline_enabled}
 
 ---
 
@@ -3579,7 +3579,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum time for web terminal websocket connection (in seconds). Set to 0 for unlimited time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#terminal_max_session_time ApplicationSettings#terminal_max_session_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#terminal_max_session_time ApplicationSettings#terminal_max_session_time}
 
 ---
 
@@ -3589,7 +3589,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 (Required by: enforce_terms) Markdown content for the ToS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#terms ApplicationSettings#terms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#terms ApplicationSettings#terms}
 
 ---
 
@@ -3601,7 +3601,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Helps reduce request volume (for example, from crawlers or abusive bots).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_authenticated_api_enabled ApplicationSettings#throttle_authenticated_api_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_authenticated_api_enabled ApplicationSettings#throttle_authenticated_api_enabled}
 
 ---
 
@@ -3611,7 +3611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Rate limit period (in seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_authenticated_api_period_in_seconds ApplicationSettings#throttle_authenticated_api_period_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_authenticated_api_period_in_seconds ApplicationSettings#throttle_authenticated_api_period_in_seconds}
 
 ---
 
@@ -3621,7 +3621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum requests per period per user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_authenticated_api_requests_per_period ApplicationSettings#throttle_authenticated_api_requests_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_authenticated_api_requests_per_period ApplicationSettings#throttle_authenticated_api_requests_per_period}
 
 ---
 
@@ -3633,7 +3633,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Helps reduce request volume (for example, from crawlers or abusive bots). View Package Registry rate limits for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_authenticated_packages_api_enabled ApplicationSettings#throttle_authenticated_packages_api_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_authenticated_packages_api_enabled ApplicationSettings#throttle_authenticated_packages_api_enabled}
 
 ---
 
@@ -3643,7 +3643,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Rate limit period (in seconds). View Package Registry rate limits for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_authenticated_packages_api_period_in_seconds ApplicationSettings#throttle_authenticated_packages_api_period_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_authenticated_packages_api_period_in_seconds ApplicationSettings#throttle_authenticated_packages_api_period_in_seconds}
 
 ---
 
@@ -3653,7 +3653,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum requests per period per user. View Package Registry rate limits for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_authenticated_packages_api_requests_per_period ApplicationSettings#throttle_authenticated_packages_api_requests_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_authenticated_packages_api_requests_per_period ApplicationSettings#throttle_authenticated_packages_api_requests_per_period}
 
 ---
 
@@ -3665,7 +3665,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Helps reduce request volume (for example, from crawlers or abusive bots).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_authenticated_web_enabled ApplicationSettings#throttle_authenticated_web_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_authenticated_web_enabled ApplicationSettings#throttle_authenticated_web_enabled}
 
 ---
 
@@ -3675,7 +3675,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Rate limit period (in seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_authenticated_web_period_in_seconds ApplicationSettings#throttle_authenticated_web_period_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_authenticated_web_period_in_seconds ApplicationSettings#throttle_authenticated_web_period_in_seconds}
 
 ---
 
@@ -3685,7 +3685,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum requests per period per user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_authenticated_web_requests_per_period ApplicationSettings#throttle_authenticated_web_requests_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_authenticated_web_requests_per_period ApplicationSettings#throttle_authenticated_web_requests_per_period}
 
 ---
 
@@ -3697,7 +3697,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Helps reduce request volume (for example, from crawlers or abusive bots).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_unauthenticated_api_enabled ApplicationSettings#throttle_unauthenticated_api_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_unauthenticated_api_enabled ApplicationSettings#throttle_unauthenticated_api_enabled}
 
 ---
 
@@ -3707,7 +3707,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Rate limit period in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_unauthenticated_api_period_in_seconds ApplicationSettings#throttle_unauthenticated_api_period_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_unauthenticated_api_period_in_seconds ApplicationSettings#throttle_unauthenticated_api_period_in_seconds}
 
 ---
 
@@ -3717,7 +3717,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Max requests per period per IP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_unauthenticated_api_requests_per_period ApplicationSettings#throttle_unauthenticated_api_requests_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_unauthenticated_api_requests_per_period ApplicationSettings#throttle_unauthenticated_api_requests_per_period}
 
 ---
 
@@ -3729,7 +3729,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Helps reduce request volume (for example, from crawlers or abusive bots). View Package Registry rate limits for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_unauthenticated_packages_api_enabled ApplicationSettings#throttle_unauthenticated_packages_api_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_unauthenticated_packages_api_enabled ApplicationSettings#throttle_unauthenticated_packages_api_enabled}
 
 ---
 
@@ -3739,7 +3739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Rate limit period (in seconds). View Package Registry rate limits for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_unauthenticated_packages_api_period_in_seconds ApplicationSettings#throttle_unauthenticated_packages_api_period_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_unauthenticated_packages_api_period_in_seconds ApplicationSettings#throttle_unauthenticated_packages_api_period_in_seconds}
 
 ---
 
@@ -3749,7 +3749,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum requests per period per user. View Package Registry rate limits for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_unauthenticated_packages_api_requests_per_period ApplicationSettings#throttle_unauthenticated_packages_api_requests_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_unauthenticated_packages_api_requests_per_period ApplicationSettings#throttle_unauthenticated_packages_api_requests_per_period}
 
 ---
 
@@ -3761,7 +3761,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Helps reduce request volume (for example, from crawlers or abusive bots).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_unauthenticated_web_enabled ApplicationSettings#throttle_unauthenticated_web_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_unauthenticated_web_enabled ApplicationSettings#throttle_unauthenticated_web_enabled}
 
 ---
 
@@ -3771,7 +3771,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Rate limit period in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_unauthenticated_web_period_in_seconds ApplicationSettings#throttle_unauthenticated_web_period_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_unauthenticated_web_period_in_seconds ApplicationSettings#throttle_unauthenticated_web_period_in_seconds}
 
 ---
 
@@ -3781,7 +3781,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Max requests per period per IP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_unauthenticated_web_requests_per_period ApplicationSettings#throttle_unauthenticated_web_requests_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_unauthenticated_web_requests_per_period ApplicationSettings#throttle_unauthenticated_web_requests_per_period}
 
 ---
 
@@ -3791,7 +3791,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Limit display of time tracking units to hours.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#time_tracking_limit_to_hours ApplicationSettings#time_tracking_limit_to_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#time_tracking_limit_to_hours ApplicationSettings#time_tracking_limit_to_hours}
 
 ---
 
@@ -3801,7 +3801,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Amount of time (in hours) that users are allowed to skip forced configuration of two-factor authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#two_factor_grace_period ApplicationSettings#two_factor_grace_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#two_factor_grace_period ApplicationSettings#two_factor_grace_period}
 
 ---
 
@@ -3813,7 +3813,7 @@ Specifies how many days after sign-up to delete users who have not confirmed the
 
 Only applicable if delete_unconfirmed_users is set to true. Must be 1 or greater. Self-managed, Premium and Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#unconfirmed_users_delete_after_days ApplicationSettings#unconfirmed_users_delete_after_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#unconfirmed_users_delete_after_days ApplicationSettings#unconfirmed_users_delete_after_days}
 
 ---
 
@@ -3823,7 +3823,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 (If enabled, requires: unique_ips_limit_per_user and unique_ips_limit_time_window) Limit sign in from multiple IPs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#unique_ips_limit_enabled ApplicationSettings#unique_ips_limit_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#unique_ips_limit_enabled ApplicationSettings#unique_ips_limit_enabled}
 
 ---
 
@@ -3833,7 +3833,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum number of IPs per user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#unique_ips_limit_per_user ApplicationSettings#unique_ips_limit_per_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#unique_ips_limit_per_user ApplicationSettings#unique_ips_limit_per_user}
 
 ---
 
@@ -3843,7 +3843,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 How many seconds an IP is counted towards the limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#unique_ips_limit_time_window ApplicationSettings#unique_ips_limit_time_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#unique_ips_limit_time_window ApplicationSettings#unique_ips_limit_time_window}
 
 ---
 
@@ -3853,7 +3853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Fetch GitLab Runner release version data from GitLab.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#update_runner_versions_enabled ApplicationSettings#update_runner_versions_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#update_runner_versions_enabled ApplicationSettings#update_runner_versions_enabled}
 
 ---
 
@@ -3863,7 +3863,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Every week GitLab reports license usage back to GitLab, Inc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#usage_ping_enabled ApplicationSettings#usage_ping_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#usage_ping_enabled ApplicationSettings#usage_ping_enabled}
 
 ---
 
@@ -3875,7 +3875,7 @@ Enables ClickHouse as a data source for analytics reports.
 
 ClickHouse must be configured for this setting to take effect. Available on Premium and Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#use_clickhouse_for_analytics ApplicationSettings#use_clickhouse_for_analytics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#use_clickhouse_for_analytics ApplicationSettings#use_clickhouse_for_analytics}
 
 ---
 
@@ -3885,7 +3885,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Send an email to users upon account deactivation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#user_deactivation_emails_enabled ApplicationSettings#user_deactivation_emails_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#user_deactivation_emails_enabled ApplicationSettings#user_deactivation_emails_enabled}
 
 ---
 
@@ -3895,7 +3895,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Newly registered users are external by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#user_default_external ApplicationSettings#user_default_external}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#user_default_external ApplicationSettings#user_default_external}
 
 ---
 
@@ -3905,7 +3905,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Specify an email address regex pattern to identify default internal users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#user_default_internal_regex ApplicationSettings#user_default_internal_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#user_default_internal_regex ApplicationSettings#user_default_internal_regex}
 
 ---
 
@@ -3915,7 +3915,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Newly created users have private profile by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#user_defaults_to_private_profile ApplicationSettings#user_defaults_to_private_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#user_defaults_to_private_profile ApplicationSettings#user_defaults_to_private_profile}
 
 ---
 
@@ -3925,7 +3925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Allow users to register any application to use GitLab as an OAuth provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#user_oauth_applications ApplicationSettings#user_oauth_applications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#user_oauth_applications ApplicationSettings#user_oauth_applications}
 
 ---
 
@@ -3935,7 +3935,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 When set to false disable the You won't be able to pull or push project code via SSH warning shown to users with no uploaded SSH key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#user_show_add_ssh_key_message ApplicationSettings#user_show_add_ssh_key_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#user_show_add_ssh_key_message ApplicationSettings#user_show_add_ssh_key_message}
 
 ---
 
@@ -3945,7 +3945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 List of types which are allowed to register a GitLab Runner. Can be [], ['group'], ['project'] or ['group', 'project'].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#valid_runner_registrars ApplicationSettings#valid_runner_registrars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#valid_runner_registrars ApplicationSettings#valid_runner_registrars}
 
 ---
 
@@ -3955,7 +3955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Let GitLab inform you when an update is available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#version_check_enabled ApplicationSettings#version_check_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#version_check_enabled ApplicationSettings#version_check_enabled}
 
 ---
 
@@ -3965,7 +3965,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Live Preview (allow live previews of JavaScript projects in the Web IDE using CodeSandbox Live Preview).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#web_ide_clientside_preview_enabled ApplicationSettings#web_ide_clientside_preview_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#web_ide_clientside_preview_enabled ApplicationSettings#web_ide_clientside_preview_enabled}
 
 ---
 
@@ -3975,7 +3975,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 What's new variant, possible values: all_tiers, current_tier, and disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#whats_new_variant ApplicationSettings#whats_new_variant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#whats_new_variant ApplicationSettings#whats_new_variant}
 
 ---
 
@@ -3985,7 +3985,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum wiki page content size in bytes. The minimum value is 1024 bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#wiki_page_max_content_bytes ApplicationSettings#wiki_page_max_content_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#wiki_page_max_content_bytes ApplicationSettings#wiki_page_max_content_bytes}
 
 ---
 
@@ -6581,7 +6581,7 @@ The construct id used in the generated config for the ApplicationSettings to imp
 
 The id of the existing ApplicationSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -14173,7 +14173,7 @@ ApplicationSettingsConfig.builder()
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.housekeepingEnabled">housekeepingEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enable or disable Git housekeeping. If enabled, requires housekeeping_optimize_repository_period. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.housekeepingOptimizeRepositoryPeriod">housekeepingOptimizeRepositoryPeriod</a></code> | <code>java.lang.Number</code> | Number of Git pushes after which an incremental git-repack is run. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.htmlEmailsEnabled">htmlEmailsEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enable HTML emails. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#id ApplicationSettings#id}. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#id ApplicationSettings#id}. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.importSources">importSources</a></code> | <code>java.util.List<java.lang.String></code> | Sources to allow project import from. Valid values are: `github`, `bitbucket`, `bitbucket_server`, `fogbugz`, `git`, `gitlab_project`, `gitea`, `manifest`. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.inactiveProjectsDeleteAfterMonths">inactiveProjectsDeleteAfterMonths</a></code> | <code>java.lang.Number</code> | If delete_inactive_projects is true, the time (in months) to wait before deleting inactive projects. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.inactiveProjectsMinSizeMb">inactiveProjectsMinSizeMb</a></code> | <code>java.lang.Number</code> | If delete_inactive_projects is true, the minimum repository size for projects to be checked for inactivity. |
@@ -14418,7 +14418,7 @@ public java.lang.String getAbuseNotificationEmail();
 
 If set, abuse reports are sent to this address. Abuse reports are always available in the Admin Area.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#abuse_notification_email ApplicationSettings#abuse_notification_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#abuse_notification_email ApplicationSettings#abuse_notification_email}
 
 ---
 
@@ -14432,7 +14432,7 @@ public java.lang.Object getAdminMode();
 
 Require administrators to enable Admin Mode by re-authenticating for administrative tasks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#admin_mode ApplicationSettings#admin_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#admin_mode ApplicationSettings#admin_mode}
 
 ---
 
@@ -14446,7 +14446,7 @@ public java.lang.String getAfterSignOutPath();
 
 Where to redirect users after logout.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#after_sign_out_path ApplicationSettings#after_sign_out_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#after_sign_out_path ApplicationSettings#after_sign_out_path}
 
 ---
 
@@ -14460,7 +14460,7 @@ public java.lang.String getAfterSignUpText();
 
 Text shown to the user after signing up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#after_sign_up_text ApplicationSettings#after_sign_up_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#after_sign_up_text ApplicationSettings#after_sign_up_text}
 
 ---
 
@@ -14474,7 +14474,7 @@ public java.lang.String getAkismetApiKey();
 
 API key for Akismet spam protection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#akismet_api_key ApplicationSettings#akismet_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#akismet_api_key ApplicationSettings#akismet_api_key}
 
 ---
 
@@ -14488,7 +14488,7 @@ public java.lang.Object getAkismetEnabled();
 
 (If enabled, requires: akismet_api_key) Enable or disable Akismet spam protection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#akismet_enabled ApplicationSettings#akismet_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#akismet_enabled ApplicationSettings#akismet_enabled}
 
 ---
 
@@ -14502,7 +14502,7 @@ public java.lang.Object getAllowAccountDeletion();
 
 Set to true to allow users to delete their accounts. Premium and Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#allow_account_deletion ApplicationSettings#allow_account_deletion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#allow_account_deletion ApplicationSettings#allow_account_deletion}
 
 ---
 
@@ -14516,7 +14516,7 @@ public java.lang.Object getAllowGroupOwnersToManageLdap();
 
 Set to true to allow group owners to manage LDAP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#allow_group_owners_to_manage_ldap ApplicationSettings#allow_group_owners_to_manage_ldap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#allow_group_owners_to_manage_ldap ApplicationSettings#allow_group_owners_to_manage_ldap}
 
 ---
 
@@ -14530,7 +14530,7 @@ public java.lang.Object getAllowLocalRequestsFromSystemHooks();
 
 Allow requests to the local network from system hooks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#allow_local_requests_from_system_hooks ApplicationSettings#allow_local_requests_from_system_hooks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#allow_local_requests_from_system_hooks ApplicationSettings#allow_local_requests_from_system_hooks}
 
 ---
 
@@ -14544,7 +14544,7 @@ public java.lang.Object getAllowLocalRequestsFromWebHooksAndServices();
 
 Allow requests to the local network from web hooks and services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#allow_local_requests_from_web_hooks_and_services ApplicationSettings#allow_local_requests_from_web_hooks_and_services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#allow_local_requests_from_web_hooks_and_services ApplicationSettings#allow_local_requests_from_web_hooks_and_services}
 
 ---
 
@@ -14558,7 +14558,7 @@ public java.lang.Object getAllowProjectCreationForGuestAndBelow();
 
 Indicates whether users assigned up to the Guest role can create groups and personal projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#allow_project_creation_for_guest_and_below ApplicationSettings#allow_project_creation_for_guest_and_below}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#allow_project_creation_for_guest_and_below ApplicationSettings#allow_project_creation_for_guest_and_below}
 
 ---
 
@@ -14572,7 +14572,7 @@ public java.lang.Object getAllowRunnerRegistrationToken();
 
 Allow using a registration token to create a runner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#allow_runner_registration_token ApplicationSettings#allow_runner_registration_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#allow_runner_registration_token ApplicationSettings#allow_runner_registration_token}
 
 ---
 
@@ -14588,7 +14588,7 @@ Set the duration for which the jobs are considered as old and expired.
 
 After that time passes, the jobs are archived and no longer able to be retried. Make it empty to never expire jobs. It has to be no less than 1 day, for example: 15 days, 1 month, 2 years.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#archive_builds_in_human_readable ApplicationSettings#archive_builds_in_human_readable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#archive_builds_in_human_readable ApplicationSettings#archive_builds_in_human_readable}
 
 ---
 
@@ -14602,7 +14602,7 @@ public java.lang.Number getAsciidocMaxIncludes();
 
 Maximum limit of AsciiDoc include directives being processed in any one document. Maximum: 64.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#asciidoc_max_includes ApplicationSettings#asciidoc_max_includes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#asciidoc_max_includes ApplicationSettings#asciidoc_max_includes}
 
 ---
 
@@ -14618,7 +14618,7 @@ Assets that match these domains are not proxied.
 
 Wildcards allowed. Your GitLab installation URL is automatically allowlisted. GitLab restart is required to apply changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#asset_proxy_allowlist ApplicationSettings#asset_proxy_allowlist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#asset_proxy_allowlist ApplicationSettings#asset_proxy_allowlist}
 
 ---
 
@@ -14632,7 +14632,7 @@ public java.lang.Object getAssetProxyEnabled();
 
 (If enabled, requires: asset_proxy_url) Enable proxying of assets. GitLab restart is required to apply changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#asset_proxy_enabled ApplicationSettings#asset_proxy_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#asset_proxy_enabled ApplicationSettings#asset_proxy_enabled}
 
 ---
 
@@ -14646,7 +14646,7 @@ public java.lang.String getAssetProxySecretKey();
 
 Shared secret with the asset proxy server. GitLab restart is required to apply changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#asset_proxy_secret_key ApplicationSettings#asset_proxy_secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#asset_proxy_secret_key ApplicationSettings#asset_proxy_secret_key}
 
 ---
 
@@ -14660,7 +14660,7 @@ public java.lang.String getAssetProxyUrl();
 
 URL of the asset proxy server. GitLab restart is required to apply changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#asset_proxy_url ApplicationSettings#asset_proxy_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#asset_proxy_url ApplicationSettings#asset_proxy_url}
 
 ---
 
@@ -14676,7 +14676,7 @@ By default, we write to the authorized_keys file to support Git over SSH without
 
 GitLab can be optimized to authenticate SSH keys via the database file. Only disable this if you have configured your OpenSSH server to use the AuthorizedKeysCommand.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#authorized_keys_enabled ApplicationSettings#authorized_keys_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#authorized_keys_enabled ApplicationSettings#authorized_keys_enabled}
 
 ---
 
@@ -14692,7 +14692,7 @@ When enabled, users will get automatically banned from the application when they
 
 Self-managed, Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#auto_ban_user_on_excessive_projects_download ApplicationSettings#auto_ban_user_on_excessive_projects_download}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#auto_ban_user_on_excessive_projects_download ApplicationSettings#auto_ban_user_on_excessive_projects_download}
 
 ---
 
@@ -14706,7 +14706,7 @@ public java.lang.String getAutoDevopsDomain();
 
 Specify a domain to use by default for every project’s Auto Review Apps and Auto Deploy stages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#auto_devops_domain ApplicationSettings#auto_devops_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#auto_devops_domain ApplicationSettings#auto_devops_domain}
 
 ---
 
@@ -14722,7 +14722,7 @@ Enable Auto DevOps for projects by default.
 
 It automatically builds, tests, and deploys applications based on a predefined CI/CD configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#auto_devops_enabled ApplicationSettings#auto_devops_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#auto_devops_enabled ApplicationSettings#auto_devops_enabled}
 
 ---
 
@@ -14736,7 +14736,7 @@ public java.lang.Object getAutomaticPurchasedStorageAllocation();
 
 Enabling this permits automatic allocation of purchased storage in a namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#automatic_purchased_storage_allocation ApplicationSettings#automatic_purchased_storage_allocation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#automatic_purchased_storage_allocation ApplicationSettings#automatic_purchased_storage_allocation}
 
 ---
 
@@ -14750,7 +14750,7 @@ public java.lang.Number getBulkImportConcurrentPipelineBatchLimit();
 
 Maximum simultaneous Direct Transfer batches to process.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#bulk_import_concurrent_pipeline_batch_limit ApplicationSettings#bulk_import_concurrent_pipeline_batch_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#bulk_import_concurrent_pipeline_batch_limit ApplicationSettings#bulk_import_concurrent_pipeline_batch_limit}
 
 ---
 
@@ -14764,7 +14764,7 @@ public java.lang.Object getBulkImportEnabled();
 
 Enable migrating GitLab groups by direct transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#bulk_import_enabled ApplicationSettings#bulk_import_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#bulk_import_enabled ApplicationSettings#bulk_import_enabled}
 
 ---
 
@@ -14778,7 +14778,7 @@ public java.lang.Number getBulkImportMaxDownloadFileSize();
 
 Maximum download file size when importing from source GitLab instances by direct transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#bulk_import_max_download_file_size ApplicationSettings#bulk_import_max_download_file_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#bulk_import_max_download_file_size ApplicationSettings#bulk_import_max_download_file_size}
 
 ---
 
@@ -14792,7 +14792,7 @@ public java.lang.Object getCanCreateGroup();
 
 Indicates whether users can create top-level groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#can_create_group ApplicationSettings#can_create_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#can_create_group ApplicationSettings#can_create_group}
 
 ---
 
@@ -14806,7 +14806,7 @@ public java.lang.Object getCheckNamespacePlan();
 
 Enabling this makes only licensed EE features available to projects if the project namespace’s plan includes the feature or if the project is public.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#check_namespace_plan ApplicationSettings#check_namespace_plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#check_namespace_plan ApplicationSettings#check_namespace_plan}
 
 ---
 
@@ -14820,7 +14820,7 @@ public java.lang.Number getCiMaxIncludes();
 
 The maximum number of includes per pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#ci_max_includes ApplicationSettings#ci_max_includes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#ci_max_includes ApplicationSettings#ci_max_includes}
 
 ---
 
@@ -14834,7 +14834,7 @@ public java.lang.Number getCiMaxTotalYamlSizeBytes();
 
 The maximum amount of memory, in bytes, that can be allocated for the pipeline configuration, with all included YAML configuration files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#ci_max_total_yaml_size_bytes ApplicationSettings#ci_max_total_yaml_size_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#ci_max_total_yaml_size_bytes ApplicationSettings#ci_max_total_yaml_size_bytes}
 
 ---
 
@@ -14848,7 +14848,7 @@ public java.lang.String getCommitEmailHostname();
 
 Custom hostname (for private commit emails).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#commit_email_hostname ApplicationSettings#commit_email_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#commit_email_hostname ApplicationSettings#commit_email_hostname}
 
 ---
 
@@ -14862,7 +14862,7 @@ public java.lang.Number getConcurrentBitbucketImportJobsLimit();
 
 Maximum number of simultaneous import jobs for the Bitbucket Cloud importer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#concurrent_bitbucket_import_jobs_limit ApplicationSettings#concurrent_bitbucket_import_jobs_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#concurrent_bitbucket_import_jobs_limit ApplicationSettings#concurrent_bitbucket_import_jobs_limit}
 
 ---
 
@@ -14876,7 +14876,7 @@ public java.lang.Number getConcurrentBitbucketServerImportJobsLimit();
 
 Maximum number of simultaneous import jobs for the Bitbucket Server importer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#concurrent_bitbucket_server_import_jobs_limit ApplicationSettings#concurrent_bitbucket_server_import_jobs_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#concurrent_bitbucket_server_import_jobs_limit ApplicationSettings#concurrent_bitbucket_server_import_jobs_limit}
 
 ---
 
@@ -14890,7 +14890,7 @@ public java.lang.Number getConcurrentGithubImportJobsLimit();
 
 Maximum number of simultaneous import jobs for the GitHub importer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#concurrent_github_import_jobs_limit ApplicationSettings#concurrent_github_import_jobs_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#concurrent_github_import_jobs_limit ApplicationSettings#concurrent_github_import_jobs_limit}
 
 ---
 
@@ -14904,7 +14904,7 @@ public java.lang.Object getContainerExpirationPoliciesEnableHistoricEntries();
 
 Enable cleanup policies for all projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#container_expiration_policies_enable_historic_entries ApplicationSettings#container_expiration_policies_enable_historic_entries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#container_expiration_policies_enable_historic_entries ApplicationSettings#container_expiration_policies_enable_historic_entries}
 
 ---
 
@@ -14918,7 +14918,7 @@ public java.lang.Number getContainerRegistryCleanupTagsServiceMaxListSize();
 
 The maximum number of tags that can be deleted in a single execution of cleanup policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#container_registry_cleanup_tags_service_max_list_size ApplicationSettings#container_registry_cleanup_tags_service_max_list_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#container_registry_cleanup_tags_service_max_list_size ApplicationSettings#container_registry_cleanup_tags_service_max_list_size}
 
 ---
 
@@ -14932,7 +14932,7 @@ public java.lang.Number getContainerRegistryDeleteTagsServiceTimeout();
 
 The maximum time, in seconds, that the cleanup process can take to delete a batch of tags for cleanup policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#container_registry_delete_tags_service_timeout ApplicationSettings#container_registry_delete_tags_service_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#container_registry_delete_tags_service_timeout ApplicationSettings#container_registry_delete_tags_service_timeout}
 
 ---
 
@@ -14946,7 +14946,7 @@ public java.lang.Object getContainerRegistryExpirationPoliciesCaching();
 
 Caching during the execution of cleanup policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#container_registry_expiration_policies_caching ApplicationSettings#container_registry_expiration_policies_caching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#container_registry_expiration_policies_caching ApplicationSettings#container_registry_expiration_policies_caching}
 
 ---
 
@@ -14960,7 +14960,7 @@ public java.lang.Number getContainerRegistryExpirationPoliciesWorkerCapacity();
 
 Number of workers for cleanup policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#container_registry_expiration_policies_worker_capacity ApplicationSettings#container_registry_expiration_policies_worker_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#container_registry_expiration_policies_worker_capacity ApplicationSettings#container_registry_expiration_policies_worker_capacity}
 
 ---
 
@@ -14974,7 +14974,7 @@ public java.lang.Number getContainerRegistryTokenExpireDelay();
 
 Container Registry token duration in minutes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#container_registry_token_expire_delay ApplicationSettings#container_registry_token_expire_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#container_registry_token_expire_delay ApplicationSettings#container_registry_token_expire_delay}
 
 ---
 
@@ -14988,7 +14988,7 @@ public java.lang.Object getDeactivateDormantUsers();
 
 Enable automatic deactivation of dormant users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#deactivate_dormant_users ApplicationSettings#deactivate_dormant_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#deactivate_dormant_users ApplicationSettings#deactivate_dormant_users}
 
 ---
 
@@ -15002,7 +15002,7 @@ public java.lang.Number getDeactivateDormantUsersPeriod();
 
 Length of time (in days) after which a user is considered dormant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#deactivate_dormant_users_period ApplicationSettings#deactivate_dormant_users_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#deactivate_dormant_users_period ApplicationSettings#deactivate_dormant_users_period}
 
 ---
 
@@ -15016,7 +15016,7 @@ public java.lang.Number getDecompressArchiveFileTimeout();
 
 Default timeout for decompressing archived files, in seconds. Set to 0 to disable timeouts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#decompress_archive_file_timeout ApplicationSettings#decompress_archive_file_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#decompress_archive_file_timeout ApplicationSettings#decompress_archive_file_timeout}
 
 ---
 
@@ -15030,7 +15030,7 @@ public java.lang.String getDefaultArtifactsExpireIn();
 
 Set the default expiration time for each job’s artifacts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#default_artifacts_expire_in ApplicationSettings#default_artifacts_expire_in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#default_artifacts_expire_in ApplicationSettings#default_artifacts_expire_in}
 
 ---
 
@@ -15044,7 +15044,7 @@ public java.lang.String getDefaultBranchName();
 
 Instance-level custom initial branch name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#default_branch_name ApplicationSettings#default_branch_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#default_branch_name ApplicationSettings#default_branch_name}
 
 ---
 
@@ -15060,7 +15060,7 @@ Determine if developers can push to the default branch.
 
 Can take: 0 (not protected, both users with the Developer role or Maintainer role can push new commits and force push), 1 (partially protected, users with the Developer role or Maintainer role can push new commits, but cannot force push) or 2 (fully protected, users with the Developer or Maintainer role cannot push new commits, but users with the Developer or Maintainer role can; no one can force push) as a parameter. Default is 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#default_branch_protection ApplicationSettings#default_branch_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#default_branch_protection ApplicationSettings#default_branch_protection}
 
 ---
 
@@ -15074,7 +15074,7 @@ public ApplicationSettingsDefaultBranchProtectionDefaults getDefaultBranchProtec
 
 default_branch_protection_defaults block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#default_branch_protection_defaults ApplicationSettings#default_branch_protection_defaults}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#default_branch_protection_defaults ApplicationSettings#default_branch_protection_defaults}
 
 ---
 
@@ -15088,7 +15088,7 @@ public java.lang.String getDefaultCiConfigPath();
 
 Default CI/CD configuration file and path for new projects (.gitlab-ci.yml if not set).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#default_ci_config_path ApplicationSettings#default_ci_config_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#default_ci_config_path ApplicationSettings#default_ci_config_path}
 
 ---
 
@@ -15102,7 +15102,7 @@ public java.lang.String getDefaultGroupVisibility();
 
 What visibility level new groups receive. Can take private, internal and public as a parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#default_group_visibility ApplicationSettings#default_group_visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#default_group_visibility ApplicationSettings#default_group_visibility}
 
 ---
 
@@ -15116,7 +15116,7 @@ public java.lang.String getDefaultPreferredLanguage();
 
 Default preferred language for users who are not logged in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#default_preferred_language ApplicationSettings#default_preferred_language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#default_preferred_language ApplicationSettings#default_preferred_language}
 
 ---
 
@@ -15130,7 +15130,7 @@ public java.lang.Number getDefaultProjectCreation();
 
 Default project creation protection. Can take: 0 (No one), 1 (Maintainers) or 2 (Developers + Maintainers).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#default_project_creation ApplicationSettings#default_project_creation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#default_project_creation ApplicationSettings#default_project_creation}
 
 ---
 
@@ -15144,7 +15144,7 @@ public java.lang.Number getDefaultProjectsLimit();
 
 Project limit per user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#default_projects_limit ApplicationSettings#default_projects_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#default_projects_limit ApplicationSettings#default_projects_limit}
 
 ---
 
@@ -15158,7 +15158,7 @@ public java.lang.String getDefaultProjectVisibility();
 
 What visibility level new projects receive. Can take private, internal and public as a parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#default_project_visibility ApplicationSettings#default_project_visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#default_project_visibility ApplicationSettings#default_project_visibility}
 
 ---
 
@@ -15172,7 +15172,7 @@ public java.lang.String getDefaultSnippetVisibility();
 
 What visibility level new snippets receive. Can take private, internal and public as a parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#default_snippet_visibility ApplicationSettings#default_snippet_visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#default_snippet_visibility ApplicationSettings#default_snippet_visibility}
 
 ---
 
@@ -15186,7 +15186,7 @@ public java.lang.Number getDefaultSyntaxHighlightingTheme();
 
 Default syntax highlighting theme for users who are new or not signed in. See IDs of available themes (https://gitlab.com/gitlab-org/gitlab/blob/master/lib/gitlab/themes.rb#L16).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#default_syntax_highlighting_theme ApplicationSettings#default_syntax_highlighting_theme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#default_syntax_highlighting_theme ApplicationSettings#default_syntax_highlighting_theme}
 
 ---
 
@@ -15200,7 +15200,7 @@ public java.lang.Object getDeleteInactiveProjects();
 
 Enable inactive project deletion feature.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#delete_inactive_projects ApplicationSettings#delete_inactive_projects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#delete_inactive_projects ApplicationSettings#delete_inactive_projects}
 
 ---
 
@@ -15216,7 +15216,7 @@ Specifies whether users who have not confirmed their email should be deleted.
 
 When set to true, unconfirmed users are deleted after unconfirmed_users_delete_after_days days. Self-managed, Premium and Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#delete_unconfirmed_users ApplicationSettings#delete_unconfirmed_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#delete_unconfirmed_users ApplicationSettings#delete_unconfirmed_users}
 
 ---
 
@@ -15232,7 +15232,7 @@ The number of days to wait before deleting a project or group that is marked for
 
 Value must be between 1 and 90.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#deletion_adjourned_period ApplicationSettings#deletion_adjourned_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#deletion_adjourned_period ApplicationSettings#deletion_adjourned_period}
 
 ---
 
@@ -15246,7 +15246,7 @@ public java.lang.Object getDiagramsnetEnabled();
 
 (If enabled, requires diagramsnet_url) Enable Diagrams.net integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#diagramsnet_enabled ApplicationSettings#diagramsnet_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#diagramsnet_enabled ApplicationSettings#diagramsnet_enabled}
 
 ---
 
@@ -15260,7 +15260,7 @@ public java.lang.String getDiagramsnetUrl();
 
 The Diagrams.net instance URL for integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#diagramsnet_url ApplicationSettings#diagramsnet_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#diagramsnet_url ApplicationSettings#diagramsnet_url}
 
 ---
 
@@ -15274,7 +15274,7 @@ public java.lang.Number getDiffMaxFiles();
 
 Maximum files in a diff.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#diff_max_files ApplicationSettings#diff_max_files}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#diff_max_files ApplicationSettings#diff_max_files}
 
 ---
 
@@ -15288,7 +15288,7 @@ public java.lang.Number getDiffMaxLines();
 
 Maximum lines in a diff.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#diff_max_lines ApplicationSettings#diff_max_lines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#diff_max_lines ApplicationSettings#diff_max_lines}
 
 ---
 
@@ -15302,7 +15302,7 @@ public java.lang.Number getDiffMaxPatchBytes();
 
 Maximum diff patch size, in bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#diff_max_patch_bytes ApplicationSettings#diff_max_patch_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#diff_max_patch_bytes ApplicationSettings#diff_max_patch_bytes}
 
 ---
 
@@ -15316,7 +15316,7 @@ public java.lang.Object getDisableAdminOauthScopes();
 
 Stops administrators from connecting their GitLab accounts to non-trusted OAuth 2.0 applications that have the api, read_api, read_repository, write_repository, read_registry, write_registry, or sudo scopes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#disable_admin_oauth_scopes ApplicationSettings#disable_admin_oauth_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#disable_admin_oauth_scopes ApplicationSettings#disable_admin_oauth_scopes}
 
 ---
 
@@ -15330,7 +15330,7 @@ public java.util.List<java.lang.String> getDisabledOauthSignInSources();
 
 Disabled OAuth sign-in sources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#disabled_oauth_sign_in_sources ApplicationSettings#disabled_oauth_sign_in_sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#disabled_oauth_sign_in_sources ApplicationSettings#disabled_oauth_sign_in_sources}
 
 ---
 
@@ -15344,7 +15344,7 @@ public java.lang.Object getDisableFeedToken();
 
 Disable display of RSS/Atom and calendar feed tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#disable_feed_token ApplicationSettings#disable_feed_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#disable_feed_token ApplicationSettings#disable_feed_token}
 
 ---
 
@@ -15360,7 +15360,7 @@ Disable personal access tokens.
 
 Self-managed, Premium and Ultimate only. There is no method available to enable a personal access token that’s been disabled through the API. This is a known issue.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#disable_personal_access_tokens ApplicationSettings#disable_personal_access_tokens}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#disable_personal_access_tokens ApplicationSettings#disable_personal_access_tokens}
 
 ---
 
@@ -15374,7 +15374,7 @@ public java.lang.Object getDnsRebindingProtectionEnabled();
 
 Enforce DNS rebinding attack protection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#dns_rebinding_protection_enabled ApplicationSettings#dns_rebinding_protection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#dns_rebinding_protection_enabled ApplicationSettings#dns_rebinding_protection_enabled}
 
 ---
 
@@ -15388,7 +15388,7 @@ public java.util.List<java.lang.String> getDomainAllowlist();
 
 Force people to use only corporate emails for sign-up. Null means there is no restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#domain_allowlist ApplicationSettings#domain_allowlist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#domain_allowlist ApplicationSettings#domain_allowlist}
 
 ---
 
@@ -15404,7 +15404,7 @@ Users with email addresses that match these domains cannot sign up.
 
 Wildcards allowed. Use separate lines for multiple entries. Ex: domain.com, *.domain.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#domain_denylist ApplicationSettings#domain_denylist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#domain_denylist ApplicationSettings#domain_denylist}
 
 ---
 
@@ -15418,7 +15418,7 @@ public java.lang.Object getDomainDenylistEnabled();
 
 (If enabled, requires: domain_denylist) Allows blocking sign-ups from emails from specific domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#domain_denylist_enabled ApplicationSettings#domain_denylist_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#domain_denylist_enabled ApplicationSettings#domain_denylist_enabled}
 
 ---
 
@@ -15432,7 +15432,7 @@ public java.lang.Number getDownstreamPipelineTriggerLimitPerProjectUserSha();
 
 Maximum downstream pipeline trigger rate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#downstream_pipeline_trigger_limit_per_project_user_sha ApplicationSettings#downstream_pipeline_trigger_limit_per_project_user_sha}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#downstream_pipeline_trigger_limit_per_project_user_sha ApplicationSettings#downstream_pipeline_trigger_limit_per_project_user_sha}
 
 ---
 
@@ -15446,7 +15446,7 @@ public java.lang.Number getDsaKeyRestriction();
 
 The minimum allowed bit length of an uploaded DSA key. 0 means no restriction. -1 disables DSA keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#dsa_key_restriction ApplicationSettings#dsa_key_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#dsa_key_restriction ApplicationSettings#dsa_key_restriction}
 
 ---
 
@@ -15460,7 +15460,7 @@ public java.lang.Object getDuoFeaturesEnabled();
 
 Indicates whether GitLab Duo features are enabled for this instance. Self-managed, Premium and Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#duo_features_enabled ApplicationSettings#duo_features_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#duo_features_enabled ApplicationSettings#duo_features_enabled}
 
 ---
 
@@ -15476,7 +15476,7 @@ The minimum allowed curve size (in bits) of an uploaded ECDSA key.
 
 0 means no restriction. -1 disables ECDSA keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#ecdsa_key_restriction ApplicationSettings#ecdsa_key_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#ecdsa_key_restriction ApplicationSettings#ecdsa_key_restriction}
 
 ---
 
@@ -15492,7 +15492,7 @@ The minimum allowed curve size (in bits) of an uploaded ECDSA_SK key.
 
 0 means no restriction. -1 disables ECDSA_SK keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#ecdsa_sk_key_restriction ApplicationSettings#ecdsa_sk_key_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#ecdsa_sk_key_restriction ApplicationSettings#ecdsa_sk_key_restriction}
 
 ---
 
@@ -15508,7 +15508,7 @@ The minimum allowed curve size (in bits) of an uploaded ED25519 key.
 
 0 means no restriction. -1 disables ED25519 keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#ed25519_key_restriction ApplicationSettings#ed25519_key_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#ed25519_key_restriction ApplicationSettings#ed25519_key_restriction}
 
 ---
 
@@ -15524,7 +15524,7 @@ The minimum allowed curve size (in bits) of an uploaded ED25519_SK key.
 
 0 means no restriction. -1 disables ED25519_SK keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#ed25519_sk_key_restriction ApplicationSettings#ed25519_sk_key_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#ed25519_sk_key_restriction ApplicationSettings#ed25519_sk_key_restriction}
 
 ---
 
@@ -15538,7 +15538,7 @@ public java.lang.String getEksAccessKeyId();
 
 AWS IAM access key ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#eks_access_key_id ApplicationSettings#eks_access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#eks_access_key_id ApplicationSettings#eks_access_key_id}
 
 ---
 
@@ -15552,7 +15552,7 @@ public java.lang.String getEksAccountId();
 
 Amazon account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#eks_account_id ApplicationSettings#eks_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#eks_account_id ApplicationSettings#eks_account_id}
 
 ---
 
@@ -15566,7 +15566,7 @@ public java.lang.Object getEksIntegrationEnabled();
 
 Enable integration with Amazon EKS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#eks_integration_enabled ApplicationSettings#eks_integration_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#eks_integration_enabled ApplicationSettings#eks_integration_enabled}
 
 ---
 
@@ -15580,7 +15580,7 @@ public java.lang.String getEksSecretAccessKey();
 
 AWS IAM secret access key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#eks_secret_access_key ApplicationSettings#eks_secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#eks_secret_access_key ApplicationSettings#eks_secret_access_key}
 
 ---
 
@@ -15594,7 +15594,7 @@ public java.lang.Object getElasticsearchAws();
 
 Enable the use of AWS hosted Elasticsearch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_aws ApplicationSettings#elasticsearch_aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_aws ApplicationSettings#elasticsearch_aws}
 
 ---
 
@@ -15608,7 +15608,7 @@ public java.lang.String getElasticsearchAwsAccessKey();
 
 AWS IAM access key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_aws_access_key ApplicationSettings#elasticsearch_aws_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_aws_access_key ApplicationSettings#elasticsearch_aws_access_key}
 
 ---
 
@@ -15622,7 +15622,7 @@ public java.lang.String getElasticsearchAwsRegion();
 
 The AWS region the Elasticsearch domain is configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_aws_region ApplicationSettings#elasticsearch_aws_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_aws_region ApplicationSettings#elasticsearch_aws_region}
 
 ---
 
@@ -15636,7 +15636,7 @@ public java.lang.String getElasticsearchAwsSecretAccessKey();
 
 AWS IAM secret access key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_aws_secret_access_key ApplicationSettings#elasticsearch_aws_secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_aws_secret_access_key ApplicationSettings#elasticsearch_aws_secret_access_key}
 
 ---
 
@@ -15652,7 +15652,7 @@ Maximum size of text fields to index by Elasticsearch.
 
 0 value means no limit. This does not apply to repository and wiki indexing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_indexed_field_length_limit ApplicationSettings#elasticsearch_indexed_field_length_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_indexed_field_length_limit ApplicationSettings#elasticsearch_indexed_field_length_limit}
 
 ---
 
@@ -15666,7 +15666,7 @@ public java.lang.Number getElasticsearchIndexedFileSizeLimitKb();
 
 Maximum size of repository and wiki files that are indexed by Elasticsearch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_indexed_file_size_limit_kb ApplicationSettings#elasticsearch_indexed_file_size_limit_kb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_indexed_file_size_limit_kb ApplicationSettings#elasticsearch_indexed_file_size_limit_kb}
 
 ---
 
@@ -15680,7 +15680,7 @@ public java.lang.Object getElasticsearchIndexing();
 
 Enable Elasticsearch indexing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_indexing ApplicationSettings#elasticsearch_indexing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_indexing ApplicationSettings#elasticsearch_indexing}
 
 ---
 
@@ -15694,7 +15694,7 @@ public java.lang.Object getElasticsearchLimitIndexing();
 
 Limit Elasticsearch to index certain namespaces and projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_limit_indexing ApplicationSettings#elasticsearch_limit_indexing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_limit_indexing ApplicationSettings#elasticsearch_limit_indexing}
 
 ---
 
@@ -15708,7 +15708,7 @@ public java.lang.Number getElasticsearchMaxBulkConcurrency();
 
 Maximum concurrency of Elasticsearch bulk requests per indexing operation. This only applies to repository indexing operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_max_bulk_concurrency ApplicationSettings#elasticsearch_max_bulk_concurrency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_max_bulk_concurrency ApplicationSettings#elasticsearch_max_bulk_concurrency}
 
 ---
 
@@ -15722,7 +15722,7 @@ public java.lang.Number getElasticsearchMaxBulkSizeMb();
 
 Maximum size of Elasticsearch bulk indexing requests in MB. This only applies to repository indexing operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_max_bulk_size_mb ApplicationSettings#elasticsearch_max_bulk_size_mb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_max_bulk_size_mb ApplicationSettings#elasticsearch_max_bulk_size_mb}
 
 ---
 
@@ -15736,7 +15736,7 @@ public java.lang.Number getElasticsearchMaxCodeIndexingConcurrency();
 
 Maximum concurrency of Elasticsearch code indexing background jobs. This only applies to repository indexing operations. Premium and Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_max_code_indexing_concurrency ApplicationSettings#elasticsearch_max_code_indexing_concurrency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_max_code_indexing_concurrency ApplicationSettings#elasticsearch_max_code_indexing_concurrency}
 
 ---
 
@@ -15750,7 +15750,7 @@ public java.util.List<java.lang.Number> getElasticsearchNamespaceIds();
 
 The namespaces to index via Elasticsearch if elasticsearch_limit_indexing is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_namespace_ids ApplicationSettings#elasticsearch_namespace_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_namespace_ids ApplicationSettings#elasticsearch_namespace_ids}
 
 ---
 
@@ -15764,7 +15764,7 @@ public java.lang.String getElasticsearchPassword();
 
 The password of your Elasticsearch instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_password ApplicationSettings#elasticsearch_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_password ApplicationSettings#elasticsearch_password}
 
 ---
 
@@ -15778,7 +15778,7 @@ public java.util.List<java.lang.Number> getElasticsearchProjectIds();
 
 The projects to index via Elasticsearch if elasticsearch_limit_indexing is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_project_ids ApplicationSettings#elasticsearch_project_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_project_ids ApplicationSettings#elasticsearch_project_ids}
 
 ---
 
@@ -15794,7 +15794,7 @@ Enable automatic requeuing of indexing workers.
 
 This improves non-code indexing throughput by enqueuing Sidekiq jobs until all documents are processed. Premium and Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_requeue_workers ApplicationSettings#elasticsearch_requeue_workers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_requeue_workers ApplicationSettings#elasticsearch_requeue_workers}
 
 ---
 
@@ -15808,7 +15808,7 @@ public java.lang.Object getElasticsearchSearch();
 
 Enable Elasticsearch search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_search ApplicationSettings#elasticsearch_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_search ApplicationSettings#elasticsearch_search}
 
 ---
 
@@ -15822,7 +15822,7 @@ public java.util.List<java.lang.String> getElasticsearchUrl();
 
 The URL to use for connecting to Elasticsearch. Use a comma-separated list to support cluster (for example, http://localhost:9200, http://localhost:9201).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_url ApplicationSettings#elasticsearch_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_url ApplicationSettings#elasticsearch_url}
 
 ---
 
@@ -15836,7 +15836,7 @@ public java.lang.String getElasticsearchUsername();
 
 The username of your Elasticsearch instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_username ApplicationSettings#elasticsearch_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_username ApplicationSettings#elasticsearch_username}
 
 ---
 
@@ -15852,7 +15852,7 @@ Number of indexing worker shards.
 
 This improves non-code indexing throughput by enqueuing more parallel Sidekiq jobs. Premium and Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#elasticsearch_worker_number_of_shards ApplicationSettings#elasticsearch_worker_number_of_shards}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#elasticsearch_worker_number_of_shards ApplicationSettings#elasticsearch_worker_number_of_shards}
 
 ---
 
@@ -15866,7 +15866,7 @@ public java.lang.String getEmailAdditionalText();
 
 Additional text added to the bottom of every email for legal/auditing/compliance reasons.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#email_additional_text ApplicationSettings#email_additional_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#email_additional_text ApplicationSettings#email_additional_text}
 
 ---
 
@@ -15882,7 +15882,7 @@ Some email servers do not support overriding the email sender name.
 
 Enable this option to include the name of the author of the issue, merge request or comment in the email body instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#email_author_in_body ApplicationSettings#email_author_in_body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#email_author_in_body ApplicationSettings#email_author_in_body}
 
 ---
 
@@ -15896,7 +15896,7 @@ public java.lang.String getEmailConfirmationSetting();
 
 Specifies whether users must confirm their email before sign in. Possible values are off, soft, and hard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#email_confirmation_setting ApplicationSettings#email_confirmation_setting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#email_confirmation_setting ApplicationSettings#email_confirmation_setting}
 
 ---
 
@@ -15910,7 +15910,7 @@ public java.lang.Object getEnableArtifactExternalRedirectWarningPage();
 
 Show the external redirect page that warns you about user-generated content in GitLab Pages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#enable_artifact_external_redirect_warning_page ApplicationSettings#enable_artifact_external_redirect_warning_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#enable_artifact_external_redirect_warning_page ApplicationSettings#enable_artifact_external_redirect_warning_page}
 
 ---
 
@@ -15924,7 +15924,7 @@ public java.lang.String getEnabledGitAccessProtocol();
 
 Enabled protocols for Git access. Allowed values are: ssh, http, and nil to allow both protocols.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#enabled_git_access_protocol ApplicationSettings#enabled_git_access_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#enabled_git_access_protocol ApplicationSettings#enabled_git_access_protocol}
 
 ---
 
@@ -15938,7 +15938,7 @@ public java.lang.Object getEnforceNamespaceStorageLimit();
 
 Enabling this permits enforcement of namespace storage limits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#enforce_namespace_storage_limit ApplicationSettings#enforce_namespace_storage_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#enforce_namespace_storage_limit ApplicationSettings#enforce_namespace_storage_limit}
 
 ---
 
@@ -15952,7 +15952,7 @@ public java.lang.Object getEnforceTerms();
 
 (If enabled, requires: terms) Enforce application ToS to all users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#enforce_terms ApplicationSettings#enforce_terms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#enforce_terms ApplicationSettings#enforce_terms}
 
 ---
 
@@ -15966,7 +15966,7 @@ public java.lang.String getExternalAuthClientCert();
 
 (If enabled, requires: external_auth_client_key) The certificate to use to authenticate with the external authorization service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#external_auth_client_cert ApplicationSettings#external_auth_client_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#external_auth_client_cert ApplicationSettings#external_auth_client_cert}
 
 ---
 
@@ -15980,7 +15980,7 @@ public java.lang.String getExternalAuthClientKey();
 
 Private key for the certificate when authentication is required for the external authorization service, this is encrypted when stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#external_auth_client_key ApplicationSettings#external_auth_client_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#external_auth_client_key ApplicationSettings#external_auth_client_key}
 
 ---
 
@@ -15994,7 +15994,7 @@ public java.lang.String getExternalAuthClientKeyPass();
 
 Passphrase to use for the private key when authenticating with the external service this is encrypted when stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#external_auth_client_key_pass ApplicationSettings#external_auth_client_key_pass}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#external_auth_client_key_pass ApplicationSettings#external_auth_client_key_pass}
 
 ---
 
@@ -16008,7 +16008,7 @@ public java.lang.String getExternalAuthorizationServiceDefaultLabel();
 
 The default classification label to use when requesting authorization and no classification label has been specified on the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#external_authorization_service_default_label ApplicationSettings#external_authorization_service_default_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#external_authorization_service_default_label ApplicationSettings#external_authorization_service_default_label}
 
 ---
 
@@ -16022,7 +16022,7 @@ public java.lang.Object getExternalAuthorizationServiceEnabled();
 
 (If enabled, requires: external_authorization_service_default_label, external_authorization_service_timeout and external_authorization_service_url) Enable using an external authorization service for accessing projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#external_authorization_service_enabled ApplicationSettings#external_authorization_service_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#external_authorization_service_enabled ApplicationSettings#external_authorization_service_enabled}
 
 ---
 
@@ -16038,7 +16038,7 @@ The timeout after which an authorization request is aborted, in seconds.
 
 When a request times out, access is denied to the user. (min: 0.001, max: 10, step: 0.001).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#external_authorization_service_timeout ApplicationSettings#external_authorization_service_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#external_authorization_service_timeout ApplicationSettings#external_authorization_service_timeout}
 
 ---
 
@@ -16052,7 +16052,7 @@ public java.lang.String getExternalAuthorizationServiceUrl();
 
 URL to which authorization requests are directed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#external_authorization_service_url ApplicationSettings#external_authorization_service_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#external_authorization_service_url ApplicationSettings#external_authorization_service_url}
 
 ---
 
@@ -16066,7 +16066,7 @@ public java.lang.Number getExternalPipelineValidationServiceTimeout();
 
 How long to wait for a response from the pipeline validation service. Assumes OK if it times out.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#external_pipeline_validation_service_timeout ApplicationSettings#external_pipeline_validation_service_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#external_pipeline_validation_service_timeout ApplicationSettings#external_pipeline_validation_service_timeout}
 
 ---
 
@@ -16080,7 +16080,7 @@ public java.lang.String getExternalPipelineValidationServiceToken();
 
 Optional. Token to include as the X-Gitlab-Token header in requests to the URL in external_pipeline_validation_service_url.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#external_pipeline_validation_service_token ApplicationSettings#external_pipeline_validation_service_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#external_pipeline_validation_service_token ApplicationSettings#external_pipeline_validation_service_token}
 
 ---
 
@@ -16094,7 +16094,7 @@ public java.lang.String getExternalPipelineValidationServiceUrl();
 
 URL to use for pipeline validation requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#external_pipeline_validation_service_url ApplicationSettings#external_pipeline_validation_service_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#external_pipeline_validation_service_url ApplicationSettings#external_pipeline_validation_service_url}
 
 ---
 
@@ -16108,7 +16108,7 @@ public java.lang.Number getFailedLoginAttemptsUnlockPeriodInMinutes();
 
 Time period in minutes after which the user is unlocked when maximum number of failed sign-in attempts reached.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#failed_login_attempts_unlock_period_in_minutes ApplicationSettings#failed_login_attempts_unlock_period_in_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#failed_login_attempts_unlock_period_in_minutes ApplicationSettings#failed_login_attempts_unlock_period_in_minutes}
 
 ---
 
@@ -16122,7 +16122,7 @@ public java.lang.Number getFileTemplateProjectId();
 
 The ID of a project to load custom file templates from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#file_template_project_id ApplicationSettings#file_template_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#file_template_project_id ApplicationSettings#file_template_project_id}
 
 ---
 
@@ -16138,7 +16138,7 @@ Start day of the week for calendar views and date pickers.
 
 Valid values are 0 for Sunday, 1 for Monday, and 6 for Saturday.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#first_day_of_week ApplicationSettings#first_day_of_week}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#first_day_of_week ApplicationSettings#first_day_of_week}
 
 ---
 
@@ -16152,7 +16152,7 @@ public java.lang.String getGeoNodeAllowedIps();
 
 Comma-separated list of IPs and CIDRs of allowed secondary nodes. For example, 1.1.1.1, 2.2.2.0/24.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#geo_node_allowed_ips ApplicationSettings#geo_node_allowed_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#geo_node_allowed_ips ApplicationSettings#geo_node_allowed_ips}
 
 ---
 
@@ -16166,7 +16166,7 @@ public java.lang.Number getGeoStatusTimeout();
 
 The amount of seconds after which a request to get a secondary node status times out.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#geo_status_timeout ApplicationSettings#geo_status_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#geo_status_timeout ApplicationSettings#geo_status_timeout}
 
 ---
 
@@ -16182,7 +16182,7 @@ Default Gitaly timeout, in seconds.
 
 This timeout is not enforced for Git fetch/push operations or Sidekiq jobs. Set to 0 to disable timeouts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#gitaly_timeout_default ApplicationSettings#gitaly_timeout_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#gitaly_timeout_default ApplicationSettings#gitaly_timeout_default}
 
 ---
 
@@ -16198,7 +16198,7 @@ Gitaly fast operation timeout, in seconds.
 
 Some Gitaly operations are expected to be fast. If they exceed this threshold, there may be a problem with a storage shard and ‘failing fast’ can help maintain the stability of the GitLab instance. Set to 0 to disable timeouts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#gitaly_timeout_fast ApplicationSettings#gitaly_timeout_fast}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#gitaly_timeout_fast ApplicationSettings#gitaly_timeout_fast}
 
 ---
 
@@ -16214,7 +16214,7 @@ Medium Gitaly timeout, in seconds.
 
 This should be a value between the Fast and the Default timeout. Set to 0 to disable timeouts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#gitaly_timeout_medium ApplicationSettings#gitaly_timeout_medium}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#gitaly_timeout_medium ApplicationSettings#gitaly_timeout_medium}
 
 ---
 
@@ -16228,7 +16228,7 @@ public java.lang.Number getGitlabShellOperationLimit();
 
 Maximum number of Git operations per minute a user can perform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#gitlab_shell_operation_limit ApplicationSettings#gitlab_shell_operation_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#gitlab_shell_operation_limit ApplicationSettings#gitlab_shell_operation_limit}
 
 ---
 
@@ -16242,7 +16242,7 @@ public java.lang.Object getGitpodEnabled();
 
 Enable Gitpod integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#gitpod_enabled ApplicationSettings#gitpod_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#gitpod_enabled ApplicationSettings#gitpod_enabled}
 
 ---
 
@@ -16256,7 +16256,7 @@ public java.lang.String getGitpodUrl();
 
 The Gitpod instance URL for integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#gitpod_url ApplicationSettings#gitpod_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#gitpod_url ApplicationSettings#gitpod_url}
 
 ---
 
@@ -16272,7 +16272,7 @@ List of user IDs that are emailed when the Git abuse rate limit is exceeded.
 
 Maximum: 100 user IDs. Self-managed, Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#git_rate_limit_users_alertlist ApplicationSettings#git_rate_limit_users_alertlist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#git_rate_limit_users_alertlist ApplicationSettings#git_rate_limit_users_alertlist}
 
 ---
 
@@ -16286,7 +16286,7 @@ public java.util.List<java.lang.String> getGitRateLimitUsersAllowlist();
 
 List of usernames excluded from Git anti-abuse rate limits. Maximum: 100 usernames. Self-managed, Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#git_rate_limit_users_allowlist ApplicationSettings#git_rate_limit_users_allowlist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#git_rate_limit_users_allowlist ApplicationSettings#git_rate_limit_users_allowlist}
 
 ---
 
@@ -16300,7 +16300,7 @@ public java.lang.Number getGitTwoFactorSessionExpiry();
 
 Maximum duration (in minutes) of a session for Git operations when 2FA is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#git_two_factor_session_expiry ApplicationSettings#git_two_factor_session_expiry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#git_two_factor_session_expiry ApplicationSettings#git_two_factor_session_expiry}
 
 ---
 
@@ -16314,7 +16314,7 @@ public java.lang.String getGloballyAllowedIps();
 
 Comma-separated list of IP addresses and CIDRs always allowed for inbound traffic. For example, 1.1.1.1, 2.2.2.0/24.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#globally_allowed_ips ApplicationSettings#globally_allowed_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#globally_allowed_ips ApplicationSettings#globally_allowed_ips}
 
 ---
 
@@ -16328,7 +16328,7 @@ public java.lang.Object getGrafanaEnabled();
 
 Enable Grafana.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#grafana_enabled ApplicationSettings#grafana_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#grafana_enabled ApplicationSettings#grafana_enabled}
 
 ---
 
@@ -16342,7 +16342,7 @@ public java.lang.String getGrafanaUrl();
 
 Grafana URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#grafana_url ApplicationSettings#grafana_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#grafana_url ApplicationSettings#grafana_url}
 
 ---
 
@@ -16356,7 +16356,7 @@ public java.lang.Object getGravatarEnabled();
 
 Enable Gravatar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#gravatar_enabled ApplicationSettings#gravatar_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#gravatar_enabled ApplicationSettings#gravatar_enabled}
 
 ---
 
@@ -16370,7 +16370,7 @@ public java.lang.Object getGroupOwnersCanManageDefaultBranchProtection();
 
 Prevent overrides of default branch protection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#group_owners_can_manage_default_branch_protection ApplicationSettings#group_owners_can_manage_default_branch_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#group_owners_can_manage_default_branch_protection ApplicationSettings#group_owners_can_manage_default_branch_protection}
 
 ---
 
@@ -16384,7 +16384,7 @@ public java.lang.Object getHelpPageHideCommercialContent();
 
 Hide marketing-related entries from help.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#help_page_hide_commercial_content ApplicationSettings#help_page_hide_commercial_content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#help_page_hide_commercial_content ApplicationSettings#help_page_hide_commercial_content}
 
 ---
 
@@ -16398,7 +16398,7 @@ public java.lang.String getHelpPageSupportUrl();
 
 Alternate support URL for help page and help dropdown.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#help_page_support_url ApplicationSettings#help_page_support_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#help_page_support_url ApplicationSettings#help_page_support_url}
 
 ---
 
@@ -16412,7 +16412,7 @@ public java.lang.String getHelpPageText();
 
 Custom text displayed on the help page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#help_page_text ApplicationSettings#help_page_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#help_page_text ApplicationSettings#help_page_text}
 
 ---
 
@@ -16426,7 +16426,7 @@ public java.lang.String getHelpText();
 
 GitLab server administrator information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#help_text ApplicationSettings#help_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#help_text ApplicationSettings#help_text}
 
 ---
 
@@ -16440,7 +16440,7 @@ public java.lang.Object getHideThirdPartyOffers();
 
 Do not display offers from third parties in GitLab.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#hide_third_party_offers ApplicationSettings#hide_third_party_offers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#hide_third_party_offers ApplicationSettings#hide_third_party_offers}
 
 ---
 
@@ -16454,7 +16454,7 @@ public java.lang.String getHomePageUrl();
 
 Redirect to this URL when not logged in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#home_page_url ApplicationSettings#home_page_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#home_page_url ApplicationSettings#home_page_url}
 
 ---
 
@@ -16468,7 +16468,7 @@ public java.lang.Object getHousekeepingEnabled();
 
 Enable or disable Git housekeeping. If enabled, requires housekeeping_optimize_repository_period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#housekeeping_enabled ApplicationSettings#housekeeping_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#housekeeping_enabled ApplicationSettings#housekeeping_enabled}
 
 ---
 
@@ -16482,7 +16482,7 @@ public java.lang.Number getHousekeepingOptimizeRepositoryPeriod();
 
 Number of Git pushes after which an incremental git-repack is run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#housekeeping_optimize_repository_period ApplicationSettings#housekeeping_optimize_repository_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#housekeeping_optimize_repository_period ApplicationSettings#housekeeping_optimize_repository_period}
 
 ---
 
@@ -16496,7 +16496,7 @@ public java.lang.Object getHtmlEmailsEnabled();
 
 Enable HTML emails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#html_emails_enabled ApplicationSettings#html_emails_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#html_emails_enabled ApplicationSettings#html_emails_enabled}
 
 ---
 
@@ -16508,7 +16508,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#id ApplicationSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#id ApplicationSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -16525,7 +16525,7 @@ public java.util.List<java.lang.String> getImportSources();
 
 Sources to allow project import from. Valid values are: `github`, `bitbucket`, `bitbucket_server`, `fogbugz`, `git`, `gitlab_project`, `gitea`, `manifest`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#import_sources ApplicationSettings#import_sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#import_sources ApplicationSettings#import_sources}
 
 ---
 
@@ -16539,7 +16539,7 @@ public java.lang.Number getInactiveProjectsDeleteAfterMonths();
 
 If delete_inactive_projects is true, the time (in months) to wait before deleting inactive projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#inactive_projects_delete_after_months ApplicationSettings#inactive_projects_delete_after_months}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#inactive_projects_delete_after_months ApplicationSettings#inactive_projects_delete_after_months}
 
 ---
 
@@ -16553,7 +16553,7 @@ public java.lang.Number getInactiveProjectsMinSizeMb();
 
 If delete_inactive_projects is true, the minimum repository size for projects to be checked for inactivity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#inactive_projects_min_size_mb ApplicationSettings#inactive_projects_min_size_mb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#inactive_projects_min_size_mb ApplicationSettings#inactive_projects_min_size_mb}
 
 ---
 
@@ -16567,7 +16567,7 @@ public java.lang.Number getInactiveProjectsSendWarningEmailAfterMonths();
 
 If delete_inactive_projects is true, sets the time (in months) to wait before emailing maintainers that the project is scheduled be deleted because it is inactive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#inactive_projects_send_warning_email_after_months ApplicationSettings#inactive_projects_send_warning_email_after_months}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#inactive_projects_send_warning_email_after_months ApplicationSettings#inactive_projects_send_warning_email_after_months}
 
 ---
 
@@ -16581,7 +16581,7 @@ public java.lang.Object getIncludeOptionalMetricsInServicePing();
 
 Whether or not optional metrics are enabled in Service Ping.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#include_optional_metrics_in_service_ping ApplicationSettings#include_optional_metrics_in_service_ping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#include_optional_metrics_in_service_ping ApplicationSettings#include_optional_metrics_in_service_ping}
 
 ---
 
@@ -16595,7 +16595,7 @@ public java.lang.Object getInProductMarketingEmailsEnabled();
 
 Enable in-product marketing emails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#in_product_marketing_emails_enabled ApplicationSettings#in_product_marketing_emails_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#in_product_marketing_emails_enabled ApplicationSettings#in_product_marketing_emails_enabled}
 
 ---
 
@@ -16609,7 +16609,7 @@ public java.lang.Object getInvisibleCaptchaEnabled();
 
 Enable Invisible CAPTCHA spam detection during sign-up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#invisible_captcha_enabled ApplicationSettings#invisible_captcha_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#invisible_captcha_enabled ApplicationSettings#invisible_captcha_enabled}
 
 ---
 
@@ -16623,7 +16623,7 @@ public java.lang.Number getIssuesCreateLimit();
 
 Max number of issue creation requests per minute per user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#issues_create_limit ApplicationSettings#issues_create_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#issues_create_limit ApplicationSettings#issues_create_limit}
 
 ---
 
@@ -16637,7 +16637,7 @@ public java.lang.String getJiraConnectApplicationKey();
 
 ID of the OAuth application used to authenticate with the GitLab for Jira Cloud app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#jira_connect_application_key ApplicationSettings#jira_connect_application_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#jira_connect_application_key ApplicationSettings#jira_connect_application_key}
 
 ---
 
@@ -16651,7 +16651,7 @@ public java.lang.String getJiraConnectProxyUrl();
 
 URL of the GitLab instance used as a proxy for the GitLab for Jira Cloud app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#jira_connect_proxy_url ApplicationSettings#jira_connect_proxy_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#jira_connect_proxy_url ApplicationSettings#jira_connect_proxy_url}
 
 ---
 
@@ -16665,7 +16665,7 @@ public java.lang.Object getJiraConnectPublicKeyStorageEnabled();
 
 Enable public key storage for the GitLab for Jira Cloud app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#jira_connect_public_key_storage_enabled ApplicationSettings#jira_connect_public_key_storage_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#jira_connect_public_key_storage_enabled ApplicationSettings#jira_connect_public_key_storage_enabled}
 
 ---
 
@@ -16679,7 +16679,7 @@ public java.lang.Object getKeepLatestArtifact();
 
 Prevent the deletion of the artifacts from the most recent successful jobs, regardless of the expiry time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#keep_latest_artifact ApplicationSettings#keep_latest_artifact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#keep_latest_artifact ApplicationSettings#keep_latest_artifact}
 
 ---
 
@@ -16693,7 +16693,7 @@ public java.lang.Number getLocalMarkdownVersion();
 
 Increase this value when any cached Markdown should be invalidated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#local_markdown_version ApplicationSettings#local_markdown_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#local_markdown_version ApplicationSettings#local_markdown_version}
 
 ---
 
@@ -16707,7 +16707,7 @@ public java.lang.Object getLockDuoFeaturesEnabled();
 
 Indicates whether the GitLab Duo features enabled setting is enforced for all subgroups. Self-managed, Premium and Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#lock_duo_features_enabled ApplicationSettings#lock_duo_features_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#lock_duo_features_enabled ApplicationSettings#lock_duo_features_enabled}
 
 ---
 
@@ -16721,7 +16721,7 @@ public java.lang.Object getLockMembershipsToLdap();
 
 Set to true to lock all memberships to LDAP. Premium and Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#lock_memberships_to_ldap ApplicationSettings#lock_memberships_to_ldap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#lock_memberships_to_ldap ApplicationSettings#lock_memberships_to_ldap}
 
 ---
 
@@ -16735,7 +16735,7 @@ public java.lang.Object getMailgunEventsEnabled();
 
 Enable Mailgun event receiver.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#mailgun_events_enabled ApplicationSettings#mailgun_events_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#mailgun_events_enabled ApplicationSettings#mailgun_events_enabled}
 
 ---
 
@@ -16749,7 +16749,7 @@ public java.lang.String getMailgunSigningKey();
 
 The Mailgun HTTP webhook signing key for receiving events from webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#mailgun_signing_key ApplicationSettings#mailgun_signing_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#mailgun_signing_key ApplicationSettings#mailgun_signing_key}
 
 ---
 
@@ -16763,7 +16763,7 @@ public java.lang.Object getMaintenanceMode();
 
 When instance is in maintenance mode, non-administrative users can sign in with read-only access and make read-only API requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#maintenance_mode ApplicationSettings#maintenance_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#maintenance_mode ApplicationSettings#maintenance_mode}
 
 ---
 
@@ -16777,7 +16777,7 @@ public java.lang.String getMaintenanceModeMessage();
 
 Message displayed when instance is in maintenance mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#maintenance_mode_message ApplicationSettings#maintenance_mode_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#maintenance_mode_message ApplicationSettings#maintenance_mode_message}
 
 ---
 
@@ -16791,7 +16791,7 @@ public java.lang.Object getMavenPackageRequestsForwarding();
 
 Use repo.maven.apache.org as a default remote repository when the package is not found in the GitLab Package Registry for Maven. Premium and Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#maven_package_requests_forwarding ApplicationSettings#maven_package_requests_forwarding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#maven_package_requests_forwarding ApplicationSettings#maven_package_requests_forwarding}
 
 ---
 
@@ -16805,7 +16805,7 @@ public java.lang.Number getMaxArtifactsSize();
 
 Maximum artifacts size in MB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#max_artifacts_size ApplicationSettings#max_artifacts_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#max_artifacts_size ApplicationSettings#max_artifacts_size}
 
 ---
 
@@ -16819,7 +16819,7 @@ public java.lang.Number getMaxAttachmentSize();
 
 Limit attachment size in MB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#max_attachment_size ApplicationSettings#max_attachment_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#max_attachment_size ApplicationSettings#max_attachment_size}
 
 ---
 
@@ -16833,7 +16833,7 @@ public java.lang.Number getMaxDecompressedArchiveSize();
 
 Maximum decompressed archive size in bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#max_decompressed_archive_size ApplicationSettings#max_decompressed_archive_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#max_decompressed_archive_size ApplicationSettings#max_decompressed_archive_size}
 
 ---
 
@@ -16847,7 +16847,7 @@ public java.lang.Number getMaxExportSize();
 
 Maximum export size in MB. 0 for unlimited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#max_export_size ApplicationSettings#max_export_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#max_export_size ApplicationSettings#max_export_size}
 
 ---
 
@@ -16861,7 +16861,7 @@ public java.lang.Number getMaxImportRemoteFileSize();
 
 Maximum remote file size for imports from external object storages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#max_import_remote_file_size ApplicationSettings#max_import_remote_file_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#max_import_remote_file_size ApplicationSettings#max_import_remote_file_size}
 
 ---
 
@@ -16875,7 +16875,7 @@ public java.lang.Number getMaxImportSize();
 
 Maximum import size in MB. 0 for unlimited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#max_import_size ApplicationSettings#max_import_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#max_import_size ApplicationSettings#max_import_size}
 
 ---
 
@@ -16889,7 +16889,7 @@ public java.lang.Number getMaxLoginAttempts();
 
 Maximum number of sign-in attempts before locking out the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#max_login_attempts ApplicationSettings#max_login_attempts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#max_login_attempts ApplicationSettings#max_login_attempts}
 
 ---
 
@@ -16905,7 +16905,7 @@ Maximum number of unique repositories a user can download in the specified time 
 
 Maximum: 10,000 repositories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#max_number_of_repository_downloads ApplicationSettings#max_number_of_repository_downloads}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#max_number_of_repository_downloads ApplicationSettings#max_number_of_repository_downloads}
 
 ---
 
@@ -16919,7 +16919,7 @@ public java.lang.Number getMaxNumberOfRepositoryDownloadsWithinTimePeriod();
 
 Reporting time period (in seconds). Maximum: 864000 seconds (10 days).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#max_number_of_repository_downloads_within_time_period ApplicationSettings#max_number_of_repository_downloads_within_time_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#max_number_of_repository_downloads_within_time_period ApplicationSettings#max_number_of_repository_downloads_within_time_period}
 
 ---
 
@@ -16933,7 +16933,7 @@ public java.lang.Number getMaxPagesSize();
 
 Maximum size of pages repositories in MB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#max_pages_size ApplicationSettings#max_pages_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#max_pages_size ApplicationSettings#max_pages_size}
 
 ---
 
@@ -16947,7 +16947,7 @@ public java.lang.Number getMaxPersonalAccessTokenLifetime();
 
 Maximum allowable lifetime for access tokens in days.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#max_personal_access_token_lifetime ApplicationSettings#max_personal_access_token_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#max_personal_access_token_lifetime ApplicationSettings#max_personal_access_token_lifetime}
 
 ---
 
@@ -16961,7 +16961,7 @@ public java.lang.Number getMaxSshKeyLifetime();
 
 Maximum allowable lifetime for SSH keys in days.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#max_ssh_key_lifetime ApplicationSettings#max_ssh_key_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#max_ssh_key_lifetime ApplicationSettings#max_ssh_key_lifetime}
 
 ---
 
@@ -16975,7 +16975,7 @@ public java.lang.Number getMaxTerraformStateSizeBytes();
 
 Maximum size in bytes of the Terraform state files. Set this to 0 for unlimited file size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#max_terraform_state_size_bytes ApplicationSettings#max_terraform_state_size_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#max_terraform_state_size_bytes ApplicationSettings#max_terraform_state_size_bytes}
 
 ---
 
@@ -16989,7 +16989,7 @@ public java.lang.Number getMetricsMethodCallThreshold();
 
 A method call is only tracked when it takes longer than the given amount of milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#metrics_method_call_threshold ApplicationSettings#metrics_method_call_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#metrics_method_call_threshold ApplicationSettings#metrics_method_call_threshold}
 
 ---
 
@@ -17003,7 +17003,7 @@ public java.lang.Number getMinimumPasswordLength();
 
 Indicates whether passwords require a minimum length. Premium and Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#minimum_password_length ApplicationSettings#minimum_password_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#minimum_password_length ApplicationSettings#minimum_password_length}
 
 ---
 
@@ -17017,7 +17017,7 @@ public java.lang.Object getMirrorAvailable();
 
 Allow repository mirroring to configured by project Maintainers. If disabled, only Administrators can configure repository mirroring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#mirror_available ApplicationSettings#mirror_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#mirror_available ApplicationSettings#mirror_available}
 
 ---
 
@@ -17031,7 +17031,7 @@ public java.lang.Number getMirrorCapacityThreshold();
 
 Minimum capacity to be available before scheduling more mirrors preemptively.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#mirror_capacity_threshold ApplicationSettings#mirror_capacity_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#mirror_capacity_threshold ApplicationSettings#mirror_capacity_threshold}
 
 ---
 
@@ -17045,7 +17045,7 @@ public java.lang.Number getMirrorMaxCapacity();
 
 Maximum number of mirrors that can be synchronizing at the same time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#mirror_max_capacity ApplicationSettings#mirror_max_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#mirror_max_capacity ApplicationSettings#mirror_max_capacity}
 
 ---
 
@@ -17059,7 +17059,7 @@ public java.lang.Number getMirrorMaxDelay();
 
 Maximum time (in minutes) between updates that a mirror can have when scheduled to synchronize.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#mirror_max_delay ApplicationSettings#mirror_max_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#mirror_max_delay ApplicationSettings#mirror_max_delay}
 
 ---
 
@@ -17073,7 +17073,7 @@ public java.lang.Object getNpmPackageRequestsForwarding();
 
 Use npmjs.org as a default remote repository when the package is not found in the GitLab Package Registry for npm.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#npm_package_requests_forwarding ApplicationSettings#npm_package_requests_forwarding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#npm_package_requests_forwarding ApplicationSettings#npm_package_requests_forwarding}
 
 ---
 
@@ -17087,7 +17087,7 @@ public java.lang.Object getNugetSkipMetadataUrlValidation();
 
 Indicates whether to skip metadata URL validation for the NuGet package.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#nuget_skip_metadata_url_validation ApplicationSettings#nuget_skip_metadata_url_validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#nuget_skip_metadata_url_validation ApplicationSettings#nuget_skip_metadata_url_validation}
 
 ---
 
@@ -17101,7 +17101,7 @@ public java.util.List<java.lang.String> getOutboundLocalRequestsWhitelist();
 
 Define a list of trusted domains or IP addresses to which local requests are allowed when local requests for hooks and services are disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#outbound_local_requests_whitelist ApplicationSettings#outbound_local_requests_whitelist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#outbound_local_requests_whitelist ApplicationSettings#outbound_local_requests_whitelist}
 
 ---
 
@@ -17115,7 +17115,7 @@ public java.util.List<java.lang.Number> getPackageMetadataPurlTypes();
 
 List of package registry metadata to sync. See the list of the available values (https://gitlab.com/gitlab-org/gitlab/-/blob/ace16c20d5da7c4928dd03fb139692638b557fe3/app/models/concerns/enums/package_metadata.rb#L5). Self-managed, Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#package_metadata_purl_types ApplicationSettings#package_metadata_purl_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#package_metadata_purl_types ApplicationSettings#package_metadata_purl_types}
 
 ---
 
@@ -17129,7 +17129,7 @@ public java.lang.Object getPackageRegistryAllowAnyoneToPullOption();
 
 Enable to allow anyone to pull from Package Registry visible and changeable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#package_registry_allow_anyone_to_pull_option ApplicationSettings#package_registry_allow_anyone_to_pull_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#package_registry_allow_anyone_to_pull_option ApplicationSettings#package_registry_allow_anyone_to_pull_option}
 
 ---
 
@@ -17143,7 +17143,7 @@ public java.lang.Number getPackageRegistryCleanupPoliciesWorkerCapacity();
 
 Number of workers assigned to the packages cleanup policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#package_registry_cleanup_policies_worker_capacity ApplicationSettings#package_registry_cleanup_policies_worker_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#package_registry_cleanup_policies_worker_capacity ApplicationSettings#package_registry_cleanup_policies_worker_capacity}
 
 ---
 
@@ -17159,7 +17159,7 @@ Require users to prove ownership of custom domains.
 
 Domain verification is an essential security measure for public GitLab sites. Users are required to demonstrate they control a domain before it is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#pages_domain_verification_enabled ApplicationSettings#pages_domain_verification_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#pages_domain_verification_enabled ApplicationSettings#pages_domain_verification_enabled}
 
 ---
 
@@ -17173,7 +17173,7 @@ public java.lang.Object getPasswordAuthenticationEnabledForGit();
 
 Enable authentication for Git over HTTP(S) via a GitLab account password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#password_authentication_enabled_for_git ApplicationSettings#password_authentication_enabled_for_git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#password_authentication_enabled_for_git ApplicationSettings#password_authentication_enabled_for_git}
 
 ---
 
@@ -17187,7 +17187,7 @@ public java.lang.Object getPasswordAuthenticationEnabledForWeb();
 
 Enable authentication for the web interface via a GitLab account password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#password_authentication_enabled_for_web ApplicationSettings#password_authentication_enabled_for_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#password_authentication_enabled_for_web ApplicationSettings#password_authentication_enabled_for_web}
 
 ---
 
@@ -17201,7 +17201,7 @@ public java.lang.Object getPasswordLowercaseRequired();
 
 Indicates whether passwords require at least one lowercase letter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#password_lowercase_required ApplicationSettings#password_lowercase_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#password_lowercase_required ApplicationSettings#password_lowercase_required}
 
 ---
 
@@ -17215,7 +17215,7 @@ public java.lang.Object getPasswordNumberRequired();
 
 Indicates whether passwords require at least one number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#password_number_required ApplicationSettings#password_number_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#password_number_required ApplicationSettings#password_number_required}
 
 ---
 
@@ -17229,7 +17229,7 @@ public java.lang.Object getPasswordSymbolRequired();
 
 Indicates whether passwords require at least one symbol character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#password_symbol_required ApplicationSettings#password_symbol_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#password_symbol_required ApplicationSettings#password_symbol_required}
 
 ---
 
@@ -17243,7 +17243,7 @@ public java.lang.Object getPasswordUppercaseRequired();
 
 Indicates whether passwords require at least one uppercase letter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#password_uppercase_required ApplicationSettings#password_uppercase_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#password_uppercase_required ApplicationSettings#password_uppercase_required}
 
 ---
 
@@ -17257,7 +17257,7 @@ public java.lang.String getPerformanceBarAllowedGroupPath();
 
 Path of the group that is allowed to toggle the performance bar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#performance_bar_allowed_group_path ApplicationSettings#performance_bar_allowed_group_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#performance_bar_allowed_group_path ApplicationSettings#performance_bar_allowed_group_path}
 
 ---
 
@@ -17271,7 +17271,7 @@ public java.lang.String getPersonalAccessTokenPrefix();
 
 Prefix for all generated personal access tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#personal_access_token_prefix ApplicationSettings#personal_access_token_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#personal_access_token_prefix ApplicationSettings#personal_access_token_prefix}
 
 ---
 
@@ -17285,7 +17285,7 @@ public java.lang.Number getPipelineLimitPerProjectUserSha();
 
 Maximum number of pipeline creation requests per minute per user and commit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#pipeline_limit_per_project_user_sha ApplicationSettings#pipeline_limit_per_project_user_sha}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#pipeline_limit_per_project_user_sha ApplicationSettings#pipeline_limit_per_project_user_sha}
 
 ---
 
@@ -17299,7 +17299,7 @@ public java.lang.Object getPlantumlEnabled();
 
 (If enabled, requires: plantuml_url) Enable PlantUML integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#plantuml_enabled ApplicationSettings#plantuml_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#plantuml_enabled ApplicationSettings#plantuml_enabled}
 
 ---
 
@@ -17313,7 +17313,7 @@ public java.lang.String getPlantumlUrl();
 
 The PlantUML instance URL for integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#plantuml_url ApplicationSettings#plantuml_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#plantuml_url ApplicationSettings#plantuml_url}
 
 ---
 
@@ -17327,7 +17327,7 @@ public java.lang.Number getPollingIntervalMultiplier();
 
 Interval multiplier used by endpoints that perform polling. Set to 0 to disable polling.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#polling_interval_multiplier ApplicationSettings#polling_interval_multiplier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#polling_interval_multiplier ApplicationSettings#polling_interval_multiplier}
 
 ---
 
@@ -17341,7 +17341,7 @@ public java.lang.Object getProjectExportEnabled();
 
 Enable project export.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#project_export_enabled ApplicationSettings#project_export_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#project_export_enabled ApplicationSettings#project_export_enabled}
 
 ---
 
@@ -17355,7 +17355,7 @@ public java.lang.Number getProjectJobsApiRateLimit();
 
 Maximum authenticated requests to /project/:id/jobs per minute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#project_jobs_api_rate_limit ApplicationSettings#project_jobs_api_rate_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#project_jobs_api_rate_limit ApplicationSettings#project_jobs_api_rate_limit}
 
 ---
 
@@ -17371,7 +17371,7 @@ Max number of requests per 10 minutes per IP address for unauthenticated request
 
 To disable throttling set to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#projects_api_rate_limit_unauthenticated ApplicationSettings#projects_api_rate_limit_unauthenticated}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#projects_api_rate_limit_unauthenticated ApplicationSettings#projects_api_rate_limit_unauthenticated}
 
 ---
 
@@ -17385,7 +17385,7 @@ public java.lang.Object getPrometheusMetricsEnabled();
 
 Enable Prometheus metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#prometheus_metrics_enabled ApplicationSettings#prometheus_metrics_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#prometheus_metrics_enabled ApplicationSettings#prometheus_metrics_enabled}
 
 ---
 
@@ -17399,7 +17399,7 @@ public java.lang.Object getProtectedCiVariables();
 
 CI/CD variables are protected by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#protected_ci_variables ApplicationSettings#protected_ci_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#protected_ci_variables ApplicationSettings#protected_ci_variables}
 
 ---
 
@@ -17415,7 +17415,7 @@ Number of changes (branches or tags) in a single push to determine whether indiv
 
 Bulk push events are created if it surpasses that value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#push_event_activities_limit ApplicationSettings#push_event_activities_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#push_event_activities_limit ApplicationSettings#push_event_activities_limit}
 
 ---
 
@@ -17431,7 +17431,7 @@ Number of changes (branches or tags) in a single push to determine whether webho
 
 Webhooks and services aren’t submitted if it surpasses that value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#push_event_hooks_limit ApplicationSettings#push_event_hooks_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#push_event_hooks_limit ApplicationSettings#push_event_hooks_limit}
 
 ---
 
@@ -17445,7 +17445,7 @@ public java.lang.Object getPypiPackageRequestsForwarding();
 
 Use pypi.org as a default remote repository when the package is not found in the GitLab Package Registry for PyPI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#pypi_package_requests_forwarding ApplicationSettings#pypi_package_requests_forwarding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#pypi_package_requests_forwarding ApplicationSettings#pypi_package_requests_forwarding}
 
 ---
 
@@ -17461,7 +17461,7 @@ When rate limiting is enabled via the throttle_* settings, send this plain text 
 
 ‘Retry later’ is sent if this is blank.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#rate_limiting_response_text ApplicationSettings#rate_limiting_response_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#rate_limiting_response_text ApplicationSettings#rate_limiting_response_text}
 
 ---
 
@@ -17475,7 +17475,7 @@ public java.lang.Number getRawBlobRequestLimit();
 
 Max number of requests per minute for each raw path. To disable throttling set to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#raw_blob_request_limit ApplicationSettings#raw_blob_request_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#raw_blob_request_limit ApplicationSettings#raw_blob_request_limit}
 
 ---
 
@@ -17489,7 +17489,7 @@ public java.lang.Object getRecaptchaEnabled();
 
 (If enabled, requires: recaptcha_private_key and recaptcha_site_key) Enable reCAPTCHA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#recaptcha_enabled ApplicationSettings#recaptcha_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#recaptcha_enabled ApplicationSettings#recaptcha_enabled}
 
 ---
 
@@ -17503,7 +17503,7 @@ public java.lang.String getRecaptchaPrivateKey();
 
 Private key for reCAPTCHA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#recaptcha_private_key ApplicationSettings#recaptcha_private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#recaptcha_private_key ApplicationSettings#recaptcha_private_key}
 
 ---
 
@@ -17517,7 +17517,7 @@ public java.lang.String getRecaptchaSiteKey();
 
 Site key for reCAPTCHA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#recaptcha_site_key ApplicationSettings#recaptcha_site_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#recaptcha_site_key ApplicationSettings#recaptcha_site_key}
 
 ---
 
@@ -17531,7 +17531,7 @@ public java.lang.Number getReceiveMaxInputSize();
 
 Maximum push size (MB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#receive_max_input_size ApplicationSettings#receive_max_input_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#receive_max_input_size ApplicationSettings#receive_max_input_size}
 
 ---
 
@@ -17545,7 +17545,7 @@ public java.lang.Object getReceptiveClusterAgentsEnabled();
 
 Enable receptive mode for GitLab Agents for Kubernetes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#receptive_cluster_agents_enabled ApplicationSettings#receptive_cluster_agents_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#receptive_cluster_agents_enabled ApplicationSettings#receptive_cluster_agents_enabled}
 
 ---
 
@@ -17559,7 +17559,7 @@ public java.lang.Object getRememberMeEnabled();
 
 Enable Remember me setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#remember_me_enabled ApplicationSettings#remember_me_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#remember_me_enabled ApplicationSettings#remember_me_enabled}
 
 ---
 
@@ -17573,7 +17573,7 @@ public java.lang.Object getRepositoryChecksEnabled();
 
 GitLab periodically runs git fsck in all project and wiki repositories to look for silent disk corruption issues.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#repository_checks_enabled ApplicationSettings#repository_checks_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#repository_checks_enabled ApplicationSettings#repository_checks_enabled}
 
 ---
 
@@ -17587,7 +17587,7 @@ public java.lang.Number getRepositorySizeLimit();
 
 Size limit per repository (MB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#repository_size_limit ApplicationSettings#repository_size_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#repository_size_limit ApplicationSettings#repository_size_limit}
 
 ---
 
@@ -17601,7 +17601,7 @@ public java.util.Map<java.lang.String, java.lang.Number> getRepositoryStoragesWe
 
 Hash of names taken from gitlab.yml to weights. New projects are created in one of these stores, chosen by a weighted random selection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#repository_storages_weighted ApplicationSettings#repository_storages_weighted}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#repository_storages_weighted ApplicationSettings#repository_storages_weighted}
 
 ---
 
@@ -17615,7 +17615,7 @@ public java.lang.Object getRequireAdminApprovalAfterUserSignup();
 
 When enabled, any user that signs up for an account using the registration form is placed under a Pending approval state and has to be explicitly approved by an administrator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#require_admin_approval_after_user_signup ApplicationSettings#require_admin_approval_after_user_signup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#require_admin_approval_after_user_signup ApplicationSettings#require_admin_approval_after_user_signup}
 
 ---
 
@@ -17629,7 +17629,7 @@ public java.lang.Object getRequireAdminTwoFactorAuthentication();
 
 Allow administrators to require 2FA for all administrators on the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#require_admin_two_factor_authentication ApplicationSettings#require_admin_two_factor_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#require_admin_two_factor_authentication ApplicationSettings#require_admin_two_factor_authentication}
 
 ---
 
@@ -17643,7 +17643,7 @@ public java.lang.Object getRequirePersonalAccessTokenExpiry();
 
 When enabled, users must set an expiration date when creating a group or project access token, or a personal access token owned by a non-service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#require_personal_access_token_expiry ApplicationSettings#require_personal_access_token_expiry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#require_personal_access_token_expiry ApplicationSettings#require_personal_access_token_expiry}
 
 ---
 
@@ -17657,7 +17657,7 @@ public java.lang.Object getRequireTwoFactorAuthentication();
 
 (If enabled, requires: two_factor_grace_period) Require all users to set up Two-factor authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#require_two_factor_authentication ApplicationSettings#require_two_factor_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#require_two_factor_authentication ApplicationSettings#require_two_factor_authentication}
 
 ---
 
@@ -17673,7 +17673,7 @@ Selected levels cannot be used by non-Administrator users for groups, projects o
 
 Can take private, internal and public as a parameter. Null means there is no restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#restricted_visibility_levels ApplicationSettings#restricted_visibility_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#restricted_visibility_levels ApplicationSettings#restricted_visibility_levels}
 
 ---
 
@@ -17687,7 +17687,7 @@ public java.lang.Number getRsaKeyRestriction();
 
 The minimum allowed bit length of an uploaded RSA key. 0 means no restriction. -1 disables RSA keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#rsa_key_restriction ApplicationSettings#rsa_key_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#rsa_key_restriction ApplicationSettings#rsa_key_restriction}
 
 ---
 
@@ -17701,7 +17701,7 @@ public java.lang.Number getSearchRateLimit();
 
 Max number of requests per minute for performing a search while authenticated. To disable throttling set to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#search_rate_limit ApplicationSettings#search_rate_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#search_rate_limit ApplicationSettings#search_rate_limit}
 
 ---
 
@@ -17715,7 +17715,7 @@ public java.lang.Number getSearchRateLimitUnauthenticated();
 
 Max number of requests per minute for performing a search while unauthenticated. To disable throttling set to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#search_rate_limit_unauthenticated ApplicationSettings#search_rate_limit_unauthenticated}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#search_rate_limit_unauthenticated ApplicationSettings#search_rate_limit_unauthenticated}
 
 ---
 
@@ -17729,7 +17729,7 @@ public java.lang.Number getSecurityApprovalPoliciesLimit();
 
 Maximum number of active merge request approval policies per security policy project. Maximum: 20.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#security_approval_policies_limit ApplicationSettings#security_approval_policies_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#security_approval_policies_limit ApplicationSettings#security_approval_policies_limit}
 
 ---
 
@@ -17743,7 +17743,7 @@ public java.lang.Object getSecurityPolicyGlobalGroupApproversEnabled();
 
 Whether to look up merge request approval policy approval groups globally or within project hierarchies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#security_policy_global_group_approvers_enabled ApplicationSettings#security_policy_global_group_approvers_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#security_policy_global_group_approvers_enabled ApplicationSettings#security_policy_global_group_approvers_enabled}
 
 ---
 
@@ -17757,7 +17757,7 @@ public java.lang.String getSecurityTxtContent();
 
 Public security contact information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#security_txt_content ApplicationSettings#security_txt_content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#security_txt_content ApplicationSettings#security_txt_content}
 
 ---
 
@@ -17771,7 +17771,7 @@ public java.lang.Object getSendUserConfirmationEmail();
 
 Send confirmation email on sign-up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#send_user_confirmation_email ApplicationSettings#send_user_confirmation_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#send_user_confirmation_email ApplicationSettings#send_user_confirmation_email}
 
 ---
 
@@ -17785,7 +17785,7 @@ public java.lang.Object getServiceAccessTokensExpirationEnforced();
 
 Flag to indicate if token expiry date can be optional for service account users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#service_access_tokens_expiration_enforced ApplicationSettings#service_access_tokens_expiration_enforced}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#service_access_tokens_expiration_enforced ApplicationSettings#service_access_tokens_expiration_enforced}
 
 ---
 
@@ -17799,7 +17799,7 @@ public java.lang.Number getSessionExpireDelay();
 
 Session duration in minutes. GitLab restart is required to apply changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#session_expire_delay ApplicationSettings#session_expire_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#session_expire_delay ApplicationSettings#session_expire_delay}
 
 ---
 
@@ -17813,7 +17813,7 @@ public java.lang.Object getSharedRunnersEnabled();
 
 (If enabled, requires: shared_runners_text and shared_runners_minutes) Enable shared runners for new projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#shared_runners_enabled ApplicationSettings#shared_runners_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#shared_runners_enabled ApplicationSettings#shared_runners_enabled}
 
 ---
 
@@ -17827,7 +17827,7 @@ public java.lang.Number getSharedRunnersMinutes();
 
 Set the maximum number of CI/CD minutes that a group can use on shared runners per month.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#shared_runners_minutes ApplicationSettings#shared_runners_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#shared_runners_minutes ApplicationSettings#shared_runners_minutes}
 
 ---
 
@@ -17841,7 +17841,7 @@ public java.lang.String getSharedRunnersText();
 
 Shared runners text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#shared_runners_text ApplicationSettings#shared_runners_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#shared_runners_text ApplicationSettings#shared_runners_text}
 
 ---
 
@@ -17855,7 +17855,7 @@ public java.lang.Number getSidekiqJobLimiterCompressionThresholdBytes();
 
 The threshold in bytes at which Sidekiq jobs are compressed before being stored in Redis.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#sidekiq_job_limiter_compression_threshold_bytes ApplicationSettings#sidekiq_job_limiter_compression_threshold_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#sidekiq_job_limiter_compression_threshold_bytes ApplicationSettings#sidekiq_job_limiter_compression_threshold_bytes}
 
 ---
 
@@ -17869,7 +17869,7 @@ public java.lang.Number getSidekiqJobLimiterLimitBytes();
 
 The threshold in bytes at which Sidekiq jobs are rejected. 0 means do not reject any job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#sidekiq_job_limiter_limit_bytes ApplicationSettings#sidekiq_job_limiter_limit_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#sidekiq_job_limiter_limit_bytes ApplicationSettings#sidekiq_job_limiter_limit_bytes}
 
 ---
 
@@ -17883,7 +17883,7 @@ public java.lang.String getSidekiqJobLimiterMode();
 
 track or compress. Sets the behavior for Sidekiq job size limits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#sidekiq_job_limiter_mode ApplicationSettings#sidekiq_job_limiter_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#sidekiq_job_limiter_mode ApplicationSettings#sidekiq_job_limiter_mode}
 
 ---
 
@@ -17897,7 +17897,7 @@ public java.lang.String getSignInText();
 
 Text on the login page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#sign_in_text ApplicationSettings#sign_in_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#sign_in_text ApplicationSettings#sign_in_text}
 
 ---
 
@@ -17911,7 +17911,7 @@ public java.lang.Object getSignupEnabled();
 
 Enable registration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#signup_enabled ApplicationSettings#signup_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#signup_enabled ApplicationSettings#signup_enabled}
 
 ---
 
@@ -17925,7 +17925,7 @@ public java.lang.Object getSilentAdminExportsEnabled();
 
 Enable Silent admin exports.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#silent_admin_exports_enabled ApplicationSettings#silent_admin_exports_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#silent_admin_exports_enabled ApplicationSettings#silent_admin_exports_enabled}
 
 ---
 
@@ -17939,7 +17939,7 @@ public java.lang.Object getSilentModeEnabled();
 
 Enable Silent mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#silent_mode_enabled ApplicationSettings#silent_mode_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#silent_mode_enabled ApplicationSettings#silent_mode_enabled}
 
 ---
 
@@ -17953,7 +17953,7 @@ public java.lang.Object getSlackAppEnabled();
 
 (If enabled, requires: slack_app_id, slack_app_secret and slack_app_secret) Enable Slack app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#slack_app_enabled ApplicationSettings#slack_app_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#slack_app_enabled ApplicationSettings#slack_app_enabled}
 
 ---
 
@@ -17967,7 +17967,7 @@ public java.lang.String getSlackAppId();
 
 The app ID of the Slack-app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#slack_app_id ApplicationSettings#slack_app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#slack_app_id ApplicationSettings#slack_app_id}
 
 ---
 
@@ -17981,7 +17981,7 @@ public java.lang.String getSlackAppSecret();
 
 The app secret of the Slack-app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#slack_app_secret ApplicationSettings#slack_app_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#slack_app_secret ApplicationSettings#slack_app_secret}
 
 ---
 
@@ -17995,7 +17995,7 @@ public java.lang.String getSlackAppSigningSecret();
 
 The signing secret of the Slack-app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#slack_app_signing_secret ApplicationSettings#slack_app_signing_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#slack_app_signing_secret ApplicationSettings#slack_app_signing_secret}
 
 ---
 
@@ -18009,7 +18009,7 @@ public java.lang.String getSlackAppVerificationToken();
 
 The verification token of the Slack-app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#slack_app_verification_token ApplicationSettings#slack_app_verification_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#slack_app_verification_token ApplicationSettings#slack_app_verification_token}
 
 ---
 
@@ -18023,7 +18023,7 @@ public java.lang.Number getSnippetSizeLimit();
 
 Max snippet content size in bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#snippet_size_limit ApplicationSettings#snippet_size_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#snippet_size_limit ApplicationSettings#snippet_size_limit}
 
 ---
 
@@ -18037,7 +18037,7 @@ public java.lang.String getSnowplowAppId();
 
 The Snowplow site name / application ID. (for example, gitlab).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#snowplow_app_id ApplicationSettings#snowplow_app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#snowplow_app_id ApplicationSettings#snowplow_app_id}
 
 ---
 
@@ -18051,7 +18051,7 @@ public java.lang.String getSnowplowCollectorHostname();
 
 The Snowplow collector hostname. (for example, snowplow.trx.gitlab.net).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#snowplow_collector_hostname ApplicationSettings#snowplow_collector_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#snowplow_collector_hostname ApplicationSettings#snowplow_collector_hostname}
 
 ---
 
@@ -18065,7 +18065,7 @@ public java.lang.String getSnowplowCookieDomain();
 
 The Snowplow cookie domain. (for example, .gitlab.com).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#snowplow_cookie_domain ApplicationSettings#snowplow_cookie_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#snowplow_cookie_domain ApplicationSettings#snowplow_cookie_domain}
 
 ---
 
@@ -18079,7 +18079,7 @@ public java.lang.String getSnowplowDatabaseCollectorHostname();
 
 The Snowplow collector for database events hostname. (for example, db-snowplow.trx.gitlab.net).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#snowplow_database_collector_hostname ApplicationSettings#snowplow_database_collector_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#snowplow_database_collector_hostname ApplicationSettings#snowplow_database_collector_hostname}
 
 ---
 
@@ -18093,7 +18093,7 @@ public java.lang.Object getSnowplowEnabled();
 
 Enable snowplow tracking.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#snowplow_enabled ApplicationSettings#snowplow_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#snowplow_enabled ApplicationSettings#snowplow_enabled}
 
 ---
 
@@ -18107,7 +18107,7 @@ public java.lang.Object getSourcegraphEnabled();
 
 Enables Sourcegraph integration. If enabled, requires sourcegraph_url.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#sourcegraph_enabled ApplicationSettings#sourcegraph_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#sourcegraph_enabled ApplicationSettings#sourcegraph_enabled}
 
 ---
 
@@ -18121,7 +18121,7 @@ public java.lang.Object getSourcegraphPublicOnly();
 
 Blocks Sourcegraph from being loaded on private and internal projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#sourcegraph_public_only ApplicationSettings#sourcegraph_public_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#sourcegraph_public_only ApplicationSettings#sourcegraph_public_only}
 
 ---
 
@@ -18135,7 +18135,7 @@ public java.lang.String getSourcegraphUrl();
 
 The Sourcegraph instance URL for integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#sourcegraph_url ApplicationSettings#sourcegraph_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#sourcegraph_url ApplicationSettings#sourcegraph_url}
 
 ---
 
@@ -18149,7 +18149,7 @@ public java.lang.String getSpamCheckApiKey();
 
 API key used by GitLab for accessing the Spam Check service endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#spam_check_api_key ApplicationSettings#spam_check_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#spam_check_api_key ApplicationSettings#spam_check_api_key}
 
 ---
 
@@ -18163,7 +18163,7 @@ public java.lang.Object getSpamCheckEndpointEnabled();
 
 Enables spam checking using external Spam Check API endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#spam_check_endpoint_enabled ApplicationSettings#spam_check_endpoint_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#spam_check_endpoint_enabled ApplicationSettings#spam_check_endpoint_enabled}
 
 ---
 
@@ -18179,7 +18179,7 @@ URL of the external Spamcheck service endpoint.
 
 Valid URI schemes are grpc or tls. Specifying tls forces communication to be encrypted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#spam_check_endpoint_url ApplicationSettings#spam_check_endpoint_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#spam_check_endpoint_url ApplicationSettings#spam_check_endpoint_url}
 
 ---
 
@@ -18193,7 +18193,7 @@ public java.lang.String getStaticObjectsExternalStorageAuthToken();
 
 Authentication token for the external storage linked in static_objects_external_storage_url.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#static_objects_external_storage_auth_token ApplicationSettings#static_objects_external_storage_auth_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#static_objects_external_storage_auth_token ApplicationSettings#static_objects_external_storage_auth_token}
 
 ---
 
@@ -18207,7 +18207,7 @@ public java.lang.String getStaticObjectsExternalStorageUrl();
 
 URL to an external storage for repository static objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#static_objects_external_storage_url ApplicationSettings#static_objects_external_storage_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#static_objects_external_storage_url ApplicationSettings#static_objects_external_storage_url}
 
 ---
 
@@ -18221,7 +18221,7 @@ public java.lang.Object getSuggestPipelineEnabled();
 
 Enable pipeline suggestion banner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#suggest_pipeline_enabled ApplicationSettings#suggest_pipeline_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#suggest_pipeline_enabled ApplicationSettings#suggest_pipeline_enabled}
 
 ---
 
@@ -18235,7 +18235,7 @@ public java.lang.Number getTerminalMaxSessionTime();
 
 Maximum time for web terminal websocket connection (in seconds). Set to 0 for unlimited time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#terminal_max_session_time ApplicationSettings#terminal_max_session_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#terminal_max_session_time ApplicationSettings#terminal_max_session_time}
 
 ---
 
@@ -18249,7 +18249,7 @@ public java.lang.String getTerms();
 
 (Required by: enforce_terms) Markdown content for the ToS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#terms ApplicationSettings#terms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#terms ApplicationSettings#terms}
 
 ---
 
@@ -18265,7 +18265,7 @@ public java.lang.Object getThrottleAuthenticatedApiEnabled();
 
 Helps reduce request volume (for example, from crawlers or abusive bots).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_authenticated_api_enabled ApplicationSettings#throttle_authenticated_api_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_authenticated_api_enabled ApplicationSettings#throttle_authenticated_api_enabled}
 
 ---
 
@@ -18279,7 +18279,7 @@ public java.lang.Number getThrottleAuthenticatedApiPeriodInSeconds();
 
 Rate limit period (in seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_authenticated_api_period_in_seconds ApplicationSettings#throttle_authenticated_api_period_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_authenticated_api_period_in_seconds ApplicationSettings#throttle_authenticated_api_period_in_seconds}
 
 ---
 
@@ -18293,7 +18293,7 @@ public java.lang.Number getThrottleAuthenticatedApiRequestsPerPeriod();
 
 Maximum requests per period per user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_authenticated_api_requests_per_period ApplicationSettings#throttle_authenticated_api_requests_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_authenticated_api_requests_per_period ApplicationSettings#throttle_authenticated_api_requests_per_period}
 
 ---
 
@@ -18309,7 +18309,7 @@ public java.lang.Object getThrottleAuthenticatedPackagesApiEnabled();
 
 Helps reduce request volume (for example, from crawlers or abusive bots). View Package Registry rate limits for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_authenticated_packages_api_enabled ApplicationSettings#throttle_authenticated_packages_api_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_authenticated_packages_api_enabled ApplicationSettings#throttle_authenticated_packages_api_enabled}
 
 ---
 
@@ -18323,7 +18323,7 @@ public java.lang.Number getThrottleAuthenticatedPackagesApiPeriodInSeconds();
 
 Rate limit period (in seconds). View Package Registry rate limits for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_authenticated_packages_api_period_in_seconds ApplicationSettings#throttle_authenticated_packages_api_period_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_authenticated_packages_api_period_in_seconds ApplicationSettings#throttle_authenticated_packages_api_period_in_seconds}
 
 ---
 
@@ -18337,7 +18337,7 @@ public java.lang.Number getThrottleAuthenticatedPackagesApiRequestsPerPeriod();
 
 Maximum requests per period per user. View Package Registry rate limits for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_authenticated_packages_api_requests_per_period ApplicationSettings#throttle_authenticated_packages_api_requests_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_authenticated_packages_api_requests_per_period ApplicationSettings#throttle_authenticated_packages_api_requests_per_period}
 
 ---
 
@@ -18353,7 +18353,7 @@ public java.lang.Object getThrottleAuthenticatedWebEnabled();
 
 Helps reduce request volume (for example, from crawlers or abusive bots).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_authenticated_web_enabled ApplicationSettings#throttle_authenticated_web_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_authenticated_web_enabled ApplicationSettings#throttle_authenticated_web_enabled}
 
 ---
 
@@ -18367,7 +18367,7 @@ public java.lang.Number getThrottleAuthenticatedWebPeriodInSeconds();
 
 Rate limit period (in seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_authenticated_web_period_in_seconds ApplicationSettings#throttle_authenticated_web_period_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_authenticated_web_period_in_seconds ApplicationSettings#throttle_authenticated_web_period_in_seconds}
 
 ---
 
@@ -18381,7 +18381,7 @@ public java.lang.Number getThrottleAuthenticatedWebRequestsPerPeriod();
 
 Maximum requests per period per user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_authenticated_web_requests_per_period ApplicationSettings#throttle_authenticated_web_requests_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_authenticated_web_requests_per_period ApplicationSettings#throttle_authenticated_web_requests_per_period}
 
 ---
 
@@ -18397,7 +18397,7 @@ public java.lang.Object getThrottleUnauthenticatedApiEnabled();
 
 Helps reduce request volume (for example, from crawlers or abusive bots).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_unauthenticated_api_enabled ApplicationSettings#throttle_unauthenticated_api_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_unauthenticated_api_enabled ApplicationSettings#throttle_unauthenticated_api_enabled}
 
 ---
 
@@ -18411,7 +18411,7 @@ public java.lang.Number getThrottleUnauthenticatedApiPeriodInSeconds();
 
 Rate limit period in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_unauthenticated_api_period_in_seconds ApplicationSettings#throttle_unauthenticated_api_period_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_unauthenticated_api_period_in_seconds ApplicationSettings#throttle_unauthenticated_api_period_in_seconds}
 
 ---
 
@@ -18425,7 +18425,7 @@ public java.lang.Number getThrottleUnauthenticatedApiRequestsPerPeriod();
 
 Max requests per period per IP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_unauthenticated_api_requests_per_period ApplicationSettings#throttle_unauthenticated_api_requests_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_unauthenticated_api_requests_per_period ApplicationSettings#throttle_unauthenticated_api_requests_per_period}
 
 ---
 
@@ -18441,7 +18441,7 @@ public java.lang.Object getThrottleUnauthenticatedPackagesApiEnabled();
 
 Helps reduce request volume (for example, from crawlers or abusive bots). View Package Registry rate limits for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_unauthenticated_packages_api_enabled ApplicationSettings#throttle_unauthenticated_packages_api_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_unauthenticated_packages_api_enabled ApplicationSettings#throttle_unauthenticated_packages_api_enabled}
 
 ---
 
@@ -18455,7 +18455,7 @@ public java.lang.Number getThrottleUnauthenticatedPackagesApiPeriodInSeconds();
 
 Rate limit period (in seconds). View Package Registry rate limits for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_unauthenticated_packages_api_period_in_seconds ApplicationSettings#throttle_unauthenticated_packages_api_period_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_unauthenticated_packages_api_period_in_seconds ApplicationSettings#throttle_unauthenticated_packages_api_period_in_seconds}
 
 ---
 
@@ -18469,7 +18469,7 @@ public java.lang.Number getThrottleUnauthenticatedPackagesApiRequestsPerPeriod()
 
 Maximum requests per period per user. View Package Registry rate limits for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_unauthenticated_packages_api_requests_per_period ApplicationSettings#throttle_unauthenticated_packages_api_requests_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_unauthenticated_packages_api_requests_per_period ApplicationSettings#throttle_unauthenticated_packages_api_requests_per_period}
 
 ---
 
@@ -18485,7 +18485,7 @@ public java.lang.Object getThrottleUnauthenticatedWebEnabled();
 
 Helps reduce request volume (for example, from crawlers or abusive bots).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_unauthenticated_web_enabled ApplicationSettings#throttle_unauthenticated_web_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_unauthenticated_web_enabled ApplicationSettings#throttle_unauthenticated_web_enabled}
 
 ---
 
@@ -18499,7 +18499,7 @@ public java.lang.Number getThrottleUnauthenticatedWebPeriodInSeconds();
 
 Rate limit period in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_unauthenticated_web_period_in_seconds ApplicationSettings#throttle_unauthenticated_web_period_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_unauthenticated_web_period_in_seconds ApplicationSettings#throttle_unauthenticated_web_period_in_seconds}
 
 ---
 
@@ -18513,7 +18513,7 @@ public java.lang.Number getThrottleUnauthenticatedWebRequestsPerPeriod();
 
 Max requests per period per IP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#throttle_unauthenticated_web_requests_per_period ApplicationSettings#throttle_unauthenticated_web_requests_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#throttle_unauthenticated_web_requests_per_period ApplicationSettings#throttle_unauthenticated_web_requests_per_period}
 
 ---
 
@@ -18527,7 +18527,7 @@ public java.lang.Object getTimeTrackingLimitToHours();
 
 Limit display of time tracking units to hours.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#time_tracking_limit_to_hours ApplicationSettings#time_tracking_limit_to_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#time_tracking_limit_to_hours ApplicationSettings#time_tracking_limit_to_hours}
 
 ---
 
@@ -18541,7 +18541,7 @@ public java.lang.Number getTwoFactorGracePeriod();
 
 Amount of time (in hours) that users are allowed to skip forced configuration of two-factor authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#two_factor_grace_period ApplicationSettings#two_factor_grace_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#two_factor_grace_period ApplicationSettings#two_factor_grace_period}
 
 ---
 
@@ -18557,7 +18557,7 @@ Specifies how many days after sign-up to delete users who have not confirmed the
 
 Only applicable if delete_unconfirmed_users is set to true. Must be 1 or greater. Self-managed, Premium and Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#unconfirmed_users_delete_after_days ApplicationSettings#unconfirmed_users_delete_after_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#unconfirmed_users_delete_after_days ApplicationSettings#unconfirmed_users_delete_after_days}
 
 ---
 
@@ -18571,7 +18571,7 @@ public java.lang.Object getUniqueIpsLimitEnabled();
 
 (If enabled, requires: unique_ips_limit_per_user and unique_ips_limit_time_window) Limit sign in from multiple IPs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#unique_ips_limit_enabled ApplicationSettings#unique_ips_limit_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#unique_ips_limit_enabled ApplicationSettings#unique_ips_limit_enabled}
 
 ---
 
@@ -18585,7 +18585,7 @@ public java.lang.Number getUniqueIpsLimitPerUser();
 
 Maximum number of IPs per user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#unique_ips_limit_per_user ApplicationSettings#unique_ips_limit_per_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#unique_ips_limit_per_user ApplicationSettings#unique_ips_limit_per_user}
 
 ---
 
@@ -18599,7 +18599,7 @@ public java.lang.Number getUniqueIpsLimitTimeWindow();
 
 How many seconds an IP is counted towards the limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#unique_ips_limit_time_window ApplicationSettings#unique_ips_limit_time_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#unique_ips_limit_time_window ApplicationSettings#unique_ips_limit_time_window}
 
 ---
 
@@ -18613,7 +18613,7 @@ public java.lang.Object getUpdateRunnerVersionsEnabled();
 
 Fetch GitLab Runner release version data from GitLab.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#update_runner_versions_enabled ApplicationSettings#update_runner_versions_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#update_runner_versions_enabled ApplicationSettings#update_runner_versions_enabled}
 
 ---
 
@@ -18627,7 +18627,7 @@ public java.lang.Object getUsagePingEnabled();
 
 Every week GitLab reports license usage back to GitLab, Inc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#usage_ping_enabled ApplicationSettings#usage_ping_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#usage_ping_enabled ApplicationSettings#usage_ping_enabled}
 
 ---
 
@@ -18643,7 +18643,7 @@ Enables ClickHouse as a data source for analytics reports.
 
 ClickHouse must be configured for this setting to take effect. Available on Premium and Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#use_clickhouse_for_analytics ApplicationSettings#use_clickhouse_for_analytics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#use_clickhouse_for_analytics ApplicationSettings#use_clickhouse_for_analytics}
 
 ---
 
@@ -18657,7 +18657,7 @@ public java.lang.Object getUserDeactivationEmailsEnabled();
 
 Send an email to users upon account deactivation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#user_deactivation_emails_enabled ApplicationSettings#user_deactivation_emails_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#user_deactivation_emails_enabled ApplicationSettings#user_deactivation_emails_enabled}
 
 ---
 
@@ -18671,7 +18671,7 @@ public java.lang.Object getUserDefaultExternal();
 
 Newly registered users are external by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#user_default_external ApplicationSettings#user_default_external}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#user_default_external ApplicationSettings#user_default_external}
 
 ---
 
@@ -18685,7 +18685,7 @@ public java.lang.String getUserDefaultInternalRegex();
 
 Specify an email address regex pattern to identify default internal users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#user_default_internal_regex ApplicationSettings#user_default_internal_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#user_default_internal_regex ApplicationSettings#user_default_internal_regex}
 
 ---
 
@@ -18699,7 +18699,7 @@ public java.lang.Object getUserDefaultsToPrivateProfile();
 
 Newly created users have private profile by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#user_defaults_to_private_profile ApplicationSettings#user_defaults_to_private_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#user_defaults_to_private_profile ApplicationSettings#user_defaults_to_private_profile}
 
 ---
 
@@ -18713,7 +18713,7 @@ public java.lang.Object getUserOauthApplications();
 
 Allow users to register any application to use GitLab as an OAuth provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#user_oauth_applications ApplicationSettings#user_oauth_applications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#user_oauth_applications ApplicationSettings#user_oauth_applications}
 
 ---
 
@@ -18727,7 +18727,7 @@ public java.lang.Object getUserShowAddSshKeyMessage();
 
 When set to false disable the You won't be able to pull or push project code via SSH warning shown to users with no uploaded SSH key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#user_show_add_ssh_key_message ApplicationSettings#user_show_add_ssh_key_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#user_show_add_ssh_key_message ApplicationSettings#user_show_add_ssh_key_message}
 
 ---
 
@@ -18741,7 +18741,7 @@ public java.util.List<java.lang.String> getValidRunnerRegistrars();
 
 List of types which are allowed to register a GitLab Runner. Can be [], ['group'], ['project'] or ['group', 'project'].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#valid_runner_registrars ApplicationSettings#valid_runner_registrars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#valid_runner_registrars ApplicationSettings#valid_runner_registrars}
 
 ---
 
@@ -18755,7 +18755,7 @@ public java.lang.Object getVersionCheckEnabled();
 
 Let GitLab inform you when an update is available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#version_check_enabled ApplicationSettings#version_check_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#version_check_enabled ApplicationSettings#version_check_enabled}
 
 ---
 
@@ -18769,7 +18769,7 @@ public java.lang.Object getWebIdeClientsidePreviewEnabled();
 
 Live Preview (allow live previews of JavaScript projects in the Web IDE using CodeSandbox Live Preview).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#web_ide_clientside_preview_enabled ApplicationSettings#web_ide_clientside_preview_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#web_ide_clientside_preview_enabled ApplicationSettings#web_ide_clientside_preview_enabled}
 
 ---
 
@@ -18783,7 +18783,7 @@ public java.lang.String getWhatsNewVariant();
 
 What's new variant, possible values: all_tiers, current_tier, and disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#whats_new_variant ApplicationSettings#whats_new_variant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#whats_new_variant ApplicationSettings#whats_new_variant}
 
 ---
 
@@ -18797,7 +18797,7 @@ public java.lang.Number getWikiPageMaxContentBytes();
 
 Maximum wiki page content size in bytes. The minimum value is 1024 bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#wiki_page_max_content_bytes ApplicationSettings#wiki_page_max_content_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#wiki_page_max_content_bytes ApplicationSettings#wiki_page_max_content_bytes}
 
 ---
 
@@ -18839,7 +18839,7 @@ public java.util.List<java.lang.Number> getAllowedToMerge();
 
 An array of access levels allowed to merge. Supports Developer (30) or Maintainer (40).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#allowed_to_merge ApplicationSettings#allowed_to_merge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#allowed_to_merge ApplicationSettings#allowed_to_merge}
 
 ---
 
@@ -18853,7 +18853,7 @@ public java.util.List<java.lang.Number> getAllowedToPush();
 
 An array of access levels allowed to push. Supports Developer (30) or Maintainer (40).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#allowed_to_push ApplicationSettings#allowed_to_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#allowed_to_push ApplicationSettings#allowed_to_push}
 
 ---
 
@@ -18867,7 +18867,7 @@ public java.lang.Object getAllowForcePush();
 
 Allow force push for all users with push access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#allow_force_push ApplicationSettings#allow_force_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#allow_force_push ApplicationSettings#allow_force_push}
 
 ---
 
@@ -18881,7 +18881,7 @@ public java.lang.Object getDeveloperCanInitialPush();
 
 Allow developers to initial push.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.1.1/docs/resources/application_settings#developer_can_initial_push ApplicationSettings#developer_can_initial_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/application_settings#developer_can_initial_push ApplicationSettings#developer_can_initial_push}
 
 ---
 
