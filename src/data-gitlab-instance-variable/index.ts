@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/instance_variable
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/instance_variable
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,22 +13,15 @@ import * as cdktf from 'cdktf';
 
 export interface DataGitlabInstanceVariableConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/instance_variable#id DataGitlabInstanceVariable#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * The name of the variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/instance_variable#key DataGitlabInstanceVariable#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/instance_variable#key DataGitlabInstanceVariable#key}
   */
   readonly key: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/instance_variable gitlab_instance_variable}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/instance_variable gitlab_instance_variable}
 */
 export class DataGitlabInstanceVariable extends cdktf.TerraformDataSource {
 
@@ -44,7 +37,7 @@ export class DataGitlabInstanceVariable extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGitlabInstanceVariable resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabInstanceVariable to import
-  * @param importFromId The id of the existing DataGitlabInstanceVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/instance_variable#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabInstanceVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/instance_variable#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabInstanceVariable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -56,7 +49,7 @@ export class DataGitlabInstanceVariable extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/instance_variable gitlab_instance_variable} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/instance_variable gitlab_instance_variable} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +60,7 @@ export class DataGitlabInstanceVariable extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_instance_variable',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.2.0',
+        providerVersion: '18.3.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,
@@ -78,7 +71,6 @@ export class DataGitlabInstanceVariable extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._id = config.id;
     this._key = config.key;
   }
 
@@ -91,20 +83,9 @@ export class DataGitlabInstanceVariable extends cdktf.TerraformDataSource {
     return this.getStringAttribute('description');
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // key - computed: false, optional: false, required: true
@@ -151,19 +132,12 @@ export class DataGitlabInstanceVariable extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
       key: cdktf.stringToTerraform(this._key),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       key: {
         value: cdktf.stringToHclTerraform(this._key),
         isBlock: false,

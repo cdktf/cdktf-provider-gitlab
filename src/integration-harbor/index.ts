@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/integration_harbor
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/integration_harbor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,43 +15,43 @@ export interface IntegrationHarborConfig extends cdktf.TerraformMetaArguments {
   /**
   * Password for authentication with the Harbor server, if authentication is required by the server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/integration_harbor#password IntegrationHarbor#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/integration_harbor#password IntegrationHarbor#password}
   */
   readonly password: string;
   /**
   * ID of the GitLab project you want to activate integration on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/integration_harbor#project IntegrationHarbor#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/integration_harbor#project IntegrationHarbor#project}
   */
   readonly project: string;
   /**
   * The URL-friendly Harbor project name. This project needs to already exist in Harbor. Example: `my_project_name`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/integration_harbor#project_name IntegrationHarbor#project_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/integration_harbor#project_name IntegrationHarbor#project_name}
   */
   readonly projectName: string;
   /**
   * Harbor URL. Example: `http://harbor.example.com`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/integration_harbor#url IntegrationHarbor#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/integration_harbor#url IntegrationHarbor#url}
   */
   readonly url: string;
   /**
   * Indicates whether or not to inherit default settings. Defaults to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/integration_harbor#use_inherited_settings IntegrationHarbor#use_inherited_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/integration_harbor#use_inherited_settings IntegrationHarbor#use_inherited_settings}
   */
   readonly useInheritedSettings?: boolean | cdktf.IResolvable;
   /**
   * Username for authentication with the Harbor server, if authentication is required by the server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/integration_harbor#username IntegrationHarbor#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/integration_harbor#username IntegrationHarbor#username}
   */
   readonly username: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/integration_harbor gitlab_integration_harbor}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/integration_harbor gitlab_integration_harbor}
 */
 export class IntegrationHarbor extends cdktf.TerraformResource {
 
@@ -67,7 +67,7 @@ export class IntegrationHarbor extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IntegrationHarbor resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationHarbor to import
-  * @param importFromId The id of the existing IntegrationHarbor that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/integration_harbor#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IntegrationHarbor that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/integration_harbor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationHarbor to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -79,7 +79,7 @@ export class IntegrationHarbor extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/integration_harbor gitlab_integration_harbor} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/integration_harbor gitlab_integration_harbor} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class IntegrationHarbor extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_integration_harbor',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.2.0',
+        providerVersion: '18.3.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

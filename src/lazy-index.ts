@@ -22,6 +22,7 @@ Object.defineProperty(exports, 'groupBadge', { get: function () { return require
 Object.defineProperty(exports, 'groupCluster', { get: function () { return require('./group-cluster'); } });
 Object.defineProperty(exports, 'groupCustomAttribute', { get: function () { return require('./group-custom-attribute'); } });
 Object.defineProperty(exports, 'groupDependencyProxy', { get: function () { return require('./group-dependency-proxy'); } });
+Object.defineProperty(exports, 'groupDeployToken', { get: function () { return require('./group-deploy-token'); } });
 Object.defineProperty(exports, 'groupEpicBoard', { get: function () { return require('./group-epic-board'); } });
 Object.defineProperty(exports, 'groupHook', { get: function () { return require('./group-hook'); } });
 Object.defineProperty(exports, 'groupIssueBoard', { get: function () { return require('./group-issue-board'); } });
@@ -67,6 +68,7 @@ Object.defineProperty(exports, 'projectCluster', { get: function () { return req
 Object.defineProperty(exports, 'projectComplianceFrameworks', { get: function () { return require('./project-compliance-frameworks'); } });
 Object.defineProperty(exports, 'projectContainerRepositoryProtection', { get: function () { return require('./project-container-repository-protection'); } });
 Object.defineProperty(exports, 'projectCustomAttribute', { get: function () { return require('./project-custom-attribute'); } });
+Object.defineProperty(exports, 'projectDeployToken', { get: function () { return require('./project-deploy-token'); } });
 Object.defineProperty(exports, 'projectEnvironment', { get: function () { return require('./project-environment'); } });
 Object.defineProperty(exports, 'projectFreezePeriod', { get: function () { return require('./project-freeze-period'); } });
 Object.defineProperty(exports, 'projectHook', { get: function () { return require('./project-hook'); } });
@@ -133,6 +135,7 @@ Object.defineProperty(exports, 'dataGitlabGroupHooks', { get: function () { retu
 Object.defineProperty(exports, 'dataGitlabGroupIds', { get: function () { return require('./data-gitlab-group-ids'); } });
 Object.defineProperty(exports, 'dataGitlabGroupMembership', { get: function () { return require('./data-gitlab-group-membership'); } });
 Object.defineProperty(exports, 'dataGitlabGroupProvisionedUsers', { get: function () { return require('./data-gitlab-group-provisioned-users'); } });
+Object.defineProperty(exports, 'dataGitlabGroupSamlLinks', { get: function () { return require('./data-gitlab-group-saml-links'); } });
 Object.defineProperty(exports, 'dataGitlabGroupServiceAccount', { get: function () { return require('./data-gitlab-group-service-account'); } });
 Object.defineProperty(exports, 'dataGitlabGroupSubgroups', { get: function () { return require('./data-gitlab-group-subgroups'); } });
 Object.defineProperty(exports, 'dataGitlabGroupVariable', { get: function () { return require('./data-gitlab-group-variable'); } });

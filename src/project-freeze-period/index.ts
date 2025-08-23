@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_freeze_period
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_freeze_period
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,38 +15,31 @@ export interface ProjectFreezePeriodConfig extends cdktf.TerraformMetaArguments 
   /**
   * The timezone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_freeze_period#cron_timezone ProjectFreezePeriod#cron_timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_freeze_period#cron_timezone ProjectFreezePeriod#cron_timezone}
   */
   readonly cronTimezone?: string;
   /**
-  * End of the Freeze Period in cron format (e.g. `0 2 * * *`).
+  * End of the Freeze Period in cron format (for example, `0 2 * * *`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_freeze_period#freeze_end ProjectFreezePeriod#freeze_end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_freeze_period#freeze_end ProjectFreezePeriod#freeze_end}
   */
   readonly freezeEnd: string;
   /**
-  * Start of the Freeze Period in cron format (e.g. `0 1 * * *`).
+  * Start of the Freeze Period in cron format (for example, `0 1 * * *`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_freeze_period#freeze_start ProjectFreezePeriod#freeze_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_freeze_period#freeze_start ProjectFreezePeriod#freeze_start}
   */
   readonly freezeStart: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_freeze_period#id ProjectFreezePeriod#id}
+  * The ID or path of the project to add the freeze period to.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * The ID or URL-encoded path of the project to add the schedule to.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_freeze_period#project ProjectFreezePeriod#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_freeze_period#project ProjectFreezePeriod#project}
   */
   readonly project: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_freeze_period gitlab_project_freeze_period}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_freeze_period gitlab_project_freeze_period}
 */
 export class ProjectFreezePeriod extends cdktf.TerraformResource {
 
@@ -62,7 +55,7 @@ export class ProjectFreezePeriod extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ProjectFreezePeriod resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProjectFreezePeriod to import
-  * @param importFromId The id of the existing ProjectFreezePeriod that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_freeze_period#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ProjectFreezePeriod that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_freeze_period#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProjectFreezePeriod to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +67,7 @@ export class ProjectFreezePeriod extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_freeze_period gitlab_project_freeze_period} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_freeze_period gitlab_project_freeze_period} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +78,7 @@ export class ProjectFreezePeriod extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_freeze_period',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.2.0',
+        providerVersion: '18.3.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,
@@ -99,7 +92,6 @@ export class ProjectFreezePeriod extends cdktf.TerraformResource {
     this._cronTimezone = config.cronTimezone;
     this._freezeEnd = config.freezeEnd;
     this._freezeStart = config.freezeStart;
-    this._id = config.id;
     this._project = config.project;
   }
 
@@ -107,7 +99,7 @@ export class ProjectFreezePeriod extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // cron_timezone - computed: false, optional: true, required: false
+  // cron_timezone - computed: true, optional: true, required: false
   private _cronTimezone?: string; 
   public get cronTimezone() {
     return this.getStringAttribute('cron_timezone');
@@ -149,20 +141,9 @@ export class ProjectFreezePeriod extends cdktf.TerraformResource {
     return this._freezeStart;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // project - computed: false, optional: false, required: true
@@ -187,7 +168,6 @@ export class ProjectFreezePeriod extends cdktf.TerraformResource {
       cron_timezone: cdktf.stringToTerraform(this._cronTimezone),
       freeze_end: cdktf.stringToTerraform(this._freezeEnd),
       freeze_start: cdktf.stringToTerraform(this._freezeStart),
-      id: cdktf.stringToTerraform(this._id),
       project: cdktf.stringToTerraform(this._project),
     };
   }
@@ -208,12 +188,6 @@ export class ProjectFreezePeriod extends cdktf.TerraformResource {
       },
       freeze_start: {
         value: cdktf.stringToHclTerraform(this._freezeStart),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

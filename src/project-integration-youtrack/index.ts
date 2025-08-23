@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_integration_youtrack
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_youtrack
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface ProjectIntegrationYoutrackConfig extends cdktf.TerraformMetaArg
   /**
   * URL to view an issue in the external issue tracker. Must contain :id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_integration_youtrack#issues_url ProjectIntegrationYoutrack#issues_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_youtrack#issues_url ProjectIntegrationYoutrack#issues_url}
   */
   readonly issuesUrl: string;
   /**
   * ID or namespace of the project you want to activate integration on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_integration_youtrack#project ProjectIntegrationYoutrack#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_youtrack#project ProjectIntegrationYoutrack#project}
   */
   readonly project: string;
   /**
   * URL of the project in the external issue tracker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_integration_youtrack#project_url ProjectIntegrationYoutrack#project_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_youtrack#project_url ProjectIntegrationYoutrack#project_url}
   */
   readonly projectUrl: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_integration_youtrack gitlab_project_integration_youtrack}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_youtrack gitlab_project_integration_youtrack}
 */
 export class ProjectIntegrationYoutrack extends cdktf.TerraformResource {
 
@@ -49,7 +49,7 @@ export class ProjectIntegrationYoutrack extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ProjectIntegrationYoutrack resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProjectIntegrationYoutrack to import
-  * @param importFromId The id of the existing ProjectIntegrationYoutrack that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_integration_youtrack#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ProjectIntegrationYoutrack that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_youtrack#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProjectIntegrationYoutrack to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -61,7 +61,7 @@ export class ProjectIntegrationYoutrack extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_integration_youtrack gitlab_project_integration_youtrack} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_youtrack gitlab_project_integration_youtrack} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class ProjectIntegrationYoutrack extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_integration_youtrack',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.2.0',
+        providerVersion: '18.3.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,
