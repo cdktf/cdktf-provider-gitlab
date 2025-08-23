@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_pages_settings
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_pages_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface ProjectPagesSettingsConfig extends cdktf.TerraformMetaArguments
   /**
   * Boolean indicating if the project is set to force https. Requires `external_https` to be configured in the GitLab instance: https://docs.gitlab.com/administration/pages/#custom-domains-with-tls-support.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_pages_settings#force_https ProjectPagesSettings#force_https}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_pages_settings#force_https ProjectPagesSettings#force_https}
   */
   readonly forceHttps?: boolean | cdktf.IResolvable;
   /**
   * Boolean indicating if a unique domain is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_pages_settings#is_unique_domain_enabled ProjectPagesSettings#is_unique_domain_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_pages_settings#is_unique_domain_enabled ProjectPagesSettings#is_unique_domain_enabled}
   */
   readonly isUniqueDomainEnabled?: boolean | cdktf.IResolvable;
   /**
   * Set to true if the pages settings should not be reset to their pre-terraform defaults on destroy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_pages_settings#keep_settings_on_destroy ProjectPagesSettings#keep_settings_on_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_pages_settings#keep_settings_on_destroy ProjectPagesSettings#keep_settings_on_destroy}
   */
   readonly keepSettingsOnDestroy?: boolean | cdktf.IResolvable;
   /**
   * The project ID or path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_pages_settings#project ProjectPagesSettings#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_pages_settings#project ProjectPagesSettings#project}
   */
   readonly project: string;
 }
@@ -129,7 +129,7 @@ export class ProjectPagesSettingsDeploymentsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_pages_settings gitlab_project_pages_settings}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_pages_settings gitlab_project_pages_settings}
 */
 export class ProjectPagesSettings extends cdktf.TerraformResource {
 
@@ -145,7 +145,7 @@ export class ProjectPagesSettings extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ProjectPagesSettings resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProjectPagesSettings to import
-  * @param importFromId The id of the existing ProjectPagesSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_pages_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ProjectPagesSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_pages_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProjectPagesSettings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -157,7 +157,7 @@ export class ProjectPagesSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_pages_settings gitlab_project_pages_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_pages_settings gitlab_project_pages_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -168,7 +168,7 @@ export class ProjectPagesSettings extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_pages_settings',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.2.0',
+        providerVersion: '18.3.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

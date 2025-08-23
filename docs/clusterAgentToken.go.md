@@ -4,7 +4,7 @@
 
 ### ClusterAgentToken <a name="ClusterAgentToken" id="@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/cluster_agent_token gitlab_cluster_agent_token}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/cluster_agent_token gitlab_cluster_agent_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.Initializer"></a>
 
@@ -74,7 +74,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.resetDescription">ResetDescription</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.resetId">ResetId</a></code> | *No description.* |
 
 ---
 
@@ -372,12 +371,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetDescription()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.resetId"></a>
-
-```go
-func ResetId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -481,7 +474,7 @@ The construct id used in the generated config for the ClusterAgentToken to impor
 
 The id of the existing ClusterAgentToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/cluster_agent_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/cluster_agent_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -513,18 +506,17 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.createdAt">CreatedAt</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.createdByUserId">CreatedByUserId</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.lastUsedAt">LastUsedAt</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.status">Status</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.token">Token</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.tokenId">TokenId</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.agentIdInput">AgentIdInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.agentId">AgentId</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.description">Description</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.project">Project</a></code> | <code>*string</code> | *No description.* |
 
@@ -692,6 +684,16 @@ func CreatedByUserId() *f64
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `LastUsedAt`<sup>Required</sup> <a name="LastUsedAt" id="@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.lastUsedAt"></a>
 
 ```go
@@ -752,16 +754,6 @@ func DescriptionInput() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.idInput"></a>
-
-```go
-func IdInput() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.nameInput"></a>
 
 ```go
@@ -796,16 +788,6 @@ func AgentId() *f64
 
 ```go
 func Description() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.property.id"></a>
-
-```go
-func Id() *string
 ```
 
 - *Type:* *string
@@ -871,7 +853,6 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/clusteragenttoken"
 	Name: *string,
 	Project: *string,
 	Description: *string,
-	Id: *string,
 }
 ```
 
@@ -890,7 +871,6 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/clusteragenttoken"
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentTokenConfig.property.name">Name</a></code> | <code>*string</code> | The Name of the agent. |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentTokenConfig.property.project">Project</a></code> | <code>*string</code> | ID or full path of the project maintained by the authenticated user. |
 | <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentTokenConfig.property.description">Description</a></code> | <code>*string</code> | The Description for the agent. |
-| <code><a href="#@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/cluster_agent_token#id ClusterAgentToken#id}. |
 
 ---
 
@@ -974,7 +954,7 @@ AgentId *f64
 
 The ID of the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/cluster_agent_token#agent_id ClusterAgentToken#agent_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/cluster_agent_token#agent_id ClusterAgentToken#agent_id}
 
 ---
 
@@ -988,7 +968,7 @@ Name *string
 
 The Name of the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/cluster_agent_token#name ClusterAgentToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/cluster_agent_token#name ClusterAgentToken#name}
 
 ---
 
@@ -1002,7 +982,7 @@ Project *string
 
 ID or full path of the project maintained by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/cluster_agent_token#project ClusterAgentToken#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/cluster_agent_token#project ClusterAgentToken#project}
 
 ---
 
@@ -1016,22 +996,7 @@ Description *string
 
 The Description for the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/cluster_agent_token#description ClusterAgentToken#description}
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentTokenConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/cluster_agent_token#id ClusterAgentToken#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/cluster_agent_token#description ClusterAgentToken#description}
 
 ---
 
