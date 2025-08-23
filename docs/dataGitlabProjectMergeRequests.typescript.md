@@ -4,7 +4,7 @@
 
 ### DataGitlabProjectMergeRequests <a name="DataGitlabProjectMergeRequests" id="@cdktf/provider-gitlab.dataGitlabProjectMergeRequests.DataGitlabProjectMergeRequests"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/project_merge_requests gitlab_project_merge_requests}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_merge_requests gitlab_project_merge_requests}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectMergeRequests.DataGitlabProjectMergeRequests.Initializer"></a>
 
@@ -491,7 +491,7 @@ The construct id used in the generated config for the DataGitlabProjectMergeRequ
 
 The id of the existing DataGitlabProjectMergeRequests that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/project_merge_requests#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_merge_requests#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1216,7 +1216,7 @@ public readonly project: string;
 
 The ID or path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/project_merge_requests#project DataGitlabProjectMergeRequests#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_merge_requests#project DataGitlabProjectMergeRequests#project}
 
 ---
 
@@ -1230,7 +1230,7 @@ public readonly authorId: number;
 
 Return merge requests created by the given user ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/project_merge_requests#author_id DataGitlabProjectMergeRequests#author_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_merge_requests#author_id DataGitlabProjectMergeRequests#author_id}
 
 ---
 
@@ -1244,7 +1244,7 @@ public readonly authorUsername: string;
 
 Return merge requests created by the given username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/project_merge_requests#author_username DataGitlabProjectMergeRequests#author_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_merge_requests#author_username DataGitlabProjectMergeRequests#author_username}
 
 ---
 
@@ -1258,7 +1258,7 @@ public readonly createdAfter: string;
 
 Return merge requests created after the given time. Expected in RFC3339 format (2006-01-02T15:04:05Z).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/project_merge_requests#created_after DataGitlabProjectMergeRequests#created_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_merge_requests#created_after DataGitlabProjectMergeRequests#created_after}
 
 ---
 
@@ -1272,7 +1272,7 @@ public readonly createdBefore: string;
 
 Return merge requests created before the given time. Expected in RFC3339 format (2006-01-02T15:04:05Z).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/project_merge_requests#created_before DataGitlabProjectMergeRequests#created_before}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_merge_requests#created_before DataGitlabProjectMergeRequests#created_before}
 
 ---
 
@@ -1286,7 +1286,7 @@ public readonly iids: number[];
 
 The unique internal IDs of the merge requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/project_merge_requests#iids DataGitlabProjectMergeRequests#iids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_merge_requests#iids DataGitlabProjectMergeRequests#iids}
 
 ---
 
@@ -1302,7 +1302,7 @@ Return only merge requests for a specific milestone.
 
 `None` returns merge requests with no milestone. `Any` returns merge requests that have an assigned milestone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/project_merge_requests#milestone DataGitlabProjectMergeRequests#milestone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_merge_requests#milestone DataGitlabProjectMergeRequests#milestone}
 
 ---
 
@@ -1318,7 +1318,7 @@ Return merge requests reacted to by the authenticated user with the given emoji.
 
 `None` returns issues not given a reaction. `Any` returns issues given at least one reaction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/project_merge_requests#my_reaction_emoji DataGitlabProjectMergeRequests#my_reaction_emoji}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_merge_requests#my_reaction_emoji DataGitlabProjectMergeRequests#my_reaction_emoji}
 
 ---
 
@@ -1332,7 +1332,7 @@ public readonly orderBy: string;
 
 Return requests ordered by `created_at`, `title` or `updated_at`. Default is `created_at`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/project_merge_requests#order_by DataGitlabProjectMergeRequests#order_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_merge_requests#order_by DataGitlabProjectMergeRequests#order_by}
 
 ---
 
@@ -1348,7 +1348,7 @@ Return merge requests reviewed by the given username.
 
 `None` returns merge requests with no reviews. `Any` returns merge requests with any reviewer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/project_merge_requests#reviewer_username DataGitlabProjectMergeRequests#reviewer_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_merge_requests#reviewer_username DataGitlabProjectMergeRequests#reviewer_username}
 
 ---
 
@@ -1362,7 +1362,7 @@ public readonly scope: string;
 
 Return merge requests for the given scope: `created_by_me`, `assigned_to_me`, or `all`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/project_merge_requests#scope DataGitlabProjectMergeRequests#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_merge_requests#scope DataGitlabProjectMergeRequests#scope}
 
 ---
 
@@ -1376,7 +1376,7 @@ public readonly search: string;
 
 Search merge requests against their `title` or `description`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/project_merge_requests#search DataGitlabProjectMergeRequests#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_merge_requests#search DataGitlabProjectMergeRequests#search}
 
 ---
 
@@ -1390,7 +1390,7 @@ public readonly sort: string;
 
 Return requests sorted in `asc` or `desc` order. Default is `desc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/project_merge_requests#sort DataGitlabProjectMergeRequests#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_merge_requests#sort DataGitlabProjectMergeRequests#sort}
 
 ---
 
@@ -1404,7 +1404,7 @@ public readonly sourceBranch: string;
 
 Return merge requests with the given source branch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/project_merge_requests#source_branch DataGitlabProjectMergeRequests#source_branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_merge_requests#source_branch DataGitlabProjectMergeRequests#source_branch}
 
 ---
 
@@ -1418,7 +1418,7 @@ public readonly state: string;
 
 Return all merge requests (all) or just those that are opened, closed, locked, or merged.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/project_merge_requests#state DataGitlabProjectMergeRequests#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_merge_requests#state DataGitlabProjectMergeRequests#state}
 
 ---
 
@@ -1432,7 +1432,7 @@ public readonly targetBranch: string;
 
 Return merge requests with the given target branch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/project_merge_requests#target_branch DataGitlabProjectMergeRequests#target_branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_merge_requests#target_branch DataGitlabProjectMergeRequests#target_branch}
 
 ---
 
@@ -1446,7 +1446,7 @@ public readonly updatedAfter: string;
 
 Return merge requests updated after the given time. Expected in RFC3339 format (2006-01-02T15:04:05Z).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/project_merge_requests#updated_after DataGitlabProjectMergeRequests#updated_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_merge_requests#updated_after DataGitlabProjectMergeRequests#updated_after}
 
 ---
 
@@ -1460,7 +1460,7 @@ public readonly updatedBefore: string;
 
 Return merge requests updated before the given time. Expected in RFC3339 format (2006-01-02T15:04:05Z).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/project_merge_requests#updated_before DataGitlabProjectMergeRequests#updated_before}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_merge_requests#updated_before DataGitlabProjectMergeRequests#updated_before}
 
 ---
 
@@ -1476,7 +1476,7 @@ Filter merge requests against their wip status.
 
 `yes` to return only draft merge requests, `no` to return non-draft merge requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/data-sources/project_merge_requests#wip DataGitlabProjectMergeRequests#wip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_merge_requests#wip DataGitlabProjectMergeRequests#wip}
 
 ---
 

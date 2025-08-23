@@ -4,7 +4,7 @@
 
 ### ProjectIntegrationYoutrack <a name="ProjectIntegrationYoutrack" id="@cdktf/provider-gitlab.projectIntegrationYoutrack.ProjectIntegrationYoutrack"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_integration_youtrack gitlab_project_integration_youtrack}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_youtrack gitlab_project_integration_youtrack}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectIntegrationYoutrack.ProjectIntegrationYoutrack.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 URL to view an issue in the external issue tracker. Must contain :id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_integration_youtrack#issues_url ProjectIntegrationYoutrack#issues_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_youtrack#issues_url ProjectIntegrationYoutrack#issues_url}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ID or namespace of the project you want to activate integration on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_integration_youtrack#project ProjectIntegrationYoutrack#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_youtrack#project ProjectIntegrationYoutrack#project}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 URL of the project in the external issue tracker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_integration_youtrack#project_url ProjectIntegrationYoutrack#project_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_youtrack#project_url ProjectIntegrationYoutrack#project_url}
 
 ---
 
@@ -559,7 +559,7 @@ The construct id used in the generated config for the ProjectIntegrationYoutrack
 
 The id of the existing ProjectIntegrationYoutrack that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_integration_youtrack#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_youtrack#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -953,7 +953,7 @@ public java.lang.String getIssuesUrl();
 
 URL to view an issue in the external issue tracker. Must contain :id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_integration_youtrack#issues_url ProjectIntegrationYoutrack#issues_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_youtrack#issues_url ProjectIntegrationYoutrack#issues_url}
 
 ---
 
@@ -967,7 +967,7 @@ public java.lang.String getProject();
 
 ID or namespace of the project you want to activate integration on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_integration_youtrack#project ProjectIntegrationYoutrack#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_youtrack#project ProjectIntegrationYoutrack#project}
 
 ---
 
@@ -981,7 +981,7 @@ public java.lang.String getProjectUrl();
 
 URL of the project in the external issue tracker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs/resources/project_integration_youtrack#project_url ProjectIntegrationYoutrack#project_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_youtrack#project_url ProjectIntegrationYoutrack#project_url}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### GitlabProvider <a name="GitlabProvider" id="@cdktf/provider-gitlab.provider.GitlabProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs gitlab}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs gitlab}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.provider.GitlabProvider.Initializer"></a>
 
@@ -17,8 +17,12 @@ GitlabProvider.Builder.create(Construct scope, java.lang.String id)
 //  .cacertFile(java.lang.String)
 //  .clientCert(java.lang.String)
 //  .clientKey(java.lang.String)
+//  .configFile(java.lang.String)
+//  .context(java.lang.String)
 //  .earlyAuthCheck(java.lang.Boolean)
 //  .earlyAuthCheck(IResolvable)
+//  .enableAutoCiSupport(java.lang.Boolean)
+//  .enableAutoCiSupport(IResolvable)
 //  .headers(java.util.Map<java.lang.String, java.lang.String>)
 //  .insecure(java.lang.Boolean)
 //  .insecure(IResolvable)
@@ -36,7 +40,10 @@ GitlabProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.cacertFile">cacertFile</a></code> | <code>java.lang.String</code> | This is a file containing the ca cert to verify the gitlab instance. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.clientCert">clientCert</a></code> | <code>java.lang.String</code> | File path to client certificate when GitLab instance is behind company proxy. File must contain PEM encoded data. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.clientKey">clientKey</a></code> | <code>java.lang.String</code> | File path to client key when GitLab instance is behind company proxy. |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.configFile">configFile</a></code> | <code>java.lang.String</code> | The path to the configuration file to use. It may be sourced from the `GITLAB_CONFIG_FILE` environment variable. |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.context">context</a></code> | <code>java.lang.String</code> | The context to use for authentication and configuration. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.earlyAuthCheck">earlyAuthCheck</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | (Experimental) By default the provider does a dummy request to get the current user in order to verify that the provider configuration is correct and the GitLab API is reachable. |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.enableAutoCiSupport">enableAutoCiSupport</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If automatic CI support should be enabled or not. This only works when not providing a token. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.headers">headers</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A map of headers to append to all API request to the GitLab instance. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.insecure">insecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When set to true this disables SSL verification of the connection to the GitLab instance. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.retries">retries</a></code> | <code>java.lang.Number</code> | The number of retries to execute when receiving a 429 Rate Limit error. Each retry will exponentially back off. |
@@ -68,7 +75,7 @@ Must be unique amongst siblings in the same scope
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs#alias GitlabProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#alias GitlabProvider#alias}
 
 ---
 
@@ -80,7 +87,7 @@ This is the target GitLab base API endpoint.
 
 Providing a value is a requirement when working with GitLab CE or GitLab Enterprise e.g. `https://my.gitlab.server/api/v4/`. It is optional to provide this value and it can also be sourced from the `GITLAB_BASE_URL` environment variable. The value must end with a slash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs#base_url GitlabProvider#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#base_url GitlabProvider#base_url}
 
 ---
 
@@ -92,7 +99,7 @@ This is a file containing the ca cert to verify the gitlab instance.
 
 This is available for use when working with GitLab CE or Gitlab Enterprise with a locally-issued or self-signed certificate chain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs#cacert_file GitlabProvider#cacert_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#cacert_file GitlabProvider#cacert_file}
 
 ---
 
@@ -102,7 +109,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 File path to client certificate when GitLab instance is behind company proxy. File must contain PEM encoded data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs#client_cert GitlabProvider#client_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#client_cert GitlabProvider#client_cert}
 
 ---
 
@@ -114,7 +121,29 @@ File path to client key when GitLab instance is behind company proxy.
 
 File must contain PEM encoded data. Required when `client_cert` is set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs#client_key GitlabProvider#client_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#client_key GitlabProvider#client_key}
+
+---
+
+##### `configFile`<sup>Optional</sup> <a name="configFile" id="@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.configFile"></a>
+
+- *Type:* java.lang.String
+
+The path to the configuration file to use. It may be sourced from the `GITLAB_CONFIG_FILE` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#config_file GitlabProvider#config_file}
+
+---
+
+##### `context`<sup>Optional</sup> <a name="context" id="@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.context"></a>
+
+- *Type:* java.lang.String
+
+The context to use for authentication and configuration.
+
+The context must exist in the configuration file. It may be sourced from the `GITLAB_CONTEXT` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#context GitlabProvider#context}
 
 ---
 
@@ -126,7 +155,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Set this to `false` to skip this check. This may be useful if the GitLab instance does not yet exist and is created within the same terraform module. It may be sourced from the `GITLAB_EARLY_AUTH_CHECK`. This is an experimental feature and may change in the future. Please make sure to always keep backups of your state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs#early_auth_check GitlabProvider#early_auth_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#early_auth_check GitlabProvider#early_auth_check}
+
+---
+
+##### `enableAutoCiSupport`<sup>Optional</sup> <a name="enableAutoCiSupport" id="@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.enableAutoCiSupport"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+If automatic CI support should be enabled or not. This only works when not providing a token.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#enable_auto_ci_support GitlabProvider#enable_auto_ci_support}
 
 ---
 
@@ -136,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 A map of headers to append to all API request to the GitLab instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs#headers GitlabProvider#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#headers GitlabProvider#headers}
 
 ---
 
@@ -146,7 +185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 When set to true this disables SSL verification of the connection to the GitLab instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs#insecure GitlabProvider#insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#insecure GitlabProvider#insecure}
 
 ---
 
@@ -156,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The number of retries to execute when receiving a 429 Rate Limit error. Each retry will exponentially back off.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs#retries GitlabProvider#retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#retries GitlabProvider#retries}
 
 ---
 
@@ -168,7 +207,7 @@ The OAuth2 Token, Project, Group, Personal Access Token or CI Job Token used to 
 
 The OAuth method is used in this provider for authentication (using Bearer authorization token). See https://docs.gitlab.com/api/#authentication for details. It may be sourced from the `GITLAB_TOKEN` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs#token GitlabProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#token GitlabProvider#token}
 
 ---
 
@@ -188,7 +227,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.resetCacertFile">resetCacertFile</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.resetClientCert">resetClientCert</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.resetClientKey">resetClientKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.resetConfigFile">resetConfigFile</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.resetContext">resetContext</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.resetEarlyAuthCheck">resetEarlyAuthCheck</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.resetEnableAutoCiSupport">resetEnableAutoCiSupport</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.resetHeaders">resetHeaders</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.resetInsecure">resetInsecure</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.resetRetries">resetRetries</a></code> | *No description.* |
@@ -296,10 +338,28 @@ public void resetClientCert()
 public void resetClientKey()
 ```
 
+##### `resetConfigFile` <a name="resetConfigFile" id="@cdktf/provider-gitlab.provider.GitlabProvider.resetConfigFile"></a>
+
+```java
+public void resetConfigFile()
+```
+
+##### `resetContext` <a name="resetContext" id="@cdktf/provider-gitlab.provider.GitlabProvider.resetContext"></a>
+
+```java
+public void resetContext()
+```
+
 ##### `resetEarlyAuthCheck` <a name="resetEarlyAuthCheck" id="@cdktf/provider-gitlab.provider.GitlabProvider.resetEarlyAuthCheck"></a>
 
 ```java
 public void resetEarlyAuthCheck()
+```
+
+##### `resetEnableAutoCiSupport` <a name="resetEnableAutoCiSupport" id="@cdktf/provider-gitlab.provider.GitlabProvider.resetEnableAutoCiSupport"></a>
+
+```java
+public void resetEnableAutoCiSupport()
 ```
 
 ##### `resetHeaders` <a name="resetHeaders" id="@cdktf/provider-gitlab.provider.GitlabProvider.resetHeaders"></a>
@@ -429,7 +489,7 @@ The construct id used in the generated config for the GitlabProvider to import.
 
 The id of the existing GitlabProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -459,7 +519,10 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.cacertFileInput">cacertFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.clientCertInput">clientCertInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.clientKeyInput">clientKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.configFileInput">configFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.contextInput">contextInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.earlyAuthCheckInput">earlyAuthCheckInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.enableAutoCiSupportInput">enableAutoCiSupportInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.headersInput">headersInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.insecureInput">insecureInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.retriesInput">retriesInput</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -468,7 +531,10 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.cacertFile">cacertFile</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.clientCert">clientCert</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.clientKey">clientKey</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.configFile">configFile</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.context">context</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.earlyAuthCheck">earlyAuthCheck</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.enableAutoCiSupport">enableAutoCiSupport</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.headers">headers</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.insecure">insecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.retries">retries</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -618,10 +684,40 @@ public java.lang.String getClientKeyInput();
 
 ---
 
+##### `configFileInput`<sup>Optional</sup> <a name="configFileInput" id="@cdktf/provider-gitlab.provider.GitlabProvider.property.configFileInput"></a>
+
+```java
+public java.lang.String getConfigFileInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `contextInput`<sup>Optional</sup> <a name="contextInput" id="@cdktf/provider-gitlab.provider.GitlabProvider.property.contextInput"></a>
+
+```java
+public java.lang.String getContextInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `earlyAuthCheckInput`<sup>Optional</sup> <a name="earlyAuthCheckInput" id="@cdktf/provider-gitlab.provider.GitlabProvider.property.earlyAuthCheckInput"></a>
 
 ```java
 public java.lang.Object getEarlyAuthCheckInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `enableAutoCiSupportInput`<sup>Optional</sup> <a name="enableAutoCiSupportInput" id="@cdktf/provider-gitlab.provider.GitlabProvider.property.enableAutoCiSupportInput"></a>
+
+```java
+public java.lang.Object getEnableAutoCiSupportInput();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
@@ -708,10 +804,40 @@ public java.lang.String getClientKey();
 
 ---
 
+##### `configFile`<sup>Optional</sup> <a name="configFile" id="@cdktf/provider-gitlab.provider.GitlabProvider.property.configFile"></a>
+
+```java
+public java.lang.String getConfigFile();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `context`<sup>Optional</sup> <a name="context" id="@cdktf/provider-gitlab.provider.GitlabProvider.property.context"></a>
+
+```java
+public java.lang.String getContext();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `earlyAuthCheck`<sup>Optional</sup> <a name="earlyAuthCheck" id="@cdktf/provider-gitlab.provider.GitlabProvider.property.earlyAuthCheck"></a>
 
 ```java
 public java.lang.Object getEarlyAuthCheck();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `enableAutoCiSupport`<sup>Optional</sup> <a name="enableAutoCiSupport" id="@cdktf/provider-gitlab.provider.GitlabProvider.property.enableAutoCiSupport"></a>
+
+```java
+public java.lang.Object getEnableAutoCiSupport();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
@@ -791,8 +917,12 @@ GitlabProviderConfig.builder()
 //  .cacertFile(java.lang.String)
 //  .clientCert(java.lang.String)
 //  .clientKey(java.lang.String)
+//  .configFile(java.lang.String)
+//  .context(java.lang.String)
 //  .earlyAuthCheck(java.lang.Boolean)
 //  .earlyAuthCheck(IResolvable)
+//  .enableAutoCiSupport(java.lang.Boolean)
+//  .enableAutoCiSupport(IResolvable)
 //  .headers(java.util.Map<java.lang.String, java.lang.String>)
 //  .insecure(java.lang.Boolean)
 //  .insecure(IResolvable)
@@ -810,7 +940,10 @@ GitlabProviderConfig.builder()
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.cacertFile">cacertFile</a></code> | <code>java.lang.String</code> | This is a file containing the ca cert to verify the gitlab instance. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.clientCert">clientCert</a></code> | <code>java.lang.String</code> | File path to client certificate when GitLab instance is behind company proxy. File must contain PEM encoded data. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.clientKey">clientKey</a></code> | <code>java.lang.String</code> | File path to client key when GitLab instance is behind company proxy. |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.configFile">configFile</a></code> | <code>java.lang.String</code> | The path to the configuration file to use. It may be sourced from the `GITLAB_CONFIG_FILE` environment variable. |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.context">context</a></code> | <code>java.lang.String</code> | The context to use for authentication and configuration. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.earlyAuthCheck">earlyAuthCheck</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | (Experimental) By default the provider does a dummy request to get the current user in order to verify that the provider configuration is correct and the GitLab API is reachable. |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.enableAutoCiSupport">enableAutoCiSupport</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If automatic CI support should be enabled or not. This only works when not providing a token. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.headers">headers</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A map of headers to append to all API request to the GitLab instance. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.insecure">insecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When set to true this disables SSL verification of the connection to the GitLab instance. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.retries">retries</a></code> | <code>java.lang.Number</code> | The number of retries to execute when receiving a 429 Rate Limit error. Each retry will exponentially back off. |
@@ -828,7 +961,7 @@ public java.lang.String getAlias();
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs#alias GitlabProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#alias GitlabProvider#alias}
 
 ---
 
@@ -844,7 +977,7 @@ This is the target GitLab base API endpoint.
 
 Providing a value is a requirement when working with GitLab CE or GitLab Enterprise e.g. `https://my.gitlab.server/api/v4/`. It is optional to provide this value and it can also be sourced from the `GITLAB_BASE_URL` environment variable. The value must end with a slash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs#base_url GitlabProvider#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#base_url GitlabProvider#base_url}
 
 ---
 
@@ -860,7 +993,7 @@ This is a file containing the ca cert to verify the gitlab instance.
 
 This is available for use when working with GitLab CE or Gitlab Enterprise with a locally-issued or self-signed certificate chain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs#cacert_file GitlabProvider#cacert_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#cacert_file GitlabProvider#cacert_file}
 
 ---
 
@@ -874,7 +1007,7 @@ public java.lang.String getClientCert();
 
 File path to client certificate when GitLab instance is behind company proxy. File must contain PEM encoded data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs#client_cert GitlabProvider#client_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#client_cert GitlabProvider#client_cert}
 
 ---
 
@@ -890,7 +1023,37 @@ File path to client key when GitLab instance is behind company proxy.
 
 File must contain PEM encoded data. Required when `client_cert` is set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs#client_key GitlabProvider#client_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#client_key GitlabProvider#client_key}
+
+---
+
+##### `configFile`<sup>Optional</sup> <a name="configFile" id="@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.configFile"></a>
+
+```java
+public java.lang.String getConfigFile();
+```
+
+- *Type:* java.lang.String
+
+The path to the configuration file to use. It may be sourced from the `GITLAB_CONFIG_FILE` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#config_file GitlabProvider#config_file}
+
+---
+
+##### `context`<sup>Optional</sup> <a name="context" id="@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.context"></a>
+
+```java
+public java.lang.String getContext();
+```
+
+- *Type:* java.lang.String
+
+The context to use for authentication and configuration.
+
+The context must exist in the configuration file. It may be sourced from the `GITLAB_CONTEXT` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#context GitlabProvider#context}
 
 ---
 
@@ -906,7 +1069,21 @@ public java.lang.Object getEarlyAuthCheck();
 
 Set this to `false` to skip this check. This may be useful if the GitLab instance does not yet exist and is created within the same terraform module. It may be sourced from the `GITLAB_EARLY_AUTH_CHECK`. This is an experimental feature and may change in the future. Please make sure to always keep backups of your state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs#early_auth_check GitlabProvider#early_auth_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#early_auth_check GitlabProvider#early_auth_check}
+
+---
+
+##### `enableAutoCiSupport`<sup>Optional</sup> <a name="enableAutoCiSupport" id="@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.enableAutoCiSupport"></a>
+
+```java
+public java.lang.Object getEnableAutoCiSupport();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+If automatic CI support should be enabled or not. This only works when not providing a token.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#enable_auto_ci_support GitlabProvider#enable_auto_ci_support}
 
 ---
 
@@ -920,7 +1097,7 @@ public java.util.Map<java.lang.String, java.lang.String> getHeaders();
 
 A map of headers to append to all API request to the GitLab instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs#headers GitlabProvider#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#headers GitlabProvider#headers}
 
 ---
 
@@ -934,7 +1111,7 @@ public java.lang.Object getInsecure();
 
 When set to true this disables SSL verification of the connection to the GitLab instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs#insecure GitlabProvider#insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#insecure GitlabProvider#insecure}
 
 ---
 
@@ -948,7 +1125,7 @@ public java.lang.Number getRetries();
 
 The number of retries to execute when receiving a 429 Rate Limit error. Each retry will exponentially back off.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs#retries GitlabProvider#retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#retries GitlabProvider#retries}
 
 ---
 
@@ -964,7 +1141,7 @@ The OAuth2 Token, Project, Group, Personal Access Token or CI Job Token used to 
 
 The OAuth method is used in this provider for authentication (using Bearer authorization token). See https://docs.gitlab.com/api/#authentication for details. It may be sourced from the `GITLAB_TOKEN` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.2.0/docs#token GitlabProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#token GitlabProvider#token}
 
 ---
 
