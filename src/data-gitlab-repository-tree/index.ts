@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/repository_tree
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/repository_tree
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +13,27 @@ import * as cdktf from 'cdktf';
 
 export interface DataGitlabRepositoryTreeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/repository_tree#id DataGitlabRepositoryTree#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * The path inside repository. Used to get content of subdirectories.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/repository_tree#path DataGitlabRepositoryTree#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/repository_tree#path DataGitlabRepositoryTree#path}
   */
   readonly path?: string;
   /**
   * The ID or full path of the project owned by the authenticated user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/repository_tree#project DataGitlabRepositoryTree#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/repository_tree#project DataGitlabRepositoryTree#project}
   */
   readonly project: string;
   /**
   * Boolean value used to get a recursive tree (false by default).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/repository_tree#recursive DataGitlabRepositoryTree#recursive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/repository_tree#recursive DataGitlabRepositoryTree#recursive}
   */
   readonly recursive?: boolean | cdktf.IResolvable;
   /**
   * The name of a repository branch or tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/repository_tree#ref DataGitlabRepositoryTree#ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/repository_tree#ref DataGitlabRepositoryTree#ref}
   */
   readonly ref: string;
 }
@@ -110,6 +103,11 @@ export class DataGitlabRepositoryTreeTreeOutputReference extends cdktf.ComplexOb
     return this.getStringAttribute('name');
   }
 
+  // node_id - computed: true, optional: false, required: false
+  public get nodeId() {
+    return this.getStringAttribute('node_id');
+  }
+
   // path - computed: true, optional: false, required: false
   public get path() {
     return this.getStringAttribute('path');
@@ -141,7 +139,7 @@ export class DataGitlabRepositoryTreeTreeList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/repository_tree gitlab_repository_tree}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/repository_tree gitlab_repository_tree}
 */
 export class DataGitlabRepositoryTree extends cdktf.TerraformDataSource {
 
@@ -157,7 +155,7 @@ export class DataGitlabRepositoryTree extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGitlabRepositoryTree resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabRepositoryTree to import
-  * @param importFromId The id of the existing DataGitlabRepositoryTree that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/repository_tree#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabRepositoryTree that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/repository_tree#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabRepositoryTree to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -169,7 +167,7 @@ export class DataGitlabRepositoryTree extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/repository_tree gitlab_repository_tree} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/repository_tree gitlab_repository_tree} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -180,7 +178,7 @@ export class DataGitlabRepositoryTree extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_repository_tree',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.3.0',
+        providerVersion: '18.4.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,
@@ -191,7 +189,6 @@ export class DataGitlabRepositoryTree extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._id = config.id;
     this._path = config.path;
     this._project = config.project;
     this._recursive = config.recursive;
@@ -202,20 +199,9 @@ export class DataGitlabRepositoryTree extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // path - computed: false, optional: true, required: false
@@ -288,7 +274,6 @@ export class DataGitlabRepositoryTree extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
       path: cdktf.stringToTerraform(this._path),
       project: cdktf.stringToTerraform(this._project),
       recursive: cdktf.booleanToTerraform(this._recursive),
@@ -298,12 +283,6 @@ export class DataGitlabRepositoryTree extends cdktf.TerraformDataSource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       path: {
         value: cdktf.stringToHclTerraform(this._path),
         isBlock: false,

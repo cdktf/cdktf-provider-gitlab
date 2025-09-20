@@ -28,6 +28,7 @@ Object.defineProperty(exports, 'groupHook', { get: function () { return require(
 Object.defineProperty(exports, 'groupIssueBoard', { get: function () { return require('./group-issue-board'); } });
 Object.defineProperty(exports, 'groupLabel', { get: function () { return require('./group-label'); } });
 Object.defineProperty(exports, 'groupLdapLink', { get: function () { return require('./group-ldap-link'); } });
+Object.defineProperty(exports, 'groupLevelMrApprovals', { get: function () { return require('./group-level-mr-approvals'); } });
 Object.defineProperty(exports, 'groupMembership', { get: function () { return require('./group-membership'); } });
 Object.defineProperty(exports, 'groupProjectFileTemplate', { get: function () { return require('./group-project-file-template'); } });
 Object.defineProperty(exports, 'groupProtectedEnvironment', { get: function () { return require('./group-protected-environment'); } });
@@ -70,6 +71,7 @@ Object.defineProperty(exports, 'projectContainerRepositoryProtection', { get: fu
 Object.defineProperty(exports, 'projectCustomAttribute', { get: function () { return require('./project-custom-attribute'); } });
 Object.defineProperty(exports, 'projectDeployToken', { get: function () { return require('./project-deploy-token'); } });
 Object.defineProperty(exports, 'projectEnvironment', { get: function () { return require('./project-environment'); } });
+Object.defineProperty(exports, 'projectExternalStatusCheck', { get: function () { return require('./project-external-status-check'); } });
 Object.defineProperty(exports, 'projectFreezePeriod', { get: function () { return require('./project-freeze-period'); } });
 Object.defineProperty(exports, 'projectHook', { get: function () { return require('./project-hook'); } });
 Object.defineProperty(exports, 'projectIntegrationCustomIssueTracker', { get: function () { return require('./project-integration-custom-issue-tracker'); } });

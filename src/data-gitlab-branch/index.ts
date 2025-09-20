@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/branch
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/branch
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,22 +13,15 @@ import * as cdktf from 'cdktf';
 
 export interface DataGitlabBranchConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/branch#id DataGitlabBranch#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * The name of the branch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/branch#name DataGitlabBranch#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/branch#name DataGitlabBranch#name}
   */
   readonly name: string;
   /**
   * The full path or id of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/branch#project DataGitlabBranch#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/branch#project DataGitlabBranch#project}
   */
   readonly project: string;
 }
@@ -159,7 +152,7 @@ export class DataGitlabBranchCommitList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/branch gitlab_branch}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/branch gitlab_branch}
 */
 export class DataGitlabBranch extends cdktf.TerraformDataSource {
 
@@ -175,7 +168,7 @@ export class DataGitlabBranch extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGitlabBranch resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabBranch to import
-  * @param importFromId The id of the existing DataGitlabBranch that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/branch#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabBranch that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/branch#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabBranch to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -187,7 +180,7 @@ export class DataGitlabBranch extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/branch gitlab_branch} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/branch gitlab_branch} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -198,7 +191,7 @@ export class DataGitlabBranch extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_branch',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.3.0',
+        providerVersion: '18.4.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,
@@ -209,7 +202,6 @@ export class DataGitlabBranch extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._id = config.id;
     this._name = config.name;
     this._project = config.project;
   }
@@ -244,20 +236,9 @@ export class DataGitlabBranch extends cdktf.TerraformDataSource {
     return this.getBooleanAttribute('developer_can_push');
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // merged - computed: true, optional: false, required: false
@@ -307,7 +288,6 @@ export class DataGitlabBranch extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
     };
@@ -315,12 +295,6 @@ export class DataGitlabBranch extends cdktf.TerraformDataSource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
         isBlock: false,

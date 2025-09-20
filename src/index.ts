@@ -28,6 +28,7 @@ export * as groupHook from './group-hook';
 export * as groupIssueBoard from './group-issue-board';
 export * as groupLabel from './group-label';
 export * as groupLdapLink from './group-ldap-link';
+export * as groupLevelMrApprovals from './group-level-mr-approvals';
 export * as groupMembership from './group-membership';
 export * as groupProjectFileTemplate from './group-project-file-template';
 export * as groupProtectedEnvironment from './group-protected-environment';
@@ -70,6 +71,7 @@ export * as projectContainerRepositoryProtection from './project-container-repos
 export * as projectCustomAttribute from './project-custom-attribute';
 export * as projectDeployToken from './project-deploy-token';
 export * as projectEnvironment from './project-environment';
+export * as projectExternalStatusCheck from './project-external-status-check';
 export * as projectFreezePeriod from './project-freeze-period';
 export * as projectHook from './project-hook';
 export * as projectIntegrationCustomIssueTracker from './project-integration-custom-issue-tracker';

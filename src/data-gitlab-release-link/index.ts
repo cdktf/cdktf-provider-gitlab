@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/release_link
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/release_link
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +13,27 @@ import * as cdktf from 'cdktf';
 
 export interface DataGitlabReleaseLinkConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/release_link#id DataGitlabReleaseLink#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * The ID of the link.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/release_link#link_id DataGitlabReleaseLink#link_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/release_link#link_id DataGitlabReleaseLink#link_id}
   */
   readonly linkId: number;
   /**
   * The ID or [URL-encoded path of the project](https://docs.gitlab.com/api/index/#namespaced-path-encoding).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/release_link#project DataGitlabReleaseLink#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/release_link#project DataGitlabReleaseLink#project}
   */
   readonly project: string;
   /**
   * The tag associated with the Release.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/release_link#tag_name DataGitlabReleaseLink#tag_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/release_link#tag_name DataGitlabReleaseLink#tag_name}
   */
   readonly tagName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/release_link gitlab_release_link}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/release_link gitlab_release_link}
 */
 export class DataGitlabReleaseLink extends cdktf.TerraformDataSource {
 
@@ -56,7 +49,7 @@ export class DataGitlabReleaseLink extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGitlabReleaseLink resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabReleaseLink to import
-  * @param importFromId The id of the existing DataGitlabReleaseLink that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/release_link#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabReleaseLink that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/release_link#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabReleaseLink to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +61,7 @@ export class DataGitlabReleaseLink extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/release_link gitlab_release_link} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/release_link gitlab_release_link} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +72,7 @@ export class DataGitlabReleaseLink extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_release_link',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.3.0',
+        providerVersion: '18.4.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,
@@ -90,7 +83,6 @@ export class DataGitlabReleaseLink extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._id = config.id;
     this._linkId = config.linkId;
     this._project = config.project;
     this._tagName = config.tagName;
@@ -115,20 +107,9 @@ export class DataGitlabReleaseLink extends cdktf.TerraformDataSource {
     return this.getStringAttribute('filepath');
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // link_id - computed: false, optional: false, required: true
@@ -191,7 +172,6 @@ export class DataGitlabReleaseLink extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
       link_id: cdktf.numberToTerraform(this._linkId),
       project: cdktf.stringToTerraform(this._project),
       tag_name: cdktf.stringToTerraform(this._tagName),
@@ -200,12 +180,6 @@ export class DataGitlabReleaseLink extends cdktf.TerraformDataSource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       link_id: {
         value: cdktf.numberToHclTerraform(this._linkId),
         isBlock: false,

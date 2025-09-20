@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_ids
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/group_ids
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataGitlabGroupIdsConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID or URL-encoded path of the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_ids#group DataGitlabGroupIds#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/group_ids#group DataGitlabGroupIds#group}
   */
   readonly group: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_ids gitlab_group_ids}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/group_ids gitlab_group_ids}
 */
 export class DataGitlabGroupIds extends cdktf.TerraformDataSource {
 
@@ -37,7 +37,7 @@ export class DataGitlabGroupIds extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGitlabGroupIds resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabGroupIds to import
-  * @param importFromId The id of the existing DataGitlabGroupIds that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_ids#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabGroupIds that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/group_ids#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabGroupIds to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -49,7 +49,7 @@ export class DataGitlabGroupIds extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_ids gitlab_group_ids} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/group_ids gitlab_group_ids} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class DataGitlabGroupIds extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_group_ids',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.3.0',
+        providerVersion: '18.4.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/pipeline_schedules
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/pipeline_schedules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataGitlabPipelineSchedulesConfig extends cdktf.TerraformMetaAr
   /**
   * The name or id of the project to add the schedule to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/pipeline_schedules#project DataGitlabPipelineSchedules#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/pipeline_schedules#project DataGitlabPipelineSchedules#project}
   */
   readonly project: string;
 }
@@ -102,13 +102,13 @@ export interface DataGitlabPipelineSchedulesPipelineSchedules {
   /**
   * The timezone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/pipeline_schedules#cron_timezone DataGitlabPipelineSchedules#cron_timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/pipeline_schedules#cron_timezone DataGitlabPipelineSchedules#cron_timezone}
   */
   readonly cronTimezone?: string;
   /**
   * The pipeline schedule id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/pipeline_schedules#id DataGitlabPipelineSchedules#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/pipeline_schedules#id DataGitlabPipelineSchedules#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -284,7 +284,7 @@ export class DataGitlabPipelineSchedulesPipelineSchedulesList extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/pipeline_schedules gitlab_pipeline_schedules}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/pipeline_schedules gitlab_pipeline_schedules}
 */
 export class DataGitlabPipelineSchedules extends cdktf.TerraformDataSource {
 
@@ -300,7 +300,7 @@ export class DataGitlabPipelineSchedules extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGitlabPipelineSchedules resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabPipelineSchedules to import
-  * @param importFromId The id of the existing DataGitlabPipelineSchedules that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/pipeline_schedules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabPipelineSchedules that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/pipeline_schedules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabPipelineSchedules to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -312,7 +312,7 @@ export class DataGitlabPipelineSchedules extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/pipeline_schedules gitlab_pipeline_schedules} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/pipeline_schedules gitlab_pipeline_schedules} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -323,7 +323,7 @@ export class DataGitlabPipelineSchedules extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_pipeline_schedules',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.3.0',
+        providerVersion: '18.4.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

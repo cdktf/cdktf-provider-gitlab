@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_wiki_page
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_wiki_page
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface ProjectWikiPageConfig extends cdktf.TerraformMetaArguments {
   /**
   * Content of the wiki page. Must be at least 1 character long.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_wiki_page#content ProjectWikiPage#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_wiki_page#content ProjectWikiPage#content}
   */
   readonly content: string;
   /**
   * Format of the wiki page (auto-generated if not provided). Valid values are: `markdown`, `rdoc`, `asciidoc`, `org`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_wiki_page#format ProjectWikiPage#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_wiki_page#format ProjectWikiPage#format}
   */
   readonly format?: string;
   /**
   * The ID or URL-encoded path of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_wiki_page#project ProjectWikiPage#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_wiki_page#project ProjectWikiPage#project}
   */
   readonly project: string;
   /**
   * Title of the wiki page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_wiki_page#title ProjectWikiPage#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_wiki_page#title ProjectWikiPage#title}
   */
   readonly title: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_wiki_page gitlab_project_wiki_page}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_wiki_page gitlab_project_wiki_page}
 */
 export class ProjectWikiPage extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class ProjectWikiPage extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ProjectWikiPage resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProjectWikiPage to import
-  * @param importFromId The id of the existing ProjectWikiPage that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_wiki_page#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ProjectWikiPage that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_wiki_page#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProjectWikiPage to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +67,7 @@ export class ProjectWikiPage extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_wiki_page gitlab_project_wiki_page} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_wiki_page gitlab_project_wiki_page} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class ProjectWikiPage extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_wiki_page',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.3.0',
+        providerVersion: '18.4.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,
