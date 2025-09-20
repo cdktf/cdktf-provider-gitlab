@@ -4,7 +4,7 @@
 
 ### DataGitlabGroupHook <a name="DataGitlabGroupHook" id="@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_hook gitlab_group_hook}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/group_hook gitlab_group_hook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.Initializer"></a>
 
@@ -22,8 +22,7 @@ dataGitlabGroupHook.DataGitlabGroupHook(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   group: str,
-  hook_id: typing.Union[int, float],
-  id: str = None
+  hook_id: typing.Union[int, float]
 )
 ```
 
@@ -40,7 +39,6 @@ dataGitlabGroupHook.DataGitlabGroupHook(
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.Initializer.parameter.group">group</a></code> | <code>str</code> | The ID or full path of the group. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.Initializer.parameter.hookId">hook_id</a></code> | <code>typing.Union[int, float]</code> | The id of the group hook. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_hook#id DataGitlabGroupHook#id}. |
 
 ---
 
@@ -110,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The ID or full path of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_hook#group DataGitlabGroupHook#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/group_hook#group DataGitlabGroupHook#group}
 
 ---
 
@@ -120,18 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The id of the group hook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_hook#hook_id DataGitlabGroupHook#hook_id}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.Initializer.parameter.id"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_hook#id DataGitlabGroupHook#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/group_hook#hook_id DataGitlabGroupHook#hook_id}
 
 ---
 
@@ -156,7 +143,6 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.resetId">reset_id</a></code> | *No description.* |
 
 ---
 
@@ -377,12 +363,6 @@ def interpolation_for_attribute(
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.resetId"></a>
-
-```python
-def reset_id() -> None
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -497,7 +477,7 @@ The construct id used in the generated config for the DataGitlabGroupHook to imp
 
 The id of the existing DataGitlabGroupHook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_hook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/group_hook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -532,6 +512,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.emojiEvents">emoji_events</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.enableSslVerification">enable_ssl_verification</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.groupId">group_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.issuesEvents">issues_events</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.jobEvents">job_events</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.mergeRequestsEvents">merge_requests_events</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
@@ -547,10 +528,8 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.wikiPageEvents">wiki_page_events</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.groupInput">group_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.hookIdInput">hook_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.group">group</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.hookId">hook_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.id">id</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -746,6 +725,16 @@ group_id: typing.Union[int, float]
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `issues_events`<sup>Required</sup> <a name="issues_events" id="@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.issuesEvents"></a>
 
 ```python
@@ -896,16 +885,6 @@ hook_id_input: typing.Union[int, float]
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.idInput"></a>
-
-```python
-id_input: str
-```
-
-- *Type:* str
-
----
-
 ##### `group`<sup>Required</sup> <a name="group" id="@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.group"></a>
 
 ```python
@@ -923,16 +902,6 @@ hook_id: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
 
 ---
 
@@ -972,8 +941,7 @@ dataGitlabGroupHook.DataGitlabGroupHookConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   group: str,
-  hook_id: typing.Union[int, float],
-  id: str = None
+  hook_id: typing.Union[int, float]
 )
 ```
 
@@ -990,7 +958,6 @@ dataGitlabGroupHook.DataGitlabGroupHookConfig(
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHookConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHookConfig.property.group">group</a></code> | <code>str</code> | The ID or full path of the group. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHookConfig.property.hookId">hook_id</a></code> | <code>typing.Union[int, float]</code> | The id of the group hook. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHookConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_hook#id DataGitlabGroupHook#id}. |
 
 ---
 
@@ -1074,7 +1041,7 @@ group: str
 
 The ID or full path of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_hook#group DataGitlabGroupHook#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/group_hook#group DataGitlabGroupHook#group}
 
 ---
 
@@ -1088,22 +1055,7 @@ hook_id: typing.Union[int, float]
 
 The id of the group hook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_hook#hook_id DataGitlabGroupHook#hook_id}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHookConfig.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_hook#id DataGitlabGroupHook#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/group_hook#hook_id DataGitlabGroupHook#hook_id}
 
 ---
 

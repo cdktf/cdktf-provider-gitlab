@@ -4,7 +4,7 @@
 
 ### DataGitlabClusterAgent <a name="DataGitlabClusterAgent" id="@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/cluster_agent gitlab_cluster_agent}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/cluster_agent gitlab_cluster_agent}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.Initializer"></a>
 
@@ -67,7 +67,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.resetId">resetId</a></code> | *No description.* |
 
 ---
 
@@ -263,12 +262,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.resetId"></a>
-
-```typescript
-public resetId(): void
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -372,7 +365,7 @@ The construct id used in the generated config for the DataGitlabClusterAgent to 
 
 The id of the existing DataGitlabClusterAgent that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/cluster_agent#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/cluster_agent#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -402,12 +395,11 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.property.createdByUserId">createdByUserId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.property.agentIdInput">agentIdInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.property.agentId">agentId</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.property.project">project</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -554,6 +546,16 @@ public readonly createdByUserId: number;
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.property.name"></a>
 
 ```typescript
@@ -574,16 +576,6 @@ public readonly agentIdInput: number;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.property.idInput"></a>
-
-```typescript
-public readonly idInput: string;
-```
-
-- *Type:* string
-
----
-
 ##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.property.projectInput"></a>
 
 ```typescript
@@ -601,16 +593,6 @@ public readonly agentId: number;
 ```
 
 - *Type:* number
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgent.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
 
 ---
 
@@ -667,7 +649,6 @@ const dataGitlabClusterAgentConfig: dataGitlabClusterAgent.DataGitlabClusterAgen
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgentConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgentConfig.property.agentId">agentId</a></code> | <code>number</code> | The ID of the agent. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgentConfig.property.project">project</a></code> | <code>string</code> | ID or full path of the project maintained by the authenticated user. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/cluster_agent#id DataGitlabClusterAgent#id}. |
 
 ---
 
@@ -751,7 +732,7 @@ public readonly agentId: number;
 
 The ID of the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/cluster_agent#agent_id DataGitlabClusterAgent#agent_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/cluster_agent#agent_id DataGitlabClusterAgent#agent_id}
 
 ---
 
@@ -765,22 +746,7 @@ public readonly project: string;
 
 ID or full path of the project maintained by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/cluster_agent#project DataGitlabClusterAgent#project}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabClusterAgent.DataGitlabClusterAgentConfig.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/cluster_agent#id DataGitlabClusterAgent#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/cluster_agent#project DataGitlabClusterAgent#project}
 
 ---
 

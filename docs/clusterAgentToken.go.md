@@ -4,7 +4,7 @@
 
 ### ClusterAgentToken <a name="ClusterAgentToken" id="@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/cluster_agent_token gitlab_cluster_agent_token}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/cluster_agent_token gitlab_cluster_agent_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.clusterAgentToken.ClusterAgentToken.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the ClusterAgentToken to impor
 
 The id of the existing ClusterAgentToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/cluster_agent_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/cluster_agent_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -954,7 +954,7 @@ AgentId *f64
 
 The ID of the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/cluster_agent_token#agent_id ClusterAgentToken#agent_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/cluster_agent_token#agent_id ClusterAgentToken#agent_id}
 
 ---
 
@@ -968,7 +968,7 @@ Name *string
 
 The Name of the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/cluster_agent_token#name ClusterAgentToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/cluster_agent_token#name ClusterAgentToken#name}
 
 ---
 
@@ -982,7 +982,7 @@ Project *string
 
 ID or full path of the project maintained by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/cluster_agent_token#project ClusterAgentToken#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/cluster_agent_token#project ClusterAgentToken#project}
 
 ---
 
@@ -996,7 +996,7 @@ Description *string
 
 The Description for the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/cluster_agent_token#description ClusterAgentToken#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/cluster_agent_token#description ClusterAgentToken#description}
 
 ---
 

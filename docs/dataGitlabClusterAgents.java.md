@@ -4,7 +4,7 @@
 
 ### DataGitlabClusterAgents <a name="DataGitlabClusterAgents" id="@cdktf/provider-gitlab.dataGitlabClusterAgents.DataGitlabClusterAgents"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/cluster_agents gitlab_cluster_agents}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/cluster_agents gitlab_cluster_agents}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabClusterAgents.DataGitlabClusterAgents.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 ID or full path of the project maintained by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/cluster_agents#project DataGitlabClusterAgents#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/cluster_agents#project DataGitlabClusterAgents#project}
 
 ---
 
@@ -431,7 +431,7 @@ The construct id used in the generated config for the DataGitlabClusterAgents to
 
 The id of the existing DataGitlabClusterAgents that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/cluster_agents#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/cluster_agents#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -778,7 +778,7 @@ public java.lang.String getProject();
 
 ID or full path of the project maintained by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/cluster_agents#project DataGitlabClusterAgents#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/cluster_agents#project DataGitlabClusterAgents#project}
 
 ---
 

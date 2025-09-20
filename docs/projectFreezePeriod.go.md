@@ -4,7 +4,7 @@
 
 ### ProjectFreezePeriod <a name="ProjectFreezePeriod" id="@cdktf/provider-gitlab.projectFreezePeriod.ProjectFreezePeriod"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_freeze_period gitlab_project_freeze_period}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_freeze_period gitlab_project_freeze_period}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectFreezePeriod.ProjectFreezePeriod.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the ProjectFreezePeriod to imp
 
 The id of the existing ProjectFreezePeriod that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_freeze_period#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_freeze_period#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -888,7 +888,7 @@ FreezeEnd *string
 
 End of the Freeze Period in cron format (for example, `0 2 * * *`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_freeze_period#freeze_end ProjectFreezePeriod#freeze_end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_freeze_period#freeze_end ProjectFreezePeriod#freeze_end}
 
 ---
 
@@ -902,7 +902,7 @@ FreezeStart *string
 
 Start of the Freeze Period in cron format (for example, `0 1 * * *`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_freeze_period#freeze_start ProjectFreezePeriod#freeze_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_freeze_period#freeze_start ProjectFreezePeriod#freeze_start}
 
 ---
 
@@ -916,7 +916,7 @@ Project *string
 
 The ID or path of the project to add the freeze period to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_freeze_period#project ProjectFreezePeriod#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_freeze_period#project ProjectFreezePeriod#project}
 
 ---
 
@@ -930,7 +930,7 @@ CronTimezone *string
 
 The timezone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_freeze_period#cron_timezone ProjectFreezePeriod#cron_timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_freeze_period#cron_timezone ProjectFreezePeriod#cron_timezone}
 
 ---
 

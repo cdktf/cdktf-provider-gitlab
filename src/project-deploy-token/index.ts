@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_deploy_token
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_deploy_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,37 @@ export interface ProjectDeployTokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * Time the token expires in RFC3339 format. Not set by default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_deploy_token#expires_at ProjectDeployToken#expires_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_deploy_token#expires_at ProjectDeployToken#expires_at}
   */
   readonly expiresAt?: string;
   /**
   * A name to describe the deploy token with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_deploy_token#name ProjectDeployToken#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_deploy_token#name ProjectDeployToken#name}
   */
   readonly name: string;
   /**
   * The Id or full path of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_deploy_token#project ProjectDeployToken#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_deploy_token#project ProjectDeployToken#project}
   */
   readonly project: string;
   /**
   * The scopes of the project deploy token. Valid values are: `read_repository`, `read_registry`, `write_registry`, `read_virtual_registry`, `write_virtual_registry`, `read_package_registry`, `write_package_registry`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_deploy_token#scopes ProjectDeployToken#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_deploy_token#scopes ProjectDeployToken#scopes}
   */
   readonly scopes: string[];
   /**
   * A username for the deploy token. Default is `gitlab+deploy-token-{n}`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_deploy_token#username ProjectDeployToken#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_deploy_token#username ProjectDeployToken#username}
   */
   readonly username?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_deploy_token gitlab_project_deploy_token}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_deploy_token gitlab_project_deploy_token}
 */
 export class ProjectDeployToken extends cdktf.TerraformResource {
 
@@ -61,7 +61,7 @@ export class ProjectDeployToken extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ProjectDeployToken resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProjectDeployToken to import
-  * @param importFromId The id of the existing ProjectDeployToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_deploy_token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ProjectDeployToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_deploy_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProjectDeployToken to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -73,7 +73,7 @@ export class ProjectDeployToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_deploy_token gitlab_project_deploy_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_deploy_token gitlab_project_deploy_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class ProjectDeployToken extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_deploy_token',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.3.0',
+        providerVersion: '18.4.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

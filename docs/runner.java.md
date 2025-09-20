@@ -4,7 +4,7 @@
 
 ### Runner <a name="Runner" id="@cdktf/provider-gitlab.runner.Runner"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/runner gitlab_runner}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/runner gitlab_runner}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.runner.Runner.Initializer"></a>
 
@@ -53,7 +53,7 @@ Runner.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.Initializer.parameter.registrationToken">registrationToken</a></code> | <code>java.lang.String</code> | The registration token used to register the runner. |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.Initializer.parameter.accessLevel">accessLevel</a></code> | <code>java.lang.String</code> | The access_level of the runner. Valid values are: `not_protected`, `ref_protected`. |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | The runner's description. |
-| <code><a href="#@cdktf/provider-gitlab.runner.Runner.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/runner#id Runner#id}. |
+| <code><a href="#@cdktf/provider-gitlab.runner.Runner.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/runner#id Runner#id}. |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.Initializer.parameter.locked">locked</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the runner should be locked for current project. |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.Initializer.parameter.maintenanceNote">maintenanceNote</a></code> | <code>java.lang.String</code> | Free-form maintenance notes for the runner (1024 characters). |
 | <code><a href="#@cdktf/provider-gitlab.runner.Runner.Initializer.parameter.maximumTimeout">maximumTimeout</a></code> | <code>java.lang.Number</code> | Maximum timeout set when this runner handles the job. |
@@ -129,7 +129,7 @@ Must be unique amongst siblings in the same scope
 
 The registration token used to register the runner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/runner#registration_token Runner#registration_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/runner#registration_token Runner#registration_token}
 
 ---
 
@@ -139,7 +139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The access_level of the runner. Valid values are: `not_protected`, `ref_protected`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/runner#access_level Runner#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/runner#access_level Runner#access_level}
 
 ---
 
@@ -149,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The runner's description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/runner#description Runner#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/runner#description Runner#description}
 
 ---
 
@@ -157,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/runner#id Runner#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/runner#id Runner#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -170,7 +170,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Whether the runner should be locked for current project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/runner#locked Runner#locked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/runner#locked Runner#locked}
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Free-form maintenance notes for the runner (1024 characters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/runner#maintenance_note Runner#maintenance_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/runner#maintenance_note Runner#maintenance_note}
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum timeout set when this runner handles the job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/runner#maximum_timeout Runner#maximum_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/runner#maximum_timeout Runner#maximum_timeout}
 
 ---
 
@@ -200,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Whether the runner should ignore new jobs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/runner#paused Runner#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/runner#paused Runner#paused}
 
 ---
 
@@ -210,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Whether the runner should handle untagged jobs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/runner#run_untagged Runner#run_untagged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/runner#run_untagged Runner#run_untagged}
 
 ---
 
@@ -220,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 List of runner’s tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/runner#tag_list Runner#tag_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/runner#tag_list Runner#tag_list}
 
 ---
 
@@ -710,7 +710,7 @@ The construct id used in the generated config for the Runner to import.
 
 The id of the existing Runner that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/runner#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/runner#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1196,7 +1196,7 @@ RunnerConfig.builder()
 | <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.registrationToken">registrationToken</a></code> | <code>java.lang.String</code> | The registration token used to register the runner. |
 | <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.accessLevel">accessLevel</a></code> | <code>java.lang.String</code> | The access_level of the runner. Valid values are: `not_protected`, `ref_protected`. |
 | <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.description">description</a></code> | <code>java.lang.String</code> | The runner's description. |
-| <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/runner#id Runner#id}. |
+| <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/runner#id Runner#id}. |
 | <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.locked">locked</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the runner should be locked for current project. |
 | <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.maintenanceNote">maintenanceNote</a></code> | <code>java.lang.String</code> | Free-form maintenance notes for the runner (1024 characters). |
 | <code><a href="#@cdktf/provider-gitlab.runner.RunnerConfig.property.maximumTimeout">maximumTimeout</a></code> | <code>java.lang.Number</code> | Maximum timeout set when this runner handles the job. |
@@ -1286,7 +1286,7 @@ public java.lang.String getRegistrationToken();
 
 The registration token used to register the runner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/runner#registration_token Runner#registration_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/runner#registration_token Runner#registration_token}
 
 ---
 
@@ -1300,7 +1300,7 @@ public java.lang.String getAccessLevel();
 
 The access_level of the runner. Valid values are: `not_protected`, `ref_protected`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/runner#access_level Runner#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/runner#access_level Runner#access_level}
 
 ---
 
@@ -1314,7 +1314,7 @@ public java.lang.String getDescription();
 
 The runner's description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/runner#description Runner#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/runner#description Runner#description}
 
 ---
 
@@ -1326,7 +1326,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/runner#id Runner#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/runner#id Runner#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1343,7 +1343,7 @@ public java.lang.Object getLocked();
 
 Whether the runner should be locked for current project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/runner#locked Runner#locked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/runner#locked Runner#locked}
 
 ---
 
@@ -1357,7 +1357,7 @@ public java.lang.String getMaintenanceNote();
 
 Free-form maintenance notes for the runner (1024 characters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/runner#maintenance_note Runner#maintenance_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/runner#maintenance_note Runner#maintenance_note}
 
 ---
 
@@ -1371,7 +1371,7 @@ public java.lang.Number getMaximumTimeout();
 
 Maximum timeout set when this runner handles the job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/runner#maximum_timeout Runner#maximum_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/runner#maximum_timeout Runner#maximum_timeout}
 
 ---
 
@@ -1385,7 +1385,7 @@ public java.lang.Object getPaused();
 
 Whether the runner should ignore new jobs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/runner#paused Runner#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/runner#paused Runner#paused}
 
 ---
 
@@ -1399,7 +1399,7 @@ public java.lang.Object getRunUntagged();
 
 Whether the runner should handle untagged jobs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/runner#run_untagged Runner#run_untagged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/runner#run_untagged Runner#run_untagged}
 
 ---
 
@@ -1413,7 +1413,7 @@ public java.util.List<java.lang.String> getTagList();
 
 List of runner’s tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/runner#tag_list Runner#tag_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/runner#tag_list Runner#tag_list}
 
 ---
 

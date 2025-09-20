@@ -4,7 +4,7 @@
 
 ### DataGitlabRepositoryFile <a name="DataGitlabRepositoryFile" id="@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/repository_file gitlab_repository_file}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/repository_file gitlab_repository_file}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.Initializer"></a>
 
@@ -67,7 +67,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.resetId">ResetId</a></code> | *No description.* |
 
 ---
 
@@ -263,12 +262,6 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.resetId"></a>
-
-```go
-func ResetId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -372,7 +365,7 @@ The construct id used in the generated config for the DataGitlabRepositoryFile t
 
 The id of the existing DataGitlabRepositoryFile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/repository_file#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/repository_file#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -407,14 +400,13 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.property.encoding">Encoding</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.property.executeFilemode">ExecuteFilemode</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.property.fileName">FileName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.property.lastCommitId">LastCommitId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.property.size">Size</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.property.filePathInput">FilePathInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.property.refInput">RefInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.property.filePath">FilePath</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.property.project">Project</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.property.ref">Ref</a></code> | <code>*string</code> | *No description.* |
 
@@ -612,6 +604,16 @@ func FileName() *string
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `LastCommitId`<sup>Required</sup> <a name="LastCommitId" id="@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.property.lastCommitId"></a>
 
 ```go
@@ -642,16 +644,6 @@ func FilePathInput() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.property.idInput"></a>
-
-```go
-func IdInput() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `ProjectInput`<sup>Optional</sup> <a name="ProjectInput" id="@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.property.projectInput"></a>
 
 ```go
@@ -676,16 +668,6 @@ func RefInput() *string
 
 ```go
 func FilePath() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFile.property.id"></a>
-
-```go
-func Id() *string
 ```
 
 - *Type:* *string
@@ -750,7 +732,6 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabrepositor
 	FilePath: *string,
 	Project: *string,
 	Ref: *string,
-	Id: *string,
 }
 ```
 
@@ -768,7 +749,6 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabrepositor
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFileConfig.property.filePath">FilePath</a></code> | <code>*string</code> | The full path of the file. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFileConfig.property.project">Project</a></code> | <code>*string</code> | The name or ID of the project. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFileConfig.property.ref">Ref</a></code> | <code>*string</code> | The name of branch, tag or commit. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/repository_file#id DataGitlabRepositoryFile#id}. |
 
 ---
 
@@ -854,7 +834,7 @@ The full path of the file.
 
 It must be relative to the root of the project without a leading slash `/` or `./`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/repository_file#file_path DataGitlabRepositoryFile#file_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/repository_file#file_path DataGitlabRepositoryFile#file_path}
 
 ---
 
@@ -868,7 +848,7 @@ Project *string
 
 The name or ID of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/repository_file#project DataGitlabRepositoryFile#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/repository_file#project DataGitlabRepositoryFile#project}
 
 ---
 
@@ -882,22 +862,7 @@ Ref *string
 
 The name of branch, tag or commit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/repository_file#ref DataGitlabRepositoryFile#ref}
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-gitlab.dataGitlabRepositoryFile.DataGitlabRepositoryFileConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/repository_file#id DataGitlabRepositoryFile#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/repository_file#ref DataGitlabRepositoryFile#ref}
 
 ---
 

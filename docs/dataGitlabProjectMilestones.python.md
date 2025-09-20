@@ -4,7 +4,7 @@
 
 ### DataGitlabProjectMilestones <a name="DataGitlabProjectMilestones" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestones gitlab_project_milestones}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_milestones gitlab_project_milestones}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.Initializer"></a>
 
@@ -22,7 +22,6 @@ dataGitlabProjectMilestones.DataGitlabProjectMilestones(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   project: str,
-  id: str = None,
   iids: typing.List[typing.Union[int, float]] = None,
   include_parent_milestones: typing.Union[bool, IResolvable] = None,
   search: str = None,
@@ -43,7 +42,6 @@ dataGitlabProjectMilestones.DataGitlabProjectMilestones(
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.Initializer.parameter.project">project</a></code> | <code>str</code> | The ID or URL-encoded path of the project owned by the authenticated user. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestones#id DataGitlabProjectMilestones#id}. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.Initializer.parameter.iids">iids</a></code> | <code>typing.List[typing.Union[int, float]]</code> | Return only the milestones having the given `iid` (Note: ignored if `include_parent_milestones` is set as `true`). |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.Initializer.parameter.includeParentMilestones">include_parent_milestones</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Include group milestones from parent group and its ancestors. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.Initializer.parameter.search">search</a></code> | <code>str</code> | Return only milestones with a title or description matching the provided string. |
@@ -118,18 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The ID or URL-encoded path of the project owned by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestones#project DataGitlabProjectMilestones#project}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.Initializer.parameter.id"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestones#id DataGitlabProjectMilestones#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_milestones#project DataGitlabProjectMilestones#project}
 
 ---
 
@@ -139,7 +126,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Return only the milestones having the given `iid` (Note: ignored if `include_parent_milestones` is set as `true`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestones#iids DataGitlabProjectMilestones#iids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_milestones#iids DataGitlabProjectMilestones#iids}
 
 ---
 
@@ -149,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Include group milestones from parent group and its ancestors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestones#include_parent_milestones DataGitlabProjectMilestones#include_parent_milestones}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_milestones#include_parent_milestones DataGitlabProjectMilestones#include_parent_milestones}
 
 ---
 
@@ -159,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Return only milestones with a title or description matching the provided string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestones#search DataGitlabProjectMilestones#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_milestones#search DataGitlabProjectMilestones#search}
 
 ---
 
@@ -169,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Return only `active` or `closed` milestones.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestones#state DataGitlabProjectMilestones#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_milestones#state DataGitlabProjectMilestones#state}
 
 ---
 
@@ -179,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Return only the milestones having the given `title`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestones#title DataGitlabProjectMilestones#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_milestones#title DataGitlabProjectMilestones#title}
 
 ---
 
@@ -204,7 +191,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.resetIids">reset_iids</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.resetIncludeParentMilestones">reset_include_parent_milestones</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.resetSearch">reset_search</a></code> | *No description.* |
@@ -430,12 +416,6 @@ def interpolation_for_attribute(
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.resetId"></a>
-
-```python
-def reset_id() -> None
-```
-
 ##### `reset_iids` <a name="reset_iids" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.resetIids"></a>
 
 ```python
@@ -580,7 +560,7 @@ The construct id used in the generated config for the DataGitlabProjectMilestone
 
 The id of the existing DataGitlabProjectMilestones that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestones#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_milestones#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -608,15 +588,14 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.property.milestones">milestones</a></code> | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestonesMilestonesList">DataGitlabProjectMilestonesMilestonesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.property.iidsInput">iids_input</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.property.includeParentMilestonesInput">include_parent_milestones_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.property.searchInput">search_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.property.stateInput">state_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.property.titleInput">title_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.property.iids">iids</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.property.includeParentMilestones">include_parent_milestones</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.property.project">project</a></code> | <code>str</code> | *No description.* |
@@ -748,6 +727,16 @@ provider: TerraformProvider
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `milestones`<sup>Required</sup> <a name="milestones" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.property.milestones"></a>
 
 ```python
@@ -755,16 +744,6 @@ milestones: DataGitlabProjectMilestonesMilestonesList
 ```
 
 - *Type:* <a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestonesMilestonesList">DataGitlabProjectMilestonesMilestonesList</a>
-
----
-
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.property.idInput"></a>
-
-```python
-id_input: str
-```
-
-- *Type:* str
 
 ---
 
@@ -822,16 +801,6 @@ state_input: str
 
 ```python
 title_input: str
-```
-
-- *Type:* str
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestones.property.id"></a>
-
-```python
-id: str
 ```
 
 - *Type:* str
@@ -934,7 +903,6 @@ dataGitlabProjectMilestones.DataGitlabProjectMilestonesConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   project: str,
-  id: str = None,
   iids: typing.List[typing.Union[int, float]] = None,
   include_parent_milestones: typing.Union[bool, IResolvable] = None,
   search: str = None,
@@ -955,7 +923,6 @@ dataGitlabProjectMilestones.DataGitlabProjectMilestonesConfig(
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestonesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestonesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestonesConfig.property.project">project</a></code> | <code>str</code> | The ID or URL-encoded path of the project owned by the authenticated user. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestonesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestones#id DataGitlabProjectMilestones#id}. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestonesConfig.property.iids">iids</a></code> | <code>typing.List[typing.Union[int, float]]</code> | Return only the milestones having the given `iid` (Note: ignored if `include_parent_milestones` is set as `true`). |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestonesConfig.property.includeParentMilestones">include_parent_milestones</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Include group milestones from parent group and its ancestors. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestonesConfig.property.search">search</a></code> | <code>str</code> | Return only milestones with a title or description matching the provided string. |
@@ -1044,22 +1011,7 @@ project: str
 
 The ID or URL-encoded path of the project owned by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestones#project DataGitlabProjectMilestones#project}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabProjectMilestones.DataGitlabProjectMilestonesConfig.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestones#id DataGitlabProjectMilestones#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_milestones#project DataGitlabProjectMilestones#project}
 
 ---
 
@@ -1073,7 +1025,7 @@ iids: typing.List[typing.Union[int, float]]
 
 Return only the milestones having the given `iid` (Note: ignored if `include_parent_milestones` is set as `true`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestones#iids DataGitlabProjectMilestones#iids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_milestones#iids DataGitlabProjectMilestones#iids}
 
 ---
 
@@ -1087,7 +1039,7 @@ include_parent_milestones: typing.Union[bool, IResolvable]
 
 Include group milestones from parent group and its ancestors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestones#include_parent_milestones DataGitlabProjectMilestones#include_parent_milestones}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_milestones#include_parent_milestones DataGitlabProjectMilestones#include_parent_milestones}
 
 ---
 
@@ -1101,7 +1053,7 @@ search: str
 
 Return only milestones with a title or description matching the provided string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestones#search DataGitlabProjectMilestones#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_milestones#search DataGitlabProjectMilestones#search}
 
 ---
 
@@ -1115,7 +1067,7 @@ state: str
 
 Return only `active` or `closed` milestones.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestones#state DataGitlabProjectMilestones#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_milestones#state DataGitlabProjectMilestones#state}
 
 ---
 
@@ -1129,7 +1081,7 @@ title: str
 
 Return only the milestones having the given `title`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestones#title DataGitlabProjectMilestones#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_milestones#title DataGitlabProjectMilestones#title}
 
 ---
 

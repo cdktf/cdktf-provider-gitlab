@@ -4,7 +4,7 @@
 
 ### DataGitlabProjectMilestone <a name="DataGitlabProjectMilestone" id="@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestone gitlab_project_milestone}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_milestone gitlab_project_milestone}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.Initializer"></a>
 
@@ -25,7 +25,6 @@ DataGitlabProjectMilestone.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(RemoteExecProvisioner>)
     .milestoneId(java.lang.Number)
     .project(java.lang.String)
-//  .id(java.lang.String)
     .build();
 ```
 
@@ -42,7 +41,6 @@ DataGitlabProjectMilestone.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.Initializer.parameter.milestoneId">milestoneId</a></code> | <code>java.lang.Number</code> | The instance-wide ID of the project’s milestone. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | The ID or URL-encoded path of the project owned by the authenticated user. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestone#id DataGitlabProjectMilestone#id}. |
 
 ---
 
@@ -112,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The instance-wide ID of the project’s milestone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestone#milestone_id DataGitlabProjectMilestone#milestone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_milestone#milestone_id DataGitlabProjectMilestone#milestone_id}
 
 ---
 
@@ -122,18 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The ID or URL-encoded path of the project owned by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestone#project DataGitlabProjectMilestone#project}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.Initializer.parameter.id"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestone#id DataGitlabProjectMilestone#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_milestone#project DataGitlabProjectMilestone#project}
 
 ---
 
@@ -158,7 +145,6 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.resetId">resetId</a></code> | *No description.* |
 
 ---
 
@@ -354,12 +340,6 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.resetId"></a>
-
-```java
-public void resetId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -463,7 +443,7 @@ The construct id used in the generated config for the DataGitlabProjectMilestone
 
 The id of the existing DataGitlabProjectMilestone that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestone#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_milestone#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -495,6 +475,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.property.dueDate">dueDate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.property.expired">expired</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.property.iid">iid</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.property.projectId">projectId</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.property.startDate">startDate</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -502,10 +483,8 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.property.title">title</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.property.updatedAt">updatedAt</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.property.webUrl">webUrl</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.property.milestoneIdInput">milestoneIdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.property.milestoneId">milestoneId</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.property.project">project</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -673,6 +652,16 @@ public IResolvable getExpired();
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.property.id"></a>
+
+```java
+public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `iid`<sup>Required</sup> <a name="iid" id="@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.property.iid"></a>
 
 ```java
@@ -743,16 +732,6 @@ public java.lang.String getWebUrl();
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.property.idInput"></a>
-
-```java
-public java.lang.String getIdInput();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `milestoneIdInput`<sup>Optional</sup> <a name="milestoneIdInput" id="@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.property.milestoneIdInput"></a>
 
 ```java
@@ -767,16 +746,6 @@ public java.lang.Number getMilestoneIdInput();
 
 ```java
 public java.lang.String getProjectInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestone.property.id"></a>
-
-```java
-public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
@@ -844,7 +813,6 @@ DataGitlabProjectMilestoneConfig.builder()
 //  .provisioners(RemoteExecProvisioner>)
     .milestoneId(java.lang.Number)
     .project(java.lang.String)
-//  .id(java.lang.String)
     .build();
 ```
 
@@ -861,7 +829,6 @@ DataGitlabProjectMilestoneConfig.builder()
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestoneConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestoneConfig.property.milestoneId">milestoneId</a></code> | <code>java.lang.Number</code> | The instance-wide ID of the project’s milestone. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestoneConfig.property.project">project</a></code> | <code>java.lang.String</code> | The ID or URL-encoded path of the project owned by the authenticated user. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestoneConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestone#id DataGitlabProjectMilestone#id}. |
 
 ---
 
@@ -945,7 +912,7 @@ public java.lang.Number getMilestoneId();
 
 The instance-wide ID of the project’s milestone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestone#milestone_id DataGitlabProjectMilestone#milestone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_milestone#milestone_id DataGitlabProjectMilestone#milestone_id}
 
 ---
 
@@ -959,22 +926,7 @@ public java.lang.String getProject();
 
 The ID or URL-encoded path of the project owned by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestone#project DataGitlabProjectMilestone#project}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabProjectMilestone.DataGitlabProjectMilestoneConfig.property.id"></a>
-
-```java
-public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_milestone#id DataGitlabProjectMilestone#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_milestone#project DataGitlabProjectMilestone#project}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataGitlabGroupHook <a name="DataGitlabGroupHook" id="@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_hook gitlab_group_hook}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/group_hook gitlab_group_hook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.Initializer"></a>
 
@@ -25,7 +25,6 @@ DataGitlabGroupHook.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(RemoteExecProvisioner>)
     .group(java.lang.String)
     .hookId(java.lang.Number)
-//  .id(java.lang.String)
     .build();
 ```
 
@@ -42,7 +41,6 @@ DataGitlabGroupHook.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.Initializer.parameter.group">group</a></code> | <code>java.lang.String</code> | The ID or full path of the group. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.Initializer.parameter.hookId">hookId</a></code> | <code>java.lang.Number</code> | The id of the group hook. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_hook#id DataGitlabGroupHook#id}. |
 
 ---
 
@@ -112,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The ID or full path of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_hook#group DataGitlabGroupHook#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/group_hook#group DataGitlabGroupHook#group}
 
 ---
 
@@ -122,18 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The id of the group hook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_hook#hook_id DataGitlabGroupHook#hook_id}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.Initializer.parameter.id"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_hook#id DataGitlabGroupHook#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/group_hook#hook_id DataGitlabGroupHook#hook_id}
 
 ---
 
@@ -158,7 +145,6 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.resetId">resetId</a></code> | *No description.* |
 
 ---
 
@@ -354,12 +340,6 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.resetId"></a>
-
-```java
-public void resetId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -463,7 +443,7 @@ The construct id used in the generated config for the DataGitlabGroupHook to imp
 
 The id of the existing DataGitlabGroupHook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_hook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/group_hook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -498,6 +478,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.emojiEvents">emojiEvents</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.enableSslVerification">enableSslVerification</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.groupId">groupId</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.issuesEvents">issuesEvents</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.jobEvents">jobEvents</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.mergeRequestsEvents">mergeRequestsEvents</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
@@ -513,10 +494,8 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.wikiPageEvents">wikiPageEvents</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.groupInput">groupInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.hookIdInput">hookIdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.group">group</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.hookId">hookId</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
 
@@ -712,6 +691,16 @@ public java.lang.Number getGroupId();
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.id"></a>
+
+```java
+public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `issuesEvents`<sup>Required</sup> <a name="issuesEvents" id="@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.issuesEvents"></a>
 
 ```java
@@ -862,16 +851,6 @@ public java.lang.Number getHookIdInput();
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.idInput"></a>
-
-```java
-public java.lang.String getIdInput();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `group`<sup>Required</sup> <a name="group" id="@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.group"></a>
 
 ```java
@@ -889,16 +868,6 @@ public java.lang.Number getHookId();
 ```
 
 - *Type:* java.lang.Number
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHook.property.id"></a>
-
-```java
-public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
 
 ---
 
@@ -943,7 +912,6 @@ DataGitlabGroupHookConfig.builder()
 //  .provisioners(RemoteExecProvisioner>)
     .group(java.lang.String)
     .hookId(java.lang.Number)
-//  .id(java.lang.String)
     .build();
 ```
 
@@ -960,7 +928,6 @@ DataGitlabGroupHookConfig.builder()
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHookConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHookConfig.property.group">group</a></code> | <code>java.lang.String</code> | The ID or full path of the group. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHookConfig.property.hookId">hookId</a></code> | <code>java.lang.Number</code> | The id of the group hook. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHookConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_hook#id DataGitlabGroupHook#id}. |
 
 ---
 
@@ -1044,7 +1011,7 @@ public java.lang.String getGroup();
 
 The ID or full path of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_hook#group DataGitlabGroupHook#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/group_hook#group DataGitlabGroupHook#group}
 
 ---
 
@@ -1058,22 +1025,7 @@ public java.lang.Number getHookId();
 
 The id of the group hook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_hook#hook_id DataGitlabGroupHook#hook_id}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabGroupHook.DataGitlabGroupHookConfig.property.id"></a>
-
-```java
-public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/group_hook#id DataGitlabGroupHook#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/group_hook#hook_id DataGitlabGroupHook#hook_id}
 
 ---
 

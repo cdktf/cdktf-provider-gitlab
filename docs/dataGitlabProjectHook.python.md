@@ -4,7 +4,7 @@
 
 ### DataGitlabProjectHook <a name="DataGitlabProjectHook" id="@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_hook gitlab_project_hook}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_hook gitlab_project_hook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.Initializer"></a>
 
@@ -22,8 +22,7 @@ dataGitlabProjectHook.DataGitlabProjectHook(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   hook_id: typing.Union[int, float],
-  project: str,
-  id: str = None
+  project: str
 )
 ```
 
@@ -40,7 +39,6 @@ dataGitlabProjectHook.DataGitlabProjectHook(
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.Initializer.parameter.hookId">hook_id</a></code> | <code>typing.Union[int, float]</code> | The id of the project hook. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.Initializer.parameter.project">project</a></code> | <code>str</code> | The name or id of the project to add the hook to. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_hook#id DataGitlabProjectHook#id}. |
 
 ---
 
@@ -110,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The id of the project hook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_hook#hook_id DataGitlabProjectHook#hook_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_hook#hook_id DataGitlabProjectHook#hook_id}
 
 ---
 
@@ -120,18 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The name or id of the project to add the hook to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_hook#project DataGitlabProjectHook#project}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.Initializer.parameter.id"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_hook#id DataGitlabProjectHook#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_hook#project DataGitlabProjectHook#project}
 
 ---
 
@@ -156,7 +143,6 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.resetId">reset_id</a></code> | *No description.* |
 
 ---
 
@@ -377,12 +363,6 @@ def interpolation_for_attribute(
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.resetId"></a>
-
-```python
-def reset_id() -> None
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -497,7 +477,7 @@ The construct id used in the generated config for the DataGitlabProjectHook to i
 
 The id of the existing DataGitlabProjectHook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_hook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_hook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -530,6 +510,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.property.customWebhookTemplate">custom_webhook_template</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.property.deploymentEvents">deployment_events</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.property.enableSslVerification">enable_ssl_verification</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.property.issuesEvents">issues_events</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.property.jobEvents">job_events</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.property.mergeRequestsEvents">merge_requests_events</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
@@ -544,10 +525,8 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.property.url">url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.property.wikiPageEvents">wiki_page_events</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.property.hookIdInput">hook_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.property.hookId">hook_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.property.project">project</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -724,6 +703,16 @@ enable_ssl_verification: IResolvable
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `issues_events`<sup>Required</sup> <a name="issues_events" id="@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.property.issuesEvents"></a>
 
 ```python
@@ -864,16 +853,6 @@ hook_id_input: typing.Union[int, float]
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.property.idInput"></a>
-
-```python
-id_input: str
-```
-
-- *Type:* str
-
----
-
 ##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.property.projectInput"></a>
 
 ```python
@@ -891,16 +870,6 @@ hook_id: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHook.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
 
 ---
 
@@ -950,8 +919,7 @@ dataGitlabProjectHook.DataGitlabProjectHookConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   hook_id: typing.Union[int, float],
-  project: str,
-  id: str = None
+  project: str
 )
 ```
 
@@ -968,7 +936,6 @@ dataGitlabProjectHook.DataGitlabProjectHookConfig(
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHookConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHookConfig.property.hookId">hook_id</a></code> | <code>typing.Union[int, float]</code> | The id of the project hook. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHookConfig.property.project">project</a></code> | <code>str</code> | The name or id of the project to add the hook to. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHookConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_hook#id DataGitlabProjectHook#id}. |
 
 ---
 
@@ -1052,7 +1019,7 @@ hook_id: typing.Union[int, float]
 
 The id of the project hook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_hook#hook_id DataGitlabProjectHook#hook_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_hook#hook_id DataGitlabProjectHook#hook_id}
 
 ---
 
@@ -1066,22 +1033,7 @@ project: str
 
 The name or id of the project to add the hook to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_hook#project DataGitlabProjectHook#project}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabProjectHook.DataGitlabProjectHookConfig.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_hook#id DataGitlabProjectHook#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_hook#project DataGitlabProjectHook#project}
 
 ---
 

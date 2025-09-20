@@ -4,7 +4,7 @@
 
 ### Release <a name="Release" id="@cdktf/provider-gitlab.release.Release"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/release gitlab_release}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/release gitlab_release}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.release.Release.Initializer"></a>
 
@@ -529,7 +529,7 @@ The construct id used in the generated config for the Release to import.
 
 The id of the existing Release that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/release#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/release#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1167,7 +1167,7 @@ public readonly project: string;
 
 The ID or full path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/release#project Release#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/release#project Release#project}
 
 ---
 
@@ -1181,7 +1181,7 @@ public readonly tagName: string;
 
 The tag where the release is created from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/release#tag_name Release#tag_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/release#tag_name Release#tag_name}
 
 ---
 
@@ -1195,7 +1195,7 @@ public readonly assets: ReleaseAssets;
 
 The release assets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/release#assets Release#assets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/release#assets Release#assets}
 
 ---
 
@@ -1209,7 +1209,7 @@ public readonly description: string;
 
 The description of the release. You can use Markdown.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/release#description Release#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/release#description Release#description}
 
 ---
 
@@ -1223,7 +1223,7 @@ public readonly milestones: string[];
 
 The title of each milestone the release is associated with. GitLab Premium customers can specify group milestones.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/release#milestones Release#milestones}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/release#milestones Release#milestones}
 
 ---
 
@@ -1237,7 +1237,7 @@ public readonly name: string;
 
 The name of the release.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/release#name Release#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/release#name Release#name}
 
 ---
 
@@ -1253,7 +1253,7 @@ If a tag specified in tag_name doesn't exist, the release is created from ref an
 
 It can be a commit SHA, another tag name, or a branch name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/release#ref Release#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/release#ref Release#ref}
 
 ---
 
@@ -1269,7 +1269,7 @@ Date and time for the release.
 
 Defaults to the current time. Expected in ISO 8601 format (2019-03-15T08:00:00Z). Only provide this field if creating an upcoming or historical release.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/release#released_at Release#released_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/release#released_at Release#released_at}
 
 ---
 
@@ -1283,7 +1283,7 @@ public readonly tagMessage: string;
 
 Message to use if creating a new annotated tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/release#tag_message Release#tag_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/release#tag_message Release#tag_message}
 
 ---
 

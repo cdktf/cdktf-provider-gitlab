@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,85 +15,85 @@ export interface GitlabProviderConfig {
   /**
   * This is the target GitLab base API endpoint. Providing a value is a requirement when working with GitLab CE or GitLab Enterprise e.g. `https://my.gitlab.server/api/v4/`. It is optional to provide this value and it can also be sourced from the `GITLAB_BASE_URL` environment variable. The value must end with a slash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#base_url GitlabProvider#base_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs#base_url GitlabProvider#base_url}
   */
   readonly baseUrl?: string;
   /**
   * This is a file containing the ca cert to verify the gitlab instance. This is available for use when working with GitLab CE or Gitlab Enterprise with a locally-issued or self-signed certificate chain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#cacert_file GitlabProvider#cacert_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs#cacert_file GitlabProvider#cacert_file}
   */
   readonly cacertFile?: string;
   /**
   * File path to client certificate when GitLab instance is behind company proxy. File must contain PEM encoded data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#client_cert GitlabProvider#client_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs#client_cert GitlabProvider#client_cert}
   */
   readonly clientCert?: string;
   /**
   * File path to client key when GitLab instance is behind company proxy. File must contain PEM encoded data. Required when `client_cert` is set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#client_key GitlabProvider#client_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs#client_key GitlabProvider#client_key}
   */
   readonly clientKey?: string;
   /**
   * The path to the configuration file to use. It may be sourced from the `GITLAB_CONFIG_FILE` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#config_file GitlabProvider#config_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs#config_file GitlabProvider#config_file}
   */
   readonly configFile?: string;
   /**
   * The context to use for authentication and configuration. The context must exist in the configuration file. It may be sourced from the `GITLAB_CONTEXT` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#context GitlabProvider#context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs#context GitlabProvider#context}
   */
   readonly context?: string;
   /**
   * (Experimental) By default the provider does a dummy request to get the current user in order to verify that the provider configuration is correct and the GitLab API is reachable. Set this to `false` to skip this check. This may be useful if the GitLab instance does not yet exist and is created within the same terraform module. It may be sourced from the `GITLAB_EARLY_AUTH_CHECK`. This is an experimental feature and may change in the future. Please make sure to always keep backups of your state.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#early_auth_check GitlabProvider#early_auth_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs#early_auth_check GitlabProvider#early_auth_check}
   */
   readonly earlyAuthCheck?: boolean | cdktf.IResolvable;
   /**
   * If automatic CI support should be enabled or not. This only works when not providing a token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#enable_auto_ci_support GitlabProvider#enable_auto_ci_support}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs#enable_auto_ci_support GitlabProvider#enable_auto_ci_support}
   */
   readonly enableAutoCiSupport?: boolean | cdktf.IResolvable;
   /**
   * A map of headers to append to all API request to the GitLab instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#headers GitlabProvider#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs#headers GitlabProvider#headers}
   */
   readonly headers?: { [key: string]: string };
   /**
   * When set to true this disables SSL verification of the connection to the GitLab instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#insecure GitlabProvider#insecure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs#insecure GitlabProvider#insecure}
   */
   readonly insecure?: boolean | cdktf.IResolvable;
   /**
   * The number of retries to execute when receiving a 429 Rate Limit error. Each retry will exponentially back off.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#retries GitlabProvider#retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs#retries GitlabProvider#retries}
   */
   readonly retries?: number;
   /**
   * The OAuth2 Token, Project, Group, Personal Access Token or CI Job Token used to connect to GitLab. The OAuth method is used in this provider for authentication (using Bearer authorization token). See https://docs.gitlab.com/api/#authentication for details. It may be sourced from the `GITLAB_TOKEN` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#token GitlabProvider#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs#token GitlabProvider#token}
   */
   readonly token?: string;
   /**
   * Alias name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#alias GitlabProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs#alias GitlabProvider#alias}
   */
   readonly alias?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs gitlab}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs gitlab}
 */
 export class GitlabProvider extends cdktf.TerraformProvider {
 
@@ -109,7 +109,7 @@ export class GitlabProvider extends cdktf.TerraformProvider {
   * Generates CDKTF code for importing a GitlabProvider resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GitlabProvider to import
-  * @param importFromId The id of the existing GitlabProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GitlabProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GitlabProvider to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -121,7 +121,7 @@ export class GitlabProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs gitlab} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs gitlab} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -132,7 +132,7 @@ export class GitlabProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'gitlab',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.3.0',
+        providerVersion: '18.4.0',
         providerVersionConstraint: '~> 18.0'
       },
       terraformProviderSource: 'gitlabhq/gitlab'

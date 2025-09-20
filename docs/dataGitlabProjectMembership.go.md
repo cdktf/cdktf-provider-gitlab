@@ -4,7 +4,7 @@
 
 ### DataGitlabProjectMembership <a name="DataGitlabProjectMembership" id="@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_membership gitlab_project_membership}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_membership gitlab_project_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.Initializer"></a>
 
@@ -68,8 +68,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.resetFullPath">ResetFullPath</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.resetInherited">ResetInherited</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.resetProject">ResetProject</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.resetProjectId">ResetProjectId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.resetQuery">ResetQuery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.resetUserIds">ResetUserIds</a></code> | *No description.* |
@@ -274,16 +274,16 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 func ResetFullPath()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.resetId"></a>
-
-```go
-func ResetId()
-```
-
 ##### `ResetInherited` <a name="ResetInherited" id="@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.resetInherited"></a>
 
 ```go
 func ResetInherited()
+```
+
+##### `ResetProject` <a name="ResetProject" id="@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.resetProject"></a>
+
+```go
+func ResetProject()
 ```
 
 ##### `ResetProjectId` <a name="ResetProjectId" id="@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.resetProjectId"></a>
@@ -407,7 +407,7 @@ The construct id used in the generated config for the DataGitlabProjectMembershi
 
 The id of the existing DataGitlabProjectMembership that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_membership#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_membership#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -435,16 +435,17 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.property.members">Members</a></code> | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembershipMembersList">DataGitlabProjectMembershipMembersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.property.fullPathInput">FullPathInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.property.inheritedInput">InheritedInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.property.projectIdInput">ProjectIdInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.property.queryInput">QueryInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.property.userIdsInput">UserIdsInput</a></code> | <code>*[]*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.property.fullPath">FullPath</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.property.inherited">Inherited</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.property.project">Project</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.property.projectId">ProjectId</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.property.query">Query</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.property.userIds">UserIds</a></code> | <code>*[]*f64</code> | *No description.* |
@@ -573,6 +574,16 @@ func Provider() TerraformProvider
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Members`<sup>Required</sup> <a name="Members" id="@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.property.members"></a>
 
 ```go
@@ -587,16 +598,6 @@ func Members() DataGitlabProjectMembershipMembersList
 
 ```go
 func FullPathInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.property.idInput"></a>
-
-```go
-func IdInput() *string
 ```
 
 - *Type:* *string
@@ -620,6 +621,16 @@ func ProjectIdInput() *f64
 ```
 
 - *Type:* *f64
+
+---
+
+##### `ProjectInput`<sup>Optional</sup> <a name="ProjectInput" id="@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.property.projectInput"></a>
+
+```go
+func ProjectInput() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -653,16 +664,6 @@ func FullPath() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.property.id"></a>
-
-```go
-func Id() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `Inherited`<sup>Required</sup> <a name="Inherited" id="@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.property.inherited"></a>
 
 ```go
@@ -670,6 +671,16 @@ func Inherited() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `Project`<sup>Required</sup> <a name="Project" id="@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembership.property.project"></a>
+
+```go
+func Project() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -739,8 +750,8 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectme
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	FullPath: *string,
-	Id: *string,
 	Inherited: interface{},
+	Project: *string,
 	ProjectId: *f64,
 	Query: *string,
 	UserIds: *[]*f64,
@@ -759,8 +770,8 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectme
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembershipConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembershipConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembershipConfig.property.fullPath">FullPath</a></code> | <code>*string</code> | The full path of the project. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembershipConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_membership#id DataGitlabProjectMembership#id}. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembershipConfig.property.inherited">Inherited</a></code> | <code>interface{}</code> | Return all project members including members through ancestor groups. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembershipConfig.property.project">Project</a></code> | <code>*string</code> | The ID or full path of the project. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembershipConfig.property.projectId">ProjectId</a></code> | <code>*f64</code> | The ID of the project. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembershipConfig.property.query">Query</a></code> | <code>*string</code> | A query string to search for members. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembershipConfig.property.userIds">UserIds</a></code> | <code>*[]*f64</code> | List of user ids to filter members by. |
@@ -847,22 +858,7 @@ FullPath *string
 
 The full path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_membership#full_path DataGitlabProjectMembership#full_path}
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembershipConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_membership#id DataGitlabProjectMembership#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_membership#full_path DataGitlabProjectMembership#full_path}
 
 ---
 
@@ -876,7 +872,21 @@ Inherited interface{}
 
 Return all project members including members through ancestor groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_membership#inherited DataGitlabProjectMembership#inherited}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_membership#inherited DataGitlabProjectMembership#inherited}
+
+---
+
+##### `Project`<sup>Optional</sup> <a name="Project" id="@cdktf/provider-gitlab.dataGitlabProjectMembership.DataGitlabProjectMembershipConfig.property.project"></a>
+
+```go
+Project *string
+```
+
+- *Type:* *string
+
+The ID or full path of the project.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_membership#project DataGitlabProjectMembership#project}
 
 ---
 
@@ -890,7 +900,7 @@ ProjectId *f64
 
 The ID of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_membership#project_id DataGitlabProjectMembership#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_membership#project_id DataGitlabProjectMembership#project_id}
 
 ---
 
@@ -904,7 +914,7 @@ Query *string
 
 A query string to search for members.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_membership#query DataGitlabProjectMembership#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_membership#query DataGitlabProjectMembership#query}
 
 ---
 
@@ -918,7 +928,7 @@ UserIds *[]*f64
 
 List of user ids to filter members by.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/project_membership#user_ids DataGitlabProjectMembership#user_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/project_membership#user_ids DataGitlabProjectMembership#user_ids}
 
 ---
 
