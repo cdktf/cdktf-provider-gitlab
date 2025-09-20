@@ -4,7 +4,7 @@
 
 ### ProjectMirror <a name="ProjectMirror" id="@cdktf/provider-gitlab.projectMirror.ProjectMirror"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_mirror gitlab_project_mirror}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_mirror gitlab_project_mirror}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectMirror.ProjectMirror.Initializer"></a>
 
@@ -502,7 +502,7 @@ The construct id used in the generated config for the ProjectMirror to import.
 
 The id of the existing ProjectMirror that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_mirror#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_mirror#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -984,7 +984,7 @@ public readonly project: string;
 
 The id of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_mirror#project ProjectMirror#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_mirror#project ProjectMirror#project}
 
 ---
 
@@ -998,7 +998,7 @@ public readonly url: string;
 
 The URL of the remote repository to be mirrored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_mirror#url ProjectMirror#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_mirror#url ProjectMirror#url}
 
 ---
 
@@ -1012,7 +1012,7 @@ public readonly authMethod: string;
 
 Determines the mirror authentication method. Valid values are: `ssh_public_key`, `password`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_mirror#auth_method ProjectMirror#auth_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_mirror#auth_method ProjectMirror#auth_method}
 
 ---
 
@@ -1026,7 +1026,7 @@ public readonly enabled: boolean | IResolvable;
 
 Determines if the mirror is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_mirror#enabled ProjectMirror#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_mirror#enabled ProjectMirror#enabled}
 
 ---
 
@@ -1040,7 +1040,7 @@ public readonly keepDivergentRefs: boolean | IResolvable;
 
 Determines if divergent refs are skipped.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_mirror#keep_divergent_refs ProjectMirror#keep_divergent_refs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_mirror#keep_divergent_refs ProjectMirror#keep_divergent_refs}
 
 ---
 
@@ -1056,7 +1056,7 @@ Contains a regular expression.
 
 Only branches with names matching the regex are mirrored. Requires only_protected_branches to be disabled. Premium and Ultimate only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_mirror#mirror_branch_regex ProjectMirror#mirror_branch_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_mirror#mirror_branch_regex ProjectMirror#mirror_branch_regex}
 
 ---
 
@@ -1070,7 +1070,7 @@ public readonly onlyProtectedBranches: boolean | IResolvable;
 
 Determines if only protected branches are mirrored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_mirror#only_protected_branches ProjectMirror#only_protected_branches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_mirror#only_protected_branches ProjectMirror#only_protected_branches}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataGitlabReleaseLink <a name="DataGitlabReleaseLink" id="@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/release_link gitlab_release_link}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/release_link gitlab_release_link}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.Initializer"></a>
 
@@ -23,8 +23,7 @@ dataGitlabReleaseLink.DataGitlabReleaseLink(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   link_id: typing.Union[int, float],
   project: str,
-  tag_name: str,
-  id: str = None
+  tag_name: str
 )
 ```
 
@@ -42,7 +41,6 @@ dataGitlabReleaseLink.DataGitlabReleaseLink(
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.Initializer.parameter.linkId">link_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the link. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.Initializer.parameter.project">project</a></code> | <code>str</code> | The ID or [URL-encoded path of the project](https://docs.gitlab.com/api/index/#namespaced-path-encoding). |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.Initializer.parameter.tagName">tag_name</a></code> | <code>str</code> | The tag associated with the Release. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/release_link#id DataGitlabReleaseLink#id}. |
 
 ---
 
@@ -112,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of the link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/release_link#link_id DataGitlabReleaseLink#link_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/release_link#link_id DataGitlabReleaseLink#link_id}
 
 ---
 
@@ -122,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The ID or [URL-encoded path of the project](https://docs.gitlab.com/api/index/#namespaced-path-encoding).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/release_link#project DataGitlabReleaseLink#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/release_link#project DataGitlabReleaseLink#project}
 
 ---
 
@@ -132,18 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The tag associated with the Release.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/release_link#tag_name DataGitlabReleaseLink#tag_name}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.Initializer.parameter.id"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/release_link#id DataGitlabReleaseLink#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/release_link#tag_name DataGitlabReleaseLink#tag_name}
 
 ---
 
@@ -168,7 +155,6 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.resetId">reset_id</a></code> | *No description.* |
 
 ---
 
@@ -389,12 +375,6 @@ def interpolation_for_attribute(
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.resetId"></a>
-
-```python
-def reset_id() -> None
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -509,7 +489,7 @@ The construct id used in the generated config for the DataGitlabReleaseLink to i
 
 The id of the existing DataGitlabReleaseLink that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/release_link#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/release_link#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -540,14 +520,13 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.property.directAssetUrl">direct_asset_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.property.external">external</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.property.filepath">filepath</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.property.linkType">link_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.property.url">url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.property.linkIdInput">link_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.property.tagNameInput">tag_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.property.linkId">link_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.property.project">project</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.property.tagName">tag_name</a></code> | <code>str</code> | *No description.* |
@@ -706,6 +685,16 @@ filepath: str
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `link_type`<sup>Required</sup> <a name="link_type" id="@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.property.linkType"></a>
 
 ```python
@@ -736,16 +725,6 @@ url: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.property.idInput"></a>
-
-```python
-id_input: str
-```
-
-- *Type:* str
-
----
-
 ##### `link_id_input`<sup>Optional</sup> <a name="link_id_input" id="@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.property.linkIdInput"></a>
 
 ```python
@@ -770,16 +749,6 @@ project_input: str
 
 ```python
 tag_name_input: str
-```
-
-- *Type:* str
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLink.property.id"></a>
-
-```python
-id: str
 ```
 
 - *Type:* str
@@ -853,8 +822,7 @@ dataGitlabReleaseLink.DataGitlabReleaseLinkConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   link_id: typing.Union[int, float],
   project: str,
-  tag_name: str,
-  id: str = None
+  tag_name: str
 )
 ```
 
@@ -872,7 +840,6 @@ dataGitlabReleaseLink.DataGitlabReleaseLinkConfig(
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLinkConfig.property.linkId">link_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the link. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLinkConfig.property.project">project</a></code> | <code>str</code> | The ID or [URL-encoded path of the project](https://docs.gitlab.com/api/index/#namespaced-path-encoding). |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLinkConfig.property.tagName">tag_name</a></code> | <code>str</code> | The tag associated with the Release. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLinkConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/release_link#id DataGitlabReleaseLink#id}. |
 
 ---
 
@@ -956,7 +923,7 @@ link_id: typing.Union[int, float]
 
 The ID of the link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/release_link#link_id DataGitlabReleaseLink#link_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/release_link#link_id DataGitlabReleaseLink#link_id}
 
 ---
 
@@ -970,7 +937,7 @@ project: str
 
 The ID or [URL-encoded path of the project](https://docs.gitlab.com/api/index/#namespaced-path-encoding).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/release_link#project DataGitlabReleaseLink#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/release_link#project DataGitlabReleaseLink#project}
 
 ---
 
@@ -984,22 +951,7 @@ tag_name: str
 
 The tag associated with the Release.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/release_link#tag_name DataGitlabReleaseLink#tag_name}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabReleaseLink.DataGitlabReleaseLinkConfig.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/release_link#id DataGitlabReleaseLink#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/release_link#tag_name DataGitlabReleaseLink#tag_name}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ProjectProtectedEnvironment <a name="ProjectProtectedEnvironment" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_protected_environment gitlab_project_protected_environment}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_protected_environment gitlab_project_protected_environment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectProtectedEnvironment.ProjectProtectedEnvironment.Initializer"></a>
 
@@ -119,7 +119,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_protected_environment#environment ProjectProtectedEnvironment#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_protected_environment#environment ProjectProtectedEnvironment#environment}
 
 ---
 
@@ -129,7 +129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The ID or full path of the project which the protected environment is created against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_protected_environment#project ProjectProtectedEnvironment#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_protected_environment#project ProjectProtectedEnvironment#project}
 
 ---
 
@@ -141,7 +141,7 @@ Array of approval rules to deploy, with each described by a hash.
 
 Elements in the `approval_rules` should be one of `user_id`, `group_id` or `access_level`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_protected_environment#approval_rules ProjectProtectedEnvironment#approval_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_protected_environment#approval_rules ProjectProtectedEnvironment#approval_rules}
 
 ---
 
@@ -151,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 deploy_access_levels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_protected_environment#deploy_access_levels ProjectProtectedEnvironment#deploy_access_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_protected_environment#deploy_access_levels ProjectProtectedEnvironment#deploy_access_levels}
 
 ---
 
@@ -163,7 +163,7 @@ Array of access levels allowed to deploy, with each described by a hash.
 
 Elements in the `deploy_access_levels` should be one of `user_id`, `group_id` or `access_level`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_protected_environment#deploy_access_levels_attribute ProjectProtectedEnvironment#deploy_access_levels_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_protected_environment#deploy_access_levels_attribute ProjectProtectedEnvironment#deploy_access_levels_attribute}
 
 ---
 
@@ -650,7 +650,7 @@ The construct id used in the generated config for the ProjectProtectedEnvironmen
 
 The id of the existing ProjectProtectedEnvironment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_protected_environment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_protected_environment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1006,7 +1006,7 @@ Levels of access allowed to approve a deployment to this protected environment.
 
 Mutually exclusive with `user_id` and `group_id`. Valid values are `developer`, `maintainer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_protected_environment#access_level ProjectProtectedEnvironment#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_protected_environment#access_level ProjectProtectedEnvironment#access_level}
 
 ---
 
@@ -1022,7 +1022,7 @@ The ID of the group allowed to approve a deployment to this protected environmen
 
 The project must be shared with the group. Mutually exclusive with `access_level` and `user_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_protected_environment#group_id ProjectProtectedEnvironment#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_protected_environment#group_id ProjectProtectedEnvironment#group_id}
 
 ---
 
@@ -1038,7 +1038,7 @@ Group inheritance allows deploy access levels to take inherited group membership
 
 Valid values are `0`, `1`. `0` => Direct group membership only, `1` => All inherited groups. Default: `0`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_protected_environment#group_inheritance_type ProjectProtectedEnvironment#group_inheritance_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_protected_environment#group_inheritance_type ProjectProtectedEnvironment#group_inheritance_type}
 
 ---
 
@@ -1052,7 +1052,7 @@ public java.lang.Number getRequiredApprovals();
 
 The number of approval required to allow deployment to this protected environment. This is mutually exclusive with user_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_protected_environment#required_approvals ProjectProtectedEnvironment#required_approvals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_protected_environment#required_approvals ProjectProtectedEnvironment#required_approvals}
 
 ---
 
@@ -1068,7 +1068,7 @@ The ID of the user allowed to approve a deployment to this protected environment
 
 The user must be a member of the project. Mutually exclusive with `access_level` and `group_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_protected_environment#user_id ProjectProtectedEnvironment#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_protected_environment#user_id ProjectProtectedEnvironment#user_id}
 
 ---
 
@@ -1201,7 +1201,7 @@ public java.lang.String getEnvironment();
 
 The name of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_protected_environment#environment ProjectProtectedEnvironment#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_protected_environment#environment ProjectProtectedEnvironment#environment}
 
 ---
 
@@ -1215,7 +1215,7 @@ public java.lang.String getProject();
 
 The ID or full path of the project which the protected environment is created against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_protected_environment#project ProjectProtectedEnvironment#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_protected_environment#project ProjectProtectedEnvironment#project}
 
 ---
 
@@ -1231,7 +1231,7 @@ Array of approval rules to deploy, with each described by a hash.
 
 Elements in the `approval_rules` should be one of `user_id`, `group_id` or `access_level`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_protected_environment#approval_rules ProjectProtectedEnvironment#approval_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_protected_environment#approval_rules ProjectProtectedEnvironment#approval_rules}
 
 ---
 
@@ -1245,7 +1245,7 @@ public java.lang.Object getDeployAccessLevels();
 
 deploy_access_levels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_protected_environment#deploy_access_levels ProjectProtectedEnvironment#deploy_access_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_protected_environment#deploy_access_levels ProjectProtectedEnvironment#deploy_access_levels}
 
 ---
 
@@ -1261,7 +1261,7 @@ Array of access levels allowed to deploy, with each described by a hash.
 
 Elements in the `deploy_access_levels` should be one of `user_id`, `group_id` or `access_level`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_protected_environment#deploy_access_levels_attribute ProjectProtectedEnvironment#deploy_access_levels_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_protected_environment#deploy_access_levels_attribute ProjectProtectedEnvironment#deploy_access_levels_attribute}
 
 ---
 
@@ -1303,7 +1303,7 @@ Levels of access required to deploy to this protected environment.
 
 Mutually exclusive with `user_id` and `group_id`. Valid values are `developer`, `maintainer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_protected_environment#access_level ProjectProtectedEnvironment#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_protected_environment#access_level ProjectProtectedEnvironment#access_level}
 
 ---
 
@@ -1319,7 +1319,7 @@ The ID of the group allowed to deploy to this protected environment.
 
 The project must be shared with the group. Mutually exclusive with `access_level` and `user_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_protected_environment#group_id ProjectProtectedEnvironment#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_protected_environment#group_id ProjectProtectedEnvironment#group_id}
 
 ---
 
@@ -1335,7 +1335,7 @@ Group inheritance allows deploy access levels to take inherited group membership
 
 Valid values are `0`, `1`. `0` => Direct group membership only, `1` => All inherited groups. Default: `0`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_protected_environment#group_inheritance_type ProjectProtectedEnvironment#group_inheritance_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_protected_environment#group_inheritance_type ProjectProtectedEnvironment#group_inheritance_type}
 
 ---
 
@@ -1351,7 +1351,7 @@ The ID of the user allowed to deploy to this protected environment.
 
 The user must be a member of the project. Mutually exclusive with `access_level` and `group_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_protected_environment#user_id ProjectProtectedEnvironment#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_protected_environment#user_id ProjectProtectedEnvironment#user_id}
 
 ---
 
@@ -1393,7 +1393,7 @@ Levels of access required to deploy to this protected environment.
 
 Mutually exclusive with `user_id` and `group_id`. Valid values are `developer`, `maintainer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_protected_environment#access_level ProjectProtectedEnvironment#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_protected_environment#access_level ProjectProtectedEnvironment#access_level}
 
 ---
 
@@ -1409,7 +1409,7 @@ The ID of the group allowed to deploy to this protected environment.
 
 The project must be shared with the group. Mutually exclusive with `access_level` and `user_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_protected_environment#group_id ProjectProtectedEnvironment#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_protected_environment#group_id ProjectProtectedEnvironment#group_id}
 
 ---
 
@@ -1425,7 +1425,7 @@ Group inheritance allows deploy access levels to take inherited group membership
 
 Valid values are `0`, `1`. `0` => Direct group membership only, `1` => All inherited groups. Default: `0`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_protected_environment#group_inheritance_type ProjectProtectedEnvironment#group_inheritance_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_protected_environment#group_inheritance_type ProjectProtectedEnvironment#group_inheritance_type}
 
 ---
 
@@ -1441,7 +1441,7 @@ The ID of the user allowed to deploy to this protected environment.
 
 The user must be a member of the project. Mutually exclusive with `access_level` and `group_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_protected_environment#user_id ProjectProtectedEnvironment#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_protected_environment#user_id ProjectProtectedEnvironment#user_id}
 
 ---
 

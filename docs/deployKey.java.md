@@ -4,7 +4,7 @@
 
 ### DeployKey <a name="DeployKey" id="@cdktf/provider-gitlab.deployKey.DeployKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/deploy_key gitlab_deploy_key}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/deploy_key gitlab_deploy_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.deployKey.DeployKey.Initializer"></a>
 
@@ -49,7 +49,7 @@ DeployKey.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.Initializer.parameter.title">title</a></code> | <code>java.lang.String</code> | A title to describe the deploy key with. |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.Initializer.parameter.canPush">canPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Allow this deploy key to be used to push changes to the project. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.Initializer.parameter.expiresAt">expiresAt</a></code> | <code>java.lang.String</code> | Expiration date for the deploy key. Does not expire if no value is provided. Expected in RFC3339 format `(2019-03-15T08:00:00Z)`. |
-| <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/deploy_key#id DeployKey#id}. |
+| <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/deploy_key#id DeployKey#id}. |
 
 ---
 
@@ -119,7 +119,7 @@ Must be unique amongst siblings in the same scope
 
 The public ssh key body.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/deploy_key#key DeployKey#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/deploy_key#key DeployKey#key}
 
 ---
 
@@ -129,7 +129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The name or id of the project to add the deploy key to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/deploy_key#project DeployKey#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/deploy_key#project DeployKey#project}
 
 ---
 
@@ -139,7 +139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 A title to describe the deploy key with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/deploy_key#title DeployKey#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/deploy_key#title DeployKey#title}
 
 ---
 
@@ -149,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Allow this deploy key to be used to push changes to the project. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/deploy_key#can_push DeployKey#can_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/deploy_key#can_push DeployKey#can_push}
 
 ---
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Expiration date for the deploy key. Does not expire if no value is provided. Expected in RFC3339 format `(2019-03-15T08:00:00Z)`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/deploy_key#expires_at DeployKey#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/deploy_key#expires_at DeployKey#expires_at}
 
 ---
 
@@ -167,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/deploy_key#id DeployKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/deploy_key#id DeployKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -618,7 +618,7 @@ The construct id used in the generated config for the DeployKey to import.
 
 The id of the existing DeployKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/deploy_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/deploy_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1001,7 +1001,7 @@ DeployKeyConfig.builder()
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKeyConfig.property.title">title</a></code> | <code>java.lang.String</code> | A title to describe the deploy key with. |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKeyConfig.property.canPush">canPush</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Allow this deploy key to be used to push changes to the project. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKeyConfig.property.expiresAt">expiresAt</a></code> | <code>java.lang.String</code> | Expiration date for the deploy key. Does not expire if no value is provided. Expected in RFC3339 format `(2019-03-15T08:00:00Z)`. |
-| <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/deploy_key#id DeployKey#id}. |
+| <code><a href="#@cdktf/provider-gitlab.deployKey.DeployKeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/deploy_key#id DeployKey#id}. |
 
 ---
 
@@ -1085,7 +1085,7 @@ public java.lang.String getKey();
 
 The public ssh key body.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/deploy_key#key DeployKey#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/deploy_key#key DeployKey#key}
 
 ---
 
@@ -1099,7 +1099,7 @@ public java.lang.String getProject();
 
 The name or id of the project to add the deploy key to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/deploy_key#project DeployKey#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/deploy_key#project DeployKey#project}
 
 ---
 
@@ -1113,7 +1113,7 @@ public java.lang.String getTitle();
 
 A title to describe the deploy key with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/deploy_key#title DeployKey#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/deploy_key#title DeployKey#title}
 
 ---
 
@@ -1127,7 +1127,7 @@ public java.lang.Object getCanPush();
 
 Allow this deploy key to be used to push changes to the project. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/deploy_key#can_push DeployKey#can_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/deploy_key#can_push DeployKey#can_push}
 
 ---
 
@@ -1141,7 +1141,7 @@ public java.lang.String getExpiresAt();
 
 Expiration date for the deploy key. Does not expire if no value is provided. Expected in RFC3339 format `(2019-03-15T08:00:00Z)`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/deploy_key#expires_at DeployKey#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/deploy_key#expires_at DeployKey#expires_at}
 
 ---
 
@@ -1153,7 +1153,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/deploy_key#id DeployKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/deploy_key#id DeployKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

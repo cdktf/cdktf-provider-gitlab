@@ -4,7 +4,7 @@
 
 ### DataGitlabUsers <a name="DataGitlabUsers" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users gitlab_users}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users gitlab_users}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.Initializer"></a>
 
@@ -37,7 +37,8 @@ DataGitlabUsers.Builder.create(Construct scope, java.lang.String id)
 //  .external(IResolvable)
 //  .externProvider(java.lang.String)
 //  .externUid(java.lang.String)
-//  .id(java.lang.String)
+//  .humans(java.lang.Boolean)
+//  .humans(IResolvable)
 //  .orderBy(java.lang.String)
 //  .search(java.lang.String)
 //  .sort(java.lang.String)
@@ -67,7 +68,7 @@ DataGitlabUsers.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.Initializer.parameter.external">external</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Filters only external users. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.Initializer.parameter.externProvider">externProvider</a></code> | <code>java.lang.String</code> | Lookup users by external provider. (Requires administrator privileges). |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.Initializer.parameter.externUid">externUid</a></code> | <code>java.lang.String</code> | Lookup users by external UID. (Requires administrator privileges). |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#id DataGitlabUsers#id}. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.Initializer.parameter.humans">humans</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Filters only regular users that are not bot or internal users. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.Initializer.parameter.orderBy">orderBy</a></code> | <code>java.lang.String</code> | Order the users' list by `id`, `name`, `username`, `created_at` or `updated_at`. (Requires administrator privileges). |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.Initializer.parameter.search">search</a></code> | <code>java.lang.String</code> | Search users by username, name or email. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.Initializer.parameter.sort">sort</a></code> | <code>java.lang.String</code> | Sort users' list in asc or desc order. (Requires administrator privileges). |
@@ -142,7 +143,7 @@ Must be unique amongst siblings in the same scope
 
 Filter users that are active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#active DataGitlabUsers#active}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#active DataGitlabUsers#active}
 
 ---
 
@@ -152,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Filter users that are blocked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#blocked DataGitlabUsers#blocked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#blocked DataGitlabUsers#blocked}
 
 ---
 
@@ -162,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Search for users created after a specific date. (Requires administrator privileges).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#created_after DataGitlabUsers#created_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#created_after DataGitlabUsers#created_after}
 
 ---
 
@@ -172,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Search for users created before a specific date. (Requires administrator privileges).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#created_before DataGitlabUsers#created_before}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#created_before DataGitlabUsers#created_before}
 
 ---
 
@@ -182,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Filters only non external users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#exclude_external DataGitlabUsers#exclude_external}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#exclude_external DataGitlabUsers#exclude_external}
 
 ---
 
@@ -192,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Filters only non internal users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#exclude_internal DataGitlabUsers#exclude_internal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#exclude_internal DataGitlabUsers#exclude_internal}
 
 ---
 
@@ -202,7 +203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Filters only external users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#external DataGitlabUsers#external}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#external DataGitlabUsers#external}
 
 ---
 
@@ -212,7 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Lookup users by external provider. (Requires administrator privileges).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#extern_provider DataGitlabUsers#extern_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#extern_provider DataGitlabUsers#extern_provider}
 
 ---
 
@@ -222,18 +223,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Lookup users by external UID. (Requires administrator privileges).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#extern_uid DataGitlabUsers#extern_uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#extern_uid DataGitlabUsers#extern_uid}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.Initializer.parameter.id"></a>
+##### `humans`<sup>Optional</sup> <a name="humans" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.Initializer.parameter.humans"></a>
 
-- *Type:* java.lang.String
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#id DataGitlabUsers#id}.
+Filters only regular users that are not bot or internal users.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#humans DataGitlabUsers#humans}
 
 ---
 
@@ -243,7 +243,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Order the users' list by `id`, `name`, `username`, `created_at` or `updated_at`. (Requires administrator privileges).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#order_by DataGitlabUsers#order_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#order_by DataGitlabUsers#order_by}
 
 ---
 
@@ -253,7 +253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Search users by username, name or email.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#search DataGitlabUsers#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#search DataGitlabUsers#search}
 
 ---
 
@@ -263,7 +263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Sort users' list in asc or desc order. (Requires administrator privileges).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#sort DataGitlabUsers#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#sort DataGitlabUsers#sort}
 
 ---
 
@@ -273,7 +273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Get a single user with a specific username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#username DataGitlabUsers#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#username DataGitlabUsers#username}
 
 ---
 
@@ -283,7 +283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Filters user without project bots.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#without_project_bots DataGitlabUsers#without_project_bots}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#without_project_bots DataGitlabUsers#without_project_bots}
 
 ---
 
@@ -317,7 +317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.resetExternal">resetExternal</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.resetExternProvider">resetExternProvider</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.resetExternUid">resetExternUid</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.resetHumans">resetHumans</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.resetOrderBy">resetOrderBy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.resetSearch">resetSearch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.resetSort">resetSort</a></code> | *No description.* |
@@ -572,10 +572,10 @@ public void resetExternProvider()
 public void resetExternUid()
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.resetId"></a>
+##### `resetHumans` <a name="resetHumans" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.resetHumans"></a>
 
 ```java
-public void resetId()
+public void resetHumans()
 ```
 
 ##### `resetOrderBy` <a name="resetOrderBy" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.resetOrderBy"></a>
@@ -711,7 +711,7 @@ The construct id used in the generated config for the DataGitlabUsers to import.
 
 The id of the existing DataGitlabUsers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -739,6 +739,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.property.users">users</a></code> | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsersUsersList">DataGitlabUsersUsersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.property.activeInput">activeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.property.blockedInput">blockedInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
@@ -749,7 +750,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.property.externalInput">externalInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.property.externProviderInput">externProviderInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.property.externUidInput">externUidInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.property.humansInput">humansInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.property.orderByInput">orderByInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.property.searchInput">searchInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.property.sortInput">sortInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -764,7 +765,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.property.external">external</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.property.externProvider">externProvider</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.property.externUid">externUid</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.property.humans">humans</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.property.orderBy">orderBy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.property.search">search</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.property.sort">sort</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -895,6 +896,16 @@ public TerraformProvider getProvider();
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.property.id"></a>
+
+```java
+public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `users`<sup>Required</sup> <a name="users" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.property.users"></a>
 
 ```java
@@ -995,13 +1006,13 @@ public java.lang.String getExternUidInput();
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.property.idInput"></a>
+##### `humansInput`<sup>Optional</sup> <a name="humansInput" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.property.humansInput"></a>
 
 ```java
-public java.lang.String getIdInput();
+public java.lang.Object getHumansInput();
 ```
 
-- *Type:* java.lang.String
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1145,13 +1156,13 @@ public java.lang.String getExternUid();
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.property.id"></a>
+##### `humans`<sup>Required</sup> <a name="humans" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsers.property.humans"></a>
 
 ```java
-public java.lang.String getId();
+public java.lang.Object getHumans();
 ```
 
-- *Type:* java.lang.String
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1258,7 +1269,8 @@ DataGitlabUsersConfig.builder()
 //  .external(IResolvable)
 //  .externProvider(java.lang.String)
 //  .externUid(java.lang.String)
-//  .id(java.lang.String)
+//  .humans(java.lang.Boolean)
+//  .humans(IResolvable)
 //  .orderBy(java.lang.String)
 //  .search(java.lang.String)
 //  .sort(java.lang.String)
@@ -1288,7 +1300,7 @@ DataGitlabUsersConfig.builder()
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsersConfig.property.external">external</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Filters only external users. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsersConfig.property.externProvider">externProvider</a></code> | <code>java.lang.String</code> | Lookup users by external provider. (Requires administrator privileges). |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsersConfig.property.externUid">externUid</a></code> | <code>java.lang.String</code> | Lookup users by external UID. (Requires administrator privileges). |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsersConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#id DataGitlabUsers#id}. |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsersConfig.property.humans">humans</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Filters only regular users that are not bot or internal users. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsersConfig.property.orderBy">orderBy</a></code> | <code>java.lang.String</code> | Order the users' list by `id`, `name`, `username`, `created_at` or `updated_at`. (Requires administrator privileges). |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsersConfig.property.search">search</a></code> | <code>java.lang.String</code> | Search users by username, name or email. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsersConfig.property.sort">sort</a></code> | <code>java.lang.String</code> | Sort users' list in asc or desc order. (Requires administrator privileges). |
@@ -1377,7 +1389,7 @@ public java.lang.Object getActive();
 
 Filter users that are active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#active DataGitlabUsers#active}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#active DataGitlabUsers#active}
 
 ---
 
@@ -1391,7 +1403,7 @@ public java.lang.Object getBlocked();
 
 Filter users that are blocked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#blocked DataGitlabUsers#blocked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#blocked DataGitlabUsers#blocked}
 
 ---
 
@@ -1405,7 +1417,7 @@ public java.lang.String getCreatedAfter();
 
 Search for users created after a specific date. (Requires administrator privileges).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#created_after DataGitlabUsers#created_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#created_after DataGitlabUsers#created_after}
 
 ---
 
@@ -1419,7 +1431,7 @@ public java.lang.String getCreatedBefore();
 
 Search for users created before a specific date. (Requires administrator privileges).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#created_before DataGitlabUsers#created_before}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#created_before DataGitlabUsers#created_before}
 
 ---
 
@@ -1433,7 +1445,7 @@ public java.lang.Object getExcludeExternal();
 
 Filters only non external users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#exclude_external DataGitlabUsers#exclude_external}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#exclude_external DataGitlabUsers#exclude_external}
 
 ---
 
@@ -1447,7 +1459,7 @@ public java.lang.Object getExcludeInternal();
 
 Filters only non internal users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#exclude_internal DataGitlabUsers#exclude_internal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#exclude_internal DataGitlabUsers#exclude_internal}
 
 ---
 
@@ -1461,7 +1473,7 @@ public java.lang.Object getExternal();
 
 Filters only external users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#external DataGitlabUsers#external}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#external DataGitlabUsers#external}
 
 ---
 
@@ -1475,7 +1487,7 @@ public java.lang.String getExternProvider();
 
 Lookup users by external provider. (Requires administrator privileges).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#extern_provider DataGitlabUsers#extern_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#extern_provider DataGitlabUsers#extern_provider}
 
 ---
 
@@ -1489,22 +1501,21 @@ public java.lang.String getExternUid();
 
 Lookup users by external UID. (Requires administrator privileges).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#extern_uid DataGitlabUsers#extern_uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#extern_uid DataGitlabUsers#extern_uid}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsersConfig.property.id"></a>
+##### `humans`<sup>Optional</sup> <a name="humans" id="@cdktf/provider-gitlab.dataGitlabUsers.DataGitlabUsersConfig.property.humans"></a>
 
 ```java
-public java.lang.String getId();
+public java.lang.Object getHumans();
 ```
 
-- *Type:* java.lang.String
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#id DataGitlabUsers#id}.
+Filters only regular users that are not bot or internal users.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#humans DataGitlabUsers#humans}
 
 ---
 
@@ -1518,7 +1529,7 @@ public java.lang.String getOrderBy();
 
 Order the users' list by `id`, `name`, `username`, `created_at` or `updated_at`. (Requires administrator privileges).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#order_by DataGitlabUsers#order_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#order_by DataGitlabUsers#order_by}
 
 ---
 
@@ -1532,7 +1543,7 @@ public java.lang.String getSearch();
 
 Search users by username, name or email.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#search DataGitlabUsers#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#search DataGitlabUsers#search}
 
 ---
 
@@ -1546,7 +1557,7 @@ public java.lang.String getSort();
 
 Sort users' list in asc or desc order. (Requires administrator privileges).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#sort DataGitlabUsers#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#sort DataGitlabUsers#sort}
 
 ---
 
@@ -1560,7 +1571,7 @@ public java.lang.String getUsername();
 
 Get a single user with a specific username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#username DataGitlabUsers#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#username DataGitlabUsers#username}
 
 ---
 
@@ -1574,7 +1585,7 @@ public java.lang.Object getWithoutProjectBots();
 
 Filters user without project bots.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/users#without_project_bots DataGitlabUsers#without_project_bots}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/users#without_project_bots DataGitlabUsers#without_project_bots}
 
 ---
 

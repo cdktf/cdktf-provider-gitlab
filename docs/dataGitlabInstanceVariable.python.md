@@ -4,7 +4,7 @@
 
 ### DataGitlabInstanceVariable <a name="DataGitlabInstanceVariable" id="@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/instance_variable gitlab_instance_variable}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/instance_variable gitlab_instance_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabInstanceVariable.DataGitlabInstanceVariable.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/instance_variable#key DataGitlabInstanceVariable#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/instance_variable#key DataGitlabInstanceVariable#key}
 
 ---
 
@@ -465,7 +465,7 @@ The construct id used in the generated config for the DataGitlabInstanceVariable
 
 The id of the existing DataGitlabInstanceVariable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/instance_variable#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/instance_variable#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -851,7 +851,7 @@ key: str
 
 The name of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/instance_variable#key DataGitlabInstanceVariable#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/instance_variable#key DataGitlabInstanceVariable#key}
 
 ---
 

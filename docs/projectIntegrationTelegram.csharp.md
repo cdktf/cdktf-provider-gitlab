@@ -4,7 +4,7 @@
 
 ### ProjectIntegrationTelegram <a name="ProjectIntegrationTelegram" id="@cdktf/provider-gitlab.projectIntegrationTelegram.ProjectIntegrationTelegram"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_telegram gitlab_project_integration_telegram}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_telegram gitlab_project_integration_telegram}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectIntegrationTelegram.ProjectIntegrationTelegram.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the ProjectIntegrationTelegram
 
 The id of the existing ProjectIntegrationTelegram that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_telegram#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_telegram#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1135,7 +1135,7 @@ public object ConfidentialIssuesEvents { get; set; }
 
 Enable notifications for confidential issues events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_telegram#confidential_issues_events ProjectIntegrationTelegram#confidential_issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_telegram#confidential_issues_events ProjectIntegrationTelegram#confidential_issues_events}
 
 ---
 
@@ -1149,7 +1149,7 @@ public object ConfidentialNoteEvents { get; set; }
 
 Enable notifications for confidential note events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_telegram#confidential_note_events ProjectIntegrationTelegram#confidential_note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_telegram#confidential_note_events ProjectIntegrationTelegram#confidential_note_events}
 
 ---
 
@@ -1163,7 +1163,7 @@ public object IssuesEvents { get; set; }
 
 Enable notifications for issues events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_telegram#issues_events ProjectIntegrationTelegram#issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_telegram#issues_events ProjectIntegrationTelegram#issues_events}
 
 ---
 
@@ -1177,7 +1177,7 @@ public object MergeRequestsEvents { get; set; }
 
 Enable notifications for merge requests events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_telegram#merge_requests_events ProjectIntegrationTelegram#merge_requests_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_telegram#merge_requests_events ProjectIntegrationTelegram#merge_requests_events}
 
 ---
 
@@ -1191,7 +1191,7 @@ public object NoteEvents { get; set; }
 
 Enable notifications for note events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_telegram#note_events ProjectIntegrationTelegram#note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_telegram#note_events ProjectIntegrationTelegram#note_events}
 
 ---
 
@@ -1205,7 +1205,7 @@ public object PipelineEvents { get; set; }
 
 Enable notifications for pipeline events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_telegram#pipeline_events ProjectIntegrationTelegram#pipeline_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_telegram#pipeline_events ProjectIntegrationTelegram#pipeline_events}
 
 ---
 
@@ -1219,7 +1219,7 @@ public string Project { get; set; }
 
 The ID or full path of the project to integrate with Telegram.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_telegram#project ProjectIntegrationTelegram#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_telegram#project ProjectIntegrationTelegram#project}
 
 ---
 
@@ -1233,7 +1233,7 @@ public object PushEvents { get; set; }
 
 Enable notifications for push events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_telegram#push_events ProjectIntegrationTelegram#push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_telegram#push_events ProjectIntegrationTelegram#push_events}
 
 ---
 
@@ -1247,7 +1247,7 @@ public string Room { get; set; }
 
 Unique identifier for the target chat or the username of the target channel (in the format `@channelusername`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_telegram#room ProjectIntegrationTelegram#room}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_telegram#room ProjectIntegrationTelegram#room}
 
 ---
 
@@ -1261,7 +1261,7 @@ public object TagPushEvents { get; set; }
 
 Enable notifications for tag push events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_telegram#tag_push_events ProjectIntegrationTelegram#tag_push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_telegram#tag_push_events ProjectIntegrationTelegram#tag_push_events}
 
 ---
 
@@ -1275,7 +1275,7 @@ public string Token { get; set; }
 
 The Telegram bot token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_telegram#token ProjectIntegrationTelegram#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_telegram#token ProjectIntegrationTelegram#token}
 
 ---
 
@@ -1289,7 +1289,7 @@ public object WikiPageEvents { get; set; }
 
 Enable notifications for wiki page events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_telegram#wiki_page_events ProjectIntegrationTelegram#wiki_page_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_telegram#wiki_page_events ProjectIntegrationTelegram#wiki_page_events}
 
 ---
 
@@ -1303,7 +1303,7 @@ public string BranchesToBeNotified { get; set; }
 
 Branches to send notifications for. Valid options are `all`, `default`, `protected`, `default_and_protected`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_telegram#branches_to_be_notified ProjectIntegrationTelegram#branches_to_be_notified}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_telegram#branches_to_be_notified ProjectIntegrationTelegram#branches_to_be_notified}
 
 ---
 
@@ -1317,7 +1317,7 @@ public object NotifyOnlyBrokenPipelines { get; set; }
 
 Send notifications for broken pipelines.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/project_integration_telegram#notify_only_broken_pipelines ProjectIntegrationTelegram#notify_only_broken_pipelines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_telegram#notify_only_broken_pipelines ProjectIntegrationTelegram#notify_only_broken_pipelines}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### GlobalLevelNotifications <a name="GlobalLevelNotifications" id="@cdktf/provider-gitlab.globalLevelNotifications.GlobalLevelNotifications"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications gitlab_global_level_notifications}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications gitlab_global_level_notifications}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.globalLevelNotifications.GlobalLevelNotifications.Initializer"></a>
 
@@ -140,7 +140,7 @@ Must be unique amongst siblings in the same scope
 
 Enable notifications for closed issues. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#close_issue GlobalLevelNotifications#close_issue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#close_issue GlobalLevelNotifications#close_issue}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable notifications for closed merge requests. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#close_merge_request GlobalLevelNotifications#close_merge_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#close_merge_request GlobalLevelNotifications#close_merge_request}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable notifications for failed pipelines. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#failed_pipeline GlobalLevelNotifications#failed_pipeline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#failed_pipeline GlobalLevelNotifications#failed_pipeline}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable notifications for fixed pipelines. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#fixed_pipeline GlobalLevelNotifications#fixed_pipeline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#fixed_pipeline GlobalLevelNotifications#fixed_pipeline}
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable notifications for due issues. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#issue_due GlobalLevelNotifications#issue_due}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#issue_due GlobalLevelNotifications#issue_due}
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The level of the notification. Valid values are: `disabled`, `participating`, `watch`, `global`, `mention`, `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#level GlobalLevelNotifications#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#level GlobalLevelNotifications#level}
 
 ---
 
@@ -200,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable notifications for merged merge requests. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#merge_merge_request GlobalLevelNotifications#merge_merge_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#merge_merge_request GlobalLevelNotifications#merge_merge_request}
 
 ---
 
@@ -210,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable notifications for merged merge requests when the pipeline succeeds. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#merge_when_pipeline_succeeds GlobalLevelNotifications#merge_when_pipeline_succeeds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#merge_when_pipeline_succeeds GlobalLevelNotifications#merge_when_pipeline_succeeds}
 
 ---
 
@@ -220,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable notifications for moved projects. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#moved_project GlobalLevelNotifications#moved_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#moved_project GlobalLevelNotifications#moved_project}
 
 ---
 
@@ -230,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable notifications for new issues. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#new_issue GlobalLevelNotifications#new_issue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#new_issue GlobalLevelNotifications#new_issue}
 
 ---
 
@@ -240,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable notifications for new merge requests. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#new_merge_request GlobalLevelNotifications#new_merge_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#new_merge_request GlobalLevelNotifications#new_merge_request}
 
 ---
 
@@ -250,7 +250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable notifications for new notes on merge requests. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#new_note GlobalLevelNotifications#new_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#new_note GlobalLevelNotifications#new_note}
 
 ---
 
@@ -260,7 +260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable notifications for push to merge request branches. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#push_to_merge_request GlobalLevelNotifications#push_to_merge_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#push_to_merge_request GlobalLevelNotifications#push_to_merge_request}
 
 ---
 
@@ -270,7 +270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable notifications for issue reassignments. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#reassign_issue GlobalLevelNotifications#reassign_issue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#reassign_issue GlobalLevelNotifications#reassign_issue}
 
 ---
 
@@ -280,7 +280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable notifications for merge request reassignments. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#reassign_merge_request GlobalLevelNotifications#reassign_merge_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#reassign_merge_request GlobalLevelNotifications#reassign_merge_request}
 
 ---
 
@@ -290,7 +290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable notifications for reopened issues. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#reopen_issue GlobalLevelNotifications#reopen_issue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#reopen_issue GlobalLevelNotifications#reopen_issue}
 
 ---
 
@@ -300,7 +300,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable notifications for reopened merge requests. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#reopen_merge_request GlobalLevelNotifications#reopen_merge_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#reopen_merge_request GlobalLevelNotifications#reopen_merge_request}
 
 ---
 
@@ -310,7 +310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable notifications for successful pipelines. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#success_pipeline GlobalLevelNotifications#success_pipeline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#success_pipeline GlobalLevelNotifications#success_pipeline}
 
 ---
 
@@ -909,7 +909,7 @@ The construct id used in the generated config for the GlobalLevelNotifications t
 
 The id of the existing GlobalLevelNotifications that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1659,7 +1659,7 @@ close_issue: typing.Union[bool, IResolvable]
 
 Enable notifications for closed issues. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#close_issue GlobalLevelNotifications#close_issue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#close_issue GlobalLevelNotifications#close_issue}
 
 ---
 
@@ -1673,7 +1673,7 @@ close_merge_request: typing.Union[bool, IResolvable]
 
 Enable notifications for closed merge requests. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#close_merge_request GlobalLevelNotifications#close_merge_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#close_merge_request GlobalLevelNotifications#close_merge_request}
 
 ---
 
@@ -1687,7 +1687,7 @@ failed_pipeline: typing.Union[bool, IResolvable]
 
 Enable notifications for failed pipelines. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#failed_pipeline GlobalLevelNotifications#failed_pipeline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#failed_pipeline GlobalLevelNotifications#failed_pipeline}
 
 ---
 
@@ -1701,7 +1701,7 @@ fixed_pipeline: typing.Union[bool, IResolvable]
 
 Enable notifications for fixed pipelines. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#fixed_pipeline GlobalLevelNotifications#fixed_pipeline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#fixed_pipeline GlobalLevelNotifications#fixed_pipeline}
 
 ---
 
@@ -1715,7 +1715,7 @@ issue_due: typing.Union[bool, IResolvable]
 
 Enable notifications for due issues. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#issue_due GlobalLevelNotifications#issue_due}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#issue_due GlobalLevelNotifications#issue_due}
 
 ---
 
@@ -1729,7 +1729,7 @@ level: str
 
 The level of the notification. Valid values are: `disabled`, `participating`, `watch`, `global`, `mention`, `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#level GlobalLevelNotifications#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#level GlobalLevelNotifications#level}
 
 ---
 
@@ -1743,7 +1743,7 @@ merge_merge_request: typing.Union[bool, IResolvable]
 
 Enable notifications for merged merge requests. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#merge_merge_request GlobalLevelNotifications#merge_merge_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#merge_merge_request GlobalLevelNotifications#merge_merge_request}
 
 ---
 
@@ -1757,7 +1757,7 @@ merge_when_pipeline_succeeds: typing.Union[bool, IResolvable]
 
 Enable notifications for merged merge requests when the pipeline succeeds. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#merge_when_pipeline_succeeds GlobalLevelNotifications#merge_when_pipeline_succeeds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#merge_when_pipeline_succeeds GlobalLevelNotifications#merge_when_pipeline_succeeds}
 
 ---
 
@@ -1771,7 +1771,7 @@ moved_project: typing.Union[bool, IResolvable]
 
 Enable notifications for moved projects. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#moved_project GlobalLevelNotifications#moved_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#moved_project GlobalLevelNotifications#moved_project}
 
 ---
 
@@ -1785,7 +1785,7 @@ new_issue: typing.Union[bool, IResolvable]
 
 Enable notifications for new issues. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#new_issue GlobalLevelNotifications#new_issue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#new_issue GlobalLevelNotifications#new_issue}
 
 ---
 
@@ -1799,7 +1799,7 @@ new_merge_request: typing.Union[bool, IResolvable]
 
 Enable notifications for new merge requests. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#new_merge_request GlobalLevelNotifications#new_merge_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#new_merge_request GlobalLevelNotifications#new_merge_request}
 
 ---
 
@@ -1813,7 +1813,7 @@ new_note: typing.Union[bool, IResolvable]
 
 Enable notifications for new notes on merge requests. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#new_note GlobalLevelNotifications#new_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#new_note GlobalLevelNotifications#new_note}
 
 ---
 
@@ -1827,7 +1827,7 @@ push_to_merge_request: typing.Union[bool, IResolvable]
 
 Enable notifications for push to merge request branches. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#push_to_merge_request GlobalLevelNotifications#push_to_merge_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#push_to_merge_request GlobalLevelNotifications#push_to_merge_request}
 
 ---
 
@@ -1841,7 +1841,7 @@ reassign_issue: typing.Union[bool, IResolvable]
 
 Enable notifications for issue reassignments. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#reassign_issue GlobalLevelNotifications#reassign_issue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#reassign_issue GlobalLevelNotifications#reassign_issue}
 
 ---
 
@@ -1855,7 +1855,7 @@ reassign_merge_request: typing.Union[bool, IResolvable]
 
 Enable notifications for merge request reassignments. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#reassign_merge_request GlobalLevelNotifications#reassign_merge_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#reassign_merge_request GlobalLevelNotifications#reassign_merge_request}
 
 ---
 
@@ -1869,7 +1869,7 @@ reopen_issue: typing.Union[bool, IResolvable]
 
 Enable notifications for reopened issues. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#reopen_issue GlobalLevelNotifications#reopen_issue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#reopen_issue GlobalLevelNotifications#reopen_issue}
 
 ---
 
@@ -1883,7 +1883,7 @@ reopen_merge_request: typing.Union[bool, IResolvable]
 
 Enable notifications for reopened merge requests. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#reopen_merge_request GlobalLevelNotifications#reopen_merge_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#reopen_merge_request GlobalLevelNotifications#reopen_merge_request}
 
 ---
 
@@ -1897,7 +1897,7 @@ success_pipeline: typing.Union[bool, IResolvable]
 
 Enable notifications for successful pipelines. Can only be used when `level` is `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/global_level_notifications#success_pipeline GlobalLevelNotifications#success_pipeline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/global_level_notifications#success_pipeline GlobalLevelNotifications#success_pipeline}
 
 ---
 

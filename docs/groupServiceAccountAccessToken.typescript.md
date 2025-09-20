@@ -4,7 +4,7 @@
 
 ### GroupServiceAccountAccessToken <a name="GroupServiceAccountAccessToken" id="@cdktf/provider-gitlab.groupServiceAccountAccessToken.GroupServiceAccountAccessToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/group_service_account_access_token gitlab_group_service_account_access_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupServiceAccountAccessToken.GroupServiceAccountAccessToken.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the GroupServiceAccountAccessT
 
 The id of the existing GroupServiceAccountAccessToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/group_service_account_access_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/group_service_account_access_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -986,7 +986,7 @@ public readonly group: string;
 
 The ID or URL-encoded path of the group containing the service account. Must be a top level group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/group_service_account_access_token#group GroupServiceAccountAccessToken#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/group_service_account_access_token#group GroupServiceAccountAccessToken#group}
 
 ---
 
@@ -1000,7 +1000,7 @@ public readonly name: string;
 
 The name of the personal access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/group_service_account_access_token#name GroupServiceAccountAccessToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/group_service_account_access_token#name GroupServiceAccountAccessToken#name}
 
 ---
 
@@ -1016,7 +1016,7 @@ The scopes of the group service account access token.
 
 Valid values are: `api`, `read_user`, `read_api`, `read_repository`, `write_repository`, `read_registry`, `write_registry`, `read_virtual_registry`, `write_virtual_registry`, `sudo`, `admin_mode`, `create_runner`, `manage_runner`, `ai_features`, `k8s_proxy`, `self_rotate`, `read_service_ping`. If `self_rotate` is included, you must also provide either `expires_at` or `rotation_configuration`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/group_service_account_access_token#scopes GroupServiceAccountAccessToken#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/group_service_account_access_token#scopes GroupServiceAccountAccessToken#scopes}
 
 ---
 
@@ -1030,7 +1030,7 @@ public readonly userId: number;
 
 The ID of a service account user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/group_service_account_access_token#user_id GroupServiceAccountAccessToken#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/group_service_account_access_token#user_id GroupServiceAccountAccessToken#user_id}
 
 ---
 
@@ -1046,7 +1046,7 @@ The service account access token expiry date.
 
 When left blank, the token follows the standard rule of expiry for personal access tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/group_service_account_access_token#expires_at GroupServiceAccountAccessToken#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/group_service_account_access_token#expires_at GroupServiceAccountAccessToken#expires_at}
 
 ---
 
@@ -1060,7 +1060,7 @@ public readonly rotationConfiguration: GroupServiceAccountAccessTokenRotationCon
 
 The configuration for when to rotate a token automatically. Will not rotate a token until `terraform apply` is run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/group_service_account_access_token#rotation_configuration GroupServiceAccountAccessToken#rotation_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/group_service_account_access_token#rotation_configuration GroupServiceAccountAccessToken#rotation_configuration}
 
 ---
 
@@ -1095,7 +1095,7 @@ The duration (in days) before the expiration when the token should be rotated.
 
 As an example, if set to 7 days, the token will rotate 7 days before the expiration date, but only when `terraform apply` is run in that timeframe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/group_service_account_access_token#rotate_before_days GroupServiceAccountAccessToken#rotate_before_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/group_service_account_access_token#rotate_before_days GroupServiceAccountAccessToken#rotate_before_days}
 
 ---
 
@@ -1109,7 +1109,7 @@ public readonly expirationDays: number;
 
 The duration (in days) the new token should be valid for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/resources/group_service_account_access_token#expiration_days GroupServiceAccountAccessToken#expiration_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/group_service_account_access_token#expiration_days GroupServiceAccountAccessToken#expiration_days}
 
 ---
 

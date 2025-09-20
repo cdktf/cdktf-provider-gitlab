@@ -4,7 +4,7 @@
 
 ### DataGitlabUser <a name="DataGitlabUser" id="@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/user gitlab_user}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/user gitlab_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.Initializer"></a>
 
@@ -69,7 +69,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.resetEmail">ResetEmail</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.resetEmailExactMatch">ResetEmailExactMatch</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.resetNamespaceId">ResetNamespaceId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.resetUserId">ResetUserId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.resetUsername">ResetUsername</a></code> | *No description.* |
@@ -280,12 +279,6 @@ func ResetEmail()
 func ResetEmailExactMatch()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.resetId"></a>
-
-```go
-func ResetId()
-```
-
 ##### `ResetNamespaceId` <a name="ResetNamespaceId" id="@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.resetNamespaceId"></a>
 
 ```go
@@ -407,7 +400,7 @@ The construct id used in the generated config for the DataGitlabUser to import.
 
 The id of the existing DataGitlabUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -444,6 +437,7 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.property.currentSignInAt">CurrentSignInAt</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.property.external">External</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.property.externUid">ExternUid</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.property.isAdmin">IsAdmin</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.property.isBot">IsBot</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.property.lastSignInAt">LastSignInAt</a></code> | <code>*string</code> | *No description.* |
@@ -462,13 +456,11 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.property.websiteUrl">WebsiteUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.property.emailExactMatchInput">EmailExactMatchInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.property.emailInput">EmailInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.property.namespaceIdInput">NamespaceIdInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.property.userIdInput">UserIdInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.property.usernameInput">UsernameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.property.email">Email</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.property.emailExactMatch">EmailExactMatch</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.property.namespaceId">NamespaceId</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.property.userId">UserId</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.property.username">Username</a></code> | <code>*string</code> | *No description.* |
@@ -687,6 +679,16 @@ func ExternUid() *string
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `IsAdmin`<sup>Required</sup> <a name="IsAdmin" id="@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.property.isAdmin"></a>
 
 ```go
@@ -867,16 +869,6 @@ func EmailInput() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.property.idInput"></a>
-
-```go
-func IdInput() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `NamespaceIdInput`<sup>Optional</sup> <a name="NamespaceIdInput" id="@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.property.namespaceIdInput"></a>
 
 ```go
@@ -924,16 +916,6 @@ func EmailExactMatch() interface{}
 ```
 
 - *Type:* interface{}
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.property.id"></a>
-
-```go
-func Id() *string
-```
-
-- *Type:* *string
 
 ---
 
@@ -1004,7 +986,6 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabuser"
 	Provisioners: *[]interface{},
 	Email: *string,
 	EmailExactMatch: interface{},
-	Id: *string,
 	NamespaceId: *f64,
 	UserId: *f64,
 	Username: *string,
@@ -1024,7 +1005,6 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabuser"
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUserConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUserConfig.property.email">Email</a></code> | <code>*string</code> | The public email address of the user. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUserConfig.property.emailExactMatch">EmailExactMatch</a></code> | <code>interface{}</code> | (Experimental) If true, returns only an exact match. |
-| <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/user#id DataGitlabUser#id}. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUserConfig.property.namespaceId">NamespaceId</a></code> | <code>*f64</code> | The ID of the user's namespace. Requires admin token to access this field. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUserConfig.property.userId">UserId</a></code> | <code>*f64</code> | The ID of the user. |
 | <code><a href="#@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUserConfig.property.username">Username</a></code> | <code>*string</code> | The username of the user. |
@@ -1111,7 +1091,7 @@ Email *string
 
 The public email address of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/user#email DataGitlabUser#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/user#email DataGitlabUser#email}
 
 ---
 
@@ -1127,22 +1107,7 @@ EmailExactMatch interface{}
 
 Otherwise, fuzzy matching might return the closest result. If no exact match is available, the data source returns an error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/user#email_exact_match DataGitlabUser#email_exact_match}
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUserConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/user#id DataGitlabUser#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/user#email_exact_match DataGitlabUser#email_exact_match}
 
 ---
 
@@ -1156,7 +1121,7 @@ NamespaceId *f64
 
 The ID of the user's namespace. Requires admin token to access this field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/user#namespace_id DataGitlabUser#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/user#namespace_id DataGitlabUser#namespace_id}
 
 ---
 
@@ -1170,7 +1135,7 @@ UserId *f64
 
 The ID of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/user#user_id DataGitlabUser#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/user#user_id DataGitlabUser#user_id}
 
 ---
 
@@ -1184,7 +1149,7 @@ Username *string
 
 The username of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.3.0/docs/data-sources/user#username DataGitlabUser#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/data-sources/user#username DataGitlabUser#username}
 
 ---
 
