@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/integration_redmine
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/integration_redmine
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,37 @@ export interface IntegrationRedmineConfig extends cdktf.TerraformMetaArguments {
   /**
   * The URL to the Redmine project issue to link to this GitLab project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/integration_redmine#issues_url IntegrationRedmine#issues_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/integration_redmine#issues_url IntegrationRedmine#issues_url}
   */
   readonly issuesUrl: string;
   /**
   * The URL to use to create a new issue in the Redmine project linked to this GitLab project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/integration_redmine#new_issue_url IntegrationRedmine#new_issue_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/integration_redmine#new_issue_url IntegrationRedmine#new_issue_url}
   */
   readonly newIssueUrl: string;
   /**
   * ID of the project you want to activate integration on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/integration_redmine#project IntegrationRedmine#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/integration_redmine#project IntegrationRedmine#project}
   */
   readonly project: string;
   /**
   * The URL to the Redmine project to link to this GitLab project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/integration_redmine#project_url IntegrationRedmine#project_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/integration_redmine#project_url IntegrationRedmine#project_url}
   */
   readonly projectUrl: string;
   /**
   * Indicates whether or not to inherit default settings. Defaults to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/integration_redmine#use_inherited_settings IntegrationRedmine#use_inherited_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/integration_redmine#use_inherited_settings IntegrationRedmine#use_inherited_settings}
   */
   readonly useInheritedSettings?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/integration_redmine gitlab_integration_redmine}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/integration_redmine gitlab_integration_redmine}
 */
 export class IntegrationRedmine extends cdktf.TerraformResource {
 
@@ -61,7 +61,7 @@ export class IntegrationRedmine extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IntegrationRedmine resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationRedmine to import
-  * @param importFromId The id of the existing IntegrationRedmine that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/integration_redmine#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IntegrationRedmine that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/integration_redmine#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationRedmine to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -73,7 +73,7 @@ export class IntegrationRedmine extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/integration_redmine gitlab_integration_redmine} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/integration_redmine gitlab_integration_redmine} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class IntegrationRedmine extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_integration_redmine',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.4.0',
+        providerVersion: '18.4.1',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

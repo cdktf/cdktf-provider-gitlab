@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/instance_cluster
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface InstanceClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * The base domain of the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/instance_cluster#domain InstanceCluster#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#domain InstanceCluster#domain}
   */
   readonly domain?: string;
   /**
   * Determines if cluster is active or not. Defaults to `true`. This attribute cannot be read.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/instance_cluster#enabled InstanceCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#enabled InstanceCluster#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * The associated environment to the cluster. Defaults to `*`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/instance_cluster#environment_scope InstanceCluster#environment_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#environment_scope InstanceCluster#environment_scope}
   */
   readonly environmentScope?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/instance_cluster#id InstanceCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#id InstanceCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,55 +40,55 @@ export interface InstanceClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * The URL to access the Kubernetes API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/instance_cluster#kubernetes_api_url InstanceCluster#kubernetes_api_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#kubernetes_api_url InstanceCluster#kubernetes_api_url}
   */
   readonly kubernetesApiUrl: string;
   /**
   * The cluster authorization type. Valid values are `rbac`, `abac`, `unknown_authorization`. Defaults to `rbac`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/instance_cluster#kubernetes_authorization_type InstanceCluster#kubernetes_authorization_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#kubernetes_authorization_type InstanceCluster#kubernetes_authorization_type}
   */
   readonly kubernetesAuthorizationType?: string;
   /**
   * TLS certificate (needed if API is using a self-signed TLS certificate).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/instance_cluster#kubernetes_ca_cert InstanceCluster#kubernetes_ca_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#kubernetes_ca_cert InstanceCluster#kubernetes_ca_cert}
   */
   readonly kubernetesCaCert?: string;
   /**
   * The unique namespace related to the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/instance_cluster#kubernetes_namespace InstanceCluster#kubernetes_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#kubernetes_namespace InstanceCluster#kubernetes_namespace}
   */
   readonly kubernetesNamespace?: string;
   /**
   * The token to authenticate against Kubernetes. This attribute cannot be read.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/instance_cluster#kubernetes_token InstanceCluster#kubernetes_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#kubernetes_token InstanceCluster#kubernetes_token}
   */
   readonly kubernetesToken: string;
   /**
   * Determines if cluster is managed by gitlab or not. Defaults to `true`. This attribute cannot be read.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/instance_cluster#managed InstanceCluster#managed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#managed InstanceCluster#managed}
   */
   readonly managed?: boolean | cdktf.IResolvable;
   /**
   * The ID of the management project for the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/instance_cluster#management_project_id InstanceCluster#management_project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#management_project_id InstanceCluster#management_project_id}
   */
   readonly managementProjectId?: string;
   /**
   * The name of cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/instance_cluster#name InstanceCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#name InstanceCluster#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/instance_cluster gitlab_instance_cluster}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster gitlab_instance_cluster}
 */
 export class InstanceCluster extends cdktf.TerraformResource {
 
@@ -104,7 +104,7 @@ export class InstanceCluster extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a InstanceCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the InstanceCluster to import
-  * @param importFromId The id of the existing InstanceCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/instance_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing InstanceCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the InstanceCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -116,7 +116,7 @@ export class InstanceCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/instance_cluster gitlab_instance_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster gitlab_instance_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -127,7 +127,7 @@ export class InstanceCluster extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_instance_cluster',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.4.0',
+        providerVersion: '18.4.1',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

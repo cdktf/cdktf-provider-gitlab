@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_merge_request_note
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_merge_request_note
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,43 +15,43 @@ export interface ProjectMergeRequestNoteConfig extends cdktf.TerraformMetaArgume
   /**
   * The body of the merge request note.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_merge_request_note#body ProjectMergeRequestNote#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_merge_request_note#body ProjectMergeRequestNote#body}
   */
   readonly body: string;
   /**
   * The creation date of the merge request note. Using this field requires the token used with the provider to either be an Admin, or hava a Project or Group Owner role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_merge_request_note#created_at ProjectMergeRequestNote#created_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_merge_request_note#created_at ProjectMergeRequestNote#created_at}
   */
   readonly createdAt?: string;
   /**
   * Indicates if the merge request note is internal.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_merge_request_note#internal ProjectMergeRequestNote#internal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_merge_request_note#internal ProjectMergeRequestNote#internal}
   */
   readonly internal?: boolean | cdktf.IResolvable;
   /**
   * The diff head SHA of the merge request when the note was created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_merge_request_note#merge_request_diff_head_sha ProjectMergeRequestNote#merge_request_diff_head_sha}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_merge_request_note#merge_request_diff_head_sha ProjectMergeRequestNote#merge_request_diff_head_sha}
   */
   readonly mergeRequestDiffHeadSha?: string;
   /**
   * The IID of the merge request to add the note to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_merge_request_note#merge_request_iid ProjectMergeRequestNote#merge_request_iid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_merge_request_note#merge_request_iid ProjectMergeRequestNote#merge_request_iid}
   */
   readonly mergeRequestIid: number;
   /**
   * The ID or path of the project to add the note to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_merge_request_note#project ProjectMergeRequestNote#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_merge_request_note#project ProjectMergeRequestNote#project}
   */
   readonly project: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_merge_request_note gitlab_project_merge_request_note}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_merge_request_note gitlab_project_merge_request_note}
 */
 export class ProjectMergeRequestNote extends cdktf.TerraformResource {
 
@@ -67,7 +67,7 @@ export class ProjectMergeRequestNote extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ProjectMergeRequestNote resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProjectMergeRequestNote to import
-  * @param importFromId The id of the existing ProjectMergeRequestNote that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_merge_request_note#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ProjectMergeRequestNote that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_merge_request_note#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProjectMergeRequestNote to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -79,7 +79,7 @@ export class ProjectMergeRequestNote extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_merge_request_note gitlab_project_merge_request_note} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_merge_request_note gitlab_project_merge_request_note} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class ProjectMergeRequestNote extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_merge_request_note',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.4.0',
+        providerVersion: '18.4.1',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_github
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_github
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface ProjectIntegrationGithubConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_github#id ProjectIntegrationGithub#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_github#id ProjectIntegrationGithub#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,31 +22,31 @@ export interface ProjectIntegrationGithubConfig extends cdktf.TerraformMetaArgum
   /**
   * ID of the project you want to activate the integration on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_github#project ProjectIntegrationGithub#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_github#project ProjectIntegrationGithub#project}
   */
   readonly project: string;
   /**
   * The URL of the GitHub repo to integrate with. For example, https://github.com/gitlabhq/terraform-provider-gitlab.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_github#repository_url ProjectIntegrationGithub#repository_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_github#repository_url ProjectIntegrationGithub#repository_url}
   */
   readonly repositoryUrl: string;
   /**
   * Append the instance name instead of the branch to the status. Must enable to set a GitLab status check as _required_ in GitHub. See [Static / dynamic status check names] to learn more.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_github#static_context ProjectIntegrationGithub#static_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_github#static_context ProjectIntegrationGithub#static_context}
   */
   readonly staticContext?: boolean | cdktf.IResolvable;
   /**
   * A GitHub personal access token with at least the `repo:status` scope.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_github#token ProjectIntegrationGithub#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_github#token ProjectIntegrationGithub#token}
   */
   readonly token: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_github gitlab_project_integration_github}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_github gitlab_project_integration_github}
 */
 export class ProjectIntegrationGithub extends cdktf.TerraformResource {
 
@@ -62,7 +62,7 @@ export class ProjectIntegrationGithub extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ProjectIntegrationGithub resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProjectIntegrationGithub to import
-  * @param importFromId The id of the existing ProjectIntegrationGithub that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_github#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ProjectIntegrationGithub that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_github#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProjectIntegrationGithub to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +74,7 @@ export class ProjectIntegrationGithub extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_integration_github gitlab_project_integration_github} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_github gitlab_project_integration_github} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class ProjectIntegrationGithub extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_integration_github',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.4.0',
+        providerVersion: '18.4.1',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

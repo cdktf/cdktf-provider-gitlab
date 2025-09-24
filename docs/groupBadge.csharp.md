@@ -4,7 +4,7 @@
 
 ### GroupBadge <a name="GroupBadge" id="@cdktf/provider-gitlab.groupBadge.GroupBadge"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/group_badge gitlab_group_badge}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_badge gitlab_group_badge}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupBadge.GroupBadge.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the GroupBadge to import.
 
 The id of the existing GroupBadge that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/group_badge#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_badge#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -910,7 +910,7 @@ public string Group { get; set; }
 
 The ID or URL-encoded path of the group to add the badge to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/group_badge#group GroupBadge#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_badge#group GroupBadge#group}
 
 ---
 
@@ -924,7 +924,7 @@ public string ImageUrl { get; set; }
 
 The image url which will be presented on group overview.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/group_badge#image_url GroupBadge#image_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_badge#image_url GroupBadge#image_url}
 
 ---
 
@@ -938,7 +938,7 @@ public string LinkUrl { get; set; }
 
 The url linked with the badge.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/group_badge#link_url GroupBadge#link_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_badge#link_url GroupBadge#link_url}
 
 ---
 
@@ -952,7 +952,7 @@ public string Name { get; set; }
 
 The name of the badge.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/group_badge#name GroupBadge#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_badge#name GroupBadge#name}
 
 ---
 
