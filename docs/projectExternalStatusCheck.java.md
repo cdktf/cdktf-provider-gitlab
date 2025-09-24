@@ -4,7 +4,7 @@
 
 ### ProjectExternalStatusCheck <a name="ProjectExternalStatusCheck" id="@cdktf/provider-gitlab.projectExternalStatusCheck.ProjectExternalStatusCheck"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_external_status_check gitlab_project_external_status_check}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_external_status_check gitlab_project_external_status_check}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectExternalStatusCheck.ProjectExternalStatusCheck.Initializer"></a>
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The URL of the external status check service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_external_status_check#external_url ProjectExternalStatusCheck#external_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_external_status_check#external_url ProjectExternalStatusCheck#external_url}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The display name of the external status check service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_external_status_check#name ProjectExternalStatusCheck#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_external_status_check#name ProjectExternalStatusCheck#name}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The ID of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_external_status_check#project_id ProjectExternalStatusCheck#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_external_status_check#project_id ProjectExternalStatusCheck#project_id}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The list of IDs of protected branches to scope the rule by.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_external_status_check#protected_branch_ids ProjectExternalStatusCheck#protected_branch_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_external_status_check#protected_branch_ids ProjectExternalStatusCheck#protected_branch_ids}
 
 ---
 
@@ -158,7 +158,7 @@ The HMAC secret for the external status check.
 
 If this is set, then removed from the config, the value will get set to empty in the state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_external_status_check#shared_secret ProjectExternalStatusCheck#shared_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_external_status_check#shared_secret ProjectExternalStatusCheck#shared_secret}
 
 ---
 
@@ -599,7 +599,7 @@ The construct id used in the generated config for the ProjectExternalStatusCheck
 
 The id of the existing ProjectExternalStatusCheck that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_external_status_check#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_external_status_check#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1052,7 +1052,7 @@ public java.lang.String getExternalUrl();
 
 The URL of the external status check service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_external_status_check#external_url ProjectExternalStatusCheck#external_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_external_status_check#external_url ProjectExternalStatusCheck#external_url}
 
 ---
 
@@ -1066,7 +1066,7 @@ public java.lang.String getName();
 
 The display name of the external status check service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_external_status_check#name ProjectExternalStatusCheck#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_external_status_check#name ProjectExternalStatusCheck#name}
 
 ---
 
@@ -1080,7 +1080,7 @@ public java.lang.Number getProjectId();
 
 The ID of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_external_status_check#project_id ProjectExternalStatusCheck#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_external_status_check#project_id ProjectExternalStatusCheck#project_id}
 
 ---
 
@@ -1094,7 +1094,7 @@ public java.util.List<java.lang.Number> getProtectedBranchIds();
 
 The list of IDs of protected branches to scope the rule by.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_external_status_check#protected_branch_ids ProjectExternalStatusCheck#protected_branch_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_external_status_check#protected_branch_ids ProjectExternalStatusCheck#protected_branch_ids}
 
 ---
 
@@ -1110,7 +1110,7 @@ The HMAC secret for the external status check.
 
 If this is set, then removed from the config, the value will get set to empty in the state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_external_status_check#shared_secret ProjectExternalStatusCheck#shared_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_external_status_check#shared_secret ProjectExternalStatusCheck#shared_secret}
 
 ---
 
