@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_freeze_period
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_freeze_period
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface ProjectFreezePeriodConfig extends cdktf.TerraformMetaArguments 
   /**
   * The timezone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_freeze_period#cron_timezone ProjectFreezePeriod#cron_timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_freeze_period#cron_timezone ProjectFreezePeriod#cron_timezone}
   */
   readonly cronTimezone?: string;
   /**
   * End of the Freeze Period in cron format (for example, `0 2 * * *`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_freeze_period#freeze_end ProjectFreezePeriod#freeze_end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_freeze_period#freeze_end ProjectFreezePeriod#freeze_end}
   */
   readonly freezeEnd: string;
   /**
   * Start of the Freeze Period in cron format (for example, `0 1 * * *`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_freeze_period#freeze_start ProjectFreezePeriod#freeze_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_freeze_period#freeze_start ProjectFreezePeriod#freeze_start}
   */
   readonly freezeStart: string;
   /**
   * The ID or path of the project to add the freeze period to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_freeze_period#project ProjectFreezePeriod#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_freeze_period#project ProjectFreezePeriod#project}
   */
   readonly project: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_freeze_period gitlab_project_freeze_period}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_freeze_period gitlab_project_freeze_period}
 */
 export class ProjectFreezePeriod extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class ProjectFreezePeriod extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ProjectFreezePeriod resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProjectFreezePeriod to import
-  * @param importFromId The id of the existing ProjectFreezePeriod that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_freeze_period#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ProjectFreezePeriod that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_freeze_period#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProjectFreezePeriod to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +67,7 @@ export class ProjectFreezePeriod extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.0/docs/resources/project_freeze_period gitlab_project_freeze_period} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_freeze_period gitlab_project_freeze_period} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class ProjectFreezePeriod extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_freeze_period',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.4.0',
+        providerVersion: '18.4.1',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,
