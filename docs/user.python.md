@@ -14,27 +14,27 @@ from cdktf_cdktf_provider_gitlab import user
 user.User(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   email: str,
   name: str,
   username: str,
-  can_create_group: typing.Union[bool, IResolvable] = None,
-  force_random_password: typing.Union[bool, IResolvable] = None,
+  can_create_group: bool | IResolvable = None,
+  force_random_password: bool | IResolvable = None,
   id: str = None,
-  is_admin: typing.Union[bool, IResolvable] = None,
-  is_external: typing.Union[bool, IResolvable] = None,
+  is_admin: bool | IResolvable = None,
+  is_external: bool | IResolvable = None,
   namespace_id: typing.Union[int, float] = None,
   note: str = None,
   password: str = None,
   projects_limit: typing.Union[int, float] = None,
-  reset_password: typing.Union[bool, IResolvable] = None,
-  skip_confirmation: typing.Union[bool, IResolvable] = None,
+  reset_password: bool | IResolvable = None,
+  skip_confirmation: bool | IResolvable = None,
   state: str = None
 )
 ```
@@ -43,27 +43,27 @@ user.User(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.email">email</a></code> | <code>str</code> | The e-mail address of the user. |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the user. |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.username">username</a></code> | <code>str</code> | The username of the user. |
-| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.canCreateGroup">can_create_group</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean, defaults to false. Whether to allow the user to create groups. |
-| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.forceRandomPassword">force_random_password</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set user password to a random value. |
+| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.canCreateGroup">can_create_group</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean, defaults to false. Whether to allow the user to create groups. |
+| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.forceRandomPassword">force_random_password</a></code> | <code>bool \| cdktf.IResolvable</code> | Set user password to a random value. |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/user#id User#id}. |
-| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.isAdmin">is_admin</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean, defaults to false.  Whether to enable administrative privileges. |
-| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.isExternal">is_external</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean, defaults to false. |
+| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.isAdmin">is_admin</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean, defaults to false.  Whether to enable administrative privileges. |
+| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.isExternal">is_external</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean, defaults to false. |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.namespaceId">namespace_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the user's namespace. |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.note">note</a></code> | <code>str</code> | The note associated to the user. |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.password">password</a></code> | <code>str</code> | The password of the user. |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.projectsLimit">projects_limit</a></code> | <code>typing.Union[int, float]</code> | Integer, defaults to 0.  Number of projects user can create. |
-| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.resetPassword">reset_password</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean, defaults to false. Send user password reset link. |
-| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.skipConfirmation">skip_confirmation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean, defaults to true. Whether to skip confirmation. |
+| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.resetPassword">reset_password</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean, defaults to false. Send user password reset link. |
+| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.skipConfirmation">skip_confirmation</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean, defaults to true. Whether to skip confirmation. |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.state">state</a></code> | <code>str</code> | String, defaults to 'active'. The state of the user account. Valid values are `active`, `deactivated`, `blocked`. |
 
 ---
@@ -88,13 +88,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.user.User.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.user.User.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.user.User.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `can_create_group`<sup>Optional</sup> <a name="can_create_group" id="@cdktf/provider-gitlab.user.User.Initializer.parameter.canCreateGroup"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean, defaults to false. Whether to allow the user to create groups.
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `force_random_password`<sup>Optional</sup> <a name="force_random_password" id="@cdktf/provider-gitlab.user.User.Initializer.parameter.forceRandomPassword"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set user password to a random value.
 
@@ -191,7 +191,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `is_admin`<sup>Optional</sup> <a name="is_admin" id="@cdktf/provider-gitlab.user.User.Initializer.parameter.isAdmin"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean, defaults to false.  Whether to enable administrative privileges.
 
@@ -201,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `is_external`<sup>Optional</sup> <a name="is_external" id="@cdktf/provider-gitlab.user.User.Initializer.parameter.isExternal"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean, defaults to false.
 
@@ -253,7 +253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `reset_password`<sup>Optional</sup> <a name="reset_password" id="@cdktf/provider-gitlab.user.User.Initializer.parameter.resetPassword"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean, defaults to false. Send user password reset link.
 
@@ -263,7 +263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `skip_confirmation`<sup>Optional</sup> <a name="skip_confirmation" id="@cdktf/provider-gitlab.user.User.Initializer.parameter.skipConfirmation"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean, defaults to true. Whether to skip confirmation.
 
@@ -545,7 +545,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-gitlab.user.User.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-gitlab.user.User.importFrom"></a>
@@ -608,7 +608,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -624,7 +624,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-gitlab.user.User.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -857,41 +857,41 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.canCreateGroupInput">can_create_group_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.canCreateGroupInput">can_create_group_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.emailInput">email_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.forceRandomPasswordInput">force_random_password_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.forceRandomPasswordInput">force_random_password_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.isAdminInput">is_admin_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.isExternalInput">is_external_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.isAdminInput">is_admin_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.isExternalInput">is_external_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.namespaceIdInput">namespace_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.noteInput">note_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.passwordInput">password_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.projectsLimitInput">projects_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.resetPasswordInput">reset_password_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.skipConfirmationInput">skip_confirmation_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.resetPasswordInput">reset_password_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.skipConfirmationInput">skip_confirmation_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.stateInput">state_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.usernameInput">username_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.canCreateGroup">can_create_group</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.canCreateGroup">can_create_group</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.email">email</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.forceRandomPassword">force_random_password</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.forceRandomPassword">force_random_password</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.isAdmin">is_admin</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.isExternal">is_external</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.isAdmin">is_admin</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.isExternal">is_external</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.namespaceId">namespace_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.note">note</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.password">password</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.projectsLimit">projects_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.resetPassword">reset_password</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.skipConfirmation">skip_confirmation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.resetPassword">reset_password</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.skipConfirmation">skip_confirmation</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.state">state</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.username">username</a></code> | <code>str</code> | *No description.* |
 
@@ -972,20 +972,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.user.User.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.user.User.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1032,20 +1032,20 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.user.User.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
 ##### `can_create_group_input`<sup>Optional</sup> <a name="can_create_group_input" id="@cdktf/provider-gitlab.user.User.property.canCreateGroupInput"></a>
 
 ```python
-can_create_group_input: typing.Union[bool, IResolvable]
+can_create_group_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1062,10 +1062,10 @@ email_input: str
 ##### `force_random_password_input`<sup>Optional</sup> <a name="force_random_password_input" id="@cdktf/provider-gitlab.user.User.property.forceRandomPasswordInput"></a>
 
 ```python
-force_random_password_input: typing.Union[bool, IResolvable]
+force_random_password_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1082,20 +1082,20 @@ id_input: str
 ##### `is_admin_input`<sup>Optional</sup> <a name="is_admin_input" id="@cdktf/provider-gitlab.user.User.property.isAdminInput"></a>
 
 ```python
-is_admin_input: typing.Union[bool, IResolvable]
+is_admin_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `is_external_input`<sup>Optional</sup> <a name="is_external_input" id="@cdktf/provider-gitlab.user.User.property.isExternalInput"></a>
 
 ```python
-is_external_input: typing.Union[bool, IResolvable]
+is_external_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1152,20 +1152,20 @@ projects_limit_input: typing.Union[int, float]
 ##### `reset_password_input`<sup>Optional</sup> <a name="reset_password_input" id="@cdktf/provider-gitlab.user.User.property.resetPasswordInput"></a>
 
 ```python
-reset_password_input: typing.Union[bool, IResolvable]
+reset_password_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `skip_confirmation_input`<sup>Optional</sup> <a name="skip_confirmation_input" id="@cdktf/provider-gitlab.user.User.property.skipConfirmationInput"></a>
 
 ```python
-skip_confirmation_input: typing.Union[bool, IResolvable]
+skip_confirmation_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1192,10 +1192,10 @@ username_input: str
 ##### `can_create_group`<sup>Required</sup> <a name="can_create_group" id="@cdktf/provider-gitlab.user.User.property.canCreateGroup"></a>
 
 ```python
-can_create_group: typing.Union[bool, IResolvable]
+can_create_group: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1212,10 +1212,10 @@ email: str
 ##### `force_random_password`<sup>Required</sup> <a name="force_random_password" id="@cdktf/provider-gitlab.user.User.property.forceRandomPassword"></a>
 
 ```python
-force_random_password: typing.Union[bool, IResolvable]
+force_random_password: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1232,20 +1232,20 @@ id: str
 ##### `is_admin`<sup>Required</sup> <a name="is_admin" id="@cdktf/provider-gitlab.user.User.property.isAdmin"></a>
 
 ```python
-is_admin: typing.Union[bool, IResolvable]
+is_admin: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `is_external`<sup>Required</sup> <a name="is_external" id="@cdktf/provider-gitlab.user.User.property.isExternal"></a>
 
 ```python
-is_external: typing.Union[bool, IResolvable]
+is_external: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1302,20 +1302,20 @@ projects_limit: typing.Union[int, float]
 ##### `reset_password`<sup>Required</sup> <a name="reset_password" id="@cdktf/provider-gitlab.user.User.property.resetPassword"></a>
 
 ```python
-reset_password: typing.Union[bool, IResolvable]
+reset_password: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `skip_confirmation`<sup>Required</sup> <a name="skip_confirmation" id="@cdktf/provider-gitlab.user.User.property.skipConfirmation"></a>
 
 ```python
-skip_confirmation: typing.Union[bool, IResolvable]
+skip_confirmation: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1367,27 +1367,27 @@ tfResourceType: str
 from cdktf_cdktf_provider_gitlab import user
 
 user.UserConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   email: str,
   name: str,
   username: str,
-  can_create_group: typing.Union[bool, IResolvable] = None,
-  force_random_password: typing.Union[bool, IResolvable] = None,
+  can_create_group: bool | IResolvable = None,
+  force_random_password: bool | IResolvable = None,
   id: str = None,
-  is_admin: typing.Union[bool, IResolvable] = None,
-  is_external: typing.Union[bool, IResolvable] = None,
+  is_admin: bool | IResolvable = None,
+  is_external: bool | IResolvable = None,
   namespace_id: typing.Union[int, float] = None,
   note: str = None,
   password: str = None,
   projects_limit: typing.Union[int, float] = None,
-  reset_password: typing.Union[bool, IResolvable] = None,
-  skip_confirmation: typing.Union[bool, IResolvable] = None,
+  reset_password: bool | IResolvable = None,
+  skip_confirmation: bool | IResolvable = None,
   state: str = None
 )
 ```
@@ -1396,27 +1396,27 @@ user.UserConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.email">email</a></code> | <code>str</code> | The e-mail address of the user. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.name">name</a></code> | <code>str</code> | The name of the user. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.username">username</a></code> | <code>str</code> | The username of the user. |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.canCreateGroup">can_create_group</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean, defaults to false. Whether to allow the user to create groups. |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.forceRandomPassword">force_random_password</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set user password to a random value. |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.canCreateGroup">can_create_group</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean, defaults to false. Whether to allow the user to create groups. |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.forceRandomPassword">force_random_password</a></code> | <code>bool \| cdktf.IResolvable</code> | Set user password to a random value. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/user#id User#id}. |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.isAdmin">is_admin</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean, defaults to false.  Whether to enable administrative privileges. |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.isExternal">is_external</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean, defaults to false. |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.isAdmin">is_admin</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean, defaults to false.  Whether to enable administrative privileges. |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.isExternal">is_external</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean, defaults to false. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.namespaceId">namespace_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the user's namespace. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.note">note</a></code> | <code>str</code> | The note associated to the user. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.password">password</a></code> | <code>str</code> | The password of the user. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.projectsLimit">projects_limit</a></code> | <code>typing.Union[int, float]</code> | Integer, defaults to 0.  Number of projects user can create. |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.resetPassword">reset_password</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean, defaults to false. Send user password reset link. |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.skipConfirmation">skip_confirmation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean, defaults to true. Whether to skip confirmation. |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.resetPassword">reset_password</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean, defaults to false. Send user password reset link. |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.skipConfirmation">skip_confirmation</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean, defaults to true. Whether to skip confirmation. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.state">state</a></code> | <code>str</code> | String, defaults to 'active'. The state of the user account. Valid values are `active`, `deactivated`, `blocked`. |
 
 ---
@@ -1424,20 +1424,20 @@ user.UserConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.user.UserConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.user.UserConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1484,10 +1484,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.user.UserConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1536,10 +1536,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `can_create_group`<sup>Optional</sup> <a name="can_create_group" id="@cdktf/provider-gitlab.user.UserConfig.property.canCreateGroup"></a>
 
 ```python
-can_create_group: typing.Union[bool, IResolvable]
+can_create_group: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean, defaults to false. Whether to allow the user to create groups.
 
@@ -1550,10 +1550,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `force_random_password`<sup>Optional</sup> <a name="force_random_password" id="@cdktf/provider-gitlab.user.UserConfig.property.forceRandomPassword"></a>
 
 ```python
-force_random_password: typing.Union[bool, IResolvable]
+force_random_password: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set user password to a random value.
 
@@ -1579,10 +1579,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `is_admin`<sup>Optional</sup> <a name="is_admin" id="@cdktf/provider-gitlab.user.UserConfig.property.isAdmin"></a>
 
 ```python
-is_admin: typing.Union[bool, IResolvable]
+is_admin: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean, defaults to false.  Whether to enable administrative privileges.
 
@@ -1593,10 +1593,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `is_external`<sup>Optional</sup> <a name="is_external" id="@cdktf/provider-gitlab.user.UserConfig.property.isExternal"></a>
 
 ```python
-is_external: typing.Union[bool, IResolvable]
+is_external: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean, defaults to false.
 
@@ -1665,10 +1665,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `reset_password`<sup>Optional</sup> <a name="reset_password" id="@cdktf/provider-gitlab.user.UserConfig.property.resetPassword"></a>
 
 ```python
-reset_password: typing.Union[bool, IResolvable]
+reset_password: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean, defaults to false. Send user password reset link.
 
@@ -1679,10 +1679,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `skip_confirmation`<sup>Optional</sup> <a name="skip_confirmation" id="@cdktf/provider-gitlab.user.UserConfig.property.skipConfirmation"></a>
 
 ```python
-skip_confirmation: typing.Union[bool, IResolvable]
+skip_confirmation: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean, defaults to true. Whether to skip confirmation.
 

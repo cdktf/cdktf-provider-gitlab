@@ -14,40 +14,40 @@ from cdktf_cdktf_provider_gitlab import group
 group.Group(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   path: str,
   allowed_email_domains_list: typing.List[str] = None,
-  auto_devops_enabled: typing.Union[bool, IResolvable] = None,
+  auto_devops_enabled: bool | IResolvable = None,
   avatar: str = None,
   avatar_hash: str = None,
   default_branch: str = None,
   default_branch_protection: typing.Union[int, float] = None,
   default_branch_protection_defaults: GroupDefaultBranchProtectionDefaults = None,
   description: str = None,
-  emails_enabled: typing.Union[bool, IResolvable] = None,
+  emails_enabled: bool | IResolvable = None,
   extra_shared_runners_minutes_limit: typing.Union[int, float] = None,
   id: str = None,
   ip_restriction_ranges: typing.List[str] = None,
-  lfs_enabled: typing.Union[bool, IResolvable] = None,
-  membership_lock: typing.Union[bool, IResolvable] = None,
-  mentions_disabled: typing.Union[bool, IResolvable] = None,
+  lfs_enabled: bool | IResolvable = None,
+  membership_lock: bool | IResolvable = None,
+  mentions_disabled: bool | IResolvable = None,
   parent_id: typing.Union[int, float] = None,
-  permanently_remove_on_delete: typing.Union[bool, IResolvable] = None,
-  prevent_forking_outside_group: typing.Union[bool, IResolvable] = None,
+  permanently_remove_on_delete: bool | IResolvable = None,
+  prevent_forking_outside_group: bool | IResolvable = None,
   project_creation_level: str = None,
   push_rules: GroupPushRules = None,
-  request_access_enabled: typing.Union[bool, IResolvable] = None,
-  require_two_factor_authentication: typing.Union[bool, IResolvable] = None,
+  request_access_enabled: bool | IResolvable = None,
+  require_two_factor_authentication: bool | IResolvable = None,
   shared_runners_minutes_limit: typing.Union[int, float] = None,
   shared_runners_setting: str = None,
-  share_with_group_lock: typing.Union[bool, IResolvable] = None,
+  share_with_group_lock: bool | IResolvable = None,
   subgroup_creation_level: str = None,
   two_factor_grace_period: typing.Union[int, float] = None,
   visibility_level: str = None,
@@ -59,40 +59,40 @@ group.Group(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the group. |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.path">path</a></code> | <code>str</code> | The path of the group. |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.allowedEmailDomainsList">allowed_email_domains_list</a></code> | <code>typing.List[str]</code> | A list of email address domains to allow group access. Will be concatenated together into a comma separated string. |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.autoDevopsEnabled">auto_devops_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Default to Auto DevOps pipeline for all projects within this group. |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.autoDevopsEnabled">auto_devops_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Default to Auto DevOps pipeline for all projects within this group. |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.avatar">avatar</a></code> | <code>str</code> | A local path to the avatar image to upload. **Note**: not available for imported resources. |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.avatarHash">avatar_hash</a></code> | <code>str</code> | The hash of the avatar image. |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.defaultBranch">default_branch</a></code> | <code>str</code> | Initial default branch name. |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.defaultBranchProtection">default_branch_protection</a></code> | <code>typing.Union[int, float]</code> | See https://docs.gitlab.com/api/groups/#options-for-default_branch_protection. Valid values are: `0`, `1`, `2`, `3`, `4`. |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.defaultBranchProtectionDefaults">default_branch_protection_defaults</a></code> | <code><a href="#@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaults">GroupDefaultBranchProtectionDefaults</a></code> | default_branch_protection_defaults block. |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.description">description</a></code> | <code>str</code> | The group's description. |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.emailsEnabled">emails_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable email notifications. |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.emailsEnabled">emails_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable email notifications. |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.extraSharedRunnersMinutesLimit">extra_shared_runners_minutes_limit</a></code> | <code>typing.Union[int, float]</code> | Can be set by administrators only. Additional CI/CD minutes for this group. |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group#id Group#id}. |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.ipRestrictionRanges">ip_restriction_ranges</a></code> | <code>typing.List[str]</code> | A list of IP addresses or subnet masks to restrict group access. |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.lfsEnabled">lfs_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable/disable Large File Storage (LFS) for the projects in this group. |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.membershipLock">membership_lock</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Users cannot be added to projects in this group. |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.mentionsDisabled">mentions_disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable the capability of a group from getting mentioned. |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.lfsEnabled">lfs_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable/disable Large File Storage (LFS) for the projects in this group. |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.membershipLock">membership_lock</a></code> | <code>bool \| cdktf.IResolvable</code> | Users cannot be added to projects in this group. |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.mentionsDisabled">mentions_disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Disable the capability of a group from getting mentioned. |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.parentId">parent_id</a></code> | <code>typing.Union[int, float]</code> | Id of the parent group (creates a nested group). |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.permanentlyRemoveOnDelete">permanently_remove_on_delete</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the group should be permanently removed during a `delete` operation. |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.preventForkingOutsideGroup">prevent_forking_outside_group</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Defaults to false. When enabled, users can not fork projects from this group to external namespaces. |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.permanentlyRemoveOnDelete">permanently_remove_on_delete</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the group should be permanently removed during a `delete` operation. |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.preventForkingOutsideGroup">prevent_forking_outside_group</a></code> | <code>bool \| cdktf.IResolvable</code> | Defaults to false. When enabled, users can not fork projects from this group to external namespaces. |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.projectCreationLevel">project_creation_level</a></code> | <code>str</code> | Determine if developers can create projects in the group. Valid values are: `noone`, `owner`, `maintainer`, `developer`, `administrator`. |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.pushRules">push_rules</a></code> | <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules">GroupPushRules</a></code> | push_rules block. |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.requestAccessEnabled">request_access_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow users to request member access. |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.requireTwoFactorAuthentication">require_two_factor_authentication</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Require all users in this group to setup Two-factor authentication. |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.requestAccessEnabled">request_access_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow users to request member access. |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.requireTwoFactorAuthentication">require_two_factor_authentication</a></code> | <code>bool \| cdktf.IResolvable</code> | Require all users in this group to setup Two-factor authentication. |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.sharedRunnersMinutesLimit">shared_runners_minutes_limit</a></code> | <code>typing.Union[int, float]</code> | Can be set by administrators only. |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.sharedRunnersSetting">shared_runners_setting</a></code> | <code>str</code> | Enable or disable shared runners for a group’s subgroups and projects. Valid values are: `enabled`, `disabled_and_overridable`, `disabled_and_unoverridable`, `disabled_with_override`. |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.shareWithGroupLock">share_with_group_lock</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Prevent sharing a project with another group within this group. |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.shareWithGroupLock">share_with_group_lock</a></code> | <code>bool \| cdktf.IResolvable</code> | Prevent sharing a project with another group within this group. |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.subgroupCreationLevel">subgroup_creation_level</a></code> | <code>str</code> | Allowed to create subgroups. Valid values are: `owner`, `maintainer`. |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.twoFactorGracePeriod">two_factor_grace_period</a></code> | <code>typing.Union[int, float]</code> | Defaults to 48. Time before Two-factor authentication is enforced (in hours). |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.Initializer.parameter.visibilityLevel">visibility_level</a></code> | <code>str</code> | The group's visibility. Can be `private`, `internal`, or `public`. Valid values are: `private`, `internal`, `public`. |
@@ -120,13 +120,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.group.Group.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.group.Group.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -156,7 +156,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.group.Group.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -192,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `auto_devops_enabled`<sup>Optional</sup> <a name="auto_devops_enabled" id="@cdktf/provider-gitlab.group.Group.Initializer.parameter.autoDevopsEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Default to Auto DevOps pipeline for all projects within this group.
 
@@ -264,7 +264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `emails_enabled`<sup>Optional</sup> <a name="emails_enabled" id="@cdktf/provider-gitlab.group.Group.Initializer.parameter.emailsEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable email notifications.
 
@@ -307,7 +307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `lfs_enabled`<sup>Optional</sup> <a name="lfs_enabled" id="@cdktf/provider-gitlab.group.Group.Initializer.parameter.lfsEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable/disable Large File Storage (LFS) for the projects in this group.
 
@@ -317,7 +317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `membership_lock`<sup>Optional</sup> <a name="membership_lock" id="@cdktf/provider-gitlab.group.Group.Initializer.parameter.membershipLock"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Users cannot be added to projects in this group.
 
@@ -327,7 +327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `mentions_disabled`<sup>Optional</sup> <a name="mentions_disabled" id="@cdktf/provider-gitlab.group.Group.Initializer.parameter.mentionsDisabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Disable the capability of a group from getting mentioned.
 
@@ -347,7 +347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `permanently_remove_on_delete`<sup>Optional</sup> <a name="permanently_remove_on_delete" id="@cdktf/provider-gitlab.group.Group.Initializer.parameter.permanentlyRemoveOnDelete"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the group should be permanently removed during a `delete` operation.
 
@@ -359,7 +359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `prevent_forking_outside_group`<sup>Optional</sup> <a name="prevent_forking_outside_group" id="@cdktf/provider-gitlab.group.Group.Initializer.parameter.preventForkingOutsideGroup"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Defaults to false. When enabled, users can not fork projects from this group to external namespaces.
 
@@ -389,7 +389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `request_access_enabled`<sup>Optional</sup> <a name="request_access_enabled" id="@cdktf/provider-gitlab.group.Group.Initializer.parameter.requestAccessEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow users to request member access.
 
@@ -399,7 +399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `require_two_factor_authentication`<sup>Optional</sup> <a name="require_two_factor_authentication" id="@cdktf/provider-gitlab.group.Group.Initializer.parameter.requireTwoFactorAuthentication"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Require all users in this group to setup Two-factor authentication.
 
@@ -431,7 +431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `share_with_group_lock`<sup>Optional</sup> <a name="share_with_group_lock" id="@cdktf/provider-gitlab.group.Group.Initializer.parameter.shareWithGroupLock"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Prevent sharing a project with another group within this group.
 
@@ -762,7 +762,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-gitlab.group.Group.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-gitlab.group.Group.importFrom"></a>
@@ -825,7 +825,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -841,7 +841,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-gitlab.group.Group.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -871,8 +871,8 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def put_default_branch_protection_defaults(
   allowed_to_merge: typing.List[str] = None,
   allowed_to_push: typing.List[str] = None,
-  allow_force_push: typing.Union[bool, IResolvable] = None,
-  developer_can_initial_push: typing.Union[bool, IResolvable] = None
+  allow_force_push: bool | IResolvable = None,
+  developer_can_initial_push: bool | IResolvable = None
 ) -> None
 ```
 
@@ -898,7 +898,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ###### `allow_force_push`<sup>Optional</sup> <a name="allow_force_push" id="@cdktf/provider-gitlab.group.Group.putDefaultBranchProtectionDefaults.parameter.allowForcePush"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow force push for all users with push access.
 
@@ -908,7 +908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ###### `developer_can_initial_push`<sup>Optional</sup> <a name="developer_can_initial_push" id="@cdktf/provider-gitlab.group.Group.putDefaultBranchProtectionDefaults.parameter.developerCanInitialPush"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow developers to initial push.
 
@@ -922,17 +922,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 def put_push_rules(
   author_email_regex: str = None,
   branch_name_regex: str = None,
-  commit_committer_check: typing.Union[bool, IResolvable] = None,
-  commit_committer_name_check: typing.Union[bool, IResolvable] = None,
+  commit_committer_check: bool | IResolvable = None,
+  commit_committer_name_check: bool | IResolvable = None,
   commit_message_negative_regex: str = None,
   commit_message_regex: str = None,
-  deny_delete_tag: typing.Union[bool, IResolvable] = None,
+  deny_delete_tag: bool | IResolvable = None,
   file_name_regex: str = None,
   max_file_size: typing.Union[int, float] = None,
-  member_check: typing.Union[bool, IResolvable] = None,
-  prevent_secrets: typing.Union[bool, IResolvable] = None,
-  reject_non_dco_commits: typing.Union[bool, IResolvable] = None,
-  reject_unsigned_commits: typing.Union[bool, IResolvable] = None
+  member_check: bool | IResolvable = None,
+  prevent_secrets: bool | IResolvable = None,
+  reject_non_dco_commits: bool | IResolvable = None,
+  reject_unsigned_commits: bool | IResolvable = None
 ) -> None
 ```
 
@@ -958,7 +958,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ###### `commit_committer_check`<sup>Optional</sup> <a name="commit_committer_check" id="@cdktf/provider-gitlab.group.Group.putPushRules.parameter.commitCommitterCheck"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Only commits pushed using verified emails are allowed.
 
@@ -968,7 +968,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ###### `commit_committer_name_check`<sup>Optional</sup> <a name="commit_committer_name_check" id="@cdktf/provider-gitlab.group.Group.putPushRules.parameter.commitCommitterNameCheck"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Users can only push commits to this repository if the commit author name is consistent with their GitLab account name.
 
@@ -998,7 +998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ###### `deny_delete_tag`<sup>Optional</sup> <a name="deny_delete_tag" id="@cdktf/provider-gitlab.group.Group.putPushRules.parameter.denyDeleteTag"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Deny deleting a tag.
 
@@ -1028,7 +1028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ###### `member_check`<sup>Optional</sup> <a name="member_check" id="@cdktf/provider-gitlab.group.Group.putPushRules.parameter.memberCheck"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allows only GitLab users to author commits.
 
@@ -1038,7 +1038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ###### `prevent_secrets`<sup>Optional</sup> <a name="prevent_secrets" id="@cdktf/provider-gitlab.group.Group.putPushRules.parameter.preventSecrets"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 GitLab will reject any files that are likely to contain secrets.
 
@@ -1048,7 +1048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ###### `reject_non_dco_commits`<sup>Optional</sup> <a name="reject_non_dco_commits" id="@cdktf/provider-gitlab.group.Group.putPushRules.parameter.rejectNonDcoCommits"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Reject commit when it’s not DCO certified.
 
@@ -1058,7 +1058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ###### `reject_unsigned_commits`<sup>Optional</sup> <a name="reject_unsigned_commits" id="@cdktf/provider-gitlab.group.Group.putPushRules.parameter.rejectUnsignedCommits"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Only commits signed through GPG are allowed.
 
@@ -1377,13 +1377,13 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.avatarUrl">avatar_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.defaultBranchProtectionDefaults">default_branch_protection_defaults</a></code> | <code><a href="#@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaultsOutputReference">GroupDefaultBranchProtectionDefaultsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.fullName">full_name</a></code> | <code>str</code> | *No description.* |
@@ -1392,61 +1392,61 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.runnersToken">runners_token</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.webUrl">web_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.allowedEmailDomainsListInput">allowed_email_domains_list_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.property.autoDevopsEnabledInput">auto_devops_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.property.autoDevopsEnabledInput">auto_devops_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.avatarHashInput">avatar_hash_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.avatarInput">avatar_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.defaultBranchInput">default_branch_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.defaultBranchProtectionDefaultsInput">default_branch_protection_defaults_input</a></code> | <code><a href="#@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaults">GroupDefaultBranchProtectionDefaults</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.defaultBranchProtectionInput">default_branch_protection_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.property.emailsEnabledInput">emails_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.property.emailsEnabledInput">emails_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.extraSharedRunnersMinutesLimitInput">extra_shared_runners_minutes_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.ipRestrictionRangesInput">ip_restriction_ranges_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.property.lfsEnabledInput">lfs_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.property.membershipLockInput">membership_lock_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.property.mentionsDisabledInput">mentions_disabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.property.lfsEnabledInput">lfs_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.property.membershipLockInput">membership_lock_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.property.mentionsDisabledInput">mentions_disabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.parentIdInput">parent_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.property.permanentlyRemoveOnDeleteInput">permanently_remove_on_delete_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.property.preventForkingOutsideGroupInput">prevent_forking_outside_group_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.property.permanentlyRemoveOnDeleteInput">permanently_remove_on_delete_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.property.preventForkingOutsideGroupInput">prevent_forking_outside_group_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.projectCreationLevelInput">project_creation_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.pushRulesInput">push_rules_input</a></code> | <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules">GroupPushRules</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.property.requestAccessEnabledInput">request_access_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.property.requireTwoFactorAuthenticationInput">require_two_factor_authentication_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.property.requestAccessEnabledInput">request_access_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.property.requireTwoFactorAuthenticationInput">require_two_factor_authentication_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.sharedRunnersMinutesLimitInput">shared_runners_minutes_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.sharedRunnersSettingInput">shared_runners_setting_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.property.shareWithGroupLockInput">share_with_group_lock_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.property.shareWithGroupLockInput">share_with_group_lock_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.subgroupCreationLevelInput">subgroup_creation_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.twoFactorGracePeriodInput">two_factor_grace_period_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.visibilityLevelInput">visibility_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.wikiAccessLevelInput">wiki_access_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.allowedEmailDomainsList">allowed_email_domains_list</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.property.autoDevopsEnabled">auto_devops_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.property.autoDevopsEnabled">auto_devops_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.avatar">avatar</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.avatarHash">avatar_hash</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.defaultBranch">default_branch</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.defaultBranchProtection">default_branch_protection</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.property.emailsEnabled">emails_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.property.emailsEnabled">emails_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.extraSharedRunnersMinutesLimit">extra_shared_runners_minutes_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.ipRestrictionRanges">ip_restriction_ranges</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.property.lfsEnabled">lfs_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.property.membershipLock">membership_lock</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.property.mentionsDisabled">mentions_disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.property.lfsEnabled">lfs_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.property.membershipLock">membership_lock</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.property.mentionsDisabled">mentions_disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.parentId">parent_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.path">path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.property.permanentlyRemoveOnDelete">permanently_remove_on_delete</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.property.preventForkingOutsideGroup">prevent_forking_outside_group</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.property.permanentlyRemoveOnDelete">permanently_remove_on_delete</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.property.preventForkingOutsideGroup">prevent_forking_outside_group</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.projectCreationLevel">project_creation_level</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.property.requestAccessEnabled">request_access_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.property.requireTwoFactorAuthentication">require_two_factor_authentication</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.property.requestAccessEnabled">request_access_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.property.requireTwoFactorAuthentication">require_two_factor_authentication</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.sharedRunnersMinutesLimit">shared_runners_minutes_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.sharedRunnersSetting">shared_runners_setting</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.Group.property.shareWithGroupLock">share_with_group_lock</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.Group.property.shareWithGroupLock">share_with_group_lock</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.subgroupCreationLevel">subgroup_creation_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.twoFactorGracePeriod">two_factor_grace_period</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.Group.property.visibilityLevel">visibility_level</a></code> | <code>str</code> | *No description.* |
@@ -1529,20 +1529,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.group.Group.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.group.Group.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1589,10 +1589,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.group.Group.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1679,10 +1679,10 @@ allowed_email_domains_list_input: typing.List[str]
 ##### `auto_devops_enabled_input`<sup>Optional</sup> <a name="auto_devops_enabled_input" id="@cdktf/provider-gitlab.group.Group.property.autoDevopsEnabledInput"></a>
 
 ```python
-auto_devops_enabled_input: typing.Union[bool, IResolvable]
+auto_devops_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1749,10 +1749,10 @@ description_input: str
 ##### `emails_enabled_input`<sup>Optional</sup> <a name="emails_enabled_input" id="@cdktf/provider-gitlab.group.Group.property.emailsEnabledInput"></a>
 
 ```python
-emails_enabled_input: typing.Union[bool, IResolvable]
+emails_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1789,30 +1789,30 @@ ip_restriction_ranges_input: typing.List[str]
 ##### `lfs_enabled_input`<sup>Optional</sup> <a name="lfs_enabled_input" id="@cdktf/provider-gitlab.group.Group.property.lfsEnabledInput"></a>
 
 ```python
-lfs_enabled_input: typing.Union[bool, IResolvable]
+lfs_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `membership_lock_input`<sup>Optional</sup> <a name="membership_lock_input" id="@cdktf/provider-gitlab.group.Group.property.membershipLockInput"></a>
 
 ```python
-membership_lock_input: typing.Union[bool, IResolvable]
+membership_lock_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `mentions_disabled_input`<sup>Optional</sup> <a name="mentions_disabled_input" id="@cdktf/provider-gitlab.group.Group.property.mentionsDisabledInput"></a>
 
 ```python
-mentions_disabled_input: typing.Union[bool, IResolvable]
+mentions_disabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1849,20 +1849,20 @@ path_input: str
 ##### `permanently_remove_on_delete_input`<sup>Optional</sup> <a name="permanently_remove_on_delete_input" id="@cdktf/provider-gitlab.group.Group.property.permanentlyRemoveOnDeleteInput"></a>
 
 ```python
-permanently_remove_on_delete_input: typing.Union[bool, IResolvable]
+permanently_remove_on_delete_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `prevent_forking_outside_group_input`<sup>Optional</sup> <a name="prevent_forking_outside_group_input" id="@cdktf/provider-gitlab.group.Group.property.preventForkingOutsideGroupInput"></a>
 
 ```python
-prevent_forking_outside_group_input: typing.Union[bool, IResolvable]
+prevent_forking_outside_group_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1889,20 +1889,20 @@ push_rules_input: GroupPushRules
 ##### `request_access_enabled_input`<sup>Optional</sup> <a name="request_access_enabled_input" id="@cdktf/provider-gitlab.group.Group.property.requestAccessEnabledInput"></a>
 
 ```python
-request_access_enabled_input: typing.Union[bool, IResolvable]
+request_access_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `require_two_factor_authentication_input`<sup>Optional</sup> <a name="require_two_factor_authentication_input" id="@cdktf/provider-gitlab.group.Group.property.requireTwoFactorAuthenticationInput"></a>
 
 ```python
-require_two_factor_authentication_input: typing.Union[bool, IResolvable]
+require_two_factor_authentication_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1929,10 +1929,10 @@ shared_runners_setting_input: str
 ##### `share_with_group_lock_input`<sup>Optional</sup> <a name="share_with_group_lock_input" id="@cdktf/provider-gitlab.group.Group.property.shareWithGroupLockInput"></a>
 
 ```python
-share_with_group_lock_input: typing.Union[bool, IResolvable]
+share_with_group_lock_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1989,10 +1989,10 @@ allowed_email_domains_list: typing.List[str]
 ##### `auto_devops_enabled`<sup>Required</sup> <a name="auto_devops_enabled" id="@cdktf/provider-gitlab.group.Group.property.autoDevopsEnabled"></a>
 
 ```python
-auto_devops_enabled: typing.Union[bool, IResolvable]
+auto_devops_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2049,10 +2049,10 @@ description: str
 ##### `emails_enabled`<sup>Required</sup> <a name="emails_enabled" id="@cdktf/provider-gitlab.group.Group.property.emailsEnabled"></a>
 
 ```python
-emails_enabled: typing.Union[bool, IResolvable]
+emails_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2089,30 +2089,30 @@ ip_restriction_ranges: typing.List[str]
 ##### `lfs_enabled`<sup>Required</sup> <a name="lfs_enabled" id="@cdktf/provider-gitlab.group.Group.property.lfsEnabled"></a>
 
 ```python
-lfs_enabled: typing.Union[bool, IResolvable]
+lfs_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `membership_lock`<sup>Required</sup> <a name="membership_lock" id="@cdktf/provider-gitlab.group.Group.property.membershipLock"></a>
 
 ```python
-membership_lock: typing.Union[bool, IResolvable]
+membership_lock: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `mentions_disabled`<sup>Required</sup> <a name="mentions_disabled" id="@cdktf/provider-gitlab.group.Group.property.mentionsDisabled"></a>
 
 ```python
-mentions_disabled: typing.Union[bool, IResolvable]
+mentions_disabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2149,20 +2149,20 @@ path: str
 ##### `permanently_remove_on_delete`<sup>Required</sup> <a name="permanently_remove_on_delete" id="@cdktf/provider-gitlab.group.Group.property.permanentlyRemoveOnDelete"></a>
 
 ```python
-permanently_remove_on_delete: typing.Union[bool, IResolvable]
+permanently_remove_on_delete: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `prevent_forking_outside_group`<sup>Required</sup> <a name="prevent_forking_outside_group" id="@cdktf/provider-gitlab.group.Group.property.preventForkingOutsideGroup"></a>
 
 ```python
-prevent_forking_outside_group: typing.Union[bool, IResolvable]
+prevent_forking_outside_group: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2179,20 +2179,20 @@ project_creation_level: str
 ##### `request_access_enabled`<sup>Required</sup> <a name="request_access_enabled" id="@cdktf/provider-gitlab.group.Group.property.requestAccessEnabled"></a>
 
 ```python
-request_access_enabled: typing.Union[bool, IResolvable]
+request_access_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `require_two_factor_authentication`<sup>Required</sup> <a name="require_two_factor_authentication" id="@cdktf/provider-gitlab.group.Group.property.requireTwoFactorAuthentication"></a>
 
 ```python
-require_two_factor_authentication: typing.Union[bool, IResolvable]
+require_two_factor_authentication: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2219,10 +2219,10 @@ shared_runners_setting: str
 ##### `share_with_group_lock`<sup>Required</sup> <a name="share_with_group_lock" id="@cdktf/provider-gitlab.group.Group.property.shareWithGroupLock"></a>
 
 ```python
-share_with_group_lock: typing.Union[bool, IResolvable]
+share_with_group_lock: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2294,40 +2294,40 @@ tfResourceType: str
 from cdktf_cdktf_provider_gitlab import group
 
 group.GroupConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   path: str,
   allowed_email_domains_list: typing.List[str] = None,
-  auto_devops_enabled: typing.Union[bool, IResolvable] = None,
+  auto_devops_enabled: bool | IResolvable = None,
   avatar: str = None,
   avatar_hash: str = None,
   default_branch: str = None,
   default_branch_protection: typing.Union[int, float] = None,
   default_branch_protection_defaults: GroupDefaultBranchProtectionDefaults = None,
   description: str = None,
-  emails_enabled: typing.Union[bool, IResolvable] = None,
+  emails_enabled: bool | IResolvable = None,
   extra_shared_runners_minutes_limit: typing.Union[int, float] = None,
   id: str = None,
   ip_restriction_ranges: typing.List[str] = None,
-  lfs_enabled: typing.Union[bool, IResolvable] = None,
-  membership_lock: typing.Union[bool, IResolvable] = None,
-  mentions_disabled: typing.Union[bool, IResolvable] = None,
+  lfs_enabled: bool | IResolvable = None,
+  membership_lock: bool | IResolvable = None,
+  mentions_disabled: bool | IResolvable = None,
   parent_id: typing.Union[int, float] = None,
-  permanently_remove_on_delete: typing.Union[bool, IResolvable] = None,
-  prevent_forking_outside_group: typing.Union[bool, IResolvable] = None,
+  permanently_remove_on_delete: bool | IResolvable = None,
+  prevent_forking_outside_group: bool | IResolvable = None,
   project_creation_level: str = None,
   push_rules: GroupPushRules = None,
-  request_access_enabled: typing.Union[bool, IResolvable] = None,
-  require_two_factor_authentication: typing.Union[bool, IResolvable] = None,
+  request_access_enabled: bool | IResolvable = None,
+  require_two_factor_authentication: bool | IResolvable = None,
   shared_runners_minutes_limit: typing.Union[int, float] = None,
   shared_runners_setting: str = None,
-  share_with_group_lock: typing.Union[bool, IResolvable] = None,
+  share_with_group_lock: bool | IResolvable = None,
   subgroup_creation_level: str = None,
   two_factor_grace_period: typing.Union[int, float] = None,
   visibility_level: str = None,
@@ -2339,40 +2339,40 @@ group.GroupConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.name">name</a></code> | <code>str</code> | The name of the group. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.path">path</a></code> | <code>str</code> | The path of the group. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.allowedEmailDomainsList">allowed_email_domains_list</a></code> | <code>typing.List[str]</code> | A list of email address domains to allow group access. Will be concatenated together into a comma separated string. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.autoDevopsEnabled">auto_devops_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Default to Auto DevOps pipeline for all projects within this group. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.autoDevopsEnabled">auto_devops_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Default to Auto DevOps pipeline for all projects within this group. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.avatar">avatar</a></code> | <code>str</code> | A local path to the avatar image to upload. **Note**: not available for imported resources. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.avatarHash">avatar_hash</a></code> | <code>str</code> | The hash of the avatar image. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.defaultBranch">default_branch</a></code> | <code>str</code> | Initial default branch name. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.defaultBranchProtection">default_branch_protection</a></code> | <code>typing.Union[int, float]</code> | See https://docs.gitlab.com/api/groups/#options-for-default_branch_protection. Valid values are: `0`, `1`, `2`, `3`, `4`. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.defaultBranchProtectionDefaults">default_branch_protection_defaults</a></code> | <code><a href="#@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaults">GroupDefaultBranchProtectionDefaults</a></code> | default_branch_protection_defaults block. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.description">description</a></code> | <code>str</code> | The group's description. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.emailsEnabled">emails_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable email notifications. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.emailsEnabled">emails_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable email notifications. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.extraSharedRunnersMinutesLimit">extra_shared_runners_minutes_limit</a></code> | <code>typing.Union[int, float]</code> | Can be set by administrators only. Additional CI/CD minutes for this group. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group#id Group#id}. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.ipRestrictionRanges">ip_restriction_ranges</a></code> | <code>typing.List[str]</code> | A list of IP addresses or subnet masks to restrict group access. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.lfsEnabled">lfs_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable/disable Large File Storage (LFS) for the projects in this group. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.membershipLock">membership_lock</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Users cannot be added to projects in this group. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.mentionsDisabled">mentions_disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable the capability of a group from getting mentioned. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.lfsEnabled">lfs_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable/disable Large File Storage (LFS) for the projects in this group. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.membershipLock">membership_lock</a></code> | <code>bool \| cdktf.IResolvable</code> | Users cannot be added to projects in this group. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.mentionsDisabled">mentions_disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Disable the capability of a group from getting mentioned. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.parentId">parent_id</a></code> | <code>typing.Union[int, float]</code> | Id of the parent group (creates a nested group). |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.permanentlyRemoveOnDelete">permanently_remove_on_delete</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the group should be permanently removed during a `delete` operation. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.preventForkingOutsideGroup">prevent_forking_outside_group</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Defaults to false. When enabled, users can not fork projects from this group to external namespaces. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.permanentlyRemoveOnDelete">permanently_remove_on_delete</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the group should be permanently removed during a `delete` operation. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.preventForkingOutsideGroup">prevent_forking_outside_group</a></code> | <code>bool \| cdktf.IResolvable</code> | Defaults to false. When enabled, users can not fork projects from this group to external namespaces. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.projectCreationLevel">project_creation_level</a></code> | <code>str</code> | Determine if developers can create projects in the group. Valid values are: `noone`, `owner`, `maintainer`, `developer`, `administrator`. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.pushRules">push_rules</a></code> | <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules">GroupPushRules</a></code> | push_rules block. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.requestAccessEnabled">request_access_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow users to request member access. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.requireTwoFactorAuthentication">require_two_factor_authentication</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Require all users in this group to setup Two-factor authentication. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.requestAccessEnabled">request_access_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow users to request member access. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.requireTwoFactorAuthentication">require_two_factor_authentication</a></code> | <code>bool \| cdktf.IResolvable</code> | Require all users in this group to setup Two-factor authentication. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.sharedRunnersMinutesLimit">shared_runners_minutes_limit</a></code> | <code>typing.Union[int, float]</code> | Can be set by administrators only. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.sharedRunnersSetting">shared_runners_setting</a></code> | <code>str</code> | Enable or disable shared runners for a group’s subgroups and projects. Valid values are: `enabled`, `disabled_and_overridable`, `disabled_and_unoverridable`, `disabled_with_override`. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.shareWithGroupLock">share_with_group_lock</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Prevent sharing a project with another group within this group. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.shareWithGroupLock">share_with_group_lock</a></code> | <code>bool \| cdktf.IResolvable</code> | Prevent sharing a project with another group within this group. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.subgroupCreationLevel">subgroup_creation_level</a></code> | <code>str</code> | Allowed to create subgroups. Valid values are: `owner`, `maintainer`. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.twoFactorGracePeriod">two_factor_grace_period</a></code> | <code>typing.Union[int, float]</code> | Defaults to 48. Time before Two-factor authentication is enforced (in hours). |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupConfig.property.visibilityLevel">visibility_level</a></code> | <code>str</code> | The group's visibility. Can be `private`, `internal`, or `public`. Valid values are: `private`, `internal`, `public`. |
@@ -2383,20 +2383,20 @@ group.GroupConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.group.GroupConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.group.GroupConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -2443,10 +2443,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.group.GroupConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2495,10 +2495,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `auto_devops_enabled`<sup>Optional</sup> <a name="auto_devops_enabled" id="@cdktf/provider-gitlab.group.GroupConfig.property.autoDevopsEnabled"></a>
 
 ```python
-auto_devops_enabled: typing.Union[bool, IResolvable]
+auto_devops_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Default to Auto DevOps pipeline for all projects within this group.
 
@@ -2595,10 +2595,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `emails_enabled`<sup>Optional</sup> <a name="emails_enabled" id="@cdktf/provider-gitlab.group.GroupConfig.property.emailsEnabled"></a>
 
 ```python
-emails_enabled: typing.Union[bool, IResolvable]
+emails_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable email notifications.
 
@@ -2654,10 +2654,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `lfs_enabled`<sup>Optional</sup> <a name="lfs_enabled" id="@cdktf/provider-gitlab.group.GroupConfig.property.lfsEnabled"></a>
 
 ```python
-lfs_enabled: typing.Union[bool, IResolvable]
+lfs_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable/disable Large File Storage (LFS) for the projects in this group.
 
@@ -2668,10 +2668,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `membership_lock`<sup>Optional</sup> <a name="membership_lock" id="@cdktf/provider-gitlab.group.GroupConfig.property.membershipLock"></a>
 
 ```python
-membership_lock: typing.Union[bool, IResolvable]
+membership_lock: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Users cannot be added to projects in this group.
 
@@ -2682,10 +2682,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `mentions_disabled`<sup>Optional</sup> <a name="mentions_disabled" id="@cdktf/provider-gitlab.group.GroupConfig.property.mentionsDisabled"></a>
 
 ```python
-mentions_disabled: typing.Union[bool, IResolvable]
+mentions_disabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Disable the capability of a group from getting mentioned.
 
@@ -2710,10 +2710,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `permanently_remove_on_delete`<sup>Optional</sup> <a name="permanently_remove_on_delete" id="@cdktf/provider-gitlab.group.GroupConfig.property.permanentlyRemoveOnDelete"></a>
 
 ```python
-permanently_remove_on_delete: typing.Union[bool, IResolvable]
+permanently_remove_on_delete: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the group should be permanently removed during a `delete` operation.
 
@@ -2726,10 +2726,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `prevent_forking_outside_group`<sup>Optional</sup> <a name="prevent_forking_outside_group" id="@cdktf/provider-gitlab.group.GroupConfig.property.preventForkingOutsideGroup"></a>
 
 ```python
-prevent_forking_outside_group: typing.Union[bool, IResolvable]
+prevent_forking_outside_group: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Defaults to false. When enabled, users can not fork projects from this group to external namespaces.
 
@@ -2768,10 +2768,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `request_access_enabled`<sup>Optional</sup> <a name="request_access_enabled" id="@cdktf/provider-gitlab.group.GroupConfig.property.requestAccessEnabled"></a>
 
 ```python
-request_access_enabled: typing.Union[bool, IResolvable]
+request_access_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow users to request member access.
 
@@ -2782,10 +2782,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `require_two_factor_authentication`<sup>Optional</sup> <a name="require_two_factor_authentication" id="@cdktf/provider-gitlab.group.GroupConfig.property.requireTwoFactorAuthentication"></a>
 
 ```python
-require_two_factor_authentication: typing.Union[bool, IResolvable]
+require_two_factor_authentication: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Require all users in this group to setup Two-factor authentication.
 
@@ -2826,10 +2826,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `share_with_group_lock`<sup>Optional</sup> <a name="share_with_group_lock" id="@cdktf/provider-gitlab.group.GroupConfig.property.shareWithGroupLock"></a>
 
 ```python
-share_with_group_lock: typing.Union[bool, IResolvable]
+share_with_group_lock: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Prevent sharing a project with another group within this group.
 
@@ -2903,8 +2903,8 @@ from cdktf_cdktf_provider_gitlab import group
 group.GroupDefaultBranchProtectionDefaults(
   allowed_to_merge: typing.List[str] = None,
   allowed_to_push: typing.List[str] = None,
-  allow_force_push: typing.Union[bool, IResolvable] = None,
-  developer_can_initial_push: typing.Union[bool, IResolvable] = None
+  allow_force_push: bool | IResolvable = None,
+  developer_can_initial_push: bool | IResolvable = None
 )
 ```
 
@@ -2914,8 +2914,8 @@ group.GroupDefaultBranchProtectionDefaults(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaults.property.allowedToMerge">allowed_to_merge</a></code> | <code>typing.List[str]</code> | An array of access levels allowed to merge. Valid values are: `developer`, `maintainer`, `no one`. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaults.property.allowedToPush">allowed_to_push</a></code> | <code>typing.List[str]</code> | An array of access levels allowed to push. Valid values are: `developer`, `maintainer`, `no one`. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaults.property.allowForcePush">allow_force_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow force push for all users with push access. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaults.property.developerCanInitialPush">developer_can_initial_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow developers to initial push. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaults.property.allowForcePush">allow_force_push</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow force push for all users with push access. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaults.property.developerCanInitialPush">developer_can_initial_push</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow developers to initial push. |
 
 ---
 
@@ -2950,10 +2950,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `allow_force_push`<sup>Optional</sup> <a name="allow_force_push" id="@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaults.property.allowForcePush"></a>
 
 ```python
-allow_force_push: typing.Union[bool, IResolvable]
+allow_force_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow force push for all users with push access.
 
@@ -2964,10 +2964,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `developer_can_initial_push`<sup>Optional</sup> <a name="developer_can_initial_push" id="@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaults.property.developerCanInitialPush"></a>
 
 ```python
-developer_can_initial_push: typing.Union[bool, IResolvable]
+developer_can_initial_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow developers to initial push.
 
@@ -2985,17 +2985,17 @@ from cdktf_cdktf_provider_gitlab import group
 group.GroupPushRules(
   author_email_regex: str = None,
   branch_name_regex: str = None,
-  commit_committer_check: typing.Union[bool, IResolvable] = None,
-  commit_committer_name_check: typing.Union[bool, IResolvable] = None,
+  commit_committer_check: bool | IResolvable = None,
+  commit_committer_name_check: bool | IResolvable = None,
   commit_message_negative_regex: str = None,
   commit_message_regex: str = None,
-  deny_delete_tag: typing.Union[bool, IResolvable] = None,
+  deny_delete_tag: bool | IResolvable = None,
   file_name_regex: str = None,
   max_file_size: typing.Union[int, float] = None,
-  member_check: typing.Union[bool, IResolvable] = None,
-  prevent_secrets: typing.Union[bool, IResolvable] = None,
-  reject_non_dco_commits: typing.Union[bool, IResolvable] = None,
-  reject_unsigned_commits: typing.Union[bool, IResolvable] = None
+  member_check: bool | IResolvable = None,
+  prevent_secrets: bool | IResolvable = None,
+  reject_non_dco_commits: bool | IResolvable = None,
+  reject_unsigned_commits: bool | IResolvable = None
 )
 ```
 
@@ -3005,17 +3005,17 @@ group.GroupPushRules(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.authorEmailRegex">author_email_regex</a></code> | <code>str</code> | All commit author emails must match this regex, e.g. `@my-company.com$`. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.branchNameRegex">branch_name_regex</a></code> | <code>str</code> | All branch names must match this regex, e.g. `(feature\|hotfix)\/*`. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.commitCommitterCheck">commit_committer_check</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Only commits pushed using verified emails are allowed. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.commitCommitterNameCheck">commit_committer_name_check</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Users can only push commits to this repository if the commit author name is consistent with their GitLab account name. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.commitCommitterCheck">commit_committer_check</a></code> | <code>bool \| cdktf.IResolvable</code> | Only commits pushed using verified emails are allowed. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.commitCommitterNameCheck">commit_committer_name_check</a></code> | <code>bool \| cdktf.IResolvable</code> | Users can only push commits to this repository if the commit author name is consistent with their GitLab account name. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.commitMessageNegativeRegex">commit_message_negative_regex</a></code> | <code>str</code> | No commit message is allowed to match this regex, for example `ssh\:\/\/`. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.commitMessageRegex">commit_message_regex</a></code> | <code>str</code> | All commit messages must match this regex, e.g. `Fixed \d+\..*`. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.denyDeleteTag">deny_delete_tag</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Deny deleting a tag. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.denyDeleteTag">deny_delete_tag</a></code> | <code>bool \| cdktf.IResolvable</code> | Deny deleting a tag. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.fileNameRegex">file_name_regex</a></code> | <code>str</code> | Filenames matching the regular expression provided in this attribute are not allowed, for example, `(jar\|exe)$`. |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.maxFileSize">max_file_size</a></code> | <code>typing.Union[int, float]</code> | Maximum file size (MB) allowed. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.memberCheck">member_check</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allows only GitLab users to author commits. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.preventSecrets">prevent_secrets</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | GitLab will reject any files that are likely to contain secrets. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.rejectNonDcoCommits">reject_non_dco_commits</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Reject commit when it’s not DCO certified. |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.rejectUnsignedCommits">reject_unsigned_commits</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Only commits signed through GPG are allowed. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.memberCheck">member_check</a></code> | <code>bool \| cdktf.IResolvable</code> | Allows only GitLab users to author commits. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.preventSecrets">prevent_secrets</a></code> | <code>bool \| cdktf.IResolvable</code> | GitLab will reject any files that are likely to contain secrets. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.rejectNonDcoCommits">reject_non_dco_commits</a></code> | <code>bool \| cdktf.IResolvable</code> | Reject commit when it’s not DCO certified. |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules.property.rejectUnsignedCommits">reject_unsigned_commits</a></code> | <code>bool \| cdktf.IResolvable</code> | Only commits signed through GPG are allowed. |
 
 ---
 
@@ -3050,10 +3050,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `commit_committer_check`<sup>Optional</sup> <a name="commit_committer_check" id="@cdktf/provider-gitlab.group.GroupPushRules.property.commitCommitterCheck"></a>
 
 ```python
-commit_committer_check: typing.Union[bool, IResolvable]
+commit_committer_check: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Only commits pushed using verified emails are allowed.
 
@@ -3064,10 +3064,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `commit_committer_name_check`<sup>Optional</sup> <a name="commit_committer_name_check" id="@cdktf/provider-gitlab.group.GroupPushRules.property.commitCommitterNameCheck"></a>
 
 ```python
-commit_committer_name_check: typing.Union[bool, IResolvable]
+commit_committer_name_check: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Users can only push commits to this repository if the commit author name is consistent with their GitLab account name.
 
@@ -3106,10 +3106,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `deny_delete_tag`<sup>Optional</sup> <a name="deny_delete_tag" id="@cdktf/provider-gitlab.group.GroupPushRules.property.denyDeleteTag"></a>
 
 ```python
-deny_delete_tag: typing.Union[bool, IResolvable]
+deny_delete_tag: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Deny deleting a tag.
 
@@ -3148,10 +3148,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `member_check`<sup>Optional</sup> <a name="member_check" id="@cdktf/provider-gitlab.group.GroupPushRules.property.memberCheck"></a>
 
 ```python
-member_check: typing.Union[bool, IResolvable]
+member_check: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allows only GitLab users to author commits.
 
@@ -3162,10 +3162,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `prevent_secrets`<sup>Optional</sup> <a name="prevent_secrets" id="@cdktf/provider-gitlab.group.GroupPushRules.property.preventSecrets"></a>
 
 ```python
-prevent_secrets: typing.Union[bool, IResolvable]
+prevent_secrets: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 GitLab will reject any files that are likely to contain secrets.
 
@@ -3176,10 +3176,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `reject_non_dco_commits`<sup>Optional</sup> <a name="reject_non_dco_commits" id="@cdktf/provider-gitlab.group.GroupPushRules.property.rejectNonDcoCommits"></a>
 
 ```python
-reject_non_dco_commits: typing.Union[bool, IResolvable]
+reject_non_dco_commits: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Reject commit when it’s not DCO certified.
 
@@ -3190,10 +3190,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `reject_unsigned_commits`<sup>Optional</sup> <a name="reject_unsigned_commits" id="@cdktf/provider-gitlab.group.GroupPushRules.property.rejectUnsignedCommits"></a>
 
 ```python
-reject_unsigned_commits: typing.Union[bool, IResolvable]
+reject_unsigned_commits: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Only commits signed through GPG are allowed.
 
@@ -3468,12 +3468,12 @@ def reset_developer_can_initial_push() -> None
 | <code><a href="#@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaultsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaultsOutputReference.property.allowedToMergeInput">allowed_to_merge_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaultsOutputReference.property.allowedToPushInput">allowed_to_push_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaultsOutputReference.property.allowForcePushInput">allow_force_push_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaultsOutputReference.property.developerCanInitialPushInput">developer_can_initial_push_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaultsOutputReference.property.allowForcePushInput">allow_force_push_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaultsOutputReference.property.developerCanInitialPushInput">developer_can_initial_push_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaultsOutputReference.property.allowedToMerge">allowed_to_merge</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaultsOutputReference.property.allowedToPush">allowed_to_push</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaultsOutputReference.property.allowForcePush">allow_force_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaultsOutputReference.property.developerCanInitialPush">developer_can_initial_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaultsOutputReference.property.allowForcePush">allow_force_push</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaultsOutputReference.property.developerCanInitialPush">developer_can_initial_push</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaultsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaults">GroupDefaultBranchProtectionDefaults</a></code> | *No description.* |
 
 ---
@@ -3525,20 +3525,20 @@ allowed_to_push_input: typing.List[str]
 ##### `allow_force_push_input`<sup>Optional</sup> <a name="allow_force_push_input" id="@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaultsOutputReference.property.allowForcePushInput"></a>
 
 ```python
-allow_force_push_input: typing.Union[bool, IResolvable]
+allow_force_push_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `developer_can_initial_push_input`<sup>Optional</sup> <a name="developer_can_initial_push_input" id="@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaultsOutputReference.property.developerCanInitialPushInput"></a>
 
 ```python
-developer_can_initial_push_input: typing.Union[bool, IResolvable]
+developer_can_initial_push_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3565,20 +3565,20 @@ allowed_to_push: typing.List[str]
 ##### `allow_force_push`<sup>Required</sup> <a name="allow_force_push" id="@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaultsOutputReference.property.allowForcePush"></a>
 
 ```python
-allow_force_push: typing.Union[bool, IResolvable]
+allow_force_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `developer_can_initial_push`<sup>Required</sup> <a name="developer_can_initial_push" id="@cdktf/provider-gitlab.group.GroupDefaultBranchProtectionDefaultsOutputReference.property.developerCanInitialPush"></a>
 
 ```python
-developer_can_initial_push: typing.Union[bool, IResolvable]
+developer_can_initial_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3921,30 +3921,30 @@ def reset_reject_unsigned_commits() -> None
 | <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.authorEmailRegexInput">author_email_regex_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.branchNameRegexInput">branch_name_regex_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.commitCommitterCheckInput">commit_committer_check_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.commitCommitterNameCheckInput">commit_committer_name_check_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.commitCommitterCheckInput">commit_committer_check_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.commitCommitterNameCheckInput">commit_committer_name_check_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.commitMessageNegativeRegexInput">commit_message_negative_regex_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.commitMessageRegexInput">commit_message_regex_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.denyDeleteTagInput">deny_delete_tag_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.denyDeleteTagInput">deny_delete_tag_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.fileNameRegexInput">file_name_regex_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.maxFileSizeInput">max_file_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.memberCheckInput">member_check_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.preventSecretsInput">prevent_secrets_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.rejectNonDcoCommitsInput">reject_non_dco_commits_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.rejectUnsignedCommitsInput">reject_unsigned_commits_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.memberCheckInput">member_check_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.preventSecretsInput">prevent_secrets_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.rejectNonDcoCommitsInput">reject_non_dco_commits_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.rejectUnsignedCommitsInput">reject_unsigned_commits_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.authorEmailRegex">author_email_regex</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.branchNameRegex">branch_name_regex</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.commitCommitterCheck">commit_committer_check</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.commitCommitterNameCheck">commit_committer_name_check</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.commitCommitterCheck">commit_committer_check</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.commitCommitterNameCheck">commit_committer_name_check</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.commitMessageNegativeRegex">commit_message_negative_regex</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.commitMessageRegex">commit_message_regex</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.denyDeleteTag">deny_delete_tag</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.denyDeleteTag">deny_delete_tag</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.fileNameRegex">file_name_regex</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.maxFileSize">max_file_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.memberCheck">member_check</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.preventSecrets">prevent_secrets</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.rejectNonDcoCommits">reject_non_dco_commits</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.rejectUnsignedCommits">reject_unsigned_commits</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.memberCheck">member_check</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.preventSecrets">prevent_secrets</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.rejectNonDcoCommits">reject_non_dco_commits</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.rejectUnsignedCommits">reject_unsigned_commits</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-gitlab.group.GroupPushRules">GroupPushRules</a></code> | *No description.* |
 
 ---
@@ -3996,20 +3996,20 @@ branch_name_regex_input: str
 ##### `commit_committer_check_input`<sup>Optional</sup> <a name="commit_committer_check_input" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.commitCommitterCheckInput"></a>
 
 ```python
-commit_committer_check_input: typing.Union[bool, IResolvable]
+commit_committer_check_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `commit_committer_name_check_input`<sup>Optional</sup> <a name="commit_committer_name_check_input" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.commitCommitterNameCheckInput"></a>
 
 ```python
-commit_committer_name_check_input: typing.Union[bool, IResolvable]
+commit_committer_name_check_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4036,10 +4036,10 @@ commit_message_regex_input: str
 ##### `deny_delete_tag_input`<sup>Optional</sup> <a name="deny_delete_tag_input" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.denyDeleteTagInput"></a>
 
 ```python
-deny_delete_tag_input: typing.Union[bool, IResolvable]
+deny_delete_tag_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4066,40 +4066,40 @@ max_file_size_input: typing.Union[int, float]
 ##### `member_check_input`<sup>Optional</sup> <a name="member_check_input" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.memberCheckInput"></a>
 
 ```python
-member_check_input: typing.Union[bool, IResolvable]
+member_check_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `prevent_secrets_input`<sup>Optional</sup> <a name="prevent_secrets_input" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.preventSecretsInput"></a>
 
 ```python
-prevent_secrets_input: typing.Union[bool, IResolvable]
+prevent_secrets_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `reject_non_dco_commits_input`<sup>Optional</sup> <a name="reject_non_dco_commits_input" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.rejectNonDcoCommitsInput"></a>
 
 ```python
-reject_non_dco_commits_input: typing.Union[bool, IResolvable]
+reject_non_dco_commits_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `reject_unsigned_commits_input`<sup>Optional</sup> <a name="reject_unsigned_commits_input" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.rejectUnsignedCommitsInput"></a>
 
 ```python
-reject_unsigned_commits_input: typing.Union[bool, IResolvable]
+reject_unsigned_commits_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4126,20 +4126,20 @@ branch_name_regex: str
 ##### `commit_committer_check`<sup>Required</sup> <a name="commit_committer_check" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.commitCommitterCheck"></a>
 
 ```python
-commit_committer_check: typing.Union[bool, IResolvable]
+commit_committer_check: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `commit_committer_name_check`<sup>Required</sup> <a name="commit_committer_name_check" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.commitCommitterNameCheck"></a>
 
 ```python
-commit_committer_name_check: typing.Union[bool, IResolvable]
+commit_committer_name_check: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4166,10 +4166,10 @@ commit_message_regex: str
 ##### `deny_delete_tag`<sup>Required</sup> <a name="deny_delete_tag" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.denyDeleteTag"></a>
 
 ```python
-deny_delete_tag: typing.Union[bool, IResolvable]
+deny_delete_tag: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4196,40 +4196,40 @@ max_file_size: typing.Union[int, float]
 ##### `member_check`<sup>Required</sup> <a name="member_check" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.memberCheck"></a>
 
 ```python
-member_check: typing.Union[bool, IResolvable]
+member_check: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `prevent_secrets`<sup>Required</sup> <a name="prevent_secrets" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.preventSecrets"></a>
 
 ```python
-prevent_secrets: typing.Union[bool, IResolvable]
+prevent_secrets: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `reject_non_dco_commits`<sup>Required</sup> <a name="reject_non_dco_commits" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.rejectNonDcoCommits"></a>
 
 ```python
-reject_non_dco_commits: typing.Union[bool, IResolvable]
+reject_non_dco_commits: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `reject_unsigned_commits`<sup>Required</sup> <a name="reject_unsigned_commits" id="@cdktf/provider-gitlab.group.GroupPushRulesOutputReference.property.rejectUnsignedCommits"></a>
 
 ```python
-reject_unsigned_commits: typing.Union[bool, IResolvable]
+reject_unsigned_commits: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 

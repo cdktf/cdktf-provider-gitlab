@@ -21,10 +21,10 @@ provider.GitlabProvider(
   client_key: str = None,
   config_file: str = None,
   context: str = None,
-  early_auth_check: typing.Union[bool, IResolvable] = None,
-  enable_auto_ci_support: typing.Union[bool, IResolvable] = None,
+  early_auth_check: bool | IResolvable = None,
+  enable_auto_ci_support: bool | IResolvable = None,
   headers: typing.Mapping[str] = None,
-  insecure: typing.Union[bool, IResolvable] = None,
+  insecure: bool | IResolvable = None,
   retries: typing.Union[int, float] = None,
   token: str = None
 )
@@ -41,10 +41,10 @@ provider.GitlabProvider(
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.clientKey">client_key</a></code> | <code>str</code> | File path to client key when GitLab instance is behind company proxy. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.configFile">config_file</a></code> | <code>str</code> | The path to the configuration file to use. It may be sourced from the `GITLAB_CONFIG_FILE` environment variable. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.context">context</a></code> | <code>str</code> | The context to use for authentication and configuration. |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.earlyAuthCheck">early_auth_check</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (Experimental) By default the provider does a dummy request to get the current user in order to verify that the provider configuration is correct and the GitLab API is reachable. |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.enableAutoCiSupport">enable_auto_ci_support</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If automatic CI support should be enabled or not. This only works when not providing a token. |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.earlyAuthCheck">early_auth_check</a></code> | <code>bool \| cdktf.IResolvable</code> | (Experimental) By default the provider does a dummy request to get the current user in order to verify that the provider configuration is correct and the GitLab API is reachable. |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.enableAutoCiSupport">enable_auto_ci_support</a></code> | <code>bool \| cdktf.IResolvable</code> | If automatic CI support should be enabled or not. This only works when not providing a token. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.headers">headers</a></code> | <code>typing.Mapping[str]</code> | A map of headers to append to all API request to the GitLab instance. |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.insecure">insecure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When set to true this disables SSL verification of the connection to the GitLab instance. |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.insecure">insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | When set to true this disables SSL verification of the connection to the GitLab instance. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.retries">retries</a></code> | <code>typing.Union[int, float]</code> | The number of retries to execute when receiving a 429 Rate Limit error. Each retry will exponentially back off. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.token">token</a></code> | <code>str</code> | The OAuth2 Token, Project, Group, Personal Access Token or CI Job Token used to connect to GitLab. |
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `early_auth_check`<sup>Optional</sup> <a name="early_auth_check" id="@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.earlyAuthCheck"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (Experimental) By default the provider does a dummy request to get the current user in order to verify that the provider configuration is correct and the GitLab API is reachable.
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `enable_auto_ci_support`<sup>Optional</sup> <a name="enable_auto_ci_support" id="@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.enableAutoCiSupport"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If automatic CI support should be enabled or not. This only works when not providing a token.
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.insecure"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When set to true this disables SSL verification of the connection to the GitLab instance.
 
@@ -536,10 +536,10 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.clientKeyInput">client_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.configFileInput">config_file_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.contextInput">context_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.earlyAuthCheckInput">early_auth_check_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.enableAutoCiSupportInput">enable_auto_ci_support_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.earlyAuthCheckInput">early_auth_check_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.enableAutoCiSupportInput">enable_auto_ci_support_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.headersInput">headers_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.insecureInput">insecure_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.insecureInput">insecure_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.retriesInput">retries_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.tokenInput">token_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.baseUrl">base_url</a></code> | <code>str</code> | *No description.* |
@@ -548,10 +548,10 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.clientKey">client_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.configFile">config_file</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.context">context</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.earlyAuthCheck">early_auth_check</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.enableAutoCiSupport">enable_auto_ci_support</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.earlyAuthCheck">early_auth_check</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.enableAutoCiSupport">enable_auto_ci_support</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.headers">headers</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.insecure">insecure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.insecure">insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.retries">retries</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.token">token</a></code> | <code>str</code> | *No description.* |
 
@@ -722,20 +722,20 @@ context_input: str
 ##### `early_auth_check_input`<sup>Optional</sup> <a name="early_auth_check_input" id="@cdktf/provider-gitlab.provider.GitlabProvider.property.earlyAuthCheckInput"></a>
 
 ```python
-early_auth_check_input: typing.Union[bool, IResolvable]
+early_auth_check_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enable_auto_ci_support_input`<sup>Optional</sup> <a name="enable_auto_ci_support_input" id="@cdktf/provider-gitlab.provider.GitlabProvider.property.enableAutoCiSupportInput"></a>
 
 ```python
-enable_auto_ci_support_input: typing.Union[bool, IResolvable]
+enable_auto_ci_support_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -752,10 +752,10 @@ headers_input: typing.Mapping[str]
 ##### `insecure_input`<sup>Optional</sup> <a name="insecure_input" id="@cdktf/provider-gitlab.provider.GitlabProvider.property.insecureInput"></a>
 
 ```python
-insecure_input: typing.Union[bool, IResolvable]
+insecure_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -842,20 +842,20 @@ context: str
 ##### `early_auth_check`<sup>Optional</sup> <a name="early_auth_check" id="@cdktf/provider-gitlab.provider.GitlabProvider.property.earlyAuthCheck"></a>
 
 ```python
-early_auth_check: typing.Union[bool, IResolvable]
+early_auth_check: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enable_auto_ci_support`<sup>Optional</sup> <a name="enable_auto_ci_support" id="@cdktf/provider-gitlab.provider.GitlabProvider.property.enableAutoCiSupport"></a>
 
 ```python
-enable_auto_ci_support: typing.Union[bool, IResolvable]
+enable_auto_ci_support: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -872,10 +872,10 @@ headers: typing.Mapping[str]
 ##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-gitlab.provider.GitlabProvider.property.insecure"></a>
 
 ```python
-insecure: typing.Union[bool, IResolvable]
+insecure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -934,10 +934,10 @@ provider.GitlabProviderConfig(
   client_key: str = None,
   config_file: str = None,
   context: str = None,
-  early_auth_check: typing.Union[bool, IResolvable] = None,
-  enable_auto_ci_support: typing.Union[bool, IResolvable] = None,
+  early_auth_check: bool | IResolvable = None,
+  enable_auto_ci_support: bool | IResolvable = None,
   headers: typing.Mapping[str] = None,
-  insecure: typing.Union[bool, IResolvable] = None,
+  insecure: bool | IResolvable = None,
   retries: typing.Union[int, float] = None,
   token: str = None
 )
@@ -954,10 +954,10 @@ provider.GitlabProviderConfig(
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.clientKey">client_key</a></code> | <code>str</code> | File path to client key when GitLab instance is behind company proxy. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.configFile">config_file</a></code> | <code>str</code> | The path to the configuration file to use. It may be sourced from the `GITLAB_CONFIG_FILE` environment variable. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.context">context</a></code> | <code>str</code> | The context to use for authentication and configuration. |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.earlyAuthCheck">early_auth_check</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (Experimental) By default the provider does a dummy request to get the current user in order to verify that the provider configuration is correct and the GitLab API is reachable. |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.enableAutoCiSupport">enable_auto_ci_support</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If automatic CI support should be enabled or not. This only works when not providing a token. |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.earlyAuthCheck">early_auth_check</a></code> | <code>bool \| cdktf.IResolvable</code> | (Experimental) By default the provider does a dummy request to get the current user in order to verify that the provider configuration is correct and the GitLab API is reachable. |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.enableAutoCiSupport">enable_auto_ci_support</a></code> | <code>bool \| cdktf.IResolvable</code> | If automatic CI support should be enabled or not. This only works when not providing a token. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.headers">headers</a></code> | <code>typing.Mapping[str]</code> | A map of headers to append to all API request to the GitLab instance. |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.insecure">insecure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When set to true this disables SSL verification of the connection to the GitLab instance. |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.insecure">insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | When set to true this disables SSL verification of the connection to the GitLab instance. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.retries">retries</a></code> | <code>typing.Union[int, float]</code> | The number of retries to execute when receiving a 429 Rate Limit error. Each retry will exponentially back off. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.token">token</a></code> | <code>str</code> | The OAuth2 Token, Project, Group, Personal Access Token or CI Job Token used to connect to GitLab. |
 
@@ -1072,10 +1072,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `early_auth_check`<sup>Optional</sup> <a name="early_auth_check" id="@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.earlyAuthCheck"></a>
 
 ```python
-early_auth_check: typing.Union[bool, IResolvable]
+early_auth_check: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (Experimental) By default the provider does a dummy request to get the current user in order to verify that the provider configuration is correct and the GitLab API is reachable.
 
@@ -1088,10 +1088,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `enable_auto_ci_support`<sup>Optional</sup> <a name="enable_auto_ci_support" id="@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.enableAutoCiSupport"></a>
 
 ```python
-enable_auto_ci_support: typing.Union[bool, IResolvable]
+enable_auto_ci_support: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If automatic CI support should be enabled or not. This only works when not providing a token.
 
@@ -1116,10 +1116,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.insecure"></a>
 
 ```python
-insecure: typing.Union[bool, IResolvable]
+insecure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When set to true this disables SSL verification of the connection to the GitLab instance.
 

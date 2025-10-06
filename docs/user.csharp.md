@@ -285,7 +285,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-gitlab.user.User.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-gitlab.user.User.importFrom"></a>
@@ -339,7 +339,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-gitlab.user.User.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -354,7 +354,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-gitlab.user.User.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -574,41 +574,41 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.canCreateGroupInput">CanCreateGroupInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.canCreateGroupInput">CanCreateGroupInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.emailInput">EmailInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.forceRandomPasswordInput">ForceRandomPasswordInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.forceRandomPasswordInput">ForceRandomPasswordInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.isAdminInput">IsAdminInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.isExternalInput">IsExternalInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.isAdminInput">IsAdminInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.isExternalInput">IsExternalInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.namespaceIdInput">NamespaceIdInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.noteInput">NoteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.passwordInput">PasswordInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.projectsLimitInput">ProjectsLimitInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.resetPasswordInput">ResetPasswordInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.skipConfirmationInput">SkipConfirmationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.resetPasswordInput">ResetPasswordInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.skipConfirmationInput">SkipConfirmationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.stateInput">StateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.usernameInput">UsernameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.canCreateGroup">CanCreateGroup</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.canCreateGroup">CanCreateGroup</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.email">Email</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.forceRandomPassword">ForceRandomPassword</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.forceRandomPassword">ForceRandomPassword</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.isAdmin">IsAdmin</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.isExternal">IsExternal</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.isAdmin">IsAdmin</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.isExternal">IsExternal</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.namespaceId">NamespaceId</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.note">Note</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.password">Password</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.projectsLimit">ProjectsLimit</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.resetPassword">ResetPassword</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.skipConfirmation">SkipConfirmation</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.resetPassword">ResetPassword</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.skipConfirmation">SkipConfirmation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.state">State</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.username">Username</a></code> | <code>string</code> | *No description.* |
 
@@ -689,20 +689,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-gitlab.user.User.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.user.User.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -749,20 +749,20 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-gitlab.user.User.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
 ##### `CanCreateGroupInput`<sup>Optional</sup> <a name="CanCreateGroupInput" id="@cdktf/provider-gitlab.user.User.property.canCreateGroupInput"></a>
 
 ```csharp
-public object CanCreateGroupInput { get; }
+public bool|IResolvable CanCreateGroupInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -779,10 +779,10 @@ public string EmailInput { get; }
 ##### `ForceRandomPasswordInput`<sup>Optional</sup> <a name="ForceRandomPasswordInput" id="@cdktf/provider-gitlab.user.User.property.forceRandomPasswordInput"></a>
 
 ```csharp
-public object ForceRandomPasswordInput { get; }
+public bool|IResolvable ForceRandomPasswordInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -799,20 +799,20 @@ public string IdInput { get; }
 ##### `IsAdminInput`<sup>Optional</sup> <a name="IsAdminInput" id="@cdktf/provider-gitlab.user.User.property.isAdminInput"></a>
 
 ```csharp
-public object IsAdminInput { get; }
+public bool|IResolvable IsAdminInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `IsExternalInput`<sup>Optional</sup> <a name="IsExternalInput" id="@cdktf/provider-gitlab.user.User.property.isExternalInput"></a>
 
 ```csharp
-public object IsExternalInput { get; }
+public bool|IResolvable IsExternalInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -869,20 +869,20 @@ public double ProjectsLimitInput { get; }
 ##### `ResetPasswordInput`<sup>Optional</sup> <a name="ResetPasswordInput" id="@cdktf/provider-gitlab.user.User.property.resetPasswordInput"></a>
 
 ```csharp
-public object ResetPasswordInput { get; }
+public bool|IResolvable ResetPasswordInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SkipConfirmationInput`<sup>Optional</sup> <a name="SkipConfirmationInput" id="@cdktf/provider-gitlab.user.User.property.skipConfirmationInput"></a>
 
 ```csharp
-public object SkipConfirmationInput { get; }
+public bool|IResolvable SkipConfirmationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -909,10 +909,10 @@ public string UsernameInput { get; }
 ##### `CanCreateGroup`<sup>Required</sup> <a name="CanCreateGroup" id="@cdktf/provider-gitlab.user.User.property.canCreateGroup"></a>
 
 ```csharp
-public object CanCreateGroup { get; }
+public bool|IResolvable CanCreateGroup { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -929,10 +929,10 @@ public string Email { get; }
 ##### `ForceRandomPassword`<sup>Required</sup> <a name="ForceRandomPassword" id="@cdktf/provider-gitlab.user.User.property.forceRandomPassword"></a>
 
 ```csharp
-public object ForceRandomPassword { get; }
+public bool|IResolvable ForceRandomPassword { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -949,20 +949,20 @@ public string Id { get; }
 ##### `IsAdmin`<sup>Required</sup> <a name="IsAdmin" id="@cdktf/provider-gitlab.user.User.property.isAdmin"></a>
 
 ```csharp
-public object IsAdmin { get; }
+public bool|IResolvable IsAdmin { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `IsExternal`<sup>Required</sup> <a name="IsExternal" id="@cdktf/provider-gitlab.user.User.property.isExternal"></a>
 
 ```csharp
-public object IsExternal { get; }
+public bool|IResolvable IsExternal { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1019,20 +1019,20 @@ public double ProjectsLimit { get; }
 ##### `ResetPassword`<sup>Required</sup> <a name="ResetPassword" id="@cdktf/provider-gitlab.user.User.property.resetPassword"></a>
 
 ```csharp
-public object ResetPassword { get; }
+public bool|IResolvable ResetPassword { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SkipConfirmation`<sup>Required</sup> <a name="SkipConfirmation" id="@cdktf/provider-gitlab.user.User.property.skipConfirmation"></a>
 
 ```csharp
-public object SkipConfirmation { get; }
+public bool|IResolvable SkipConfirmation { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1084,27 +1084,27 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Gitlab;
 
 new UserConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Email,
     string Name,
     string Username,
-    object CanCreateGroup = null,
-    object ForceRandomPassword = null,
+    bool|IResolvable CanCreateGroup = null,
+    bool|IResolvable ForceRandomPassword = null,
     string Id = null,
-    object IsAdmin = null,
-    object IsExternal = null,
+    bool|IResolvable IsAdmin = null,
+    bool|IResolvable IsExternal = null,
     double NamespaceId = null,
     string Note = null,
     string Password = null,
     double ProjectsLimit = null,
-    object ResetPassword = null,
-    object SkipConfirmation = null,
+    bool|IResolvable ResetPassword = null,
+    bool|IResolvable SkipConfirmation = null,
     string State = null
 };
 ```
@@ -1113,27 +1113,27 @@ new UserConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.email">Email</a></code> | <code>string</code> | The e-mail address of the user. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.name">Name</a></code> | <code>string</code> | The name of the user. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.username">Username</a></code> | <code>string</code> | The username of the user. |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.canCreateGroup">CanCreateGroup</a></code> | <code>object</code> | Boolean, defaults to false. Whether to allow the user to create groups. |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.forceRandomPassword">ForceRandomPassword</a></code> | <code>object</code> | Set user password to a random value. |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.canCreateGroup">CanCreateGroup</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Boolean, defaults to false. Whether to allow the user to create groups. |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.forceRandomPassword">ForceRandomPassword</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set user password to a random value. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/user#id User#id}. |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.isAdmin">IsAdmin</a></code> | <code>object</code> | Boolean, defaults to false.  Whether to enable administrative privileges. |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.isExternal">IsExternal</a></code> | <code>object</code> | Boolean, defaults to false. |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.isAdmin">IsAdmin</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Boolean, defaults to false.  Whether to enable administrative privileges. |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.isExternal">IsExternal</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Boolean, defaults to false. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.namespaceId">NamespaceId</a></code> | <code>double</code> | The ID of the user's namespace. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.note">Note</a></code> | <code>string</code> | The note associated to the user. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.password">Password</a></code> | <code>string</code> | The password of the user. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.projectsLimit">ProjectsLimit</a></code> | <code>double</code> | Integer, defaults to 0.  Number of projects user can create. |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.resetPassword">ResetPassword</a></code> | <code>object</code> | Boolean, defaults to false. Send user password reset link. |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.skipConfirmation">SkipConfirmation</a></code> | <code>object</code> | Boolean, defaults to true. Whether to skip confirmation. |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.resetPassword">ResetPassword</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Boolean, defaults to false. Send user password reset link. |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.skipConfirmation">SkipConfirmation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Boolean, defaults to true. Whether to skip confirmation. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.state">State</a></code> | <code>string</code> | String, defaults to 'active'. The state of the user account. Valid values are `active`, `deactivated`, `blocked`. |
 
 ---
@@ -1141,20 +1141,20 @@ new UserConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-gitlab.user.UserConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.user.UserConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1201,10 +1201,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-gitlab.user.UserConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1253,10 +1253,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `CanCreateGroup`<sup>Optional</sup> <a name="CanCreateGroup" id="@cdktf/provider-gitlab.user.UserConfig.property.canCreateGroup"></a>
 
 ```csharp
-public object CanCreateGroup { get; set; }
+public bool|IResolvable CanCreateGroup { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Boolean, defaults to false. Whether to allow the user to create groups.
 
@@ -1267,10 +1267,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `ForceRandomPassword`<sup>Optional</sup> <a name="ForceRandomPassword" id="@cdktf/provider-gitlab.user.UserConfig.property.forceRandomPassword"></a>
 
 ```csharp
-public object ForceRandomPassword { get; set; }
+public bool|IResolvable ForceRandomPassword { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set user password to a random value.
 
@@ -1296,10 +1296,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `IsAdmin`<sup>Optional</sup> <a name="IsAdmin" id="@cdktf/provider-gitlab.user.UserConfig.property.isAdmin"></a>
 
 ```csharp
-public object IsAdmin { get; set; }
+public bool|IResolvable IsAdmin { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Boolean, defaults to false.  Whether to enable administrative privileges.
 
@@ -1310,10 +1310,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `IsExternal`<sup>Optional</sup> <a name="IsExternal" id="@cdktf/provider-gitlab.user.UserConfig.property.isExternal"></a>
 
 ```csharp
-public object IsExternal { get; set; }
+public bool|IResolvable IsExternal { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Boolean, defaults to false.
 
@@ -1382,10 +1382,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `ResetPassword`<sup>Optional</sup> <a name="ResetPassword" id="@cdktf/provider-gitlab.user.UserConfig.property.resetPassword"></a>
 
 ```csharp
-public object ResetPassword { get; set; }
+public bool|IResolvable ResetPassword { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Boolean, defaults to false. Send user password reset link.
 
@@ -1396,10 +1396,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `SkipConfirmation`<sup>Optional</sup> <a name="SkipConfirmation" id="@cdktf/provider-gitlab.user.UserConfig.property.skipConfirmation"></a>
 
 ```csharp
-public object SkipConfirmation { get; set; }
+public bool|IResolvable SkipConfirmation { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Boolean, defaults to true. Whether to skip confirmation.
 

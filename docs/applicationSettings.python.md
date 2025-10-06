@@ -14,54 +14,54 @@ from cdktf_cdktf_provider_gitlab import application_settings
 applicationSettings.ApplicationSettings(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   abuse_notification_email: str = None,
-  admin_mode: typing.Union[bool, IResolvable] = None,
+  admin_mode: bool | IResolvable = None,
   after_sign_out_path: str = None,
   after_sign_up_text: str = None,
   akismet_api_key: str = None,
-  akismet_enabled: typing.Union[bool, IResolvable] = None,
-  allow_account_deletion: typing.Union[bool, IResolvable] = None,
-  allow_group_owners_to_manage_ldap: typing.Union[bool, IResolvable] = None,
-  allow_local_requests_from_system_hooks: typing.Union[bool, IResolvable] = None,
-  allow_local_requests_from_web_hooks_and_services: typing.Union[bool, IResolvable] = None,
-  allow_project_creation_for_guest_and_below: typing.Union[bool, IResolvable] = None,
-  allow_runner_registration_token: typing.Union[bool, IResolvable] = None,
+  akismet_enabled: bool | IResolvable = None,
+  allow_account_deletion: bool | IResolvable = None,
+  allow_group_owners_to_manage_ldap: bool | IResolvable = None,
+  allow_local_requests_from_system_hooks: bool | IResolvable = None,
+  allow_local_requests_from_web_hooks_and_services: bool | IResolvable = None,
+  allow_project_creation_for_guest_and_below: bool | IResolvable = None,
+  allow_runner_registration_token: bool | IResolvable = None,
   archive_builds_in_human_readable: str = None,
   asciidoc_max_includes: typing.Union[int, float] = None,
   asset_proxy_allowlist: typing.List[str] = None,
-  asset_proxy_enabled: typing.Union[bool, IResolvable] = None,
+  asset_proxy_enabled: bool | IResolvable = None,
   asset_proxy_secret_key: str = None,
   asset_proxy_url: str = None,
-  authorized_keys_enabled: typing.Union[bool, IResolvable] = None,
-  auto_ban_user_on_excessive_projects_download: typing.Union[bool, IResolvable] = None,
+  authorized_keys_enabled: bool | IResolvable = None,
+  auto_ban_user_on_excessive_projects_download: bool | IResolvable = None,
   auto_devops_domain: str = None,
-  auto_devops_enabled: typing.Union[bool, IResolvable] = None,
-  automatic_purchased_storage_allocation: typing.Union[bool, IResolvable] = None,
+  auto_devops_enabled: bool | IResolvable = None,
+  automatic_purchased_storage_allocation: bool | IResolvable = None,
   bulk_import_concurrent_pipeline_batch_limit: typing.Union[int, float] = None,
-  bulk_import_enabled: typing.Union[bool, IResolvable] = None,
+  bulk_import_enabled: bool | IResolvable = None,
   bulk_import_max_download_file_size: typing.Union[int, float] = None,
-  can_create_group: typing.Union[bool, IResolvable] = None,
-  check_namespace_plan: typing.Union[bool, IResolvable] = None,
+  can_create_group: bool | IResolvable = None,
+  check_namespace_plan: bool | IResolvable = None,
   ci_max_includes: typing.Union[int, float] = None,
   ci_max_total_yaml_size_bytes: typing.Union[int, float] = None,
   commit_email_hostname: str = None,
   concurrent_bitbucket_import_jobs_limit: typing.Union[int, float] = None,
   concurrent_bitbucket_server_import_jobs_limit: typing.Union[int, float] = None,
   concurrent_github_import_jobs_limit: typing.Union[int, float] = None,
-  container_expiration_policies_enable_historic_entries: typing.Union[bool, IResolvable] = None,
+  container_expiration_policies_enable_historic_entries: bool | IResolvable = None,
   container_registry_cleanup_tags_service_max_list_size: typing.Union[int, float] = None,
   container_registry_delete_tags_service_timeout: typing.Union[int, float] = None,
-  container_registry_expiration_policies_caching: typing.Union[bool, IResolvable] = None,
+  container_registry_expiration_policies_caching: bool | IResolvable = None,
   container_registry_expiration_policies_worker_capacity: typing.Union[int, float] = None,
   container_registry_token_expire_delay: typing.Union[int, float] = None,
-  deactivate_dormant_users: typing.Union[bool, IResolvable] = None,
+  deactivate_dormant_users: bool | IResolvable = None,
   deactivate_dormant_users_period: typing.Union[int, float] = None,
   decompress_archive_file_timeout: typing.Union[int, float] = None,
   default_artifacts_expire_in: str = None,
@@ -76,64 +76,64 @@ applicationSettings.ApplicationSettings(
   default_project_visibility: str = None,
   default_snippet_visibility: str = None,
   default_syntax_highlighting_theme: typing.Union[int, float] = None,
-  delete_inactive_projects: typing.Union[bool, IResolvable] = None,
-  delete_unconfirmed_users: typing.Union[bool, IResolvable] = None,
+  delete_inactive_projects: bool | IResolvable = None,
+  delete_unconfirmed_users: bool | IResolvable = None,
   deletion_adjourned_period: typing.Union[int, float] = None,
-  diagramsnet_enabled: typing.Union[bool, IResolvable] = None,
+  diagramsnet_enabled: bool | IResolvable = None,
   diagramsnet_url: str = None,
   diff_max_files: typing.Union[int, float] = None,
   diff_max_lines: typing.Union[int, float] = None,
   diff_max_patch_bytes: typing.Union[int, float] = None,
-  disable_admin_oauth_scopes: typing.Union[bool, IResolvable] = None,
+  disable_admin_oauth_scopes: bool | IResolvable = None,
   disabled_oauth_sign_in_sources: typing.List[str] = None,
-  disable_feed_token: typing.Union[bool, IResolvable] = None,
-  disable_personal_access_tokens: typing.Union[bool, IResolvable] = None,
-  dns_rebinding_protection_enabled: typing.Union[bool, IResolvable] = None,
+  disable_feed_token: bool | IResolvable = None,
+  disable_personal_access_tokens: bool | IResolvable = None,
+  dns_rebinding_protection_enabled: bool | IResolvable = None,
   domain_allowlist: typing.List[str] = None,
   domain_denylist: typing.List[str] = None,
-  domain_denylist_enabled: typing.Union[bool, IResolvable] = None,
+  domain_denylist_enabled: bool | IResolvable = None,
   downstream_pipeline_trigger_limit_per_project_user_sha: typing.Union[int, float] = None,
   dsa_key_restriction: typing.Union[int, float] = None,
-  duo_features_enabled: typing.Union[bool, IResolvable] = None,
+  duo_features_enabled: bool | IResolvable = None,
   ecdsa_key_restriction: typing.Union[int, float] = None,
   ecdsa_sk_key_restriction: typing.Union[int, float] = None,
   ed25519_key_restriction: typing.Union[int, float] = None,
   ed25519_sk_key_restriction: typing.Union[int, float] = None,
   eks_access_key_id: str = None,
   eks_account_id: str = None,
-  eks_integration_enabled: typing.Union[bool, IResolvable] = None,
+  eks_integration_enabled: bool | IResolvable = None,
   eks_secret_access_key: str = None,
-  elasticsearch_aws: typing.Union[bool, IResolvable] = None,
+  elasticsearch_aws: bool | IResolvable = None,
   elasticsearch_aws_access_key: str = None,
   elasticsearch_aws_region: str = None,
   elasticsearch_aws_secret_access_key: str = None,
   elasticsearch_indexed_field_length_limit: typing.Union[int, float] = None,
   elasticsearch_indexed_file_size_limit_kb: typing.Union[int, float] = None,
-  elasticsearch_indexing: typing.Union[bool, IResolvable] = None,
-  elasticsearch_limit_indexing: typing.Union[bool, IResolvable] = None,
+  elasticsearch_indexing: bool | IResolvable = None,
+  elasticsearch_limit_indexing: bool | IResolvable = None,
   elasticsearch_max_bulk_concurrency: typing.Union[int, float] = None,
   elasticsearch_max_bulk_size_mb: typing.Union[int, float] = None,
   elasticsearch_max_code_indexing_concurrency: typing.Union[int, float] = None,
   elasticsearch_namespace_ids: typing.List[typing.Union[int, float]] = None,
   elasticsearch_password: str = None,
   elasticsearch_project_ids: typing.List[typing.Union[int, float]] = None,
-  elasticsearch_requeue_workers: typing.Union[bool, IResolvable] = None,
-  elasticsearch_search: typing.Union[bool, IResolvable] = None,
+  elasticsearch_requeue_workers: bool | IResolvable = None,
+  elasticsearch_search: bool | IResolvable = None,
   elasticsearch_url: typing.List[str] = None,
   elasticsearch_username: str = None,
   elasticsearch_worker_number_of_shards: typing.Union[int, float] = None,
   email_additional_text: str = None,
-  email_author_in_body: typing.Union[bool, IResolvable] = None,
+  email_author_in_body: bool | IResolvable = None,
   email_confirmation_setting: str = None,
-  enable_artifact_external_redirect_warning_page: typing.Union[bool, IResolvable] = None,
+  enable_artifact_external_redirect_warning_page: bool | IResolvable = None,
   enabled_git_access_protocol: str = None,
-  enforce_namespace_storage_limit: typing.Union[bool, IResolvable] = None,
-  enforce_terms: typing.Union[bool, IResolvable] = None,
+  enforce_namespace_storage_limit: bool | IResolvable = None,
+  enforce_terms: bool | IResolvable = None,
   external_auth_client_cert: str = None,
   external_auth_client_key: str = None,
   external_auth_client_key_pass: str = None,
   external_authorization_service_default_label: str = None,
-  external_authorization_service_enabled: typing.Union[bool, IResolvable] = None,
+  external_authorization_service_enabled: bool | IResolvable = None,
   external_authorization_service_timeout: typing.Union[int, float] = None,
   external_authorization_service_url: str = None,
   external_pipeline_validation_service_timeout: typing.Union[int, float] = None,
@@ -148,46 +148,46 @@ applicationSettings.ApplicationSettings(
   gitaly_timeout_fast: typing.Union[int, float] = None,
   gitaly_timeout_medium: typing.Union[int, float] = None,
   gitlab_shell_operation_limit: typing.Union[int, float] = None,
-  gitpod_enabled: typing.Union[bool, IResolvable] = None,
+  gitpod_enabled: bool | IResolvable = None,
   gitpod_url: str = None,
   git_rate_limit_users_alertlist: typing.List[typing.Union[int, float]] = None,
   git_rate_limit_users_allowlist: typing.List[str] = None,
   git_two_factor_session_expiry: typing.Union[int, float] = None,
   globally_allowed_ips: str = None,
-  grafana_enabled: typing.Union[bool, IResolvable] = None,
+  grafana_enabled: bool | IResolvable = None,
   grafana_url: str = None,
-  gravatar_enabled: typing.Union[bool, IResolvable] = None,
-  group_owners_can_manage_default_branch_protection: typing.Union[bool, IResolvable] = None,
-  help_page_hide_commercial_content: typing.Union[bool, IResolvable] = None,
+  gravatar_enabled: bool | IResolvable = None,
+  group_owners_can_manage_default_branch_protection: bool | IResolvable = None,
+  help_page_hide_commercial_content: bool | IResolvable = None,
   help_page_support_url: str = None,
   help_page_text: str = None,
   help_text: str = None,
-  hide_third_party_offers: typing.Union[bool, IResolvable] = None,
+  hide_third_party_offers: bool | IResolvable = None,
   home_page_url: str = None,
-  housekeeping_enabled: typing.Union[bool, IResolvable] = None,
+  housekeeping_enabled: bool | IResolvable = None,
   housekeeping_optimize_repository_period: typing.Union[int, float] = None,
-  html_emails_enabled: typing.Union[bool, IResolvable] = None,
+  html_emails_enabled: bool | IResolvable = None,
   id: str = None,
   import_sources: typing.List[str] = None,
   inactive_projects_delete_after_months: typing.Union[int, float] = None,
   inactive_projects_min_size_mb: typing.Union[int, float] = None,
   inactive_projects_send_warning_email_after_months: typing.Union[int, float] = None,
-  include_optional_metrics_in_service_ping: typing.Union[bool, IResolvable] = None,
-  in_product_marketing_emails_enabled: typing.Union[bool, IResolvable] = None,
-  invisible_captcha_enabled: typing.Union[bool, IResolvable] = None,
+  include_optional_metrics_in_service_ping: bool | IResolvable = None,
+  in_product_marketing_emails_enabled: bool | IResolvable = None,
+  invisible_captcha_enabled: bool | IResolvable = None,
   issues_create_limit: typing.Union[int, float] = None,
   jira_connect_application_key: str = None,
   jira_connect_proxy_url: str = None,
-  jira_connect_public_key_storage_enabled: typing.Union[bool, IResolvable] = None,
-  keep_latest_artifact: typing.Union[bool, IResolvable] = None,
+  jira_connect_public_key_storage_enabled: bool | IResolvable = None,
+  keep_latest_artifact: bool | IResolvable = None,
   local_markdown_version: typing.Union[int, float] = None,
-  lock_duo_features_enabled: typing.Union[bool, IResolvable] = None,
-  lock_memberships_to_ldap: typing.Union[bool, IResolvable] = None,
-  mailgun_events_enabled: typing.Union[bool, IResolvable] = None,
+  lock_duo_features_enabled: bool | IResolvable = None,
+  lock_memberships_to_ldap: bool | IResolvable = None,
+  mailgun_events_enabled: bool | IResolvable = None,
   mailgun_signing_key: str = None,
-  maintenance_mode: typing.Union[bool, IResolvable] = None,
+  maintenance_mode: bool | IResolvable = None,
   maintenance_mode_message: str = None,
-  maven_package_requests_forwarding: typing.Union[bool, IResolvable] = None,
+  maven_package_requests_forwarding: bool | IResolvable = None,
   max_artifacts_size: typing.Union[int, float] = None,
   max_attachment_size: typing.Union[int, float] = None,
   max_decompressed_archive_size: typing.Union[int, float] = None,
@@ -203,73 +203,73 @@ applicationSettings.ApplicationSettings(
   max_terraform_state_size_bytes: typing.Union[int, float] = None,
   metrics_method_call_threshold: typing.Union[int, float] = None,
   minimum_password_length: typing.Union[int, float] = None,
-  mirror_available: typing.Union[bool, IResolvable] = None,
+  mirror_available: bool | IResolvable = None,
   mirror_capacity_threshold: typing.Union[int, float] = None,
   mirror_max_capacity: typing.Union[int, float] = None,
   mirror_max_delay: typing.Union[int, float] = None,
-  npm_package_requests_forwarding: typing.Union[bool, IResolvable] = None,
-  nuget_skip_metadata_url_validation: typing.Union[bool, IResolvable] = None,
+  npm_package_requests_forwarding: bool | IResolvable = None,
+  nuget_skip_metadata_url_validation: bool | IResolvable = None,
   outbound_local_requests_whitelist: typing.List[str] = None,
   package_metadata_purl_types: typing.List[typing.Union[int, float]] = None,
-  package_registry_allow_anyone_to_pull_option: typing.Union[bool, IResolvable] = None,
+  package_registry_allow_anyone_to_pull_option: bool | IResolvable = None,
   package_registry_cleanup_policies_worker_capacity: typing.Union[int, float] = None,
-  pages_domain_verification_enabled: typing.Union[bool, IResolvable] = None,
-  password_authentication_enabled_for_git: typing.Union[bool, IResolvable] = None,
-  password_authentication_enabled_for_web: typing.Union[bool, IResolvable] = None,
-  password_lowercase_required: typing.Union[bool, IResolvable] = None,
-  password_number_required: typing.Union[bool, IResolvable] = None,
-  password_symbol_required: typing.Union[bool, IResolvable] = None,
-  password_uppercase_required: typing.Union[bool, IResolvable] = None,
+  pages_domain_verification_enabled: bool | IResolvable = None,
+  password_authentication_enabled_for_git: bool | IResolvable = None,
+  password_authentication_enabled_for_web: bool | IResolvable = None,
+  password_lowercase_required: bool | IResolvable = None,
+  password_number_required: bool | IResolvable = None,
+  password_symbol_required: bool | IResolvable = None,
+  password_uppercase_required: bool | IResolvable = None,
   performance_bar_allowed_group_path: str = None,
   personal_access_token_prefix: str = None,
   pipeline_limit_per_project_user_sha: typing.Union[int, float] = None,
-  plantuml_enabled: typing.Union[bool, IResolvable] = None,
+  plantuml_enabled: bool | IResolvable = None,
   plantuml_url: str = None,
   polling_interval_multiplier: typing.Union[int, float] = None,
-  project_export_enabled: typing.Union[bool, IResolvable] = None,
+  project_export_enabled: bool | IResolvable = None,
   project_jobs_api_rate_limit: typing.Union[int, float] = None,
   projects_api_rate_limit_unauthenticated: typing.Union[int, float] = None,
-  prometheus_metrics_enabled: typing.Union[bool, IResolvable] = None,
-  protected_ci_variables: typing.Union[bool, IResolvable] = None,
+  prometheus_metrics_enabled: bool | IResolvable = None,
+  protected_ci_variables: bool | IResolvable = None,
   push_event_activities_limit: typing.Union[int, float] = None,
   push_event_hooks_limit: typing.Union[int, float] = None,
-  pypi_package_requests_forwarding: typing.Union[bool, IResolvable] = None,
+  pypi_package_requests_forwarding: bool | IResolvable = None,
   rate_limiting_response_text: str = None,
   raw_blob_request_limit: typing.Union[int, float] = None,
-  recaptcha_enabled: typing.Union[bool, IResolvable] = None,
+  recaptcha_enabled: bool | IResolvable = None,
   recaptcha_private_key: str = None,
   recaptcha_site_key: str = None,
   receive_max_input_size: typing.Union[int, float] = None,
-  receptive_cluster_agents_enabled: typing.Union[bool, IResolvable] = None,
-  remember_me_enabled: typing.Union[bool, IResolvable] = None,
-  repository_checks_enabled: typing.Union[bool, IResolvable] = None,
+  receptive_cluster_agents_enabled: bool | IResolvable = None,
+  remember_me_enabled: bool | IResolvable = None,
+  repository_checks_enabled: bool | IResolvable = None,
   repository_size_limit: typing.Union[int, float] = None,
   repository_storages_weighted: typing.Mapping[typing.Union[int, float]] = None,
-  require_admin_approval_after_user_signup: typing.Union[bool, IResolvable] = None,
-  require_admin_two_factor_authentication: typing.Union[bool, IResolvable] = None,
-  require_personal_access_token_expiry: typing.Union[bool, IResolvable] = None,
-  require_two_factor_authentication: typing.Union[bool, IResolvable] = None,
+  require_admin_approval_after_user_signup: bool | IResolvable = None,
+  require_admin_two_factor_authentication: bool | IResolvable = None,
+  require_personal_access_token_expiry: bool | IResolvable = None,
+  require_two_factor_authentication: bool | IResolvable = None,
   restricted_visibility_levels: typing.List[str] = None,
   rsa_key_restriction: typing.Union[int, float] = None,
   search_rate_limit: typing.Union[int, float] = None,
   search_rate_limit_unauthenticated: typing.Union[int, float] = None,
   security_approval_policies_limit: typing.Union[int, float] = None,
-  security_policy_global_group_approvers_enabled: typing.Union[bool, IResolvable] = None,
+  security_policy_global_group_approvers_enabled: bool | IResolvable = None,
   security_txt_content: str = None,
-  send_user_confirmation_email: typing.Union[bool, IResolvable] = None,
-  service_access_tokens_expiration_enforced: typing.Union[bool, IResolvable] = None,
+  send_user_confirmation_email: bool | IResolvable = None,
+  service_access_tokens_expiration_enforced: bool | IResolvable = None,
   session_expire_delay: typing.Union[int, float] = None,
-  shared_runners_enabled: typing.Union[bool, IResolvable] = None,
+  shared_runners_enabled: bool | IResolvable = None,
   shared_runners_minutes: typing.Union[int, float] = None,
   shared_runners_text: str = None,
   sidekiq_job_limiter_compression_threshold_bytes: typing.Union[int, float] = None,
   sidekiq_job_limiter_limit_bytes: typing.Union[int, float] = None,
   sidekiq_job_limiter_mode: str = None,
   sign_in_text: str = None,
-  signup_enabled: typing.Union[bool, IResolvable] = None,
-  silent_admin_exports_enabled: typing.Union[bool, IResolvable] = None,
-  silent_mode_enabled: typing.Union[bool, IResolvable] = None,
-  slack_app_enabled: typing.Union[bool, IResolvable] = None,
+  signup_enabled: bool | IResolvable = None,
+  silent_admin_exports_enabled: bool | IResolvable = None,
+  silent_mode_enabled: bool | IResolvable = None,
+  slack_app_enabled: bool | IResolvable = None,
   slack_app_id: str = None,
   slack_app_secret: str = None,
   slack_app_signing_secret: str = None,
@@ -279,54 +279,54 @@ applicationSettings.ApplicationSettings(
   snowplow_collector_hostname: str = None,
   snowplow_cookie_domain: str = None,
   snowplow_database_collector_hostname: str = None,
-  snowplow_enabled: typing.Union[bool, IResolvable] = None,
-  sourcegraph_enabled: typing.Union[bool, IResolvable] = None,
-  sourcegraph_public_only: typing.Union[bool, IResolvable] = None,
+  snowplow_enabled: bool | IResolvable = None,
+  sourcegraph_enabled: bool | IResolvable = None,
+  sourcegraph_public_only: bool | IResolvable = None,
   sourcegraph_url: str = None,
   spam_check_api_key: str = None,
-  spam_check_endpoint_enabled: typing.Union[bool, IResolvable] = None,
+  spam_check_endpoint_enabled: bool | IResolvable = None,
   spam_check_endpoint_url: str = None,
   static_objects_external_storage_auth_token: str = None,
   static_objects_external_storage_url: str = None,
-  suggest_pipeline_enabled: typing.Union[bool, IResolvable] = None,
+  suggest_pipeline_enabled: bool | IResolvable = None,
   terminal_max_session_time: typing.Union[int, float] = None,
   terms: str = None,
-  throttle_authenticated_api_enabled: typing.Union[bool, IResolvable] = None,
+  throttle_authenticated_api_enabled: bool | IResolvable = None,
   throttle_authenticated_api_period_in_seconds: typing.Union[int, float] = None,
   throttle_authenticated_api_requests_per_period: typing.Union[int, float] = None,
-  throttle_authenticated_packages_api_enabled: typing.Union[bool, IResolvable] = None,
+  throttle_authenticated_packages_api_enabled: bool | IResolvable = None,
   throttle_authenticated_packages_api_period_in_seconds: typing.Union[int, float] = None,
   throttle_authenticated_packages_api_requests_per_period: typing.Union[int, float] = None,
-  throttle_authenticated_web_enabled: typing.Union[bool, IResolvable] = None,
+  throttle_authenticated_web_enabled: bool | IResolvable = None,
   throttle_authenticated_web_period_in_seconds: typing.Union[int, float] = None,
   throttle_authenticated_web_requests_per_period: typing.Union[int, float] = None,
-  throttle_unauthenticated_api_enabled: typing.Union[bool, IResolvable] = None,
+  throttle_unauthenticated_api_enabled: bool | IResolvable = None,
   throttle_unauthenticated_api_period_in_seconds: typing.Union[int, float] = None,
   throttle_unauthenticated_api_requests_per_period: typing.Union[int, float] = None,
-  throttle_unauthenticated_packages_api_enabled: typing.Union[bool, IResolvable] = None,
+  throttle_unauthenticated_packages_api_enabled: bool | IResolvable = None,
   throttle_unauthenticated_packages_api_period_in_seconds: typing.Union[int, float] = None,
   throttle_unauthenticated_packages_api_requests_per_period: typing.Union[int, float] = None,
-  throttle_unauthenticated_web_enabled: typing.Union[bool, IResolvable] = None,
+  throttle_unauthenticated_web_enabled: bool | IResolvable = None,
   throttle_unauthenticated_web_period_in_seconds: typing.Union[int, float] = None,
   throttle_unauthenticated_web_requests_per_period: typing.Union[int, float] = None,
-  time_tracking_limit_to_hours: typing.Union[bool, IResolvable] = None,
+  time_tracking_limit_to_hours: bool | IResolvable = None,
   two_factor_grace_period: typing.Union[int, float] = None,
   unconfirmed_users_delete_after_days: typing.Union[int, float] = None,
-  unique_ips_limit_enabled: typing.Union[bool, IResolvable] = None,
+  unique_ips_limit_enabled: bool | IResolvable = None,
   unique_ips_limit_per_user: typing.Union[int, float] = None,
   unique_ips_limit_time_window: typing.Union[int, float] = None,
-  update_runner_versions_enabled: typing.Union[bool, IResolvable] = None,
-  usage_ping_enabled: typing.Union[bool, IResolvable] = None,
-  use_clickhouse_for_analytics: typing.Union[bool, IResolvable] = None,
-  user_deactivation_emails_enabled: typing.Union[bool, IResolvable] = None,
-  user_default_external: typing.Union[bool, IResolvable] = None,
+  update_runner_versions_enabled: bool | IResolvable = None,
+  usage_ping_enabled: bool | IResolvable = None,
+  use_clickhouse_for_analytics: bool | IResolvable = None,
+  user_deactivation_emails_enabled: bool | IResolvable = None,
+  user_default_external: bool | IResolvable = None,
   user_default_internal_regex: str = None,
-  user_defaults_to_private_profile: typing.Union[bool, IResolvable] = None,
-  user_oauth_applications: typing.Union[bool, IResolvable] = None,
-  user_show_add_ssh_key_message: typing.Union[bool, IResolvable] = None,
+  user_defaults_to_private_profile: bool | IResolvable = None,
+  user_oauth_applications: bool | IResolvable = None,
+  user_show_add_ssh_key_message: bool | IResolvable = None,
   valid_runner_registrars: typing.List[str] = None,
-  version_check_enabled: typing.Union[bool, IResolvable] = None,
-  web_ide_clientside_preview_enabled: typing.Union[bool, IResolvable] = None,
+  version_check_enabled: bool | IResolvable = None,
+  web_ide_clientside_preview_enabled: bool | IResolvable = None,
   whats_new_variant: str = None,
   wiki_page_max_content_bytes: typing.Union[int, float] = None
 )
@@ -336,54 +336,54 @@ applicationSettings.ApplicationSettings(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.abuseNotificationEmail">abuse_notification_email</a></code> | <code>str</code> | If set, abuse reports are sent to this address. Abuse reports are always available in the Admin Area. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.adminMode">admin_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Require administrators to enable Admin Mode by re-authenticating for administrative tasks. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.adminMode">admin_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | Require administrators to enable Admin Mode by re-authenticating for administrative tasks. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.afterSignOutPath">after_sign_out_path</a></code> | <code>str</code> | Where to redirect users after logout. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.afterSignUpText">after_sign_up_text</a></code> | <code>str</code> | Text shown to the user after signing up. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.akismetApiKey">akismet_api_key</a></code> | <code>str</code> | API key for Akismet spam protection. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.akismetEnabled">akismet_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: akismet_api_key) Enable or disable Akismet spam protection. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.allowAccountDeletion">allow_account_deletion</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to true to allow users to delete their accounts. Premium and Ultimate only. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.allowGroupOwnersToManageLdap">allow_group_owners_to_manage_ldap</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to true to allow group owners to manage LDAP. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.allowLocalRequestsFromSystemHooks">allow_local_requests_from_system_hooks</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow requests to the local network from system hooks. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.allowLocalRequestsFromWebHooksAndServices">allow_local_requests_from_web_hooks_and_services</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow requests to the local network from web hooks and services. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.allowProjectCreationForGuestAndBelow">allow_project_creation_for_guest_and_below</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether users assigned up to the Guest role can create groups and personal projects. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.allowRunnerRegistrationToken">allow_runner_registration_token</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow using a registration token to create a runner. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.akismetEnabled">akismet_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: akismet_api_key) Enable or disable Akismet spam protection. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.allowAccountDeletion">allow_account_deletion</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to true to allow users to delete their accounts. Premium and Ultimate only. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.allowGroupOwnersToManageLdap">allow_group_owners_to_manage_ldap</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to true to allow group owners to manage LDAP. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.allowLocalRequestsFromSystemHooks">allow_local_requests_from_system_hooks</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow requests to the local network from system hooks. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.allowLocalRequestsFromWebHooksAndServices">allow_local_requests_from_web_hooks_and_services</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow requests to the local network from web hooks and services. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.allowProjectCreationForGuestAndBelow">allow_project_creation_for_guest_and_below</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether users assigned up to the Guest role can create groups and personal projects. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.allowRunnerRegistrationToken">allow_runner_registration_token</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow using a registration token to create a runner. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.archiveBuildsInHumanReadable">archive_builds_in_human_readable</a></code> | <code>str</code> | Set the duration for which the jobs are considered as old and expired. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.asciidocMaxIncludes">asciidoc_max_includes</a></code> | <code>typing.Union[int, float]</code> | Maximum limit of AsciiDoc include directives being processed in any one document. Maximum: 64. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.assetProxyAllowlist">asset_proxy_allowlist</a></code> | <code>typing.List[str]</code> | Assets that match these domains are not proxied. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.assetProxyEnabled">asset_proxy_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: asset_proxy_url) Enable proxying of assets. GitLab restart is required to apply changes. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.assetProxyEnabled">asset_proxy_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: asset_proxy_url) Enable proxying of assets. GitLab restart is required to apply changes. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.assetProxySecretKey">asset_proxy_secret_key</a></code> | <code>str</code> | Shared secret with the asset proxy server. GitLab restart is required to apply changes. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.assetProxyUrl">asset_proxy_url</a></code> | <code>str</code> | URL of the asset proxy server. GitLab restart is required to apply changes. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.authorizedKeysEnabled">authorized_keys_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | By default, we write to the authorized_keys file to support Git over SSH without additional configuration. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.autoBanUserOnExcessiveProjectsDownload">auto_ban_user_on_excessive_projects_download</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When enabled, users will get automatically banned from the application when they download more than the maximum number of unique projects in the time period specified by max_number_of_repository_downloads and max_number_of_repository_downloads_within_time_period respectively. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.authorizedKeysEnabled">authorized_keys_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | By default, we write to the authorized_keys file to support Git over SSH without additional configuration. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.autoBanUserOnExcessiveProjectsDownload">auto_ban_user_on_excessive_projects_download</a></code> | <code>bool \| cdktf.IResolvable</code> | When enabled, users will get automatically banned from the application when they download more than the maximum number of unique projects in the time period specified by max_number_of_repository_downloads and max_number_of_repository_downloads_within_time_period respectively. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.autoDevopsDomain">auto_devops_domain</a></code> | <code>str</code> | Specify a domain to use by default for every project’s Auto Review Apps and Auto Deploy stages. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.autoDevopsEnabled">auto_devops_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Auto DevOps for projects by default. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.automaticPurchasedStorageAllocation">automatic_purchased_storage_allocation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enabling this permits automatic allocation of purchased storage in a namespace. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.autoDevopsEnabled">auto_devops_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable Auto DevOps for projects by default. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.automaticPurchasedStorageAllocation">automatic_purchased_storage_allocation</a></code> | <code>bool \| cdktf.IResolvable</code> | Enabling this permits automatic allocation of purchased storage in a namespace. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.bulkImportConcurrentPipelineBatchLimit">bulk_import_concurrent_pipeline_batch_limit</a></code> | <code>typing.Union[int, float]</code> | Maximum simultaneous Direct Transfer batches to process. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.bulkImportEnabled">bulk_import_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable migrating GitLab groups by direct transfer. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.bulkImportEnabled">bulk_import_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable migrating GitLab groups by direct transfer. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.bulkImportMaxDownloadFileSize">bulk_import_max_download_file_size</a></code> | <code>typing.Union[int, float]</code> | Maximum download file size when importing from source GitLab instances by direct transfer. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.canCreateGroup">can_create_group</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether users can create top-level groups. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.checkNamespacePlan">check_namespace_plan</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enabling this makes only licensed EE features available to projects if the project namespace’s plan includes the feature or if the project is public. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.canCreateGroup">can_create_group</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether users can create top-level groups. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.checkNamespacePlan">check_namespace_plan</a></code> | <code>bool \| cdktf.IResolvable</code> | Enabling this makes only licensed EE features available to projects if the project namespace’s plan includes the feature or if the project is public. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.ciMaxIncludes">ci_max_includes</a></code> | <code>typing.Union[int, float]</code> | The maximum number of includes per pipeline. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.ciMaxTotalYamlSizeBytes">ci_max_total_yaml_size_bytes</a></code> | <code>typing.Union[int, float]</code> | The maximum amount of memory, in bytes, that can be allocated for the pipeline configuration, with all included YAML configuration files. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.commitEmailHostname">commit_email_hostname</a></code> | <code>str</code> | Custom hostname (for private commit emails). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.concurrentBitbucketImportJobsLimit">concurrent_bitbucket_import_jobs_limit</a></code> | <code>typing.Union[int, float]</code> | Maximum number of simultaneous import jobs for the Bitbucket Cloud importer. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.concurrentBitbucketServerImportJobsLimit">concurrent_bitbucket_server_import_jobs_limit</a></code> | <code>typing.Union[int, float]</code> | Maximum number of simultaneous import jobs for the Bitbucket Server importer. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.concurrentGithubImportJobsLimit">concurrent_github_import_jobs_limit</a></code> | <code>typing.Union[int, float]</code> | Maximum number of simultaneous import jobs for the GitHub importer. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.containerExpirationPoliciesEnableHistoricEntries">container_expiration_policies_enable_historic_entries</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable cleanup policies for all projects. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.containerExpirationPoliciesEnableHistoricEntries">container_expiration_policies_enable_historic_entries</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable cleanup policies for all projects. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.containerRegistryCleanupTagsServiceMaxListSize">container_registry_cleanup_tags_service_max_list_size</a></code> | <code>typing.Union[int, float]</code> | The maximum number of tags that can be deleted in a single execution of cleanup policies. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.containerRegistryDeleteTagsServiceTimeout">container_registry_delete_tags_service_timeout</a></code> | <code>typing.Union[int, float]</code> | The maximum time, in seconds, that the cleanup process can take to delete a batch of tags for cleanup policies. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.containerRegistryExpirationPoliciesCaching">container_registry_expiration_policies_caching</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Caching during the execution of cleanup policies. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.containerRegistryExpirationPoliciesCaching">container_registry_expiration_policies_caching</a></code> | <code>bool \| cdktf.IResolvable</code> | Caching during the execution of cleanup policies. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.containerRegistryExpirationPoliciesWorkerCapacity">container_registry_expiration_policies_worker_capacity</a></code> | <code>typing.Union[int, float]</code> | Number of workers for cleanup policies. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.containerRegistryTokenExpireDelay">container_registry_token_expire_delay</a></code> | <code>typing.Union[int, float]</code> | Container Registry token duration in minutes. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.deactivateDormantUsers">deactivate_dormant_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable automatic deactivation of dormant users. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.deactivateDormantUsers">deactivate_dormant_users</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable automatic deactivation of dormant users. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.deactivateDormantUsersPeriod">deactivate_dormant_users_period</a></code> | <code>typing.Union[int, float]</code> | Length of time (in days) after which a user is considered dormant. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.decompressArchiveFileTimeout">decompress_archive_file_timeout</a></code> | <code>typing.Union[int, float]</code> | Default timeout for decompressing archived files, in seconds. Set to 0 to disable timeouts. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.defaultArtifactsExpireIn">default_artifacts_expire_in</a></code> | <code>str</code> | Set the default expiration time for each job’s artifacts. |
@@ -398,64 +398,64 @@ applicationSettings.ApplicationSettings(
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.defaultProjectVisibility">default_project_visibility</a></code> | <code>str</code> | What visibility level new projects receive. Can take private, internal and public as a parameter. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.defaultSnippetVisibility">default_snippet_visibility</a></code> | <code>str</code> | What visibility level new snippets receive. Can take private, internal and public as a parameter. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.defaultSyntaxHighlightingTheme">default_syntax_highlighting_theme</a></code> | <code>typing.Union[int, float]</code> | Default syntax highlighting theme for users who are new or not signed in. See IDs of available themes (https://gitlab.com/gitlab-org/gitlab/blob/master/lib/gitlab/themes.rb#L16). |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.deleteInactiveProjects">delete_inactive_projects</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable inactive project deletion feature. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.deleteUnconfirmedUsers">delete_unconfirmed_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether users who have not confirmed their email should be deleted. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.deleteInactiveProjects">delete_inactive_projects</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable inactive project deletion feature. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.deleteUnconfirmedUsers">delete_unconfirmed_users</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether users who have not confirmed their email should be deleted. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.deletionAdjournedPeriod">deletion_adjourned_period</a></code> | <code>typing.Union[int, float]</code> | The number of days to wait before deleting a project or group that is marked for deletion. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.diagramsnetEnabled">diagramsnet_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires diagramsnet_url) Enable Diagrams.net integration. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.diagramsnetEnabled">diagramsnet_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires diagramsnet_url) Enable Diagrams.net integration. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.diagramsnetUrl">diagramsnet_url</a></code> | <code>str</code> | The Diagrams.net instance URL for integration. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.diffMaxFiles">diff_max_files</a></code> | <code>typing.Union[int, float]</code> | Maximum files in a diff. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.diffMaxLines">diff_max_lines</a></code> | <code>typing.Union[int, float]</code> | Maximum lines in a diff. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.diffMaxPatchBytes">diff_max_patch_bytes</a></code> | <code>typing.Union[int, float]</code> | Maximum diff patch size, in bytes. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.disableAdminOauthScopes">disable_admin_oauth_scopes</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Stops administrators from connecting their GitLab accounts to non-trusted OAuth 2.0 applications that have the api, read_api, read_repository, write_repository, read_registry, write_registry, or sudo scopes. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.disableAdminOauthScopes">disable_admin_oauth_scopes</a></code> | <code>bool \| cdktf.IResolvable</code> | Stops administrators from connecting their GitLab accounts to non-trusted OAuth 2.0 applications that have the api, read_api, read_repository, write_repository, read_registry, write_registry, or sudo scopes. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.disabledOauthSignInSources">disabled_oauth_sign_in_sources</a></code> | <code>typing.List[str]</code> | Disabled OAuth sign-in sources. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.disableFeedToken">disable_feed_token</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable display of RSS/Atom and calendar feed tokens. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.disablePersonalAccessTokens">disable_personal_access_tokens</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable personal access tokens. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.dnsRebindingProtectionEnabled">dns_rebinding_protection_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enforce DNS rebinding attack protection. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.disableFeedToken">disable_feed_token</a></code> | <code>bool \| cdktf.IResolvable</code> | Disable display of RSS/Atom and calendar feed tokens. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.disablePersonalAccessTokens">disable_personal_access_tokens</a></code> | <code>bool \| cdktf.IResolvable</code> | Disable personal access tokens. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.dnsRebindingProtectionEnabled">dns_rebinding_protection_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enforce DNS rebinding attack protection. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.domainAllowlist">domain_allowlist</a></code> | <code>typing.List[str]</code> | Force people to use only corporate emails for sign-up. Null means there is no restriction. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.domainDenylist">domain_denylist</a></code> | <code>typing.List[str]</code> | Users with email addresses that match these domains cannot sign up. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.domainDenylistEnabled">domain_denylist_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: domain_denylist) Allows blocking sign-ups from emails from specific domains. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.domainDenylistEnabled">domain_denylist_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: domain_denylist) Allows blocking sign-ups from emails from specific domains. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.downstreamPipelineTriggerLimitPerProjectUserSha">downstream_pipeline_trigger_limit_per_project_user_sha</a></code> | <code>typing.Union[int, float]</code> | Maximum downstream pipeline trigger rate. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.dsaKeyRestriction">dsa_key_restriction</a></code> | <code>typing.Union[int, float]</code> | The minimum allowed bit length of an uploaded DSA key. 0 means no restriction. -1 disables DSA keys. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.duoFeaturesEnabled">duo_features_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether GitLab Duo features are enabled for this instance. Self-managed, Premium and Ultimate only. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.duoFeaturesEnabled">duo_features_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether GitLab Duo features are enabled for this instance. Self-managed, Premium and Ultimate only. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.ecdsaKeyRestriction">ecdsa_key_restriction</a></code> | <code>typing.Union[int, float]</code> | The minimum allowed curve size (in bits) of an uploaded ECDSA key. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.ecdsaSkKeyRestriction">ecdsa_sk_key_restriction</a></code> | <code>typing.Union[int, float]</code> | The minimum allowed curve size (in bits) of an uploaded ECDSA_SK key. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.ed25519KeyRestriction">ed25519_key_restriction</a></code> | <code>typing.Union[int, float]</code> | The minimum allowed curve size (in bits) of an uploaded ED25519 key. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.ed25519SkKeyRestriction">ed25519_sk_key_restriction</a></code> | <code>typing.Union[int, float]</code> | The minimum allowed curve size (in bits) of an uploaded ED25519_SK key. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.eksAccessKeyId">eks_access_key_id</a></code> | <code>str</code> | AWS IAM access key ID. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.eksAccountId">eks_account_id</a></code> | <code>str</code> | Amazon account ID. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.eksIntegrationEnabled">eks_integration_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable integration with Amazon EKS. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.eksIntegrationEnabled">eks_integration_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable integration with Amazon EKS. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.eksSecretAccessKey">eks_secret_access_key</a></code> | <code>str</code> | AWS IAM secret access key. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.elasticsearchAws">elasticsearch_aws</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable the use of AWS hosted Elasticsearch. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.elasticsearchAws">elasticsearch_aws</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable the use of AWS hosted Elasticsearch. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.elasticsearchAwsAccessKey">elasticsearch_aws_access_key</a></code> | <code>str</code> | AWS IAM access key. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.elasticsearchAwsRegion">elasticsearch_aws_region</a></code> | <code>str</code> | The AWS region the Elasticsearch domain is configured. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.elasticsearchAwsSecretAccessKey">elasticsearch_aws_secret_access_key</a></code> | <code>str</code> | AWS IAM secret access key. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.elasticsearchIndexedFieldLengthLimit">elasticsearch_indexed_field_length_limit</a></code> | <code>typing.Union[int, float]</code> | Maximum size of text fields to index by Elasticsearch. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.elasticsearchIndexedFileSizeLimitKb">elasticsearch_indexed_file_size_limit_kb</a></code> | <code>typing.Union[int, float]</code> | Maximum size of repository and wiki files that are indexed by Elasticsearch. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.elasticsearchIndexing">elasticsearch_indexing</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Elasticsearch indexing. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.elasticsearchLimitIndexing">elasticsearch_limit_indexing</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Limit Elasticsearch to index certain namespaces and projects. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.elasticsearchIndexing">elasticsearch_indexing</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable Elasticsearch indexing. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.elasticsearchLimitIndexing">elasticsearch_limit_indexing</a></code> | <code>bool \| cdktf.IResolvable</code> | Limit Elasticsearch to index certain namespaces and projects. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.elasticsearchMaxBulkConcurrency">elasticsearch_max_bulk_concurrency</a></code> | <code>typing.Union[int, float]</code> | Maximum concurrency of Elasticsearch bulk requests per indexing operation. This only applies to repository indexing operations. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.elasticsearchMaxBulkSizeMb">elasticsearch_max_bulk_size_mb</a></code> | <code>typing.Union[int, float]</code> | Maximum size of Elasticsearch bulk indexing requests in MB. This only applies to repository indexing operations. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.elasticsearchMaxCodeIndexingConcurrency">elasticsearch_max_code_indexing_concurrency</a></code> | <code>typing.Union[int, float]</code> | Maximum concurrency of Elasticsearch code indexing background jobs. This only applies to repository indexing operations. Premium and Ultimate only. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.elasticsearchNamespaceIds">elasticsearch_namespace_ids</a></code> | <code>typing.List[typing.Union[int, float]]</code> | The namespaces to index via Elasticsearch if elasticsearch_limit_indexing is enabled. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.elasticsearchPassword">elasticsearch_password</a></code> | <code>str</code> | The password of your Elasticsearch instance. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.elasticsearchProjectIds">elasticsearch_project_ids</a></code> | <code>typing.List[typing.Union[int, float]]</code> | The projects to index via Elasticsearch if elasticsearch_limit_indexing is enabled. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.elasticsearchRequeueWorkers">elasticsearch_requeue_workers</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable automatic requeuing of indexing workers. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.elasticsearchSearch">elasticsearch_search</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Elasticsearch search. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.elasticsearchRequeueWorkers">elasticsearch_requeue_workers</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable automatic requeuing of indexing workers. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.elasticsearchSearch">elasticsearch_search</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable Elasticsearch search. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.elasticsearchUrl">elasticsearch_url</a></code> | <code>typing.List[str]</code> | The URL to use for connecting to Elasticsearch. Use a comma-separated list to support cluster (for example, http://localhost:9200, http://localhost:9201). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.elasticsearchUsername">elasticsearch_username</a></code> | <code>str</code> | The username of your Elasticsearch instance. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.elasticsearchWorkerNumberOfShards">elasticsearch_worker_number_of_shards</a></code> | <code>typing.Union[int, float]</code> | Number of indexing worker shards. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.emailAdditionalText">email_additional_text</a></code> | <code>str</code> | Additional text added to the bottom of every email for legal/auditing/compliance reasons. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.emailAuthorInBody">email_author_in_body</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Some email servers do not support overriding the email sender name. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.emailAuthorInBody">email_author_in_body</a></code> | <code>bool \| cdktf.IResolvable</code> | Some email servers do not support overriding the email sender name. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.emailConfirmationSetting">email_confirmation_setting</a></code> | <code>str</code> | Specifies whether users must confirm their email before sign in. Possible values are off, soft, and hard. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.enableArtifactExternalRedirectWarningPage">enable_artifact_external_redirect_warning_page</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Show the external redirect page that warns you about user-generated content in GitLab Pages. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.enableArtifactExternalRedirectWarningPage">enable_artifact_external_redirect_warning_page</a></code> | <code>bool \| cdktf.IResolvable</code> | Show the external redirect page that warns you about user-generated content in GitLab Pages. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.enabledGitAccessProtocol">enabled_git_access_protocol</a></code> | <code>str</code> | Enabled protocols for Git access. Allowed values are: ssh, http, and nil to allow both protocols. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.enforceNamespaceStorageLimit">enforce_namespace_storage_limit</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enabling this permits enforcement of namespace storage limits. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.enforceTerms">enforce_terms</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: terms) Enforce application ToS to all users. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.enforceNamespaceStorageLimit">enforce_namespace_storage_limit</a></code> | <code>bool \| cdktf.IResolvable</code> | Enabling this permits enforcement of namespace storage limits. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.enforceTerms">enforce_terms</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: terms) Enforce application ToS to all users. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.externalAuthClientCert">external_auth_client_cert</a></code> | <code>str</code> | (If enabled, requires: external_auth_client_key) The certificate to use to authenticate with the external authorization service. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.externalAuthClientKey">external_auth_client_key</a></code> | <code>str</code> | Private key for the certificate when authentication is required for the external authorization service, this is encrypted when stored. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.externalAuthClientKeyPass">external_auth_client_key_pass</a></code> | <code>str</code> | Passphrase to use for the private key when authenticating with the external service this is encrypted when stored. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.externalAuthorizationServiceDefaultLabel">external_authorization_service_default_label</a></code> | <code>str</code> | The default classification label to use when requesting authorization and no classification label has been specified on the project. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.externalAuthorizationServiceEnabled">external_authorization_service_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: external_authorization_service_default_label, external_authorization_service_timeout and external_authorization_service_url) Enable using an external authorization service for accessing projects. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.externalAuthorizationServiceEnabled">external_authorization_service_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: external_authorization_service_default_label, external_authorization_service_timeout and external_authorization_service_url) Enable using an external authorization service for accessing projects. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.externalAuthorizationServiceTimeout">external_authorization_service_timeout</a></code> | <code>typing.Union[int, float]</code> | The timeout after which an authorization request is aborted, in seconds. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.externalAuthorizationServiceUrl">external_authorization_service_url</a></code> | <code>str</code> | URL to which authorization requests are directed. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.externalPipelineValidationServiceTimeout">external_pipeline_validation_service_timeout</a></code> | <code>typing.Union[int, float]</code> | How long to wait for a response from the pipeline validation service. Assumes OK if it times out. |
@@ -470,46 +470,46 @@ applicationSettings.ApplicationSettings(
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.gitalyTimeoutFast">gitaly_timeout_fast</a></code> | <code>typing.Union[int, float]</code> | Gitaly fast operation timeout, in seconds. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.gitalyTimeoutMedium">gitaly_timeout_medium</a></code> | <code>typing.Union[int, float]</code> | Medium Gitaly timeout, in seconds. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.gitlabShellOperationLimit">gitlab_shell_operation_limit</a></code> | <code>typing.Union[int, float]</code> | Maximum number of Git operations per minute a user can perform. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.gitpodEnabled">gitpod_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Gitpod integration. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.gitpodEnabled">gitpod_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable Gitpod integration. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.gitpodUrl">gitpod_url</a></code> | <code>str</code> | The Gitpod instance URL for integration. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.gitRateLimitUsersAlertlist">git_rate_limit_users_alertlist</a></code> | <code>typing.List[typing.Union[int, float]]</code> | List of user IDs that are emailed when the Git abuse rate limit is exceeded. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.gitRateLimitUsersAllowlist">git_rate_limit_users_allowlist</a></code> | <code>typing.List[str]</code> | List of usernames excluded from Git anti-abuse rate limits. Maximum: 100 usernames. Self-managed, Ultimate only. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.gitTwoFactorSessionExpiry">git_two_factor_session_expiry</a></code> | <code>typing.Union[int, float]</code> | Maximum duration (in minutes) of a session for Git operations when 2FA is enabled. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.globallyAllowedIps">globally_allowed_ips</a></code> | <code>str</code> | Comma-separated list of IP addresses and CIDRs always allowed for inbound traffic. For example, 1.1.1.1, 2.2.2.0/24. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.grafanaEnabled">grafana_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Grafana. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.grafanaEnabled">grafana_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable Grafana. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.grafanaUrl">grafana_url</a></code> | <code>str</code> | Grafana URL. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.gravatarEnabled">gravatar_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Gravatar. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.groupOwnersCanManageDefaultBranchProtection">group_owners_can_manage_default_branch_protection</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Prevent overrides of default branch protection. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.helpPageHideCommercialContent">help_page_hide_commercial_content</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Hide marketing-related entries from help. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.gravatarEnabled">gravatar_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable Gravatar. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.groupOwnersCanManageDefaultBranchProtection">group_owners_can_manage_default_branch_protection</a></code> | <code>bool \| cdktf.IResolvable</code> | Prevent overrides of default branch protection. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.helpPageHideCommercialContent">help_page_hide_commercial_content</a></code> | <code>bool \| cdktf.IResolvable</code> | Hide marketing-related entries from help. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.helpPageSupportUrl">help_page_support_url</a></code> | <code>str</code> | Alternate support URL for help page and help dropdown. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.helpPageText">help_page_text</a></code> | <code>str</code> | Custom text displayed on the help page. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.helpText">help_text</a></code> | <code>str</code> | GitLab server administrator information. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.hideThirdPartyOffers">hide_third_party_offers</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display offers from third parties in GitLab. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.hideThirdPartyOffers">hide_third_party_offers</a></code> | <code>bool \| cdktf.IResolvable</code> | Do not display offers from third parties in GitLab. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.homePageUrl">home_page_url</a></code> | <code>str</code> | Redirect to this URL when not logged in. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.housekeepingEnabled">housekeeping_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable or disable Git housekeeping. If enabled, requires housekeeping_optimize_repository_period. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.housekeepingEnabled">housekeeping_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable or disable Git housekeeping. If enabled, requires housekeeping_optimize_repository_period. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.housekeepingOptimizeRepositoryPeriod">housekeeping_optimize_repository_period</a></code> | <code>typing.Union[int, float]</code> | Number of Git pushes after which an incremental git-repack is run. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.htmlEmailsEnabled">html_emails_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable HTML emails. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.htmlEmailsEnabled">html_emails_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable HTML emails. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/application_settings#id ApplicationSettings#id}. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.importSources">import_sources</a></code> | <code>typing.List[str]</code> | Sources to allow project import from. Valid values are: `github`, `bitbucket`, `bitbucket_server`, `fogbugz`, `git`, `gitlab_project`, `gitea`, `manifest`. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.inactiveProjectsDeleteAfterMonths">inactive_projects_delete_after_months</a></code> | <code>typing.Union[int, float]</code> | If delete_inactive_projects is true, the time (in months) to wait before deleting inactive projects. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.inactiveProjectsMinSizeMb">inactive_projects_min_size_mb</a></code> | <code>typing.Union[int, float]</code> | If delete_inactive_projects is true, the minimum repository size for projects to be checked for inactivity. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.inactiveProjectsSendWarningEmailAfterMonths">inactive_projects_send_warning_email_after_months</a></code> | <code>typing.Union[int, float]</code> | If delete_inactive_projects is true, sets the time (in months) to wait before emailing maintainers that the project is scheduled be deleted because it is inactive. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.includeOptionalMetricsInServicePing">include_optional_metrics_in_service_ping</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not optional metrics are enabled in Service Ping. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.inProductMarketingEmailsEnabled">in_product_marketing_emails_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable in-product marketing emails. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.invisibleCaptchaEnabled">invisible_captcha_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Invisible CAPTCHA spam detection during sign-up. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.includeOptionalMetricsInServicePing">include_optional_metrics_in_service_ping</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not optional metrics are enabled in Service Ping. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.inProductMarketingEmailsEnabled">in_product_marketing_emails_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable in-product marketing emails. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.invisibleCaptchaEnabled">invisible_captcha_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable Invisible CAPTCHA spam detection during sign-up. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.issuesCreateLimit">issues_create_limit</a></code> | <code>typing.Union[int, float]</code> | Max number of issue creation requests per minute per user. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.jiraConnectApplicationKey">jira_connect_application_key</a></code> | <code>str</code> | ID of the OAuth application used to authenticate with the GitLab for Jira Cloud app. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.jiraConnectProxyUrl">jira_connect_proxy_url</a></code> | <code>str</code> | URL of the GitLab instance used as a proxy for the GitLab for Jira Cloud app. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.jiraConnectPublicKeyStorageEnabled">jira_connect_public_key_storage_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable public key storage for the GitLab for Jira Cloud app. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.keepLatestArtifact">keep_latest_artifact</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Prevent the deletion of the artifacts from the most recent successful jobs, regardless of the expiry time. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.jiraConnectPublicKeyStorageEnabled">jira_connect_public_key_storage_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable public key storage for the GitLab for Jira Cloud app. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.keepLatestArtifact">keep_latest_artifact</a></code> | <code>bool \| cdktf.IResolvable</code> | Prevent the deletion of the artifacts from the most recent successful jobs, regardless of the expiry time. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.localMarkdownVersion">local_markdown_version</a></code> | <code>typing.Union[int, float]</code> | Increase this value when any cached Markdown should be invalidated. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.lockDuoFeaturesEnabled">lock_duo_features_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether the GitLab Duo features enabled setting is enforced for all subgroups. Self-managed, Premium and Ultimate only. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.lockMembershipsToLdap">lock_memberships_to_ldap</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to true to lock all memberships to LDAP. Premium and Ultimate only. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.mailgunEventsEnabled">mailgun_events_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Mailgun event receiver. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.lockDuoFeaturesEnabled">lock_duo_features_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether the GitLab Duo features enabled setting is enforced for all subgroups. Self-managed, Premium and Ultimate only. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.lockMembershipsToLdap">lock_memberships_to_ldap</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to true to lock all memberships to LDAP. Premium and Ultimate only. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.mailgunEventsEnabled">mailgun_events_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable Mailgun event receiver. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.mailgunSigningKey">mailgun_signing_key</a></code> | <code>str</code> | The Mailgun HTTP webhook signing key for receiving events from webhook. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.maintenanceMode">maintenance_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When instance is in maintenance mode, non-administrative users can sign in with read-only access and make read-only API requests. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.maintenanceMode">maintenance_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | When instance is in maintenance mode, non-administrative users can sign in with read-only access and make read-only API requests. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.maintenanceModeMessage">maintenance_mode_message</a></code> | <code>str</code> | Message displayed when instance is in maintenance mode. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.mavenPackageRequestsForwarding">maven_package_requests_forwarding</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use repo.maven.apache.org as a default remote repository when the package is not found in the GitLab Package Registry for Maven. Premium and Ultimate only. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.mavenPackageRequestsForwarding">maven_package_requests_forwarding</a></code> | <code>bool \| cdktf.IResolvable</code> | Use repo.maven.apache.org as a default remote repository when the package is not found in the GitLab Package Registry for Maven. Premium and Ultimate only. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.maxArtifactsSize">max_artifacts_size</a></code> | <code>typing.Union[int, float]</code> | Maximum artifacts size in MB. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.maxAttachmentSize">max_attachment_size</a></code> | <code>typing.Union[int, float]</code> | Limit attachment size in MB. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.maxDecompressedArchiveSize">max_decompressed_archive_size</a></code> | <code>typing.Union[int, float]</code> | Maximum decompressed archive size in bytes. |
@@ -525,73 +525,73 @@ applicationSettings.ApplicationSettings(
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.maxTerraformStateSizeBytes">max_terraform_state_size_bytes</a></code> | <code>typing.Union[int, float]</code> | Maximum size in bytes of the Terraform state files. Set this to 0 for unlimited file size. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.metricsMethodCallThreshold">metrics_method_call_threshold</a></code> | <code>typing.Union[int, float]</code> | A method call is only tracked when it takes longer than the given amount of milliseconds. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.minimumPasswordLength">minimum_password_length</a></code> | <code>typing.Union[int, float]</code> | Indicates whether passwords require a minimum length. Premium and Ultimate only. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.mirrorAvailable">mirror_available</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow repository mirroring to configured by project Maintainers. If disabled, only Administrators can configure repository mirroring. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.mirrorAvailable">mirror_available</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow repository mirroring to configured by project Maintainers. If disabled, only Administrators can configure repository mirroring. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.mirrorCapacityThreshold">mirror_capacity_threshold</a></code> | <code>typing.Union[int, float]</code> | Minimum capacity to be available before scheduling more mirrors preemptively. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.mirrorMaxCapacity">mirror_max_capacity</a></code> | <code>typing.Union[int, float]</code> | Maximum number of mirrors that can be synchronizing at the same time. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.mirrorMaxDelay">mirror_max_delay</a></code> | <code>typing.Union[int, float]</code> | Maximum time (in minutes) between updates that a mirror can have when scheduled to synchronize. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.npmPackageRequestsForwarding">npm_package_requests_forwarding</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use npmjs.org as a default remote repository when the package is not found in the GitLab Package Registry for npm. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.nugetSkipMetadataUrlValidation">nuget_skip_metadata_url_validation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether to skip metadata URL validation for the NuGet package. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.npmPackageRequestsForwarding">npm_package_requests_forwarding</a></code> | <code>bool \| cdktf.IResolvable</code> | Use npmjs.org as a default remote repository when the package is not found in the GitLab Package Registry for npm. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.nugetSkipMetadataUrlValidation">nuget_skip_metadata_url_validation</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether to skip metadata URL validation for the NuGet package. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.outboundLocalRequestsWhitelist">outbound_local_requests_whitelist</a></code> | <code>typing.List[str]</code> | Define a list of trusted domains or IP addresses to which local requests are allowed when local requests for hooks and services are disabled. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.packageMetadataPurlTypes">package_metadata_purl_types</a></code> | <code>typing.List[typing.Union[int, float]]</code> | List of package registry metadata to sync. See the list of the available values (https://gitlab.com/gitlab-org/gitlab/-/blob/ace16c20d5da7c4928dd03fb139692638b557fe3/app/models/concerns/enums/package_metadata.rb#L5). Self-managed, Ultimate only. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.packageRegistryAllowAnyoneToPullOption">package_registry_allow_anyone_to_pull_option</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable to allow anyone to pull from Package Registry visible and changeable. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.packageRegistryAllowAnyoneToPullOption">package_registry_allow_anyone_to_pull_option</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable to allow anyone to pull from Package Registry visible and changeable. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.packageRegistryCleanupPoliciesWorkerCapacity">package_registry_cleanup_policies_worker_capacity</a></code> | <code>typing.Union[int, float]</code> | Number of workers assigned to the packages cleanup policies. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.pagesDomainVerificationEnabled">pages_domain_verification_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Require users to prove ownership of custom domains. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.passwordAuthenticationEnabledForGit">password_authentication_enabled_for_git</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable authentication for Git over HTTP(S) via a GitLab account password. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.passwordAuthenticationEnabledForWeb">password_authentication_enabled_for_web</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable authentication for the web interface via a GitLab account password. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.passwordLowercaseRequired">password_lowercase_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether passwords require at least one lowercase letter. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.passwordNumberRequired">password_number_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether passwords require at least one number. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.passwordSymbolRequired">password_symbol_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether passwords require at least one symbol character. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.passwordUppercaseRequired">password_uppercase_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether passwords require at least one uppercase letter. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.pagesDomainVerificationEnabled">pages_domain_verification_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Require users to prove ownership of custom domains. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.passwordAuthenticationEnabledForGit">password_authentication_enabled_for_git</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable authentication for Git over HTTP(S) via a GitLab account password. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.passwordAuthenticationEnabledForWeb">password_authentication_enabled_for_web</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable authentication for the web interface via a GitLab account password. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.passwordLowercaseRequired">password_lowercase_required</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether passwords require at least one lowercase letter. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.passwordNumberRequired">password_number_required</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether passwords require at least one number. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.passwordSymbolRequired">password_symbol_required</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether passwords require at least one symbol character. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.passwordUppercaseRequired">password_uppercase_required</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether passwords require at least one uppercase letter. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.performanceBarAllowedGroupPath">performance_bar_allowed_group_path</a></code> | <code>str</code> | Path of the group that is allowed to toggle the performance bar. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.personalAccessTokenPrefix">personal_access_token_prefix</a></code> | <code>str</code> | Prefix for all generated personal access tokens. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.pipelineLimitPerProjectUserSha">pipeline_limit_per_project_user_sha</a></code> | <code>typing.Union[int, float]</code> | Maximum number of pipeline creation requests per minute per user and commit. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.plantumlEnabled">plantuml_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: plantuml_url) Enable PlantUML integration. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.plantumlEnabled">plantuml_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: plantuml_url) Enable PlantUML integration. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.plantumlUrl">plantuml_url</a></code> | <code>str</code> | The PlantUML instance URL for integration. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.pollingIntervalMultiplier">polling_interval_multiplier</a></code> | <code>typing.Union[int, float]</code> | Interval multiplier used by endpoints that perform polling. Set to 0 to disable polling. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.projectExportEnabled">project_export_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable project export. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.projectExportEnabled">project_export_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable project export. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.projectJobsApiRateLimit">project_jobs_api_rate_limit</a></code> | <code>typing.Union[int, float]</code> | Maximum authenticated requests to /project/:id/jobs per minute. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.projectsApiRateLimitUnauthenticated">projects_api_rate_limit_unauthenticated</a></code> | <code>typing.Union[int, float]</code> | Max number of requests per 10 minutes per IP address for unauthenticated requests to the list all projects API. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.prometheusMetricsEnabled">prometheus_metrics_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Prometheus metrics. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.protectedCiVariables">protected_ci_variables</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | CI/CD variables are protected by default. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.prometheusMetricsEnabled">prometheus_metrics_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable Prometheus metrics. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.protectedCiVariables">protected_ci_variables</a></code> | <code>bool \| cdktf.IResolvable</code> | CI/CD variables are protected by default. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.pushEventActivitiesLimit">push_event_activities_limit</a></code> | <code>typing.Union[int, float]</code> | Number of changes (branches or tags) in a single push to determine whether individual push events or bulk push events are created. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.pushEventHooksLimit">push_event_hooks_limit</a></code> | <code>typing.Union[int, float]</code> | Number of changes (branches or tags) in a single push to determine whether webhooks and services fire or not. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.pypiPackageRequestsForwarding">pypi_package_requests_forwarding</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use pypi.org as a default remote repository when the package is not found in the GitLab Package Registry for PyPI. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.pypiPackageRequestsForwarding">pypi_package_requests_forwarding</a></code> | <code>bool \| cdktf.IResolvable</code> | Use pypi.org as a default remote repository when the package is not found in the GitLab Package Registry for PyPI. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.rateLimitingResponseText">rate_limiting_response_text</a></code> | <code>str</code> | When rate limiting is enabled via the throttle_* settings, send this plain text response when a rate limit is exceeded. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.rawBlobRequestLimit">raw_blob_request_limit</a></code> | <code>typing.Union[int, float]</code> | Max number of requests per minute for each raw path. To disable throttling set to 0. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.recaptchaEnabled">recaptcha_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: recaptcha_private_key and recaptcha_site_key) Enable reCAPTCHA. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.recaptchaEnabled">recaptcha_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: recaptcha_private_key and recaptcha_site_key) Enable reCAPTCHA. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.recaptchaPrivateKey">recaptcha_private_key</a></code> | <code>str</code> | Private key for reCAPTCHA. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.recaptchaSiteKey">recaptcha_site_key</a></code> | <code>str</code> | Site key for reCAPTCHA. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.receiveMaxInputSize">receive_max_input_size</a></code> | <code>typing.Union[int, float]</code> | Maximum push size (MB). |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.receptiveClusterAgentsEnabled">receptive_cluster_agents_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable receptive mode for GitLab Agents for Kubernetes. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.rememberMeEnabled">remember_me_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Remember me setting. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.repositoryChecksEnabled">repository_checks_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | GitLab periodically runs git fsck in all project and wiki repositories to look for silent disk corruption issues. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.receptiveClusterAgentsEnabled">receptive_cluster_agents_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable receptive mode for GitLab Agents for Kubernetes. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.rememberMeEnabled">remember_me_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable Remember me setting. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.repositoryChecksEnabled">repository_checks_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | GitLab periodically runs git fsck in all project and wiki repositories to look for silent disk corruption issues. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.repositorySizeLimit">repository_size_limit</a></code> | <code>typing.Union[int, float]</code> | Size limit per repository (MB). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.repositoryStoragesWeighted">repository_storages_weighted</a></code> | <code>typing.Mapping[typing.Union[int, float]]</code> | Hash of names taken from gitlab.yml to weights. New projects are created in one of these stores, chosen by a weighted random selection. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.requireAdminApprovalAfterUserSignup">require_admin_approval_after_user_signup</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When enabled, any user that signs up for an account using the registration form is placed under a Pending approval state and has to be explicitly approved by an administrator. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.requireAdminTwoFactorAuthentication">require_admin_two_factor_authentication</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow administrators to require 2FA for all administrators on the instance. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.requirePersonalAccessTokenExpiry">require_personal_access_token_expiry</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When enabled, users must set an expiration date when creating a group or project access token, or a personal access token owned by a non-service account. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.requireTwoFactorAuthentication">require_two_factor_authentication</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: two_factor_grace_period) Require all users to set up Two-factor authentication. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.requireAdminApprovalAfterUserSignup">require_admin_approval_after_user_signup</a></code> | <code>bool \| cdktf.IResolvable</code> | When enabled, any user that signs up for an account using the registration form is placed under a Pending approval state and has to be explicitly approved by an administrator. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.requireAdminTwoFactorAuthentication">require_admin_two_factor_authentication</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow administrators to require 2FA for all administrators on the instance. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.requirePersonalAccessTokenExpiry">require_personal_access_token_expiry</a></code> | <code>bool \| cdktf.IResolvable</code> | When enabled, users must set an expiration date when creating a group or project access token, or a personal access token owned by a non-service account. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.requireTwoFactorAuthentication">require_two_factor_authentication</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: two_factor_grace_period) Require all users to set up Two-factor authentication. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.restrictedVisibilityLevels">restricted_visibility_levels</a></code> | <code>typing.List[str]</code> | Selected levels cannot be used by non-Administrator users for groups, projects or snippets. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.rsaKeyRestriction">rsa_key_restriction</a></code> | <code>typing.Union[int, float]</code> | The minimum allowed bit length of an uploaded RSA key. 0 means no restriction. -1 disables RSA keys. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.searchRateLimit">search_rate_limit</a></code> | <code>typing.Union[int, float]</code> | Max number of requests per minute for performing a search while authenticated. To disable throttling set to 0. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.searchRateLimitUnauthenticated">search_rate_limit_unauthenticated</a></code> | <code>typing.Union[int, float]</code> | Max number of requests per minute for performing a search while unauthenticated. To disable throttling set to 0. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.securityApprovalPoliciesLimit">security_approval_policies_limit</a></code> | <code>typing.Union[int, float]</code> | Maximum number of active merge request approval policies per security policy project. Maximum: 20. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.securityPolicyGlobalGroupApproversEnabled">security_policy_global_group_approvers_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to look up merge request approval policy approval groups globally or within project hierarchies. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.securityPolicyGlobalGroupApproversEnabled">security_policy_global_group_approvers_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to look up merge request approval policy approval groups globally or within project hierarchies. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.securityTxtContent">security_txt_content</a></code> | <code>str</code> | Public security contact information. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.sendUserConfirmationEmail">send_user_confirmation_email</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Send confirmation email on sign-up. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.serviceAccessTokensExpirationEnforced">service_access_tokens_expiration_enforced</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Flag to indicate if token expiry date can be optional for service account users. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.sendUserConfirmationEmail">send_user_confirmation_email</a></code> | <code>bool \| cdktf.IResolvable</code> | Send confirmation email on sign-up. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.serviceAccessTokensExpirationEnforced">service_access_tokens_expiration_enforced</a></code> | <code>bool \| cdktf.IResolvable</code> | Flag to indicate if token expiry date can be optional for service account users. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.sessionExpireDelay">session_expire_delay</a></code> | <code>typing.Union[int, float]</code> | Session duration in minutes. GitLab restart is required to apply changes. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.sharedRunnersEnabled">shared_runners_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: shared_runners_text and shared_runners_minutes) Enable shared runners for new projects. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.sharedRunnersEnabled">shared_runners_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: shared_runners_text and shared_runners_minutes) Enable shared runners for new projects. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.sharedRunnersMinutes">shared_runners_minutes</a></code> | <code>typing.Union[int, float]</code> | Set the maximum number of CI/CD minutes that a group can use on shared runners per month. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.sharedRunnersText">shared_runners_text</a></code> | <code>str</code> | Shared runners text. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.sidekiqJobLimiterCompressionThresholdBytes">sidekiq_job_limiter_compression_threshold_bytes</a></code> | <code>typing.Union[int, float]</code> | The threshold in bytes at which Sidekiq jobs are compressed before being stored in Redis. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.sidekiqJobLimiterLimitBytes">sidekiq_job_limiter_limit_bytes</a></code> | <code>typing.Union[int, float]</code> | The threshold in bytes at which Sidekiq jobs are rejected. 0 means do not reject any job. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.sidekiqJobLimiterMode">sidekiq_job_limiter_mode</a></code> | <code>str</code> | track or compress. Sets the behavior for Sidekiq job size limits. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.signInText">sign_in_text</a></code> | <code>str</code> | Text on the login page. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.signupEnabled">signup_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable registration. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.silentAdminExportsEnabled">silent_admin_exports_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Silent admin exports. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.silentModeEnabled">silent_mode_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Silent mode. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.slackAppEnabled">slack_app_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: slack_app_id, slack_app_secret and slack_app_secret) Enable Slack app. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.signupEnabled">signup_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable registration. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.silentAdminExportsEnabled">silent_admin_exports_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable Silent admin exports. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.silentModeEnabled">silent_mode_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable Silent mode. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.slackAppEnabled">slack_app_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: slack_app_id, slack_app_secret and slack_app_secret) Enable Slack app. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.slackAppId">slack_app_id</a></code> | <code>str</code> | The app ID of the Slack-app. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.slackAppSecret">slack_app_secret</a></code> | <code>str</code> | The app secret of the Slack-app. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.slackAppSigningSecret">slack_app_signing_secret</a></code> | <code>str</code> | The signing secret of the Slack-app. |
@@ -601,54 +601,54 @@ applicationSettings.ApplicationSettings(
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.snowplowCollectorHostname">snowplow_collector_hostname</a></code> | <code>str</code> | The Snowplow collector hostname. (for example, snowplow.trx.gitlab.net). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.snowplowCookieDomain">snowplow_cookie_domain</a></code> | <code>str</code> | The Snowplow cookie domain. (for example, .gitlab.com). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.snowplowDatabaseCollectorHostname">snowplow_database_collector_hostname</a></code> | <code>str</code> | The Snowplow collector for database events hostname. (for example, db-snowplow.trx.gitlab.net). |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.snowplowEnabled">snowplow_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable snowplow tracking. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.sourcegraphEnabled">sourcegraph_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables Sourcegraph integration. If enabled, requires sourcegraph_url. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.sourcegraphPublicOnly">sourcegraph_public_only</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Blocks Sourcegraph from being loaded on private and internal projects. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.snowplowEnabled">snowplow_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable snowplow tracking. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.sourcegraphEnabled">sourcegraph_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables Sourcegraph integration. If enabled, requires sourcegraph_url. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.sourcegraphPublicOnly">sourcegraph_public_only</a></code> | <code>bool \| cdktf.IResolvable</code> | Blocks Sourcegraph from being loaded on private and internal projects. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.sourcegraphUrl">sourcegraph_url</a></code> | <code>str</code> | The Sourcegraph instance URL for integration. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.spamCheckApiKey">spam_check_api_key</a></code> | <code>str</code> | API key used by GitLab for accessing the Spam Check service endpoint. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.spamCheckEndpointEnabled">spam_check_endpoint_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables spam checking using external Spam Check API endpoint. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.spamCheckEndpointEnabled">spam_check_endpoint_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables spam checking using external Spam Check API endpoint. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.spamCheckEndpointUrl">spam_check_endpoint_url</a></code> | <code>str</code> | URL of the external Spamcheck service endpoint. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.staticObjectsExternalStorageAuthToken">static_objects_external_storage_auth_token</a></code> | <code>str</code> | Authentication token for the external storage linked in static_objects_external_storage_url. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.staticObjectsExternalStorageUrl">static_objects_external_storage_url</a></code> | <code>str</code> | URL to an external storage for repository static objects. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.suggestPipelineEnabled">suggest_pipeline_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable pipeline suggestion banner. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.suggestPipelineEnabled">suggest_pipeline_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable pipeline suggestion banner. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.terminalMaxSessionTime">terminal_max_session_time</a></code> | <code>typing.Union[int, float]</code> | Maximum time for web terminal websocket connection (in seconds). Set to 0 for unlimited time. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.terms">terms</a></code> | <code>str</code> | (Required by: enforce_terms) Markdown content for the ToS. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleAuthenticatedApiEnabled">throttle_authenticated_api_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: throttle_authenticated_api_period_in_seconds and throttle_authenticated_api_requests_per_period) Enable authenticated API request rate limit. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleAuthenticatedApiEnabled">throttle_authenticated_api_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: throttle_authenticated_api_period_in_seconds and throttle_authenticated_api_requests_per_period) Enable authenticated API request rate limit. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleAuthenticatedApiPeriodInSeconds">throttle_authenticated_api_period_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Rate limit period (in seconds). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleAuthenticatedApiRequestsPerPeriod">throttle_authenticated_api_requests_per_period</a></code> | <code>typing.Union[int, float]</code> | Maximum requests per period per user. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleAuthenticatedPackagesApiEnabled">throttle_authenticated_packages_api_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: throttle_authenticated_packages_api_period_in_seconds and throttle_authenticated_packages_api_requests_per_period) Enable authenticated API request rate limit. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleAuthenticatedPackagesApiEnabled">throttle_authenticated_packages_api_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: throttle_authenticated_packages_api_period_in_seconds and throttle_authenticated_packages_api_requests_per_period) Enable authenticated API request rate limit. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleAuthenticatedPackagesApiPeriodInSeconds">throttle_authenticated_packages_api_period_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Rate limit period (in seconds). View Package Registry rate limits for more details. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleAuthenticatedPackagesApiRequestsPerPeriod">throttle_authenticated_packages_api_requests_per_period</a></code> | <code>typing.Union[int, float]</code> | Maximum requests per period per user. View Package Registry rate limits for more details. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleAuthenticatedWebEnabled">throttle_authenticated_web_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: throttle_authenticated_web_period_in_seconds and throttle_authenticated_web_requests_per_period) Enable authenticated web request rate limit. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleAuthenticatedWebEnabled">throttle_authenticated_web_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: throttle_authenticated_web_period_in_seconds and throttle_authenticated_web_requests_per_period) Enable authenticated web request rate limit. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleAuthenticatedWebPeriodInSeconds">throttle_authenticated_web_period_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Rate limit period (in seconds). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleAuthenticatedWebRequestsPerPeriod">throttle_authenticated_web_requests_per_period</a></code> | <code>typing.Union[int, float]</code> | Maximum requests per period per user. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleUnauthenticatedApiEnabled">throttle_unauthenticated_api_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: throttle_unauthenticated_api_period_in_seconds and throttle_unauthenticated_api_requests_per_period) Enable unauthenticated API request rate limit. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleUnauthenticatedApiEnabled">throttle_unauthenticated_api_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: throttle_unauthenticated_api_period_in_seconds and throttle_unauthenticated_api_requests_per_period) Enable unauthenticated API request rate limit. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleUnauthenticatedApiPeriodInSeconds">throttle_unauthenticated_api_period_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Rate limit period in seconds. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleUnauthenticatedApiRequestsPerPeriod">throttle_unauthenticated_api_requests_per_period</a></code> | <code>typing.Union[int, float]</code> | Max requests per period per IP. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleUnauthenticatedPackagesApiEnabled">throttle_unauthenticated_packages_api_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: throttle_unauthenticated_packages_api_period_in_seconds and throttle_unauthenticated_packages_api_requests_per_period) Enable authenticated API request rate limit. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleUnauthenticatedPackagesApiEnabled">throttle_unauthenticated_packages_api_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: throttle_unauthenticated_packages_api_period_in_seconds and throttle_unauthenticated_packages_api_requests_per_period) Enable authenticated API request rate limit. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleUnauthenticatedPackagesApiPeriodInSeconds">throttle_unauthenticated_packages_api_period_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Rate limit period (in seconds). View Package Registry rate limits for more details. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleUnauthenticatedPackagesApiRequestsPerPeriod">throttle_unauthenticated_packages_api_requests_per_period</a></code> | <code>typing.Union[int, float]</code> | Maximum requests per period per user. View Package Registry rate limits for more details. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleUnauthenticatedWebEnabled">throttle_unauthenticated_web_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: throttle_unauthenticated_web_period_in_seconds and throttle_unauthenticated_web_requests_per_period) Enable unauthenticated web request rate limit. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleUnauthenticatedWebEnabled">throttle_unauthenticated_web_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: throttle_unauthenticated_web_period_in_seconds and throttle_unauthenticated_web_requests_per_period) Enable unauthenticated web request rate limit. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleUnauthenticatedWebPeriodInSeconds">throttle_unauthenticated_web_period_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Rate limit period in seconds. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleUnauthenticatedWebRequestsPerPeriod">throttle_unauthenticated_web_requests_per_period</a></code> | <code>typing.Union[int, float]</code> | Max requests per period per IP. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.timeTrackingLimitToHours">time_tracking_limit_to_hours</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Limit display of time tracking units to hours. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.timeTrackingLimitToHours">time_tracking_limit_to_hours</a></code> | <code>bool \| cdktf.IResolvable</code> | Limit display of time tracking units to hours. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.twoFactorGracePeriod">two_factor_grace_period</a></code> | <code>typing.Union[int, float]</code> | Amount of time (in hours) that users are allowed to skip forced configuration of two-factor authentication. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.unconfirmedUsersDeleteAfterDays">unconfirmed_users_delete_after_days</a></code> | <code>typing.Union[int, float]</code> | Specifies how many days after sign-up to delete users who have not confirmed their email. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.uniqueIpsLimitEnabled">unique_ips_limit_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: unique_ips_limit_per_user and unique_ips_limit_time_window) Limit sign in from multiple IPs. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.uniqueIpsLimitEnabled">unique_ips_limit_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: unique_ips_limit_per_user and unique_ips_limit_time_window) Limit sign in from multiple IPs. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.uniqueIpsLimitPerUser">unique_ips_limit_per_user</a></code> | <code>typing.Union[int, float]</code> | Maximum number of IPs per user. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.uniqueIpsLimitTimeWindow">unique_ips_limit_time_window</a></code> | <code>typing.Union[int, float]</code> | How many seconds an IP is counted towards the limit. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.updateRunnerVersionsEnabled">update_runner_versions_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Fetch GitLab Runner release version data from GitLab.com. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.usagePingEnabled">usage_ping_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Every week GitLab reports license usage back to GitLab, Inc. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.useClickhouseForAnalytics">use_clickhouse_for_analytics</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables ClickHouse as a data source for analytics reports. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.userDeactivationEmailsEnabled">user_deactivation_emails_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Send an email to users upon account deactivation. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.userDefaultExternal">user_default_external</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Newly registered users are external by default. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.updateRunnerVersionsEnabled">update_runner_versions_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Fetch GitLab Runner release version data from GitLab.com. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.usagePingEnabled">usage_ping_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Every week GitLab reports license usage back to GitLab, Inc. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.useClickhouseForAnalytics">use_clickhouse_for_analytics</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables ClickHouse as a data source for analytics reports. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.userDeactivationEmailsEnabled">user_deactivation_emails_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Send an email to users upon account deactivation. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.userDefaultExternal">user_default_external</a></code> | <code>bool \| cdktf.IResolvable</code> | Newly registered users are external by default. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.userDefaultInternalRegex">user_default_internal_regex</a></code> | <code>str</code> | Specify an email address regex pattern to identify default internal users. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.userDefaultsToPrivateProfile">user_defaults_to_private_profile</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Newly created users have private profile by default. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.userOauthApplications">user_oauth_applications</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow users to register any application to use GitLab as an OAuth provider. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.userShowAddSshKeyMessage">user_show_add_ssh_key_message</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When set to false disable the You won't be able to pull or push project code via SSH warning shown to users with no uploaded SSH key. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.userDefaultsToPrivateProfile">user_defaults_to_private_profile</a></code> | <code>bool \| cdktf.IResolvable</code> | Newly created users have private profile by default. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.userOauthApplications">user_oauth_applications</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow users to register any application to use GitLab as an OAuth provider. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.userShowAddSshKeyMessage">user_show_add_ssh_key_message</a></code> | <code>bool \| cdktf.IResolvable</code> | When set to false disable the You won't be able to pull or push project code via SSH warning shown to users with no uploaded SSH key. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.validRunnerRegistrars">valid_runner_registrars</a></code> | <code>typing.List[str]</code> | List of types which are allowed to register a GitLab Runner. Can be [], ['group'], ['project'] or ['group', 'project']. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.versionCheckEnabled">version_check_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Let GitLab inform you when an update is available. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.webIdeClientsidePreviewEnabled">web_ide_clientside_preview_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Live Preview (allow live previews of JavaScript projects in the Web IDE using CodeSandbox Live Preview). |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.versionCheckEnabled">version_check_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Let GitLab inform you when an update is available. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.webIdeClientsidePreviewEnabled">web_ide_clientside_preview_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Live Preview (allow live previews of JavaScript projects in the Web IDE using CodeSandbox Live Preview). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.whatsNewVariant">whats_new_variant</a></code> | <code>str</code> | What's new variant, possible values: all_tiers, current_tier, and disabled. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.wikiPageMaxContentBytes">wiki_page_max_content_bytes</a></code> | <code>typing.Union[int, float]</code> | Maximum wiki page content size in bytes. The minimum value is 1024 bytes. |
 
@@ -674,13 +674,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -710,7 +710,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -726,7 +726,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `admin_mode`<sup>Optional</sup> <a name="admin_mode" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.adminMode"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Require administrators to enable Admin Mode by re-authenticating for administrative tasks.
 
@@ -766,7 +766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `akismet_enabled`<sup>Optional</sup> <a name="akismet_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.akismetEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: akismet_api_key) Enable or disable Akismet spam protection.
 
@@ -776,7 +776,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `allow_account_deletion`<sup>Optional</sup> <a name="allow_account_deletion" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.allowAccountDeletion"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to true to allow users to delete their accounts. Premium and Ultimate only.
 
@@ -786,7 +786,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `allow_group_owners_to_manage_ldap`<sup>Optional</sup> <a name="allow_group_owners_to_manage_ldap" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.allowGroupOwnersToManageLdap"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to true to allow group owners to manage LDAP.
 
@@ -796,7 +796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `allow_local_requests_from_system_hooks`<sup>Optional</sup> <a name="allow_local_requests_from_system_hooks" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.allowLocalRequestsFromSystemHooks"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow requests to the local network from system hooks.
 
@@ -806,7 +806,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `allow_local_requests_from_web_hooks_and_services`<sup>Optional</sup> <a name="allow_local_requests_from_web_hooks_and_services" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.allowLocalRequestsFromWebHooksAndServices"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow requests to the local network from web hooks and services.
 
@@ -816,7 +816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `allow_project_creation_for_guest_and_below`<sup>Optional</sup> <a name="allow_project_creation_for_guest_and_below" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.allowProjectCreationForGuestAndBelow"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether users assigned up to the Guest role can create groups and personal projects.
 
@@ -826,7 +826,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `allow_runner_registration_token`<sup>Optional</sup> <a name="allow_runner_registration_token" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.allowRunnerRegistrationToken"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow using a registration token to create a runner.
 
@@ -870,7 +870,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `asset_proxy_enabled`<sup>Optional</sup> <a name="asset_proxy_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.assetProxyEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: asset_proxy_url) Enable proxying of assets. GitLab restart is required to apply changes.
 
@@ -900,7 +900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `authorized_keys_enabled`<sup>Optional</sup> <a name="authorized_keys_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.authorizedKeysEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 By default, we write to the authorized_keys file to support Git over SSH without additional configuration.
 
@@ -912,7 +912,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `auto_ban_user_on_excessive_projects_download`<sup>Optional</sup> <a name="auto_ban_user_on_excessive_projects_download" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.autoBanUserOnExcessiveProjectsDownload"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When enabled, users will get automatically banned from the application when they download more than the maximum number of unique projects in the time period specified by max_number_of_repository_downloads and max_number_of_repository_downloads_within_time_period respectively.
 
@@ -934,7 +934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `auto_devops_enabled`<sup>Optional</sup> <a name="auto_devops_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.autoDevopsEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable Auto DevOps for projects by default.
 
@@ -946,7 +946,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `automatic_purchased_storage_allocation`<sup>Optional</sup> <a name="automatic_purchased_storage_allocation" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.automaticPurchasedStorageAllocation"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enabling this permits automatic allocation of purchased storage in a namespace.
 
@@ -966,7 +966,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `bulk_import_enabled`<sup>Optional</sup> <a name="bulk_import_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.bulkImportEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable migrating GitLab groups by direct transfer.
 
@@ -986,7 +986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `can_create_group`<sup>Optional</sup> <a name="can_create_group" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.canCreateGroup"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether users can create top-level groups.
 
@@ -996,7 +996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `check_namespace_plan`<sup>Optional</sup> <a name="check_namespace_plan" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.checkNamespacePlan"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enabling this makes only licensed EE features available to projects if the project namespace’s plan includes the feature or if the project is public.
 
@@ -1066,7 +1066,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `container_expiration_policies_enable_historic_entries`<sup>Optional</sup> <a name="container_expiration_policies_enable_historic_entries" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.containerExpirationPoliciesEnableHistoricEntries"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable cleanup policies for all projects.
 
@@ -1096,7 +1096,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `container_registry_expiration_policies_caching`<sup>Optional</sup> <a name="container_registry_expiration_policies_caching" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.containerRegistryExpirationPoliciesCaching"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Caching during the execution of cleanup policies.
 
@@ -1126,7 +1126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `deactivate_dormant_users`<sup>Optional</sup> <a name="deactivate_dormant_users" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.deactivateDormantUsers"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable automatic deactivation of dormant users.
 
@@ -1278,7 +1278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `delete_inactive_projects`<sup>Optional</sup> <a name="delete_inactive_projects" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.deleteInactiveProjects"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable inactive project deletion feature.
 
@@ -1288,7 +1288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `delete_unconfirmed_users`<sup>Optional</sup> <a name="delete_unconfirmed_users" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.deleteUnconfirmedUsers"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether users who have not confirmed their email should be deleted.
 
@@ -1312,7 +1312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `diagramsnet_enabled`<sup>Optional</sup> <a name="diagramsnet_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.diagramsnetEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires diagramsnet_url) Enable Diagrams.net integration.
 
@@ -1362,7 +1362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `disable_admin_oauth_scopes`<sup>Optional</sup> <a name="disable_admin_oauth_scopes" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.disableAdminOauthScopes"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Stops administrators from connecting their GitLab accounts to non-trusted OAuth 2.0 applications that have the api, read_api, read_repository, write_repository, read_registry, write_registry, or sudo scopes.
 
@@ -1382,7 +1382,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `disable_feed_token`<sup>Optional</sup> <a name="disable_feed_token" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.disableFeedToken"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Disable display of RSS/Atom and calendar feed tokens.
 
@@ -1392,7 +1392,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `disable_personal_access_tokens`<sup>Optional</sup> <a name="disable_personal_access_tokens" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.disablePersonalAccessTokens"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Disable personal access tokens.
 
@@ -1404,7 +1404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `dns_rebinding_protection_enabled`<sup>Optional</sup> <a name="dns_rebinding_protection_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.dnsRebindingProtectionEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enforce DNS rebinding attack protection.
 
@@ -1436,7 +1436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `domain_denylist_enabled`<sup>Optional</sup> <a name="domain_denylist_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.domainDenylistEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: domain_denylist) Allows blocking sign-ups from emails from specific domains.
 
@@ -1466,7 +1466,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `duo_features_enabled`<sup>Optional</sup> <a name="duo_features_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.duoFeaturesEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether GitLab Duo features are enabled for this instance. Self-managed, Premium and Ultimate only.
 
@@ -1544,7 +1544,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `eks_integration_enabled`<sup>Optional</sup> <a name="eks_integration_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.eksIntegrationEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable integration with Amazon EKS.
 
@@ -1564,7 +1564,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `elasticsearch_aws`<sup>Optional</sup> <a name="elasticsearch_aws" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.elasticsearchAws"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable the use of AWS hosted Elasticsearch.
 
@@ -1626,7 +1626,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `elasticsearch_indexing`<sup>Optional</sup> <a name="elasticsearch_indexing" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.elasticsearchIndexing"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable Elasticsearch indexing.
 
@@ -1636,7 +1636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `elasticsearch_limit_indexing`<sup>Optional</sup> <a name="elasticsearch_limit_indexing" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.elasticsearchLimitIndexing"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Limit Elasticsearch to index certain namespaces and projects.
 
@@ -1706,7 +1706,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `elasticsearch_requeue_workers`<sup>Optional</sup> <a name="elasticsearch_requeue_workers" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.elasticsearchRequeueWorkers"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable automatic requeuing of indexing workers.
 
@@ -1718,7 +1718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `elasticsearch_search`<sup>Optional</sup> <a name="elasticsearch_search" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.elasticsearchSearch"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable Elasticsearch search.
 
@@ -1770,7 +1770,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `email_author_in_body`<sup>Optional</sup> <a name="email_author_in_body" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.emailAuthorInBody"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Some email servers do not support overriding the email sender name.
 
@@ -1792,7 +1792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `enable_artifact_external_redirect_warning_page`<sup>Optional</sup> <a name="enable_artifact_external_redirect_warning_page" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.enableArtifactExternalRedirectWarningPage"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Show the external redirect page that warns you about user-generated content in GitLab Pages.
 
@@ -1812,7 +1812,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `enforce_namespace_storage_limit`<sup>Optional</sup> <a name="enforce_namespace_storage_limit" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.enforceNamespaceStorageLimit"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enabling this permits enforcement of namespace storage limits.
 
@@ -1822,7 +1822,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `enforce_terms`<sup>Optional</sup> <a name="enforce_terms" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.enforceTerms"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: terms) Enforce application ToS to all users.
 
@@ -1872,7 +1872,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `external_authorization_service_enabled`<sup>Optional</sup> <a name="external_authorization_service_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.externalAuthorizationServiceEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: external_authorization_service_default_label, external_authorization_service_timeout and external_authorization_service_url) Enable using an external authorization service for accessing projects.
 
@@ -2032,7 +2032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `gitpod_enabled`<sup>Optional</sup> <a name="gitpod_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.gitpodEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable Gitpod integration.
 
@@ -2094,7 +2094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `grafana_enabled`<sup>Optional</sup> <a name="grafana_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.grafanaEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable Grafana.
 
@@ -2114,7 +2114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `gravatar_enabled`<sup>Optional</sup> <a name="gravatar_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.gravatarEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable Gravatar.
 
@@ -2124,7 +2124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `group_owners_can_manage_default_branch_protection`<sup>Optional</sup> <a name="group_owners_can_manage_default_branch_protection" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.groupOwnersCanManageDefaultBranchProtection"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Prevent overrides of default branch protection.
 
@@ -2134,7 +2134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `help_page_hide_commercial_content`<sup>Optional</sup> <a name="help_page_hide_commercial_content" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.helpPageHideCommercialContent"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Hide marketing-related entries from help.
 
@@ -2174,7 +2174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `hide_third_party_offers`<sup>Optional</sup> <a name="hide_third_party_offers" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.hideThirdPartyOffers"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Do not display offers from third parties in GitLab.
 
@@ -2194,7 +2194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `housekeeping_enabled`<sup>Optional</sup> <a name="housekeeping_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.housekeepingEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable or disable Git housekeeping. If enabled, requires housekeeping_optimize_repository_period.
 
@@ -2214,7 +2214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `html_emails_enabled`<sup>Optional</sup> <a name="html_emails_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.htmlEmailsEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable HTML emails.
 
@@ -2275,7 +2275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `include_optional_metrics_in_service_ping`<sup>Optional</sup> <a name="include_optional_metrics_in_service_ping" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.includeOptionalMetricsInServicePing"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not optional metrics are enabled in Service Ping.
 
@@ -2285,7 +2285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `in_product_marketing_emails_enabled`<sup>Optional</sup> <a name="in_product_marketing_emails_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.inProductMarketingEmailsEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable in-product marketing emails.
 
@@ -2295,7 +2295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `invisible_captcha_enabled`<sup>Optional</sup> <a name="invisible_captcha_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.invisibleCaptchaEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable Invisible CAPTCHA spam detection during sign-up.
 
@@ -2335,7 +2335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `jira_connect_public_key_storage_enabled`<sup>Optional</sup> <a name="jira_connect_public_key_storage_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.jiraConnectPublicKeyStorageEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable public key storage for the GitLab for Jira Cloud app.
 
@@ -2345,7 +2345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `keep_latest_artifact`<sup>Optional</sup> <a name="keep_latest_artifact" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.keepLatestArtifact"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Prevent the deletion of the artifacts from the most recent successful jobs, regardless of the expiry time.
 
@@ -2365,7 +2365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `lock_duo_features_enabled`<sup>Optional</sup> <a name="lock_duo_features_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.lockDuoFeaturesEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether the GitLab Duo features enabled setting is enforced for all subgroups. Self-managed, Premium and Ultimate only.
 
@@ -2375,7 +2375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `lock_memberships_to_ldap`<sup>Optional</sup> <a name="lock_memberships_to_ldap" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.lockMembershipsToLdap"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to true to lock all memberships to LDAP. Premium and Ultimate only.
 
@@ -2385,7 +2385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `mailgun_events_enabled`<sup>Optional</sup> <a name="mailgun_events_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.mailgunEventsEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable Mailgun event receiver.
 
@@ -2405,7 +2405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `maintenance_mode`<sup>Optional</sup> <a name="maintenance_mode" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.maintenanceMode"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When instance is in maintenance mode, non-administrative users can sign in with read-only access and make read-only API requests.
 
@@ -2425,7 +2425,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `maven_package_requests_forwarding`<sup>Optional</sup> <a name="maven_package_requests_forwarding" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.mavenPackageRequestsForwarding"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Use repo.maven.apache.org as a default remote repository when the package is not found in the GitLab Package Registry for Maven. Premium and Ultimate only.
 
@@ -2587,7 +2587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `mirror_available`<sup>Optional</sup> <a name="mirror_available" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.mirrorAvailable"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow repository mirroring to configured by project Maintainers. If disabled, only Administrators can configure repository mirroring.
 
@@ -2627,7 +2627,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `npm_package_requests_forwarding`<sup>Optional</sup> <a name="npm_package_requests_forwarding" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.npmPackageRequestsForwarding"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Use npmjs.org as a default remote repository when the package is not found in the GitLab Package Registry for npm.
 
@@ -2637,7 +2637,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `nuget_skip_metadata_url_validation`<sup>Optional</sup> <a name="nuget_skip_metadata_url_validation" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.nugetSkipMetadataUrlValidation"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether to skip metadata URL validation for the NuGet package.
 
@@ -2667,7 +2667,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `package_registry_allow_anyone_to_pull_option`<sup>Optional</sup> <a name="package_registry_allow_anyone_to_pull_option" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.packageRegistryAllowAnyoneToPullOption"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable to allow anyone to pull from Package Registry visible and changeable.
 
@@ -2687,7 +2687,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `pages_domain_verification_enabled`<sup>Optional</sup> <a name="pages_domain_verification_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.pagesDomainVerificationEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Require users to prove ownership of custom domains.
 
@@ -2699,7 +2699,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `password_authentication_enabled_for_git`<sup>Optional</sup> <a name="password_authentication_enabled_for_git" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.passwordAuthenticationEnabledForGit"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable authentication for Git over HTTP(S) via a GitLab account password.
 
@@ -2709,7 +2709,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `password_authentication_enabled_for_web`<sup>Optional</sup> <a name="password_authentication_enabled_for_web" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.passwordAuthenticationEnabledForWeb"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable authentication for the web interface via a GitLab account password.
 
@@ -2719,7 +2719,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `password_lowercase_required`<sup>Optional</sup> <a name="password_lowercase_required" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.passwordLowercaseRequired"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether passwords require at least one lowercase letter.
 
@@ -2729,7 +2729,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `password_number_required`<sup>Optional</sup> <a name="password_number_required" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.passwordNumberRequired"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether passwords require at least one number.
 
@@ -2739,7 +2739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `password_symbol_required`<sup>Optional</sup> <a name="password_symbol_required" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.passwordSymbolRequired"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether passwords require at least one symbol character.
 
@@ -2749,7 +2749,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `password_uppercase_required`<sup>Optional</sup> <a name="password_uppercase_required" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.passwordUppercaseRequired"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether passwords require at least one uppercase letter.
 
@@ -2789,7 +2789,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `plantuml_enabled`<sup>Optional</sup> <a name="plantuml_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.plantumlEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: plantuml_url) Enable PlantUML integration.
 
@@ -2819,7 +2819,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `project_export_enabled`<sup>Optional</sup> <a name="project_export_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.projectExportEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable project export.
 
@@ -2851,7 +2851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `prometheus_metrics_enabled`<sup>Optional</sup> <a name="prometheus_metrics_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.prometheusMetricsEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable Prometheus metrics.
 
@@ -2861,7 +2861,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `protected_ci_variables`<sup>Optional</sup> <a name="protected_ci_variables" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.protectedCiVariables"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 CI/CD variables are protected by default.
 
@@ -2895,7 +2895,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `pypi_package_requests_forwarding`<sup>Optional</sup> <a name="pypi_package_requests_forwarding" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.pypiPackageRequestsForwarding"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Use pypi.org as a default remote repository when the package is not found in the GitLab Package Registry for PyPI.
 
@@ -2927,7 +2927,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `recaptcha_enabled`<sup>Optional</sup> <a name="recaptcha_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.recaptchaEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: recaptcha_private_key and recaptcha_site_key) Enable reCAPTCHA.
 
@@ -2967,7 +2967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `receptive_cluster_agents_enabled`<sup>Optional</sup> <a name="receptive_cluster_agents_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.receptiveClusterAgentsEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable receptive mode for GitLab Agents for Kubernetes.
 
@@ -2977,7 +2977,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `remember_me_enabled`<sup>Optional</sup> <a name="remember_me_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.rememberMeEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable Remember me setting.
 
@@ -2987,7 +2987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `repository_checks_enabled`<sup>Optional</sup> <a name="repository_checks_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.repositoryChecksEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 GitLab periodically runs git fsck in all project and wiki repositories to look for silent disk corruption issues.
 
@@ -3017,7 +3017,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `require_admin_approval_after_user_signup`<sup>Optional</sup> <a name="require_admin_approval_after_user_signup" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.requireAdminApprovalAfterUserSignup"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When enabled, any user that signs up for an account using the registration form is placed under a Pending approval state and has to be explicitly approved by an administrator.
 
@@ -3027,7 +3027,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `require_admin_two_factor_authentication`<sup>Optional</sup> <a name="require_admin_two_factor_authentication" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.requireAdminTwoFactorAuthentication"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow administrators to require 2FA for all administrators on the instance.
 
@@ -3037,7 +3037,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `require_personal_access_token_expiry`<sup>Optional</sup> <a name="require_personal_access_token_expiry" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.requirePersonalAccessTokenExpiry"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When enabled, users must set an expiration date when creating a group or project access token, or a personal access token owned by a non-service account.
 
@@ -3047,7 +3047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `require_two_factor_authentication`<sup>Optional</sup> <a name="require_two_factor_authentication" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.requireTwoFactorAuthentication"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: two_factor_grace_period) Require all users to set up Two-factor authentication.
 
@@ -3109,7 +3109,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `security_policy_global_group_approvers_enabled`<sup>Optional</sup> <a name="security_policy_global_group_approvers_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.securityPolicyGlobalGroupApproversEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to look up merge request approval policy approval groups globally or within project hierarchies.
 
@@ -3129,7 +3129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `send_user_confirmation_email`<sup>Optional</sup> <a name="send_user_confirmation_email" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.sendUserConfirmationEmail"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Send confirmation email on sign-up.
 
@@ -3139,7 +3139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `service_access_tokens_expiration_enforced`<sup>Optional</sup> <a name="service_access_tokens_expiration_enforced" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.serviceAccessTokensExpirationEnforced"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Flag to indicate if token expiry date can be optional for service account users.
 
@@ -3159,7 +3159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `shared_runners_enabled`<sup>Optional</sup> <a name="shared_runners_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.sharedRunnersEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: shared_runners_text and shared_runners_minutes) Enable shared runners for new projects.
 
@@ -3229,7 +3229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `signup_enabled`<sup>Optional</sup> <a name="signup_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.signupEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable registration.
 
@@ -3239,7 +3239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `silent_admin_exports_enabled`<sup>Optional</sup> <a name="silent_admin_exports_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.silentAdminExportsEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable Silent admin exports.
 
@@ -3249,7 +3249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `silent_mode_enabled`<sup>Optional</sup> <a name="silent_mode_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.silentModeEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable Silent mode.
 
@@ -3259,7 +3259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `slack_app_enabled`<sup>Optional</sup> <a name="slack_app_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.slackAppEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: slack_app_id, slack_app_secret and slack_app_secret) Enable Slack app.
 
@@ -3359,7 +3359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `snowplow_enabled`<sup>Optional</sup> <a name="snowplow_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.snowplowEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable snowplow tracking.
 
@@ -3369,7 +3369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `sourcegraph_enabled`<sup>Optional</sup> <a name="sourcegraph_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.sourcegraphEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enables Sourcegraph integration. If enabled, requires sourcegraph_url.
 
@@ -3379,7 +3379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `sourcegraph_public_only`<sup>Optional</sup> <a name="sourcegraph_public_only" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.sourcegraphPublicOnly"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Blocks Sourcegraph from being loaded on private and internal projects.
 
@@ -3409,7 +3409,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `spam_check_endpoint_enabled`<sup>Optional</sup> <a name="spam_check_endpoint_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.spamCheckEndpointEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enables spam checking using external Spam Check API endpoint.
 
@@ -3451,7 +3451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `suggest_pipeline_enabled`<sup>Optional</sup> <a name="suggest_pipeline_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.suggestPipelineEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable pipeline suggestion banner.
 
@@ -3481,7 +3481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `throttle_authenticated_api_enabled`<sup>Optional</sup> <a name="throttle_authenticated_api_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleAuthenticatedApiEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: throttle_authenticated_api_period_in_seconds and throttle_authenticated_api_requests_per_period) Enable authenticated API request rate limit.
 
@@ -3513,7 +3513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `throttle_authenticated_packages_api_enabled`<sup>Optional</sup> <a name="throttle_authenticated_packages_api_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleAuthenticatedPackagesApiEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: throttle_authenticated_packages_api_period_in_seconds and throttle_authenticated_packages_api_requests_per_period) Enable authenticated API request rate limit.
 
@@ -3545,7 +3545,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `throttle_authenticated_web_enabled`<sup>Optional</sup> <a name="throttle_authenticated_web_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleAuthenticatedWebEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: throttle_authenticated_web_period_in_seconds and throttle_authenticated_web_requests_per_period) Enable authenticated web request rate limit.
 
@@ -3577,7 +3577,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `throttle_unauthenticated_api_enabled`<sup>Optional</sup> <a name="throttle_unauthenticated_api_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleUnauthenticatedApiEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: throttle_unauthenticated_api_period_in_seconds and throttle_unauthenticated_api_requests_per_period) Enable unauthenticated API request rate limit.
 
@@ -3609,7 +3609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `throttle_unauthenticated_packages_api_enabled`<sup>Optional</sup> <a name="throttle_unauthenticated_packages_api_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleUnauthenticatedPackagesApiEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: throttle_unauthenticated_packages_api_period_in_seconds and throttle_unauthenticated_packages_api_requests_per_period) Enable authenticated API request rate limit.
 
@@ -3641,7 +3641,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `throttle_unauthenticated_web_enabled`<sup>Optional</sup> <a name="throttle_unauthenticated_web_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.throttleUnauthenticatedWebEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: throttle_unauthenticated_web_period_in_seconds and throttle_unauthenticated_web_requests_per_period) Enable unauthenticated web request rate limit.
 
@@ -3673,7 +3673,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `time_tracking_limit_to_hours`<sup>Optional</sup> <a name="time_tracking_limit_to_hours" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.timeTrackingLimitToHours"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Limit display of time tracking units to hours.
 
@@ -3705,7 +3705,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `unique_ips_limit_enabled`<sup>Optional</sup> <a name="unique_ips_limit_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.uniqueIpsLimitEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: unique_ips_limit_per_user and unique_ips_limit_time_window) Limit sign in from multiple IPs.
 
@@ -3735,7 +3735,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `update_runner_versions_enabled`<sup>Optional</sup> <a name="update_runner_versions_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.updateRunnerVersionsEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Fetch GitLab Runner release version data from GitLab.com.
 
@@ -3745,7 +3745,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `usage_ping_enabled`<sup>Optional</sup> <a name="usage_ping_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.usagePingEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Every week GitLab reports license usage back to GitLab, Inc.
 
@@ -3755,7 +3755,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `use_clickhouse_for_analytics`<sup>Optional</sup> <a name="use_clickhouse_for_analytics" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.useClickhouseForAnalytics"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enables ClickHouse as a data source for analytics reports.
 
@@ -3767,7 +3767,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `user_deactivation_emails_enabled`<sup>Optional</sup> <a name="user_deactivation_emails_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.userDeactivationEmailsEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Send an email to users upon account deactivation.
 
@@ -3777,7 +3777,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `user_default_external`<sup>Optional</sup> <a name="user_default_external" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.userDefaultExternal"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Newly registered users are external by default.
 
@@ -3797,7 +3797,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `user_defaults_to_private_profile`<sup>Optional</sup> <a name="user_defaults_to_private_profile" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.userDefaultsToPrivateProfile"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Newly created users have private profile by default.
 
@@ -3807,7 +3807,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `user_oauth_applications`<sup>Optional</sup> <a name="user_oauth_applications" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.userOauthApplications"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow users to register any application to use GitLab as an OAuth provider.
 
@@ -3817,7 +3817,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `user_show_add_ssh_key_message`<sup>Optional</sup> <a name="user_show_add_ssh_key_message" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.userShowAddSshKeyMessage"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When set to false disable the You won't be able to pull or push project code via SSH warning shown to users with no uploaded SSH key.
 
@@ -3837,7 +3837,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `version_check_enabled`<sup>Optional</sup> <a name="version_check_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.versionCheckEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Let GitLab inform you when an update is available.
 
@@ -3847,7 +3847,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `web_ide_clientside_preview_enabled`<sup>Optional</sup> <a name="web_ide_clientside_preview_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.Initializer.parameter.webIdeClientsidePreviewEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Live Preview (allow live previews of JavaScript projects in the Web IDE using CodeSandbox Live Preview).
 
@@ -4436,7 +4436,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.importFrom"></a>
@@ -4499,7 +4499,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -4515,7 +4515,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -4545,8 +4545,8 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def put_default_branch_protection_defaults(
   allowed_to_merge: typing.List[typing.Union[int, float]] = None,
   allowed_to_push: typing.List[typing.Union[int, float]] = None,
-  allow_force_push: typing.Union[bool, IResolvable] = None,
-  developer_can_initial_push: typing.Union[bool, IResolvable] = None
+  allow_force_push: bool | IResolvable = None,
+  developer_can_initial_push: bool | IResolvable = None
 ) -> None
 ```
 
@@ -4572,7 +4572,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ###### `allow_force_push`<sup>Optional</sup> <a name="allow_force_push" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.putDefaultBranchProtectionDefaults.parameter.allowForcePush"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow force push for all users with push access.
 
@@ -4582,7 +4582,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ###### `developer_can_initial_push`<sup>Optional</sup> <a name="developer_can_initial_push" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.putDefaultBranchProtectionDefaults.parameter.developerCanInitialPush"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow developers to initial push.
 
@@ -6575,57 +6575,57 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultBranchProtectionDefaults">default_branch_protection_defaults</a></code> | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference">ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitlabDedicatedInstance">gitlab_dedicated_instance</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitlabEnvironmentToolkitInstance">gitlab_environment_toolkit_instance</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.abuseNotificationEmailInput">abuse_notification_email_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.adminModeInput">admin_mode_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.adminModeInput">admin_mode_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.afterSignOutPathInput">after_sign_out_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.afterSignUpTextInput">after_sign_up_text_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.akismetApiKeyInput">akismet_api_key_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.akismetEnabledInput">akismet_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowAccountDeletionInput">allow_account_deletion_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowGroupOwnersToManageLdapInput">allow_group_owners_to_manage_ldap_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowLocalRequestsFromSystemHooksInput">allow_local_requests_from_system_hooks_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowLocalRequestsFromWebHooksAndServicesInput">allow_local_requests_from_web_hooks_and_services_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowProjectCreationForGuestAndBelowInput">allow_project_creation_for_guest_and_below_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowRunnerRegistrationTokenInput">allow_runner_registration_token_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.akismetEnabledInput">akismet_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowAccountDeletionInput">allow_account_deletion_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowGroupOwnersToManageLdapInput">allow_group_owners_to_manage_ldap_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowLocalRequestsFromSystemHooksInput">allow_local_requests_from_system_hooks_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowLocalRequestsFromWebHooksAndServicesInput">allow_local_requests_from_web_hooks_and_services_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowProjectCreationForGuestAndBelowInput">allow_project_creation_for_guest_and_below_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowRunnerRegistrationTokenInput">allow_runner_registration_token_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.archiveBuildsInHumanReadableInput">archive_builds_in_human_readable_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.asciidocMaxIncludesInput">asciidoc_max_includes_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxyAllowlistInput">asset_proxy_allowlist_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxyEnabledInput">asset_proxy_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxyEnabledInput">asset_proxy_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxySecretKeyInput">asset_proxy_secret_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxyUrlInput">asset_proxy_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.authorizedKeysEnabledInput">authorized_keys_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoBanUserOnExcessiveProjectsDownloadInput">auto_ban_user_on_excessive_projects_download_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.authorizedKeysEnabledInput">authorized_keys_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoBanUserOnExcessiveProjectsDownloadInput">auto_ban_user_on_excessive_projects_download_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoDevopsDomainInput">auto_devops_domain_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoDevopsEnabledInput">auto_devops_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.automaticPurchasedStorageAllocationInput">automatic_purchased_storage_allocation_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoDevopsEnabledInput">auto_devops_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.automaticPurchasedStorageAllocationInput">automatic_purchased_storage_allocation_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportConcurrentPipelineBatchLimitInput">bulk_import_concurrent_pipeline_batch_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportEnabledInput">bulk_import_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportEnabledInput">bulk_import_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportMaxDownloadFileSizeInput">bulk_import_max_download_file_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.canCreateGroupInput">can_create_group_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.checkNamespacePlanInput">check_namespace_plan_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.canCreateGroupInput">can_create_group_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.checkNamespacePlanInput">check_namespace_plan_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ciMaxIncludesInput">ci_max_includes_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ciMaxTotalYamlSizeBytesInput">ci_max_total_yaml_size_bytes_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.commitEmailHostnameInput">commit_email_hostname_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.concurrentBitbucketImportJobsLimitInput">concurrent_bitbucket_import_jobs_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.concurrentBitbucketServerImportJobsLimitInput">concurrent_bitbucket_server_import_jobs_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.concurrentGithubImportJobsLimitInput">concurrent_github_import_jobs_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerExpirationPoliciesEnableHistoricEntriesInput">container_expiration_policies_enable_historic_entries_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerExpirationPoliciesEnableHistoricEntriesInput">container_expiration_policies_enable_historic_entries_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryCleanupTagsServiceMaxListSizeInput">container_registry_cleanup_tags_service_max_list_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryDeleteTagsServiceTimeoutInput">container_registry_delete_tags_service_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryExpirationPoliciesCachingInput">container_registry_expiration_policies_caching_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryExpirationPoliciesCachingInput">container_registry_expiration_policies_caching_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryExpirationPoliciesWorkerCapacityInput">container_registry_expiration_policies_worker_capacity_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryTokenExpireDelayInput">container_registry_token_expire_delay_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deactivateDormantUsersInput">deactivate_dormant_users_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deactivateDormantUsersInput">deactivate_dormant_users_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deactivateDormantUsersPeriodInput">deactivate_dormant_users_period_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.decompressArchiveFileTimeoutInput">decompress_archive_file_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultArtifactsExpireInInput">default_artifacts_expire_in_input</a></code> | <code>str</code> | *No description.* |
@@ -6640,64 +6640,64 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultProjectVisibilityInput">default_project_visibility_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultSnippetVisibilityInput">default_snippet_visibility_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultSyntaxHighlightingThemeInput">default_syntax_highlighting_theme_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteInactiveProjectsInput">delete_inactive_projects_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteUnconfirmedUsersInput">delete_unconfirmed_users_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteInactiveProjectsInput">delete_inactive_projects_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteUnconfirmedUsersInput">delete_unconfirmed_users_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deletionAdjournedPeriodInput">deletion_adjourned_period_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diagramsnetEnabledInput">diagramsnet_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diagramsnetEnabledInput">diagramsnet_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diagramsnetUrlInput">diagramsnet_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diffMaxFilesInput">diff_max_files_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diffMaxLinesInput">diff_max_lines_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diffMaxPatchBytesInput">diff_max_patch_bytes_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableAdminOauthScopesInput">disable_admin_oauth_scopes_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableAdminOauthScopesInput">disable_admin_oauth_scopes_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disabledOauthSignInSourcesInput">disabled_oauth_sign_in_sources_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableFeedTokenInput">disable_feed_token_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disablePersonalAccessTokensInput">disable_personal_access_tokens_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.dnsRebindingProtectionEnabledInput">dns_rebinding_protection_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableFeedTokenInput">disable_feed_token_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disablePersonalAccessTokensInput">disable_personal_access_tokens_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.dnsRebindingProtectionEnabledInput">dns_rebinding_protection_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.domainAllowlistInput">domain_allowlist_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.domainDenylistEnabledInput">domain_denylist_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.domainDenylistEnabledInput">domain_denylist_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.domainDenylistInput">domain_denylist_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.downstreamPipelineTriggerLimitPerProjectUserShaInput">downstream_pipeline_trigger_limit_per_project_user_sha_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.dsaKeyRestrictionInput">dsa_key_restriction_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.duoFeaturesEnabledInput">duo_features_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.duoFeaturesEnabledInput">duo_features_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ecdsaKeyRestrictionInput">ecdsa_key_restriction_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ecdsaSkKeyRestrictionInput">ecdsa_sk_key_restriction_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ed25519KeyRestrictionInput">ed25519_key_restriction_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ed25519SkKeyRestrictionInput">ed25519_sk_key_restriction_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.eksAccessKeyIdInput">eks_access_key_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.eksAccountIdInput">eks_account_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.eksIntegrationEnabledInput">eks_integration_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.eksIntegrationEnabledInput">eks_integration_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.eksSecretAccessKeyInput">eks_secret_access_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchAwsAccessKeyInput">elasticsearch_aws_access_key_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchAwsInput">elasticsearch_aws_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchAwsInput">elasticsearch_aws_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchAwsRegionInput">elasticsearch_aws_region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchAwsSecretAccessKeyInput">elasticsearch_aws_secret_access_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchIndexedFieldLengthLimitInput">elasticsearch_indexed_field_length_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchIndexedFileSizeLimitKbInput">elasticsearch_indexed_file_size_limit_kb_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchIndexingInput">elasticsearch_indexing_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchLimitIndexingInput">elasticsearch_limit_indexing_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchIndexingInput">elasticsearch_indexing_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchLimitIndexingInput">elasticsearch_limit_indexing_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchMaxBulkConcurrencyInput">elasticsearch_max_bulk_concurrency_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchMaxBulkSizeMbInput">elasticsearch_max_bulk_size_mb_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchMaxCodeIndexingConcurrencyInput">elasticsearch_max_code_indexing_concurrency_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchNamespaceIdsInput">elasticsearch_namespace_ids_input</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchPasswordInput">elasticsearch_password_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchProjectIdsInput">elasticsearch_project_ids_input</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchRequeueWorkersInput">elasticsearch_requeue_workers_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchSearchInput">elasticsearch_search_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchRequeueWorkersInput">elasticsearch_requeue_workers_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchSearchInput">elasticsearch_search_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchUrlInput">elasticsearch_url_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchUsernameInput">elasticsearch_username_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchWorkerNumberOfShardsInput">elasticsearch_worker_number_of_shards_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.emailAdditionalTextInput">email_additional_text_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.emailAuthorInBodyInput">email_author_in_body_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.emailAuthorInBodyInput">email_author_in_body_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.emailConfirmationSettingInput">email_confirmation_setting_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enableArtifactExternalRedirectWarningPageInput">enable_artifact_external_redirect_warning_page_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enableArtifactExternalRedirectWarningPageInput">enable_artifact_external_redirect_warning_page_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enabledGitAccessProtocolInput">enabled_git_access_protocol_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enforceNamespaceStorageLimitInput">enforce_namespace_storage_limit_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enforceTermsInput">enforce_terms_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enforceNamespaceStorageLimitInput">enforce_namespace_storage_limit_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enforceTermsInput">enforce_terms_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthClientCertInput">external_auth_client_cert_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthClientKeyInput">external_auth_client_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthClientKeyPassInput">external_auth_client_key_pass_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthorizationServiceDefaultLabelInput">external_authorization_service_default_label_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthorizationServiceEnabledInput">external_authorization_service_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthorizationServiceEnabledInput">external_authorization_service_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthorizationServiceTimeoutInput">external_authorization_service_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthorizationServiceUrlInput">external_authorization_service_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalPipelineValidationServiceTimeoutInput">external_pipeline_validation_service_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -6712,46 +6712,46 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitalyTimeoutFastInput">gitaly_timeout_fast_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitalyTimeoutMediumInput">gitaly_timeout_medium_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitlabShellOperationLimitInput">gitlab_shell_operation_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitpodEnabledInput">gitpod_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitpodEnabledInput">gitpod_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitpodUrlInput">gitpod_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitRateLimitUsersAlertlistInput">git_rate_limit_users_alertlist_input</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitRateLimitUsersAllowlistInput">git_rate_limit_users_allowlist_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitTwoFactorSessionExpiryInput">git_two_factor_session_expiry_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.globallyAllowedIpsInput">globally_allowed_ips_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.grafanaEnabledInput">grafana_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.grafanaEnabledInput">grafana_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.grafanaUrlInput">grafana_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gravatarEnabledInput">gravatar_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.groupOwnersCanManageDefaultBranchProtectionInput">group_owners_can_manage_default_branch_protection_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.helpPageHideCommercialContentInput">help_page_hide_commercial_content_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gravatarEnabledInput">gravatar_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.groupOwnersCanManageDefaultBranchProtectionInput">group_owners_can_manage_default_branch_protection_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.helpPageHideCommercialContentInput">help_page_hide_commercial_content_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.helpPageSupportUrlInput">help_page_support_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.helpPageTextInput">help_page_text_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.helpTextInput">help_text_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.hideThirdPartyOffersInput">hide_third_party_offers_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.hideThirdPartyOffersInput">hide_third_party_offers_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.homePageUrlInput">home_page_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.housekeepingEnabledInput">housekeeping_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.housekeepingEnabledInput">housekeeping_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.housekeepingOptimizeRepositoryPeriodInput">housekeeping_optimize_repository_period_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.htmlEmailsEnabledInput">html_emails_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.htmlEmailsEnabledInput">html_emails_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.importSourcesInput">import_sources_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.inactiveProjectsDeleteAfterMonthsInput">inactive_projects_delete_after_months_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.inactiveProjectsMinSizeMbInput">inactive_projects_min_size_mb_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.inactiveProjectsSendWarningEmailAfterMonthsInput">inactive_projects_send_warning_email_after_months_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.includeOptionalMetricsInServicePingInput">include_optional_metrics_in_service_ping_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.inProductMarketingEmailsEnabledInput">in_product_marketing_emails_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.invisibleCaptchaEnabledInput">invisible_captcha_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.includeOptionalMetricsInServicePingInput">include_optional_metrics_in_service_ping_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.inProductMarketingEmailsEnabledInput">in_product_marketing_emails_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.invisibleCaptchaEnabledInput">invisible_captcha_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.issuesCreateLimitInput">issues_create_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.jiraConnectApplicationKeyInput">jira_connect_application_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.jiraConnectProxyUrlInput">jira_connect_proxy_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.jiraConnectPublicKeyStorageEnabledInput">jira_connect_public_key_storage_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.keepLatestArtifactInput">keep_latest_artifact_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.jiraConnectPublicKeyStorageEnabledInput">jira_connect_public_key_storage_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.keepLatestArtifactInput">keep_latest_artifact_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.localMarkdownVersionInput">local_markdown_version_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.lockDuoFeaturesEnabledInput">lock_duo_features_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.lockMembershipsToLdapInput">lock_memberships_to_ldap_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mailgunEventsEnabledInput">mailgun_events_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.lockDuoFeaturesEnabledInput">lock_duo_features_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.lockMembershipsToLdapInput">lock_memberships_to_ldap_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mailgunEventsEnabledInput">mailgun_events_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mailgunSigningKeyInput">mailgun_signing_key_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maintenanceModeInput">maintenance_mode_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maintenanceModeInput">maintenance_mode_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maintenanceModeMessageInput">maintenance_mode_message_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mavenPackageRequestsForwardingInput">maven_package_requests_forwarding_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mavenPackageRequestsForwardingInput">maven_package_requests_forwarding_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maxArtifactsSizeInput">max_artifacts_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maxAttachmentSizeInput">max_attachment_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maxDecompressedArchiveSizeInput">max_decompressed_archive_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -6767,73 +6767,73 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maxTerraformStateSizeBytesInput">max_terraform_state_size_bytes_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.metricsMethodCallThresholdInput">metrics_method_call_threshold_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.minimumPasswordLengthInput">minimum_password_length_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mirrorAvailableInput">mirror_available_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mirrorAvailableInput">mirror_available_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mirrorCapacityThresholdInput">mirror_capacity_threshold_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mirrorMaxCapacityInput">mirror_max_capacity_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mirrorMaxDelayInput">mirror_max_delay_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.npmPackageRequestsForwardingInput">npm_package_requests_forwarding_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.nugetSkipMetadataUrlValidationInput">nuget_skip_metadata_url_validation_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.npmPackageRequestsForwardingInput">npm_package_requests_forwarding_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.nugetSkipMetadataUrlValidationInput">nuget_skip_metadata_url_validation_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.outboundLocalRequestsWhitelistInput">outbound_local_requests_whitelist_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.packageMetadataPurlTypesInput">package_metadata_purl_types_input</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.packageRegistryAllowAnyoneToPullOptionInput">package_registry_allow_anyone_to_pull_option_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.packageRegistryAllowAnyoneToPullOptionInput">package_registry_allow_anyone_to_pull_option_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.packageRegistryCleanupPoliciesWorkerCapacityInput">package_registry_cleanup_policies_worker_capacity_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pagesDomainVerificationEnabledInput">pages_domain_verification_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordAuthenticationEnabledForGitInput">password_authentication_enabled_for_git_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordAuthenticationEnabledForWebInput">password_authentication_enabled_for_web_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordLowercaseRequiredInput">password_lowercase_required_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordNumberRequiredInput">password_number_required_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordSymbolRequiredInput">password_symbol_required_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordUppercaseRequiredInput">password_uppercase_required_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pagesDomainVerificationEnabledInput">pages_domain_verification_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordAuthenticationEnabledForGitInput">password_authentication_enabled_for_git_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordAuthenticationEnabledForWebInput">password_authentication_enabled_for_web_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordLowercaseRequiredInput">password_lowercase_required_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordNumberRequiredInput">password_number_required_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordSymbolRequiredInput">password_symbol_required_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordUppercaseRequiredInput">password_uppercase_required_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.performanceBarAllowedGroupPathInput">performance_bar_allowed_group_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.personalAccessTokenPrefixInput">personal_access_token_prefix_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pipelineLimitPerProjectUserShaInput">pipeline_limit_per_project_user_sha_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.plantumlEnabledInput">plantuml_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.plantumlEnabledInput">plantuml_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.plantumlUrlInput">plantuml_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pollingIntervalMultiplierInput">polling_interval_multiplier_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.projectExportEnabledInput">project_export_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.projectExportEnabledInput">project_export_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.projectJobsApiRateLimitInput">project_jobs_api_rate_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.projectsApiRateLimitUnauthenticatedInput">projects_api_rate_limit_unauthenticated_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.prometheusMetricsEnabledInput">prometheus_metrics_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.protectedCiVariablesInput">protected_ci_variables_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.prometheusMetricsEnabledInput">prometheus_metrics_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.protectedCiVariablesInput">protected_ci_variables_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pushEventActivitiesLimitInput">push_event_activities_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pushEventHooksLimitInput">push_event_hooks_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pypiPackageRequestsForwardingInput">pypi_package_requests_forwarding_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pypiPackageRequestsForwardingInput">pypi_package_requests_forwarding_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.rateLimitingResponseTextInput">rate_limiting_response_text_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.rawBlobRequestLimitInput">raw_blob_request_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.recaptchaEnabledInput">recaptcha_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.recaptchaEnabledInput">recaptcha_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.recaptchaPrivateKeyInput">recaptcha_private_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.recaptchaSiteKeyInput">recaptcha_site_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.receiveMaxInputSizeInput">receive_max_input_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.receptiveClusterAgentsEnabledInput">receptive_cluster_agents_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.rememberMeEnabledInput">remember_me_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.repositoryChecksEnabledInput">repository_checks_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.receptiveClusterAgentsEnabledInput">receptive_cluster_agents_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.rememberMeEnabledInput">remember_me_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.repositoryChecksEnabledInput">repository_checks_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.repositorySizeLimitInput">repository_size_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.repositoryStoragesWeightedInput">repository_storages_weighted_input</a></code> | <code>typing.Mapping[typing.Union[int, float]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireAdminApprovalAfterUserSignupInput">require_admin_approval_after_user_signup_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireAdminTwoFactorAuthenticationInput">require_admin_two_factor_authentication_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requirePersonalAccessTokenExpiryInput">require_personal_access_token_expiry_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireTwoFactorAuthenticationInput">require_two_factor_authentication_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireAdminApprovalAfterUserSignupInput">require_admin_approval_after_user_signup_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireAdminTwoFactorAuthenticationInput">require_admin_two_factor_authentication_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requirePersonalAccessTokenExpiryInput">require_personal_access_token_expiry_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireTwoFactorAuthenticationInput">require_two_factor_authentication_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.restrictedVisibilityLevelsInput">restricted_visibility_levels_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.rsaKeyRestrictionInput">rsa_key_restriction_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.searchRateLimitInput">search_rate_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.searchRateLimitUnauthenticatedInput">search_rate_limit_unauthenticated_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.securityApprovalPoliciesLimitInput">security_approval_policies_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.securityPolicyGlobalGroupApproversEnabledInput">security_policy_global_group_approvers_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.securityPolicyGlobalGroupApproversEnabledInput">security_policy_global_group_approvers_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.securityTxtContentInput">security_txt_content_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sendUserConfirmationEmailInput">send_user_confirmation_email_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.serviceAccessTokensExpirationEnforcedInput">service_access_tokens_expiration_enforced_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sendUserConfirmationEmailInput">send_user_confirmation_email_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.serviceAccessTokensExpirationEnforcedInput">service_access_tokens_expiration_enforced_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sessionExpireDelayInput">session_expire_delay_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sharedRunnersEnabledInput">shared_runners_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sharedRunnersEnabledInput">shared_runners_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sharedRunnersMinutesInput">shared_runners_minutes_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sharedRunnersTextInput">shared_runners_text_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sidekiqJobLimiterCompressionThresholdBytesInput">sidekiq_job_limiter_compression_threshold_bytes_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sidekiqJobLimiterLimitBytesInput">sidekiq_job_limiter_limit_bytes_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sidekiqJobLimiterModeInput">sidekiq_job_limiter_mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.signInTextInput">sign_in_text_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.signupEnabledInput">signup_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.silentAdminExportsEnabledInput">silent_admin_exports_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.silentModeEnabledInput">silent_mode_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.slackAppEnabledInput">slack_app_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.signupEnabledInput">signup_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.silentAdminExportsEnabledInput">silent_admin_exports_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.silentModeEnabledInput">silent_mode_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.slackAppEnabledInput">slack_app_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.slackAppIdInput">slack_app_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.slackAppSecretInput">slack_app_secret_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.slackAppSigningSecretInput">slack_app_signing_secret_input</a></code> | <code>str</code> | *No description.* |
@@ -6843,97 +6843,97 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.snowplowCollectorHostnameInput">snowplow_collector_hostname_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.snowplowCookieDomainInput">snowplow_cookie_domain_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.snowplowDatabaseCollectorHostnameInput">snowplow_database_collector_hostname_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.snowplowEnabledInput">snowplow_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sourcegraphEnabledInput">sourcegraph_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sourcegraphPublicOnlyInput">sourcegraph_public_only_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.snowplowEnabledInput">snowplow_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sourcegraphEnabledInput">sourcegraph_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sourcegraphPublicOnlyInput">sourcegraph_public_only_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sourcegraphUrlInput">sourcegraph_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.spamCheckApiKeyInput">spam_check_api_key_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.spamCheckEndpointEnabledInput">spam_check_endpoint_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.spamCheckEndpointEnabledInput">spam_check_endpoint_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.spamCheckEndpointUrlInput">spam_check_endpoint_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.staticObjectsExternalStorageAuthTokenInput">static_objects_external_storage_auth_token_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.staticObjectsExternalStorageUrlInput">static_objects_external_storage_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.suggestPipelineEnabledInput">suggest_pipeline_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.suggestPipelineEnabledInput">suggest_pipeline_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.terminalMaxSessionTimeInput">terminal_max_session_time_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.termsInput">terms_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedApiEnabledInput">throttle_authenticated_api_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedApiEnabledInput">throttle_authenticated_api_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedApiPeriodInSecondsInput">throttle_authenticated_api_period_in_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedApiRequestsPerPeriodInput">throttle_authenticated_api_requests_per_period_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedPackagesApiEnabledInput">throttle_authenticated_packages_api_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedPackagesApiEnabledInput">throttle_authenticated_packages_api_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedPackagesApiPeriodInSecondsInput">throttle_authenticated_packages_api_period_in_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedPackagesApiRequestsPerPeriodInput">throttle_authenticated_packages_api_requests_per_period_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedWebEnabledInput">throttle_authenticated_web_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedWebEnabledInput">throttle_authenticated_web_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedWebPeriodInSecondsInput">throttle_authenticated_web_period_in_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedWebRequestsPerPeriodInput">throttle_authenticated_web_requests_per_period_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedApiEnabledInput">throttle_unauthenticated_api_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedApiEnabledInput">throttle_unauthenticated_api_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedApiPeriodInSecondsInput">throttle_unauthenticated_api_period_in_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedApiRequestsPerPeriodInput">throttle_unauthenticated_api_requests_per_period_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedPackagesApiEnabledInput">throttle_unauthenticated_packages_api_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedPackagesApiEnabledInput">throttle_unauthenticated_packages_api_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedPackagesApiPeriodInSecondsInput">throttle_unauthenticated_packages_api_period_in_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedPackagesApiRequestsPerPeriodInput">throttle_unauthenticated_packages_api_requests_per_period_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedWebEnabledInput">throttle_unauthenticated_web_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedWebEnabledInput">throttle_unauthenticated_web_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedWebPeriodInSecondsInput">throttle_unauthenticated_web_period_in_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedWebRequestsPerPeriodInput">throttle_unauthenticated_web_requests_per_period_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.timeTrackingLimitToHoursInput">time_tracking_limit_to_hours_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.timeTrackingLimitToHoursInput">time_tracking_limit_to_hours_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.twoFactorGracePeriodInput">two_factor_grace_period_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.unconfirmedUsersDeleteAfterDaysInput">unconfirmed_users_delete_after_days_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.uniqueIpsLimitEnabledInput">unique_ips_limit_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.uniqueIpsLimitEnabledInput">unique_ips_limit_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.uniqueIpsLimitPerUserInput">unique_ips_limit_per_user_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.uniqueIpsLimitTimeWindowInput">unique_ips_limit_time_window_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.updateRunnerVersionsEnabledInput">update_runner_versions_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.usagePingEnabledInput">usage_ping_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.useClickhouseForAnalyticsInput">use_clickhouse_for_analytics_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDeactivationEmailsEnabledInput">user_deactivation_emails_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDefaultExternalInput">user_default_external_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.updateRunnerVersionsEnabledInput">update_runner_versions_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.usagePingEnabledInput">usage_ping_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.useClickhouseForAnalyticsInput">use_clickhouse_for_analytics_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDeactivationEmailsEnabledInput">user_deactivation_emails_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDefaultExternalInput">user_default_external_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDefaultInternalRegexInput">user_default_internal_regex_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDefaultsToPrivateProfileInput">user_defaults_to_private_profile_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userOauthApplicationsInput">user_oauth_applications_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userShowAddSshKeyMessageInput">user_show_add_ssh_key_message_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDefaultsToPrivateProfileInput">user_defaults_to_private_profile_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userOauthApplicationsInput">user_oauth_applications_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userShowAddSshKeyMessageInput">user_show_add_ssh_key_message_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.validRunnerRegistrarsInput">valid_runner_registrars_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.versionCheckEnabledInput">version_check_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.webIdeClientsidePreviewEnabledInput">web_ide_clientside_preview_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.versionCheckEnabledInput">version_check_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.webIdeClientsidePreviewEnabledInput">web_ide_clientside_preview_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.whatsNewVariantInput">whats_new_variant_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.wikiPageMaxContentBytesInput">wiki_page_max_content_bytes_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.abuseNotificationEmail">abuse_notification_email</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.adminMode">admin_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.adminMode">admin_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.afterSignOutPath">after_sign_out_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.afterSignUpText">after_sign_up_text</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.akismetApiKey">akismet_api_key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.akismetEnabled">akismet_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowAccountDeletion">allow_account_deletion</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowGroupOwnersToManageLdap">allow_group_owners_to_manage_ldap</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowLocalRequestsFromSystemHooks">allow_local_requests_from_system_hooks</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowLocalRequestsFromWebHooksAndServices">allow_local_requests_from_web_hooks_and_services</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowProjectCreationForGuestAndBelow">allow_project_creation_for_guest_and_below</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowRunnerRegistrationToken">allow_runner_registration_token</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.akismetEnabled">akismet_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowAccountDeletion">allow_account_deletion</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowGroupOwnersToManageLdap">allow_group_owners_to_manage_ldap</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowLocalRequestsFromSystemHooks">allow_local_requests_from_system_hooks</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowLocalRequestsFromWebHooksAndServices">allow_local_requests_from_web_hooks_and_services</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowProjectCreationForGuestAndBelow">allow_project_creation_for_guest_and_below</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowRunnerRegistrationToken">allow_runner_registration_token</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.archiveBuildsInHumanReadable">archive_builds_in_human_readable</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.asciidocMaxIncludes">asciidoc_max_includes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxyAllowlist">asset_proxy_allowlist</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxyEnabled">asset_proxy_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxyEnabled">asset_proxy_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxySecretKey">asset_proxy_secret_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxyUrl">asset_proxy_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.authorizedKeysEnabled">authorized_keys_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoBanUserOnExcessiveProjectsDownload">auto_ban_user_on_excessive_projects_download</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.authorizedKeysEnabled">authorized_keys_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoBanUserOnExcessiveProjectsDownload">auto_ban_user_on_excessive_projects_download</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoDevopsDomain">auto_devops_domain</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoDevopsEnabled">auto_devops_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.automaticPurchasedStorageAllocation">automatic_purchased_storage_allocation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoDevopsEnabled">auto_devops_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.automaticPurchasedStorageAllocation">automatic_purchased_storage_allocation</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportConcurrentPipelineBatchLimit">bulk_import_concurrent_pipeline_batch_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportEnabled">bulk_import_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportEnabled">bulk_import_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportMaxDownloadFileSize">bulk_import_max_download_file_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.canCreateGroup">can_create_group</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.checkNamespacePlan">check_namespace_plan</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.canCreateGroup">can_create_group</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.checkNamespacePlan">check_namespace_plan</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ciMaxIncludes">ci_max_includes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ciMaxTotalYamlSizeBytes">ci_max_total_yaml_size_bytes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.commitEmailHostname">commit_email_hostname</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.concurrentBitbucketImportJobsLimit">concurrent_bitbucket_import_jobs_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.concurrentBitbucketServerImportJobsLimit">concurrent_bitbucket_server_import_jobs_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.concurrentGithubImportJobsLimit">concurrent_github_import_jobs_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerExpirationPoliciesEnableHistoricEntries">container_expiration_policies_enable_historic_entries</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerExpirationPoliciesEnableHistoricEntries">container_expiration_policies_enable_historic_entries</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryCleanupTagsServiceMaxListSize">container_registry_cleanup_tags_service_max_list_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryDeleteTagsServiceTimeout">container_registry_delete_tags_service_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryExpirationPoliciesCaching">container_registry_expiration_policies_caching</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryExpirationPoliciesCaching">container_registry_expiration_policies_caching</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryExpirationPoliciesWorkerCapacity">container_registry_expiration_policies_worker_capacity</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryTokenExpireDelay">container_registry_token_expire_delay</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deactivateDormantUsers">deactivate_dormant_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deactivateDormantUsers">deactivate_dormant_users</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deactivateDormantUsersPeriod">deactivate_dormant_users_period</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.decompressArchiveFileTimeout">decompress_archive_file_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultArtifactsExpireIn">default_artifacts_expire_in</a></code> | <code>str</code> | *No description.* |
@@ -6947,64 +6947,64 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultProjectVisibility">default_project_visibility</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultSnippetVisibility">default_snippet_visibility</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultSyntaxHighlightingTheme">default_syntax_highlighting_theme</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteInactiveProjects">delete_inactive_projects</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteUnconfirmedUsers">delete_unconfirmed_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteInactiveProjects">delete_inactive_projects</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteUnconfirmedUsers">delete_unconfirmed_users</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deletionAdjournedPeriod">deletion_adjourned_period</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diagramsnetEnabled">diagramsnet_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diagramsnetEnabled">diagramsnet_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diagramsnetUrl">diagramsnet_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diffMaxFiles">diff_max_files</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diffMaxLines">diff_max_lines</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diffMaxPatchBytes">diff_max_patch_bytes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableAdminOauthScopes">disable_admin_oauth_scopes</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableAdminOauthScopes">disable_admin_oauth_scopes</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disabledOauthSignInSources">disabled_oauth_sign_in_sources</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableFeedToken">disable_feed_token</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disablePersonalAccessTokens">disable_personal_access_tokens</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.dnsRebindingProtectionEnabled">dns_rebinding_protection_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableFeedToken">disable_feed_token</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disablePersonalAccessTokens">disable_personal_access_tokens</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.dnsRebindingProtectionEnabled">dns_rebinding_protection_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.domainAllowlist">domain_allowlist</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.domainDenylist">domain_denylist</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.domainDenylistEnabled">domain_denylist_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.domainDenylistEnabled">domain_denylist_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.downstreamPipelineTriggerLimitPerProjectUserSha">downstream_pipeline_trigger_limit_per_project_user_sha</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.dsaKeyRestriction">dsa_key_restriction</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.duoFeaturesEnabled">duo_features_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.duoFeaturesEnabled">duo_features_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ecdsaKeyRestriction">ecdsa_key_restriction</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ecdsaSkKeyRestriction">ecdsa_sk_key_restriction</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ed25519KeyRestriction">ed25519_key_restriction</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ed25519SkKeyRestriction">ed25519_sk_key_restriction</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.eksAccessKeyId">eks_access_key_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.eksAccountId">eks_account_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.eksIntegrationEnabled">eks_integration_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.eksIntegrationEnabled">eks_integration_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.eksSecretAccessKey">eks_secret_access_key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchAws">elasticsearch_aws</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchAws">elasticsearch_aws</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchAwsAccessKey">elasticsearch_aws_access_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchAwsRegion">elasticsearch_aws_region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchAwsSecretAccessKey">elasticsearch_aws_secret_access_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchIndexedFieldLengthLimit">elasticsearch_indexed_field_length_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchIndexedFileSizeLimitKb">elasticsearch_indexed_file_size_limit_kb</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchIndexing">elasticsearch_indexing</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchLimitIndexing">elasticsearch_limit_indexing</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchIndexing">elasticsearch_indexing</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchLimitIndexing">elasticsearch_limit_indexing</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchMaxBulkConcurrency">elasticsearch_max_bulk_concurrency</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchMaxBulkSizeMb">elasticsearch_max_bulk_size_mb</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchMaxCodeIndexingConcurrency">elasticsearch_max_code_indexing_concurrency</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchNamespaceIds">elasticsearch_namespace_ids</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchPassword">elasticsearch_password</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchProjectIds">elasticsearch_project_ids</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchRequeueWorkers">elasticsearch_requeue_workers</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchSearch">elasticsearch_search</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchRequeueWorkers">elasticsearch_requeue_workers</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchSearch">elasticsearch_search</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchUrl">elasticsearch_url</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchUsername">elasticsearch_username</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchWorkerNumberOfShards">elasticsearch_worker_number_of_shards</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.emailAdditionalText">email_additional_text</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.emailAuthorInBody">email_author_in_body</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.emailAuthorInBody">email_author_in_body</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.emailConfirmationSetting">email_confirmation_setting</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enableArtifactExternalRedirectWarningPage">enable_artifact_external_redirect_warning_page</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enableArtifactExternalRedirectWarningPage">enable_artifact_external_redirect_warning_page</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enabledGitAccessProtocol">enabled_git_access_protocol</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enforceNamespaceStorageLimit">enforce_namespace_storage_limit</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enforceTerms">enforce_terms</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enforceNamespaceStorageLimit">enforce_namespace_storage_limit</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enforceTerms">enforce_terms</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthClientCert">external_auth_client_cert</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthClientKey">external_auth_client_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthClientKeyPass">external_auth_client_key_pass</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthorizationServiceDefaultLabel">external_authorization_service_default_label</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthorizationServiceEnabled">external_authorization_service_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthorizationServiceEnabled">external_authorization_service_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthorizationServiceTimeout">external_authorization_service_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthorizationServiceUrl">external_authorization_service_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalPipelineValidationServiceTimeout">external_pipeline_validation_service_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -7019,46 +7019,46 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitalyTimeoutFast">gitaly_timeout_fast</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitalyTimeoutMedium">gitaly_timeout_medium</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitlabShellOperationLimit">gitlab_shell_operation_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitpodEnabled">gitpod_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitpodEnabled">gitpod_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitpodUrl">gitpod_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitRateLimitUsersAlertlist">git_rate_limit_users_alertlist</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitRateLimitUsersAllowlist">git_rate_limit_users_allowlist</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitTwoFactorSessionExpiry">git_two_factor_session_expiry</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.globallyAllowedIps">globally_allowed_ips</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.grafanaEnabled">grafana_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.grafanaEnabled">grafana_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.grafanaUrl">grafana_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gravatarEnabled">gravatar_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.groupOwnersCanManageDefaultBranchProtection">group_owners_can_manage_default_branch_protection</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.helpPageHideCommercialContent">help_page_hide_commercial_content</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gravatarEnabled">gravatar_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.groupOwnersCanManageDefaultBranchProtection">group_owners_can_manage_default_branch_protection</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.helpPageHideCommercialContent">help_page_hide_commercial_content</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.helpPageSupportUrl">help_page_support_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.helpPageText">help_page_text</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.helpText">help_text</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.hideThirdPartyOffers">hide_third_party_offers</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.hideThirdPartyOffers">hide_third_party_offers</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.homePageUrl">home_page_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.housekeepingEnabled">housekeeping_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.housekeepingEnabled">housekeeping_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.housekeepingOptimizeRepositoryPeriod">housekeeping_optimize_repository_period</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.htmlEmailsEnabled">html_emails_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.htmlEmailsEnabled">html_emails_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.importSources">import_sources</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.inactiveProjectsDeleteAfterMonths">inactive_projects_delete_after_months</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.inactiveProjectsMinSizeMb">inactive_projects_min_size_mb</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.inactiveProjectsSendWarningEmailAfterMonths">inactive_projects_send_warning_email_after_months</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.includeOptionalMetricsInServicePing">include_optional_metrics_in_service_ping</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.inProductMarketingEmailsEnabled">in_product_marketing_emails_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.invisibleCaptchaEnabled">invisible_captcha_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.includeOptionalMetricsInServicePing">include_optional_metrics_in_service_ping</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.inProductMarketingEmailsEnabled">in_product_marketing_emails_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.invisibleCaptchaEnabled">invisible_captcha_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.issuesCreateLimit">issues_create_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.jiraConnectApplicationKey">jira_connect_application_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.jiraConnectProxyUrl">jira_connect_proxy_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.jiraConnectPublicKeyStorageEnabled">jira_connect_public_key_storage_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.keepLatestArtifact">keep_latest_artifact</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.jiraConnectPublicKeyStorageEnabled">jira_connect_public_key_storage_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.keepLatestArtifact">keep_latest_artifact</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.localMarkdownVersion">local_markdown_version</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.lockDuoFeaturesEnabled">lock_duo_features_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.lockMembershipsToLdap">lock_memberships_to_ldap</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mailgunEventsEnabled">mailgun_events_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.lockDuoFeaturesEnabled">lock_duo_features_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.lockMembershipsToLdap">lock_memberships_to_ldap</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mailgunEventsEnabled">mailgun_events_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mailgunSigningKey">mailgun_signing_key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maintenanceMode">maintenance_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maintenanceMode">maintenance_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maintenanceModeMessage">maintenance_mode_message</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mavenPackageRequestsForwarding">maven_package_requests_forwarding</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mavenPackageRequestsForwarding">maven_package_requests_forwarding</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maxArtifactsSize">max_artifacts_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maxAttachmentSize">max_attachment_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maxDecompressedArchiveSize">max_decompressed_archive_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -7074,73 +7074,73 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maxTerraformStateSizeBytes">max_terraform_state_size_bytes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.metricsMethodCallThreshold">metrics_method_call_threshold</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.minimumPasswordLength">minimum_password_length</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mirrorAvailable">mirror_available</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mirrorAvailable">mirror_available</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mirrorCapacityThreshold">mirror_capacity_threshold</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mirrorMaxCapacity">mirror_max_capacity</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mirrorMaxDelay">mirror_max_delay</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.npmPackageRequestsForwarding">npm_package_requests_forwarding</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.nugetSkipMetadataUrlValidation">nuget_skip_metadata_url_validation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.npmPackageRequestsForwarding">npm_package_requests_forwarding</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.nugetSkipMetadataUrlValidation">nuget_skip_metadata_url_validation</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.outboundLocalRequestsWhitelist">outbound_local_requests_whitelist</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.packageMetadataPurlTypes">package_metadata_purl_types</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.packageRegistryAllowAnyoneToPullOption">package_registry_allow_anyone_to_pull_option</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.packageRegistryAllowAnyoneToPullOption">package_registry_allow_anyone_to_pull_option</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.packageRegistryCleanupPoliciesWorkerCapacity">package_registry_cleanup_policies_worker_capacity</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pagesDomainVerificationEnabled">pages_domain_verification_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordAuthenticationEnabledForGit">password_authentication_enabled_for_git</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordAuthenticationEnabledForWeb">password_authentication_enabled_for_web</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordLowercaseRequired">password_lowercase_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordNumberRequired">password_number_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordSymbolRequired">password_symbol_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordUppercaseRequired">password_uppercase_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pagesDomainVerificationEnabled">pages_domain_verification_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordAuthenticationEnabledForGit">password_authentication_enabled_for_git</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordAuthenticationEnabledForWeb">password_authentication_enabled_for_web</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordLowercaseRequired">password_lowercase_required</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordNumberRequired">password_number_required</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordSymbolRequired">password_symbol_required</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordUppercaseRequired">password_uppercase_required</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.performanceBarAllowedGroupPath">performance_bar_allowed_group_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.personalAccessTokenPrefix">personal_access_token_prefix</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pipelineLimitPerProjectUserSha">pipeline_limit_per_project_user_sha</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.plantumlEnabled">plantuml_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.plantumlEnabled">plantuml_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.plantumlUrl">plantuml_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pollingIntervalMultiplier">polling_interval_multiplier</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.projectExportEnabled">project_export_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.projectExportEnabled">project_export_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.projectJobsApiRateLimit">project_jobs_api_rate_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.projectsApiRateLimitUnauthenticated">projects_api_rate_limit_unauthenticated</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.prometheusMetricsEnabled">prometheus_metrics_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.protectedCiVariables">protected_ci_variables</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.prometheusMetricsEnabled">prometheus_metrics_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.protectedCiVariables">protected_ci_variables</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pushEventActivitiesLimit">push_event_activities_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pushEventHooksLimit">push_event_hooks_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pypiPackageRequestsForwarding">pypi_package_requests_forwarding</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pypiPackageRequestsForwarding">pypi_package_requests_forwarding</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.rateLimitingResponseText">rate_limiting_response_text</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.rawBlobRequestLimit">raw_blob_request_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.recaptchaEnabled">recaptcha_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.recaptchaEnabled">recaptcha_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.recaptchaPrivateKey">recaptcha_private_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.recaptchaSiteKey">recaptcha_site_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.receiveMaxInputSize">receive_max_input_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.receptiveClusterAgentsEnabled">receptive_cluster_agents_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.rememberMeEnabled">remember_me_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.repositoryChecksEnabled">repository_checks_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.receptiveClusterAgentsEnabled">receptive_cluster_agents_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.rememberMeEnabled">remember_me_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.repositoryChecksEnabled">repository_checks_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.repositorySizeLimit">repository_size_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.repositoryStoragesWeighted">repository_storages_weighted</a></code> | <code>typing.Mapping[typing.Union[int, float]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireAdminApprovalAfterUserSignup">require_admin_approval_after_user_signup</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireAdminTwoFactorAuthentication">require_admin_two_factor_authentication</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requirePersonalAccessTokenExpiry">require_personal_access_token_expiry</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireTwoFactorAuthentication">require_two_factor_authentication</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireAdminApprovalAfterUserSignup">require_admin_approval_after_user_signup</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireAdminTwoFactorAuthentication">require_admin_two_factor_authentication</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requirePersonalAccessTokenExpiry">require_personal_access_token_expiry</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireTwoFactorAuthentication">require_two_factor_authentication</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.restrictedVisibilityLevels">restricted_visibility_levels</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.rsaKeyRestriction">rsa_key_restriction</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.searchRateLimit">search_rate_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.searchRateLimitUnauthenticated">search_rate_limit_unauthenticated</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.securityApprovalPoliciesLimit">security_approval_policies_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.securityPolicyGlobalGroupApproversEnabled">security_policy_global_group_approvers_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.securityPolicyGlobalGroupApproversEnabled">security_policy_global_group_approvers_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.securityTxtContent">security_txt_content</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sendUserConfirmationEmail">send_user_confirmation_email</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.serviceAccessTokensExpirationEnforced">service_access_tokens_expiration_enforced</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sendUserConfirmationEmail">send_user_confirmation_email</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.serviceAccessTokensExpirationEnforced">service_access_tokens_expiration_enforced</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sessionExpireDelay">session_expire_delay</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sharedRunnersEnabled">shared_runners_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sharedRunnersEnabled">shared_runners_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sharedRunnersMinutes">shared_runners_minutes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sharedRunnersText">shared_runners_text</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sidekiqJobLimiterCompressionThresholdBytes">sidekiq_job_limiter_compression_threshold_bytes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sidekiqJobLimiterLimitBytes">sidekiq_job_limiter_limit_bytes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sidekiqJobLimiterMode">sidekiq_job_limiter_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.signInText">sign_in_text</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.signupEnabled">signup_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.silentAdminExportsEnabled">silent_admin_exports_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.silentModeEnabled">silent_mode_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.slackAppEnabled">slack_app_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.signupEnabled">signup_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.silentAdminExportsEnabled">silent_admin_exports_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.silentModeEnabled">silent_mode_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.slackAppEnabled">slack_app_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.slackAppId">slack_app_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.slackAppSecret">slack_app_secret</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.slackAppSigningSecret">slack_app_signing_secret</a></code> | <code>str</code> | *No description.* |
@@ -7150,54 +7150,54 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.snowplowCollectorHostname">snowplow_collector_hostname</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.snowplowCookieDomain">snowplow_cookie_domain</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.snowplowDatabaseCollectorHostname">snowplow_database_collector_hostname</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.snowplowEnabled">snowplow_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sourcegraphEnabled">sourcegraph_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sourcegraphPublicOnly">sourcegraph_public_only</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.snowplowEnabled">snowplow_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sourcegraphEnabled">sourcegraph_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sourcegraphPublicOnly">sourcegraph_public_only</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sourcegraphUrl">sourcegraph_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.spamCheckApiKey">spam_check_api_key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.spamCheckEndpointEnabled">spam_check_endpoint_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.spamCheckEndpointEnabled">spam_check_endpoint_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.spamCheckEndpointUrl">spam_check_endpoint_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.staticObjectsExternalStorageAuthToken">static_objects_external_storage_auth_token</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.staticObjectsExternalStorageUrl">static_objects_external_storage_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.suggestPipelineEnabled">suggest_pipeline_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.suggestPipelineEnabled">suggest_pipeline_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.terminalMaxSessionTime">terminal_max_session_time</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.terms">terms</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedApiEnabled">throttle_authenticated_api_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedApiEnabled">throttle_authenticated_api_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedApiPeriodInSeconds">throttle_authenticated_api_period_in_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedApiRequestsPerPeriod">throttle_authenticated_api_requests_per_period</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedPackagesApiEnabled">throttle_authenticated_packages_api_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedPackagesApiEnabled">throttle_authenticated_packages_api_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedPackagesApiPeriodInSeconds">throttle_authenticated_packages_api_period_in_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedPackagesApiRequestsPerPeriod">throttle_authenticated_packages_api_requests_per_period</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedWebEnabled">throttle_authenticated_web_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedWebEnabled">throttle_authenticated_web_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedWebPeriodInSeconds">throttle_authenticated_web_period_in_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedWebRequestsPerPeriod">throttle_authenticated_web_requests_per_period</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedApiEnabled">throttle_unauthenticated_api_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedApiEnabled">throttle_unauthenticated_api_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedApiPeriodInSeconds">throttle_unauthenticated_api_period_in_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedApiRequestsPerPeriod">throttle_unauthenticated_api_requests_per_period</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedPackagesApiEnabled">throttle_unauthenticated_packages_api_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedPackagesApiEnabled">throttle_unauthenticated_packages_api_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedPackagesApiPeriodInSeconds">throttle_unauthenticated_packages_api_period_in_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedPackagesApiRequestsPerPeriod">throttle_unauthenticated_packages_api_requests_per_period</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedWebEnabled">throttle_unauthenticated_web_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedWebEnabled">throttle_unauthenticated_web_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedWebPeriodInSeconds">throttle_unauthenticated_web_period_in_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedWebRequestsPerPeriod">throttle_unauthenticated_web_requests_per_period</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.timeTrackingLimitToHours">time_tracking_limit_to_hours</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.timeTrackingLimitToHours">time_tracking_limit_to_hours</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.twoFactorGracePeriod">two_factor_grace_period</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.unconfirmedUsersDeleteAfterDays">unconfirmed_users_delete_after_days</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.uniqueIpsLimitEnabled">unique_ips_limit_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.uniqueIpsLimitEnabled">unique_ips_limit_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.uniqueIpsLimitPerUser">unique_ips_limit_per_user</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.uniqueIpsLimitTimeWindow">unique_ips_limit_time_window</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.updateRunnerVersionsEnabled">update_runner_versions_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.usagePingEnabled">usage_ping_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.useClickhouseForAnalytics">use_clickhouse_for_analytics</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDeactivationEmailsEnabled">user_deactivation_emails_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDefaultExternal">user_default_external</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.updateRunnerVersionsEnabled">update_runner_versions_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.usagePingEnabled">usage_ping_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.useClickhouseForAnalytics">use_clickhouse_for_analytics</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDeactivationEmailsEnabled">user_deactivation_emails_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDefaultExternal">user_default_external</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDefaultInternalRegex">user_default_internal_regex</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDefaultsToPrivateProfile">user_defaults_to_private_profile</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userOauthApplications">user_oauth_applications</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userShowAddSshKeyMessage">user_show_add_ssh_key_message</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDefaultsToPrivateProfile">user_defaults_to_private_profile</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userOauthApplications">user_oauth_applications</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userShowAddSshKeyMessage">user_show_add_ssh_key_message</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.validRunnerRegistrars">valid_runner_registrars</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.versionCheckEnabled">version_check_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.webIdeClientsidePreviewEnabled">web_ide_clientside_preview_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.versionCheckEnabled">version_check_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.webIdeClientsidePreviewEnabled">web_ide_clientside_preview_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.whatsNewVariant">whats_new_variant</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.wikiPageMaxContentBytes">wiki_page_max_content_bytes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 
@@ -7278,20 +7278,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -7338,10 +7338,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -7388,10 +7388,10 @@ abuse_notification_email_input: str
 ##### `admin_mode_input`<sup>Optional</sup> <a name="admin_mode_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.adminModeInput"></a>
 
 ```python
-admin_mode_input: typing.Union[bool, IResolvable]
+admin_mode_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -7428,70 +7428,70 @@ akismet_api_key_input: str
 ##### `akismet_enabled_input`<sup>Optional</sup> <a name="akismet_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.akismetEnabledInput"></a>
 
 ```python
-akismet_enabled_input: typing.Union[bool, IResolvable]
+akismet_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_account_deletion_input`<sup>Optional</sup> <a name="allow_account_deletion_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowAccountDeletionInput"></a>
 
 ```python
-allow_account_deletion_input: typing.Union[bool, IResolvable]
+allow_account_deletion_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_group_owners_to_manage_ldap_input`<sup>Optional</sup> <a name="allow_group_owners_to_manage_ldap_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowGroupOwnersToManageLdapInput"></a>
 
 ```python
-allow_group_owners_to_manage_ldap_input: typing.Union[bool, IResolvable]
+allow_group_owners_to_manage_ldap_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_local_requests_from_system_hooks_input`<sup>Optional</sup> <a name="allow_local_requests_from_system_hooks_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowLocalRequestsFromSystemHooksInput"></a>
 
 ```python
-allow_local_requests_from_system_hooks_input: typing.Union[bool, IResolvable]
+allow_local_requests_from_system_hooks_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_local_requests_from_web_hooks_and_services_input`<sup>Optional</sup> <a name="allow_local_requests_from_web_hooks_and_services_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowLocalRequestsFromWebHooksAndServicesInput"></a>
 
 ```python
-allow_local_requests_from_web_hooks_and_services_input: typing.Union[bool, IResolvable]
+allow_local_requests_from_web_hooks_and_services_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_project_creation_for_guest_and_below_input`<sup>Optional</sup> <a name="allow_project_creation_for_guest_and_below_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowProjectCreationForGuestAndBelowInput"></a>
 
 ```python
-allow_project_creation_for_guest_and_below_input: typing.Union[bool, IResolvable]
+allow_project_creation_for_guest_and_below_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_runner_registration_token_input`<sup>Optional</sup> <a name="allow_runner_registration_token_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowRunnerRegistrationTokenInput"></a>
 
 ```python
-allow_runner_registration_token_input: typing.Union[bool, IResolvable]
+allow_runner_registration_token_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -7528,10 +7528,10 @@ asset_proxy_allowlist_input: typing.List[str]
 ##### `asset_proxy_enabled_input`<sup>Optional</sup> <a name="asset_proxy_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxyEnabledInput"></a>
 
 ```python
-asset_proxy_enabled_input: typing.Union[bool, IResolvable]
+asset_proxy_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -7558,20 +7558,20 @@ asset_proxy_url_input: str
 ##### `authorized_keys_enabled_input`<sup>Optional</sup> <a name="authorized_keys_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.authorizedKeysEnabledInput"></a>
 
 ```python
-authorized_keys_enabled_input: typing.Union[bool, IResolvable]
+authorized_keys_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `auto_ban_user_on_excessive_projects_download_input`<sup>Optional</sup> <a name="auto_ban_user_on_excessive_projects_download_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoBanUserOnExcessiveProjectsDownloadInput"></a>
 
 ```python
-auto_ban_user_on_excessive_projects_download_input: typing.Union[bool, IResolvable]
+auto_ban_user_on_excessive_projects_download_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -7588,20 +7588,20 @@ auto_devops_domain_input: str
 ##### `auto_devops_enabled_input`<sup>Optional</sup> <a name="auto_devops_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoDevopsEnabledInput"></a>
 
 ```python
-auto_devops_enabled_input: typing.Union[bool, IResolvable]
+auto_devops_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `automatic_purchased_storage_allocation_input`<sup>Optional</sup> <a name="automatic_purchased_storage_allocation_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.automaticPurchasedStorageAllocationInput"></a>
 
 ```python
-automatic_purchased_storage_allocation_input: typing.Union[bool, IResolvable]
+automatic_purchased_storage_allocation_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -7618,10 +7618,10 @@ bulk_import_concurrent_pipeline_batch_limit_input: typing.Union[int, float]
 ##### `bulk_import_enabled_input`<sup>Optional</sup> <a name="bulk_import_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportEnabledInput"></a>
 
 ```python
-bulk_import_enabled_input: typing.Union[bool, IResolvable]
+bulk_import_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -7638,20 +7638,20 @@ bulk_import_max_download_file_size_input: typing.Union[int, float]
 ##### `can_create_group_input`<sup>Optional</sup> <a name="can_create_group_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.canCreateGroupInput"></a>
 
 ```python
-can_create_group_input: typing.Union[bool, IResolvable]
+can_create_group_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `check_namespace_plan_input`<sup>Optional</sup> <a name="check_namespace_plan_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.checkNamespacePlanInput"></a>
 
 ```python
-check_namespace_plan_input: typing.Union[bool, IResolvable]
+check_namespace_plan_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -7718,10 +7718,10 @@ concurrent_github_import_jobs_limit_input: typing.Union[int, float]
 ##### `container_expiration_policies_enable_historic_entries_input`<sup>Optional</sup> <a name="container_expiration_policies_enable_historic_entries_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerExpirationPoliciesEnableHistoricEntriesInput"></a>
 
 ```python
-container_expiration_policies_enable_historic_entries_input: typing.Union[bool, IResolvable]
+container_expiration_policies_enable_historic_entries_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -7748,10 +7748,10 @@ container_registry_delete_tags_service_timeout_input: typing.Union[int, float]
 ##### `container_registry_expiration_policies_caching_input`<sup>Optional</sup> <a name="container_registry_expiration_policies_caching_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryExpirationPoliciesCachingInput"></a>
 
 ```python
-container_registry_expiration_policies_caching_input: typing.Union[bool, IResolvable]
+container_registry_expiration_policies_caching_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -7778,10 +7778,10 @@ container_registry_token_expire_delay_input: typing.Union[int, float]
 ##### `deactivate_dormant_users_input`<sup>Optional</sup> <a name="deactivate_dormant_users_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deactivateDormantUsersInput"></a>
 
 ```python
-deactivate_dormant_users_input: typing.Union[bool, IResolvable]
+deactivate_dormant_users_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -7928,20 +7928,20 @@ default_syntax_highlighting_theme_input: typing.Union[int, float]
 ##### `delete_inactive_projects_input`<sup>Optional</sup> <a name="delete_inactive_projects_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteInactiveProjectsInput"></a>
 
 ```python
-delete_inactive_projects_input: typing.Union[bool, IResolvable]
+delete_inactive_projects_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `delete_unconfirmed_users_input`<sup>Optional</sup> <a name="delete_unconfirmed_users_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteUnconfirmedUsersInput"></a>
 
 ```python
-delete_unconfirmed_users_input: typing.Union[bool, IResolvable]
+delete_unconfirmed_users_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -7958,10 +7958,10 @@ deletion_adjourned_period_input: typing.Union[int, float]
 ##### `diagramsnet_enabled_input`<sup>Optional</sup> <a name="diagramsnet_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diagramsnetEnabledInput"></a>
 
 ```python
-diagramsnet_enabled_input: typing.Union[bool, IResolvable]
+diagramsnet_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8008,10 +8008,10 @@ diff_max_patch_bytes_input: typing.Union[int, float]
 ##### `disable_admin_oauth_scopes_input`<sup>Optional</sup> <a name="disable_admin_oauth_scopes_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableAdminOauthScopesInput"></a>
 
 ```python
-disable_admin_oauth_scopes_input: typing.Union[bool, IResolvable]
+disable_admin_oauth_scopes_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8028,30 +8028,30 @@ disabled_oauth_sign_in_sources_input: typing.List[str]
 ##### `disable_feed_token_input`<sup>Optional</sup> <a name="disable_feed_token_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableFeedTokenInput"></a>
 
 ```python
-disable_feed_token_input: typing.Union[bool, IResolvable]
+disable_feed_token_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `disable_personal_access_tokens_input`<sup>Optional</sup> <a name="disable_personal_access_tokens_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disablePersonalAccessTokensInput"></a>
 
 ```python
-disable_personal_access_tokens_input: typing.Union[bool, IResolvable]
+disable_personal_access_tokens_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `dns_rebinding_protection_enabled_input`<sup>Optional</sup> <a name="dns_rebinding_protection_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.dnsRebindingProtectionEnabledInput"></a>
 
 ```python
-dns_rebinding_protection_enabled_input: typing.Union[bool, IResolvable]
+dns_rebinding_protection_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8068,10 +8068,10 @@ domain_allowlist_input: typing.List[str]
 ##### `domain_denylist_enabled_input`<sup>Optional</sup> <a name="domain_denylist_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.domainDenylistEnabledInput"></a>
 
 ```python
-domain_denylist_enabled_input: typing.Union[bool, IResolvable]
+domain_denylist_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8108,10 +8108,10 @@ dsa_key_restriction_input: typing.Union[int, float]
 ##### `duo_features_enabled_input`<sup>Optional</sup> <a name="duo_features_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.duoFeaturesEnabledInput"></a>
 
 ```python
-duo_features_enabled_input: typing.Union[bool, IResolvable]
+duo_features_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8178,10 +8178,10 @@ eks_account_id_input: str
 ##### `eks_integration_enabled_input`<sup>Optional</sup> <a name="eks_integration_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.eksIntegrationEnabledInput"></a>
 
 ```python
-eks_integration_enabled_input: typing.Union[bool, IResolvable]
+eks_integration_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8208,10 +8208,10 @@ elasticsearch_aws_access_key_input: str
 ##### `elasticsearch_aws_input`<sup>Optional</sup> <a name="elasticsearch_aws_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchAwsInput"></a>
 
 ```python
-elasticsearch_aws_input: typing.Union[bool, IResolvable]
+elasticsearch_aws_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8258,20 +8258,20 @@ elasticsearch_indexed_file_size_limit_kb_input: typing.Union[int, float]
 ##### `elasticsearch_indexing_input`<sup>Optional</sup> <a name="elasticsearch_indexing_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchIndexingInput"></a>
 
 ```python
-elasticsearch_indexing_input: typing.Union[bool, IResolvable]
+elasticsearch_indexing_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `elasticsearch_limit_indexing_input`<sup>Optional</sup> <a name="elasticsearch_limit_indexing_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchLimitIndexingInput"></a>
 
 ```python
-elasticsearch_limit_indexing_input: typing.Union[bool, IResolvable]
+elasticsearch_limit_indexing_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8338,20 +8338,20 @@ elasticsearch_project_ids_input: typing.List[typing.Union[int, float]]
 ##### `elasticsearch_requeue_workers_input`<sup>Optional</sup> <a name="elasticsearch_requeue_workers_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchRequeueWorkersInput"></a>
 
 ```python
-elasticsearch_requeue_workers_input: typing.Union[bool, IResolvable]
+elasticsearch_requeue_workers_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `elasticsearch_search_input`<sup>Optional</sup> <a name="elasticsearch_search_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchSearchInput"></a>
 
 ```python
-elasticsearch_search_input: typing.Union[bool, IResolvable]
+elasticsearch_search_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8398,10 +8398,10 @@ email_additional_text_input: str
 ##### `email_author_in_body_input`<sup>Optional</sup> <a name="email_author_in_body_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.emailAuthorInBodyInput"></a>
 
 ```python
-email_author_in_body_input: typing.Union[bool, IResolvable]
+email_author_in_body_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8418,10 +8418,10 @@ email_confirmation_setting_input: str
 ##### `enable_artifact_external_redirect_warning_page_input`<sup>Optional</sup> <a name="enable_artifact_external_redirect_warning_page_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enableArtifactExternalRedirectWarningPageInput"></a>
 
 ```python
-enable_artifact_external_redirect_warning_page_input: typing.Union[bool, IResolvable]
+enable_artifact_external_redirect_warning_page_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8438,20 +8438,20 @@ enabled_git_access_protocol_input: str
 ##### `enforce_namespace_storage_limit_input`<sup>Optional</sup> <a name="enforce_namespace_storage_limit_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enforceNamespaceStorageLimitInput"></a>
 
 ```python
-enforce_namespace_storage_limit_input: typing.Union[bool, IResolvable]
+enforce_namespace_storage_limit_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enforce_terms_input`<sup>Optional</sup> <a name="enforce_terms_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enforceTermsInput"></a>
 
 ```python
-enforce_terms_input: typing.Union[bool, IResolvable]
+enforce_terms_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8498,10 +8498,10 @@ external_authorization_service_default_label_input: str
 ##### `external_authorization_service_enabled_input`<sup>Optional</sup> <a name="external_authorization_service_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthorizationServiceEnabledInput"></a>
 
 ```python
-external_authorization_service_enabled_input: typing.Union[bool, IResolvable]
+external_authorization_service_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8648,10 +8648,10 @@ gitlab_shell_operation_limit_input: typing.Union[int, float]
 ##### `gitpod_enabled_input`<sup>Optional</sup> <a name="gitpod_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitpodEnabledInput"></a>
 
 ```python
-gitpod_enabled_input: typing.Union[bool, IResolvable]
+gitpod_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8708,10 +8708,10 @@ globally_allowed_ips_input: str
 ##### `grafana_enabled_input`<sup>Optional</sup> <a name="grafana_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.grafanaEnabledInput"></a>
 
 ```python
-grafana_enabled_input: typing.Union[bool, IResolvable]
+grafana_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8728,30 +8728,30 @@ grafana_url_input: str
 ##### `gravatar_enabled_input`<sup>Optional</sup> <a name="gravatar_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gravatarEnabledInput"></a>
 
 ```python
-gravatar_enabled_input: typing.Union[bool, IResolvable]
+gravatar_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `group_owners_can_manage_default_branch_protection_input`<sup>Optional</sup> <a name="group_owners_can_manage_default_branch_protection_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.groupOwnersCanManageDefaultBranchProtectionInput"></a>
 
 ```python
-group_owners_can_manage_default_branch_protection_input: typing.Union[bool, IResolvable]
+group_owners_can_manage_default_branch_protection_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `help_page_hide_commercial_content_input`<sup>Optional</sup> <a name="help_page_hide_commercial_content_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.helpPageHideCommercialContentInput"></a>
 
 ```python
-help_page_hide_commercial_content_input: typing.Union[bool, IResolvable]
+help_page_hide_commercial_content_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8788,10 +8788,10 @@ help_text_input: str
 ##### `hide_third_party_offers_input`<sup>Optional</sup> <a name="hide_third_party_offers_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.hideThirdPartyOffersInput"></a>
 
 ```python
-hide_third_party_offers_input: typing.Union[bool, IResolvable]
+hide_third_party_offers_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8808,10 +8808,10 @@ home_page_url_input: str
 ##### `housekeeping_enabled_input`<sup>Optional</sup> <a name="housekeeping_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.housekeepingEnabledInput"></a>
 
 ```python
-housekeeping_enabled_input: typing.Union[bool, IResolvable]
+housekeeping_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8828,10 +8828,10 @@ housekeeping_optimize_repository_period_input: typing.Union[int, float]
 ##### `html_emails_enabled_input`<sup>Optional</sup> <a name="html_emails_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.htmlEmailsEnabledInput"></a>
 
 ```python
-html_emails_enabled_input: typing.Union[bool, IResolvable]
+html_emails_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8888,30 +8888,30 @@ inactive_projects_send_warning_email_after_months_input: typing.Union[int, float
 ##### `include_optional_metrics_in_service_ping_input`<sup>Optional</sup> <a name="include_optional_metrics_in_service_ping_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.includeOptionalMetricsInServicePingInput"></a>
 
 ```python
-include_optional_metrics_in_service_ping_input: typing.Union[bool, IResolvable]
+include_optional_metrics_in_service_ping_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `in_product_marketing_emails_enabled_input`<sup>Optional</sup> <a name="in_product_marketing_emails_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.inProductMarketingEmailsEnabledInput"></a>
 
 ```python
-in_product_marketing_emails_enabled_input: typing.Union[bool, IResolvable]
+in_product_marketing_emails_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `invisible_captcha_enabled_input`<sup>Optional</sup> <a name="invisible_captcha_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.invisibleCaptchaEnabledInput"></a>
 
 ```python
-invisible_captcha_enabled_input: typing.Union[bool, IResolvable]
+invisible_captcha_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8948,20 +8948,20 @@ jira_connect_proxy_url_input: str
 ##### `jira_connect_public_key_storage_enabled_input`<sup>Optional</sup> <a name="jira_connect_public_key_storage_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.jiraConnectPublicKeyStorageEnabledInput"></a>
 
 ```python
-jira_connect_public_key_storage_enabled_input: typing.Union[bool, IResolvable]
+jira_connect_public_key_storage_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `keep_latest_artifact_input`<sup>Optional</sup> <a name="keep_latest_artifact_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.keepLatestArtifactInput"></a>
 
 ```python
-keep_latest_artifact_input: typing.Union[bool, IResolvable]
+keep_latest_artifact_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8978,30 +8978,30 @@ local_markdown_version_input: typing.Union[int, float]
 ##### `lock_duo_features_enabled_input`<sup>Optional</sup> <a name="lock_duo_features_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.lockDuoFeaturesEnabledInput"></a>
 
 ```python
-lock_duo_features_enabled_input: typing.Union[bool, IResolvable]
+lock_duo_features_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `lock_memberships_to_ldap_input`<sup>Optional</sup> <a name="lock_memberships_to_ldap_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.lockMembershipsToLdapInput"></a>
 
 ```python
-lock_memberships_to_ldap_input: typing.Union[bool, IResolvable]
+lock_memberships_to_ldap_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `mailgun_events_enabled_input`<sup>Optional</sup> <a name="mailgun_events_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mailgunEventsEnabledInput"></a>
 
 ```python
-mailgun_events_enabled_input: typing.Union[bool, IResolvable]
+mailgun_events_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -9018,10 +9018,10 @@ mailgun_signing_key_input: str
 ##### `maintenance_mode_input`<sup>Optional</sup> <a name="maintenance_mode_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maintenanceModeInput"></a>
 
 ```python
-maintenance_mode_input: typing.Union[bool, IResolvable]
+maintenance_mode_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -9038,10 +9038,10 @@ maintenance_mode_message_input: str
 ##### `maven_package_requests_forwarding_input`<sup>Optional</sup> <a name="maven_package_requests_forwarding_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mavenPackageRequestsForwardingInput"></a>
 
 ```python
-maven_package_requests_forwarding_input: typing.Union[bool, IResolvable]
+maven_package_requests_forwarding_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -9198,10 +9198,10 @@ minimum_password_length_input: typing.Union[int, float]
 ##### `mirror_available_input`<sup>Optional</sup> <a name="mirror_available_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mirrorAvailableInput"></a>
 
 ```python
-mirror_available_input: typing.Union[bool, IResolvable]
+mirror_available_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -9238,20 +9238,20 @@ mirror_max_delay_input: typing.Union[int, float]
 ##### `npm_package_requests_forwarding_input`<sup>Optional</sup> <a name="npm_package_requests_forwarding_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.npmPackageRequestsForwardingInput"></a>
 
 ```python
-npm_package_requests_forwarding_input: typing.Union[bool, IResolvable]
+npm_package_requests_forwarding_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `nuget_skip_metadata_url_validation_input`<sup>Optional</sup> <a name="nuget_skip_metadata_url_validation_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.nugetSkipMetadataUrlValidationInput"></a>
 
 ```python
-nuget_skip_metadata_url_validation_input: typing.Union[bool, IResolvable]
+nuget_skip_metadata_url_validation_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -9278,10 +9278,10 @@ package_metadata_purl_types_input: typing.List[typing.Union[int, float]]
 ##### `package_registry_allow_anyone_to_pull_option_input`<sup>Optional</sup> <a name="package_registry_allow_anyone_to_pull_option_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.packageRegistryAllowAnyoneToPullOptionInput"></a>
 
 ```python
-package_registry_allow_anyone_to_pull_option_input: typing.Union[bool, IResolvable]
+package_registry_allow_anyone_to_pull_option_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -9298,70 +9298,70 @@ package_registry_cleanup_policies_worker_capacity_input: typing.Union[int, float
 ##### `pages_domain_verification_enabled_input`<sup>Optional</sup> <a name="pages_domain_verification_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pagesDomainVerificationEnabledInput"></a>
 
 ```python
-pages_domain_verification_enabled_input: typing.Union[bool, IResolvable]
+pages_domain_verification_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `password_authentication_enabled_for_git_input`<sup>Optional</sup> <a name="password_authentication_enabled_for_git_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordAuthenticationEnabledForGitInput"></a>
 
 ```python
-password_authentication_enabled_for_git_input: typing.Union[bool, IResolvable]
+password_authentication_enabled_for_git_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `password_authentication_enabled_for_web_input`<sup>Optional</sup> <a name="password_authentication_enabled_for_web_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordAuthenticationEnabledForWebInput"></a>
 
 ```python
-password_authentication_enabled_for_web_input: typing.Union[bool, IResolvable]
+password_authentication_enabled_for_web_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `password_lowercase_required_input`<sup>Optional</sup> <a name="password_lowercase_required_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordLowercaseRequiredInput"></a>
 
 ```python
-password_lowercase_required_input: typing.Union[bool, IResolvable]
+password_lowercase_required_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `password_number_required_input`<sup>Optional</sup> <a name="password_number_required_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordNumberRequiredInput"></a>
 
 ```python
-password_number_required_input: typing.Union[bool, IResolvable]
+password_number_required_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `password_symbol_required_input`<sup>Optional</sup> <a name="password_symbol_required_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordSymbolRequiredInput"></a>
 
 ```python
-password_symbol_required_input: typing.Union[bool, IResolvable]
+password_symbol_required_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `password_uppercase_required_input`<sup>Optional</sup> <a name="password_uppercase_required_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordUppercaseRequiredInput"></a>
 
 ```python
-password_uppercase_required_input: typing.Union[bool, IResolvable]
+password_uppercase_required_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -9398,10 +9398,10 @@ pipeline_limit_per_project_user_sha_input: typing.Union[int, float]
 ##### `plantuml_enabled_input`<sup>Optional</sup> <a name="plantuml_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.plantumlEnabledInput"></a>
 
 ```python
-plantuml_enabled_input: typing.Union[bool, IResolvable]
+plantuml_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -9428,10 +9428,10 @@ polling_interval_multiplier_input: typing.Union[int, float]
 ##### `project_export_enabled_input`<sup>Optional</sup> <a name="project_export_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.projectExportEnabledInput"></a>
 
 ```python
-project_export_enabled_input: typing.Union[bool, IResolvable]
+project_export_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -9458,20 +9458,20 @@ projects_api_rate_limit_unauthenticated_input: typing.Union[int, float]
 ##### `prometheus_metrics_enabled_input`<sup>Optional</sup> <a name="prometheus_metrics_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.prometheusMetricsEnabledInput"></a>
 
 ```python
-prometheus_metrics_enabled_input: typing.Union[bool, IResolvable]
+prometheus_metrics_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `protected_ci_variables_input`<sup>Optional</sup> <a name="protected_ci_variables_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.protectedCiVariablesInput"></a>
 
 ```python
-protected_ci_variables_input: typing.Union[bool, IResolvable]
+protected_ci_variables_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -9498,10 +9498,10 @@ push_event_hooks_limit_input: typing.Union[int, float]
 ##### `pypi_package_requests_forwarding_input`<sup>Optional</sup> <a name="pypi_package_requests_forwarding_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pypiPackageRequestsForwardingInput"></a>
 
 ```python
-pypi_package_requests_forwarding_input: typing.Union[bool, IResolvable]
+pypi_package_requests_forwarding_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -9528,10 +9528,10 @@ raw_blob_request_limit_input: typing.Union[int, float]
 ##### `recaptcha_enabled_input`<sup>Optional</sup> <a name="recaptcha_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.recaptchaEnabledInput"></a>
 
 ```python
-recaptcha_enabled_input: typing.Union[bool, IResolvable]
+recaptcha_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -9568,30 +9568,30 @@ receive_max_input_size_input: typing.Union[int, float]
 ##### `receptive_cluster_agents_enabled_input`<sup>Optional</sup> <a name="receptive_cluster_agents_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.receptiveClusterAgentsEnabledInput"></a>
 
 ```python
-receptive_cluster_agents_enabled_input: typing.Union[bool, IResolvable]
+receptive_cluster_agents_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `remember_me_enabled_input`<sup>Optional</sup> <a name="remember_me_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.rememberMeEnabledInput"></a>
 
 ```python
-remember_me_enabled_input: typing.Union[bool, IResolvable]
+remember_me_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `repository_checks_enabled_input`<sup>Optional</sup> <a name="repository_checks_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.repositoryChecksEnabledInput"></a>
 
 ```python
-repository_checks_enabled_input: typing.Union[bool, IResolvable]
+repository_checks_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -9618,40 +9618,40 @@ repository_storages_weighted_input: typing.Mapping[typing.Union[int, float]]
 ##### `require_admin_approval_after_user_signup_input`<sup>Optional</sup> <a name="require_admin_approval_after_user_signup_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireAdminApprovalAfterUserSignupInput"></a>
 
 ```python
-require_admin_approval_after_user_signup_input: typing.Union[bool, IResolvable]
+require_admin_approval_after_user_signup_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `require_admin_two_factor_authentication_input`<sup>Optional</sup> <a name="require_admin_two_factor_authentication_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireAdminTwoFactorAuthenticationInput"></a>
 
 ```python
-require_admin_two_factor_authentication_input: typing.Union[bool, IResolvable]
+require_admin_two_factor_authentication_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `require_personal_access_token_expiry_input`<sup>Optional</sup> <a name="require_personal_access_token_expiry_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requirePersonalAccessTokenExpiryInput"></a>
 
 ```python
-require_personal_access_token_expiry_input: typing.Union[bool, IResolvable]
+require_personal_access_token_expiry_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `require_two_factor_authentication_input`<sup>Optional</sup> <a name="require_two_factor_authentication_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireTwoFactorAuthenticationInput"></a>
 
 ```python
-require_two_factor_authentication_input: typing.Union[bool, IResolvable]
+require_two_factor_authentication_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -9708,10 +9708,10 @@ security_approval_policies_limit_input: typing.Union[int, float]
 ##### `security_policy_global_group_approvers_enabled_input`<sup>Optional</sup> <a name="security_policy_global_group_approvers_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.securityPolicyGlobalGroupApproversEnabledInput"></a>
 
 ```python
-security_policy_global_group_approvers_enabled_input: typing.Union[bool, IResolvable]
+security_policy_global_group_approvers_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -9728,20 +9728,20 @@ security_txt_content_input: str
 ##### `send_user_confirmation_email_input`<sup>Optional</sup> <a name="send_user_confirmation_email_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sendUserConfirmationEmailInput"></a>
 
 ```python
-send_user_confirmation_email_input: typing.Union[bool, IResolvable]
+send_user_confirmation_email_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `service_access_tokens_expiration_enforced_input`<sup>Optional</sup> <a name="service_access_tokens_expiration_enforced_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.serviceAccessTokensExpirationEnforcedInput"></a>
 
 ```python
-service_access_tokens_expiration_enforced_input: typing.Union[bool, IResolvable]
+service_access_tokens_expiration_enforced_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -9758,10 +9758,10 @@ session_expire_delay_input: typing.Union[int, float]
 ##### `shared_runners_enabled_input`<sup>Optional</sup> <a name="shared_runners_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sharedRunnersEnabledInput"></a>
 
 ```python
-shared_runners_enabled_input: typing.Union[bool, IResolvable]
+shared_runners_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -9828,40 +9828,40 @@ sign_in_text_input: str
 ##### `signup_enabled_input`<sup>Optional</sup> <a name="signup_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.signupEnabledInput"></a>
 
 ```python
-signup_enabled_input: typing.Union[bool, IResolvable]
+signup_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `silent_admin_exports_enabled_input`<sup>Optional</sup> <a name="silent_admin_exports_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.silentAdminExportsEnabledInput"></a>
 
 ```python
-silent_admin_exports_enabled_input: typing.Union[bool, IResolvable]
+silent_admin_exports_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `silent_mode_enabled_input`<sup>Optional</sup> <a name="silent_mode_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.silentModeEnabledInput"></a>
 
 ```python
-silent_mode_enabled_input: typing.Union[bool, IResolvable]
+silent_mode_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `slack_app_enabled_input`<sup>Optional</sup> <a name="slack_app_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.slackAppEnabledInput"></a>
 
 ```python
-slack_app_enabled_input: typing.Union[bool, IResolvable]
+slack_app_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -9958,30 +9958,30 @@ snowplow_database_collector_hostname_input: str
 ##### `snowplow_enabled_input`<sup>Optional</sup> <a name="snowplow_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.snowplowEnabledInput"></a>
 
 ```python
-snowplow_enabled_input: typing.Union[bool, IResolvable]
+snowplow_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `sourcegraph_enabled_input`<sup>Optional</sup> <a name="sourcegraph_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sourcegraphEnabledInput"></a>
 
 ```python
-sourcegraph_enabled_input: typing.Union[bool, IResolvable]
+sourcegraph_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `sourcegraph_public_only_input`<sup>Optional</sup> <a name="sourcegraph_public_only_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sourcegraphPublicOnlyInput"></a>
 
 ```python
-sourcegraph_public_only_input: typing.Union[bool, IResolvable]
+sourcegraph_public_only_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -10008,10 +10008,10 @@ spam_check_api_key_input: str
 ##### `spam_check_endpoint_enabled_input`<sup>Optional</sup> <a name="spam_check_endpoint_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.spamCheckEndpointEnabledInput"></a>
 
 ```python
-spam_check_endpoint_enabled_input: typing.Union[bool, IResolvable]
+spam_check_endpoint_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -10048,10 +10048,10 @@ static_objects_external_storage_url_input: str
 ##### `suggest_pipeline_enabled_input`<sup>Optional</sup> <a name="suggest_pipeline_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.suggestPipelineEnabledInput"></a>
 
 ```python
-suggest_pipeline_enabled_input: typing.Union[bool, IResolvable]
+suggest_pipeline_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -10078,10 +10078,10 @@ terms_input: str
 ##### `throttle_authenticated_api_enabled_input`<sup>Optional</sup> <a name="throttle_authenticated_api_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedApiEnabledInput"></a>
 
 ```python
-throttle_authenticated_api_enabled_input: typing.Union[bool, IResolvable]
+throttle_authenticated_api_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -10108,10 +10108,10 @@ throttle_authenticated_api_requests_per_period_input: typing.Union[int, float]
 ##### `throttle_authenticated_packages_api_enabled_input`<sup>Optional</sup> <a name="throttle_authenticated_packages_api_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedPackagesApiEnabledInput"></a>
 
 ```python
-throttle_authenticated_packages_api_enabled_input: typing.Union[bool, IResolvable]
+throttle_authenticated_packages_api_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -10138,10 +10138,10 @@ throttle_authenticated_packages_api_requests_per_period_input: typing.Union[int,
 ##### `throttle_authenticated_web_enabled_input`<sup>Optional</sup> <a name="throttle_authenticated_web_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedWebEnabledInput"></a>
 
 ```python
-throttle_authenticated_web_enabled_input: typing.Union[bool, IResolvable]
+throttle_authenticated_web_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -10168,10 +10168,10 @@ throttle_authenticated_web_requests_per_period_input: typing.Union[int, float]
 ##### `throttle_unauthenticated_api_enabled_input`<sup>Optional</sup> <a name="throttle_unauthenticated_api_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedApiEnabledInput"></a>
 
 ```python
-throttle_unauthenticated_api_enabled_input: typing.Union[bool, IResolvable]
+throttle_unauthenticated_api_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -10198,10 +10198,10 @@ throttle_unauthenticated_api_requests_per_period_input: typing.Union[int, float]
 ##### `throttle_unauthenticated_packages_api_enabled_input`<sup>Optional</sup> <a name="throttle_unauthenticated_packages_api_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedPackagesApiEnabledInput"></a>
 
 ```python
-throttle_unauthenticated_packages_api_enabled_input: typing.Union[bool, IResolvable]
+throttle_unauthenticated_packages_api_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -10228,10 +10228,10 @@ throttle_unauthenticated_packages_api_requests_per_period_input: typing.Union[in
 ##### `throttle_unauthenticated_web_enabled_input`<sup>Optional</sup> <a name="throttle_unauthenticated_web_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedWebEnabledInput"></a>
 
 ```python
-throttle_unauthenticated_web_enabled_input: typing.Union[bool, IResolvable]
+throttle_unauthenticated_web_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -10258,10 +10258,10 @@ throttle_unauthenticated_web_requests_per_period_input: typing.Union[int, float]
 ##### `time_tracking_limit_to_hours_input`<sup>Optional</sup> <a name="time_tracking_limit_to_hours_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.timeTrackingLimitToHoursInput"></a>
 
 ```python
-time_tracking_limit_to_hours_input: typing.Union[bool, IResolvable]
+time_tracking_limit_to_hours_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -10288,10 +10288,10 @@ unconfirmed_users_delete_after_days_input: typing.Union[int, float]
 ##### `unique_ips_limit_enabled_input`<sup>Optional</sup> <a name="unique_ips_limit_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.uniqueIpsLimitEnabledInput"></a>
 
 ```python
-unique_ips_limit_enabled_input: typing.Union[bool, IResolvable]
+unique_ips_limit_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -10318,50 +10318,50 @@ unique_ips_limit_time_window_input: typing.Union[int, float]
 ##### `update_runner_versions_enabled_input`<sup>Optional</sup> <a name="update_runner_versions_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.updateRunnerVersionsEnabledInput"></a>
 
 ```python
-update_runner_versions_enabled_input: typing.Union[bool, IResolvable]
+update_runner_versions_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `usage_ping_enabled_input`<sup>Optional</sup> <a name="usage_ping_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.usagePingEnabledInput"></a>
 
 ```python
-usage_ping_enabled_input: typing.Union[bool, IResolvable]
+usage_ping_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `use_clickhouse_for_analytics_input`<sup>Optional</sup> <a name="use_clickhouse_for_analytics_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.useClickhouseForAnalyticsInput"></a>
 
 ```python
-use_clickhouse_for_analytics_input: typing.Union[bool, IResolvable]
+use_clickhouse_for_analytics_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `user_deactivation_emails_enabled_input`<sup>Optional</sup> <a name="user_deactivation_emails_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDeactivationEmailsEnabledInput"></a>
 
 ```python
-user_deactivation_emails_enabled_input: typing.Union[bool, IResolvable]
+user_deactivation_emails_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `user_default_external_input`<sup>Optional</sup> <a name="user_default_external_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDefaultExternalInput"></a>
 
 ```python
-user_default_external_input: typing.Union[bool, IResolvable]
+user_default_external_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -10378,30 +10378,30 @@ user_default_internal_regex_input: str
 ##### `user_defaults_to_private_profile_input`<sup>Optional</sup> <a name="user_defaults_to_private_profile_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDefaultsToPrivateProfileInput"></a>
 
 ```python
-user_defaults_to_private_profile_input: typing.Union[bool, IResolvable]
+user_defaults_to_private_profile_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `user_oauth_applications_input`<sup>Optional</sup> <a name="user_oauth_applications_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userOauthApplicationsInput"></a>
 
 ```python
-user_oauth_applications_input: typing.Union[bool, IResolvable]
+user_oauth_applications_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `user_show_add_ssh_key_message_input`<sup>Optional</sup> <a name="user_show_add_ssh_key_message_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userShowAddSshKeyMessageInput"></a>
 
 ```python
-user_show_add_ssh_key_message_input: typing.Union[bool, IResolvable]
+user_show_add_ssh_key_message_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -10418,20 +10418,20 @@ valid_runner_registrars_input: typing.List[str]
 ##### `version_check_enabled_input`<sup>Optional</sup> <a name="version_check_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.versionCheckEnabledInput"></a>
 
 ```python
-version_check_enabled_input: typing.Union[bool, IResolvable]
+version_check_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `web_ide_clientside_preview_enabled_input`<sup>Optional</sup> <a name="web_ide_clientside_preview_enabled_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.webIdeClientsidePreviewEnabledInput"></a>
 
 ```python
-web_ide_clientside_preview_enabled_input: typing.Union[bool, IResolvable]
+web_ide_clientside_preview_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -10468,10 +10468,10 @@ abuse_notification_email: str
 ##### `admin_mode`<sup>Required</sup> <a name="admin_mode" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.adminMode"></a>
 
 ```python
-admin_mode: typing.Union[bool, IResolvable]
+admin_mode: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -10508,70 +10508,70 @@ akismet_api_key: str
 ##### `akismet_enabled`<sup>Required</sup> <a name="akismet_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.akismetEnabled"></a>
 
 ```python
-akismet_enabled: typing.Union[bool, IResolvable]
+akismet_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_account_deletion`<sup>Required</sup> <a name="allow_account_deletion" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowAccountDeletion"></a>
 
 ```python
-allow_account_deletion: typing.Union[bool, IResolvable]
+allow_account_deletion: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_group_owners_to_manage_ldap`<sup>Required</sup> <a name="allow_group_owners_to_manage_ldap" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowGroupOwnersToManageLdap"></a>
 
 ```python
-allow_group_owners_to_manage_ldap: typing.Union[bool, IResolvable]
+allow_group_owners_to_manage_ldap: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_local_requests_from_system_hooks`<sup>Required</sup> <a name="allow_local_requests_from_system_hooks" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowLocalRequestsFromSystemHooks"></a>
 
 ```python
-allow_local_requests_from_system_hooks: typing.Union[bool, IResolvable]
+allow_local_requests_from_system_hooks: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_local_requests_from_web_hooks_and_services`<sup>Required</sup> <a name="allow_local_requests_from_web_hooks_and_services" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowLocalRequestsFromWebHooksAndServices"></a>
 
 ```python
-allow_local_requests_from_web_hooks_and_services: typing.Union[bool, IResolvable]
+allow_local_requests_from_web_hooks_and_services: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_project_creation_for_guest_and_below`<sup>Required</sup> <a name="allow_project_creation_for_guest_and_below" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowProjectCreationForGuestAndBelow"></a>
 
 ```python
-allow_project_creation_for_guest_and_below: typing.Union[bool, IResolvable]
+allow_project_creation_for_guest_and_below: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_runner_registration_token`<sup>Required</sup> <a name="allow_runner_registration_token" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowRunnerRegistrationToken"></a>
 
 ```python
-allow_runner_registration_token: typing.Union[bool, IResolvable]
+allow_runner_registration_token: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -10608,10 +10608,10 @@ asset_proxy_allowlist: typing.List[str]
 ##### `asset_proxy_enabled`<sup>Required</sup> <a name="asset_proxy_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxyEnabled"></a>
 
 ```python
-asset_proxy_enabled: typing.Union[bool, IResolvable]
+asset_proxy_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -10638,20 +10638,20 @@ asset_proxy_url: str
 ##### `authorized_keys_enabled`<sup>Required</sup> <a name="authorized_keys_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.authorizedKeysEnabled"></a>
 
 ```python
-authorized_keys_enabled: typing.Union[bool, IResolvable]
+authorized_keys_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `auto_ban_user_on_excessive_projects_download`<sup>Required</sup> <a name="auto_ban_user_on_excessive_projects_download" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoBanUserOnExcessiveProjectsDownload"></a>
 
 ```python
-auto_ban_user_on_excessive_projects_download: typing.Union[bool, IResolvable]
+auto_ban_user_on_excessive_projects_download: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -10668,20 +10668,20 @@ auto_devops_domain: str
 ##### `auto_devops_enabled`<sup>Required</sup> <a name="auto_devops_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoDevopsEnabled"></a>
 
 ```python
-auto_devops_enabled: typing.Union[bool, IResolvable]
+auto_devops_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `automatic_purchased_storage_allocation`<sup>Required</sup> <a name="automatic_purchased_storage_allocation" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.automaticPurchasedStorageAllocation"></a>
 
 ```python
-automatic_purchased_storage_allocation: typing.Union[bool, IResolvable]
+automatic_purchased_storage_allocation: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -10698,10 +10698,10 @@ bulk_import_concurrent_pipeline_batch_limit: typing.Union[int, float]
 ##### `bulk_import_enabled`<sup>Required</sup> <a name="bulk_import_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportEnabled"></a>
 
 ```python
-bulk_import_enabled: typing.Union[bool, IResolvable]
+bulk_import_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -10718,20 +10718,20 @@ bulk_import_max_download_file_size: typing.Union[int, float]
 ##### `can_create_group`<sup>Required</sup> <a name="can_create_group" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.canCreateGroup"></a>
 
 ```python
-can_create_group: typing.Union[bool, IResolvable]
+can_create_group: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `check_namespace_plan`<sup>Required</sup> <a name="check_namespace_plan" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.checkNamespacePlan"></a>
 
 ```python
-check_namespace_plan: typing.Union[bool, IResolvable]
+check_namespace_plan: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -10798,10 +10798,10 @@ concurrent_github_import_jobs_limit: typing.Union[int, float]
 ##### `container_expiration_policies_enable_historic_entries`<sup>Required</sup> <a name="container_expiration_policies_enable_historic_entries" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerExpirationPoliciesEnableHistoricEntries"></a>
 
 ```python
-container_expiration_policies_enable_historic_entries: typing.Union[bool, IResolvable]
+container_expiration_policies_enable_historic_entries: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -10828,10 +10828,10 @@ container_registry_delete_tags_service_timeout: typing.Union[int, float]
 ##### `container_registry_expiration_policies_caching`<sup>Required</sup> <a name="container_registry_expiration_policies_caching" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryExpirationPoliciesCaching"></a>
 
 ```python
-container_registry_expiration_policies_caching: typing.Union[bool, IResolvable]
+container_registry_expiration_policies_caching: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -10858,10 +10858,10 @@ container_registry_token_expire_delay: typing.Union[int, float]
 ##### `deactivate_dormant_users`<sup>Required</sup> <a name="deactivate_dormant_users" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deactivateDormantUsers"></a>
 
 ```python
-deactivate_dormant_users: typing.Union[bool, IResolvable]
+deactivate_dormant_users: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -10998,20 +10998,20 @@ default_syntax_highlighting_theme: typing.Union[int, float]
 ##### `delete_inactive_projects`<sup>Required</sup> <a name="delete_inactive_projects" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteInactiveProjects"></a>
 
 ```python
-delete_inactive_projects: typing.Union[bool, IResolvable]
+delete_inactive_projects: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `delete_unconfirmed_users`<sup>Required</sup> <a name="delete_unconfirmed_users" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteUnconfirmedUsers"></a>
 
 ```python
-delete_unconfirmed_users: typing.Union[bool, IResolvable]
+delete_unconfirmed_users: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11028,10 +11028,10 @@ deletion_adjourned_period: typing.Union[int, float]
 ##### `diagramsnet_enabled`<sup>Required</sup> <a name="diagramsnet_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diagramsnetEnabled"></a>
 
 ```python
-diagramsnet_enabled: typing.Union[bool, IResolvable]
+diagramsnet_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11078,10 +11078,10 @@ diff_max_patch_bytes: typing.Union[int, float]
 ##### `disable_admin_oauth_scopes`<sup>Required</sup> <a name="disable_admin_oauth_scopes" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableAdminOauthScopes"></a>
 
 ```python
-disable_admin_oauth_scopes: typing.Union[bool, IResolvable]
+disable_admin_oauth_scopes: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11098,30 +11098,30 @@ disabled_oauth_sign_in_sources: typing.List[str]
 ##### `disable_feed_token`<sup>Required</sup> <a name="disable_feed_token" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableFeedToken"></a>
 
 ```python
-disable_feed_token: typing.Union[bool, IResolvable]
+disable_feed_token: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `disable_personal_access_tokens`<sup>Required</sup> <a name="disable_personal_access_tokens" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disablePersonalAccessTokens"></a>
 
 ```python
-disable_personal_access_tokens: typing.Union[bool, IResolvable]
+disable_personal_access_tokens: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `dns_rebinding_protection_enabled`<sup>Required</sup> <a name="dns_rebinding_protection_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.dnsRebindingProtectionEnabled"></a>
 
 ```python
-dns_rebinding_protection_enabled: typing.Union[bool, IResolvable]
+dns_rebinding_protection_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11148,10 +11148,10 @@ domain_denylist: typing.List[str]
 ##### `domain_denylist_enabled`<sup>Required</sup> <a name="domain_denylist_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.domainDenylistEnabled"></a>
 
 ```python
-domain_denylist_enabled: typing.Union[bool, IResolvable]
+domain_denylist_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11178,10 +11178,10 @@ dsa_key_restriction: typing.Union[int, float]
 ##### `duo_features_enabled`<sup>Required</sup> <a name="duo_features_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.duoFeaturesEnabled"></a>
 
 ```python
-duo_features_enabled: typing.Union[bool, IResolvable]
+duo_features_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11248,10 +11248,10 @@ eks_account_id: str
 ##### `eks_integration_enabled`<sup>Required</sup> <a name="eks_integration_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.eksIntegrationEnabled"></a>
 
 ```python
-eks_integration_enabled: typing.Union[bool, IResolvable]
+eks_integration_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11268,10 +11268,10 @@ eks_secret_access_key: str
 ##### `elasticsearch_aws`<sup>Required</sup> <a name="elasticsearch_aws" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchAws"></a>
 
 ```python
-elasticsearch_aws: typing.Union[bool, IResolvable]
+elasticsearch_aws: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11328,20 +11328,20 @@ elasticsearch_indexed_file_size_limit_kb: typing.Union[int, float]
 ##### `elasticsearch_indexing`<sup>Required</sup> <a name="elasticsearch_indexing" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchIndexing"></a>
 
 ```python
-elasticsearch_indexing: typing.Union[bool, IResolvable]
+elasticsearch_indexing: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `elasticsearch_limit_indexing`<sup>Required</sup> <a name="elasticsearch_limit_indexing" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchLimitIndexing"></a>
 
 ```python
-elasticsearch_limit_indexing: typing.Union[bool, IResolvable]
+elasticsearch_limit_indexing: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11408,20 +11408,20 @@ elasticsearch_project_ids: typing.List[typing.Union[int, float]]
 ##### `elasticsearch_requeue_workers`<sup>Required</sup> <a name="elasticsearch_requeue_workers" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchRequeueWorkers"></a>
 
 ```python
-elasticsearch_requeue_workers: typing.Union[bool, IResolvable]
+elasticsearch_requeue_workers: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `elasticsearch_search`<sup>Required</sup> <a name="elasticsearch_search" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchSearch"></a>
 
 ```python
-elasticsearch_search: typing.Union[bool, IResolvable]
+elasticsearch_search: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11468,10 +11468,10 @@ email_additional_text: str
 ##### `email_author_in_body`<sup>Required</sup> <a name="email_author_in_body" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.emailAuthorInBody"></a>
 
 ```python
-email_author_in_body: typing.Union[bool, IResolvable]
+email_author_in_body: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11488,10 +11488,10 @@ email_confirmation_setting: str
 ##### `enable_artifact_external_redirect_warning_page`<sup>Required</sup> <a name="enable_artifact_external_redirect_warning_page" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enableArtifactExternalRedirectWarningPage"></a>
 
 ```python
-enable_artifact_external_redirect_warning_page: typing.Union[bool, IResolvable]
+enable_artifact_external_redirect_warning_page: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11508,20 +11508,20 @@ enabled_git_access_protocol: str
 ##### `enforce_namespace_storage_limit`<sup>Required</sup> <a name="enforce_namespace_storage_limit" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enforceNamespaceStorageLimit"></a>
 
 ```python
-enforce_namespace_storage_limit: typing.Union[bool, IResolvable]
+enforce_namespace_storage_limit: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enforce_terms`<sup>Required</sup> <a name="enforce_terms" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enforceTerms"></a>
 
 ```python
-enforce_terms: typing.Union[bool, IResolvable]
+enforce_terms: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11568,10 +11568,10 @@ external_authorization_service_default_label: str
 ##### `external_authorization_service_enabled`<sup>Required</sup> <a name="external_authorization_service_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthorizationServiceEnabled"></a>
 
 ```python
-external_authorization_service_enabled: typing.Union[bool, IResolvable]
+external_authorization_service_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11718,10 +11718,10 @@ gitlab_shell_operation_limit: typing.Union[int, float]
 ##### `gitpod_enabled`<sup>Required</sup> <a name="gitpod_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitpodEnabled"></a>
 
 ```python
-gitpod_enabled: typing.Union[bool, IResolvable]
+gitpod_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11778,10 +11778,10 @@ globally_allowed_ips: str
 ##### `grafana_enabled`<sup>Required</sup> <a name="grafana_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.grafanaEnabled"></a>
 
 ```python
-grafana_enabled: typing.Union[bool, IResolvable]
+grafana_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11798,30 +11798,30 @@ grafana_url: str
 ##### `gravatar_enabled`<sup>Required</sup> <a name="gravatar_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gravatarEnabled"></a>
 
 ```python
-gravatar_enabled: typing.Union[bool, IResolvable]
+gravatar_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `group_owners_can_manage_default_branch_protection`<sup>Required</sup> <a name="group_owners_can_manage_default_branch_protection" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.groupOwnersCanManageDefaultBranchProtection"></a>
 
 ```python
-group_owners_can_manage_default_branch_protection: typing.Union[bool, IResolvable]
+group_owners_can_manage_default_branch_protection: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `help_page_hide_commercial_content`<sup>Required</sup> <a name="help_page_hide_commercial_content" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.helpPageHideCommercialContent"></a>
 
 ```python
-help_page_hide_commercial_content: typing.Union[bool, IResolvable]
+help_page_hide_commercial_content: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11858,10 +11858,10 @@ help_text: str
 ##### `hide_third_party_offers`<sup>Required</sup> <a name="hide_third_party_offers" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.hideThirdPartyOffers"></a>
 
 ```python
-hide_third_party_offers: typing.Union[bool, IResolvable]
+hide_third_party_offers: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11878,10 +11878,10 @@ home_page_url: str
 ##### `housekeeping_enabled`<sup>Required</sup> <a name="housekeeping_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.housekeepingEnabled"></a>
 
 ```python
-housekeeping_enabled: typing.Union[bool, IResolvable]
+housekeeping_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11898,10 +11898,10 @@ housekeeping_optimize_repository_period: typing.Union[int, float]
 ##### `html_emails_enabled`<sup>Required</sup> <a name="html_emails_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.htmlEmailsEnabled"></a>
 
 ```python
-html_emails_enabled: typing.Union[bool, IResolvable]
+html_emails_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11958,30 +11958,30 @@ inactive_projects_send_warning_email_after_months: typing.Union[int, float]
 ##### `include_optional_metrics_in_service_ping`<sup>Required</sup> <a name="include_optional_metrics_in_service_ping" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.includeOptionalMetricsInServicePing"></a>
 
 ```python
-include_optional_metrics_in_service_ping: typing.Union[bool, IResolvable]
+include_optional_metrics_in_service_ping: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `in_product_marketing_emails_enabled`<sup>Required</sup> <a name="in_product_marketing_emails_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.inProductMarketingEmailsEnabled"></a>
 
 ```python
-in_product_marketing_emails_enabled: typing.Union[bool, IResolvable]
+in_product_marketing_emails_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `invisible_captcha_enabled`<sup>Required</sup> <a name="invisible_captcha_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.invisibleCaptchaEnabled"></a>
 
 ```python
-invisible_captcha_enabled: typing.Union[bool, IResolvable]
+invisible_captcha_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12018,20 +12018,20 @@ jira_connect_proxy_url: str
 ##### `jira_connect_public_key_storage_enabled`<sup>Required</sup> <a name="jira_connect_public_key_storage_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.jiraConnectPublicKeyStorageEnabled"></a>
 
 ```python
-jira_connect_public_key_storage_enabled: typing.Union[bool, IResolvable]
+jira_connect_public_key_storage_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `keep_latest_artifact`<sup>Required</sup> <a name="keep_latest_artifact" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.keepLatestArtifact"></a>
 
 ```python
-keep_latest_artifact: typing.Union[bool, IResolvable]
+keep_latest_artifact: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12048,30 +12048,30 @@ local_markdown_version: typing.Union[int, float]
 ##### `lock_duo_features_enabled`<sup>Required</sup> <a name="lock_duo_features_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.lockDuoFeaturesEnabled"></a>
 
 ```python
-lock_duo_features_enabled: typing.Union[bool, IResolvable]
+lock_duo_features_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `lock_memberships_to_ldap`<sup>Required</sup> <a name="lock_memberships_to_ldap" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.lockMembershipsToLdap"></a>
 
 ```python
-lock_memberships_to_ldap: typing.Union[bool, IResolvable]
+lock_memberships_to_ldap: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `mailgun_events_enabled`<sup>Required</sup> <a name="mailgun_events_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mailgunEventsEnabled"></a>
 
 ```python
-mailgun_events_enabled: typing.Union[bool, IResolvable]
+mailgun_events_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12088,10 +12088,10 @@ mailgun_signing_key: str
 ##### `maintenance_mode`<sup>Required</sup> <a name="maintenance_mode" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maintenanceMode"></a>
 
 ```python
-maintenance_mode: typing.Union[bool, IResolvable]
+maintenance_mode: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12108,10 +12108,10 @@ maintenance_mode_message: str
 ##### `maven_package_requests_forwarding`<sup>Required</sup> <a name="maven_package_requests_forwarding" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mavenPackageRequestsForwarding"></a>
 
 ```python
-maven_package_requests_forwarding: typing.Union[bool, IResolvable]
+maven_package_requests_forwarding: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12268,10 +12268,10 @@ minimum_password_length: typing.Union[int, float]
 ##### `mirror_available`<sup>Required</sup> <a name="mirror_available" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mirrorAvailable"></a>
 
 ```python
-mirror_available: typing.Union[bool, IResolvable]
+mirror_available: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12308,20 +12308,20 @@ mirror_max_delay: typing.Union[int, float]
 ##### `npm_package_requests_forwarding`<sup>Required</sup> <a name="npm_package_requests_forwarding" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.npmPackageRequestsForwarding"></a>
 
 ```python
-npm_package_requests_forwarding: typing.Union[bool, IResolvable]
+npm_package_requests_forwarding: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `nuget_skip_metadata_url_validation`<sup>Required</sup> <a name="nuget_skip_metadata_url_validation" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.nugetSkipMetadataUrlValidation"></a>
 
 ```python
-nuget_skip_metadata_url_validation: typing.Union[bool, IResolvable]
+nuget_skip_metadata_url_validation: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12348,10 +12348,10 @@ package_metadata_purl_types: typing.List[typing.Union[int, float]]
 ##### `package_registry_allow_anyone_to_pull_option`<sup>Required</sup> <a name="package_registry_allow_anyone_to_pull_option" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.packageRegistryAllowAnyoneToPullOption"></a>
 
 ```python
-package_registry_allow_anyone_to_pull_option: typing.Union[bool, IResolvable]
+package_registry_allow_anyone_to_pull_option: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12368,70 +12368,70 @@ package_registry_cleanup_policies_worker_capacity: typing.Union[int, float]
 ##### `pages_domain_verification_enabled`<sup>Required</sup> <a name="pages_domain_verification_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pagesDomainVerificationEnabled"></a>
 
 ```python
-pages_domain_verification_enabled: typing.Union[bool, IResolvable]
+pages_domain_verification_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `password_authentication_enabled_for_git`<sup>Required</sup> <a name="password_authentication_enabled_for_git" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordAuthenticationEnabledForGit"></a>
 
 ```python
-password_authentication_enabled_for_git: typing.Union[bool, IResolvable]
+password_authentication_enabled_for_git: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `password_authentication_enabled_for_web`<sup>Required</sup> <a name="password_authentication_enabled_for_web" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordAuthenticationEnabledForWeb"></a>
 
 ```python
-password_authentication_enabled_for_web: typing.Union[bool, IResolvable]
+password_authentication_enabled_for_web: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `password_lowercase_required`<sup>Required</sup> <a name="password_lowercase_required" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordLowercaseRequired"></a>
 
 ```python
-password_lowercase_required: typing.Union[bool, IResolvable]
+password_lowercase_required: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `password_number_required`<sup>Required</sup> <a name="password_number_required" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordNumberRequired"></a>
 
 ```python
-password_number_required: typing.Union[bool, IResolvable]
+password_number_required: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `password_symbol_required`<sup>Required</sup> <a name="password_symbol_required" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordSymbolRequired"></a>
 
 ```python
-password_symbol_required: typing.Union[bool, IResolvable]
+password_symbol_required: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `password_uppercase_required`<sup>Required</sup> <a name="password_uppercase_required" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordUppercaseRequired"></a>
 
 ```python
-password_uppercase_required: typing.Union[bool, IResolvable]
+password_uppercase_required: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12468,10 +12468,10 @@ pipeline_limit_per_project_user_sha: typing.Union[int, float]
 ##### `plantuml_enabled`<sup>Required</sup> <a name="plantuml_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.plantumlEnabled"></a>
 
 ```python
-plantuml_enabled: typing.Union[bool, IResolvable]
+plantuml_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12498,10 +12498,10 @@ polling_interval_multiplier: typing.Union[int, float]
 ##### `project_export_enabled`<sup>Required</sup> <a name="project_export_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.projectExportEnabled"></a>
 
 ```python
-project_export_enabled: typing.Union[bool, IResolvable]
+project_export_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12528,20 +12528,20 @@ projects_api_rate_limit_unauthenticated: typing.Union[int, float]
 ##### `prometheus_metrics_enabled`<sup>Required</sup> <a name="prometheus_metrics_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.prometheusMetricsEnabled"></a>
 
 ```python
-prometheus_metrics_enabled: typing.Union[bool, IResolvable]
+prometheus_metrics_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `protected_ci_variables`<sup>Required</sup> <a name="protected_ci_variables" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.protectedCiVariables"></a>
 
 ```python
-protected_ci_variables: typing.Union[bool, IResolvable]
+protected_ci_variables: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12568,10 +12568,10 @@ push_event_hooks_limit: typing.Union[int, float]
 ##### `pypi_package_requests_forwarding`<sup>Required</sup> <a name="pypi_package_requests_forwarding" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pypiPackageRequestsForwarding"></a>
 
 ```python
-pypi_package_requests_forwarding: typing.Union[bool, IResolvable]
+pypi_package_requests_forwarding: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12598,10 +12598,10 @@ raw_blob_request_limit: typing.Union[int, float]
 ##### `recaptcha_enabled`<sup>Required</sup> <a name="recaptcha_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.recaptchaEnabled"></a>
 
 ```python
-recaptcha_enabled: typing.Union[bool, IResolvable]
+recaptcha_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12638,30 +12638,30 @@ receive_max_input_size: typing.Union[int, float]
 ##### `receptive_cluster_agents_enabled`<sup>Required</sup> <a name="receptive_cluster_agents_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.receptiveClusterAgentsEnabled"></a>
 
 ```python
-receptive_cluster_agents_enabled: typing.Union[bool, IResolvable]
+receptive_cluster_agents_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `remember_me_enabled`<sup>Required</sup> <a name="remember_me_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.rememberMeEnabled"></a>
 
 ```python
-remember_me_enabled: typing.Union[bool, IResolvable]
+remember_me_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `repository_checks_enabled`<sup>Required</sup> <a name="repository_checks_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.repositoryChecksEnabled"></a>
 
 ```python
-repository_checks_enabled: typing.Union[bool, IResolvable]
+repository_checks_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12688,40 +12688,40 @@ repository_storages_weighted: typing.Mapping[typing.Union[int, float]]
 ##### `require_admin_approval_after_user_signup`<sup>Required</sup> <a name="require_admin_approval_after_user_signup" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireAdminApprovalAfterUserSignup"></a>
 
 ```python
-require_admin_approval_after_user_signup: typing.Union[bool, IResolvable]
+require_admin_approval_after_user_signup: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `require_admin_two_factor_authentication`<sup>Required</sup> <a name="require_admin_two_factor_authentication" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireAdminTwoFactorAuthentication"></a>
 
 ```python
-require_admin_two_factor_authentication: typing.Union[bool, IResolvable]
+require_admin_two_factor_authentication: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `require_personal_access_token_expiry`<sup>Required</sup> <a name="require_personal_access_token_expiry" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requirePersonalAccessTokenExpiry"></a>
 
 ```python
-require_personal_access_token_expiry: typing.Union[bool, IResolvable]
+require_personal_access_token_expiry: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `require_two_factor_authentication`<sup>Required</sup> <a name="require_two_factor_authentication" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireTwoFactorAuthentication"></a>
 
 ```python
-require_two_factor_authentication: typing.Union[bool, IResolvable]
+require_two_factor_authentication: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12778,10 +12778,10 @@ security_approval_policies_limit: typing.Union[int, float]
 ##### `security_policy_global_group_approvers_enabled`<sup>Required</sup> <a name="security_policy_global_group_approvers_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.securityPolicyGlobalGroupApproversEnabled"></a>
 
 ```python
-security_policy_global_group_approvers_enabled: typing.Union[bool, IResolvable]
+security_policy_global_group_approvers_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12798,20 +12798,20 @@ security_txt_content: str
 ##### `send_user_confirmation_email`<sup>Required</sup> <a name="send_user_confirmation_email" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sendUserConfirmationEmail"></a>
 
 ```python
-send_user_confirmation_email: typing.Union[bool, IResolvable]
+send_user_confirmation_email: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `service_access_tokens_expiration_enforced`<sup>Required</sup> <a name="service_access_tokens_expiration_enforced" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.serviceAccessTokensExpirationEnforced"></a>
 
 ```python
-service_access_tokens_expiration_enforced: typing.Union[bool, IResolvable]
+service_access_tokens_expiration_enforced: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12828,10 +12828,10 @@ session_expire_delay: typing.Union[int, float]
 ##### `shared_runners_enabled`<sup>Required</sup> <a name="shared_runners_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sharedRunnersEnabled"></a>
 
 ```python
-shared_runners_enabled: typing.Union[bool, IResolvable]
+shared_runners_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12898,40 +12898,40 @@ sign_in_text: str
 ##### `signup_enabled`<sup>Required</sup> <a name="signup_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.signupEnabled"></a>
 
 ```python
-signup_enabled: typing.Union[bool, IResolvable]
+signup_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `silent_admin_exports_enabled`<sup>Required</sup> <a name="silent_admin_exports_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.silentAdminExportsEnabled"></a>
 
 ```python
-silent_admin_exports_enabled: typing.Union[bool, IResolvable]
+silent_admin_exports_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `silent_mode_enabled`<sup>Required</sup> <a name="silent_mode_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.silentModeEnabled"></a>
 
 ```python
-silent_mode_enabled: typing.Union[bool, IResolvable]
+silent_mode_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `slack_app_enabled`<sup>Required</sup> <a name="slack_app_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.slackAppEnabled"></a>
 
 ```python
-slack_app_enabled: typing.Union[bool, IResolvable]
+slack_app_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -13028,30 +13028,30 @@ snowplow_database_collector_hostname: str
 ##### `snowplow_enabled`<sup>Required</sup> <a name="snowplow_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.snowplowEnabled"></a>
 
 ```python
-snowplow_enabled: typing.Union[bool, IResolvable]
+snowplow_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `sourcegraph_enabled`<sup>Required</sup> <a name="sourcegraph_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sourcegraphEnabled"></a>
 
 ```python
-sourcegraph_enabled: typing.Union[bool, IResolvable]
+sourcegraph_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `sourcegraph_public_only`<sup>Required</sup> <a name="sourcegraph_public_only" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sourcegraphPublicOnly"></a>
 
 ```python
-sourcegraph_public_only: typing.Union[bool, IResolvable]
+sourcegraph_public_only: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -13078,10 +13078,10 @@ spam_check_api_key: str
 ##### `spam_check_endpoint_enabled`<sup>Required</sup> <a name="spam_check_endpoint_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.spamCheckEndpointEnabled"></a>
 
 ```python
-spam_check_endpoint_enabled: typing.Union[bool, IResolvable]
+spam_check_endpoint_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -13118,10 +13118,10 @@ static_objects_external_storage_url: str
 ##### `suggest_pipeline_enabled`<sup>Required</sup> <a name="suggest_pipeline_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.suggestPipelineEnabled"></a>
 
 ```python
-suggest_pipeline_enabled: typing.Union[bool, IResolvable]
+suggest_pipeline_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -13148,10 +13148,10 @@ terms: str
 ##### `throttle_authenticated_api_enabled`<sup>Required</sup> <a name="throttle_authenticated_api_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedApiEnabled"></a>
 
 ```python
-throttle_authenticated_api_enabled: typing.Union[bool, IResolvable]
+throttle_authenticated_api_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -13178,10 +13178,10 @@ throttle_authenticated_api_requests_per_period: typing.Union[int, float]
 ##### `throttle_authenticated_packages_api_enabled`<sup>Required</sup> <a name="throttle_authenticated_packages_api_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedPackagesApiEnabled"></a>
 
 ```python
-throttle_authenticated_packages_api_enabled: typing.Union[bool, IResolvable]
+throttle_authenticated_packages_api_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -13208,10 +13208,10 @@ throttle_authenticated_packages_api_requests_per_period: typing.Union[int, float
 ##### `throttle_authenticated_web_enabled`<sup>Required</sup> <a name="throttle_authenticated_web_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedWebEnabled"></a>
 
 ```python
-throttle_authenticated_web_enabled: typing.Union[bool, IResolvable]
+throttle_authenticated_web_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -13238,10 +13238,10 @@ throttle_authenticated_web_requests_per_period: typing.Union[int, float]
 ##### `throttle_unauthenticated_api_enabled`<sup>Required</sup> <a name="throttle_unauthenticated_api_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedApiEnabled"></a>
 
 ```python
-throttle_unauthenticated_api_enabled: typing.Union[bool, IResolvable]
+throttle_unauthenticated_api_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -13268,10 +13268,10 @@ throttle_unauthenticated_api_requests_per_period: typing.Union[int, float]
 ##### `throttle_unauthenticated_packages_api_enabled`<sup>Required</sup> <a name="throttle_unauthenticated_packages_api_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedPackagesApiEnabled"></a>
 
 ```python
-throttle_unauthenticated_packages_api_enabled: typing.Union[bool, IResolvable]
+throttle_unauthenticated_packages_api_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -13298,10 +13298,10 @@ throttle_unauthenticated_packages_api_requests_per_period: typing.Union[int, flo
 ##### `throttle_unauthenticated_web_enabled`<sup>Required</sup> <a name="throttle_unauthenticated_web_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedWebEnabled"></a>
 
 ```python
-throttle_unauthenticated_web_enabled: typing.Union[bool, IResolvable]
+throttle_unauthenticated_web_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -13328,10 +13328,10 @@ throttle_unauthenticated_web_requests_per_period: typing.Union[int, float]
 ##### `time_tracking_limit_to_hours`<sup>Required</sup> <a name="time_tracking_limit_to_hours" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.timeTrackingLimitToHours"></a>
 
 ```python
-time_tracking_limit_to_hours: typing.Union[bool, IResolvable]
+time_tracking_limit_to_hours: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -13358,10 +13358,10 @@ unconfirmed_users_delete_after_days: typing.Union[int, float]
 ##### `unique_ips_limit_enabled`<sup>Required</sup> <a name="unique_ips_limit_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.uniqueIpsLimitEnabled"></a>
 
 ```python
-unique_ips_limit_enabled: typing.Union[bool, IResolvable]
+unique_ips_limit_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -13388,50 +13388,50 @@ unique_ips_limit_time_window: typing.Union[int, float]
 ##### `update_runner_versions_enabled`<sup>Required</sup> <a name="update_runner_versions_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.updateRunnerVersionsEnabled"></a>
 
 ```python
-update_runner_versions_enabled: typing.Union[bool, IResolvable]
+update_runner_versions_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `usage_ping_enabled`<sup>Required</sup> <a name="usage_ping_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.usagePingEnabled"></a>
 
 ```python
-usage_ping_enabled: typing.Union[bool, IResolvable]
+usage_ping_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `use_clickhouse_for_analytics`<sup>Required</sup> <a name="use_clickhouse_for_analytics" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.useClickhouseForAnalytics"></a>
 
 ```python
-use_clickhouse_for_analytics: typing.Union[bool, IResolvable]
+use_clickhouse_for_analytics: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `user_deactivation_emails_enabled`<sup>Required</sup> <a name="user_deactivation_emails_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDeactivationEmailsEnabled"></a>
 
 ```python
-user_deactivation_emails_enabled: typing.Union[bool, IResolvable]
+user_deactivation_emails_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `user_default_external`<sup>Required</sup> <a name="user_default_external" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDefaultExternal"></a>
 
 ```python
-user_default_external: typing.Union[bool, IResolvable]
+user_default_external: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -13448,30 +13448,30 @@ user_default_internal_regex: str
 ##### `user_defaults_to_private_profile`<sup>Required</sup> <a name="user_defaults_to_private_profile" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDefaultsToPrivateProfile"></a>
 
 ```python
-user_defaults_to_private_profile: typing.Union[bool, IResolvable]
+user_defaults_to_private_profile: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `user_oauth_applications`<sup>Required</sup> <a name="user_oauth_applications" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userOauthApplications"></a>
 
 ```python
-user_oauth_applications: typing.Union[bool, IResolvable]
+user_oauth_applications: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `user_show_add_ssh_key_message`<sup>Required</sup> <a name="user_show_add_ssh_key_message" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userShowAddSshKeyMessage"></a>
 
 ```python
-user_show_add_ssh_key_message: typing.Union[bool, IResolvable]
+user_show_add_ssh_key_message: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -13488,20 +13488,20 @@ valid_runner_registrars: typing.List[str]
 ##### `version_check_enabled`<sup>Required</sup> <a name="version_check_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.versionCheckEnabled"></a>
 
 ```python
-version_check_enabled: typing.Union[bool, IResolvable]
+version_check_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `web_ide_clientside_preview_enabled`<sup>Required</sup> <a name="web_ide_clientside_preview_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.webIdeClientsidePreviewEnabled"></a>
 
 ```python
-web_ide_clientside_preview_enabled: typing.Union[bool, IResolvable]
+web_ide_clientside_preview_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -13553,54 +13553,54 @@ tfResourceType: str
 from cdktf_cdktf_provider_gitlab import application_settings
 
 applicationSettings.ApplicationSettingsConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   abuse_notification_email: str = None,
-  admin_mode: typing.Union[bool, IResolvable] = None,
+  admin_mode: bool | IResolvable = None,
   after_sign_out_path: str = None,
   after_sign_up_text: str = None,
   akismet_api_key: str = None,
-  akismet_enabled: typing.Union[bool, IResolvable] = None,
-  allow_account_deletion: typing.Union[bool, IResolvable] = None,
-  allow_group_owners_to_manage_ldap: typing.Union[bool, IResolvable] = None,
-  allow_local_requests_from_system_hooks: typing.Union[bool, IResolvable] = None,
-  allow_local_requests_from_web_hooks_and_services: typing.Union[bool, IResolvable] = None,
-  allow_project_creation_for_guest_and_below: typing.Union[bool, IResolvable] = None,
-  allow_runner_registration_token: typing.Union[bool, IResolvable] = None,
+  akismet_enabled: bool | IResolvable = None,
+  allow_account_deletion: bool | IResolvable = None,
+  allow_group_owners_to_manage_ldap: bool | IResolvable = None,
+  allow_local_requests_from_system_hooks: bool | IResolvable = None,
+  allow_local_requests_from_web_hooks_and_services: bool | IResolvable = None,
+  allow_project_creation_for_guest_and_below: bool | IResolvable = None,
+  allow_runner_registration_token: bool | IResolvable = None,
   archive_builds_in_human_readable: str = None,
   asciidoc_max_includes: typing.Union[int, float] = None,
   asset_proxy_allowlist: typing.List[str] = None,
-  asset_proxy_enabled: typing.Union[bool, IResolvable] = None,
+  asset_proxy_enabled: bool | IResolvable = None,
   asset_proxy_secret_key: str = None,
   asset_proxy_url: str = None,
-  authorized_keys_enabled: typing.Union[bool, IResolvable] = None,
-  auto_ban_user_on_excessive_projects_download: typing.Union[bool, IResolvable] = None,
+  authorized_keys_enabled: bool | IResolvable = None,
+  auto_ban_user_on_excessive_projects_download: bool | IResolvable = None,
   auto_devops_domain: str = None,
-  auto_devops_enabled: typing.Union[bool, IResolvable] = None,
-  automatic_purchased_storage_allocation: typing.Union[bool, IResolvable] = None,
+  auto_devops_enabled: bool | IResolvable = None,
+  automatic_purchased_storage_allocation: bool | IResolvable = None,
   bulk_import_concurrent_pipeline_batch_limit: typing.Union[int, float] = None,
-  bulk_import_enabled: typing.Union[bool, IResolvable] = None,
+  bulk_import_enabled: bool | IResolvable = None,
   bulk_import_max_download_file_size: typing.Union[int, float] = None,
-  can_create_group: typing.Union[bool, IResolvable] = None,
-  check_namespace_plan: typing.Union[bool, IResolvable] = None,
+  can_create_group: bool | IResolvable = None,
+  check_namespace_plan: bool | IResolvable = None,
   ci_max_includes: typing.Union[int, float] = None,
   ci_max_total_yaml_size_bytes: typing.Union[int, float] = None,
   commit_email_hostname: str = None,
   concurrent_bitbucket_import_jobs_limit: typing.Union[int, float] = None,
   concurrent_bitbucket_server_import_jobs_limit: typing.Union[int, float] = None,
   concurrent_github_import_jobs_limit: typing.Union[int, float] = None,
-  container_expiration_policies_enable_historic_entries: typing.Union[bool, IResolvable] = None,
+  container_expiration_policies_enable_historic_entries: bool | IResolvable = None,
   container_registry_cleanup_tags_service_max_list_size: typing.Union[int, float] = None,
   container_registry_delete_tags_service_timeout: typing.Union[int, float] = None,
-  container_registry_expiration_policies_caching: typing.Union[bool, IResolvable] = None,
+  container_registry_expiration_policies_caching: bool | IResolvable = None,
   container_registry_expiration_policies_worker_capacity: typing.Union[int, float] = None,
   container_registry_token_expire_delay: typing.Union[int, float] = None,
-  deactivate_dormant_users: typing.Union[bool, IResolvable] = None,
+  deactivate_dormant_users: bool | IResolvable = None,
   deactivate_dormant_users_period: typing.Union[int, float] = None,
   decompress_archive_file_timeout: typing.Union[int, float] = None,
   default_artifacts_expire_in: str = None,
@@ -13615,64 +13615,64 @@ applicationSettings.ApplicationSettingsConfig(
   default_project_visibility: str = None,
   default_snippet_visibility: str = None,
   default_syntax_highlighting_theme: typing.Union[int, float] = None,
-  delete_inactive_projects: typing.Union[bool, IResolvable] = None,
-  delete_unconfirmed_users: typing.Union[bool, IResolvable] = None,
+  delete_inactive_projects: bool | IResolvable = None,
+  delete_unconfirmed_users: bool | IResolvable = None,
   deletion_adjourned_period: typing.Union[int, float] = None,
-  diagramsnet_enabled: typing.Union[bool, IResolvable] = None,
+  diagramsnet_enabled: bool | IResolvable = None,
   diagramsnet_url: str = None,
   diff_max_files: typing.Union[int, float] = None,
   diff_max_lines: typing.Union[int, float] = None,
   diff_max_patch_bytes: typing.Union[int, float] = None,
-  disable_admin_oauth_scopes: typing.Union[bool, IResolvable] = None,
+  disable_admin_oauth_scopes: bool | IResolvable = None,
   disabled_oauth_sign_in_sources: typing.List[str] = None,
-  disable_feed_token: typing.Union[bool, IResolvable] = None,
-  disable_personal_access_tokens: typing.Union[bool, IResolvable] = None,
-  dns_rebinding_protection_enabled: typing.Union[bool, IResolvable] = None,
+  disable_feed_token: bool | IResolvable = None,
+  disable_personal_access_tokens: bool | IResolvable = None,
+  dns_rebinding_protection_enabled: bool | IResolvable = None,
   domain_allowlist: typing.List[str] = None,
   domain_denylist: typing.List[str] = None,
-  domain_denylist_enabled: typing.Union[bool, IResolvable] = None,
+  domain_denylist_enabled: bool | IResolvable = None,
   downstream_pipeline_trigger_limit_per_project_user_sha: typing.Union[int, float] = None,
   dsa_key_restriction: typing.Union[int, float] = None,
-  duo_features_enabled: typing.Union[bool, IResolvable] = None,
+  duo_features_enabled: bool | IResolvable = None,
   ecdsa_key_restriction: typing.Union[int, float] = None,
   ecdsa_sk_key_restriction: typing.Union[int, float] = None,
   ed25519_key_restriction: typing.Union[int, float] = None,
   ed25519_sk_key_restriction: typing.Union[int, float] = None,
   eks_access_key_id: str = None,
   eks_account_id: str = None,
-  eks_integration_enabled: typing.Union[bool, IResolvable] = None,
+  eks_integration_enabled: bool | IResolvable = None,
   eks_secret_access_key: str = None,
-  elasticsearch_aws: typing.Union[bool, IResolvable] = None,
+  elasticsearch_aws: bool | IResolvable = None,
   elasticsearch_aws_access_key: str = None,
   elasticsearch_aws_region: str = None,
   elasticsearch_aws_secret_access_key: str = None,
   elasticsearch_indexed_field_length_limit: typing.Union[int, float] = None,
   elasticsearch_indexed_file_size_limit_kb: typing.Union[int, float] = None,
-  elasticsearch_indexing: typing.Union[bool, IResolvable] = None,
-  elasticsearch_limit_indexing: typing.Union[bool, IResolvable] = None,
+  elasticsearch_indexing: bool | IResolvable = None,
+  elasticsearch_limit_indexing: bool | IResolvable = None,
   elasticsearch_max_bulk_concurrency: typing.Union[int, float] = None,
   elasticsearch_max_bulk_size_mb: typing.Union[int, float] = None,
   elasticsearch_max_code_indexing_concurrency: typing.Union[int, float] = None,
   elasticsearch_namespace_ids: typing.List[typing.Union[int, float]] = None,
   elasticsearch_password: str = None,
   elasticsearch_project_ids: typing.List[typing.Union[int, float]] = None,
-  elasticsearch_requeue_workers: typing.Union[bool, IResolvable] = None,
-  elasticsearch_search: typing.Union[bool, IResolvable] = None,
+  elasticsearch_requeue_workers: bool | IResolvable = None,
+  elasticsearch_search: bool | IResolvable = None,
   elasticsearch_url: typing.List[str] = None,
   elasticsearch_username: str = None,
   elasticsearch_worker_number_of_shards: typing.Union[int, float] = None,
   email_additional_text: str = None,
-  email_author_in_body: typing.Union[bool, IResolvable] = None,
+  email_author_in_body: bool | IResolvable = None,
   email_confirmation_setting: str = None,
-  enable_artifact_external_redirect_warning_page: typing.Union[bool, IResolvable] = None,
+  enable_artifact_external_redirect_warning_page: bool | IResolvable = None,
   enabled_git_access_protocol: str = None,
-  enforce_namespace_storage_limit: typing.Union[bool, IResolvable] = None,
-  enforce_terms: typing.Union[bool, IResolvable] = None,
+  enforce_namespace_storage_limit: bool | IResolvable = None,
+  enforce_terms: bool | IResolvable = None,
   external_auth_client_cert: str = None,
   external_auth_client_key: str = None,
   external_auth_client_key_pass: str = None,
   external_authorization_service_default_label: str = None,
-  external_authorization_service_enabled: typing.Union[bool, IResolvable] = None,
+  external_authorization_service_enabled: bool | IResolvable = None,
   external_authorization_service_timeout: typing.Union[int, float] = None,
   external_authorization_service_url: str = None,
   external_pipeline_validation_service_timeout: typing.Union[int, float] = None,
@@ -13687,46 +13687,46 @@ applicationSettings.ApplicationSettingsConfig(
   gitaly_timeout_fast: typing.Union[int, float] = None,
   gitaly_timeout_medium: typing.Union[int, float] = None,
   gitlab_shell_operation_limit: typing.Union[int, float] = None,
-  gitpod_enabled: typing.Union[bool, IResolvable] = None,
+  gitpod_enabled: bool | IResolvable = None,
   gitpod_url: str = None,
   git_rate_limit_users_alertlist: typing.List[typing.Union[int, float]] = None,
   git_rate_limit_users_allowlist: typing.List[str] = None,
   git_two_factor_session_expiry: typing.Union[int, float] = None,
   globally_allowed_ips: str = None,
-  grafana_enabled: typing.Union[bool, IResolvable] = None,
+  grafana_enabled: bool | IResolvable = None,
   grafana_url: str = None,
-  gravatar_enabled: typing.Union[bool, IResolvable] = None,
-  group_owners_can_manage_default_branch_protection: typing.Union[bool, IResolvable] = None,
-  help_page_hide_commercial_content: typing.Union[bool, IResolvable] = None,
+  gravatar_enabled: bool | IResolvable = None,
+  group_owners_can_manage_default_branch_protection: bool | IResolvable = None,
+  help_page_hide_commercial_content: bool | IResolvable = None,
   help_page_support_url: str = None,
   help_page_text: str = None,
   help_text: str = None,
-  hide_third_party_offers: typing.Union[bool, IResolvable] = None,
+  hide_third_party_offers: bool | IResolvable = None,
   home_page_url: str = None,
-  housekeeping_enabled: typing.Union[bool, IResolvable] = None,
+  housekeeping_enabled: bool | IResolvable = None,
   housekeeping_optimize_repository_period: typing.Union[int, float] = None,
-  html_emails_enabled: typing.Union[bool, IResolvable] = None,
+  html_emails_enabled: bool | IResolvable = None,
   id: str = None,
   import_sources: typing.List[str] = None,
   inactive_projects_delete_after_months: typing.Union[int, float] = None,
   inactive_projects_min_size_mb: typing.Union[int, float] = None,
   inactive_projects_send_warning_email_after_months: typing.Union[int, float] = None,
-  include_optional_metrics_in_service_ping: typing.Union[bool, IResolvable] = None,
-  in_product_marketing_emails_enabled: typing.Union[bool, IResolvable] = None,
-  invisible_captcha_enabled: typing.Union[bool, IResolvable] = None,
+  include_optional_metrics_in_service_ping: bool | IResolvable = None,
+  in_product_marketing_emails_enabled: bool | IResolvable = None,
+  invisible_captcha_enabled: bool | IResolvable = None,
   issues_create_limit: typing.Union[int, float] = None,
   jira_connect_application_key: str = None,
   jira_connect_proxy_url: str = None,
-  jira_connect_public_key_storage_enabled: typing.Union[bool, IResolvable] = None,
-  keep_latest_artifact: typing.Union[bool, IResolvable] = None,
+  jira_connect_public_key_storage_enabled: bool | IResolvable = None,
+  keep_latest_artifact: bool | IResolvable = None,
   local_markdown_version: typing.Union[int, float] = None,
-  lock_duo_features_enabled: typing.Union[bool, IResolvable] = None,
-  lock_memberships_to_ldap: typing.Union[bool, IResolvable] = None,
-  mailgun_events_enabled: typing.Union[bool, IResolvable] = None,
+  lock_duo_features_enabled: bool | IResolvable = None,
+  lock_memberships_to_ldap: bool | IResolvable = None,
+  mailgun_events_enabled: bool | IResolvable = None,
   mailgun_signing_key: str = None,
-  maintenance_mode: typing.Union[bool, IResolvable] = None,
+  maintenance_mode: bool | IResolvable = None,
   maintenance_mode_message: str = None,
-  maven_package_requests_forwarding: typing.Union[bool, IResolvable] = None,
+  maven_package_requests_forwarding: bool | IResolvable = None,
   max_artifacts_size: typing.Union[int, float] = None,
   max_attachment_size: typing.Union[int, float] = None,
   max_decompressed_archive_size: typing.Union[int, float] = None,
@@ -13742,73 +13742,73 @@ applicationSettings.ApplicationSettingsConfig(
   max_terraform_state_size_bytes: typing.Union[int, float] = None,
   metrics_method_call_threshold: typing.Union[int, float] = None,
   minimum_password_length: typing.Union[int, float] = None,
-  mirror_available: typing.Union[bool, IResolvable] = None,
+  mirror_available: bool | IResolvable = None,
   mirror_capacity_threshold: typing.Union[int, float] = None,
   mirror_max_capacity: typing.Union[int, float] = None,
   mirror_max_delay: typing.Union[int, float] = None,
-  npm_package_requests_forwarding: typing.Union[bool, IResolvable] = None,
-  nuget_skip_metadata_url_validation: typing.Union[bool, IResolvable] = None,
+  npm_package_requests_forwarding: bool | IResolvable = None,
+  nuget_skip_metadata_url_validation: bool | IResolvable = None,
   outbound_local_requests_whitelist: typing.List[str] = None,
   package_metadata_purl_types: typing.List[typing.Union[int, float]] = None,
-  package_registry_allow_anyone_to_pull_option: typing.Union[bool, IResolvable] = None,
+  package_registry_allow_anyone_to_pull_option: bool | IResolvable = None,
   package_registry_cleanup_policies_worker_capacity: typing.Union[int, float] = None,
-  pages_domain_verification_enabled: typing.Union[bool, IResolvable] = None,
-  password_authentication_enabled_for_git: typing.Union[bool, IResolvable] = None,
-  password_authentication_enabled_for_web: typing.Union[bool, IResolvable] = None,
-  password_lowercase_required: typing.Union[bool, IResolvable] = None,
-  password_number_required: typing.Union[bool, IResolvable] = None,
-  password_symbol_required: typing.Union[bool, IResolvable] = None,
-  password_uppercase_required: typing.Union[bool, IResolvable] = None,
+  pages_domain_verification_enabled: bool | IResolvable = None,
+  password_authentication_enabled_for_git: bool | IResolvable = None,
+  password_authentication_enabled_for_web: bool | IResolvable = None,
+  password_lowercase_required: bool | IResolvable = None,
+  password_number_required: bool | IResolvable = None,
+  password_symbol_required: bool | IResolvable = None,
+  password_uppercase_required: bool | IResolvable = None,
   performance_bar_allowed_group_path: str = None,
   personal_access_token_prefix: str = None,
   pipeline_limit_per_project_user_sha: typing.Union[int, float] = None,
-  plantuml_enabled: typing.Union[bool, IResolvable] = None,
+  plantuml_enabled: bool | IResolvable = None,
   plantuml_url: str = None,
   polling_interval_multiplier: typing.Union[int, float] = None,
-  project_export_enabled: typing.Union[bool, IResolvable] = None,
+  project_export_enabled: bool | IResolvable = None,
   project_jobs_api_rate_limit: typing.Union[int, float] = None,
   projects_api_rate_limit_unauthenticated: typing.Union[int, float] = None,
-  prometheus_metrics_enabled: typing.Union[bool, IResolvable] = None,
-  protected_ci_variables: typing.Union[bool, IResolvable] = None,
+  prometheus_metrics_enabled: bool | IResolvable = None,
+  protected_ci_variables: bool | IResolvable = None,
   push_event_activities_limit: typing.Union[int, float] = None,
   push_event_hooks_limit: typing.Union[int, float] = None,
-  pypi_package_requests_forwarding: typing.Union[bool, IResolvable] = None,
+  pypi_package_requests_forwarding: bool | IResolvable = None,
   rate_limiting_response_text: str = None,
   raw_blob_request_limit: typing.Union[int, float] = None,
-  recaptcha_enabled: typing.Union[bool, IResolvable] = None,
+  recaptcha_enabled: bool | IResolvable = None,
   recaptcha_private_key: str = None,
   recaptcha_site_key: str = None,
   receive_max_input_size: typing.Union[int, float] = None,
-  receptive_cluster_agents_enabled: typing.Union[bool, IResolvable] = None,
-  remember_me_enabled: typing.Union[bool, IResolvable] = None,
-  repository_checks_enabled: typing.Union[bool, IResolvable] = None,
+  receptive_cluster_agents_enabled: bool | IResolvable = None,
+  remember_me_enabled: bool | IResolvable = None,
+  repository_checks_enabled: bool | IResolvable = None,
   repository_size_limit: typing.Union[int, float] = None,
   repository_storages_weighted: typing.Mapping[typing.Union[int, float]] = None,
-  require_admin_approval_after_user_signup: typing.Union[bool, IResolvable] = None,
-  require_admin_two_factor_authentication: typing.Union[bool, IResolvable] = None,
-  require_personal_access_token_expiry: typing.Union[bool, IResolvable] = None,
-  require_two_factor_authentication: typing.Union[bool, IResolvable] = None,
+  require_admin_approval_after_user_signup: bool | IResolvable = None,
+  require_admin_two_factor_authentication: bool | IResolvable = None,
+  require_personal_access_token_expiry: bool | IResolvable = None,
+  require_two_factor_authentication: bool | IResolvable = None,
   restricted_visibility_levels: typing.List[str] = None,
   rsa_key_restriction: typing.Union[int, float] = None,
   search_rate_limit: typing.Union[int, float] = None,
   search_rate_limit_unauthenticated: typing.Union[int, float] = None,
   security_approval_policies_limit: typing.Union[int, float] = None,
-  security_policy_global_group_approvers_enabled: typing.Union[bool, IResolvable] = None,
+  security_policy_global_group_approvers_enabled: bool | IResolvable = None,
   security_txt_content: str = None,
-  send_user_confirmation_email: typing.Union[bool, IResolvable] = None,
-  service_access_tokens_expiration_enforced: typing.Union[bool, IResolvable] = None,
+  send_user_confirmation_email: bool | IResolvable = None,
+  service_access_tokens_expiration_enforced: bool | IResolvable = None,
   session_expire_delay: typing.Union[int, float] = None,
-  shared_runners_enabled: typing.Union[bool, IResolvable] = None,
+  shared_runners_enabled: bool | IResolvable = None,
   shared_runners_minutes: typing.Union[int, float] = None,
   shared_runners_text: str = None,
   sidekiq_job_limiter_compression_threshold_bytes: typing.Union[int, float] = None,
   sidekiq_job_limiter_limit_bytes: typing.Union[int, float] = None,
   sidekiq_job_limiter_mode: str = None,
   sign_in_text: str = None,
-  signup_enabled: typing.Union[bool, IResolvable] = None,
-  silent_admin_exports_enabled: typing.Union[bool, IResolvable] = None,
-  silent_mode_enabled: typing.Union[bool, IResolvable] = None,
-  slack_app_enabled: typing.Union[bool, IResolvable] = None,
+  signup_enabled: bool | IResolvable = None,
+  silent_admin_exports_enabled: bool | IResolvable = None,
+  silent_mode_enabled: bool | IResolvable = None,
+  slack_app_enabled: bool | IResolvable = None,
   slack_app_id: str = None,
   slack_app_secret: str = None,
   slack_app_signing_secret: str = None,
@@ -13818,54 +13818,54 @@ applicationSettings.ApplicationSettingsConfig(
   snowplow_collector_hostname: str = None,
   snowplow_cookie_domain: str = None,
   snowplow_database_collector_hostname: str = None,
-  snowplow_enabled: typing.Union[bool, IResolvable] = None,
-  sourcegraph_enabled: typing.Union[bool, IResolvable] = None,
-  sourcegraph_public_only: typing.Union[bool, IResolvable] = None,
+  snowplow_enabled: bool | IResolvable = None,
+  sourcegraph_enabled: bool | IResolvable = None,
+  sourcegraph_public_only: bool | IResolvable = None,
   sourcegraph_url: str = None,
   spam_check_api_key: str = None,
-  spam_check_endpoint_enabled: typing.Union[bool, IResolvable] = None,
+  spam_check_endpoint_enabled: bool | IResolvable = None,
   spam_check_endpoint_url: str = None,
   static_objects_external_storage_auth_token: str = None,
   static_objects_external_storage_url: str = None,
-  suggest_pipeline_enabled: typing.Union[bool, IResolvable] = None,
+  suggest_pipeline_enabled: bool | IResolvable = None,
   terminal_max_session_time: typing.Union[int, float] = None,
   terms: str = None,
-  throttle_authenticated_api_enabled: typing.Union[bool, IResolvable] = None,
+  throttle_authenticated_api_enabled: bool | IResolvable = None,
   throttle_authenticated_api_period_in_seconds: typing.Union[int, float] = None,
   throttle_authenticated_api_requests_per_period: typing.Union[int, float] = None,
-  throttle_authenticated_packages_api_enabled: typing.Union[bool, IResolvable] = None,
+  throttle_authenticated_packages_api_enabled: bool | IResolvable = None,
   throttle_authenticated_packages_api_period_in_seconds: typing.Union[int, float] = None,
   throttle_authenticated_packages_api_requests_per_period: typing.Union[int, float] = None,
-  throttle_authenticated_web_enabled: typing.Union[bool, IResolvable] = None,
+  throttle_authenticated_web_enabled: bool | IResolvable = None,
   throttle_authenticated_web_period_in_seconds: typing.Union[int, float] = None,
   throttle_authenticated_web_requests_per_period: typing.Union[int, float] = None,
-  throttle_unauthenticated_api_enabled: typing.Union[bool, IResolvable] = None,
+  throttle_unauthenticated_api_enabled: bool | IResolvable = None,
   throttle_unauthenticated_api_period_in_seconds: typing.Union[int, float] = None,
   throttle_unauthenticated_api_requests_per_period: typing.Union[int, float] = None,
-  throttle_unauthenticated_packages_api_enabled: typing.Union[bool, IResolvable] = None,
+  throttle_unauthenticated_packages_api_enabled: bool | IResolvable = None,
   throttle_unauthenticated_packages_api_period_in_seconds: typing.Union[int, float] = None,
   throttle_unauthenticated_packages_api_requests_per_period: typing.Union[int, float] = None,
-  throttle_unauthenticated_web_enabled: typing.Union[bool, IResolvable] = None,
+  throttle_unauthenticated_web_enabled: bool | IResolvable = None,
   throttle_unauthenticated_web_period_in_seconds: typing.Union[int, float] = None,
   throttle_unauthenticated_web_requests_per_period: typing.Union[int, float] = None,
-  time_tracking_limit_to_hours: typing.Union[bool, IResolvable] = None,
+  time_tracking_limit_to_hours: bool | IResolvable = None,
   two_factor_grace_period: typing.Union[int, float] = None,
   unconfirmed_users_delete_after_days: typing.Union[int, float] = None,
-  unique_ips_limit_enabled: typing.Union[bool, IResolvable] = None,
+  unique_ips_limit_enabled: bool | IResolvable = None,
   unique_ips_limit_per_user: typing.Union[int, float] = None,
   unique_ips_limit_time_window: typing.Union[int, float] = None,
-  update_runner_versions_enabled: typing.Union[bool, IResolvable] = None,
-  usage_ping_enabled: typing.Union[bool, IResolvable] = None,
-  use_clickhouse_for_analytics: typing.Union[bool, IResolvable] = None,
-  user_deactivation_emails_enabled: typing.Union[bool, IResolvable] = None,
-  user_default_external: typing.Union[bool, IResolvable] = None,
+  update_runner_versions_enabled: bool | IResolvable = None,
+  usage_ping_enabled: bool | IResolvable = None,
+  use_clickhouse_for_analytics: bool | IResolvable = None,
+  user_deactivation_emails_enabled: bool | IResolvable = None,
+  user_default_external: bool | IResolvable = None,
   user_default_internal_regex: str = None,
-  user_defaults_to_private_profile: typing.Union[bool, IResolvable] = None,
-  user_oauth_applications: typing.Union[bool, IResolvable] = None,
-  user_show_add_ssh_key_message: typing.Union[bool, IResolvable] = None,
+  user_defaults_to_private_profile: bool | IResolvable = None,
+  user_oauth_applications: bool | IResolvable = None,
+  user_show_add_ssh_key_message: bool | IResolvable = None,
   valid_runner_registrars: typing.List[str] = None,
-  version_check_enabled: typing.Union[bool, IResolvable] = None,
-  web_ide_clientside_preview_enabled: typing.Union[bool, IResolvable] = None,
+  version_check_enabled: bool | IResolvable = None,
+  web_ide_clientside_preview_enabled: bool | IResolvable = None,
   whats_new_variant: str = None,
   wiki_page_max_content_bytes: typing.Union[int, float] = None
 )
@@ -13875,54 +13875,54 @@ applicationSettings.ApplicationSettingsConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.abuseNotificationEmail">abuse_notification_email</a></code> | <code>str</code> | If set, abuse reports are sent to this address. Abuse reports are always available in the Admin Area. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.adminMode">admin_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Require administrators to enable Admin Mode by re-authenticating for administrative tasks. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.adminMode">admin_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | Require administrators to enable Admin Mode by re-authenticating for administrative tasks. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.afterSignOutPath">after_sign_out_path</a></code> | <code>str</code> | Where to redirect users after logout. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.afterSignUpText">after_sign_up_text</a></code> | <code>str</code> | Text shown to the user after signing up. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.akismetApiKey">akismet_api_key</a></code> | <code>str</code> | API key for Akismet spam protection. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.akismetEnabled">akismet_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: akismet_api_key) Enable or disable Akismet spam protection. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowAccountDeletion">allow_account_deletion</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to true to allow users to delete their accounts. Premium and Ultimate only. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowGroupOwnersToManageLdap">allow_group_owners_to_manage_ldap</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to true to allow group owners to manage LDAP. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowLocalRequestsFromSystemHooks">allow_local_requests_from_system_hooks</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow requests to the local network from system hooks. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowLocalRequestsFromWebHooksAndServices">allow_local_requests_from_web_hooks_and_services</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow requests to the local network from web hooks and services. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowProjectCreationForGuestAndBelow">allow_project_creation_for_guest_and_below</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether users assigned up to the Guest role can create groups and personal projects. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowRunnerRegistrationToken">allow_runner_registration_token</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow using a registration token to create a runner. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.akismetEnabled">akismet_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: akismet_api_key) Enable or disable Akismet spam protection. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowAccountDeletion">allow_account_deletion</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to true to allow users to delete their accounts. Premium and Ultimate only. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowGroupOwnersToManageLdap">allow_group_owners_to_manage_ldap</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to true to allow group owners to manage LDAP. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowLocalRequestsFromSystemHooks">allow_local_requests_from_system_hooks</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow requests to the local network from system hooks. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowLocalRequestsFromWebHooksAndServices">allow_local_requests_from_web_hooks_and_services</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow requests to the local network from web hooks and services. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowProjectCreationForGuestAndBelow">allow_project_creation_for_guest_and_below</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether users assigned up to the Guest role can create groups and personal projects. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowRunnerRegistrationToken">allow_runner_registration_token</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow using a registration token to create a runner. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.archiveBuildsInHumanReadable">archive_builds_in_human_readable</a></code> | <code>str</code> | Set the duration for which the jobs are considered as old and expired. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.asciidocMaxIncludes">asciidoc_max_includes</a></code> | <code>typing.Union[int, float]</code> | Maximum limit of AsciiDoc include directives being processed in any one document. Maximum: 64. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.assetProxyAllowlist">asset_proxy_allowlist</a></code> | <code>typing.List[str]</code> | Assets that match these domains are not proxied. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.assetProxyEnabled">asset_proxy_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: asset_proxy_url) Enable proxying of assets. GitLab restart is required to apply changes. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.assetProxyEnabled">asset_proxy_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: asset_proxy_url) Enable proxying of assets. GitLab restart is required to apply changes. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.assetProxySecretKey">asset_proxy_secret_key</a></code> | <code>str</code> | Shared secret with the asset proxy server. GitLab restart is required to apply changes. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.assetProxyUrl">asset_proxy_url</a></code> | <code>str</code> | URL of the asset proxy server. GitLab restart is required to apply changes. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.authorizedKeysEnabled">authorized_keys_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | By default, we write to the authorized_keys file to support Git over SSH without additional configuration. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.autoBanUserOnExcessiveProjectsDownload">auto_ban_user_on_excessive_projects_download</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When enabled, users will get automatically banned from the application when they download more than the maximum number of unique projects in the time period specified by max_number_of_repository_downloads and max_number_of_repository_downloads_within_time_period respectively. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.authorizedKeysEnabled">authorized_keys_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | By default, we write to the authorized_keys file to support Git over SSH without additional configuration. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.autoBanUserOnExcessiveProjectsDownload">auto_ban_user_on_excessive_projects_download</a></code> | <code>bool \| cdktf.IResolvable</code> | When enabled, users will get automatically banned from the application when they download more than the maximum number of unique projects in the time period specified by max_number_of_repository_downloads and max_number_of_repository_downloads_within_time_period respectively. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.autoDevopsDomain">auto_devops_domain</a></code> | <code>str</code> | Specify a domain to use by default for every project’s Auto Review Apps and Auto Deploy stages. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.autoDevopsEnabled">auto_devops_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Auto DevOps for projects by default. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.automaticPurchasedStorageAllocation">automatic_purchased_storage_allocation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enabling this permits automatic allocation of purchased storage in a namespace. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.autoDevopsEnabled">auto_devops_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable Auto DevOps for projects by default. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.automaticPurchasedStorageAllocation">automatic_purchased_storage_allocation</a></code> | <code>bool \| cdktf.IResolvable</code> | Enabling this permits automatic allocation of purchased storage in a namespace. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.bulkImportConcurrentPipelineBatchLimit">bulk_import_concurrent_pipeline_batch_limit</a></code> | <code>typing.Union[int, float]</code> | Maximum simultaneous Direct Transfer batches to process. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.bulkImportEnabled">bulk_import_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable migrating GitLab groups by direct transfer. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.bulkImportEnabled">bulk_import_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable migrating GitLab groups by direct transfer. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.bulkImportMaxDownloadFileSize">bulk_import_max_download_file_size</a></code> | <code>typing.Union[int, float]</code> | Maximum download file size when importing from source GitLab instances by direct transfer. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.canCreateGroup">can_create_group</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether users can create top-level groups. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.checkNamespacePlan">check_namespace_plan</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enabling this makes only licensed EE features available to projects if the project namespace’s plan includes the feature or if the project is public. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.canCreateGroup">can_create_group</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether users can create top-level groups. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.checkNamespacePlan">check_namespace_plan</a></code> | <code>bool \| cdktf.IResolvable</code> | Enabling this makes only licensed EE features available to projects if the project namespace’s plan includes the feature or if the project is public. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.ciMaxIncludes">ci_max_includes</a></code> | <code>typing.Union[int, float]</code> | The maximum number of includes per pipeline. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.ciMaxTotalYamlSizeBytes">ci_max_total_yaml_size_bytes</a></code> | <code>typing.Union[int, float]</code> | The maximum amount of memory, in bytes, that can be allocated for the pipeline configuration, with all included YAML configuration files. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.commitEmailHostname">commit_email_hostname</a></code> | <code>str</code> | Custom hostname (for private commit emails). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.concurrentBitbucketImportJobsLimit">concurrent_bitbucket_import_jobs_limit</a></code> | <code>typing.Union[int, float]</code> | Maximum number of simultaneous import jobs for the Bitbucket Cloud importer. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.concurrentBitbucketServerImportJobsLimit">concurrent_bitbucket_server_import_jobs_limit</a></code> | <code>typing.Union[int, float]</code> | Maximum number of simultaneous import jobs for the Bitbucket Server importer. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.concurrentGithubImportJobsLimit">concurrent_github_import_jobs_limit</a></code> | <code>typing.Union[int, float]</code> | Maximum number of simultaneous import jobs for the GitHub importer. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.containerExpirationPoliciesEnableHistoricEntries">container_expiration_policies_enable_historic_entries</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable cleanup policies for all projects. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.containerExpirationPoliciesEnableHistoricEntries">container_expiration_policies_enable_historic_entries</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable cleanup policies for all projects. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.containerRegistryCleanupTagsServiceMaxListSize">container_registry_cleanup_tags_service_max_list_size</a></code> | <code>typing.Union[int, float]</code> | The maximum number of tags that can be deleted in a single execution of cleanup policies. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.containerRegistryDeleteTagsServiceTimeout">container_registry_delete_tags_service_timeout</a></code> | <code>typing.Union[int, float]</code> | The maximum time, in seconds, that the cleanup process can take to delete a batch of tags for cleanup policies. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.containerRegistryExpirationPoliciesCaching">container_registry_expiration_policies_caching</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Caching during the execution of cleanup policies. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.containerRegistryExpirationPoliciesCaching">container_registry_expiration_policies_caching</a></code> | <code>bool \| cdktf.IResolvable</code> | Caching during the execution of cleanup policies. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.containerRegistryExpirationPoliciesWorkerCapacity">container_registry_expiration_policies_worker_capacity</a></code> | <code>typing.Union[int, float]</code> | Number of workers for cleanup policies. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.containerRegistryTokenExpireDelay">container_registry_token_expire_delay</a></code> | <code>typing.Union[int, float]</code> | Container Registry token duration in minutes. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.deactivateDormantUsers">deactivate_dormant_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable automatic deactivation of dormant users. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.deactivateDormantUsers">deactivate_dormant_users</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable automatic deactivation of dormant users. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.deactivateDormantUsersPeriod">deactivate_dormant_users_period</a></code> | <code>typing.Union[int, float]</code> | Length of time (in days) after which a user is considered dormant. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.decompressArchiveFileTimeout">decompress_archive_file_timeout</a></code> | <code>typing.Union[int, float]</code> | Default timeout for decompressing archived files, in seconds. Set to 0 to disable timeouts. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.defaultArtifactsExpireIn">default_artifacts_expire_in</a></code> | <code>str</code> | Set the default expiration time for each job’s artifacts. |
@@ -13937,64 +13937,64 @@ applicationSettings.ApplicationSettingsConfig(
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.defaultProjectVisibility">default_project_visibility</a></code> | <code>str</code> | What visibility level new projects receive. Can take private, internal and public as a parameter. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.defaultSnippetVisibility">default_snippet_visibility</a></code> | <code>str</code> | What visibility level new snippets receive. Can take private, internal and public as a parameter. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.defaultSyntaxHighlightingTheme">default_syntax_highlighting_theme</a></code> | <code>typing.Union[int, float]</code> | Default syntax highlighting theme for users who are new or not signed in. See IDs of available themes (https://gitlab.com/gitlab-org/gitlab/blob/master/lib/gitlab/themes.rb#L16). |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.deleteInactiveProjects">delete_inactive_projects</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable inactive project deletion feature. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.deleteUnconfirmedUsers">delete_unconfirmed_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether users who have not confirmed their email should be deleted. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.deleteInactiveProjects">delete_inactive_projects</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable inactive project deletion feature. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.deleteUnconfirmedUsers">delete_unconfirmed_users</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether users who have not confirmed their email should be deleted. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.deletionAdjournedPeriod">deletion_adjourned_period</a></code> | <code>typing.Union[int, float]</code> | The number of days to wait before deleting a project or group that is marked for deletion. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.diagramsnetEnabled">diagramsnet_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires diagramsnet_url) Enable Diagrams.net integration. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.diagramsnetEnabled">diagramsnet_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires diagramsnet_url) Enable Diagrams.net integration. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.diagramsnetUrl">diagramsnet_url</a></code> | <code>str</code> | The Diagrams.net instance URL for integration. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.diffMaxFiles">diff_max_files</a></code> | <code>typing.Union[int, float]</code> | Maximum files in a diff. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.diffMaxLines">diff_max_lines</a></code> | <code>typing.Union[int, float]</code> | Maximum lines in a diff. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.diffMaxPatchBytes">diff_max_patch_bytes</a></code> | <code>typing.Union[int, float]</code> | Maximum diff patch size, in bytes. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.disableAdminOauthScopes">disable_admin_oauth_scopes</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Stops administrators from connecting their GitLab accounts to non-trusted OAuth 2.0 applications that have the api, read_api, read_repository, write_repository, read_registry, write_registry, or sudo scopes. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.disableAdminOauthScopes">disable_admin_oauth_scopes</a></code> | <code>bool \| cdktf.IResolvable</code> | Stops administrators from connecting their GitLab accounts to non-trusted OAuth 2.0 applications that have the api, read_api, read_repository, write_repository, read_registry, write_registry, or sudo scopes. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.disabledOauthSignInSources">disabled_oauth_sign_in_sources</a></code> | <code>typing.List[str]</code> | Disabled OAuth sign-in sources. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.disableFeedToken">disable_feed_token</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable display of RSS/Atom and calendar feed tokens. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.disablePersonalAccessTokens">disable_personal_access_tokens</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable personal access tokens. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.dnsRebindingProtectionEnabled">dns_rebinding_protection_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enforce DNS rebinding attack protection. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.disableFeedToken">disable_feed_token</a></code> | <code>bool \| cdktf.IResolvable</code> | Disable display of RSS/Atom and calendar feed tokens. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.disablePersonalAccessTokens">disable_personal_access_tokens</a></code> | <code>bool \| cdktf.IResolvable</code> | Disable personal access tokens. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.dnsRebindingProtectionEnabled">dns_rebinding_protection_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enforce DNS rebinding attack protection. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.domainAllowlist">domain_allowlist</a></code> | <code>typing.List[str]</code> | Force people to use only corporate emails for sign-up. Null means there is no restriction. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.domainDenylist">domain_denylist</a></code> | <code>typing.List[str]</code> | Users with email addresses that match these domains cannot sign up. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.domainDenylistEnabled">domain_denylist_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: domain_denylist) Allows blocking sign-ups from emails from specific domains. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.domainDenylistEnabled">domain_denylist_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: domain_denylist) Allows blocking sign-ups from emails from specific domains. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.downstreamPipelineTriggerLimitPerProjectUserSha">downstream_pipeline_trigger_limit_per_project_user_sha</a></code> | <code>typing.Union[int, float]</code> | Maximum downstream pipeline trigger rate. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.dsaKeyRestriction">dsa_key_restriction</a></code> | <code>typing.Union[int, float]</code> | The minimum allowed bit length of an uploaded DSA key. 0 means no restriction. -1 disables DSA keys. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.duoFeaturesEnabled">duo_features_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether GitLab Duo features are enabled for this instance. Self-managed, Premium and Ultimate only. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.duoFeaturesEnabled">duo_features_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether GitLab Duo features are enabled for this instance. Self-managed, Premium and Ultimate only. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.ecdsaKeyRestriction">ecdsa_key_restriction</a></code> | <code>typing.Union[int, float]</code> | The minimum allowed curve size (in bits) of an uploaded ECDSA key. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.ecdsaSkKeyRestriction">ecdsa_sk_key_restriction</a></code> | <code>typing.Union[int, float]</code> | The minimum allowed curve size (in bits) of an uploaded ECDSA_SK key. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.ed25519KeyRestriction">ed25519_key_restriction</a></code> | <code>typing.Union[int, float]</code> | The minimum allowed curve size (in bits) of an uploaded ED25519 key. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.ed25519SkKeyRestriction">ed25519_sk_key_restriction</a></code> | <code>typing.Union[int, float]</code> | The minimum allowed curve size (in bits) of an uploaded ED25519_SK key. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.eksAccessKeyId">eks_access_key_id</a></code> | <code>str</code> | AWS IAM access key ID. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.eksAccountId">eks_account_id</a></code> | <code>str</code> | Amazon account ID. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.eksIntegrationEnabled">eks_integration_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable integration with Amazon EKS. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.eksIntegrationEnabled">eks_integration_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable integration with Amazon EKS. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.eksSecretAccessKey">eks_secret_access_key</a></code> | <code>str</code> | AWS IAM secret access key. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchAws">elasticsearch_aws</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable the use of AWS hosted Elasticsearch. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchAws">elasticsearch_aws</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable the use of AWS hosted Elasticsearch. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchAwsAccessKey">elasticsearch_aws_access_key</a></code> | <code>str</code> | AWS IAM access key. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchAwsRegion">elasticsearch_aws_region</a></code> | <code>str</code> | The AWS region the Elasticsearch domain is configured. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchAwsSecretAccessKey">elasticsearch_aws_secret_access_key</a></code> | <code>str</code> | AWS IAM secret access key. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchIndexedFieldLengthLimit">elasticsearch_indexed_field_length_limit</a></code> | <code>typing.Union[int, float]</code> | Maximum size of text fields to index by Elasticsearch. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchIndexedFileSizeLimitKb">elasticsearch_indexed_file_size_limit_kb</a></code> | <code>typing.Union[int, float]</code> | Maximum size of repository and wiki files that are indexed by Elasticsearch. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchIndexing">elasticsearch_indexing</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Elasticsearch indexing. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchLimitIndexing">elasticsearch_limit_indexing</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Limit Elasticsearch to index certain namespaces and projects. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchIndexing">elasticsearch_indexing</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable Elasticsearch indexing. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchLimitIndexing">elasticsearch_limit_indexing</a></code> | <code>bool \| cdktf.IResolvable</code> | Limit Elasticsearch to index certain namespaces and projects. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchMaxBulkConcurrency">elasticsearch_max_bulk_concurrency</a></code> | <code>typing.Union[int, float]</code> | Maximum concurrency of Elasticsearch bulk requests per indexing operation. This only applies to repository indexing operations. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchMaxBulkSizeMb">elasticsearch_max_bulk_size_mb</a></code> | <code>typing.Union[int, float]</code> | Maximum size of Elasticsearch bulk indexing requests in MB. This only applies to repository indexing operations. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchMaxCodeIndexingConcurrency">elasticsearch_max_code_indexing_concurrency</a></code> | <code>typing.Union[int, float]</code> | Maximum concurrency of Elasticsearch code indexing background jobs. This only applies to repository indexing operations. Premium and Ultimate only. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchNamespaceIds">elasticsearch_namespace_ids</a></code> | <code>typing.List[typing.Union[int, float]]</code> | The namespaces to index via Elasticsearch if elasticsearch_limit_indexing is enabled. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchPassword">elasticsearch_password</a></code> | <code>str</code> | The password of your Elasticsearch instance. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchProjectIds">elasticsearch_project_ids</a></code> | <code>typing.List[typing.Union[int, float]]</code> | The projects to index via Elasticsearch if elasticsearch_limit_indexing is enabled. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchRequeueWorkers">elasticsearch_requeue_workers</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable automatic requeuing of indexing workers. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchSearch">elasticsearch_search</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Elasticsearch search. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchRequeueWorkers">elasticsearch_requeue_workers</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable automatic requeuing of indexing workers. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchSearch">elasticsearch_search</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable Elasticsearch search. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchUrl">elasticsearch_url</a></code> | <code>typing.List[str]</code> | The URL to use for connecting to Elasticsearch. Use a comma-separated list to support cluster (for example, http://localhost:9200, http://localhost:9201). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchUsername">elasticsearch_username</a></code> | <code>str</code> | The username of your Elasticsearch instance. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchWorkerNumberOfShards">elasticsearch_worker_number_of_shards</a></code> | <code>typing.Union[int, float]</code> | Number of indexing worker shards. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.emailAdditionalText">email_additional_text</a></code> | <code>str</code> | Additional text added to the bottom of every email for legal/auditing/compliance reasons. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.emailAuthorInBody">email_author_in_body</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Some email servers do not support overriding the email sender name. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.emailAuthorInBody">email_author_in_body</a></code> | <code>bool \| cdktf.IResolvable</code> | Some email servers do not support overriding the email sender name. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.emailConfirmationSetting">email_confirmation_setting</a></code> | <code>str</code> | Specifies whether users must confirm their email before sign in. Possible values are off, soft, and hard. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.enableArtifactExternalRedirectWarningPage">enable_artifact_external_redirect_warning_page</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Show the external redirect page that warns you about user-generated content in GitLab Pages. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.enableArtifactExternalRedirectWarningPage">enable_artifact_external_redirect_warning_page</a></code> | <code>bool \| cdktf.IResolvable</code> | Show the external redirect page that warns you about user-generated content in GitLab Pages. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.enabledGitAccessProtocol">enabled_git_access_protocol</a></code> | <code>str</code> | Enabled protocols for Git access. Allowed values are: ssh, http, and nil to allow both protocols. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.enforceNamespaceStorageLimit">enforce_namespace_storage_limit</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enabling this permits enforcement of namespace storage limits. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.enforceTerms">enforce_terms</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: terms) Enforce application ToS to all users. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.enforceNamespaceStorageLimit">enforce_namespace_storage_limit</a></code> | <code>bool \| cdktf.IResolvable</code> | Enabling this permits enforcement of namespace storage limits. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.enforceTerms">enforce_terms</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: terms) Enforce application ToS to all users. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.externalAuthClientCert">external_auth_client_cert</a></code> | <code>str</code> | (If enabled, requires: external_auth_client_key) The certificate to use to authenticate with the external authorization service. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.externalAuthClientKey">external_auth_client_key</a></code> | <code>str</code> | Private key for the certificate when authentication is required for the external authorization service, this is encrypted when stored. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.externalAuthClientKeyPass">external_auth_client_key_pass</a></code> | <code>str</code> | Passphrase to use for the private key when authenticating with the external service this is encrypted when stored. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.externalAuthorizationServiceDefaultLabel">external_authorization_service_default_label</a></code> | <code>str</code> | The default classification label to use when requesting authorization and no classification label has been specified on the project. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.externalAuthorizationServiceEnabled">external_authorization_service_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: external_authorization_service_default_label, external_authorization_service_timeout and external_authorization_service_url) Enable using an external authorization service for accessing projects. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.externalAuthorizationServiceEnabled">external_authorization_service_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: external_authorization_service_default_label, external_authorization_service_timeout and external_authorization_service_url) Enable using an external authorization service for accessing projects. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.externalAuthorizationServiceTimeout">external_authorization_service_timeout</a></code> | <code>typing.Union[int, float]</code> | The timeout after which an authorization request is aborted, in seconds. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.externalAuthorizationServiceUrl">external_authorization_service_url</a></code> | <code>str</code> | URL to which authorization requests are directed. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.externalPipelineValidationServiceTimeout">external_pipeline_validation_service_timeout</a></code> | <code>typing.Union[int, float]</code> | How long to wait for a response from the pipeline validation service. Assumes OK if it times out. |
@@ -14009,46 +14009,46 @@ applicationSettings.ApplicationSettingsConfig(
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.gitalyTimeoutFast">gitaly_timeout_fast</a></code> | <code>typing.Union[int, float]</code> | Gitaly fast operation timeout, in seconds. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.gitalyTimeoutMedium">gitaly_timeout_medium</a></code> | <code>typing.Union[int, float]</code> | Medium Gitaly timeout, in seconds. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.gitlabShellOperationLimit">gitlab_shell_operation_limit</a></code> | <code>typing.Union[int, float]</code> | Maximum number of Git operations per minute a user can perform. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.gitpodEnabled">gitpod_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Gitpod integration. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.gitpodEnabled">gitpod_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable Gitpod integration. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.gitpodUrl">gitpod_url</a></code> | <code>str</code> | The Gitpod instance URL for integration. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.gitRateLimitUsersAlertlist">git_rate_limit_users_alertlist</a></code> | <code>typing.List[typing.Union[int, float]]</code> | List of user IDs that are emailed when the Git abuse rate limit is exceeded. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.gitRateLimitUsersAllowlist">git_rate_limit_users_allowlist</a></code> | <code>typing.List[str]</code> | List of usernames excluded from Git anti-abuse rate limits. Maximum: 100 usernames. Self-managed, Ultimate only. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.gitTwoFactorSessionExpiry">git_two_factor_session_expiry</a></code> | <code>typing.Union[int, float]</code> | Maximum duration (in minutes) of a session for Git operations when 2FA is enabled. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.globallyAllowedIps">globally_allowed_ips</a></code> | <code>str</code> | Comma-separated list of IP addresses and CIDRs always allowed for inbound traffic. For example, 1.1.1.1, 2.2.2.0/24. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.grafanaEnabled">grafana_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Grafana. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.grafanaEnabled">grafana_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable Grafana. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.grafanaUrl">grafana_url</a></code> | <code>str</code> | Grafana URL. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.gravatarEnabled">gravatar_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Gravatar. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.groupOwnersCanManageDefaultBranchProtection">group_owners_can_manage_default_branch_protection</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Prevent overrides of default branch protection. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.helpPageHideCommercialContent">help_page_hide_commercial_content</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Hide marketing-related entries from help. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.gravatarEnabled">gravatar_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable Gravatar. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.groupOwnersCanManageDefaultBranchProtection">group_owners_can_manage_default_branch_protection</a></code> | <code>bool \| cdktf.IResolvable</code> | Prevent overrides of default branch protection. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.helpPageHideCommercialContent">help_page_hide_commercial_content</a></code> | <code>bool \| cdktf.IResolvable</code> | Hide marketing-related entries from help. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.helpPageSupportUrl">help_page_support_url</a></code> | <code>str</code> | Alternate support URL for help page and help dropdown. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.helpPageText">help_page_text</a></code> | <code>str</code> | Custom text displayed on the help page. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.helpText">help_text</a></code> | <code>str</code> | GitLab server administrator information. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.hideThirdPartyOffers">hide_third_party_offers</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display offers from third parties in GitLab. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.hideThirdPartyOffers">hide_third_party_offers</a></code> | <code>bool \| cdktf.IResolvable</code> | Do not display offers from third parties in GitLab. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.homePageUrl">home_page_url</a></code> | <code>str</code> | Redirect to this URL when not logged in. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.housekeepingEnabled">housekeeping_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable or disable Git housekeeping. If enabled, requires housekeeping_optimize_repository_period. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.housekeepingEnabled">housekeeping_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable or disable Git housekeeping. If enabled, requires housekeeping_optimize_repository_period. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.housekeepingOptimizeRepositoryPeriod">housekeeping_optimize_repository_period</a></code> | <code>typing.Union[int, float]</code> | Number of Git pushes after which an incremental git-repack is run. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.htmlEmailsEnabled">html_emails_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable HTML emails. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.htmlEmailsEnabled">html_emails_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable HTML emails. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/application_settings#id ApplicationSettings#id}. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.importSources">import_sources</a></code> | <code>typing.List[str]</code> | Sources to allow project import from. Valid values are: `github`, `bitbucket`, `bitbucket_server`, `fogbugz`, `git`, `gitlab_project`, `gitea`, `manifest`. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.inactiveProjectsDeleteAfterMonths">inactive_projects_delete_after_months</a></code> | <code>typing.Union[int, float]</code> | If delete_inactive_projects is true, the time (in months) to wait before deleting inactive projects. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.inactiveProjectsMinSizeMb">inactive_projects_min_size_mb</a></code> | <code>typing.Union[int, float]</code> | If delete_inactive_projects is true, the minimum repository size for projects to be checked for inactivity. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.inactiveProjectsSendWarningEmailAfterMonths">inactive_projects_send_warning_email_after_months</a></code> | <code>typing.Union[int, float]</code> | If delete_inactive_projects is true, sets the time (in months) to wait before emailing maintainers that the project is scheduled be deleted because it is inactive. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.includeOptionalMetricsInServicePing">include_optional_metrics_in_service_ping</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not optional metrics are enabled in Service Ping. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.inProductMarketingEmailsEnabled">in_product_marketing_emails_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable in-product marketing emails. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.invisibleCaptchaEnabled">invisible_captcha_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Invisible CAPTCHA spam detection during sign-up. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.includeOptionalMetricsInServicePing">include_optional_metrics_in_service_ping</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not optional metrics are enabled in Service Ping. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.inProductMarketingEmailsEnabled">in_product_marketing_emails_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable in-product marketing emails. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.invisibleCaptchaEnabled">invisible_captcha_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable Invisible CAPTCHA spam detection during sign-up. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.issuesCreateLimit">issues_create_limit</a></code> | <code>typing.Union[int, float]</code> | Max number of issue creation requests per minute per user. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.jiraConnectApplicationKey">jira_connect_application_key</a></code> | <code>str</code> | ID of the OAuth application used to authenticate with the GitLab for Jira Cloud app. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.jiraConnectProxyUrl">jira_connect_proxy_url</a></code> | <code>str</code> | URL of the GitLab instance used as a proxy for the GitLab for Jira Cloud app. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.jiraConnectPublicKeyStorageEnabled">jira_connect_public_key_storage_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable public key storage for the GitLab for Jira Cloud app. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.keepLatestArtifact">keep_latest_artifact</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Prevent the deletion of the artifacts from the most recent successful jobs, regardless of the expiry time. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.jiraConnectPublicKeyStorageEnabled">jira_connect_public_key_storage_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable public key storage for the GitLab for Jira Cloud app. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.keepLatestArtifact">keep_latest_artifact</a></code> | <code>bool \| cdktf.IResolvable</code> | Prevent the deletion of the artifacts from the most recent successful jobs, regardless of the expiry time. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.localMarkdownVersion">local_markdown_version</a></code> | <code>typing.Union[int, float]</code> | Increase this value when any cached Markdown should be invalidated. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.lockDuoFeaturesEnabled">lock_duo_features_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether the GitLab Duo features enabled setting is enforced for all subgroups. Self-managed, Premium and Ultimate only. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.lockMembershipsToLdap">lock_memberships_to_ldap</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to true to lock all memberships to LDAP. Premium and Ultimate only. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.mailgunEventsEnabled">mailgun_events_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Mailgun event receiver. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.lockDuoFeaturesEnabled">lock_duo_features_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether the GitLab Duo features enabled setting is enforced for all subgroups. Self-managed, Premium and Ultimate only. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.lockMembershipsToLdap">lock_memberships_to_ldap</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to true to lock all memberships to LDAP. Premium and Ultimate only. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.mailgunEventsEnabled">mailgun_events_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable Mailgun event receiver. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.mailgunSigningKey">mailgun_signing_key</a></code> | <code>str</code> | The Mailgun HTTP webhook signing key for receiving events from webhook. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.maintenanceMode">maintenance_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When instance is in maintenance mode, non-administrative users can sign in with read-only access and make read-only API requests. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.maintenanceMode">maintenance_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | When instance is in maintenance mode, non-administrative users can sign in with read-only access and make read-only API requests. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.maintenanceModeMessage">maintenance_mode_message</a></code> | <code>str</code> | Message displayed when instance is in maintenance mode. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.mavenPackageRequestsForwarding">maven_package_requests_forwarding</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use repo.maven.apache.org as a default remote repository when the package is not found in the GitLab Package Registry for Maven. Premium and Ultimate only. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.mavenPackageRequestsForwarding">maven_package_requests_forwarding</a></code> | <code>bool \| cdktf.IResolvable</code> | Use repo.maven.apache.org as a default remote repository when the package is not found in the GitLab Package Registry for Maven. Premium and Ultimate only. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.maxArtifactsSize">max_artifacts_size</a></code> | <code>typing.Union[int, float]</code> | Maximum artifacts size in MB. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.maxAttachmentSize">max_attachment_size</a></code> | <code>typing.Union[int, float]</code> | Limit attachment size in MB. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.maxDecompressedArchiveSize">max_decompressed_archive_size</a></code> | <code>typing.Union[int, float]</code> | Maximum decompressed archive size in bytes. |
@@ -14064,73 +14064,73 @@ applicationSettings.ApplicationSettingsConfig(
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.maxTerraformStateSizeBytes">max_terraform_state_size_bytes</a></code> | <code>typing.Union[int, float]</code> | Maximum size in bytes of the Terraform state files. Set this to 0 for unlimited file size. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.metricsMethodCallThreshold">metrics_method_call_threshold</a></code> | <code>typing.Union[int, float]</code> | A method call is only tracked when it takes longer than the given amount of milliseconds. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.minimumPasswordLength">minimum_password_length</a></code> | <code>typing.Union[int, float]</code> | Indicates whether passwords require a minimum length. Premium and Ultimate only. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.mirrorAvailable">mirror_available</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow repository mirroring to configured by project Maintainers. If disabled, only Administrators can configure repository mirroring. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.mirrorAvailable">mirror_available</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow repository mirroring to configured by project Maintainers. If disabled, only Administrators can configure repository mirroring. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.mirrorCapacityThreshold">mirror_capacity_threshold</a></code> | <code>typing.Union[int, float]</code> | Minimum capacity to be available before scheduling more mirrors preemptively. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.mirrorMaxCapacity">mirror_max_capacity</a></code> | <code>typing.Union[int, float]</code> | Maximum number of mirrors that can be synchronizing at the same time. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.mirrorMaxDelay">mirror_max_delay</a></code> | <code>typing.Union[int, float]</code> | Maximum time (in minutes) between updates that a mirror can have when scheduled to synchronize. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.npmPackageRequestsForwarding">npm_package_requests_forwarding</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use npmjs.org as a default remote repository when the package is not found in the GitLab Package Registry for npm. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.nugetSkipMetadataUrlValidation">nuget_skip_metadata_url_validation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether to skip metadata URL validation for the NuGet package. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.npmPackageRequestsForwarding">npm_package_requests_forwarding</a></code> | <code>bool \| cdktf.IResolvable</code> | Use npmjs.org as a default remote repository when the package is not found in the GitLab Package Registry for npm. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.nugetSkipMetadataUrlValidation">nuget_skip_metadata_url_validation</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether to skip metadata URL validation for the NuGet package. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.outboundLocalRequestsWhitelist">outbound_local_requests_whitelist</a></code> | <code>typing.List[str]</code> | Define a list of trusted domains or IP addresses to which local requests are allowed when local requests for hooks and services are disabled. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.packageMetadataPurlTypes">package_metadata_purl_types</a></code> | <code>typing.List[typing.Union[int, float]]</code> | List of package registry metadata to sync. See the list of the available values (https://gitlab.com/gitlab-org/gitlab/-/blob/ace16c20d5da7c4928dd03fb139692638b557fe3/app/models/concerns/enums/package_metadata.rb#L5). Self-managed, Ultimate only. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.packageRegistryAllowAnyoneToPullOption">package_registry_allow_anyone_to_pull_option</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable to allow anyone to pull from Package Registry visible and changeable. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.packageRegistryAllowAnyoneToPullOption">package_registry_allow_anyone_to_pull_option</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable to allow anyone to pull from Package Registry visible and changeable. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.packageRegistryCleanupPoliciesWorkerCapacity">package_registry_cleanup_policies_worker_capacity</a></code> | <code>typing.Union[int, float]</code> | Number of workers assigned to the packages cleanup policies. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.pagesDomainVerificationEnabled">pages_domain_verification_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Require users to prove ownership of custom domains. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordAuthenticationEnabledForGit">password_authentication_enabled_for_git</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable authentication for Git over HTTP(S) via a GitLab account password. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordAuthenticationEnabledForWeb">password_authentication_enabled_for_web</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable authentication for the web interface via a GitLab account password. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordLowercaseRequired">password_lowercase_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether passwords require at least one lowercase letter. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordNumberRequired">password_number_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether passwords require at least one number. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordSymbolRequired">password_symbol_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether passwords require at least one symbol character. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordUppercaseRequired">password_uppercase_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether passwords require at least one uppercase letter. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.pagesDomainVerificationEnabled">pages_domain_verification_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Require users to prove ownership of custom domains. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordAuthenticationEnabledForGit">password_authentication_enabled_for_git</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable authentication for Git over HTTP(S) via a GitLab account password. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordAuthenticationEnabledForWeb">password_authentication_enabled_for_web</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable authentication for the web interface via a GitLab account password. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordLowercaseRequired">password_lowercase_required</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether passwords require at least one lowercase letter. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordNumberRequired">password_number_required</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether passwords require at least one number. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordSymbolRequired">password_symbol_required</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether passwords require at least one symbol character. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordUppercaseRequired">password_uppercase_required</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether passwords require at least one uppercase letter. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.performanceBarAllowedGroupPath">performance_bar_allowed_group_path</a></code> | <code>str</code> | Path of the group that is allowed to toggle the performance bar. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.personalAccessTokenPrefix">personal_access_token_prefix</a></code> | <code>str</code> | Prefix for all generated personal access tokens. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.pipelineLimitPerProjectUserSha">pipeline_limit_per_project_user_sha</a></code> | <code>typing.Union[int, float]</code> | Maximum number of pipeline creation requests per minute per user and commit. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.plantumlEnabled">plantuml_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: plantuml_url) Enable PlantUML integration. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.plantumlEnabled">plantuml_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: plantuml_url) Enable PlantUML integration. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.plantumlUrl">plantuml_url</a></code> | <code>str</code> | The PlantUML instance URL for integration. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.pollingIntervalMultiplier">polling_interval_multiplier</a></code> | <code>typing.Union[int, float]</code> | Interval multiplier used by endpoints that perform polling. Set to 0 to disable polling. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.projectExportEnabled">project_export_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable project export. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.projectExportEnabled">project_export_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable project export. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.projectJobsApiRateLimit">project_jobs_api_rate_limit</a></code> | <code>typing.Union[int, float]</code> | Maximum authenticated requests to /project/:id/jobs per minute. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.projectsApiRateLimitUnauthenticated">projects_api_rate_limit_unauthenticated</a></code> | <code>typing.Union[int, float]</code> | Max number of requests per 10 minutes per IP address for unauthenticated requests to the list all projects API. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.prometheusMetricsEnabled">prometheus_metrics_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Prometheus metrics. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.protectedCiVariables">protected_ci_variables</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | CI/CD variables are protected by default. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.prometheusMetricsEnabled">prometheus_metrics_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable Prometheus metrics. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.protectedCiVariables">protected_ci_variables</a></code> | <code>bool \| cdktf.IResolvable</code> | CI/CD variables are protected by default. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.pushEventActivitiesLimit">push_event_activities_limit</a></code> | <code>typing.Union[int, float]</code> | Number of changes (branches or tags) in a single push to determine whether individual push events or bulk push events are created. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.pushEventHooksLimit">push_event_hooks_limit</a></code> | <code>typing.Union[int, float]</code> | Number of changes (branches or tags) in a single push to determine whether webhooks and services fire or not. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.pypiPackageRequestsForwarding">pypi_package_requests_forwarding</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use pypi.org as a default remote repository when the package is not found in the GitLab Package Registry for PyPI. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.pypiPackageRequestsForwarding">pypi_package_requests_forwarding</a></code> | <code>bool \| cdktf.IResolvable</code> | Use pypi.org as a default remote repository when the package is not found in the GitLab Package Registry for PyPI. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.rateLimitingResponseText">rate_limiting_response_text</a></code> | <code>str</code> | When rate limiting is enabled via the throttle_* settings, send this plain text response when a rate limit is exceeded. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.rawBlobRequestLimit">raw_blob_request_limit</a></code> | <code>typing.Union[int, float]</code> | Max number of requests per minute for each raw path. To disable throttling set to 0. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.recaptchaEnabled">recaptcha_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: recaptcha_private_key and recaptcha_site_key) Enable reCAPTCHA. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.recaptchaEnabled">recaptcha_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: recaptcha_private_key and recaptcha_site_key) Enable reCAPTCHA. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.recaptchaPrivateKey">recaptcha_private_key</a></code> | <code>str</code> | Private key for reCAPTCHA. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.recaptchaSiteKey">recaptcha_site_key</a></code> | <code>str</code> | Site key for reCAPTCHA. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.receiveMaxInputSize">receive_max_input_size</a></code> | <code>typing.Union[int, float]</code> | Maximum push size (MB). |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.receptiveClusterAgentsEnabled">receptive_cluster_agents_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable receptive mode for GitLab Agents for Kubernetes. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.rememberMeEnabled">remember_me_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Remember me setting. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.repositoryChecksEnabled">repository_checks_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | GitLab periodically runs git fsck in all project and wiki repositories to look for silent disk corruption issues. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.receptiveClusterAgentsEnabled">receptive_cluster_agents_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable receptive mode for GitLab Agents for Kubernetes. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.rememberMeEnabled">remember_me_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable Remember me setting. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.repositoryChecksEnabled">repository_checks_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | GitLab periodically runs git fsck in all project and wiki repositories to look for silent disk corruption issues. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.repositorySizeLimit">repository_size_limit</a></code> | <code>typing.Union[int, float]</code> | Size limit per repository (MB). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.repositoryStoragesWeighted">repository_storages_weighted</a></code> | <code>typing.Mapping[typing.Union[int, float]]</code> | Hash of names taken from gitlab.yml to weights. New projects are created in one of these stores, chosen by a weighted random selection. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.requireAdminApprovalAfterUserSignup">require_admin_approval_after_user_signup</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When enabled, any user that signs up for an account using the registration form is placed under a Pending approval state and has to be explicitly approved by an administrator. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.requireAdminTwoFactorAuthentication">require_admin_two_factor_authentication</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow administrators to require 2FA for all administrators on the instance. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.requirePersonalAccessTokenExpiry">require_personal_access_token_expiry</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When enabled, users must set an expiration date when creating a group or project access token, or a personal access token owned by a non-service account. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.requireTwoFactorAuthentication">require_two_factor_authentication</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: two_factor_grace_period) Require all users to set up Two-factor authentication. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.requireAdminApprovalAfterUserSignup">require_admin_approval_after_user_signup</a></code> | <code>bool \| cdktf.IResolvable</code> | When enabled, any user that signs up for an account using the registration form is placed under a Pending approval state and has to be explicitly approved by an administrator. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.requireAdminTwoFactorAuthentication">require_admin_two_factor_authentication</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow administrators to require 2FA for all administrators on the instance. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.requirePersonalAccessTokenExpiry">require_personal_access_token_expiry</a></code> | <code>bool \| cdktf.IResolvable</code> | When enabled, users must set an expiration date when creating a group or project access token, or a personal access token owned by a non-service account. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.requireTwoFactorAuthentication">require_two_factor_authentication</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: two_factor_grace_period) Require all users to set up Two-factor authentication. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.restrictedVisibilityLevels">restricted_visibility_levels</a></code> | <code>typing.List[str]</code> | Selected levels cannot be used by non-Administrator users for groups, projects or snippets. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.rsaKeyRestriction">rsa_key_restriction</a></code> | <code>typing.Union[int, float]</code> | The minimum allowed bit length of an uploaded RSA key. 0 means no restriction. -1 disables RSA keys. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.searchRateLimit">search_rate_limit</a></code> | <code>typing.Union[int, float]</code> | Max number of requests per minute for performing a search while authenticated. To disable throttling set to 0. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.searchRateLimitUnauthenticated">search_rate_limit_unauthenticated</a></code> | <code>typing.Union[int, float]</code> | Max number of requests per minute for performing a search while unauthenticated. To disable throttling set to 0. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.securityApprovalPoliciesLimit">security_approval_policies_limit</a></code> | <code>typing.Union[int, float]</code> | Maximum number of active merge request approval policies per security policy project. Maximum: 20. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.securityPolicyGlobalGroupApproversEnabled">security_policy_global_group_approvers_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to look up merge request approval policy approval groups globally or within project hierarchies. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.securityPolicyGlobalGroupApproversEnabled">security_policy_global_group_approvers_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to look up merge request approval policy approval groups globally or within project hierarchies. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.securityTxtContent">security_txt_content</a></code> | <code>str</code> | Public security contact information. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sendUserConfirmationEmail">send_user_confirmation_email</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Send confirmation email on sign-up. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.serviceAccessTokensExpirationEnforced">service_access_tokens_expiration_enforced</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Flag to indicate if token expiry date can be optional for service account users. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sendUserConfirmationEmail">send_user_confirmation_email</a></code> | <code>bool \| cdktf.IResolvable</code> | Send confirmation email on sign-up. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.serviceAccessTokensExpirationEnforced">service_access_tokens_expiration_enforced</a></code> | <code>bool \| cdktf.IResolvable</code> | Flag to indicate if token expiry date can be optional for service account users. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sessionExpireDelay">session_expire_delay</a></code> | <code>typing.Union[int, float]</code> | Session duration in minutes. GitLab restart is required to apply changes. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sharedRunnersEnabled">shared_runners_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: shared_runners_text and shared_runners_minutes) Enable shared runners for new projects. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sharedRunnersEnabled">shared_runners_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: shared_runners_text and shared_runners_minutes) Enable shared runners for new projects. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sharedRunnersMinutes">shared_runners_minutes</a></code> | <code>typing.Union[int, float]</code> | Set the maximum number of CI/CD minutes that a group can use on shared runners per month. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sharedRunnersText">shared_runners_text</a></code> | <code>str</code> | Shared runners text. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sidekiqJobLimiterCompressionThresholdBytes">sidekiq_job_limiter_compression_threshold_bytes</a></code> | <code>typing.Union[int, float]</code> | The threshold in bytes at which Sidekiq jobs are compressed before being stored in Redis. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sidekiqJobLimiterLimitBytes">sidekiq_job_limiter_limit_bytes</a></code> | <code>typing.Union[int, float]</code> | The threshold in bytes at which Sidekiq jobs are rejected. 0 means do not reject any job. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sidekiqJobLimiterMode">sidekiq_job_limiter_mode</a></code> | <code>str</code> | track or compress. Sets the behavior for Sidekiq job size limits. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.signInText">sign_in_text</a></code> | <code>str</code> | Text on the login page. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.signupEnabled">signup_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable registration. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.silentAdminExportsEnabled">silent_admin_exports_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Silent admin exports. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.silentModeEnabled">silent_mode_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Silent mode. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.slackAppEnabled">slack_app_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: slack_app_id, slack_app_secret and slack_app_secret) Enable Slack app. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.signupEnabled">signup_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable registration. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.silentAdminExportsEnabled">silent_admin_exports_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable Silent admin exports. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.silentModeEnabled">silent_mode_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable Silent mode. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.slackAppEnabled">slack_app_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: slack_app_id, slack_app_secret and slack_app_secret) Enable Slack app. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.slackAppId">slack_app_id</a></code> | <code>str</code> | The app ID of the Slack-app. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.slackAppSecret">slack_app_secret</a></code> | <code>str</code> | The app secret of the Slack-app. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.slackAppSigningSecret">slack_app_signing_secret</a></code> | <code>str</code> | The signing secret of the Slack-app. |
@@ -14140,54 +14140,54 @@ applicationSettings.ApplicationSettingsConfig(
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.snowplowCollectorHostname">snowplow_collector_hostname</a></code> | <code>str</code> | The Snowplow collector hostname. (for example, snowplow.trx.gitlab.net). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.snowplowCookieDomain">snowplow_cookie_domain</a></code> | <code>str</code> | The Snowplow cookie domain. (for example, .gitlab.com). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.snowplowDatabaseCollectorHostname">snowplow_database_collector_hostname</a></code> | <code>str</code> | The Snowplow collector for database events hostname. (for example, db-snowplow.trx.gitlab.net). |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.snowplowEnabled">snowplow_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable snowplow tracking. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sourcegraphEnabled">sourcegraph_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables Sourcegraph integration. If enabled, requires sourcegraph_url. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sourcegraphPublicOnly">sourcegraph_public_only</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Blocks Sourcegraph from being loaded on private and internal projects. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.snowplowEnabled">snowplow_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable snowplow tracking. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sourcegraphEnabled">sourcegraph_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables Sourcegraph integration. If enabled, requires sourcegraph_url. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sourcegraphPublicOnly">sourcegraph_public_only</a></code> | <code>bool \| cdktf.IResolvable</code> | Blocks Sourcegraph from being loaded on private and internal projects. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sourcegraphUrl">sourcegraph_url</a></code> | <code>str</code> | The Sourcegraph instance URL for integration. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.spamCheckApiKey">spam_check_api_key</a></code> | <code>str</code> | API key used by GitLab for accessing the Spam Check service endpoint. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.spamCheckEndpointEnabled">spam_check_endpoint_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables spam checking using external Spam Check API endpoint. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.spamCheckEndpointEnabled">spam_check_endpoint_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables spam checking using external Spam Check API endpoint. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.spamCheckEndpointUrl">spam_check_endpoint_url</a></code> | <code>str</code> | URL of the external Spamcheck service endpoint. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.staticObjectsExternalStorageAuthToken">static_objects_external_storage_auth_token</a></code> | <code>str</code> | Authentication token for the external storage linked in static_objects_external_storage_url. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.staticObjectsExternalStorageUrl">static_objects_external_storage_url</a></code> | <code>str</code> | URL to an external storage for repository static objects. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.suggestPipelineEnabled">suggest_pipeline_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable pipeline suggestion banner. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.suggestPipelineEnabled">suggest_pipeline_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable pipeline suggestion banner. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.terminalMaxSessionTime">terminal_max_session_time</a></code> | <code>typing.Union[int, float]</code> | Maximum time for web terminal websocket connection (in seconds). Set to 0 for unlimited time. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.terms">terms</a></code> | <code>str</code> | (Required by: enforce_terms) Markdown content for the ToS. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedApiEnabled">throttle_authenticated_api_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: throttle_authenticated_api_period_in_seconds and throttle_authenticated_api_requests_per_period) Enable authenticated API request rate limit. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedApiEnabled">throttle_authenticated_api_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: throttle_authenticated_api_period_in_seconds and throttle_authenticated_api_requests_per_period) Enable authenticated API request rate limit. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedApiPeriodInSeconds">throttle_authenticated_api_period_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Rate limit period (in seconds). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedApiRequestsPerPeriod">throttle_authenticated_api_requests_per_period</a></code> | <code>typing.Union[int, float]</code> | Maximum requests per period per user. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedPackagesApiEnabled">throttle_authenticated_packages_api_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: throttle_authenticated_packages_api_period_in_seconds and throttle_authenticated_packages_api_requests_per_period) Enable authenticated API request rate limit. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedPackagesApiEnabled">throttle_authenticated_packages_api_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: throttle_authenticated_packages_api_period_in_seconds and throttle_authenticated_packages_api_requests_per_period) Enable authenticated API request rate limit. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedPackagesApiPeriodInSeconds">throttle_authenticated_packages_api_period_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Rate limit period (in seconds). View Package Registry rate limits for more details. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedPackagesApiRequestsPerPeriod">throttle_authenticated_packages_api_requests_per_period</a></code> | <code>typing.Union[int, float]</code> | Maximum requests per period per user. View Package Registry rate limits for more details. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedWebEnabled">throttle_authenticated_web_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: throttle_authenticated_web_period_in_seconds and throttle_authenticated_web_requests_per_period) Enable authenticated web request rate limit. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedWebEnabled">throttle_authenticated_web_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: throttle_authenticated_web_period_in_seconds and throttle_authenticated_web_requests_per_period) Enable authenticated web request rate limit. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedWebPeriodInSeconds">throttle_authenticated_web_period_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Rate limit period (in seconds). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedWebRequestsPerPeriod">throttle_authenticated_web_requests_per_period</a></code> | <code>typing.Union[int, float]</code> | Maximum requests per period per user. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedApiEnabled">throttle_unauthenticated_api_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: throttle_unauthenticated_api_period_in_seconds and throttle_unauthenticated_api_requests_per_period) Enable unauthenticated API request rate limit. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedApiEnabled">throttle_unauthenticated_api_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: throttle_unauthenticated_api_period_in_seconds and throttle_unauthenticated_api_requests_per_period) Enable unauthenticated API request rate limit. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedApiPeriodInSeconds">throttle_unauthenticated_api_period_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Rate limit period in seconds. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedApiRequestsPerPeriod">throttle_unauthenticated_api_requests_per_period</a></code> | <code>typing.Union[int, float]</code> | Max requests per period per IP. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedPackagesApiEnabled">throttle_unauthenticated_packages_api_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: throttle_unauthenticated_packages_api_period_in_seconds and throttle_unauthenticated_packages_api_requests_per_period) Enable authenticated API request rate limit. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedPackagesApiEnabled">throttle_unauthenticated_packages_api_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: throttle_unauthenticated_packages_api_period_in_seconds and throttle_unauthenticated_packages_api_requests_per_period) Enable authenticated API request rate limit. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedPackagesApiPeriodInSeconds">throttle_unauthenticated_packages_api_period_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Rate limit period (in seconds). View Package Registry rate limits for more details. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedPackagesApiRequestsPerPeriod">throttle_unauthenticated_packages_api_requests_per_period</a></code> | <code>typing.Union[int, float]</code> | Maximum requests per period per user. View Package Registry rate limits for more details. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedWebEnabled">throttle_unauthenticated_web_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: throttle_unauthenticated_web_period_in_seconds and throttle_unauthenticated_web_requests_per_period) Enable unauthenticated web request rate limit. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedWebEnabled">throttle_unauthenticated_web_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: throttle_unauthenticated_web_period_in_seconds and throttle_unauthenticated_web_requests_per_period) Enable unauthenticated web request rate limit. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedWebPeriodInSeconds">throttle_unauthenticated_web_period_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Rate limit period in seconds. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedWebRequestsPerPeriod">throttle_unauthenticated_web_requests_per_period</a></code> | <code>typing.Union[int, float]</code> | Max requests per period per IP. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.timeTrackingLimitToHours">time_tracking_limit_to_hours</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Limit display of time tracking units to hours. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.timeTrackingLimitToHours">time_tracking_limit_to_hours</a></code> | <code>bool \| cdktf.IResolvable</code> | Limit display of time tracking units to hours. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.twoFactorGracePeriod">two_factor_grace_period</a></code> | <code>typing.Union[int, float]</code> | Amount of time (in hours) that users are allowed to skip forced configuration of two-factor authentication. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.unconfirmedUsersDeleteAfterDays">unconfirmed_users_delete_after_days</a></code> | <code>typing.Union[int, float]</code> | Specifies how many days after sign-up to delete users who have not confirmed their email. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.uniqueIpsLimitEnabled">unique_ips_limit_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (If enabled, requires: unique_ips_limit_per_user and unique_ips_limit_time_window) Limit sign in from multiple IPs. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.uniqueIpsLimitEnabled">unique_ips_limit_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | (If enabled, requires: unique_ips_limit_per_user and unique_ips_limit_time_window) Limit sign in from multiple IPs. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.uniqueIpsLimitPerUser">unique_ips_limit_per_user</a></code> | <code>typing.Union[int, float]</code> | Maximum number of IPs per user. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.uniqueIpsLimitTimeWindow">unique_ips_limit_time_window</a></code> | <code>typing.Union[int, float]</code> | How many seconds an IP is counted towards the limit. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.updateRunnerVersionsEnabled">update_runner_versions_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Fetch GitLab Runner release version data from GitLab.com. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.usagePingEnabled">usage_ping_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Every week GitLab reports license usage back to GitLab, Inc. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.useClickhouseForAnalytics">use_clickhouse_for_analytics</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables ClickHouse as a data source for analytics reports. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userDeactivationEmailsEnabled">user_deactivation_emails_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Send an email to users upon account deactivation. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userDefaultExternal">user_default_external</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Newly registered users are external by default. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.updateRunnerVersionsEnabled">update_runner_versions_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Fetch GitLab Runner release version data from GitLab.com. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.usagePingEnabled">usage_ping_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Every week GitLab reports license usage back to GitLab, Inc. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.useClickhouseForAnalytics">use_clickhouse_for_analytics</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables ClickHouse as a data source for analytics reports. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userDeactivationEmailsEnabled">user_deactivation_emails_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Send an email to users upon account deactivation. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userDefaultExternal">user_default_external</a></code> | <code>bool \| cdktf.IResolvable</code> | Newly registered users are external by default. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userDefaultInternalRegex">user_default_internal_regex</a></code> | <code>str</code> | Specify an email address regex pattern to identify default internal users. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userDefaultsToPrivateProfile">user_defaults_to_private_profile</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Newly created users have private profile by default. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userOauthApplications">user_oauth_applications</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow users to register any application to use GitLab as an OAuth provider. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userShowAddSshKeyMessage">user_show_add_ssh_key_message</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When set to false disable the You won't be able to pull or push project code via SSH warning shown to users with no uploaded SSH key. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userDefaultsToPrivateProfile">user_defaults_to_private_profile</a></code> | <code>bool \| cdktf.IResolvable</code> | Newly created users have private profile by default. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userOauthApplications">user_oauth_applications</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow users to register any application to use GitLab as an OAuth provider. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userShowAddSshKeyMessage">user_show_add_ssh_key_message</a></code> | <code>bool \| cdktf.IResolvable</code> | When set to false disable the You won't be able to pull or push project code via SSH warning shown to users with no uploaded SSH key. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.validRunnerRegistrars">valid_runner_registrars</a></code> | <code>typing.List[str]</code> | List of types which are allowed to register a GitLab Runner. Can be [], ['group'], ['project'] or ['group', 'project']. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.versionCheckEnabled">version_check_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Let GitLab inform you when an update is available. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.webIdeClientsidePreviewEnabled">web_ide_clientside_preview_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Live Preview (allow live previews of JavaScript projects in the Web IDE using CodeSandbox Live Preview). |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.versionCheckEnabled">version_check_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Let GitLab inform you when an update is available. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.webIdeClientsidePreviewEnabled">web_ide_clientside_preview_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Live Preview (allow live previews of JavaScript projects in the Web IDE using CodeSandbox Live Preview). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.whatsNewVariant">whats_new_variant</a></code> | <code>str</code> | What's new variant, possible values: all_tiers, current_tier, and disabled. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.wikiPageMaxContentBytes">wiki_page_max_content_bytes</a></code> | <code>typing.Union[int, float]</code> | Maximum wiki page content size in bytes. The minimum value is 1024 bytes. |
 
@@ -14196,20 +14196,20 @@ applicationSettings.ApplicationSettingsConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -14256,10 +14256,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -14280,10 +14280,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `admin_mode`<sup>Optional</sup> <a name="admin_mode" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.adminMode"></a>
 
 ```python
-admin_mode: typing.Union[bool, IResolvable]
+admin_mode: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Require administrators to enable Admin Mode by re-authenticating for administrative tasks.
 
@@ -14336,10 +14336,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `akismet_enabled`<sup>Optional</sup> <a name="akismet_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.akismetEnabled"></a>
 
 ```python
-akismet_enabled: typing.Union[bool, IResolvable]
+akismet_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: akismet_api_key) Enable or disable Akismet spam protection.
 
@@ -14350,10 +14350,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `allow_account_deletion`<sup>Optional</sup> <a name="allow_account_deletion" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowAccountDeletion"></a>
 
 ```python
-allow_account_deletion: typing.Union[bool, IResolvable]
+allow_account_deletion: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to true to allow users to delete their accounts. Premium and Ultimate only.
 
@@ -14364,10 +14364,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `allow_group_owners_to_manage_ldap`<sup>Optional</sup> <a name="allow_group_owners_to_manage_ldap" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowGroupOwnersToManageLdap"></a>
 
 ```python
-allow_group_owners_to_manage_ldap: typing.Union[bool, IResolvable]
+allow_group_owners_to_manage_ldap: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to true to allow group owners to manage LDAP.
 
@@ -14378,10 +14378,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `allow_local_requests_from_system_hooks`<sup>Optional</sup> <a name="allow_local_requests_from_system_hooks" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowLocalRequestsFromSystemHooks"></a>
 
 ```python
-allow_local_requests_from_system_hooks: typing.Union[bool, IResolvable]
+allow_local_requests_from_system_hooks: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow requests to the local network from system hooks.
 
@@ -14392,10 +14392,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `allow_local_requests_from_web_hooks_and_services`<sup>Optional</sup> <a name="allow_local_requests_from_web_hooks_and_services" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowLocalRequestsFromWebHooksAndServices"></a>
 
 ```python
-allow_local_requests_from_web_hooks_and_services: typing.Union[bool, IResolvable]
+allow_local_requests_from_web_hooks_and_services: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow requests to the local network from web hooks and services.
 
@@ -14406,10 +14406,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `allow_project_creation_for_guest_and_below`<sup>Optional</sup> <a name="allow_project_creation_for_guest_and_below" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowProjectCreationForGuestAndBelow"></a>
 
 ```python
-allow_project_creation_for_guest_and_below: typing.Union[bool, IResolvable]
+allow_project_creation_for_guest_and_below: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether users assigned up to the Guest role can create groups and personal projects.
 
@@ -14420,10 +14420,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `allow_runner_registration_token`<sup>Optional</sup> <a name="allow_runner_registration_token" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowRunnerRegistrationToken"></a>
 
 ```python
-allow_runner_registration_token: typing.Union[bool, IResolvable]
+allow_runner_registration_token: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow using a registration token to create a runner.
 
@@ -14480,10 +14480,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `asset_proxy_enabled`<sup>Optional</sup> <a name="asset_proxy_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.assetProxyEnabled"></a>
 
 ```python
-asset_proxy_enabled: typing.Union[bool, IResolvable]
+asset_proxy_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: asset_proxy_url) Enable proxying of assets. GitLab restart is required to apply changes.
 
@@ -14522,10 +14522,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `authorized_keys_enabled`<sup>Optional</sup> <a name="authorized_keys_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.authorizedKeysEnabled"></a>
 
 ```python
-authorized_keys_enabled: typing.Union[bool, IResolvable]
+authorized_keys_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 By default, we write to the authorized_keys file to support Git over SSH without additional configuration.
 
@@ -14538,10 +14538,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `auto_ban_user_on_excessive_projects_download`<sup>Optional</sup> <a name="auto_ban_user_on_excessive_projects_download" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.autoBanUserOnExcessiveProjectsDownload"></a>
 
 ```python
-auto_ban_user_on_excessive_projects_download: typing.Union[bool, IResolvable]
+auto_ban_user_on_excessive_projects_download: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When enabled, users will get automatically banned from the application when they download more than the maximum number of unique projects in the time period specified by max_number_of_repository_downloads and max_number_of_repository_downloads_within_time_period respectively.
 
@@ -14568,10 +14568,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `auto_devops_enabled`<sup>Optional</sup> <a name="auto_devops_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.autoDevopsEnabled"></a>
 
 ```python
-auto_devops_enabled: typing.Union[bool, IResolvable]
+auto_devops_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable Auto DevOps for projects by default.
 
@@ -14584,10 +14584,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `automatic_purchased_storage_allocation`<sup>Optional</sup> <a name="automatic_purchased_storage_allocation" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.automaticPurchasedStorageAllocation"></a>
 
 ```python
-automatic_purchased_storage_allocation: typing.Union[bool, IResolvable]
+automatic_purchased_storage_allocation: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enabling this permits automatic allocation of purchased storage in a namespace.
 
@@ -14612,10 +14612,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `bulk_import_enabled`<sup>Optional</sup> <a name="bulk_import_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.bulkImportEnabled"></a>
 
 ```python
-bulk_import_enabled: typing.Union[bool, IResolvable]
+bulk_import_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable migrating GitLab groups by direct transfer.
 
@@ -14640,10 +14640,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `can_create_group`<sup>Optional</sup> <a name="can_create_group" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.canCreateGroup"></a>
 
 ```python
-can_create_group: typing.Union[bool, IResolvable]
+can_create_group: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether users can create top-level groups.
 
@@ -14654,10 +14654,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `check_namespace_plan`<sup>Optional</sup> <a name="check_namespace_plan" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.checkNamespacePlan"></a>
 
 ```python
-check_namespace_plan: typing.Union[bool, IResolvable]
+check_namespace_plan: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enabling this makes only licensed EE features available to projects if the project namespace’s plan includes the feature or if the project is public.
 
@@ -14752,10 +14752,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `container_expiration_policies_enable_historic_entries`<sup>Optional</sup> <a name="container_expiration_policies_enable_historic_entries" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.containerExpirationPoliciesEnableHistoricEntries"></a>
 
 ```python
-container_expiration_policies_enable_historic_entries: typing.Union[bool, IResolvable]
+container_expiration_policies_enable_historic_entries: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable cleanup policies for all projects.
 
@@ -14794,10 +14794,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `container_registry_expiration_policies_caching`<sup>Optional</sup> <a name="container_registry_expiration_policies_caching" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.containerRegistryExpirationPoliciesCaching"></a>
 
 ```python
-container_registry_expiration_policies_caching: typing.Union[bool, IResolvable]
+container_registry_expiration_policies_caching: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Caching during the execution of cleanup policies.
 
@@ -14836,10 +14836,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `deactivate_dormant_users`<sup>Optional</sup> <a name="deactivate_dormant_users" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.deactivateDormantUsers"></a>
 
 ```python
-deactivate_dormant_users: typing.Union[bool, IResolvable]
+deactivate_dormant_users: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable automatic deactivation of dormant users.
 
@@ -15048,10 +15048,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `delete_inactive_projects`<sup>Optional</sup> <a name="delete_inactive_projects" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.deleteInactiveProjects"></a>
 
 ```python
-delete_inactive_projects: typing.Union[bool, IResolvable]
+delete_inactive_projects: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable inactive project deletion feature.
 
@@ -15062,10 +15062,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `delete_unconfirmed_users`<sup>Optional</sup> <a name="delete_unconfirmed_users" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.deleteUnconfirmedUsers"></a>
 
 ```python
-delete_unconfirmed_users: typing.Union[bool, IResolvable]
+delete_unconfirmed_users: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether users who have not confirmed their email should be deleted.
 
@@ -15094,10 +15094,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `diagramsnet_enabled`<sup>Optional</sup> <a name="diagramsnet_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.diagramsnetEnabled"></a>
 
 ```python
-diagramsnet_enabled: typing.Union[bool, IResolvable]
+diagramsnet_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires diagramsnet_url) Enable Diagrams.net integration.
 
@@ -15164,10 +15164,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `disable_admin_oauth_scopes`<sup>Optional</sup> <a name="disable_admin_oauth_scopes" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.disableAdminOauthScopes"></a>
 
 ```python
-disable_admin_oauth_scopes: typing.Union[bool, IResolvable]
+disable_admin_oauth_scopes: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Stops administrators from connecting their GitLab accounts to non-trusted OAuth 2.0 applications that have the api, read_api, read_repository, write_repository, read_registry, write_registry, or sudo scopes.
 
@@ -15192,10 +15192,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `disable_feed_token`<sup>Optional</sup> <a name="disable_feed_token" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.disableFeedToken"></a>
 
 ```python
-disable_feed_token: typing.Union[bool, IResolvable]
+disable_feed_token: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Disable display of RSS/Atom and calendar feed tokens.
 
@@ -15206,10 +15206,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `disable_personal_access_tokens`<sup>Optional</sup> <a name="disable_personal_access_tokens" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.disablePersonalAccessTokens"></a>
 
 ```python
-disable_personal_access_tokens: typing.Union[bool, IResolvable]
+disable_personal_access_tokens: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Disable personal access tokens.
 
@@ -15222,10 +15222,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `dns_rebinding_protection_enabled`<sup>Optional</sup> <a name="dns_rebinding_protection_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.dnsRebindingProtectionEnabled"></a>
 
 ```python
-dns_rebinding_protection_enabled: typing.Union[bool, IResolvable]
+dns_rebinding_protection_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enforce DNS rebinding attack protection.
 
@@ -15266,10 +15266,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `domain_denylist_enabled`<sup>Optional</sup> <a name="domain_denylist_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.domainDenylistEnabled"></a>
 
 ```python
-domain_denylist_enabled: typing.Union[bool, IResolvable]
+domain_denylist_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: domain_denylist) Allows blocking sign-ups from emails from specific domains.
 
@@ -15308,10 +15308,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `duo_features_enabled`<sup>Optional</sup> <a name="duo_features_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.duoFeaturesEnabled"></a>
 
 ```python
-duo_features_enabled: typing.Union[bool, IResolvable]
+duo_features_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether GitLab Duo features are enabled for this instance. Self-managed, Premium and Ultimate only.
 
@@ -15414,10 +15414,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `eks_integration_enabled`<sup>Optional</sup> <a name="eks_integration_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.eksIntegrationEnabled"></a>
 
 ```python
-eks_integration_enabled: typing.Union[bool, IResolvable]
+eks_integration_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable integration with Amazon EKS.
 
@@ -15442,10 +15442,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `elasticsearch_aws`<sup>Optional</sup> <a name="elasticsearch_aws" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchAws"></a>
 
 ```python
-elasticsearch_aws: typing.Union[bool, IResolvable]
+elasticsearch_aws: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable the use of AWS hosted Elasticsearch.
 
@@ -15528,10 +15528,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `elasticsearch_indexing`<sup>Optional</sup> <a name="elasticsearch_indexing" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchIndexing"></a>
 
 ```python
-elasticsearch_indexing: typing.Union[bool, IResolvable]
+elasticsearch_indexing: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable Elasticsearch indexing.
 
@@ -15542,10 +15542,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `elasticsearch_limit_indexing`<sup>Optional</sup> <a name="elasticsearch_limit_indexing" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchLimitIndexing"></a>
 
 ```python
-elasticsearch_limit_indexing: typing.Union[bool, IResolvable]
+elasticsearch_limit_indexing: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Limit Elasticsearch to index certain namespaces and projects.
 
@@ -15640,10 +15640,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `elasticsearch_requeue_workers`<sup>Optional</sup> <a name="elasticsearch_requeue_workers" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchRequeueWorkers"></a>
 
 ```python
-elasticsearch_requeue_workers: typing.Union[bool, IResolvable]
+elasticsearch_requeue_workers: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable automatic requeuing of indexing workers.
 
@@ -15656,10 +15656,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `elasticsearch_search`<sup>Optional</sup> <a name="elasticsearch_search" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchSearch"></a>
 
 ```python
-elasticsearch_search: typing.Union[bool, IResolvable]
+elasticsearch_search: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable Elasticsearch search.
 
@@ -15728,10 +15728,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `email_author_in_body`<sup>Optional</sup> <a name="email_author_in_body" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.emailAuthorInBody"></a>
 
 ```python
-email_author_in_body: typing.Union[bool, IResolvable]
+email_author_in_body: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Some email servers do not support overriding the email sender name.
 
@@ -15758,10 +15758,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `enable_artifact_external_redirect_warning_page`<sup>Optional</sup> <a name="enable_artifact_external_redirect_warning_page" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.enableArtifactExternalRedirectWarningPage"></a>
 
 ```python
-enable_artifact_external_redirect_warning_page: typing.Union[bool, IResolvable]
+enable_artifact_external_redirect_warning_page: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Show the external redirect page that warns you about user-generated content in GitLab Pages.
 
@@ -15786,10 +15786,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `enforce_namespace_storage_limit`<sup>Optional</sup> <a name="enforce_namespace_storage_limit" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.enforceNamespaceStorageLimit"></a>
 
 ```python
-enforce_namespace_storage_limit: typing.Union[bool, IResolvable]
+enforce_namespace_storage_limit: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enabling this permits enforcement of namespace storage limits.
 
@@ -15800,10 +15800,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `enforce_terms`<sup>Optional</sup> <a name="enforce_terms" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.enforceTerms"></a>
 
 ```python
-enforce_terms: typing.Union[bool, IResolvable]
+enforce_terms: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: terms) Enforce application ToS to all users.
 
@@ -15870,10 +15870,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `external_authorization_service_enabled`<sup>Optional</sup> <a name="external_authorization_service_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.externalAuthorizationServiceEnabled"></a>
 
 ```python
-external_authorization_service_enabled: typing.Union[bool, IResolvable]
+external_authorization_service_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: external_authorization_service_default_label, external_authorization_service_timeout and external_authorization_service_url) Enable using an external authorization service for accessing projects.
 
@@ -16090,10 +16090,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `gitpod_enabled`<sup>Optional</sup> <a name="gitpod_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.gitpodEnabled"></a>
 
 ```python
-gitpod_enabled: typing.Union[bool, IResolvable]
+gitpod_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable Gitpod integration.
 
@@ -16176,10 +16176,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `grafana_enabled`<sup>Optional</sup> <a name="grafana_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.grafanaEnabled"></a>
 
 ```python
-grafana_enabled: typing.Union[bool, IResolvable]
+grafana_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable Grafana.
 
@@ -16204,10 +16204,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `gravatar_enabled`<sup>Optional</sup> <a name="gravatar_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.gravatarEnabled"></a>
 
 ```python
-gravatar_enabled: typing.Union[bool, IResolvable]
+gravatar_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable Gravatar.
 
@@ -16218,10 +16218,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `group_owners_can_manage_default_branch_protection`<sup>Optional</sup> <a name="group_owners_can_manage_default_branch_protection" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.groupOwnersCanManageDefaultBranchProtection"></a>
 
 ```python
-group_owners_can_manage_default_branch_protection: typing.Union[bool, IResolvable]
+group_owners_can_manage_default_branch_protection: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Prevent overrides of default branch protection.
 
@@ -16232,10 +16232,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `help_page_hide_commercial_content`<sup>Optional</sup> <a name="help_page_hide_commercial_content" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.helpPageHideCommercialContent"></a>
 
 ```python
-help_page_hide_commercial_content: typing.Union[bool, IResolvable]
+help_page_hide_commercial_content: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Hide marketing-related entries from help.
 
@@ -16288,10 +16288,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `hide_third_party_offers`<sup>Optional</sup> <a name="hide_third_party_offers" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.hideThirdPartyOffers"></a>
 
 ```python
-hide_third_party_offers: typing.Union[bool, IResolvable]
+hide_third_party_offers: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Do not display offers from third parties in GitLab.
 
@@ -16316,10 +16316,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `housekeeping_enabled`<sup>Optional</sup> <a name="housekeeping_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.housekeepingEnabled"></a>
 
 ```python
-housekeeping_enabled: typing.Union[bool, IResolvable]
+housekeeping_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable or disable Git housekeeping. If enabled, requires housekeeping_optimize_repository_period.
 
@@ -16344,10 +16344,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `html_emails_enabled`<sup>Optional</sup> <a name="html_emails_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.htmlEmailsEnabled"></a>
 
 ```python
-html_emails_enabled: typing.Union[bool, IResolvable]
+html_emails_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable HTML emails.
 
@@ -16429,10 +16429,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `include_optional_metrics_in_service_ping`<sup>Optional</sup> <a name="include_optional_metrics_in_service_ping" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.includeOptionalMetricsInServicePing"></a>
 
 ```python
-include_optional_metrics_in_service_ping: typing.Union[bool, IResolvable]
+include_optional_metrics_in_service_ping: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not optional metrics are enabled in Service Ping.
 
@@ -16443,10 +16443,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `in_product_marketing_emails_enabled`<sup>Optional</sup> <a name="in_product_marketing_emails_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.inProductMarketingEmailsEnabled"></a>
 
 ```python
-in_product_marketing_emails_enabled: typing.Union[bool, IResolvable]
+in_product_marketing_emails_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable in-product marketing emails.
 
@@ -16457,10 +16457,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `invisible_captcha_enabled`<sup>Optional</sup> <a name="invisible_captcha_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.invisibleCaptchaEnabled"></a>
 
 ```python
-invisible_captcha_enabled: typing.Union[bool, IResolvable]
+invisible_captcha_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable Invisible CAPTCHA spam detection during sign-up.
 
@@ -16513,10 +16513,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `jira_connect_public_key_storage_enabled`<sup>Optional</sup> <a name="jira_connect_public_key_storage_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.jiraConnectPublicKeyStorageEnabled"></a>
 
 ```python
-jira_connect_public_key_storage_enabled: typing.Union[bool, IResolvable]
+jira_connect_public_key_storage_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable public key storage for the GitLab for Jira Cloud app.
 
@@ -16527,10 +16527,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `keep_latest_artifact`<sup>Optional</sup> <a name="keep_latest_artifact" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.keepLatestArtifact"></a>
 
 ```python
-keep_latest_artifact: typing.Union[bool, IResolvable]
+keep_latest_artifact: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Prevent the deletion of the artifacts from the most recent successful jobs, regardless of the expiry time.
 
@@ -16555,10 +16555,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `lock_duo_features_enabled`<sup>Optional</sup> <a name="lock_duo_features_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.lockDuoFeaturesEnabled"></a>
 
 ```python
-lock_duo_features_enabled: typing.Union[bool, IResolvable]
+lock_duo_features_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether the GitLab Duo features enabled setting is enforced for all subgroups. Self-managed, Premium and Ultimate only.
 
@@ -16569,10 +16569,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `lock_memberships_to_ldap`<sup>Optional</sup> <a name="lock_memberships_to_ldap" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.lockMembershipsToLdap"></a>
 
 ```python
-lock_memberships_to_ldap: typing.Union[bool, IResolvable]
+lock_memberships_to_ldap: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to true to lock all memberships to LDAP. Premium and Ultimate only.
 
@@ -16583,10 +16583,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `mailgun_events_enabled`<sup>Optional</sup> <a name="mailgun_events_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.mailgunEventsEnabled"></a>
 
 ```python
-mailgun_events_enabled: typing.Union[bool, IResolvable]
+mailgun_events_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable Mailgun event receiver.
 
@@ -16611,10 +16611,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `maintenance_mode`<sup>Optional</sup> <a name="maintenance_mode" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.maintenanceMode"></a>
 
 ```python
-maintenance_mode: typing.Union[bool, IResolvable]
+maintenance_mode: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When instance is in maintenance mode, non-administrative users can sign in with read-only access and make read-only API requests.
 
@@ -16639,10 +16639,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `maven_package_requests_forwarding`<sup>Optional</sup> <a name="maven_package_requests_forwarding" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.mavenPackageRequestsForwarding"></a>
 
 ```python
-maven_package_requests_forwarding: typing.Union[bool, IResolvable]
+maven_package_requests_forwarding: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Use repo.maven.apache.org as a default remote repository when the package is not found in the GitLab Package Registry for Maven. Premium and Ultimate only.
 
@@ -16865,10 +16865,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `mirror_available`<sup>Optional</sup> <a name="mirror_available" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.mirrorAvailable"></a>
 
 ```python
-mirror_available: typing.Union[bool, IResolvable]
+mirror_available: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow repository mirroring to configured by project Maintainers. If disabled, only Administrators can configure repository mirroring.
 
@@ -16921,10 +16921,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `npm_package_requests_forwarding`<sup>Optional</sup> <a name="npm_package_requests_forwarding" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.npmPackageRequestsForwarding"></a>
 
 ```python
-npm_package_requests_forwarding: typing.Union[bool, IResolvable]
+npm_package_requests_forwarding: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Use npmjs.org as a default remote repository when the package is not found in the GitLab Package Registry for npm.
 
@@ -16935,10 +16935,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `nuget_skip_metadata_url_validation`<sup>Optional</sup> <a name="nuget_skip_metadata_url_validation" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.nugetSkipMetadataUrlValidation"></a>
 
 ```python
-nuget_skip_metadata_url_validation: typing.Union[bool, IResolvable]
+nuget_skip_metadata_url_validation: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether to skip metadata URL validation for the NuGet package.
 
@@ -16977,10 +16977,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `package_registry_allow_anyone_to_pull_option`<sup>Optional</sup> <a name="package_registry_allow_anyone_to_pull_option" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.packageRegistryAllowAnyoneToPullOption"></a>
 
 ```python
-package_registry_allow_anyone_to_pull_option: typing.Union[bool, IResolvable]
+package_registry_allow_anyone_to_pull_option: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable to allow anyone to pull from Package Registry visible and changeable.
 
@@ -17005,10 +17005,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `pages_domain_verification_enabled`<sup>Optional</sup> <a name="pages_domain_verification_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.pagesDomainVerificationEnabled"></a>
 
 ```python
-pages_domain_verification_enabled: typing.Union[bool, IResolvable]
+pages_domain_verification_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Require users to prove ownership of custom domains.
 
@@ -17021,10 +17021,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `password_authentication_enabled_for_git`<sup>Optional</sup> <a name="password_authentication_enabled_for_git" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordAuthenticationEnabledForGit"></a>
 
 ```python
-password_authentication_enabled_for_git: typing.Union[bool, IResolvable]
+password_authentication_enabled_for_git: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable authentication for Git over HTTP(S) via a GitLab account password.
 
@@ -17035,10 +17035,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `password_authentication_enabled_for_web`<sup>Optional</sup> <a name="password_authentication_enabled_for_web" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordAuthenticationEnabledForWeb"></a>
 
 ```python
-password_authentication_enabled_for_web: typing.Union[bool, IResolvable]
+password_authentication_enabled_for_web: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable authentication for the web interface via a GitLab account password.
 
@@ -17049,10 +17049,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `password_lowercase_required`<sup>Optional</sup> <a name="password_lowercase_required" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordLowercaseRequired"></a>
 
 ```python
-password_lowercase_required: typing.Union[bool, IResolvable]
+password_lowercase_required: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether passwords require at least one lowercase letter.
 
@@ -17063,10 +17063,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `password_number_required`<sup>Optional</sup> <a name="password_number_required" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordNumberRequired"></a>
 
 ```python
-password_number_required: typing.Union[bool, IResolvable]
+password_number_required: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether passwords require at least one number.
 
@@ -17077,10 +17077,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `password_symbol_required`<sup>Optional</sup> <a name="password_symbol_required" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordSymbolRequired"></a>
 
 ```python
-password_symbol_required: typing.Union[bool, IResolvable]
+password_symbol_required: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether passwords require at least one symbol character.
 
@@ -17091,10 +17091,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `password_uppercase_required`<sup>Optional</sup> <a name="password_uppercase_required" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordUppercaseRequired"></a>
 
 ```python
-password_uppercase_required: typing.Union[bool, IResolvable]
+password_uppercase_required: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether passwords require at least one uppercase letter.
 
@@ -17147,10 +17147,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `plantuml_enabled`<sup>Optional</sup> <a name="plantuml_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.plantumlEnabled"></a>
 
 ```python
-plantuml_enabled: typing.Union[bool, IResolvable]
+plantuml_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: plantuml_url) Enable PlantUML integration.
 
@@ -17189,10 +17189,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `project_export_enabled`<sup>Optional</sup> <a name="project_export_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.projectExportEnabled"></a>
 
 ```python
-project_export_enabled: typing.Union[bool, IResolvable]
+project_export_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable project export.
 
@@ -17233,10 +17233,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `prometheus_metrics_enabled`<sup>Optional</sup> <a name="prometheus_metrics_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.prometheusMetricsEnabled"></a>
 
 ```python
-prometheus_metrics_enabled: typing.Union[bool, IResolvable]
+prometheus_metrics_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable Prometheus metrics.
 
@@ -17247,10 +17247,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `protected_ci_variables`<sup>Optional</sup> <a name="protected_ci_variables" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.protectedCiVariables"></a>
 
 ```python
-protected_ci_variables: typing.Union[bool, IResolvable]
+protected_ci_variables: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 CI/CD variables are protected by default.
 
@@ -17293,10 +17293,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `pypi_package_requests_forwarding`<sup>Optional</sup> <a name="pypi_package_requests_forwarding" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.pypiPackageRequestsForwarding"></a>
 
 ```python
-pypi_package_requests_forwarding: typing.Union[bool, IResolvable]
+pypi_package_requests_forwarding: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Use pypi.org as a default remote repository when the package is not found in the GitLab Package Registry for PyPI.
 
@@ -17337,10 +17337,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `recaptcha_enabled`<sup>Optional</sup> <a name="recaptcha_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.recaptchaEnabled"></a>
 
 ```python
-recaptcha_enabled: typing.Union[bool, IResolvable]
+recaptcha_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: recaptcha_private_key and recaptcha_site_key) Enable reCAPTCHA.
 
@@ -17393,10 +17393,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `receptive_cluster_agents_enabled`<sup>Optional</sup> <a name="receptive_cluster_agents_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.receptiveClusterAgentsEnabled"></a>
 
 ```python
-receptive_cluster_agents_enabled: typing.Union[bool, IResolvable]
+receptive_cluster_agents_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable receptive mode for GitLab Agents for Kubernetes.
 
@@ -17407,10 +17407,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `remember_me_enabled`<sup>Optional</sup> <a name="remember_me_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.rememberMeEnabled"></a>
 
 ```python
-remember_me_enabled: typing.Union[bool, IResolvable]
+remember_me_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable Remember me setting.
 
@@ -17421,10 +17421,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `repository_checks_enabled`<sup>Optional</sup> <a name="repository_checks_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.repositoryChecksEnabled"></a>
 
 ```python
-repository_checks_enabled: typing.Union[bool, IResolvable]
+repository_checks_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 GitLab periodically runs git fsck in all project and wiki repositories to look for silent disk corruption issues.
 
@@ -17463,10 +17463,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `require_admin_approval_after_user_signup`<sup>Optional</sup> <a name="require_admin_approval_after_user_signup" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.requireAdminApprovalAfterUserSignup"></a>
 
 ```python
-require_admin_approval_after_user_signup: typing.Union[bool, IResolvable]
+require_admin_approval_after_user_signup: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When enabled, any user that signs up for an account using the registration form is placed under a Pending approval state and has to be explicitly approved by an administrator.
 
@@ -17477,10 +17477,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `require_admin_two_factor_authentication`<sup>Optional</sup> <a name="require_admin_two_factor_authentication" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.requireAdminTwoFactorAuthentication"></a>
 
 ```python
-require_admin_two_factor_authentication: typing.Union[bool, IResolvable]
+require_admin_two_factor_authentication: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow administrators to require 2FA for all administrators on the instance.
 
@@ -17491,10 +17491,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `require_personal_access_token_expiry`<sup>Optional</sup> <a name="require_personal_access_token_expiry" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.requirePersonalAccessTokenExpiry"></a>
 
 ```python
-require_personal_access_token_expiry: typing.Union[bool, IResolvable]
+require_personal_access_token_expiry: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When enabled, users must set an expiration date when creating a group or project access token, or a personal access token owned by a non-service account.
 
@@ -17505,10 +17505,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `require_two_factor_authentication`<sup>Optional</sup> <a name="require_two_factor_authentication" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.requireTwoFactorAuthentication"></a>
 
 ```python
-require_two_factor_authentication: typing.Union[bool, IResolvable]
+require_two_factor_authentication: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: two_factor_grace_period) Require all users to set up Two-factor authentication.
 
@@ -17591,10 +17591,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `security_policy_global_group_approvers_enabled`<sup>Optional</sup> <a name="security_policy_global_group_approvers_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.securityPolicyGlobalGroupApproversEnabled"></a>
 
 ```python
-security_policy_global_group_approvers_enabled: typing.Union[bool, IResolvable]
+security_policy_global_group_approvers_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to look up merge request approval policy approval groups globally or within project hierarchies.
 
@@ -17619,10 +17619,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `send_user_confirmation_email`<sup>Optional</sup> <a name="send_user_confirmation_email" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sendUserConfirmationEmail"></a>
 
 ```python
-send_user_confirmation_email: typing.Union[bool, IResolvable]
+send_user_confirmation_email: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Send confirmation email on sign-up.
 
@@ -17633,10 +17633,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `service_access_tokens_expiration_enforced`<sup>Optional</sup> <a name="service_access_tokens_expiration_enforced" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.serviceAccessTokensExpirationEnforced"></a>
 
 ```python
-service_access_tokens_expiration_enforced: typing.Union[bool, IResolvable]
+service_access_tokens_expiration_enforced: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Flag to indicate if token expiry date can be optional for service account users.
 
@@ -17661,10 +17661,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `shared_runners_enabled`<sup>Optional</sup> <a name="shared_runners_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sharedRunnersEnabled"></a>
 
 ```python
-shared_runners_enabled: typing.Union[bool, IResolvable]
+shared_runners_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: shared_runners_text and shared_runners_minutes) Enable shared runners for new projects.
 
@@ -17759,10 +17759,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `signup_enabled`<sup>Optional</sup> <a name="signup_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.signupEnabled"></a>
 
 ```python
-signup_enabled: typing.Union[bool, IResolvable]
+signup_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable registration.
 
@@ -17773,10 +17773,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `silent_admin_exports_enabled`<sup>Optional</sup> <a name="silent_admin_exports_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.silentAdminExportsEnabled"></a>
 
 ```python
-silent_admin_exports_enabled: typing.Union[bool, IResolvable]
+silent_admin_exports_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable Silent admin exports.
 
@@ -17787,10 +17787,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `silent_mode_enabled`<sup>Optional</sup> <a name="silent_mode_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.silentModeEnabled"></a>
 
 ```python
-silent_mode_enabled: typing.Union[bool, IResolvable]
+silent_mode_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable Silent mode.
 
@@ -17801,10 +17801,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `slack_app_enabled`<sup>Optional</sup> <a name="slack_app_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.slackAppEnabled"></a>
 
 ```python
-slack_app_enabled: typing.Union[bool, IResolvable]
+slack_app_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: slack_app_id, slack_app_secret and slack_app_secret) Enable Slack app.
 
@@ -17941,10 +17941,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `snowplow_enabled`<sup>Optional</sup> <a name="snowplow_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.snowplowEnabled"></a>
 
 ```python
-snowplow_enabled: typing.Union[bool, IResolvable]
+snowplow_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable snowplow tracking.
 
@@ -17955,10 +17955,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `sourcegraph_enabled`<sup>Optional</sup> <a name="sourcegraph_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sourcegraphEnabled"></a>
 
 ```python
-sourcegraph_enabled: typing.Union[bool, IResolvable]
+sourcegraph_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enables Sourcegraph integration. If enabled, requires sourcegraph_url.
 
@@ -17969,10 +17969,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `sourcegraph_public_only`<sup>Optional</sup> <a name="sourcegraph_public_only" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sourcegraphPublicOnly"></a>
 
 ```python
-sourcegraph_public_only: typing.Union[bool, IResolvable]
+sourcegraph_public_only: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Blocks Sourcegraph from being loaded on private and internal projects.
 
@@ -18011,10 +18011,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `spam_check_endpoint_enabled`<sup>Optional</sup> <a name="spam_check_endpoint_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.spamCheckEndpointEnabled"></a>
 
 ```python
-spam_check_endpoint_enabled: typing.Union[bool, IResolvable]
+spam_check_endpoint_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enables spam checking using external Spam Check API endpoint.
 
@@ -18069,10 +18069,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `suggest_pipeline_enabled`<sup>Optional</sup> <a name="suggest_pipeline_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.suggestPipelineEnabled"></a>
 
 ```python
-suggest_pipeline_enabled: typing.Union[bool, IResolvable]
+suggest_pipeline_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable pipeline suggestion banner.
 
@@ -18111,10 +18111,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `throttle_authenticated_api_enabled`<sup>Optional</sup> <a name="throttle_authenticated_api_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedApiEnabled"></a>
 
 ```python
-throttle_authenticated_api_enabled: typing.Union[bool, IResolvable]
+throttle_authenticated_api_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: throttle_authenticated_api_period_in_seconds and throttle_authenticated_api_requests_per_period) Enable authenticated API request rate limit.
 
@@ -18155,10 +18155,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `throttle_authenticated_packages_api_enabled`<sup>Optional</sup> <a name="throttle_authenticated_packages_api_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedPackagesApiEnabled"></a>
 
 ```python
-throttle_authenticated_packages_api_enabled: typing.Union[bool, IResolvable]
+throttle_authenticated_packages_api_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: throttle_authenticated_packages_api_period_in_seconds and throttle_authenticated_packages_api_requests_per_period) Enable authenticated API request rate limit.
 
@@ -18199,10 +18199,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `throttle_authenticated_web_enabled`<sup>Optional</sup> <a name="throttle_authenticated_web_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedWebEnabled"></a>
 
 ```python
-throttle_authenticated_web_enabled: typing.Union[bool, IResolvable]
+throttle_authenticated_web_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: throttle_authenticated_web_period_in_seconds and throttle_authenticated_web_requests_per_period) Enable authenticated web request rate limit.
 
@@ -18243,10 +18243,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `throttle_unauthenticated_api_enabled`<sup>Optional</sup> <a name="throttle_unauthenticated_api_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedApiEnabled"></a>
 
 ```python
-throttle_unauthenticated_api_enabled: typing.Union[bool, IResolvable]
+throttle_unauthenticated_api_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: throttle_unauthenticated_api_period_in_seconds and throttle_unauthenticated_api_requests_per_period) Enable unauthenticated API request rate limit.
 
@@ -18287,10 +18287,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `throttle_unauthenticated_packages_api_enabled`<sup>Optional</sup> <a name="throttle_unauthenticated_packages_api_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedPackagesApiEnabled"></a>
 
 ```python
-throttle_unauthenticated_packages_api_enabled: typing.Union[bool, IResolvable]
+throttle_unauthenticated_packages_api_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: throttle_unauthenticated_packages_api_period_in_seconds and throttle_unauthenticated_packages_api_requests_per_period) Enable authenticated API request rate limit.
 
@@ -18331,10 +18331,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `throttle_unauthenticated_web_enabled`<sup>Optional</sup> <a name="throttle_unauthenticated_web_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedWebEnabled"></a>
 
 ```python
-throttle_unauthenticated_web_enabled: typing.Union[bool, IResolvable]
+throttle_unauthenticated_web_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: throttle_unauthenticated_web_period_in_seconds and throttle_unauthenticated_web_requests_per_period) Enable unauthenticated web request rate limit.
 
@@ -18375,10 +18375,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `time_tracking_limit_to_hours`<sup>Optional</sup> <a name="time_tracking_limit_to_hours" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.timeTrackingLimitToHours"></a>
 
 ```python
-time_tracking_limit_to_hours: typing.Union[bool, IResolvable]
+time_tracking_limit_to_hours: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Limit display of time tracking units to hours.
 
@@ -18419,10 +18419,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `unique_ips_limit_enabled`<sup>Optional</sup> <a name="unique_ips_limit_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.uniqueIpsLimitEnabled"></a>
 
 ```python
-unique_ips_limit_enabled: typing.Union[bool, IResolvable]
+unique_ips_limit_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 (If enabled, requires: unique_ips_limit_per_user and unique_ips_limit_time_window) Limit sign in from multiple IPs.
 
@@ -18461,10 +18461,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `update_runner_versions_enabled`<sup>Optional</sup> <a name="update_runner_versions_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.updateRunnerVersionsEnabled"></a>
 
 ```python
-update_runner_versions_enabled: typing.Union[bool, IResolvable]
+update_runner_versions_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Fetch GitLab Runner release version data from GitLab.com.
 
@@ -18475,10 +18475,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `usage_ping_enabled`<sup>Optional</sup> <a name="usage_ping_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.usagePingEnabled"></a>
 
 ```python
-usage_ping_enabled: typing.Union[bool, IResolvable]
+usage_ping_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Every week GitLab reports license usage back to GitLab, Inc.
 
@@ -18489,10 +18489,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `use_clickhouse_for_analytics`<sup>Optional</sup> <a name="use_clickhouse_for_analytics" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.useClickhouseForAnalytics"></a>
 
 ```python
-use_clickhouse_for_analytics: typing.Union[bool, IResolvable]
+use_clickhouse_for_analytics: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enables ClickHouse as a data source for analytics reports.
 
@@ -18505,10 +18505,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `user_deactivation_emails_enabled`<sup>Optional</sup> <a name="user_deactivation_emails_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userDeactivationEmailsEnabled"></a>
 
 ```python
-user_deactivation_emails_enabled: typing.Union[bool, IResolvable]
+user_deactivation_emails_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Send an email to users upon account deactivation.
 
@@ -18519,10 +18519,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `user_default_external`<sup>Optional</sup> <a name="user_default_external" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userDefaultExternal"></a>
 
 ```python
-user_default_external: typing.Union[bool, IResolvable]
+user_default_external: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Newly registered users are external by default.
 
@@ -18547,10 +18547,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `user_defaults_to_private_profile`<sup>Optional</sup> <a name="user_defaults_to_private_profile" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userDefaultsToPrivateProfile"></a>
 
 ```python
-user_defaults_to_private_profile: typing.Union[bool, IResolvable]
+user_defaults_to_private_profile: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Newly created users have private profile by default.
 
@@ -18561,10 +18561,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `user_oauth_applications`<sup>Optional</sup> <a name="user_oauth_applications" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userOauthApplications"></a>
 
 ```python
-user_oauth_applications: typing.Union[bool, IResolvable]
+user_oauth_applications: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow users to register any application to use GitLab as an OAuth provider.
 
@@ -18575,10 +18575,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `user_show_add_ssh_key_message`<sup>Optional</sup> <a name="user_show_add_ssh_key_message" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userShowAddSshKeyMessage"></a>
 
 ```python
-user_show_add_ssh_key_message: typing.Union[bool, IResolvable]
+user_show_add_ssh_key_message: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When set to false disable the You won't be able to pull or push project code via SSH warning shown to users with no uploaded SSH key.
 
@@ -18603,10 +18603,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `version_check_enabled`<sup>Optional</sup> <a name="version_check_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.versionCheckEnabled"></a>
 
 ```python
-version_check_enabled: typing.Union[bool, IResolvable]
+version_check_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Let GitLab inform you when an update is available.
 
@@ -18617,10 +18617,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `web_ide_clientside_preview_enabled`<sup>Optional</sup> <a name="web_ide_clientside_preview_enabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.webIdeClientsidePreviewEnabled"></a>
 
 ```python
-web_ide_clientside_preview_enabled: typing.Union[bool, IResolvable]
+web_ide_clientside_preview_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Live Preview (allow live previews of JavaScript projects in the Web IDE using CodeSandbox Live Preview).
 
@@ -18666,8 +18666,8 @@ from cdktf_cdktf_provider_gitlab import application_settings
 applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults(
   allowed_to_merge: typing.List[typing.Union[int, float]] = None,
   allowed_to_push: typing.List[typing.Union[int, float]] = None,
-  allow_force_push: typing.Union[bool, IResolvable] = None,
-  developer_can_initial_push: typing.Union[bool, IResolvable] = None
+  allow_force_push: bool | IResolvable = None,
+  developer_can_initial_push: bool | IResolvable = None
 )
 ```
 
@@ -18677,8 +18677,8 @@ applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults.property.allowedToMerge">allowed_to_merge</a></code> | <code>typing.List[typing.Union[int, float]]</code> | An array of access levels allowed to merge. Supports Developer (30) or Maintainer (40). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults.property.allowedToPush">allowed_to_push</a></code> | <code>typing.List[typing.Union[int, float]]</code> | An array of access levels allowed to push. Supports Developer (30) or Maintainer (40). |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults.property.allowForcePush">allow_force_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow force push for all users with push access. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults.property.developerCanInitialPush">developer_can_initial_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow developers to initial push. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults.property.allowForcePush">allow_force_push</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow force push for all users with push access. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults.property.developerCanInitialPush">developer_can_initial_push</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow developers to initial push. |
 
 ---
 
@@ -18713,10 +18713,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `allow_force_push`<sup>Optional</sup> <a name="allow_force_push" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults.property.allowForcePush"></a>
 
 ```python
-allow_force_push: typing.Union[bool, IResolvable]
+allow_force_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow force push for all users with push access.
 
@@ -18727,10 +18727,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `developer_can_initial_push`<sup>Optional</sup> <a name="developer_can_initial_push" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults.property.developerCanInitialPush"></a>
 
 ```python
-developer_can_initial_push: typing.Union[bool, IResolvable]
+developer_can_initial_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow developers to initial push.
 
@@ -19005,12 +19005,12 @@ def reset_developer_can_initial_push() -> None
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowedToMergeInput">allowed_to_merge_input</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowedToPushInput">allowed_to_push_input</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowForcePushInput">allow_force_push_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.developerCanInitialPushInput">developer_can_initial_push_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowForcePushInput">allow_force_push_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.developerCanInitialPushInput">developer_can_initial_push_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowedToMerge">allowed_to_merge</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowedToPush">allowed_to_push</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowForcePush">allow_force_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.developerCanInitialPush">developer_can_initial_push</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowForcePush">allow_force_push</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.developerCanInitialPush">developer_can_initial_push</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults">ApplicationSettingsDefaultBranchProtectionDefaults</a></code> | *No description.* |
 
 ---
@@ -19062,20 +19062,20 @@ allowed_to_push_input: typing.List[typing.Union[int, float]]
 ##### `allow_force_push_input`<sup>Optional</sup> <a name="allow_force_push_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowForcePushInput"></a>
 
 ```python
-allow_force_push_input: typing.Union[bool, IResolvable]
+allow_force_push_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `developer_can_initial_push_input`<sup>Optional</sup> <a name="developer_can_initial_push_input" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.developerCanInitialPushInput"></a>
 
 ```python
-developer_can_initial_push_input: typing.Union[bool, IResolvable]
+developer_can_initial_push_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -19102,20 +19102,20 @@ allowed_to_push: typing.List[typing.Union[int, float]]
 ##### `allow_force_push`<sup>Required</sup> <a name="allow_force_push" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowForcePush"></a>
 
 ```python
-allow_force_push: typing.Union[bool, IResolvable]
+allow_force_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `developer_can_initial_push`<sup>Required</sup> <a name="developer_can_initial_push" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.developerCanInitialPush"></a>
 
 ```python
-developer_can_initial_push: typing.Union[bool, IResolvable]
+developer_can_initial_push: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 

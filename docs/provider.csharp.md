@@ -356,10 +356,10 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.clientKeyInput">ClientKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.configFileInput">ConfigFileInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.contextInput">ContextInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.earlyAuthCheckInput">EarlyAuthCheckInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.enableAutoCiSupportInput">EnableAutoCiSupportInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.earlyAuthCheckInput">EarlyAuthCheckInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.enableAutoCiSupportInput">EnableAutoCiSupportInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.headersInput">HeadersInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.insecureInput">InsecureInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.insecureInput">InsecureInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.retriesInput">RetriesInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.tokenInput">TokenInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.baseUrl">BaseUrl</a></code> | <code>string</code> | *No description.* |
@@ -368,10 +368,10 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.clientKey">ClientKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.configFile">ConfigFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.context">Context</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.earlyAuthCheck">EarlyAuthCheck</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.enableAutoCiSupport">EnableAutoCiSupport</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.earlyAuthCheck">EarlyAuthCheck</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.enableAutoCiSupport">EnableAutoCiSupport</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.headers">Headers</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.insecure">Insecure</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.insecure">Insecure</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.retries">Retries</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.token">Token</a></code> | <code>string</code> | *No description.* |
 
@@ -542,20 +542,20 @@ public string ContextInput { get; }
 ##### `EarlyAuthCheckInput`<sup>Optional</sup> <a name="EarlyAuthCheckInput" id="@cdktf/provider-gitlab.provider.GitlabProvider.property.earlyAuthCheckInput"></a>
 
 ```csharp
-public object EarlyAuthCheckInput { get; }
+public bool|IResolvable EarlyAuthCheckInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableAutoCiSupportInput`<sup>Optional</sup> <a name="EnableAutoCiSupportInput" id="@cdktf/provider-gitlab.provider.GitlabProvider.property.enableAutoCiSupportInput"></a>
 
 ```csharp
-public object EnableAutoCiSupportInput { get; }
+public bool|IResolvable EnableAutoCiSupportInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -572,10 +572,10 @@ public System.Collections.Generic.IDictionary<string, string> HeadersInput { get
 ##### `InsecureInput`<sup>Optional</sup> <a name="InsecureInput" id="@cdktf/provider-gitlab.provider.GitlabProvider.property.insecureInput"></a>
 
 ```csharp
-public object InsecureInput { get; }
+public bool|IResolvable InsecureInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -662,20 +662,20 @@ public string Context { get; }
 ##### `EarlyAuthCheck`<sup>Optional</sup> <a name="EarlyAuthCheck" id="@cdktf/provider-gitlab.provider.GitlabProvider.property.earlyAuthCheck"></a>
 
 ```csharp
-public object EarlyAuthCheck { get; }
+public bool|IResolvable EarlyAuthCheck { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableAutoCiSupport`<sup>Optional</sup> <a name="EnableAutoCiSupport" id="@cdktf/provider-gitlab.provider.GitlabProvider.property.enableAutoCiSupport"></a>
 
 ```csharp
-public object EnableAutoCiSupport { get; }
+public bool|IResolvable EnableAutoCiSupport { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -692,10 +692,10 @@ public System.Collections.Generic.IDictionary<string, string> Headers { get; }
 ##### `Insecure`<sup>Optional</sup> <a name="Insecure" id="@cdktf/provider-gitlab.provider.GitlabProvider.property.insecure"></a>
 
 ```csharp
-public object Insecure { get; }
+public bool|IResolvable Insecure { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -754,10 +754,10 @@ new GitlabProviderConfig {
     string ClientKey = null,
     string ConfigFile = null,
     string Context = null,
-    object EarlyAuthCheck = null,
-    object EnableAutoCiSupport = null,
+    bool|IResolvable EarlyAuthCheck = null,
+    bool|IResolvable EnableAutoCiSupport = null,
     System.Collections.Generic.IDictionary<string, string> Headers = null,
-    object Insecure = null,
+    bool|IResolvable Insecure = null,
     double Retries = null,
     string Token = null
 };
@@ -774,10 +774,10 @@ new GitlabProviderConfig {
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.clientKey">ClientKey</a></code> | <code>string</code> | File path to client key when GitLab instance is behind company proxy. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.configFile">ConfigFile</a></code> | <code>string</code> | The path to the configuration file to use. It may be sourced from the `GITLAB_CONFIG_FILE` environment variable. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.context">Context</a></code> | <code>string</code> | The context to use for authentication and configuration. |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.earlyAuthCheck">EarlyAuthCheck</a></code> | <code>object</code> | (Experimental) By default the provider does a dummy request to get the current user in order to verify that the provider configuration is correct and the GitLab API is reachable. |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.enableAutoCiSupport">EnableAutoCiSupport</a></code> | <code>object</code> | If automatic CI support should be enabled or not. This only works when not providing a token. |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.earlyAuthCheck">EarlyAuthCheck</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | (Experimental) By default the provider does a dummy request to get the current user in order to verify that the provider configuration is correct and the GitLab API is reachable. |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.enableAutoCiSupport">EnableAutoCiSupport</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If automatic CI support should be enabled or not. This only works when not providing a token. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.headers">Headers</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of headers to append to all API request to the GitLab instance. |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.insecure">Insecure</a></code> | <code>object</code> | When set to true this disables SSL verification of the connection to the GitLab instance. |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.insecure">Insecure</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | When set to true this disables SSL verification of the connection to the GitLab instance. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.retries">Retries</a></code> | <code>double</code> | The number of retries to execute when receiving a 429 Rate Limit error. Each retry will exponentially back off. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.token">Token</a></code> | <code>string</code> | The OAuth2 Token, Project, Group, Personal Access Token or CI Job Token used to connect to GitLab. |
 
@@ -892,10 +892,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `EarlyAuthCheck`<sup>Optional</sup> <a name="EarlyAuthCheck" id="@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.earlyAuthCheck"></a>
 
 ```csharp
-public object EarlyAuthCheck { get; set; }
+public bool|IResolvable EarlyAuthCheck { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 (Experimental) By default the provider does a dummy request to get the current user in order to verify that the provider configuration is correct and the GitLab API is reachable.
 
@@ -908,10 +908,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `EnableAutoCiSupport`<sup>Optional</sup> <a name="EnableAutoCiSupport" id="@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.enableAutoCiSupport"></a>
 
 ```csharp
-public object EnableAutoCiSupport { get; set; }
+public bool|IResolvable EnableAutoCiSupport { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If automatic CI support should be enabled or not. This only works when not providing a token.
 
@@ -936,10 +936,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `Insecure`<sup>Optional</sup> <a name="Insecure" id="@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.insecure"></a>
 
 ```csharp
-public object Insecure { get; set; }
+public bool|IResolvable Insecure { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 When set to true this disables SSL verification of the connection to the GitLab instance.
 
