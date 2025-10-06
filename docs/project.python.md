@@ -14,25 +14,25 @@ from cdktf_cdktf_provider_gitlab import project
 project.Project(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
-  allow_merge_on_skipped_pipeline: typing.Union[bool, IResolvable] = None,
-  allow_pipeline_trigger_approve_deployment: typing.Union[bool, IResolvable] = None,
+  allow_merge_on_skipped_pipeline: bool | IResolvable = None,
+  allow_pipeline_trigger_approve_deployment: bool | IResolvable = None,
   analytics_access_level: str = None,
   approvals_before_merge: typing.Union[int, float] = None,
-  archived: typing.Union[bool, IResolvable] = None,
-  archive_on_destroy: typing.Union[bool, IResolvable] = None,
+  archived: bool | IResolvable = None,
+  archive_on_destroy: bool | IResolvable = None,
   auto_cancel_pending_pipelines: str = None,
-  autoclose_referenced_issues: typing.Union[bool, IResolvable] = None,
+  autoclose_referenced_issues: bool | IResolvable = None,
   auto_devops_deploy_strategy: str = None,
-  auto_devops_enabled: typing.Union[bool, IResolvable] = None,
-  auto_duo_code_review_enabled: typing.Union[bool, IResolvable] = None,
+  auto_devops_enabled: bool | IResolvable = None,
+  auto_duo_code_review_enabled: bool | IResolvable = None,
   avatar: str = None,
   avatar_hash: str = None,
   branches: str = None,
@@ -42,79 +42,79 @@ project.Project(
   ci_config_path: str = None,
   ci_default_git_depth: typing.Union[int, float] = None,
   ci_delete_pipelines_in_seconds: typing.Union[int, float] = None,
-  ci_forward_deployment_enabled: typing.Union[bool, IResolvable] = None,
-  ci_forward_deployment_rollback_allowed: typing.Union[bool, IResolvable] = None,
+  ci_forward_deployment_enabled: bool | IResolvable = None,
+  ci_forward_deployment_rollback_allowed: bool | IResolvable = None,
   ci_id_token_sub_claim_components: typing.List[str] = None,
   ci_pipeline_variables_minimum_override_role: str = None,
-  ci_push_repository_for_job_token_allowed: typing.Union[bool, IResolvable] = None,
+  ci_push_repository_for_job_token_allowed: bool | IResolvable = None,
   ci_restrict_pipeline_cancellation_role: str = None,
-  ci_separated_caches: typing.Union[bool, IResolvable] = None,
+  ci_separated_caches: bool | IResolvable = None,
   container_expiration_policy: ProjectContainerExpirationPolicy = None,
   container_registry_access_level: str = None,
-  container_registry_enabled: typing.Union[bool, IResolvable] = None,
+  container_registry_enabled: bool | IResolvable = None,
   default_branch: str = None,
   description: str = None,
-  emails_enabled: typing.Union[bool, IResolvable] = None,
+  emails_enabled: bool | IResolvable = None,
   environments_access_level: str = None,
   external_authorization_classification_label: str = None,
   feature_flags_access_level: str = None,
   forked_from_project_id: typing.Union[int, float] = None,
   forking_access_level: str = None,
-  group_runners_enabled: typing.Union[bool, IResolvable] = None,
+  group_runners_enabled: bool | IResolvable = None,
   group_with_project_templates_id: typing.Union[int, float] = None,
   id: str = None,
   import_url: str = None,
   import_url_password: str = None,
   import_url_username: str = None,
   infrastructure_access_level: str = None,
-  initialize_with_readme: typing.Union[bool, IResolvable] = None,
+  initialize_with_readme: bool | IResolvable = None,
   issues_access_level: str = None,
-  issues_enabled: typing.Union[bool, IResolvable] = None,
+  issues_enabled: bool | IResolvable = None,
   issues_template: str = None,
-  keep_latest_artifact: typing.Union[bool, IResolvable] = None,
-  lfs_enabled: typing.Union[bool, IResolvable] = None,
+  keep_latest_artifact: bool | IResolvable = None,
+  lfs_enabled: bool | IResolvable = None,
   merge_commit_template: str = None,
   merge_method: str = None,
-  merge_pipelines_enabled: typing.Union[bool, IResolvable] = None,
+  merge_pipelines_enabled: bool | IResolvable = None,
   merge_requests_access_level: str = None,
-  merge_requests_enabled: typing.Union[bool, IResolvable] = None,
+  merge_requests_enabled: bool | IResolvable = None,
   merge_requests_template: str = None,
-  merge_trains_enabled: typing.Union[bool, IResolvable] = None,
-  mirror: typing.Union[bool, IResolvable] = None,
-  mirror_overwrites_diverged_branches: typing.Union[bool, IResolvable] = None,
-  mirror_trigger_builds: typing.Union[bool, IResolvable] = None,
+  merge_trains_enabled: bool | IResolvable = None,
+  mirror: bool | IResolvable = None,
+  mirror_overwrites_diverged_branches: bool | IResolvable = None,
+  mirror_trigger_builds: bool | IResolvable = None,
   model_experiments_access_level: str = None,
   model_registry_access_level: str = None,
   monitor_access_level: str = None,
-  mr_default_target_self: typing.Union[bool, IResolvable] = None,
+  mr_default_target_self: bool | IResolvable = None,
   namespace_id: typing.Union[int, float] = None,
-  only_allow_merge_if_all_discussions_are_resolved: typing.Union[bool, IResolvable] = None,
-  only_allow_merge_if_pipeline_succeeds: typing.Union[bool, IResolvable] = None,
-  only_mirror_protected_branches: typing.Union[bool, IResolvable] = None,
-  packages_enabled: typing.Union[bool, IResolvable] = None,
+  only_allow_merge_if_all_discussions_are_resolved: bool | IResolvable = None,
+  only_allow_merge_if_pipeline_succeeds: bool | IResolvable = None,
+  only_mirror_protected_branches: bool | IResolvable = None,
+  packages_enabled: bool | IResolvable = None,
   pages_access_level: str = None,
   path: str = None,
-  permanently_delete_on_destroy: typing.Union[bool, IResolvable] = None,
-  pipelines_enabled: typing.Union[bool, IResolvable] = None,
-  pre_receive_secret_detection_enabled: typing.Union[bool, IResolvable] = None,
-  prevent_merge_without_jira_issue: typing.Union[bool, IResolvable] = None,
-  printing_merge_request_link_enabled: typing.Union[bool, IResolvable] = None,
-  public_builds: typing.Union[bool, IResolvable] = None,
-  public_jobs: typing.Union[bool, IResolvable] = None,
+  permanently_delete_on_destroy: bool | IResolvable = None,
+  pipelines_enabled: bool | IResolvable = None,
+  pre_receive_secret_detection_enabled: bool | IResolvable = None,
+  prevent_merge_without_jira_issue: bool | IResolvable = None,
+  printing_merge_request_link_enabled: bool | IResolvable = None,
+  public_builds: bool | IResolvable = None,
+  public_jobs: bool | IResolvable = None,
   push_rules: ProjectPushRules = None,
   releases_access_level: str = None,
-  remove_source_branch_after_merge: typing.Union[bool, IResolvable] = None,
+  remove_source_branch_after_merge: bool | IResolvable = None,
   repository_access_level: str = None,
   repository_storage: str = None,
-  request_access_enabled: typing.Union[bool, IResolvable] = None,
+  request_access_enabled: bool | IResolvable = None,
   requirements_access_level: str = None,
-  resolve_outdated_diff_discussions: typing.Union[bool, IResolvable] = None,
-  restrict_user_defined_variables: typing.Union[bool, IResolvable] = None,
+  resolve_outdated_diff_discussions: bool | IResolvable = None,
+  restrict_user_defined_variables: bool | IResolvable = None,
   security_and_compliance_access_level: str = None,
-  shared_runners_enabled: typing.Union[bool, IResolvable] = None,
-  skip_wait_for_default_branch_protection: typing.Union[bool, IResolvable] = None,
+  shared_runners_enabled: bool | IResolvable = None,
+  skip_wait_for_default_branch_protection: bool | IResolvable = None,
   snippets_access_level: str = None,
-  snippets_enabled: typing.Union[bool, IResolvable] = None,
+  snippets_enabled: bool | IResolvable = None,
   squash_commit_template: str = None,
   squash_option: str = None,
   suggestion_commit_message: str = None,
@@ -123,10 +123,10 @@ project.Project(
   template_project_id: typing.Union[int, float] = None,
   timeouts: ProjectTimeouts = None,
   topics: typing.List[str] = None,
-  use_custom_template: typing.Union[bool, IResolvable] = None,
+  use_custom_template: bool | IResolvable = None,
   visibility_level: str = None,
   wiki_access_level: str = None,
-  wiki_enabled: typing.Union[bool, IResolvable] = None
+  wiki_enabled: bool | IResolvable = None
 )
 ```
 
@@ -134,25 +134,25 @@ project.Project(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the project. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.allowMergeOnSkippedPipeline">allow_merge_on_skipped_pipeline</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to true if you want to treat skipped pipelines as if they finished with success. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.allowPipelineTriggerApproveDeployment">allow_pipeline_trigger_approve_deployment</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set whether or not a pipeline triggerer is allowed to approve deployments. Premium and Ultimate only. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.allowMergeOnSkippedPipeline">allow_merge_on_skipped_pipeline</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to true if you want to treat skipped pipelines as if they finished with success. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.allowPipelineTriggerApproveDeployment">allow_pipeline_trigger_approve_deployment</a></code> | <code>bool \| cdktf.IResolvable</code> | Set whether or not a pipeline triggerer is allowed to approve deployments. Premium and Ultimate only. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.analyticsAccessLevel">analytics_access_level</a></code> | <code>str</code> | Set the analytics access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.approvalsBeforeMerge">approvals_before_merge</a></code> | <code>typing.Union[int, float]</code> | Number of merge request approvals required for merging. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.archived">archived</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the project is in read-only mode (archived). Repositories can be archived/unarchived by toggling this parameter. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.archiveOnDestroy">archive_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to `true` to archive the project instead of deleting on destroy. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.archived">archived</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the project is in read-only mode (archived). Repositories can be archived/unarchived by toggling this parameter. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.archiveOnDestroy">archive_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to `true` to archive the project instead of deleting on destroy. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.autoCancelPendingPipelines">auto_cancel_pending_pipelines</a></code> | <code>str</code> | Auto-cancel pending pipelines. This isn’t a boolean, but enabled/disabled. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.autocloseReferencedIssues">autoclose_referenced_issues</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set whether auto-closing referenced issues on default branch. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.autocloseReferencedIssues">autoclose_referenced_issues</a></code> | <code>bool \| cdktf.IResolvable</code> | Set whether auto-closing referenced issues on default branch. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.autoDevopsDeployStrategy">auto_devops_deploy_strategy</a></code> | <code>str</code> | Auto Deploy strategy. Valid values are `continuous`, `manual`, `timed_incremental`. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.autoDevopsEnabled">auto_devops_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Auto DevOps for this project. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.autoDuoCodeReviewEnabled">auto_duo_code_review_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable automatic reviews by GitLab Duo on merge requests. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.autoDevopsEnabled">auto_devops_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable Auto DevOps for this project. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.autoDuoCodeReviewEnabled">auto_duo_code_review_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable automatic reviews by GitLab Duo on merge requests. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.avatar">avatar</a></code> | <code>str</code> | A local path to the avatar image to upload. **Note**: not available for imported resources. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.avatarHash">avatar_hash</a></code> | <code>str</code> | The hash of the avatar image. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.branches">branches</a></code> | <code>str</code> | Branches to fork (empty for all branches). |
@@ -162,79 +162,79 @@ project.Project(
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.ciConfigPath">ci_config_path</a></code> | <code>str</code> | Custom Path to CI config file. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.ciDefaultGitDepth">ci_default_git_depth</a></code> | <code>typing.Union[int, float]</code> | Default number of revisions for shallow cloning. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.ciDeletePipelinesInSeconds">ci_delete_pipelines_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Pipelines older than the configured time are deleted. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.ciForwardDeploymentEnabled">ci_forward_deployment_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When a new deployment job starts, skip older deployment jobs that are still pending. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.ciForwardDeploymentRollbackAllowed">ci_forward_deployment_rollback_allowed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow job retries even if the deployment job is outdated. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.ciForwardDeploymentEnabled">ci_forward_deployment_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | When a new deployment job starts, skip older deployment jobs that are still pending. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.ciForwardDeploymentRollbackAllowed">ci_forward_deployment_rollback_allowed</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow job retries even if the deployment job is outdated. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.ciIdTokenSubClaimComponents">ci_id_token_sub_claim_components</a></code> | <code>typing.List[str]</code> | Fields included in the sub claim of the ID Token. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.ciPipelineVariablesMinimumOverrideRole">ci_pipeline_variables_minimum_override_role</a></code> | <code>str</code> | The minimum role required to set variables when running pipelines and jobs. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.ciPushRepositoryForJobTokenAllowed">ci_push_repository_for_job_token_allowed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow Git push requests to your project repository that are authenticated with a CI/CD job token. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.ciPushRepositoryForJobTokenAllowed">ci_push_repository_for_job_token_allowed</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow Git push requests to your project repository that are authenticated with a CI/CD job token. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.ciRestrictPipelineCancellationRole">ci_restrict_pipeline_cancellation_role</a></code> | <code>str</code> | The role required to cancel a pipeline or job. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.ciSeparatedCaches">ci_separated_caches</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use separate caches for protected branches. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.ciSeparatedCaches">ci_separated_caches</a></code> | <code>bool \| cdktf.IResolvable</code> | Use separate caches for protected branches. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.containerExpirationPolicy">container_expiration_policy</a></code> | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy">ProjectContainerExpirationPolicy</a></code> | container_expiration_policy block. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.containerRegistryAccessLevel">container_registry_access_level</a></code> | <code>str</code> | Set visibility of container registry, for this project. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.containerRegistryEnabled">container_registry_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable container registry for the project. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.containerRegistryEnabled">container_registry_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable container registry for the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.defaultBranch">default_branch</a></code> | <code>str</code> | The default branch for the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.description">description</a></code> | <code>str</code> | A description of the project. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.emailsEnabled">emails_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable email notifications. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.emailsEnabled">emails_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable email notifications. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.environmentsAccessLevel">environments_access_level</a></code> | <code>str</code> | Set the environments access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.externalAuthorizationClassificationLabel">external_authorization_classification_label</a></code> | <code>str</code> | The classification label for the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.featureFlagsAccessLevel">feature_flags_access_level</a></code> | <code>str</code> | Set the feature flags access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.forkedFromProjectId">forked_from_project_id</a></code> | <code>typing.Union[int, float]</code> | The id of the project to fork. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.forkingAccessLevel">forking_access_level</a></code> | <code>str</code> | Set the forking access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.groupRunnersEnabled">group_runners_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable group runners for this project. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.groupRunnersEnabled">group_runners_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable group runners for this project. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.groupWithProjectTemplatesId">group_with_project_templates_id</a></code> | <code>typing.Union[int, float]</code> | For group-level custom templates, specifies ID of group from which all the custom project templates are sourced. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project#id Project#id}. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.importUrl">import_url</a></code> | <code>str</code> | Git URL to a repository to be imported. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.importUrlPassword">import_url_password</a></code> | <code>str</code> | The password for the `import_url`. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.importUrlUsername">import_url_username</a></code> | <code>str</code> | The username for the `import_url`. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.infrastructureAccessLevel">infrastructure_access_level</a></code> | <code>str</code> | Set the infrastructure access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.initializeWithReadme">initialize_with_readme</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Create main branch with first commit containing a README.md file. Must be set to `true` if importing an uninitialized project with a different `default_branch`. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.initializeWithReadme">initialize_with_readme</a></code> | <code>bool \| cdktf.IResolvable</code> | Create main branch with first commit containing a README.md file. Must be set to `true` if importing an uninitialized project with a different `default_branch`. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.issuesAccessLevel">issues_access_level</a></code> | <code>str</code> | Set the issues access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.issuesEnabled">issues_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable issue tracking for the project. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.issuesEnabled">issues_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable issue tracking for the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.issuesTemplate">issues_template</a></code> | <code>str</code> | Sets the template for new issues in the project. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.keepLatestArtifact">keep_latest_artifact</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable or enable the ability to keep the latest artifact for this project. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.lfsEnabled">lfs_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable LFS for the project. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.keepLatestArtifact">keep_latest_artifact</a></code> | <code>bool \| cdktf.IResolvable</code> | Disable or enable the ability to keep the latest artifact for this project. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.lfsEnabled">lfs_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable LFS for the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.mergeCommitTemplate">merge_commit_template</a></code> | <code>str</code> | Template used to create merge commit message in merge requests. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.mergeMethod">merge_method</a></code> | <code>str</code> | Set the merge method. Valid values are `merge`, `rebase_merge`, `ff`. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.mergePipelinesEnabled">merge_pipelines_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable or disable merge pipelines. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.mergePipelinesEnabled">merge_pipelines_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable or disable merge pipelines. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.mergeRequestsAccessLevel">merge_requests_access_level</a></code> | <code>str</code> | Set the merge requests access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.mergeRequestsEnabled">merge_requests_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable merge requests for the project. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.mergeRequestsEnabled">merge_requests_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable merge requests for the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.mergeRequestsTemplate">merge_requests_template</a></code> | <code>str</code> | Sets the template for new merge requests in the project. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.mergeTrainsEnabled">merge_trains_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable or disable merge trains. Requires `merge_pipelines_enabled` to be set to `true` to take effect. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.mirror">mirror</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable project pull mirror. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.mirrorOverwritesDivergedBranches">mirror_overwrites_diverged_branches</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable overwrite diverged branches for a mirrored project. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.mirrorTriggerBuilds">mirror_trigger_builds</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable trigger builds on pushes for a mirrored project. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.mergeTrainsEnabled">merge_trains_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable or disable merge trains. Requires `merge_pipelines_enabled` to be set to `true` to take effect. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.mirror">mirror</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable project pull mirror. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.mirrorOverwritesDivergedBranches">mirror_overwrites_diverged_branches</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable overwrite diverged branches for a mirrored project. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.mirrorTriggerBuilds">mirror_trigger_builds</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable trigger builds on pushes for a mirrored project. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.modelExperimentsAccessLevel">model_experiments_access_level</a></code> | <code>str</code> | Set visibility of machine learning model experiments. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.modelRegistryAccessLevel">model_registry_access_level</a></code> | <code>str</code> | Set visibility of machine learning model registry. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.monitorAccessLevel">monitor_access_level</a></code> | <code>str</code> | Set the monitor access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.mrDefaultTargetSelf">mr_default_target_self</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | For forked projects, target merge requests to this project. If false, the target will be the upstream project. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.mrDefaultTargetSelf">mr_default_target_self</a></code> | <code>bool \| cdktf.IResolvable</code> | For forked projects, target merge requests to this project. If false, the target will be the upstream project. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.namespaceId">namespace_id</a></code> | <code>typing.Union[int, float]</code> | The namespace (group or user) of the project. Defaults to your user. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.onlyAllowMergeIfAllDiscussionsAreResolved">only_allow_merge_if_all_discussions_are_resolved</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to true if you want allow merges only if all discussions are resolved. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.onlyAllowMergeIfPipelineSucceeds">only_allow_merge_if_pipeline_succeeds</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to true if you want allow merges only if a pipeline succeeds. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.onlyMirrorProtectedBranches">only_mirror_protected_branches</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable only mirror protected branches for a mirrored project. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.packagesEnabled">packages_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable packages repository for the project. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.onlyAllowMergeIfAllDiscussionsAreResolved">only_allow_merge_if_all_discussions_are_resolved</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to true if you want allow merges only if all discussions are resolved. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.onlyAllowMergeIfPipelineSucceeds">only_allow_merge_if_pipeline_succeeds</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to true if you want allow merges only if a pipeline succeeds. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.onlyMirrorProtectedBranches">only_mirror_protected_branches</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable only mirror protected branches for a mirrored project. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.packagesEnabled">packages_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable packages repository for the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.pagesAccessLevel">pages_access_level</a></code> | <code>str</code> | Enable pages access control. Valid values are `public`, `private`, `enabled`, `disabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.path">path</a></code> | <code>str</code> | The path of the repository. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.permanentlyDeleteOnDestroy">permanently_delete_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to `true` to immediately permanently delete the project instead of scheduling a delete for Premium and Ultimate tiers. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.pipelinesEnabled">pipelines_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable pipelines for the project. The `pipelines_enabled` field is being sent as `jobs_enabled` in the GitLab API calls. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.preReceiveSecretDetectionEnabled">pre_receive_secret_detection_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether Secret Push Detection is enabled. Requires GitLab Ultimate. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.preventMergeWithoutJiraIssue">prevent_merge_without_jira_issue</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set whether merge requests require an associated issue from Jira. Premium and Ultimate only. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.printingMergeRequestLinkEnabled">printing_merge_request_link_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Show link to create/view merge request when pushing from the command line. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.publicBuilds">public_builds</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, jobs can be viewed by non-project members. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.publicJobs">public_jobs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, jobs can be viewed by non-project members. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.permanentlyDeleteOnDestroy">permanently_delete_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to `true` to immediately permanently delete the project instead of scheduling a delete for Premium and Ultimate tiers. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.pipelinesEnabled">pipelines_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable pipelines for the project. The `pipelines_enabled` field is being sent as `jobs_enabled` in the GitLab API calls. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.preReceiveSecretDetectionEnabled">pre_receive_secret_detection_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether Secret Push Detection is enabled. Requires GitLab Ultimate. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.preventMergeWithoutJiraIssue">prevent_merge_without_jira_issue</a></code> | <code>bool \| cdktf.IResolvable</code> | Set whether merge requests require an associated issue from Jira. Premium and Ultimate only. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.printingMergeRequestLinkEnabled">printing_merge_request_link_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Show link to create/view merge request when pushing from the command line. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.publicBuilds">public_builds</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, jobs can be viewed by non-project members. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.publicJobs">public_jobs</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, jobs can be viewed by non-project members. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.pushRules">push_rules</a></code> | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules">ProjectPushRules</a></code> | push_rules block. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.releasesAccessLevel">releases_access_level</a></code> | <code>str</code> | Set the releases access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.removeSourceBranchAfterMerge">remove_source_branch_after_merge</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable `Delete source branch` option by default for all new merge requests. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.removeSourceBranchAfterMerge">remove_source_branch_after_merge</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable `Delete source branch` option by default for all new merge requests. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.repositoryAccessLevel">repository_access_level</a></code> | <code>str</code> | Set the repository access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.repositoryStorage">repository_storage</a></code> | <code>str</code> | Which storage shard the repository is on. (administrator only). |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.requestAccessEnabled">request_access_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow users to request member access. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.requestAccessEnabled">request_access_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow users to request member access. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.requirementsAccessLevel">requirements_access_level</a></code> | <code>str</code> | Set the requirements access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.resolveOutdatedDiffDiscussions">resolve_outdated_diff_discussions</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Automatically resolve merge request diffs discussions on lines changed with a push. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.restrictUserDefinedVariables">restrict_user_defined_variables</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow only users with the Maintainer role to pass user-defined variables when triggering a pipeline. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.resolveOutdatedDiffDiscussions">resolve_outdated_diff_discussions</a></code> | <code>bool \| cdktf.IResolvable</code> | Automatically resolve merge request diffs discussions on lines changed with a push. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.restrictUserDefinedVariables">restrict_user_defined_variables</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow only users with the Maintainer role to pass user-defined variables when triggering a pipeline. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.securityAndComplianceAccessLevel">security_and_compliance_access_level</a></code> | <code>str</code> | Set the security and compliance access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.sharedRunnersEnabled">shared_runners_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable shared runners for this project. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.skipWaitForDefaultBranchProtection">skip_wait_for_default_branch_protection</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If `true`, the default behavior to wait for the default branch protection to be created is skipped. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.sharedRunnersEnabled">shared_runners_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable shared runners for this project. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.skipWaitForDefaultBranchProtection">skip_wait_for_default_branch_protection</a></code> | <code>bool \| cdktf.IResolvable</code> | If `true`, the default behavior to wait for the default branch protection to be created is skipped. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.snippetsAccessLevel">snippets_access_level</a></code> | <code>str</code> | Set the snippets access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.snippetsEnabled">snippets_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable snippets for the project. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.snippetsEnabled">snippets_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable snippets for the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.squashCommitTemplate">squash_commit_template</a></code> | <code>str</code> | Template used to create squash commit message in merge requests. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.squashOption">squash_option</a></code> | <code>str</code> | Squash commits when merge request is merged. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.suggestionCommitMessage">suggestion_commit_message</a></code> | <code>str</code> | The commit message used to apply merge request suggestions. |
@@ -243,10 +243,10 @@ project.Project(
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.templateProjectId">template_project_id</a></code> | <code>typing.Union[int, float]</code> | When used with use_custom_template, project ID of a custom project template. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-gitlab.project.ProjectTimeouts">ProjectTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.topics">topics</a></code> | <code>typing.List[str]</code> | The list of topics for the project. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.useCustomTemplate">use_custom_template</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use either custom instance or group (with group_with_project_templates_id) project template (enterprise edition). |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.useCustomTemplate">use_custom_template</a></code> | <code>bool \| cdktf.IResolvable</code> | Use either custom instance or group (with group_with_project_templates_id) project template (enterprise edition). |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.visibilityLevel">visibility_level</a></code> | <code>str</code> | Set to `public` to create a public project. Valid values are `private`, `internal`, `public`. |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.wikiAccessLevel">wiki_access_level</a></code> | <code>str</code> | Set the wiki access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.wikiEnabled">wiki_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable wiki for the project. |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.Initializer.parameter.wikiEnabled">wiki_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable wiki for the project. |
 
 ---
 
@@ -270,13 +270,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -306,7 +306,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -322,7 +322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `allow_merge_on_skipped_pipeline`<sup>Optional</sup> <a name="allow_merge_on_skipped_pipeline" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.allowMergeOnSkippedPipeline"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to true if you want to treat skipped pipelines as if they finished with success.
 
@@ -332,7 +332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `allow_pipeline_trigger_approve_deployment`<sup>Optional</sup> <a name="allow_pipeline_trigger_approve_deployment" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.allowPipelineTriggerApproveDeployment"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set whether or not a pipeline triggerer is allowed to approve deployments. Premium and Ultimate only.
 
@@ -367,7 +367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `archived`<sup>Optional</sup> <a name="archived" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.archived"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the project is in read-only mode (archived). Repositories can be archived/unarchived by toggling this parameter.
 
@@ -377,7 +377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `archive_on_destroy`<sup>Optional</sup> <a name="archive_on_destroy" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.archiveOnDestroy"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to `true` to archive the project instead of deleting on destroy.
 
@@ -399,7 +399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `autoclose_referenced_issues`<sup>Optional</sup> <a name="autoclose_referenced_issues" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.autocloseReferencedIssues"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set whether auto-closing referenced issues on default branch.
 
@@ -419,7 +419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `auto_devops_enabled`<sup>Optional</sup> <a name="auto_devops_enabled" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.autoDevopsEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable Auto DevOps for this project.
 
@@ -429,7 +429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `auto_duo_code_review_enabled`<sup>Optional</sup> <a name="auto_duo_code_review_enabled" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.autoDuoCodeReviewEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable automatic reviews by GitLab Duo on merge requests.
 
@@ -533,7 +533,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `ci_forward_deployment_enabled`<sup>Optional</sup> <a name="ci_forward_deployment_enabled" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.ciForwardDeploymentEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When a new deployment job starts, skip older deployment jobs that are still pending.
 
@@ -543,7 +543,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `ci_forward_deployment_rollback_allowed`<sup>Optional</sup> <a name="ci_forward_deployment_rollback_allowed" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.ciForwardDeploymentRollbackAllowed"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow job retries even if the deployment job is outdated.
 
@@ -577,7 +577,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `ci_push_repository_for_job_token_allowed`<sup>Optional</sup> <a name="ci_push_repository_for_job_token_allowed" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.ciPushRepositoryForJobTokenAllowed"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow Git push requests to your project repository that are authenticated with a CI/CD job token.
 
@@ -599,7 +599,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `ci_separated_caches`<sup>Optional</sup> <a name="ci_separated_caches" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.ciSeparatedCaches"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Use separate caches for protected branches.
 
@@ -629,7 +629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `container_registry_enabled`<sup>Optional</sup> <a name="container_registry_enabled" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.containerRegistryEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable container registry for the project.
 
@@ -659,7 +659,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `emails_enabled`<sup>Optional</sup> <a name="emails_enabled" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.emailsEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable email notifications.
 
@@ -721,7 +721,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `group_runners_enabled`<sup>Optional</sup> <a name="group_runners_enabled" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.groupRunnersEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable group runners for this project.
 
@@ -800,7 +800,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `initialize_with_readme`<sup>Optional</sup> <a name="initialize_with_readme" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.initializeWithReadme"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Create main branch with first commit containing a README.md file. Must be set to `true` if importing an uninitialized project with a different `default_branch`.
 
@@ -820,7 +820,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `issues_enabled`<sup>Optional</sup> <a name="issues_enabled" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.issuesEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable issue tracking for the project.
 
@@ -840,7 +840,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `keep_latest_artifact`<sup>Optional</sup> <a name="keep_latest_artifact" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.keepLatestArtifact"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Disable or enable the ability to keep the latest artifact for this project.
 
@@ -850,7 +850,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `lfs_enabled`<sup>Optional</sup> <a name="lfs_enabled" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.lfsEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable LFS for the project.
 
@@ -880,7 +880,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `merge_pipelines_enabled`<sup>Optional</sup> <a name="merge_pipelines_enabled" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.mergePipelinesEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable or disable merge pipelines.
 
@@ -900,7 +900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `merge_requests_enabled`<sup>Optional</sup> <a name="merge_requests_enabled" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.mergeRequestsEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable merge requests for the project.
 
@@ -920,7 +920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `merge_trains_enabled`<sup>Optional</sup> <a name="merge_trains_enabled" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.mergeTrainsEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable or disable merge trains. Requires `merge_pipelines_enabled` to be set to `true` to take effect.
 
@@ -930,7 +930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `mirror`<sup>Optional</sup> <a name="mirror" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.mirror"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable project pull mirror.
 
@@ -940,7 +940,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `mirror_overwrites_diverged_branches`<sup>Optional</sup> <a name="mirror_overwrites_diverged_branches" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.mirrorOverwritesDivergedBranches"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable overwrite diverged branches for a mirrored project.
 
@@ -950,7 +950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `mirror_trigger_builds`<sup>Optional</sup> <a name="mirror_trigger_builds" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.mirrorTriggerBuilds"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable trigger builds on pushes for a mirrored project.
 
@@ -990,7 +990,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `mr_default_target_self`<sup>Optional</sup> <a name="mr_default_target_self" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.mrDefaultTargetSelf"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 For forked projects, target merge requests to this project. If false, the target will be the upstream project.
 
@@ -1010,7 +1010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `only_allow_merge_if_all_discussions_are_resolved`<sup>Optional</sup> <a name="only_allow_merge_if_all_discussions_are_resolved" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.onlyAllowMergeIfAllDiscussionsAreResolved"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to true if you want allow merges only if all discussions are resolved.
 
@@ -1020,7 +1020,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `only_allow_merge_if_pipeline_succeeds`<sup>Optional</sup> <a name="only_allow_merge_if_pipeline_succeeds" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.onlyAllowMergeIfPipelineSucceeds"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to true if you want allow merges only if a pipeline succeeds.
 
@@ -1030,7 +1030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `only_mirror_protected_branches`<sup>Optional</sup> <a name="only_mirror_protected_branches" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.onlyMirrorProtectedBranches"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable only mirror protected branches for a mirrored project.
 
@@ -1040,7 +1040,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `packages_enabled`<sup>Optional</sup> <a name="packages_enabled" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.packagesEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable packages repository for the project.
 
@@ -1070,7 +1070,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `permanently_delete_on_destroy`<sup>Optional</sup> <a name="permanently_delete_on_destroy" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.permanentlyDeleteOnDestroy"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to `true` to immediately permanently delete the project instead of scheduling a delete for Premium and Ultimate tiers.
 
@@ -1080,7 +1080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `pipelines_enabled`<sup>Optional</sup> <a name="pipelines_enabled" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.pipelinesEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable pipelines for the project. The `pipelines_enabled` field is being sent as `jobs_enabled` in the GitLab API calls.
 
@@ -1090,7 +1090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `pre_receive_secret_detection_enabled`<sup>Optional</sup> <a name="pre_receive_secret_detection_enabled" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.preReceiveSecretDetectionEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether Secret Push Detection is enabled. Requires GitLab Ultimate.
 
@@ -1100,7 +1100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `prevent_merge_without_jira_issue`<sup>Optional</sup> <a name="prevent_merge_without_jira_issue" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.preventMergeWithoutJiraIssue"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set whether merge requests require an associated issue from Jira. Premium and Ultimate only.
 
@@ -1110,7 +1110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `printing_merge_request_link_enabled`<sup>Optional</sup> <a name="printing_merge_request_link_enabled" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.printingMergeRequestLinkEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Show link to create/view merge request when pushing from the command line.
 
@@ -1120,7 +1120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `public_builds`<sup>Optional</sup> <a name="public_builds" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.publicBuilds"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, jobs can be viewed by non-project members.
 
@@ -1130,7 +1130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `public_jobs`<sup>Optional</sup> <a name="public_jobs" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.publicJobs"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, jobs can be viewed by non-project members.
 
@@ -1160,7 +1160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `remove_source_branch_after_merge`<sup>Optional</sup> <a name="remove_source_branch_after_merge" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.removeSourceBranchAfterMerge"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable `Delete source branch` option by default for all new merge requests.
 
@@ -1190,7 +1190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `request_access_enabled`<sup>Optional</sup> <a name="request_access_enabled" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.requestAccessEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow users to request member access.
 
@@ -1210,7 +1210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `resolve_outdated_diff_discussions`<sup>Optional</sup> <a name="resolve_outdated_diff_discussions" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.resolveOutdatedDiffDiscussions"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Automatically resolve merge request diffs discussions on lines changed with a push.
 
@@ -1220,7 +1220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `restrict_user_defined_variables`<sup>Optional</sup> <a name="restrict_user_defined_variables" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.restrictUserDefinedVariables"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow only users with the Maintainer role to pass user-defined variables when triggering a pipeline.
 
@@ -1240,7 +1240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `shared_runners_enabled`<sup>Optional</sup> <a name="shared_runners_enabled" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.sharedRunnersEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable shared runners for this project.
 
@@ -1250,7 +1250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `skip_wait_for_default_branch_protection`<sup>Optional</sup> <a name="skip_wait_for_default_branch_protection" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.skipWaitForDefaultBranchProtection"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If `true`, the default behavior to wait for the default branch protection to be created is skipped.
 
@@ -1274,7 +1274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `snippets_enabled`<sup>Optional</sup> <a name="snippets_enabled" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.snippetsEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable snippets for the project.
 
@@ -1372,7 +1372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `use_custom_template`<sup>Optional</sup> <a name="use_custom_template" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.useCustomTemplate"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Use either custom instance or group (with group_with_project_templates_id) project template (enterprise edition).
 
@@ -1404,7 +1404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `wiki_enabled`<sup>Optional</sup> <a name="wiki_enabled" id="@cdktf/provider-gitlab.project.Project.Initializer.parameter.wikiEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable wiki for the project.
 
@@ -1772,7 +1772,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-gitlab.project.Project.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-gitlab.project.Project.importFrom"></a>
@@ -1835,7 +1835,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -1851,7 +1851,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-gitlab.project.Project.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -1880,7 +1880,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ```python
 def put_container_expiration_policy(
   cadence: str = None,
-  enabled: typing.Union[bool, IResolvable] = None,
+  enabled: bool | IResolvable = None,
   keep_n: typing.Union[int, float] = None,
   name_regex_delete: str = None,
   name_regex_keep: str = None,
@@ -1900,7 +1900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ###### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-gitlab.project.Project.putContainerExpirationPolicy.parameter.enabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, the policy is enabled.
 
@@ -1954,17 +1954,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 def put_push_rules(
   author_email_regex: str = None,
   branch_name_regex: str = None,
-  commit_committer_check: typing.Union[bool, IResolvable] = None,
-  commit_committer_name_check: typing.Union[bool, IResolvable] = None,
+  commit_committer_check: bool | IResolvable = None,
+  commit_committer_name_check: bool | IResolvable = None,
   commit_message_negative_regex: str = None,
   commit_message_regex: str = None,
-  deny_delete_tag: typing.Union[bool, IResolvable] = None,
+  deny_delete_tag: bool | IResolvable = None,
   file_name_regex: str = None,
   max_file_size: typing.Union[int, float] = None,
-  member_check: typing.Union[bool, IResolvable] = None,
-  prevent_secrets: typing.Union[bool, IResolvable] = None,
-  reject_non_dco_commits: typing.Union[bool, IResolvable] = None,
-  reject_unsigned_commits: typing.Union[bool, IResolvable] = None
+  member_check: bool | IResolvable = None,
+  prevent_secrets: bool | IResolvable = None,
+  reject_non_dco_commits: bool | IResolvable = None,
+  reject_unsigned_commits: bool | IResolvable = None
 ) -> None
 ```
 
@@ -1990,7 +1990,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ###### `commit_committer_check`<sup>Optional</sup> <a name="commit_committer_check" id="@cdktf/provider-gitlab.project.Project.putPushRules.parameter.commitCommitterCheck"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Users can only push commits to this repository that were committed with one of their own verified emails.
 
@@ -2000,7 +2000,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ###### `commit_committer_name_check`<sup>Optional</sup> <a name="commit_committer_name_check" id="@cdktf/provider-gitlab.project.Project.putPushRules.parameter.commitCommitterNameCheck"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Users can only push commits to this repository if the commit author name is consistent with their GitLab account name.
 
@@ -2030,7 +2030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ###### `deny_delete_tag`<sup>Optional</sup> <a name="deny_delete_tag" id="@cdktf/provider-gitlab.project.Project.putPushRules.parameter.denyDeleteTag"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Deny deleting a tag.
 
@@ -2060,7 +2060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ###### `member_check`<sup>Optional</sup> <a name="member_check" id="@cdktf/provider-gitlab.project.Project.putPushRules.parameter.memberCheck"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Restrict commits by author (email) to existing GitLab users.
 
@@ -2070,7 +2070,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ###### `prevent_secrets`<sup>Optional</sup> <a name="prevent_secrets" id="@cdktf/provider-gitlab.project.Project.putPushRules.parameter.preventSecrets"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 GitLab will reject any files that are likely to contain secrets.
 
@@ -2080,7 +2080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ###### `reject_non_dco_commits`<sup>Optional</sup> <a name="reject_non_dco_commits" id="@cdktf/provider-gitlab.project.Project.putPushRules.parameter.rejectNonDcoCommits"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Reject commit when it’s not DCO certified.
 
@@ -2090,7 +2090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ###### `reject_unsigned_commits`<sup>Optional</sup> <a name="reject_unsigned_commits" id="@cdktf/provider-gitlab.project.Project.putPushRules.parameter.rejectUnsignedCommits"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Reject commit when it’s not signed through GPG.
 
@@ -2890,13 +2890,13 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.avatarUrl">avatar_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.containerExpirationPolicy">container_expiration_policy</a></code> | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference">ProjectContainerExpirationPolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.emptyRepo">empty_repo</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
@@ -2907,17 +2907,17 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.sshUrlToRepo">ssh_url_to_repo</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-gitlab.project.ProjectTimeoutsOutputReference">ProjectTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.webUrl">web_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.allowMergeOnSkippedPipelineInput">allow_merge_on_skipped_pipeline_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.allowPipelineTriggerApproveDeploymentInput">allow_pipeline_trigger_approve_deployment_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.allowMergeOnSkippedPipelineInput">allow_merge_on_skipped_pipeline_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.allowPipelineTriggerApproveDeploymentInput">allow_pipeline_trigger_approve_deployment_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.analyticsAccessLevelInput">analytics_access_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.approvalsBeforeMergeInput">approvals_before_merge_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.archivedInput">archived_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.archiveOnDestroyInput">archive_on_destroy_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.archivedInput">archived_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.archiveOnDestroyInput">archive_on_destroy_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.autoCancelPendingPipelinesInput">auto_cancel_pending_pipelines_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.autocloseReferencedIssuesInput">autoclose_referenced_issues_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.autocloseReferencedIssuesInput">autoclose_referenced_issues_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.autoDevopsDeployStrategyInput">auto_devops_deploy_strategy_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.autoDevopsEnabledInput">auto_devops_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.autoDuoCodeReviewEnabledInput">auto_duo_code_review_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.autoDevopsEnabledInput">auto_devops_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.autoDuoCodeReviewEnabledInput">auto_duo_code_review_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.avatarHashInput">avatar_hash_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.avatarInput">avatar_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.branchesInput">branches_input</a></code> | <code>str</code> | *No description.* |
@@ -2927,103 +2927,103 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciConfigPathInput">ci_config_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciDefaultGitDepthInput">ci_default_git_depth_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciDeletePipelinesInSecondsInput">ci_delete_pipelines_in_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciForwardDeploymentEnabledInput">ci_forward_deployment_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciForwardDeploymentRollbackAllowedInput">ci_forward_deployment_rollback_allowed_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciForwardDeploymentEnabledInput">ci_forward_deployment_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciForwardDeploymentRollbackAllowedInput">ci_forward_deployment_rollback_allowed_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciIdTokenSubClaimComponentsInput">ci_id_token_sub_claim_components_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciPipelineVariablesMinimumOverrideRoleInput">ci_pipeline_variables_minimum_override_role_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciPushRepositoryForJobTokenAllowedInput">ci_push_repository_for_job_token_allowed_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciPushRepositoryForJobTokenAllowedInput">ci_push_repository_for_job_token_allowed_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciRestrictPipelineCancellationRoleInput">ci_restrict_pipeline_cancellation_role_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciSeparatedCachesInput">ci_separated_caches_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciSeparatedCachesInput">ci_separated_caches_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.containerExpirationPolicyInput">container_expiration_policy_input</a></code> | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy">ProjectContainerExpirationPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.containerRegistryAccessLevelInput">container_registry_access_level_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.containerRegistryEnabledInput">container_registry_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.containerRegistryEnabledInput">container_registry_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.defaultBranchInput">default_branch_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.emailsEnabledInput">emails_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.emailsEnabledInput">emails_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.environmentsAccessLevelInput">environments_access_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.externalAuthorizationClassificationLabelInput">external_authorization_classification_label_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.featureFlagsAccessLevelInput">feature_flags_access_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.forkedFromProjectIdInput">forked_from_project_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.forkingAccessLevelInput">forking_access_level_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.groupRunnersEnabledInput">group_runners_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.groupRunnersEnabledInput">group_runners_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.groupWithProjectTemplatesIdInput">group_with_project_templates_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlInput">import_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlPasswordInput">import_url_password_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlUsernameInput">import_url_username_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.infrastructureAccessLevelInput">infrastructure_access_level_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.initializeWithReadmeInput">initialize_with_readme_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.initializeWithReadmeInput">initialize_with_readme_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesAccessLevelInput">issues_access_level_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesEnabledInput">issues_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesEnabledInput">issues_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesTemplateInput">issues_template_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.keepLatestArtifactInput">keep_latest_artifact_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.lfsEnabledInput">lfs_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.keepLatestArtifactInput">keep_latest_artifact_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.lfsEnabledInput">lfs_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeCommitTemplateInput">merge_commit_template_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeMethodInput">merge_method_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergePipelinesEnabledInput">merge_pipelines_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergePipelinesEnabledInput">merge_pipelines_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeRequestsAccessLevelInput">merge_requests_access_level_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeRequestsEnabledInput">merge_requests_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeRequestsEnabledInput">merge_requests_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeRequestsTemplateInput">merge_requests_template_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeTrainsEnabledInput">merge_trains_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorInput">mirror_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorOverwritesDivergedBranchesInput">mirror_overwrites_diverged_branches_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorTriggerBuildsInput">mirror_trigger_builds_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeTrainsEnabledInput">merge_trains_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorInput">mirror_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorOverwritesDivergedBranchesInput">mirror_overwrites_diverged_branches_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorTriggerBuildsInput">mirror_trigger_builds_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.modelExperimentsAccessLevelInput">model_experiments_access_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.modelRegistryAccessLevelInput">model_registry_access_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.monitorAccessLevelInput">monitor_access_level_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mrDefaultTargetSelfInput">mr_default_target_self_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mrDefaultTargetSelfInput">mr_default_target_self_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.namespaceIdInput">namespace_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyAllowMergeIfAllDiscussionsAreResolvedInput">only_allow_merge_if_all_discussions_are_resolved_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyAllowMergeIfPipelineSucceedsInput">only_allow_merge_if_pipeline_succeeds_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyMirrorProtectedBranchesInput">only_mirror_protected_branches_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.packagesEnabledInput">packages_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyAllowMergeIfAllDiscussionsAreResolvedInput">only_allow_merge_if_all_discussions_are_resolved_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyAllowMergeIfPipelineSucceedsInput">only_allow_merge_if_pipeline_succeeds_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyMirrorProtectedBranchesInput">only_mirror_protected_branches_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.packagesEnabledInput">packages_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.pagesAccessLevelInput">pages_access_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.permanentlyDeleteOnDestroyInput">permanently_delete_on_destroy_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.pipelinesEnabledInput">pipelines_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.preReceiveSecretDetectionEnabledInput">pre_receive_secret_detection_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.preventMergeWithoutJiraIssueInput">prevent_merge_without_jira_issue_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.printingMergeRequestLinkEnabledInput">printing_merge_request_link_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.publicBuildsInput">public_builds_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.publicJobsInput">public_jobs_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.permanentlyDeleteOnDestroyInput">permanently_delete_on_destroy_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.pipelinesEnabledInput">pipelines_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.preReceiveSecretDetectionEnabledInput">pre_receive_secret_detection_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.preventMergeWithoutJiraIssueInput">prevent_merge_without_jira_issue_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.printingMergeRequestLinkEnabledInput">printing_merge_request_link_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.publicBuildsInput">public_builds_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.publicJobsInput">public_jobs_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.pushRulesInput">push_rules_input</a></code> | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules">ProjectPushRules</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.releasesAccessLevelInput">releases_access_level_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.removeSourceBranchAfterMergeInput">remove_source_branch_after_merge_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.removeSourceBranchAfterMergeInput">remove_source_branch_after_merge_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.repositoryAccessLevelInput">repository_access_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.repositoryStorageInput">repository_storage_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.requestAccessEnabledInput">request_access_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.requestAccessEnabledInput">request_access_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.requirementsAccessLevelInput">requirements_access_level_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.resolveOutdatedDiffDiscussionsInput">resolve_outdated_diff_discussions_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.restrictUserDefinedVariablesInput">restrict_user_defined_variables_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.resolveOutdatedDiffDiscussionsInput">resolve_outdated_diff_discussions_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.restrictUserDefinedVariablesInput">restrict_user_defined_variables_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.securityAndComplianceAccessLevelInput">security_and_compliance_access_level_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.sharedRunnersEnabledInput">shared_runners_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.skipWaitForDefaultBranchProtectionInput">skip_wait_for_default_branch_protection_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.sharedRunnersEnabledInput">shared_runners_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.skipWaitForDefaultBranchProtectionInput">skip_wait_for_default_branch_protection_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.snippetsAccessLevelInput">snippets_access_level_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.snippetsEnabledInput">snippets_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.snippetsEnabledInput">snippets_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.squashCommitTemplateInput">squash_commit_template_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.squashOptionInput">squash_option_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.suggestionCommitMessageInput">suggestion_commit_message_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.templateNameInput">template_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.templateProjectIdInput">template_project_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-gitlab.project.ProjectTimeouts">ProjectTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-gitlab.project.ProjectTimeouts">ProjectTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.topicsInput">topics_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.useCustomTemplateInput">use_custom_template_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.useCustomTemplateInput">use_custom_template_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.visibilityLevelInput">visibility_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.wikiAccessLevelInput">wiki_access_level_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.wikiEnabledInput">wiki_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.allowMergeOnSkippedPipeline">allow_merge_on_skipped_pipeline</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.allowPipelineTriggerApproveDeployment">allow_pipeline_trigger_approve_deployment</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.wikiEnabledInput">wiki_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.allowMergeOnSkippedPipeline">allow_merge_on_skipped_pipeline</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.allowPipelineTriggerApproveDeployment">allow_pipeline_trigger_approve_deployment</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.analyticsAccessLevel">analytics_access_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.approvalsBeforeMerge">approvals_before_merge</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.archived">archived</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.archiveOnDestroy">archive_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.archived">archived</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.archiveOnDestroy">archive_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.autoCancelPendingPipelines">auto_cancel_pending_pipelines</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.autocloseReferencedIssues">autoclose_referenced_issues</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.autocloseReferencedIssues">autoclose_referenced_issues</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.autoDevopsDeployStrategy">auto_devops_deploy_strategy</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.autoDevopsEnabled">auto_devops_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.autoDuoCodeReviewEnabled">auto_duo_code_review_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.autoDevopsEnabled">auto_devops_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.autoDuoCodeReviewEnabled">auto_duo_code_review_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.avatar">avatar</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.avatarHash">avatar_hash</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.branches">branches</a></code> | <code>str</code> | *No description.* |
@@ -3033,78 +3033,78 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciConfigPath">ci_config_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciDefaultGitDepth">ci_default_git_depth</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciDeletePipelinesInSeconds">ci_delete_pipelines_in_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciForwardDeploymentEnabled">ci_forward_deployment_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciForwardDeploymentRollbackAllowed">ci_forward_deployment_rollback_allowed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciForwardDeploymentEnabled">ci_forward_deployment_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciForwardDeploymentRollbackAllowed">ci_forward_deployment_rollback_allowed</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciIdTokenSubClaimComponents">ci_id_token_sub_claim_components</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciPipelineVariablesMinimumOverrideRole">ci_pipeline_variables_minimum_override_role</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciPushRepositoryForJobTokenAllowed">ci_push_repository_for_job_token_allowed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciPushRepositoryForJobTokenAllowed">ci_push_repository_for_job_token_allowed</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciRestrictPipelineCancellationRole">ci_restrict_pipeline_cancellation_role</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciSeparatedCaches">ci_separated_caches</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciSeparatedCaches">ci_separated_caches</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.containerRegistryAccessLevel">container_registry_access_level</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.containerRegistryEnabled">container_registry_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.containerRegistryEnabled">container_registry_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.defaultBranch">default_branch</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.emailsEnabled">emails_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.emailsEnabled">emails_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.environmentsAccessLevel">environments_access_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.externalAuthorizationClassificationLabel">external_authorization_classification_label</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.featureFlagsAccessLevel">feature_flags_access_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.forkedFromProjectId">forked_from_project_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.forkingAccessLevel">forking_access_level</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.groupRunnersEnabled">group_runners_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.groupRunnersEnabled">group_runners_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.groupWithProjectTemplatesId">group_with_project_templates_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrl">import_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlPassword">import_url_password</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlUsername">import_url_username</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.infrastructureAccessLevel">infrastructure_access_level</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.initializeWithReadme">initialize_with_readme</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.initializeWithReadme">initialize_with_readme</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesAccessLevel">issues_access_level</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesEnabled">issues_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesEnabled">issues_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesTemplate">issues_template</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.keepLatestArtifact">keep_latest_artifact</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.lfsEnabled">lfs_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.keepLatestArtifact">keep_latest_artifact</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.lfsEnabled">lfs_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeCommitTemplate">merge_commit_template</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeMethod">merge_method</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergePipelinesEnabled">merge_pipelines_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergePipelinesEnabled">merge_pipelines_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeRequestsAccessLevel">merge_requests_access_level</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeRequestsEnabled">merge_requests_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeRequestsEnabled">merge_requests_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeRequestsTemplate">merge_requests_template</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeTrainsEnabled">merge_trains_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirror">mirror</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorOverwritesDivergedBranches">mirror_overwrites_diverged_branches</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorTriggerBuilds">mirror_trigger_builds</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeTrainsEnabled">merge_trains_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirror">mirror</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorOverwritesDivergedBranches">mirror_overwrites_diverged_branches</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorTriggerBuilds">mirror_trigger_builds</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.modelExperimentsAccessLevel">model_experiments_access_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.modelRegistryAccessLevel">model_registry_access_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.monitorAccessLevel">monitor_access_level</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mrDefaultTargetSelf">mr_default_target_self</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mrDefaultTargetSelf">mr_default_target_self</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.namespaceId">namespace_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyAllowMergeIfAllDiscussionsAreResolved">only_allow_merge_if_all_discussions_are_resolved</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyAllowMergeIfPipelineSucceeds">only_allow_merge_if_pipeline_succeeds</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyMirrorProtectedBranches">only_mirror_protected_branches</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.packagesEnabled">packages_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyAllowMergeIfAllDiscussionsAreResolved">only_allow_merge_if_all_discussions_are_resolved</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyAllowMergeIfPipelineSucceeds">only_allow_merge_if_pipeline_succeeds</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyMirrorProtectedBranches">only_mirror_protected_branches</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.packagesEnabled">packages_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.pagesAccessLevel">pages_access_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.path">path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.permanentlyDeleteOnDestroy">permanently_delete_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.pipelinesEnabled">pipelines_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.preReceiveSecretDetectionEnabled">pre_receive_secret_detection_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.preventMergeWithoutJiraIssue">prevent_merge_without_jira_issue</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.printingMergeRequestLinkEnabled">printing_merge_request_link_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.publicBuilds">public_builds</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.publicJobs">public_jobs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.permanentlyDeleteOnDestroy">permanently_delete_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.pipelinesEnabled">pipelines_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.preReceiveSecretDetectionEnabled">pre_receive_secret_detection_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.preventMergeWithoutJiraIssue">prevent_merge_without_jira_issue</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.printingMergeRequestLinkEnabled">printing_merge_request_link_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.publicBuilds">public_builds</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.publicJobs">public_jobs</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.releasesAccessLevel">releases_access_level</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.removeSourceBranchAfterMerge">remove_source_branch_after_merge</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.removeSourceBranchAfterMerge">remove_source_branch_after_merge</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.repositoryAccessLevel">repository_access_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.repositoryStorage">repository_storage</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.requestAccessEnabled">request_access_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.requestAccessEnabled">request_access_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.requirementsAccessLevel">requirements_access_level</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.resolveOutdatedDiffDiscussions">resolve_outdated_diff_discussions</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.restrictUserDefinedVariables">restrict_user_defined_variables</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.resolveOutdatedDiffDiscussions">resolve_outdated_diff_discussions</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.restrictUserDefinedVariables">restrict_user_defined_variables</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.securityAndComplianceAccessLevel">security_and_compliance_access_level</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.sharedRunnersEnabled">shared_runners_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.skipWaitForDefaultBranchProtection">skip_wait_for_default_branch_protection</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.sharedRunnersEnabled">shared_runners_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.skipWaitForDefaultBranchProtection">skip_wait_for_default_branch_protection</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.snippetsAccessLevel">snippets_access_level</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.snippetsEnabled">snippets_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.snippetsEnabled">snippets_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.squashCommitTemplate">squash_commit_template</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.squashOption">squash_option</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.suggestionCommitMessage">suggestion_commit_message</a></code> | <code>str</code> | *No description.* |
@@ -3112,10 +3112,10 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.templateName">template_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.templateProjectId">template_project_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.topics">topics</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.useCustomTemplate">use_custom_template</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.useCustomTemplate">use_custom_template</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.visibilityLevel">visibility_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.wikiAccessLevel">wiki_access_level</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.wikiEnabled">wiki_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.wikiEnabled">wiki_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -3194,20 +3194,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.project.Project.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.project.Project.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -3254,10 +3254,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.project.Project.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -3364,20 +3364,20 @@ web_url: str
 ##### `allow_merge_on_skipped_pipeline_input`<sup>Optional</sup> <a name="allow_merge_on_skipped_pipeline_input" id="@cdktf/provider-gitlab.project.Project.property.allowMergeOnSkippedPipelineInput"></a>
 
 ```python
-allow_merge_on_skipped_pipeline_input: typing.Union[bool, IResolvable]
+allow_merge_on_skipped_pipeline_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_pipeline_trigger_approve_deployment_input`<sup>Optional</sup> <a name="allow_pipeline_trigger_approve_deployment_input" id="@cdktf/provider-gitlab.project.Project.property.allowPipelineTriggerApproveDeploymentInput"></a>
 
 ```python
-allow_pipeline_trigger_approve_deployment_input: typing.Union[bool, IResolvable]
+allow_pipeline_trigger_approve_deployment_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3404,20 +3404,20 @@ approvals_before_merge_input: typing.Union[int, float]
 ##### `archived_input`<sup>Optional</sup> <a name="archived_input" id="@cdktf/provider-gitlab.project.Project.property.archivedInput"></a>
 
 ```python
-archived_input: typing.Union[bool, IResolvable]
+archived_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `archive_on_destroy_input`<sup>Optional</sup> <a name="archive_on_destroy_input" id="@cdktf/provider-gitlab.project.Project.property.archiveOnDestroyInput"></a>
 
 ```python
-archive_on_destroy_input: typing.Union[bool, IResolvable]
+archive_on_destroy_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3434,10 +3434,10 @@ auto_cancel_pending_pipelines_input: str
 ##### `autoclose_referenced_issues_input`<sup>Optional</sup> <a name="autoclose_referenced_issues_input" id="@cdktf/provider-gitlab.project.Project.property.autocloseReferencedIssuesInput"></a>
 
 ```python
-autoclose_referenced_issues_input: typing.Union[bool, IResolvable]
+autoclose_referenced_issues_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3454,20 +3454,20 @@ auto_devops_deploy_strategy_input: str
 ##### `auto_devops_enabled_input`<sup>Optional</sup> <a name="auto_devops_enabled_input" id="@cdktf/provider-gitlab.project.Project.property.autoDevopsEnabledInput"></a>
 
 ```python
-auto_devops_enabled_input: typing.Union[bool, IResolvable]
+auto_devops_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `auto_duo_code_review_enabled_input`<sup>Optional</sup> <a name="auto_duo_code_review_enabled_input" id="@cdktf/provider-gitlab.project.Project.property.autoDuoCodeReviewEnabledInput"></a>
 
 ```python
-auto_duo_code_review_enabled_input: typing.Union[bool, IResolvable]
+auto_duo_code_review_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3564,20 +3564,20 @@ ci_delete_pipelines_in_seconds_input: typing.Union[int, float]
 ##### `ci_forward_deployment_enabled_input`<sup>Optional</sup> <a name="ci_forward_deployment_enabled_input" id="@cdktf/provider-gitlab.project.Project.property.ciForwardDeploymentEnabledInput"></a>
 
 ```python
-ci_forward_deployment_enabled_input: typing.Union[bool, IResolvable]
+ci_forward_deployment_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `ci_forward_deployment_rollback_allowed_input`<sup>Optional</sup> <a name="ci_forward_deployment_rollback_allowed_input" id="@cdktf/provider-gitlab.project.Project.property.ciForwardDeploymentRollbackAllowedInput"></a>
 
 ```python
-ci_forward_deployment_rollback_allowed_input: typing.Union[bool, IResolvable]
+ci_forward_deployment_rollback_allowed_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3604,10 +3604,10 @@ ci_pipeline_variables_minimum_override_role_input: str
 ##### `ci_push_repository_for_job_token_allowed_input`<sup>Optional</sup> <a name="ci_push_repository_for_job_token_allowed_input" id="@cdktf/provider-gitlab.project.Project.property.ciPushRepositoryForJobTokenAllowedInput"></a>
 
 ```python
-ci_push_repository_for_job_token_allowed_input: typing.Union[bool, IResolvable]
+ci_push_repository_for_job_token_allowed_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3624,10 +3624,10 @@ ci_restrict_pipeline_cancellation_role_input: str
 ##### `ci_separated_caches_input`<sup>Optional</sup> <a name="ci_separated_caches_input" id="@cdktf/provider-gitlab.project.Project.property.ciSeparatedCachesInput"></a>
 
 ```python
-ci_separated_caches_input: typing.Union[bool, IResolvable]
+ci_separated_caches_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3654,10 +3654,10 @@ container_registry_access_level_input: str
 ##### `container_registry_enabled_input`<sup>Optional</sup> <a name="container_registry_enabled_input" id="@cdktf/provider-gitlab.project.Project.property.containerRegistryEnabledInput"></a>
 
 ```python
-container_registry_enabled_input: typing.Union[bool, IResolvable]
+container_registry_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3684,10 +3684,10 @@ description_input: str
 ##### `emails_enabled_input`<sup>Optional</sup> <a name="emails_enabled_input" id="@cdktf/provider-gitlab.project.Project.property.emailsEnabledInput"></a>
 
 ```python
-emails_enabled_input: typing.Union[bool, IResolvable]
+emails_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3744,10 +3744,10 @@ forking_access_level_input: str
 ##### `group_runners_enabled_input`<sup>Optional</sup> <a name="group_runners_enabled_input" id="@cdktf/provider-gitlab.project.Project.property.groupRunnersEnabledInput"></a>
 
 ```python
-group_runners_enabled_input: typing.Union[bool, IResolvable]
+group_runners_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3814,10 +3814,10 @@ infrastructure_access_level_input: str
 ##### `initialize_with_readme_input`<sup>Optional</sup> <a name="initialize_with_readme_input" id="@cdktf/provider-gitlab.project.Project.property.initializeWithReadmeInput"></a>
 
 ```python
-initialize_with_readme_input: typing.Union[bool, IResolvable]
+initialize_with_readme_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3834,10 +3834,10 @@ issues_access_level_input: str
 ##### `issues_enabled_input`<sup>Optional</sup> <a name="issues_enabled_input" id="@cdktf/provider-gitlab.project.Project.property.issuesEnabledInput"></a>
 
 ```python
-issues_enabled_input: typing.Union[bool, IResolvable]
+issues_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3854,20 +3854,20 @@ issues_template_input: str
 ##### `keep_latest_artifact_input`<sup>Optional</sup> <a name="keep_latest_artifact_input" id="@cdktf/provider-gitlab.project.Project.property.keepLatestArtifactInput"></a>
 
 ```python
-keep_latest_artifact_input: typing.Union[bool, IResolvable]
+keep_latest_artifact_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `lfs_enabled_input`<sup>Optional</sup> <a name="lfs_enabled_input" id="@cdktf/provider-gitlab.project.Project.property.lfsEnabledInput"></a>
 
 ```python
-lfs_enabled_input: typing.Union[bool, IResolvable]
+lfs_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3894,10 +3894,10 @@ merge_method_input: str
 ##### `merge_pipelines_enabled_input`<sup>Optional</sup> <a name="merge_pipelines_enabled_input" id="@cdktf/provider-gitlab.project.Project.property.mergePipelinesEnabledInput"></a>
 
 ```python
-merge_pipelines_enabled_input: typing.Union[bool, IResolvable]
+merge_pipelines_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3914,10 +3914,10 @@ merge_requests_access_level_input: str
 ##### `merge_requests_enabled_input`<sup>Optional</sup> <a name="merge_requests_enabled_input" id="@cdktf/provider-gitlab.project.Project.property.mergeRequestsEnabledInput"></a>
 
 ```python
-merge_requests_enabled_input: typing.Union[bool, IResolvable]
+merge_requests_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3934,40 +3934,40 @@ merge_requests_template_input: str
 ##### `merge_trains_enabled_input`<sup>Optional</sup> <a name="merge_trains_enabled_input" id="@cdktf/provider-gitlab.project.Project.property.mergeTrainsEnabledInput"></a>
 
 ```python
-merge_trains_enabled_input: typing.Union[bool, IResolvable]
+merge_trains_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `mirror_input`<sup>Optional</sup> <a name="mirror_input" id="@cdktf/provider-gitlab.project.Project.property.mirrorInput"></a>
 
 ```python
-mirror_input: typing.Union[bool, IResolvable]
+mirror_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `mirror_overwrites_diverged_branches_input`<sup>Optional</sup> <a name="mirror_overwrites_diverged_branches_input" id="@cdktf/provider-gitlab.project.Project.property.mirrorOverwritesDivergedBranchesInput"></a>
 
 ```python
-mirror_overwrites_diverged_branches_input: typing.Union[bool, IResolvable]
+mirror_overwrites_diverged_branches_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `mirror_trigger_builds_input`<sup>Optional</sup> <a name="mirror_trigger_builds_input" id="@cdktf/provider-gitlab.project.Project.property.mirrorTriggerBuildsInput"></a>
 
 ```python
-mirror_trigger_builds_input: typing.Union[bool, IResolvable]
+mirror_trigger_builds_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4004,10 +4004,10 @@ monitor_access_level_input: str
 ##### `mr_default_target_self_input`<sup>Optional</sup> <a name="mr_default_target_self_input" id="@cdktf/provider-gitlab.project.Project.property.mrDefaultTargetSelfInput"></a>
 
 ```python
-mr_default_target_self_input: typing.Union[bool, IResolvable]
+mr_default_target_self_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4034,40 +4034,40 @@ namespace_id_input: typing.Union[int, float]
 ##### `only_allow_merge_if_all_discussions_are_resolved_input`<sup>Optional</sup> <a name="only_allow_merge_if_all_discussions_are_resolved_input" id="@cdktf/provider-gitlab.project.Project.property.onlyAllowMergeIfAllDiscussionsAreResolvedInput"></a>
 
 ```python
-only_allow_merge_if_all_discussions_are_resolved_input: typing.Union[bool, IResolvable]
+only_allow_merge_if_all_discussions_are_resolved_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `only_allow_merge_if_pipeline_succeeds_input`<sup>Optional</sup> <a name="only_allow_merge_if_pipeline_succeeds_input" id="@cdktf/provider-gitlab.project.Project.property.onlyAllowMergeIfPipelineSucceedsInput"></a>
 
 ```python
-only_allow_merge_if_pipeline_succeeds_input: typing.Union[bool, IResolvable]
+only_allow_merge_if_pipeline_succeeds_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `only_mirror_protected_branches_input`<sup>Optional</sup> <a name="only_mirror_protected_branches_input" id="@cdktf/provider-gitlab.project.Project.property.onlyMirrorProtectedBranchesInput"></a>
 
 ```python
-only_mirror_protected_branches_input: typing.Union[bool, IResolvable]
+only_mirror_protected_branches_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `packages_enabled_input`<sup>Optional</sup> <a name="packages_enabled_input" id="@cdktf/provider-gitlab.project.Project.property.packagesEnabledInput"></a>
 
 ```python
-packages_enabled_input: typing.Union[bool, IResolvable]
+packages_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4094,70 +4094,70 @@ path_input: str
 ##### `permanently_delete_on_destroy_input`<sup>Optional</sup> <a name="permanently_delete_on_destroy_input" id="@cdktf/provider-gitlab.project.Project.property.permanentlyDeleteOnDestroyInput"></a>
 
 ```python
-permanently_delete_on_destroy_input: typing.Union[bool, IResolvable]
+permanently_delete_on_destroy_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `pipelines_enabled_input`<sup>Optional</sup> <a name="pipelines_enabled_input" id="@cdktf/provider-gitlab.project.Project.property.pipelinesEnabledInput"></a>
 
 ```python
-pipelines_enabled_input: typing.Union[bool, IResolvable]
+pipelines_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `pre_receive_secret_detection_enabled_input`<sup>Optional</sup> <a name="pre_receive_secret_detection_enabled_input" id="@cdktf/provider-gitlab.project.Project.property.preReceiveSecretDetectionEnabledInput"></a>
 
 ```python
-pre_receive_secret_detection_enabled_input: typing.Union[bool, IResolvable]
+pre_receive_secret_detection_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `prevent_merge_without_jira_issue_input`<sup>Optional</sup> <a name="prevent_merge_without_jira_issue_input" id="@cdktf/provider-gitlab.project.Project.property.preventMergeWithoutJiraIssueInput"></a>
 
 ```python
-prevent_merge_without_jira_issue_input: typing.Union[bool, IResolvable]
+prevent_merge_without_jira_issue_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `printing_merge_request_link_enabled_input`<sup>Optional</sup> <a name="printing_merge_request_link_enabled_input" id="@cdktf/provider-gitlab.project.Project.property.printingMergeRequestLinkEnabledInput"></a>
 
 ```python
-printing_merge_request_link_enabled_input: typing.Union[bool, IResolvable]
+printing_merge_request_link_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `public_builds_input`<sup>Optional</sup> <a name="public_builds_input" id="@cdktf/provider-gitlab.project.Project.property.publicBuildsInput"></a>
 
 ```python
-public_builds_input: typing.Union[bool, IResolvable]
+public_builds_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `public_jobs_input`<sup>Optional</sup> <a name="public_jobs_input" id="@cdktf/provider-gitlab.project.Project.property.publicJobsInput"></a>
 
 ```python
-public_jobs_input: typing.Union[bool, IResolvable]
+public_jobs_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4184,10 +4184,10 @@ releases_access_level_input: str
 ##### `remove_source_branch_after_merge_input`<sup>Optional</sup> <a name="remove_source_branch_after_merge_input" id="@cdktf/provider-gitlab.project.Project.property.removeSourceBranchAfterMergeInput"></a>
 
 ```python
-remove_source_branch_after_merge_input: typing.Union[bool, IResolvable]
+remove_source_branch_after_merge_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4214,10 +4214,10 @@ repository_storage_input: str
 ##### `request_access_enabled_input`<sup>Optional</sup> <a name="request_access_enabled_input" id="@cdktf/provider-gitlab.project.Project.property.requestAccessEnabledInput"></a>
 
 ```python
-request_access_enabled_input: typing.Union[bool, IResolvable]
+request_access_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4234,20 +4234,20 @@ requirements_access_level_input: str
 ##### `resolve_outdated_diff_discussions_input`<sup>Optional</sup> <a name="resolve_outdated_diff_discussions_input" id="@cdktf/provider-gitlab.project.Project.property.resolveOutdatedDiffDiscussionsInput"></a>
 
 ```python
-resolve_outdated_diff_discussions_input: typing.Union[bool, IResolvable]
+resolve_outdated_diff_discussions_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `restrict_user_defined_variables_input`<sup>Optional</sup> <a name="restrict_user_defined_variables_input" id="@cdktf/provider-gitlab.project.Project.property.restrictUserDefinedVariablesInput"></a>
 
 ```python
-restrict_user_defined_variables_input: typing.Union[bool, IResolvable]
+restrict_user_defined_variables_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4264,20 +4264,20 @@ security_and_compliance_access_level_input: str
 ##### `shared_runners_enabled_input`<sup>Optional</sup> <a name="shared_runners_enabled_input" id="@cdktf/provider-gitlab.project.Project.property.sharedRunnersEnabledInput"></a>
 
 ```python
-shared_runners_enabled_input: typing.Union[bool, IResolvable]
+shared_runners_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `skip_wait_for_default_branch_protection_input`<sup>Optional</sup> <a name="skip_wait_for_default_branch_protection_input" id="@cdktf/provider-gitlab.project.Project.property.skipWaitForDefaultBranchProtectionInput"></a>
 
 ```python
-skip_wait_for_default_branch_protection_input: typing.Union[bool, IResolvable]
+skip_wait_for_default_branch_protection_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4294,10 +4294,10 @@ snippets_access_level_input: str
 ##### `snippets_enabled_input`<sup>Optional</sup> <a name="snippets_enabled_input" id="@cdktf/provider-gitlab.project.Project.property.snippetsEnabledInput"></a>
 
 ```python
-snippets_enabled_input: typing.Union[bool, IResolvable]
+snippets_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4364,10 +4364,10 @@ template_project_id_input: typing.Union[int, float]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-gitlab.project.Project.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[IResolvable, ProjectTimeouts]
+timeouts_input: IResolvable | ProjectTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-gitlab.project.ProjectTimeouts">ProjectTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-gitlab.project.ProjectTimeouts">ProjectTimeouts</a>
 
 ---
 
@@ -4384,10 +4384,10 @@ topics_input: typing.List[str]
 ##### `use_custom_template_input`<sup>Optional</sup> <a name="use_custom_template_input" id="@cdktf/provider-gitlab.project.Project.property.useCustomTemplateInput"></a>
 
 ```python
-use_custom_template_input: typing.Union[bool, IResolvable]
+use_custom_template_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4414,30 +4414,30 @@ wiki_access_level_input: str
 ##### `wiki_enabled_input`<sup>Optional</sup> <a name="wiki_enabled_input" id="@cdktf/provider-gitlab.project.Project.property.wikiEnabledInput"></a>
 
 ```python
-wiki_enabled_input: typing.Union[bool, IResolvable]
+wiki_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_merge_on_skipped_pipeline`<sup>Required</sup> <a name="allow_merge_on_skipped_pipeline" id="@cdktf/provider-gitlab.project.Project.property.allowMergeOnSkippedPipeline"></a>
 
 ```python
-allow_merge_on_skipped_pipeline: typing.Union[bool, IResolvable]
+allow_merge_on_skipped_pipeline: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_pipeline_trigger_approve_deployment`<sup>Required</sup> <a name="allow_pipeline_trigger_approve_deployment" id="@cdktf/provider-gitlab.project.Project.property.allowPipelineTriggerApproveDeployment"></a>
 
 ```python
-allow_pipeline_trigger_approve_deployment: typing.Union[bool, IResolvable]
+allow_pipeline_trigger_approve_deployment: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4464,20 +4464,20 @@ approvals_before_merge: typing.Union[int, float]
 ##### `archived`<sup>Required</sup> <a name="archived" id="@cdktf/provider-gitlab.project.Project.property.archived"></a>
 
 ```python
-archived: typing.Union[bool, IResolvable]
+archived: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `archive_on_destroy`<sup>Required</sup> <a name="archive_on_destroy" id="@cdktf/provider-gitlab.project.Project.property.archiveOnDestroy"></a>
 
 ```python
-archive_on_destroy: typing.Union[bool, IResolvable]
+archive_on_destroy: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4494,10 +4494,10 @@ auto_cancel_pending_pipelines: str
 ##### `autoclose_referenced_issues`<sup>Required</sup> <a name="autoclose_referenced_issues" id="@cdktf/provider-gitlab.project.Project.property.autocloseReferencedIssues"></a>
 
 ```python
-autoclose_referenced_issues: typing.Union[bool, IResolvable]
+autoclose_referenced_issues: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4514,20 +4514,20 @@ auto_devops_deploy_strategy: str
 ##### `auto_devops_enabled`<sup>Required</sup> <a name="auto_devops_enabled" id="@cdktf/provider-gitlab.project.Project.property.autoDevopsEnabled"></a>
 
 ```python
-auto_devops_enabled: typing.Union[bool, IResolvable]
+auto_devops_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `auto_duo_code_review_enabled`<sup>Required</sup> <a name="auto_duo_code_review_enabled" id="@cdktf/provider-gitlab.project.Project.property.autoDuoCodeReviewEnabled"></a>
 
 ```python
-auto_duo_code_review_enabled: typing.Union[bool, IResolvable]
+auto_duo_code_review_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4624,20 +4624,20 @@ ci_delete_pipelines_in_seconds: typing.Union[int, float]
 ##### `ci_forward_deployment_enabled`<sup>Required</sup> <a name="ci_forward_deployment_enabled" id="@cdktf/provider-gitlab.project.Project.property.ciForwardDeploymentEnabled"></a>
 
 ```python
-ci_forward_deployment_enabled: typing.Union[bool, IResolvable]
+ci_forward_deployment_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `ci_forward_deployment_rollback_allowed`<sup>Required</sup> <a name="ci_forward_deployment_rollback_allowed" id="@cdktf/provider-gitlab.project.Project.property.ciForwardDeploymentRollbackAllowed"></a>
 
 ```python
-ci_forward_deployment_rollback_allowed: typing.Union[bool, IResolvable]
+ci_forward_deployment_rollback_allowed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4664,10 +4664,10 @@ ci_pipeline_variables_minimum_override_role: str
 ##### `ci_push_repository_for_job_token_allowed`<sup>Required</sup> <a name="ci_push_repository_for_job_token_allowed" id="@cdktf/provider-gitlab.project.Project.property.ciPushRepositoryForJobTokenAllowed"></a>
 
 ```python
-ci_push_repository_for_job_token_allowed: typing.Union[bool, IResolvable]
+ci_push_repository_for_job_token_allowed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4684,10 +4684,10 @@ ci_restrict_pipeline_cancellation_role: str
 ##### `ci_separated_caches`<sup>Required</sup> <a name="ci_separated_caches" id="@cdktf/provider-gitlab.project.Project.property.ciSeparatedCaches"></a>
 
 ```python
-ci_separated_caches: typing.Union[bool, IResolvable]
+ci_separated_caches: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4704,10 +4704,10 @@ container_registry_access_level: str
 ##### `container_registry_enabled`<sup>Required</sup> <a name="container_registry_enabled" id="@cdktf/provider-gitlab.project.Project.property.containerRegistryEnabled"></a>
 
 ```python
-container_registry_enabled: typing.Union[bool, IResolvable]
+container_registry_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4734,10 +4734,10 @@ description: str
 ##### `emails_enabled`<sup>Required</sup> <a name="emails_enabled" id="@cdktf/provider-gitlab.project.Project.property.emailsEnabled"></a>
 
 ```python
-emails_enabled: typing.Union[bool, IResolvable]
+emails_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4794,10 +4794,10 @@ forking_access_level: str
 ##### `group_runners_enabled`<sup>Required</sup> <a name="group_runners_enabled" id="@cdktf/provider-gitlab.project.Project.property.groupRunnersEnabled"></a>
 
 ```python
-group_runners_enabled: typing.Union[bool, IResolvable]
+group_runners_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4864,10 +4864,10 @@ infrastructure_access_level: str
 ##### `initialize_with_readme`<sup>Required</sup> <a name="initialize_with_readme" id="@cdktf/provider-gitlab.project.Project.property.initializeWithReadme"></a>
 
 ```python
-initialize_with_readme: typing.Union[bool, IResolvable]
+initialize_with_readme: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4884,10 +4884,10 @@ issues_access_level: str
 ##### `issues_enabled`<sup>Required</sup> <a name="issues_enabled" id="@cdktf/provider-gitlab.project.Project.property.issuesEnabled"></a>
 
 ```python
-issues_enabled: typing.Union[bool, IResolvable]
+issues_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4904,20 +4904,20 @@ issues_template: str
 ##### `keep_latest_artifact`<sup>Required</sup> <a name="keep_latest_artifact" id="@cdktf/provider-gitlab.project.Project.property.keepLatestArtifact"></a>
 
 ```python
-keep_latest_artifact: typing.Union[bool, IResolvable]
+keep_latest_artifact: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `lfs_enabled`<sup>Required</sup> <a name="lfs_enabled" id="@cdktf/provider-gitlab.project.Project.property.lfsEnabled"></a>
 
 ```python
-lfs_enabled: typing.Union[bool, IResolvable]
+lfs_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4944,10 +4944,10 @@ merge_method: str
 ##### `merge_pipelines_enabled`<sup>Required</sup> <a name="merge_pipelines_enabled" id="@cdktf/provider-gitlab.project.Project.property.mergePipelinesEnabled"></a>
 
 ```python
-merge_pipelines_enabled: typing.Union[bool, IResolvable]
+merge_pipelines_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4964,10 +4964,10 @@ merge_requests_access_level: str
 ##### `merge_requests_enabled`<sup>Required</sup> <a name="merge_requests_enabled" id="@cdktf/provider-gitlab.project.Project.property.mergeRequestsEnabled"></a>
 
 ```python
-merge_requests_enabled: typing.Union[bool, IResolvable]
+merge_requests_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4984,40 +4984,40 @@ merge_requests_template: str
 ##### `merge_trains_enabled`<sup>Required</sup> <a name="merge_trains_enabled" id="@cdktf/provider-gitlab.project.Project.property.mergeTrainsEnabled"></a>
 
 ```python
-merge_trains_enabled: typing.Union[bool, IResolvable]
+merge_trains_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `mirror`<sup>Required</sup> <a name="mirror" id="@cdktf/provider-gitlab.project.Project.property.mirror"></a>
 
 ```python
-mirror: typing.Union[bool, IResolvable]
+mirror: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `mirror_overwrites_diverged_branches`<sup>Required</sup> <a name="mirror_overwrites_diverged_branches" id="@cdktf/provider-gitlab.project.Project.property.mirrorOverwritesDivergedBranches"></a>
 
 ```python
-mirror_overwrites_diverged_branches: typing.Union[bool, IResolvable]
+mirror_overwrites_diverged_branches: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `mirror_trigger_builds`<sup>Required</sup> <a name="mirror_trigger_builds" id="@cdktf/provider-gitlab.project.Project.property.mirrorTriggerBuilds"></a>
 
 ```python
-mirror_trigger_builds: typing.Union[bool, IResolvable]
+mirror_trigger_builds: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -5054,10 +5054,10 @@ monitor_access_level: str
 ##### `mr_default_target_self`<sup>Required</sup> <a name="mr_default_target_self" id="@cdktf/provider-gitlab.project.Project.property.mrDefaultTargetSelf"></a>
 
 ```python
-mr_default_target_self: typing.Union[bool, IResolvable]
+mr_default_target_self: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -5084,40 +5084,40 @@ namespace_id: typing.Union[int, float]
 ##### `only_allow_merge_if_all_discussions_are_resolved`<sup>Required</sup> <a name="only_allow_merge_if_all_discussions_are_resolved" id="@cdktf/provider-gitlab.project.Project.property.onlyAllowMergeIfAllDiscussionsAreResolved"></a>
 
 ```python
-only_allow_merge_if_all_discussions_are_resolved: typing.Union[bool, IResolvable]
+only_allow_merge_if_all_discussions_are_resolved: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `only_allow_merge_if_pipeline_succeeds`<sup>Required</sup> <a name="only_allow_merge_if_pipeline_succeeds" id="@cdktf/provider-gitlab.project.Project.property.onlyAllowMergeIfPipelineSucceeds"></a>
 
 ```python
-only_allow_merge_if_pipeline_succeeds: typing.Union[bool, IResolvable]
+only_allow_merge_if_pipeline_succeeds: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `only_mirror_protected_branches`<sup>Required</sup> <a name="only_mirror_protected_branches" id="@cdktf/provider-gitlab.project.Project.property.onlyMirrorProtectedBranches"></a>
 
 ```python
-only_mirror_protected_branches: typing.Union[bool, IResolvable]
+only_mirror_protected_branches: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `packages_enabled`<sup>Required</sup> <a name="packages_enabled" id="@cdktf/provider-gitlab.project.Project.property.packagesEnabled"></a>
 
 ```python
-packages_enabled: typing.Union[bool, IResolvable]
+packages_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -5144,70 +5144,70 @@ path: str
 ##### `permanently_delete_on_destroy`<sup>Required</sup> <a name="permanently_delete_on_destroy" id="@cdktf/provider-gitlab.project.Project.property.permanentlyDeleteOnDestroy"></a>
 
 ```python
-permanently_delete_on_destroy: typing.Union[bool, IResolvable]
+permanently_delete_on_destroy: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `pipelines_enabled`<sup>Required</sup> <a name="pipelines_enabled" id="@cdktf/provider-gitlab.project.Project.property.pipelinesEnabled"></a>
 
 ```python
-pipelines_enabled: typing.Union[bool, IResolvable]
+pipelines_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `pre_receive_secret_detection_enabled`<sup>Required</sup> <a name="pre_receive_secret_detection_enabled" id="@cdktf/provider-gitlab.project.Project.property.preReceiveSecretDetectionEnabled"></a>
 
 ```python
-pre_receive_secret_detection_enabled: typing.Union[bool, IResolvable]
+pre_receive_secret_detection_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `prevent_merge_without_jira_issue`<sup>Required</sup> <a name="prevent_merge_without_jira_issue" id="@cdktf/provider-gitlab.project.Project.property.preventMergeWithoutJiraIssue"></a>
 
 ```python
-prevent_merge_without_jira_issue: typing.Union[bool, IResolvable]
+prevent_merge_without_jira_issue: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `printing_merge_request_link_enabled`<sup>Required</sup> <a name="printing_merge_request_link_enabled" id="@cdktf/provider-gitlab.project.Project.property.printingMergeRequestLinkEnabled"></a>
 
 ```python
-printing_merge_request_link_enabled: typing.Union[bool, IResolvable]
+printing_merge_request_link_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `public_builds`<sup>Required</sup> <a name="public_builds" id="@cdktf/provider-gitlab.project.Project.property.publicBuilds"></a>
 
 ```python
-public_builds: typing.Union[bool, IResolvable]
+public_builds: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `public_jobs`<sup>Required</sup> <a name="public_jobs" id="@cdktf/provider-gitlab.project.Project.property.publicJobs"></a>
 
 ```python
-public_jobs: typing.Union[bool, IResolvable]
+public_jobs: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -5224,10 +5224,10 @@ releases_access_level: str
 ##### `remove_source_branch_after_merge`<sup>Required</sup> <a name="remove_source_branch_after_merge" id="@cdktf/provider-gitlab.project.Project.property.removeSourceBranchAfterMerge"></a>
 
 ```python
-remove_source_branch_after_merge: typing.Union[bool, IResolvable]
+remove_source_branch_after_merge: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -5254,10 +5254,10 @@ repository_storage: str
 ##### `request_access_enabled`<sup>Required</sup> <a name="request_access_enabled" id="@cdktf/provider-gitlab.project.Project.property.requestAccessEnabled"></a>
 
 ```python
-request_access_enabled: typing.Union[bool, IResolvable]
+request_access_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -5274,20 +5274,20 @@ requirements_access_level: str
 ##### `resolve_outdated_diff_discussions`<sup>Required</sup> <a name="resolve_outdated_diff_discussions" id="@cdktf/provider-gitlab.project.Project.property.resolveOutdatedDiffDiscussions"></a>
 
 ```python
-resolve_outdated_diff_discussions: typing.Union[bool, IResolvable]
+resolve_outdated_diff_discussions: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `restrict_user_defined_variables`<sup>Required</sup> <a name="restrict_user_defined_variables" id="@cdktf/provider-gitlab.project.Project.property.restrictUserDefinedVariables"></a>
 
 ```python
-restrict_user_defined_variables: typing.Union[bool, IResolvable]
+restrict_user_defined_variables: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -5304,20 +5304,20 @@ security_and_compliance_access_level: str
 ##### `shared_runners_enabled`<sup>Required</sup> <a name="shared_runners_enabled" id="@cdktf/provider-gitlab.project.Project.property.sharedRunnersEnabled"></a>
 
 ```python
-shared_runners_enabled: typing.Union[bool, IResolvable]
+shared_runners_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `skip_wait_for_default_branch_protection`<sup>Required</sup> <a name="skip_wait_for_default_branch_protection" id="@cdktf/provider-gitlab.project.Project.property.skipWaitForDefaultBranchProtection"></a>
 
 ```python
-skip_wait_for_default_branch_protection: typing.Union[bool, IResolvable]
+skip_wait_for_default_branch_protection: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -5334,10 +5334,10 @@ snippets_access_level: str
 ##### `snippets_enabled`<sup>Required</sup> <a name="snippets_enabled" id="@cdktf/provider-gitlab.project.Project.property.snippetsEnabled"></a>
 
 ```python
-snippets_enabled: typing.Union[bool, IResolvable]
+snippets_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -5414,10 +5414,10 @@ topics: typing.List[str]
 ##### `use_custom_template`<sup>Required</sup> <a name="use_custom_template" id="@cdktf/provider-gitlab.project.Project.property.useCustomTemplate"></a>
 
 ```python
-use_custom_template: typing.Union[bool, IResolvable]
+use_custom_template: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -5444,10 +5444,10 @@ wiki_access_level: str
 ##### `wiki_enabled`<sup>Required</sup> <a name="wiki_enabled" id="@cdktf/provider-gitlab.project.Project.property.wikiEnabled"></a>
 
 ```python
-wiki_enabled: typing.Union[bool, IResolvable]
+wiki_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -5479,25 +5479,25 @@ tfResourceType: str
 from cdktf_cdktf_provider_gitlab import project
 
 project.ProjectConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
-  allow_merge_on_skipped_pipeline: typing.Union[bool, IResolvable] = None,
-  allow_pipeline_trigger_approve_deployment: typing.Union[bool, IResolvable] = None,
+  allow_merge_on_skipped_pipeline: bool | IResolvable = None,
+  allow_pipeline_trigger_approve_deployment: bool | IResolvable = None,
   analytics_access_level: str = None,
   approvals_before_merge: typing.Union[int, float] = None,
-  archived: typing.Union[bool, IResolvable] = None,
-  archive_on_destroy: typing.Union[bool, IResolvable] = None,
+  archived: bool | IResolvable = None,
+  archive_on_destroy: bool | IResolvable = None,
   auto_cancel_pending_pipelines: str = None,
-  autoclose_referenced_issues: typing.Union[bool, IResolvable] = None,
+  autoclose_referenced_issues: bool | IResolvable = None,
   auto_devops_deploy_strategy: str = None,
-  auto_devops_enabled: typing.Union[bool, IResolvable] = None,
-  auto_duo_code_review_enabled: typing.Union[bool, IResolvable] = None,
+  auto_devops_enabled: bool | IResolvable = None,
+  auto_duo_code_review_enabled: bool | IResolvable = None,
   avatar: str = None,
   avatar_hash: str = None,
   branches: str = None,
@@ -5507,79 +5507,79 @@ project.ProjectConfig(
   ci_config_path: str = None,
   ci_default_git_depth: typing.Union[int, float] = None,
   ci_delete_pipelines_in_seconds: typing.Union[int, float] = None,
-  ci_forward_deployment_enabled: typing.Union[bool, IResolvable] = None,
-  ci_forward_deployment_rollback_allowed: typing.Union[bool, IResolvable] = None,
+  ci_forward_deployment_enabled: bool | IResolvable = None,
+  ci_forward_deployment_rollback_allowed: bool | IResolvable = None,
   ci_id_token_sub_claim_components: typing.List[str] = None,
   ci_pipeline_variables_minimum_override_role: str = None,
-  ci_push_repository_for_job_token_allowed: typing.Union[bool, IResolvable] = None,
+  ci_push_repository_for_job_token_allowed: bool | IResolvable = None,
   ci_restrict_pipeline_cancellation_role: str = None,
-  ci_separated_caches: typing.Union[bool, IResolvable] = None,
+  ci_separated_caches: bool | IResolvable = None,
   container_expiration_policy: ProjectContainerExpirationPolicy = None,
   container_registry_access_level: str = None,
-  container_registry_enabled: typing.Union[bool, IResolvable] = None,
+  container_registry_enabled: bool | IResolvable = None,
   default_branch: str = None,
   description: str = None,
-  emails_enabled: typing.Union[bool, IResolvable] = None,
+  emails_enabled: bool | IResolvable = None,
   environments_access_level: str = None,
   external_authorization_classification_label: str = None,
   feature_flags_access_level: str = None,
   forked_from_project_id: typing.Union[int, float] = None,
   forking_access_level: str = None,
-  group_runners_enabled: typing.Union[bool, IResolvable] = None,
+  group_runners_enabled: bool | IResolvable = None,
   group_with_project_templates_id: typing.Union[int, float] = None,
   id: str = None,
   import_url: str = None,
   import_url_password: str = None,
   import_url_username: str = None,
   infrastructure_access_level: str = None,
-  initialize_with_readme: typing.Union[bool, IResolvable] = None,
+  initialize_with_readme: bool | IResolvable = None,
   issues_access_level: str = None,
-  issues_enabled: typing.Union[bool, IResolvable] = None,
+  issues_enabled: bool | IResolvable = None,
   issues_template: str = None,
-  keep_latest_artifact: typing.Union[bool, IResolvable] = None,
-  lfs_enabled: typing.Union[bool, IResolvable] = None,
+  keep_latest_artifact: bool | IResolvable = None,
+  lfs_enabled: bool | IResolvable = None,
   merge_commit_template: str = None,
   merge_method: str = None,
-  merge_pipelines_enabled: typing.Union[bool, IResolvable] = None,
+  merge_pipelines_enabled: bool | IResolvable = None,
   merge_requests_access_level: str = None,
-  merge_requests_enabled: typing.Union[bool, IResolvable] = None,
+  merge_requests_enabled: bool | IResolvable = None,
   merge_requests_template: str = None,
-  merge_trains_enabled: typing.Union[bool, IResolvable] = None,
-  mirror: typing.Union[bool, IResolvable] = None,
-  mirror_overwrites_diverged_branches: typing.Union[bool, IResolvable] = None,
-  mirror_trigger_builds: typing.Union[bool, IResolvable] = None,
+  merge_trains_enabled: bool | IResolvable = None,
+  mirror: bool | IResolvable = None,
+  mirror_overwrites_diverged_branches: bool | IResolvable = None,
+  mirror_trigger_builds: bool | IResolvable = None,
   model_experiments_access_level: str = None,
   model_registry_access_level: str = None,
   monitor_access_level: str = None,
-  mr_default_target_self: typing.Union[bool, IResolvable] = None,
+  mr_default_target_self: bool | IResolvable = None,
   namespace_id: typing.Union[int, float] = None,
-  only_allow_merge_if_all_discussions_are_resolved: typing.Union[bool, IResolvable] = None,
-  only_allow_merge_if_pipeline_succeeds: typing.Union[bool, IResolvable] = None,
-  only_mirror_protected_branches: typing.Union[bool, IResolvable] = None,
-  packages_enabled: typing.Union[bool, IResolvable] = None,
+  only_allow_merge_if_all_discussions_are_resolved: bool | IResolvable = None,
+  only_allow_merge_if_pipeline_succeeds: bool | IResolvable = None,
+  only_mirror_protected_branches: bool | IResolvable = None,
+  packages_enabled: bool | IResolvable = None,
   pages_access_level: str = None,
   path: str = None,
-  permanently_delete_on_destroy: typing.Union[bool, IResolvable] = None,
-  pipelines_enabled: typing.Union[bool, IResolvable] = None,
-  pre_receive_secret_detection_enabled: typing.Union[bool, IResolvable] = None,
-  prevent_merge_without_jira_issue: typing.Union[bool, IResolvable] = None,
-  printing_merge_request_link_enabled: typing.Union[bool, IResolvable] = None,
-  public_builds: typing.Union[bool, IResolvable] = None,
-  public_jobs: typing.Union[bool, IResolvable] = None,
+  permanently_delete_on_destroy: bool | IResolvable = None,
+  pipelines_enabled: bool | IResolvable = None,
+  pre_receive_secret_detection_enabled: bool | IResolvable = None,
+  prevent_merge_without_jira_issue: bool | IResolvable = None,
+  printing_merge_request_link_enabled: bool | IResolvable = None,
+  public_builds: bool | IResolvable = None,
+  public_jobs: bool | IResolvable = None,
   push_rules: ProjectPushRules = None,
   releases_access_level: str = None,
-  remove_source_branch_after_merge: typing.Union[bool, IResolvable] = None,
+  remove_source_branch_after_merge: bool | IResolvable = None,
   repository_access_level: str = None,
   repository_storage: str = None,
-  request_access_enabled: typing.Union[bool, IResolvable] = None,
+  request_access_enabled: bool | IResolvable = None,
   requirements_access_level: str = None,
-  resolve_outdated_diff_discussions: typing.Union[bool, IResolvable] = None,
-  restrict_user_defined_variables: typing.Union[bool, IResolvable] = None,
+  resolve_outdated_diff_discussions: bool | IResolvable = None,
+  restrict_user_defined_variables: bool | IResolvable = None,
   security_and_compliance_access_level: str = None,
-  shared_runners_enabled: typing.Union[bool, IResolvable] = None,
-  skip_wait_for_default_branch_protection: typing.Union[bool, IResolvable] = None,
+  shared_runners_enabled: bool | IResolvable = None,
+  skip_wait_for_default_branch_protection: bool | IResolvable = None,
   snippets_access_level: str = None,
-  snippets_enabled: typing.Union[bool, IResolvable] = None,
+  snippets_enabled: bool | IResolvable = None,
   squash_commit_template: str = None,
   squash_option: str = None,
   suggestion_commit_message: str = None,
@@ -5588,10 +5588,10 @@ project.ProjectConfig(
   template_project_id: typing.Union[int, float] = None,
   timeouts: ProjectTimeouts = None,
   topics: typing.List[str] = None,
-  use_custom_template: typing.Union[bool, IResolvable] = None,
+  use_custom_template: bool | IResolvable = None,
   visibility_level: str = None,
   wiki_access_level: str = None,
-  wiki_enabled: typing.Union[bool, IResolvable] = None
+  wiki_enabled: bool | IResolvable = None
 )
 ```
 
@@ -5599,25 +5599,25 @@ project.ProjectConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.name">name</a></code> | <code>str</code> | The name of the project. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.allowMergeOnSkippedPipeline">allow_merge_on_skipped_pipeline</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to true if you want to treat skipped pipelines as if they finished with success. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.allowPipelineTriggerApproveDeployment">allow_pipeline_trigger_approve_deployment</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set whether or not a pipeline triggerer is allowed to approve deployments. Premium and Ultimate only. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.allowMergeOnSkippedPipeline">allow_merge_on_skipped_pipeline</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to true if you want to treat skipped pipelines as if they finished with success. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.allowPipelineTriggerApproveDeployment">allow_pipeline_trigger_approve_deployment</a></code> | <code>bool \| cdktf.IResolvable</code> | Set whether or not a pipeline triggerer is allowed to approve deployments. Premium and Ultimate only. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.analyticsAccessLevel">analytics_access_level</a></code> | <code>str</code> | Set the analytics access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.approvalsBeforeMerge">approvals_before_merge</a></code> | <code>typing.Union[int, float]</code> | Number of merge request approvals required for merging. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.archived">archived</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the project is in read-only mode (archived). Repositories can be archived/unarchived by toggling this parameter. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.archiveOnDestroy">archive_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to `true` to archive the project instead of deleting on destroy. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.archived">archived</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the project is in read-only mode (archived). Repositories can be archived/unarchived by toggling this parameter. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.archiveOnDestroy">archive_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to `true` to archive the project instead of deleting on destroy. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.autoCancelPendingPipelines">auto_cancel_pending_pipelines</a></code> | <code>str</code> | Auto-cancel pending pipelines. This isn’t a boolean, but enabled/disabled. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.autocloseReferencedIssues">autoclose_referenced_issues</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set whether auto-closing referenced issues on default branch. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.autocloseReferencedIssues">autoclose_referenced_issues</a></code> | <code>bool \| cdktf.IResolvable</code> | Set whether auto-closing referenced issues on default branch. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.autoDevopsDeployStrategy">auto_devops_deploy_strategy</a></code> | <code>str</code> | Auto Deploy strategy. Valid values are `continuous`, `manual`, `timed_incremental`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.autoDevopsEnabled">auto_devops_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Auto DevOps for this project. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.autoDuoCodeReviewEnabled">auto_duo_code_review_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable automatic reviews by GitLab Duo on merge requests. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.autoDevopsEnabled">auto_devops_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable Auto DevOps for this project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.autoDuoCodeReviewEnabled">auto_duo_code_review_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable automatic reviews by GitLab Duo on merge requests. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.avatar">avatar</a></code> | <code>str</code> | A local path to the avatar image to upload. **Note**: not available for imported resources. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.avatarHash">avatar_hash</a></code> | <code>str</code> | The hash of the avatar image. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.branches">branches</a></code> | <code>str</code> | Branches to fork (empty for all branches). |
@@ -5627,79 +5627,79 @@ project.ProjectConfig(
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.ciConfigPath">ci_config_path</a></code> | <code>str</code> | Custom Path to CI config file. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.ciDefaultGitDepth">ci_default_git_depth</a></code> | <code>typing.Union[int, float]</code> | Default number of revisions for shallow cloning. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.ciDeletePipelinesInSeconds">ci_delete_pipelines_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Pipelines older than the configured time are deleted. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.ciForwardDeploymentEnabled">ci_forward_deployment_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When a new deployment job starts, skip older deployment jobs that are still pending. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.ciForwardDeploymentRollbackAllowed">ci_forward_deployment_rollback_allowed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow job retries even if the deployment job is outdated. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.ciForwardDeploymentEnabled">ci_forward_deployment_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | When a new deployment job starts, skip older deployment jobs that are still pending. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.ciForwardDeploymentRollbackAllowed">ci_forward_deployment_rollback_allowed</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow job retries even if the deployment job is outdated. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.ciIdTokenSubClaimComponents">ci_id_token_sub_claim_components</a></code> | <code>typing.List[str]</code> | Fields included in the sub claim of the ID Token. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.ciPipelineVariablesMinimumOverrideRole">ci_pipeline_variables_minimum_override_role</a></code> | <code>str</code> | The minimum role required to set variables when running pipelines and jobs. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.ciPushRepositoryForJobTokenAllowed">ci_push_repository_for_job_token_allowed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow Git push requests to your project repository that are authenticated with a CI/CD job token. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.ciPushRepositoryForJobTokenAllowed">ci_push_repository_for_job_token_allowed</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow Git push requests to your project repository that are authenticated with a CI/CD job token. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.ciRestrictPipelineCancellationRole">ci_restrict_pipeline_cancellation_role</a></code> | <code>str</code> | The role required to cancel a pipeline or job. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.ciSeparatedCaches">ci_separated_caches</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use separate caches for protected branches. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.ciSeparatedCaches">ci_separated_caches</a></code> | <code>bool \| cdktf.IResolvable</code> | Use separate caches for protected branches. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.containerExpirationPolicy">container_expiration_policy</a></code> | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy">ProjectContainerExpirationPolicy</a></code> | container_expiration_policy block. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.containerRegistryAccessLevel">container_registry_access_level</a></code> | <code>str</code> | Set visibility of container registry, for this project. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.containerRegistryEnabled">container_registry_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable container registry for the project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.containerRegistryEnabled">container_registry_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable container registry for the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.defaultBranch">default_branch</a></code> | <code>str</code> | The default branch for the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.description">description</a></code> | <code>str</code> | A description of the project. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.emailsEnabled">emails_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable email notifications. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.emailsEnabled">emails_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable email notifications. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.environmentsAccessLevel">environments_access_level</a></code> | <code>str</code> | Set the environments access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.externalAuthorizationClassificationLabel">external_authorization_classification_label</a></code> | <code>str</code> | The classification label for the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.featureFlagsAccessLevel">feature_flags_access_level</a></code> | <code>str</code> | Set the feature flags access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.forkedFromProjectId">forked_from_project_id</a></code> | <code>typing.Union[int, float]</code> | The id of the project to fork. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.forkingAccessLevel">forking_access_level</a></code> | <code>str</code> | Set the forking access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.groupRunnersEnabled">group_runners_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable group runners for this project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.groupRunnersEnabled">group_runners_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable group runners for this project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.groupWithProjectTemplatesId">group_with_project_templates_id</a></code> | <code>typing.Union[int, float]</code> | For group-level custom templates, specifies ID of group from which all the custom project templates are sourced. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project#id Project#id}. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.importUrl">import_url</a></code> | <code>str</code> | Git URL to a repository to be imported. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.importUrlPassword">import_url_password</a></code> | <code>str</code> | The password for the `import_url`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.importUrlUsername">import_url_username</a></code> | <code>str</code> | The username for the `import_url`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.infrastructureAccessLevel">infrastructure_access_level</a></code> | <code>str</code> | Set the infrastructure access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.initializeWithReadme">initialize_with_readme</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Create main branch with first commit containing a README.md file. Must be set to `true` if importing an uninitialized project with a different `default_branch`. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.initializeWithReadme">initialize_with_readme</a></code> | <code>bool \| cdktf.IResolvable</code> | Create main branch with first commit containing a README.md file. Must be set to `true` if importing an uninitialized project with a different `default_branch`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.issuesAccessLevel">issues_access_level</a></code> | <code>str</code> | Set the issues access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.issuesEnabled">issues_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable issue tracking for the project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.issuesEnabled">issues_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable issue tracking for the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.issuesTemplate">issues_template</a></code> | <code>str</code> | Sets the template for new issues in the project. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.keepLatestArtifact">keep_latest_artifact</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable or enable the ability to keep the latest artifact for this project. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.lfsEnabled">lfs_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable LFS for the project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.keepLatestArtifact">keep_latest_artifact</a></code> | <code>bool \| cdktf.IResolvable</code> | Disable or enable the ability to keep the latest artifact for this project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.lfsEnabled">lfs_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable LFS for the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mergeCommitTemplate">merge_commit_template</a></code> | <code>str</code> | Template used to create merge commit message in merge requests. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mergeMethod">merge_method</a></code> | <code>str</code> | Set the merge method. Valid values are `merge`, `rebase_merge`, `ff`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mergePipelinesEnabled">merge_pipelines_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable or disable merge pipelines. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mergePipelinesEnabled">merge_pipelines_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable or disable merge pipelines. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mergeRequestsAccessLevel">merge_requests_access_level</a></code> | <code>str</code> | Set the merge requests access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mergeRequestsEnabled">merge_requests_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable merge requests for the project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mergeRequestsEnabled">merge_requests_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable merge requests for the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mergeRequestsTemplate">merge_requests_template</a></code> | <code>str</code> | Sets the template for new merge requests in the project. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mergeTrainsEnabled">merge_trains_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable or disable merge trains. Requires `merge_pipelines_enabled` to be set to `true` to take effect. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mirror">mirror</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable project pull mirror. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mirrorOverwritesDivergedBranches">mirror_overwrites_diverged_branches</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable overwrite diverged branches for a mirrored project. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mirrorTriggerBuilds">mirror_trigger_builds</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable trigger builds on pushes for a mirrored project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mergeTrainsEnabled">merge_trains_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable or disable merge trains. Requires `merge_pipelines_enabled` to be set to `true` to take effect. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mirror">mirror</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable project pull mirror. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mirrorOverwritesDivergedBranches">mirror_overwrites_diverged_branches</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable overwrite diverged branches for a mirrored project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mirrorTriggerBuilds">mirror_trigger_builds</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable trigger builds on pushes for a mirrored project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.modelExperimentsAccessLevel">model_experiments_access_level</a></code> | <code>str</code> | Set visibility of machine learning model experiments. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.modelRegistryAccessLevel">model_registry_access_level</a></code> | <code>str</code> | Set visibility of machine learning model registry. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.monitorAccessLevel">monitor_access_level</a></code> | <code>str</code> | Set the monitor access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mrDefaultTargetSelf">mr_default_target_self</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | For forked projects, target merge requests to this project. If false, the target will be the upstream project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mrDefaultTargetSelf">mr_default_target_self</a></code> | <code>bool \| cdktf.IResolvable</code> | For forked projects, target merge requests to this project. If false, the target will be the upstream project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.namespaceId">namespace_id</a></code> | <code>typing.Union[int, float]</code> | The namespace (group or user) of the project. Defaults to your user. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.onlyAllowMergeIfAllDiscussionsAreResolved">only_allow_merge_if_all_discussions_are_resolved</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to true if you want allow merges only if all discussions are resolved. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.onlyAllowMergeIfPipelineSucceeds">only_allow_merge_if_pipeline_succeeds</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to true if you want allow merges only if a pipeline succeeds. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.onlyMirrorProtectedBranches">only_mirror_protected_branches</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable only mirror protected branches for a mirrored project. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.packagesEnabled">packages_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable packages repository for the project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.onlyAllowMergeIfAllDiscussionsAreResolved">only_allow_merge_if_all_discussions_are_resolved</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to true if you want allow merges only if all discussions are resolved. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.onlyAllowMergeIfPipelineSucceeds">only_allow_merge_if_pipeline_succeeds</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to true if you want allow merges only if a pipeline succeeds. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.onlyMirrorProtectedBranches">only_mirror_protected_branches</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable only mirror protected branches for a mirrored project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.packagesEnabled">packages_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable packages repository for the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.pagesAccessLevel">pages_access_level</a></code> | <code>str</code> | Enable pages access control. Valid values are `public`, `private`, `enabled`, `disabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.path">path</a></code> | <code>str</code> | The path of the repository. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.permanentlyDeleteOnDestroy">permanently_delete_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to `true` to immediately permanently delete the project instead of scheduling a delete for Premium and Ultimate tiers. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.pipelinesEnabled">pipelines_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable pipelines for the project. The `pipelines_enabled` field is being sent as `jobs_enabled` in the GitLab API calls. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.preReceiveSecretDetectionEnabled">pre_receive_secret_detection_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether Secret Push Detection is enabled. Requires GitLab Ultimate. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.preventMergeWithoutJiraIssue">prevent_merge_without_jira_issue</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set whether merge requests require an associated issue from Jira. Premium and Ultimate only. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.printingMergeRequestLinkEnabled">printing_merge_request_link_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Show link to create/view merge request when pushing from the command line. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.publicBuilds">public_builds</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, jobs can be viewed by non-project members. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.publicJobs">public_jobs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, jobs can be viewed by non-project members. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.permanentlyDeleteOnDestroy">permanently_delete_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to `true` to immediately permanently delete the project instead of scheduling a delete for Premium and Ultimate tiers. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.pipelinesEnabled">pipelines_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable pipelines for the project. The `pipelines_enabled` field is being sent as `jobs_enabled` in the GitLab API calls. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.preReceiveSecretDetectionEnabled">pre_receive_secret_detection_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether Secret Push Detection is enabled. Requires GitLab Ultimate. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.preventMergeWithoutJiraIssue">prevent_merge_without_jira_issue</a></code> | <code>bool \| cdktf.IResolvable</code> | Set whether merge requests require an associated issue from Jira. Premium and Ultimate only. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.printingMergeRequestLinkEnabled">printing_merge_request_link_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Show link to create/view merge request when pushing from the command line. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.publicBuilds">public_builds</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, jobs can be viewed by non-project members. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.publicJobs">public_jobs</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, jobs can be viewed by non-project members. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.pushRules">push_rules</a></code> | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules">ProjectPushRules</a></code> | push_rules block. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.releasesAccessLevel">releases_access_level</a></code> | <code>str</code> | Set the releases access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.removeSourceBranchAfterMerge">remove_source_branch_after_merge</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable `Delete source branch` option by default for all new merge requests. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.removeSourceBranchAfterMerge">remove_source_branch_after_merge</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable `Delete source branch` option by default for all new merge requests. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.repositoryAccessLevel">repository_access_level</a></code> | <code>str</code> | Set the repository access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.repositoryStorage">repository_storage</a></code> | <code>str</code> | Which storage shard the repository is on. (administrator only). |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.requestAccessEnabled">request_access_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow users to request member access. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.requestAccessEnabled">request_access_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow users to request member access. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.requirementsAccessLevel">requirements_access_level</a></code> | <code>str</code> | Set the requirements access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.resolveOutdatedDiffDiscussions">resolve_outdated_diff_discussions</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Automatically resolve merge request diffs discussions on lines changed with a push. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.restrictUserDefinedVariables">restrict_user_defined_variables</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow only users with the Maintainer role to pass user-defined variables when triggering a pipeline. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.resolveOutdatedDiffDiscussions">resolve_outdated_diff_discussions</a></code> | <code>bool \| cdktf.IResolvable</code> | Automatically resolve merge request diffs discussions on lines changed with a push. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.restrictUserDefinedVariables">restrict_user_defined_variables</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow only users with the Maintainer role to pass user-defined variables when triggering a pipeline. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.securityAndComplianceAccessLevel">security_and_compliance_access_level</a></code> | <code>str</code> | Set the security and compliance access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.sharedRunnersEnabled">shared_runners_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable shared runners for this project. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.skipWaitForDefaultBranchProtection">skip_wait_for_default_branch_protection</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If `true`, the default behavior to wait for the default branch protection to be created is skipped. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.sharedRunnersEnabled">shared_runners_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable shared runners for this project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.skipWaitForDefaultBranchProtection">skip_wait_for_default_branch_protection</a></code> | <code>bool \| cdktf.IResolvable</code> | If `true`, the default behavior to wait for the default branch protection to be created is skipped. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.snippetsAccessLevel">snippets_access_level</a></code> | <code>str</code> | Set the snippets access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.snippetsEnabled">snippets_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable snippets for the project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.snippetsEnabled">snippets_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable snippets for the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.squashCommitTemplate">squash_commit_template</a></code> | <code>str</code> | Template used to create squash commit message in merge requests. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.squashOption">squash_option</a></code> | <code>str</code> | Squash commits when merge request is merged. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.suggestionCommitMessage">suggestion_commit_message</a></code> | <code>str</code> | The commit message used to apply merge request suggestions. |
@@ -5708,30 +5708,30 @@ project.ProjectConfig(
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.templateProjectId">template_project_id</a></code> | <code>typing.Union[int, float]</code> | When used with use_custom_template, project ID of a custom project template. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-gitlab.project.ProjectTimeouts">ProjectTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.topics">topics</a></code> | <code>typing.List[str]</code> | The list of topics for the project. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.useCustomTemplate">use_custom_template</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use either custom instance or group (with group_with_project_templates_id) project template (enterprise edition). |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.useCustomTemplate">use_custom_template</a></code> | <code>bool \| cdktf.IResolvable</code> | Use either custom instance or group (with group_with_project_templates_id) project template (enterprise edition). |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.visibilityLevel">visibility_level</a></code> | <code>str</code> | Set to `public` to create a public project. Valid values are `private`, `internal`, `public`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.wikiAccessLevel">wiki_access_level</a></code> | <code>str</code> | Set the wiki access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.wikiEnabled">wiki_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable wiki for the project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.wikiEnabled">wiki_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable wiki for the project. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.project.ProjectConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.project.ProjectConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -5778,10 +5778,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.project.ProjectConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -5802,10 +5802,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `allow_merge_on_skipped_pipeline`<sup>Optional</sup> <a name="allow_merge_on_skipped_pipeline" id="@cdktf/provider-gitlab.project.ProjectConfig.property.allowMergeOnSkippedPipeline"></a>
 
 ```python
-allow_merge_on_skipped_pipeline: typing.Union[bool, IResolvable]
+allow_merge_on_skipped_pipeline: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to true if you want to treat skipped pipelines as if they finished with success.
 
@@ -5816,10 +5816,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `allow_pipeline_trigger_approve_deployment`<sup>Optional</sup> <a name="allow_pipeline_trigger_approve_deployment" id="@cdktf/provider-gitlab.project.ProjectConfig.property.allowPipelineTriggerApproveDeployment"></a>
 
 ```python
-allow_pipeline_trigger_approve_deployment: typing.Union[bool, IResolvable]
+allow_pipeline_trigger_approve_deployment: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set whether or not a pipeline triggerer is allowed to approve deployments. Premium and Ultimate only.
 
@@ -5863,10 +5863,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `archived`<sup>Optional</sup> <a name="archived" id="@cdktf/provider-gitlab.project.ProjectConfig.property.archived"></a>
 
 ```python
-archived: typing.Union[bool, IResolvable]
+archived: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the project is in read-only mode (archived). Repositories can be archived/unarchived by toggling this parameter.
 
@@ -5877,10 +5877,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `archive_on_destroy`<sup>Optional</sup> <a name="archive_on_destroy" id="@cdktf/provider-gitlab.project.ProjectConfig.property.archiveOnDestroy"></a>
 
 ```python
-archive_on_destroy: typing.Union[bool, IResolvable]
+archive_on_destroy: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to `true` to archive the project instead of deleting on destroy.
 
@@ -5907,10 +5907,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `autoclose_referenced_issues`<sup>Optional</sup> <a name="autoclose_referenced_issues" id="@cdktf/provider-gitlab.project.ProjectConfig.property.autocloseReferencedIssues"></a>
 
 ```python
-autoclose_referenced_issues: typing.Union[bool, IResolvable]
+autoclose_referenced_issues: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set whether auto-closing referenced issues on default branch.
 
@@ -5935,10 +5935,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `auto_devops_enabled`<sup>Optional</sup> <a name="auto_devops_enabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.autoDevopsEnabled"></a>
 
 ```python
-auto_devops_enabled: typing.Union[bool, IResolvable]
+auto_devops_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable Auto DevOps for this project.
 
@@ -5949,10 +5949,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `auto_duo_code_review_enabled`<sup>Optional</sup> <a name="auto_duo_code_review_enabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.autoDuoCodeReviewEnabled"></a>
 
 ```python
-auto_duo_code_review_enabled: typing.Union[bool, IResolvable]
+auto_duo_code_review_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable automatic reviews by GitLab Duo on merge requests.
 
@@ -6093,10 +6093,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `ci_forward_deployment_enabled`<sup>Optional</sup> <a name="ci_forward_deployment_enabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.ciForwardDeploymentEnabled"></a>
 
 ```python
-ci_forward_deployment_enabled: typing.Union[bool, IResolvable]
+ci_forward_deployment_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When a new deployment job starts, skip older deployment jobs that are still pending.
 
@@ -6107,10 +6107,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `ci_forward_deployment_rollback_allowed`<sup>Optional</sup> <a name="ci_forward_deployment_rollback_allowed" id="@cdktf/provider-gitlab.project.ProjectConfig.property.ciForwardDeploymentRollbackAllowed"></a>
 
 ```python
-ci_forward_deployment_rollback_allowed: typing.Union[bool, IResolvable]
+ci_forward_deployment_rollback_allowed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow job retries even if the deployment job is outdated.
 
@@ -6153,10 +6153,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `ci_push_repository_for_job_token_allowed`<sup>Optional</sup> <a name="ci_push_repository_for_job_token_allowed" id="@cdktf/provider-gitlab.project.ProjectConfig.property.ciPushRepositoryForJobTokenAllowed"></a>
 
 ```python
-ci_push_repository_for_job_token_allowed: typing.Union[bool, IResolvable]
+ci_push_repository_for_job_token_allowed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow Git push requests to your project repository that are authenticated with a CI/CD job token.
 
@@ -6183,10 +6183,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `ci_separated_caches`<sup>Optional</sup> <a name="ci_separated_caches" id="@cdktf/provider-gitlab.project.ProjectConfig.property.ciSeparatedCaches"></a>
 
 ```python
-ci_separated_caches: typing.Union[bool, IResolvable]
+ci_separated_caches: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Use separate caches for protected branches.
 
@@ -6225,10 +6225,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `container_registry_enabled`<sup>Optional</sup> <a name="container_registry_enabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.containerRegistryEnabled"></a>
 
 ```python
-container_registry_enabled: typing.Union[bool, IResolvable]
+container_registry_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable container registry for the project.
 
@@ -6267,10 +6267,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `emails_enabled`<sup>Optional</sup> <a name="emails_enabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.emailsEnabled"></a>
 
 ```python
-emails_enabled: typing.Union[bool, IResolvable]
+emails_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable email notifications.
 
@@ -6353,10 +6353,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `group_runners_enabled`<sup>Optional</sup> <a name="group_runners_enabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.groupRunnersEnabled"></a>
 
 ```python
-group_runners_enabled: typing.Union[bool, IResolvable]
+group_runners_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable group runners for this project.
 
@@ -6460,10 +6460,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `initialize_with_readme`<sup>Optional</sup> <a name="initialize_with_readme" id="@cdktf/provider-gitlab.project.ProjectConfig.property.initializeWithReadme"></a>
 
 ```python
-initialize_with_readme: typing.Union[bool, IResolvable]
+initialize_with_readme: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Create main branch with first commit containing a README.md file. Must be set to `true` if importing an uninitialized project with a different `default_branch`.
 
@@ -6488,10 +6488,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `issues_enabled`<sup>Optional</sup> <a name="issues_enabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.issuesEnabled"></a>
 
 ```python
-issues_enabled: typing.Union[bool, IResolvable]
+issues_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable issue tracking for the project.
 
@@ -6516,10 +6516,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `keep_latest_artifact`<sup>Optional</sup> <a name="keep_latest_artifact" id="@cdktf/provider-gitlab.project.ProjectConfig.property.keepLatestArtifact"></a>
 
 ```python
-keep_latest_artifact: typing.Union[bool, IResolvable]
+keep_latest_artifact: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Disable or enable the ability to keep the latest artifact for this project.
 
@@ -6530,10 +6530,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `lfs_enabled`<sup>Optional</sup> <a name="lfs_enabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.lfsEnabled"></a>
 
 ```python
-lfs_enabled: typing.Union[bool, IResolvable]
+lfs_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable LFS for the project.
 
@@ -6572,10 +6572,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `merge_pipelines_enabled`<sup>Optional</sup> <a name="merge_pipelines_enabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.mergePipelinesEnabled"></a>
 
 ```python
-merge_pipelines_enabled: typing.Union[bool, IResolvable]
+merge_pipelines_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable or disable merge pipelines.
 
@@ -6600,10 +6600,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `merge_requests_enabled`<sup>Optional</sup> <a name="merge_requests_enabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.mergeRequestsEnabled"></a>
 
 ```python
-merge_requests_enabled: typing.Union[bool, IResolvable]
+merge_requests_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable merge requests for the project.
 
@@ -6628,10 +6628,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `merge_trains_enabled`<sup>Optional</sup> <a name="merge_trains_enabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.mergeTrainsEnabled"></a>
 
 ```python
-merge_trains_enabled: typing.Union[bool, IResolvable]
+merge_trains_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable or disable merge trains. Requires `merge_pipelines_enabled` to be set to `true` to take effect.
 
@@ -6642,10 +6642,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `mirror`<sup>Optional</sup> <a name="mirror" id="@cdktf/provider-gitlab.project.ProjectConfig.property.mirror"></a>
 
 ```python
-mirror: typing.Union[bool, IResolvable]
+mirror: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable project pull mirror.
 
@@ -6656,10 +6656,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `mirror_overwrites_diverged_branches`<sup>Optional</sup> <a name="mirror_overwrites_diverged_branches" id="@cdktf/provider-gitlab.project.ProjectConfig.property.mirrorOverwritesDivergedBranches"></a>
 
 ```python
-mirror_overwrites_diverged_branches: typing.Union[bool, IResolvable]
+mirror_overwrites_diverged_branches: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable overwrite diverged branches for a mirrored project.
 
@@ -6670,10 +6670,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `mirror_trigger_builds`<sup>Optional</sup> <a name="mirror_trigger_builds" id="@cdktf/provider-gitlab.project.ProjectConfig.property.mirrorTriggerBuilds"></a>
 
 ```python
-mirror_trigger_builds: typing.Union[bool, IResolvable]
+mirror_trigger_builds: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable trigger builds on pushes for a mirrored project.
 
@@ -6726,10 +6726,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `mr_default_target_self`<sup>Optional</sup> <a name="mr_default_target_self" id="@cdktf/provider-gitlab.project.ProjectConfig.property.mrDefaultTargetSelf"></a>
 
 ```python
-mr_default_target_self: typing.Union[bool, IResolvable]
+mr_default_target_self: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 For forked projects, target merge requests to this project. If false, the target will be the upstream project.
 
@@ -6754,10 +6754,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `only_allow_merge_if_all_discussions_are_resolved`<sup>Optional</sup> <a name="only_allow_merge_if_all_discussions_are_resolved" id="@cdktf/provider-gitlab.project.ProjectConfig.property.onlyAllowMergeIfAllDiscussionsAreResolved"></a>
 
 ```python
-only_allow_merge_if_all_discussions_are_resolved: typing.Union[bool, IResolvable]
+only_allow_merge_if_all_discussions_are_resolved: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to true if you want allow merges only if all discussions are resolved.
 
@@ -6768,10 +6768,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `only_allow_merge_if_pipeline_succeeds`<sup>Optional</sup> <a name="only_allow_merge_if_pipeline_succeeds" id="@cdktf/provider-gitlab.project.ProjectConfig.property.onlyAllowMergeIfPipelineSucceeds"></a>
 
 ```python
-only_allow_merge_if_pipeline_succeeds: typing.Union[bool, IResolvable]
+only_allow_merge_if_pipeline_succeeds: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to true if you want allow merges only if a pipeline succeeds.
 
@@ -6782,10 +6782,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `only_mirror_protected_branches`<sup>Optional</sup> <a name="only_mirror_protected_branches" id="@cdktf/provider-gitlab.project.ProjectConfig.property.onlyMirrorProtectedBranches"></a>
 
 ```python
-only_mirror_protected_branches: typing.Union[bool, IResolvable]
+only_mirror_protected_branches: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable only mirror protected branches for a mirrored project.
 
@@ -6796,10 +6796,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `packages_enabled`<sup>Optional</sup> <a name="packages_enabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.packagesEnabled"></a>
 
 ```python
-packages_enabled: typing.Union[bool, IResolvable]
+packages_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable packages repository for the project.
 
@@ -6838,10 +6838,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `permanently_delete_on_destroy`<sup>Optional</sup> <a name="permanently_delete_on_destroy" id="@cdktf/provider-gitlab.project.ProjectConfig.property.permanentlyDeleteOnDestroy"></a>
 
 ```python
-permanently_delete_on_destroy: typing.Union[bool, IResolvable]
+permanently_delete_on_destroy: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to `true` to immediately permanently delete the project instead of scheduling a delete for Premium and Ultimate tiers.
 
@@ -6852,10 +6852,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `pipelines_enabled`<sup>Optional</sup> <a name="pipelines_enabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.pipelinesEnabled"></a>
 
 ```python
-pipelines_enabled: typing.Union[bool, IResolvable]
+pipelines_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable pipelines for the project. The `pipelines_enabled` field is being sent as `jobs_enabled` in the GitLab API calls.
 
@@ -6866,10 +6866,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `pre_receive_secret_detection_enabled`<sup>Optional</sup> <a name="pre_receive_secret_detection_enabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.preReceiveSecretDetectionEnabled"></a>
 
 ```python
-pre_receive_secret_detection_enabled: typing.Union[bool, IResolvable]
+pre_receive_secret_detection_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether Secret Push Detection is enabled. Requires GitLab Ultimate.
 
@@ -6880,10 +6880,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `prevent_merge_without_jira_issue`<sup>Optional</sup> <a name="prevent_merge_without_jira_issue" id="@cdktf/provider-gitlab.project.ProjectConfig.property.preventMergeWithoutJiraIssue"></a>
 
 ```python
-prevent_merge_without_jira_issue: typing.Union[bool, IResolvable]
+prevent_merge_without_jira_issue: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set whether merge requests require an associated issue from Jira. Premium and Ultimate only.
 
@@ -6894,10 +6894,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `printing_merge_request_link_enabled`<sup>Optional</sup> <a name="printing_merge_request_link_enabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.printingMergeRequestLinkEnabled"></a>
 
 ```python
-printing_merge_request_link_enabled: typing.Union[bool, IResolvable]
+printing_merge_request_link_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Show link to create/view merge request when pushing from the command line.
 
@@ -6908,10 +6908,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `public_builds`<sup>Optional</sup> <a name="public_builds" id="@cdktf/provider-gitlab.project.ProjectConfig.property.publicBuilds"></a>
 
 ```python
-public_builds: typing.Union[bool, IResolvable]
+public_builds: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, jobs can be viewed by non-project members.
 
@@ -6922,10 +6922,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `public_jobs`<sup>Optional</sup> <a name="public_jobs" id="@cdktf/provider-gitlab.project.ProjectConfig.property.publicJobs"></a>
 
 ```python
-public_jobs: typing.Union[bool, IResolvable]
+public_jobs: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, jobs can be viewed by non-project members.
 
@@ -6964,10 +6964,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `remove_source_branch_after_merge`<sup>Optional</sup> <a name="remove_source_branch_after_merge" id="@cdktf/provider-gitlab.project.ProjectConfig.property.removeSourceBranchAfterMerge"></a>
 
 ```python
-remove_source_branch_after_merge: typing.Union[bool, IResolvable]
+remove_source_branch_after_merge: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable `Delete source branch` option by default for all new merge requests.
 
@@ -7006,10 +7006,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `request_access_enabled`<sup>Optional</sup> <a name="request_access_enabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.requestAccessEnabled"></a>
 
 ```python
-request_access_enabled: typing.Union[bool, IResolvable]
+request_access_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow users to request member access.
 
@@ -7034,10 +7034,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `resolve_outdated_diff_discussions`<sup>Optional</sup> <a name="resolve_outdated_diff_discussions" id="@cdktf/provider-gitlab.project.ProjectConfig.property.resolveOutdatedDiffDiscussions"></a>
 
 ```python
-resolve_outdated_diff_discussions: typing.Union[bool, IResolvable]
+resolve_outdated_diff_discussions: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Automatically resolve merge request diffs discussions on lines changed with a push.
 
@@ -7048,10 +7048,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `restrict_user_defined_variables`<sup>Optional</sup> <a name="restrict_user_defined_variables" id="@cdktf/provider-gitlab.project.ProjectConfig.property.restrictUserDefinedVariables"></a>
 
 ```python
-restrict_user_defined_variables: typing.Union[bool, IResolvable]
+restrict_user_defined_variables: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow only users with the Maintainer role to pass user-defined variables when triggering a pipeline.
 
@@ -7076,10 +7076,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `shared_runners_enabled`<sup>Optional</sup> <a name="shared_runners_enabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.sharedRunnersEnabled"></a>
 
 ```python
-shared_runners_enabled: typing.Union[bool, IResolvable]
+shared_runners_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable shared runners for this project.
 
@@ -7090,10 +7090,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `skip_wait_for_default_branch_protection`<sup>Optional</sup> <a name="skip_wait_for_default_branch_protection" id="@cdktf/provider-gitlab.project.ProjectConfig.property.skipWaitForDefaultBranchProtection"></a>
 
 ```python
-skip_wait_for_default_branch_protection: typing.Union[bool, IResolvable]
+skip_wait_for_default_branch_protection: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If `true`, the default behavior to wait for the default branch protection to be created is skipped.
 
@@ -7122,10 +7122,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `snippets_enabled`<sup>Optional</sup> <a name="snippets_enabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.snippetsEnabled"></a>
 
 ```python
-snippets_enabled: typing.Union[bool, IResolvable]
+snippets_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable snippets for the project.
 
@@ -7256,10 +7256,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `use_custom_template`<sup>Optional</sup> <a name="use_custom_template" id="@cdktf/provider-gitlab.project.ProjectConfig.property.useCustomTemplate"></a>
 
 ```python
-use_custom_template: typing.Union[bool, IResolvable]
+use_custom_template: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Use either custom instance or group (with group_with_project_templates_id) project template (enterprise edition).
 
@@ -7300,10 +7300,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `wiki_enabled`<sup>Optional</sup> <a name="wiki_enabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.wikiEnabled"></a>
 
 ```python
-wiki_enabled: typing.Union[bool, IResolvable]
+wiki_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable wiki for the project.
 
@@ -7320,7 +7320,7 @@ from cdktf_cdktf_provider_gitlab import project
 
 project.ProjectContainerExpirationPolicy(
   cadence: str = None,
-  enabled: typing.Union[bool, IResolvable] = None,
+  enabled: bool | IResolvable = None,
   keep_n: typing.Union[int, float] = None,
   name_regex_delete: str = None,
   name_regex_keep: str = None,
@@ -7333,7 +7333,7 @@ project.ProjectContainerExpirationPolicy(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.cadence">cadence</a></code> | <code>str</code> | The cadence of the policy. Valid values are: `1d`, `7d`, `14d`, `1month`, `3month`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the policy is enabled. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, the policy is enabled. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.keepN">keep_n</a></code> | <code>typing.Union[int, float]</code> | The number of images to keep. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.nameRegexDelete">name_regex_delete</a></code> | <code>str</code> | The regular expression to match image names to delete. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.nameRegexKeep">name_regex_keep</a></code> | <code>str</code> | The regular expression to match image names to keep. |
@@ -7358,10 +7358,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, the policy is enabled.
 
@@ -7435,17 +7435,17 @@ from cdktf_cdktf_provider_gitlab import project
 project.ProjectPushRules(
   author_email_regex: str = None,
   branch_name_regex: str = None,
-  commit_committer_check: typing.Union[bool, IResolvable] = None,
-  commit_committer_name_check: typing.Union[bool, IResolvable] = None,
+  commit_committer_check: bool | IResolvable = None,
+  commit_committer_name_check: bool | IResolvable = None,
   commit_message_negative_regex: str = None,
   commit_message_regex: str = None,
-  deny_delete_tag: typing.Union[bool, IResolvable] = None,
+  deny_delete_tag: bool | IResolvable = None,
   file_name_regex: str = None,
   max_file_size: typing.Union[int, float] = None,
-  member_check: typing.Union[bool, IResolvable] = None,
-  prevent_secrets: typing.Union[bool, IResolvable] = None,
-  reject_non_dco_commits: typing.Union[bool, IResolvable] = None,
-  reject_unsigned_commits: typing.Union[bool, IResolvable] = None
+  member_check: bool | IResolvable = None,
+  prevent_secrets: bool | IResolvable = None,
+  reject_non_dco_commits: bool | IResolvable = None,
+  reject_unsigned_commits: bool | IResolvable = None
 )
 ```
 
@@ -7455,17 +7455,17 @@ project.ProjectPushRules(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.authorEmailRegex">author_email_regex</a></code> | <code>str</code> | All commit author emails must match this regex, e.g. `@my-company.com$`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.branchNameRegex">branch_name_regex</a></code> | <code>str</code> | All branch names must match this regex, e.g. `(feature\|hotfix)\/*`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.commitCommitterCheck">commit_committer_check</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Users can only push commits to this repository that were committed with one of their own verified emails. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.commitCommitterNameCheck">commit_committer_name_check</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Users can only push commits to this repository if the commit author name is consistent with their GitLab account name. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.commitCommitterCheck">commit_committer_check</a></code> | <code>bool \| cdktf.IResolvable</code> | Users can only push commits to this repository that were committed with one of their own verified emails. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.commitCommitterNameCheck">commit_committer_name_check</a></code> | <code>bool \| cdktf.IResolvable</code> | Users can only push commits to this repository if the commit author name is consistent with their GitLab account name. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.commitMessageNegativeRegex">commit_message_negative_regex</a></code> | <code>str</code> | No commit message is allowed to match this regex, e.g. `ssh\:\/\/`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.commitMessageRegex">commit_message_regex</a></code> | <code>str</code> | All commit messages must match this regex, e.g. `Fixed \d+\..*`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.denyDeleteTag">deny_delete_tag</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Deny deleting a tag. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.denyDeleteTag">deny_delete_tag</a></code> | <code>bool \| cdktf.IResolvable</code> | Deny deleting a tag. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.fileNameRegex">file_name_regex</a></code> | <code>str</code> | All committed filenames must not match this regex, e.g. `(jar\|exe)$`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.maxFileSize">max_file_size</a></code> | <code>typing.Union[int, float]</code> | Maximum file size (MB). |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.memberCheck">member_check</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Restrict commits by author (email) to existing GitLab users. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.preventSecrets">prevent_secrets</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | GitLab will reject any files that are likely to contain secrets. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.rejectNonDcoCommits">reject_non_dco_commits</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Reject commit when it’s not DCO certified. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.rejectUnsignedCommits">reject_unsigned_commits</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Reject commit when it’s not signed through GPG. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.memberCheck">member_check</a></code> | <code>bool \| cdktf.IResolvable</code> | Restrict commits by author (email) to existing GitLab users. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.preventSecrets">prevent_secrets</a></code> | <code>bool \| cdktf.IResolvable</code> | GitLab will reject any files that are likely to contain secrets. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.rejectNonDcoCommits">reject_non_dco_commits</a></code> | <code>bool \| cdktf.IResolvable</code> | Reject commit when it’s not DCO certified. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.rejectUnsignedCommits">reject_unsigned_commits</a></code> | <code>bool \| cdktf.IResolvable</code> | Reject commit when it’s not signed through GPG. |
 
 ---
 
@@ -7500,10 +7500,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `commit_committer_check`<sup>Optional</sup> <a name="commit_committer_check" id="@cdktf/provider-gitlab.project.ProjectPushRules.property.commitCommitterCheck"></a>
 
 ```python
-commit_committer_check: typing.Union[bool, IResolvable]
+commit_committer_check: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Users can only push commits to this repository that were committed with one of their own verified emails.
 
@@ -7514,10 +7514,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `commit_committer_name_check`<sup>Optional</sup> <a name="commit_committer_name_check" id="@cdktf/provider-gitlab.project.ProjectPushRules.property.commitCommitterNameCheck"></a>
 
 ```python
-commit_committer_name_check: typing.Union[bool, IResolvable]
+commit_committer_name_check: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Users can only push commits to this repository if the commit author name is consistent with their GitLab account name.
 
@@ -7556,10 +7556,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `deny_delete_tag`<sup>Optional</sup> <a name="deny_delete_tag" id="@cdktf/provider-gitlab.project.ProjectPushRules.property.denyDeleteTag"></a>
 
 ```python
-deny_delete_tag: typing.Union[bool, IResolvable]
+deny_delete_tag: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Deny deleting a tag.
 
@@ -7598,10 +7598,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `member_check`<sup>Optional</sup> <a name="member_check" id="@cdktf/provider-gitlab.project.ProjectPushRules.property.memberCheck"></a>
 
 ```python
-member_check: typing.Union[bool, IResolvable]
+member_check: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Restrict commits by author (email) to existing GitLab users.
 
@@ -7612,10 +7612,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `prevent_secrets`<sup>Optional</sup> <a name="prevent_secrets" id="@cdktf/provider-gitlab.project.ProjectPushRules.property.preventSecrets"></a>
 
 ```python
-prevent_secrets: typing.Union[bool, IResolvable]
+prevent_secrets: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 GitLab will reject any files that are likely to contain secrets.
 
@@ -7626,10 +7626,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `reject_non_dco_commits`<sup>Optional</sup> <a name="reject_non_dco_commits" id="@cdktf/provider-gitlab.project.ProjectPushRules.property.rejectNonDcoCommits"></a>
 
 ```python
-reject_non_dco_commits: typing.Union[bool, IResolvable]
+reject_non_dco_commits: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Reject commit when it’s not DCO certified.
 
@@ -7640,10 +7640,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `reject_unsigned_commits`<sup>Optional</sup> <a name="reject_unsigned_commits" id="@cdktf/provider-gitlab.project.ProjectPushRules.property.rejectUnsignedCommits"></a>
 
 ```python
-reject_unsigned_commits: typing.Union[bool, IResolvable]
+reject_unsigned_commits: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Reject commit when it’s not signed through GPG.
 
@@ -7978,13 +7978,13 @@ def reset_older_than() -> None
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.nextRunAt">next_run_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.cadenceInput">cadence_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.enabledInput">enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.keepNInput">keep_n_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.nameRegexDeleteInput">name_regex_delete_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.nameRegexKeepInput">name_regex_keep_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.olderThanInput">older_than_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.cadence">cadence</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.keepN">keep_n</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.nameRegexDelete">name_regex_delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.nameRegexKeep">name_regex_keep</a></code> | <code>str</code> | *No description.* |
@@ -8040,10 +8040,10 @@ cadence_input: str
 ##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.enabledInput"></a>
 
 ```python
-enabled_input: typing.Union[bool, IResolvable]
+enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8100,10 +8100,10 @@ cadence: str
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8486,30 +8486,30 @@ def reset_reject_unsigned_commits() -> None
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.authorEmailRegexInput">author_email_regex_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.branchNameRegexInput">branch_name_regex_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitCommitterCheckInput">commit_committer_check_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitCommitterNameCheckInput">commit_committer_name_check_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitCommitterCheckInput">commit_committer_check_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitCommitterNameCheckInput">commit_committer_name_check_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitMessageNegativeRegexInput">commit_message_negative_regex_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitMessageRegexInput">commit_message_regex_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.denyDeleteTagInput">deny_delete_tag_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.denyDeleteTagInput">deny_delete_tag_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.fileNameRegexInput">file_name_regex_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.maxFileSizeInput">max_file_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.memberCheckInput">member_check_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.preventSecretsInput">prevent_secrets_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.rejectNonDcoCommitsInput">reject_non_dco_commits_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.rejectUnsignedCommitsInput">reject_unsigned_commits_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.memberCheckInput">member_check_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.preventSecretsInput">prevent_secrets_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.rejectNonDcoCommitsInput">reject_non_dco_commits_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.rejectUnsignedCommitsInput">reject_unsigned_commits_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.authorEmailRegex">author_email_regex</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.branchNameRegex">branch_name_regex</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitCommitterCheck">commit_committer_check</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitCommitterNameCheck">commit_committer_name_check</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitCommitterCheck">commit_committer_check</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitCommitterNameCheck">commit_committer_name_check</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitMessageNegativeRegex">commit_message_negative_regex</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitMessageRegex">commit_message_regex</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.denyDeleteTag">deny_delete_tag</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.denyDeleteTag">deny_delete_tag</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.fileNameRegex">file_name_regex</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.maxFileSize">max_file_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.memberCheck">member_check</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.preventSecrets">prevent_secrets</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.rejectNonDcoCommits">reject_non_dco_commits</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.rejectUnsignedCommits">reject_unsigned_commits</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.memberCheck">member_check</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.preventSecrets">prevent_secrets</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.rejectNonDcoCommits">reject_non_dco_commits</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.rejectUnsignedCommits">reject_unsigned_commits</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules">ProjectPushRules</a></code> | *No description.* |
 
 ---
@@ -8561,20 +8561,20 @@ branch_name_regex_input: str
 ##### `commit_committer_check_input`<sup>Optional</sup> <a name="commit_committer_check_input" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitCommitterCheckInput"></a>
 
 ```python
-commit_committer_check_input: typing.Union[bool, IResolvable]
+commit_committer_check_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `commit_committer_name_check_input`<sup>Optional</sup> <a name="commit_committer_name_check_input" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitCommitterNameCheckInput"></a>
 
 ```python
-commit_committer_name_check_input: typing.Union[bool, IResolvable]
+commit_committer_name_check_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8601,10 +8601,10 @@ commit_message_regex_input: str
 ##### `deny_delete_tag_input`<sup>Optional</sup> <a name="deny_delete_tag_input" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.denyDeleteTagInput"></a>
 
 ```python
-deny_delete_tag_input: typing.Union[bool, IResolvable]
+deny_delete_tag_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8631,40 +8631,40 @@ max_file_size_input: typing.Union[int, float]
 ##### `member_check_input`<sup>Optional</sup> <a name="member_check_input" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.memberCheckInput"></a>
 
 ```python
-member_check_input: typing.Union[bool, IResolvable]
+member_check_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `prevent_secrets_input`<sup>Optional</sup> <a name="prevent_secrets_input" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.preventSecretsInput"></a>
 
 ```python
-prevent_secrets_input: typing.Union[bool, IResolvable]
+prevent_secrets_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `reject_non_dco_commits_input`<sup>Optional</sup> <a name="reject_non_dco_commits_input" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.rejectNonDcoCommitsInput"></a>
 
 ```python
-reject_non_dco_commits_input: typing.Union[bool, IResolvable]
+reject_non_dco_commits_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `reject_unsigned_commits_input`<sup>Optional</sup> <a name="reject_unsigned_commits_input" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.rejectUnsignedCommitsInput"></a>
 
 ```python
-reject_unsigned_commits_input: typing.Union[bool, IResolvable]
+reject_unsigned_commits_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8691,20 +8691,20 @@ branch_name_regex: str
 ##### `commit_committer_check`<sup>Required</sup> <a name="commit_committer_check" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitCommitterCheck"></a>
 
 ```python
-commit_committer_check: typing.Union[bool, IResolvable]
+commit_committer_check: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `commit_committer_name_check`<sup>Required</sup> <a name="commit_committer_name_check" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitCommitterNameCheck"></a>
 
 ```python
-commit_committer_name_check: typing.Union[bool, IResolvable]
+commit_committer_name_check: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8731,10 +8731,10 @@ commit_message_regex: str
 ##### `deny_delete_tag`<sup>Required</sup> <a name="deny_delete_tag" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.denyDeleteTag"></a>
 
 ```python
-deny_delete_tag: typing.Union[bool, IResolvable]
+deny_delete_tag: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8761,40 +8761,40 @@ max_file_size: typing.Union[int, float]
 ##### `member_check`<sup>Required</sup> <a name="member_check" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.memberCheck"></a>
 
 ```python
-member_check: typing.Union[bool, IResolvable]
+member_check: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `prevent_secrets`<sup>Required</sup> <a name="prevent_secrets" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.preventSecrets"></a>
 
 ```python
-prevent_secrets: typing.Union[bool, IResolvable]
+prevent_secrets: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `reject_non_dco_commits`<sup>Required</sup> <a name="reject_non_dco_commits" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.rejectNonDcoCommits"></a>
 
 ```python
-reject_non_dco_commits: typing.Union[bool, IResolvable]
+reject_non_dco_commits: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `reject_unsigned_commits`<sup>Required</sup> <a name="reject_unsigned_commits" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.rejectUnsignedCommits"></a>
 
 ```python
-reject_unsigned_commits: typing.Union[bool, IResolvable]
+reject_unsigned_commits: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -9062,7 +9062,7 @@ def reset_delete() -> None
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-gitlab.project.ProjectTimeouts">ProjectTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-gitlab.project.ProjectTimeouts">ProjectTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -9133,10 +9133,10 @@ delete: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-gitlab.project.ProjectTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ProjectTimeouts]
+internal_value: IResolvable | ProjectTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-gitlab.project.ProjectTimeouts">ProjectTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-gitlab.project.ProjectTimeouts">ProjectTimeouts</a>
 
 ---
 

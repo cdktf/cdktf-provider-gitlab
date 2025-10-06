@@ -582,7 +582,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.importFrom"></a>
@@ -636,7 +636,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -651,7 +651,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -2659,57 +2659,57 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultBranchProtectionDefaults">DefaultBranchProtectionDefaults</a></code> | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference">ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitlabDedicatedInstance">GitlabDedicatedInstance</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitlabEnvironmentToolkitInstance">GitlabEnvironmentToolkitInstance</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.abuseNotificationEmailInput">AbuseNotificationEmailInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.adminModeInput">AdminModeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.adminModeInput">AdminModeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.afterSignOutPathInput">AfterSignOutPathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.afterSignUpTextInput">AfterSignUpTextInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.akismetApiKeyInput">AkismetApiKeyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.akismetEnabledInput">AkismetEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowAccountDeletionInput">AllowAccountDeletionInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowGroupOwnersToManageLdapInput">AllowGroupOwnersToManageLdapInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowLocalRequestsFromSystemHooksInput">AllowLocalRequestsFromSystemHooksInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowLocalRequestsFromWebHooksAndServicesInput">AllowLocalRequestsFromWebHooksAndServicesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowProjectCreationForGuestAndBelowInput">AllowProjectCreationForGuestAndBelowInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowRunnerRegistrationTokenInput">AllowRunnerRegistrationTokenInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.akismetEnabledInput">AkismetEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowAccountDeletionInput">AllowAccountDeletionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowGroupOwnersToManageLdapInput">AllowGroupOwnersToManageLdapInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowLocalRequestsFromSystemHooksInput">AllowLocalRequestsFromSystemHooksInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowLocalRequestsFromWebHooksAndServicesInput">AllowLocalRequestsFromWebHooksAndServicesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowProjectCreationForGuestAndBelowInput">AllowProjectCreationForGuestAndBelowInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowRunnerRegistrationTokenInput">AllowRunnerRegistrationTokenInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.archiveBuildsInHumanReadableInput">ArchiveBuildsInHumanReadableInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.asciidocMaxIncludesInput">AsciidocMaxIncludesInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxyAllowlistInput">AssetProxyAllowlistInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxyEnabledInput">AssetProxyEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxyEnabledInput">AssetProxyEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxySecretKeyInput">AssetProxySecretKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxyUrlInput">AssetProxyUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.authorizedKeysEnabledInput">AuthorizedKeysEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoBanUserOnExcessiveProjectsDownloadInput">AutoBanUserOnExcessiveProjectsDownloadInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.authorizedKeysEnabledInput">AuthorizedKeysEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoBanUserOnExcessiveProjectsDownloadInput">AutoBanUserOnExcessiveProjectsDownloadInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoDevopsDomainInput">AutoDevopsDomainInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoDevopsEnabledInput">AutoDevopsEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.automaticPurchasedStorageAllocationInput">AutomaticPurchasedStorageAllocationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoDevopsEnabledInput">AutoDevopsEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.automaticPurchasedStorageAllocationInput">AutomaticPurchasedStorageAllocationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportConcurrentPipelineBatchLimitInput">BulkImportConcurrentPipelineBatchLimitInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportEnabledInput">BulkImportEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportEnabledInput">BulkImportEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportMaxDownloadFileSizeInput">BulkImportMaxDownloadFileSizeInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.canCreateGroupInput">CanCreateGroupInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.checkNamespacePlanInput">CheckNamespacePlanInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.canCreateGroupInput">CanCreateGroupInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.checkNamespacePlanInput">CheckNamespacePlanInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ciMaxIncludesInput">CiMaxIncludesInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ciMaxTotalYamlSizeBytesInput">CiMaxTotalYamlSizeBytesInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.commitEmailHostnameInput">CommitEmailHostnameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.concurrentBitbucketImportJobsLimitInput">ConcurrentBitbucketImportJobsLimitInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.concurrentBitbucketServerImportJobsLimitInput">ConcurrentBitbucketServerImportJobsLimitInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.concurrentGithubImportJobsLimitInput">ConcurrentGithubImportJobsLimitInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerExpirationPoliciesEnableHistoricEntriesInput">ContainerExpirationPoliciesEnableHistoricEntriesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerExpirationPoliciesEnableHistoricEntriesInput">ContainerExpirationPoliciesEnableHistoricEntriesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryCleanupTagsServiceMaxListSizeInput">ContainerRegistryCleanupTagsServiceMaxListSizeInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryDeleteTagsServiceTimeoutInput">ContainerRegistryDeleteTagsServiceTimeoutInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryExpirationPoliciesCachingInput">ContainerRegistryExpirationPoliciesCachingInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryExpirationPoliciesCachingInput">ContainerRegistryExpirationPoliciesCachingInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryExpirationPoliciesWorkerCapacityInput">ContainerRegistryExpirationPoliciesWorkerCapacityInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryTokenExpireDelayInput">ContainerRegistryTokenExpireDelayInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deactivateDormantUsersInput">DeactivateDormantUsersInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deactivateDormantUsersInput">DeactivateDormantUsersInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deactivateDormantUsersPeriodInput">DeactivateDormantUsersPeriodInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.decompressArchiveFileTimeoutInput">DecompressArchiveFileTimeoutInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultArtifactsExpireInInput">DefaultArtifactsExpireInInput</a></code> | <code>string</code> | *No description.* |
@@ -2724,64 +2724,64 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultProjectVisibilityInput">DefaultProjectVisibilityInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultSnippetVisibilityInput">DefaultSnippetVisibilityInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultSyntaxHighlightingThemeInput">DefaultSyntaxHighlightingThemeInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteInactiveProjectsInput">DeleteInactiveProjectsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteUnconfirmedUsersInput">DeleteUnconfirmedUsersInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteInactiveProjectsInput">DeleteInactiveProjectsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteUnconfirmedUsersInput">DeleteUnconfirmedUsersInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deletionAdjournedPeriodInput">DeletionAdjournedPeriodInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diagramsnetEnabledInput">DiagramsnetEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diagramsnetEnabledInput">DiagramsnetEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diagramsnetUrlInput">DiagramsnetUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diffMaxFilesInput">DiffMaxFilesInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diffMaxLinesInput">DiffMaxLinesInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diffMaxPatchBytesInput">DiffMaxPatchBytesInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableAdminOauthScopesInput">DisableAdminOauthScopesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableAdminOauthScopesInput">DisableAdminOauthScopesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disabledOauthSignInSourcesInput">DisabledOauthSignInSourcesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableFeedTokenInput">DisableFeedTokenInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disablePersonalAccessTokensInput">DisablePersonalAccessTokensInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.dnsRebindingProtectionEnabledInput">DnsRebindingProtectionEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableFeedTokenInput">DisableFeedTokenInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disablePersonalAccessTokensInput">DisablePersonalAccessTokensInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.dnsRebindingProtectionEnabledInput">DnsRebindingProtectionEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.domainAllowlistInput">DomainAllowlistInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.domainDenylistEnabledInput">DomainDenylistEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.domainDenylistEnabledInput">DomainDenylistEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.domainDenylistInput">DomainDenylistInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.downstreamPipelineTriggerLimitPerProjectUserShaInput">DownstreamPipelineTriggerLimitPerProjectUserShaInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.dsaKeyRestrictionInput">DsaKeyRestrictionInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.duoFeaturesEnabledInput">DuoFeaturesEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.duoFeaturesEnabledInput">DuoFeaturesEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ecdsaKeyRestrictionInput">EcdsaKeyRestrictionInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ecdsaSkKeyRestrictionInput">EcdsaSkKeyRestrictionInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ed25519KeyRestrictionInput">Ed25519KeyRestrictionInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ed25519SkKeyRestrictionInput">Ed25519SkKeyRestrictionInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.eksAccessKeyIdInput">EksAccessKeyIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.eksAccountIdInput">EksAccountIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.eksIntegrationEnabledInput">EksIntegrationEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.eksIntegrationEnabledInput">EksIntegrationEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.eksSecretAccessKeyInput">EksSecretAccessKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchAwsAccessKeyInput">ElasticsearchAwsAccessKeyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchAwsInput">ElasticsearchAwsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchAwsInput">ElasticsearchAwsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchAwsRegionInput">ElasticsearchAwsRegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchAwsSecretAccessKeyInput">ElasticsearchAwsSecretAccessKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchIndexedFieldLengthLimitInput">ElasticsearchIndexedFieldLengthLimitInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchIndexedFileSizeLimitKbInput">ElasticsearchIndexedFileSizeLimitKbInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchIndexingInput">ElasticsearchIndexingInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchLimitIndexingInput">ElasticsearchLimitIndexingInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchIndexingInput">ElasticsearchIndexingInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchLimitIndexingInput">ElasticsearchLimitIndexingInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchMaxBulkConcurrencyInput">ElasticsearchMaxBulkConcurrencyInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchMaxBulkSizeMbInput">ElasticsearchMaxBulkSizeMbInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchMaxCodeIndexingConcurrencyInput">ElasticsearchMaxCodeIndexingConcurrencyInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchNamespaceIdsInput">ElasticsearchNamespaceIdsInput</a></code> | <code>double[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchPasswordInput">ElasticsearchPasswordInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchProjectIdsInput">ElasticsearchProjectIdsInput</a></code> | <code>double[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchRequeueWorkersInput">ElasticsearchRequeueWorkersInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchSearchInput">ElasticsearchSearchInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchRequeueWorkersInput">ElasticsearchRequeueWorkersInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchSearchInput">ElasticsearchSearchInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchUrlInput">ElasticsearchUrlInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchUsernameInput">ElasticsearchUsernameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchWorkerNumberOfShardsInput">ElasticsearchWorkerNumberOfShardsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.emailAdditionalTextInput">EmailAdditionalTextInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.emailAuthorInBodyInput">EmailAuthorInBodyInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.emailAuthorInBodyInput">EmailAuthorInBodyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.emailConfirmationSettingInput">EmailConfirmationSettingInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enableArtifactExternalRedirectWarningPageInput">EnableArtifactExternalRedirectWarningPageInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enableArtifactExternalRedirectWarningPageInput">EnableArtifactExternalRedirectWarningPageInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enabledGitAccessProtocolInput">EnabledGitAccessProtocolInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enforceNamespaceStorageLimitInput">EnforceNamespaceStorageLimitInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enforceTermsInput">EnforceTermsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enforceNamespaceStorageLimitInput">EnforceNamespaceStorageLimitInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enforceTermsInput">EnforceTermsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthClientCertInput">ExternalAuthClientCertInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthClientKeyInput">ExternalAuthClientKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthClientKeyPassInput">ExternalAuthClientKeyPassInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthorizationServiceDefaultLabelInput">ExternalAuthorizationServiceDefaultLabelInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthorizationServiceEnabledInput">ExternalAuthorizationServiceEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthorizationServiceEnabledInput">ExternalAuthorizationServiceEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthorizationServiceTimeoutInput">ExternalAuthorizationServiceTimeoutInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthorizationServiceUrlInput">ExternalAuthorizationServiceUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalPipelineValidationServiceTimeoutInput">ExternalPipelineValidationServiceTimeoutInput</a></code> | <code>double</code> | *No description.* |
@@ -2796,46 +2796,46 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitalyTimeoutFastInput">GitalyTimeoutFastInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitalyTimeoutMediumInput">GitalyTimeoutMediumInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitlabShellOperationLimitInput">GitlabShellOperationLimitInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitpodEnabledInput">GitpodEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitpodEnabledInput">GitpodEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitpodUrlInput">GitpodUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitRateLimitUsersAlertlistInput">GitRateLimitUsersAlertlistInput</a></code> | <code>double[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitRateLimitUsersAllowlistInput">GitRateLimitUsersAllowlistInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitTwoFactorSessionExpiryInput">GitTwoFactorSessionExpiryInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.globallyAllowedIpsInput">GloballyAllowedIpsInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.grafanaEnabledInput">GrafanaEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.grafanaEnabledInput">GrafanaEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.grafanaUrlInput">GrafanaUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gravatarEnabledInput">GravatarEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.groupOwnersCanManageDefaultBranchProtectionInput">GroupOwnersCanManageDefaultBranchProtectionInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.helpPageHideCommercialContentInput">HelpPageHideCommercialContentInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gravatarEnabledInput">GravatarEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.groupOwnersCanManageDefaultBranchProtectionInput">GroupOwnersCanManageDefaultBranchProtectionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.helpPageHideCommercialContentInput">HelpPageHideCommercialContentInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.helpPageSupportUrlInput">HelpPageSupportUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.helpPageTextInput">HelpPageTextInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.helpTextInput">HelpTextInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.hideThirdPartyOffersInput">HideThirdPartyOffersInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.hideThirdPartyOffersInput">HideThirdPartyOffersInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.homePageUrlInput">HomePageUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.housekeepingEnabledInput">HousekeepingEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.housekeepingEnabledInput">HousekeepingEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.housekeepingOptimizeRepositoryPeriodInput">HousekeepingOptimizeRepositoryPeriodInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.htmlEmailsEnabledInput">HtmlEmailsEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.htmlEmailsEnabledInput">HtmlEmailsEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.importSourcesInput">ImportSourcesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.inactiveProjectsDeleteAfterMonthsInput">InactiveProjectsDeleteAfterMonthsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.inactiveProjectsMinSizeMbInput">InactiveProjectsMinSizeMbInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.inactiveProjectsSendWarningEmailAfterMonthsInput">InactiveProjectsSendWarningEmailAfterMonthsInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.includeOptionalMetricsInServicePingInput">IncludeOptionalMetricsInServicePingInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.inProductMarketingEmailsEnabledInput">InProductMarketingEmailsEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.invisibleCaptchaEnabledInput">InvisibleCaptchaEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.includeOptionalMetricsInServicePingInput">IncludeOptionalMetricsInServicePingInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.inProductMarketingEmailsEnabledInput">InProductMarketingEmailsEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.invisibleCaptchaEnabledInput">InvisibleCaptchaEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.issuesCreateLimitInput">IssuesCreateLimitInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.jiraConnectApplicationKeyInput">JiraConnectApplicationKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.jiraConnectProxyUrlInput">JiraConnectProxyUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.jiraConnectPublicKeyStorageEnabledInput">JiraConnectPublicKeyStorageEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.keepLatestArtifactInput">KeepLatestArtifactInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.jiraConnectPublicKeyStorageEnabledInput">JiraConnectPublicKeyStorageEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.keepLatestArtifactInput">KeepLatestArtifactInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.localMarkdownVersionInput">LocalMarkdownVersionInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.lockDuoFeaturesEnabledInput">LockDuoFeaturesEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.lockMembershipsToLdapInput">LockMembershipsToLdapInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mailgunEventsEnabledInput">MailgunEventsEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.lockDuoFeaturesEnabledInput">LockDuoFeaturesEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.lockMembershipsToLdapInput">LockMembershipsToLdapInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mailgunEventsEnabledInput">MailgunEventsEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mailgunSigningKeyInput">MailgunSigningKeyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maintenanceModeInput">MaintenanceModeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maintenanceModeInput">MaintenanceModeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maintenanceModeMessageInput">MaintenanceModeMessageInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mavenPackageRequestsForwardingInput">MavenPackageRequestsForwardingInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mavenPackageRequestsForwardingInput">MavenPackageRequestsForwardingInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maxArtifactsSizeInput">MaxArtifactsSizeInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maxAttachmentSizeInput">MaxAttachmentSizeInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maxDecompressedArchiveSizeInput">MaxDecompressedArchiveSizeInput</a></code> | <code>double</code> | *No description.* |
@@ -2851,73 +2851,73 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maxTerraformStateSizeBytesInput">MaxTerraformStateSizeBytesInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.metricsMethodCallThresholdInput">MetricsMethodCallThresholdInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.minimumPasswordLengthInput">MinimumPasswordLengthInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mirrorAvailableInput">MirrorAvailableInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mirrorAvailableInput">MirrorAvailableInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mirrorCapacityThresholdInput">MirrorCapacityThresholdInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mirrorMaxCapacityInput">MirrorMaxCapacityInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mirrorMaxDelayInput">MirrorMaxDelayInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.npmPackageRequestsForwardingInput">NpmPackageRequestsForwardingInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.nugetSkipMetadataUrlValidationInput">NugetSkipMetadataUrlValidationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.npmPackageRequestsForwardingInput">NpmPackageRequestsForwardingInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.nugetSkipMetadataUrlValidationInput">NugetSkipMetadataUrlValidationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.outboundLocalRequestsWhitelistInput">OutboundLocalRequestsWhitelistInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.packageMetadataPurlTypesInput">PackageMetadataPurlTypesInput</a></code> | <code>double[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.packageRegistryAllowAnyoneToPullOptionInput">PackageRegistryAllowAnyoneToPullOptionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.packageRegistryAllowAnyoneToPullOptionInput">PackageRegistryAllowAnyoneToPullOptionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.packageRegistryCleanupPoliciesWorkerCapacityInput">PackageRegistryCleanupPoliciesWorkerCapacityInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pagesDomainVerificationEnabledInput">PagesDomainVerificationEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordAuthenticationEnabledForGitInput">PasswordAuthenticationEnabledForGitInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordAuthenticationEnabledForWebInput">PasswordAuthenticationEnabledForWebInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordLowercaseRequiredInput">PasswordLowercaseRequiredInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordNumberRequiredInput">PasswordNumberRequiredInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordSymbolRequiredInput">PasswordSymbolRequiredInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordUppercaseRequiredInput">PasswordUppercaseRequiredInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pagesDomainVerificationEnabledInput">PagesDomainVerificationEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordAuthenticationEnabledForGitInput">PasswordAuthenticationEnabledForGitInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordAuthenticationEnabledForWebInput">PasswordAuthenticationEnabledForWebInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordLowercaseRequiredInput">PasswordLowercaseRequiredInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordNumberRequiredInput">PasswordNumberRequiredInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordSymbolRequiredInput">PasswordSymbolRequiredInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordUppercaseRequiredInput">PasswordUppercaseRequiredInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.performanceBarAllowedGroupPathInput">PerformanceBarAllowedGroupPathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.personalAccessTokenPrefixInput">PersonalAccessTokenPrefixInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pipelineLimitPerProjectUserShaInput">PipelineLimitPerProjectUserShaInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.plantumlEnabledInput">PlantumlEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.plantumlEnabledInput">PlantumlEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.plantumlUrlInput">PlantumlUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pollingIntervalMultiplierInput">PollingIntervalMultiplierInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.projectExportEnabledInput">ProjectExportEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.projectExportEnabledInput">ProjectExportEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.projectJobsApiRateLimitInput">ProjectJobsApiRateLimitInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.projectsApiRateLimitUnauthenticatedInput">ProjectsApiRateLimitUnauthenticatedInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.prometheusMetricsEnabledInput">PrometheusMetricsEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.protectedCiVariablesInput">ProtectedCiVariablesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.prometheusMetricsEnabledInput">PrometheusMetricsEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.protectedCiVariablesInput">ProtectedCiVariablesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pushEventActivitiesLimitInput">PushEventActivitiesLimitInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pushEventHooksLimitInput">PushEventHooksLimitInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pypiPackageRequestsForwardingInput">PypiPackageRequestsForwardingInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pypiPackageRequestsForwardingInput">PypiPackageRequestsForwardingInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.rateLimitingResponseTextInput">RateLimitingResponseTextInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.rawBlobRequestLimitInput">RawBlobRequestLimitInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.recaptchaEnabledInput">RecaptchaEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.recaptchaEnabledInput">RecaptchaEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.recaptchaPrivateKeyInput">RecaptchaPrivateKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.recaptchaSiteKeyInput">RecaptchaSiteKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.receiveMaxInputSizeInput">ReceiveMaxInputSizeInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.receptiveClusterAgentsEnabledInput">ReceptiveClusterAgentsEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.rememberMeEnabledInput">RememberMeEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.repositoryChecksEnabledInput">RepositoryChecksEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.receptiveClusterAgentsEnabledInput">ReceptiveClusterAgentsEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.rememberMeEnabledInput">RememberMeEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.repositoryChecksEnabledInput">RepositoryChecksEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.repositorySizeLimitInput">RepositorySizeLimitInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.repositoryStoragesWeightedInput">RepositoryStoragesWeightedInput</a></code> | <code>System.Collections.Generic.IDictionary<string, double></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireAdminApprovalAfterUserSignupInput">RequireAdminApprovalAfterUserSignupInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireAdminTwoFactorAuthenticationInput">RequireAdminTwoFactorAuthenticationInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requirePersonalAccessTokenExpiryInput">RequirePersonalAccessTokenExpiryInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireTwoFactorAuthenticationInput">RequireTwoFactorAuthenticationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireAdminApprovalAfterUserSignupInput">RequireAdminApprovalAfterUserSignupInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireAdminTwoFactorAuthenticationInput">RequireAdminTwoFactorAuthenticationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requirePersonalAccessTokenExpiryInput">RequirePersonalAccessTokenExpiryInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireTwoFactorAuthenticationInput">RequireTwoFactorAuthenticationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.restrictedVisibilityLevelsInput">RestrictedVisibilityLevelsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.rsaKeyRestrictionInput">RsaKeyRestrictionInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.searchRateLimitInput">SearchRateLimitInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.searchRateLimitUnauthenticatedInput">SearchRateLimitUnauthenticatedInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.securityApprovalPoliciesLimitInput">SecurityApprovalPoliciesLimitInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.securityPolicyGlobalGroupApproversEnabledInput">SecurityPolicyGlobalGroupApproversEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.securityPolicyGlobalGroupApproversEnabledInput">SecurityPolicyGlobalGroupApproversEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.securityTxtContentInput">SecurityTxtContentInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sendUserConfirmationEmailInput">SendUserConfirmationEmailInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.serviceAccessTokensExpirationEnforcedInput">ServiceAccessTokensExpirationEnforcedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sendUserConfirmationEmailInput">SendUserConfirmationEmailInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.serviceAccessTokensExpirationEnforcedInput">ServiceAccessTokensExpirationEnforcedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sessionExpireDelayInput">SessionExpireDelayInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sharedRunnersEnabledInput">SharedRunnersEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sharedRunnersEnabledInput">SharedRunnersEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sharedRunnersMinutesInput">SharedRunnersMinutesInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sharedRunnersTextInput">SharedRunnersTextInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sidekiqJobLimiterCompressionThresholdBytesInput">SidekiqJobLimiterCompressionThresholdBytesInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sidekiqJobLimiterLimitBytesInput">SidekiqJobLimiterLimitBytesInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sidekiqJobLimiterModeInput">SidekiqJobLimiterModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.signInTextInput">SignInTextInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.signupEnabledInput">SignupEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.silentAdminExportsEnabledInput">SilentAdminExportsEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.silentModeEnabledInput">SilentModeEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.slackAppEnabledInput">SlackAppEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.signupEnabledInput">SignupEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.silentAdminExportsEnabledInput">SilentAdminExportsEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.silentModeEnabledInput">SilentModeEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.slackAppEnabledInput">SlackAppEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.slackAppIdInput">SlackAppIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.slackAppSecretInput">SlackAppSecretInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.slackAppSigningSecretInput">SlackAppSigningSecretInput</a></code> | <code>string</code> | *No description.* |
@@ -2927,97 +2927,97 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.snowplowCollectorHostnameInput">SnowplowCollectorHostnameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.snowplowCookieDomainInput">SnowplowCookieDomainInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.snowplowDatabaseCollectorHostnameInput">SnowplowDatabaseCollectorHostnameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.snowplowEnabledInput">SnowplowEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sourcegraphEnabledInput">SourcegraphEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sourcegraphPublicOnlyInput">SourcegraphPublicOnlyInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.snowplowEnabledInput">SnowplowEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sourcegraphEnabledInput">SourcegraphEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sourcegraphPublicOnlyInput">SourcegraphPublicOnlyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sourcegraphUrlInput">SourcegraphUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.spamCheckApiKeyInput">SpamCheckApiKeyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.spamCheckEndpointEnabledInput">SpamCheckEndpointEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.spamCheckEndpointEnabledInput">SpamCheckEndpointEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.spamCheckEndpointUrlInput">SpamCheckEndpointUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.staticObjectsExternalStorageAuthTokenInput">StaticObjectsExternalStorageAuthTokenInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.staticObjectsExternalStorageUrlInput">StaticObjectsExternalStorageUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.suggestPipelineEnabledInput">SuggestPipelineEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.suggestPipelineEnabledInput">SuggestPipelineEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.terminalMaxSessionTimeInput">TerminalMaxSessionTimeInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.termsInput">TermsInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedApiEnabledInput">ThrottleAuthenticatedApiEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedApiEnabledInput">ThrottleAuthenticatedApiEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedApiPeriodInSecondsInput">ThrottleAuthenticatedApiPeriodInSecondsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedApiRequestsPerPeriodInput">ThrottleAuthenticatedApiRequestsPerPeriodInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedPackagesApiEnabledInput">ThrottleAuthenticatedPackagesApiEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedPackagesApiEnabledInput">ThrottleAuthenticatedPackagesApiEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedPackagesApiPeriodInSecondsInput">ThrottleAuthenticatedPackagesApiPeriodInSecondsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedPackagesApiRequestsPerPeriodInput">ThrottleAuthenticatedPackagesApiRequestsPerPeriodInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedWebEnabledInput">ThrottleAuthenticatedWebEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedWebEnabledInput">ThrottleAuthenticatedWebEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedWebPeriodInSecondsInput">ThrottleAuthenticatedWebPeriodInSecondsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedWebRequestsPerPeriodInput">ThrottleAuthenticatedWebRequestsPerPeriodInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedApiEnabledInput">ThrottleUnauthenticatedApiEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedApiEnabledInput">ThrottleUnauthenticatedApiEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedApiPeriodInSecondsInput">ThrottleUnauthenticatedApiPeriodInSecondsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedApiRequestsPerPeriodInput">ThrottleUnauthenticatedApiRequestsPerPeriodInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedPackagesApiEnabledInput">ThrottleUnauthenticatedPackagesApiEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedPackagesApiEnabledInput">ThrottleUnauthenticatedPackagesApiEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedPackagesApiPeriodInSecondsInput">ThrottleUnauthenticatedPackagesApiPeriodInSecondsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedPackagesApiRequestsPerPeriodInput">ThrottleUnauthenticatedPackagesApiRequestsPerPeriodInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedWebEnabledInput">ThrottleUnauthenticatedWebEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedWebEnabledInput">ThrottleUnauthenticatedWebEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedWebPeriodInSecondsInput">ThrottleUnauthenticatedWebPeriodInSecondsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedWebRequestsPerPeriodInput">ThrottleUnauthenticatedWebRequestsPerPeriodInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.timeTrackingLimitToHoursInput">TimeTrackingLimitToHoursInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.timeTrackingLimitToHoursInput">TimeTrackingLimitToHoursInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.twoFactorGracePeriodInput">TwoFactorGracePeriodInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.unconfirmedUsersDeleteAfterDaysInput">UnconfirmedUsersDeleteAfterDaysInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.uniqueIpsLimitEnabledInput">UniqueIpsLimitEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.uniqueIpsLimitEnabledInput">UniqueIpsLimitEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.uniqueIpsLimitPerUserInput">UniqueIpsLimitPerUserInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.uniqueIpsLimitTimeWindowInput">UniqueIpsLimitTimeWindowInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.updateRunnerVersionsEnabledInput">UpdateRunnerVersionsEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.usagePingEnabledInput">UsagePingEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.useClickhouseForAnalyticsInput">UseClickhouseForAnalyticsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDeactivationEmailsEnabledInput">UserDeactivationEmailsEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDefaultExternalInput">UserDefaultExternalInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.updateRunnerVersionsEnabledInput">UpdateRunnerVersionsEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.usagePingEnabledInput">UsagePingEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.useClickhouseForAnalyticsInput">UseClickhouseForAnalyticsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDeactivationEmailsEnabledInput">UserDeactivationEmailsEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDefaultExternalInput">UserDefaultExternalInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDefaultInternalRegexInput">UserDefaultInternalRegexInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDefaultsToPrivateProfileInput">UserDefaultsToPrivateProfileInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userOauthApplicationsInput">UserOauthApplicationsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userShowAddSshKeyMessageInput">UserShowAddSshKeyMessageInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDefaultsToPrivateProfileInput">UserDefaultsToPrivateProfileInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userOauthApplicationsInput">UserOauthApplicationsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userShowAddSshKeyMessageInput">UserShowAddSshKeyMessageInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.validRunnerRegistrarsInput">ValidRunnerRegistrarsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.versionCheckEnabledInput">VersionCheckEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.webIdeClientsidePreviewEnabledInput">WebIdeClientsidePreviewEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.versionCheckEnabledInput">VersionCheckEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.webIdeClientsidePreviewEnabledInput">WebIdeClientsidePreviewEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.whatsNewVariantInput">WhatsNewVariantInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.wikiPageMaxContentBytesInput">WikiPageMaxContentBytesInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.abuseNotificationEmail">AbuseNotificationEmail</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.adminMode">AdminMode</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.adminMode">AdminMode</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.afterSignOutPath">AfterSignOutPath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.afterSignUpText">AfterSignUpText</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.akismetApiKey">AkismetApiKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.akismetEnabled">AkismetEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowAccountDeletion">AllowAccountDeletion</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowGroupOwnersToManageLdap">AllowGroupOwnersToManageLdap</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowLocalRequestsFromSystemHooks">AllowLocalRequestsFromSystemHooks</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowLocalRequestsFromWebHooksAndServices">AllowLocalRequestsFromWebHooksAndServices</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowProjectCreationForGuestAndBelow">AllowProjectCreationForGuestAndBelow</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowRunnerRegistrationToken">AllowRunnerRegistrationToken</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.akismetEnabled">AkismetEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowAccountDeletion">AllowAccountDeletion</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowGroupOwnersToManageLdap">AllowGroupOwnersToManageLdap</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowLocalRequestsFromSystemHooks">AllowLocalRequestsFromSystemHooks</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowLocalRequestsFromWebHooksAndServices">AllowLocalRequestsFromWebHooksAndServices</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowProjectCreationForGuestAndBelow">AllowProjectCreationForGuestAndBelow</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowRunnerRegistrationToken">AllowRunnerRegistrationToken</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.archiveBuildsInHumanReadable">ArchiveBuildsInHumanReadable</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.asciidocMaxIncludes">AsciidocMaxIncludes</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxyAllowlist">AssetProxyAllowlist</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxyEnabled">AssetProxyEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxyEnabled">AssetProxyEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxySecretKey">AssetProxySecretKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxyUrl">AssetProxyUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.authorizedKeysEnabled">AuthorizedKeysEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoBanUserOnExcessiveProjectsDownload">AutoBanUserOnExcessiveProjectsDownload</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.authorizedKeysEnabled">AuthorizedKeysEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoBanUserOnExcessiveProjectsDownload">AutoBanUserOnExcessiveProjectsDownload</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoDevopsDomain">AutoDevopsDomain</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoDevopsEnabled">AutoDevopsEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.automaticPurchasedStorageAllocation">AutomaticPurchasedStorageAllocation</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoDevopsEnabled">AutoDevopsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.automaticPurchasedStorageAllocation">AutomaticPurchasedStorageAllocation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportConcurrentPipelineBatchLimit">BulkImportConcurrentPipelineBatchLimit</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportEnabled">BulkImportEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportEnabled">BulkImportEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportMaxDownloadFileSize">BulkImportMaxDownloadFileSize</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.canCreateGroup">CanCreateGroup</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.checkNamespacePlan">CheckNamespacePlan</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.canCreateGroup">CanCreateGroup</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.checkNamespacePlan">CheckNamespacePlan</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ciMaxIncludes">CiMaxIncludes</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ciMaxTotalYamlSizeBytes">CiMaxTotalYamlSizeBytes</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.commitEmailHostname">CommitEmailHostname</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.concurrentBitbucketImportJobsLimit">ConcurrentBitbucketImportJobsLimit</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.concurrentBitbucketServerImportJobsLimit">ConcurrentBitbucketServerImportJobsLimit</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.concurrentGithubImportJobsLimit">ConcurrentGithubImportJobsLimit</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerExpirationPoliciesEnableHistoricEntries">ContainerExpirationPoliciesEnableHistoricEntries</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerExpirationPoliciesEnableHistoricEntries">ContainerExpirationPoliciesEnableHistoricEntries</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryCleanupTagsServiceMaxListSize">ContainerRegistryCleanupTagsServiceMaxListSize</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryDeleteTagsServiceTimeout">ContainerRegistryDeleteTagsServiceTimeout</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryExpirationPoliciesCaching">ContainerRegistryExpirationPoliciesCaching</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryExpirationPoliciesCaching">ContainerRegistryExpirationPoliciesCaching</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryExpirationPoliciesWorkerCapacity">ContainerRegistryExpirationPoliciesWorkerCapacity</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryTokenExpireDelay">ContainerRegistryTokenExpireDelay</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deactivateDormantUsers">DeactivateDormantUsers</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deactivateDormantUsers">DeactivateDormantUsers</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deactivateDormantUsersPeriod">DeactivateDormantUsersPeriod</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.decompressArchiveFileTimeout">DecompressArchiveFileTimeout</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultArtifactsExpireIn">DefaultArtifactsExpireIn</a></code> | <code>string</code> | *No description.* |
@@ -3031,64 +3031,64 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultProjectVisibility">DefaultProjectVisibility</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultSnippetVisibility">DefaultSnippetVisibility</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.defaultSyntaxHighlightingTheme">DefaultSyntaxHighlightingTheme</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteInactiveProjects">DeleteInactiveProjects</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteUnconfirmedUsers">DeleteUnconfirmedUsers</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteInactiveProjects">DeleteInactiveProjects</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteUnconfirmedUsers">DeleteUnconfirmedUsers</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deletionAdjournedPeriod">DeletionAdjournedPeriod</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diagramsnetEnabled">DiagramsnetEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diagramsnetEnabled">DiagramsnetEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diagramsnetUrl">DiagramsnetUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diffMaxFiles">DiffMaxFiles</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diffMaxLines">DiffMaxLines</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diffMaxPatchBytes">DiffMaxPatchBytes</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableAdminOauthScopes">DisableAdminOauthScopes</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableAdminOauthScopes">DisableAdminOauthScopes</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disabledOauthSignInSources">DisabledOauthSignInSources</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableFeedToken">DisableFeedToken</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disablePersonalAccessTokens">DisablePersonalAccessTokens</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.dnsRebindingProtectionEnabled">DnsRebindingProtectionEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableFeedToken">DisableFeedToken</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disablePersonalAccessTokens">DisablePersonalAccessTokens</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.dnsRebindingProtectionEnabled">DnsRebindingProtectionEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.domainAllowlist">DomainAllowlist</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.domainDenylist">DomainDenylist</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.domainDenylistEnabled">DomainDenylistEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.domainDenylistEnabled">DomainDenylistEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.downstreamPipelineTriggerLimitPerProjectUserSha">DownstreamPipelineTriggerLimitPerProjectUserSha</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.dsaKeyRestriction">DsaKeyRestriction</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.duoFeaturesEnabled">DuoFeaturesEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.duoFeaturesEnabled">DuoFeaturesEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ecdsaKeyRestriction">EcdsaKeyRestriction</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ecdsaSkKeyRestriction">EcdsaSkKeyRestriction</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ed25519KeyRestriction">Ed25519KeyRestriction</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.ed25519SkKeyRestriction">Ed25519SkKeyRestriction</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.eksAccessKeyId">EksAccessKeyId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.eksAccountId">EksAccountId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.eksIntegrationEnabled">EksIntegrationEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.eksIntegrationEnabled">EksIntegrationEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.eksSecretAccessKey">EksSecretAccessKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchAws">ElasticsearchAws</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchAws">ElasticsearchAws</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchAwsAccessKey">ElasticsearchAwsAccessKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchAwsRegion">ElasticsearchAwsRegion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchAwsSecretAccessKey">ElasticsearchAwsSecretAccessKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchIndexedFieldLengthLimit">ElasticsearchIndexedFieldLengthLimit</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchIndexedFileSizeLimitKb">ElasticsearchIndexedFileSizeLimitKb</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchIndexing">ElasticsearchIndexing</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchLimitIndexing">ElasticsearchLimitIndexing</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchIndexing">ElasticsearchIndexing</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchLimitIndexing">ElasticsearchLimitIndexing</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchMaxBulkConcurrency">ElasticsearchMaxBulkConcurrency</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchMaxBulkSizeMb">ElasticsearchMaxBulkSizeMb</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchMaxCodeIndexingConcurrency">ElasticsearchMaxCodeIndexingConcurrency</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchNamespaceIds">ElasticsearchNamespaceIds</a></code> | <code>double[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchPassword">ElasticsearchPassword</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchProjectIds">ElasticsearchProjectIds</a></code> | <code>double[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchRequeueWorkers">ElasticsearchRequeueWorkers</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchSearch">ElasticsearchSearch</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchRequeueWorkers">ElasticsearchRequeueWorkers</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchSearch">ElasticsearchSearch</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchUrl">ElasticsearchUrl</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchUsername">ElasticsearchUsername</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchWorkerNumberOfShards">ElasticsearchWorkerNumberOfShards</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.emailAdditionalText">EmailAdditionalText</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.emailAuthorInBody">EmailAuthorInBody</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.emailAuthorInBody">EmailAuthorInBody</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.emailConfirmationSetting">EmailConfirmationSetting</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enableArtifactExternalRedirectWarningPage">EnableArtifactExternalRedirectWarningPage</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enableArtifactExternalRedirectWarningPage">EnableArtifactExternalRedirectWarningPage</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enabledGitAccessProtocol">EnabledGitAccessProtocol</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enforceNamespaceStorageLimit">EnforceNamespaceStorageLimit</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enforceTerms">EnforceTerms</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enforceNamespaceStorageLimit">EnforceNamespaceStorageLimit</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enforceTerms">EnforceTerms</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthClientCert">ExternalAuthClientCert</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthClientKey">ExternalAuthClientKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthClientKeyPass">ExternalAuthClientKeyPass</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthorizationServiceDefaultLabel">ExternalAuthorizationServiceDefaultLabel</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthorizationServiceEnabled">ExternalAuthorizationServiceEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthorizationServiceEnabled">ExternalAuthorizationServiceEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthorizationServiceTimeout">ExternalAuthorizationServiceTimeout</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthorizationServiceUrl">ExternalAuthorizationServiceUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalPipelineValidationServiceTimeout">ExternalPipelineValidationServiceTimeout</a></code> | <code>double</code> | *No description.* |
@@ -3103,46 +3103,46 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitalyTimeoutFast">GitalyTimeoutFast</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitalyTimeoutMedium">GitalyTimeoutMedium</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitlabShellOperationLimit">GitlabShellOperationLimit</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitpodEnabled">GitpodEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitpodEnabled">GitpodEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitpodUrl">GitpodUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitRateLimitUsersAlertlist">GitRateLimitUsersAlertlist</a></code> | <code>double[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitRateLimitUsersAllowlist">GitRateLimitUsersAllowlist</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitTwoFactorSessionExpiry">GitTwoFactorSessionExpiry</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.globallyAllowedIps">GloballyAllowedIps</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.grafanaEnabled">GrafanaEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.grafanaEnabled">GrafanaEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.grafanaUrl">GrafanaUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gravatarEnabled">GravatarEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.groupOwnersCanManageDefaultBranchProtection">GroupOwnersCanManageDefaultBranchProtection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.helpPageHideCommercialContent">HelpPageHideCommercialContent</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gravatarEnabled">GravatarEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.groupOwnersCanManageDefaultBranchProtection">GroupOwnersCanManageDefaultBranchProtection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.helpPageHideCommercialContent">HelpPageHideCommercialContent</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.helpPageSupportUrl">HelpPageSupportUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.helpPageText">HelpPageText</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.helpText">HelpText</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.hideThirdPartyOffers">HideThirdPartyOffers</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.hideThirdPartyOffers">HideThirdPartyOffers</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.homePageUrl">HomePageUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.housekeepingEnabled">HousekeepingEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.housekeepingEnabled">HousekeepingEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.housekeepingOptimizeRepositoryPeriod">HousekeepingOptimizeRepositoryPeriod</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.htmlEmailsEnabled">HtmlEmailsEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.htmlEmailsEnabled">HtmlEmailsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.importSources">ImportSources</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.inactiveProjectsDeleteAfterMonths">InactiveProjectsDeleteAfterMonths</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.inactiveProjectsMinSizeMb">InactiveProjectsMinSizeMb</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.inactiveProjectsSendWarningEmailAfterMonths">InactiveProjectsSendWarningEmailAfterMonths</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.includeOptionalMetricsInServicePing">IncludeOptionalMetricsInServicePing</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.inProductMarketingEmailsEnabled">InProductMarketingEmailsEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.invisibleCaptchaEnabled">InvisibleCaptchaEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.includeOptionalMetricsInServicePing">IncludeOptionalMetricsInServicePing</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.inProductMarketingEmailsEnabled">InProductMarketingEmailsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.invisibleCaptchaEnabled">InvisibleCaptchaEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.issuesCreateLimit">IssuesCreateLimit</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.jiraConnectApplicationKey">JiraConnectApplicationKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.jiraConnectProxyUrl">JiraConnectProxyUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.jiraConnectPublicKeyStorageEnabled">JiraConnectPublicKeyStorageEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.keepLatestArtifact">KeepLatestArtifact</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.jiraConnectPublicKeyStorageEnabled">JiraConnectPublicKeyStorageEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.keepLatestArtifact">KeepLatestArtifact</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.localMarkdownVersion">LocalMarkdownVersion</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.lockDuoFeaturesEnabled">LockDuoFeaturesEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.lockMembershipsToLdap">LockMembershipsToLdap</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mailgunEventsEnabled">MailgunEventsEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.lockDuoFeaturesEnabled">LockDuoFeaturesEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.lockMembershipsToLdap">LockMembershipsToLdap</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mailgunEventsEnabled">MailgunEventsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mailgunSigningKey">MailgunSigningKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maintenanceMode">MaintenanceMode</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maintenanceMode">MaintenanceMode</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maintenanceModeMessage">MaintenanceModeMessage</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mavenPackageRequestsForwarding">MavenPackageRequestsForwarding</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mavenPackageRequestsForwarding">MavenPackageRequestsForwarding</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maxArtifactsSize">MaxArtifactsSize</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maxAttachmentSize">MaxAttachmentSize</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maxDecompressedArchiveSize">MaxDecompressedArchiveSize</a></code> | <code>double</code> | *No description.* |
@@ -3158,73 +3158,73 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maxTerraformStateSizeBytes">MaxTerraformStateSizeBytes</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.metricsMethodCallThreshold">MetricsMethodCallThreshold</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.minimumPasswordLength">MinimumPasswordLength</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mirrorAvailable">MirrorAvailable</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mirrorAvailable">MirrorAvailable</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mirrorCapacityThreshold">MirrorCapacityThreshold</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mirrorMaxCapacity">MirrorMaxCapacity</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mirrorMaxDelay">MirrorMaxDelay</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.npmPackageRequestsForwarding">NpmPackageRequestsForwarding</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.nugetSkipMetadataUrlValidation">NugetSkipMetadataUrlValidation</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.npmPackageRequestsForwarding">NpmPackageRequestsForwarding</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.nugetSkipMetadataUrlValidation">NugetSkipMetadataUrlValidation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.outboundLocalRequestsWhitelist">OutboundLocalRequestsWhitelist</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.packageMetadataPurlTypes">PackageMetadataPurlTypes</a></code> | <code>double[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.packageRegistryAllowAnyoneToPullOption">PackageRegistryAllowAnyoneToPullOption</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.packageRegistryAllowAnyoneToPullOption">PackageRegistryAllowAnyoneToPullOption</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.packageRegistryCleanupPoliciesWorkerCapacity">PackageRegistryCleanupPoliciesWorkerCapacity</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pagesDomainVerificationEnabled">PagesDomainVerificationEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordAuthenticationEnabledForGit">PasswordAuthenticationEnabledForGit</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordAuthenticationEnabledForWeb">PasswordAuthenticationEnabledForWeb</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordLowercaseRequired">PasswordLowercaseRequired</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordNumberRequired">PasswordNumberRequired</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordSymbolRequired">PasswordSymbolRequired</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordUppercaseRequired">PasswordUppercaseRequired</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pagesDomainVerificationEnabled">PagesDomainVerificationEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordAuthenticationEnabledForGit">PasswordAuthenticationEnabledForGit</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordAuthenticationEnabledForWeb">PasswordAuthenticationEnabledForWeb</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordLowercaseRequired">PasswordLowercaseRequired</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordNumberRequired">PasswordNumberRequired</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordSymbolRequired">PasswordSymbolRequired</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordUppercaseRequired">PasswordUppercaseRequired</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.performanceBarAllowedGroupPath">PerformanceBarAllowedGroupPath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.personalAccessTokenPrefix">PersonalAccessTokenPrefix</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pipelineLimitPerProjectUserSha">PipelineLimitPerProjectUserSha</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.plantumlEnabled">PlantumlEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.plantumlEnabled">PlantumlEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.plantumlUrl">PlantumlUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pollingIntervalMultiplier">PollingIntervalMultiplier</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.projectExportEnabled">ProjectExportEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.projectExportEnabled">ProjectExportEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.projectJobsApiRateLimit">ProjectJobsApiRateLimit</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.projectsApiRateLimitUnauthenticated">ProjectsApiRateLimitUnauthenticated</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.prometheusMetricsEnabled">PrometheusMetricsEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.protectedCiVariables">ProtectedCiVariables</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.prometheusMetricsEnabled">PrometheusMetricsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.protectedCiVariables">ProtectedCiVariables</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pushEventActivitiesLimit">PushEventActivitiesLimit</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pushEventHooksLimit">PushEventHooksLimit</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pypiPackageRequestsForwarding">PypiPackageRequestsForwarding</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pypiPackageRequestsForwarding">PypiPackageRequestsForwarding</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.rateLimitingResponseText">RateLimitingResponseText</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.rawBlobRequestLimit">RawBlobRequestLimit</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.recaptchaEnabled">RecaptchaEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.recaptchaEnabled">RecaptchaEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.recaptchaPrivateKey">RecaptchaPrivateKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.recaptchaSiteKey">RecaptchaSiteKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.receiveMaxInputSize">ReceiveMaxInputSize</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.receptiveClusterAgentsEnabled">ReceptiveClusterAgentsEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.rememberMeEnabled">RememberMeEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.repositoryChecksEnabled">RepositoryChecksEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.receptiveClusterAgentsEnabled">ReceptiveClusterAgentsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.rememberMeEnabled">RememberMeEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.repositoryChecksEnabled">RepositoryChecksEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.repositorySizeLimit">RepositorySizeLimit</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.repositoryStoragesWeighted">RepositoryStoragesWeighted</a></code> | <code>System.Collections.Generic.IDictionary<string, double></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireAdminApprovalAfterUserSignup">RequireAdminApprovalAfterUserSignup</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireAdminTwoFactorAuthentication">RequireAdminTwoFactorAuthentication</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requirePersonalAccessTokenExpiry">RequirePersonalAccessTokenExpiry</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireTwoFactorAuthentication">RequireTwoFactorAuthentication</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireAdminApprovalAfterUserSignup">RequireAdminApprovalAfterUserSignup</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireAdminTwoFactorAuthentication">RequireAdminTwoFactorAuthentication</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requirePersonalAccessTokenExpiry">RequirePersonalAccessTokenExpiry</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireTwoFactorAuthentication">RequireTwoFactorAuthentication</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.restrictedVisibilityLevels">RestrictedVisibilityLevels</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.rsaKeyRestriction">RsaKeyRestriction</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.searchRateLimit">SearchRateLimit</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.searchRateLimitUnauthenticated">SearchRateLimitUnauthenticated</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.securityApprovalPoliciesLimit">SecurityApprovalPoliciesLimit</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.securityPolicyGlobalGroupApproversEnabled">SecurityPolicyGlobalGroupApproversEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.securityPolicyGlobalGroupApproversEnabled">SecurityPolicyGlobalGroupApproversEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.securityTxtContent">SecurityTxtContent</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sendUserConfirmationEmail">SendUserConfirmationEmail</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.serviceAccessTokensExpirationEnforced">ServiceAccessTokensExpirationEnforced</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sendUserConfirmationEmail">SendUserConfirmationEmail</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.serviceAccessTokensExpirationEnforced">ServiceAccessTokensExpirationEnforced</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sessionExpireDelay">SessionExpireDelay</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sharedRunnersEnabled">SharedRunnersEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sharedRunnersEnabled">SharedRunnersEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sharedRunnersMinutes">SharedRunnersMinutes</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sharedRunnersText">SharedRunnersText</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sidekiqJobLimiterCompressionThresholdBytes">SidekiqJobLimiterCompressionThresholdBytes</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sidekiqJobLimiterLimitBytes">SidekiqJobLimiterLimitBytes</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sidekiqJobLimiterMode">SidekiqJobLimiterMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.signInText">SignInText</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.signupEnabled">SignupEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.silentAdminExportsEnabled">SilentAdminExportsEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.silentModeEnabled">SilentModeEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.slackAppEnabled">SlackAppEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.signupEnabled">SignupEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.silentAdminExportsEnabled">SilentAdminExportsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.silentModeEnabled">SilentModeEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.slackAppEnabled">SlackAppEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.slackAppId">SlackAppId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.slackAppSecret">SlackAppSecret</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.slackAppSigningSecret">SlackAppSigningSecret</a></code> | <code>string</code> | *No description.* |
@@ -3234,54 +3234,54 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.snowplowCollectorHostname">SnowplowCollectorHostname</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.snowplowCookieDomain">SnowplowCookieDomain</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.snowplowDatabaseCollectorHostname">SnowplowDatabaseCollectorHostname</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.snowplowEnabled">SnowplowEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sourcegraphEnabled">SourcegraphEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sourcegraphPublicOnly">SourcegraphPublicOnly</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.snowplowEnabled">SnowplowEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sourcegraphEnabled">SourcegraphEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sourcegraphPublicOnly">SourcegraphPublicOnly</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sourcegraphUrl">SourcegraphUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.spamCheckApiKey">SpamCheckApiKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.spamCheckEndpointEnabled">SpamCheckEndpointEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.spamCheckEndpointEnabled">SpamCheckEndpointEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.spamCheckEndpointUrl">SpamCheckEndpointUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.staticObjectsExternalStorageAuthToken">StaticObjectsExternalStorageAuthToken</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.staticObjectsExternalStorageUrl">StaticObjectsExternalStorageUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.suggestPipelineEnabled">SuggestPipelineEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.suggestPipelineEnabled">SuggestPipelineEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.terminalMaxSessionTime">TerminalMaxSessionTime</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.terms">Terms</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedApiEnabled">ThrottleAuthenticatedApiEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedApiEnabled">ThrottleAuthenticatedApiEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedApiPeriodInSeconds">ThrottleAuthenticatedApiPeriodInSeconds</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedApiRequestsPerPeriod">ThrottleAuthenticatedApiRequestsPerPeriod</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedPackagesApiEnabled">ThrottleAuthenticatedPackagesApiEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedPackagesApiEnabled">ThrottleAuthenticatedPackagesApiEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedPackagesApiPeriodInSeconds">ThrottleAuthenticatedPackagesApiPeriodInSeconds</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedPackagesApiRequestsPerPeriod">ThrottleAuthenticatedPackagesApiRequestsPerPeriod</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedWebEnabled">ThrottleAuthenticatedWebEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedWebEnabled">ThrottleAuthenticatedWebEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedWebPeriodInSeconds">ThrottleAuthenticatedWebPeriodInSeconds</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedWebRequestsPerPeriod">ThrottleAuthenticatedWebRequestsPerPeriod</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedApiEnabled">ThrottleUnauthenticatedApiEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedApiEnabled">ThrottleUnauthenticatedApiEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedApiPeriodInSeconds">ThrottleUnauthenticatedApiPeriodInSeconds</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedApiRequestsPerPeriod">ThrottleUnauthenticatedApiRequestsPerPeriod</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedPackagesApiEnabled">ThrottleUnauthenticatedPackagesApiEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedPackagesApiEnabled">ThrottleUnauthenticatedPackagesApiEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedPackagesApiPeriodInSeconds">ThrottleUnauthenticatedPackagesApiPeriodInSeconds</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedPackagesApiRequestsPerPeriod">ThrottleUnauthenticatedPackagesApiRequestsPerPeriod</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedWebEnabled">ThrottleUnauthenticatedWebEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedWebEnabled">ThrottleUnauthenticatedWebEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedWebPeriodInSeconds">ThrottleUnauthenticatedWebPeriodInSeconds</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedWebRequestsPerPeriod">ThrottleUnauthenticatedWebRequestsPerPeriod</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.timeTrackingLimitToHours">TimeTrackingLimitToHours</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.timeTrackingLimitToHours">TimeTrackingLimitToHours</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.twoFactorGracePeriod">TwoFactorGracePeriod</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.unconfirmedUsersDeleteAfterDays">UnconfirmedUsersDeleteAfterDays</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.uniqueIpsLimitEnabled">UniqueIpsLimitEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.uniqueIpsLimitEnabled">UniqueIpsLimitEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.uniqueIpsLimitPerUser">UniqueIpsLimitPerUser</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.uniqueIpsLimitTimeWindow">UniqueIpsLimitTimeWindow</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.updateRunnerVersionsEnabled">UpdateRunnerVersionsEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.usagePingEnabled">UsagePingEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.useClickhouseForAnalytics">UseClickhouseForAnalytics</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDeactivationEmailsEnabled">UserDeactivationEmailsEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDefaultExternal">UserDefaultExternal</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.updateRunnerVersionsEnabled">UpdateRunnerVersionsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.usagePingEnabled">UsagePingEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.useClickhouseForAnalytics">UseClickhouseForAnalytics</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDeactivationEmailsEnabled">UserDeactivationEmailsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDefaultExternal">UserDefaultExternal</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDefaultInternalRegex">UserDefaultInternalRegex</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDefaultsToPrivateProfile">UserDefaultsToPrivateProfile</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userOauthApplications">UserOauthApplications</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userShowAddSshKeyMessage">UserShowAddSshKeyMessage</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDefaultsToPrivateProfile">UserDefaultsToPrivateProfile</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userOauthApplications">UserOauthApplications</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userShowAddSshKeyMessage">UserShowAddSshKeyMessage</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.validRunnerRegistrars">ValidRunnerRegistrars</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.versionCheckEnabled">VersionCheckEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.webIdeClientsidePreviewEnabled">WebIdeClientsidePreviewEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.versionCheckEnabled">VersionCheckEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.webIdeClientsidePreviewEnabled">WebIdeClientsidePreviewEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.whatsNewVariant">WhatsNewVariant</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.wikiPageMaxContentBytes">WikiPageMaxContentBytes</a></code> | <code>double</code> | *No description.* |
 
@@ -3362,20 +3362,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -3422,10 +3422,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -3472,10 +3472,10 @@ public string AbuseNotificationEmailInput { get; }
 ##### `AdminModeInput`<sup>Optional</sup> <a name="AdminModeInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.adminModeInput"></a>
 
 ```csharp
-public object AdminModeInput { get; }
+public bool|IResolvable AdminModeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3512,70 +3512,70 @@ public string AkismetApiKeyInput { get; }
 ##### `AkismetEnabledInput`<sup>Optional</sup> <a name="AkismetEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.akismetEnabledInput"></a>
 
 ```csharp
-public object AkismetEnabledInput { get; }
+public bool|IResolvable AkismetEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowAccountDeletionInput`<sup>Optional</sup> <a name="AllowAccountDeletionInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowAccountDeletionInput"></a>
 
 ```csharp
-public object AllowAccountDeletionInput { get; }
+public bool|IResolvable AllowAccountDeletionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowGroupOwnersToManageLdapInput`<sup>Optional</sup> <a name="AllowGroupOwnersToManageLdapInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowGroupOwnersToManageLdapInput"></a>
 
 ```csharp
-public object AllowGroupOwnersToManageLdapInput { get; }
+public bool|IResolvable AllowGroupOwnersToManageLdapInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowLocalRequestsFromSystemHooksInput`<sup>Optional</sup> <a name="AllowLocalRequestsFromSystemHooksInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowLocalRequestsFromSystemHooksInput"></a>
 
 ```csharp
-public object AllowLocalRequestsFromSystemHooksInput { get; }
+public bool|IResolvable AllowLocalRequestsFromSystemHooksInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowLocalRequestsFromWebHooksAndServicesInput`<sup>Optional</sup> <a name="AllowLocalRequestsFromWebHooksAndServicesInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowLocalRequestsFromWebHooksAndServicesInput"></a>
 
 ```csharp
-public object AllowLocalRequestsFromWebHooksAndServicesInput { get; }
+public bool|IResolvable AllowLocalRequestsFromWebHooksAndServicesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowProjectCreationForGuestAndBelowInput`<sup>Optional</sup> <a name="AllowProjectCreationForGuestAndBelowInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowProjectCreationForGuestAndBelowInput"></a>
 
 ```csharp
-public object AllowProjectCreationForGuestAndBelowInput { get; }
+public bool|IResolvable AllowProjectCreationForGuestAndBelowInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowRunnerRegistrationTokenInput`<sup>Optional</sup> <a name="AllowRunnerRegistrationTokenInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowRunnerRegistrationTokenInput"></a>
 
 ```csharp
-public object AllowRunnerRegistrationTokenInput { get; }
+public bool|IResolvable AllowRunnerRegistrationTokenInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3612,10 +3612,10 @@ public string[] AssetProxyAllowlistInput { get; }
 ##### `AssetProxyEnabledInput`<sup>Optional</sup> <a name="AssetProxyEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxyEnabledInput"></a>
 
 ```csharp
-public object AssetProxyEnabledInput { get; }
+public bool|IResolvable AssetProxyEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3642,20 +3642,20 @@ public string AssetProxyUrlInput { get; }
 ##### `AuthorizedKeysEnabledInput`<sup>Optional</sup> <a name="AuthorizedKeysEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.authorizedKeysEnabledInput"></a>
 
 ```csharp
-public object AuthorizedKeysEnabledInput { get; }
+public bool|IResolvable AuthorizedKeysEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AutoBanUserOnExcessiveProjectsDownloadInput`<sup>Optional</sup> <a name="AutoBanUserOnExcessiveProjectsDownloadInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoBanUserOnExcessiveProjectsDownloadInput"></a>
 
 ```csharp
-public object AutoBanUserOnExcessiveProjectsDownloadInput { get; }
+public bool|IResolvable AutoBanUserOnExcessiveProjectsDownloadInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3672,20 +3672,20 @@ public string AutoDevopsDomainInput { get; }
 ##### `AutoDevopsEnabledInput`<sup>Optional</sup> <a name="AutoDevopsEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoDevopsEnabledInput"></a>
 
 ```csharp
-public object AutoDevopsEnabledInput { get; }
+public bool|IResolvable AutoDevopsEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AutomaticPurchasedStorageAllocationInput`<sup>Optional</sup> <a name="AutomaticPurchasedStorageAllocationInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.automaticPurchasedStorageAllocationInput"></a>
 
 ```csharp
-public object AutomaticPurchasedStorageAllocationInput { get; }
+public bool|IResolvable AutomaticPurchasedStorageAllocationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3702,10 +3702,10 @@ public double BulkImportConcurrentPipelineBatchLimitInput { get; }
 ##### `BulkImportEnabledInput`<sup>Optional</sup> <a name="BulkImportEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportEnabledInput"></a>
 
 ```csharp
-public object BulkImportEnabledInput { get; }
+public bool|IResolvable BulkImportEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3722,20 +3722,20 @@ public double BulkImportMaxDownloadFileSizeInput { get; }
 ##### `CanCreateGroupInput`<sup>Optional</sup> <a name="CanCreateGroupInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.canCreateGroupInput"></a>
 
 ```csharp
-public object CanCreateGroupInput { get; }
+public bool|IResolvable CanCreateGroupInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `CheckNamespacePlanInput`<sup>Optional</sup> <a name="CheckNamespacePlanInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.checkNamespacePlanInput"></a>
 
 ```csharp
-public object CheckNamespacePlanInput { get; }
+public bool|IResolvable CheckNamespacePlanInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3802,10 +3802,10 @@ public double ConcurrentGithubImportJobsLimitInput { get; }
 ##### `ContainerExpirationPoliciesEnableHistoricEntriesInput`<sup>Optional</sup> <a name="ContainerExpirationPoliciesEnableHistoricEntriesInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerExpirationPoliciesEnableHistoricEntriesInput"></a>
 
 ```csharp
-public object ContainerExpirationPoliciesEnableHistoricEntriesInput { get; }
+public bool|IResolvable ContainerExpirationPoliciesEnableHistoricEntriesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3832,10 +3832,10 @@ public double ContainerRegistryDeleteTagsServiceTimeoutInput { get; }
 ##### `ContainerRegistryExpirationPoliciesCachingInput`<sup>Optional</sup> <a name="ContainerRegistryExpirationPoliciesCachingInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryExpirationPoliciesCachingInput"></a>
 
 ```csharp
-public object ContainerRegistryExpirationPoliciesCachingInput { get; }
+public bool|IResolvable ContainerRegistryExpirationPoliciesCachingInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3862,10 +3862,10 @@ public double ContainerRegistryTokenExpireDelayInput { get; }
 ##### `DeactivateDormantUsersInput`<sup>Optional</sup> <a name="DeactivateDormantUsersInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deactivateDormantUsersInput"></a>
 
 ```csharp
-public object DeactivateDormantUsersInput { get; }
+public bool|IResolvable DeactivateDormantUsersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -4012,20 +4012,20 @@ public double DefaultSyntaxHighlightingThemeInput { get; }
 ##### `DeleteInactiveProjectsInput`<sup>Optional</sup> <a name="DeleteInactiveProjectsInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteInactiveProjectsInput"></a>
 
 ```csharp
-public object DeleteInactiveProjectsInput { get; }
+public bool|IResolvable DeleteInactiveProjectsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DeleteUnconfirmedUsersInput`<sup>Optional</sup> <a name="DeleteUnconfirmedUsersInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteUnconfirmedUsersInput"></a>
 
 ```csharp
-public object DeleteUnconfirmedUsersInput { get; }
+public bool|IResolvable DeleteUnconfirmedUsersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -4042,10 +4042,10 @@ public double DeletionAdjournedPeriodInput { get; }
 ##### `DiagramsnetEnabledInput`<sup>Optional</sup> <a name="DiagramsnetEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diagramsnetEnabledInput"></a>
 
 ```csharp
-public object DiagramsnetEnabledInput { get; }
+public bool|IResolvable DiagramsnetEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -4092,10 +4092,10 @@ public double DiffMaxPatchBytesInput { get; }
 ##### `DisableAdminOauthScopesInput`<sup>Optional</sup> <a name="DisableAdminOauthScopesInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableAdminOauthScopesInput"></a>
 
 ```csharp
-public object DisableAdminOauthScopesInput { get; }
+public bool|IResolvable DisableAdminOauthScopesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -4112,30 +4112,30 @@ public string[] DisabledOauthSignInSourcesInput { get; }
 ##### `DisableFeedTokenInput`<sup>Optional</sup> <a name="DisableFeedTokenInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableFeedTokenInput"></a>
 
 ```csharp
-public object DisableFeedTokenInput { get; }
+public bool|IResolvable DisableFeedTokenInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisablePersonalAccessTokensInput`<sup>Optional</sup> <a name="DisablePersonalAccessTokensInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disablePersonalAccessTokensInput"></a>
 
 ```csharp
-public object DisablePersonalAccessTokensInput { get; }
+public bool|IResolvable DisablePersonalAccessTokensInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DnsRebindingProtectionEnabledInput`<sup>Optional</sup> <a name="DnsRebindingProtectionEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.dnsRebindingProtectionEnabledInput"></a>
 
 ```csharp
-public object DnsRebindingProtectionEnabledInput { get; }
+public bool|IResolvable DnsRebindingProtectionEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -4152,10 +4152,10 @@ public string[] DomainAllowlistInput { get; }
 ##### `DomainDenylistEnabledInput`<sup>Optional</sup> <a name="DomainDenylistEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.domainDenylistEnabledInput"></a>
 
 ```csharp
-public object DomainDenylistEnabledInput { get; }
+public bool|IResolvable DomainDenylistEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -4192,10 +4192,10 @@ public double DsaKeyRestrictionInput { get; }
 ##### `DuoFeaturesEnabledInput`<sup>Optional</sup> <a name="DuoFeaturesEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.duoFeaturesEnabledInput"></a>
 
 ```csharp
-public object DuoFeaturesEnabledInput { get; }
+public bool|IResolvable DuoFeaturesEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -4262,10 +4262,10 @@ public string EksAccountIdInput { get; }
 ##### `EksIntegrationEnabledInput`<sup>Optional</sup> <a name="EksIntegrationEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.eksIntegrationEnabledInput"></a>
 
 ```csharp
-public object EksIntegrationEnabledInput { get; }
+public bool|IResolvable EksIntegrationEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -4292,10 +4292,10 @@ public string ElasticsearchAwsAccessKeyInput { get; }
 ##### `ElasticsearchAwsInput`<sup>Optional</sup> <a name="ElasticsearchAwsInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchAwsInput"></a>
 
 ```csharp
-public object ElasticsearchAwsInput { get; }
+public bool|IResolvable ElasticsearchAwsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -4342,20 +4342,20 @@ public double ElasticsearchIndexedFileSizeLimitKbInput { get; }
 ##### `ElasticsearchIndexingInput`<sup>Optional</sup> <a name="ElasticsearchIndexingInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchIndexingInput"></a>
 
 ```csharp
-public object ElasticsearchIndexingInput { get; }
+public bool|IResolvable ElasticsearchIndexingInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ElasticsearchLimitIndexingInput`<sup>Optional</sup> <a name="ElasticsearchLimitIndexingInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchLimitIndexingInput"></a>
 
 ```csharp
-public object ElasticsearchLimitIndexingInput { get; }
+public bool|IResolvable ElasticsearchLimitIndexingInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -4422,20 +4422,20 @@ public double[] ElasticsearchProjectIdsInput { get; }
 ##### `ElasticsearchRequeueWorkersInput`<sup>Optional</sup> <a name="ElasticsearchRequeueWorkersInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchRequeueWorkersInput"></a>
 
 ```csharp
-public object ElasticsearchRequeueWorkersInput { get; }
+public bool|IResolvable ElasticsearchRequeueWorkersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ElasticsearchSearchInput`<sup>Optional</sup> <a name="ElasticsearchSearchInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchSearchInput"></a>
 
 ```csharp
-public object ElasticsearchSearchInput { get; }
+public bool|IResolvable ElasticsearchSearchInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -4482,10 +4482,10 @@ public string EmailAdditionalTextInput { get; }
 ##### `EmailAuthorInBodyInput`<sup>Optional</sup> <a name="EmailAuthorInBodyInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.emailAuthorInBodyInput"></a>
 
 ```csharp
-public object EmailAuthorInBodyInput { get; }
+public bool|IResolvable EmailAuthorInBodyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -4502,10 +4502,10 @@ public string EmailConfirmationSettingInput { get; }
 ##### `EnableArtifactExternalRedirectWarningPageInput`<sup>Optional</sup> <a name="EnableArtifactExternalRedirectWarningPageInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enableArtifactExternalRedirectWarningPageInput"></a>
 
 ```csharp
-public object EnableArtifactExternalRedirectWarningPageInput { get; }
+public bool|IResolvable EnableArtifactExternalRedirectWarningPageInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -4522,20 +4522,20 @@ public string EnabledGitAccessProtocolInput { get; }
 ##### `EnforceNamespaceStorageLimitInput`<sup>Optional</sup> <a name="EnforceNamespaceStorageLimitInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enforceNamespaceStorageLimitInput"></a>
 
 ```csharp
-public object EnforceNamespaceStorageLimitInput { get; }
+public bool|IResolvable EnforceNamespaceStorageLimitInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnforceTermsInput`<sup>Optional</sup> <a name="EnforceTermsInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enforceTermsInput"></a>
 
 ```csharp
-public object EnforceTermsInput { get; }
+public bool|IResolvable EnforceTermsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -4582,10 +4582,10 @@ public string ExternalAuthorizationServiceDefaultLabelInput { get; }
 ##### `ExternalAuthorizationServiceEnabledInput`<sup>Optional</sup> <a name="ExternalAuthorizationServiceEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthorizationServiceEnabledInput"></a>
 
 ```csharp
-public object ExternalAuthorizationServiceEnabledInput { get; }
+public bool|IResolvable ExternalAuthorizationServiceEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -4732,10 +4732,10 @@ public double GitlabShellOperationLimitInput { get; }
 ##### `GitpodEnabledInput`<sup>Optional</sup> <a name="GitpodEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitpodEnabledInput"></a>
 
 ```csharp
-public object GitpodEnabledInput { get; }
+public bool|IResolvable GitpodEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -4792,10 +4792,10 @@ public string GloballyAllowedIpsInput { get; }
 ##### `GrafanaEnabledInput`<sup>Optional</sup> <a name="GrafanaEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.grafanaEnabledInput"></a>
 
 ```csharp
-public object GrafanaEnabledInput { get; }
+public bool|IResolvable GrafanaEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -4812,30 +4812,30 @@ public string GrafanaUrlInput { get; }
 ##### `GravatarEnabledInput`<sup>Optional</sup> <a name="GravatarEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gravatarEnabledInput"></a>
 
 ```csharp
-public object GravatarEnabledInput { get; }
+public bool|IResolvable GravatarEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `GroupOwnersCanManageDefaultBranchProtectionInput`<sup>Optional</sup> <a name="GroupOwnersCanManageDefaultBranchProtectionInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.groupOwnersCanManageDefaultBranchProtectionInput"></a>
 
 ```csharp
-public object GroupOwnersCanManageDefaultBranchProtectionInput { get; }
+public bool|IResolvable GroupOwnersCanManageDefaultBranchProtectionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `HelpPageHideCommercialContentInput`<sup>Optional</sup> <a name="HelpPageHideCommercialContentInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.helpPageHideCommercialContentInput"></a>
 
 ```csharp
-public object HelpPageHideCommercialContentInput { get; }
+public bool|IResolvable HelpPageHideCommercialContentInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -4872,10 +4872,10 @@ public string HelpTextInput { get; }
 ##### `HideThirdPartyOffersInput`<sup>Optional</sup> <a name="HideThirdPartyOffersInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.hideThirdPartyOffersInput"></a>
 
 ```csharp
-public object HideThirdPartyOffersInput { get; }
+public bool|IResolvable HideThirdPartyOffersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -4892,10 +4892,10 @@ public string HomePageUrlInput { get; }
 ##### `HousekeepingEnabledInput`<sup>Optional</sup> <a name="HousekeepingEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.housekeepingEnabledInput"></a>
 
 ```csharp
-public object HousekeepingEnabledInput { get; }
+public bool|IResolvable HousekeepingEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -4912,10 +4912,10 @@ public double HousekeepingOptimizeRepositoryPeriodInput { get; }
 ##### `HtmlEmailsEnabledInput`<sup>Optional</sup> <a name="HtmlEmailsEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.htmlEmailsEnabledInput"></a>
 
 ```csharp
-public object HtmlEmailsEnabledInput { get; }
+public bool|IResolvable HtmlEmailsEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -4972,30 +4972,30 @@ public double InactiveProjectsSendWarningEmailAfterMonthsInput { get; }
 ##### `IncludeOptionalMetricsInServicePingInput`<sup>Optional</sup> <a name="IncludeOptionalMetricsInServicePingInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.includeOptionalMetricsInServicePingInput"></a>
 
 ```csharp
-public object IncludeOptionalMetricsInServicePingInput { get; }
+public bool|IResolvable IncludeOptionalMetricsInServicePingInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InProductMarketingEmailsEnabledInput`<sup>Optional</sup> <a name="InProductMarketingEmailsEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.inProductMarketingEmailsEnabledInput"></a>
 
 ```csharp
-public object InProductMarketingEmailsEnabledInput { get; }
+public bool|IResolvable InProductMarketingEmailsEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InvisibleCaptchaEnabledInput`<sup>Optional</sup> <a name="InvisibleCaptchaEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.invisibleCaptchaEnabledInput"></a>
 
 ```csharp
-public object InvisibleCaptchaEnabledInput { get; }
+public bool|IResolvable InvisibleCaptchaEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -5032,20 +5032,20 @@ public string JiraConnectProxyUrlInput { get; }
 ##### `JiraConnectPublicKeyStorageEnabledInput`<sup>Optional</sup> <a name="JiraConnectPublicKeyStorageEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.jiraConnectPublicKeyStorageEnabledInput"></a>
 
 ```csharp
-public object JiraConnectPublicKeyStorageEnabledInput { get; }
+public bool|IResolvable JiraConnectPublicKeyStorageEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `KeepLatestArtifactInput`<sup>Optional</sup> <a name="KeepLatestArtifactInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.keepLatestArtifactInput"></a>
 
 ```csharp
-public object KeepLatestArtifactInput { get; }
+public bool|IResolvable KeepLatestArtifactInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -5062,30 +5062,30 @@ public double LocalMarkdownVersionInput { get; }
 ##### `LockDuoFeaturesEnabledInput`<sup>Optional</sup> <a name="LockDuoFeaturesEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.lockDuoFeaturesEnabledInput"></a>
 
 ```csharp
-public object LockDuoFeaturesEnabledInput { get; }
+public bool|IResolvable LockDuoFeaturesEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `LockMembershipsToLdapInput`<sup>Optional</sup> <a name="LockMembershipsToLdapInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.lockMembershipsToLdapInput"></a>
 
 ```csharp
-public object LockMembershipsToLdapInput { get; }
+public bool|IResolvable LockMembershipsToLdapInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `MailgunEventsEnabledInput`<sup>Optional</sup> <a name="MailgunEventsEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mailgunEventsEnabledInput"></a>
 
 ```csharp
-public object MailgunEventsEnabledInput { get; }
+public bool|IResolvable MailgunEventsEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -5102,10 +5102,10 @@ public string MailgunSigningKeyInput { get; }
 ##### `MaintenanceModeInput`<sup>Optional</sup> <a name="MaintenanceModeInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maintenanceModeInput"></a>
 
 ```csharp
-public object MaintenanceModeInput { get; }
+public bool|IResolvable MaintenanceModeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -5122,10 +5122,10 @@ public string MaintenanceModeMessageInput { get; }
 ##### `MavenPackageRequestsForwardingInput`<sup>Optional</sup> <a name="MavenPackageRequestsForwardingInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mavenPackageRequestsForwardingInput"></a>
 
 ```csharp
-public object MavenPackageRequestsForwardingInput { get; }
+public bool|IResolvable MavenPackageRequestsForwardingInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -5282,10 +5282,10 @@ public double MinimumPasswordLengthInput { get; }
 ##### `MirrorAvailableInput`<sup>Optional</sup> <a name="MirrorAvailableInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mirrorAvailableInput"></a>
 
 ```csharp
-public object MirrorAvailableInput { get; }
+public bool|IResolvable MirrorAvailableInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -5322,20 +5322,20 @@ public double MirrorMaxDelayInput { get; }
 ##### `NpmPackageRequestsForwardingInput`<sup>Optional</sup> <a name="NpmPackageRequestsForwardingInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.npmPackageRequestsForwardingInput"></a>
 
 ```csharp
-public object NpmPackageRequestsForwardingInput { get; }
+public bool|IResolvable NpmPackageRequestsForwardingInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `NugetSkipMetadataUrlValidationInput`<sup>Optional</sup> <a name="NugetSkipMetadataUrlValidationInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.nugetSkipMetadataUrlValidationInput"></a>
 
 ```csharp
-public object NugetSkipMetadataUrlValidationInput { get; }
+public bool|IResolvable NugetSkipMetadataUrlValidationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -5362,10 +5362,10 @@ public double[] PackageMetadataPurlTypesInput { get; }
 ##### `PackageRegistryAllowAnyoneToPullOptionInput`<sup>Optional</sup> <a name="PackageRegistryAllowAnyoneToPullOptionInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.packageRegistryAllowAnyoneToPullOptionInput"></a>
 
 ```csharp
-public object PackageRegistryAllowAnyoneToPullOptionInput { get; }
+public bool|IResolvable PackageRegistryAllowAnyoneToPullOptionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -5382,70 +5382,70 @@ public double PackageRegistryCleanupPoliciesWorkerCapacityInput { get; }
 ##### `PagesDomainVerificationEnabledInput`<sup>Optional</sup> <a name="PagesDomainVerificationEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pagesDomainVerificationEnabledInput"></a>
 
 ```csharp
-public object PagesDomainVerificationEnabledInput { get; }
+public bool|IResolvable PagesDomainVerificationEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PasswordAuthenticationEnabledForGitInput`<sup>Optional</sup> <a name="PasswordAuthenticationEnabledForGitInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordAuthenticationEnabledForGitInput"></a>
 
 ```csharp
-public object PasswordAuthenticationEnabledForGitInput { get; }
+public bool|IResolvable PasswordAuthenticationEnabledForGitInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PasswordAuthenticationEnabledForWebInput`<sup>Optional</sup> <a name="PasswordAuthenticationEnabledForWebInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordAuthenticationEnabledForWebInput"></a>
 
 ```csharp
-public object PasswordAuthenticationEnabledForWebInput { get; }
+public bool|IResolvable PasswordAuthenticationEnabledForWebInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PasswordLowercaseRequiredInput`<sup>Optional</sup> <a name="PasswordLowercaseRequiredInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordLowercaseRequiredInput"></a>
 
 ```csharp
-public object PasswordLowercaseRequiredInput { get; }
+public bool|IResolvable PasswordLowercaseRequiredInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PasswordNumberRequiredInput`<sup>Optional</sup> <a name="PasswordNumberRequiredInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordNumberRequiredInput"></a>
 
 ```csharp
-public object PasswordNumberRequiredInput { get; }
+public bool|IResolvable PasswordNumberRequiredInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PasswordSymbolRequiredInput`<sup>Optional</sup> <a name="PasswordSymbolRequiredInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordSymbolRequiredInput"></a>
 
 ```csharp
-public object PasswordSymbolRequiredInput { get; }
+public bool|IResolvable PasswordSymbolRequiredInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PasswordUppercaseRequiredInput`<sup>Optional</sup> <a name="PasswordUppercaseRequiredInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordUppercaseRequiredInput"></a>
 
 ```csharp
-public object PasswordUppercaseRequiredInput { get; }
+public bool|IResolvable PasswordUppercaseRequiredInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -5482,10 +5482,10 @@ public double PipelineLimitPerProjectUserShaInput { get; }
 ##### `PlantumlEnabledInput`<sup>Optional</sup> <a name="PlantumlEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.plantumlEnabledInput"></a>
 
 ```csharp
-public object PlantumlEnabledInput { get; }
+public bool|IResolvable PlantumlEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -5512,10 +5512,10 @@ public double PollingIntervalMultiplierInput { get; }
 ##### `ProjectExportEnabledInput`<sup>Optional</sup> <a name="ProjectExportEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.projectExportEnabledInput"></a>
 
 ```csharp
-public object ProjectExportEnabledInput { get; }
+public bool|IResolvable ProjectExportEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -5542,20 +5542,20 @@ public double ProjectsApiRateLimitUnauthenticatedInput { get; }
 ##### `PrometheusMetricsEnabledInput`<sup>Optional</sup> <a name="PrometheusMetricsEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.prometheusMetricsEnabledInput"></a>
 
 ```csharp
-public object PrometheusMetricsEnabledInput { get; }
+public bool|IResolvable PrometheusMetricsEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ProtectedCiVariablesInput`<sup>Optional</sup> <a name="ProtectedCiVariablesInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.protectedCiVariablesInput"></a>
 
 ```csharp
-public object ProtectedCiVariablesInput { get; }
+public bool|IResolvable ProtectedCiVariablesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -5582,10 +5582,10 @@ public double PushEventHooksLimitInput { get; }
 ##### `PypiPackageRequestsForwardingInput`<sup>Optional</sup> <a name="PypiPackageRequestsForwardingInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pypiPackageRequestsForwardingInput"></a>
 
 ```csharp
-public object PypiPackageRequestsForwardingInput { get; }
+public bool|IResolvable PypiPackageRequestsForwardingInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -5612,10 +5612,10 @@ public double RawBlobRequestLimitInput { get; }
 ##### `RecaptchaEnabledInput`<sup>Optional</sup> <a name="RecaptchaEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.recaptchaEnabledInput"></a>
 
 ```csharp
-public object RecaptchaEnabledInput { get; }
+public bool|IResolvable RecaptchaEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -5652,30 +5652,30 @@ public double ReceiveMaxInputSizeInput { get; }
 ##### `ReceptiveClusterAgentsEnabledInput`<sup>Optional</sup> <a name="ReceptiveClusterAgentsEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.receptiveClusterAgentsEnabledInput"></a>
 
 ```csharp
-public object ReceptiveClusterAgentsEnabledInput { get; }
+public bool|IResolvable ReceptiveClusterAgentsEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `RememberMeEnabledInput`<sup>Optional</sup> <a name="RememberMeEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.rememberMeEnabledInput"></a>
 
 ```csharp
-public object RememberMeEnabledInput { get; }
+public bool|IResolvable RememberMeEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `RepositoryChecksEnabledInput`<sup>Optional</sup> <a name="RepositoryChecksEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.repositoryChecksEnabledInput"></a>
 
 ```csharp
-public object RepositoryChecksEnabledInput { get; }
+public bool|IResolvable RepositoryChecksEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -5702,40 +5702,40 @@ public System.Collections.Generic.IDictionary<string, double> RepositoryStorages
 ##### `RequireAdminApprovalAfterUserSignupInput`<sup>Optional</sup> <a name="RequireAdminApprovalAfterUserSignupInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireAdminApprovalAfterUserSignupInput"></a>
 
 ```csharp
-public object RequireAdminApprovalAfterUserSignupInput { get; }
+public bool|IResolvable RequireAdminApprovalAfterUserSignupInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `RequireAdminTwoFactorAuthenticationInput`<sup>Optional</sup> <a name="RequireAdminTwoFactorAuthenticationInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireAdminTwoFactorAuthenticationInput"></a>
 
 ```csharp
-public object RequireAdminTwoFactorAuthenticationInput { get; }
+public bool|IResolvable RequireAdminTwoFactorAuthenticationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `RequirePersonalAccessTokenExpiryInput`<sup>Optional</sup> <a name="RequirePersonalAccessTokenExpiryInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requirePersonalAccessTokenExpiryInput"></a>
 
 ```csharp
-public object RequirePersonalAccessTokenExpiryInput { get; }
+public bool|IResolvable RequirePersonalAccessTokenExpiryInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `RequireTwoFactorAuthenticationInput`<sup>Optional</sup> <a name="RequireTwoFactorAuthenticationInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireTwoFactorAuthenticationInput"></a>
 
 ```csharp
-public object RequireTwoFactorAuthenticationInput { get; }
+public bool|IResolvable RequireTwoFactorAuthenticationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -5792,10 +5792,10 @@ public double SecurityApprovalPoliciesLimitInput { get; }
 ##### `SecurityPolicyGlobalGroupApproversEnabledInput`<sup>Optional</sup> <a name="SecurityPolicyGlobalGroupApproversEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.securityPolicyGlobalGroupApproversEnabledInput"></a>
 
 ```csharp
-public object SecurityPolicyGlobalGroupApproversEnabledInput { get; }
+public bool|IResolvable SecurityPolicyGlobalGroupApproversEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -5812,20 +5812,20 @@ public string SecurityTxtContentInput { get; }
 ##### `SendUserConfirmationEmailInput`<sup>Optional</sup> <a name="SendUserConfirmationEmailInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sendUserConfirmationEmailInput"></a>
 
 ```csharp
-public object SendUserConfirmationEmailInput { get; }
+public bool|IResolvable SendUserConfirmationEmailInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ServiceAccessTokensExpirationEnforcedInput`<sup>Optional</sup> <a name="ServiceAccessTokensExpirationEnforcedInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.serviceAccessTokensExpirationEnforcedInput"></a>
 
 ```csharp
-public object ServiceAccessTokensExpirationEnforcedInput { get; }
+public bool|IResolvable ServiceAccessTokensExpirationEnforcedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -5842,10 +5842,10 @@ public double SessionExpireDelayInput { get; }
 ##### `SharedRunnersEnabledInput`<sup>Optional</sup> <a name="SharedRunnersEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sharedRunnersEnabledInput"></a>
 
 ```csharp
-public object SharedRunnersEnabledInput { get; }
+public bool|IResolvable SharedRunnersEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -5912,40 +5912,40 @@ public string SignInTextInput { get; }
 ##### `SignupEnabledInput`<sup>Optional</sup> <a name="SignupEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.signupEnabledInput"></a>
 
 ```csharp
-public object SignupEnabledInput { get; }
+public bool|IResolvable SignupEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SilentAdminExportsEnabledInput`<sup>Optional</sup> <a name="SilentAdminExportsEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.silentAdminExportsEnabledInput"></a>
 
 ```csharp
-public object SilentAdminExportsEnabledInput { get; }
+public bool|IResolvable SilentAdminExportsEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SilentModeEnabledInput`<sup>Optional</sup> <a name="SilentModeEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.silentModeEnabledInput"></a>
 
 ```csharp
-public object SilentModeEnabledInput { get; }
+public bool|IResolvable SilentModeEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SlackAppEnabledInput`<sup>Optional</sup> <a name="SlackAppEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.slackAppEnabledInput"></a>
 
 ```csharp
-public object SlackAppEnabledInput { get; }
+public bool|IResolvable SlackAppEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6042,30 +6042,30 @@ public string SnowplowDatabaseCollectorHostnameInput { get; }
 ##### `SnowplowEnabledInput`<sup>Optional</sup> <a name="SnowplowEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.snowplowEnabledInput"></a>
 
 ```csharp
-public object SnowplowEnabledInput { get; }
+public bool|IResolvable SnowplowEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SourcegraphEnabledInput`<sup>Optional</sup> <a name="SourcegraphEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sourcegraphEnabledInput"></a>
 
 ```csharp
-public object SourcegraphEnabledInput { get; }
+public bool|IResolvable SourcegraphEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SourcegraphPublicOnlyInput`<sup>Optional</sup> <a name="SourcegraphPublicOnlyInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sourcegraphPublicOnlyInput"></a>
 
 ```csharp
-public object SourcegraphPublicOnlyInput { get; }
+public bool|IResolvable SourcegraphPublicOnlyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6092,10 +6092,10 @@ public string SpamCheckApiKeyInput { get; }
 ##### `SpamCheckEndpointEnabledInput`<sup>Optional</sup> <a name="SpamCheckEndpointEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.spamCheckEndpointEnabledInput"></a>
 
 ```csharp
-public object SpamCheckEndpointEnabledInput { get; }
+public bool|IResolvable SpamCheckEndpointEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6132,10 +6132,10 @@ public string StaticObjectsExternalStorageUrlInput { get; }
 ##### `SuggestPipelineEnabledInput`<sup>Optional</sup> <a name="SuggestPipelineEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.suggestPipelineEnabledInput"></a>
 
 ```csharp
-public object SuggestPipelineEnabledInput { get; }
+public bool|IResolvable SuggestPipelineEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6162,10 +6162,10 @@ public string TermsInput { get; }
 ##### `ThrottleAuthenticatedApiEnabledInput`<sup>Optional</sup> <a name="ThrottleAuthenticatedApiEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedApiEnabledInput"></a>
 
 ```csharp
-public object ThrottleAuthenticatedApiEnabledInput { get; }
+public bool|IResolvable ThrottleAuthenticatedApiEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6192,10 +6192,10 @@ public double ThrottleAuthenticatedApiRequestsPerPeriodInput { get; }
 ##### `ThrottleAuthenticatedPackagesApiEnabledInput`<sup>Optional</sup> <a name="ThrottleAuthenticatedPackagesApiEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedPackagesApiEnabledInput"></a>
 
 ```csharp
-public object ThrottleAuthenticatedPackagesApiEnabledInput { get; }
+public bool|IResolvable ThrottleAuthenticatedPackagesApiEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6222,10 +6222,10 @@ public double ThrottleAuthenticatedPackagesApiRequestsPerPeriodInput { get; }
 ##### `ThrottleAuthenticatedWebEnabledInput`<sup>Optional</sup> <a name="ThrottleAuthenticatedWebEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedWebEnabledInput"></a>
 
 ```csharp
-public object ThrottleAuthenticatedWebEnabledInput { get; }
+public bool|IResolvable ThrottleAuthenticatedWebEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6252,10 +6252,10 @@ public double ThrottleAuthenticatedWebRequestsPerPeriodInput { get; }
 ##### `ThrottleUnauthenticatedApiEnabledInput`<sup>Optional</sup> <a name="ThrottleUnauthenticatedApiEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedApiEnabledInput"></a>
 
 ```csharp
-public object ThrottleUnauthenticatedApiEnabledInput { get; }
+public bool|IResolvable ThrottleUnauthenticatedApiEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6282,10 +6282,10 @@ public double ThrottleUnauthenticatedApiRequestsPerPeriodInput { get; }
 ##### `ThrottleUnauthenticatedPackagesApiEnabledInput`<sup>Optional</sup> <a name="ThrottleUnauthenticatedPackagesApiEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedPackagesApiEnabledInput"></a>
 
 ```csharp
-public object ThrottleUnauthenticatedPackagesApiEnabledInput { get; }
+public bool|IResolvable ThrottleUnauthenticatedPackagesApiEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6312,10 +6312,10 @@ public double ThrottleUnauthenticatedPackagesApiRequestsPerPeriodInput { get; }
 ##### `ThrottleUnauthenticatedWebEnabledInput`<sup>Optional</sup> <a name="ThrottleUnauthenticatedWebEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedWebEnabledInput"></a>
 
 ```csharp
-public object ThrottleUnauthenticatedWebEnabledInput { get; }
+public bool|IResolvable ThrottleUnauthenticatedWebEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6342,10 +6342,10 @@ public double ThrottleUnauthenticatedWebRequestsPerPeriodInput { get; }
 ##### `TimeTrackingLimitToHoursInput`<sup>Optional</sup> <a name="TimeTrackingLimitToHoursInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.timeTrackingLimitToHoursInput"></a>
 
 ```csharp
-public object TimeTrackingLimitToHoursInput { get; }
+public bool|IResolvable TimeTrackingLimitToHoursInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6372,10 +6372,10 @@ public double UnconfirmedUsersDeleteAfterDaysInput { get; }
 ##### `UniqueIpsLimitEnabledInput`<sup>Optional</sup> <a name="UniqueIpsLimitEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.uniqueIpsLimitEnabledInput"></a>
 
 ```csharp
-public object UniqueIpsLimitEnabledInput { get; }
+public bool|IResolvable UniqueIpsLimitEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6402,50 +6402,50 @@ public double UniqueIpsLimitTimeWindowInput { get; }
 ##### `UpdateRunnerVersionsEnabledInput`<sup>Optional</sup> <a name="UpdateRunnerVersionsEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.updateRunnerVersionsEnabledInput"></a>
 
 ```csharp
-public object UpdateRunnerVersionsEnabledInput { get; }
+public bool|IResolvable UpdateRunnerVersionsEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `UsagePingEnabledInput`<sup>Optional</sup> <a name="UsagePingEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.usagePingEnabledInput"></a>
 
 ```csharp
-public object UsagePingEnabledInput { get; }
+public bool|IResolvable UsagePingEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `UseClickhouseForAnalyticsInput`<sup>Optional</sup> <a name="UseClickhouseForAnalyticsInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.useClickhouseForAnalyticsInput"></a>
 
 ```csharp
-public object UseClickhouseForAnalyticsInput { get; }
+public bool|IResolvable UseClickhouseForAnalyticsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `UserDeactivationEmailsEnabledInput`<sup>Optional</sup> <a name="UserDeactivationEmailsEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDeactivationEmailsEnabledInput"></a>
 
 ```csharp
-public object UserDeactivationEmailsEnabledInput { get; }
+public bool|IResolvable UserDeactivationEmailsEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `UserDefaultExternalInput`<sup>Optional</sup> <a name="UserDefaultExternalInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDefaultExternalInput"></a>
 
 ```csharp
-public object UserDefaultExternalInput { get; }
+public bool|IResolvable UserDefaultExternalInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6462,30 +6462,30 @@ public string UserDefaultInternalRegexInput { get; }
 ##### `UserDefaultsToPrivateProfileInput`<sup>Optional</sup> <a name="UserDefaultsToPrivateProfileInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDefaultsToPrivateProfileInput"></a>
 
 ```csharp
-public object UserDefaultsToPrivateProfileInput { get; }
+public bool|IResolvable UserDefaultsToPrivateProfileInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `UserOauthApplicationsInput`<sup>Optional</sup> <a name="UserOauthApplicationsInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userOauthApplicationsInput"></a>
 
 ```csharp
-public object UserOauthApplicationsInput { get; }
+public bool|IResolvable UserOauthApplicationsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `UserShowAddSshKeyMessageInput`<sup>Optional</sup> <a name="UserShowAddSshKeyMessageInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userShowAddSshKeyMessageInput"></a>
 
 ```csharp
-public object UserShowAddSshKeyMessageInput { get; }
+public bool|IResolvable UserShowAddSshKeyMessageInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6502,20 +6502,20 @@ public string[] ValidRunnerRegistrarsInput { get; }
 ##### `VersionCheckEnabledInput`<sup>Optional</sup> <a name="VersionCheckEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.versionCheckEnabledInput"></a>
 
 ```csharp
-public object VersionCheckEnabledInput { get; }
+public bool|IResolvable VersionCheckEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `WebIdeClientsidePreviewEnabledInput`<sup>Optional</sup> <a name="WebIdeClientsidePreviewEnabledInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.webIdeClientsidePreviewEnabledInput"></a>
 
 ```csharp
-public object WebIdeClientsidePreviewEnabledInput { get; }
+public bool|IResolvable WebIdeClientsidePreviewEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6552,10 +6552,10 @@ public string AbuseNotificationEmail { get; }
 ##### `AdminMode`<sup>Required</sup> <a name="AdminMode" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.adminMode"></a>
 
 ```csharp
-public object AdminMode { get; }
+public bool|IResolvable AdminMode { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6592,70 +6592,70 @@ public string AkismetApiKey { get; }
 ##### `AkismetEnabled`<sup>Required</sup> <a name="AkismetEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.akismetEnabled"></a>
 
 ```csharp
-public object AkismetEnabled { get; }
+public bool|IResolvable AkismetEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowAccountDeletion`<sup>Required</sup> <a name="AllowAccountDeletion" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowAccountDeletion"></a>
 
 ```csharp
-public object AllowAccountDeletion { get; }
+public bool|IResolvable AllowAccountDeletion { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowGroupOwnersToManageLdap`<sup>Required</sup> <a name="AllowGroupOwnersToManageLdap" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowGroupOwnersToManageLdap"></a>
 
 ```csharp
-public object AllowGroupOwnersToManageLdap { get; }
+public bool|IResolvable AllowGroupOwnersToManageLdap { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowLocalRequestsFromSystemHooks`<sup>Required</sup> <a name="AllowLocalRequestsFromSystemHooks" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowLocalRequestsFromSystemHooks"></a>
 
 ```csharp
-public object AllowLocalRequestsFromSystemHooks { get; }
+public bool|IResolvable AllowLocalRequestsFromSystemHooks { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowLocalRequestsFromWebHooksAndServices`<sup>Required</sup> <a name="AllowLocalRequestsFromWebHooksAndServices" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowLocalRequestsFromWebHooksAndServices"></a>
 
 ```csharp
-public object AllowLocalRequestsFromWebHooksAndServices { get; }
+public bool|IResolvable AllowLocalRequestsFromWebHooksAndServices { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowProjectCreationForGuestAndBelow`<sup>Required</sup> <a name="AllowProjectCreationForGuestAndBelow" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowProjectCreationForGuestAndBelow"></a>
 
 ```csharp
-public object AllowProjectCreationForGuestAndBelow { get; }
+public bool|IResolvable AllowProjectCreationForGuestAndBelow { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowRunnerRegistrationToken`<sup>Required</sup> <a name="AllowRunnerRegistrationToken" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.allowRunnerRegistrationToken"></a>
 
 ```csharp
-public object AllowRunnerRegistrationToken { get; }
+public bool|IResolvable AllowRunnerRegistrationToken { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6692,10 +6692,10 @@ public string[] AssetProxyAllowlist { get; }
 ##### `AssetProxyEnabled`<sup>Required</sup> <a name="AssetProxyEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.assetProxyEnabled"></a>
 
 ```csharp
-public object AssetProxyEnabled { get; }
+public bool|IResolvable AssetProxyEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6722,20 +6722,20 @@ public string AssetProxyUrl { get; }
 ##### `AuthorizedKeysEnabled`<sup>Required</sup> <a name="AuthorizedKeysEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.authorizedKeysEnabled"></a>
 
 ```csharp
-public object AuthorizedKeysEnabled { get; }
+public bool|IResolvable AuthorizedKeysEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AutoBanUserOnExcessiveProjectsDownload`<sup>Required</sup> <a name="AutoBanUserOnExcessiveProjectsDownload" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoBanUserOnExcessiveProjectsDownload"></a>
 
 ```csharp
-public object AutoBanUserOnExcessiveProjectsDownload { get; }
+public bool|IResolvable AutoBanUserOnExcessiveProjectsDownload { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6752,20 +6752,20 @@ public string AutoDevopsDomain { get; }
 ##### `AutoDevopsEnabled`<sup>Required</sup> <a name="AutoDevopsEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.autoDevopsEnabled"></a>
 
 ```csharp
-public object AutoDevopsEnabled { get; }
+public bool|IResolvable AutoDevopsEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AutomaticPurchasedStorageAllocation`<sup>Required</sup> <a name="AutomaticPurchasedStorageAllocation" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.automaticPurchasedStorageAllocation"></a>
 
 ```csharp
-public object AutomaticPurchasedStorageAllocation { get; }
+public bool|IResolvable AutomaticPurchasedStorageAllocation { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6782,10 +6782,10 @@ public double BulkImportConcurrentPipelineBatchLimit { get; }
 ##### `BulkImportEnabled`<sup>Required</sup> <a name="BulkImportEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.bulkImportEnabled"></a>
 
 ```csharp
-public object BulkImportEnabled { get; }
+public bool|IResolvable BulkImportEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6802,20 +6802,20 @@ public double BulkImportMaxDownloadFileSize { get; }
 ##### `CanCreateGroup`<sup>Required</sup> <a name="CanCreateGroup" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.canCreateGroup"></a>
 
 ```csharp
-public object CanCreateGroup { get; }
+public bool|IResolvable CanCreateGroup { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `CheckNamespacePlan`<sup>Required</sup> <a name="CheckNamespacePlan" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.checkNamespacePlan"></a>
 
 ```csharp
-public object CheckNamespacePlan { get; }
+public bool|IResolvable CheckNamespacePlan { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6882,10 +6882,10 @@ public double ConcurrentGithubImportJobsLimit { get; }
 ##### `ContainerExpirationPoliciesEnableHistoricEntries`<sup>Required</sup> <a name="ContainerExpirationPoliciesEnableHistoricEntries" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerExpirationPoliciesEnableHistoricEntries"></a>
 
 ```csharp
-public object ContainerExpirationPoliciesEnableHistoricEntries { get; }
+public bool|IResolvable ContainerExpirationPoliciesEnableHistoricEntries { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6912,10 +6912,10 @@ public double ContainerRegistryDeleteTagsServiceTimeout { get; }
 ##### `ContainerRegistryExpirationPoliciesCaching`<sup>Required</sup> <a name="ContainerRegistryExpirationPoliciesCaching" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.containerRegistryExpirationPoliciesCaching"></a>
 
 ```csharp
-public object ContainerRegistryExpirationPoliciesCaching { get; }
+public bool|IResolvable ContainerRegistryExpirationPoliciesCaching { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6942,10 +6942,10 @@ public double ContainerRegistryTokenExpireDelay { get; }
 ##### `DeactivateDormantUsers`<sup>Required</sup> <a name="DeactivateDormantUsers" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deactivateDormantUsers"></a>
 
 ```csharp
-public object DeactivateDormantUsers { get; }
+public bool|IResolvable DeactivateDormantUsers { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7082,20 +7082,20 @@ public double DefaultSyntaxHighlightingTheme { get; }
 ##### `DeleteInactiveProjects`<sup>Required</sup> <a name="DeleteInactiveProjects" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteInactiveProjects"></a>
 
 ```csharp
-public object DeleteInactiveProjects { get; }
+public bool|IResolvable DeleteInactiveProjects { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DeleteUnconfirmedUsers`<sup>Required</sup> <a name="DeleteUnconfirmedUsers" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.deleteUnconfirmedUsers"></a>
 
 ```csharp
-public object DeleteUnconfirmedUsers { get; }
+public bool|IResolvable DeleteUnconfirmedUsers { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7112,10 +7112,10 @@ public double DeletionAdjournedPeriod { get; }
 ##### `DiagramsnetEnabled`<sup>Required</sup> <a name="DiagramsnetEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.diagramsnetEnabled"></a>
 
 ```csharp
-public object DiagramsnetEnabled { get; }
+public bool|IResolvable DiagramsnetEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7162,10 +7162,10 @@ public double DiffMaxPatchBytes { get; }
 ##### `DisableAdminOauthScopes`<sup>Required</sup> <a name="DisableAdminOauthScopes" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableAdminOauthScopes"></a>
 
 ```csharp
-public object DisableAdminOauthScopes { get; }
+public bool|IResolvable DisableAdminOauthScopes { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7182,30 +7182,30 @@ public string[] DisabledOauthSignInSources { get; }
 ##### `DisableFeedToken`<sup>Required</sup> <a name="DisableFeedToken" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disableFeedToken"></a>
 
 ```csharp
-public object DisableFeedToken { get; }
+public bool|IResolvable DisableFeedToken { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisablePersonalAccessTokens`<sup>Required</sup> <a name="DisablePersonalAccessTokens" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.disablePersonalAccessTokens"></a>
 
 ```csharp
-public object DisablePersonalAccessTokens { get; }
+public bool|IResolvable DisablePersonalAccessTokens { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DnsRebindingProtectionEnabled`<sup>Required</sup> <a name="DnsRebindingProtectionEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.dnsRebindingProtectionEnabled"></a>
 
 ```csharp
-public object DnsRebindingProtectionEnabled { get; }
+public bool|IResolvable DnsRebindingProtectionEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7232,10 +7232,10 @@ public string[] DomainDenylist { get; }
 ##### `DomainDenylistEnabled`<sup>Required</sup> <a name="DomainDenylistEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.domainDenylistEnabled"></a>
 
 ```csharp
-public object DomainDenylistEnabled { get; }
+public bool|IResolvable DomainDenylistEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7262,10 +7262,10 @@ public double DsaKeyRestriction { get; }
 ##### `DuoFeaturesEnabled`<sup>Required</sup> <a name="DuoFeaturesEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.duoFeaturesEnabled"></a>
 
 ```csharp
-public object DuoFeaturesEnabled { get; }
+public bool|IResolvable DuoFeaturesEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7332,10 +7332,10 @@ public string EksAccountId { get; }
 ##### `EksIntegrationEnabled`<sup>Required</sup> <a name="EksIntegrationEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.eksIntegrationEnabled"></a>
 
 ```csharp
-public object EksIntegrationEnabled { get; }
+public bool|IResolvable EksIntegrationEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7352,10 +7352,10 @@ public string EksSecretAccessKey { get; }
 ##### `ElasticsearchAws`<sup>Required</sup> <a name="ElasticsearchAws" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchAws"></a>
 
 ```csharp
-public object ElasticsearchAws { get; }
+public bool|IResolvable ElasticsearchAws { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7412,20 +7412,20 @@ public double ElasticsearchIndexedFileSizeLimitKb { get; }
 ##### `ElasticsearchIndexing`<sup>Required</sup> <a name="ElasticsearchIndexing" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchIndexing"></a>
 
 ```csharp
-public object ElasticsearchIndexing { get; }
+public bool|IResolvable ElasticsearchIndexing { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ElasticsearchLimitIndexing`<sup>Required</sup> <a name="ElasticsearchLimitIndexing" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchLimitIndexing"></a>
 
 ```csharp
-public object ElasticsearchLimitIndexing { get; }
+public bool|IResolvable ElasticsearchLimitIndexing { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7492,20 +7492,20 @@ public double[] ElasticsearchProjectIds { get; }
 ##### `ElasticsearchRequeueWorkers`<sup>Required</sup> <a name="ElasticsearchRequeueWorkers" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchRequeueWorkers"></a>
 
 ```csharp
-public object ElasticsearchRequeueWorkers { get; }
+public bool|IResolvable ElasticsearchRequeueWorkers { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ElasticsearchSearch`<sup>Required</sup> <a name="ElasticsearchSearch" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.elasticsearchSearch"></a>
 
 ```csharp
-public object ElasticsearchSearch { get; }
+public bool|IResolvable ElasticsearchSearch { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7552,10 +7552,10 @@ public string EmailAdditionalText { get; }
 ##### `EmailAuthorInBody`<sup>Required</sup> <a name="EmailAuthorInBody" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.emailAuthorInBody"></a>
 
 ```csharp
-public object EmailAuthorInBody { get; }
+public bool|IResolvable EmailAuthorInBody { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7572,10 +7572,10 @@ public string EmailConfirmationSetting { get; }
 ##### `EnableArtifactExternalRedirectWarningPage`<sup>Required</sup> <a name="EnableArtifactExternalRedirectWarningPage" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enableArtifactExternalRedirectWarningPage"></a>
 
 ```csharp
-public object EnableArtifactExternalRedirectWarningPage { get; }
+public bool|IResolvable EnableArtifactExternalRedirectWarningPage { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7592,20 +7592,20 @@ public string EnabledGitAccessProtocol { get; }
 ##### `EnforceNamespaceStorageLimit`<sup>Required</sup> <a name="EnforceNamespaceStorageLimit" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enforceNamespaceStorageLimit"></a>
 
 ```csharp
-public object EnforceNamespaceStorageLimit { get; }
+public bool|IResolvable EnforceNamespaceStorageLimit { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnforceTerms`<sup>Required</sup> <a name="EnforceTerms" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.enforceTerms"></a>
 
 ```csharp
-public object EnforceTerms { get; }
+public bool|IResolvable EnforceTerms { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7652,10 +7652,10 @@ public string ExternalAuthorizationServiceDefaultLabel { get; }
 ##### `ExternalAuthorizationServiceEnabled`<sup>Required</sup> <a name="ExternalAuthorizationServiceEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.externalAuthorizationServiceEnabled"></a>
 
 ```csharp
-public object ExternalAuthorizationServiceEnabled { get; }
+public bool|IResolvable ExternalAuthorizationServiceEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7802,10 +7802,10 @@ public double GitlabShellOperationLimit { get; }
 ##### `GitpodEnabled`<sup>Required</sup> <a name="GitpodEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gitpodEnabled"></a>
 
 ```csharp
-public object GitpodEnabled { get; }
+public bool|IResolvable GitpodEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7862,10 +7862,10 @@ public string GloballyAllowedIps { get; }
 ##### `GrafanaEnabled`<sup>Required</sup> <a name="GrafanaEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.grafanaEnabled"></a>
 
 ```csharp
-public object GrafanaEnabled { get; }
+public bool|IResolvable GrafanaEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7882,30 +7882,30 @@ public string GrafanaUrl { get; }
 ##### `GravatarEnabled`<sup>Required</sup> <a name="GravatarEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.gravatarEnabled"></a>
 
 ```csharp
-public object GravatarEnabled { get; }
+public bool|IResolvable GravatarEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `GroupOwnersCanManageDefaultBranchProtection`<sup>Required</sup> <a name="GroupOwnersCanManageDefaultBranchProtection" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.groupOwnersCanManageDefaultBranchProtection"></a>
 
 ```csharp
-public object GroupOwnersCanManageDefaultBranchProtection { get; }
+public bool|IResolvable GroupOwnersCanManageDefaultBranchProtection { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `HelpPageHideCommercialContent`<sup>Required</sup> <a name="HelpPageHideCommercialContent" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.helpPageHideCommercialContent"></a>
 
 ```csharp
-public object HelpPageHideCommercialContent { get; }
+public bool|IResolvable HelpPageHideCommercialContent { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7942,10 +7942,10 @@ public string HelpText { get; }
 ##### `HideThirdPartyOffers`<sup>Required</sup> <a name="HideThirdPartyOffers" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.hideThirdPartyOffers"></a>
 
 ```csharp
-public object HideThirdPartyOffers { get; }
+public bool|IResolvable HideThirdPartyOffers { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7962,10 +7962,10 @@ public string HomePageUrl { get; }
 ##### `HousekeepingEnabled`<sup>Required</sup> <a name="HousekeepingEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.housekeepingEnabled"></a>
 
 ```csharp
-public object HousekeepingEnabled { get; }
+public bool|IResolvable HousekeepingEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7982,10 +7982,10 @@ public double HousekeepingOptimizeRepositoryPeriod { get; }
 ##### `HtmlEmailsEnabled`<sup>Required</sup> <a name="HtmlEmailsEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.htmlEmailsEnabled"></a>
 
 ```csharp
-public object HtmlEmailsEnabled { get; }
+public bool|IResolvable HtmlEmailsEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -8042,30 +8042,30 @@ public double InactiveProjectsSendWarningEmailAfterMonths { get; }
 ##### `IncludeOptionalMetricsInServicePing`<sup>Required</sup> <a name="IncludeOptionalMetricsInServicePing" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.includeOptionalMetricsInServicePing"></a>
 
 ```csharp
-public object IncludeOptionalMetricsInServicePing { get; }
+public bool|IResolvable IncludeOptionalMetricsInServicePing { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InProductMarketingEmailsEnabled`<sup>Required</sup> <a name="InProductMarketingEmailsEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.inProductMarketingEmailsEnabled"></a>
 
 ```csharp
-public object InProductMarketingEmailsEnabled { get; }
+public bool|IResolvable InProductMarketingEmailsEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InvisibleCaptchaEnabled`<sup>Required</sup> <a name="InvisibleCaptchaEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.invisibleCaptchaEnabled"></a>
 
 ```csharp
-public object InvisibleCaptchaEnabled { get; }
+public bool|IResolvable InvisibleCaptchaEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -8102,20 +8102,20 @@ public string JiraConnectProxyUrl { get; }
 ##### `JiraConnectPublicKeyStorageEnabled`<sup>Required</sup> <a name="JiraConnectPublicKeyStorageEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.jiraConnectPublicKeyStorageEnabled"></a>
 
 ```csharp
-public object JiraConnectPublicKeyStorageEnabled { get; }
+public bool|IResolvable JiraConnectPublicKeyStorageEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `KeepLatestArtifact`<sup>Required</sup> <a name="KeepLatestArtifact" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.keepLatestArtifact"></a>
 
 ```csharp
-public object KeepLatestArtifact { get; }
+public bool|IResolvable KeepLatestArtifact { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -8132,30 +8132,30 @@ public double LocalMarkdownVersion { get; }
 ##### `LockDuoFeaturesEnabled`<sup>Required</sup> <a name="LockDuoFeaturesEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.lockDuoFeaturesEnabled"></a>
 
 ```csharp
-public object LockDuoFeaturesEnabled { get; }
+public bool|IResolvable LockDuoFeaturesEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `LockMembershipsToLdap`<sup>Required</sup> <a name="LockMembershipsToLdap" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.lockMembershipsToLdap"></a>
 
 ```csharp
-public object LockMembershipsToLdap { get; }
+public bool|IResolvable LockMembershipsToLdap { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `MailgunEventsEnabled`<sup>Required</sup> <a name="MailgunEventsEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mailgunEventsEnabled"></a>
 
 ```csharp
-public object MailgunEventsEnabled { get; }
+public bool|IResolvable MailgunEventsEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -8172,10 +8172,10 @@ public string MailgunSigningKey { get; }
 ##### `MaintenanceMode`<sup>Required</sup> <a name="MaintenanceMode" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.maintenanceMode"></a>
 
 ```csharp
-public object MaintenanceMode { get; }
+public bool|IResolvable MaintenanceMode { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -8192,10 +8192,10 @@ public string MaintenanceModeMessage { get; }
 ##### `MavenPackageRequestsForwarding`<sup>Required</sup> <a name="MavenPackageRequestsForwarding" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mavenPackageRequestsForwarding"></a>
 
 ```csharp
-public object MavenPackageRequestsForwarding { get; }
+public bool|IResolvable MavenPackageRequestsForwarding { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -8352,10 +8352,10 @@ public double MinimumPasswordLength { get; }
 ##### `MirrorAvailable`<sup>Required</sup> <a name="MirrorAvailable" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.mirrorAvailable"></a>
 
 ```csharp
-public object MirrorAvailable { get; }
+public bool|IResolvable MirrorAvailable { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -8392,20 +8392,20 @@ public double MirrorMaxDelay { get; }
 ##### `NpmPackageRequestsForwarding`<sup>Required</sup> <a name="NpmPackageRequestsForwarding" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.npmPackageRequestsForwarding"></a>
 
 ```csharp
-public object NpmPackageRequestsForwarding { get; }
+public bool|IResolvable NpmPackageRequestsForwarding { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `NugetSkipMetadataUrlValidation`<sup>Required</sup> <a name="NugetSkipMetadataUrlValidation" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.nugetSkipMetadataUrlValidation"></a>
 
 ```csharp
-public object NugetSkipMetadataUrlValidation { get; }
+public bool|IResolvable NugetSkipMetadataUrlValidation { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -8432,10 +8432,10 @@ public double[] PackageMetadataPurlTypes { get; }
 ##### `PackageRegistryAllowAnyoneToPullOption`<sup>Required</sup> <a name="PackageRegistryAllowAnyoneToPullOption" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.packageRegistryAllowAnyoneToPullOption"></a>
 
 ```csharp
-public object PackageRegistryAllowAnyoneToPullOption { get; }
+public bool|IResolvable PackageRegistryAllowAnyoneToPullOption { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -8452,70 +8452,70 @@ public double PackageRegistryCleanupPoliciesWorkerCapacity { get; }
 ##### `PagesDomainVerificationEnabled`<sup>Required</sup> <a name="PagesDomainVerificationEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pagesDomainVerificationEnabled"></a>
 
 ```csharp
-public object PagesDomainVerificationEnabled { get; }
+public bool|IResolvable PagesDomainVerificationEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PasswordAuthenticationEnabledForGit`<sup>Required</sup> <a name="PasswordAuthenticationEnabledForGit" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordAuthenticationEnabledForGit"></a>
 
 ```csharp
-public object PasswordAuthenticationEnabledForGit { get; }
+public bool|IResolvable PasswordAuthenticationEnabledForGit { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PasswordAuthenticationEnabledForWeb`<sup>Required</sup> <a name="PasswordAuthenticationEnabledForWeb" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordAuthenticationEnabledForWeb"></a>
 
 ```csharp
-public object PasswordAuthenticationEnabledForWeb { get; }
+public bool|IResolvable PasswordAuthenticationEnabledForWeb { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PasswordLowercaseRequired`<sup>Required</sup> <a name="PasswordLowercaseRequired" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordLowercaseRequired"></a>
 
 ```csharp
-public object PasswordLowercaseRequired { get; }
+public bool|IResolvable PasswordLowercaseRequired { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PasswordNumberRequired`<sup>Required</sup> <a name="PasswordNumberRequired" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordNumberRequired"></a>
 
 ```csharp
-public object PasswordNumberRequired { get; }
+public bool|IResolvable PasswordNumberRequired { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PasswordSymbolRequired`<sup>Required</sup> <a name="PasswordSymbolRequired" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordSymbolRequired"></a>
 
 ```csharp
-public object PasswordSymbolRequired { get; }
+public bool|IResolvable PasswordSymbolRequired { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PasswordUppercaseRequired`<sup>Required</sup> <a name="PasswordUppercaseRequired" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.passwordUppercaseRequired"></a>
 
 ```csharp
-public object PasswordUppercaseRequired { get; }
+public bool|IResolvable PasswordUppercaseRequired { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -8552,10 +8552,10 @@ public double PipelineLimitPerProjectUserSha { get; }
 ##### `PlantumlEnabled`<sup>Required</sup> <a name="PlantumlEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.plantumlEnabled"></a>
 
 ```csharp
-public object PlantumlEnabled { get; }
+public bool|IResolvable PlantumlEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -8582,10 +8582,10 @@ public double PollingIntervalMultiplier { get; }
 ##### `ProjectExportEnabled`<sup>Required</sup> <a name="ProjectExportEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.projectExportEnabled"></a>
 
 ```csharp
-public object ProjectExportEnabled { get; }
+public bool|IResolvable ProjectExportEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -8612,20 +8612,20 @@ public double ProjectsApiRateLimitUnauthenticated { get; }
 ##### `PrometheusMetricsEnabled`<sup>Required</sup> <a name="PrometheusMetricsEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.prometheusMetricsEnabled"></a>
 
 ```csharp
-public object PrometheusMetricsEnabled { get; }
+public bool|IResolvable PrometheusMetricsEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ProtectedCiVariables`<sup>Required</sup> <a name="ProtectedCiVariables" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.protectedCiVariables"></a>
 
 ```csharp
-public object ProtectedCiVariables { get; }
+public bool|IResolvable ProtectedCiVariables { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -8652,10 +8652,10 @@ public double PushEventHooksLimit { get; }
 ##### `PypiPackageRequestsForwarding`<sup>Required</sup> <a name="PypiPackageRequestsForwarding" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.pypiPackageRequestsForwarding"></a>
 
 ```csharp
-public object PypiPackageRequestsForwarding { get; }
+public bool|IResolvable PypiPackageRequestsForwarding { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -8682,10 +8682,10 @@ public double RawBlobRequestLimit { get; }
 ##### `RecaptchaEnabled`<sup>Required</sup> <a name="RecaptchaEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.recaptchaEnabled"></a>
 
 ```csharp
-public object RecaptchaEnabled { get; }
+public bool|IResolvable RecaptchaEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -8722,30 +8722,30 @@ public double ReceiveMaxInputSize { get; }
 ##### `ReceptiveClusterAgentsEnabled`<sup>Required</sup> <a name="ReceptiveClusterAgentsEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.receptiveClusterAgentsEnabled"></a>
 
 ```csharp
-public object ReceptiveClusterAgentsEnabled { get; }
+public bool|IResolvable ReceptiveClusterAgentsEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `RememberMeEnabled`<sup>Required</sup> <a name="RememberMeEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.rememberMeEnabled"></a>
 
 ```csharp
-public object RememberMeEnabled { get; }
+public bool|IResolvable RememberMeEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `RepositoryChecksEnabled`<sup>Required</sup> <a name="RepositoryChecksEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.repositoryChecksEnabled"></a>
 
 ```csharp
-public object RepositoryChecksEnabled { get; }
+public bool|IResolvable RepositoryChecksEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -8772,40 +8772,40 @@ public System.Collections.Generic.IDictionary<string, double> RepositoryStorages
 ##### `RequireAdminApprovalAfterUserSignup`<sup>Required</sup> <a name="RequireAdminApprovalAfterUserSignup" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireAdminApprovalAfterUserSignup"></a>
 
 ```csharp
-public object RequireAdminApprovalAfterUserSignup { get; }
+public bool|IResolvable RequireAdminApprovalAfterUserSignup { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `RequireAdminTwoFactorAuthentication`<sup>Required</sup> <a name="RequireAdminTwoFactorAuthentication" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireAdminTwoFactorAuthentication"></a>
 
 ```csharp
-public object RequireAdminTwoFactorAuthentication { get; }
+public bool|IResolvable RequireAdminTwoFactorAuthentication { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `RequirePersonalAccessTokenExpiry`<sup>Required</sup> <a name="RequirePersonalAccessTokenExpiry" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requirePersonalAccessTokenExpiry"></a>
 
 ```csharp
-public object RequirePersonalAccessTokenExpiry { get; }
+public bool|IResolvable RequirePersonalAccessTokenExpiry { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `RequireTwoFactorAuthentication`<sup>Required</sup> <a name="RequireTwoFactorAuthentication" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.requireTwoFactorAuthentication"></a>
 
 ```csharp
-public object RequireTwoFactorAuthentication { get; }
+public bool|IResolvable RequireTwoFactorAuthentication { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -8862,10 +8862,10 @@ public double SecurityApprovalPoliciesLimit { get; }
 ##### `SecurityPolicyGlobalGroupApproversEnabled`<sup>Required</sup> <a name="SecurityPolicyGlobalGroupApproversEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.securityPolicyGlobalGroupApproversEnabled"></a>
 
 ```csharp
-public object SecurityPolicyGlobalGroupApproversEnabled { get; }
+public bool|IResolvable SecurityPolicyGlobalGroupApproversEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -8882,20 +8882,20 @@ public string SecurityTxtContent { get; }
 ##### `SendUserConfirmationEmail`<sup>Required</sup> <a name="SendUserConfirmationEmail" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sendUserConfirmationEmail"></a>
 
 ```csharp
-public object SendUserConfirmationEmail { get; }
+public bool|IResolvable SendUserConfirmationEmail { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ServiceAccessTokensExpirationEnforced`<sup>Required</sup> <a name="ServiceAccessTokensExpirationEnforced" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.serviceAccessTokensExpirationEnforced"></a>
 
 ```csharp
-public object ServiceAccessTokensExpirationEnforced { get; }
+public bool|IResolvable ServiceAccessTokensExpirationEnforced { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -8912,10 +8912,10 @@ public double SessionExpireDelay { get; }
 ##### `SharedRunnersEnabled`<sup>Required</sup> <a name="SharedRunnersEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sharedRunnersEnabled"></a>
 
 ```csharp
-public object SharedRunnersEnabled { get; }
+public bool|IResolvable SharedRunnersEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -8982,40 +8982,40 @@ public string SignInText { get; }
 ##### `SignupEnabled`<sup>Required</sup> <a name="SignupEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.signupEnabled"></a>
 
 ```csharp
-public object SignupEnabled { get; }
+public bool|IResolvable SignupEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SilentAdminExportsEnabled`<sup>Required</sup> <a name="SilentAdminExportsEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.silentAdminExportsEnabled"></a>
 
 ```csharp
-public object SilentAdminExportsEnabled { get; }
+public bool|IResolvable SilentAdminExportsEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SilentModeEnabled`<sup>Required</sup> <a name="SilentModeEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.silentModeEnabled"></a>
 
 ```csharp
-public object SilentModeEnabled { get; }
+public bool|IResolvable SilentModeEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SlackAppEnabled`<sup>Required</sup> <a name="SlackAppEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.slackAppEnabled"></a>
 
 ```csharp
-public object SlackAppEnabled { get; }
+public bool|IResolvable SlackAppEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -9112,30 +9112,30 @@ public string SnowplowDatabaseCollectorHostname { get; }
 ##### `SnowplowEnabled`<sup>Required</sup> <a name="SnowplowEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.snowplowEnabled"></a>
 
 ```csharp
-public object SnowplowEnabled { get; }
+public bool|IResolvable SnowplowEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SourcegraphEnabled`<sup>Required</sup> <a name="SourcegraphEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sourcegraphEnabled"></a>
 
 ```csharp
-public object SourcegraphEnabled { get; }
+public bool|IResolvable SourcegraphEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SourcegraphPublicOnly`<sup>Required</sup> <a name="SourcegraphPublicOnly" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.sourcegraphPublicOnly"></a>
 
 ```csharp
-public object SourcegraphPublicOnly { get; }
+public bool|IResolvable SourcegraphPublicOnly { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -9162,10 +9162,10 @@ public string SpamCheckApiKey { get; }
 ##### `SpamCheckEndpointEnabled`<sup>Required</sup> <a name="SpamCheckEndpointEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.spamCheckEndpointEnabled"></a>
 
 ```csharp
-public object SpamCheckEndpointEnabled { get; }
+public bool|IResolvable SpamCheckEndpointEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -9202,10 +9202,10 @@ public string StaticObjectsExternalStorageUrl { get; }
 ##### `SuggestPipelineEnabled`<sup>Required</sup> <a name="SuggestPipelineEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.suggestPipelineEnabled"></a>
 
 ```csharp
-public object SuggestPipelineEnabled { get; }
+public bool|IResolvable SuggestPipelineEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -9232,10 +9232,10 @@ public string Terms { get; }
 ##### `ThrottleAuthenticatedApiEnabled`<sup>Required</sup> <a name="ThrottleAuthenticatedApiEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedApiEnabled"></a>
 
 ```csharp
-public object ThrottleAuthenticatedApiEnabled { get; }
+public bool|IResolvable ThrottleAuthenticatedApiEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -9262,10 +9262,10 @@ public double ThrottleAuthenticatedApiRequestsPerPeriod { get; }
 ##### `ThrottleAuthenticatedPackagesApiEnabled`<sup>Required</sup> <a name="ThrottleAuthenticatedPackagesApiEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedPackagesApiEnabled"></a>
 
 ```csharp
-public object ThrottleAuthenticatedPackagesApiEnabled { get; }
+public bool|IResolvable ThrottleAuthenticatedPackagesApiEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -9292,10 +9292,10 @@ public double ThrottleAuthenticatedPackagesApiRequestsPerPeriod { get; }
 ##### `ThrottleAuthenticatedWebEnabled`<sup>Required</sup> <a name="ThrottleAuthenticatedWebEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleAuthenticatedWebEnabled"></a>
 
 ```csharp
-public object ThrottleAuthenticatedWebEnabled { get; }
+public bool|IResolvable ThrottleAuthenticatedWebEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -9322,10 +9322,10 @@ public double ThrottleAuthenticatedWebRequestsPerPeriod { get; }
 ##### `ThrottleUnauthenticatedApiEnabled`<sup>Required</sup> <a name="ThrottleUnauthenticatedApiEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedApiEnabled"></a>
 
 ```csharp
-public object ThrottleUnauthenticatedApiEnabled { get; }
+public bool|IResolvable ThrottleUnauthenticatedApiEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -9352,10 +9352,10 @@ public double ThrottleUnauthenticatedApiRequestsPerPeriod { get; }
 ##### `ThrottleUnauthenticatedPackagesApiEnabled`<sup>Required</sup> <a name="ThrottleUnauthenticatedPackagesApiEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedPackagesApiEnabled"></a>
 
 ```csharp
-public object ThrottleUnauthenticatedPackagesApiEnabled { get; }
+public bool|IResolvable ThrottleUnauthenticatedPackagesApiEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -9382,10 +9382,10 @@ public double ThrottleUnauthenticatedPackagesApiRequestsPerPeriod { get; }
 ##### `ThrottleUnauthenticatedWebEnabled`<sup>Required</sup> <a name="ThrottleUnauthenticatedWebEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.throttleUnauthenticatedWebEnabled"></a>
 
 ```csharp
-public object ThrottleUnauthenticatedWebEnabled { get; }
+public bool|IResolvable ThrottleUnauthenticatedWebEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -9412,10 +9412,10 @@ public double ThrottleUnauthenticatedWebRequestsPerPeriod { get; }
 ##### `TimeTrackingLimitToHours`<sup>Required</sup> <a name="TimeTrackingLimitToHours" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.timeTrackingLimitToHours"></a>
 
 ```csharp
-public object TimeTrackingLimitToHours { get; }
+public bool|IResolvable TimeTrackingLimitToHours { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -9442,10 +9442,10 @@ public double UnconfirmedUsersDeleteAfterDays { get; }
 ##### `UniqueIpsLimitEnabled`<sup>Required</sup> <a name="UniqueIpsLimitEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.uniqueIpsLimitEnabled"></a>
 
 ```csharp
-public object UniqueIpsLimitEnabled { get; }
+public bool|IResolvable UniqueIpsLimitEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -9472,50 +9472,50 @@ public double UniqueIpsLimitTimeWindow { get; }
 ##### `UpdateRunnerVersionsEnabled`<sup>Required</sup> <a name="UpdateRunnerVersionsEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.updateRunnerVersionsEnabled"></a>
 
 ```csharp
-public object UpdateRunnerVersionsEnabled { get; }
+public bool|IResolvable UpdateRunnerVersionsEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `UsagePingEnabled`<sup>Required</sup> <a name="UsagePingEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.usagePingEnabled"></a>
 
 ```csharp
-public object UsagePingEnabled { get; }
+public bool|IResolvable UsagePingEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `UseClickhouseForAnalytics`<sup>Required</sup> <a name="UseClickhouseForAnalytics" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.useClickhouseForAnalytics"></a>
 
 ```csharp
-public object UseClickhouseForAnalytics { get; }
+public bool|IResolvable UseClickhouseForAnalytics { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `UserDeactivationEmailsEnabled`<sup>Required</sup> <a name="UserDeactivationEmailsEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDeactivationEmailsEnabled"></a>
 
 ```csharp
-public object UserDeactivationEmailsEnabled { get; }
+public bool|IResolvable UserDeactivationEmailsEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `UserDefaultExternal`<sup>Required</sup> <a name="UserDefaultExternal" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDefaultExternal"></a>
 
 ```csharp
-public object UserDefaultExternal { get; }
+public bool|IResolvable UserDefaultExternal { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -9532,30 +9532,30 @@ public string UserDefaultInternalRegex { get; }
 ##### `UserDefaultsToPrivateProfile`<sup>Required</sup> <a name="UserDefaultsToPrivateProfile" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userDefaultsToPrivateProfile"></a>
 
 ```csharp
-public object UserDefaultsToPrivateProfile { get; }
+public bool|IResolvable UserDefaultsToPrivateProfile { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `UserOauthApplications`<sup>Required</sup> <a name="UserOauthApplications" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userOauthApplications"></a>
 
 ```csharp
-public object UserOauthApplications { get; }
+public bool|IResolvable UserOauthApplications { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `UserShowAddSshKeyMessage`<sup>Required</sup> <a name="UserShowAddSshKeyMessage" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.userShowAddSshKeyMessage"></a>
 
 ```csharp
-public object UserShowAddSshKeyMessage { get; }
+public bool|IResolvable UserShowAddSshKeyMessage { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -9572,20 +9572,20 @@ public string[] ValidRunnerRegistrars { get; }
 ##### `VersionCheckEnabled`<sup>Required</sup> <a name="VersionCheckEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.versionCheckEnabled"></a>
 
 ```csharp
-public object VersionCheckEnabled { get; }
+public bool|IResolvable VersionCheckEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `WebIdeClientsidePreviewEnabled`<sup>Required</sup> <a name="WebIdeClientsidePreviewEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettings.property.webIdeClientsidePreviewEnabled"></a>
 
 ```csharp
-public object WebIdeClientsidePreviewEnabled { get; }
+public bool|IResolvable WebIdeClientsidePreviewEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -9637,54 +9637,54 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Gitlab;
 
 new ApplicationSettingsConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string AbuseNotificationEmail = null,
-    object AdminMode = null,
+    bool|IResolvable AdminMode = null,
     string AfterSignOutPath = null,
     string AfterSignUpText = null,
     string AkismetApiKey = null,
-    object AkismetEnabled = null,
-    object AllowAccountDeletion = null,
-    object AllowGroupOwnersToManageLdap = null,
-    object AllowLocalRequestsFromSystemHooks = null,
-    object AllowLocalRequestsFromWebHooksAndServices = null,
-    object AllowProjectCreationForGuestAndBelow = null,
-    object AllowRunnerRegistrationToken = null,
+    bool|IResolvable AkismetEnabled = null,
+    bool|IResolvable AllowAccountDeletion = null,
+    bool|IResolvable AllowGroupOwnersToManageLdap = null,
+    bool|IResolvable AllowLocalRequestsFromSystemHooks = null,
+    bool|IResolvable AllowLocalRequestsFromWebHooksAndServices = null,
+    bool|IResolvable AllowProjectCreationForGuestAndBelow = null,
+    bool|IResolvable AllowRunnerRegistrationToken = null,
     string ArchiveBuildsInHumanReadable = null,
     double AsciidocMaxIncludes = null,
     string[] AssetProxyAllowlist = null,
-    object AssetProxyEnabled = null,
+    bool|IResolvable AssetProxyEnabled = null,
     string AssetProxySecretKey = null,
     string AssetProxyUrl = null,
-    object AuthorizedKeysEnabled = null,
-    object AutoBanUserOnExcessiveProjectsDownload = null,
+    bool|IResolvable AuthorizedKeysEnabled = null,
+    bool|IResolvable AutoBanUserOnExcessiveProjectsDownload = null,
     string AutoDevopsDomain = null,
-    object AutoDevopsEnabled = null,
-    object AutomaticPurchasedStorageAllocation = null,
+    bool|IResolvable AutoDevopsEnabled = null,
+    bool|IResolvable AutomaticPurchasedStorageAllocation = null,
     double BulkImportConcurrentPipelineBatchLimit = null,
-    object BulkImportEnabled = null,
+    bool|IResolvable BulkImportEnabled = null,
     double BulkImportMaxDownloadFileSize = null,
-    object CanCreateGroup = null,
-    object CheckNamespacePlan = null,
+    bool|IResolvable CanCreateGroup = null,
+    bool|IResolvable CheckNamespacePlan = null,
     double CiMaxIncludes = null,
     double CiMaxTotalYamlSizeBytes = null,
     string CommitEmailHostname = null,
     double ConcurrentBitbucketImportJobsLimit = null,
     double ConcurrentBitbucketServerImportJobsLimit = null,
     double ConcurrentGithubImportJobsLimit = null,
-    object ContainerExpirationPoliciesEnableHistoricEntries = null,
+    bool|IResolvable ContainerExpirationPoliciesEnableHistoricEntries = null,
     double ContainerRegistryCleanupTagsServiceMaxListSize = null,
     double ContainerRegistryDeleteTagsServiceTimeout = null,
-    object ContainerRegistryExpirationPoliciesCaching = null,
+    bool|IResolvable ContainerRegistryExpirationPoliciesCaching = null,
     double ContainerRegistryExpirationPoliciesWorkerCapacity = null,
     double ContainerRegistryTokenExpireDelay = null,
-    object DeactivateDormantUsers = null,
+    bool|IResolvable DeactivateDormantUsers = null,
     double DeactivateDormantUsersPeriod = null,
     double DecompressArchiveFileTimeout = null,
     string DefaultArtifactsExpireIn = null,
@@ -9699,64 +9699,64 @@ new ApplicationSettingsConfig {
     string DefaultProjectVisibility = null,
     string DefaultSnippetVisibility = null,
     double DefaultSyntaxHighlightingTheme = null,
-    object DeleteInactiveProjects = null,
-    object DeleteUnconfirmedUsers = null,
+    bool|IResolvable DeleteInactiveProjects = null,
+    bool|IResolvable DeleteUnconfirmedUsers = null,
     double DeletionAdjournedPeriod = null,
-    object DiagramsnetEnabled = null,
+    bool|IResolvable DiagramsnetEnabled = null,
     string DiagramsnetUrl = null,
     double DiffMaxFiles = null,
     double DiffMaxLines = null,
     double DiffMaxPatchBytes = null,
-    object DisableAdminOauthScopes = null,
+    bool|IResolvable DisableAdminOauthScopes = null,
     string[] DisabledOauthSignInSources = null,
-    object DisableFeedToken = null,
-    object DisablePersonalAccessTokens = null,
-    object DnsRebindingProtectionEnabled = null,
+    bool|IResolvable DisableFeedToken = null,
+    bool|IResolvable DisablePersonalAccessTokens = null,
+    bool|IResolvable DnsRebindingProtectionEnabled = null,
     string[] DomainAllowlist = null,
     string[] DomainDenylist = null,
-    object DomainDenylistEnabled = null,
+    bool|IResolvable DomainDenylistEnabled = null,
     double DownstreamPipelineTriggerLimitPerProjectUserSha = null,
     double DsaKeyRestriction = null,
-    object DuoFeaturesEnabled = null,
+    bool|IResolvable DuoFeaturesEnabled = null,
     double EcdsaKeyRestriction = null,
     double EcdsaSkKeyRestriction = null,
     double Ed25519KeyRestriction = null,
     double Ed25519SkKeyRestriction = null,
     string EksAccessKeyId = null,
     string EksAccountId = null,
-    object EksIntegrationEnabled = null,
+    bool|IResolvable EksIntegrationEnabled = null,
     string EksSecretAccessKey = null,
-    object ElasticsearchAws = null,
+    bool|IResolvable ElasticsearchAws = null,
     string ElasticsearchAwsAccessKey = null,
     string ElasticsearchAwsRegion = null,
     string ElasticsearchAwsSecretAccessKey = null,
     double ElasticsearchIndexedFieldLengthLimit = null,
     double ElasticsearchIndexedFileSizeLimitKb = null,
-    object ElasticsearchIndexing = null,
-    object ElasticsearchLimitIndexing = null,
+    bool|IResolvable ElasticsearchIndexing = null,
+    bool|IResolvable ElasticsearchLimitIndexing = null,
     double ElasticsearchMaxBulkConcurrency = null,
     double ElasticsearchMaxBulkSizeMb = null,
     double ElasticsearchMaxCodeIndexingConcurrency = null,
     double[] ElasticsearchNamespaceIds = null,
     string ElasticsearchPassword = null,
     double[] ElasticsearchProjectIds = null,
-    object ElasticsearchRequeueWorkers = null,
-    object ElasticsearchSearch = null,
+    bool|IResolvable ElasticsearchRequeueWorkers = null,
+    bool|IResolvable ElasticsearchSearch = null,
     string[] ElasticsearchUrl = null,
     string ElasticsearchUsername = null,
     double ElasticsearchWorkerNumberOfShards = null,
     string EmailAdditionalText = null,
-    object EmailAuthorInBody = null,
+    bool|IResolvable EmailAuthorInBody = null,
     string EmailConfirmationSetting = null,
-    object EnableArtifactExternalRedirectWarningPage = null,
+    bool|IResolvable EnableArtifactExternalRedirectWarningPage = null,
     string EnabledGitAccessProtocol = null,
-    object EnforceNamespaceStorageLimit = null,
-    object EnforceTerms = null,
+    bool|IResolvable EnforceNamespaceStorageLimit = null,
+    bool|IResolvable EnforceTerms = null,
     string ExternalAuthClientCert = null,
     string ExternalAuthClientKey = null,
     string ExternalAuthClientKeyPass = null,
     string ExternalAuthorizationServiceDefaultLabel = null,
-    object ExternalAuthorizationServiceEnabled = null,
+    bool|IResolvable ExternalAuthorizationServiceEnabled = null,
     double ExternalAuthorizationServiceTimeout = null,
     string ExternalAuthorizationServiceUrl = null,
     double ExternalPipelineValidationServiceTimeout = null,
@@ -9771,46 +9771,46 @@ new ApplicationSettingsConfig {
     double GitalyTimeoutFast = null,
     double GitalyTimeoutMedium = null,
     double GitlabShellOperationLimit = null,
-    object GitpodEnabled = null,
+    bool|IResolvable GitpodEnabled = null,
     string GitpodUrl = null,
     double[] GitRateLimitUsersAlertlist = null,
     string[] GitRateLimitUsersAllowlist = null,
     double GitTwoFactorSessionExpiry = null,
     string GloballyAllowedIps = null,
-    object GrafanaEnabled = null,
+    bool|IResolvable GrafanaEnabled = null,
     string GrafanaUrl = null,
-    object GravatarEnabled = null,
-    object GroupOwnersCanManageDefaultBranchProtection = null,
-    object HelpPageHideCommercialContent = null,
+    bool|IResolvable GravatarEnabled = null,
+    bool|IResolvable GroupOwnersCanManageDefaultBranchProtection = null,
+    bool|IResolvable HelpPageHideCommercialContent = null,
     string HelpPageSupportUrl = null,
     string HelpPageText = null,
     string HelpText = null,
-    object HideThirdPartyOffers = null,
+    bool|IResolvable HideThirdPartyOffers = null,
     string HomePageUrl = null,
-    object HousekeepingEnabled = null,
+    bool|IResolvable HousekeepingEnabled = null,
     double HousekeepingOptimizeRepositoryPeriod = null,
-    object HtmlEmailsEnabled = null,
+    bool|IResolvable HtmlEmailsEnabled = null,
     string Id = null,
     string[] ImportSources = null,
     double InactiveProjectsDeleteAfterMonths = null,
     double InactiveProjectsMinSizeMb = null,
     double InactiveProjectsSendWarningEmailAfterMonths = null,
-    object IncludeOptionalMetricsInServicePing = null,
-    object InProductMarketingEmailsEnabled = null,
-    object InvisibleCaptchaEnabled = null,
+    bool|IResolvable IncludeOptionalMetricsInServicePing = null,
+    bool|IResolvable InProductMarketingEmailsEnabled = null,
+    bool|IResolvable InvisibleCaptchaEnabled = null,
     double IssuesCreateLimit = null,
     string JiraConnectApplicationKey = null,
     string JiraConnectProxyUrl = null,
-    object JiraConnectPublicKeyStorageEnabled = null,
-    object KeepLatestArtifact = null,
+    bool|IResolvable JiraConnectPublicKeyStorageEnabled = null,
+    bool|IResolvable KeepLatestArtifact = null,
     double LocalMarkdownVersion = null,
-    object LockDuoFeaturesEnabled = null,
-    object LockMembershipsToLdap = null,
-    object MailgunEventsEnabled = null,
+    bool|IResolvable LockDuoFeaturesEnabled = null,
+    bool|IResolvable LockMembershipsToLdap = null,
+    bool|IResolvable MailgunEventsEnabled = null,
     string MailgunSigningKey = null,
-    object MaintenanceMode = null,
+    bool|IResolvable MaintenanceMode = null,
     string MaintenanceModeMessage = null,
-    object MavenPackageRequestsForwarding = null,
+    bool|IResolvable MavenPackageRequestsForwarding = null,
     double MaxArtifactsSize = null,
     double MaxAttachmentSize = null,
     double MaxDecompressedArchiveSize = null,
@@ -9826,73 +9826,73 @@ new ApplicationSettingsConfig {
     double MaxTerraformStateSizeBytes = null,
     double MetricsMethodCallThreshold = null,
     double MinimumPasswordLength = null,
-    object MirrorAvailable = null,
+    bool|IResolvable MirrorAvailable = null,
     double MirrorCapacityThreshold = null,
     double MirrorMaxCapacity = null,
     double MirrorMaxDelay = null,
-    object NpmPackageRequestsForwarding = null,
-    object NugetSkipMetadataUrlValidation = null,
+    bool|IResolvable NpmPackageRequestsForwarding = null,
+    bool|IResolvable NugetSkipMetadataUrlValidation = null,
     string[] OutboundLocalRequestsWhitelist = null,
     double[] PackageMetadataPurlTypes = null,
-    object PackageRegistryAllowAnyoneToPullOption = null,
+    bool|IResolvable PackageRegistryAllowAnyoneToPullOption = null,
     double PackageRegistryCleanupPoliciesWorkerCapacity = null,
-    object PagesDomainVerificationEnabled = null,
-    object PasswordAuthenticationEnabledForGit = null,
-    object PasswordAuthenticationEnabledForWeb = null,
-    object PasswordLowercaseRequired = null,
-    object PasswordNumberRequired = null,
-    object PasswordSymbolRequired = null,
-    object PasswordUppercaseRequired = null,
+    bool|IResolvable PagesDomainVerificationEnabled = null,
+    bool|IResolvable PasswordAuthenticationEnabledForGit = null,
+    bool|IResolvable PasswordAuthenticationEnabledForWeb = null,
+    bool|IResolvable PasswordLowercaseRequired = null,
+    bool|IResolvable PasswordNumberRequired = null,
+    bool|IResolvable PasswordSymbolRequired = null,
+    bool|IResolvable PasswordUppercaseRequired = null,
     string PerformanceBarAllowedGroupPath = null,
     string PersonalAccessTokenPrefix = null,
     double PipelineLimitPerProjectUserSha = null,
-    object PlantumlEnabled = null,
+    bool|IResolvable PlantumlEnabled = null,
     string PlantumlUrl = null,
     double PollingIntervalMultiplier = null,
-    object ProjectExportEnabled = null,
+    bool|IResolvable ProjectExportEnabled = null,
     double ProjectJobsApiRateLimit = null,
     double ProjectsApiRateLimitUnauthenticated = null,
-    object PrometheusMetricsEnabled = null,
-    object ProtectedCiVariables = null,
+    bool|IResolvable PrometheusMetricsEnabled = null,
+    bool|IResolvable ProtectedCiVariables = null,
     double PushEventActivitiesLimit = null,
     double PushEventHooksLimit = null,
-    object PypiPackageRequestsForwarding = null,
+    bool|IResolvable PypiPackageRequestsForwarding = null,
     string RateLimitingResponseText = null,
     double RawBlobRequestLimit = null,
-    object RecaptchaEnabled = null,
+    bool|IResolvable RecaptchaEnabled = null,
     string RecaptchaPrivateKey = null,
     string RecaptchaSiteKey = null,
     double ReceiveMaxInputSize = null,
-    object ReceptiveClusterAgentsEnabled = null,
-    object RememberMeEnabled = null,
-    object RepositoryChecksEnabled = null,
+    bool|IResolvable ReceptiveClusterAgentsEnabled = null,
+    bool|IResolvable RememberMeEnabled = null,
+    bool|IResolvable RepositoryChecksEnabled = null,
     double RepositorySizeLimit = null,
     System.Collections.Generic.IDictionary<string, double> RepositoryStoragesWeighted = null,
-    object RequireAdminApprovalAfterUserSignup = null,
-    object RequireAdminTwoFactorAuthentication = null,
-    object RequirePersonalAccessTokenExpiry = null,
-    object RequireTwoFactorAuthentication = null,
+    bool|IResolvable RequireAdminApprovalAfterUserSignup = null,
+    bool|IResolvable RequireAdminTwoFactorAuthentication = null,
+    bool|IResolvable RequirePersonalAccessTokenExpiry = null,
+    bool|IResolvable RequireTwoFactorAuthentication = null,
     string[] RestrictedVisibilityLevels = null,
     double RsaKeyRestriction = null,
     double SearchRateLimit = null,
     double SearchRateLimitUnauthenticated = null,
     double SecurityApprovalPoliciesLimit = null,
-    object SecurityPolicyGlobalGroupApproversEnabled = null,
+    bool|IResolvable SecurityPolicyGlobalGroupApproversEnabled = null,
     string SecurityTxtContent = null,
-    object SendUserConfirmationEmail = null,
-    object ServiceAccessTokensExpirationEnforced = null,
+    bool|IResolvable SendUserConfirmationEmail = null,
+    bool|IResolvable ServiceAccessTokensExpirationEnforced = null,
     double SessionExpireDelay = null,
-    object SharedRunnersEnabled = null,
+    bool|IResolvable SharedRunnersEnabled = null,
     double SharedRunnersMinutes = null,
     string SharedRunnersText = null,
     double SidekiqJobLimiterCompressionThresholdBytes = null,
     double SidekiqJobLimiterLimitBytes = null,
     string SidekiqJobLimiterMode = null,
     string SignInText = null,
-    object SignupEnabled = null,
-    object SilentAdminExportsEnabled = null,
-    object SilentModeEnabled = null,
-    object SlackAppEnabled = null,
+    bool|IResolvable SignupEnabled = null,
+    bool|IResolvable SilentAdminExportsEnabled = null,
+    bool|IResolvable SilentModeEnabled = null,
+    bool|IResolvable SlackAppEnabled = null,
     string SlackAppId = null,
     string SlackAppSecret = null,
     string SlackAppSigningSecret = null,
@@ -9902,54 +9902,54 @@ new ApplicationSettingsConfig {
     string SnowplowCollectorHostname = null,
     string SnowplowCookieDomain = null,
     string SnowplowDatabaseCollectorHostname = null,
-    object SnowplowEnabled = null,
-    object SourcegraphEnabled = null,
-    object SourcegraphPublicOnly = null,
+    bool|IResolvable SnowplowEnabled = null,
+    bool|IResolvable SourcegraphEnabled = null,
+    bool|IResolvable SourcegraphPublicOnly = null,
     string SourcegraphUrl = null,
     string SpamCheckApiKey = null,
-    object SpamCheckEndpointEnabled = null,
+    bool|IResolvable SpamCheckEndpointEnabled = null,
     string SpamCheckEndpointUrl = null,
     string StaticObjectsExternalStorageAuthToken = null,
     string StaticObjectsExternalStorageUrl = null,
-    object SuggestPipelineEnabled = null,
+    bool|IResolvable SuggestPipelineEnabled = null,
     double TerminalMaxSessionTime = null,
     string Terms = null,
-    object ThrottleAuthenticatedApiEnabled = null,
+    bool|IResolvable ThrottleAuthenticatedApiEnabled = null,
     double ThrottleAuthenticatedApiPeriodInSeconds = null,
     double ThrottleAuthenticatedApiRequestsPerPeriod = null,
-    object ThrottleAuthenticatedPackagesApiEnabled = null,
+    bool|IResolvable ThrottleAuthenticatedPackagesApiEnabled = null,
     double ThrottleAuthenticatedPackagesApiPeriodInSeconds = null,
     double ThrottleAuthenticatedPackagesApiRequestsPerPeriod = null,
-    object ThrottleAuthenticatedWebEnabled = null,
+    bool|IResolvable ThrottleAuthenticatedWebEnabled = null,
     double ThrottleAuthenticatedWebPeriodInSeconds = null,
     double ThrottleAuthenticatedWebRequestsPerPeriod = null,
-    object ThrottleUnauthenticatedApiEnabled = null,
+    bool|IResolvable ThrottleUnauthenticatedApiEnabled = null,
     double ThrottleUnauthenticatedApiPeriodInSeconds = null,
     double ThrottleUnauthenticatedApiRequestsPerPeriod = null,
-    object ThrottleUnauthenticatedPackagesApiEnabled = null,
+    bool|IResolvable ThrottleUnauthenticatedPackagesApiEnabled = null,
     double ThrottleUnauthenticatedPackagesApiPeriodInSeconds = null,
     double ThrottleUnauthenticatedPackagesApiRequestsPerPeriod = null,
-    object ThrottleUnauthenticatedWebEnabled = null,
+    bool|IResolvable ThrottleUnauthenticatedWebEnabled = null,
     double ThrottleUnauthenticatedWebPeriodInSeconds = null,
     double ThrottleUnauthenticatedWebRequestsPerPeriod = null,
-    object TimeTrackingLimitToHours = null,
+    bool|IResolvable TimeTrackingLimitToHours = null,
     double TwoFactorGracePeriod = null,
     double UnconfirmedUsersDeleteAfterDays = null,
-    object UniqueIpsLimitEnabled = null,
+    bool|IResolvable UniqueIpsLimitEnabled = null,
     double UniqueIpsLimitPerUser = null,
     double UniqueIpsLimitTimeWindow = null,
-    object UpdateRunnerVersionsEnabled = null,
-    object UsagePingEnabled = null,
-    object UseClickhouseForAnalytics = null,
-    object UserDeactivationEmailsEnabled = null,
-    object UserDefaultExternal = null,
+    bool|IResolvable UpdateRunnerVersionsEnabled = null,
+    bool|IResolvable UsagePingEnabled = null,
+    bool|IResolvable UseClickhouseForAnalytics = null,
+    bool|IResolvable UserDeactivationEmailsEnabled = null,
+    bool|IResolvable UserDefaultExternal = null,
     string UserDefaultInternalRegex = null,
-    object UserDefaultsToPrivateProfile = null,
-    object UserOauthApplications = null,
-    object UserShowAddSshKeyMessage = null,
+    bool|IResolvable UserDefaultsToPrivateProfile = null,
+    bool|IResolvable UserOauthApplications = null,
+    bool|IResolvable UserShowAddSshKeyMessage = null,
     string[] ValidRunnerRegistrars = null,
-    object VersionCheckEnabled = null,
-    object WebIdeClientsidePreviewEnabled = null,
+    bool|IResolvable VersionCheckEnabled = null,
+    bool|IResolvable WebIdeClientsidePreviewEnabled = null,
     string WhatsNewVariant = null,
     double WikiPageMaxContentBytes = null
 };
@@ -9959,54 +9959,54 @@ new ApplicationSettingsConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.abuseNotificationEmail">AbuseNotificationEmail</a></code> | <code>string</code> | If set, abuse reports are sent to this address. Abuse reports are always available in the Admin Area. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.adminMode">AdminMode</a></code> | <code>object</code> | Require administrators to enable Admin Mode by re-authenticating for administrative tasks. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.adminMode">AdminMode</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Require administrators to enable Admin Mode by re-authenticating for administrative tasks. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.afterSignOutPath">AfterSignOutPath</a></code> | <code>string</code> | Where to redirect users after logout. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.afterSignUpText">AfterSignUpText</a></code> | <code>string</code> | Text shown to the user after signing up. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.akismetApiKey">AkismetApiKey</a></code> | <code>string</code> | API key for Akismet spam protection. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.akismetEnabled">AkismetEnabled</a></code> | <code>object</code> | (If enabled, requires: akismet_api_key) Enable or disable Akismet spam protection. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowAccountDeletion">AllowAccountDeletion</a></code> | <code>object</code> | Set to true to allow users to delete their accounts. Premium and Ultimate only. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowGroupOwnersToManageLdap">AllowGroupOwnersToManageLdap</a></code> | <code>object</code> | Set to true to allow group owners to manage LDAP. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowLocalRequestsFromSystemHooks">AllowLocalRequestsFromSystemHooks</a></code> | <code>object</code> | Allow requests to the local network from system hooks. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowLocalRequestsFromWebHooksAndServices">AllowLocalRequestsFromWebHooksAndServices</a></code> | <code>object</code> | Allow requests to the local network from web hooks and services. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowProjectCreationForGuestAndBelow">AllowProjectCreationForGuestAndBelow</a></code> | <code>object</code> | Indicates whether users assigned up to the Guest role can create groups and personal projects. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowRunnerRegistrationToken">AllowRunnerRegistrationToken</a></code> | <code>object</code> | Allow using a registration token to create a runner. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.akismetEnabled">AkismetEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | (If enabled, requires: akismet_api_key) Enable or disable Akismet spam protection. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowAccountDeletion">AllowAccountDeletion</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to true to allow users to delete their accounts. Premium and Ultimate only. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowGroupOwnersToManageLdap">AllowGroupOwnersToManageLdap</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to true to allow group owners to manage LDAP. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowLocalRequestsFromSystemHooks">AllowLocalRequestsFromSystemHooks</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow requests to the local network from system hooks. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowLocalRequestsFromWebHooksAndServices">AllowLocalRequestsFromWebHooksAndServices</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow requests to the local network from web hooks and services. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowProjectCreationForGuestAndBelow">AllowProjectCreationForGuestAndBelow</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates whether users assigned up to the Guest role can create groups and personal projects. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowRunnerRegistrationToken">AllowRunnerRegistrationToken</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow using a registration token to create a runner. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.archiveBuildsInHumanReadable">ArchiveBuildsInHumanReadable</a></code> | <code>string</code> | Set the duration for which the jobs are considered as old and expired. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.asciidocMaxIncludes">AsciidocMaxIncludes</a></code> | <code>double</code> | Maximum limit of AsciiDoc include directives being processed in any one document. Maximum: 64. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.assetProxyAllowlist">AssetProxyAllowlist</a></code> | <code>string[]</code> | Assets that match these domains are not proxied. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.assetProxyEnabled">AssetProxyEnabled</a></code> | <code>object</code> | (If enabled, requires: asset_proxy_url) Enable proxying of assets. GitLab restart is required to apply changes. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.assetProxyEnabled">AssetProxyEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | (If enabled, requires: asset_proxy_url) Enable proxying of assets. GitLab restart is required to apply changes. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.assetProxySecretKey">AssetProxySecretKey</a></code> | <code>string</code> | Shared secret with the asset proxy server. GitLab restart is required to apply changes. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.assetProxyUrl">AssetProxyUrl</a></code> | <code>string</code> | URL of the asset proxy server. GitLab restart is required to apply changes. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.authorizedKeysEnabled">AuthorizedKeysEnabled</a></code> | <code>object</code> | By default, we write to the authorized_keys file to support Git over SSH without additional configuration. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.autoBanUserOnExcessiveProjectsDownload">AutoBanUserOnExcessiveProjectsDownload</a></code> | <code>object</code> | When enabled, users will get automatically banned from the application when they download more than the maximum number of unique projects in the time period specified by max_number_of_repository_downloads and max_number_of_repository_downloads_within_time_period respectively. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.authorizedKeysEnabled">AuthorizedKeysEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | By default, we write to the authorized_keys file to support Git over SSH without additional configuration. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.autoBanUserOnExcessiveProjectsDownload">AutoBanUserOnExcessiveProjectsDownload</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | When enabled, users will get automatically banned from the application when they download more than the maximum number of unique projects in the time period specified by max_number_of_repository_downloads and max_number_of_repository_downloads_within_time_period respectively. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.autoDevopsDomain">AutoDevopsDomain</a></code> | <code>string</code> | Specify a domain to use by default for every project’s Auto Review Apps and Auto Deploy stages. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.autoDevopsEnabled">AutoDevopsEnabled</a></code> | <code>object</code> | Enable Auto DevOps for projects by default. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.automaticPurchasedStorageAllocation">AutomaticPurchasedStorageAllocation</a></code> | <code>object</code> | Enabling this permits automatic allocation of purchased storage in a namespace. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.autoDevopsEnabled">AutoDevopsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable Auto DevOps for projects by default. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.automaticPurchasedStorageAllocation">AutomaticPurchasedStorageAllocation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enabling this permits automatic allocation of purchased storage in a namespace. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.bulkImportConcurrentPipelineBatchLimit">BulkImportConcurrentPipelineBatchLimit</a></code> | <code>double</code> | Maximum simultaneous Direct Transfer batches to process. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.bulkImportEnabled">BulkImportEnabled</a></code> | <code>object</code> | Enable migrating GitLab groups by direct transfer. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.bulkImportEnabled">BulkImportEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable migrating GitLab groups by direct transfer. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.bulkImportMaxDownloadFileSize">BulkImportMaxDownloadFileSize</a></code> | <code>double</code> | Maximum download file size when importing from source GitLab instances by direct transfer. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.canCreateGroup">CanCreateGroup</a></code> | <code>object</code> | Indicates whether users can create top-level groups. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.checkNamespacePlan">CheckNamespacePlan</a></code> | <code>object</code> | Enabling this makes only licensed EE features available to projects if the project namespace’s plan includes the feature or if the project is public. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.canCreateGroup">CanCreateGroup</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates whether users can create top-level groups. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.checkNamespacePlan">CheckNamespacePlan</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enabling this makes only licensed EE features available to projects if the project namespace’s plan includes the feature or if the project is public. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.ciMaxIncludes">CiMaxIncludes</a></code> | <code>double</code> | The maximum number of includes per pipeline. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.ciMaxTotalYamlSizeBytes">CiMaxTotalYamlSizeBytes</a></code> | <code>double</code> | The maximum amount of memory, in bytes, that can be allocated for the pipeline configuration, with all included YAML configuration files. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.commitEmailHostname">CommitEmailHostname</a></code> | <code>string</code> | Custom hostname (for private commit emails). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.concurrentBitbucketImportJobsLimit">ConcurrentBitbucketImportJobsLimit</a></code> | <code>double</code> | Maximum number of simultaneous import jobs for the Bitbucket Cloud importer. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.concurrentBitbucketServerImportJobsLimit">ConcurrentBitbucketServerImportJobsLimit</a></code> | <code>double</code> | Maximum number of simultaneous import jobs for the Bitbucket Server importer. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.concurrentGithubImportJobsLimit">ConcurrentGithubImportJobsLimit</a></code> | <code>double</code> | Maximum number of simultaneous import jobs for the GitHub importer. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.containerExpirationPoliciesEnableHistoricEntries">ContainerExpirationPoliciesEnableHistoricEntries</a></code> | <code>object</code> | Enable cleanup policies for all projects. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.containerExpirationPoliciesEnableHistoricEntries">ContainerExpirationPoliciesEnableHistoricEntries</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable cleanup policies for all projects. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.containerRegistryCleanupTagsServiceMaxListSize">ContainerRegistryCleanupTagsServiceMaxListSize</a></code> | <code>double</code> | The maximum number of tags that can be deleted in a single execution of cleanup policies. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.containerRegistryDeleteTagsServiceTimeout">ContainerRegistryDeleteTagsServiceTimeout</a></code> | <code>double</code> | The maximum time, in seconds, that the cleanup process can take to delete a batch of tags for cleanup policies. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.containerRegistryExpirationPoliciesCaching">ContainerRegistryExpirationPoliciesCaching</a></code> | <code>object</code> | Caching during the execution of cleanup policies. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.containerRegistryExpirationPoliciesCaching">ContainerRegistryExpirationPoliciesCaching</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Caching during the execution of cleanup policies. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.containerRegistryExpirationPoliciesWorkerCapacity">ContainerRegistryExpirationPoliciesWorkerCapacity</a></code> | <code>double</code> | Number of workers for cleanup policies. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.containerRegistryTokenExpireDelay">ContainerRegistryTokenExpireDelay</a></code> | <code>double</code> | Container Registry token duration in minutes. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.deactivateDormantUsers">DeactivateDormantUsers</a></code> | <code>object</code> | Enable automatic deactivation of dormant users. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.deactivateDormantUsers">DeactivateDormantUsers</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable automatic deactivation of dormant users. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.deactivateDormantUsersPeriod">DeactivateDormantUsersPeriod</a></code> | <code>double</code> | Length of time (in days) after which a user is considered dormant. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.decompressArchiveFileTimeout">DecompressArchiveFileTimeout</a></code> | <code>double</code> | Default timeout for decompressing archived files, in seconds. Set to 0 to disable timeouts. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.defaultArtifactsExpireIn">DefaultArtifactsExpireIn</a></code> | <code>string</code> | Set the default expiration time for each job’s artifacts. |
@@ -10021,64 +10021,64 @@ new ApplicationSettingsConfig {
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.defaultProjectVisibility">DefaultProjectVisibility</a></code> | <code>string</code> | What visibility level new projects receive. Can take private, internal and public as a parameter. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.defaultSnippetVisibility">DefaultSnippetVisibility</a></code> | <code>string</code> | What visibility level new snippets receive. Can take private, internal and public as a parameter. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.defaultSyntaxHighlightingTheme">DefaultSyntaxHighlightingTheme</a></code> | <code>double</code> | Default syntax highlighting theme for users who are new or not signed in. See IDs of available themes (https://gitlab.com/gitlab-org/gitlab/blob/master/lib/gitlab/themes.rb#L16). |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.deleteInactiveProjects">DeleteInactiveProjects</a></code> | <code>object</code> | Enable inactive project deletion feature. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.deleteUnconfirmedUsers">DeleteUnconfirmedUsers</a></code> | <code>object</code> | Specifies whether users who have not confirmed their email should be deleted. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.deleteInactiveProjects">DeleteInactiveProjects</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable inactive project deletion feature. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.deleteUnconfirmedUsers">DeleteUnconfirmedUsers</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies whether users who have not confirmed their email should be deleted. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.deletionAdjournedPeriod">DeletionAdjournedPeriod</a></code> | <code>double</code> | The number of days to wait before deleting a project or group that is marked for deletion. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.diagramsnetEnabled">DiagramsnetEnabled</a></code> | <code>object</code> | (If enabled, requires diagramsnet_url) Enable Diagrams.net integration. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.diagramsnetEnabled">DiagramsnetEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | (If enabled, requires diagramsnet_url) Enable Diagrams.net integration. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.diagramsnetUrl">DiagramsnetUrl</a></code> | <code>string</code> | The Diagrams.net instance URL for integration. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.diffMaxFiles">DiffMaxFiles</a></code> | <code>double</code> | Maximum files in a diff. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.diffMaxLines">DiffMaxLines</a></code> | <code>double</code> | Maximum lines in a diff. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.diffMaxPatchBytes">DiffMaxPatchBytes</a></code> | <code>double</code> | Maximum diff patch size, in bytes. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.disableAdminOauthScopes">DisableAdminOauthScopes</a></code> | <code>object</code> | Stops administrators from connecting their GitLab accounts to non-trusted OAuth 2.0 applications that have the api, read_api, read_repository, write_repository, read_registry, write_registry, or sudo scopes. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.disableAdminOauthScopes">DisableAdminOauthScopes</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Stops administrators from connecting their GitLab accounts to non-trusted OAuth 2.0 applications that have the api, read_api, read_repository, write_repository, read_registry, write_registry, or sudo scopes. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.disabledOauthSignInSources">DisabledOauthSignInSources</a></code> | <code>string[]</code> | Disabled OAuth sign-in sources. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.disableFeedToken">DisableFeedToken</a></code> | <code>object</code> | Disable display of RSS/Atom and calendar feed tokens. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.disablePersonalAccessTokens">DisablePersonalAccessTokens</a></code> | <code>object</code> | Disable personal access tokens. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.dnsRebindingProtectionEnabled">DnsRebindingProtectionEnabled</a></code> | <code>object</code> | Enforce DNS rebinding attack protection. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.disableFeedToken">DisableFeedToken</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Disable display of RSS/Atom and calendar feed tokens. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.disablePersonalAccessTokens">DisablePersonalAccessTokens</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Disable personal access tokens. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.dnsRebindingProtectionEnabled">DnsRebindingProtectionEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enforce DNS rebinding attack protection. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.domainAllowlist">DomainAllowlist</a></code> | <code>string[]</code> | Force people to use only corporate emails for sign-up. Null means there is no restriction. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.domainDenylist">DomainDenylist</a></code> | <code>string[]</code> | Users with email addresses that match these domains cannot sign up. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.domainDenylistEnabled">DomainDenylistEnabled</a></code> | <code>object</code> | (If enabled, requires: domain_denylist) Allows blocking sign-ups from emails from specific domains. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.domainDenylistEnabled">DomainDenylistEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | (If enabled, requires: domain_denylist) Allows blocking sign-ups from emails from specific domains. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.downstreamPipelineTriggerLimitPerProjectUserSha">DownstreamPipelineTriggerLimitPerProjectUserSha</a></code> | <code>double</code> | Maximum downstream pipeline trigger rate. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.dsaKeyRestriction">DsaKeyRestriction</a></code> | <code>double</code> | The minimum allowed bit length of an uploaded DSA key. 0 means no restriction. -1 disables DSA keys. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.duoFeaturesEnabled">DuoFeaturesEnabled</a></code> | <code>object</code> | Indicates whether GitLab Duo features are enabled for this instance. Self-managed, Premium and Ultimate only. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.duoFeaturesEnabled">DuoFeaturesEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates whether GitLab Duo features are enabled for this instance. Self-managed, Premium and Ultimate only. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.ecdsaKeyRestriction">EcdsaKeyRestriction</a></code> | <code>double</code> | The minimum allowed curve size (in bits) of an uploaded ECDSA key. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.ecdsaSkKeyRestriction">EcdsaSkKeyRestriction</a></code> | <code>double</code> | The minimum allowed curve size (in bits) of an uploaded ECDSA_SK key. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.ed25519KeyRestriction">Ed25519KeyRestriction</a></code> | <code>double</code> | The minimum allowed curve size (in bits) of an uploaded ED25519 key. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.ed25519SkKeyRestriction">Ed25519SkKeyRestriction</a></code> | <code>double</code> | The minimum allowed curve size (in bits) of an uploaded ED25519_SK key. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.eksAccessKeyId">EksAccessKeyId</a></code> | <code>string</code> | AWS IAM access key ID. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.eksAccountId">EksAccountId</a></code> | <code>string</code> | Amazon account ID. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.eksIntegrationEnabled">EksIntegrationEnabled</a></code> | <code>object</code> | Enable integration with Amazon EKS. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.eksIntegrationEnabled">EksIntegrationEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable integration with Amazon EKS. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.eksSecretAccessKey">EksSecretAccessKey</a></code> | <code>string</code> | AWS IAM secret access key. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchAws">ElasticsearchAws</a></code> | <code>object</code> | Enable the use of AWS hosted Elasticsearch. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchAws">ElasticsearchAws</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable the use of AWS hosted Elasticsearch. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchAwsAccessKey">ElasticsearchAwsAccessKey</a></code> | <code>string</code> | AWS IAM access key. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchAwsRegion">ElasticsearchAwsRegion</a></code> | <code>string</code> | The AWS region the Elasticsearch domain is configured. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchAwsSecretAccessKey">ElasticsearchAwsSecretAccessKey</a></code> | <code>string</code> | AWS IAM secret access key. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchIndexedFieldLengthLimit">ElasticsearchIndexedFieldLengthLimit</a></code> | <code>double</code> | Maximum size of text fields to index by Elasticsearch. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchIndexedFileSizeLimitKb">ElasticsearchIndexedFileSizeLimitKb</a></code> | <code>double</code> | Maximum size of repository and wiki files that are indexed by Elasticsearch. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchIndexing">ElasticsearchIndexing</a></code> | <code>object</code> | Enable Elasticsearch indexing. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchLimitIndexing">ElasticsearchLimitIndexing</a></code> | <code>object</code> | Limit Elasticsearch to index certain namespaces and projects. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchIndexing">ElasticsearchIndexing</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable Elasticsearch indexing. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchLimitIndexing">ElasticsearchLimitIndexing</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Limit Elasticsearch to index certain namespaces and projects. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchMaxBulkConcurrency">ElasticsearchMaxBulkConcurrency</a></code> | <code>double</code> | Maximum concurrency of Elasticsearch bulk requests per indexing operation. This only applies to repository indexing operations. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchMaxBulkSizeMb">ElasticsearchMaxBulkSizeMb</a></code> | <code>double</code> | Maximum size of Elasticsearch bulk indexing requests in MB. This only applies to repository indexing operations. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchMaxCodeIndexingConcurrency">ElasticsearchMaxCodeIndexingConcurrency</a></code> | <code>double</code> | Maximum concurrency of Elasticsearch code indexing background jobs. This only applies to repository indexing operations. Premium and Ultimate only. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchNamespaceIds">ElasticsearchNamespaceIds</a></code> | <code>double[]</code> | The namespaces to index via Elasticsearch if elasticsearch_limit_indexing is enabled. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchPassword">ElasticsearchPassword</a></code> | <code>string</code> | The password of your Elasticsearch instance. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchProjectIds">ElasticsearchProjectIds</a></code> | <code>double[]</code> | The projects to index via Elasticsearch if elasticsearch_limit_indexing is enabled. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchRequeueWorkers">ElasticsearchRequeueWorkers</a></code> | <code>object</code> | Enable automatic requeuing of indexing workers. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchSearch">ElasticsearchSearch</a></code> | <code>object</code> | Enable Elasticsearch search. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchRequeueWorkers">ElasticsearchRequeueWorkers</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable automatic requeuing of indexing workers. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchSearch">ElasticsearchSearch</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable Elasticsearch search. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchUrl">ElasticsearchUrl</a></code> | <code>string[]</code> | The URL to use for connecting to Elasticsearch. Use a comma-separated list to support cluster (for example, http://localhost:9200, http://localhost:9201). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchUsername">ElasticsearchUsername</a></code> | <code>string</code> | The username of your Elasticsearch instance. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchWorkerNumberOfShards">ElasticsearchWorkerNumberOfShards</a></code> | <code>double</code> | Number of indexing worker shards. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.emailAdditionalText">EmailAdditionalText</a></code> | <code>string</code> | Additional text added to the bottom of every email for legal/auditing/compliance reasons. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.emailAuthorInBody">EmailAuthorInBody</a></code> | <code>object</code> | Some email servers do not support overriding the email sender name. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.emailAuthorInBody">EmailAuthorInBody</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Some email servers do not support overriding the email sender name. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.emailConfirmationSetting">EmailConfirmationSetting</a></code> | <code>string</code> | Specifies whether users must confirm their email before sign in. Possible values are off, soft, and hard. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.enableArtifactExternalRedirectWarningPage">EnableArtifactExternalRedirectWarningPage</a></code> | <code>object</code> | Show the external redirect page that warns you about user-generated content in GitLab Pages. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.enableArtifactExternalRedirectWarningPage">EnableArtifactExternalRedirectWarningPage</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Show the external redirect page that warns you about user-generated content in GitLab Pages. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.enabledGitAccessProtocol">EnabledGitAccessProtocol</a></code> | <code>string</code> | Enabled protocols for Git access. Allowed values are: ssh, http, and nil to allow both protocols. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.enforceNamespaceStorageLimit">EnforceNamespaceStorageLimit</a></code> | <code>object</code> | Enabling this permits enforcement of namespace storage limits. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.enforceTerms">EnforceTerms</a></code> | <code>object</code> | (If enabled, requires: terms) Enforce application ToS to all users. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.enforceNamespaceStorageLimit">EnforceNamespaceStorageLimit</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enabling this permits enforcement of namespace storage limits. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.enforceTerms">EnforceTerms</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | (If enabled, requires: terms) Enforce application ToS to all users. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.externalAuthClientCert">ExternalAuthClientCert</a></code> | <code>string</code> | (If enabled, requires: external_auth_client_key) The certificate to use to authenticate with the external authorization service. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.externalAuthClientKey">ExternalAuthClientKey</a></code> | <code>string</code> | Private key for the certificate when authentication is required for the external authorization service, this is encrypted when stored. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.externalAuthClientKeyPass">ExternalAuthClientKeyPass</a></code> | <code>string</code> | Passphrase to use for the private key when authenticating with the external service this is encrypted when stored. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.externalAuthorizationServiceDefaultLabel">ExternalAuthorizationServiceDefaultLabel</a></code> | <code>string</code> | The default classification label to use when requesting authorization and no classification label has been specified on the project. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.externalAuthorizationServiceEnabled">ExternalAuthorizationServiceEnabled</a></code> | <code>object</code> | (If enabled, requires: external_authorization_service_default_label, external_authorization_service_timeout and external_authorization_service_url) Enable using an external authorization service for accessing projects. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.externalAuthorizationServiceEnabled">ExternalAuthorizationServiceEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | (If enabled, requires: external_authorization_service_default_label, external_authorization_service_timeout and external_authorization_service_url) Enable using an external authorization service for accessing projects. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.externalAuthorizationServiceTimeout">ExternalAuthorizationServiceTimeout</a></code> | <code>double</code> | The timeout after which an authorization request is aborted, in seconds. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.externalAuthorizationServiceUrl">ExternalAuthorizationServiceUrl</a></code> | <code>string</code> | URL to which authorization requests are directed. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.externalPipelineValidationServiceTimeout">ExternalPipelineValidationServiceTimeout</a></code> | <code>double</code> | How long to wait for a response from the pipeline validation service. Assumes OK if it times out. |
@@ -10093,46 +10093,46 @@ new ApplicationSettingsConfig {
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.gitalyTimeoutFast">GitalyTimeoutFast</a></code> | <code>double</code> | Gitaly fast operation timeout, in seconds. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.gitalyTimeoutMedium">GitalyTimeoutMedium</a></code> | <code>double</code> | Medium Gitaly timeout, in seconds. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.gitlabShellOperationLimit">GitlabShellOperationLimit</a></code> | <code>double</code> | Maximum number of Git operations per minute a user can perform. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.gitpodEnabled">GitpodEnabled</a></code> | <code>object</code> | Enable Gitpod integration. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.gitpodEnabled">GitpodEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable Gitpod integration. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.gitpodUrl">GitpodUrl</a></code> | <code>string</code> | The Gitpod instance URL for integration. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.gitRateLimitUsersAlertlist">GitRateLimitUsersAlertlist</a></code> | <code>double[]</code> | List of user IDs that are emailed when the Git abuse rate limit is exceeded. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.gitRateLimitUsersAllowlist">GitRateLimitUsersAllowlist</a></code> | <code>string[]</code> | List of usernames excluded from Git anti-abuse rate limits. Maximum: 100 usernames. Self-managed, Ultimate only. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.gitTwoFactorSessionExpiry">GitTwoFactorSessionExpiry</a></code> | <code>double</code> | Maximum duration (in minutes) of a session for Git operations when 2FA is enabled. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.globallyAllowedIps">GloballyAllowedIps</a></code> | <code>string</code> | Comma-separated list of IP addresses and CIDRs always allowed for inbound traffic. For example, 1.1.1.1, 2.2.2.0/24. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.grafanaEnabled">GrafanaEnabled</a></code> | <code>object</code> | Enable Grafana. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.grafanaEnabled">GrafanaEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable Grafana. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.grafanaUrl">GrafanaUrl</a></code> | <code>string</code> | Grafana URL. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.gravatarEnabled">GravatarEnabled</a></code> | <code>object</code> | Enable Gravatar. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.groupOwnersCanManageDefaultBranchProtection">GroupOwnersCanManageDefaultBranchProtection</a></code> | <code>object</code> | Prevent overrides of default branch protection. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.helpPageHideCommercialContent">HelpPageHideCommercialContent</a></code> | <code>object</code> | Hide marketing-related entries from help. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.gravatarEnabled">GravatarEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable Gravatar. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.groupOwnersCanManageDefaultBranchProtection">GroupOwnersCanManageDefaultBranchProtection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Prevent overrides of default branch protection. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.helpPageHideCommercialContent">HelpPageHideCommercialContent</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Hide marketing-related entries from help. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.helpPageSupportUrl">HelpPageSupportUrl</a></code> | <code>string</code> | Alternate support URL for help page and help dropdown. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.helpPageText">HelpPageText</a></code> | <code>string</code> | Custom text displayed on the help page. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.helpText">HelpText</a></code> | <code>string</code> | GitLab server administrator information. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.hideThirdPartyOffers">HideThirdPartyOffers</a></code> | <code>object</code> | Do not display offers from third parties in GitLab. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.hideThirdPartyOffers">HideThirdPartyOffers</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Do not display offers from third parties in GitLab. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.homePageUrl">HomePageUrl</a></code> | <code>string</code> | Redirect to this URL when not logged in. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.housekeepingEnabled">HousekeepingEnabled</a></code> | <code>object</code> | Enable or disable Git housekeeping. If enabled, requires housekeeping_optimize_repository_period. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.housekeepingEnabled">HousekeepingEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable or disable Git housekeeping. If enabled, requires housekeeping_optimize_repository_period. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.housekeepingOptimizeRepositoryPeriod">HousekeepingOptimizeRepositoryPeriod</a></code> | <code>double</code> | Number of Git pushes after which an incremental git-repack is run. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.htmlEmailsEnabled">HtmlEmailsEnabled</a></code> | <code>object</code> | Enable HTML emails. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.htmlEmailsEnabled">HtmlEmailsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable HTML emails. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/application_settings#id ApplicationSettings#id}. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.importSources">ImportSources</a></code> | <code>string[]</code> | Sources to allow project import from. Valid values are: `github`, `bitbucket`, `bitbucket_server`, `fogbugz`, `git`, `gitlab_project`, `gitea`, `manifest`. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.inactiveProjectsDeleteAfterMonths">InactiveProjectsDeleteAfterMonths</a></code> | <code>double</code> | If delete_inactive_projects is true, the time (in months) to wait before deleting inactive projects. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.inactiveProjectsMinSizeMb">InactiveProjectsMinSizeMb</a></code> | <code>double</code> | If delete_inactive_projects is true, the minimum repository size for projects to be checked for inactivity. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.inactiveProjectsSendWarningEmailAfterMonths">InactiveProjectsSendWarningEmailAfterMonths</a></code> | <code>double</code> | If delete_inactive_projects is true, sets the time (in months) to wait before emailing maintainers that the project is scheduled be deleted because it is inactive. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.includeOptionalMetricsInServicePing">IncludeOptionalMetricsInServicePing</a></code> | <code>object</code> | Whether or not optional metrics are enabled in Service Ping. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.inProductMarketingEmailsEnabled">InProductMarketingEmailsEnabled</a></code> | <code>object</code> | Enable in-product marketing emails. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.invisibleCaptchaEnabled">InvisibleCaptchaEnabled</a></code> | <code>object</code> | Enable Invisible CAPTCHA spam detection during sign-up. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.includeOptionalMetricsInServicePing">IncludeOptionalMetricsInServicePing</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether or not optional metrics are enabled in Service Ping. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.inProductMarketingEmailsEnabled">InProductMarketingEmailsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable in-product marketing emails. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.invisibleCaptchaEnabled">InvisibleCaptchaEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable Invisible CAPTCHA spam detection during sign-up. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.issuesCreateLimit">IssuesCreateLimit</a></code> | <code>double</code> | Max number of issue creation requests per minute per user. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.jiraConnectApplicationKey">JiraConnectApplicationKey</a></code> | <code>string</code> | ID of the OAuth application used to authenticate with the GitLab for Jira Cloud app. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.jiraConnectProxyUrl">JiraConnectProxyUrl</a></code> | <code>string</code> | URL of the GitLab instance used as a proxy for the GitLab for Jira Cloud app. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.jiraConnectPublicKeyStorageEnabled">JiraConnectPublicKeyStorageEnabled</a></code> | <code>object</code> | Enable public key storage for the GitLab for Jira Cloud app. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.keepLatestArtifact">KeepLatestArtifact</a></code> | <code>object</code> | Prevent the deletion of the artifacts from the most recent successful jobs, regardless of the expiry time. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.jiraConnectPublicKeyStorageEnabled">JiraConnectPublicKeyStorageEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable public key storage for the GitLab for Jira Cloud app. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.keepLatestArtifact">KeepLatestArtifact</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Prevent the deletion of the artifacts from the most recent successful jobs, regardless of the expiry time. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.localMarkdownVersion">LocalMarkdownVersion</a></code> | <code>double</code> | Increase this value when any cached Markdown should be invalidated. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.lockDuoFeaturesEnabled">LockDuoFeaturesEnabled</a></code> | <code>object</code> | Indicates whether the GitLab Duo features enabled setting is enforced for all subgroups. Self-managed, Premium and Ultimate only. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.lockMembershipsToLdap">LockMembershipsToLdap</a></code> | <code>object</code> | Set to true to lock all memberships to LDAP. Premium and Ultimate only. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.mailgunEventsEnabled">MailgunEventsEnabled</a></code> | <code>object</code> | Enable Mailgun event receiver. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.lockDuoFeaturesEnabled">LockDuoFeaturesEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates whether the GitLab Duo features enabled setting is enforced for all subgroups. Self-managed, Premium and Ultimate only. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.lockMembershipsToLdap">LockMembershipsToLdap</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to true to lock all memberships to LDAP. Premium and Ultimate only. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.mailgunEventsEnabled">MailgunEventsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable Mailgun event receiver. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.mailgunSigningKey">MailgunSigningKey</a></code> | <code>string</code> | The Mailgun HTTP webhook signing key for receiving events from webhook. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.maintenanceMode">MaintenanceMode</a></code> | <code>object</code> | When instance is in maintenance mode, non-administrative users can sign in with read-only access and make read-only API requests. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.maintenanceMode">MaintenanceMode</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | When instance is in maintenance mode, non-administrative users can sign in with read-only access and make read-only API requests. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.maintenanceModeMessage">MaintenanceModeMessage</a></code> | <code>string</code> | Message displayed when instance is in maintenance mode. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.mavenPackageRequestsForwarding">MavenPackageRequestsForwarding</a></code> | <code>object</code> | Use repo.maven.apache.org as a default remote repository when the package is not found in the GitLab Package Registry for Maven. Premium and Ultimate only. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.mavenPackageRequestsForwarding">MavenPackageRequestsForwarding</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Use repo.maven.apache.org as a default remote repository when the package is not found in the GitLab Package Registry for Maven. Premium and Ultimate only. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.maxArtifactsSize">MaxArtifactsSize</a></code> | <code>double</code> | Maximum artifacts size in MB. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.maxAttachmentSize">MaxAttachmentSize</a></code> | <code>double</code> | Limit attachment size in MB. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.maxDecompressedArchiveSize">MaxDecompressedArchiveSize</a></code> | <code>double</code> | Maximum decompressed archive size in bytes. |
@@ -10148,73 +10148,73 @@ new ApplicationSettingsConfig {
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.maxTerraformStateSizeBytes">MaxTerraformStateSizeBytes</a></code> | <code>double</code> | Maximum size in bytes of the Terraform state files. Set this to 0 for unlimited file size. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.metricsMethodCallThreshold">MetricsMethodCallThreshold</a></code> | <code>double</code> | A method call is only tracked when it takes longer than the given amount of milliseconds. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.minimumPasswordLength">MinimumPasswordLength</a></code> | <code>double</code> | Indicates whether passwords require a minimum length. Premium and Ultimate only. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.mirrorAvailable">MirrorAvailable</a></code> | <code>object</code> | Allow repository mirroring to configured by project Maintainers. If disabled, only Administrators can configure repository mirroring. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.mirrorAvailable">MirrorAvailable</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow repository mirroring to configured by project Maintainers. If disabled, only Administrators can configure repository mirroring. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.mirrorCapacityThreshold">MirrorCapacityThreshold</a></code> | <code>double</code> | Minimum capacity to be available before scheduling more mirrors preemptively. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.mirrorMaxCapacity">MirrorMaxCapacity</a></code> | <code>double</code> | Maximum number of mirrors that can be synchronizing at the same time. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.mirrorMaxDelay">MirrorMaxDelay</a></code> | <code>double</code> | Maximum time (in minutes) between updates that a mirror can have when scheduled to synchronize. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.npmPackageRequestsForwarding">NpmPackageRequestsForwarding</a></code> | <code>object</code> | Use npmjs.org as a default remote repository when the package is not found in the GitLab Package Registry for npm. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.nugetSkipMetadataUrlValidation">NugetSkipMetadataUrlValidation</a></code> | <code>object</code> | Indicates whether to skip metadata URL validation for the NuGet package. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.npmPackageRequestsForwarding">NpmPackageRequestsForwarding</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Use npmjs.org as a default remote repository when the package is not found in the GitLab Package Registry for npm. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.nugetSkipMetadataUrlValidation">NugetSkipMetadataUrlValidation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates whether to skip metadata URL validation for the NuGet package. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.outboundLocalRequestsWhitelist">OutboundLocalRequestsWhitelist</a></code> | <code>string[]</code> | Define a list of trusted domains or IP addresses to which local requests are allowed when local requests for hooks and services are disabled. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.packageMetadataPurlTypes">PackageMetadataPurlTypes</a></code> | <code>double[]</code> | List of package registry metadata to sync. See the list of the available values (https://gitlab.com/gitlab-org/gitlab/-/blob/ace16c20d5da7c4928dd03fb139692638b557fe3/app/models/concerns/enums/package_metadata.rb#L5). Self-managed, Ultimate only. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.packageRegistryAllowAnyoneToPullOption">PackageRegistryAllowAnyoneToPullOption</a></code> | <code>object</code> | Enable to allow anyone to pull from Package Registry visible and changeable. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.packageRegistryAllowAnyoneToPullOption">PackageRegistryAllowAnyoneToPullOption</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable to allow anyone to pull from Package Registry visible and changeable. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.packageRegistryCleanupPoliciesWorkerCapacity">PackageRegistryCleanupPoliciesWorkerCapacity</a></code> | <code>double</code> | Number of workers assigned to the packages cleanup policies. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.pagesDomainVerificationEnabled">PagesDomainVerificationEnabled</a></code> | <code>object</code> | Require users to prove ownership of custom domains. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordAuthenticationEnabledForGit">PasswordAuthenticationEnabledForGit</a></code> | <code>object</code> | Enable authentication for Git over HTTP(S) via a GitLab account password. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordAuthenticationEnabledForWeb">PasswordAuthenticationEnabledForWeb</a></code> | <code>object</code> | Enable authentication for the web interface via a GitLab account password. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordLowercaseRequired">PasswordLowercaseRequired</a></code> | <code>object</code> | Indicates whether passwords require at least one lowercase letter. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordNumberRequired">PasswordNumberRequired</a></code> | <code>object</code> | Indicates whether passwords require at least one number. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordSymbolRequired">PasswordSymbolRequired</a></code> | <code>object</code> | Indicates whether passwords require at least one symbol character. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordUppercaseRequired">PasswordUppercaseRequired</a></code> | <code>object</code> | Indicates whether passwords require at least one uppercase letter. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.pagesDomainVerificationEnabled">PagesDomainVerificationEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Require users to prove ownership of custom domains. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordAuthenticationEnabledForGit">PasswordAuthenticationEnabledForGit</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable authentication for Git over HTTP(S) via a GitLab account password. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordAuthenticationEnabledForWeb">PasswordAuthenticationEnabledForWeb</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable authentication for the web interface via a GitLab account password. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordLowercaseRequired">PasswordLowercaseRequired</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates whether passwords require at least one lowercase letter. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordNumberRequired">PasswordNumberRequired</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates whether passwords require at least one number. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordSymbolRequired">PasswordSymbolRequired</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates whether passwords require at least one symbol character. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordUppercaseRequired">PasswordUppercaseRequired</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates whether passwords require at least one uppercase letter. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.performanceBarAllowedGroupPath">PerformanceBarAllowedGroupPath</a></code> | <code>string</code> | Path of the group that is allowed to toggle the performance bar. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.personalAccessTokenPrefix">PersonalAccessTokenPrefix</a></code> | <code>string</code> | Prefix for all generated personal access tokens. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.pipelineLimitPerProjectUserSha">PipelineLimitPerProjectUserSha</a></code> | <code>double</code> | Maximum number of pipeline creation requests per minute per user and commit. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.plantumlEnabled">PlantumlEnabled</a></code> | <code>object</code> | (If enabled, requires: plantuml_url) Enable PlantUML integration. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.plantumlEnabled">PlantumlEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | (If enabled, requires: plantuml_url) Enable PlantUML integration. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.plantumlUrl">PlantumlUrl</a></code> | <code>string</code> | The PlantUML instance URL for integration. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.pollingIntervalMultiplier">PollingIntervalMultiplier</a></code> | <code>double</code> | Interval multiplier used by endpoints that perform polling. Set to 0 to disable polling. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.projectExportEnabled">ProjectExportEnabled</a></code> | <code>object</code> | Enable project export. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.projectExportEnabled">ProjectExportEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable project export. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.projectJobsApiRateLimit">ProjectJobsApiRateLimit</a></code> | <code>double</code> | Maximum authenticated requests to /project/:id/jobs per minute. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.projectsApiRateLimitUnauthenticated">ProjectsApiRateLimitUnauthenticated</a></code> | <code>double</code> | Max number of requests per 10 minutes per IP address for unauthenticated requests to the list all projects API. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.prometheusMetricsEnabled">PrometheusMetricsEnabled</a></code> | <code>object</code> | Enable Prometheus metrics. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.protectedCiVariables">ProtectedCiVariables</a></code> | <code>object</code> | CI/CD variables are protected by default. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.prometheusMetricsEnabled">PrometheusMetricsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable Prometheus metrics. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.protectedCiVariables">ProtectedCiVariables</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | CI/CD variables are protected by default. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.pushEventActivitiesLimit">PushEventActivitiesLimit</a></code> | <code>double</code> | Number of changes (branches or tags) in a single push to determine whether individual push events or bulk push events are created. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.pushEventHooksLimit">PushEventHooksLimit</a></code> | <code>double</code> | Number of changes (branches or tags) in a single push to determine whether webhooks and services fire or not. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.pypiPackageRequestsForwarding">PypiPackageRequestsForwarding</a></code> | <code>object</code> | Use pypi.org as a default remote repository when the package is not found in the GitLab Package Registry for PyPI. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.pypiPackageRequestsForwarding">PypiPackageRequestsForwarding</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Use pypi.org as a default remote repository when the package is not found in the GitLab Package Registry for PyPI. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.rateLimitingResponseText">RateLimitingResponseText</a></code> | <code>string</code> | When rate limiting is enabled via the throttle_* settings, send this plain text response when a rate limit is exceeded. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.rawBlobRequestLimit">RawBlobRequestLimit</a></code> | <code>double</code> | Max number of requests per minute for each raw path. To disable throttling set to 0. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.recaptchaEnabled">RecaptchaEnabled</a></code> | <code>object</code> | (If enabled, requires: recaptcha_private_key and recaptcha_site_key) Enable reCAPTCHA. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.recaptchaEnabled">RecaptchaEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | (If enabled, requires: recaptcha_private_key and recaptcha_site_key) Enable reCAPTCHA. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.recaptchaPrivateKey">RecaptchaPrivateKey</a></code> | <code>string</code> | Private key for reCAPTCHA. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.recaptchaSiteKey">RecaptchaSiteKey</a></code> | <code>string</code> | Site key for reCAPTCHA. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.receiveMaxInputSize">ReceiveMaxInputSize</a></code> | <code>double</code> | Maximum push size (MB). |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.receptiveClusterAgentsEnabled">ReceptiveClusterAgentsEnabled</a></code> | <code>object</code> | Enable receptive mode for GitLab Agents for Kubernetes. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.rememberMeEnabled">RememberMeEnabled</a></code> | <code>object</code> | Enable Remember me setting. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.repositoryChecksEnabled">RepositoryChecksEnabled</a></code> | <code>object</code> | GitLab periodically runs git fsck in all project and wiki repositories to look for silent disk corruption issues. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.receptiveClusterAgentsEnabled">ReceptiveClusterAgentsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable receptive mode for GitLab Agents for Kubernetes. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.rememberMeEnabled">RememberMeEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable Remember me setting. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.repositoryChecksEnabled">RepositoryChecksEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | GitLab periodically runs git fsck in all project and wiki repositories to look for silent disk corruption issues. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.repositorySizeLimit">RepositorySizeLimit</a></code> | <code>double</code> | Size limit per repository (MB). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.repositoryStoragesWeighted">RepositoryStoragesWeighted</a></code> | <code>System.Collections.Generic.IDictionary<string, double></code> | Hash of names taken from gitlab.yml to weights. New projects are created in one of these stores, chosen by a weighted random selection. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.requireAdminApprovalAfterUserSignup">RequireAdminApprovalAfterUserSignup</a></code> | <code>object</code> | When enabled, any user that signs up for an account using the registration form is placed under a Pending approval state and has to be explicitly approved by an administrator. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.requireAdminTwoFactorAuthentication">RequireAdminTwoFactorAuthentication</a></code> | <code>object</code> | Allow administrators to require 2FA for all administrators on the instance. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.requirePersonalAccessTokenExpiry">RequirePersonalAccessTokenExpiry</a></code> | <code>object</code> | When enabled, users must set an expiration date when creating a group or project access token, or a personal access token owned by a non-service account. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.requireTwoFactorAuthentication">RequireTwoFactorAuthentication</a></code> | <code>object</code> | (If enabled, requires: two_factor_grace_period) Require all users to set up Two-factor authentication. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.requireAdminApprovalAfterUserSignup">RequireAdminApprovalAfterUserSignup</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | When enabled, any user that signs up for an account using the registration form is placed under a Pending approval state and has to be explicitly approved by an administrator. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.requireAdminTwoFactorAuthentication">RequireAdminTwoFactorAuthentication</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow administrators to require 2FA for all administrators on the instance. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.requirePersonalAccessTokenExpiry">RequirePersonalAccessTokenExpiry</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | When enabled, users must set an expiration date when creating a group or project access token, or a personal access token owned by a non-service account. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.requireTwoFactorAuthentication">RequireTwoFactorAuthentication</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | (If enabled, requires: two_factor_grace_period) Require all users to set up Two-factor authentication. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.restrictedVisibilityLevels">RestrictedVisibilityLevels</a></code> | <code>string[]</code> | Selected levels cannot be used by non-Administrator users for groups, projects or snippets. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.rsaKeyRestriction">RsaKeyRestriction</a></code> | <code>double</code> | The minimum allowed bit length of an uploaded RSA key. 0 means no restriction. -1 disables RSA keys. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.searchRateLimit">SearchRateLimit</a></code> | <code>double</code> | Max number of requests per minute for performing a search while authenticated. To disable throttling set to 0. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.searchRateLimitUnauthenticated">SearchRateLimitUnauthenticated</a></code> | <code>double</code> | Max number of requests per minute for performing a search while unauthenticated. To disable throttling set to 0. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.securityApprovalPoliciesLimit">SecurityApprovalPoliciesLimit</a></code> | <code>double</code> | Maximum number of active merge request approval policies per security policy project. Maximum: 20. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.securityPolicyGlobalGroupApproversEnabled">SecurityPolicyGlobalGroupApproversEnabled</a></code> | <code>object</code> | Whether to look up merge request approval policy approval groups globally or within project hierarchies. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.securityPolicyGlobalGroupApproversEnabled">SecurityPolicyGlobalGroupApproversEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to look up merge request approval policy approval groups globally or within project hierarchies. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.securityTxtContent">SecurityTxtContent</a></code> | <code>string</code> | Public security contact information. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sendUserConfirmationEmail">SendUserConfirmationEmail</a></code> | <code>object</code> | Send confirmation email on sign-up. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.serviceAccessTokensExpirationEnforced">ServiceAccessTokensExpirationEnforced</a></code> | <code>object</code> | Flag to indicate if token expiry date can be optional for service account users. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sendUserConfirmationEmail">SendUserConfirmationEmail</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Send confirmation email on sign-up. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.serviceAccessTokensExpirationEnforced">ServiceAccessTokensExpirationEnforced</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Flag to indicate if token expiry date can be optional for service account users. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sessionExpireDelay">SessionExpireDelay</a></code> | <code>double</code> | Session duration in minutes. GitLab restart is required to apply changes. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sharedRunnersEnabled">SharedRunnersEnabled</a></code> | <code>object</code> | (If enabled, requires: shared_runners_text and shared_runners_minutes) Enable shared runners for new projects. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sharedRunnersEnabled">SharedRunnersEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | (If enabled, requires: shared_runners_text and shared_runners_minutes) Enable shared runners for new projects. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sharedRunnersMinutes">SharedRunnersMinutes</a></code> | <code>double</code> | Set the maximum number of CI/CD minutes that a group can use on shared runners per month. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sharedRunnersText">SharedRunnersText</a></code> | <code>string</code> | Shared runners text. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sidekiqJobLimiterCompressionThresholdBytes">SidekiqJobLimiterCompressionThresholdBytes</a></code> | <code>double</code> | The threshold in bytes at which Sidekiq jobs are compressed before being stored in Redis. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sidekiqJobLimiterLimitBytes">SidekiqJobLimiterLimitBytes</a></code> | <code>double</code> | The threshold in bytes at which Sidekiq jobs are rejected. 0 means do not reject any job. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sidekiqJobLimiterMode">SidekiqJobLimiterMode</a></code> | <code>string</code> | track or compress. Sets the behavior for Sidekiq job size limits. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.signInText">SignInText</a></code> | <code>string</code> | Text on the login page. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.signupEnabled">SignupEnabled</a></code> | <code>object</code> | Enable registration. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.silentAdminExportsEnabled">SilentAdminExportsEnabled</a></code> | <code>object</code> | Enable Silent admin exports. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.silentModeEnabled">SilentModeEnabled</a></code> | <code>object</code> | Enable Silent mode. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.slackAppEnabled">SlackAppEnabled</a></code> | <code>object</code> | (If enabled, requires: slack_app_id, slack_app_secret and slack_app_secret) Enable Slack app. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.signupEnabled">SignupEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable registration. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.silentAdminExportsEnabled">SilentAdminExportsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable Silent admin exports. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.silentModeEnabled">SilentModeEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable Silent mode. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.slackAppEnabled">SlackAppEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | (If enabled, requires: slack_app_id, slack_app_secret and slack_app_secret) Enable Slack app. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.slackAppId">SlackAppId</a></code> | <code>string</code> | The app ID of the Slack-app. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.slackAppSecret">SlackAppSecret</a></code> | <code>string</code> | The app secret of the Slack-app. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.slackAppSigningSecret">SlackAppSigningSecret</a></code> | <code>string</code> | The signing secret of the Slack-app. |
@@ -10224,54 +10224,54 @@ new ApplicationSettingsConfig {
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.snowplowCollectorHostname">SnowplowCollectorHostname</a></code> | <code>string</code> | The Snowplow collector hostname. (for example, snowplow.trx.gitlab.net). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.snowplowCookieDomain">SnowplowCookieDomain</a></code> | <code>string</code> | The Snowplow cookie domain. (for example, .gitlab.com). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.snowplowDatabaseCollectorHostname">SnowplowDatabaseCollectorHostname</a></code> | <code>string</code> | The Snowplow collector for database events hostname. (for example, db-snowplow.trx.gitlab.net). |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.snowplowEnabled">SnowplowEnabled</a></code> | <code>object</code> | Enable snowplow tracking. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sourcegraphEnabled">SourcegraphEnabled</a></code> | <code>object</code> | Enables Sourcegraph integration. If enabled, requires sourcegraph_url. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sourcegraphPublicOnly">SourcegraphPublicOnly</a></code> | <code>object</code> | Blocks Sourcegraph from being loaded on private and internal projects. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.snowplowEnabled">SnowplowEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable snowplow tracking. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sourcegraphEnabled">SourcegraphEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enables Sourcegraph integration. If enabled, requires sourcegraph_url. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sourcegraphPublicOnly">SourcegraphPublicOnly</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Blocks Sourcegraph from being loaded on private and internal projects. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sourcegraphUrl">SourcegraphUrl</a></code> | <code>string</code> | The Sourcegraph instance URL for integration. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.spamCheckApiKey">SpamCheckApiKey</a></code> | <code>string</code> | API key used by GitLab for accessing the Spam Check service endpoint. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.spamCheckEndpointEnabled">SpamCheckEndpointEnabled</a></code> | <code>object</code> | Enables spam checking using external Spam Check API endpoint. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.spamCheckEndpointEnabled">SpamCheckEndpointEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enables spam checking using external Spam Check API endpoint. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.spamCheckEndpointUrl">SpamCheckEndpointUrl</a></code> | <code>string</code> | URL of the external Spamcheck service endpoint. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.staticObjectsExternalStorageAuthToken">StaticObjectsExternalStorageAuthToken</a></code> | <code>string</code> | Authentication token for the external storage linked in static_objects_external_storage_url. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.staticObjectsExternalStorageUrl">StaticObjectsExternalStorageUrl</a></code> | <code>string</code> | URL to an external storage for repository static objects. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.suggestPipelineEnabled">SuggestPipelineEnabled</a></code> | <code>object</code> | Enable pipeline suggestion banner. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.suggestPipelineEnabled">SuggestPipelineEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable pipeline suggestion banner. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.terminalMaxSessionTime">TerminalMaxSessionTime</a></code> | <code>double</code> | Maximum time for web terminal websocket connection (in seconds). Set to 0 for unlimited time. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.terms">Terms</a></code> | <code>string</code> | (Required by: enforce_terms) Markdown content for the ToS. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedApiEnabled">ThrottleAuthenticatedApiEnabled</a></code> | <code>object</code> | (If enabled, requires: throttle_authenticated_api_period_in_seconds and throttle_authenticated_api_requests_per_period) Enable authenticated API request rate limit. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedApiEnabled">ThrottleAuthenticatedApiEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | (If enabled, requires: throttle_authenticated_api_period_in_seconds and throttle_authenticated_api_requests_per_period) Enable authenticated API request rate limit. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedApiPeriodInSeconds">ThrottleAuthenticatedApiPeriodInSeconds</a></code> | <code>double</code> | Rate limit period (in seconds). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedApiRequestsPerPeriod">ThrottleAuthenticatedApiRequestsPerPeriod</a></code> | <code>double</code> | Maximum requests per period per user. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedPackagesApiEnabled">ThrottleAuthenticatedPackagesApiEnabled</a></code> | <code>object</code> | (If enabled, requires: throttle_authenticated_packages_api_period_in_seconds and throttle_authenticated_packages_api_requests_per_period) Enable authenticated API request rate limit. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedPackagesApiEnabled">ThrottleAuthenticatedPackagesApiEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | (If enabled, requires: throttle_authenticated_packages_api_period_in_seconds and throttle_authenticated_packages_api_requests_per_period) Enable authenticated API request rate limit. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedPackagesApiPeriodInSeconds">ThrottleAuthenticatedPackagesApiPeriodInSeconds</a></code> | <code>double</code> | Rate limit period (in seconds). View Package Registry rate limits for more details. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedPackagesApiRequestsPerPeriod">ThrottleAuthenticatedPackagesApiRequestsPerPeriod</a></code> | <code>double</code> | Maximum requests per period per user. View Package Registry rate limits for more details. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedWebEnabled">ThrottleAuthenticatedWebEnabled</a></code> | <code>object</code> | (If enabled, requires: throttle_authenticated_web_period_in_seconds and throttle_authenticated_web_requests_per_period) Enable authenticated web request rate limit. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedWebEnabled">ThrottleAuthenticatedWebEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | (If enabled, requires: throttle_authenticated_web_period_in_seconds and throttle_authenticated_web_requests_per_period) Enable authenticated web request rate limit. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedWebPeriodInSeconds">ThrottleAuthenticatedWebPeriodInSeconds</a></code> | <code>double</code> | Rate limit period (in seconds). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedWebRequestsPerPeriod">ThrottleAuthenticatedWebRequestsPerPeriod</a></code> | <code>double</code> | Maximum requests per period per user. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedApiEnabled">ThrottleUnauthenticatedApiEnabled</a></code> | <code>object</code> | (If enabled, requires: throttle_unauthenticated_api_period_in_seconds and throttle_unauthenticated_api_requests_per_period) Enable unauthenticated API request rate limit. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedApiEnabled">ThrottleUnauthenticatedApiEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | (If enabled, requires: throttle_unauthenticated_api_period_in_seconds and throttle_unauthenticated_api_requests_per_period) Enable unauthenticated API request rate limit. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedApiPeriodInSeconds">ThrottleUnauthenticatedApiPeriodInSeconds</a></code> | <code>double</code> | Rate limit period in seconds. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedApiRequestsPerPeriod">ThrottleUnauthenticatedApiRequestsPerPeriod</a></code> | <code>double</code> | Max requests per period per IP. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedPackagesApiEnabled">ThrottleUnauthenticatedPackagesApiEnabled</a></code> | <code>object</code> | (If enabled, requires: throttle_unauthenticated_packages_api_period_in_seconds and throttle_unauthenticated_packages_api_requests_per_period) Enable authenticated API request rate limit. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedPackagesApiEnabled">ThrottleUnauthenticatedPackagesApiEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | (If enabled, requires: throttle_unauthenticated_packages_api_period_in_seconds and throttle_unauthenticated_packages_api_requests_per_period) Enable authenticated API request rate limit. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedPackagesApiPeriodInSeconds">ThrottleUnauthenticatedPackagesApiPeriodInSeconds</a></code> | <code>double</code> | Rate limit period (in seconds). View Package Registry rate limits for more details. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedPackagesApiRequestsPerPeriod">ThrottleUnauthenticatedPackagesApiRequestsPerPeriod</a></code> | <code>double</code> | Maximum requests per period per user. View Package Registry rate limits for more details. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedWebEnabled">ThrottleUnauthenticatedWebEnabled</a></code> | <code>object</code> | (If enabled, requires: throttle_unauthenticated_web_period_in_seconds and throttle_unauthenticated_web_requests_per_period) Enable unauthenticated web request rate limit. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedWebEnabled">ThrottleUnauthenticatedWebEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | (If enabled, requires: throttle_unauthenticated_web_period_in_seconds and throttle_unauthenticated_web_requests_per_period) Enable unauthenticated web request rate limit. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedWebPeriodInSeconds">ThrottleUnauthenticatedWebPeriodInSeconds</a></code> | <code>double</code> | Rate limit period in seconds. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedWebRequestsPerPeriod">ThrottleUnauthenticatedWebRequestsPerPeriod</a></code> | <code>double</code> | Max requests per period per IP. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.timeTrackingLimitToHours">TimeTrackingLimitToHours</a></code> | <code>object</code> | Limit display of time tracking units to hours. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.timeTrackingLimitToHours">TimeTrackingLimitToHours</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Limit display of time tracking units to hours. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.twoFactorGracePeriod">TwoFactorGracePeriod</a></code> | <code>double</code> | Amount of time (in hours) that users are allowed to skip forced configuration of two-factor authentication. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.unconfirmedUsersDeleteAfterDays">UnconfirmedUsersDeleteAfterDays</a></code> | <code>double</code> | Specifies how many days after sign-up to delete users who have not confirmed their email. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.uniqueIpsLimitEnabled">UniqueIpsLimitEnabled</a></code> | <code>object</code> | (If enabled, requires: unique_ips_limit_per_user and unique_ips_limit_time_window) Limit sign in from multiple IPs. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.uniqueIpsLimitEnabled">UniqueIpsLimitEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | (If enabled, requires: unique_ips_limit_per_user and unique_ips_limit_time_window) Limit sign in from multiple IPs. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.uniqueIpsLimitPerUser">UniqueIpsLimitPerUser</a></code> | <code>double</code> | Maximum number of IPs per user. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.uniqueIpsLimitTimeWindow">UniqueIpsLimitTimeWindow</a></code> | <code>double</code> | How many seconds an IP is counted towards the limit. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.updateRunnerVersionsEnabled">UpdateRunnerVersionsEnabled</a></code> | <code>object</code> | Fetch GitLab Runner release version data from GitLab.com. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.usagePingEnabled">UsagePingEnabled</a></code> | <code>object</code> | Every week GitLab reports license usage back to GitLab, Inc. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.useClickhouseForAnalytics">UseClickhouseForAnalytics</a></code> | <code>object</code> | Enables ClickHouse as a data source for analytics reports. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userDeactivationEmailsEnabled">UserDeactivationEmailsEnabled</a></code> | <code>object</code> | Send an email to users upon account deactivation. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userDefaultExternal">UserDefaultExternal</a></code> | <code>object</code> | Newly registered users are external by default. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.updateRunnerVersionsEnabled">UpdateRunnerVersionsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Fetch GitLab Runner release version data from GitLab.com. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.usagePingEnabled">UsagePingEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Every week GitLab reports license usage back to GitLab, Inc. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.useClickhouseForAnalytics">UseClickhouseForAnalytics</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enables ClickHouse as a data source for analytics reports. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userDeactivationEmailsEnabled">UserDeactivationEmailsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Send an email to users upon account deactivation. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userDefaultExternal">UserDefaultExternal</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Newly registered users are external by default. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userDefaultInternalRegex">UserDefaultInternalRegex</a></code> | <code>string</code> | Specify an email address regex pattern to identify default internal users. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userDefaultsToPrivateProfile">UserDefaultsToPrivateProfile</a></code> | <code>object</code> | Newly created users have private profile by default. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userOauthApplications">UserOauthApplications</a></code> | <code>object</code> | Allow users to register any application to use GitLab as an OAuth provider. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userShowAddSshKeyMessage">UserShowAddSshKeyMessage</a></code> | <code>object</code> | When set to false disable the You won't be able to pull or push project code via SSH warning shown to users with no uploaded SSH key. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userDefaultsToPrivateProfile">UserDefaultsToPrivateProfile</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Newly created users have private profile by default. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userOauthApplications">UserOauthApplications</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow users to register any application to use GitLab as an OAuth provider. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userShowAddSshKeyMessage">UserShowAddSshKeyMessage</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | When set to false disable the You won't be able to pull or push project code via SSH warning shown to users with no uploaded SSH key. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.validRunnerRegistrars">ValidRunnerRegistrars</a></code> | <code>string[]</code> | List of types which are allowed to register a GitLab Runner. Can be [], ['group'], ['project'] or ['group', 'project']. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.versionCheckEnabled">VersionCheckEnabled</a></code> | <code>object</code> | Let GitLab inform you when an update is available. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.webIdeClientsidePreviewEnabled">WebIdeClientsidePreviewEnabled</a></code> | <code>object</code> | Live Preview (allow live previews of JavaScript projects in the Web IDE using CodeSandbox Live Preview). |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.versionCheckEnabled">VersionCheckEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Let GitLab inform you when an update is available. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.webIdeClientsidePreviewEnabled">WebIdeClientsidePreviewEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Live Preview (allow live previews of JavaScript projects in the Web IDE using CodeSandbox Live Preview). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.whatsNewVariant">WhatsNewVariant</a></code> | <code>string</code> | What's new variant, possible values: all_tiers, current_tier, and disabled. |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.wikiPageMaxContentBytes">WikiPageMaxContentBytes</a></code> | <code>double</code> | Maximum wiki page content size in bytes. The minimum value is 1024 bytes. |
 
@@ -10280,20 +10280,20 @@ new ApplicationSettingsConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -10340,10 +10340,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -10364,10 +10364,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `AdminMode`<sup>Optional</sup> <a name="AdminMode" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.adminMode"></a>
 
 ```csharp
-public object AdminMode { get; set; }
+public bool|IResolvable AdminMode { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Require administrators to enable Admin Mode by re-authenticating for administrative tasks.
 
@@ -10420,10 +10420,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `AkismetEnabled`<sup>Optional</sup> <a name="AkismetEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.akismetEnabled"></a>
 
 ```csharp
-public object AkismetEnabled { get; set; }
+public bool|IResolvable AkismetEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 (If enabled, requires: akismet_api_key) Enable or disable Akismet spam protection.
 
@@ -10434,10 +10434,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `AllowAccountDeletion`<sup>Optional</sup> <a name="AllowAccountDeletion" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowAccountDeletion"></a>
 
 ```csharp
-public object AllowAccountDeletion { get; set; }
+public bool|IResolvable AllowAccountDeletion { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to true to allow users to delete their accounts. Premium and Ultimate only.
 
@@ -10448,10 +10448,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `AllowGroupOwnersToManageLdap`<sup>Optional</sup> <a name="AllowGroupOwnersToManageLdap" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowGroupOwnersToManageLdap"></a>
 
 ```csharp
-public object AllowGroupOwnersToManageLdap { get; set; }
+public bool|IResolvable AllowGroupOwnersToManageLdap { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to true to allow group owners to manage LDAP.
 
@@ -10462,10 +10462,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `AllowLocalRequestsFromSystemHooks`<sup>Optional</sup> <a name="AllowLocalRequestsFromSystemHooks" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowLocalRequestsFromSystemHooks"></a>
 
 ```csharp
-public object AllowLocalRequestsFromSystemHooks { get; set; }
+public bool|IResolvable AllowLocalRequestsFromSystemHooks { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow requests to the local network from system hooks.
 
@@ -10476,10 +10476,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `AllowLocalRequestsFromWebHooksAndServices`<sup>Optional</sup> <a name="AllowLocalRequestsFromWebHooksAndServices" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowLocalRequestsFromWebHooksAndServices"></a>
 
 ```csharp
-public object AllowLocalRequestsFromWebHooksAndServices { get; set; }
+public bool|IResolvable AllowLocalRequestsFromWebHooksAndServices { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow requests to the local network from web hooks and services.
 
@@ -10490,10 +10490,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `AllowProjectCreationForGuestAndBelow`<sup>Optional</sup> <a name="AllowProjectCreationForGuestAndBelow" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowProjectCreationForGuestAndBelow"></a>
 
 ```csharp
-public object AllowProjectCreationForGuestAndBelow { get; set; }
+public bool|IResolvable AllowProjectCreationForGuestAndBelow { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Indicates whether users assigned up to the Guest role can create groups and personal projects.
 
@@ -10504,10 +10504,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `AllowRunnerRegistrationToken`<sup>Optional</sup> <a name="AllowRunnerRegistrationToken" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.allowRunnerRegistrationToken"></a>
 
 ```csharp
-public object AllowRunnerRegistrationToken { get; set; }
+public bool|IResolvable AllowRunnerRegistrationToken { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow using a registration token to create a runner.
 
@@ -10564,10 +10564,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `AssetProxyEnabled`<sup>Optional</sup> <a name="AssetProxyEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.assetProxyEnabled"></a>
 
 ```csharp
-public object AssetProxyEnabled { get; set; }
+public bool|IResolvable AssetProxyEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 (If enabled, requires: asset_proxy_url) Enable proxying of assets. GitLab restart is required to apply changes.
 
@@ -10606,10 +10606,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `AuthorizedKeysEnabled`<sup>Optional</sup> <a name="AuthorizedKeysEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.authorizedKeysEnabled"></a>
 
 ```csharp
-public object AuthorizedKeysEnabled { get; set; }
+public bool|IResolvable AuthorizedKeysEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 By default, we write to the authorized_keys file to support Git over SSH without additional configuration.
 
@@ -10622,10 +10622,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `AutoBanUserOnExcessiveProjectsDownload`<sup>Optional</sup> <a name="AutoBanUserOnExcessiveProjectsDownload" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.autoBanUserOnExcessiveProjectsDownload"></a>
 
 ```csharp
-public object AutoBanUserOnExcessiveProjectsDownload { get; set; }
+public bool|IResolvable AutoBanUserOnExcessiveProjectsDownload { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 When enabled, users will get automatically banned from the application when they download more than the maximum number of unique projects in the time period specified by max_number_of_repository_downloads and max_number_of_repository_downloads_within_time_period respectively.
 
@@ -10652,10 +10652,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `AutoDevopsEnabled`<sup>Optional</sup> <a name="AutoDevopsEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.autoDevopsEnabled"></a>
 
 ```csharp
-public object AutoDevopsEnabled { get; set; }
+public bool|IResolvable AutoDevopsEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable Auto DevOps for projects by default.
 
@@ -10668,10 +10668,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `AutomaticPurchasedStorageAllocation`<sup>Optional</sup> <a name="AutomaticPurchasedStorageAllocation" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.automaticPurchasedStorageAllocation"></a>
 
 ```csharp
-public object AutomaticPurchasedStorageAllocation { get; set; }
+public bool|IResolvable AutomaticPurchasedStorageAllocation { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enabling this permits automatic allocation of purchased storage in a namespace.
 
@@ -10696,10 +10696,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `BulkImportEnabled`<sup>Optional</sup> <a name="BulkImportEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.bulkImportEnabled"></a>
 
 ```csharp
-public object BulkImportEnabled { get; set; }
+public bool|IResolvable BulkImportEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable migrating GitLab groups by direct transfer.
 
@@ -10724,10 +10724,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `CanCreateGroup`<sup>Optional</sup> <a name="CanCreateGroup" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.canCreateGroup"></a>
 
 ```csharp
-public object CanCreateGroup { get; set; }
+public bool|IResolvable CanCreateGroup { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Indicates whether users can create top-level groups.
 
@@ -10738,10 +10738,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `CheckNamespacePlan`<sup>Optional</sup> <a name="CheckNamespacePlan" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.checkNamespacePlan"></a>
 
 ```csharp
-public object CheckNamespacePlan { get; set; }
+public bool|IResolvable CheckNamespacePlan { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enabling this makes only licensed EE features available to projects if the project namespace’s plan includes the feature or if the project is public.
 
@@ -10836,10 +10836,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `ContainerExpirationPoliciesEnableHistoricEntries`<sup>Optional</sup> <a name="ContainerExpirationPoliciesEnableHistoricEntries" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.containerExpirationPoliciesEnableHistoricEntries"></a>
 
 ```csharp
-public object ContainerExpirationPoliciesEnableHistoricEntries { get; set; }
+public bool|IResolvable ContainerExpirationPoliciesEnableHistoricEntries { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable cleanup policies for all projects.
 
@@ -10878,10 +10878,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `ContainerRegistryExpirationPoliciesCaching`<sup>Optional</sup> <a name="ContainerRegistryExpirationPoliciesCaching" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.containerRegistryExpirationPoliciesCaching"></a>
 
 ```csharp
-public object ContainerRegistryExpirationPoliciesCaching { get; set; }
+public bool|IResolvable ContainerRegistryExpirationPoliciesCaching { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Caching during the execution of cleanup policies.
 
@@ -10920,10 +10920,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `DeactivateDormantUsers`<sup>Optional</sup> <a name="DeactivateDormantUsers" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.deactivateDormantUsers"></a>
 
 ```csharp
-public object DeactivateDormantUsers { get; set; }
+public bool|IResolvable DeactivateDormantUsers { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable automatic deactivation of dormant users.
 
@@ -11132,10 +11132,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `DeleteInactiveProjects`<sup>Optional</sup> <a name="DeleteInactiveProjects" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.deleteInactiveProjects"></a>
 
 ```csharp
-public object DeleteInactiveProjects { get; set; }
+public bool|IResolvable DeleteInactiveProjects { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable inactive project deletion feature.
 
@@ -11146,10 +11146,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `DeleteUnconfirmedUsers`<sup>Optional</sup> <a name="DeleteUnconfirmedUsers" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.deleteUnconfirmedUsers"></a>
 
 ```csharp
-public object DeleteUnconfirmedUsers { get; set; }
+public bool|IResolvable DeleteUnconfirmedUsers { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies whether users who have not confirmed their email should be deleted.
 
@@ -11178,10 +11178,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `DiagramsnetEnabled`<sup>Optional</sup> <a name="DiagramsnetEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.diagramsnetEnabled"></a>
 
 ```csharp
-public object DiagramsnetEnabled { get; set; }
+public bool|IResolvable DiagramsnetEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 (If enabled, requires diagramsnet_url) Enable Diagrams.net integration.
 
@@ -11248,10 +11248,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `DisableAdminOauthScopes`<sup>Optional</sup> <a name="DisableAdminOauthScopes" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.disableAdminOauthScopes"></a>
 
 ```csharp
-public object DisableAdminOauthScopes { get; set; }
+public bool|IResolvable DisableAdminOauthScopes { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Stops administrators from connecting their GitLab accounts to non-trusted OAuth 2.0 applications that have the api, read_api, read_repository, write_repository, read_registry, write_registry, or sudo scopes.
 
@@ -11276,10 +11276,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `DisableFeedToken`<sup>Optional</sup> <a name="DisableFeedToken" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.disableFeedToken"></a>
 
 ```csharp
-public object DisableFeedToken { get; set; }
+public bool|IResolvable DisableFeedToken { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Disable display of RSS/Atom and calendar feed tokens.
 
@@ -11290,10 +11290,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `DisablePersonalAccessTokens`<sup>Optional</sup> <a name="DisablePersonalAccessTokens" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.disablePersonalAccessTokens"></a>
 
 ```csharp
-public object DisablePersonalAccessTokens { get; set; }
+public bool|IResolvable DisablePersonalAccessTokens { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Disable personal access tokens.
 
@@ -11306,10 +11306,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `DnsRebindingProtectionEnabled`<sup>Optional</sup> <a name="DnsRebindingProtectionEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.dnsRebindingProtectionEnabled"></a>
 
 ```csharp
-public object DnsRebindingProtectionEnabled { get; set; }
+public bool|IResolvable DnsRebindingProtectionEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enforce DNS rebinding attack protection.
 
@@ -11350,10 +11350,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `DomainDenylistEnabled`<sup>Optional</sup> <a name="DomainDenylistEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.domainDenylistEnabled"></a>
 
 ```csharp
-public object DomainDenylistEnabled { get; set; }
+public bool|IResolvable DomainDenylistEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 (If enabled, requires: domain_denylist) Allows blocking sign-ups from emails from specific domains.
 
@@ -11392,10 +11392,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `DuoFeaturesEnabled`<sup>Optional</sup> <a name="DuoFeaturesEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.duoFeaturesEnabled"></a>
 
 ```csharp
-public object DuoFeaturesEnabled { get; set; }
+public bool|IResolvable DuoFeaturesEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Indicates whether GitLab Duo features are enabled for this instance. Self-managed, Premium and Ultimate only.
 
@@ -11498,10 +11498,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `EksIntegrationEnabled`<sup>Optional</sup> <a name="EksIntegrationEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.eksIntegrationEnabled"></a>
 
 ```csharp
-public object EksIntegrationEnabled { get; set; }
+public bool|IResolvable EksIntegrationEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable integration with Amazon EKS.
 
@@ -11526,10 +11526,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `ElasticsearchAws`<sup>Optional</sup> <a name="ElasticsearchAws" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchAws"></a>
 
 ```csharp
-public object ElasticsearchAws { get; set; }
+public bool|IResolvable ElasticsearchAws { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable the use of AWS hosted Elasticsearch.
 
@@ -11612,10 +11612,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `ElasticsearchIndexing`<sup>Optional</sup> <a name="ElasticsearchIndexing" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchIndexing"></a>
 
 ```csharp
-public object ElasticsearchIndexing { get; set; }
+public bool|IResolvable ElasticsearchIndexing { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable Elasticsearch indexing.
 
@@ -11626,10 +11626,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `ElasticsearchLimitIndexing`<sup>Optional</sup> <a name="ElasticsearchLimitIndexing" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchLimitIndexing"></a>
 
 ```csharp
-public object ElasticsearchLimitIndexing { get; set; }
+public bool|IResolvable ElasticsearchLimitIndexing { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Limit Elasticsearch to index certain namespaces and projects.
 
@@ -11724,10 +11724,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `ElasticsearchRequeueWorkers`<sup>Optional</sup> <a name="ElasticsearchRequeueWorkers" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchRequeueWorkers"></a>
 
 ```csharp
-public object ElasticsearchRequeueWorkers { get; set; }
+public bool|IResolvable ElasticsearchRequeueWorkers { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable automatic requeuing of indexing workers.
 
@@ -11740,10 +11740,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `ElasticsearchSearch`<sup>Optional</sup> <a name="ElasticsearchSearch" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.elasticsearchSearch"></a>
 
 ```csharp
-public object ElasticsearchSearch { get; set; }
+public bool|IResolvable ElasticsearchSearch { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable Elasticsearch search.
 
@@ -11812,10 +11812,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `EmailAuthorInBody`<sup>Optional</sup> <a name="EmailAuthorInBody" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.emailAuthorInBody"></a>
 
 ```csharp
-public object EmailAuthorInBody { get; set; }
+public bool|IResolvable EmailAuthorInBody { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Some email servers do not support overriding the email sender name.
 
@@ -11842,10 +11842,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `EnableArtifactExternalRedirectWarningPage`<sup>Optional</sup> <a name="EnableArtifactExternalRedirectWarningPage" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.enableArtifactExternalRedirectWarningPage"></a>
 
 ```csharp
-public object EnableArtifactExternalRedirectWarningPage { get; set; }
+public bool|IResolvable EnableArtifactExternalRedirectWarningPage { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Show the external redirect page that warns you about user-generated content in GitLab Pages.
 
@@ -11870,10 +11870,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `EnforceNamespaceStorageLimit`<sup>Optional</sup> <a name="EnforceNamespaceStorageLimit" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.enforceNamespaceStorageLimit"></a>
 
 ```csharp
-public object EnforceNamespaceStorageLimit { get; set; }
+public bool|IResolvable EnforceNamespaceStorageLimit { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enabling this permits enforcement of namespace storage limits.
 
@@ -11884,10 +11884,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `EnforceTerms`<sup>Optional</sup> <a name="EnforceTerms" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.enforceTerms"></a>
 
 ```csharp
-public object EnforceTerms { get; set; }
+public bool|IResolvable EnforceTerms { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 (If enabled, requires: terms) Enforce application ToS to all users.
 
@@ -11954,10 +11954,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `ExternalAuthorizationServiceEnabled`<sup>Optional</sup> <a name="ExternalAuthorizationServiceEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.externalAuthorizationServiceEnabled"></a>
 
 ```csharp
-public object ExternalAuthorizationServiceEnabled { get; set; }
+public bool|IResolvable ExternalAuthorizationServiceEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 (If enabled, requires: external_authorization_service_default_label, external_authorization_service_timeout and external_authorization_service_url) Enable using an external authorization service for accessing projects.
 
@@ -12174,10 +12174,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `GitpodEnabled`<sup>Optional</sup> <a name="GitpodEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.gitpodEnabled"></a>
 
 ```csharp
-public object GitpodEnabled { get; set; }
+public bool|IResolvable GitpodEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable Gitpod integration.
 
@@ -12260,10 +12260,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `GrafanaEnabled`<sup>Optional</sup> <a name="GrafanaEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.grafanaEnabled"></a>
 
 ```csharp
-public object GrafanaEnabled { get; set; }
+public bool|IResolvable GrafanaEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable Grafana.
 
@@ -12288,10 +12288,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `GravatarEnabled`<sup>Optional</sup> <a name="GravatarEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.gravatarEnabled"></a>
 
 ```csharp
-public object GravatarEnabled { get; set; }
+public bool|IResolvable GravatarEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable Gravatar.
 
@@ -12302,10 +12302,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `GroupOwnersCanManageDefaultBranchProtection`<sup>Optional</sup> <a name="GroupOwnersCanManageDefaultBranchProtection" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.groupOwnersCanManageDefaultBranchProtection"></a>
 
 ```csharp
-public object GroupOwnersCanManageDefaultBranchProtection { get; set; }
+public bool|IResolvable GroupOwnersCanManageDefaultBranchProtection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Prevent overrides of default branch protection.
 
@@ -12316,10 +12316,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `HelpPageHideCommercialContent`<sup>Optional</sup> <a name="HelpPageHideCommercialContent" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.helpPageHideCommercialContent"></a>
 
 ```csharp
-public object HelpPageHideCommercialContent { get; set; }
+public bool|IResolvable HelpPageHideCommercialContent { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Hide marketing-related entries from help.
 
@@ -12372,10 +12372,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `HideThirdPartyOffers`<sup>Optional</sup> <a name="HideThirdPartyOffers" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.hideThirdPartyOffers"></a>
 
 ```csharp
-public object HideThirdPartyOffers { get; set; }
+public bool|IResolvable HideThirdPartyOffers { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Do not display offers from third parties in GitLab.
 
@@ -12400,10 +12400,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `HousekeepingEnabled`<sup>Optional</sup> <a name="HousekeepingEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.housekeepingEnabled"></a>
 
 ```csharp
-public object HousekeepingEnabled { get; set; }
+public bool|IResolvable HousekeepingEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable or disable Git housekeeping. If enabled, requires housekeeping_optimize_repository_period.
 
@@ -12428,10 +12428,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `HtmlEmailsEnabled`<sup>Optional</sup> <a name="HtmlEmailsEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.htmlEmailsEnabled"></a>
 
 ```csharp
-public object HtmlEmailsEnabled { get; set; }
+public bool|IResolvable HtmlEmailsEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable HTML emails.
 
@@ -12513,10 +12513,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `IncludeOptionalMetricsInServicePing`<sup>Optional</sup> <a name="IncludeOptionalMetricsInServicePing" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.includeOptionalMetricsInServicePing"></a>
 
 ```csharp
-public object IncludeOptionalMetricsInServicePing { get; set; }
+public bool|IResolvable IncludeOptionalMetricsInServicePing { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether or not optional metrics are enabled in Service Ping.
 
@@ -12527,10 +12527,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `InProductMarketingEmailsEnabled`<sup>Optional</sup> <a name="InProductMarketingEmailsEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.inProductMarketingEmailsEnabled"></a>
 
 ```csharp
-public object InProductMarketingEmailsEnabled { get; set; }
+public bool|IResolvable InProductMarketingEmailsEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable in-product marketing emails.
 
@@ -12541,10 +12541,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `InvisibleCaptchaEnabled`<sup>Optional</sup> <a name="InvisibleCaptchaEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.invisibleCaptchaEnabled"></a>
 
 ```csharp
-public object InvisibleCaptchaEnabled { get; set; }
+public bool|IResolvable InvisibleCaptchaEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable Invisible CAPTCHA spam detection during sign-up.
 
@@ -12597,10 +12597,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `JiraConnectPublicKeyStorageEnabled`<sup>Optional</sup> <a name="JiraConnectPublicKeyStorageEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.jiraConnectPublicKeyStorageEnabled"></a>
 
 ```csharp
-public object JiraConnectPublicKeyStorageEnabled { get; set; }
+public bool|IResolvable JiraConnectPublicKeyStorageEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable public key storage for the GitLab for Jira Cloud app.
 
@@ -12611,10 +12611,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `KeepLatestArtifact`<sup>Optional</sup> <a name="KeepLatestArtifact" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.keepLatestArtifact"></a>
 
 ```csharp
-public object KeepLatestArtifact { get; set; }
+public bool|IResolvable KeepLatestArtifact { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Prevent the deletion of the artifacts from the most recent successful jobs, regardless of the expiry time.
 
@@ -12639,10 +12639,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `LockDuoFeaturesEnabled`<sup>Optional</sup> <a name="LockDuoFeaturesEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.lockDuoFeaturesEnabled"></a>
 
 ```csharp
-public object LockDuoFeaturesEnabled { get; set; }
+public bool|IResolvable LockDuoFeaturesEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Indicates whether the GitLab Duo features enabled setting is enforced for all subgroups. Self-managed, Premium and Ultimate only.
 
@@ -12653,10 +12653,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `LockMembershipsToLdap`<sup>Optional</sup> <a name="LockMembershipsToLdap" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.lockMembershipsToLdap"></a>
 
 ```csharp
-public object LockMembershipsToLdap { get; set; }
+public bool|IResolvable LockMembershipsToLdap { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to true to lock all memberships to LDAP. Premium and Ultimate only.
 
@@ -12667,10 +12667,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `MailgunEventsEnabled`<sup>Optional</sup> <a name="MailgunEventsEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.mailgunEventsEnabled"></a>
 
 ```csharp
-public object MailgunEventsEnabled { get; set; }
+public bool|IResolvable MailgunEventsEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable Mailgun event receiver.
 
@@ -12695,10 +12695,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `MaintenanceMode`<sup>Optional</sup> <a name="MaintenanceMode" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.maintenanceMode"></a>
 
 ```csharp
-public object MaintenanceMode { get; set; }
+public bool|IResolvable MaintenanceMode { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 When instance is in maintenance mode, non-administrative users can sign in with read-only access and make read-only API requests.
 
@@ -12723,10 +12723,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `MavenPackageRequestsForwarding`<sup>Optional</sup> <a name="MavenPackageRequestsForwarding" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.mavenPackageRequestsForwarding"></a>
 
 ```csharp
-public object MavenPackageRequestsForwarding { get; set; }
+public bool|IResolvable MavenPackageRequestsForwarding { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Use repo.maven.apache.org as a default remote repository when the package is not found in the GitLab Package Registry for Maven. Premium and Ultimate only.
 
@@ -12949,10 +12949,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `MirrorAvailable`<sup>Optional</sup> <a name="MirrorAvailable" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.mirrorAvailable"></a>
 
 ```csharp
-public object MirrorAvailable { get; set; }
+public bool|IResolvable MirrorAvailable { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow repository mirroring to configured by project Maintainers. If disabled, only Administrators can configure repository mirroring.
 
@@ -13005,10 +13005,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `NpmPackageRequestsForwarding`<sup>Optional</sup> <a name="NpmPackageRequestsForwarding" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.npmPackageRequestsForwarding"></a>
 
 ```csharp
-public object NpmPackageRequestsForwarding { get; set; }
+public bool|IResolvable NpmPackageRequestsForwarding { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Use npmjs.org as a default remote repository when the package is not found in the GitLab Package Registry for npm.
 
@@ -13019,10 +13019,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `NugetSkipMetadataUrlValidation`<sup>Optional</sup> <a name="NugetSkipMetadataUrlValidation" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.nugetSkipMetadataUrlValidation"></a>
 
 ```csharp
-public object NugetSkipMetadataUrlValidation { get; set; }
+public bool|IResolvable NugetSkipMetadataUrlValidation { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Indicates whether to skip metadata URL validation for the NuGet package.
 
@@ -13061,10 +13061,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `PackageRegistryAllowAnyoneToPullOption`<sup>Optional</sup> <a name="PackageRegistryAllowAnyoneToPullOption" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.packageRegistryAllowAnyoneToPullOption"></a>
 
 ```csharp
-public object PackageRegistryAllowAnyoneToPullOption { get; set; }
+public bool|IResolvable PackageRegistryAllowAnyoneToPullOption { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable to allow anyone to pull from Package Registry visible and changeable.
 
@@ -13089,10 +13089,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `PagesDomainVerificationEnabled`<sup>Optional</sup> <a name="PagesDomainVerificationEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.pagesDomainVerificationEnabled"></a>
 
 ```csharp
-public object PagesDomainVerificationEnabled { get; set; }
+public bool|IResolvable PagesDomainVerificationEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Require users to prove ownership of custom domains.
 
@@ -13105,10 +13105,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `PasswordAuthenticationEnabledForGit`<sup>Optional</sup> <a name="PasswordAuthenticationEnabledForGit" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordAuthenticationEnabledForGit"></a>
 
 ```csharp
-public object PasswordAuthenticationEnabledForGit { get; set; }
+public bool|IResolvable PasswordAuthenticationEnabledForGit { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable authentication for Git over HTTP(S) via a GitLab account password.
 
@@ -13119,10 +13119,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `PasswordAuthenticationEnabledForWeb`<sup>Optional</sup> <a name="PasswordAuthenticationEnabledForWeb" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordAuthenticationEnabledForWeb"></a>
 
 ```csharp
-public object PasswordAuthenticationEnabledForWeb { get; set; }
+public bool|IResolvable PasswordAuthenticationEnabledForWeb { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable authentication for the web interface via a GitLab account password.
 
@@ -13133,10 +13133,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `PasswordLowercaseRequired`<sup>Optional</sup> <a name="PasswordLowercaseRequired" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordLowercaseRequired"></a>
 
 ```csharp
-public object PasswordLowercaseRequired { get; set; }
+public bool|IResolvable PasswordLowercaseRequired { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Indicates whether passwords require at least one lowercase letter.
 
@@ -13147,10 +13147,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `PasswordNumberRequired`<sup>Optional</sup> <a name="PasswordNumberRequired" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordNumberRequired"></a>
 
 ```csharp
-public object PasswordNumberRequired { get; set; }
+public bool|IResolvable PasswordNumberRequired { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Indicates whether passwords require at least one number.
 
@@ -13161,10 +13161,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `PasswordSymbolRequired`<sup>Optional</sup> <a name="PasswordSymbolRequired" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordSymbolRequired"></a>
 
 ```csharp
-public object PasswordSymbolRequired { get; set; }
+public bool|IResolvable PasswordSymbolRequired { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Indicates whether passwords require at least one symbol character.
 
@@ -13175,10 +13175,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `PasswordUppercaseRequired`<sup>Optional</sup> <a name="PasswordUppercaseRequired" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.passwordUppercaseRequired"></a>
 
 ```csharp
-public object PasswordUppercaseRequired { get; set; }
+public bool|IResolvable PasswordUppercaseRequired { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Indicates whether passwords require at least one uppercase letter.
 
@@ -13231,10 +13231,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `PlantumlEnabled`<sup>Optional</sup> <a name="PlantumlEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.plantumlEnabled"></a>
 
 ```csharp
-public object PlantumlEnabled { get; set; }
+public bool|IResolvable PlantumlEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 (If enabled, requires: plantuml_url) Enable PlantUML integration.
 
@@ -13273,10 +13273,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `ProjectExportEnabled`<sup>Optional</sup> <a name="ProjectExportEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.projectExportEnabled"></a>
 
 ```csharp
-public object ProjectExportEnabled { get; set; }
+public bool|IResolvable ProjectExportEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable project export.
 
@@ -13317,10 +13317,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `PrometheusMetricsEnabled`<sup>Optional</sup> <a name="PrometheusMetricsEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.prometheusMetricsEnabled"></a>
 
 ```csharp
-public object PrometheusMetricsEnabled { get; set; }
+public bool|IResolvable PrometheusMetricsEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable Prometheus metrics.
 
@@ -13331,10 +13331,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `ProtectedCiVariables`<sup>Optional</sup> <a name="ProtectedCiVariables" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.protectedCiVariables"></a>
 
 ```csharp
-public object ProtectedCiVariables { get; set; }
+public bool|IResolvable ProtectedCiVariables { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 CI/CD variables are protected by default.
 
@@ -13377,10 +13377,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `PypiPackageRequestsForwarding`<sup>Optional</sup> <a name="PypiPackageRequestsForwarding" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.pypiPackageRequestsForwarding"></a>
 
 ```csharp
-public object PypiPackageRequestsForwarding { get; set; }
+public bool|IResolvable PypiPackageRequestsForwarding { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Use pypi.org as a default remote repository when the package is not found in the GitLab Package Registry for PyPI.
 
@@ -13421,10 +13421,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `RecaptchaEnabled`<sup>Optional</sup> <a name="RecaptchaEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.recaptchaEnabled"></a>
 
 ```csharp
-public object RecaptchaEnabled { get; set; }
+public bool|IResolvable RecaptchaEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 (If enabled, requires: recaptcha_private_key and recaptcha_site_key) Enable reCAPTCHA.
 
@@ -13477,10 +13477,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `ReceptiveClusterAgentsEnabled`<sup>Optional</sup> <a name="ReceptiveClusterAgentsEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.receptiveClusterAgentsEnabled"></a>
 
 ```csharp
-public object ReceptiveClusterAgentsEnabled { get; set; }
+public bool|IResolvable ReceptiveClusterAgentsEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable receptive mode for GitLab Agents for Kubernetes.
 
@@ -13491,10 +13491,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `RememberMeEnabled`<sup>Optional</sup> <a name="RememberMeEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.rememberMeEnabled"></a>
 
 ```csharp
-public object RememberMeEnabled { get; set; }
+public bool|IResolvable RememberMeEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable Remember me setting.
 
@@ -13505,10 +13505,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `RepositoryChecksEnabled`<sup>Optional</sup> <a name="RepositoryChecksEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.repositoryChecksEnabled"></a>
 
 ```csharp
-public object RepositoryChecksEnabled { get; set; }
+public bool|IResolvable RepositoryChecksEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 GitLab periodically runs git fsck in all project and wiki repositories to look for silent disk corruption issues.
 
@@ -13547,10 +13547,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `RequireAdminApprovalAfterUserSignup`<sup>Optional</sup> <a name="RequireAdminApprovalAfterUserSignup" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.requireAdminApprovalAfterUserSignup"></a>
 
 ```csharp
-public object RequireAdminApprovalAfterUserSignup { get; set; }
+public bool|IResolvable RequireAdminApprovalAfterUserSignup { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 When enabled, any user that signs up for an account using the registration form is placed under a Pending approval state and has to be explicitly approved by an administrator.
 
@@ -13561,10 +13561,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `RequireAdminTwoFactorAuthentication`<sup>Optional</sup> <a name="RequireAdminTwoFactorAuthentication" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.requireAdminTwoFactorAuthentication"></a>
 
 ```csharp
-public object RequireAdminTwoFactorAuthentication { get; set; }
+public bool|IResolvable RequireAdminTwoFactorAuthentication { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow administrators to require 2FA for all administrators on the instance.
 
@@ -13575,10 +13575,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `RequirePersonalAccessTokenExpiry`<sup>Optional</sup> <a name="RequirePersonalAccessTokenExpiry" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.requirePersonalAccessTokenExpiry"></a>
 
 ```csharp
-public object RequirePersonalAccessTokenExpiry { get; set; }
+public bool|IResolvable RequirePersonalAccessTokenExpiry { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 When enabled, users must set an expiration date when creating a group or project access token, or a personal access token owned by a non-service account.
 
@@ -13589,10 +13589,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `RequireTwoFactorAuthentication`<sup>Optional</sup> <a name="RequireTwoFactorAuthentication" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.requireTwoFactorAuthentication"></a>
 
 ```csharp
-public object RequireTwoFactorAuthentication { get; set; }
+public bool|IResolvable RequireTwoFactorAuthentication { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 (If enabled, requires: two_factor_grace_period) Require all users to set up Two-factor authentication.
 
@@ -13675,10 +13675,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `SecurityPolicyGlobalGroupApproversEnabled`<sup>Optional</sup> <a name="SecurityPolicyGlobalGroupApproversEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.securityPolicyGlobalGroupApproversEnabled"></a>
 
 ```csharp
-public object SecurityPolicyGlobalGroupApproversEnabled { get; set; }
+public bool|IResolvable SecurityPolicyGlobalGroupApproversEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to look up merge request approval policy approval groups globally or within project hierarchies.
 
@@ -13703,10 +13703,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `SendUserConfirmationEmail`<sup>Optional</sup> <a name="SendUserConfirmationEmail" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sendUserConfirmationEmail"></a>
 
 ```csharp
-public object SendUserConfirmationEmail { get; set; }
+public bool|IResolvable SendUserConfirmationEmail { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Send confirmation email on sign-up.
 
@@ -13717,10 +13717,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `ServiceAccessTokensExpirationEnforced`<sup>Optional</sup> <a name="ServiceAccessTokensExpirationEnforced" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.serviceAccessTokensExpirationEnforced"></a>
 
 ```csharp
-public object ServiceAccessTokensExpirationEnforced { get; set; }
+public bool|IResolvable ServiceAccessTokensExpirationEnforced { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Flag to indicate if token expiry date can be optional for service account users.
 
@@ -13745,10 +13745,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `SharedRunnersEnabled`<sup>Optional</sup> <a name="SharedRunnersEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sharedRunnersEnabled"></a>
 
 ```csharp
-public object SharedRunnersEnabled { get; set; }
+public bool|IResolvable SharedRunnersEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 (If enabled, requires: shared_runners_text and shared_runners_minutes) Enable shared runners for new projects.
 
@@ -13843,10 +13843,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `SignupEnabled`<sup>Optional</sup> <a name="SignupEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.signupEnabled"></a>
 
 ```csharp
-public object SignupEnabled { get; set; }
+public bool|IResolvable SignupEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable registration.
 
@@ -13857,10 +13857,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `SilentAdminExportsEnabled`<sup>Optional</sup> <a name="SilentAdminExportsEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.silentAdminExportsEnabled"></a>
 
 ```csharp
-public object SilentAdminExportsEnabled { get; set; }
+public bool|IResolvable SilentAdminExportsEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable Silent admin exports.
 
@@ -13871,10 +13871,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `SilentModeEnabled`<sup>Optional</sup> <a name="SilentModeEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.silentModeEnabled"></a>
 
 ```csharp
-public object SilentModeEnabled { get; set; }
+public bool|IResolvable SilentModeEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable Silent mode.
 
@@ -13885,10 +13885,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `SlackAppEnabled`<sup>Optional</sup> <a name="SlackAppEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.slackAppEnabled"></a>
 
 ```csharp
-public object SlackAppEnabled { get; set; }
+public bool|IResolvable SlackAppEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 (If enabled, requires: slack_app_id, slack_app_secret and slack_app_secret) Enable Slack app.
 
@@ -14025,10 +14025,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `SnowplowEnabled`<sup>Optional</sup> <a name="SnowplowEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.snowplowEnabled"></a>
 
 ```csharp
-public object SnowplowEnabled { get; set; }
+public bool|IResolvable SnowplowEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable snowplow tracking.
 
@@ -14039,10 +14039,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `SourcegraphEnabled`<sup>Optional</sup> <a name="SourcegraphEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sourcegraphEnabled"></a>
 
 ```csharp
-public object SourcegraphEnabled { get; set; }
+public bool|IResolvable SourcegraphEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enables Sourcegraph integration. If enabled, requires sourcegraph_url.
 
@@ -14053,10 +14053,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `SourcegraphPublicOnly`<sup>Optional</sup> <a name="SourcegraphPublicOnly" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.sourcegraphPublicOnly"></a>
 
 ```csharp
-public object SourcegraphPublicOnly { get; set; }
+public bool|IResolvable SourcegraphPublicOnly { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Blocks Sourcegraph from being loaded on private and internal projects.
 
@@ -14095,10 +14095,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `SpamCheckEndpointEnabled`<sup>Optional</sup> <a name="SpamCheckEndpointEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.spamCheckEndpointEnabled"></a>
 
 ```csharp
-public object SpamCheckEndpointEnabled { get; set; }
+public bool|IResolvable SpamCheckEndpointEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enables spam checking using external Spam Check API endpoint.
 
@@ -14153,10 +14153,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `SuggestPipelineEnabled`<sup>Optional</sup> <a name="SuggestPipelineEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.suggestPipelineEnabled"></a>
 
 ```csharp
-public object SuggestPipelineEnabled { get; set; }
+public bool|IResolvable SuggestPipelineEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable pipeline suggestion banner.
 
@@ -14195,10 +14195,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `ThrottleAuthenticatedApiEnabled`<sup>Optional</sup> <a name="ThrottleAuthenticatedApiEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedApiEnabled"></a>
 
 ```csharp
-public object ThrottleAuthenticatedApiEnabled { get; set; }
+public bool|IResolvable ThrottleAuthenticatedApiEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 (If enabled, requires: throttle_authenticated_api_period_in_seconds and throttle_authenticated_api_requests_per_period) Enable authenticated API request rate limit.
 
@@ -14239,10 +14239,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `ThrottleAuthenticatedPackagesApiEnabled`<sup>Optional</sup> <a name="ThrottleAuthenticatedPackagesApiEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedPackagesApiEnabled"></a>
 
 ```csharp
-public object ThrottleAuthenticatedPackagesApiEnabled { get; set; }
+public bool|IResolvable ThrottleAuthenticatedPackagesApiEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 (If enabled, requires: throttle_authenticated_packages_api_period_in_seconds and throttle_authenticated_packages_api_requests_per_period) Enable authenticated API request rate limit.
 
@@ -14283,10 +14283,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `ThrottleAuthenticatedWebEnabled`<sup>Optional</sup> <a name="ThrottleAuthenticatedWebEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleAuthenticatedWebEnabled"></a>
 
 ```csharp
-public object ThrottleAuthenticatedWebEnabled { get; set; }
+public bool|IResolvable ThrottleAuthenticatedWebEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 (If enabled, requires: throttle_authenticated_web_period_in_seconds and throttle_authenticated_web_requests_per_period) Enable authenticated web request rate limit.
 
@@ -14327,10 +14327,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `ThrottleUnauthenticatedApiEnabled`<sup>Optional</sup> <a name="ThrottleUnauthenticatedApiEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedApiEnabled"></a>
 
 ```csharp
-public object ThrottleUnauthenticatedApiEnabled { get; set; }
+public bool|IResolvable ThrottleUnauthenticatedApiEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 (If enabled, requires: throttle_unauthenticated_api_period_in_seconds and throttle_unauthenticated_api_requests_per_period) Enable unauthenticated API request rate limit.
 
@@ -14371,10 +14371,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `ThrottleUnauthenticatedPackagesApiEnabled`<sup>Optional</sup> <a name="ThrottleUnauthenticatedPackagesApiEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedPackagesApiEnabled"></a>
 
 ```csharp
-public object ThrottleUnauthenticatedPackagesApiEnabled { get; set; }
+public bool|IResolvable ThrottleUnauthenticatedPackagesApiEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 (If enabled, requires: throttle_unauthenticated_packages_api_period_in_seconds and throttle_unauthenticated_packages_api_requests_per_period) Enable authenticated API request rate limit.
 
@@ -14415,10 +14415,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `ThrottleUnauthenticatedWebEnabled`<sup>Optional</sup> <a name="ThrottleUnauthenticatedWebEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.throttleUnauthenticatedWebEnabled"></a>
 
 ```csharp
-public object ThrottleUnauthenticatedWebEnabled { get; set; }
+public bool|IResolvable ThrottleUnauthenticatedWebEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 (If enabled, requires: throttle_unauthenticated_web_period_in_seconds and throttle_unauthenticated_web_requests_per_period) Enable unauthenticated web request rate limit.
 
@@ -14459,10 +14459,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `TimeTrackingLimitToHours`<sup>Optional</sup> <a name="TimeTrackingLimitToHours" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.timeTrackingLimitToHours"></a>
 
 ```csharp
-public object TimeTrackingLimitToHours { get; set; }
+public bool|IResolvable TimeTrackingLimitToHours { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Limit display of time tracking units to hours.
 
@@ -14503,10 +14503,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `UniqueIpsLimitEnabled`<sup>Optional</sup> <a name="UniqueIpsLimitEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.uniqueIpsLimitEnabled"></a>
 
 ```csharp
-public object UniqueIpsLimitEnabled { get; set; }
+public bool|IResolvable UniqueIpsLimitEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 (If enabled, requires: unique_ips_limit_per_user and unique_ips_limit_time_window) Limit sign in from multiple IPs.
 
@@ -14545,10 +14545,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `UpdateRunnerVersionsEnabled`<sup>Optional</sup> <a name="UpdateRunnerVersionsEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.updateRunnerVersionsEnabled"></a>
 
 ```csharp
-public object UpdateRunnerVersionsEnabled { get; set; }
+public bool|IResolvable UpdateRunnerVersionsEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Fetch GitLab Runner release version data from GitLab.com.
 
@@ -14559,10 +14559,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `UsagePingEnabled`<sup>Optional</sup> <a name="UsagePingEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.usagePingEnabled"></a>
 
 ```csharp
-public object UsagePingEnabled { get; set; }
+public bool|IResolvable UsagePingEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Every week GitLab reports license usage back to GitLab, Inc.
 
@@ -14573,10 +14573,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `UseClickhouseForAnalytics`<sup>Optional</sup> <a name="UseClickhouseForAnalytics" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.useClickhouseForAnalytics"></a>
 
 ```csharp
-public object UseClickhouseForAnalytics { get; set; }
+public bool|IResolvable UseClickhouseForAnalytics { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enables ClickHouse as a data source for analytics reports.
 
@@ -14589,10 +14589,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `UserDeactivationEmailsEnabled`<sup>Optional</sup> <a name="UserDeactivationEmailsEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userDeactivationEmailsEnabled"></a>
 
 ```csharp
-public object UserDeactivationEmailsEnabled { get; set; }
+public bool|IResolvable UserDeactivationEmailsEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Send an email to users upon account deactivation.
 
@@ -14603,10 +14603,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `UserDefaultExternal`<sup>Optional</sup> <a name="UserDefaultExternal" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userDefaultExternal"></a>
 
 ```csharp
-public object UserDefaultExternal { get; set; }
+public bool|IResolvable UserDefaultExternal { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Newly registered users are external by default.
 
@@ -14631,10 +14631,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `UserDefaultsToPrivateProfile`<sup>Optional</sup> <a name="UserDefaultsToPrivateProfile" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userDefaultsToPrivateProfile"></a>
 
 ```csharp
-public object UserDefaultsToPrivateProfile { get; set; }
+public bool|IResolvable UserDefaultsToPrivateProfile { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Newly created users have private profile by default.
 
@@ -14645,10 +14645,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `UserOauthApplications`<sup>Optional</sup> <a name="UserOauthApplications" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userOauthApplications"></a>
 
 ```csharp
-public object UserOauthApplications { get; set; }
+public bool|IResolvable UserOauthApplications { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow users to register any application to use GitLab as an OAuth provider.
 
@@ -14659,10 +14659,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `UserShowAddSshKeyMessage`<sup>Optional</sup> <a name="UserShowAddSshKeyMessage" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.userShowAddSshKeyMessage"></a>
 
 ```csharp
-public object UserShowAddSshKeyMessage { get; set; }
+public bool|IResolvable UserShowAddSshKeyMessage { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 When set to false disable the You won't be able to pull or push project code via SSH warning shown to users with no uploaded SSH key.
 
@@ -14687,10 +14687,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `VersionCheckEnabled`<sup>Optional</sup> <a name="VersionCheckEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.versionCheckEnabled"></a>
 
 ```csharp
-public object VersionCheckEnabled { get; set; }
+public bool|IResolvable VersionCheckEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Let GitLab inform you when an update is available.
 
@@ -14701,10 +14701,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `WebIdeClientsidePreviewEnabled`<sup>Optional</sup> <a name="WebIdeClientsidePreviewEnabled" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsConfig.property.webIdeClientsidePreviewEnabled"></a>
 
 ```csharp
-public object WebIdeClientsidePreviewEnabled { get; set; }
+public bool|IResolvable WebIdeClientsidePreviewEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Live Preview (allow live previews of JavaScript projects in the Web IDE using CodeSandbox Live Preview).
 
@@ -14750,8 +14750,8 @@ using HashiCorp.Cdktf.Providers.Gitlab;
 new ApplicationSettingsDefaultBranchProtectionDefaults {
     double[] AllowedToMerge = null,
     double[] AllowedToPush = null,
-    object AllowForcePush = null,
-    object DeveloperCanInitialPush = null
+    bool|IResolvable AllowForcePush = null,
+    bool|IResolvable DeveloperCanInitialPush = null
 };
 ```
 
@@ -14761,8 +14761,8 @@ new ApplicationSettingsDefaultBranchProtectionDefaults {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults.property.allowedToMerge">AllowedToMerge</a></code> | <code>double[]</code> | An array of access levels allowed to merge. Supports Developer (30) or Maintainer (40). |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults.property.allowedToPush">AllowedToPush</a></code> | <code>double[]</code> | An array of access levels allowed to push. Supports Developer (30) or Maintainer (40). |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults.property.allowForcePush">AllowForcePush</a></code> | <code>object</code> | Allow force push for all users with push access. |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults.property.developerCanInitialPush">DeveloperCanInitialPush</a></code> | <code>object</code> | Allow developers to initial push. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults.property.allowForcePush">AllowForcePush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow force push for all users with push access. |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults.property.developerCanInitialPush">DeveloperCanInitialPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow developers to initial push. |
 
 ---
 
@@ -14797,10 +14797,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `AllowForcePush`<sup>Optional</sup> <a name="AllowForcePush" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults.property.allowForcePush"></a>
 
 ```csharp
-public object AllowForcePush { get; set; }
+public bool|IResolvable AllowForcePush { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow force push for all users with push access.
 
@@ -14811,10 +14811,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `DeveloperCanInitialPush`<sup>Optional</sup> <a name="DeveloperCanInitialPush" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults.property.developerCanInitialPush"></a>
 
 ```csharp
-public object DeveloperCanInitialPush { get; set; }
+public bool|IResolvable DeveloperCanInitialPush { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow developers to initial push.
 
@@ -15064,12 +15064,12 @@ private void ResetDeveloperCanInitialPush()
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowedToMergeInput">AllowedToMergeInput</a></code> | <code>double[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowedToPushInput">AllowedToPushInput</a></code> | <code>double[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowForcePushInput">AllowForcePushInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.developerCanInitialPushInput">DeveloperCanInitialPushInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowForcePushInput">AllowForcePushInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.developerCanInitialPushInput">DeveloperCanInitialPushInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowedToMerge">AllowedToMerge</a></code> | <code>double[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowedToPush">AllowedToPush</a></code> | <code>double[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowForcePush">AllowForcePush</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.developerCanInitialPush">DeveloperCanInitialPush</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowForcePush">AllowForcePush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.developerCanInitialPush">DeveloperCanInitialPush</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaults">ApplicationSettingsDefaultBranchProtectionDefaults</a></code> | *No description.* |
 
 ---
@@ -15121,20 +15121,20 @@ public double[] AllowedToPushInput { get; }
 ##### `AllowForcePushInput`<sup>Optional</sup> <a name="AllowForcePushInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowForcePushInput"></a>
 
 ```csharp
-public object AllowForcePushInput { get; }
+public bool|IResolvable AllowForcePushInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DeveloperCanInitialPushInput`<sup>Optional</sup> <a name="DeveloperCanInitialPushInput" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.developerCanInitialPushInput"></a>
 
 ```csharp
-public object DeveloperCanInitialPushInput { get; }
+public bool|IResolvable DeveloperCanInitialPushInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -15161,20 +15161,20 @@ public double[] AllowedToPush { get; }
 ##### `AllowForcePush`<sup>Required</sup> <a name="AllowForcePush" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.allowForcePush"></a>
 
 ```csharp
-public object AllowForcePush { get; }
+public bool|IResolvable AllowForcePush { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DeveloperCanInitialPush`<sup>Required</sup> <a name="DeveloperCanInitialPush" id="@cdktf/provider-gitlab.applicationSettings.ApplicationSettingsDefaultBranchProtectionDefaultsOutputReference.property.developerCanInitialPush"></a>
 
 ```csharp
-public object DeveloperCanInitialPush { get; }
+public bool|IResolvable DeveloperCanInitialPush { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 

@@ -381,7 +381,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-gitlab.project.Project.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-gitlab.project.Project.importFrom"></a>
@@ -435,7 +435,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-gitlab.project.Project.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -450,7 +450,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-gitlab.project.Project.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -1264,13 +1264,13 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.avatarUrl">AvatarUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.containerExpirationPolicy">ContainerExpirationPolicy</a></code> | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference">ProjectContainerExpirationPolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.emptyRepo">EmptyRepo</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
@@ -1281,17 +1281,17 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.sshUrlToRepo">SshUrlToRepo</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-gitlab.project.ProjectTimeoutsOutputReference">ProjectTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.webUrl">WebUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.allowMergeOnSkippedPipelineInput">AllowMergeOnSkippedPipelineInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.allowPipelineTriggerApproveDeploymentInput">AllowPipelineTriggerApproveDeploymentInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.allowMergeOnSkippedPipelineInput">AllowMergeOnSkippedPipelineInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.allowPipelineTriggerApproveDeploymentInput">AllowPipelineTriggerApproveDeploymentInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.analyticsAccessLevelInput">AnalyticsAccessLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.approvalsBeforeMergeInput">ApprovalsBeforeMergeInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.archivedInput">ArchivedInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.archiveOnDestroyInput">ArchiveOnDestroyInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.archivedInput">ArchivedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.archiveOnDestroyInput">ArchiveOnDestroyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.autoCancelPendingPipelinesInput">AutoCancelPendingPipelinesInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.autocloseReferencedIssuesInput">AutocloseReferencedIssuesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.autocloseReferencedIssuesInput">AutocloseReferencedIssuesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.autoDevopsDeployStrategyInput">AutoDevopsDeployStrategyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.autoDevopsEnabledInput">AutoDevopsEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.autoDuoCodeReviewEnabledInput">AutoDuoCodeReviewEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.autoDevopsEnabledInput">AutoDevopsEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.autoDuoCodeReviewEnabledInput">AutoDuoCodeReviewEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.avatarHashInput">AvatarHashInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.avatarInput">AvatarInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.branchesInput">BranchesInput</a></code> | <code>string</code> | *No description.* |
@@ -1301,103 +1301,103 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciConfigPathInput">CiConfigPathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciDefaultGitDepthInput">CiDefaultGitDepthInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciDeletePipelinesInSecondsInput">CiDeletePipelinesInSecondsInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciForwardDeploymentEnabledInput">CiForwardDeploymentEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciForwardDeploymentRollbackAllowedInput">CiForwardDeploymentRollbackAllowedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciForwardDeploymentEnabledInput">CiForwardDeploymentEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciForwardDeploymentRollbackAllowedInput">CiForwardDeploymentRollbackAllowedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciIdTokenSubClaimComponentsInput">CiIdTokenSubClaimComponentsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciPipelineVariablesMinimumOverrideRoleInput">CiPipelineVariablesMinimumOverrideRoleInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciPushRepositoryForJobTokenAllowedInput">CiPushRepositoryForJobTokenAllowedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciPushRepositoryForJobTokenAllowedInput">CiPushRepositoryForJobTokenAllowedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciRestrictPipelineCancellationRoleInput">CiRestrictPipelineCancellationRoleInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciSeparatedCachesInput">CiSeparatedCachesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciSeparatedCachesInput">CiSeparatedCachesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.containerExpirationPolicyInput">ContainerExpirationPolicyInput</a></code> | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy">ProjectContainerExpirationPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.containerRegistryAccessLevelInput">ContainerRegistryAccessLevelInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.containerRegistryEnabledInput">ContainerRegistryEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.containerRegistryEnabledInput">ContainerRegistryEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.defaultBranchInput">DefaultBranchInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.emailsEnabledInput">EmailsEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.emailsEnabledInput">EmailsEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.environmentsAccessLevelInput">EnvironmentsAccessLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.externalAuthorizationClassificationLabelInput">ExternalAuthorizationClassificationLabelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.featureFlagsAccessLevelInput">FeatureFlagsAccessLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.forkedFromProjectIdInput">ForkedFromProjectIdInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.forkingAccessLevelInput">ForkingAccessLevelInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.groupRunnersEnabledInput">GroupRunnersEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.groupRunnersEnabledInput">GroupRunnersEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.groupWithProjectTemplatesIdInput">GroupWithProjectTemplatesIdInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlInput">ImportUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlPasswordInput">ImportUrlPasswordInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlUsernameInput">ImportUrlUsernameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.infrastructureAccessLevelInput">InfrastructureAccessLevelInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.initializeWithReadmeInput">InitializeWithReadmeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.initializeWithReadmeInput">InitializeWithReadmeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesAccessLevelInput">IssuesAccessLevelInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesEnabledInput">IssuesEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesEnabledInput">IssuesEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesTemplateInput">IssuesTemplateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.keepLatestArtifactInput">KeepLatestArtifactInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.lfsEnabledInput">LfsEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.keepLatestArtifactInput">KeepLatestArtifactInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.lfsEnabledInput">LfsEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeCommitTemplateInput">MergeCommitTemplateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeMethodInput">MergeMethodInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergePipelinesEnabledInput">MergePipelinesEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergePipelinesEnabledInput">MergePipelinesEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeRequestsAccessLevelInput">MergeRequestsAccessLevelInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeRequestsEnabledInput">MergeRequestsEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeRequestsEnabledInput">MergeRequestsEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeRequestsTemplateInput">MergeRequestsTemplateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeTrainsEnabledInput">MergeTrainsEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorInput">MirrorInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorOverwritesDivergedBranchesInput">MirrorOverwritesDivergedBranchesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorTriggerBuildsInput">MirrorTriggerBuildsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeTrainsEnabledInput">MergeTrainsEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorInput">MirrorInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorOverwritesDivergedBranchesInput">MirrorOverwritesDivergedBranchesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorTriggerBuildsInput">MirrorTriggerBuildsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.modelExperimentsAccessLevelInput">ModelExperimentsAccessLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.modelRegistryAccessLevelInput">ModelRegistryAccessLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.monitorAccessLevelInput">MonitorAccessLevelInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mrDefaultTargetSelfInput">MrDefaultTargetSelfInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mrDefaultTargetSelfInput">MrDefaultTargetSelfInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.namespaceIdInput">NamespaceIdInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyAllowMergeIfAllDiscussionsAreResolvedInput">OnlyAllowMergeIfAllDiscussionsAreResolvedInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyAllowMergeIfPipelineSucceedsInput">OnlyAllowMergeIfPipelineSucceedsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyMirrorProtectedBranchesInput">OnlyMirrorProtectedBranchesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.packagesEnabledInput">PackagesEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyAllowMergeIfAllDiscussionsAreResolvedInput">OnlyAllowMergeIfAllDiscussionsAreResolvedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyAllowMergeIfPipelineSucceedsInput">OnlyAllowMergeIfPipelineSucceedsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyMirrorProtectedBranchesInput">OnlyMirrorProtectedBranchesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.packagesEnabledInput">PackagesEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.pagesAccessLevelInput">PagesAccessLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.pathInput">PathInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.permanentlyDeleteOnDestroyInput">PermanentlyDeleteOnDestroyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.pipelinesEnabledInput">PipelinesEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.preReceiveSecretDetectionEnabledInput">PreReceiveSecretDetectionEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.preventMergeWithoutJiraIssueInput">PreventMergeWithoutJiraIssueInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.printingMergeRequestLinkEnabledInput">PrintingMergeRequestLinkEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.publicBuildsInput">PublicBuildsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.publicJobsInput">PublicJobsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.permanentlyDeleteOnDestroyInput">PermanentlyDeleteOnDestroyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.pipelinesEnabledInput">PipelinesEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.preReceiveSecretDetectionEnabledInput">PreReceiveSecretDetectionEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.preventMergeWithoutJiraIssueInput">PreventMergeWithoutJiraIssueInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.printingMergeRequestLinkEnabledInput">PrintingMergeRequestLinkEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.publicBuildsInput">PublicBuildsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.publicJobsInput">PublicJobsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.pushRulesInput">PushRulesInput</a></code> | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules">ProjectPushRules</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.releasesAccessLevelInput">ReleasesAccessLevelInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.removeSourceBranchAfterMergeInput">RemoveSourceBranchAfterMergeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.removeSourceBranchAfterMergeInput">RemoveSourceBranchAfterMergeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.repositoryAccessLevelInput">RepositoryAccessLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.repositoryStorageInput">RepositoryStorageInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.requestAccessEnabledInput">RequestAccessEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.requestAccessEnabledInput">RequestAccessEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.requirementsAccessLevelInput">RequirementsAccessLevelInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.resolveOutdatedDiffDiscussionsInput">ResolveOutdatedDiffDiscussionsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.restrictUserDefinedVariablesInput">RestrictUserDefinedVariablesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.resolveOutdatedDiffDiscussionsInput">ResolveOutdatedDiffDiscussionsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.restrictUserDefinedVariablesInput">RestrictUserDefinedVariablesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.securityAndComplianceAccessLevelInput">SecurityAndComplianceAccessLevelInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.sharedRunnersEnabledInput">SharedRunnersEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.skipWaitForDefaultBranchProtectionInput">SkipWaitForDefaultBranchProtectionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.sharedRunnersEnabledInput">SharedRunnersEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.skipWaitForDefaultBranchProtectionInput">SkipWaitForDefaultBranchProtectionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.snippetsAccessLevelInput">SnippetsAccessLevelInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.snippetsEnabledInput">SnippetsEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.snippetsEnabledInput">SnippetsEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.squashCommitTemplateInput">SquashCommitTemplateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.squashOptionInput">SquashOptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.suggestionCommitMessageInput">SuggestionCommitMessageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.tagsInput">TagsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.templateNameInput">TemplateNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.templateProjectIdInput">TemplateProjectIdInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.timeoutsInput">TimeoutsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-gitlab.project.ProjectTimeouts">ProjectTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.topicsInput">TopicsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.useCustomTemplateInput">UseCustomTemplateInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.useCustomTemplateInput">UseCustomTemplateInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.visibilityLevelInput">VisibilityLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.wikiAccessLevelInput">WikiAccessLevelInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.wikiEnabledInput">WikiEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.allowMergeOnSkippedPipeline">AllowMergeOnSkippedPipeline</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.allowPipelineTriggerApproveDeployment">AllowPipelineTriggerApproveDeployment</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.wikiEnabledInput">WikiEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.allowMergeOnSkippedPipeline">AllowMergeOnSkippedPipeline</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.allowPipelineTriggerApproveDeployment">AllowPipelineTriggerApproveDeployment</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.analyticsAccessLevel">AnalyticsAccessLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.approvalsBeforeMerge">ApprovalsBeforeMerge</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.archived">Archived</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.archiveOnDestroy">ArchiveOnDestroy</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.archived">Archived</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.archiveOnDestroy">ArchiveOnDestroy</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.autoCancelPendingPipelines">AutoCancelPendingPipelines</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.autocloseReferencedIssues">AutocloseReferencedIssues</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.autocloseReferencedIssues">AutocloseReferencedIssues</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.autoDevopsDeployStrategy">AutoDevopsDeployStrategy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.autoDevopsEnabled">AutoDevopsEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.autoDuoCodeReviewEnabled">AutoDuoCodeReviewEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.autoDevopsEnabled">AutoDevopsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.autoDuoCodeReviewEnabled">AutoDuoCodeReviewEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.avatar">Avatar</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.avatarHash">AvatarHash</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.branches">Branches</a></code> | <code>string</code> | *No description.* |
@@ -1407,78 +1407,78 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciConfigPath">CiConfigPath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciDefaultGitDepth">CiDefaultGitDepth</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciDeletePipelinesInSeconds">CiDeletePipelinesInSeconds</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciForwardDeploymentEnabled">CiForwardDeploymentEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciForwardDeploymentRollbackAllowed">CiForwardDeploymentRollbackAllowed</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciForwardDeploymentEnabled">CiForwardDeploymentEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciForwardDeploymentRollbackAllowed">CiForwardDeploymentRollbackAllowed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciIdTokenSubClaimComponents">CiIdTokenSubClaimComponents</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciPipelineVariablesMinimumOverrideRole">CiPipelineVariablesMinimumOverrideRole</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciPushRepositoryForJobTokenAllowed">CiPushRepositoryForJobTokenAllowed</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciPushRepositoryForJobTokenAllowed">CiPushRepositoryForJobTokenAllowed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciRestrictPipelineCancellationRole">CiRestrictPipelineCancellationRole</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciSeparatedCaches">CiSeparatedCaches</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.ciSeparatedCaches">CiSeparatedCaches</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.containerRegistryAccessLevel">ContainerRegistryAccessLevel</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.containerRegistryEnabled">ContainerRegistryEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.containerRegistryEnabled">ContainerRegistryEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.defaultBranch">DefaultBranch</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.description">Description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.emailsEnabled">EmailsEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.emailsEnabled">EmailsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.environmentsAccessLevel">EnvironmentsAccessLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.externalAuthorizationClassificationLabel">ExternalAuthorizationClassificationLabel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.featureFlagsAccessLevel">FeatureFlagsAccessLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.forkedFromProjectId">ForkedFromProjectId</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.forkingAccessLevel">ForkingAccessLevel</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.groupRunnersEnabled">GroupRunnersEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.groupRunnersEnabled">GroupRunnersEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.groupWithProjectTemplatesId">GroupWithProjectTemplatesId</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrl">ImportUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlPassword">ImportUrlPassword</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.importUrlUsername">ImportUrlUsername</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.infrastructureAccessLevel">InfrastructureAccessLevel</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.initializeWithReadme">InitializeWithReadme</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.initializeWithReadme">InitializeWithReadme</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesAccessLevel">IssuesAccessLevel</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesEnabled">IssuesEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesEnabled">IssuesEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.issuesTemplate">IssuesTemplate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.keepLatestArtifact">KeepLatestArtifact</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.lfsEnabled">LfsEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.keepLatestArtifact">KeepLatestArtifact</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.lfsEnabled">LfsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeCommitTemplate">MergeCommitTemplate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeMethod">MergeMethod</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergePipelinesEnabled">MergePipelinesEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergePipelinesEnabled">MergePipelinesEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeRequestsAccessLevel">MergeRequestsAccessLevel</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeRequestsEnabled">MergeRequestsEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeRequestsEnabled">MergeRequestsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeRequestsTemplate">MergeRequestsTemplate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeTrainsEnabled">MergeTrainsEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirror">Mirror</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorOverwritesDivergedBranches">MirrorOverwritesDivergedBranches</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorTriggerBuilds">MirrorTriggerBuilds</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mergeTrainsEnabled">MergeTrainsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirror">Mirror</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorOverwritesDivergedBranches">MirrorOverwritesDivergedBranches</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mirrorTriggerBuilds">MirrorTriggerBuilds</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.modelExperimentsAccessLevel">ModelExperimentsAccessLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.modelRegistryAccessLevel">ModelRegistryAccessLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.monitorAccessLevel">MonitorAccessLevel</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mrDefaultTargetSelf">MrDefaultTargetSelf</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.mrDefaultTargetSelf">MrDefaultTargetSelf</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.namespaceId">NamespaceId</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyAllowMergeIfAllDiscussionsAreResolved">OnlyAllowMergeIfAllDiscussionsAreResolved</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyAllowMergeIfPipelineSucceeds">OnlyAllowMergeIfPipelineSucceeds</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyMirrorProtectedBranches">OnlyMirrorProtectedBranches</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.packagesEnabled">PackagesEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyAllowMergeIfAllDiscussionsAreResolved">OnlyAllowMergeIfAllDiscussionsAreResolved</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyAllowMergeIfPipelineSucceeds">OnlyAllowMergeIfPipelineSucceeds</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.onlyMirrorProtectedBranches">OnlyMirrorProtectedBranches</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.packagesEnabled">PackagesEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.pagesAccessLevel">PagesAccessLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.path">Path</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.permanentlyDeleteOnDestroy">PermanentlyDeleteOnDestroy</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.pipelinesEnabled">PipelinesEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.preReceiveSecretDetectionEnabled">PreReceiveSecretDetectionEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.preventMergeWithoutJiraIssue">PreventMergeWithoutJiraIssue</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.printingMergeRequestLinkEnabled">PrintingMergeRequestLinkEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.publicBuilds">PublicBuilds</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.publicJobs">PublicJobs</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.permanentlyDeleteOnDestroy">PermanentlyDeleteOnDestroy</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.pipelinesEnabled">PipelinesEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.preReceiveSecretDetectionEnabled">PreReceiveSecretDetectionEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.preventMergeWithoutJiraIssue">PreventMergeWithoutJiraIssue</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.printingMergeRequestLinkEnabled">PrintingMergeRequestLinkEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.publicBuilds">PublicBuilds</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.publicJobs">PublicJobs</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.releasesAccessLevel">ReleasesAccessLevel</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.removeSourceBranchAfterMerge">RemoveSourceBranchAfterMerge</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.removeSourceBranchAfterMerge">RemoveSourceBranchAfterMerge</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.repositoryAccessLevel">RepositoryAccessLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.repositoryStorage">RepositoryStorage</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.requestAccessEnabled">RequestAccessEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.requestAccessEnabled">RequestAccessEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.requirementsAccessLevel">RequirementsAccessLevel</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.resolveOutdatedDiffDiscussions">ResolveOutdatedDiffDiscussions</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.restrictUserDefinedVariables">RestrictUserDefinedVariables</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.resolveOutdatedDiffDiscussions">ResolveOutdatedDiffDiscussions</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.restrictUserDefinedVariables">RestrictUserDefinedVariables</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.securityAndComplianceAccessLevel">SecurityAndComplianceAccessLevel</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.sharedRunnersEnabled">SharedRunnersEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.skipWaitForDefaultBranchProtection">SkipWaitForDefaultBranchProtection</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.sharedRunnersEnabled">SharedRunnersEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.skipWaitForDefaultBranchProtection">SkipWaitForDefaultBranchProtection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.snippetsAccessLevel">SnippetsAccessLevel</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.snippetsEnabled">SnippetsEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.snippetsEnabled">SnippetsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.squashCommitTemplate">SquashCommitTemplate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.squashOption">SquashOption</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.suggestionCommitMessage">SuggestionCommitMessage</a></code> | <code>string</code> | *No description.* |
@@ -1486,10 +1486,10 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.templateName">TemplateName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.templateProjectId">TemplateProjectId</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.topics">Topics</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.useCustomTemplate">UseCustomTemplate</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.useCustomTemplate">UseCustomTemplate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.visibilityLevel">VisibilityLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.Project.property.wikiAccessLevel">WikiAccessLevel</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.Project.property.wikiEnabled">WikiEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.Project.property.wikiEnabled">WikiEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1568,20 +1568,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-gitlab.project.Project.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.project.Project.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1628,10 +1628,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-gitlab.project.Project.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1738,20 +1738,20 @@ public string WebUrl { get; }
 ##### `AllowMergeOnSkippedPipelineInput`<sup>Optional</sup> <a name="AllowMergeOnSkippedPipelineInput" id="@cdktf/provider-gitlab.project.Project.property.allowMergeOnSkippedPipelineInput"></a>
 
 ```csharp
-public object AllowMergeOnSkippedPipelineInput { get; }
+public bool|IResolvable AllowMergeOnSkippedPipelineInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowPipelineTriggerApproveDeploymentInput`<sup>Optional</sup> <a name="AllowPipelineTriggerApproveDeploymentInput" id="@cdktf/provider-gitlab.project.Project.property.allowPipelineTriggerApproveDeploymentInput"></a>
 
 ```csharp
-public object AllowPipelineTriggerApproveDeploymentInput { get; }
+public bool|IResolvable AllowPipelineTriggerApproveDeploymentInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1778,20 +1778,20 @@ public double ApprovalsBeforeMergeInput { get; }
 ##### `ArchivedInput`<sup>Optional</sup> <a name="ArchivedInput" id="@cdktf/provider-gitlab.project.Project.property.archivedInput"></a>
 
 ```csharp
-public object ArchivedInput { get; }
+public bool|IResolvable ArchivedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ArchiveOnDestroyInput`<sup>Optional</sup> <a name="ArchiveOnDestroyInput" id="@cdktf/provider-gitlab.project.Project.property.archiveOnDestroyInput"></a>
 
 ```csharp
-public object ArchiveOnDestroyInput { get; }
+public bool|IResolvable ArchiveOnDestroyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1808,10 +1808,10 @@ public string AutoCancelPendingPipelinesInput { get; }
 ##### `AutocloseReferencedIssuesInput`<sup>Optional</sup> <a name="AutocloseReferencedIssuesInput" id="@cdktf/provider-gitlab.project.Project.property.autocloseReferencedIssuesInput"></a>
 
 ```csharp
-public object AutocloseReferencedIssuesInput { get; }
+public bool|IResolvable AutocloseReferencedIssuesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1828,20 +1828,20 @@ public string AutoDevopsDeployStrategyInput { get; }
 ##### `AutoDevopsEnabledInput`<sup>Optional</sup> <a name="AutoDevopsEnabledInput" id="@cdktf/provider-gitlab.project.Project.property.autoDevopsEnabledInput"></a>
 
 ```csharp
-public object AutoDevopsEnabledInput { get; }
+public bool|IResolvable AutoDevopsEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AutoDuoCodeReviewEnabledInput`<sup>Optional</sup> <a name="AutoDuoCodeReviewEnabledInput" id="@cdktf/provider-gitlab.project.Project.property.autoDuoCodeReviewEnabledInput"></a>
 
 ```csharp
-public object AutoDuoCodeReviewEnabledInput { get; }
+public bool|IResolvable AutoDuoCodeReviewEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1938,20 +1938,20 @@ public double CiDeletePipelinesInSecondsInput { get; }
 ##### `CiForwardDeploymentEnabledInput`<sup>Optional</sup> <a name="CiForwardDeploymentEnabledInput" id="@cdktf/provider-gitlab.project.Project.property.ciForwardDeploymentEnabledInput"></a>
 
 ```csharp
-public object CiForwardDeploymentEnabledInput { get; }
+public bool|IResolvable CiForwardDeploymentEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `CiForwardDeploymentRollbackAllowedInput`<sup>Optional</sup> <a name="CiForwardDeploymentRollbackAllowedInput" id="@cdktf/provider-gitlab.project.Project.property.ciForwardDeploymentRollbackAllowedInput"></a>
 
 ```csharp
-public object CiForwardDeploymentRollbackAllowedInput { get; }
+public bool|IResolvable CiForwardDeploymentRollbackAllowedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1978,10 +1978,10 @@ public string CiPipelineVariablesMinimumOverrideRoleInput { get; }
 ##### `CiPushRepositoryForJobTokenAllowedInput`<sup>Optional</sup> <a name="CiPushRepositoryForJobTokenAllowedInput" id="@cdktf/provider-gitlab.project.Project.property.ciPushRepositoryForJobTokenAllowedInput"></a>
 
 ```csharp
-public object CiPushRepositoryForJobTokenAllowedInput { get; }
+public bool|IResolvable CiPushRepositoryForJobTokenAllowedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1998,10 +1998,10 @@ public string CiRestrictPipelineCancellationRoleInput { get; }
 ##### `CiSeparatedCachesInput`<sup>Optional</sup> <a name="CiSeparatedCachesInput" id="@cdktf/provider-gitlab.project.Project.property.ciSeparatedCachesInput"></a>
 
 ```csharp
-public object CiSeparatedCachesInput { get; }
+public bool|IResolvable CiSeparatedCachesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2028,10 +2028,10 @@ public string ContainerRegistryAccessLevelInput { get; }
 ##### `ContainerRegistryEnabledInput`<sup>Optional</sup> <a name="ContainerRegistryEnabledInput" id="@cdktf/provider-gitlab.project.Project.property.containerRegistryEnabledInput"></a>
 
 ```csharp
-public object ContainerRegistryEnabledInput { get; }
+public bool|IResolvable ContainerRegistryEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2058,10 +2058,10 @@ public string DescriptionInput { get; }
 ##### `EmailsEnabledInput`<sup>Optional</sup> <a name="EmailsEnabledInput" id="@cdktf/provider-gitlab.project.Project.property.emailsEnabledInput"></a>
 
 ```csharp
-public object EmailsEnabledInput { get; }
+public bool|IResolvable EmailsEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2118,10 +2118,10 @@ public string ForkingAccessLevelInput { get; }
 ##### `GroupRunnersEnabledInput`<sup>Optional</sup> <a name="GroupRunnersEnabledInput" id="@cdktf/provider-gitlab.project.Project.property.groupRunnersEnabledInput"></a>
 
 ```csharp
-public object GroupRunnersEnabledInput { get; }
+public bool|IResolvable GroupRunnersEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2188,10 +2188,10 @@ public string InfrastructureAccessLevelInput { get; }
 ##### `InitializeWithReadmeInput`<sup>Optional</sup> <a name="InitializeWithReadmeInput" id="@cdktf/provider-gitlab.project.Project.property.initializeWithReadmeInput"></a>
 
 ```csharp
-public object InitializeWithReadmeInput { get; }
+public bool|IResolvable InitializeWithReadmeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2208,10 +2208,10 @@ public string IssuesAccessLevelInput { get; }
 ##### `IssuesEnabledInput`<sup>Optional</sup> <a name="IssuesEnabledInput" id="@cdktf/provider-gitlab.project.Project.property.issuesEnabledInput"></a>
 
 ```csharp
-public object IssuesEnabledInput { get; }
+public bool|IResolvable IssuesEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2228,20 +2228,20 @@ public string IssuesTemplateInput { get; }
 ##### `KeepLatestArtifactInput`<sup>Optional</sup> <a name="KeepLatestArtifactInput" id="@cdktf/provider-gitlab.project.Project.property.keepLatestArtifactInput"></a>
 
 ```csharp
-public object KeepLatestArtifactInput { get; }
+public bool|IResolvable KeepLatestArtifactInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `LfsEnabledInput`<sup>Optional</sup> <a name="LfsEnabledInput" id="@cdktf/provider-gitlab.project.Project.property.lfsEnabledInput"></a>
 
 ```csharp
-public object LfsEnabledInput { get; }
+public bool|IResolvable LfsEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2268,10 +2268,10 @@ public string MergeMethodInput { get; }
 ##### `MergePipelinesEnabledInput`<sup>Optional</sup> <a name="MergePipelinesEnabledInput" id="@cdktf/provider-gitlab.project.Project.property.mergePipelinesEnabledInput"></a>
 
 ```csharp
-public object MergePipelinesEnabledInput { get; }
+public bool|IResolvable MergePipelinesEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2288,10 +2288,10 @@ public string MergeRequestsAccessLevelInput { get; }
 ##### `MergeRequestsEnabledInput`<sup>Optional</sup> <a name="MergeRequestsEnabledInput" id="@cdktf/provider-gitlab.project.Project.property.mergeRequestsEnabledInput"></a>
 
 ```csharp
-public object MergeRequestsEnabledInput { get; }
+public bool|IResolvable MergeRequestsEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2308,40 +2308,40 @@ public string MergeRequestsTemplateInput { get; }
 ##### `MergeTrainsEnabledInput`<sup>Optional</sup> <a name="MergeTrainsEnabledInput" id="@cdktf/provider-gitlab.project.Project.property.mergeTrainsEnabledInput"></a>
 
 ```csharp
-public object MergeTrainsEnabledInput { get; }
+public bool|IResolvable MergeTrainsEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `MirrorInput`<sup>Optional</sup> <a name="MirrorInput" id="@cdktf/provider-gitlab.project.Project.property.mirrorInput"></a>
 
 ```csharp
-public object MirrorInput { get; }
+public bool|IResolvable MirrorInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `MirrorOverwritesDivergedBranchesInput`<sup>Optional</sup> <a name="MirrorOverwritesDivergedBranchesInput" id="@cdktf/provider-gitlab.project.Project.property.mirrorOverwritesDivergedBranchesInput"></a>
 
 ```csharp
-public object MirrorOverwritesDivergedBranchesInput { get; }
+public bool|IResolvable MirrorOverwritesDivergedBranchesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `MirrorTriggerBuildsInput`<sup>Optional</sup> <a name="MirrorTriggerBuildsInput" id="@cdktf/provider-gitlab.project.Project.property.mirrorTriggerBuildsInput"></a>
 
 ```csharp
-public object MirrorTriggerBuildsInput { get; }
+public bool|IResolvable MirrorTriggerBuildsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2378,10 +2378,10 @@ public string MonitorAccessLevelInput { get; }
 ##### `MrDefaultTargetSelfInput`<sup>Optional</sup> <a name="MrDefaultTargetSelfInput" id="@cdktf/provider-gitlab.project.Project.property.mrDefaultTargetSelfInput"></a>
 
 ```csharp
-public object MrDefaultTargetSelfInput { get; }
+public bool|IResolvable MrDefaultTargetSelfInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2408,40 +2408,40 @@ public double NamespaceIdInput { get; }
 ##### `OnlyAllowMergeIfAllDiscussionsAreResolvedInput`<sup>Optional</sup> <a name="OnlyAllowMergeIfAllDiscussionsAreResolvedInput" id="@cdktf/provider-gitlab.project.Project.property.onlyAllowMergeIfAllDiscussionsAreResolvedInput"></a>
 
 ```csharp
-public object OnlyAllowMergeIfAllDiscussionsAreResolvedInput { get; }
+public bool|IResolvable OnlyAllowMergeIfAllDiscussionsAreResolvedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OnlyAllowMergeIfPipelineSucceedsInput`<sup>Optional</sup> <a name="OnlyAllowMergeIfPipelineSucceedsInput" id="@cdktf/provider-gitlab.project.Project.property.onlyAllowMergeIfPipelineSucceedsInput"></a>
 
 ```csharp
-public object OnlyAllowMergeIfPipelineSucceedsInput { get; }
+public bool|IResolvable OnlyAllowMergeIfPipelineSucceedsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OnlyMirrorProtectedBranchesInput`<sup>Optional</sup> <a name="OnlyMirrorProtectedBranchesInput" id="@cdktf/provider-gitlab.project.Project.property.onlyMirrorProtectedBranchesInput"></a>
 
 ```csharp
-public object OnlyMirrorProtectedBranchesInput { get; }
+public bool|IResolvable OnlyMirrorProtectedBranchesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PackagesEnabledInput`<sup>Optional</sup> <a name="PackagesEnabledInput" id="@cdktf/provider-gitlab.project.Project.property.packagesEnabledInput"></a>
 
 ```csharp
-public object PackagesEnabledInput { get; }
+public bool|IResolvable PackagesEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2468,70 +2468,70 @@ public string PathInput { get; }
 ##### `PermanentlyDeleteOnDestroyInput`<sup>Optional</sup> <a name="PermanentlyDeleteOnDestroyInput" id="@cdktf/provider-gitlab.project.Project.property.permanentlyDeleteOnDestroyInput"></a>
 
 ```csharp
-public object PermanentlyDeleteOnDestroyInput { get; }
+public bool|IResolvable PermanentlyDeleteOnDestroyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PipelinesEnabledInput`<sup>Optional</sup> <a name="PipelinesEnabledInput" id="@cdktf/provider-gitlab.project.Project.property.pipelinesEnabledInput"></a>
 
 ```csharp
-public object PipelinesEnabledInput { get; }
+public bool|IResolvable PipelinesEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PreReceiveSecretDetectionEnabledInput`<sup>Optional</sup> <a name="PreReceiveSecretDetectionEnabledInput" id="@cdktf/provider-gitlab.project.Project.property.preReceiveSecretDetectionEnabledInput"></a>
 
 ```csharp
-public object PreReceiveSecretDetectionEnabledInput { get; }
+public bool|IResolvable PreReceiveSecretDetectionEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PreventMergeWithoutJiraIssueInput`<sup>Optional</sup> <a name="PreventMergeWithoutJiraIssueInput" id="@cdktf/provider-gitlab.project.Project.property.preventMergeWithoutJiraIssueInput"></a>
 
 ```csharp
-public object PreventMergeWithoutJiraIssueInput { get; }
+public bool|IResolvable PreventMergeWithoutJiraIssueInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PrintingMergeRequestLinkEnabledInput`<sup>Optional</sup> <a name="PrintingMergeRequestLinkEnabledInput" id="@cdktf/provider-gitlab.project.Project.property.printingMergeRequestLinkEnabledInput"></a>
 
 ```csharp
-public object PrintingMergeRequestLinkEnabledInput { get; }
+public bool|IResolvable PrintingMergeRequestLinkEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PublicBuildsInput`<sup>Optional</sup> <a name="PublicBuildsInput" id="@cdktf/provider-gitlab.project.Project.property.publicBuildsInput"></a>
 
 ```csharp
-public object PublicBuildsInput { get; }
+public bool|IResolvable PublicBuildsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PublicJobsInput`<sup>Optional</sup> <a name="PublicJobsInput" id="@cdktf/provider-gitlab.project.Project.property.publicJobsInput"></a>
 
 ```csharp
-public object PublicJobsInput { get; }
+public bool|IResolvable PublicJobsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2558,10 +2558,10 @@ public string ReleasesAccessLevelInput { get; }
 ##### `RemoveSourceBranchAfterMergeInput`<sup>Optional</sup> <a name="RemoveSourceBranchAfterMergeInput" id="@cdktf/provider-gitlab.project.Project.property.removeSourceBranchAfterMergeInput"></a>
 
 ```csharp
-public object RemoveSourceBranchAfterMergeInput { get; }
+public bool|IResolvable RemoveSourceBranchAfterMergeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2588,10 +2588,10 @@ public string RepositoryStorageInput { get; }
 ##### `RequestAccessEnabledInput`<sup>Optional</sup> <a name="RequestAccessEnabledInput" id="@cdktf/provider-gitlab.project.Project.property.requestAccessEnabledInput"></a>
 
 ```csharp
-public object RequestAccessEnabledInput { get; }
+public bool|IResolvable RequestAccessEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2608,20 +2608,20 @@ public string RequirementsAccessLevelInput { get; }
 ##### `ResolveOutdatedDiffDiscussionsInput`<sup>Optional</sup> <a name="ResolveOutdatedDiffDiscussionsInput" id="@cdktf/provider-gitlab.project.Project.property.resolveOutdatedDiffDiscussionsInput"></a>
 
 ```csharp
-public object ResolveOutdatedDiffDiscussionsInput { get; }
+public bool|IResolvable ResolveOutdatedDiffDiscussionsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `RestrictUserDefinedVariablesInput`<sup>Optional</sup> <a name="RestrictUserDefinedVariablesInput" id="@cdktf/provider-gitlab.project.Project.property.restrictUserDefinedVariablesInput"></a>
 
 ```csharp
-public object RestrictUserDefinedVariablesInput { get; }
+public bool|IResolvable RestrictUserDefinedVariablesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2638,20 +2638,20 @@ public string SecurityAndComplianceAccessLevelInput { get; }
 ##### `SharedRunnersEnabledInput`<sup>Optional</sup> <a name="SharedRunnersEnabledInput" id="@cdktf/provider-gitlab.project.Project.property.sharedRunnersEnabledInput"></a>
 
 ```csharp
-public object SharedRunnersEnabledInput { get; }
+public bool|IResolvable SharedRunnersEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SkipWaitForDefaultBranchProtectionInput`<sup>Optional</sup> <a name="SkipWaitForDefaultBranchProtectionInput" id="@cdktf/provider-gitlab.project.Project.property.skipWaitForDefaultBranchProtectionInput"></a>
 
 ```csharp
-public object SkipWaitForDefaultBranchProtectionInput { get; }
+public bool|IResolvable SkipWaitForDefaultBranchProtectionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2668,10 +2668,10 @@ public string SnippetsAccessLevelInput { get; }
 ##### `SnippetsEnabledInput`<sup>Optional</sup> <a name="SnippetsEnabledInput" id="@cdktf/provider-gitlab.project.Project.property.snippetsEnabledInput"></a>
 
 ```csharp
-public object SnippetsEnabledInput { get; }
+public bool|IResolvable SnippetsEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2738,10 +2738,10 @@ public double TemplateProjectIdInput { get; }
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-gitlab.project.Project.property.timeoutsInput"></a>
 
 ```csharp
-public object TimeoutsInput { get; }
+public IResolvable|ProjectTimeouts TimeoutsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-gitlab.project.ProjectTimeouts">ProjectTimeouts</a>
 
 ---
 
@@ -2758,10 +2758,10 @@ public string[] TopicsInput { get; }
 ##### `UseCustomTemplateInput`<sup>Optional</sup> <a name="UseCustomTemplateInput" id="@cdktf/provider-gitlab.project.Project.property.useCustomTemplateInput"></a>
 
 ```csharp
-public object UseCustomTemplateInput { get; }
+public bool|IResolvable UseCustomTemplateInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2788,30 +2788,30 @@ public string WikiAccessLevelInput { get; }
 ##### `WikiEnabledInput`<sup>Optional</sup> <a name="WikiEnabledInput" id="@cdktf/provider-gitlab.project.Project.property.wikiEnabledInput"></a>
 
 ```csharp
-public object WikiEnabledInput { get; }
+public bool|IResolvable WikiEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowMergeOnSkippedPipeline`<sup>Required</sup> <a name="AllowMergeOnSkippedPipeline" id="@cdktf/provider-gitlab.project.Project.property.allowMergeOnSkippedPipeline"></a>
 
 ```csharp
-public object AllowMergeOnSkippedPipeline { get; }
+public bool|IResolvable AllowMergeOnSkippedPipeline { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowPipelineTriggerApproveDeployment`<sup>Required</sup> <a name="AllowPipelineTriggerApproveDeployment" id="@cdktf/provider-gitlab.project.Project.property.allowPipelineTriggerApproveDeployment"></a>
 
 ```csharp
-public object AllowPipelineTriggerApproveDeployment { get; }
+public bool|IResolvable AllowPipelineTriggerApproveDeployment { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2838,20 +2838,20 @@ public double ApprovalsBeforeMerge { get; }
 ##### `Archived`<sup>Required</sup> <a name="Archived" id="@cdktf/provider-gitlab.project.Project.property.archived"></a>
 
 ```csharp
-public object Archived { get; }
+public bool|IResolvable Archived { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ArchiveOnDestroy`<sup>Required</sup> <a name="ArchiveOnDestroy" id="@cdktf/provider-gitlab.project.Project.property.archiveOnDestroy"></a>
 
 ```csharp
-public object ArchiveOnDestroy { get; }
+public bool|IResolvable ArchiveOnDestroy { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2868,10 +2868,10 @@ public string AutoCancelPendingPipelines { get; }
 ##### `AutocloseReferencedIssues`<sup>Required</sup> <a name="AutocloseReferencedIssues" id="@cdktf/provider-gitlab.project.Project.property.autocloseReferencedIssues"></a>
 
 ```csharp
-public object AutocloseReferencedIssues { get; }
+public bool|IResolvable AutocloseReferencedIssues { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2888,20 +2888,20 @@ public string AutoDevopsDeployStrategy { get; }
 ##### `AutoDevopsEnabled`<sup>Required</sup> <a name="AutoDevopsEnabled" id="@cdktf/provider-gitlab.project.Project.property.autoDevopsEnabled"></a>
 
 ```csharp
-public object AutoDevopsEnabled { get; }
+public bool|IResolvable AutoDevopsEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AutoDuoCodeReviewEnabled`<sup>Required</sup> <a name="AutoDuoCodeReviewEnabled" id="@cdktf/provider-gitlab.project.Project.property.autoDuoCodeReviewEnabled"></a>
 
 ```csharp
-public object AutoDuoCodeReviewEnabled { get; }
+public bool|IResolvable AutoDuoCodeReviewEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2998,20 +2998,20 @@ public double CiDeletePipelinesInSeconds { get; }
 ##### `CiForwardDeploymentEnabled`<sup>Required</sup> <a name="CiForwardDeploymentEnabled" id="@cdktf/provider-gitlab.project.Project.property.ciForwardDeploymentEnabled"></a>
 
 ```csharp
-public object CiForwardDeploymentEnabled { get; }
+public bool|IResolvable CiForwardDeploymentEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `CiForwardDeploymentRollbackAllowed`<sup>Required</sup> <a name="CiForwardDeploymentRollbackAllowed" id="@cdktf/provider-gitlab.project.Project.property.ciForwardDeploymentRollbackAllowed"></a>
 
 ```csharp
-public object CiForwardDeploymentRollbackAllowed { get; }
+public bool|IResolvable CiForwardDeploymentRollbackAllowed { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3038,10 +3038,10 @@ public string CiPipelineVariablesMinimumOverrideRole { get; }
 ##### `CiPushRepositoryForJobTokenAllowed`<sup>Required</sup> <a name="CiPushRepositoryForJobTokenAllowed" id="@cdktf/provider-gitlab.project.Project.property.ciPushRepositoryForJobTokenAllowed"></a>
 
 ```csharp
-public object CiPushRepositoryForJobTokenAllowed { get; }
+public bool|IResolvable CiPushRepositoryForJobTokenAllowed { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3058,10 +3058,10 @@ public string CiRestrictPipelineCancellationRole { get; }
 ##### `CiSeparatedCaches`<sup>Required</sup> <a name="CiSeparatedCaches" id="@cdktf/provider-gitlab.project.Project.property.ciSeparatedCaches"></a>
 
 ```csharp
-public object CiSeparatedCaches { get; }
+public bool|IResolvable CiSeparatedCaches { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3078,10 +3078,10 @@ public string ContainerRegistryAccessLevel { get; }
 ##### `ContainerRegistryEnabled`<sup>Required</sup> <a name="ContainerRegistryEnabled" id="@cdktf/provider-gitlab.project.Project.property.containerRegistryEnabled"></a>
 
 ```csharp
-public object ContainerRegistryEnabled { get; }
+public bool|IResolvable ContainerRegistryEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3108,10 +3108,10 @@ public string Description { get; }
 ##### `EmailsEnabled`<sup>Required</sup> <a name="EmailsEnabled" id="@cdktf/provider-gitlab.project.Project.property.emailsEnabled"></a>
 
 ```csharp
-public object EmailsEnabled { get; }
+public bool|IResolvable EmailsEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3168,10 +3168,10 @@ public string ForkingAccessLevel { get; }
 ##### `GroupRunnersEnabled`<sup>Required</sup> <a name="GroupRunnersEnabled" id="@cdktf/provider-gitlab.project.Project.property.groupRunnersEnabled"></a>
 
 ```csharp
-public object GroupRunnersEnabled { get; }
+public bool|IResolvable GroupRunnersEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3238,10 +3238,10 @@ public string InfrastructureAccessLevel { get; }
 ##### `InitializeWithReadme`<sup>Required</sup> <a name="InitializeWithReadme" id="@cdktf/provider-gitlab.project.Project.property.initializeWithReadme"></a>
 
 ```csharp
-public object InitializeWithReadme { get; }
+public bool|IResolvable InitializeWithReadme { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3258,10 +3258,10 @@ public string IssuesAccessLevel { get; }
 ##### `IssuesEnabled`<sup>Required</sup> <a name="IssuesEnabled" id="@cdktf/provider-gitlab.project.Project.property.issuesEnabled"></a>
 
 ```csharp
-public object IssuesEnabled { get; }
+public bool|IResolvable IssuesEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3278,20 +3278,20 @@ public string IssuesTemplate { get; }
 ##### `KeepLatestArtifact`<sup>Required</sup> <a name="KeepLatestArtifact" id="@cdktf/provider-gitlab.project.Project.property.keepLatestArtifact"></a>
 
 ```csharp
-public object KeepLatestArtifact { get; }
+public bool|IResolvable KeepLatestArtifact { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `LfsEnabled`<sup>Required</sup> <a name="LfsEnabled" id="@cdktf/provider-gitlab.project.Project.property.lfsEnabled"></a>
 
 ```csharp
-public object LfsEnabled { get; }
+public bool|IResolvable LfsEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3318,10 +3318,10 @@ public string MergeMethod { get; }
 ##### `MergePipelinesEnabled`<sup>Required</sup> <a name="MergePipelinesEnabled" id="@cdktf/provider-gitlab.project.Project.property.mergePipelinesEnabled"></a>
 
 ```csharp
-public object MergePipelinesEnabled { get; }
+public bool|IResolvable MergePipelinesEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3338,10 +3338,10 @@ public string MergeRequestsAccessLevel { get; }
 ##### `MergeRequestsEnabled`<sup>Required</sup> <a name="MergeRequestsEnabled" id="@cdktf/provider-gitlab.project.Project.property.mergeRequestsEnabled"></a>
 
 ```csharp
-public object MergeRequestsEnabled { get; }
+public bool|IResolvable MergeRequestsEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3358,40 +3358,40 @@ public string MergeRequestsTemplate { get; }
 ##### `MergeTrainsEnabled`<sup>Required</sup> <a name="MergeTrainsEnabled" id="@cdktf/provider-gitlab.project.Project.property.mergeTrainsEnabled"></a>
 
 ```csharp
-public object MergeTrainsEnabled { get; }
+public bool|IResolvable MergeTrainsEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Mirror`<sup>Required</sup> <a name="Mirror" id="@cdktf/provider-gitlab.project.Project.property.mirror"></a>
 
 ```csharp
-public object Mirror { get; }
+public bool|IResolvable Mirror { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `MirrorOverwritesDivergedBranches`<sup>Required</sup> <a name="MirrorOverwritesDivergedBranches" id="@cdktf/provider-gitlab.project.Project.property.mirrorOverwritesDivergedBranches"></a>
 
 ```csharp
-public object MirrorOverwritesDivergedBranches { get; }
+public bool|IResolvable MirrorOverwritesDivergedBranches { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `MirrorTriggerBuilds`<sup>Required</sup> <a name="MirrorTriggerBuilds" id="@cdktf/provider-gitlab.project.Project.property.mirrorTriggerBuilds"></a>
 
 ```csharp
-public object MirrorTriggerBuilds { get; }
+public bool|IResolvable MirrorTriggerBuilds { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3428,10 +3428,10 @@ public string MonitorAccessLevel { get; }
 ##### `MrDefaultTargetSelf`<sup>Required</sup> <a name="MrDefaultTargetSelf" id="@cdktf/provider-gitlab.project.Project.property.mrDefaultTargetSelf"></a>
 
 ```csharp
-public object MrDefaultTargetSelf { get; }
+public bool|IResolvable MrDefaultTargetSelf { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3458,40 +3458,40 @@ public double NamespaceId { get; }
 ##### `OnlyAllowMergeIfAllDiscussionsAreResolved`<sup>Required</sup> <a name="OnlyAllowMergeIfAllDiscussionsAreResolved" id="@cdktf/provider-gitlab.project.Project.property.onlyAllowMergeIfAllDiscussionsAreResolved"></a>
 
 ```csharp
-public object OnlyAllowMergeIfAllDiscussionsAreResolved { get; }
+public bool|IResolvable OnlyAllowMergeIfAllDiscussionsAreResolved { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OnlyAllowMergeIfPipelineSucceeds`<sup>Required</sup> <a name="OnlyAllowMergeIfPipelineSucceeds" id="@cdktf/provider-gitlab.project.Project.property.onlyAllowMergeIfPipelineSucceeds"></a>
 
 ```csharp
-public object OnlyAllowMergeIfPipelineSucceeds { get; }
+public bool|IResolvable OnlyAllowMergeIfPipelineSucceeds { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OnlyMirrorProtectedBranches`<sup>Required</sup> <a name="OnlyMirrorProtectedBranches" id="@cdktf/provider-gitlab.project.Project.property.onlyMirrorProtectedBranches"></a>
 
 ```csharp
-public object OnlyMirrorProtectedBranches { get; }
+public bool|IResolvable OnlyMirrorProtectedBranches { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PackagesEnabled`<sup>Required</sup> <a name="PackagesEnabled" id="@cdktf/provider-gitlab.project.Project.property.packagesEnabled"></a>
 
 ```csharp
-public object PackagesEnabled { get; }
+public bool|IResolvable PackagesEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3518,70 +3518,70 @@ public string Path { get; }
 ##### `PermanentlyDeleteOnDestroy`<sup>Required</sup> <a name="PermanentlyDeleteOnDestroy" id="@cdktf/provider-gitlab.project.Project.property.permanentlyDeleteOnDestroy"></a>
 
 ```csharp
-public object PermanentlyDeleteOnDestroy { get; }
+public bool|IResolvable PermanentlyDeleteOnDestroy { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PipelinesEnabled`<sup>Required</sup> <a name="PipelinesEnabled" id="@cdktf/provider-gitlab.project.Project.property.pipelinesEnabled"></a>
 
 ```csharp
-public object PipelinesEnabled { get; }
+public bool|IResolvable PipelinesEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PreReceiveSecretDetectionEnabled`<sup>Required</sup> <a name="PreReceiveSecretDetectionEnabled" id="@cdktf/provider-gitlab.project.Project.property.preReceiveSecretDetectionEnabled"></a>
 
 ```csharp
-public object PreReceiveSecretDetectionEnabled { get; }
+public bool|IResolvable PreReceiveSecretDetectionEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PreventMergeWithoutJiraIssue`<sup>Required</sup> <a name="PreventMergeWithoutJiraIssue" id="@cdktf/provider-gitlab.project.Project.property.preventMergeWithoutJiraIssue"></a>
 
 ```csharp
-public object PreventMergeWithoutJiraIssue { get; }
+public bool|IResolvable PreventMergeWithoutJiraIssue { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PrintingMergeRequestLinkEnabled`<sup>Required</sup> <a name="PrintingMergeRequestLinkEnabled" id="@cdktf/provider-gitlab.project.Project.property.printingMergeRequestLinkEnabled"></a>
 
 ```csharp
-public object PrintingMergeRequestLinkEnabled { get; }
+public bool|IResolvable PrintingMergeRequestLinkEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PublicBuilds`<sup>Required</sup> <a name="PublicBuilds" id="@cdktf/provider-gitlab.project.Project.property.publicBuilds"></a>
 
 ```csharp
-public object PublicBuilds { get; }
+public bool|IResolvable PublicBuilds { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PublicJobs`<sup>Required</sup> <a name="PublicJobs" id="@cdktf/provider-gitlab.project.Project.property.publicJobs"></a>
 
 ```csharp
-public object PublicJobs { get; }
+public bool|IResolvable PublicJobs { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3598,10 +3598,10 @@ public string ReleasesAccessLevel { get; }
 ##### `RemoveSourceBranchAfterMerge`<sup>Required</sup> <a name="RemoveSourceBranchAfterMerge" id="@cdktf/provider-gitlab.project.Project.property.removeSourceBranchAfterMerge"></a>
 
 ```csharp
-public object RemoveSourceBranchAfterMerge { get; }
+public bool|IResolvable RemoveSourceBranchAfterMerge { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3628,10 +3628,10 @@ public string RepositoryStorage { get; }
 ##### `RequestAccessEnabled`<sup>Required</sup> <a name="RequestAccessEnabled" id="@cdktf/provider-gitlab.project.Project.property.requestAccessEnabled"></a>
 
 ```csharp
-public object RequestAccessEnabled { get; }
+public bool|IResolvable RequestAccessEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3648,20 +3648,20 @@ public string RequirementsAccessLevel { get; }
 ##### `ResolveOutdatedDiffDiscussions`<sup>Required</sup> <a name="ResolveOutdatedDiffDiscussions" id="@cdktf/provider-gitlab.project.Project.property.resolveOutdatedDiffDiscussions"></a>
 
 ```csharp
-public object ResolveOutdatedDiffDiscussions { get; }
+public bool|IResolvable ResolveOutdatedDiffDiscussions { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `RestrictUserDefinedVariables`<sup>Required</sup> <a name="RestrictUserDefinedVariables" id="@cdktf/provider-gitlab.project.Project.property.restrictUserDefinedVariables"></a>
 
 ```csharp
-public object RestrictUserDefinedVariables { get; }
+public bool|IResolvable RestrictUserDefinedVariables { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3678,20 +3678,20 @@ public string SecurityAndComplianceAccessLevel { get; }
 ##### `SharedRunnersEnabled`<sup>Required</sup> <a name="SharedRunnersEnabled" id="@cdktf/provider-gitlab.project.Project.property.sharedRunnersEnabled"></a>
 
 ```csharp
-public object SharedRunnersEnabled { get; }
+public bool|IResolvable SharedRunnersEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SkipWaitForDefaultBranchProtection`<sup>Required</sup> <a name="SkipWaitForDefaultBranchProtection" id="@cdktf/provider-gitlab.project.Project.property.skipWaitForDefaultBranchProtection"></a>
 
 ```csharp
-public object SkipWaitForDefaultBranchProtection { get; }
+public bool|IResolvable SkipWaitForDefaultBranchProtection { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3708,10 +3708,10 @@ public string SnippetsAccessLevel { get; }
 ##### `SnippetsEnabled`<sup>Required</sup> <a name="SnippetsEnabled" id="@cdktf/provider-gitlab.project.Project.property.snippetsEnabled"></a>
 
 ```csharp
-public object SnippetsEnabled { get; }
+public bool|IResolvable SnippetsEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3788,10 +3788,10 @@ public string[] Topics { get; }
 ##### `UseCustomTemplate`<sup>Required</sup> <a name="UseCustomTemplate" id="@cdktf/provider-gitlab.project.Project.property.useCustomTemplate"></a>
 
 ```csharp
-public object UseCustomTemplate { get; }
+public bool|IResolvable UseCustomTemplate { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3818,10 +3818,10 @@ public string WikiAccessLevel { get; }
 ##### `WikiEnabled`<sup>Required</sup> <a name="WikiEnabled" id="@cdktf/provider-gitlab.project.Project.property.wikiEnabled"></a>
 
 ```csharp
-public object WikiEnabled { get; }
+public bool|IResolvable WikiEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3853,25 +3853,25 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Gitlab;
 
 new ProjectConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Name,
-    object AllowMergeOnSkippedPipeline = null,
-    object AllowPipelineTriggerApproveDeployment = null,
+    bool|IResolvable AllowMergeOnSkippedPipeline = null,
+    bool|IResolvable AllowPipelineTriggerApproveDeployment = null,
     string AnalyticsAccessLevel = null,
     double ApprovalsBeforeMerge = null,
-    object Archived = null,
-    object ArchiveOnDestroy = null,
+    bool|IResolvable Archived = null,
+    bool|IResolvable ArchiveOnDestroy = null,
     string AutoCancelPendingPipelines = null,
-    object AutocloseReferencedIssues = null,
+    bool|IResolvable AutocloseReferencedIssues = null,
     string AutoDevopsDeployStrategy = null,
-    object AutoDevopsEnabled = null,
-    object AutoDuoCodeReviewEnabled = null,
+    bool|IResolvable AutoDevopsEnabled = null,
+    bool|IResolvable AutoDuoCodeReviewEnabled = null,
     string Avatar = null,
     string AvatarHash = null,
     string Branches = null,
@@ -3881,79 +3881,79 @@ new ProjectConfig {
     string CiConfigPath = null,
     double CiDefaultGitDepth = null,
     double CiDeletePipelinesInSeconds = null,
-    object CiForwardDeploymentEnabled = null,
-    object CiForwardDeploymentRollbackAllowed = null,
+    bool|IResolvable CiForwardDeploymentEnabled = null,
+    bool|IResolvable CiForwardDeploymentRollbackAllowed = null,
     string[] CiIdTokenSubClaimComponents = null,
     string CiPipelineVariablesMinimumOverrideRole = null,
-    object CiPushRepositoryForJobTokenAllowed = null,
+    bool|IResolvable CiPushRepositoryForJobTokenAllowed = null,
     string CiRestrictPipelineCancellationRole = null,
-    object CiSeparatedCaches = null,
+    bool|IResolvable CiSeparatedCaches = null,
     ProjectContainerExpirationPolicy ContainerExpirationPolicy = null,
     string ContainerRegistryAccessLevel = null,
-    object ContainerRegistryEnabled = null,
+    bool|IResolvable ContainerRegistryEnabled = null,
     string DefaultBranch = null,
     string Description = null,
-    object EmailsEnabled = null,
+    bool|IResolvable EmailsEnabled = null,
     string EnvironmentsAccessLevel = null,
     string ExternalAuthorizationClassificationLabel = null,
     string FeatureFlagsAccessLevel = null,
     double ForkedFromProjectId = null,
     string ForkingAccessLevel = null,
-    object GroupRunnersEnabled = null,
+    bool|IResolvable GroupRunnersEnabled = null,
     double GroupWithProjectTemplatesId = null,
     string Id = null,
     string ImportUrl = null,
     string ImportUrlPassword = null,
     string ImportUrlUsername = null,
     string InfrastructureAccessLevel = null,
-    object InitializeWithReadme = null,
+    bool|IResolvable InitializeWithReadme = null,
     string IssuesAccessLevel = null,
-    object IssuesEnabled = null,
+    bool|IResolvable IssuesEnabled = null,
     string IssuesTemplate = null,
-    object KeepLatestArtifact = null,
-    object LfsEnabled = null,
+    bool|IResolvable KeepLatestArtifact = null,
+    bool|IResolvable LfsEnabled = null,
     string MergeCommitTemplate = null,
     string MergeMethod = null,
-    object MergePipelinesEnabled = null,
+    bool|IResolvable MergePipelinesEnabled = null,
     string MergeRequestsAccessLevel = null,
-    object MergeRequestsEnabled = null,
+    bool|IResolvable MergeRequestsEnabled = null,
     string MergeRequestsTemplate = null,
-    object MergeTrainsEnabled = null,
-    object Mirror = null,
-    object MirrorOverwritesDivergedBranches = null,
-    object MirrorTriggerBuilds = null,
+    bool|IResolvable MergeTrainsEnabled = null,
+    bool|IResolvable Mirror = null,
+    bool|IResolvable MirrorOverwritesDivergedBranches = null,
+    bool|IResolvable MirrorTriggerBuilds = null,
     string ModelExperimentsAccessLevel = null,
     string ModelRegistryAccessLevel = null,
     string MonitorAccessLevel = null,
-    object MrDefaultTargetSelf = null,
+    bool|IResolvable MrDefaultTargetSelf = null,
     double NamespaceId = null,
-    object OnlyAllowMergeIfAllDiscussionsAreResolved = null,
-    object OnlyAllowMergeIfPipelineSucceeds = null,
-    object OnlyMirrorProtectedBranches = null,
-    object PackagesEnabled = null,
+    bool|IResolvable OnlyAllowMergeIfAllDiscussionsAreResolved = null,
+    bool|IResolvable OnlyAllowMergeIfPipelineSucceeds = null,
+    bool|IResolvable OnlyMirrorProtectedBranches = null,
+    bool|IResolvable PackagesEnabled = null,
     string PagesAccessLevel = null,
     string Path = null,
-    object PermanentlyDeleteOnDestroy = null,
-    object PipelinesEnabled = null,
-    object PreReceiveSecretDetectionEnabled = null,
-    object PreventMergeWithoutJiraIssue = null,
-    object PrintingMergeRequestLinkEnabled = null,
-    object PublicBuilds = null,
-    object PublicJobs = null,
+    bool|IResolvable PermanentlyDeleteOnDestroy = null,
+    bool|IResolvable PipelinesEnabled = null,
+    bool|IResolvable PreReceiveSecretDetectionEnabled = null,
+    bool|IResolvable PreventMergeWithoutJiraIssue = null,
+    bool|IResolvable PrintingMergeRequestLinkEnabled = null,
+    bool|IResolvable PublicBuilds = null,
+    bool|IResolvable PublicJobs = null,
     ProjectPushRules PushRules = null,
     string ReleasesAccessLevel = null,
-    object RemoveSourceBranchAfterMerge = null,
+    bool|IResolvable RemoveSourceBranchAfterMerge = null,
     string RepositoryAccessLevel = null,
     string RepositoryStorage = null,
-    object RequestAccessEnabled = null,
+    bool|IResolvable RequestAccessEnabled = null,
     string RequirementsAccessLevel = null,
-    object ResolveOutdatedDiffDiscussions = null,
-    object RestrictUserDefinedVariables = null,
+    bool|IResolvable ResolveOutdatedDiffDiscussions = null,
+    bool|IResolvable RestrictUserDefinedVariables = null,
     string SecurityAndComplianceAccessLevel = null,
-    object SharedRunnersEnabled = null,
-    object SkipWaitForDefaultBranchProtection = null,
+    bool|IResolvable SharedRunnersEnabled = null,
+    bool|IResolvable SkipWaitForDefaultBranchProtection = null,
     string SnippetsAccessLevel = null,
-    object SnippetsEnabled = null,
+    bool|IResolvable SnippetsEnabled = null,
     string SquashCommitTemplate = null,
     string SquashOption = null,
     string SuggestionCommitMessage = null,
@@ -3962,10 +3962,10 @@ new ProjectConfig {
     double TemplateProjectId = null,
     ProjectTimeouts Timeouts = null,
     string[] Topics = null,
-    object UseCustomTemplate = null,
+    bool|IResolvable UseCustomTemplate = null,
     string VisibilityLevel = null,
     string WikiAccessLevel = null,
-    object WikiEnabled = null
+    bool|IResolvable WikiEnabled = null
 };
 ```
 
@@ -3973,25 +3973,25 @@ new ProjectConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.name">Name</a></code> | <code>string</code> | The name of the project. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.allowMergeOnSkippedPipeline">AllowMergeOnSkippedPipeline</a></code> | <code>object</code> | Set to true if you want to treat skipped pipelines as if they finished with success. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.allowPipelineTriggerApproveDeployment">AllowPipelineTriggerApproveDeployment</a></code> | <code>object</code> | Set whether or not a pipeline triggerer is allowed to approve deployments. Premium and Ultimate only. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.allowMergeOnSkippedPipeline">AllowMergeOnSkippedPipeline</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to true if you want to treat skipped pipelines as if they finished with success. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.allowPipelineTriggerApproveDeployment">AllowPipelineTriggerApproveDeployment</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set whether or not a pipeline triggerer is allowed to approve deployments. Premium and Ultimate only. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.analyticsAccessLevel">AnalyticsAccessLevel</a></code> | <code>string</code> | Set the analytics access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.approvalsBeforeMerge">ApprovalsBeforeMerge</a></code> | <code>double</code> | Number of merge request approvals required for merging. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.archived">Archived</a></code> | <code>object</code> | Whether the project is in read-only mode (archived). Repositories can be archived/unarchived by toggling this parameter. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.archiveOnDestroy">ArchiveOnDestroy</a></code> | <code>object</code> | Set to `true` to archive the project instead of deleting on destroy. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.archived">Archived</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether the project is in read-only mode (archived). Repositories can be archived/unarchived by toggling this parameter. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.archiveOnDestroy">ArchiveOnDestroy</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to `true` to archive the project instead of deleting on destroy. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.autoCancelPendingPipelines">AutoCancelPendingPipelines</a></code> | <code>string</code> | Auto-cancel pending pipelines. This isn’t a boolean, but enabled/disabled. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.autocloseReferencedIssues">AutocloseReferencedIssues</a></code> | <code>object</code> | Set whether auto-closing referenced issues on default branch. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.autocloseReferencedIssues">AutocloseReferencedIssues</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set whether auto-closing referenced issues on default branch. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.autoDevopsDeployStrategy">AutoDevopsDeployStrategy</a></code> | <code>string</code> | Auto Deploy strategy. Valid values are `continuous`, `manual`, `timed_incremental`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.autoDevopsEnabled">AutoDevopsEnabled</a></code> | <code>object</code> | Enable Auto DevOps for this project. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.autoDuoCodeReviewEnabled">AutoDuoCodeReviewEnabled</a></code> | <code>object</code> | Enable automatic reviews by GitLab Duo on merge requests. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.autoDevopsEnabled">AutoDevopsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable Auto DevOps for this project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.autoDuoCodeReviewEnabled">AutoDuoCodeReviewEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable automatic reviews by GitLab Duo on merge requests. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.avatar">Avatar</a></code> | <code>string</code> | A local path to the avatar image to upload. **Note**: not available for imported resources. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.avatarHash">AvatarHash</a></code> | <code>string</code> | The hash of the avatar image. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.branches">Branches</a></code> | <code>string</code> | Branches to fork (empty for all branches). |
@@ -4001,79 +4001,79 @@ new ProjectConfig {
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.ciConfigPath">CiConfigPath</a></code> | <code>string</code> | Custom Path to CI config file. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.ciDefaultGitDepth">CiDefaultGitDepth</a></code> | <code>double</code> | Default number of revisions for shallow cloning. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.ciDeletePipelinesInSeconds">CiDeletePipelinesInSeconds</a></code> | <code>double</code> | Pipelines older than the configured time are deleted. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.ciForwardDeploymentEnabled">CiForwardDeploymentEnabled</a></code> | <code>object</code> | When a new deployment job starts, skip older deployment jobs that are still pending. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.ciForwardDeploymentRollbackAllowed">CiForwardDeploymentRollbackAllowed</a></code> | <code>object</code> | Allow job retries even if the deployment job is outdated. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.ciForwardDeploymentEnabled">CiForwardDeploymentEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | When a new deployment job starts, skip older deployment jobs that are still pending. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.ciForwardDeploymentRollbackAllowed">CiForwardDeploymentRollbackAllowed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow job retries even if the deployment job is outdated. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.ciIdTokenSubClaimComponents">CiIdTokenSubClaimComponents</a></code> | <code>string[]</code> | Fields included in the sub claim of the ID Token. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.ciPipelineVariablesMinimumOverrideRole">CiPipelineVariablesMinimumOverrideRole</a></code> | <code>string</code> | The minimum role required to set variables when running pipelines and jobs. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.ciPushRepositoryForJobTokenAllowed">CiPushRepositoryForJobTokenAllowed</a></code> | <code>object</code> | Allow Git push requests to your project repository that are authenticated with a CI/CD job token. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.ciPushRepositoryForJobTokenAllowed">CiPushRepositoryForJobTokenAllowed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow Git push requests to your project repository that are authenticated with a CI/CD job token. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.ciRestrictPipelineCancellationRole">CiRestrictPipelineCancellationRole</a></code> | <code>string</code> | The role required to cancel a pipeline or job. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.ciSeparatedCaches">CiSeparatedCaches</a></code> | <code>object</code> | Use separate caches for protected branches. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.ciSeparatedCaches">CiSeparatedCaches</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Use separate caches for protected branches. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.containerExpirationPolicy">ContainerExpirationPolicy</a></code> | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy">ProjectContainerExpirationPolicy</a></code> | container_expiration_policy block. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.containerRegistryAccessLevel">ContainerRegistryAccessLevel</a></code> | <code>string</code> | Set visibility of container registry, for this project. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.containerRegistryEnabled">ContainerRegistryEnabled</a></code> | <code>object</code> | Enable container registry for the project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.containerRegistryEnabled">ContainerRegistryEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable container registry for the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.defaultBranch">DefaultBranch</a></code> | <code>string</code> | The default branch for the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.description">Description</a></code> | <code>string</code> | A description of the project. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.emailsEnabled">EmailsEnabled</a></code> | <code>object</code> | Enable email notifications. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.emailsEnabled">EmailsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable email notifications. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.environmentsAccessLevel">EnvironmentsAccessLevel</a></code> | <code>string</code> | Set the environments access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.externalAuthorizationClassificationLabel">ExternalAuthorizationClassificationLabel</a></code> | <code>string</code> | The classification label for the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.featureFlagsAccessLevel">FeatureFlagsAccessLevel</a></code> | <code>string</code> | Set the feature flags access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.forkedFromProjectId">ForkedFromProjectId</a></code> | <code>double</code> | The id of the project to fork. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.forkingAccessLevel">ForkingAccessLevel</a></code> | <code>string</code> | Set the forking access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.groupRunnersEnabled">GroupRunnersEnabled</a></code> | <code>object</code> | Enable group runners for this project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.groupRunnersEnabled">GroupRunnersEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable group runners for this project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.groupWithProjectTemplatesId">GroupWithProjectTemplatesId</a></code> | <code>double</code> | For group-level custom templates, specifies ID of group from which all the custom project templates are sourced. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project#id Project#id}. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.importUrl">ImportUrl</a></code> | <code>string</code> | Git URL to a repository to be imported. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.importUrlPassword">ImportUrlPassword</a></code> | <code>string</code> | The password for the `import_url`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.importUrlUsername">ImportUrlUsername</a></code> | <code>string</code> | The username for the `import_url`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.infrastructureAccessLevel">InfrastructureAccessLevel</a></code> | <code>string</code> | Set the infrastructure access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.initializeWithReadme">InitializeWithReadme</a></code> | <code>object</code> | Create main branch with first commit containing a README.md file. Must be set to `true` if importing an uninitialized project with a different `default_branch`. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.initializeWithReadme">InitializeWithReadme</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Create main branch with first commit containing a README.md file. Must be set to `true` if importing an uninitialized project with a different `default_branch`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.issuesAccessLevel">IssuesAccessLevel</a></code> | <code>string</code> | Set the issues access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.issuesEnabled">IssuesEnabled</a></code> | <code>object</code> | Enable issue tracking for the project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.issuesEnabled">IssuesEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable issue tracking for the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.issuesTemplate">IssuesTemplate</a></code> | <code>string</code> | Sets the template for new issues in the project. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.keepLatestArtifact">KeepLatestArtifact</a></code> | <code>object</code> | Disable or enable the ability to keep the latest artifact for this project. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.lfsEnabled">LfsEnabled</a></code> | <code>object</code> | Enable LFS for the project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.keepLatestArtifact">KeepLatestArtifact</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Disable or enable the ability to keep the latest artifact for this project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.lfsEnabled">LfsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable LFS for the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mergeCommitTemplate">MergeCommitTemplate</a></code> | <code>string</code> | Template used to create merge commit message in merge requests. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mergeMethod">MergeMethod</a></code> | <code>string</code> | Set the merge method. Valid values are `merge`, `rebase_merge`, `ff`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mergePipelinesEnabled">MergePipelinesEnabled</a></code> | <code>object</code> | Enable or disable merge pipelines. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mergePipelinesEnabled">MergePipelinesEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable or disable merge pipelines. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mergeRequestsAccessLevel">MergeRequestsAccessLevel</a></code> | <code>string</code> | Set the merge requests access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mergeRequestsEnabled">MergeRequestsEnabled</a></code> | <code>object</code> | Enable merge requests for the project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mergeRequestsEnabled">MergeRequestsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable merge requests for the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mergeRequestsTemplate">MergeRequestsTemplate</a></code> | <code>string</code> | Sets the template for new merge requests in the project. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mergeTrainsEnabled">MergeTrainsEnabled</a></code> | <code>object</code> | Enable or disable merge trains. Requires `merge_pipelines_enabled` to be set to `true` to take effect. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mirror">Mirror</a></code> | <code>object</code> | Enable project pull mirror. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mirrorOverwritesDivergedBranches">MirrorOverwritesDivergedBranches</a></code> | <code>object</code> | Enable overwrite diverged branches for a mirrored project. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mirrorTriggerBuilds">MirrorTriggerBuilds</a></code> | <code>object</code> | Enable trigger builds on pushes for a mirrored project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mergeTrainsEnabled">MergeTrainsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable or disable merge trains. Requires `merge_pipelines_enabled` to be set to `true` to take effect. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mirror">Mirror</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable project pull mirror. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mirrorOverwritesDivergedBranches">MirrorOverwritesDivergedBranches</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable overwrite diverged branches for a mirrored project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mirrorTriggerBuilds">MirrorTriggerBuilds</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable trigger builds on pushes for a mirrored project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.modelExperimentsAccessLevel">ModelExperimentsAccessLevel</a></code> | <code>string</code> | Set visibility of machine learning model experiments. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.modelRegistryAccessLevel">ModelRegistryAccessLevel</a></code> | <code>string</code> | Set visibility of machine learning model registry. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.monitorAccessLevel">MonitorAccessLevel</a></code> | <code>string</code> | Set the monitor access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mrDefaultTargetSelf">MrDefaultTargetSelf</a></code> | <code>object</code> | For forked projects, target merge requests to this project. If false, the target will be the upstream project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.mrDefaultTargetSelf">MrDefaultTargetSelf</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | For forked projects, target merge requests to this project. If false, the target will be the upstream project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.namespaceId">NamespaceId</a></code> | <code>double</code> | The namespace (group or user) of the project. Defaults to your user. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.onlyAllowMergeIfAllDiscussionsAreResolved">OnlyAllowMergeIfAllDiscussionsAreResolved</a></code> | <code>object</code> | Set to true if you want allow merges only if all discussions are resolved. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.onlyAllowMergeIfPipelineSucceeds">OnlyAllowMergeIfPipelineSucceeds</a></code> | <code>object</code> | Set to true if you want allow merges only if a pipeline succeeds. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.onlyMirrorProtectedBranches">OnlyMirrorProtectedBranches</a></code> | <code>object</code> | Enable only mirror protected branches for a mirrored project. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.packagesEnabled">PackagesEnabled</a></code> | <code>object</code> | Enable packages repository for the project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.onlyAllowMergeIfAllDiscussionsAreResolved">OnlyAllowMergeIfAllDiscussionsAreResolved</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to true if you want allow merges only if all discussions are resolved. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.onlyAllowMergeIfPipelineSucceeds">OnlyAllowMergeIfPipelineSucceeds</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to true if you want allow merges only if a pipeline succeeds. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.onlyMirrorProtectedBranches">OnlyMirrorProtectedBranches</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable only mirror protected branches for a mirrored project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.packagesEnabled">PackagesEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable packages repository for the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.pagesAccessLevel">PagesAccessLevel</a></code> | <code>string</code> | Enable pages access control. Valid values are `public`, `private`, `enabled`, `disabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.path">Path</a></code> | <code>string</code> | The path of the repository. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.permanentlyDeleteOnDestroy">PermanentlyDeleteOnDestroy</a></code> | <code>object</code> | Set to `true` to immediately permanently delete the project instead of scheduling a delete for Premium and Ultimate tiers. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.pipelinesEnabled">PipelinesEnabled</a></code> | <code>object</code> | Enable pipelines for the project. The `pipelines_enabled` field is being sent as `jobs_enabled` in the GitLab API calls. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.preReceiveSecretDetectionEnabled">PreReceiveSecretDetectionEnabled</a></code> | <code>object</code> | Whether Secret Push Detection is enabled. Requires GitLab Ultimate. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.preventMergeWithoutJiraIssue">PreventMergeWithoutJiraIssue</a></code> | <code>object</code> | Set whether merge requests require an associated issue from Jira. Premium and Ultimate only. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.printingMergeRequestLinkEnabled">PrintingMergeRequestLinkEnabled</a></code> | <code>object</code> | Show link to create/view merge request when pushing from the command line. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.publicBuilds">PublicBuilds</a></code> | <code>object</code> | If true, jobs can be viewed by non-project members. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.publicJobs">PublicJobs</a></code> | <code>object</code> | If true, jobs can be viewed by non-project members. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.permanentlyDeleteOnDestroy">PermanentlyDeleteOnDestroy</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to `true` to immediately permanently delete the project instead of scheduling a delete for Premium and Ultimate tiers. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.pipelinesEnabled">PipelinesEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable pipelines for the project. The `pipelines_enabled` field is being sent as `jobs_enabled` in the GitLab API calls. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.preReceiveSecretDetectionEnabled">PreReceiveSecretDetectionEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether Secret Push Detection is enabled. Requires GitLab Ultimate. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.preventMergeWithoutJiraIssue">PreventMergeWithoutJiraIssue</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set whether merge requests require an associated issue from Jira. Premium and Ultimate only. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.printingMergeRequestLinkEnabled">PrintingMergeRequestLinkEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Show link to create/view merge request when pushing from the command line. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.publicBuilds">PublicBuilds</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If true, jobs can be viewed by non-project members. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.publicJobs">PublicJobs</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If true, jobs can be viewed by non-project members. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.pushRules">PushRules</a></code> | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules">ProjectPushRules</a></code> | push_rules block. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.releasesAccessLevel">ReleasesAccessLevel</a></code> | <code>string</code> | Set the releases access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.removeSourceBranchAfterMerge">RemoveSourceBranchAfterMerge</a></code> | <code>object</code> | Enable `Delete source branch` option by default for all new merge requests. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.removeSourceBranchAfterMerge">RemoveSourceBranchAfterMerge</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable `Delete source branch` option by default for all new merge requests. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.repositoryAccessLevel">RepositoryAccessLevel</a></code> | <code>string</code> | Set the repository access level. Valid values are `disabled`, `private`, `enabled`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.repositoryStorage">RepositoryStorage</a></code> | <code>string</code> | Which storage shard the repository is on. (administrator only). |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.requestAccessEnabled">RequestAccessEnabled</a></code> | <code>object</code> | Allow users to request member access. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.requestAccessEnabled">RequestAccessEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow users to request member access. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.requirementsAccessLevel">RequirementsAccessLevel</a></code> | <code>string</code> | Set the requirements access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.resolveOutdatedDiffDiscussions">ResolveOutdatedDiffDiscussions</a></code> | <code>object</code> | Automatically resolve merge request diffs discussions on lines changed with a push. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.restrictUserDefinedVariables">RestrictUserDefinedVariables</a></code> | <code>object</code> | Allow only users with the Maintainer role to pass user-defined variables when triggering a pipeline. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.resolveOutdatedDiffDiscussions">ResolveOutdatedDiffDiscussions</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Automatically resolve merge request diffs discussions on lines changed with a push. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.restrictUserDefinedVariables">RestrictUserDefinedVariables</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow only users with the Maintainer role to pass user-defined variables when triggering a pipeline. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.securityAndComplianceAccessLevel">SecurityAndComplianceAccessLevel</a></code> | <code>string</code> | Set the security and compliance access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.sharedRunnersEnabled">SharedRunnersEnabled</a></code> | <code>object</code> | Enable shared runners for this project. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.skipWaitForDefaultBranchProtection">SkipWaitForDefaultBranchProtection</a></code> | <code>object</code> | If `true`, the default behavior to wait for the default branch protection to be created is skipped. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.sharedRunnersEnabled">SharedRunnersEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable shared runners for this project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.skipWaitForDefaultBranchProtection">SkipWaitForDefaultBranchProtection</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If `true`, the default behavior to wait for the default branch protection to be created is skipped. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.snippetsAccessLevel">SnippetsAccessLevel</a></code> | <code>string</code> | Set the snippets access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.snippetsEnabled">SnippetsEnabled</a></code> | <code>object</code> | Enable snippets for the project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.snippetsEnabled">SnippetsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable snippets for the project. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.squashCommitTemplate">SquashCommitTemplate</a></code> | <code>string</code> | Template used to create squash commit message in merge requests. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.squashOption">SquashOption</a></code> | <code>string</code> | Squash commits when merge request is merged. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.suggestionCommitMessage">SuggestionCommitMessage</a></code> | <code>string</code> | The commit message used to apply merge request suggestions. |
@@ -4082,30 +4082,30 @@ new ProjectConfig {
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.templateProjectId">TemplateProjectId</a></code> | <code>double</code> | When used with use_custom_template, project ID of a custom project template. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-gitlab.project.ProjectTimeouts">ProjectTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.topics">Topics</a></code> | <code>string[]</code> | The list of topics for the project. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.useCustomTemplate">UseCustomTemplate</a></code> | <code>object</code> | Use either custom instance or group (with group_with_project_templates_id) project template (enterprise edition). |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.useCustomTemplate">UseCustomTemplate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Use either custom instance or group (with group_with_project_templates_id) project template (enterprise edition). |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.visibilityLevel">VisibilityLevel</a></code> | <code>string</code> | Set to `public` to create a public project. Valid values are `private`, `internal`, `public`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.wikiAccessLevel">WikiAccessLevel</a></code> | <code>string</code> | Set the wiki access level. Valid values are `disabled`, `private`, `enabled`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.wikiEnabled">WikiEnabled</a></code> | <code>object</code> | Enable wiki for the project. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectConfig.property.wikiEnabled">WikiEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable wiki for the project. |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-gitlab.project.ProjectConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.project.ProjectConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -4152,10 +4152,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-gitlab.project.ProjectConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -4176,10 +4176,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `AllowMergeOnSkippedPipeline`<sup>Optional</sup> <a name="AllowMergeOnSkippedPipeline" id="@cdktf/provider-gitlab.project.ProjectConfig.property.allowMergeOnSkippedPipeline"></a>
 
 ```csharp
-public object AllowMergeOnSkippedPipeline { get; set; }
+public bool|IResolvable AllowMergeOnSkippedPipeline { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to true if you want to treat skipped pipelines as if they finished with success.
 
@@ -4190,10 +4190,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `AllowPipelineTriggerApproveDeployment`<sup>Optional</sup> <a name="AllowPipelineTriggerApproveDeployment" id="@cdktf/provider-gitlab.project.ProjectConfig.property.allowPipelineTriggerApproveDeployment"></a>
 
 ```csharp
-public object AllowPipelineTriggerApproveDeployment { get; set; }
+public bool|IResolvable AllowPipelineTriggerApproveDeployment { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set whether or not a pipeline triggerer is allowed to approve deployments. Premium and Ultimate only.
 
@@ -4237,10 +4237,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `Archived`<sup>Optional</sup> <a name="Archived" id="@cdktf/provider-gitlab.project.ProjectConfig.property.archived"></a>
 
 ```csharp
-public object Archived { get; set; }
+public bool|IResolvable Archived { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether the project is in read-only mode (archived). Repositories can be archived/unarchived by toggling this parameter.
 
@@ -4251,10 +4251,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `ArchiveOnDestroy`<sup>Optional</sup> <a name="ArchiveOnDestroy" id="@cdktf/provider-gitlab.project.ProjectConfig.property.archiveOnDestroy"></a>
 
 ```csharp
-public object ArchiveOnDestroy { get; set; }
+public bool|IResolvable ArchiveOnDestroy { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to `true` to archive the project instead of deleting on destroy.
 
@@ -4281,10 +4281,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `AutocloseReferencedIssues`<sup>Optional</sup> <a name="AutocloseReferencedIssues" id="@cdktf/provider-gitlab.project.ProjectConfig.property.autocloseReferencedIssues"></a>
 
 ```csharp
-public object AutocloseReferencedIssues { get; set; }
+public bool|IResolvable AutocloseReferencedIssues { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set whether auto-closing referenced issues on default branch.
 
@@ -4309,10 +4309,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `AutoDevopsEnabled`<sup>Optional</sup> <a name="AutoDevopsEnabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.autoDevopsEnabled"></a>
 
 ```csharp
-public object AutoDevopsEnabled { get; set; }
+public bool|IResolvable AutoDevopsEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable Auto DevOps for this project.
 
@@ -4323,10 +4323,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `AutoDuoCodeReviewEnabled`<sup>Optional</sup> <a name="AutoDuoCodeReviewEnabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.autoDuoCodeReviewEnabled"></a>
 
 ```csharp
-public object AutoDuoCodeReviewEnabled { get; set; }
+public bool|IResolvable AutoDuoCodeReviewEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable automatic reviews by GitLab Duo on merge requests.
 
@@ -4467,10 +4467,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `CiForwardDeploymentEnabled`<sup>Optional</sup> <a name="CiForwardDeploymentEnabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.ciForwardDeploymentEnabled"></a>
 
 ```csharp
-public object CiForwardDeploymentEnabled { get; set; }
+public bool|IResolvable CiForwardDeploymentEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 When a new deployment job starts, skip older deployment jobs that are still pending.
 
@@ -4481,10 +4481,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `CiForwardDeploymentRollbackAllowed`<sup>Optional</sup> <a name="CiForwardDeploymentRollbackAllowed" id="@cdktf/provider-gitlab.project.ProjectConfig.property.ciForwardDeploymentRollbackAllowed"></a>
 
 ```csharp
-public object CiForwardDeploymentRollbackAllowed { get; set; }
+public bool|IResolvable CiForwardDeploymentRollbackAllowed { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow job retries even if the deployment job is outdated.
 
@@ -4527,10 +4527,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `CiPushRepositoryForJobTokenAllowed`<sup>Optional</sup> <a name="CiPushRepositoryForJobTokenAllowed" id="@cdktf/provider-gitlab.project.ProjectConfig.property.ciPushRepositoryForJobTokenAllowed"></a>
 
 ```csharp
-public object CiPushRepositoryForJobTokenAllowed { get; set; }
+public bool|IResolvable CiPushRepositoryForJobTokenAllowed { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow Git push requests to your project repository that are authenticated with a CI/CD job token.
 
@@ -4557,10 +4557,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `CiSeparatedCaches`<sup>Optional</sup> <a name="CiSeparatedCaches" id="@cdktf/provider-gitlab.project.ProjectConfig.property.ciSeparatedCaches"></a>
 
 ```csharp
-public object CiSeparatedCaches { get; set; }
+public bool|IResolvable CiSeparatedCaches { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Use separate caches for protected branches.
 
@@ -4599,10 +4599,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `ContainerRegistryEnabled`<sup>Optional</sup> <a name="ContainerRegistryEnabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.containerRegistryEnabled"></a>
 
 ```csharp
-public object ContainerRegistryEnabled { get; set; }
+public bool|IResolvable ContainerRegistryEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable container registry for the project.
 
@@ -4641,10 +4641,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `EmailsEnabled`<sup>Optional</sup> <a name="EmailsEnabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.emailsEnabled"></a>
 
 ```csharp
-public object EmailsEnabled { get; set; }
+public bool|IResolvable EmailsEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable email notifications.
 
@@ -4727,10 +4727,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `GroupRunnersEnabled`<sup>Optional</sup> <a name="GroupRunnersEnabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.groupRunnersEnabled"></a>
 
 ```csharp
-public object GroupRunnersEnabled { get; set; }
+public bool|IResolvable GroupRunnersEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable group runners for this project.
 
@@ -4834,10 +4834,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `InitializeWithReadme`<sup>Optional</sup> <a name="InitializeWithReadme" id="@cdktf/provider-gitlab.project.ProjectConfig.property.initializeWithReadme"></a>
 
 ```csharp
-public object InitializeWithReadme { get; set; }
+public bool|IResolvable InitializeWithReadme { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Create main branch with first commit containing a README.md file. Must be set to `true` if importing an uninitialized project with a different `default_branch`.
 
@@ -4862,10 +4862,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `IssuesEnabled`<sup>Optional</sup> <a name="IssuesEnabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.issuesEnabled"></a>
 
 ```csharp
-public object IssuesEnabled { get; set; }
+public bool|IResolvable IssuesEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable issue tracking for the project.
 
@@ -4890,10 +4890,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `KeepLatestArtifact`<sup>Optional</sup> <a name="KeepLatestArtifact" id="@cdktf/provider-gitlab.project.ProjectConfig.property.keepLatestArtifact"></a>
 
 ```csharp
-public object KeepLatestArtifact { get; set; }
+public bool|IResolvable KeepLatestArtifact { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Disable or enable the ability to keep the latest artifact for this project.
 
@@ -4904,10 +4904,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `LfsEnabled`<sup>Optional</sup> <a name="LfsEnabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.lfsEnabled"></a>
 
 ```csharp
-public object LfsEnabled { get; set; }
+public bool|IResolvable LfsEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable LFS for the project.
 
@@ -4946,10 +4946,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `MergePipelinesEnabled`<sup>Optional</sup> <a name="MergePipelinesEnabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.mergePipelinesEnabled"></a>
 
 ```csharp
-public object MergePipelinesEnabled { get; set; }
+public bool|IResolvable MergePipelinesEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable or disable merge pipelines.
 
@@ -4974,10 +4974,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `MergeRequestsEnabled`<sup>Optional</sup> <a name="MergeRequestsEnabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.mergeRequestsEnabled"></a>
 
 ```csharp
-public object MergeRequestsEnabled { get; set; }
+public bool|IResolvable MergeRequestsEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable merge requests for the project.
 
@@ -5002,10 +5002,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `MergeTrainsEnabled`<sup>Optional</sup> <a name="MergeTrainsEnabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.mergeTrainsEnabled"></a>
 
 ```csharp
-public object MergeTrainsEnabled { get; set; }
+public bool|IResolvable MergeTrainsEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable or disable merge trains. Requires `merge_pipelines_enabled` to be set to `true` to take effect.
 
@@ -5016,10 +5016,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `Mirror`<sup>Optional</sup> <a name="Mirror" id="@cdktf/provider-gitlab.project.ProjectConfig.property.mirror"></a>
 
 ```csharp
-public object Mirror { get; set; }
+public bool|IResolvable Mirror { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable project pull mirror.
 
@@ -5030,10 +5030,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `MirrorOverwritesDivergedBranches`<sup>Optional</sup> <a name="MirrorOverwritesDivergedBranches" id="@cdktf/provider-gitlab.project.ProjectConfig.property.mirrorOverwritesDivergedBranches"></a>
 
 ```csharp
-public object MirrorOverwritesDivergedBranches { get; set; }
+public bool|IResolvable MirrorOverwritesDivergedBranches { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable overwrite diverged branches for a mirrored project.
 
@@ -5044,10 +5044,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `MirrorTriggerBuilds`<sup>Optional</sup> <a name="MirrorTriggerBuilds" id="@cdktf/provider-gitlab.project.ProjectConfig.property.mirrorTriggerBuilds"></a>
 
 ```csharp
-public object MirrorTriggerBuilds { get; set; }
+public bool|IResolvable MirrorTriggerBuilds { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable trigger builds on pushes for a mirrored project.
 
@@ -5100,10 +5100,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `MrDefaultTargetSelf`<sup>Optional</sup> <a name="MrDefaultTargetSelf" id="@cdktf/provider-gitlab.project.ProjectConfig.property.mrDefaultTargetSelf"></a>
 
 ```csharp
-public object MrDefaultTargetSelf { get; set; }
+public bool|IResolvable MrDefaultTargetSelf { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 For forked projects, target merge requests to this project. If false, the target will be the upstream project.
 
@@ -5128,10 +5128,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `OnlyAllowMergeIfAllDiscussionsAreResolved`<sup>Optional</sup> <a name="OnlyAllowMergeIfAllDiscussionsAreResolved" id="@cdktf/provider-gitlab.project.ProjectConfig.property.onlyAllowMergeIfAllDiscussionsAreResolved"></a>
 
 ```csharp
-public object OnlyAllowMergeIfAllDiscussionsAreResolved { get; set; }
+public bool|IResolvable OnlyAllowMergeIfAllDiscussionsAreResolved { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to true if you want allow merges only if all discussions are resolved.
 
@@ -5142,10 +5142,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `OnlyAllowMergeIfPipelineSucceeds`<sup>Optional</sup> <a name="OnlyAllowMergeIfPipelineSucceeds" id="@cdktf/provider-gitlab.project.ProjectConfig.property.onlyAllowMergeIfPipelineSucceeds"></a>
 
 ```csharp
-public object OnlyAllowMergeIfPipelineSucceeds { get; set; }
+public bool|IResolvable OnlyAllowMergeIfPipelineSucceeds { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to true if you want allow merges only if a pipeline succeeds.
 
@@ -5156,10 +5156,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `OnlyMirrorProtectedBranches`<sup>Optional</sup> <a name="OnlyMirrorProtectedBranches" id="@cdktf/provider-gitlab.project.ProjectConfig.property.onlyMirrorProtectedBranches"></a>
 
 ```csharp
-public object OnlyMirrorProtectedBranches { get; set; }
+public bool|IResolvable OnlyMirrorProtectedBranches { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable only mirror protected branches for a mirrored project.
 
@@ -5170,10 +5170,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `PackagesEnabled`<sup>Optional</sup> <a name="PackagesEnabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.packagesEnabled"></a>
 
 ```csharp
-public object PackagesEnabled { get; set; }
+public bool|IResolvable PackagesEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable packages repository for the project.
 
@@ -5212,10 +5212,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `PermanentlyDeleteOnDestroy`<sup>Optional</sup> <a name="PermanentlyDeleteOnDestroy" id="@cdktf/provider-gitlab.project.ProjectConfig.property.permanentlyDeleteOnDestroy"></a>
 
 ```csharp
-public object PermanentlyDeleteOnDestroy { get; set; }
+public bool|IResolvable PermanentlyDeleteOnDestroy { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to `true` to immediately permanently delete the project instead of scheduling a delete for Premium and Ultimate tiers.
 
@@ -5226,10 +5226,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `PipelinesEnabled`<sup>Optional</sup> <a name="PipelinesEnabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.pipelinesEnabled"></a>
 
 ```csharp
-public object PipelinesEnabled { get; set; }
+public bool|IResolvable PipelinesEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable pipelines for the project. The `pipelines_enabled` field is being sent as `jobs_enabled` in the GitLab API calls.
 
@@ -5240,10 +5240,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `PreReceiveSecretDetectionEnabled`<sup>Optional</sup> <a name="PreReceiveSecretDetectionEnabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.preReceiveSecretDetectionEnabled"></a>
 
 ```csharp
-public object PreReceiveSecretDetectionEnabled { get; set; }
+public bool|IResolvable PreReceiveSecretDetectionEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether Secret Push Detection is enabled. Requires GitLab Ultimate.
 
@@ -5254,10 +5254,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `PreventMergeWithoutJiraIssue`<sup>Optional</sup> <a name="PreventMergeWithoutJiraIssue" id="@cdktf/provider-gitlab.project.ProjectConfig.property.preventMergeWithoutJiraIssue"></a>
 
 ```csharp
-public object PreventMergeWithoutJiraIssue { get; set; }
+public bool|IResolvable PreventMergeWithoutJiraIssue { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set whether merge requests require an associated issue from Jira. Premium and Ultimate only.
 
@@ -5268,10 +5268,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `PrintingMergeRequestLinkEnabled`<sup>Optional</sup> <a name="PrintingMergeRequestLinkEnabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.printingMergeRequestLinkEnabled"></a>
 
 ```csharp
-public object PrintingMergeRequestLinkEnabled { get; set; }
+public bool|IResolvable PrintingMergeRequestLinkEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Show link to create/view merge request when pushing from the command line.
 
@@ -5282,10 +5282,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `PublicBuilds`<sup>Optional</sup> <a name="PublicBuilds" id="@cdktf/provider-gitlab.project.ProjectConfig.property.publicBuilds"></a>
 
 ```csharp
-public object PublicBuilds { get; set; }
+public bool|IResolvable PublicBuilds { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If true, jobs can be viewed by non-project members.
 
@@ -5296,10 +5296,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `PublicJobs`<sup>Optional</sup> <a name="PublicJobs" id="@cdktf/provider-gitlab.project.ProjectConfig.property.publicJobs"></a>
 
 ```csharp
-public object PublicJobs { get; set; }
+public bool|IResolvable PublicJobs { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If true, jobs can be viewed by non-project members.
 
@@ -5338,10 +5338,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `RemoveSourceBranchAfterMerge`<sup>Optional</sup> <a name="RemoveSourceBranchAfterMerge" id="@cdktf/provider-gitlab.project.ProjectConfig.property.removeSourceBranchAfterMerge"></a>
 
 ```csharp
-public object RemoveSourceBranchAfterMerge { get; set; }
+public bool|IResolvable RemoveSourceBranchAfterMerge { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable `Delete source branch` option by default for all new merge requests.
 
@@ -5380,10 +5380,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `RequestAccessEnabled`<sup>Optional</sup> <a name="RequestAccessEnabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.requestAccessEnabled"></a>
 
 ```csharp
-public object RequestAccessEnabled { get; set; }
+public bool|IResolvable RequestAccessEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow users to request member access.
 
@@ -5408,10 +5408,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `ResolveOutdatedDiffDiscussions`<sup>Optional</sup> <a name="ResolveOutdatedDiffDiscussions" id="@cdktf/provider-gitlab.project.ProjectConfig.property.resolveOutdatedDiffDiscussions"></a>
 
 ```csharp
-public object ResolveOutdatedDiffDiscussions { get; set; }
+public bool|IResolvable ResolveOutdatedDiffDiscussions { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Automatically resolve merge request diffs discussions on lines changed with a push.
 
@@ -5422,10 +5422,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `RestrictUserDefinedVariables`<sup>Optional</sup> <a name="RestrictUserDefinedVariables" id="@cdktf/provider-gitlab.project.ProjectConfig.property.restrictUserDefinedVariables"></a>
 
 ```csharp
-public object RestrictUserDefinedVariables { get; set; }
+public bool|IResolvable RestrictUserDefinedVariables { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow only users with the Maintainer role to pass user-defined variables when triggering a pipeline.
 
@@ -5450,10 +5450,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `SharedRunnersEnabled`<sup>Optional</sup> <a name="SharedRunnersEnabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.sharedRunnersEnabled"></a>
 
 ```csharp
-public object SharedRunnersEnabled { get; set; }
+public bool|IResolvable SharedRunnersEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable shared runners for this project.
 
@@ -5464,10 +5464,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `SkipWaitForDefaultBranchProtection`<sup>Optional</sup> <a name="SkipWaitForDefaultBranchProtection" id="@cdktf/provider-gitlab.project.ProjectConfig.property.skipWaitForDefaultBranchProtection"></a>
 
 ```csharp
-public object SkipWaitForDefaultBranchProtection { get; set; }
+public bool|IResolvable SkipWaitForDefaultBranchProtection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If `true`, the default behavior to wait for the default branch protection to be created is skipped.
 
@@ -5496,10 +5496,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `SnippetsEnabled`<sup>Optional</sup> <a name="SnippetsEnabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.snippetsEnabled"></a>
 
 ```csharp
-public object SnippetsEnabled { get; set; }
+public bool|IResolvable SnippetsEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable snippets for the project.
 
@@ -5630,10 +5630,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `UseCustomTemplate`<sup>Optional</sup> <a name="UseCustomTemplate" id="@cdktf/provider-gitlab.project.ProjectConfig.property.useCustomTemplate"></a>
 
 ```csharp
-public object UseCustomTemplate { get; set; }
+public bool|IResolvable UseCustomTemplate { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Use either custom instance or group (with group_with_project_templates_id) project template (enterprise edition).
 
@@ -5674,10 +5674,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `WikiEnabled`<sup>Optional</sup> <a name="WikiEnabled" id="@cdktf/provider-gitlab.project.ProjectConfig.property.wikiEnabled"></a>
 
 ```csharp
-public object WikiEnabled { get; set; }
+public bool|IResolvable WikiEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable wiki for the project.
 
@@ -5694,7 +5694,7 @@ using HashiCorp.Cdktf.Providers.Gitlab;
 
 new ProjectContainerExpirationPolicy {
     string Cadence = null,
-    object Enabled = null,
+    bool|IResolvable Enabled = null,
     double KeepN = null,
     string NameRegexDelete = null,
     string NameRegexKeep = null,
@@ -5707,7 +5707,7 @@ new ProjectContainerExpirationPolicy {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.cadence">Cadence</a></code> | <code>string</code> | The cadence of the policy. Valid values are: `1d`, `7d`, `14d`, `1month`, `3month`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.enabled">Enabled</a></code> | <code>object</code> | If true, the policy is enabled. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If true, the policy is enabled. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.keepN">KeepN</a></code> | <code>double</code> | The number of images to keep. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.nameRegexDelete">NameRegexDelete</a></code> | <code>string</code> | The regular expression to match image names to delete. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.nameRegexKeep">NameRegexKeep</a></code> | <code>string</code> | The regular expression to match image names to keep. |
@@ -5732,10 +5732,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `Enabled`<sup>Optional</sup> <a name="Enabled" id="@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicy.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; set; }
+public bool|IResolvable Enabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If true, the policy is enabled.
 
@@ -5809,17 +5809,17 @@ using HashiCorp.Cdktf.Providers.Gitlab;
 new ProjectPushRules {
     string AuthorEmailRegex = null,
     string BranchNameRegex = null,
-    object CommitCommitterCheck = null,
-    object CommitCommitterNameCheck = null,
+    bool|IResolvable CommitCommitterCheck = null,
+    bool|IResolvable CommitCommitterNameCheck = null,
     string CommitMessageNegativeRegex = null,
     string CommitMessageRegex = null,
-    object DenyDeleteTag = null,
+    bool|IResolvable DenyDeleteTag = null,
     string FileNameRegex = null,
     double MaxFileSize = null,
-    object MemberCheck = null,
-    object PreventSecrets = null,
-    object RejectNonDcoCommits = null,
-    object RejectUnsignedCommits = null
+    bool|IResolvable MemberCheck = null,
+    bool|IResolvable PreventSecrets = null,
+    bool|IResolvable RejectNonDcoCommits = null,
+    bool|IResolvable RejectUnsignedCommits = null
 };
 ```
 
@@ -5829,17 +5829,17 @@ new ProjectPushRules {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.authorEmailRegex">AuthorEmailRegex</a></code> | <code>string</code> | All commit author emails must match this regex, e.g. `@my-company.com$`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.branchNameRegex">BranchNameRegex</a></code> | <code>string</code> | All branch names must match this regex, e.g. `(feature\|hotfix)\/*`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.commitCommitterCheck">CommitCommitterCheck</a></code> | <code>object</code> | Users can only push commits to this repository that were committed with one of their own verified emails. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.commitCommitterNameCheck">CommitCommitterNameCheck</a></code> | <code>object</code> | Users can only push commits to this repository if the commit author name is consistent with their GitLab account name. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.commitCommitterCheck">CommitCommitterCheck</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Users can only push commits to this repository that were committed with one of their own verified emails. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.commitCommitterNameCheck">CommitCommitterNameCheck</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Users can only push commits to this repository if the commit author name is consistent with their GitLab account name. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.commitMessageNegativeRegex">CommitMessageNegativeRegex</a></code> | <code>string</code> | No commit message is allowed to match this regex, e.g. `ssh\:\/\/`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.commitMessageRegex">CommitMessageRegex</a></code> | <code>string</code> | All commit messages must match this regex, e.g. `Fixed \d+\..*`. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.denyDeleteTag">DenyDeleteTag</a></code> | <code>object</code> | Deny deleting a tag. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.denyDeleteTag">DenyDeleteTag</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Deny deleting a tag. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.fileNameRegex">FileNameRegex</a></code> | <code>string</code> | All committed filenames must not match this regex, e.g. `(jar\|exe)$`. |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.maxFileSize">MaxFileSize</a></code> | <code>double</code> | Maximum file size (MB). |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.memberCheck">MemberCheck</a></code> | <code>object</code> | Restrict commits by author (email) to existing GitLab users. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.preventSecrets">PreventSecrets</a></code> | <code>object</code> | GitLab will reject any files that are likely to contain secrets. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.rejectNonDcoCommits">RejectNonDcoCommits</a></code> | <code>object</code> | Reject commit when it’s not DCO certified. |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.rejectUnsignedCommits">RejectUnsignedCommits</a></code> | <code>object</code> | Reject commit when it’s not signed through GPG. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.memberCheck">MemberCheck</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Restrict commits by author (email) to existing GitLab users. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.preventSecrets">PreventSecrets</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | GitLab will reject any files that are likely to contain secrets. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.rejectNonDcoCommits">RejectNonDcoCommits</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Reject commit when it’s not DCO certified. |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules.property.rejectUnsignedCommits">RejectUnsignedCommits</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Reject commit when it’s not signed through GPG. |
 
 ---
 
@@ -5874,10 +5874,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `CommitCommitterCheck`<sup>Optional</sup> <a name="CommitCommitterCheck" id="@cdktf/provider-gitlab.project.ProjectPushRules.property.commitCommitterCheck"></a>
 
 ```csharp
-public object CommitCommitterCheck { get; set; }
+public bool|IResolvable CommitCommitterCheck { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Users can only push commits to this repository that were committed with one of their own verified emails.
 
@@ -5888,10 +5888,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `CommitCommitterNameCheck`<sup>Optional</sup> <a name="CommitCommitterNameCheck" id="@cdktf/provider-gitlab.project.ProjectPushRules.property.commitCommitterNameCheck"></a>
 
 ```csharp
-public object CommitCommitterNameCheck { get; set; }
+public bool|IResolvable CommitCommitterNameCheck { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Users can only push commits to this repository if the commit author name is consistent with their GitLab account name.
 
@@ -5930,10 +5930,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `DenyDeleteTag`<sup>Optional</sup> <a name="DenyDeleteTag" id="@cdktf/provider-gitlab.project.ProjectPushRules.property.denyDeleteTag"></a>
 
 ```csharp
-public object DenyDeleteTag { get; set; }
+public bool|IResolvable DenyDeleteTag { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Deny deleting a tag.
 
@@ -5972,10 +5972,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `MemberCheck`<sup>Optional</sup> <a name="MemberCheck" id="@cdktf/provider-gitlab.project.ProjectPushRules.property.memberCheck"></a>
 
 ```csharp
-public object MemberCheck { get; set; }
+public bool|IResolvable MemberCheck { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Restrict commits by author (email) to existing GitLab users.
 
@@ -5986,10 +5986,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `PreventSecrets`<sup>Optional</sup> <a name="PreventSecrets" id="@cdktf/provider-gitlab.project.ProjectPushRules.property.preventSecrets"></a>
 
 ```csharp
-public object PreventSecrets { get; set; }
+public bool|IResolvable PreventSecrets { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 GitLab will reject any files that are likely to contain secrets.
 
@@ -6000,10 +6000,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `RejectNonDcoCommits`<sup>Optional</sup> <a name="RejectNonDcoCommits" id="@cdktf/provider-gitlab.project.ProjectPushRules.property.rejectNonDcoCommits"></a>
 
 ```csharp
-public object RejectNonDcoCommits { get; set; }
+public bool|IResolvable RejectNonDcoCommits { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Reject commit when it’s not DCO certified.
 
@@ -6014,10 +6014,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `RejectUnsignedCommits`<sup>Optional</sup> <a name="RejectUnsignedCommits" id="@cdktf/provider-gitlab.project.ProjectPushRules.property.rejectUnsignedCommits"></a>
 
 ```csharp
-public object RejectUnsignedCommits { get; set; }
+public bool|IResolvable RejectUnsignedCommits { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Reject commit when it’s not signed through GPG.
 
@@ -6327,13 +6327,13 @@ private void ResetOlderThan()
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.nextRunAt">NextRunAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.cadenceInput">CadenceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.enabledInput">EnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.enabledInput">EnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.keepNInput">KeepNInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.nameRegexDeleteInput">NameRegexDeleteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.nameRegexKeepInput">NameRegexKeepInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.olderThanInput">OlderThanInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.cadence">Cadence</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.enabled">Enabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.keepN">KeepN</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.nameRegexDelete">NameRegexDelete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.nameRegexKeep">NameRegexKeep</a></code> | <code>string</code> | *No description.* |
@@ -6389,10 +6389,10 @@ public string CadenceInput { get; }
 ##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.enabledInput"></a>
 
 ```csharp
-public object EnabledInput { get; }
+public bool|IResolvable EnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6449,10 +6449,10 @@ public string Cadence { get; }
 ##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-gitlab.project.ProjectContainerExpirationPolicyOutputReference.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; }
+public bool|IResolvable Enabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6810,30 +6810,30 @@ private void ResetRejectUnsignedCommits()
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.authorEmailRegexInput">AuthorEmailRegexInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.branchNameRegexInput">BranchNameRegexInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitCommitterCheckInput">CommitCommitterCheckInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitCommitterNameCheckInput">CommitCommitterNameCheckInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitCommitterCheckInput">CommitCommitterCheckInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitCommitterNameCheckInput">CommitCommitterNameCheckInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitMessageNegativeRegexInput">CommitMessageNegativeRegexInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitMessageRegexInput">CommitMessageRegexInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.denyDeleteTagInput">DenyDeleteTagInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.denyDeleteTagInput">DenyDeleteTagInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.fileNameRegexInput">FileNameRegexInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.maxFileSizeInput">MaxFileSizeInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.memberCheckInput">MemberCheckInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.preventSecretsInput">PreventSecretsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.rejectNonDcoCommitsInput">RejectNonDcoCommitsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.rejectUnsignedCommitsInput">RejectUnsignedCommitsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.memberCheckInput">MemberCheckInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.preventSecretsInput">PreventSecretsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.rejectNonDcoCommitsInput">RejectNonDcoCommitsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.rejectUnsignedCommitsInput">RejectUnsignedCommitsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.authorEmailRegex">AuthorEmailRegex</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.branchNameRegex">BranchNameRegex</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitCommitterCheck">CommitCommitterCheck</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitCommitterNameCheck">CommitCommitterNameCheck</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitCommitterCheck">CommitCommitterCheck</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitCommitterNameCheck">CommitCommitterNameCheck</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitMessageNegativeRegex">CommitMessageNegativeRegex</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitMessageRegex">CommitMessageRegex</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.denyDeleteTag">DenyDeleteTag</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.denyDeleteTag">DenyDeleteTag</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.fileNameRegex">FileNameRegex</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.maxFileSize">MaxFileSize</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.memberCheck">MemberCheck</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.preventSecrets">PreventSecrets</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.rejectNonDcoCommits">RejectNonDcoCommits</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.rejectUnsignedCommits">RejectUnsignedCommits</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.memberCheck">MemberCheck</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.preventSecrets">PreventSecrets</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.rejectNonDcoCommits">RejectNonDcoCommits</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.rejectUnsignedCommits">RejectUnsignedCommits</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-gitlab.project.ProjectPushRules">ProjectPushRules</a></code> | *No description.* |
 
 ---
@@ -6885,20 +6885,20 @@ public string BranchNameRegexInput { get; }
 ##### `CommitCommitterCheckInput`<sup>Optional</sup> <a name="CommitCommitterCheckInput" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitCommitterCheckInput"></a>
 
 ```csharp
-public object CommitCommitterCheckInput { get; }
+public bool|IResolvable CommitCommitterCheckInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `CommitCommitterNameCheckInput`<sup>Optional</sup> <a name="CommitCommitterNameCheckInput" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitCommitterNameCheckInput"></a>
 
 ```csharp
-public object CommitCommitterNameCheckInput { get; }
+public bool|IResolvable CommitCommitterNameCheckInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6925,10 +6925,10 @@ public string CommitMessageRegexInput { get; }
 ##### `DenyDeleteTagInput`<sup>Optional</sup> <a name="DenyDeleteTagInput" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.denyDeleteTagInput"></a>
 
 ```csharp
-public object DenyDeleteTagInput { get; }
+public bool|IResolvable DenyDeleteTagInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6955,40 +6955,40 @@ public double MaxFileSizeInput { get; }
 ##### `MemberCheckInput`<sup>Optional</sup> <a name="MemberCheckInput" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.memberCheckInput"></a>
 
 ```csharp
-public object MemberCheckInput { get; }
+public bool|IResolvable MemberCheckInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PreventSecretsInput`<sup>Optional</sup> <a name="PreventSecretsInput" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.preventSecretsInput"></a>
 
 ```csharp
-public object PreventSecretsInput { get; }
+public bool|IResolvable PreventSecretsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `RejectNonDcoCommitsInput`<sup>Optional</sup> <a name="RejectNonDcoCommitsInput" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.rejectNonDcoCommitsInput"></a>
 
 ```csharp
-public object RejectNonDcoCommitsInput { get; }
+public bool|IResolvable RejectNonDcoCommitsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `RejectUnsignedCommitsInput`<sup>Optional</sup> <a name="RejectUnsignedCommitsInput" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.rejectUnsignedCommitsInput"></a>
 
 ```csharp
-public object RejectUnsignedCommitsInput { get; }
+public bool|IResolvable RejectUnsignedCommitsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7015,20 +7015,20 @@ public string BranchNameRegex { get; }
 ##### `CommitCommitterCheck`<sup>Required</sup> <a name="CommitCommitterCheck" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitCommitterCheck"></a>
 
 ```csharp
-public object CommitCommitterCheck { get; }
+public bool|IResolvable CommitCommitterCheck { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `CommitCommitterNameCheck`<sup>Required</sup> <a name="CommitCommitterNameCheck" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.commitCommitterNameCheck"></a>
 
 ```csharp
-public object CommitCommitterNameCheck { get; }
+public bool|IResolvable CommitCommitterNameCheck { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7055,10 +7055,10 @@ public string CommitMessageRegex { get; }
 ##### `DenyDeleteTag`<sup>Required</sup> <a name="DenyDeleteTag" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.denyDeleteTag"></a>
 
 ```csharp
-public object DenyDeleteTag { get; }
+public bool|IResolvable DenyDeleteTag { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7085,40 +7085,40 @@ public double MaxFileSize { get; }
 ##### `MemberCheck`<sup>Required</sup> <a name="MemberCheck" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.memberCheck"></a>
 
 ```csharp
-public object MemberCheck { get; }
+public bool|IResolvable MemberCheck { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PreventSecrets`<sup>Required</sup> <a name="PreventSecrets" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.preventSecrets"></a>
 
 ```csharp
-public object PreventSecrets { get; }
+public bool|IResolvable PreventSecrets { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `RejectNonDcoCommits`<sup>Required</sup> <a name="RejectNonDcoCommits" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.rejectNonDcoCommits"></a>
 
 ```csharp
-public object RejectNonDcoCommits { get; }
+public bool|IResolvable RejectNonDcoCommits { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `RejectUnsignedCommits`<sup>Required</sup> <a name="RejectUnsignedCommits" id="@cdktf/provider-gitlab.project.ProjectPushRulesOutputReference.property.rejectUnsignedCommits"></a>
 
 ```csharp
-public object RejectUnsignedCommits { get; }
+public bool|IResolvable RejectUnsignedCommits { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -7361,7 +7361,7 @@ private void ResetDelete()
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectTimeoutsOutputReference.property.create">Create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.project.ProjectTimeoutsOutputReference.property.delete">Delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.project.ProjectTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.project.ProjectTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-gitlab.project.ProjectTimeouts">ProjectTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -7432,10 +7432,10 @@ public string Delete { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-gitlab.project.ProjectTimeoutsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ProjectTimeouts InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-gitlab.project.ProjectTimeouts">ProjectTimeouts</a>
 
 ---
 

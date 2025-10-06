@@ -283,7 +283,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-gitlab.userRunner.UserRunner.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-gitlab.userRunner.UserRunner.importFrom"></a>
@@ -337,7 +337,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-gitlab.userRunner.UserRunner.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -352,7 +352,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-gitlab.userRunner.UserRunner.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -560,37 +560,37 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.token">Token</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.accessLevelInput">AccessLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.groupIdInput">GroupIdInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.lockedInput">LockedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.lockedInput">LockedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.maintenanceNoteInput">MaintenanceNoteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.maximumTimeoutInput">MaximumTimeoutInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.pausedInput">PausedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.pausedInput">PausedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.projectIdInput">ProjectIdInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.runnerTypeInput">RunnerTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.tagListInput">TagListInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.untaggedInput">UntaggedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.untaggedInput">UntaggedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.accessLevel">AccessLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.groupId">GroupId</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.locked">Locked</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.locked">Locked</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.maintenanceNote">MaintenanceNote</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.maximumTimeout">MaximumTimeout</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.paused">Paused</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.paused">Paused</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.projectId">ProjectId</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.runnerType">RunnerType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.tagList">TagList</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.untagged">Untagged</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunner.property.untagged">Untagged</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -669,20 +669,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-gitlab.userRunner.UserRunner.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.userRunner.UserRunner.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -729,10 +729,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-gitlab.userRunner.UserRunner.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -789,10 +789,10 @@ public double GroupIdInput { get; }
 ##### `LockedInput`<sup>Optional</sup> <a name="LockedInput" id="@cdktf/provider-gitlab.userRunner.UserRunner.property.lockedInput"></a>
 
 ```csharp
-public object LockedInput { get; }
+public bool|IResolvable LockedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -819,10 +819,10 @@ public double MaximumTimeoutInput { get; }
 ##### `PausedInput`<sup>Optional</sup> <a name="PausedInput" id="@cdktf/provider-gitlab.userRunner.UserRunner.property.pausedInput"></a>
 
 ```csharp
-public object PausedInput { get; }
+public bool|IResolvable PausedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -859,10 +859,10 @@ public string[] TagListInput { get; }
 ##### `UntaggedInput`<sup>Optional</sup> <a name="UntaggedInput" id="@cdktf/provider-gitlab.userRunner.UserRunner.property.untaggedInput"></a>
 
 ```csharp
-public object UntaggedInput { get; }
+public bool|IResolvable UntaggedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -899,10 +899,10 @@ public double GroupId { get; }
 ##### `Locked`<sup>Required</sup> <a name="Locked" id="@cdktf/provider-gitlab.userRunner.UserRunner.property.locked"></a>
 
 ```csharp
-public object Locked { get; }
+public bool|IResolvable Locked { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -929,10 +929,10 @@ public double MaximumTimeout { get; }
 ##### `Paused`<sup>Required</sup> <a name="Paused" id="@cdktf/provider-gitlab.userRunner.UserRunner.property.paused"></a>
 
 ```csharp
-public object Paused { get; }
+public bool|IResolvable Paused { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -969,10 +969,10 @@ public string[] TagList { get; }
 ##### `Untagged`<sup>Required</sup> <a name="Untagged" id="@cdktf/provider-gitlab.userRunner.UserRunner.property.untagged"></a>
 
 ```csharp
-public object Untagged { get; }
+public bool|IResolvable Untagged { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1004,24 +1004,24 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Gitlab;
 
 new UserRunnerConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string RunnerType,
     string AccessLevel = null,
     string Description = null,
     double GroupId = null,
-    object Locked = null,
+    bool|IResolvable Locked = null,
     string MaintenanceNote = null,
     double MaximumTimeout = null,
-    object Paused = null,
+    bool|IResolvable Paused = null,
     double ProjectId = null,
     string[] TagList = null,
-    object Untagged = null
+    bool|IResolvable Untagged = null
 };
 ```
 
@@ -1029,44 +1029,44 @@ new UserRunnerConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.runnerType">RunnerType</a></code> | <code>string</code> | The scope of the runner. Valid values are: `instance_type`, `group_type`, `project_type`. |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.accessLevel">AccessLevel</a></code> | <code>string</code> | The access level of the runner. Valid values are: `not_protected`, `ref_protected`. |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.description">Description</a></code> | <code>string</code> | Description of the runner. |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.groupId">GroupId</a></code> | <code>double</code> | The ID of the group that the runner is created in. Required if runner_type is group_type. |
-| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.locked">Locked</a></code> | <code>object</code> | Specifies if the runner should be locked for the current project. |
+| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.locked">Locked</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies if the runner should be locked for the current project. |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.maintenanceNote">MaintenanceNote</a></code> | <code>string</code> | Free-form maintenance notes for the runner (1024 characters). |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.maximumTimeout">MaximumTimeout</a></code> | <code>double</code> | Maximum timeout that limits the amount of time (in seconds) that runners can run jobs. |
-| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.paused">Paused</a></code> | <code>object</code> | Specifies if the runner should ignore new jobs. |
+| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.paused">Paused</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies if the runner should ignore new jobs. |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.projectId">ProjectId</a></code> | <code>double</code> | The ID of the project that the runner is created in. Required if runner_type is project_type. |
 | <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.tagList">TagList</a></code> | <code>string[]</code> | A list of runner tags. |
-| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.untagged">Untagged</a></code> | <code>object</code> | Specifies if the runner should handle untagged jobs. |
+| <code><a href="#@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.untagged">Untagged</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies if the runner should handle untagged jobs. |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1113,10 +1113,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1179,10 +1179,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `Locked`<sup>Optional</sup> <a name="Locked" id="@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.locked"></a>
 
 ```csharp
-public object Locked { get; set; }
+public bool|IResolvable Locked { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies if the runner should be locked for the current project.
 
@@ -1223,10 +1223,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `Paused`<sup>Optional</sup> <a name="Paused" id="@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.paused"></a>
 
 ```csharp
-public object Paused { get; set; }
+public bool|IResolvable Paused { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies if the runner should ignore new jobs.
 
@@ -1265,10 +1265,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `Untagged`<sup>Optional</sup> <a name="Untagged" id="@cdktf/provider-gitlab.userRunner.UserRunnerConfig.property.untagged"></a>
 
 ```csharp
-public object Untagged { get; set; }
+public bool|IResolvable Untagged { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies if the runner should handle untagged jobs.
 

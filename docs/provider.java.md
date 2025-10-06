@@ -19,13 +19,10 @@ GitlabProvider.Builder.create(Construct scope, java.lang.String id)
 //  .clientKey(java.lang.String)
 //  .configFile(java.lang.String)
 //  .context(java.lang.String)
-//  .earlyAuthCheck(java.lang.Boolean)
-//  .earlyAuthCheck(IResolvable)
-//  .enableAutoCiSupport(java.lang.Boolean)
-//  .enableAutoCiSupport(IResolvable)
+//  .earlyAuthCheck(java.lang.Boolean|IResolvable)
+//  .enableAutoCiSupport(java.lang.Boolean|IResolvable)
 //  .headers(java.util.Map<java.lang.String, java.lang.String>)
-//  .insecure(java.lang.Boolean)
-//  .insecure(IResolvable)
+//  .insecure(java.lang.Boolean|IResolvable)
 //  .retries(java.lang.Number)
 //  .token(java.lang.String)
     .build();
@@ -42,10 +39,10 @@ GitlabProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.clientKey">clientKey</a></code> | <code>java.lang.String</code> | File path to client key when GitLab instance is behind company proxy. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.configFile">configFile</a></code> | <code>java.lang.String</code> | The path to the configuration file to use. It may be sourced from the `GITLAB_CONFIG_FILE` environment variable. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.context">context</a></code> | <code>java.lang.String</code> | The context to use for authentication and configuration. |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.earlyAuthCheck">earlyAuthCheck</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | (Experimental) By default the provider does a dummy request to get the current user in order to verify that the provider configuration is correct and the GitLab API is reachable. |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.enableAutoCiSupport">enableAutoCiSupport</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If automatic CI support should be enabled or not. This only works when not providing a token. |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.earlyAuthCheck">earlyAuthCheck</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | (Experimental) By default the provider does a dummy request to get the current user in order to verify that the provider configuration is correct and the GitLab API is reachable. |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.enableAutoCiSupport">enableAutoCiSupport</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | If automatic CI support should be enabled or not. This only works when not providing a token. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.headers">headers</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A map of headers to append to all API request to the GitLab instance. |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.insecure">insecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When set to true this disables SSL verification of the connection to the GitLab instance. |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.insecure">insecure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | When set to true this disables SSL verification of the connection to the GitLab instance. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.retries">retries</a></code> | <code>java.lang.Number</code> | The number of retries to execute when receiving a 429 Rate Limit error. Each retry will exponentially back off. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.token">token</a></code> | <code>java.lang.String</code> | The OAuth2 Token, Project, Group, Personal Access Token or CI Job Token used to connect to GitLab. |
 
@@ -149,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `earlyAuthCheck`<sup>Optional</sup> <a name="earlyAuthCheck" id="@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.earlyAuthCheck"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 (Experimental) By default the provider does a dummy request to get the current user in order to verify that the provider configuration is correct and the GitLab API is reachable.
 
@@ -161,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `enableAutoCiSupport`<sup>Optional</sup> <a name="enableAutoCiSupport" id="@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.enableAutoCiSupport"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 If automatic CI support should be enabled or not. This only works when not providing a token.
 
@@ -181,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-gitlab.provider.GitlabProvider.Initializer.parameter.insecure"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 When set to true this disables SSL verification of the connection to the GitLab instance.
 
@@ -521,10 +518,10 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.clientKeyInput">clientKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.configFileInput">configFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.contextInput">contextInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.earlyAuthCheckInput">earlyAuthCheckInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.enableAutoCiSupportInput">enableAutoCiSupportInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.earlyAuthCheckInput">earlyAuthCheckInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.enableAutoCiSupportInput">enableAutoCiSupportInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.headersInput">headersInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.insecureInput">insecureInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.insecureInput">insecureInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.retriesInput">retriesInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.tokenInput">tokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.baseUrl">baseUrl</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -533,10 +530,10 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.clientKey">clientKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.configFile">configFile</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.context">context</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.earlyAuthCheck">earlyAuthCheck</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.enableAutoCiSupport">enableAutoCiSupport</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.earlyAuthCheck">earlyAuthCheck</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.enableAutoCiSupport">enableAutoCiSupport</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.headers">headers</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.insecure">insecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.insecure">insecure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.retries">retries</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProvider.property.token">token</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -707,20 +704,20 @@ public java.lang.String getContextInput();
 ##### `earlyAuthCheckInput`<sup>Optional</sup> <a name="earlyAuthCheckInput" id="@cdktf/provider-gitlab.provider.GitlabProvider.property.earlyAuthCheckInput"></a>
 
 ```java
-public java.lang.Object getEarlyAuthCheckInput();
+public java.lang.Boolean|IResolvable getEarlyAuthCheckInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `enableAutoCiSupportInput`<sup>Optional</sup> <a name="enableAutoCiSupportInput" id="@cdktf/provider-gitlab.provider.GitlabProvider.property.enableAutoCiSupportInput"></a>
 
 ```java
-public java.lang.Object getEnableAutoCiSupportInput();
+public java.lang.Boolean|IResolvable getEnableAutoCiSupportInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -737,10 +734,10 @@ public java.util.Map<java.lang.String, java.lang.String> getHeadersInput();
 ##### `insecureInput`<sup>Optional</sup> <a name="insecureInput" id="@cdktf/provider-gitlab.provider.GitlabProvider.property.insecureInput"></a>
 
 ```java
-public java.lang.Object getInsecureInput();
+public java.lang.Boolean|IResolvable getInsecureInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -827,20 +824,20 @@ public java.lang.String getContext();
 ##### `earlyAuthCheck`<sup>Optional</sup> <a name="earlyAuthCheck" id="@cdktf/provider-gitlab.provider.GitlabProvider.property.earlyAuthCheck"></a>
 
 ```java
-public java.lang.Object getEarlyAuthCheck();
+public java.lang.Boolean|IResolvable getEarlyAuthCheck();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `enableAutoCiSupport`<sup>Optional</sup> <a name="enableAutoCiSupport" id="@cdktf/provider-gitlab.provider.GitlabProvider.property.enableAutoCiSupport"></a>
 
 ```java
-public java.lang.Object getEnableAutoCiSupport();
+public java.lang.Boolean|IResolvable getEnableAutoCiSupport();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -857,10 +854,10 @@ public java.util.Map<java.lang.String, java.lang.String> getHeaders();
 ##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-gitlab.provider.GitlabProvider.property.insecure"></a>
 
 ```java
-public java.lang.Object getInsecure();
+public java.lang.Boolean|IResolvable getInsecure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -919,13 +916,10 @@ GitlabProviderConfig.builder()
 //  .clientKey(java.lang.String)
 //  .configFile(java.lang.String)
 //  .context(java.lang.String)
-//  .earlyAuthCheck(java.lang.Boolean)
-//  .earlyAuthCheck(IResolvable)
-//  .enableAutoCiSupport(java.lang.Boolean)
-//  .enableAutoCiSupport(IResolvable)
+//  .earlyAuthCheck(java.lang.Boolean|IResolvable)
+//  .enableAutoCiSupport(java.lang.Boolean|IResolvable)
 //  .headers(java.util.Map<java.lang.String, java.lang.String>)
-//  .insecure(java.lang.Boolean)
-//  .insecure(IResolvable)
+//  .insecure(java.lang.Boolean|IResolvable)
 //  .retries(java.lang.Number)
 //  .token(java.lang.String)
     .build();
@@ -942,10 +936,10 @@ GitlabProviderConfig.builder()
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.clientKey">clientKey</a></code> | <code>java.lang.String</code> | File path to client key when GitLab instance is behind company proxy. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.configFile">configFile</a></code> | <code>java.lang.String</code> | The path to the configuration file to use. It may be sourced from the `GITLAB_CONFIG_FILE` environment variable. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.context">context</a></code> | <code>java.lang.String</code> | The context to use for authentication and configuration. |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.earlyAuthCheck">earlyAuthCheck</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | (Experimental) By default the provider does a dummy request to get the current user in order to verify that the provider configuration is correct and the GitLab API is reachable. |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.enableAutoCiSupport">enableAutoCiSupport</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If automatic CI support should be enabled or not. This only works when not providing a token. |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.earlyAuthCheck">earlyAuthCheck</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | (Experimental) By default the provider does a dummy request to get the current user in order to verify that the provider configuration is correct and the GitLab API is reachable. |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.enableAutoCiSupport">enableAutoCiSupport</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | If automatic CI support should be enabled or not. This only works when not providing a token. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.headers">headers</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A map of headers to append to all API request to the GitLab instance. |
-| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.insecure">insecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When set to true this disables SSL verification of the connection to the GitLab instance. |
+| <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.insecure">insecure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | When set to true this disables SSL verification of the connection to the GitLab instance. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.retries">retries</a></code> | <code>java.lang.Number</code> | The number of retries to execute when receiving a 429 Rate Limit error. Each retry will exponentially back off. |
 | <code><a href="#@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.token">token</a></code> | <code>java.lang.String</code> | The OAuth2 Token, Project, Group, Personal Access Token or CI Job Token used to connect to GitLab. |
 
@@ -1060,10 +1054,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `earlyAuthCheck`<sup>Optional</sup> <a name="earlyAuthCheck" id="@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.earlyAuthCheck"></a>
 
 ```java
-public java.lang.Object getEarlyAuthCheck();
+public java.lang.Boolean|IResolvable getEarlyAuthCheck();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 (Experimental) By default the provider does a dummy request to get the current user in order to verify that the provider configuration is correct and the GitLab API is reachable.
 
@@ -1076,10 +1070,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `enableAutoCiSupport`<sup>Optional</sup> <a name="enableAutoCiSupport" id="@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.enableAutoCiSupport"></a>
 
 ```java
-public java.lang.Object getEnableAutoCiSupport();
+public java.lang.Boolean|IResolvable getEnableAutoCiSupport();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 If automatic CI support should be enabled or not. This only works when not providing a token.
 
@@ -1104,10 +1098,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-gitlab.provider.GitlabProviderConfig.property.insecure"></a>
 
 ```java
-public java.lang.Object getInsecure();
+public java.lang.Boolean|IResolvable getInsecure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 When set to true this disables SSL verification of the connection to the GitLab instance.
 

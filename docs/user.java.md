@@ -12,37 +12,27 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 import com.hashicorp.cdktf.providers.gitlab.user.User;
 
 User.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .email(java.lang.String)
     .name(java.lang.String)
     .username(java.lang.String)
-//  .canCreateGroup(java.lang.Boolean)
-//  .canCreateGroup(IResolvable)
-//  .forceRandomPassword(java.lang.Boolean)
-//  .forceRandomPassword(IResolvable)
+//  .canCreateGroup(java.lang.Boolean|IResolvable)
+//  .forceRandomPassword(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
-//  .isAdmin(java.lang.Boolean)
-//  .isAdmin(IResolvable)
-//  .isExternal(java.lang.Boolean)
-//  .isExternal(IResolvable)
+//  .isAdmin(java.lang.Boolean|IResolvable)
+//  .isExternal(java.lang.Boolean|IResolvable)
 //  .namespaceId(java.lang.Number)
 //  .note(java.lang.String)
 //  .password(java.lang.String)
 //  .projectsLimit(java.lang.Number)
-//  .resetPassword(java.lang.Boolean)
-//  .resetPassword(IResolvable)
-//  .skipConfirmation(java.lang.Boolean)
-//  .skipConfirmation(IResolvable)
+//  .resetPassword(java.lang.Boolean|IResolvable)
+//  .skipConfirmation(java.lang.Boolean|IResolvable)
 //  .state(java.lang.String)
     .build();
 ```
@@ -51,27 +41,27 @@ User.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.email">email</a></code> | <code>java.lang.String</code> | The e-mail address of the user. |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the user. |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.username">username</a></code> | <code>java.lang.String</code> | The username of the user. |
-| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.canCreateGroup">canCreateGroup</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean, defaults to false. Whether to allow the user to create groups. |
-| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.forceRandomPassword">forceRandomPassword</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set user password to a random value. |
+| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.canCreateGroup">canCreateGroup</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Boolean, defaults to false. Whether to allow the user to create groups. |
+| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.forceRandomPassword">forceRandomPassword</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set user password to a random value. |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/user#id User#id}. |
-| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.isAdmin">isAdmin</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean, defaults to false.  Whether to enable administrative privileges. |
-| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.isExternal">isExternal</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean, defaults to false. |
+| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.isAdmin">isAdmin</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Boolean, defaults to false.  Whether to enable administrative privileges. |
+| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.isExternal">isExternal</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Boolean, defaults to false. |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.namespaceId">namespaceId</a></code> | <code>java.lang.Number</code> | The ID of the user's namespace. |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.note">note</a></code> | <code>java.lang.String</code> | The note associated to the user. |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.password">password</a></code> | <code>java.lang.String</code> | The password of the user. |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.projectsLimit">projectsLimit</a></code> | <code>java.lang.Number</code> | Integer, defaults to 0.  Number of projects user can create. |
-| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.resetPassword">resetPassword</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean, defaults to false. Send user password reset link. |
-| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.skipConfirmation">skipConfirmation</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean, defaults to true. Whether to skip confirmation. |
+| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.resetPassword">resetPassword</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Boolean, defaults to false. Send user password reset link. |
+| <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.skipConfirmation">skipConfirmation</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Boolean, defaults to true. Whether to skip confirmation. |
 | <code><a href="#@cdktf/provider-gitlab.user.User.Initializer.parameter.state">state</a></code> | <code>java.lang.String</code> | String, defaults to 'active'. The state of the user account. Valid values are `active`, `deactivated`, `blocked`. |
 
 ---
@@ -96,13 +86,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.user.User.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.user.User.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -132,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.user.User.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -168,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `canCreateGroup`<sup>Optional</sup> <a name="canCreateGroup" id="@cdktf/provider-gitlab.user.User.Initializer.parameter.canCreateGroup"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Boolean, defaults to false. Whether to allow the user to create groups.
 
@@ -178,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `forceRandomPassword`<sup>Optional</sup> <a name="forceRandomPassword" id="@cdktf/provider-gitlab.user.User.Initializer.parameter.forceRandomPassword"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set user password to a random value.
 
@@ -199,7 +189,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `isAdmin`<sup>Optional</sup> <a name="isAdmin" id="@cdktf/provider-gitlab.user.User.Initializer.parameter.isAdmin"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Boolean, defaults to false.  Whether to enable administrative privileges.
 
@@ -209,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `isExternal`<sup>Optional</sup> <a name="isExternal" id="@cdktf/provider-gitlab.user.User.Initializer.parameter.isExternal"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Boolean, defaults to false.
 
@@ -261,7 +251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `resetPassword`<sup>Optional</sup> <a name="resetPassword" id="@cdktf/provider-gitlab.user.User.Initializer.parameter.resetPassword"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Boolean, defaults to false. Send user password reset link.
 
@@ -271,7 +261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ##### `skipConfirmation`<sup>Optional</sup> <a name="skipConfirmation" id="@cdktf/provider-gitlab.user.User.Initializer.parameter.skipConfirmation"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Boolean, defaults to true. Whether to skip confirmation.
 
@@ -528,7 +518,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-gitlab.user.User.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-gitlab.user.User.importFrom"></a>
@@ -584,7 +574,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -599,7 +589,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-gitlab.user.User.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -819,41 +809,41 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.canCreateGroupInput">canCreateGroupInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.canCreateGroupInput">canCreateGroupInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.emailInput">emailInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.forceRandomPasswordInput">forceRandomPasswordInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.forceRandomPasswordInput">forceRandomPasswordInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.isAdminInput">isAdminInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.isExternalInput">isExternalInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.isAdminInput">isAdminInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.isExternalInput">isExternalInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.namespaceIdInput">namespaceIdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.noteInput">noteInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.passwordInput">passwordInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.projectsLimitInput">projectsLimitInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.resetPasswordInput">resetPasswordInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.skipConfirmationInput">skipConfirmationInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.resetPasswordInput">resetPasswordInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.skipConfirmationInput">skipConfirmationInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.stateInput">stateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.usernameInput">usernameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.canCreateGroup">canCreateGroup</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.canCreateGroup">canCreateGroup</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.email">email</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.forceRandomPassword">forceRandomPassword</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.forceRandomPassword">forceRandomPassword</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.isAdmin">isAdmin</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.isExternal">isExternal</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.isAdmin">isAdmin</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.isExternal">isExternal</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.namespaceId">namespaceId</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.note">note</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.password">password</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.projectsLimit">projectsLimit</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.resetPassword">resetPassword</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.User.property.skipConfirmation">skipConfirmation</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.resetPassword">resetPassword</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.User.property.skipConfirmation">skipConfirmation</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.state">state</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.User.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -934,20 +924,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.user.User.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.user.User.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -994,20 +984,20 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.user.User.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
 ##### `canCreateGroupInput`<sup>Optional</sup> <a name="canCreateGroupInput" id="@cdktf/provider-gitlab.user.User.property.canCreateGroupInput"></a>
 
 ```java
-public java.lang.Object getCanCreateGroupInput();
+public java.lang.Boolean|IResolvable getCanCreateGroupInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1024,10 +1014,10 @@ public java.lang.String getEmailInput();
 ##### `forceRandomPasswordInput`<sup>Optional</sup> <a name="forceRandomPasswordInput" id="@cdktf/provider-gitlab.user.User.property.forceRandomPasswordInput"></a>
 
 ```java
-public java.lang.Object getForceRandomPasswordInput();
+public java.lang.Boolean|IResolvable getForceRandomPasswordInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1044,20 +1034,20 @@ public java.lang.String getIdInput();
 ##### `isAdminInput`<sup>Optional</sup> <a name="isAdminInput" id="@cdktf/provider-gitlab.user.User.property.isAdminInput"></a>
 
 ```java
-public java.lang.Object getIsAdminInput();
+public java.lang.Boolean|IResolvable getIsAdminInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `isExternalInput`<sup>Optional</sup> <a name="isExternalInput" id="@cdktf/provider-gitlab.user.User.property.isExternalInput"></a>
 
 ```java
-public java.lang.Object getIsExternalInput();
+public java.lang.Boolean|IResolvable getIsExternalInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1114,20 +1104,20 @@ public java.lang.Number getProjectsLimitInput();
 ##### `resetPasswordInput`<sup>Optional</sup> <a name="resetPasswordInput" id="@cdktf/provider-gitlab.user.User.property.resetPasswordInput"></a>
 
 ```java
-public java.lang.Object getResetPasswordInput();
+public java.lang.Boolean|IResolvable getResetPasswordInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `skipConfirmationInput`<sup>Optional</sup> <a name="skipConfirmationInput" id="@cdktf/provider-gitlab.user.User.property.skipConfirmationInput"></a>
 
 ```java
-public java.lang.Object getSkipConfirmationInput();
+public java.lang.Boolean|IResolvable getSkipConfirmationInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1154,10 +1144,10 @@ public java.lang.String getUsernameInput();
 ##### `canCreateGroup`<sup>Required</sup> <a name="canCreateGroup" id="@cdktf/provider-gitlab.user.User.property.canCreateGroup"></a>
 
 ```java
-public java.lang.Object getCanCreateGroup();
+public java.lang.Boolean|IResolvable getCanCreateGroup();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1174,10 +1164,10 @@ public java.lang.String getEmail();
 ##### `forceRandomPassword`<sup>Required</sup> <a name="forceRandomPassword" id="@cdktf/provider-gitlab.user.User.property.forceRandomPassword"></a>
 
 ```java
-public java.lang.Object getForceRandomPassword();
+public java.lang.Boolean|IResolvable getForceRandomPassword();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1194,20 +1184,20 @@ public java.lang.String getId();
 ##### `isAdmin`<sup>Required</sup> <a name="isAdmin" id="@cdktf/provider-gitlab.user.User.property.isAdmin"></a>
 
 ```java
-public java.lang.Object getIsAdmin();
+public java.lang.Boolean|IResolvable getIsAdmin();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `isExternal`<sup>Required</sup> <a name="isExternal" id="@cdktf/provider-gitlab.user.User.property.isExternal"></a>
 
 ```java
-public java.lang.Object getIsExternal();
+public java.lang.Boolean|IResolvable getIsExternal();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1264,20 +1254,20 @@ public java.lang.Number getProjectsLimit();
 ##### `resetPassword`<sup>Required</sup> <a name="resetPassword" id="@cdktf/provider-gitlab.user.User.property.resetPassword"></a>
 
 ```java
-public java.lang.Object getResetPassword();
+public java.lang.Boolean|IResolvable getResetPassword();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `skipConfirmation`<sup>Required</sup> <a name="skipConfirmation" id="@cdktf/provider-gitlab.user.User.property.skipConfirmation"></a>
 
 ```java
-public java.lang.Object getSkipConfirmation();
+public java.lang.Boolean|IResolvable getSkipConfirmation();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1329,37 +1319,27 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.gitlab.user.UserConfig;
 
 UserConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .email(java.lang.String)
     .name(java.lang.String)
     .username(java.lang.String)
-//  .canCreateGroup(java.lang.Boolean)
-//  .canCreateGroup(IResolvable)
-//  .forceRandomPassword(java.lang.Boolean)
-//  .forceRandomPassword(IResolvable)
+//  .canCreateGroup(java.lang.Boolean|IResolvable)
+//  .forceRandomPassword(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
-//  .isAdmin(java.lang.Boolean)
-//  .isAdmin(IResolvable)
-//  .isExternal(java.lang.Boolean)
-//  .isExternal(IResolvable)
+//  .isAdmin(java.lang.Boolean|IResolvable)
+//  .isExternal(java.lang.Boolean|IResolvable)
 //  .namespaceId(java.lang.Number)
 //  .note(java.lang.String)
 //  .password(java.lang.String)
 //  .projectsLimit(java.lang.Number)
-//  .resetPassword(java.lang.Boolean)
-//  .resetPassword(IResolvable)
-//  .skipConfirmation(java.lang.Boolean)
-//  .skipConfirmation(IResolvable)
+//  .resetPassword(java.lang.Boolean|IResolvable)
+//  .skipConfirmation(java.lang.Boolean|IResolvable)
 //  .state(java.lang.String)
     .build();
 ```
@@ -1368,27 +1348,27 @@ UserConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.email">email</a></code> | <code>java.lang.String</code> | The e-mail address of the user. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the user. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.username">username</a></code> | <code>java.lang.String</code> | The username of the user. |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.canCreateGroup">canCreateGroup</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean, defaults to false. Whether to allow the user to create groups. |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.forceRandomPassword">forceRandomPassword</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set user password to a random value. |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.canCreateGroup">canCreateGroup</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Boolean, defaults to false. Whether to allow the user to create groups. |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.forceRandomPassword">forceRandomPassword</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set user password to a random value. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/user#id User#id}. |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.isAdmin">isAdmin</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean, defaults to false.  Whether to enable administrative privileges. |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.isExternal">isExternal</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean, defaults to false. |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.isAdmin">isAdmin</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Boolean, defaults to false.  Whether to enable administrative privileges. |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.isExternal">isExternal</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Boolean, defaults to false. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.namespaceId">namespaceId</a></code> | <code>java.lang.Number</code> | The ID of the user's namespace. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.note">note</a></code> | <code>java.lang.String</code> | The note associated to the user. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.password">password</a></code> | <code>java.lang.String</code> | The password of the user. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.projectsLimit">projectsLimit</a></code> | <code>java.lang.Number</code> | Integer, defaults to 0.  Number of projects user can create. |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.resetPassword">resetPassword</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean, defaults to false. Send user password reset link. |
-| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.skipConfirmation">skipConfirmation</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean, defaults to true. Whether to skip confirmation. |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.resetPassword">resetPassword</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Boolean, defaults to false. Send user password reset link. |
+| <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.skipConfirmation">skipConfirmation</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Boolean, defaults to true. Whether to skip confirmation. |
 | <code><a href="#@cdktf/provider-gitlab.user.UserConfig.property.state">state</a></code> | <code>java.lang.String</code> | String, defaults to 'active'. The state of the user account. Valid values are `active`, `deactivated`, `blocked`. |
 
 ---
@@ -1396,20 +1376,20 @@ UserConfig.builder()
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-gitlab.user.UserConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-gitlab.user.UserConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1456,10 +1436,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-gitlab.user.UserConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1508,10 +1488,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `canCreateGroup`<sup>Optional</sup> <a name="canCreateGroup" id="@cdktf/provider-gitlab.user.UserConfig.property.canCreateGroup"></a>
 
 ```java
-public java.lang.Object getCanCreateGroup();
+public java.lang.Boolean|IResolvable getCanCreateGroup();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Boolean, defaults to false. Whether to allow the user to create groups.
 
@@ -1522,10 +1502,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `forceRandomPassword`<sup>Optional</sup> <a name="forceRandomPassword" id="@cdktf/provider-gitlab.user.UserConfig.property.forceRandomPassword"></a>
 
 ```java
-public java.lang.Object getForceRandomPassword();
+public java.lang.Boolean|IResolvable getForceRandomPassword();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set user password to a random value.
 
@@ -1551,10 +1531,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `isAdmin`<sup>Optional</sup> <a name="isAdmin" id="@cdktf/provider-gitlab.user.UserConfig.property.isAdmin"></a>
 
 ```java
-public java.lang.Object getIsAdmin();
+public java.lang.Boolean|IResolvable getIsAdmin();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Boolean, defaults to false.  Whether to enable administrative privileges.
 
@@ -1565,10 +1545,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `isExternal`<sup>Optional</sup> <a name="isExternal" id="@cdktf/provider-gitlab.user.UserConfig.property.isExternal"></a>
 
 ```java
-public java.lang.Object getIsExternal();
+public java.lang.Boolean|IResolvable getIsExternal();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Boolean, defaults to false.
 
@@ -1637,10 +1617,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `resetPassword`<sup>Optional</sup> <a name="resetPassword" id="@cdktf/provider-gitlab.user.UserConfig.property.resetPassword"></a>
 
 ```java
-public java.lang.Object getResetPassword();
+public java.lang.Boolean|IResolvable getResetPassword();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Boolean, defaults to false. Send user password reset link.
 
@@ -1651,10 +1631,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 ##### `skipConfirmation`<sup>Optional</sup> <a name="skipConfirmation" id="@cdktf/provider-gitlab.user.UserConfig.property.skipConfirmation"></a>
 
 ```java
-public java.lang.Object getSkipConfirmation();
+public java.lang.Boolean|IResolvable getSkipConfirmation();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Boolean, defaults to true. Whether to skip confirmation.
 
