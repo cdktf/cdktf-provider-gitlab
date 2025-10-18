@@ -4,7 +4,7 @@
 
 ### DataGitlabProjectIds <a name="DataGitlabProjectIds" id="@cdktf/provider-gitlab.dataGitlabProjectIds.DataGitlabProjectIds"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/project_ids gitlab_project_ids}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_ids gitlab_project_ids}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectIds.DataGitlabProjectIds.Initializer"></a>
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 The ID or URL-encoded path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/project_ids#project DataGitlabProjectIds#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_ids#project DataGitlabProjectIds#project}
 
 ---
 
@@ -427,7 +427,7 @@ The construct id used in the generated config for the DataGitlabProjectIds to im
 
 The id of the existing DataGitlabProjectIds that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/project_ids#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_ids#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -780,7 +780,7 @@ public java.lang.String getProject();
 
 The ID or URL-encoded path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/project_ids#project DataGitlabProjectIds#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_ids#project DataGitlabProjectIds#project}
 
 ---
 

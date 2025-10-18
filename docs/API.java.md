@@ -41,6 +41,7 @@ The following submodules are available:
 - [dataGitlabPipelineSchedules](./dataGitlabPipelineSchedules.java.md)
 - [dataGitlabProject](./dataGitlabProject.java.md)
 - [dataGitlabProjectAccessTokens](./dataGitlabProjectAccessTokens.java.md)
+- [dataGitlabProjectApprovalRules](./dataGitlabProjectApprovalRules.java.md)
 - [dataGitlabProjectBranches](./dataGitlabProjectBranches.java.md)
 - [dataGitlabProjectEnvironments](./dataGitlabProjectEnvironments.java.md)
 - [dataGitlabProjectHook](./dataGitlabProjectHook.java.md)

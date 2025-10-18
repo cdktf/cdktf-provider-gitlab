@@ -4,7 +4,7 @@
 
 ### GroupDeployToken <a name="GroupDeployToken" id="@cdktf/provider-gitlab.groupDeployToken.GroupDeployToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_deploy_token gitlab_group_deploy_token}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_deploy_token gitlab_group_deploy_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupDeployToken.GroupDeployToken.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.groupDeployToken.GroupDeployToken.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-gitlab.groupDeployToken.GroupDeployToken.resetExpiresAt">resetExpiresAt</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupDeployToken.GroupDeployToken.resetUsername">resetUsername</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupDeployToken.GroupDeployToken.resetValidatePastExpirationDate">resetValidatePastExpirationDate</a></code> | *No description.* |
 
 ---
 
@@ -378,6 +379,12 @@ public resetExpiresAt(): void
 public resetUsername(): void
 ```
 
+##### `resetValidatePastExpirationDate` <a name="resetValidatePastExpirationDate" id="@cdktf/provider-gitlab.groupDeployToken.GroupDeployToken.resetValidatePastExpirationDate"></a>
+
+```typescript
+public resetValidatePastExpirationDate(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -481,7 +488,7 @@ The construct id used in the generated config for the GroupDeployToken to import
 
 The id of the existing GroupDeployToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_deploy_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_deploy_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -520,11 +527,13 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.groupDeployToken.GroupDeployToken.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupDeployToken.GroupDeployToken.property.scopesInput">scopesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupDeployToken.GroupDeployToken.property.usernameInput">usernameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupDeployToken.GroupDeployToken.property.validatePastExpirationDateInput">validatePastExpirationDateInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupDeployToken.GroupDeployToken.property.expiresAt">expiresAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupDeployToken.GroupDeployToken.property.group">group</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupDeployToken.GroupDeployToken.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupDeployToken.GroupDeployToken.property.scopes">scopes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupDeployToken.GroupDeployToken.property.username">username</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupDeployToken.GroupDeployToken.property.validatePastExpirationDate">validatePastExpirationDate</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -760,6 +769,16 @@ public readonly usernameInput: string;
 
 ---
 
+##### `validatePastExpirationDateInput`<sup>Optional</sup> <a name="validatePastExpirationDateInput" id="@cdktf/provider-gitlab.groupDeployToken.GroupDeployToken.property.validatePastExpirationDateInput"></a>
+
+```typescript
+public readonly validatePastExpirationDateInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `expiresAt`<sup>Required</sup> <a name="expiresAt" id="@cdktf/provider-gitlab.groupDeployToken.GroupDeployToken.property.expiresAt"></a>
 
 ```typescript
@@ -810,6 +829,16 @@ public readonly username: string;
 
 ---
 
+##### `validatePastExpirationDate`<sup>Required</sup> <a name="validatePastExpirationDate" id="@cdktf/provider-gitlab.groupDeployToken.GroupDeployToken.property.validatePastExpirationDate"></a>
+
+```typescript
+public readonly validatePastExpirationDate: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -856,6 +885,7 @@ const groupDeployTokenConfig: groupDeployToken.GroupDeployTokenConfig = { ... }
 | <code><a href="#@cdktf/provider-gitlab.groupDeployToken.GroupDeployTokenConfig.property.scopes">scopes</a></code> | <code>string[]</code> | The scopes of the group deploy token. Valid values are: `read_repository`, `read_registry`, `write_registry`, `read_virtual_registry`, `write_virtual_registry`, `read_package_registry`, `write_package_registry`. |
 | <code><a href="#@cdktf/provider-gitlab.groupDeployToken.GroupDeployTokenConfig.property.expiresAt">expiresAt</a></code> | <code>string</code> | Time the token expires in RFC3339 format. Not set by default. |
 | <code><a href="#@cdktf/provider-gitlab.groupDeployToken.GroupDeployTokenConfig.property.username">username</a></code> | <code>string</code> | A username for the deploy token. Default is `gitlab+deploy-token-{n}`. |
+| <code><a href="#@cdktf/provider-gitlab.groupDeployToken.GroupDeployTokenConfig.property.validatePastExpirationDate">validatePastExpirationDate</a></code> | <code>boolean \| cdktf.IResolvable</code> | Wether to validate if the expiration date is in the future. |
 
 ---
 
@@ -939,7 +969,7 @@ public readonly group: string;
 
 The Id or full path of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_deploy_token#group GroupDeployToken#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_deploy_token#group GroupDeployToken#group}
 
 ---
 
@@ -953,7 +983,7 @@ public readonly name: string;
 
 A name to describe the deploy token with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_deploy_token#name GroupDeployToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_deploy_token#name GroupDeployToken#name}
 
 ---
 
@@ -967,7 +997,7 @@ public readonly scopes: string[];
 
 The scopes of the group deploy token. Valid values are: `read_repository`, `read_registry`, `write_registry`, `read_virtual_registry`, `write_virtual_registry`, `read_package_registry`, `write_package_registry`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_deploy_token#scopes GroupDeployToken#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_deploy_token#scopes GroupDeployToken#scopes}
 
 ---
 
@@ -981,7 +1011,7 @@ public readonly expiresAt: string;
 
 Time the token expires in RFC3339 format. Not set by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_deploy_token#expires_at GroupDeployToken#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_deploy_token#expires_at GroupDeployToken#expires_at}
 
 ---
 
@@ -995,7 +1025,21 @@ public readonly username: string;
 
 A username for the deploy token. Default is `gitlab+deploy-token-{n}`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_deploy_token#username GroupDeployToken#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_deploy_token#username GroupDeployToken#username}
+
+---
+
+##### `validatePastExpirationDate`<sup>Optional</sup> <a name="validatePastExpirationDate" id="@cdktf/provider-gitlab.groupDeployToken.GroupDeployTokenConfig.property.validatePastExpirationDate"></a>
+
+```typescript
+public readonly validatePastExpirationDate: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Wether to validate if the expiration date is in the future.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_deploy_token#validate_past_expiration_date GroupDeployToken#validate_past_expiration_date}
 
 ---
 

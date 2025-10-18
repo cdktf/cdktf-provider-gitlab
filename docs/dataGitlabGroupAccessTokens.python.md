@@ -4,7 +4,7 @@
 
 ### DataGitlabGroupAccessTokens <a name="DataGitlabGroupAccessTokens" id="@cdktf/provider-gitlab.dataGitlabGroupAccessTokens.DataGitlabGroupAccessTokens"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/group_access_tokens gitlab_group_access_tokens}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/group_access_tokens gitlab_group_access_tokens}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupAccessTokens.DataGitlabGroupAccessTokens.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 The name or id of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/group_access_tokens#group DataGitlabGroupAccessTokens#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/group_access_tokens#group DataGitlabGroupAccessTokens#group}
 
 ---
 
@@ -465,7 +465,7 @@ The construct id used in the generated config for the DataGitlabGroupAccessToken
 
 The id of the existing DataGitlabGroupAccessTokens that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/group_access_tokens#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/group_access_tokens#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -807,7 +807,7 @@ group: str
 
 The name or id of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/group_access_tokens#group DataGitlabGroupAccessTokens#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/group_access_tokens#group DataGitlabGroupAccessTokens#group}
 
 ---
 
