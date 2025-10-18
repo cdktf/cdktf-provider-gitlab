@@ -152,6 +152,7 @@ export * as dataGitlabPipelineSchedule from './data-gitlab-pipeline-schedule';
 export * as dataGitlabPipelineSchedules from './data-gitlab-pipeline-schedules';
 export * as dataGitlabProject from './data-gitlab-project';
 export * as dataGitlabProjectAccessTokens from './data-gitlab-project-access-tokens';
+export * as dataGitlabProjectApprovalRules from './data-gitlab-project-approval-rules';
 export * as dataGitlabProjectBranches from './data-gitlab-project-branches';
 export * as dataGitlabProjectEnvironments from './data-gitlab-project-environments';
 export * as dataGitlabProjectHook from './data-gitlab-project-hook';

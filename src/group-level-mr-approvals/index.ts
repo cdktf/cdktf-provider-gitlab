@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_level_mr_approvals
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_level_mr_approvals
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,49 +15,49 @@ export interface GroupLevelMrApprovalsConfig extends cdktf.TerraformMetaArgument
   /**
   * Allow or prevent authors from self approving merge requests; `true` means authors can self approve.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_level_mr_approvals#allow_author_approval GroupLevelMrApprovals#allow_author_approval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_level_mr_approvals#allow_author_approval GroupLevelMrApprovals#allow_author_approval}
   */
   readonly allowAuthorApproval?: boolean | cdktf.IResolvable;
   /**
   * Allow or prevent committers from self approving merge requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_level_mr_approvals#allow_committer_approval GroupLevelMrApprovals#allow_committer_approval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_level_mr_approvals#allow_committer_approval GroupLevelMrApprovals#allow_committer_approval}
   */
   readonly allowCommitterApproval?: boolean | cdktf.IResolvable;
   /**
   * Allow or prevent overriding approvers per merge request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_level_mr_approvals#allow_overrides_to_approver_list_per_merge_request GroupLevelMrApprovals#allow_overrides_to_approver_list_per_merge_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_level_mr_approvals#allow_overrides_to_approver_list_per_merge_request GroupLevelMrApprovals#allow_overrides_to_approver_list_per_merge_request}
   */
   readonly allowOverridesToApproverListPerMergeRequest?: boolean | cdktf.IResolvable;
   /**
   * The ID or URL-encoded path of the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_level_mr_approvals#group GroupLevelMrApprovals#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_level_mr_approvals#group GroupLevelMrApprovals#group}
   */
   readonly group: string;
   /**
   * Set to true if the group merge request approval settings should not be reset to their pre-terraform defaults on destroy. You will need to apply the resource with the new setting before destroying the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_level_mr_approvals#keep_settings_on_destroy GroupLevelMrApprovals#keep_settings_on_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_level_mr_approvals#keep_settings_on_destroy GroupLevelMrApprovals#keep_settings_on_destroy}
   */
   readonly keepSettingsOnDestroy?: boolean | cdktf.IResolvable;
   /**
   * Require approver to authenticate before adding the approval.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_level_mr_approvals#require_reauthentication_to_approve GroupLevelMrApprovals#require_reauthentication_to_approve}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_level_mr_approvals#require_reauthentication_to_approve GroupLevelMrApprovals#require_reauthentication_to_approve}
   */
   readonly requireReauthenticationToApprove?: boolean | cdktf.IResolvable;
   /**
   * Retain approval count on a new push.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_level_mr_approvals#retain_approvals_on_push GroupLevelMrApprovals#retain_approvals_on_push}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_level_mr_approvals#retain_approvals_on_push GroupLevelMrApprovals#retain_approvals_on_push}
   */
   readonly retainApprovalsOnPush?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_level_mr_approvals gitlab_group_level_mr_approvals}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_level_mr_approvals gitlab_group_level_mr_approvals}
 */
 export class GroupLevelMrApprovals extends cdktf.TerraformResource {
 
@@ -73,7 +73,7 @@ export class GroupLevelMrApprovals extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GroupLevelMrApprovals resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GroupLevelMrApprovals to import
-  * @param importFromId The id of the existing GroupLevelMrApprovals that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_level_mr_approvals#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GroupLevelMrApprovals that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_level_mr_approvals#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GroupLevelMrApprovals to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -85,7 +85,7 @@ export class GroupLevelMrApprovals extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_level_mr_approvals gitlab_group_level_mr_approvals} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_level_mr_approvals gitlab_group_level_mr_approvals} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +96,7 @@ export class GroupLevelMrApprovals extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_level_mr_approvals',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.4.1',
+        providerVersion: '18.5.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

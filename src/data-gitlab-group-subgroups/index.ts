@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/group_subgroups
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/group_subgroups
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,68 +15,61 @@ export interface DataGitlabGroupSubgroupsConfig extends cdktf.TerraformMetaArgum
   /**
   * Show all the groups you have access to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/group_subgroups#all_available DataGitlabGroupSubgroups#all_available}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/group_subgroups#all_available DataGitlabGroupSubgroups#all_available}
   */
   readonly allAvailable?: boolean | cdktf.IResolvable;
   /**
   * The ID of the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/group_subgroups#group_id DataGitlabGroupSubgroups#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/group_subgroups#group_id DataGitlabGroupSubgroups#group_id}
   */
   readonly groupId: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/group_subgroups#id DataGitlabGroupSubgroups#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * Limit to groups where current user has at least this access level.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/group_subgroups#min_access_level DataGitlabGroupSubgroups#min_access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/group_subgroups#min_access_level DataGitlabGroupSubgroups#min_access_level}
   */
   readonly minAccessLevel?: string;
   /**
   * Order groups by name, path or id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/group_subgroups#order_by DataGitlabGroupSubgroups#order_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/group_subgroups#order_by DataGitlabGroupSubgroups#order_by}
   */
   readonly orderBy?: string;
   /**
   * Limit to groups explicitly owned by the current user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/group_subgroups#owned DataGitlabGroupSubgroups#owned}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/group_subgroups#owned DataGitlabGroupSubgroups#owned}
   */
   readonly owned?: boolean | cdktf.IResolvable;
   /**
   * Return the list of authorized groups matching the search criteria.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/group_subgroups#search DataGitlabGroupSubgroups#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/group_subgroups#search DataGitlabGroupSubgroups#search}
   */
   readonly search?: string;
   /**
   * Skip the group IDs passed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/group_subgroups#skip_groups DataGitlabGroupSubgroups#skip_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/group_subgroups#skip_groups DataGitlabGroupSubgroups#skip_groups}
   */
   readonly skipGroups?: number[];
   /**
   * Order groups in asc or desc order.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/group_subgroups#sort DataGitlabGroupSubgroups#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/group_subgroups#sort DataGitlabGroupSubgroups#sort}
   */
   readonly sort?: string;
   /**
   * Include group statistics (administrators only).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/group_subgroups#statistics DataGitlabGroupSubgroups#statistics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/group_subgroups#statistics DataGitlabGroupSubgroups#statistics}
   */
   readonly statistics?: boolean | cdktf.IResolvable;
   /**
   * Include custom attributes in response (administrators only).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/group_subgroups#with_custom_attributes DataGitlabGroupSubgroups#with_custom_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/group_subgroups#with_custom_attributes DataGitlabGroupSubgroups#with_custom_attributes}
   */
   readonly withCustomAttributes?: boolean | cdktf.IResolvable;
 }
@@ -293,7 +286,7 @@ export class DataGitlabGroupSubgroupsSubgroupsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/group_subgroups gitlab_group_subgroups}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/group_subgroups gitlab_group_subgroups}
 */
 export class DataGitlabGroupSubgroups extends cdktf.TerraformDataSource {
 
@@ -309,7 +302,7 @@ export class DataGitlabGroupSubgroups extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGitlabGroupSubgroups resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabGroupSubgroups to import
-  * @param importFromId The id of the existing DataGitlabGroupSubgroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/group_subgroups#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabGroupSubgroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/group_subgroups#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabGroupSubgroups to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -321,7 +314,7 @@ export class DataGitlabGroupSubgroups extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/group_subgroups gitlab_group_subgroups} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/group_subgroups gitlab_group_subgroups} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -332,7 +325,7 @@ export class DataGitlabGroupSubgroups extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_group_subgroups',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.4.1',
+        providerVersion: '18.5.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,
@@ -345,7 +338,6 @@ export class DataGitlabGroupSubgroups extends cdktf.TerraformDataSource {
     });
     this._allAvailable = config.allAvailable;
     this._groupId = config.groupId;
-    this._id = config.id;
     this._minAccessLevel = config.minAccessLevel;
     this._orderBy = config.orderBy;
     this._owned = config.owned;
@@ -389,20 +381,9 @@ export class DataGitlabGroupSubgroups extends cdktf.TerraformDataSource {
     return this._groupId;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // min_access_level - computed: true, optional: true, required: false
@@ -547,7 +528,6 @@ export class DataGitlabGroupSubgroups extends cdktf.TerraformDataSource {
     return {
       all_available: cdktf.booleanToTerraform(this._allAvailable),
       group_id: cdktf.numberToTerraform(this._groupId),
-      id: cdktf.stringToTerraform(this._id),
       min_access_level: cdktf.stringToTerraform(this._minAccessLevel),
       order_by: cdktf.stringToTerraform(this._orderBy),
       owned: cdktf.booleanToTerraform(this._owned),
@@ -572,12 +552,6 @@ export class DataGitlabGroupSubgroups extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "number",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
       },
       min_access_level: {
         value: cdktf.stringToHclTerraform(this._minAccessLevel),

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_external_status_check
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_external_status_check
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,37 @@ export interface ProjectExternalStatusCheckConfig extends cdktf.TerraformMetaArg
   /**
   * The URL of the external status check service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_external_status_check#external_url ProjectExternalStatusCheck#external_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_external_status_check#external_url ProjectExternalStatusCheck#external_url}
   */
   readonly externalUrl: string;
   /**
   * The display name of the external status check service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_external_status_check#name ProjectExternalStatusCheck#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_external_status_check#name ProjectExternalStatusCheck#name}
   */
   readonly name: string;
   /**
   * The ID of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_external_status_check#project_id ProjectExternalStatusCheck#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_external_status_check#project_id ProjectExternalStatusCheck#project_id}
   */
   readonly projectId: number;
   /**
   * The list of IDs of protected branches to scope the rule by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_external_status_check#protected_branch_ids ProjectExternalStatusCheck#protected_branch_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_external_status_check#protected_branch_ids ProjectExternalStatusCheck#protected_branch_ids}
   */
   readonly protectedBranchIds?: number[];
   /**
   * The HMAC secret for the external status check.  If this is set, then removed from the config, the value will get set to empty in the state.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_external_status_check#shared_secret ProjectExternalStatusCheck#shared_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_external_status_check#shared_secret ProjectExternalStatusCheck#shared_secret}
   */
   readonly sharedSecret?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_external_status_check gitlab_project_external_status_check}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_external_status_check gitlab_project_external_status_check}
 */
 export class ProjectExternalStatusCheck extends cdktf.TerraformResource {
 
@@ -61,7 +61,7 @@ export class ProjectExternalStatusCheck extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ProjectExternalStatusCheck resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProjectExternalStatusCheck to import
-  * @param importFromId The id of the existing ProjectExternalStatusCheck that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_external_status_check#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ProjectExternalStatusCheck that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_external_status_check#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProjectExternalStatusCheck to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -73,7 +73,7 @@ export class ProjectExternalStatusCheck extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_external_status_check gitlab_project_external_status_check} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_external_status_check gitlab_project_external_status_check} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class ProjectExternalStatusCheck extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_external_status_check',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.4.1',
+        providerVersion: '18.5.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

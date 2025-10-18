@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/cluster_agent_token
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/cluster_agent_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface ClusterAgentTokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of the agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/cluster_agent_token#agent_id ClusterAgentToken#agent_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/cluster_agent_token#agent_id ClusterAgentToken#agent_id}
   */
   readonly agentId: number;
   /**
   * The Description for the agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/cluster_agent_token#description ClusterAgentToken#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/cluster_agent_token#description ClusterAgentToken#description}
   */
   readonly description?: string;
   /**
   * The Name of the agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/cluster_agent_token#name ClusterAgentToken#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/cluster_agent_token#name ClusterAgentToken#name}
   */
   readonly name: string;
   /**
   * ID or full path of the project maintained by the authenticated user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/cluster_agent_token#project ClusterAgentToken#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/cluster_agent_token#project ClusterAgentToken#project}
   */
   readonly project: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/cluster_agent_token gitlab_cluster_agent_token}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/cluster_agent_token gitlab_cluster_agent_token}
 */
 export class ClusterAgentToken extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class ClusterAgentToken extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ClusterAgentToken resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ClusterAgentToken to import
-  * @param importFromId The id of the existing ClusterAgentToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/cluster_agent_token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ClusterAgentToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/cluster_agent_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ClusterAgentToken to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +67,7 @@ export class ClusterAgentToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/cluster_agent_token gitlab_cluster_agent_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/cluster_agent_token gitlab_cluster_agent_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class ClusterAgentToken extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_cluster_agent_token',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.4.1',
+        providerVersion: '18.5.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,
