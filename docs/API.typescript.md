@@ -41,6 +41,7 @@ The following submodules are available:
 - [dataGitlabPipelineSchedules](./dataGitlabPipelineSchedules.typescript.md)
 - [dataGitlabProject](./dataGitlabProject.typescript.md)
 - [dataGitlabProjectAccessTokens](./dataGitlabProjectAccessTokens.typescript.md)
+- [dataGitlabProjectApprovalRules](./dataGitlabProjectApprovalRules.typescript.md)
 - [dataGitlabProjectBranches](./dataGitlabProjectBranches.typescript.md)
 - [dataGitlabProjectEnvironments](./dataGitlabProjectEnvironments.typescript.md)
 - [dataGitlabProjectHook](./dataGitlabProjectHook.typescript.md)

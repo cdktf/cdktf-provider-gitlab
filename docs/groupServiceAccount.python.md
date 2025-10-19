@@ -4,7 +4,7 @@
 
 ### GroupServiceAccount <a name="GroupServiceAccount" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_service_account gitlab_group_service_account}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_service_account gitlab_group_service_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.Initializer"></a>
 
@@ -24,6 +24,7 @@ groupServiceAccount.GroupServiceAccount(
   group: str,
   email: str = None,
   name: str = None,
+  timeouts: GroupServiceAccountTimeouts = None,
   username: str = None
 )
 ```
@@ -42,6 +43,7 @@ groupServiceAccount.GroupServiceAccount(
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.Initializer.parameter.group">group</a></code> | <code>str</code> | The ID or URL-encoded path of the group that the service account is created in. |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.Initializer.parameter.email">email</a></code> | <code>str</code> | User account email. |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the user. If not specified, the default Service account user name is used. |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeouts">GroupServiceAccountTimeouts</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_service_account#timeouts GroupServiceAccount#timeouts}. |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.Initializer.parameter.username">username</a></code> | <code>str</code> | The username of the user. If not specified, it’s automatically generated. |
 
 ---
@@ -114,7 +116,7 @@ The ID or URL-encoded path of the group that the service account is created in.
 
 Must be a top level group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_service_account#group GroupServiceAccount#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_service_account#group GroupServiceAccount#group}
 
 ---
 
@@ -126,7 +128,7 @@ User account email.
 
 If not specified, generates an email prepended with `service_account_group_`. Custom email addresses require confirmation before the account is active, unless the group has a matching verified domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_service_account#email GroupServiceAccount#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_service_account#email GroupServiceAccount#email}
 
 ---
 
@@ -136,7 +138,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The name of the user. If not specified, the default Service account user name is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_service_account#name GroupServiceAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_service_account#name GroupServiceAccount#name}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.Initializer.parameter.timeouts"></a>
+
+- *Type:* <a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeouts">GroupServiceAccountTimeouts</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_service_account#timeouts GroupServiceAccount#timeouts}.
 
 ---
 
@@ -146,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The username of the user. If not specified, it’s automatically generated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_service_account#username GroupServiceAccount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_service_account#username GroupServiceAccount#username}
 
 ---
 
@@ -177,8 +187,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.resetEmail">reset_email</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.resetName">reset_name</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.resetUsername">reset_username</a></code> | *No description.* |
 
 ---
@@ -508,6 +520,24 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.putTimeouts"></a>
+
+```python
+def put_timeouts(
+  delete: str = None
+) -> None
+```
+
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.putTimeouts.parameter.delete"></a>
+
+- *Type:* str
+
+How long to wait for the service account to be fully deleted. Defaults to 10 minutes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_service_account#delete GroupServiceAccount#delete}
+
+---
+
 ##### `reset_email` <a name="reset_email" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.resetEmail"></a>
 
 ```python
@@ -518,6 +548,12 @@ def reset_email() -> None
 
 ```python
 def reset_name() -> None
+```
+
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.resetTimeouts"></a>
+
+```python
+def reset_timeouts() -> None
 ```
 
 ##### `reset_username` <a name="reset_username" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.resetUsername"></a>
@@ -640,7 +676,7 @@ The construct id used in the generated config for the GroupServiceAccount to imp
 
 The id of the existing GroupServiceAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_service_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_service_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -672,9 +708,11 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.property.serviceAccountId">service_account_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference">GroupServiceAccountTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.property.emailInput">email_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.property.groupInput">group_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeouts">GroupServiceAccountTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.property.usernameInput">username_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.property.email">email</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.property.group">group</a></code> | <code>str</code> | *No description.* |
@@ -845,6 +883,16 @@ service_account_id: str
 
 ---
 
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.property.timeouts"></a>
+
+```python
+timeouts: GroupServiceAccountTimeoutsOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference">GroupServiceAccountTimeoutsOutputReference</a>
+
+---
+
 ##### `email_input`<sup>Optional</sup> <a name="email_input" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.property.emailInput"></a>
 
 ```python
@@ -872,6 +920,16 @@ name_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.property.timeoutsInput"></a>
+
+```python
+timeouts_input: IResolvable | GroupServiceAccountTimeouts
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeouts">GroupServiceAccountTimeouts</a>
 
 ---
 
@@ -963,6 +1021,7 @@ groupServiceAccount.GroupServiceAccountConfig(
   group: str,
   email: str = None,
   name: str = None,
+  timeouts: GroupServiceAccountTimeouts = None,
   username: str = None
 )
 ```
@@ -981,6 +1040,7 @@ groupServiceAccount.GroupServiceAccountConfig(
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountConfig.property.group">group</a></code> | <code>str</code> | The ID or URL-encoded path of the group that the service account is created in. |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountConfig.property.email">email</a></code> | <code>str</code> | User account email. |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountConfig.property.name">name</a></code> | <code>str</code> | The name of the user. If not specified, the default Service account user name is used. |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeouts">GroupServiceAccountTimeouts</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_service_account#timeouts GroupServiceAccount#timeouts}. |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountConfig.property.username">username</a></code> | <code>str</code> | The username of the user. If not specified, it’s automatically generated. |
 
 ---
@@ -1067,7 +1127,7 @@ The ID or URL-encoded path of the group that the service account is created in.
 
 Must be a top level group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_service_account#group GroupServiceAccount#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_service_account#group GroupServiceAccount#group}
 
 ---
 
@@ -1083,7 +1143,7 @@ User account email.
 
 If not specified, generates an email prepended with `service_account_group_`. Custom email addresses require confirmation before the account is active, unless the group has a matching verified domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_service_account#email GroupServiceAccount#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_service_account#email GroupServiceAccount#email}
 
 ---
 
@@ -1097,7 +1157,19 @@ name: str
 
 The name of the user. If not specified, the default Service account user name is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_service_account#name GroupServiceAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_service_account#name GroupServiceAccount#name}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountConfig.property.timeouts"></a>
+
+```python
+timeouts: GroupServiceAccountTimeouts
+```
+
+- *Type:* <a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeouts">GroupServiceAccountTimeouts</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_service_account#timeouts GroupServiceAccount#timeouts}.
 
 ---
 
@@ -1111,7 +1183,345 @@ username: str
 
 The username of the user. If not specified, it’s automatically generated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_service_account#username GroupServiceAccount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_service_account#username GroupServiceAccount#username}
+
+---
+
+### GroupServiceAccountTimeouts <a name="GroupServiceAccountTimeouts" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeouts.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_gitlab import group_service_account
+
+groupServiceAccount.GroupServiceAccountTimeouts(
+  delete: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeouts.property.delete">delete</a></code> | <code>str</code> | How long to wait for the service account to be fully deleted. Defaults to 10 minutes. |
+
+---
+
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeouts.property.delete"></a>
+
+```python
+delete: str
+```
+
+- *Type:* str
+
+How long to wait for the service account to be fully deleted. Defaults to 10 minutes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_service_account#delete GroupServiceAccount#delete}
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### GroupServiceAccountTimeoutsOutputReference <a name="GroupServiceAccountTimeoutsOutputReference" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_gitlab import group_service_account
+
+groupServiceAccount.GroupServiceAccountTimeoutsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.resetDelete"></a>
+
+```python
+def reset_delete() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeouts">GroupServiceAccountTimeouts</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.property.deleteInput"></a>
+
+```python
+delete_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.property.delete"></a>
+
+```python
+delete: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeoutsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | GroupServiceAccountTimeouts
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeouts">GroupServiceAccountTimeouts</a>
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataGitlabUser <a name="DataGitlabUser" id="@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/user gitlab_user}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/user gitlab_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.Initializer"></a>
 
@@ -400,7 +400,7 @@ The construct id used in the generated config for the DataGitlabUser to import.
 
 The id of the existing DataGitlabUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1091,7 +1091,7 @@ public string Email { get; set; }
 
 The public email address of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/user#email DataGitlabUser#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/user#email DataGitlabUser#email}
 
 ---
 
@@ -1107,7 +1107,7 @@ public bool|IResolvable EmailExactMatch { get; set; }
 
 Otherwise, fuzzy matching might return the closest result. If no exact match is available, the data source returns an error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/user#email_exact_match DataGitlabUser#email_exact_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/user#email_exact_match DataGitlabUser#email_exact_match}
 
 ---
 
@@ -1121,7 +1121,7 @@ public double NamespaceId { get; set; }
 
 The ID of the user's namespace. Requires admin token to access this field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/user#namespace_id DataGitlabUser#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/user#namespace_id DataGitlabUser#namespace_id}
 
 ---
 
@@ -1135,7 +1135,7 @@ public double UserId { get; set; }
 
 The ID of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/user#user_id DataGitlabUser#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/user#user_id DataGitlabUser#user_id}
 
 ---
 
@@ -1149,7 +1149,7 @@ public string Username { get; set; }
 
 The username of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/user#username DataGitlabUser#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/user#username DataGitlabUser#username}
 
 ---
 

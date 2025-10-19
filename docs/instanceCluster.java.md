@@ -4,7 +4,7 @@
 
 ### InstanceCluster <a name="InstanceCluster" id="@cdktf/provider-gitlab.instanceCluster.InstanceCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster gitlab_instance_cluster}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/instance_cluster gitlab_instance_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.instanceCluster.InstanceCluster.Initializer"></a>
 
@@ -51,7 +51,7 @@ InstanceCluster.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-gitlab.instanceCluster.InstanceCluster.Initializer.parameter.domain">domain</a></code> | <code>java.lang.String</code> | The base domain of the cluster. |
 | <code><a href="#@cdktf/provider-gitlab.instanceCluster.InstanceCluster.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determines if cluster is active or not. Defaults to `true`. This attribute cannot be read. |
 | <code><a href="#@cdktf/provider-gitlab.instanceCluster.InstanceCluster.Initializer.parameter.environmentScope">environmentScope</a></code> | <code>java.lang.String</code> | The associated environment to the cluster. Defaults to `*`. |
-| <code><a href="#@cdktf/provider-gitlab.instanceCluster.InstanceCluster.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#id InstanceCluster#id}. |
+| <code><a href="#@cdktf/provider-gitlab.instanceCluster.InstanceCluster.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/instance_cluster#id InstanceCluster#id}. |
 | <code><a href="#@cdktf/provider-gitlab.instanceCluster.InstanceCluster.Initializer.parameter.kubernetesAuthorizationType">kubernetesAuthorizationType</a></code> | <code>java.lang.String</code> | The cluster authorization type. Valid values are `rbac`, `abac`, `unknown_authorization`. Defaults to `rbac`. |
 | <code><a href="#@cdktf/provider-gitlab.instanceCluster.InstanceCluster.Initializer.parameter.kubernetesCaCert">kubernetesCaCert</a></code> | <code>java.lang.String</code> | TLS certificate (needed if API is using a self-signed TLS certificate). |
 | <code><a href="#@cdktf/provider-gitlab.instanceCluster.InstanceCluster.Initializer.parameter.kubernetesNamespace">kubernetesNamespace</a></code> | <code>java.lang.String</code> | The unique namespace related to the instance. |
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 The URL to access the Kubernetes API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#kubernetes_api_url InstanceCluster#kubernetes_api_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/instance_cluster#kubernetes_api_url InstanceCluster#kubernetes_api_url}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The token to authenticate against Kubernetes. This attribute cannot be read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#kubernetes_token InstanceCluster#kubernetes_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/instance_cluster#kubernetes_token InstanceCluster#kubernetes_token}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The name of cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#name InstanceCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/instance_cluster#name InstanceCluster#name}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The base domain of the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#domain InstanceCluster#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/instance_cluster#domain InstanceCluster#domain}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Determines if cluster is active or not. Defaults to `true`. This attribute cannot be read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#enabled InstanceCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/instance_cluster#enabled InstanceCluster#enabled}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The associated environment to the cluster. Defaults to `*`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#environment_scope InstanceCluster#environment_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/instance_cluster#environment_scope InstanceCluster#environment_scope}
 
 ---
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#id InstanceCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/instance_cluster#id InstanceCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -197,7 +197,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The cluster authorization type. Valid values are `rbac`, `abac`, `unknown_authorization`. Defaults to `rbac`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#kubernetes_authorization_type InstanceCluster#kubernetes_authorization_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/instance_cluster#kubernetes_authorization_type InstanceCluster#kubernetes_authorization_type}
 
 ---
 
@@ -207,7 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 TLS certificate (needed if API is using a self-signed TLS certificate).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#kubernetes_ca_cert InstanceCluster#kubernetes_ca_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/instance_cluster#kubernetes_ca_cert InstanceCluster#kubernetes_ca_cert}
 
 ---
 
@@ -217,7 +217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The unique namespace related to the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#kubernetes_namespace InstanceCluster#kubernetes_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/instance_cluster#kubernetes_namespace InstanceCluster#kubernetes_namespace}
 
 ---
 
@@ -227,7 +227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Determines if cluster is managed by gitlab or not. Defaults to `true`. This attribute cannot be read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#managed InstanceCluster#managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/instance_cluster#managed InstanceCluster#managed}
 
 ---
 
@@ -237,7 +237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The ID of the management project for the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#management_project_id InstanceCluster#management_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/instance_cluster#management_project_id InstanceCluster#management_project_id}
 
 ---
 
@@ -727,7 +727,7 @@ The construct id used in the generated config for the InstanceCluster to import.
 
 The id of the existing InstanceCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/instance_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1277,7 +1277,7 @@ InstanceClusterConfig.builder()
 | <code><a href="#@cdktf/provider-gitlab.instanceCluster.InstanceClusterConfig.property.domain">domain</a></code> | <code>java.lang.String</code> | The base domain of the cluster. |
 | <code><a href="#@cdktf/provider-gitlab.instanceCluster.InstanceClusterConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determines if cluster is active or not. Defaults to `true`. This attribute cannot be read. |
 | <code><a href="#@cdktf/provider-gitlab.instanceCluster.InstanceClusterConfig.property.environmentScope">environmentScope</a></code> | <code>java.lang.String</code> | The associated environment to the cluster. Defaults to `*`. |
-| <code><a href="#@cdktf/provider-gitlab.instanceCluster.InstanceClusterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#id InstanceCluster#id}. |
+| <code><a href="#@cdktf/provider-gitlab.instanceCluster.InstanceClusterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/instance_cluster#id InstanceCluster#id}. |
 | <code><a href="#@cdktf/provider-gitlab.instanceCluster.InstanceClusterConfig.property.kubernetesAuthorizationType">kubernetesAuthorizationType</a></code> | <code>java.lang.String</code> | The cluster authorization type. Valid values are `rbac`, `abac`, `unknown_authorization`. Defaults to `rbac`. |
 | <code><a href="#@cdktf/provider-gitlab.instanceCluster.InstanceClusterConfig.property.kubernetesCaCert">kubernetesCaCert</a></code> | <code>java.lang.String</code> | TLS certificate (needed if API is using a self-signed TLS certificate). |
 | <code><a href="#@cdktf/provider-gitlab.instanceCluster.InstanceClusterConfig.property.kubernetesNamespace">kubernetesNamespace</a></code> | <code>java.lang.String</code> | The unique namespace related to the instance. |
@@ -1366,7 +1366,7 @@ public java.lang.String getKubernetesApiUrl();
 
 The URL to access the Kubernetes API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#kubernetes_api_url InstanceCluster#kubernetes_api_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/instance_cluster#kubernetes_api_url InstanceCluster#kubernetes_api_url}
 
 ---
 
@@ -1380,7 +1380,7 @@ public java.lang.String getKubernetesToken();
 
 The token to authenticate against Kubernetes. This attribute cannot be read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#kubernetes_token InstanceCluster#kubernetes_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/instance_cluster#kubernetes_token InstanceCluster#kubernetes_token}
 
 ---
 
@@ -1394,7 +1394,7 @@ public java.lang.String getName();
 
 The name of cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#name InstanceCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/instance_cluster#name InstanceCluster#name}
 
 ---
 
@@ -1408,7 +1408,7 @@ public java.lang.String getDomain();
 
 The base domain of the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#domain InstanceCluster#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/instance_cluster#domain InstanceCluster#domain}
 
 ---
 
@@ -1422,7 +1422,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Determines if cluster is active or not. Defaults to `true`. This attribute cannot be read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#enabled InstanceCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/instance_cluster#enabled InstanceCluster#enabled}
 
 ---
 
@@ -1436,7 +1436,7 @@ public java.lang.String getEnvironmentScope();
 
 The associated environment to the cluster. Defaults to `*`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#environment_scope InstanceCluster#environment_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/instance_cluster#environment_scope InstanceCluster#environment_scope}
 
 ---
 
@@ -1448,7 +1448,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#id InstanceCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/instance_cluster#id InstanceCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1465,7 +1465,7 @@ public java.lang.String getKubernetesAuthorizationType();
 
 The cluster authorization type. Valid values are `rbac`, `abac`, `unknown_authorization`. Defaults to `rbac`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#kubernetes_authorization_type InstanceCluster#kubernetes_authorization_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/instance_cluster#kubernetes_authorization_type InstanceCluster#kubernetes_authorization_type}
 
 ---
 
@@ -1479,7 +1479,7 @@ public java.lang.String getKubernetesCaCert();
 
 TLS certificate (needed if API is using a self-signed TLS certificate).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#kubernetes_ca_cert InstanceCluster#kubernetes_ca_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/instance_cluster#kubernetes_ca_cert InstanceCluster#kubernetes_ca_cert}
 
 ---
 
@@ -1493,7 +1493,7 @@ public java.lang.String getKubernetesNamespace();
 
 The unique namespace related to the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#kubernetes_namespace InstanceCluster#kubernetes_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/instance_cluster#kubernetes_namespace InstanceCluster#kubernetes_namespace}
 
 ---
 
@@ -1507,7 +1507,7 @@ public java.lang.Boolean|IResolvable getManaged();
 
 Determines if cluster is managed by gitlab or not. Defaults to `true`. This attribute cannot be read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#managed InstanceCluster#managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/instance_cluster#managed InstanceCluster#managed}
 
 ---
 
@@ -1521,7 +1521,7 @@ public java.lang.String getManagementProjectId();
 
 The ID of the management project for the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/instance_cluster#management_project_id InstanceCluster#management_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/instance_cluster#management_project_id InstanceCluster#management_project_id}
 
 ---
 

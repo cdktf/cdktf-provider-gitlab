@@ -4,7 +4,7 @@
 
 ### ProjectJobTokenScopes <a name="ProjectJobTokenScopes" id="@cdktf/provider-gitlab.projectJobTokenScopes.ProjectJobTokenScopes"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_job_token_scopes gitlab_project_job_token_scopes}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_job_token_scopes gitlab_project_job_token_scopes}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectJobTokenScopes.ProjectJobTokenScopes.Initializer"></a>
 
@@ -502,7 +502,7 @@ The construct id used in the generated config for the ProjectJobTokenScopes to i
 
 The id of the existing ProjectJobTokenScopes that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_job_token_scopes#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_job_token_scopes#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -841,7 +841,7 @@ const projectJobTokenScopesConfig: projectJobTokenScopes.ProjectJobTokenScopesCo
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScopes.ProjectJobTokenScopesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScopes.ProjectJobTokenScopesConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable the given inbound allowlist. |
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScopes.ProjectJobTokenScopesConfig.property.project">project</a></code> | <code>string</code> | The ID or full path of the project. |
-| <code><a href="#@cdktf/provider-gitlab.projectJobTokenScopes.ProjectJobTokenScopesConfig.property.projectId">projectId</a></code> | <code>number</code> | The ID of the project. |
+| <code><a href="#@cdktf/provider-gitlab.projectJobTokenScopes.ProjectJobTokenScopesConfig.property.projectId">projectId</a></code> | <code>number</code> | The ID of the project. Use `project` instead. To be removed in 19.0. |
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScopes.ProjectJobTokenScopesConfig.property.targetGroupIds">targetGroupIds</a></code> | <code>number[]</code> | A set of group IDs that are in the CI/CD job token inbound allowlist. |
 | <code><a href="#@cdktf/provider-gitlab.projectJobTokenScopes.ProjectJobTokenScopesConfig.property.targetProjectIds">targetProjectIds</a></code> | <code>number[]</code> | A set of project IDs that are in the CI/CD job token inbound allowlist. |
 
@@ -929,7 +929,7 @@ Enable the given inbound allowlist.
 
 If false, will allow any project or group regardless of the values in `target_project_ids` or `target_group_ids`. Deleting the associated `gitlab_project_job_token_scopes` resource will reset `Enabled` on the group to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_job_token_scopes#enabled ProjectJobTokenScopes#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_job_token_scopes#enabled ProjectJobTokenScopes#enabled}
 
 ---
 
@@ -943,7 +943,7 @@ public readonly project: string;
 
 The ID or full path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_job_token_scopes#project ProjectJobTokenScopes#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_job_token_scopes#project ProjectJobTokenScopes#project}
 
 ---
 
@@ -955,9 +955,9 @@ public readonly projectId: number;
 
 - *Type:* number
 
-The ID of the project.
+The ID of the project. Use `project` instead. To be removed in 19.0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_job_token_scopes#project_id ProjectJobTokenScopes#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_job_token_scopes#project_id ProjectJobTokenScopes#project_id}
 
 ---
 
@@ -971,7 +971,7 @@ public readonly targetGroupIds: number[];
 
 A set of group IDs that are in the CI/CD job token inbound allowlist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_job_token_scopes#target_group_ids ProjectJobTokenScopes#target_group_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_job_token_scopes#target_group_ids ProjectJobTokenScopes#target_group_ids}
 
 ---
 
@@ -985,7 +985,7 @@ public readonly targetProjectIds: number[];
 
 A set of project IDs that are in the CI/CD job token inbound allowlist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_job_token_scopes#target_project_ids ProjectJobTokenScopes#target_project_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_job_token_scopes#target_project_ids ProjectJobTokenScopes#target_project_ids}
 
 ---
 

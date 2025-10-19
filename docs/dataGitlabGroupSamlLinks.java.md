@@ -4,7 +4,7 @@
 
 ### DataGitlabGroupSamlLinks <a name="DataGitlabGroupSamlLinks" id="@cdktf/provider-gitlab.dataGitlabGroupSamlLinks.DataGitlabGroupSamlLinks"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/group_saml_links gitlab_group_saml_links}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/group_saml_links gitlab_group_saml_links}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupSamlLinks.DataGitlabGroupSamlLinks.Initializer"></a>
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 The name or id of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/group_saml_links#group DataGitlabGroupSamlLinks#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/group_saml_links#group DataGitlabGroupSamlLinks#group}
 
 ---
 
@@ -427,7 +427,7 @@ The construct id used in the generated config for the DataGitlabGroupSamlLinks t
 
 The id of the existing DataGitlabGroupSamlLinks that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/group_saml_links#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/group_saml_links#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -758,7 +758,7 @@ public java.lang.String getGroup();
 
 The name or id of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/group_saml_links#group DataGitlabGroupSamlLinks#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/group_saml_links#group DataGitlabGroupSamlLinks#group}
 
 ---
 

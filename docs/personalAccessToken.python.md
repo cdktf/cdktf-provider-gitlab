@@ -4,7 +4,7 @@
 
 ### PersonalAccessToken <a name="PersonalAccessToken" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/personal_access_token gitlab_personal_access_token}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/personal_access_token gitlab_personal_access_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.Initializer"></a>
 
@@ -26,7 +26,8 @@ personalAccessToken.PersonalAccessToken(
   user_id: typing.Union[int, float],
   description: str = None,
   expires_at: str = None,
-  rotation_configuration: PersonalAccessTokenRotationConfiguration = None
+  rotation_configuration: PersonalAccessTokenRotationConfiguration = None,
+  validate_past_expiration_date: bool | IResolvable = None
 )
 ```
 
@@ -47,6 +48,7 @@ personalAccessToken.PersonalAccessToken(
 | <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.Initializer.parameter.description">description</a></code> | <code>str</code> | The description of the personal access token. |
 | <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.Initializer.parameter.expiresAt">expires_at</a></code> | <code>str</code> | When the token will expire, YYYY-MM-DD format. Is automatically set when `rotation_configuration` is used. |
 | <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.Initializer.parameter.rotationConfiguration">rotation_configuration</a></code> | <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessTokenRotationConfiguration">PersonalAccessTokenRotationConfiguration</a></code> | The configuration for when to rotate a token automatically. Will not rotate a token until `terraform apply` is run. |
+| <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.Initializer.parameter.validatePastExpirationDate">validate_past_expiration_date</a></code> | <code>bool \| cdktf.IResolvable</code> | Wether to validate if the expiration date is in the future. |
 
 ---
 
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the personal access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/personal_access_token#name PersonalAccessToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/personal_access_token#name PersonalAccessToken#name}
 
 ---
 
@@ -128,7 +130,7 @@ The scopes of the personal access token.
 
 valid values are: `api`, `read_user`, `read_api`, `read_repository`, `write_repository`, `read_registry`, `write_registry`, `read_virtual_registry`, `write_virtual_registry`, `sudo`, `admin_mode`, `create_runner`, `manage_runner`, `ai_features`, `k8s_proxy`, `self_rotate`, `read_service_ping`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/personal_access_token#scopes PersonalAccessToken#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/personal_access_token#scopes PersonalAccessToken#scopes}
 
 ---
 
@@ -138,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The ID of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/personal_access_token#user_id PersonalAccessToken#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/personal_access_token#user_id PersonalAccessToken#user_id}
 
 ---
 
@@ -148,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The description of the personal access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/personal_access_token#description PersonalAccessToken#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/personal_access_token#description PersonalAccessToken#description}
 
 ---
 
@@ -158,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 When the token will expire, YYYY-MM-DD format. Is automatically set when `rotation_configuration` is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/personal_access_token#expires_at PersonalAccessToken#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/personal_access_token#expires_at PersonalAccessToken#expires_at}
 
 ---
 
@@ -168,7 +170,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The configuration for when to rotate a token automatically. Will not rotate a token until `terraform apply` is run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/personal_access_token#rotation_configuration PersonalAccessToken#rotation_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/personal_access_token#rotation_configuration PersonalAccessToken#rotation_configuration}
+
+---
+
+##### `validate_past_expiration_date`<sup>Optional</sup> <a name="validate_past_expiration_date" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.Initializer.parameter.validatePastExpirationDate"></a>
+
+- *Type:* bool | cdktf.IResolvable
+
+Wether to validate if the expiration date is in the future.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/personal_access_token#validate_past_expiration_date PersonalAccessToken#validate_past_expiration_date}
 
 ---
 
@@ -203,6 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.resetExpiresAt">reset_expires_at</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.resetRotationConfiguration">reset_rotation_configuration</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.resetValidatePastExpirationDate">reset_validate_past_expiration_date</a></code> | *No description.* |
 
 ---
 
@@ -546,7 +559,7 @@ def put_rotation_configuration(
 
 The duration (in days) the new token should be valid for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/personal_access_token#expiration_days PersonalAccessToken#expiration_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/personal_access_token#expiration_days PersonalAccessToken#expiration_days}
 
 ---
 
@@ -558,7 +571,7 @@ The duration (in days) before the expiration when the token should be rotated.
 
 As an example, if set to 7 days, the token will rotate 7 days before the expiration date, but only when `terraform apply` is run in that timeframe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/personal_access_token#rotate_before_days PersonalAccessToken#rotate_before_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/personal_access_token#rotate_before_days PersonalAccessToken#rotate_before_days}
 
 ---
 
@@ -578,6 +591,12 @@ def reset_expires_at() -> None
 
 ```python
 def reset_rotation_configuration() -> None
+```
+
+##### `reset_validate_past_expiration_date` <a name="reset_validate_past_expiration_date" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.resetValidatePastExpirationDate"></a>
+
+```python
+def reset_validate_past_expiration_date() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -694,7 +713,7 @@ The construct id used in the generated config for the PersonalAccessToken to imp
 
 The id of the existing PersonalAccessToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/personal_access_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/personal_access_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -736,11 +755,13 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.property.rotationConfigurationInput">rotation_configuration_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessTokenRotationConfiguration">PersonalAccessTokenRotationConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.property.scopesInput">scopes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.property.userIdInput">user_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.property.validatePastExpirationDateInput">validate_past_expiration_date_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.property.expiresAt">expires_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.property.scopes">scopes</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.property.userId">user_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.property.validatePastExpirationDate">validate_past_expiration_date</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1006,6 +1027,16 @@ user_id_input: typing.Union[int, float]
 
 ---
 
+##### `validate_past_expiration_date_input`<sup>Optional</sup> <a name="validate_past_expiration_date_input" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.property.validatePastExpirationDateInput"></a>
+
+```python
+validate_past_expiration_date_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktf.IResolvable
+
+---
+
 ##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.property.description"></a>
 
 ```python
@@ -1056,6 +1087,16 @@ user_id: typing.Union[int, float]
 
 ---
 
+##### `validate_past_expiration_date`<sup>Required</sup> <a name="validate_past_expiration_date" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessToken.property.validatePastExpirationDate"></a>
+
+```python
+validate_past_expiration_date: bool | IResolvable
+```
+
+- *Type:* bool | cdktf.IResolvable
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1096,7 +1137,8 @@ personalAccessToken.PersonalAccessTokenConfig(
   user_id: typing.Union[int, float],
   description: str = None,
   expires_at: str = None,
-  rotation_configuration: PersonalAccessTokenRotationConfiguration = None
+  rotation_configuration: PersonalAccessTokenRotationConfiguration = None,
+  validate_past_expiration_date: bool | IResolvable = None
 )
 ```
 
@@ -1117,6 +1159,7 @@ personalAccessToken.PersonalAccessTokenConfig(
 | <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessTokenConfig.property.description">description</a></code> | <code>str</code> | The description of the personal access token. |
 | <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessTokenConfig.property.expiresAt">expires_at</a></code> | <code>str</code> | When the token will expire, YYYY-MM-DD format. Is automatically set when `rotation_configuration` is used. |
 | <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessTokenConfig.property.rotationConfiguration">rotation_configuration</a></code> | <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessTokenRotationConfiguration">PersonalAccessTokenRotationConfiguration</a></code> | The configuration for when to rotate a token automatically. Will not rotate a token until `terraform apply` is run. |
+| <code><a href="#@cdktf/provider-gitlab.personalAccessToken.PersonalAccessTokenConfig.property.validatePastExpirationDate">validate_past_expiration_date</a></code> | <code>bool \| cdktf.IResolvable</code> | Wether to validate if the expiration date is in the future. |
 
 ---
 
@@ -1200,7 +1243,7 @@ name: str
 
 The name of the personal access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/personal_access_token#name PersonalAccessToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/personal_access_token#name PersonalAccessToken#name}
 
 ---
 
@@ -1216,7 +1259,7 @@ The scopes of the personal access token.
 
 valid values are: `api`, `read_user`, `read_api`, `read_repository`, `write_repository`, `read_registry`, `write_registry`, `read_virtual_registry`, `write_virtual_registry`, `sudo`, `admin_mode`, `create_runner`, `manage_runner`, `ai_features`, `k8s_proxy`, `self_rotate`, `read_service_ping`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/personal_access_token#scopes PersonalAccessToken#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/personal_access_token#scopes PersonalAccessToken#scopes}
 
 ---
 
@@ -1230,7 +1273,7 @@ user_id: typing.Union[int, float]
 
 The ID of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/personal_access_token#user_id PersonalAccessToken#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/personal_access_token#user_id PersonalAccessToken#user_id}
 
 ---
 
@@ -1244,7 +1287,7 @@ description: str
 
 The description of the personal access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/personal_access_token#description PersonalAccessToken#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/personal_access_token#description PersonalAccessToken#description}
 
 ---
 
@@ -1258,7 +1301,7 @@ expires_at: str
 
 When the token will expire, YYYY-MM-DD format. Is automatically set when `rotation_configuration` is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/personal_access_token#expires_at PersonalAccessToken#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/personal_access_token#expires_at PersonalAccessToken#expires_at}
 
 ---
 
@@ -1272,7 +1315,21 @@ rotation_configuration: PersonalAccessTokenRotationConfiguration
 
 The configuration for when to rotate a token automatically. Will not rotate a token until `terraform apply` is run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/personal_access_token#rotation_configuration PersonalAccessToken#rotation_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/personal_access_token#rotation_configuration PersonalAccessToken#rotation_configuration}
+
+---
+
+##### `validate_past_expiration_date`<sup>Optional</sup> <a name="validate_past_expiration_date" id="@cdktf/provider-gitlab.personalAccessToken.PersonalAccessTokenConfig.property.validatePastExpirationDate"></a>
+
+```python
+validate_past_expiration_date: bool | IResolvable
+```
+
+- *Type:* bool | cdktf.IResolvable
+
+Wether to validate if the expiration date is in the future.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/personal_access_token#validate_past_expiration_date PersonalAccessToken#validate_past_expiration_date}
 
 ---
 
@@ -1308,7 +1365,7 @@ expiration_days: typing.Union[int, float]
 
 The duration (in days) the new token should be valid for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/personal_access_token#expiration_days PersonalAccessToken#expiration_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/personal_access_token#expiration_days PersonalAccessToken#expiration_days}
 
 ---
 
@@ -1324,7 +1381,7 @@ The duration (in days) before the expiration when the token should be rotated.
 
 As an example, if set to 7 days, the token will rotate 7 days before the expiration date, but only when `terraform apply` is run in that timeframe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/personal_access_token#rotate_before_days PersonalAccessToken#rotate_before_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/personal_access_token#rotate_before_days PersonalAccessToken#rotate_before_days}
 
 ---
 

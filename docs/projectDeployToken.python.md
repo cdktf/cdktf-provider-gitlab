@@ -4,7 +4,7 @@
 
 ### ProjectDeployToken <a name="ProjectDeployToken" id="@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_deploy_token gitlab_project_deploy_token}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_deploy_token gitlab_project_deploy_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.Initializer"></a>
 
@@ -25,7 +25,8 @@ projectDeployToken.ProjectDeployToken(
   project: str,
   scopes: typing.List[str],
   expires_at: str = None,
-  username: str = None
+  username: str = None,
+  validate_past_expiration_date: bool | IResolvable = None
 )
 ```
 
@@ -45,6 +46,7 @@ projectDeployToken.ProjectDeployToken(
 | <code><a href="#@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.Initializer.parameter.scopes">scopes</a></code> | <code>typing.List[str]</code> | The scopes of the project deploy token. Valid values are: `read_repository`, `read_registry`, `write_registry`, `read_virtual_registry`, `write_virtual_registry`, `read_package_registry`, `write_package_registry`. |
 | <code><a href="#@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.Initializer.parameter.expiresAt">expires_at</a></code> | <code>str</code> | Time the token expires in RFC3339 format. Not set by default. |
 | <code><a href="#@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.Initializer.parameter.username">username</a></code> | <code>str</code> | A username for the deploy token. Default is `gitlab+deploy-token-{n}`. |
+| <code><a href="#@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.Initializer.parameter.validatePastExpirationDate">validate_past_expiration_date</a></code> | <code>bool \| cdktf.IResolvable</code> | Wether to validate if the expiration date is in the future. |
 
 ---
 
@@ -114,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 A name to describe the deploy token with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_deploy_token#name ProjectDeployToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_deploy_token#name ProjectDeployToken#name}
 
 ---
 
@@ -124,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The Id or full path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_deploy_token#project ProjectDeployToken#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_deploy_token#project ProjectDeployToken#project}
 
 ---
 
@@ -134,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The scopes of the project deploy token. Valid values are: `read_repository`, `read_registry`, `write_registry`, `read_virtual_registry`, `write_virtual_registry`, `read_package_registry`, `write_package_registry`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_deploy_token#scopes ProjectDeployToken#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_deploy_token#scopes ProjectDeployToken#scopes}
 
 ---
 
@@ -144,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Time the token expires in RFC3339 format. Not set by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_deploy_token#expires_at ProjectDeployToken#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_deploy_token#expires_at ProjectDeployToken#expires_at}
 
 ---
 
@@ -154,7 +156,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 A username for the deploy token. Default is `gitlab+deploy-token-{n}`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_deploy_token#username ProjectDeployToken#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_deploy_token#username ProjectDeployToken#username}
+
+---
+
+##### `validate_past_expiration_date`<sup>Optional</sup> <a name="validate_past_expiration_date" id="@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.Initializer.parameter.validatePastExpirationDate"></a>
+
+- *Type:* bool | cdktf.IResolvable
+
+Wether to validate if the expiration date is in the future.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_deploy_token#validate_past_expiration_date ProjectDeployToken#validate_past_expiration_date}
 
 ---
 
@@ -187,6 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.resetExpiresAt">reset_expires_at</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.resetUsername">reset_username</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.resetValidatePastExpirationDate">reset_validate_past_expiration_date</a></code> | *No description.* |
 
 ---
 
@@ -527,6 +540,12 @@ def reset_expires_at() -> None
 def reset_username() -> None
 ```
 
+##### `reset_validate_past_expiration_date` <a name="reset_validate_past_expiration_date" id="@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.resetValidatePastExpirationDate"></a>
+
+```python
+def reset_validate_past_expiration_date() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -641,7 +660,7 @@ The construct id used in the generated config for the ProjectDeployToken to impo
 
 The id of the existing ProjectDeployToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_deploy_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_deploy_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -680,11 +699,13 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.property.scopesInput">scopes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.property.usernameInput">username_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.property.validatePastExpirationDateInput">validate_past_expiration_date_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.property.expiresAt">expires_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.property.project">project</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.property.scopes">scopes</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.property.username">username</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.property.validatePastExpirationDate">validate_past_expiration_date</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -920,6 +941,16 @@ username_input: str
 
 ---
 
+##### `validate_past_expiration_date_input`<sup>Optional</sup> <a name="validate_past_expiration_date_input" id="@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.property.validatePastExpirationDateInput"></a>
+
+```python
+validate_past_expiration_date_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktf.IResolvable
+
+---
+
 ##### `expires_at`<sup>Required</sup> <a name="expires_at" id="@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.property.expiresAt"></a>
 
 ```python
@@ -970,6 +1001,16 @@ username: str
 
 ---
 
+##### `validate_past_expiration_date`<sup>Required</sup> <a name="validate_past_expiration_date" id="@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.property.validatePastExpirationDate"></a>
+
+```python
+validate_past_expiration_date: bool | IResolvable
+```
+
+- *Type:* bool | cdktf.IResolvable
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1009,7 +1050,8 @@ projectDeployToken.ProjectDeployTokenConfig(
   project: str,
   scopes: typing.List[str],
   expires_at: str = None,
-  username: str = None
+  username: str = None,
+  validate_past_expiration_date: bool | IResolvable = None
 )
 ```
 
@@ -1029,6 +1071,7 @@ projectDeployToken.ProjectDeployTokenConfig(
 | <code><a href="#@cdktf/provider-gitlab.projectDeployToken.ProjectDeployTokenConfig.property.scopes">scopes</a></code> | <code>typing.List[str]</code> | The scopes of the project deploy token. Valid values are: `read_repository`, `read_registry`, `write_registry`, `read_virtual_registry`, `write_virtual_registry`, `read_package_registry`, `write_package_registry`. |
 | <code><a href="#@cdktf/provider-gitlab.projectDeployToken.ProjectDeployTokenConfig.property.expiresAt">expires_at</a></code> | <code>str</code> | Time the token expires in RFC3339 format. Not set by default. |
 | <code><a href="#@cdktf/provider-gitlab.projectDeployToken.ProjectDeployTokenConfig.property.username">username</a></code> | <code>str</code> | A username for the deploy token. Default is `gitlab+deploy-token-{n}`. |
+| <code><a href="#@cdktf/provider-gitlab.projectDeployToken.ProjectDeployTokenConfig.property.validatePastExpirationDate">validate_past_expiration_date</a></code> | <code>bool \| cdktf.IResolvable</code> | Wether to validate if the expiration date is in the future. |
 
 ---
 
@@ -1112,7 +1155,7 @@ name: str
 
 A name to describe the deploy token with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_deploy_token#name ProjectDeployToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_deploy_token#name ProjectDeployToken#name}
 
 ---
 
@@ -1126,7 +1169,7 @@ project: str
 
 The Id or full path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_deploy_token#project ProjectDeployToken#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_deploy_token#project ProjectDeployToken#project}
 
 ---
 
@@ -1140,7 +1183,7 @@ scopes: typing.List[str]
 
 The scopes of the project deploy token. Valid values are: `read_repository`, `read_registry`, `write_registry`, `read_virtual_registry`, `write_virtual_registry`, `read_package_registry`, `write_package_registry`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_deploy_token#scopes ProjectDeployToken#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_deploy_token#scopes ProjectDeployToken#scopes}
 
 ---
 
@@ -1154,7 +1197,7 @@ expires_at: str
 
 Time the token expires in RFC3339 format. Not set by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_deploy_token#expires_at ProjectDeployToken#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_deploy_token#expires_at ProjectDeployToken#expires_at}
 
 ---
 
@@ -1168,7 +1211,21 @@ username: str
 
 A username for the deploy token. Default is `gitlab+deploy-token-{n}`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_deploy_token#username ProjectDeployToken#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_deploy_token#username ProjectDeployToken#username}
+
+---
+
+##### `validate_past_expiration_date`<sup>Optional</sup> <a name="validate_past_expiration_date" id="@cdktf/provider-gitlab.projectDeployToken.ProjectDeployTokenConfig.property.validatePastExpirationDate"></a>
+
+```python
+validate_past_expiration_date: bool | IResolvable
+```
+
+- *Type:* bool | cdktf.IResolvable
+
+Wether to validate if the expiration date is in the future.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_deploy_token#validate_past_expiration_date ProjectDeployToken#validate_past_expiration_date}
 
 ---
 
