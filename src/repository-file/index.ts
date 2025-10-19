@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/repository_file
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/repository_file
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,65 +15,65 @@ export interface RepositoryFileConfig extends cdktf.TerraformMetaArguments {
   /**
   * Email of the commit author.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/repository_file#author_email RepositoryFile#author_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/repository_file#author_email RepositoryFile#author_email}
   */
   readonly authorEmail?: string;
   /**
   * Name of the commit author.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/repository_file#author_name RepositoryFile#author_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/repository_file#author_name RepositoryFile#author_name}
   */
   readonly authorName?: string;
   /**
   * Name of the branch to which to commit to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/repository_file#branch RepositoryFile#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/repository_file#branch RepositoryFile#branch}
   */
   readonly branch: string;
   /**
   * Commit message.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/repository_file#commit_message RepositoryFile#commit_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/repository_file#commit_message RepositoryFile#commit_message}
   */
   readonly commitMessage?: string;
   /**
   * File content.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/repository_file#content RepositoryFile#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/repository_file#content RepositoryFile#content}
   */
   readonly content: string;
   /**
   * Create commit message.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/repository_file#create_commit_message RepositoryFile#create_commit_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/repository_file#create_commit_message RepositoryFile#create_commit_message}
   */
   readonly createCommitMessage?: string;
   /**
   * Delete Commit message.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/repository_file#delete_commit_message RepositoryFile#delete_commit_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/repository_file#delete_commit_message RepositoryFile#delete_commit_message}
   */
   readonly deleteCommitMessage?: string;
   /**
   * The file content encoding. Valid values are: `base64`, `text`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/repository_file#encoding RepositoryFile#encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/repository_file#encoding RepositoryFile#encoding}
   */
   readonly encoding: string;
   /**
   * Enables or disables the execute flag on the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/repository_file#execute_filemode RepositoryFile#execute_filemode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/repository_file#execute_filemode RepositoryFile#execute_filemode}
   */
   readonly executeFilemode?: boolean | cdktf.IResolvable;
   /**
   * The full path of the file. It must be relative to the root of the project without a leading slash `/` or `./`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/repository_file#file_path RepositoryFile#file_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/repository_file#file_path RepositoryFile#file_path}
   */
   readonly filePath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/repository_file#id RepositoryFile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/repository_file#id RepositoryFile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -82,45 +82,45 @@ export interface RepositoryFileConfig extends cdktf.TerraformMetaArguments {
   /**
   * Enable overwriting existing files, defaults to `false`. This attribute is only used during `create` and must be use carefully. We suggest to use `imports` whenever possible and limit the use of this attribute for when the project was imported on the same `apply`. This attribute is not supported during a resource import.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/repository_file#overwrite_on_create RepositoryFile#overwrite_on_create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/repository_file#overwrite_on_create RepositoryFile#overwrite_on_create}
   */
   readonly overwriteOnCreate?: boolean | cdktf.IResolvable;
   /**
   * The name or ID of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/repository_file#project RepositoryFile#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/repository_file#project RepositoryFile#project}
   */
   readonly project: string;
   /**
   * Name of the branch to start the new commit from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/repository_file#start_branch RepositoryFile#start_branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/repository_file#start_branch RepositoryFile#start_branch}
   */
   readonly startBranch?: string;
   /**
   * Update commit message.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/repository_file#update_commit_message RepositoryFile#update_commit_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/repository_file#update_commit_message RepositoryFile#update_commit_message}
   */
   readonly updateCommitMessage?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/repository_file#timeouts RepositoryFile#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/repository_file#timeouts RepositoryFile#timeouts}
   */
   readonly timeouts?: RepositoryFileTimeouts;
 }
 export interface RepositoryFileTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/repository_file#create RepositoryFile#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/repository_file#create RepositoryFile#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/repository_file#delete RepositoryFile#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/repository_file#delete RepositoryFile#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/repository_file#update RepositoryFile#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/repository_file#update RepositoryFile#update}
   */
   readonly update?: string;
 }
@@ -272,7 +272,7 @@ export class RepositoryFileTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/repository_file gitlab_repository_file}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/repository_file gitlab_repository_file}
 */
 export class RepositoryFile extends cdktf.TerraformResource {
 
@@ -288,7 +288,7 @@ export class RepositoryFile extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RepositoryFile resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RepositoryFile to import
-  * @param importFromId The id of the existing RepositoryFile that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/repository_file#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RepositoryFile that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/repository_file#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RepositoryFile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -300,7 +300,7 @@ export class RepositoryFile extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/repository_file gitlab_repository_file} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/repository_file gitlab_repository_file} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -311,7 +311,7 @@ export class RepositoryFile extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_repository_file',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.4.1',
+        providerVersion: '18.5.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

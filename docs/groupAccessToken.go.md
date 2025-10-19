@@ -4,7 +4,7 @@
 
 ### GroupAccessToken <a name="GroupAccessToken" id="@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_access_token gitlab_group_access_token}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_access_token gitlab_group_access_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.Initializer"></a>
 
@@ -78,6 +78,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.resetExpiresAt">ResetExpiresAt</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.resetRotationConfiguration">ResetRotationConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.resetValidatePastExpirationDate">ResetValidatePastExpirationDate</a></code> | *No description.* |
 
 ---
 
@@ -405,6 +406,12 @@ func ResetExpiresAt()
 func ResetRotationConfiguration()
 ```
 
+##### `ResetValidatePastExpirationDate` <a name="ResetValidatePastExpirationDate" id="@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.resetValidatePastExpirationDate"></a>
+
+```go
+func ResetValidatePastExpirationDate()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -508,7 +515,7 @@ The construct id used in the generated config for the GroupAccessToken to import
 
 The id of the existing GroupAccessToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_access_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_access_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -552,12 +559,14 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.property.rotationConfigurationInput">RotationConfigurationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.property.scopesInput">ScopesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.property.validatePastExpirationDateInput">ValidatePastExpirationDateInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.property.accessLevel">AccessLevel</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.property.expiresAt">ExpiresAt</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.property.group">Group</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.property.scopes">Scopes</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.property.validatePastExpirationDate">ValidatePastExpirationDate</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
@@ -843,6 +852,16 @@ func ScopesInput() *[]*string
 
 ---
 
+##### `ValidatePastExpirationDateInput`<sup>Optional</sup> <a name="ValidatePastExpirationDateInput" id="@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.property.validatePastExpirationDateInput"></a>
+
+```go
+func ValidatePastExpirationDateInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `AccessLevel`<sup>Required</sup> <a name="AccessLevel" id="@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.property.accessLevel"></a>
 
 ```go
@@ -903,6 +922,16 @@ func Scopes() *[]*string
 
 ---
 
+##### `ValidatePastExpirationDate`<sup>Required</sup> <a name="ValidatePastExpirationDate" id="@cdktf/provider-gitlab.groupAccessToken.GroupAccessToken.property.validatePastExpirationDate"></a>
+
+```go
+func ValidatePastExpirationDate() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -945,6 +974,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/groupaccesstoken"
 	Description: *string,
 	ExpiresAt: *string,
 	RotationConfiguration: github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15.groupAccessToken.GroupAccessTokenRotationConfiguration,
+	ValidatePastExpirationDate: interface{},
 }
 ```
 
@@ -966,6 +996,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/groupaccesstoken"
 | <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessTokenConfig.property.description">Description</a></code> | <code>*string</code> | The description of the group access token. |
 | <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessTokenConfig.property.expiresAt">ExpiresAt</a></code> | <code>*string</code> | When the token will expire, YYYY-MM-DD format. |
 | <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessTokenConfig.property.rotationConfiguration">RotationConfiguration</a></code> | <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessTokenRotationConfiguration">GroupAccessTokenRotationConfiguration</a></code> | The configuration for when to rotate a token automatically. Will not rotate a token until `terraform apply` is run. |
+| <code><a href="#@cdktf/provider-gitlab.groupAccessToken.GroupAccessTokenConfig.property.validatePastExpirationDate">ValidatePastExpirationDate</a></code> | <code>interface{}</code> | Wether to validate if the expiration date is in the future. |
 
 ---
 
@@ -1049,7 +1080,7 @@ Group *string
 
 The ID or full path of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_access_token#group GroupAccessToken#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_access_token#group GroupAccessToken#group}
 
 ---
 
@@ -1063,7 +1094,7 @@ Name *string
 
 The name of the group access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_access_token#name GroupAccessToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_access_token#name GroupAccessToken#name}
 
 ---
 
@@ -1079,7 +1110,7 @@ The scopes of the group access token.
 
 Valid values are: `api`, `read_api`, `read_registry`, `write_registry`, `read_virtual_registry`, `write_virtual_registry`, `read_repository`, `write_repository`, `create_runner`, `manage_runner`, `ai_features`, `k8s_proxy`, `read_observability`, `write_observability`, `self_rotate`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_access_token#scopes GroupAccessToken#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_access_token#scopes GroupAccessToken#scopes}
 
 ---
 
@@ -1095,7 +1126,7 @@ The access level for the group access token.
 
 Valid values are: `no one`, `minimal`, `guest`, `planner`, `reporter`, `developer`, `maintainer`, `owner`. Default is `maintainer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_access_token#access_level GroupAccessToken#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_access_token#access_level GroupAccessToken#access_level}
 
 ---
 
@@ -1109,7 +1140,7 @@ Description *string
 
 The description of the group access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_access_token#description GroupAccessToken#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_access_token#description GroupAccessToken#description}
 
 ---
 
@@ -1123,7 +1154,7 @@ ExpiresAt *string
 
 When the token will expire, YYYY-MM-DD format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_access_token#expires_at GroupAccessToken#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_access_token#expires_at GroupAccessToken#expires_at}
 
 ---
 
@@ -1137,7 +1168,21 @@ RotationConfiguration GroupAccessTokenRotationConfiguration
 
 The configuration for when to rotate a token automatically. Will not rotate a token until `terraform apply` is run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_access_token#rotation_configuration GroupAccessToken#rotation_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_access_token#rotation_configuration GroupAccessToken#rotation_configuration}
+
+---
+
+##### `ValidatePastExpirationDate`<sup>Optional</sup> <a name="ValidatePastExpirationDate" id="@cdktf/provider-gitlab.groupAccessToken.GroupAccessTokenConfig.property.validatePastExpirationDate"></a>
+
+```go
+ValidatePastExpirationDate interface{}
+```
+
+- *Type:* interface{}
+
+Wether to validate if the expiration date is in the future.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_access_token#validate_past_expiration_date GroupAccessToken#validate_past_expiration_date}
 
 ---
 
@@ -1173,7 +1218,7 @@ ExpirationDays *f64
 
 The duration (in days) the new token should be valid for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_access_token#expiration_days GroupAccessToken#expiration_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_access_token#expiration_days GroupAccessToken#expiration_days}
 
 ---
 
@@ -1189,7 +1234,7 @@ The duration (in days) before the expiration when the token should be rotated.
 
 As an example, if set to 7 days, the token will rotate 7 days before the expiration date, but only when `terraform apply` is run in that timeframe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group_access_token#rotate_before_days GroupAccessToken#rotate_before_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_access_token#rotate_before_days GroupAccessToken#rotate_before_days}
 
 ---
 

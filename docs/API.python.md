@@ -41,6 +41,7 @@ The following submodules are available:
 - [dataGitlabPipelineSchedules](./dataGitlabPipelineSchedules.python.md)
 - [dataGitlabProject](./dataGitlabProject.python.md)
 - [dataGitlabProjectAccessTokens](./dataGitlabProjectAccessTokens.python.md)
+- [dataGitlabProjectApprovalRules](./dataGitlabProjectApprovalRules.python.md)
 - [dataGitlabProjectBranches](./dataGitlabProjectBranches.python.md)
 - [dataGitlabProjectEnvironments](./dataGitlabProjectEnvironments.python.md)
 - [dataGitlabProjectHook](./dataGitlabProjectHook.python.md)

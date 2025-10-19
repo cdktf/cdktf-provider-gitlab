@@ -4,7 +4,7 @@
 
 ### ProjectMergeRequestNote <a name="ProjectMergeRequestNote" id="@cdktf/provider-gitlab.projectMergeRequestNote.ProjectMergeRequestNote"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_merge_request_note gitlab_project_merge_request_note}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_merge_request_note gitlab_project_merge_request_note}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectMergeRequestNote.ProjectMergeRequestNote.Initializer"></a>
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The body of the merge request note.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_merge_request_note#body ProjectMergeRequestNote#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_merge_request_note#body ProjectMergeRequestNote#body}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The IID of the merge request to add the note to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_merge_request_note#merge_request_iid ProjectMergeRequestNote#merge_request_iid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_merge_request_note#merge_request_iid ProjectMergeRequestNote#merge_request_iid}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The ID or path of the project to add the note to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_merge_request_note#project ProjectMergeRequestNote#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_merge_request_note#project ProjectMergeRequestNote#project}
 
 ---
 
@@ -148,7 +148,7 @@ The creation date of the merge request note.
 
 Using this field requires the token used with the provider to either be an Admin, or hava a Project or Group Owner role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_merge_request_note#created_at ProjectMergeRequestNote#created_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_merge_request_note#created_at ProjectMergeRequestNote#created_at}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Indicates if the merge request note is internal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_merge_request_note#internal ProjectMergeRequestNote#internal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_merge_request_note#internal ProjectMergeRequestNote#internal}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The diff head SHA of the merge request when the note was created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_merge_request_note#merge_request_diff_head_sha ProjectMergeRequestNote#merge_request_diff_head_sha}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_merge_request_note#merge_request_diff_head_sha ProjectMergeRequestNote#merge_request_diff_head_sha}
 
 ---
 
@@ -662,7 +662,7 @@ The construct id used in the generated config for the ProjectMergeRequestNote to
 
 The id of the existing ProjectMergeRequestNote that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_merge_request_note#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_merge_request_note#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1168,7 +1168,7 @@ body: str
 
 The body of the merge request note.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_merge_request_note#body ProjectMergeRequestNote#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_merge_request_note#body ProjectMergeRequestNote#body}
 
 ---
 
@@ -1182,7 +1182,7 @@ merge_request_iid: typing.Union[int, float]
 
 The IID of the merge request to add the note to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_merge_request_note#merge_request_iid ProjectMergeRequestNote#merge_request_iid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_merge_request_note#merge_request_iid ProjectMergeRequestNote#merge_request_iid}
 
 ---
 
@@ -1196,7 +1196,7 @@ project: str
 
 The ID or path of the project to add the note to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_merge_request_note#project ProjectMergeRequestNote#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_merge_request_note#project ProjectMergeRequestNote#project}
 
 ---
 
@@ -1212,7 +1212,7 @@ The creation date of the merge request note.
 
 Using this field requires the token used with the provider to either be an Admin, or hava a Project or Group Owner role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_merge_request_note#created_at ProjectMergeRequestNote#created_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_merge_request_note#created_at ProjectMergeRequestNote#created_at}
 
 ---
 
@@ -1226,7 +1226,7 @@ internal: bool | IResolvable
 
 Indicates if the merge request note is internal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_merge_request_note#internal ProjectMergeRequestNote#internal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_merge_request_note#internal ProjectMergeRequestNote#internal}
 
 ---
 
@@ -1240,7 +1240,7 @@ merge_request_diff_head_sha: str
 
 The diff head SHA of the merge request when the note was created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_merge_request_note#merge_request_diff_head_sha ProjectMergeRequestNote#merge_request_diff_head_sha}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_merge_request_note#merge_request_diff_head_sha ProjectMergeRequestNote#merge_request_diff_head_sha}
 
 ---
 

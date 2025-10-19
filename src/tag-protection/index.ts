@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/tag_protection
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/tag_protection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface TagProtectionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Access levels allowed to create. Default value of `maintainer`. The default value is always sent if not provided in the configuration. Valid values are: `no one`, `developer`, `maintainer`, `admin`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/tag_protection#create_access_level TagProtection#create_access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/tag_protection#create_access_level TagProtection#create_access_level}
   */
   readonly createAccessLevel?: string;
   /**
   * The id of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/tag_protection#project TagProtection#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/tag_protection#project TagProtection#project}
   */
   readonly project: string;
   /**
   * Name of the tag or wildcard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/tag_protection#tag TagProtection#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/tag_protection#tag TagProtection#tag}
   */
   readonly tag: string;
   /**
   * allowed_to_create block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/tag_protection#allowed_to_create TagProtection#allowed_to_create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/tag_protection#allowed_to_create TagProtection#allowed_to_create}
   */
   readonly allowedToCreate?: TagProtectionAllowedToCreate[] | cdktf.IResolvable;
 }
@@ -41,19 +41,19 @@ export interface TagProtectionAllowedToCreate {
   /**
   * Access levels allowed to create protected tags. Valid values are: `no one`, `developer`, `maintainer`, `admin`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/tag_protection#access_level TagProtection#access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/tag_protection#access_level TagProtection#access_level}
   */
   readonly accessLevel?: string;
   /**
   * The ID of a GitLab group allowed to perform the relevant action. Mutually exclusive with `user_id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/tag_protection#group_id TagProtection#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/tag_protection#group_id TagProtection#group_id}
   */
   readonly groupId?: number;
   /**
   * The ID of a GitLab user allowed to perform the relevant action. Mutually exclusive with `group_id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/tag_protection#user_id TagProtection#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/tag_protection#user_id TagProtection#user_id}
   */
   readonly userId?: number;
 }
@@ -232,7 +232,7 @@ export class TagProtectionAllowedToCreateList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/tag_protection gitlab_tag_protection}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/tag_protection gitlab_tag_protection}
 */
 export class TagProtection extends cdktf.TerraformResource {
 
@@ -248,7 +248,7 @@ export class TagProtection extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a TagProtection resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TagProtection to import
-  * @param importFromId The id of the existing TagProtection that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/tag_protection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TagProtection that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/tag_protection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TagProtection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -260,7 +260,7 @@ export class TagProtection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/tag_protection gitlab_tag_protection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/tag_protection gitlab_tag_protection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -271,7 +271,7 @@ export class TagProtection extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_tag_protection',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.4.1',
+        providerVersion: '18.5.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

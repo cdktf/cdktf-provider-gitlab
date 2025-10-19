@@ -41,6 +41,7 @@ The following submodules are available:
 - [dataGitlabPipelineSchedules](./dataGitlabPipelineSchedules.csharp.md)
 - [dataGitlabProject](./dataGitlabProject.csharp.md)
 - [dataGitlabProjectAccessTokens](./dataGitlabProjectAccessTokens.csharp.md)
+- [dataGitlabProjectApprovalRules](./dataGitlabProjectApprovalRules.csharp.md)
 - [dataGitlabProjectBranches](./dataGitlabProjectBranches.csharp.md)
 - [dataGitlabProjectEnvironments](./dataGitlabProjectEnvironments.csharp.md)
 - [dataGitlabProjectHook](./dataGitlabProjectHook.csharp.md)

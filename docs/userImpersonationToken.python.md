@@ -4,7 +4,7 @@
 
 ### UserImpersonationToken <a name="UserImpersonationToken" id="@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/user_impersonation_token gitlab_user_impersonation_token}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_impersonation_token gitlab_user_impersonation_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.Initializer"></a>
 
@@ -24,7 +24,8 @@ userImpersonationToken.UserImpersonationToken(
   expires_at: str,
   name: str,
   scopes: typing.List[str],
-  user_id: typing.Union[int, float]
+  user_id: typing.Union[int, float],
+  validate_past_expiration_date: bool | IResolvable = None
 )
 ```
 
@@ -43,6 +44,7 @@ userImpersonationToken.UserImpersonationToken(
 | <code><a href="#@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the impersonation token. |
 | <code><a href="#@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.Initializer.parameter.scopes">scopes</a></code> | <code>typing.List[str]</code> | Array of scopes of the impersonation token. |
 | <code><a href="#@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.Initializer.parameter.userId">user_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the user. |
+| <code><a href="#@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.Initializer.parameter.validatePastExpirationDate">validate_past_expiration_date</a></code> | <code>bool \| cdktf.IResolvable</code> | Wether to validate if the expiration date is in the future. |
 
 ---
 
@@ -112,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Expiration date of the impersonation token in ISO format (YYYY-MM-DD).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/user_impersonation_token#expires_at UserImpersonationToken#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_impersonation_token#expires_at UserImpersonationToken#expires_at}
 
 ---
 
@@ -122,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The name of the impersonation token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/user_impersonation_token#name UserImpersonationToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_impersonation_token#name UserImpersonationToken#name}
 
 ---
 
@@ -134,7 +136,7 @@ Array of scopes of the impersonation token.
 
 valid values are: `api`, `read_user`, `read_api`, `read_repository`, `write_repository`, `read_registry`, `write_registry`, `read_virtual_registry`, `write_virtual_registry`, `sudo`, `admin_mode`, `create_runner`, `manage_runner`, `ai_features`, `k8s_proxy`, `self_rotate`, `read_service_ping`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/user_impersonation_token#scopes UserImpersonationToken#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_impersonation_token#scopes UserImpersonationToken#scopes}
 
 ---
 
@@ -144,7 +146,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The ID of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/user_impersonation_token#user_id UserImpersonationToken#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_impersonation_token#user_id UserImpersonationToken#user_id}
+
+---
+
+##### `validate_past_expiration_date`<sup>Optional</sup> <a name="validate_past_expiration_date" id="@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.Initializer.parameter.validatePastExpirationDate"></a>
+
+- *Type:* bool | cdktf.IResolvable
+
+Wether to validate if the expiration date is in the future.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_impersonation_token#validate_past_expiration_date UserImpersonationToken#validate_past_expiration_date}
 
 ---
 
@@ -175,6 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.resetValidatePastExpirationDate">reset_validate_past_expiration_date</a></code> | *No description.* |
 
 ---
 
@@ -503,6 +516,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `reset_validate_past_expiration_date` <a name="reset_validate_past_expiration_date" id="@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.resetValidatePastExpirationDate"></a>
+
+```python
+def reset_validate_past_expiration_date() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -617,7 +636,7 @@ The construct id used in the generated config for the UserImpersonationToken to 
 
 The id of the existing UserImpersonationToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/user_impersonation_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_impersonation_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -658,10 +677,12 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4
 | <code><a href="#@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.property.scopesInput">scopes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.property.userIdInput">user_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.property.validatePastExpirationDateInput">validate_past_expiration_date_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.property.expiresAt">expires_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.property.scopes">scopes</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.property.userId">user_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.property.validatePastExpirationDate">validate_past_expiration_date</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -917,6 +938,16 @@ user_id_input: typing.Union[int, float]
 
 ---
 
+##### `validate_past_expiration_date_input`<sup>Optional</sup> <a name="validate_past_expiration_date_input" id="@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.property.validatePastExpirationDateInput"></a>
+
+```python
+validate_past_expiration_date_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktf.IResolvable
+
+---
+
 ##### `expires_at`<sup>Required</sup> <a name="expires_at" id="@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.property.expiresAt"></a>
 
 ```python
@@ -954,6 +985,16 @@ user_id: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `validate_past_expiration_date`<sup>Required</sup> <a name="validate_past_expiration_date" id="@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationToken.property.validatePastExpirationDate"></a>
+
+```python
+validate_past_expiration_date: bool | IResolvable
+```
+
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -995,7 +1036,8 @@ userImpersonationToken.UserImpersonationTokenConfig(
   expires_at: str,
   name: str,
   scopes: typing.List[str],
-  user_id: typing.Union[int, float]
+  user_id: typing.Union[int, float],
+  validate_past_expiration_date: bool | IResolvable = None
 )
 ```
 
@@ -1014,6 +1056,7 @@ userImpersonationToken.UserImpersonationTokenConfig(
 | <code><a href="#@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationTokenConfig.property.name">name</a></code> | <code>str</code> | The name of the impersonation token. |
 | <code><a href="#@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationTokenConfig.property.scopes">scopes</a></code> | <code>typing.List[str]</code> | Array of scopes of the impersonation token. |
 | <code><a href="#@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationTokenConfig.property.userId">user_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the user. |
+| <code><a href="#@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationTokenConfig.property.validatePastExpirationDate">validate_past_expiration_date</a></code> | <code>bool \| cdktf.IResolvable</code> | Wether to validate if the expiration date is in the future. |
 
 ---
 
@@ -1097,7 +1140,7 @@ expires_at: str
 
 Expiration date of the impersonation token in ISO format (YYYY-MM-DD).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/user_impersonation_token#expires_at UserImpersonationToken#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_impersonation_token#expires_at UserImpersonationToken#expires_at}
 
 ---
 
@@ -1111,7 +1154,7 @@ name: str
 
 The name of the impersonation token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/user_impersonation_token#name UserImpersonationToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_impersonation_token#name UserImpersonationToken#name}
 
 ---
 
@@ -1127,7 +1170,7 @@ Array of scopes of the impersonation token.
 
 valid values are: `api`, `read_user`, `read_api`, `read_repository`, `write_repository`, `read_registry`, `write_registry`, `read_virtual_registry`, `write_virtual_registry`, `sudo`, `admin_mode`, `create_runner`, `manage_runner`, `ai_features`, `k8s_proxy`, `self_rotate`, `read_service_ping`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/user_impersonation_token#scopes UserImpersonationToken#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_impersonation_token#scopes UserImpersonationToken#scopes}
 
 ---
 
@@ -1141,7 +1184,21 @@ user_id: typing.Union[int, float]
 
 The ID of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/user_impersonation_token#user_id UserImpersonationToken#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_impersonation_token#user_id UserImpersonationToken#user_id}
+
+---
+
+##### `validate_past_expiration_date`<sup>Optional</sup> <a name="validate_past_expiration_date" id="@cdktf/provider-gitlab.userImpersonationToken.UserImpersonationTokenConfig.property.validatePastExpirationDate"></a>
+
+```python
+validate_past_expiration_date: bool | IResolvable
+```
+
+- *Type:* bool | cdktf.IResolvable
+
+Wether to validate if the expiration date is in the future.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_impersonation_token#validate_past_expiration_date UserImpersonationToken#validate_past_expiration_date}
 
 ---
 
