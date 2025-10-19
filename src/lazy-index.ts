@@ -152,6 +152,7 @@ Object.defineProperty(exports, 'dataGitlabPipelineSchedule', { get: function () 
 Object.defineProperty(exports, 'dataGitlabPipelineSchedules', { get: function () { return require('./data-gitlab-pipeline-schedules'); } });
 Object.defineProperty(exports, 'dataGitlabProject', { get: function () { return require('./data-gitlab-project'); } });
 Object.defineProperty(exports, 'dataGitlabProjectAccessTokens', { get: function () { return require('./data-gitlab-project-access-tokens'); } });
+Object.defineProperty(exports, 'dataGitlabProjectApprovalRules', { get: function () { return require('./data-gitlab-project-approval-rules'); } });
 Object.defineProperty(exports, 'dataGitlabProjectBranches', { get: function () { return require('./data-gitlab-project-branches'); } });
 Object.defineProperty(exports, 'dataGitlabProjectEnvironments', { get: function () { return require('./data-gitlab-project-environments'); } });
 Object.defineProperty(exports, 'dataGitlabProjectHook', { get: function () { return require('./data-gitlab-project-hook'); } });

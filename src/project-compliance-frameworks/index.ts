@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_compliance_frameworks
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_compliance_frameworks
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface ProjectComplianceFrameworksConfig extends cdktf.TerraformMetaAr
   /**
   * Globally unique IDs of the compliance frameworks to assign to the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_compliance_frameworks#compliance_framework_ids ProjectComplianceFrameworks#compliance_framework_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_compliance_frameworks#compliance_framework_ids ProjectComplianceFrameworks#compliance_framework_ids}
   */
   readonly complianceFrameworkIds: string[];
   /**
   * The ID or full path of the project to change the compliance frameworks of.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_compliance_frameworks#project ProjectComplianceFrameworks#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_compliance_frameworks#project ProjectComplianceFrameworks#project}
   */
   readonly project: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_compliance_frameworks gitlab_project_compliance_frameworks}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_compliance_frameworks gitlab_project_compliance_frameworks}
 */
 export class ProjectComplianceFrameworks extends cdktf.TerraformResource {
 
@@ -43,7 +43,7 @@ export class ProjectComplianceFrameworks extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ProjectComplianceFrameworks resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProjectComplianceFrameworks to import
-  * @param importFromId The id of the existing ProjectComplianceFrameworks that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_compliance_frameworks#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ProjectComplianceFrameworks that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_compliance_frameworks#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProjectComplianceFrameworks to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +55,7 @@ export class ProjectComplianceFrameworks extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_compliance_frameworks gitlab_project_compliance_frameworks} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_compliance_frameworks gitlab_project_compliance_frameworks} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class ProjectComplianceFrameworks extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_compliance_frameworks',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.4.1',
+        providerVersion: '18.5.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

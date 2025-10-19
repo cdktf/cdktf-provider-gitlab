@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_target_branch_rule
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_target_branch_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface ProjectTargetBranchRuleConfig extends cdktf.TerraformMetaArgume
   /**
   * The ID or URL-encoded path of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_target_branch_rule#project ProjectTargetBranchRule#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_target_branch_rule#project ProjectTargetBranchRule#project}
   */
   readonly project: string;
   /**
   * A pattern matching the branch name for which the merge request should have a default target branch configured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_target_branch_rule#source_branch_pattern ProjectTargetBranchRule#source_branch_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_target_branch_rule#source_branch_pattern ProjectTargetBranchRule#source_branch_pattern}
   */
   readonly sourceBranchPattern: string;
   /**
   * The name of the branch to which the merge request should be addressed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_target_branch_rule#target_branch_name ProjectTargetBranchRule#target_branch_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_target_branch_rule#target_branch_name ProjectTargetBranchRule#target_branch_name}
   */
   readonly targetBranchName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_target_branch_rule gitlab_project_target_branch_rule}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_target_branch_rule gitlab_project_target_branch_rule}
 */
 export class ProjectTargetBranchRule extends cdktf.TerraformResource {
 
@@ -49,7 +49,7 @@ export class ProjectTargetBranchRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ProjectTargetBranchRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProjectTargetBranchRule to import
-  * @param importFromId The id of the existing ProjectTargetBranchRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_target_branch_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ProjectTargetBranchRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_target_branch_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProjectTargetBranchRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -61,7 +61,7 @@ export class ProjectTargetBranchRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_target_branch_rule gitlab_project_target_branch_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_target_branch_rule gitlab_project_target_branch_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class ProjectTargetBranchRule extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_target_branch_rule',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.4.1',
+        providerVersion: '18.5.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

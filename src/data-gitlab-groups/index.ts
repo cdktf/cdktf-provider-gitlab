@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/groups
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/groups
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +13,27 @@ import * as cdktf from 'cdktf';
 
 export interface DataGitlabGroupsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/groups#id DataGitlabGroups#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * Order the groups' list by `id`, `name`, `path`, or `similarity`. (Requires administrator privileges)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/groups#order_by DataGitlabGroups#order_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/groups#order_by DataGitlabGroups#order_by}
   */
   readonly orderBy?: string;
   /**
   * Search groups by name or path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/groups#search DataGitlabGroups#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/groups#search DataGitlabGroups#search}
   */
   readonly search?: string;
   /**
   * Sort groups' list in asc or desc order. (Requires administrator privileges)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/groups#sort DataGitlabGroups#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/groups#sort DataGitlabGroups#sort}
   */
   readonly sort?: string;
   /**
   * Limit to top level groups, excluding all subgroups.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/groups#top_level_only DataGitlabGroups#top_level_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/groups#top_level_only DataGitlabGroups#top_level_only}
   */
   readonly topLevelOnly?: boolean | cdktf.IResolvable;
 }
@@ -196,7 +189,7 @@ export class DataGitlabGroupsGroupsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/groups gitlab_groups}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/groups gitlab_groups}
 */
 export class DataGitlabGroups extends cdktf.TerraformDataSource {
 
@@ -212,7 +205,7 @@ export class DataGitlabGroups extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGitlabGroups resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabGroups to import
-  * @param importFromId The id of the existing DataGitlabGroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/groups#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabGroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/groups#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabGroups to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -224,7 +217,7 @@ export class DataGitlabGroups extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/data-sources/groups gitlab_groups} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/groups gitlab_groups} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -235,7 +228,7 @@ export class DataGitlabGroups extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_groups',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.4.1',
+        providerVersion: '18.5.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,
@@ -246,7 +239,6 @@ export class DataGitlabGroups extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._id = config.id;
     this._orderBy = config.orderBy;
     this._search = config.search;
     this._sort = config.sort;
@@ -263,20 +255,9 @@ export class DataGitlabGroups extends cdktf.TerraformDataSource {
     return this._groups;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // order_by - computed: false, optional: true, required: false
@@ -349,7 +330,6 @@ export class DataGitlabGroups extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
       order_by: cdktf.stringToTerraform(this._orderBy),
       search: cdktf.stringToTerraform(this._search),
       sort: cdktf.stringToTerraform(this._sort),
@@ -359,12 +339,6 @@ export class DataGitlabGroups extends cdktf.TerraformDataSource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       order_by: {
         value: cdktf.stringToHclTerraform(this._orderBy),
         isBlock: false,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/application_appearance
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/application_appearance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,91 +15,91 @@ export interface ApplicationAppearanceConfig extends cdktf.TerraformMetaArgument
   /**
   * Markdown text shown on the sign-in and sign-up page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/application_appearance#description ApplicationAppearance#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/application_appearance#description ApplicationAppearance#description}
   */
   readonly description?: string;
   /**
   * Add header and footer to all outgoing emails if enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/application_appearance#email_header_and_footer_enabled ApplicationAppearance#email_header_and_footer_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/application_appearance#email_header_and_footer_enabled ApplicationAppearance#email_header_and_footer_enabled}
   */
   readonly emailHeaderAndFooterEnabled?: boolean | cdktf.IResolvable;
   /**
   * Message in the system footer bar.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/application_appearance#footer_message ApplicationAppearance#footer_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/application_appearance#footer_message ApplicationAppearance#footer_message}
   */
   readonly footerMessage?: string;
   /**
   * Message in the system header bar.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/application_appearance#header_message ApplicationAppearance#header_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/application_appearance#header_message ApplicationAppearance#header_message}
   */
   readonly headerMessage?: string;
   /**
   * Set to true if the appearance settings should not be reset to their pre-terraform defaults on destroy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/application_appearance#keep_settings_on_destroy ApplicationAppearance#keep_settings_on_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/application_appearance#keep_settings_on_destroy ApplicationAppearance#keep_settings_on_destroy}
   */
   readonly keepSettingsOnDestroy?: boolean | cdktf.IResolvable;
   /**
   * Markdown text shown on the group or project member page for users with permission to change members.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/application_appearance#member_guidelines ApplicationAppearance#member_guidelines}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/application_appearance#member_guidelines ApplicationAppearance#member_guidelines}
   */
   readonly memberGuidelines?: string;
   /**
   * Background color for the system header or footer bar, in CSS hex notation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/application_appearance#message_background_color ApplicationAppearance#message_background_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/application_appearance#message_background_color ApplicationAppearance#message_background_color}
   */
   readonly messageBackgroundColor?: string;
   /**
   * Font color for the system header or footer bar, in CSS hex notation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/application_appearance#message_font_color ApplicationAppearance#message_font_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/application_appearance#message_font_color ApplicationAppearance#message_font_color}
   */
   readonly messageFontColor?: string;
   /**
   * Markdown text shown on the new project page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/application_appearance#new_project_guidelines ApplicationAppearance#new_project_guidelines}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/application_appearance#new_project_guidelines ApplicationAppearance#new_project_guidelines}
   */
   readonly newProjectGuidelines?: string;
   /**
   * Markdown text shown on the profile page below the Public Avatar.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/application_appearance#profile_image_guidelines ApplicationAppearance#profile_image_guidelines}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/application_appearance#profile_image_guidelines ApplicationAppearance#profile_image_guidelines}
   */
   readonly profileImageGuidelines?: string;
   /**
   * An explanation of what the Progressive Web App does. Used for the attribute `description` in `manifest.json`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/application_appearance#pwa_description ApplicationAppearance#pwa_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/application_appearance#pwa_description ApplicationAppearance#pwa_description}
   */
   readonly pwaDescription?: string;
   /**
   * Full name of the Progressive Web App. Used for the attribute `name` in `manifest.json`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/application_appearance#pwa_name ApplicationAppearance#pwa_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/application_appearance#pwa_name ApplicationAppearance#pwa_name}
   */
   readonly pwaName?: string;
   /**
   * Short name for Progressive Web App.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/application_appearance#pwa_short_name ApplicationAppearance#pwa_short_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/application_appearance#pwa_short_name ApplicationAppearance#pwa_short_name}
   */
   readonly pwaShortName?: string;
   /**
   * Application title on the sign-in and sign-up page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/application_appearance#title ApplicationAppearance#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/application_appearance#title ApplicationAppearance#title}
   */
   readonly title?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/application_appearance gitlab_application_appearance}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/application_appearance gitlab_application_appearance}
 */
 export class ApplicationAppearance extends cdktf.TerraformResource {
 
@@ -115,7 +115,7 @@ export class ApplicationAppearance extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ApplicationAppearance resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApplicationAppearance to import
-  * @param importFromId The id of the existing ApplicationAppearance that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/application_appearance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApplicationAppearance that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/application_appearance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApplicationAppearance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -127,7 +127,7 @@ export class ApplicationAppearance extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/application_appearance gitlab_application_appearance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/application_appearance gitlab_application_appearance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -138,7 +138,7 @@ export class ApplicationAppearance extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_application_appearance',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.4.1',
+        providerVersion: '18.5.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

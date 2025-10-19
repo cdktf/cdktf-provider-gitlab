@@ -1,3 +1,3 @@
 # `gitlab_group`
 
-Refer to the Terraform Registry for docs: [`gitlab_group`](https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/group).
+Refer to the Terraform Registry for docs: [`gitlab_group`](https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group).

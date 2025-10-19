@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_telegram
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_integration_telegram
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,91 +15,91 @@ export interface ProjectIntegrationTelegramConfig extends cdktf.TerraformMetaArg
   /**
   * Branches to send notifications for. Valid options are `all`, `default`, `protected`, `default_and_protected`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_telegram#branches_to_be_notified ProjectIntegrationTelegram#branches_to_be_notified}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_integration_telegram#branches_to_be_notified ProjectIntegrationTelegram#branches_to_be_notified}
   */
   readonly branchesToBeNotified?: string;
   /**
   * Enable notifications for confidential issues events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_telegram#confidential_issues_events ProjectIntegrationTelegram#confidential_issues_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_integration_telegram#confidential_issues_events ProjectIntegrationTelegram#confidential_issues_events}
   */
   readonly confidentialIssuesEvents: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for confidential note events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_telegram#confidential_note_events ProjectIntegrationTelegram#confidential_note_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_integration_telegram#confidential_note_events ProjectIntegrationTelegram#confidential_note_events}
   */
   readonly confidentialNoteEvents: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for issues events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_telegram#issues_events ProjectIntegrationTelegram#issues_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_integration_telegram#issues_events ProjectIntegrationTelegram#issues_events}
   */
   readonly issuesEvents: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for merge requests events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_telegram#merge_requests_events ProjectIntegrationTelegram#merge_requests_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_integration_telegram#merge_requests_events ProjectIntegrationTelegram#merge_requests_events}
   */
   readonly mergeRequestsEvents: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for note events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_telegram#note_events ProjectIntegrationTelegram#note_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_integration_telegram#note_events ProjectIntegrationTelegram#note_events}
   */
   readonly noteEvents: boolean | cdktf.IResolvable;
   /**
   * Send notifications for broken pipelines.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_telegram#notify_only_broken_pipelines ProjectIntegrationTelegram#notify_only_broken_pipelines}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_integration_telegram#notify_only_broken_pipelines ProjectIntegrationTelegram#notify_only_broken_pipelines}
   */
   readonly notifyOnlyBrokenPipelines?: boolean | cdktf.IResolvable;
   /**
   * Enable notifications for pipeline events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_telegram#pipeline_events ProjectIntegrationTelegram#pipeline_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_integration_telegram#pipeline_events ProjectIntegrationTelegram#pipeline_events}
   */
   readonly pipelineEvents: boolean | cdktf.IResolvable;
   /**
   * The ID or full path of the project to integrate with Telegram.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_telegram#project ProjectIntegrationTelegram#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_integration_telegram#project ProjectIntegrationTelegram#project}
   */
   readonly project: string;
   /**
   * Enable notifications for push events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_telegram#push_events ProjectIntegrationTelegram#push_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_integration_telegram#push_events ProjectIntegrationTelegram#push_events}
   */
   readonly pushEvents: boolean | cdktf.IResolvable;
   /**
   * Unique identifier for the target chat or the username of the target channel (in the format `@channelusername`)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_telegram#room ProjectIntegrationTelegram#room}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_integration_telegram#room ProjectIntegrationTelegram#room}
   */
   readonly room: string;
   /**
   * Enable notifications for tag push events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_telegram#tag_push_events ProjectIntegrationTelegram#tag_push_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_integration_telegram#tag_push_events ProjectIntegrationTelegram#tag_push_events}
   */
   readonly tagPushEvents: boolean | cdktf.IResolvable;
   /**
   * The Telegram bot token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_telegram#token ProjectIntegrationTelegram#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_integration_telegram#token ProjectIntegrationTelegram#token}
   */
   readonly token: string;
   /**
   * Enable notifications for wiki page events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_telegram#wiki_page_events ProjectIntegrationTelegram#wiki_page_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_integration_telegram#wiki_page_events ProjectIntegrationTelegram#wiki_page_events}
   */
   readonly wikiPageEvents: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_telegram gitlab_project_integration_telegram}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_integration_telegram gitlab_project_integration_telegram}
 */
 export class ProjectIntegrationTelegram extends cdktf.TerraformResource {
 
@@ -115,7 +115,7 @@ export class ProjectIntegrationTelegram extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ProjectIntegrationTelegram resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProjectIntegrationTelegram to import
-  * @param importFromId The id of the existing ProjectIntegrationTelegram that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_telegram#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ProjectIntegrationTelegram that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_integration_telegram#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProjectIntegrationTelegram to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -127,7 +127,7 @@ export class ProjectIntegrationTelegram extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.4.1/docs/resources/project_integration_telegram gitlab_project_integration_telegram} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_integration_telegram gitlab_project_integration_telegram} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -138,7 +138,7 @@ export class ProjectIntegrationTelegram extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_project_integration_telegram',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.4.1',
+        providerVersion: '18.5.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,
