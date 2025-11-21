@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_label
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_label
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface GroupLabelConfig extends cdktf.TerraformMetaArguments {
   /**
   * The color of the label given in 6-digit hex notation with leading '#' sign (e.g. #FFAABB) or one of the [CSS color names](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Color_keywords).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_label#color GroupLabel#color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_label#color GroupLabel#color}
   */
   readonly color: string;
   /**
   * The description of the label.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_label#description GroupLabel#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_label#description GroupLabel#description}
   */
   readonly description?: string;
   /**
   * The name or id of the group to add the label to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_label#group GroupLabel#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_label#group GroupLabel#group}
   */
   readonly group: string;
   /**
   * The name of the label.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_label#name GroupLabel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_label#name GroupLabel#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_label gitlab_group_label}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_label gitlab_group_label}
 */
 export class GroupLabel extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class GroupLabel extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GroupLabel resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GroupLabel to import
-  * @param importFromId The id of the existing GroupLabel that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_label#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GroupLabel that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_label#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GroupLabel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +67,7 @@ export class GroupLabel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_label gitlab_group_label} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_label gitlab_group_label} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class GroupLabel extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_label',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.5.0',
+        providerVersion: '18.6.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

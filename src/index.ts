@@ -124,6 +124,7 @@ export * as userRunner from './user-runner';
 export * as userSshkey from './user-sshkey';
 export * as valueStreamAnalytics from './value-stream-analytics';
 export * as dataGitlabApplication from './data-gitlab-application';
+export * as dataGitlabArtifactFile from './data-gitlab-artifact-file';
 export * as dataGitlabBranch from './data-gitlab-branch';
 export * as dataGitlabClusterAgent from './data-gitlab-cluster-agent';
 export * as dataGitlabClusterAgents from './data-gitlab-cluster-agents';
@@ -147,6 +148,7 @@ export * as dataGitlabInstanceDeployKeys from './data-gitlab-instance-deploy-key
 export * as dataGitlabInstanceServiceAccount from './data-gitlab-instance-service-account';
 export * as dataGitlabInstanceVariable from './data-gitlab-instance-variable';
 export * as dataGitlabInstanceVariables from './data-gitlab-instance-variables';
+export * as dataGitlabMemberRole from './data-gitlab-member-role';
 export * as dataGitlabMetadata from './data-gitlab-metadata';
 export * as dataGitlabPipelineSchedule from './data-gitlab-pipeline-schedule';
 export * as dataGitlabPipelineSchedules from './data-gitlab-pipeline-schedules';
