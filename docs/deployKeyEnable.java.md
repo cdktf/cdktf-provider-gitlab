@@ -4,7 +4,7 @@
 
 ### DeployKeyEnable <a name="DeployKeyEnable" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/deploy_key_enable gitlab_deploy_key_enable}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/deploy_key_enable gitlab_deploy_key_enable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.Initializer"></a>
 
@@ -22,9 +22,6 @@ DeployKeyEnable.Builder.create(Construct scope, java.lang.String id)
     .keyId(java.lang.String)
     .project(java.lang.String)
 //  .canPush(java.lang.Boolean|IResolvable)
-//  .id(java.lang.String)
-//  .key(java.lang.String)
-//  .title(java.lang.String)
     .build();
 ```
 
@@ -42,9 +39,6 @@ DeployKeyEnable.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.Initializer.parameter.keyId">keyId</a></code> | <code>java.lang.String</code> | The Gitlab key id for the pre-existing deploy key. |
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | The name or id of the project to add the deploy key to. |
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.Initializer.parameter.canPush">canPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Can deploy key push to the project's repository. |
-| <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/deploy_key_enable#id DeployKeyEnable#id}. |
-| <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.Initializer.parameter.key">key</a></code> | <code>java.lang.String</code> | Deploy key. |
-| <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.Initializer.parameter.title">title</a></code> | <code>java.lang.String</code> | Deploy key's title. |
 
 ---
 
@@ -114,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The Gitlab key id for the pre-existing deploy key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/deploy_key_enable#key_id DeployKeyEnable#key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/deploy_key_enable#key_id DeployKeyEnable#key_id}
 
 ---
 
@@ -124,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The name or id of the project to add the deploy key to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/deploy_key_enable#project DeployKeyEnable#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/deploy_key_enable#project DeployKeyEnable#project}
 
 ---
 
@@ -134,38 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Can deploy key push to the project's repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/deploy_key_enable#can_push DeployKeyEnable#can_push}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.Initializer.parameter.id"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/deploy_key_enable#id DeployKeyEnable#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.Initializer.parameter.key"></a>
-
-- *Type:* java.lang.String
-
-Deploy key.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/deploy_key_enable#key DeployKeyEnable#key}
-
----
-
-##### `title`<sup>Optional</sup> <a name="title" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.Initializer.parameter.title"></a>
-
-- *Type:* java.lang.String
-
-Deploy key's title.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/deploy_key_enable#title DeployKeyEnable#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/deploy_key_enable#can_push DeployKeyEnable#can_push}
 
 ---
 
@@ -197,9 +160,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.resetCanPush">resetCanPush</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.resetKey">resetKey</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.resetTitle">resetTitle</a></code> | *No description.* |
 
 ---
 
@@ -499,24 +459,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public void resetCanPush()
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.resetId"></a>
-
-```java
-public void resetId()
-```
-
-##### `resetKey` <a name="resetKey" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.resetKey"></a>
-
-```java
-public void resetKey()
-```
-
-##### `resetTitle` <a name="resetTitle" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.resetTitle"></a>
-
-```java
-public void resetTitle()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -620,7 +562,7 @@ The construct id used in the generated config for the DeployKeyEnable to import.
 
 The id of the existing DeployKeyEnable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/deploy_key_enable#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/deploy_key_enable#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -650,18 +592,15 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.canPushInput">canPushInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.keyIdInput">keyIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.keyInput">keyInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.titleInput">titleInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.canPush">canPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.title">title</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.canPushInput">canPushInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.keyIdInput">keyIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.canPush">canPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.keyId">keyId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.project">project</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.title">title</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
 
@@ -807,76 +746,6 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
-##### `canPushInput`<sup>Optional</sup> <a name="canPushInput" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.canPushInput"></a>
-
-```java
-public java.lang.Boolean|IResolvable getCanPushInput();
-```
-
-- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
-
----
-
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.idInput"></a>
-
-```java
-public java.lang.String getIdInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `keyIdInput`<sup>Optional</sup> <a name="keyIdInput" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.keyIdInput"></a>
-
-```java
-public java.lang.String getKeyIdInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `keyInput`<sup>Optional</sup> <a name="keyInput" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.keyInput"></a>
-
-```java
-public java.lang.String getKeyInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.projectInput"></a>
-
-```java
-public java.lang.String getProjectInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `titleInput`<sup>Optional</sup> <a name="titleInput" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.titleInput"></a>
-
-```java
-public java.lang.String getTitleInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `canPush`<sup>Required</sup> <a name="canPush" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.canPush"></a>
-
-```java
-public java.lang.Boolean|IResolvable getCanPush();
-```
-
-- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
-
----
-
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.id"></a>
 
 ```java
@@ -897,6 +766,56 @@ public java.lang.String getKey();
 
 ---
 
+##### `title`<sup>Required</sup> <a name="title" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.title"></a>
+
+```java
+public java.lang.String getTitle();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `canPushInput`<sup>Optional</sup> <a name="canPushInput" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.canPushInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getCanPushInput();
+```
+
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `keyIdInput`<sup>Optional</sup> <a name="keyIdInput" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.keyIdInput"></a>
+
+```java
+public java.lang.String getKeyIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.projectInput"></a>
+
+```java
+public java.lang.String getProjectInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `canPush`<sup>Required</sup> <a name="canPush" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.canPush"></a>
+
+```java
+public java.lang.Boolean|IResolvable getCanPush();
+```
+
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `keyId`<sup>Required</sup> <a name="keyId" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.keyId"></a>
 
 ```java
@@ -911,16 +830,6 @@ public java.lang.String getKeyId();
 
 ```java
 public java.lang.String getProject();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `title`<sup>Required</sup> <a name="title" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.property.title"></a>
-
-```java
-public java.lang.String getTitle();
 ```
 
 - *Type:* java.lang.String
@@ -965,9 +874,6 @@ DeployKeyEnableConfig.builder()
     .keyId(java.lang.String)
     .project(java.lang.String)
 //  .canPush(java.lang.Boolean|IResolvable)
-//  .id(java.lang.String)
-//  .key(java.lang.String)
-//  .title(java.lang.String)
     .build();
 ```
 
@@ -985,9 +891,6 @@ DeployKeyEnableConfig.builder()
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnableConfig.property.keyId">keyId</a></code> | <code>java.lang.String</code> | The Gitlab key id for the pre-existing deploy key. |
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnableConfig.property.project">project</a></code> | <code>java.lang.String</code> | The name or id of the project to add the deploy key to. |
 | <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnableConfig.property.canPush">canPush</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Can deploy key push to the project's repository. |
-| <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnableConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/deploy_key_enable#id DeployKeyEnable#id}. |
-| <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnableConfig.property.key">key</a></code> | <code>java.lang.String</code> | Deploy key. |
-| <code><a href="#@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnableConfig.property.title">title</a></code> | <code>java.lang.String</code> | Deploy key's title. |
 
 ---
 
@@ -1071,7 +974,7 @@ public java.lang.String getKeyId();
 
 The Gitlab key id for the pre-existing deploy key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/deploy_key_enable#key_id DeployKeyEnable#key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/deploy_key_enable#key_id DeployKeyEnable#key_id}
 
 ---
 
@@ -1085,7 +988,7 @@ public java.lang.String getProject();
 
 The name or id of the project to add the deploy key to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/deploy_key_enable#project DeployKeyEnable#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/deploy_key_enable#project DeployKeyEnable#project}
 
 ---
 
@@ -1099,50 +1002,7 @@ public java.lang.Boolean|IResolvable getCanPush();
 
 Can deploy key push to the project's repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/deploy_key_enable#can_push DeployKeyEnable#can_push}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnableConfig.property.id"></a>
-
-```java
-public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/deploy_key_enable#id DeployKeyEnable#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnableConfig.property.key"></a>
-
-```java
-public java.lang.String getKey();
-```
-
-- *Type:* java.lang.String
-
-Deploy key.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/deploy_key_enable#key DeployKeyEnable#key}
-
----
-
-##### `title`<sup>Optional</sup> <a name="title" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnableConfig.property.title"></a>
-
-```java
-public java.lang.String getTitle();
-```
-
-- *Type:* java.lang.String
-
-Deploy key's title.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/deploy_key_enable#title DeployKeyEnable#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/deploy_key_enable#can_push DeployKeyEnable#can_push}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ReleaseLink <a name="ReleaseLink" id="@cdktf/provider-gitlab.releaseLink.ReleaseLink"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/release_link gitlab_release_link}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/release_link gitlab_release_link}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.releaseLink.ReleaseLink.Initializer"></a>
 
@@ -74,7 +74,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.resetFilepath">ResetFilepath</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.resetLinkType">ResetLinkType</a></code> | *No description.* |
 
 ---
@@ -373,12 +372,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 private void ResetFilepath()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-gitlab.releaseLink.ReleaseLink.resetId"></a>
-
-```csharp
-private void ResetId()
-```
-
 ##### `ResetLinkType` <a name="ResetLinkType" id="@cdktf/provider-gitlab.releaseLink.ReleaseLink.resetLinkType"></a>
 
 ```csharp
@@ -488,7 +481,7 @@ The construct id used in the generated config for the ReleaseLink to import.
 
 The id of the existing ReleaseLink that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/release_link#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/release_link#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -520,16 +513,15 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.directAssetUrl">DirectAssetUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.external">External</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.linkId">LinkId</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.filepathInput">FilepathInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.linkTypeInput">LinkTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.tagNameInput">TagNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.urlInput">UrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.filepath">Filepath</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.linkType">LinkType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.project">Project</a></code> | <code>string</code> | *No description.* |
@@ -700,6 +692,16 @@ public IResolvable External { get; }
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.id"></a>
+
+```csharp
+public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `LinkId`<sup>Required</sup> <a name="LinkId" id="@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.linkId"></a>
 
 ```csharp
@@ -714,16 +716,6 @@ public double LinkId { get; }
 
 ```csharp
 public string FilepathInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.idInput"></a>
-
-```csharp
-public string IdInput { get; }
 ```
 
 - *Type:* string
@@ -784,16 +776,6 @@ public string UrlInput { get; }
 
 ```csharp
 public string Filepath { get; }
-```
-
-- *Type:* string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-gitlab.releaseLink.ReleaseLink.property.id"></a>
-
-```csharp
-public string Id { get; }
 ```
 
 - *Type:* string
@@ -890,7 +872,6 @@ new ReleaseLinkConfig {
     string TagName,
     string Url,
     string Filepath = null,
-    string Id = null,
     string LinkType = null
 };
 ```
@@ -911,7 +892,6 @@ new ReleaseLinkConfig {
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.tagName">TagName</a></code> | <code>string</code> | The tag associated with the Release. |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.url">Url</a></code> | <code>string</code> | The URL of the link. Link URLs must be unique within the release. |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.filepath">Filepath</a></code> | <code>string</code> | Relative path for a [Direct Asset link](https://docs.gitlab.com/user/project/releases/index/#permanent-links-to-release-assets). |
-| <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/release_link#id ReleaseLink#id}. |
 | <code><a href="#@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.linkType">LinkType</a></code> | <code>string</code> | The type of the link. Valid values are `other`, `runbook`, `image`, `package`. Defaults to other. |
 
 ---
@@ -996,7 +976,7 @@ public string Name { get; set; }
 
 The name of the link. Link names must be unique within the release.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/release_link#name ReleaseLink#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/release_link#name ReleaseLink#name}
 
 ---
 
@@ -1010,7 +990,7 @@ public string Project { get; set; }
 
 The ID or [URL-encoded path of the project](https://docs.gitlab.com/api/index/#namespaced-path-encoding).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/release_link#project ReleaseLink#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/release_link#project ReleaseLink#project}
 
 ---
 
@@ -1024,7 +1004,7 @@ public string TagName { get; set; }
 
 The tag associated with the Release.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/release_link#tag_name ReleaseLink#tag_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/release_link#tag_name ReleaseLink#tag_name}
 
 ---
 
@@ -1038,7 +1018,7 @@ public string Url { get; set; }
 
 The URL of the link. Link URLs must be unique within the release.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/release_link#url ReleaseLink#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/release_link#url ReleaseLink#url}
 
 ---
 
@@ -1052,22 +1032,7 @@ public string Filepath { get; set; }
 
 Relative path for a [Direct Asset link](https://docs.gitlab.com/user/project/releases/index/#permanent-links-to-release-assets).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/release_link#filepath ReleaseLink#filepath}
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-gitlab.releaseLink.ReleaseLinkConfig.property.id"></a>
-
-```csharp
-public string Id { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/release_link#id ReleaseLink#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/release_link#filepath ReleaseLink#filepath}
 
 ---
 
@@ -1081,7 +1046,7 @@ public string LinkType { get; set; }
 
 The type of the link. Valid values are `other`, `runbook`, `image`, `package`. Defaults to other.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/release_link#link_type ReleaseLink#link_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/release_link#link_type ReleaseLink#link_type}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### UserRunner <a name="UserRunner" id="@cdktf/provider-gitlab.userRunner.UserRunner"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_runner gitlab_user_runner}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/user_runner gitlab_user_runner}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.userRunner.UserRunner.Initializer"></a>
 
@@ -537,7 +537,7 @@ The construct id used in the generated config for the UserRunner to import.
 
 The id of the existing UserRunner that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_runner#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/user_runner#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1130,7 +1130,7 @@ RunnerType *string
 
 The scope of the runner. Valid values are: `instance_type`, `group_type`, `project_type`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_runner#runner_type UserRunner#runner_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/user_runner#runner_type UserRunner#runner_type}
 
 ---
 
@@ -1144,7 +1144,7 @@ AccessLevel *string
 
 The access level of the runner. Valid values are: `not_protected`, `ref_protected`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_runner#access_level UserRunner#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/user_runner#access_level UserRunner#access_level}
 
 ---
 
@@ -1158,7 +1158,7 @@ Description *string
 
 Description of the runner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_runner#description UserRunner#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/user_runner#description UserRunner#description}
 
 ---
 
@@ -1172,7 +1172,7 @@ GroupId *f64
 
 The ID of the group that the runner is created in. Required if runner_type is group_type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_runner#group_id UserRunner#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/user_runner#group_id UserRunner#group_id}
 
 ---
 
@@ -1186,7 +1186,7 @@ Locked interface{}
 
 Specifies if the runner should be locked for the current project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_runner#locked UserRunner#locked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/user_runner#locked UserRunner#locked}
 
 ---
 
@@ -1200,7 +1200,7 @@ MaintenanceNote *string
 
 Free-form maintenance notes for the runner (1024 characters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_runner#maintenance_note UserRunner#maintenance_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/user_runner#maintenance_note UserRunner#maintenance_note}
 
 ---
 
@@ -1216,7 +1216,7 @@ Maximum timeout that limits the amount of time (in seconds) that runners can run
 
 Must be at least 600 (10 minutes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_runner#maximum_timeout UserRunner#maximum_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/user_runner#maximum_timeout UserRunner#maximum_timeout}
 
 ---
 
@@ -1230,7 +1230,7 @@ Paused interface{}
 
 Specifies if the runner should ignore new jobs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_runner#paused UserRunner#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/user_runner#paused UserRunner#paused}
 
 ---
 
@@ -1244,7 +1244,7 @@ ProjectId *f64
 
 The ID of the project that the runner is created in. Required if runner_type is project_type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_runner#project_id UserRunner#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/user_runner#project_id UserRunner#project_id}
 
 ---
 
@@ -1258,7 +1258,7 @@ TagList *[]*string
 
 A list of runner tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_runner#tag_list UserRunner#tag_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/user_runner#tag_list UserRunner#tag_list}
 
 ---
 
@@ -1272,7 +1272,7 @@ Untagged interface{}
 
 Specifies if the runner should handle untagged jobs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_runner#untagged UserRunner#untagged}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/user_runner#untagged UserRunner#untagged}
 
 ---
 

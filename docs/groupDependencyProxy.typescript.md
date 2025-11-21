@@ -4,7 +4,7 @@
 
 ### GroupDependencyProxy <a name="GroupDependencyProxy" id="@cdktf/provider-gitlab.groupDependencyProxy.GroupDependencyProxy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_dependency_proxy gitlab_group_dependency_proxy}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_dependency_proxy gitlab_group_dependency_proxy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupDependencyProxy.GroupDependencyProxy.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the GroupDependencyProxy to im
 
 The id of the existing GroupDependencyProxy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_dependency_proxy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_dependency_proxy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -890,7 +890,7 @@ public readonly group: string;
 
 The ID or URL-encoded path of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_dependency_proxy#group GroupDependencyProxy#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_dependency_proxy#group GroupDependencyProxy#group}
 
 ---
 
@@ -904,7 +904,7 @@ public readonly enabled: boolean | IResolvable;
 
 Indicates whether the proxy is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_dependency_proxy#enabled GroupDependencyProxy#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_dependency_proxy#enabled GroupDependencyProxy#enabled}
 
 ---
 
@@ -920,7 +920,7 @@ Identity credential used to authenticate with Docker Hub when pulling images.
 
 Can be a username (for password or personal access token (PAT)) or organization name (for organization access token (OAT)).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_dependency_proxy#identity GroupDependencyProxy#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_dependency_proxy#identity GroupDependencyProxy#identity}
 
 ---
 
@@ -936,7 +936,7 @@ Secret credential used to authenticate with Docker Hub when pulling images.
 
 Can be a password, personal access token (PAT), or organization access token (OAT). Cannot be imported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_dependency_proxy#secret GroupDependencyProxy#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_dependency_proxy#secret GroupDependencyProxy#secret}
 
 ---
 
