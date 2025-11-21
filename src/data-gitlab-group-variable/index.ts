@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/group_variable
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/group_variable
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface DataGitlabGroupVariableConfig extends cdktf.TerraformMetaArgume
   /**
   * The environment scope of the variable. Defaults to all environment (`*`). Note that in Community Editions of Gitlab, values other than `*` will cause inconsistent plans.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/group_variable#environment_scope DataGitlabGroupVariable#environment_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/group_variable#environment_scope DataGitlabGroupVariable#environment_scope}
   */
   readonly environmentScope?: string;
   /**
   * The name or id of the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/group_variable#group DataGitlabGroupVariable#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/group_variable#group DataGitlabGroupVariable#group}
   */
   readonly group: string;
   /**
   * The name of the variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/group_variable#key DataGitlabGroupVariable#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/group_variable#key DataGitlabGroupVariable#key}
   */
   readonly key: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/group_variable gitlab_group_variable}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/group_variable gitlab_group_variable}
 */
 export class DataGitlabGroupVariable extends cdktf.TerraformDataSource {
 
@@ -49,7 +49,7 @@ export class DataGitlabGroupVariable extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGitlabGroupVariable resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabGroupVariable to import
-  * @param importFromId The id of the existing DataGitlabGroupVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/group_variable#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabGroupVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/group_variable#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabGroupVariable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -61,7 +61,7 @@ export class DataGitlabGroupVariable extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/group_variable gitlab_group_variable} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/group_variable gitlab_group_variable} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class DataGitlabGroupVariable extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_group_variable',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.5.0',
+        providerVersion: '18.6.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

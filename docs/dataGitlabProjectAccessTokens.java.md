@@ -4,7 +4,7 @@
 
 ### DataGitlabProjectAccessTokens <a name="DataGitlabProjectAccessTokens" id="@cdktf/provider-gitlab.dataGitlabProjectAccessTokens.DataGitlabProjectAccessTokens"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_access_tokens gitlab_project_access_tokens}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_access_tokens gitlab_project_access_tokens}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectAccessTokens.DataGitlabProjectAccessTokens.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 The name or id of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_access_tokens#project DataGitlabProjectAccessTokens#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_access_tokens#project DataGitlabProjectAccessTokens#project}
 
 ---
 
@@ -118,7 +118,7 @@ List all project access token that match the specified state.
 
 Valid values are `active`, `inactive`. Returns all project access token if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_access_tokens#state DataGitlabProjectAccessTokens#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_access_tokens#state DataGitlabProjectAccessTokens#state}
 
 ---
 
@@ -448,7 +448,7 @@ The construct id used in the generated config for the DataGitlabProjectAccessTok
 
 The id of the existing DataGitlabProjectAccessTokens that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_access_tokens#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_access_tokens#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -815,7 +815,7 @@ public java.lang.String getProject();
 
 The name or id of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_access_tokens#project DataGitlabProjectAccessTokens#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_access_tokens#project DataGitlabProjectAccessTokens#project}
 
 ---
 
@@ -831,7 +831,7 @@ List all project access token that match the specified state.
 
 Valid values are `active`, `inactive`. Returns all project access token if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_access_tokens#state DataGitlabProjectAccessTokens#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_access_tokens#state DataGitlabProjectAccessTokens#state}
 
 ---
 

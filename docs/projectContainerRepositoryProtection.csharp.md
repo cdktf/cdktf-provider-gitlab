@@ -4,7 +4,7 @@
 
 ### ProjectContainerRepositoryProtection <a name="ProjectContainerRepositoryProtection" id="@cdktf/provider-gitlab.projectContainerRepositoryProtection.ProjectContainerRepositoryProtection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_container_repository_protection gitlab_project_container_repository_protection}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_container_repository_protection gitlab_project_container_repository_protection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectContainerRepositoryProtection.ProjectContainerRepositoryProtection.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the ProjectContainerRepository
 
 The id of the existing ProjectContainerRepositoryProtection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_container_repository_protection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_container_repository_protection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -906,7 +906,7 @@ public string Project { get; set; }
 
 ID or URL-encoded path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_container_repository_protection#project ProjectContainerRepositoryProtection#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_container_repository_protection#project ProjectContainerRepositoryProtection#project}
 
 ---
 
@@ -922,7 +922,7 @@ Container repository path pattern protected by the protection rule.
 
 Wildcard character * allowed. Repository path pattern should start with the project's full path
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_container_repository_protection#repository_path_pattern ProjectContainerRepositoryProtection#repository_path_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_container_repository_protection#repository_path_pattern ProjectContainerRepositoryProtection#repository_path_pattern}
 
 ---
 
@@ -938,7 +938,7 @@ Minimum GitLab access level required to delete container images in the container
 
 For example maintainer, owner, admin. Must be provided when `minimum_access_level_for_push` is not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_container_repository_protection#minimum_access_level_for_delete ProjectContainerRepositoryProtection#minimum_access_level_for_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_container_repository_protection#minimum_access_level_for_delete ProjectContainerRepositoryProtection#minimum_access_level_for_delete}
 
 ---
 
@@ -954,7 +954,7 @@ Minimum GitLab access level required to push container images to the container r
 
 For example maintainer, owner or admin. Must be provided when `minimum_access_level_for_delete` is not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/project_container_repository_protection#minimum_access_level_for_push ProjectContainerRepositoryProtection#minimum_access_level_for_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_container_repository_protection#minimum_access_level_for_push ProjectContainerRepositoryProtection#minimum_access_level_for_push}
 
 ---
 

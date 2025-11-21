@@ -4,7 +4,7 @@
 
 ### IntegrationRedmine <a name="IntegrationRedmine" id="@cdktf/provider-gitlab.integrationRedmine.IntegrationRedmine"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/integration_redmine gitlab_integration_redmine}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/integration_redmine gitlab_integration_redmine}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.integrationRedmine.IntegrationRedmine.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The URL to the Redmine project issue to link to this GitLab project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/integration_redmine#issues_url IntegrationRedmine#issues_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/integration_redmine#issues_url IntegrationRedmine#issues_url}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The URL to use to create a new issue in the Redmine project linked to this GitLab project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/integration_redmine#new_issue_url IntegrationRedmine#new_issue_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/integration_redmine#new_issue_url IntegrationRedmine#new_issue_url}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ID of the project you want to activate integration on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/integration_redmine#project IntegrationRedmine#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/integration_redmine#project IntegrationRedmine#project}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The URL to the Redmine project to link to this GitLab project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/integration_redmine#project_url IntegrationRedmine#project_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/integration_redmine#project_url IntegrationRedmine#project_url}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Indicates whether or not to inherit default settings. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/integration_redmine#use_inherited_settings IntegrationRedmine#use_inherited_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/integration_redmine#use_inherited_settings IntegrationRedmine#use_inherited_settings}
 
 ---
 
@@ -586,7 +586,7 @@ The construct id used in the generated config for the IntegrationRedmine to impo
 
 The id of the existing IntegrationRedmine that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/integration_redmine#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/integration_redmine#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1024,7 +1024,7 @@ public java.lang.String getIssuesUrl();
 
 The URL to the Redmine project issue to link to this GitLab project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/integration_redmine#issues_url IntegrationRedmine#issues_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/integration_redmine#issues_url IntegrationRedmine#issues_url}
 
 ---
 
@@ -1038,7 +1038,7 @@ public java.lang.String getNewIssueUrl();
 
 The URL to use to create a new issue in the Redmine project linked to this GitLab project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/integration_redmine#new_issue_url IntegrationRedmine#new_issue_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/integration_redmine#new_issue_url IntegrationRedmine#new_issue_url}
 
 ---
 
@@ -1052,7 +1052,7 @@ public java.lang.String getProject();
 
 ID of the project you want to activate integration on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/integration_redmine#project IntegrationRedmine#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/integration_redmine#project IntegrationRedmine#project}
 
 ---
 
@@ -1066,7 +1066,7 @@ public java.lang.String getProjectUrl();
 
 The URL to the Redmine project to link to this GitLab project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/integration_redmine#project_url IntegrationRedmine#project_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/integration_redmine#project_url IntegrationRedmine#project_url}
 
 ---
 
@@ -1080,7 +1080,7 @@ public java.lang.Boolean|IResolvable getUseInheritedSettings();
 
 Indicates whether or not to inherit default settings. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/integration_redmine#use_inherited_settings IntegrationRedmine#use_inherited_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/integration_redmine#use_inherited_settings IntegrationRedmine#use_inherited_settings}
 
 ---
 

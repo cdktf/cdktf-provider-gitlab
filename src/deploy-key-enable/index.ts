@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/deploy_key_enable
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/deploy_key_enable
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,44 +15,25 @@ export interface DeployKeyEnableConfig extends cdktf.TerraformMetaArguments {
   /**
   * Can deploy key push to the project's repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/deploy_key_enable#can_push DeployKeyEnable#can_push}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/deploy_key_enable#can_push DeployKeyEnable#can_push}
   */
   readonly canPush?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/deploy_key_enable#id DeployKeyEnable#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * Deploy key.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/deploy_key_enable#key DeployKeyEnable#key}
-  */
-  readonly key?: string;
-  /**
   * The Gitlab key id for the pre-existing deploy key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/deploy_key_enable#key_id DeployKeyEnable#key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/deploy_key_enable#key_id DeployKeyEnable#key_id}
   */
   readonly keyId: string;
   /**
   * The name or id of the project to add the deploy key to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/deploy_key_enable#project DeployKeyEnable#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/deploy_key_enable#project DeployKeyEnable#project}
   */
   readonly project: string;
-  /**
-  * Deploy key's title.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/deploy_key_enable#title DeployKeyEnable#title}
-  */
-  readonly title?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/deploy_key_enable gitlab_deploy_key_enable}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/deploy_key_enable gitlab_deploy_key_enable}
 */
 export class DeployKeyEnable extends cdktf.TerraformResource {
 
@@ -68,7 +49,7 @@ export class DeployKeyEnable extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DeployKeyEnable resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DeployKeyEnable to import
-  * @param importFromId The id of the existing DeployKeyEnable that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/deploy_key_enable#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DeployKeyEnable that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/deploy_key_enable#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DeployKeyEnable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -80,7 +61,7 @@ export class DeployKeyEnable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/deploy_key_enable gitlab_deploy_key_enable} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/deploy_key_enable gitlab_deploy_key_enable} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +72,7 @@ export class DeployKeyEnable extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_deploy_key_enable',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.5.0',
+        providerVersion: '18.6.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,
@@ -103,18 +84,15 @@ export class DeployKeyEnable extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._canPush = config.canPush;
-    this._id = config.id;
-    this._key = config.key;
     this._keyId = config.keyId;
     this._project = config.project;
-    this._title = config.title;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // can_push - computed: false, optional: true, required: false
+  // can_push - computed: true, optional: true, required: false
   private _canPush?: boolean | cdktf.IResolvable; 
   public get canPush() {
     return this.getBooleanAttribute('can_push');
@@ -130,36 +108,14 @@ export class DeployKeyEnable extends cdktf.TerraformResource {
     return this._canPush;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
-  }
 
-  // key - computed: true, optional: true, required: false
-  private _key?: string; 
+  // key - computed: true, optional: false, required: false
   public get key() {
     return this.getStringAttribute('key');
-  }
-  public set key(value: string) {
-    this._key = value;
-  }
-  public resetKey() {
-    this._key = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get keyInput() {
-    return this._key;
   }
 
   // key_id - computed: false, optional: false, required: true
@@ -188,20 +144,9 @@ export class DeployKeyEnable extends cdktf.TerraformResource {
     return this._project;
   }
 
-  // title - computed: true, optional: true, required: false
-  private _title?: string; 
+  // title - computed: true, optional: false, required: false
   public get title() {
     return this.getStringAttribute('title');
-  }
-  public set title(value: string) {
-    this._title = value;
-  }
-  public resetTitle() {
-    this._title = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get titleInput() {
-    return this._title;
   }
 
   // =========
@@ -211,11 +156,8 @@ export class DeployKeyEnable extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       can_push: cdktf.booleanToTerraform(this._canPush),
-      id: cdktf.stringToTerraform(this._id),
-      key: cdktf.stringToTerraform(this._key),
       key_id: cdktf.stringToTerraform(this._keyId),
       project: cdktf.stringToTerraform(this._project),
-      title: cdktf.stringToTerraform(this._title),
     };
   }
 
@@ -227,18 +169,6 @@ export class DeployKeyEnable extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "boolean",
       },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      key: {
-        value: cdktf.stringToHclTerraform(this._key),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       key_id: {
         value: cdktf.stringToHclTerraform(this._keyId),
         isBlock: false,
@@ -247,12 +177,6 @@ export class DeployKeyEnable extends cdktf.TerraformResource {
       },
       project: {
         value: cdktf.stringToHclTerraform(this._project),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      title: {
-        value: cdktf.stringToHclTerraform(this._title),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -4,7 +4,7 @@
 
 ### Branch <a name="Branch" id="@cdktf/provider-gitlab.branch.Branch"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/branch gitlab_branch}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch gitlab_branch}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.branch.Branch.Initializer"></a>
 
@@ -73,7 +73,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-gitlab.branch.Branch.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.resetKeepOnDestroy">ResetKeepOnDestroy</a></code> | *No description.* |
 
 ---
@@ -366,12 +365,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-gitlab.branch.Branch.resetId"></a>
-
-```csharp
-private void ResetId()
-```
-
 ##### `ResetKeepOnDestroy` <a name="ResetKeepOnDestroy" id="@cdktf/provider-gitlab.branch.Branch.resetKeepOnDestroy"></a>
 
 ```csharp
@@ -481,7 +474,7 @@ The construct id used in the generated config for the Branch to import.
 
 The id of the existing Branch that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/branch#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -516,15 +509,14 @@ Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.property.default">Default</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.property.developerCanMerge">DeveloperCanMerge</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.property.developerCanPush">DeveloperCanPush</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-gitlab.branch.Branch.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.property.merged">Merged</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.property.protected">Protected</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.property.webUrl">WebUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.branch.Branch.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.property.keepOnDestroyInput">KeepOnDestroyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.property.refInput">RefInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-gitlab.branch.Branch.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.property.keepOnDestroy">KeepOnDestroy</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-gitlab.branch.Branch.property.project">Project</a></code> | <code>string</code> | *No description.* |
@@ -724,6 +716,16 @@ public IResolvable DeveloperCanPush { get; }
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-gitlab.branch.Branch.property.id"></a>
+
+```csharp
+public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Merged`<sup>Required</sup> <a name="Merged" id="@cdktf/provider-gitlab.branch.Branch.property.merged"></a>
 
 ```csharp
@@ -748,16 +750,6 @@ public IResolvable Protected { get; }
 
 ```csharp
 public string WebUrl { get; }
-```
-
-- *Type:* string
-
----
-
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-gitlab.branch.Branch.property.idInput"></a>
-
-```csharp
-public string IdInput { get; }
 ```
 
 - *Type:* string
@@ -798,16 +790,6 @@ public string ProjectInput { get; }
 
 ```csharp
 public string RefInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-gitlab.branch.Branch.property.id"></a>
-
-```csharp
-public string Id { get; }
 ```
 
 - *Type:* string
@@ -905,7 +887,6 @@ new BranchConfig {
     string Name,
     string Project,
     string Ref,
-    string Id = null,
     bool|IResolvable KeepOnDestroy = null
 };
 ```
@@ -924,7 +905,6 @@ new BranchConfig {
 | <code><a href="#@cdktf/provider-gitlab.branch.BranchConfig.property.name">Name</a></code> | <code>string</code> | The name for this branch. |
 | <code><a href="#@cdktf/provider-gitlab.branch.BranchConfig.property.project">Project</a></code> | <code>string</code> | The ID or full path of the project which the branch is created against. |
 | <code><a href="#@cdktf/provider-gitlab.branch.BranchConfig.property.ref">Ref</a></code> | <code>string</code> | The ref which the branch is created from. |
-| <code><a href="#@cdktf/provider-gitlab.branch.BranchConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/branch#id Branch#id}. |
 | <code><a href="#@cdktf/provider-gitlab.branch.BranchConfig.property.keepOnDestroy">KeepOnDestroy</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates whether the branch is kept once the resource destroyed (must be applied before a destroy). |
 
 ---
@@ -1009,7 +989,7 @@ public string Name { get; set; }
 
 The name for this branch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/branch#name Branch#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch#name Branch#name}
 
 ---
 
@@ -1023,7 +1003,7 @@ public string Project { get; set; }
 
 The ID or full path of the project which the branch is created against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/branch#project Branch#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch#project Branch#project}
 
 ---
 
@@ -1037,22 +1017,7 @@ public string Ref { get; set; }
 
 The ref which the branch is created from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/branch#ref Branch#ref}
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-gitlab.branch.BranchConfig.property.id"></a>
-
-```csharp
-public string Id { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/branch#id Branch#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch#ref Branch#ref}
 
 ---
 
@@ -1066,7 +1031,7 @@ public bool|IResolvable KeepOnDestroy { get; set; }
 
 Indicates whether the branch is kept once the resource destroyed (must be applied before a destroy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/branch#keep_on_destroy Branch#keep_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch#keep_on_destroy Branch#keep_on_destroy}
 
 ---
 

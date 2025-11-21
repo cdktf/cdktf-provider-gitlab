@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_dependency_proxy
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_dependency_proxy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface GroupDependencyProxyConfig extends cdktf.TerraformMetaArguments
   /**
   * Indicates whether the proxy is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_dependency_proxy#enabled GroupDependencyProxy#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_dependency_proxy#enabled GroupDependencyProxy#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * The ID or URL-encoded path of the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_dependency_proxy#group GroupDependencyProxy#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_dependency_proxy#group GroupDependencyProxy#group}
   */
   readonly group: string;
   /**
   * Identity credential used to authenticate with Docker Hub when pulling images. Can be a username (for password or personal access token (PAT)) or organization name (for organization access token (OAT)).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_dependency_proxy#identity GroupDependencyProxy#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_dependency_proxy#identity GroupDependencyProxy#identity}
   */
   readonly identity?: string;
   /**
   * Secret credential used to authenticate with Docker Hub when pulling images. Can be a password, personal access token (PAT), or organization access token (OAT). Cannot be imported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_dependency_proxy#secret GroupDependencyProxy#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_dependency_proxy#secret GroupDependencyProxy#secret}
   */
   readonly secret?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_dependency_proxy gitlab_group_dependency_proxy}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_dependency_proxy gitlab_group_dependency_proxy}
 */
 export class GroupDependencyProxy extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class GroupDependencyProxy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GroupDependencyProxy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GroupDependencyProxy to import
-  * @param importFromId The id of the existing GroupDependencyProxy that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_dependency_proxy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GroupDependencyProxy that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_dependency_proxy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GroupDependencyProxy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +67,7 @@ export class GroupDependencyProxy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/group_dependency_proxy gitlab_group_dependency_proxy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_dependency_proxy gitlab_group_dependency_proxy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class GroupDependencyProxy extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_group_dependency_proxy',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.5.0',
+        providerVersion: '18.6.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

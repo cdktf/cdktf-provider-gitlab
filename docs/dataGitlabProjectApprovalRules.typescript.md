@@ -4,7 +4,7 @@
 
 ### DataGitlabProjectApprovalRules <a name="DataGitlabProjectApprovalRules" id="@cdktf/provider-gitlab.dataGitlabProjectApprovalRules.DataGitlabProjectApprovalRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_approval_rules gitlab_project_approval_rules}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_approval_rules gitlab_project_approval_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectApprovalRules.DataGitlabProjectApprovalRules.Initializer"></a>
 
@@ -385,7 +385,7 @@ The construct id used in the generated config for the DataGitlabProjectApprovalR
 
 The id of the existing DataGitlabProjectApprovalRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_approval_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_approval_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -730,7 +730,7 @@ public readonly project: string;
 
 The ID or path with namespace that identifies the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_approval_rules#project DataGitlabProjectApprovalRules#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_approval_rules#project DataGitlabProjectApprovalRules#project}
 
 ---
 
@@ -744,7 +744,7 @@ public readonly approvalRules: IResolvable | DataGitlabProjectApprovalRulesAppro
 
 approval_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_approval_rules#approval_rules DataGitlabProjectApprovalRules#approval_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_approval_rules#approval_rules DataGitlabProjectApprovalRules#approval_rules}
 
 ---
 

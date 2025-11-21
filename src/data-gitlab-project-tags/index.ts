@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_tags
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_tags
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +13,27 @@ import * as cdktf from 'cdktf';
 
 export interface DataGitlabProjectTagsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_tags#id DataGitlabProjectTags#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * Return tags ordered by `name` or `updated` fields. Default is `updated`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_tags#order_by DataGitlabProjectTags#order_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_tags#order_by DataGitlabProjectTags#order_by}
   */
   readonly orderBy?: string;
   /**
   * The ID or URL-encoded path of the project owned by the authenticated user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_tags#project DataGitlabProjectTags#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_tags#project DataGitlabProjectTags#project}
   */
   readonly project: string;
   /**
   * Return list of tags matching the search criteria. You can use `^term` and `term$` to find tags that begin and end with `term` respectively. No other regular expressions are supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_tags#search DataGitlabProjectTags#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_tags#search DataGitlabProjectTags#search}
   */
   readonly search?: string;
   /**
   * Return tags sorted in `asc` or `desc` order. Default is `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_tags#sort DataGitlabProjectTags#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_tags#sort DataGitlabProjectTags#sort}
   */
   readonly sort?: string;
 }
@@ -353,7 +346,7 @@ export class DataGitlabProjectTagsTagsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_tags gitlab_project_tags}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_tags gitlab_project_tags}
 */
 export class DataGitlabProjectTags extends cdktf.TerraformDataSource {
 
@@ -369,7 +362,7 @@ export class DataGitlabProjectTags extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGitlabProjectTags resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabProjectTags to import
-  * @param importFromId The id of the existing DataGitlabProjectTags that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_tags#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabProjectTags that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_tags#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabProjectTags to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -381,7 +374,7 @@ export class DataGitlabProjectTags extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_tags gitlab_project_tags} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_tags gitlab_project_tags} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -392,7 +385,7 @@ export class DataGitlabProjectTags extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_project_tags',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.5.0',
+        providerVersion: '18.6.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,
@@ -403,7 +396,6 @@ export class DataGitlabProjectTags extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._id = config.id;
     this._orderBy = config.orderBy;
     this._project = config.project;
     this._search = config.search;
@@ -414,20 +406,9 @@ export class DataGitlabProjectTags extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // order_by - computed: false, optional: true, required: false
@@ -503,7 +484,6 @@ export class DataGitlabProjectTags extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
       order_by: cdktf.stringToTerraform(this._orderBy),
       project: cdktf.stringToTerraform(this._project),
       search: cdktf.stringToTerraform(this._search),
@@ -513,12 +493,6 @@ export class DataGitlabProjectTags extends cdktf.TerraformDataSource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       order_by: {
         value: cdktf.stringToHclTerraform(this._orderBy),
         isBlock: false,

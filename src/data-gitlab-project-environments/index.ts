@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_environments
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_environments
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface DataGitlabProjectEnvironmentsConfig extends cdktf.TerraformMeta
   /**
   * Return the environment with this name. Mutually exclusive with search.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_environments#name DataGitlabProjectEnvironments#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_environments#name DataGitlabProjectEnvironments#name}
   */
   readonly name?: string;
   /**
   * The ID or full path of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_environments#project DataGitlabProjectEnvironments#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_environments#project DataGitlabProjectEnvironments#project}
   */
   readonly project: string;
   /**
   * Return list of environments matching the search criteria. Mutually exclusive with name. Must be at least 3 characters long. 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_environments#search DataGitlabProjectEnvironments#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_environments#search DataGitlabProjectEnvironments#search}
   */
   readonly search?: string;
   /**
   * List all environments that match the specified state. Valid values are `available`, `stopping`, `stopped`. Returns all environments if not set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_environments#states DataGitlabProjectEnvironments#states}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_environments#states DataGitlabProjectEnvironments#states}
   */
   readonly states?: string;
 }
@@ -179,7 +179,7 @@ export class DataGitlabProjectEnvironmentsEnvironmentsList extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_environments gitlab_project_environments}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_environments gitlab_project_environments}
 */
 export class DataGitlabProjectEnvironments extends cdktf.TerraformDataSource {
 
@@ -195,7 +195,7 @@ export class DataGitlabProjectEnvironments extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGitlabProjectEnvironments resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabProjectEnvironments to import
-  * @param importFromId The id of the existing DataGitlabProjectEnvironments that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_environments#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabProjectEnvironments that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_environments#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabProjectEnvironments to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -207,7 +207,7 @@ export class DataGitlabProjectEnvironments extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/data-sources/project_environments gitlab_project_environments} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_environments gitlab_project_environments} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -218,7 +218,7 @@ export class DataGitlabProjectEnvironments extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_project_environments',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.5.0',
+        providerVersion: '18.6.0',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

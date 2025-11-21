@@ -124,6 +124,7 @@ Object.defineProperty(exports, 'userRunner', { get: function () { return require
 Object.defineProperty(exports, 'userSshkey', { get: function () { return require('./user-sshkey'); } });
 Object.defineProperty(exports, 'valueStreamAnalytics', { get: function () { return require('./value-stream-analytics'); } });
 Object.defineProperty(exports, 'dataGitlabApplication', { get: function () { return require('./data-gitlab-application'); } });
+Object.defineProperty(exports, 'dataGitlabArtifactFile', { get: function () { return require('./data-gitlab-artifact-file'); } });
 Object.defineProperty(exports, 'dataGitlabBranch', { get: function () { return require('./data-gitlab-branch'); } });
 Object.defineProperty(exports, 'dataGitlabClusterAgent', { get: function () { return require('./data-gitlab-cluster-agent'); } });
 Object.defineProperty(exports, 'dataGitlabClusterAgents', { get: function () { return require('./data-gitlab-cluster-agents'); } });
@@ -147,6 +148,7 @@ Object.defineProperty(exports, 'dataGitlabInstanceDeployKeys', { get: function (
 Object.defineProperty(exports, 'dataGitlabInstanceServiceAccount', { get: function () { return require('./data-gitlab-instance-service-account'); } });
 Object.defineProperty(exports, 'dataGitlabInstanceVariable', { get: function () { return require('./data-gitlab-instance-variable'); } });
 Object.defineProperty(exports, 'dataGitlabInstanceVariables', { get: function () { return require('./data-gitlab-instance-variables'); } });
+Object.defineProperty(exports, 'dataGitlabMemberRole', { get: function () { return require('./data-gitlab-member-role'); } });
 Object.defineProperty(exports, 'dataGitlabMetadata', { get: function () { return require('./data-gitlab-metadata'); } });
 Object.defineProperty(exports, 'dataGitlabPipelineSchedule', { get: function () { return require('./data-gitlab-pipeline-schedule'); } });
 Object.defineProperty(exports, 'dataGitlabPipelineSchedules', { get: function () { return require('./data-gitlab-pipeline-schedules'); } });

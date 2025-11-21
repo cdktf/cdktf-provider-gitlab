@@ -4,7 +4,7 @@
 
 ### UserIdentity <a name="UserIdentity" id="@cdktf/provider-gitlab.userIdentity.UserIdentity"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_identity gitlab_user_identity}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/user_identity gitlab_user_identity}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.userIdentity.UserIdentity.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the UserIdentity to import.
 
 The id of the existing UserIdentity that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_identity#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/user_identity#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -857,7 +857,7 @@ public string ExternalProvider { get; set; }
 
 The external provider name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_identity#external_provider UserIdentity#external_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/user_identity#external_provider UserIdentity#external_provider}
 
 ---
 
@@ -871,7 +871,7 @@ public string ExternalUid { get; set; }
 
 A specific external authentication provider UID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_identity#external_uid UserIdentity#external_uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/user_identity#external_uid UserIdentity#external_uid}
 
 ---
 
@@ -885,7 +885,7 @@ public double UserId { get; set; }
 
 The GitLab ID of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.5.0/docs/resources/user_identity#user_id UserIdentity#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/user_identity#user_id UserIdentity#user_id}
 
 ---
 
