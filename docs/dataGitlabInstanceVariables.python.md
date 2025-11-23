@@ -4,7 +4,7 @@
 
 ### DataGitlabInstanceVariables <a name="DataGitlabInstanceVariables" id="@cdktf/provider-gitlab.dataGitlabInstanceVariables.DataGitlabInstanceVariables"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/instance_variables gitlab_instance_variables}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/instance_variables gitlab_instance_variables}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabInstanceVariables.DataGitlabInstanceVariables.Initializer"></a>
 
@@ -453,7 +453,7 @@ The construct id used in the generated config for the DataGitlabInstanceVariable
 
 The id of the existing DataGitlabInstanceVariables that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/instance_variables#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/instance_variables#import import section} in the documentation of this resource for the id to use
 
 ---
 

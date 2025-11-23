@@ -4,7 +4,7 @@
 
 ### ProjectDeployToken <a name="ProjectDeployToken" id="@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_deploy_token gitlab_project_deploy_token}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_deploy_token gitlab_project_deploy_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the ProjectDeployToken to impo
 
 The id of the existing ProjectDeployToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_deploy_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_deploy_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -983,7 +983,7 @@ Name *string
 
 A name to describe the deploy token with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_deploy_token#name ProjectDeployToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_deploy_token#name ProjectDeployToken#name}
 
 ---
 
@@ -997,7 +997,7 @@ Project *string
 
 The Id or full path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_deploy_token#project ProjectDeployToken#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_deploy_token#project ProjectDeployToken#project}
 
 ---
 
@@ -1011,7 +1011,7 @@ Scopes *[]*string
 
 The scopes of the project deploy token. Valid values are: `read_repository`, `read_registry`, `write_registry`, `read_virtual_registry`, `write_virtual_registry`, `read_package_registry`, `write_package_registry`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_deploy_token#scopes ProjectDeployToken#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_deploy_token#scopes ProjectDeployToken#scopes}
 
 ---
 
@@ -1025,7 +1025,7 @@ ExpiresAt *string
 
 Time the token expires in RFC3339 format. Not set by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_deploy_token#expires_at ProjectDeployToken#expires_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_deploy_token#expires_at ProjectDeployToken#expires_at}
 
 ---
 
@@ -1039,7 +1039,7 @@ Username *string
 
 A username for the deploy token. Default is `gitlab+deploy-token-{n}`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_deploy_token#username ProjectDeployToken#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_deploy_token#username ProjectDeployToken#username}
 
 ---
 
@@ -1053,7 +1053,7 @@ ValidatePastExpirationDate interface{}
 
 Wether to validate if the expiration date is in the future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_deploy_token#validate_past_expiration_date ProjectDeployToken#validate_past_expiration_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_deploy_token#validate_past_expiration_date ProjectDeployToken#validate_past_expiration_date}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ProjectIssueBoard <a name="ProjectIssueBoard" id="@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoard"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_issue_board gitlab_project_issue_board}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_issue_board gitlab_project_issue_board}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoard.Initializer"></a>
 
@@ -44,7 +44,7 @@ ProjectIssueBoard.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoard.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the board. |
 | <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoard.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | The ID or full path of the project maintained by the authenticated user. |
 | <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoard.Initializer.parameter.assigneeId">assigneeId</a></code> | <code>java.lang.Number</code> | The assignee the board should be scoped to. Requires a GitLab EE license. |
-| <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoard.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_issue_board#id ProjectIssueBoard#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoard.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_issue_board#id ProjectIssueBoard#id}. |
 | <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoard.Initializer.parameter.labels">labels</a></code> | <code>java.util.List<java.lang.String></code> | The list of label names which the board should be scoped to. Requires a GitLab EE license. |
 | <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoard.Initializer.parameter.lists">lists</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoardLists">ProjectIssueBoardLists</a>></code> | lists block. |
 | <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoard.Initializer.parameter.milestoneId">milestoneId</a></code> | <code>java.lang.Number</code> | The milestone the board should be scoped to. Requires a GitLab EE license. |
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the board.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_issue_board#name ProjectIssueBoard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_issue_board#name ProjectIssueBoard#name}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The ID or full path of the project maintained by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_issue_board#project ProjectIssueBoard#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_issue_board#project ProjectIssueBoard#project}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The assignee the board should be scoped to. Requires a GitLab EE license.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_issue_board#assignee_id ProjectIssueBoard#assignee_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_issue_board#assignee_id ProjectIssueBoard#assignee_id}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_issue_board#id ProjectIssueBoard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_issue_board#id ProjectIssueBoard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +159,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The list of label names which the board should be scoped to. Requires a GitLab EE license.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_issue_board#labels ProjectIssueBoard#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_issue_board#labels ProjectIssueBoard#labels}
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 lists block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_issue_board#lists ProjectIssueBoard#lists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_issue_board#lists ProjectIssueBoard#lists}
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The milestone the board should be scoped to. Requires a GitLab EE license.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_issue_board#milestone_id ProjectIssueBoard#milestone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_issue_board#milestone_id ProjectIssueBoard#milestone_id}
 
 ---
 
@@ -191,7 +191,7 @@ The weight range from 0 to 9, to which the board should be scoped to.
 
 Requires a GitLab EE license.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_issue_board#weight ProjectIssueBoard#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_issue_board#weight ProjectIssueBoard#weight}
 
 ---
 
@@ -673,7 +673,7 @@ The construct id used in the generated config for the ProjectIssueBoard to impor
 
 The id of the existing ProjectIssueBoard that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_issue_board#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_issue_board#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1084,7 +1084,7 @@ ProjectIssueBoardConfig.builder()
 | <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoardConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the board. |
 | <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoardConfig.property.project">project</a></code> | <code>java.lang.String</code> | The ID or full path of the project maintained by the authenticated user. |
 | <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoardConfig.property.assigneeId">assigneeId</a></code> | <code>java.lang.Number</code> | The assignee the board should be scoped to. Requires a GitLab EE license. |
-| <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoardConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_issue_board#id ProjectIssueBoard#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoardConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_issue_board#id ProjectIssueBoard#id}. |
 | <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoardConfig.property.labels">labels</a></code> | <code>java.util.List<java.lang.String></code> | The list of label names which the board should be scoped to. Requires a GitLab EE license. |
 | <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoardConfig.property.lists">lists</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoardLists">ProjectIssueBoardLists</a>></code> | lists block. |
 | <code><a href="#@cdktf/provider-gitlab.projectIssueBoard.ProjectIssueBoardConfig.property.milestoneId">milestoneId</a></code> | <code>java.lang.Number</code> | The milestone the board should be scoped to. Requires a GitLab EE license. |
@@ -1172,7 +1172,7 @@ public java.lang.String getName();
 
 The name of the board.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_issue_board#name ProjectIssueBoard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_issue_board#name ProjectIssueBoard#name}
 
 ---
 
@@ -1186,7 +1186,7 @@ public java.lang.String getProject();
 
 The ID or full path of the project maintained by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_issue_board#project ProjectIssueBoard#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_issue_board#project ProjectIssueBoard#project}
 
 ---
 
@@ -1200,7 +1200,7 @@ public java.lang.Number getAssigneeId();
 
 The assignee the board should be scoped to. Requires a GitLab EE license.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_issue_board#assignee_id ProjectIssueBoard#assignee_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_issue_board#assignee_id ProjectIssueBoard#assignee_id}
 
 ---
 
@@ -1212,7 +1212,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_issue_board#id ProjectIssueBoard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_issue_board#id ProjectIssueBoard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1229,7 +1229,7 @@ public java.util.List<java.lang.String> getLabels();
 
 The list of label names which the board should be scoped to. Requires a GitLab EE license.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_issue_board#labels ProjectIssueBoard#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_issue_board#labels ProjectIssueBoard#labels}
 
 ---
 
@@ -1243,7 +1243,7 @@ public IResolvable|java.util.List<ProjectIssueBoardLists> getLists();
 
 lists block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_issue_board#lists ProjectIssueBoard#lists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_issue_board#lists ProjectIssueBoard#lists}
 
 ---
 
@@ -1257,7 +1257,7 @@ public java.lang.Number getMilestoneId();
 
 The milestone the board should be scoped to. Requires a GitLab EE license.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_issue_board#milestone_id ProjectIssueBoard#milestone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_issue_board#milestone_id ProjectIssueBoard#milestone_id}
 
 ---
 
@@ -1273,7 +1273,7 @@ The weight range from 0 to 9, to which the board should be scoped to.
 
 Requires a GitLab EE license.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_issue_board#weight ProjectIssueBoard#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_issue_board#weight ProjectIssueBoard#weight}
 
 ---
 
@@ -1313,7 +1313,7 @@ public java.lang.Number getAssigneeId();
 
 The ID of the assignee the list should be scoped to. Requires a GitLab EE license.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_issue_board#assignee_id ProjectIssueBoard#assignee_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_issue_board#assignee_id ProjectIssueBoard#assignee_id}
 
 ---
 
@@ -1327,7 +1327,7 @@ public java.lang.Number getIterationId();
 
 The ID of the iteration the list should be scoped to. Requires a GitLab EE license.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_issue_board#iteration_id ProjectIssueBoard#iteration_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_issue_board#iteration_id ProjectIssueBoard#iteration_id}
 
 ---
 
@@ -1341,7 +1341,7 @@ public java.lang.Number getLabelId();
 
 The ID of the label the list should be scoped to. Requires a GitLab EE license.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_issue_board#label_id ProjectIssueBoard#label_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_issue_board#label_id ProjectIssueBoard#label_id}
 
 ---
 
@@ -1355,7 +1355,7 @@ public java.lang.Number getMilestoneId();
 
 The ID of the milestone the list should be scoped to. Requires a GitLab EE license.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_issue_board#milestone_id ProjectIssueBoard#milestone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_issue_board#milestone_id ProjectIssueBoard#milestone_id}
 
 ---
 

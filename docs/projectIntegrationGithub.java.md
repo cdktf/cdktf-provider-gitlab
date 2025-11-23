@@ -4,7 +4,7 @@
 
 ### ProjectIntegrationGithub <a name="ProjectIntegrationGithub" id="@cdktf/provider-gitlab.projectIntegrationGithub.ProjectIntegrationGithub"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_github gitlab_project_integration_github}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_github gitlab_project_integration_github}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectIntegrationGithub.ProjectIntegrationGithub.Initializer"></a>
 
@@ -41,7 +41,7 @@ ProjectIntegrationGithub.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-gitlab.projectIntegrationGithub.ProjectIntegrationGithub.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | ID of the project you want to activate the integration on. |
 | <code><a href="#@cdktf/provider-gitlab.projectIntegrationGithub.ProjectIntegrationGithub.Initializer.parameter.repositoryUrl">repositoryUrl</a></code> | <code>java.lang.String</code> | The URL of the GitHub repo to integrate with. For example, https://github.com/gitlabhq/terraform-provider-gitlab. |
 | <code><a href="#@cdktf/provider-gitlab.projectIntegrationGithub.ProjectIntegrationGithub.Initializer.parameter.token">token</a></code> | <code>java.lang.String</code> | A GitHub personal access token with at least the `repo:status` scope. |
-| <code><a href="#@cdktf/provider-gitlab.projectIntegrationGithub.ProjectIntegrationGithub.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_github#id ProjectIntegrationGithub#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectIntegrationGithub.ProjectIntegrationGithub.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_github#id ProjectIntegrationGithub#id}. |
 | <code><a href="#@cdktf/provider-gitlab.projectIntegrationGithub.ProjectIntegrationGithub.Initializer.parameter.staticContext">staticContext</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Append the instance name instead of the branch to the status. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 ID of the project you want to activate the integration on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_github#project ProjectIntegrationGithub#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_github#project ProjectIntegrationGithub#project}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The URL of the GitHub repo to integrate with. For example, https://github.com/gitlabhq/terraform-provider-gitlab.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_github#repository_url ProjectIntegrationGithub#repository_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_github#repository_url ProjectIntegrationGithub#repository_url}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 A GitHub personal access token with at least the `repo:status` scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_github#token ProjectIntegrationGithub#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_github#token ProjectIntegrationGithub#token}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_github#id ProjectIntegrationGithub#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_github#id ProjectIntegrationGithub#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +155,7 @@ Append the instance name instead of the branch to the status.
 
 Must enable to set a GitLab status check as *required* in GitHub. See [Static / dynamic status check names] to learn more.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_github#static_context ProjectIntegrationGithub#static_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_github#static_context ProjectIntegrationGithub#static_context}
 
 ---
 
@@ -596,7 +596,7 @@ The construct id used in the generated config for the ProjectIntegrationGithub t
 
 The id of the existing ProjectIntegrationGithub that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_github#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_github#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -982,7 +982,7 @@ ProjectIntegrationGithubConfig.builder()
 | <code><a href="#@cdktf/provider-gitlab.projectIntegrationGithub.ProjectIntegrationGithubConfig.property.project">project</a></code> | <code>java.lang.String</code> | ID of the project you want to activate the integration on. |
 | <code><a href="#@cdktf/provider-gitlab.projectIntegrationGithub.ProjectIntegrationGithubConfig.property.repositoryUrl">repositoryUrl</a></code> | <code>java.lang.String</code> | The URL of the GitHub repo to integrate with. For example, https://github.com/gitlabhq/terraform-provider-gitlab. |
 | <code><a href="#@cdktf/provider-gitlab.projectIntegrationGithub.ProjectIntegrationGithubConfig.property.token">token</a></code> | <code>java.lang.String</code> | A GitHub personal access token with at least the `repo:status` scope. |
-| <code><a href="#@cdktf/provider-gitlab.projectIntegrationGithub.ProjectIntegrationGithubConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_github#id ProjectIntegrationGithub#id}. |
+| <code><a href="#@cdktf/provider-gitlab.projectIntegrationGithub.ProjectIntegrationGithubConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_github#id ProjectIntegrationGithub#id}. |
 | <code><a href="#@cdktf/provider-gitlab.projectIntegrationGithub.ProjectIntegrationGithubConfig.property.staticContext">staticContext</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Append the instance name instead of the branch to the status. |
 
 ---
@@ -1067,7 +1067,7 @@ public java.lang.String getProject();
 
 ID of the project you want to activate the integration on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_github#project ProjectIntegrationGithub#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_github#project ProjectIntegrationGithub#project}
 
 ---
 
@@ -1081,7 +1081,7 @@ public java.lang.String getRepositoryUrl();
 
 The URL of the GitHub repo to integrate with. For example, https://github.com/gitlabhq/terraform-provider-gitlab.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_github#repository_url ProjectIntegrationGithub#repository_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_github#repository_url ProjectIntegrationGithub#repository_url}
 
 ---
 
@@ -1095,7 +1095,7 @@ public java.lang.String getToken();
 
 A GitHub personal access token with at least the `repo:status` scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_github#token ProjectIntegrationGithub#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_github#token ProjectIntegrationGithub#token}
 
 ---
 
@@ -1107,7 +1107,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_github#id ProjectIntegrationGithub#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_github#id ProjectIntegrationGithub#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1126,7 +1126,7 @@ Append the instance name instead of the branch to the status.
 
 Must enable to set a GitLab status check as *required* in GitHub. See [Static / dynamic status check names] to learn more.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_github#static_context ProjectIntegrationGithub#static_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_github#static_context ProjectIntegrationGithub#static_context}
 
 ---
 

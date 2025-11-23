@@ -4,7 +4,7 @@
 
 ### DataGitlabUser <a name="DataGitlabUser" id="@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/user gitlab_user}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/user gitlab_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabUser.DataGitlabUser.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The public email address of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/user#email DataGitlabUser#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/user#email DataGitlabUser#email}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Otherwise, fuzzy matching might return the closest result. If no exact match is available, the data source returns an error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/user#email_exact_match DataGitlabUser#email_exact_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/user#email_exact_match DataGitlabUser#email_exact_match}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The ID of the user's namespace. Requires admin token to access this field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/user#namespace_id DataGitlabUser#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/user#namespace_id DataGitlabUser#namespace_id}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The ID of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/user#user_id DataGitlabUser#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/user#user_id DataGitlabUser#user_id}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The username of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/user#username DataGitlabUser#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/user#username DataGitlabUser#username}
 
 ---
 
@@ -512,7 +512,7 @@ The construct id used in the generated config for the DataGitlabUser to import.
 
 The id of the existing DataGitlabUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1203,7 +1203,7 @@ public java.lang.String getEmail();
 
 The public email address of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/user#email DataGitlabUser#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/user#email DataGitlabUser#email}
 
 ---
 
@@ -1219,7 +1219,7 @@ public java.lang.Boolean|IResolvable getEmailExactMatch();
 
 Otherwise, fuzzy matching might return the closest result. If no exact match is available, the data source returns an error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/user#email_exact_match DataGitlabUser#email_exact_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/user#email_exact_match DataGitlabUser#email_exact_match}
 
 ---
 
@@ -1233,7 +1233,7 @@ public java.lang.Number getNamespaceId();
 
 The ID of the user's namespace. Requires admin token to access this field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/user#namespace_id DataGitlabUser#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/user#namespace_id DataGitlabUser#namespace_id}
 
 ---
 
@@ -1247,7 +1247,7 @@ public java.lang.Number getUserId();
 
 The ID of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/user#user_id DataGitlabUser#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/user#user_id DataGitlabUser#user_id}
 
 ---
 
@@ -1261,7 +1261,7 @@ public java.lang.String getUsername();
 
 The username of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/user#username DataGitlabUser#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/user#username DataGitlabUser#username}
 
 ---
 

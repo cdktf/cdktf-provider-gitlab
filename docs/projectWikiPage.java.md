@@ -4,7 +4,7 @@
 
 ### ProjectWikiPage <a name="ProjectWikiPage" id="@cdktf/provider-gitlab.projectWikiPage.ProjectWikiPage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_wiki_page gitlab_project_wiki_page}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_wiki_page gitlab_project_wiki_page}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectWikiPage.ProjectWikiPage.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Content of the wiki page. Must be at least 1 character long.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_wiki_page#content ProjectWikiPage#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_wiki_page#content ProjectWikiPage#content}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The ID or URL-encoded path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_wiki_page#project ProjectWikiPage#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_wiki_page#project ProjectWikiPage#project}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Title of the wiki page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_wiki_page#title ProjectWikiPage#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_wiki_page#title ProjectWikiPage#title}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Format of the wiki page (auto-generated if not provided). Valid values are: `markdown`, `rdoc`, `asciidoc`, `org`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_wiki_page#format ProjectWikiPage#format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_wiki_page#format ProjectWikiPage#format}
 
 ---
 
@@ -574,7 +574,7 @@ The construct id used in the generated config for the ProjectWikiPage to import.
 
 The id of the existing ProjectWikiPage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_wiki_page#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_wiki_page#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1010,7 +1010,7 @@ public java.lang.String getContent();
 
 Content of the wiki page. Must be at least 1 character long.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_wiki_page#content ProjectWikiPage#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_wiki_page#content ProjectWikiPage#content}
 
 ---
 
@@ -1024,7 +1024,7 @@ public java.lang.String getProject();
 
 The ID or URL-encoded path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_wiki_page#project ProjectWikiPage#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_wiki_page#project ProjectWikiPage#project}
 
 ---
 
@@ -1038,7 +1038,7 @@ public java.lang.String getTitle();
 
 Title of the wiki page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_wiki_page#title ProjectWikiPage#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_wiki_page#title ProjectWikiPage#title}
 
 ---
 
@@ -1052,7 +1052,7 @@ public java.lang.String getFormat();
 
 Format of the wiki page (auto-generated if not provided). Valid values are: `markdown`, `rdoc`, `asciidoc`, `org`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_wiki_page#format ProjectWikiPage#format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_wiki_page#format ProjectWikiPage#format}
 
 ---
 

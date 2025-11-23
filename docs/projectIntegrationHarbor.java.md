@@ -4,7 +4,7 @@
 
 ### ProjectIntegrationHarbor <a name="ProjectIntegrationHarbor" id="@cdktf/provider-gitlab.projectIntegrationHarbor.ProjectIntegrationHarbor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_harbor gitlab_project_integration_harbor}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_harbor gitlab_project_integration_harbor}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectIntegrationHarbor.ProjectIntegrationHarbor.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Password for authentication with the Harbor server, if authentication is required by the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_harbor#password ProjectIntegrationHarbor#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_harbor#password ProjectIntegrationHarbor#password}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 ID of the GitLab project you want to activate integration on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_harbor#project ProjectIntegrationHarbor#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_harbor#project ProjectIntegrationHarbor#project}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The URL-friendly Harbor project name. This project needs to already exist in Harbor. Example: `my_project_name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_harbor#project_name ProjectIntegrationHarbor#project_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_harbor#project_name ProjectIntegrationHarbor#project_name}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Harbor URL. Example: `http://harbor.example.com`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_harbor#url ProjectIntegrationHarbor#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_harbor#url ProjectIntegrationHarbor#url}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Username for authentication with the Harbor server, if authentication is required by the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_harbor#username ProjectIntegrationHarbor#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_harbor#username ProjectIntegrationHarbor#username}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Indicates whether or not to inherit default settings. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_harbor#use_inherited_settings ProjectIntegrationHarbor#use_inherited_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_harbor#use_inherited_settings ProjectIntegrationHarbor#use_inherited_settings}
 
 ---
 
@@ -598,7 +598,7 @@ The construct id used in the generated config for the ProjectIntegrationHarbor t
 
 The id of the existing ProjectIntegrationHarbor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_harbor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_harbor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1071,7 +1071,7 @@ public java.lang.String getPassword();
 
 Password for authentication with the Harbor server, if authentication is required by the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_harbor#password ProjectIntegrationHarbor#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_harbor#password ProjectIntegrationHarbor#password}
 
 ---
 
@@ -1085,7 +1085,7 @@ public java.lang.String getProject();
 
 ID of the GitLab project you want to activate integration on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_harbor#project ProjectIntegrationHarbor#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_harbor#project ProjectIntegrationHarbor#project}
 
 ---
 
@@ -1099,7 +1099,7 @@ public java.lang.String getProjectName();
 
 The URL-friendly Harbor project name. This project needs to already exist in Harbor. Example: `my_project_name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_harbor#project_name ProjectIntegrationHarbor#project_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_harbor#project_name ProjectIntegrationHarbor#project_name}
 
 ---
 
@@ -1113,7 +1113,7 @@ public java.lang.String getUrl();
 
 Harbor URL. Example: `http://harbor.example.com`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_harbor#url ProjectIntegrationHarbor#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_harbor#url ProjectIntegrationHarbor#url}
 
 ---
 
@@ -1127,7 +1127,7 @@ public java.lang.String getUsername();
 
 Username for authentication with the Harbor server, if authentication is required by the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_harbor#username ProjectIntegrationHarbor#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_harbor#username ProjectIntegrationHarbor#username}
 
 ---
 
@@ -1141,7 +1141,7 @@ public java.lang.Boolean|IResolvable getUseInheritedSettings();
 
 Indicates whether or not to inherit default settings. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_harbor#use_inherited_settings ProjectIntegrationHarbor#use_inherited_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_harbor#use_inherited_settings ProjectIntegrationHarbor#use_inherited_settings}
 
 ---
 
