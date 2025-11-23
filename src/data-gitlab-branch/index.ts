@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/branch
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/branch
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataGitlabBranchConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the branch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/branch#name DataGitlabBranch#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/branch#name DataGitlabBranch#name}
   */
   readonly name: string;
   /**
   * The full path or id of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/branch#project DataGitlabBranch#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/branch#project DataGitlabBranch#project}
   */
   readonly project: string;
 }
@@ -152,7 +152,7 @@ export class DataGitlabBranchCommitList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/branch gitlab_branch}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/branch gitlab_branch}
 */
 export class DataGitlabBranch extends cdktf.TerraformDataSource {
 
@@ -168,7 +168,7 @@ export class DataGitlabBranch extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGitlabBranch resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabBranch to import
-  * @param importFromId The id of the existing DataGitlabBranch that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/branch#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabBranch that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/branch#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabBranch to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -180,7 +180,7 @@ export class DataGitlabBranch extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/branch gitlab_branch} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/branch gitlab_branch} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -191,7 +191,7 @@ export class DataGitlabBranch extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_branch',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.6.0',
+        providerVersion: '18.6.1',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/repository_tree
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/repository_tree
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface DataGitlabRepositoryTreeConfig extends cdktf.TerraformMetaArgum
   /**
   * The path inside repository. Used to get content of subdirectories.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/repository_tree#path DataGitlabRepositoryTree#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/repository_tree#path DataGitlabRepositoryTree#path}
   */
   readonly path?: string;
   /**
   * The ID or full path of the project owned by the authenticated user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/repository_tree#project DataGitlabRepositoryTree#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/repository_tree#project DataGitlabRepositoryTree#project}
   */
   readonly project: string;
   /**
   * Boolean value used to get a recursive tree (false by default).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/repository_tree#recursive DataGitlabRepositoryTree#recursive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/repository_tree#recursive DataGitlabRepositoryTree#recursive}
   */
   readonly recursive?: boolean | cdktf.IResolvable;
   /**
   * The name of a repository branch or tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/repository_tree#ref DataGitlabRepositoryTree#ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/repository_tree#ref DataGitlabRepositoryTree#ref}
   */
   readonly ref: string;
 }
@@ -139,7 +139,7 @@ export class DataGitlabRepositoryTreeTreeList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/repository_tree gitlab_repository_tree}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/repository_tree gitlab_repository_tree}
 */
 export class DataGitlabRepositoryTree extends cdktf.TerraformDataSource {
 
@@ -155,7 +155,7 @@ export class DataGitlabRepositoryTree extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGitlabRepositoryTree resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabRepositoryTree to import
-  * @param importFromId The id of the existing DataGitlabRepositoryTree that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/repository_tree#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabRepositoryTree that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/repository_tree#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabRepositoryTree to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -167,7 +167,7 @@ export class DataGitlabRepositoryTree extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/repository_tree gitlab_repository_tree} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/repository_tree gitlab_repository_tree} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -178,7 +178,7 @@ export class DataGitlabRepositoryTree extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_repository_tree',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.6.0',
+        providerVersion: '18.6.1',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

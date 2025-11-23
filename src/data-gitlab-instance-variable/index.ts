@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/instance_variable
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/instance_variable
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataGitlabInstanceVariableConfig extends cdktf.TerraformMetaArg
   /**
   * The name of the variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/instance_variable#key DataGitlabInstanceVariable#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/instance_variable#key DataGitlabInstanceVariable#key}
   */
   readonly key: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/instance_variable gitlab_instance_variable}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/instance_variable gitlab_instance_variable}
 */
 export class DataGitlabInstanceVariable extends cdktf.TerraformDataSource {
 
@@ -37,7 +37,7 @@ export class DataGitlabInstanceVariable extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGitlabInstanceVariable resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabInstanceVariable to import
-  * @param importFromId The id of the existing DataGitlabInstanceVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/instance_variable#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabInstanceVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/instance_variable#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabInstanceVariable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -49,7 +49,7 @@ export class DataGitlabInstanceVariable extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/instance_variable gitlab_instance_variable} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/instance_variable gitlab_instance_variable} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class DataGitlabInstanceVariable extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_instance_variable',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.6.0',
+        providerVersion: '18.6.1',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

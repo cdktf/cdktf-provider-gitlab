@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/instance_service_account
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/instance_service_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface InstanceServiceAccountConfig extends cdktf.TerraformMetaArgumen
   /**
   * The email of the user account. If not set, generates a no-reply email address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/instance_service_account#email InstanceServiceAccount#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/instance_service_account#email InstanceServiceAccount#email}
   */
   readonly email?: string;
   /**
   * The name of the user. If not set, uses Service account user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/instance_service_account#name InstanceServiceAccount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/instance_service_account#name InstanceServiceAccount#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/instance_service_account#timeouts InstanceServiceAccount#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/instance_service_account#timeouts InstanceServiceAccount#timeouts}
   */
   readonly timeouts?: InstanceServiceAccountTimeouts;
   /**
   * The username of the user account. If not set, generates a name prepended with service_account_.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/instance_service_account#username InstanceServiceAccount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/instance_service_account#username InstanceServiceAccount#username}
   */
   readonly username?: string;
 }
@@ -39,7 +39,7 @@ export interface InstanceServiceAccountTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/instance_service_account#delete InstanceServiceAccount#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/instance_service_account#delete InstanceServiceAccount#delete}
   */
   readonly delete?: string;
 }
@@ -133,7 +133,7 @@ export class InstanceServiceAccountTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/instance_service_account gitlab_instance_service_account}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/instance_service_account gitlab_instance_service_account}
 */
 export class InstanceServiceAccount extends cdktf.TerraformResource {
 
@@ -149,7 +149,7 @@ export class InstanceServiceAccount extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a InstanceServiceAccount resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the InstanceServiceAccount to import
-  * @param importFromId The id of the existing InstanceServiceAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/instance_service_account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing InstanceServiceAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/instance_service_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the InstanceServiceAccount to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -161,7 +161,7 @@ export class InstanceServiceAccount extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/instance_service_account gitlab_instance_service_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/instance_service_account gitlab_instance_service_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -172,7 +172,7 @@ export class InstanceServiceAccount extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_instance_service_account',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.6.0',
+        providerVersion: '18.6.1',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,
