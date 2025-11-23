@@ -4,7 +4,7 @@
 
 ### DataGitlabGroupSubgroups <a name="DataGitlabGroupSubgroups" id="@cdktf/provider-gitlab.dataGitlabGroupSubgroups.DataGitlabGroupSubgroups"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/group_subgroups gitlab_group_subgroups}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/group_subgroups gitlab_group_subgroups}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroupSubgroups.DataGitlabGroupSubgroups.Initializer"></a>
 
@@ -428,7 +428,7 @@ The construct id used in the generated config for the DataGitlabGroupSubgroups t
 
 The id of the existing DataGitlabGroupSubgroups that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/group_subgroups#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/group_subgroups#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -975,7 +975,7 @@ GroupId *f64
 
 The ID of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/group_subgroups#group_id DataGitlabGroupSubgroups#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/group_subgroups#group_id DataGitlabGroupSubgroups#group_id}
 
 ---
 
@@ -989,7 +989,7 @@ AllAvailable interface{}
 
 Show all the groups you have access to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/group_subgroups#all_available DataGitlabGroupSubgroups#all_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/group_subgroups#all_available DataGitlabGroupSubgroups#all_available}
 
 ---
 
@@ -1003,7 +1003,7 @@ MinAccessLevel *string
 
 Limit to groups where current user has at least this access level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/group_subgroups#min_access_level DataGitlabGroupSubgroups#min_access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/group_subgroups#min_access_level DataGitlabGroupSubgroups#min_access_level}
 
 ---
 
@@ -1017,7 +1017,7 @@ OrderBy *string
 
 Order groups by name, path or id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/group_subgroups#order_by DataGitlabGroupSubgroups#order_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/group_subgroups#order_by DataGitlabGroupSubgroups#order_by}
 
 ---
 
@@ -1031,7 +1031,7 @@ Owned interface{}
 
 Limit to groups explicitly owned by the current user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/group_subgroups#owned DataGitlabGroupSubgroups#owned}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/group_subgroups#owned DataGitlabGroupSubgroups#owned}
 
 ---
 
@@ -1045,7 +1045,7 @@ Search *string
 
 Return the list of authorized groups matching the search criteria.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/group_subgroups#search DataGitlabGroupSubgroups#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/group_subgroups#search DataGitlabGroupSubgroups#search}
 
 ---
 
@@ -1059,7 +1059,7 @@ SkipGroups *[]*f64
 
 Skip the group IDs passed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/group_subgroups#skip_groups DataGitlabGroupSubgroups#skip_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/group_subgroups#skip_groups DataGitlabGroupSubgroups#skip_groups}
 
 ---
 
@@ -1073,7 +1073,7 @@ Sort *string
 
 Order groups in asc or desc order.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/group_subgroups#sort DataGitlabGroupSubgroups#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/group_subgroups#sort DataGitlabGroupSubgroups#sort}
 
 ---
 
@@ -1087,7 +1087,7 @@ Statistics interface{}
 
 Include group statistics (administrators only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/group_subgroups#statistics DataGitlabGroupSubgroups#statistics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/group_subgroups#statistics DataGitlabGroupSubgroups#statistics}
 
 ---
 
@@ -1101,7 +1101,7 @@ WithCustomAttributes interface{}
 
 Include custom attributes in response (administrators only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/group_subgroups#with_custom_attributes DataGitlabGroupSubgroups#with_custom_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/group_subgroups#with_custom_attributes DataGitlabGroupSubgroups#with_custom_attributes}
 
 ---
 

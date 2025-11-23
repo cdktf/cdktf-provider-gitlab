@@ -4,7 +4,7 @@
 
 ### DataGitlabGroups <a name="DataGitlabGroups" id="@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroups"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/groups gitlab_groups}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/groups gitlab_groups}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabGroups.DataGitlabGroups.Initializer"></a>
 
@@ -393,7 +393,7 @@ The construct id used in the generated config for the DataGitlabGroups to import
 
 The id of the existing DataGitlabGroups that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/groups#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/groups#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -796,7 +796,7 @@ public string OrderBy { get; set; }
 
 Order the groups' list by `id`, `name`, `path`, or `similarity`. (Requires administrator privileges).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/groups#order_by DataGitlabGroups#order_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/groups#order_by DataGitlabGroups#order_by}
 
 ---
 
@@ -810,7 +810,7 @@ public string Search { get; set; }
 
 Search groups by name or path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/groups#search DataGitlabGroups#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/groups#search DataGitlabGroups#search}
 
 ---
 
@@ -824,7 +824,7 @@ public string Sort { get; set; }
 
 Sort groups' list in asc or desc order. (Requires administrator privileges).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/groups#sort DataGitlabGroups#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/groups#sort DataGitlabGroups#sort}
 
 ---
 
@@ -838,7 +838,7 @@ public bool|IResolvable TopLevelOnly { get; set; }
 
 Limit to top level groups, excluding all subgroups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/groups#top_level_only DataGitlabGroups#top_level_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/groups#top_level_only DataGitlabGroups#top_level_only}
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/branch
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface BranchConfig extends cdktf.TerraformMetaArguments {
   /**
   * Indicates whether the branch is kept once the resource destroyed (must be applied before a destroy).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch#keep_on_destroy Branch#keep_on_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/branch#keep_on_destroy Branch#keep_on_destroy}
   */
   readonly keepOnDestroy?: boolean | cdktf.IResolvable;
   /**
   * The name for this branch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch#name Branch#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/branch#name Branch#name}
   */
   readonly name: string;
   /**
   * The ID or full path of the project which the branch is created against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch#project Branch#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/branch#project Branch#project}
   */
   readonly project: string;
   /**
   * The ref which the branch is created from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch#ref Branch#ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/branch#ref Branch#ref}
   */
   readonly ref: string;
 }
@@ -164,7 +164,7 @@ export class BranchCommitList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch gitlab_branch}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/branch gitlab_branch}
 */
 export class Branch extends cdktf.TerraformResource {
 
@@ -180,7 +180,7 @@ export class Branch extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Branch resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Branch to import
-  * @param importFromId The id of the existing Branch that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Branch that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/branch#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Branch to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -192,7 +192,7 @@ export class Branch extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch gitlab_branch} Resource
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/branch gitlab_branch} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -203,7 +203,7 @@ export class Branch extends cdktf.TerraformResource {
       terraformResourceType: 'gitlab_branch',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.6.0',
+        providerVersion: '18.6.1',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

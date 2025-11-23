@@ -4,7 +4,7 @@
 
 ### Branch <a name="Branch" id="@cdktf/provider-gitlab.branch.Branch"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch gitlab_branch}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/branch gitlab_branch}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.branch.Branch.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The name for this branch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch#name Branch#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/branch#name Branch#name}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The ID or full path of the project which the branch is created against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch#project Branch#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/branch#project Branch#project}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The ref which the branch is created from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch#ref Branch#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/branch#ref Branch#ref}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Indicates whether the branch is kept once the resource destroyed (must be applied before a destroy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch#keep_on_destroy Branch#keep_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/branch#keep_on_destroy Branch#keep_on_destroy}
 
 ---
 
@@ -574,7 +574,7 @@ The construct id used in the generated config for the Branch to import.
 
 The id of the existing Branch that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/branch#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1088,7 +1088,7 @@ public java.lang.String getName();
 
 The name for this branch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch#name Branch#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/branch#name Branch#name}
 
 ---
 
@@ -1102,7 +1102,7 @@ public java.lang.String getProject();
 
 The ID or full path of the project which the branch is created against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch#project Branch#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/branch#project Branch#project}
 
 ---
 
@@ -1116,7 +1116,7 @@ public java.lang.String getRef();
 
 The ref which the branch is created from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch#ref Branch#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/branch#ref Branch#ref}
 
 ---
 
@@ -1130,7 +1130,7 @@ public java.lang.Boolean|IResolvable getKeepOnDestroy();
 
 Indicates whether the branch is kept once the resource destroyed (must be applied before a destroy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/branch#keep_on_destroy Branch#keep_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/branch#keep_on_destroy Branch#keep_on_destroy}
 
 ---
 

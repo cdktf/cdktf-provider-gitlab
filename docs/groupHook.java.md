@@ -4,7 +4,7 @@
 
 ### GroupHook <a name="GroupHook" id="@cdktf/provider-gitlab.groupHook.GroupHook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook gitlab_group_hook}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook gitlab_group_hook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupHook.GroupHook.Initializer"></a>
 
@@ -152,7 +152,7 @@ Must be unique amongst siblings in the same scope
 
 The full path or id of the group to add the hook to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#group GroupHook#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#group GroupHook#group}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The url of the hook to invoke. Forces re-creation to preserve `token`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#url GroupHook#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#url GroupHook#url}
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Filter push events by branch. Valid values are: `wildcard`, `regex`, `all_branches`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#branch_filter_strategy GroupHook#branch_filter_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#branch_filter_strategy GroupHook#branch_filter_strategy}
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Invoke the hook for confidential issues events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#confidential_issues_events GroupHook#confidential_issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#confidential_issues_events GroupHook#confidential_issues_events}
 
 ---
 
@@ -192,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Invoke the hook for confidential note events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#confidential_note_events GroupHook#confidential_note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#confidential_note_events GroupHook#confidential_note_events}
 
 ---
 
@@ -202,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Custom headers for the project webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#custom_headers GroupHook#custom_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#custom_headers GroupHook#custom_headers}
 
 ---
 
@@ -212,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Custom webhook template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#custom_webhook_template GroupHook#custom_webhook_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#custom_webhook_template GroupHook#custom_webhook_template}
 
 ---
 
@@ -222,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Invoke the hook for deployment events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#deployment_events GroupHook#deployment_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#deployment_events GroupHook#deployment_events}
 
 ---
 
@@ -232,7 +232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Description of the group webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#description GroupHook#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#description GroupHook#description}
 
 ---
 
@@ -242,7 +242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Invoke the hook for emoji events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#emoji_events GroupHook#emoji_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#emoji_events GroupHook#emoji_events}
 
 ---
 
@@ -252,7 +252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Enable SSL verification when invoking the hook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#enable_ssl_verification GroupHook#enable_ssl_verification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#enable_ssl_verification GroupHook#enable_ssl_verification}
 
 ---
 
@@ -262,7 +262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Invoke the hook for feature flag events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#feature_flag_events GroupHook#feature_flag_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#feature_flag_events GroupHook#feature_flag_events}
 
 ---
 
@@ -272,7 +272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Invoke the hook for issues events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#issues_events GroupHook#issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#issues_events GroupHook#issues_events}
 
 ---
 
@@ -282,7 +282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Invoke the hook for job events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#job_events GroupHook#job_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#job_events GroupHook#job_events}
 
 ---
 
@@ -292,7 +292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Invoke the hook for merge requests events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#merge_requests_events GroupHook#merge_requests_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#merge_requests_events GroupHook#merge_requests_events}
 
 ---
 
@@ -302,7 +302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Name of the group webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#name GroupHook#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#name GroupHook#name}
 
 ---
 
@@ -312,7 +312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Invoke the hook for note events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#note_events GroupHook#note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#note_events GroupHook#note_events}
 
 ---
 
@@ -322,7 +322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Invoke the hook for pipeline events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#pipeline_events GroupHook#pipeline_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#pipeline_events GroupHook#pipeline_events}
 
 ---
 
@@ -332,7 +332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Invoke the hook for push events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#push_events GroupHook#push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#push_events GroupHook#push_events}
 
 ---
 
@@ -342,7 +342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Invoke the hook for push events on matching branches only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#push_events_branch_filter GroupHook#push_events_branch_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#push_events_branch_filter GroupHook#push_events_branch_filter}
 
 ---
 
@@ -352,7 +352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Invoke the hook for release events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#releases_events GroupHook#releases_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#releases_events GroupHook#releases_events}
 
 ---
 
@@ -362,7 +362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Invoke the hook for subgroup events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#subgroup_events GroupHook#subgroup_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#subgroup_events GroupHook#subgroup_events}
 
 ---
 
@@ -372,7 +372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Invoke the hook for tag push events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#tag_push_events GroupHook#tag_push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#tag_push_events GroupHook#tag_push_events}
 
 ---
 
@@ -382,7 +382,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 A token to present when invoking the hook. The token is not available for imported resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#token GroupHook#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#token GroupHook#token}
 
 ---
 
@@ -392,7 +392,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Invoke the hook for wiki page events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#wiki_page_events GroupHook#wiki_page_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#wiki_page_events GroupHook#wiki_page_events}
 
 ---
 
@@ -993,7 +993,7 @@ The construct id used in the generated config for the GroupHook to import.
 
 The id of the existing GroupHook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1933,7 +1933,7 @@ public java.lang.String getGroup();
 
 The full path or id of the group to add the hook to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#group GroupHook#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#group GroupHook#group}
 
 ---
 
@@ -1947,7 +1947,7 @@ public java.lang.String getUrl();
 
 The url of the hook to invoke. Forces re-creation to preserve `token`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#url GroupHook#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#url GroupHook#url}
 
 ---
 
@@ -1961,7 +1961,7 @@ public java.lang.String getBranchFilterStrategy();
 
 Filter push events by branch. Valid values are: `wildcard`, `regex`, `all_branches`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#branch_filter_strategy GroupHook#branch_filter_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#branch_filter_strategy GroupHook#branch_filter_strategy}
 
 ---
 
@@ -1975,7 +1975,7 @@ public java.lang.Boolean|IResolvable getConfidentialIssuesEvents();
 
 Invoke the hook for confidential issues events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#confidential_issues_events GroupHook#confidential_issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#confidential_issues_events GroupHook#confidential_issues_events}
 
 ---
 
@@ -1989,7 +1989,7 @@ public java.lang.Boolean|IResolvable getConfidentialNoteEvents();
 
 Invoke the hook for confidential note events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#confidential_note_events GroupHook#confidential_note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#confidential_note_events GroupHook#confidential_note_events}
 
 ---
 
@@ -2003,7 +2003,7 @@ public IResolvable|java.util.List<GroupHookCustomHeaders> getCustomHeaders();
 
 Custom headers for the project webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#custom_headers GroupHook#custom_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#custom_headers GroupHook#custom_headers}
 
 ---
 
@@ -2017,7 +2017,7 @@ public java.lang.String getCustomWebhookTemplate();
 
 Custom webhook template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#custom_webhook_template GroupHook#custom_webhook_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#custom_webhook_template GroupHook#custom_webhook_template}
 
 ---
 
@@ -2031,7 +2031,7 @@ public java.lang.Boolean|IResolvable getDeploymentEvents();
 
 Invoke the hook for deployment events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#deployment_events GroupHook#deployment_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#deployment_events GroupHook#deployment_events}
 
 ---
 
@@ -2045,7 +2045,7 @@ public java.lang.String getDescription();
 
 Description of the group webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#description GroupHook#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#description GroupHook#description}
 
 ---
 
@@ -2059,7 +2059,7 @@ public java.lang.Boolean|IResolvable getEmojiEvents();
 
 Invoke the hook for emoji events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#emoji_events GroupHook#emoji_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#emoji_events GroupHook#emoji_events}
 
 ---
 
@@ -2073,7 +2073,7 @@ public java.lang.Boolean|IResolvable getEnableSslVerification();
 
 Enable SSL verification when invoking the hook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#enable_ssl_verification GroupHook#enable_ssl_verification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#enable_ssl_verification GroupHook#enable_ssl_verification}
 
 ---
 
@@ -2087,7 +2087,7 @@ public java.lang.Boolean|IResolvable getFeatureFlagEvents();
 
 Invoke the hook for feature flag events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#feature_flag_events GroupHook#feature_flag_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#feature_flag_events GroupHook#feature_flag_events}
 
 ---
 
@@ -2101,7 +2101,7 @@ public java.lang.Boolean|IResolvable getIssuesEvents();
 
 Invoke the hook for issues events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#issues_events GroupHook#issues_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#issues_events GroupHook#issues_events}
 
 ---
 
@@ -2115,7 +2115,7 @@ public java.lang.Boolean|IResolvable getJobEvents();
 
 Invoke the hook for job events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#job_events GroupHook#job_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#job_events GroupHook#job_events}
 
 ---
 
@@ -2129,7 +2129,7 @@ public java.lang.Boolean|IResolvable getMergeRequestsEvents();
 
 Invoke the hook for merge requests events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#merge_requests_events GroupHook#merge_requests_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#merge_requests_events GroupHook#merge_requests_events}
 
 ---
 
@@ -2143,7 +2143,7 @@ public java.lang.String getName();
 
 Name of the group webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#name GroupHook#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#name GroupHook#name}
 
 ---
 
@@ -2157,7 +2157,7 @@ public java.lang.Boolean|IResolvable getNoteEvents();
 
 Invoke the hook for note events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#note_events GroupHook#note_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#note_events GroupHook#note_events}
 
 ---
 
@@ -2171,7 +2171,7 @@ public java.lang.Boolean|IResolvable getPipelineEvents();
 
 Invoke the hook for pipeline events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#pipeline_events GroupHook#pipeline_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#pipeline_events GroupHook#pipeline_events}
 
 ---
 
@@ -2185,7 +2185,7 @@ public java.lang.Boolean|IResolvable getPushEvents();
 
 Invoke the hook for push events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#push_events GroupHook#push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#push_events GroupHook#push_events}
 
 ---
 
@@ -2199,7 +2199,7 @@ public java.lang.String getPushEventsBranchFilter();
 
 Invoke the hook for push events on matching branches only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#push_events_branch_filter GroupHook#push_events_branch_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#push_events_branch_filter GroupHook#push_events_branch_filter}
 
 ---
 
@@ -2213,7 +2213,7 @@ public java.lang.Boolean|IResolvable getReleasesEvents();
 
 Invoke the hook for release events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#releases_events GroupHook#releases_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#releases_events GroupHook#releases_events}
 
 ---
 
@@ -2227,7 +2227,7 @@ public java.lang.Boolean|IResolvable getSubgroupEvents();
 
 Invoke the hook for subgroup events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#subgroup_events GroupHook#subgroup_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#subgroup_events GroupHook#subgroup_events}
 
 ---
 
@@ -2241,7 +2241,7 @@ public java.lang.Boolean|IResolvable getTagPushEvents();
 
 Invoke the hook for tag push events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#tag_push_events GroupHook#tag_push_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#tag_push_events GroupHook#tag_push_events}
 
 ---
 
@@ -2255,7 +2255,7 @@ public java.lang.String getToken();
 
 A token to present when invoking the hook. The token is not available for imported resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#token GroupHook#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#token GroupHook#token}
 
 ---
 
@@ -2269,7 +2269,7 @@ public java.lang.Boolean|IResolvable getWikiPageEvents();
 
 Invoke the hook for wiki page events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#wiki_page_events GroupHook#wiki_page_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#wiki_page_events GroupHook#wiki_page_events}
 
 ---
 
@@ -2305,7 +2305,7 @@ public java.lang.String getKey();
 
 Key of the custom header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#key GroupHook#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#key GroupHook#key}
 
 ---
 
@@ -2319,7 +2319,7 @@ public java.lang.String getValue();
 
 Value of the custom header. This value cannot be imported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_hook#value GroupHook#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_hook#value GroupHook#value}
 
 ---
 

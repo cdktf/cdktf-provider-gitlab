@@ -4,7 +4,7 @@
 
 ### DataGitlabProjectTags <a name="DataGitlabProjectTags" id="@cdktf/provider-gitlab.dataGitlabProjectTags.DataGitlabProjectTags"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_tags gitlab_project_tags}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/project_tags gitlab_project_tags}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectTags.DataGitlabProjectTags.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The ID or URL-encoded path of the project owned by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_tags#project DataGitlabProjectTags#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/project_tags#project DataGitlabProjectTags#project}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Return tags ordered by `name` or `updated` fields. Default is `updated`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_tags#order_by DataGitlabProjectTags#order_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/project_tags#order_by DataGitlabProjectTags#order_by}
 
 ---
 
@@ -132,7 +132,7 @@ Return list of tags matching the search criteria.
 
 You can use `^term` and `term$` to find tags that begin and end with `term` respectively. No other regular expressions are supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_tags#search DataGitlabProjectTags#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/project_tags#search DataGitlabProjectTags#search}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Return tags sorted in `asc` or `desc` order. Default is `desc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_tags#sort DataGitlabProjectTags#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/project_tags#sort DataGitlabProjectTags#sort}
 
 ---
 
@@ -486,7 +486,7 @@ The construct id used in the generated config for the DataGitlabProjectTags to i
 
 The id of the existing DataGitlabProjectTags that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_tags#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/project_tags#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -889,7 +889,7 @@ public java.lang.String getProject();
 
 The ID or URL-encoded path of the project owned by the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_tags#project DataGitlabProjectTags#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/project_tags#project DataGitlabProjectTags#project}
 
 ---
 
@@ -903,7 +903,7 @@ public java.lang.String getOrderBy();
 
 Return tags ordered by `name` or `updated` fields. Default is `updated`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_tags#order_by DataGitlabProjectTags#order_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/project_tags#order_by DataGitlabProjectTags#order_by}
 
 ---
 
@@ -919,7 +919,7 @@ Return list of tags matching the search criteria.
 
 You can use `^term` and `term$` to find tags that begin and end with `term` respectively. No other regular expressions are supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_tags#search DataGitlabProjectTags#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/project_tags#search DataGitlabProjectTags#search}
 
 ---
 
@@ -933,7 +933,7 @@ public java.lang.String getSort();
 
 Return tags sorted in `asc` or `desc` order. Default is `desc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_tags#sort DataGitlabProjectTags#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/project_tags#sort DataGitlabProjectTags#sort}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DeployKeyEnable <a name="DeployKeyEnable" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/deploy_key_enable gitlab_deploy_key_enable}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/deploy_key_enable gitlab_deploy_key_enable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.deployKeyEnable.DeployKeyEnable.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the DeployKeyEnable to import.
 
 The id of the existing DeployKeyEnable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/deploy_key_enable#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/deploy_key_enable#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -886,7 +886,7 @@ public string KeyId { get; set; }
 
 The Gitlab key id for the pre-existing deploy key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/deploy_key_enable#key_id DeployKeyEnable#key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/deploy_key_enable#key_id DeployKeyEnable#key_id}
 
 ---
 
@@ -900,7 +900,7 @@ public string Project { get; set; }
 
 The name or id of the project to add the deploy key to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/deploy_key_enable#project DeployKeyEnable#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/deploy_key_enable#project DeployKeyEnable#project}
 
 ---
 
@@ -914,7 +914,7 @@ public bool|IResolvable CanPush { get; set; }
 
 Can deploy key push to the project's repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/deploy_key_enable#can_push DeployKeyEnable#can_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/deploy_key_enable#can_push DeployKeyEnable#can_push}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataGitlabProjectEnvironments <a name="DataGitlabProjectEnvironments" id="@cdktf/provider-gitlab.dataGitlabProjectEnvironments.DataGitlabProjectEnvironments"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_environments gitlab_project_environments}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/project_environments gitlab_project_environments}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectEnvironments.DataGitlabProjectEnvironments.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataGitlabProjectEnvironme
 
 The id of the existing DataGitlabProjectEnvironments that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_environments#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/project_environments#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -789,7 +789,7 @@ Project *string
 
 The ID or full path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_environments#project DataGitlabProjectEnvironments#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/project_environments#project DataGitlabProjectEnvironments#project}
 
 ---
 
@@ -803,7 +803,7 @@ Name *string
 
 Return the environment with this name. Mutually exclusive with search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_environments#name DataGitlabProjectEnvironments#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/project_environments#name DataGitlabProjectEnvironments#name}
 
 ---
 
@@ -819,7 +819,7 @@ Return list of environments matching the search criteria.
 
 Mutually exclusive with name. Must be at least 3 characters long.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_environments#search DataGitlabProjectEnvironments#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/project_environments#search DataGitlabProjectEnvironments#search}
 
 ---
 
@@ -835,7 +835,7 @@ List all environments that match the specified state.
 
 Valid values are `available`, `stopping`, `stopped`. Returns all environments if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_environments#states DataGitlabProjectEnvironments#states}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/project_environments#states DataGitlabProjectEnvironments#states}
 
 ---
 

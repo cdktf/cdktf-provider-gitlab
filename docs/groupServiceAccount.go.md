@@ -4,7 +4,7 @@
 
 ### GroupServiceAccount <a name="GroupServiceAccount" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_service_account gitlab_group_service_account}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_service_account gitlab_group_service_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccount.Initializer"></a>
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the GroupServiceAccount to imp
 
 The id of the existing GroupServiceAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_service_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_service_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -872,7 +872,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/groupserviceaccount
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountConfig.property.group">Group</a></code> | <code>*string</code> | The ID or URL-encoded path of the group that the service account is created in. |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountConfig.property.email">Email</a></code> | <code>*string</code> | User account email. |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountConfig.property.name">Name</a></code> | <code>*string</code> | The name of the user. If not specified, the default Service account user name is used. |
-| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeouts">GroupServiceAccountTimeouts</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_service_account#timeouts GroupServiceAccount#timeouts}. |
+| <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeouts">GroupServiceAccountTimeouts</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_service_account#timeouts GroupServiceAccount#timeouts}. |
 | <code><a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountConfig.property.username">Username</a></code> | <code>*string</code> | The username of the user. If not specified, it’s automatically generated. |
 
 ---
@@ -959,7 +959,7 @@ The ID or URL-encoded path of the group that the service account is created in.
 
 Must be a top level group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_service_account#group GroupServiceAccount#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_service_account#group GroupServiceAccount#group}
 
 ---
 
@@ -975,7 +975,7 @@ User account email.
 
 If not specified, generates an email prepended with `service_account_group_`. Custom email addresses require confirmation before the account is active, unless the group has a matching verified domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_service_account#email GroupServiceAccount#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_service_account#email GroupServiceAccount#email}
 
 ---
 
@@ -989,7 +989,7 @@ Name *string
 
 The name of the user. If not specified, the default Service account user name is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_service_account#name GroupServiceAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_service_account#name GroupServiceAccount#name}
 
 ---
 
@@ -1001,7 +1001,7 @@ Timeouts GroupServiceAccountTimeouts
 
 - *Type:* <a href="#@cdktf/provider-gitlab.groupServiceAccount.GroupServiceAccountTimeouts">GroupServiceAccountTimeouts</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_service_account#timeouts GroupServiceAccount#timeouts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_service_account#timeouts GroupServiceAccount#timeouts}.
 
 ---
 
@@ -1015,7 +1015,7 @@ Username *string
 
 The username of the user. If not specified, it’s automatically generated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_service_account#username GroupServiceAccount#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_service_account#username GroupServiceAccount#username}
 
 ---
 
@@ -1049,7 +1049,7 @@ Delete *string
 
 How long to wait for the service account to be fully deleted. Defaults to 10 minutes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/group_service_account#delete GroupServiceAccount#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/group_service_account#delete GroupServiceAccount#delete}
 
 ---
 

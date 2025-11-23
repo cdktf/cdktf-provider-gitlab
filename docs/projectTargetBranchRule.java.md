@@ -4,7 +4,7 @@
 
 ### ProjectTargetBranchRule <a name="ProjectTargetBranchRule" id="@cdktf/provider-gitlab.projectTargetBranchRule.ProjectTargetBranchRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_target_branch_rule gitlab_project_target_branch_rule}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_target_branch_rule gitlab_project_target_branch_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectTargetBranchRule.ProjectTargetBranchRule.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The ID or URL-encoded path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_target_branch_rule#project ProjectTargetBranchRule#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_target_branch_rule#project ProjectTargetBranchRule#project}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 A pattern matching the branch name for which the merge request should have a default target branch configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_target_branch_rule#source_branch_pattern ProjectTargetBranchRule#source_branch_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_target_branch_rule#source_branch_pattern ProjectTargetBranchRule#source_branch_pattern}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The name of the branch to which the merge request should be addressed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_target_branch_rule#target_branch_name ProjectTargetBranchRule#target_branch_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_target_branch_rule#target_branch_name ProjectTargetBranchRule#target_branch_name}
 
 ---
 
@@ -555,7 +555,7 @@ The construct id used in the generated config for the ProjectTargetBranchRule to
 
 The id of the existing ProjectTargetBranchRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_target_branch_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_target_branch_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -945,7 +945,7 @@ public java.lang.String getProject();
 
 The ID or URL-encoded path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_target_branch_rule#project ProjectTargetBranchRule#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_target_branch_rule#project ProjectTargetBranchRule#project}
 
 ---
 
@@ -959,7 +959,7 @@ public java.lang.String getSourceBranchPattern();
 
 A pattern matching the branch name for which the merge request should have a default target branch configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_target_branch_rule#source_branch_pattern ProjectTargetBranchRule#source_branch_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_target_branch_rule#source_branch_pattern ProjectTargetBranchRule#source_branch_pattern}
 
 ---
 
@@ -973,7 +973,7 @@ public java.lang.String getTargetBranchName();
 
 The name of the branch to which the merge request should be addressed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_target_branch_rule#target_branch_name ProjectTargetBranchRule#target_branch_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_target_branch_rule#target_branch_name ProjectTargetBranchRule#target_branch_name}
 
 ---
 

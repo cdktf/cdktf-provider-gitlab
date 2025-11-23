@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_approval_rules
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/project_approval_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataGitlabProjectApprovalRulesConfig extends cdktf.TerraformMet
   /**
   * The ID or path with namespace that identifies the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_approval_rules#project DataGitlabProjectApprovalRules#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/project_approval_rules#project DataGitlabProjectApprovalRules#project}
   */
   readonly project: string;
   /**
   * approval_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_approval_rules#approval_rules DataGitlabProjectApprovalRules#approval_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/project_approval_rules#approval_rules DataGitlabProjectApprovalRules#approval_rules}
   */
   readonly approvalRules?: DataGitlabProjectApprovalRulesApprovalRules[] | cdktf.IResolvable;
 }
@@ -158,7 +158,7 @@ export class DataGitlabProjectApprovalRulesApprovalRulesList extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_approval_rules gitlab_project_approval_rules}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/project_approval_rules gitlab_project_approval_rules}
 */
 export class DataGitlabProjectApprovalRules extends cdktf.TerraformDataSource {
 
@@ -174,7 +174,7 @@ export class DataGitlabProjectApprovalRules extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGitlabProjectApprovalRules resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabProjectApprovalRules to import
-  * @param importFromId The id of the existing DataGitlabProjectApprovalRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_approval_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabProjectApprovalRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/project_approval_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabProjectApprovalRules to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -186,7 +186,7 @@ export class DataGitlabProjectApprovalRules extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/project_approval_rules gitlab_project_approval_rules} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/project_approval_rules gitlab_project_approval_rules} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -197,7 +197,7 @@ export class DataGitlabProjectApprovalRules extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_project_approval_rules',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.6.0',
+        providerVersion: '18.6.1',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

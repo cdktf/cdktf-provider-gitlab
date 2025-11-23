@@ -4,7 +4,7 @@
 
 ### DataGitlabArtifactFile <a name="DataGitlabArtifactFile" id="@cdktf/provider-gitlab.dataGitlabArtifactFile.DataGitlabArtifactFile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/artifact_file gitlab_artifact_file}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/artifact_file gitlab_artifact_file}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabArtifactFile.DataGitlabArtifactFile.Initializer"></a>
 
@@ -114,7 +114,7 @@ Path to the artifact file within the job's artifacts archive.
 
 This path is relative to the archive contents (not the local filesystem). Ensure each `gitlab_artifact_file` data source in your configuration uses a unique artifact_path to avoid ambiguity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/artifact_file#artifact_path DataGitlabArtifactFile#artifact_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/artifact_file#artifact_path DataGitlabArtifactFile#artifact_path}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The name of the job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/artifact_file#job DataGitlabArtifactFile#job}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/artifact_file#job DataGitlabArtifactFile#job}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The ID or URL-encoded path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/artifact_file#project DataGitlabArtifactFile#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/artifact_file#project DataGitlabArtifactFile#project}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 The name of the branch, tag, or commit SHA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/artifact_file#ref DataGitlabArtifactFile#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/artifact_file#ref DataGitlabArtifactFile#ref}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 
 Maximum bytes to read from the artifact. Defaults to 10MB (10485760 bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/artifact_file#max_size_bytes DataGitlabArtifactFile#max_size_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/artifact_file#max_size_bytes DataGitlabArtifactFile#max_size_bytes}
 
 ---
 
@@ -484,7 +484,7 @@ The construct id used in the generated config for the DataGitlabArtifactFile to 
 
 The id of the existing DataGitlabArtifactFile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/artifact_file#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/artifact_file#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -924,7 +924,7 @@ Path to the artifact file within the job's artifacts archive.
 
 This path is relative to the archive contents (not the local filesystem). Ensure each `gitlab_artifact_file` data source in your configuration uses a unique artifact_path to avoid ambiguity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/artifact_file#artifact_path DataGitlabArtifactFile#artifact_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/artifact_file#artifact_path DataGitlabArtifactFile#artifact_path}
 
 ---
 
@@ -938,7 +938,7 @@ public java.lang.String getJob();
 
 The name of the job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/artifact_file#job DataGitlabArtifactFile#job}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/artifact_file#job DataGitlabArtifactFile#job}
 
 ---
 
@@ -952,7 +952,7 @@ public java.lang.String getProject();
 
 The ID or URL-encoded path of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/artifact_file#project DataGitlabArtifactFile#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/artifact_file#project DataGitlabArtifactFile#project}
 
 ---
 
@@ -966,7 +966,7 @@ public java.lang.String getRef();
 
 The name of the branch, tag, or commit SHA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/artifact_file#ref DataGitlabArtifactFile#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/artifact_file#ref DataGitlabArtifactFile#ref}
 
 ---
 
@@ -980,7 +980,7 @@ public java.lang.Number getMaxSizeBytes();
 
 Maximum bytes to read from the artifact. Defaults to 10MB (10485760 bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/artifact_file#max_size_bytes DataGitlabArtifactFile#max_size_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/artifact_file#max_size_bytes DataGitlabArtifactFile#max_size_bytes}
 
 ---
 

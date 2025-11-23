@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/group_variables
+// https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/group_variables
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataGitlabGroupVariablesConfig extends cdktf.TerraformMetaArgum
   /**
   * The environment scope of the variable. Defaults to all environment (`*`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/group_variables#environment_scope DataGitlabGroupVariables#environment_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/group_variables#environment_scope DataGitlabGroupVariables#environment_scope}
   */
   readonly environmentScope?: string;
   /**
   * The name or id of the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/group_variables#group DataGitlabGroupVariables#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/group_variables#group DataGitlabGroupVariables#group}
   */
   readonly group: string;
 }
@@ -142,7 +142,7 @@ export class DataGitlabGroupVariablesVariablesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/group_variables gitlab_group_variables}
+* Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/group_variables gitlab_group_variables}
 */
 export class DataGitlabGroupVariables extends cdktf.TerraformDataSource {
 
@@ -158,7 +158,7 @@ export class DataGitlabGroupVariables extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGitlabGroupVariables resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGitlabGroupVariables to import
-  * @param importFromId The id of the existing DataGitlabGroupVariables that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/group_variables#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGitlabGroupVariables that should be imported. Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/group_variables#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGitlabGroupVariables to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -170,7 +170,7 @@ export class DataGitlabGroupVariables extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/data-sources/group_variables gitlab_group_variables} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/data-sources/group_variables gitlab_group_variables} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -181,7 +181,7 @@ export class DataGitlabGroupVariables extends cdktf.TerraformDataSource {
       terraformResourceType: 'gitlab_group_variables',
       terraformGeneratorMetadata: {
         providerName: 'gitlab',
-        providerVersion: '18.6.0',
+        providerVersion: '18.6.1',
         providerVersionConstraint: '~> 18.0'
       },
       provider: config.provider,

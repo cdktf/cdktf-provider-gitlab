@@ -4,7 +4,7 @@
 
 ### ProjectIntegrationYoutrack <a name="ProjectIntegrationYoutrack" id="@cdktf/provider-gitlab.projectIntegrationYoutrack.ProjectIntegrationYoutrack"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_youtrack gitlab_project_integration_youtrack}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_youtrack gitlab_project_integration_youtrack}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectIntegrationYoutrack.ProjectIntegrationYoutrack.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the ProjectIntegrationYoutrack
 
 The id of the existing ProjectIntegrationYoutrack that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_youtrack#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_youtrack#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -857,7 +857,7 @@ public string IssuesUrl { get; set; }
 
 URL to view an issue in the external issue tracker. Must contain :id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_youtrack#issues_url ProjectIntegrationYoutrack#issues_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_youtrack#issues_url ProjectIntegrationYoutrack#issues_url}
 
 ---
 
@@ -871,7 +871,7 @@ public string Project { get; set; }
 
 ID or namespace of the project you want to activate integration on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_youtrack#project ProjectIntegrationYoutrack#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_youtrack#project ProjectIntegrationYoutrack#project}
 
 ---
 
@@ -885,7 +885,7 @@ public string ProjectUrl { get; set; }
 
 URL of the project in the external issue tracker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/project_integration_youtrack#project_url ProjectIntegrationYoutrack#project_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/project_integration_youtrack#project_url ProjectIntegrationYoutrack#project_url}
 
 ---
 

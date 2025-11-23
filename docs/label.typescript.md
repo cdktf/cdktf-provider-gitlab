@@ -4,7 +4,7 @@
 
 ### Label <a name="Label" id="@cdktf/provider-gitlab.label.Label"></a>
 
-Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/label gitlab_label}.
+Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/label gitlab_label}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.label.Label.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the Label to import.
 
 The id of the existing Label that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/label#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/label#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -898,7 +898,7 @@ public readonly color: string;
 
 The color of the label given in 6-digit hex notation with leading '#' sign (e.g. #FFAABB) or one of the [CSS color names](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Color_keywords).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/label#color Label#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/label#color Label#color}
 
 ---
 
@@ -912,7 +912,7 @@ public readonly name: string;
 
 The name of the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/label#name Label#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/label#name Label#name}
 
 ---
 
@@ -926,7 +926,7 @@ public readonly project: string;
 
 The name or id of the project to add the label to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/label#project Label#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/label#project Label#project}
 
 ---
 
@@ -940,7 +940,7 @@ public readonly description: string;
 
 The description of the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.0/docs/resources/label#description Label#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6.1/docs/resources/label#description Label#description}
 
 ---
 
