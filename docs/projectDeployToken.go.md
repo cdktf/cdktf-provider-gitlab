@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectdeploytoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectdeploytoken"
 
 projectdeploytoken.NewProjectDeployToken(scope Construct, id *string, config ProjectDeployTokenConfig) ProjectDeployToken
 ```
@@ -399,7 +399,7 @@ func ResetValidatePastExpirationDate()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectdeploytoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectdeploytoken"
 
 projectdeploytoken.ProjectDeployToken_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectdeploytoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectdeploytoken"
 
 projectdeploytoken.ProjectDeployToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ projectdeploytoken.ProjectDeployToken_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectdeploytoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectdeploytoken"
 
 projectdeploytoken.ProjectDeployToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ projectdeploytoken.ProjectDeployToken_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectDeployToken.ProjectDeployToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectdeploytoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectdeploytoken"
 
 projectdeploytoken.ProjectDeployToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -864,7 +864,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectDeployToken.ProjectDeployTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectdeploytoken"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectdeploytoken"
 
 &projectdeploytoken.ProjectDeployTokenConfig {
 	Connection: interface{},

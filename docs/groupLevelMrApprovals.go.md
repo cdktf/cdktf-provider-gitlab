@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.groupLevelMrApprovals.GroupLevelMrApprovals.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/grouplevelmrapprovals"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/grouplevelmrapprovals"
 
 grouplevelmrapprovals.NewGroupLevelMrApprovals(scope Construct, id *string, config GroupLevelMrApprovalsConfig) GroupLevelMrApprovals
 ```
@@ -420,7 +420,7 @@ func ResetRetainApprovalsOnPush()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.groupLevelMrApprovals.GroupLevelMrApprovals.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/grouplevelmrapprovals"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/grouplevelmrapprovals"
 
 grouplevelmrapprovals.GroupLevelMrApprovals_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.groupLevelMrApprovals.GroupLevelMrApprovals.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/grouplevelmrapprovals"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/grouplevelmrapprovals"
 
 grouplevelmrapprovals.GroupLevelMrApprovals_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ grouplevelmrapprovals.GroupLevelMrApprovals_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.groupLevelMrApprovals.GroupLevelMrApprovals.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/grouplevelmrapprovals"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/grouplevelmrapprovals"
 
 grouplevelmrapprovals.GroupLevelMrApprovals_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ grouplevelmrapprovals.GroupLevelMrApprovals_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.groupLevelMrApprovals.GroupLevelMrApprovals.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/grouplevelmrapprovals"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/grouplevelmrapprovals"
 
 grouplevelmrapprovals.GroupLevelMrApprovals_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -874,7 +874,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.groupLevelMrApprovals.GroupLevelMrApprovalsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/grouplevelmrapprovals"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/grouplevelmrapprovals"
 
 &grouplevelmrapprovals.GroupLevelMrApprovalsConfig {
 	Connection: interface{},

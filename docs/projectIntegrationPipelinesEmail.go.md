@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectIntegrationPipelinesEmail.ProjectIntegrationPipelinesEmail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectintegrationpipelinesemail"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectintegrationpipelinesemail"
 
 projectintegrationpipelinesemail.NewProjectIntegrationPipelinesEmail(scope Construct, id *string, config ProjectIntegrationPipelinesEmailConfig) ProjectIntegrationPipelinesEmail
 ```
@@ -399,7 +399,7 @@ func ResetNotifyOnlyBrokenPipelines()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectIntegrationPipelinesEmail.ProjectIntegrationPipelinesEmail.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectintegrationpipelinesemail"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectintegrationpipelinesemail"
 
 projectintegrationpipelinesemail.ProjectIntegrationPipelinesEmail_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectIntegrationPipelinesEmail.ProjectIntegrationPipelinesEmail.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectintegrationpipelinesemail"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectintegrationpipelinesemail"
 
 projectintegrationpipelinesemail.ProjectIntegrationPipelinesEmail_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ projectintegrationpipelinesemail.ProjectIntegrationPipelinesEmail_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectIntegrationPipelinesEmail.ProjectIntegrationPipelinesEmail.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectintegrationpipelinesemail"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectintegrationpipelinesemail"
 
 projectintegrationpipelinesemail.ProjectIntegrationPipelinesEmail_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ projectintegrationpipelinesemail.ProjectIntegrationPipelinesEmail_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectIntegrationPipelinesEmail.ProjectIntegrationPipelinesEmail.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectintegrationpipelinesemail"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectintegrationpipelinesemail"
 
 projectintegrationpipelinesemail.ProjectIntegrationPipelinesEmail_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -798,7 +798,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectIntegrationPipelinesEmail.ProjectIntegrationPipelinesEmailConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectintegrationpipelinesemail"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectintegrationpipelinesemail"
 
 &projectintegrationpipelinesemail.ProjectIntegrationPipelinesEmailConfig {
 	Connection: interface{},

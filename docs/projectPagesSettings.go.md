@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectPagesSettings.ProjectPagesSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectpagessettings"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectpagessettings"
 
 projectpagessettings.NewProjectPagesSettings(scope Construct, id *string, config ProjectPagesSettingsConfig) ProjectPagesSettings
 ```
@@ -399,7 +399,7 @@ func ResetKeepSettingsOnDestroy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectPagesSettings.ProjectPagesSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectpagessettings"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectpagessettings"
 
 projectpagessettings.ProjectPagesSettings_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectPagesSettings.ProjectPagesSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectpagessettings"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectpagessettings"
 
 projectpagessettings.ProjectPagesSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ projectpagessettings.ProjectPagesSettings_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectPagesSettings.ProjectPagesSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectpagessettings"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectpagessettings"
 
 projectpagessettings.ProjectPagesSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ projectpagessettings.ProjectPagesSettings_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectPagesSettings.ProjectPagesSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectpagessettings"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectpagessettings"
 
 projectpagessettings.ProjectPagesSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -809,7 +809,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectPagesSettings.ProjectPagesSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectpagessettings"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectpagessettings"
 
 &projectpagessettings.ProjectPagesSettingsConfig {
 	Connection: interface{},
@@ -977,7 +977,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectPagesSettings.ProjectPagesSettingsDeployments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectpagessettings"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectpagessettings"
 
 &projectpagessettings.ProjectPagesSettingsDeployments {
 
@@ -992,7 +992,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectpagessetting
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectPagesSettings.ProjectPagesSettingsDeploymentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectpagessettings"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectpagessettings"
 
 projectpagessettings.NewProjectPagesSettingsDeploymentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProjectPagesSettingsDeploymentsList
 ```
@@ -1141,7 +1141,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectPagesSettings.ProjectPagesSettingsDeploymentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectpagessettings"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectpagessettings"
 
 projectpagessettings.NewProjectPagesSettingsDeploymentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProjectPagesSettingsDeploymentsOutputReference
 ```

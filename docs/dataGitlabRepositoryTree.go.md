@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabRepositoryTree.DataGitlabRepositoryTree.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabrepositorytree"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrepositorytree"
 
 datagitlabrepositorytree.NewDataGitlabRepositoryTree(scope Construct, id *string, config DataGitlabRepositoryTreeConfig) DataGitlabRepositoryTree
 ```
@@ -290,7 +290,7 @@ func ResetRecursive()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabRepositoryTree.DataGitlabRepositoryTree.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabrepositorytree"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrepositorytree"
 
 datagitlabrepositorytree.DataGitlabRepositoryTree_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabRepositoryTree.DataGitlabRepositoryTree.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabrepositorytree"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrepositorytree"
 
 datagitlabrepositorytree.DataGitlabRepositoryTree_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagitlabrepositorytree.DataGitlabRepositoryTree_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabRepositoryTree.DataGitlabRepositoryTree.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabrepositorytree"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrepositorytree"
 
 datagitlabrepositorytree.DataGitlabRepositoryTree_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datagitlabrepositorytree.DataGitlabRepositoryTree_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabRepositoryTree.DataGitlabRepositoryTree.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabrepositorytree"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrepositorytree"
 
 datagitlabrepositorytree.DataGitlabRepositoryTree_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -667,7 +667,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabRepositoryTree.DataGitlabRepositoryTreeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabrepositorytree"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrepositorytree"
 
 &datagitlabrepositorytree.DataGitlabRepositoryTreeConfig {
 	Connection: interface{},
@@ -833,7 +833,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabRepositoryTree.DataGitlabRepositoryTreeTree.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabrepositorytree"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrepositorytree"
 
 &datagitlabrepositorytree.DataGitlabRepositoryTreeTree {
 
@@ -848,7 +848,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabrepositor
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabRepositoryTree.DataGitlabRepositoryTreeTreeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabrepositorytree"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrepositorytree"
 
 datagitlabrepositorytree.NewDataGitlabRepositoryTreeTreeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabRepositoryTreeTreeList
 ```
@@ -997,7 +997,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabRepositoryTree.DataGitlabRepositoryTreeTreeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabrepositorytree"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabrepositorytree"
 
 datagitlabrepositorytree.NewDataGitlabRepositoryTreeTreeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabRepositoryTreeTreeOutputReference
 ```

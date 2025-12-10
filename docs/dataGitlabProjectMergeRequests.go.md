@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectMergeRequests.DataGitlabProjectMergeRequests.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectmergerequests"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmergerequests"
 
 datagitlabprojectmergerequests.NewDataGitlabProjectMergeRequests(scope Construct, id *string, config DataGitlabProjectMergeRequestsConfig) DataGitlabProjectMergeRequests
 ```
@@ -402,7 +402,7 @@ func ResetWip()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabProjectMergeRequests.DataGitlabProjectMergeRequests.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectmergerequests"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmergerequests"
 
 datagitlabprojectmergerequests.DataGitlabProjectMergeRequests_IsConstruct(x interface{}) *bool
 ```
@@ -434,7 +434,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabProjectMergeRequests.DataGitlabProjectMergeRequests.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectmergerequests"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmergerequests"
 
 datagitlabprojectmergerequests.DataGitlabProjectMergeRequests_IsTerraformElement(x interface{}) *bool
 ```
@@ -448,7 +448,7 @@ datagitlabprojectmergerequests.DataGitlabProjectMergeRequests_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabProjectMergeRequests.DataGitlabProjectMergeRequests.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectmergerequests"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmergerequests"
 
 datagitlabprojectmergerequests.DataGitlabProjectMergeRequests_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -462,7 +462,7 @@ datagitlabprojectmergerequests.DataGitlabProjectMergeRequests_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabProjectMergeRequests.DataGitlabProjectMergeRequests.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectmergerequests"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmergerequests"
 
 datagitlabprojectmergerequests.DataGitlabProjectMergeRequests_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1098,7 +1098,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectMergeRequests.DataGitlabProjectMergeRequestsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectmergerequests"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmergerequests"
 
 &datagitlabprojectmergerequests.DataGitlabProjectMergeRequestsConfig {
 	Connection: interface{},
@@ -1512,7 +1512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectMergeRequests.DataGitlabProjectMergeRequestsMergeRequests.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectmergerequests"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmergerequests"
 
 &datagitlabprojectmergerequests.DataGitlabProjectMergeRequestsMergeRequests {
 
@@ -1525,7 +1525,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectme
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectMergeRequests.DataGitlabProjectMergeRequestsMergeRequestsAssignee.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectmergerequests"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmergerequests"
 
 &datagitlabprojectmergerequests.DataGitlabProjectMergeRequestsMergeRequestsAssignee {
 
@@ -1538,7 +1538,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectme
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectMergeRequests.DataGitlabProjectMergeRequestsMergeRequestsAssignees.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectmergerequests"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmergerequests"
 
 &datagitlabprojectmergerequests.DataGitlabProjectMergeRequestsMergeRequestsAssignees {
 
@@ -1551,7 +1551,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectme
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectMergeRequests.DataGitlabProjectMergeRequestsMergeRequestsAuthor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectmergerequests"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmergerequests"
 
 &datagitlabprojectmergerequests.DataGitlabProjectMergeRequestsMergeRequestsAuthor {
 
@@ -1564,7 +1564,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectme
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectMergeRequests.DataGitlabProjectMergeRequestsMergeRequestsClosedBy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectmergerequests"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmergerequests"
 
 &datagitlabprojectmergerequests.DataGitlabProjectMergeRequestsMergeRequestsClosedBy {
 
@@ -1579,7 +1579,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectme
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectMergeRequests.DataGitlabProjectMergeRequestsMergeRequestsAssigneeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectmergerequests"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmergerequests"
 
 datagitlabprojectmergerequests.NewDataGitlabProjectMergeRequestsMergeRequestsAssigneeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataGitlabProjectMergeRequestsMergeRequestsAssigneeOutputReference
 ```
@@ -1894,7 +1894,7 @@ func InternalValue() DataGitlabProjectMergeRequestsMergeRequestsAssignee
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectMergeRequests.DataGitlabProjectMergeRequestsMergeRequestsAssigneesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectmergerequests"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmergerequests"
 
 datagitlabprojectmergerequests.NewDataGitlabProjectMergeRequestsMergeRequestsAssigneesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectMergeRequestsMergeRequestsAssigneesList
 ```
@@ -2043,7 +2043,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectMergeRequests.DataGitlabProjectMergeRequestsMergeRequestsAssigneesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectmergerequests"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmergerequests"
 
 datagitlabprojectmergerequests.NewDataGitlabProjectMergeRequestsMergeRequestsAssigneesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabProjectMergeRequestsMergeRequestsAssigneesOutputReference
 ```
@@ -2376,7 +2376,7 @@ func InternalValue() DataGitlabProjectMergeRequestsMergeRequestsAssignees
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectMergeRequests.DataGitlabProjectMergeRequestsMergeRequestsAuthorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectmergerequests"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmergerequests"
 
 datagitlabprojectmergerequests.NewDataGitlabProjectMergeRequestsMergeRequestsAuthorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataGitlabProjectMergeRequestsMergeRequestsAuthorOutputReference
 ```
@@ -2691,7 +2691,7 @@ func InternalValue() DataGitlabProjectMergeRequestsMergeRequestsAuthor
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectMergeRequests.DataGitlabProjectMergeRequestsMergeRequestsClosedByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectmergerequests"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmergerequests"
 
 datagitlabprojectmergerequests.NewDataGitlabProjectMergeRequestsMergeRequestsClosedByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataGitlabProjectMergeRequestsMergeRequestsClosedByOutputReference
 ```
@@ -3006,7 +3006,7 @@ func InternalValue() DataGitlabProjectMergeRequestsMergeRequestsClosedBy
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectMergeRequests.DataGitlabProjectMergeRequestsMergeRequestsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectmergerequests"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmergerequests"
 
 datagitlabprojectmergerequests.NewDataGitlabProjectMergeRequestsMergeRequestsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectMergeRequestsMergeRequestsList
 ```
@@ -3155,7 +3155,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectMergeRequests.DataGitlabProjectMergeRequestsMergeRequestsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectmergerequests"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectmergerequests"
 
 datagitlabprojectmergerequests.NewDataGitlabProjectMergeRequestsMergeRequestsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabProjectMergeRequestsMergeRequestsOutputReference
 ```

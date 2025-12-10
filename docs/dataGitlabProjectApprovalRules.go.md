@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectApprovalRules.DataGitlabProjectApprovalRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectapprovalrules"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectapprovalrules"
 
 datagitlabprojectapprovalrules.NewDataGitlabProjectApprovalRules(scope Construct, id *string, config DataGitlabProjectApprovalRulesConfig) DataGitlabProjectApprovalRules
 ```
@@ -296,7 +296,7 @@ func ResetApprovalRules()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.dataGitlabProjectApprovalRules.DataGitlabProjectApprovalRules.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectapprovalrules"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectapprovalrules"
 
 datagitlabprojectapprovalrules.DataGitlabProjectApprovalRules_IsConstruct(x interface{}) *bool
 ```
@@ -328,7 +328,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.dataGitlabProjectApprovalRules.DataGitlabProjectApprovalRules.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectapprovalrules"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectapprovalrules"
 
 datagitlabprojectapprovalrules.DataGitlabProjectApprovalRules_IsTerraformElement(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ datagitlabprojectapprovalrules.DataGitlabProjectApprovalRules_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-gitlab.dataGitlabProjectApprovalRules.DataGitlabProjectApprovalRules.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectapprovalrules"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectapprovalrules"
 
 datagitlabprojectapprovalrules.DataGitlabProjectApprovalRules_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ datagitlabprojectapprovalrules.DataGitlabProjectApprovalRules_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.dataGitlabProjectApprovalRules.DataGitlabProjectApprovalRules.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectapprovalrules"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectapprovalrules"
 
 datagitlabprojectapprovalrules.DataGitlabProjectApprovalRules_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -618,7 +618,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectApprovalRules.DataGitlabProjectApprovalRulesApprovalRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectapprovalrules"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectapprovalrules"
 
 &datagitlabprojectapprovalrules.DataGitlabProjectApprovalRulesApprovalRules {
 
@@ -631,7 +631,7 @@ import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectap
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.dataGitlabProjectApprovalRules.DataGitlabProjectApprovalRulesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectapprovalrules"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectapprovalrules"
 
 &datagitlabprojectapprovalrules.DataGitlabProjectApprovalRulesConfig {
 	Connection: interface{},
@@ -767,7 +767,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/gitla
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectApprovalRules.DataGitlabProjectApprovalRulesApprovalRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectapprovalrules"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectapprovalrules"
 
 datagitlabprojectapprovalrules.NewDataGitlabProjectApprovalRulesApprovalRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGitlabProjectApprovalRulesApprovalRulesList
 ```
@@ -927,7 +927,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.dataGitlabProjectApprovalRules.DataGitlabProjectApprovalRulesApprovalRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/datagitlabprojectapprovalrules"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/datagitlabprojectapprovalrules"
 
 datagitlabprojectapprovalrules.NewDataGitlabProjectApprovalRulesApprovalRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGitlabProjectApprovalRulesApprovalRulesOutputReference
 ```

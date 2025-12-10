@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectExternalStatusCheck.ProjectExternalStatusCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectexternalstatuscheck"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectexternalstatuscheck"
 
 projectexternalstatuscheck.NewProjectExternalStatusCheck(scope Construct, id *string, config ProjectExternalStatusCheckConfig) ProjectExternalStatusCheck
 ```
@@ -392,7 +392,7 @@ func ResetSharedSecret()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectExternalStatusCheck.ProjectExternalStatusCheck.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectexternalstatuscheck"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectexternalstatuscheck"
 
 projectexternalstatuscheck.ProjectExternalStatusCheck_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectExternalStatusCheck.ProjectExternalStatusCheck.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectexternalstatuscheck"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectexternalstatuscheck"
 
 projectexternalstatuscheck.ProjectExternalStatusCheck_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ projectexternalstatuscheck.ProjectExternalStatusCheck_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectExternalStatusCheck.ProjectExternalStatusCheck.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectexternalstatuscheck"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectexternalstatuscheck"
 
 projectexternalstatuscheck.ProjectExternalStatusCheck_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ projectexternalstatuscheck.ProjectExternalStatusCheck_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectExternalStatusCheck.ProjectExternalStatusCheck.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectexternalstatuscheck"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectexternalstatuscheck"
 
 projectexternalstatuscheck.ProjectExternalStatusCheck_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -813,7 +813,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectExternalStatusCheck.ProjectExternalStatusCheckConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectexternalstatuscheck"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectexternalstatuscheck"
 
 &projectexternalstatuscheck.ProjectExternalStatusCheckConfig {
 	Connection: interface{},
