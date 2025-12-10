@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.integrationRedmine.IntegrationRedmine.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationredmine"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/integrationredmine"
 
 integrationredmine.NewIntegrationRedmine(scope Construct, id *string, config IntegrationRedmineConfig) IntegrationRedmine
 ```
@@ -385,7 +385,7 @@ func ResetUseInheritedSettings()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.integrationRedmine.IntegrationRedmine.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationredmine"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/integrationredmine"
 
 integrationredmine.IntegrationRedmine_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.integrationRedmine.IntegrationRedmine.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationredmine"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/integrationredmine"
 
 integrationredmine.IntegrationRedmine_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ integrationredmine.IntegrationRedmine_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.integrationRedmine.IntegrationRedmine.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationredmine"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/integrationredmine"
 
 integrationredmine.IntegrationRedmine_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ integrationredmine.IntegrationRedmine_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.integrationRedmine.IntegrationRedmine.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationredmine"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/integrationredmine"
 
 integrationredmine.IntegrationRedmine_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -795,7 +795,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.integrationRedmine.IntegrationRedmineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/integrationredmine"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/integrationredmine"
 
 &integrationredmine.IntegrationRedmineConfig {
 	Connection: interface{},

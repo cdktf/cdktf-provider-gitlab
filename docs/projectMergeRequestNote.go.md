@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectMergeRequestNote.ProjectMergeRequestNote.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectmergerequestnote"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectmergerequestnote"
 
 projectmergerequestnote.NewProjectMergeRequestNote(scope Construct, id *string, config ProjectMergeRequestNoteConfig) ProjectMergeRequestNote
 ```
@@ -399,7 +399,7 @@ func ResetMergeRequestDiffHeadSha()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectMergeRequestNote.ProjectMergeRequestNote.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectmergerequestnote"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectmergerequestnote"
 
 projectmergerequestnote.ProjectMergeRequestNote_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectMergeRequestNote.ProjectMergeRequestNote.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectmergerequestnote"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectmergerequestnote"
 
 projectmergerequestnote.ProjectMergeRequestNote_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ projectmergerequestnote.ProjectMergeRequestNote_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectMergeRequestNote.ProjectMergeRequestNote.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectmergerequestnote"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectmergerequestnote"
 
 projectmergerequestnote.ProjectMergeRequestNote_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ projectmergerequestnote.ProjectMergeRequestNote_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectMergeRequestNote.ProjectMergeRequestNote.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectmergerequestnote"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectmergerequestnote"
 
 projectmergerequestnote.ProjectMergeRequestNote_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -875,7 +875,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectMergeRequestNote.ProjectMergeRequestNoteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectmergerequestnote"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectmergerequestnote"
 
 &projectmergerequestnote.ProjectMergeRequestNoteConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectIntegrationJira.ProjectIntegrationJira.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectintegrationjira"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectintegrationjira"
 
 projectintegrationjira.NewProjectIntegrationJira(scope Construct, id *string, config ProjectIntegrationJiraConfig) ProjectIntegrationJira
 ```
@@ -476,7 +476,7 @@ func ResetUsername()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectIntegrationJira.ProjectIntegrationJira.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectintegrationjira"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectintegrationjira"
 
 projectintegrationjira.ProjectIntegrationJira_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectIntegrationJira.ProjectIntegrationJira.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectintegrationjira"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectintegrationjira"
 
 projectintegrationjira.ProjectIntegrationJira_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ projectintegrationjira.ProjectIntegrationJira_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectIntegrationJira.ProjectIntegrationJira.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectintegrationjira"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectintegrationjira"
 
 projectintegrationjira.ProjectIntegrationJira_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ projectintegrationjira.ProjectIntegrationJira_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectIntegrationJira.ProjectIntegrationJira.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectintegrationjira"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectintegrationjira"
 
 projectintegrationjira.ProjectIntegrationJira_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1183,7 +1183,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectIntegrationJira.ProjectIntegrationJiraConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectintegrationjira"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectintegrationjira"
 
 &projectintegrationjira.ProjectIntegrationJiraConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.applicationAppearance.ApplicationAppearance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/applicationappearance"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/applicationappearance"
 
 applicationappearance.NewApplicationAppearance(scope Construct, id *string, config ApplicationAppearanceConfig) ApplicationAppearance
 ```
@@ -476,7 +476,7 @@ func ResetTitle()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.applicationAppearance.ApplicationAppearance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/applicationappearance"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/applicationappearance"
 
 applicationappearance.ApplicationAppearance_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.applicationAppearance.ApplicationAppearance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/applicationappearance"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/applicationappearance"
 
 applicationappearance.ApplicationAppearance_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ applicationappearance.ApplicationAppearance_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.applicationAppearance.ApplicationAppearance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/applicationappearance"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/applicationappearance"
 
 applicationappearance.ApplicationAppearance_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ applicationappearance.ApplicationAppearance_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.applicationAppearance.ApplicationAppearance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/applicationappearance"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/applicationappearance"
 
 applicationappearance.ApplicationAppearance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1084,7 +1084,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.applicationAppearance.ApplicationAppearanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/applicationappearance"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/applicationappearance"
 
 &applicationappearance.ApplicationAppearanceConfig {
 	Connection: interface{},

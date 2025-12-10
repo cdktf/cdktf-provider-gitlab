@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/gitlabhq/gitlab/18.6
 #### Initializers <a name="Initializers" id="@cdktf/provider-gitlab.projectIntegrationHarbor.ProjectIntegrationHarbor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectintegrationharbor"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectintegrationharbor"
 
 projectintegrationharbor.NewProjectIntegrationHarbor(scope Construct, id *string, config ProjectIntegrationHarborConfig) ProjectIntegrationHarbor
 ```
@@ -385,7 +385,7 @@ func ResetUseInheritedSettings()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-gitlab.projectIntegrationHarbor.ProjectIntegrationHarbor.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectintegrationharbor"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectintegrationharbor"
 
 projectintegrationharbor.ProjectIntegrationHarbor_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-gitlab.projectIntegrationHarbor.ProjectIntegrationHarbor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectintegrationharbor"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectintegrationharbor"
 
 projectintegrationharbor.ProjectIntegrationHarbor_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ projectintegrationharbor.ProjectIntegrationHarbor_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-gitlab.projectIntegrationHarbor.ProjectIntegrationHarbor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectintegrationharbor"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectintegrationharbor"
 
 projectintegrationharbor.ProjectIntegrationHarbor_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ projectintegrationharbor.ProjectIntegrationHarbor_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-gitlab.projectIntegrationHarbor.ProjectIntegrationHarbor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectintegrationharbor"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectintegrationharbor"
 
 projectintegrationharbor.ProjectIntegrationHarbor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -828,7 +828,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-gitlab.projectIntegrationHarbor.ProjectIntegrationHarborConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/projectintegrationharbor"
+import "github.com/cdktf/cdktf-provider-gitlab-go/gitlab/v15/projectintegrationharbor"
 
 &projectintegrationharbor.ProjectIntegrationHarborConfig {
 	Connection: interface{},
